@@ -1,0 +1,13 @@
+/*
+
+Add styles or override variables from the theme here.
+
+*/
+
+body {
+  .navbar-brand {
+    .text-uppercase {
+      text-transform: none !important;
+    }
+  }
+}
