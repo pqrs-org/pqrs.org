@@ -53,7 +53,7 @@ id = "UA-56715024-1"
 [languages]
 [languages.en]
 title = "ShowyEdge"
-description = "ShowyEdge displays a color bar at the top edge of the screen depending on the current input source."
+description = "A visible indicator of the current input source on macOS."
 languageName ="English"
 # Weight used for sorting.
 weight = 1
