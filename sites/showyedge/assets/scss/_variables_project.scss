@@ -4,10 +4,19 @@ Add styles or override variables from the theme here.
 
 */
 
+$border-color: #dee2e6;
+
 body {
   .navbar-brand {
     .text-uppercase {
       text-transform: none !important;
+    }
+  }
+
+  figure {
+    img {
+      margin: 10px 0;
+      border: 1px solid $border-color;
     }
   }
 }
