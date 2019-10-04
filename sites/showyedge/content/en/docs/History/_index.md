@@ -1,7 +1,6 @@
 ---
 title: "Version History"
-linkTitle: "Version History"
-weight: 100
+weight: 900
 description: "Old binaries and version history"
 ---
 
