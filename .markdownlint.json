@@ -3,6 +3,9 @@
     "indent": 4
   },
   "MD013": false,
+  "MD026": {
+    "punctuation": ".,;:!。，；：！"
+  },
   "MD030": {
     "ul_single": 3,
     "ul_multi": 3,
