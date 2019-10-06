@@ -20,3 +20,11 @@ body {
     }
   }
 }
+
+/* /index.html */
+body.td-home {
+  section:first-of-type {
+    background-image: url("/images/background.png");
+    background-position: center;
+  }
+}
