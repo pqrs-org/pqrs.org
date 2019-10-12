@@ -2,7 +2,7 @@
 
 Sites constructed by [docsy](https://www.docsy.dev).
 
--   sites/showyedge
+-   `sites/showyedge`
     -   <https://showyedge.pqrs.org>
 
 ## Build sites
