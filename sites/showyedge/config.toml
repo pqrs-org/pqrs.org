@@ -7,7 +7,7 @@ enableRobotsTXT = true
 theme = ["docsy"]
 
 # Will give values to .Lastmod etc.
-enableGitInfo = true
+enableGitInfo = false
 
 # Language settings
 contentDir = "content/en"
@@ -61,7 +61,6 @@ weight = 1
 # Everything below this are Site Params
 
 [params]
-github_repo = "https://github.com/pqrs-org/pqrs.org"
 
 # Google Custom Search Engine ID. Remove or comment out to disable search.
 # gcs_engine_id = ""
