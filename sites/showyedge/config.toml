@@ -62,9 +62,6 @@ weight = 1
 
 [params]
 
-# Google Custom Search Engine ID. Remove or comment out to disable search.
-gcs_engine_id = "015816314274428574982:or4f8iksnkp"
-
 # User interface configuration
 [params.ui]
 # Enable to show the side bar menu in its compact state.
