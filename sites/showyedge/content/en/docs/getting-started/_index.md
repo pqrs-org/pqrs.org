@@ -1,6 +1,7 @@
 ---
 title: "Getting Started"
 weight: 100
+simple_list: true
 ---
 
 ## Installation
