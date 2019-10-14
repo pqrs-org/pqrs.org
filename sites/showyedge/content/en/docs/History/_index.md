@@ -3,6 +3,7 @@ title: "Version History"
 weight: 900
 description: "Old binaries and version history"
 simple_list: true
+exclude_search: true
 ---
 
 ## ShowyEdge-3.3.0
