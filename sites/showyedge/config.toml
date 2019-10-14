@@ -66,6 +66,7 @@ weight = 1
 [params.ui]
 # Enable to show the side bar menu in its compact state.
 sidebar_menu_compact = false
+sidebar_search_disable = true
 #  Set to true to disable breadcrumb navigation.
 breadcrumb_disable = false
 #  Set to false if you don't want to display a logo (/assets/icons/logo.svg) in the top nav bar
