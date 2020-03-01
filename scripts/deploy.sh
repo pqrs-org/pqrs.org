@@ -32,6 +32,10 @@ deploy \
   sites/disable-draganddrop-tb/public/
 
 deploy \
+  ../gh-pages-karabiner-elements.pqrs.org \
+  sites/karabiner-elements/public/
+
+deploy \
   ../gh-pages-showyedge.pqrs.org \
   sites/showyedge/public/
 
