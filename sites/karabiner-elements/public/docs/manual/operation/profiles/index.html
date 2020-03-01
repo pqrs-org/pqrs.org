@@ -1,0 +1,731 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="generator" content="Hugo 0.65.3" />
+
+<META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+
+
+
+<link rel="shortcut icon" href="/favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
+
+<title>Multiple profiles | Karabiner-Elements</title><meta property="og:title" content="Multiple profiles" />
+<meta property="og:description" content="You can switch profiles from menu bar.   Manage profiles You can manage profiles from Profiles tab.
+Press Add profile button to add new profile.
+  " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/docs/manual/operation/profiles/" />
+<meta property="og:image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
+<meta property="og:site_name" content="Karabiner-Elements" />
+<meta itemprop="name" content="Multiple profiles">
+<meta itemprop="description" content="You can switch profiles from menu bar.   Manage profiles You can manage profiles from Profiles tab.
+Press Add profile button to add new profile.
+  ">
+
+<meta itemprop="wordCount" content="24">
+<meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
+
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
+
+<meta name="twitter:title" content="Multiple profiles"/>
+<meta name="twitter:description" content="You can switch profiles from menu bar.   Manage profiles You can manage profiles from Profiles tab.
+Press Add profile button to add new profile.
+  "/>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-56715024-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+
+
+
+<link rel="preload" href="/scss/main.min.d2322273188f337ba1f9241060181eb5318c07567dfaed791d4a41a5c7536ed7.css" as="style">
+<link href="/scss/main.min.d2322273188f337ba1f9241060181eb5318c07567dfaed791d4a41a5c7536ed7.css" rel="stylesheet" integrity="">
+
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+<script
+  src="https://unpkg.com/lunr@2.3.8/lunr.min.js"
+  integrity="sha384-vRQ9bDyE0Wnu+lMfm57BlYLO0/XauFuKpVsZPs7KEDwYKktWi5+Kz3MP8++DFlRY"
+  crossorigin="anonymous"></script>
+
+
+    <title>Multiple profiles | Karabiner-Elements</title>
+  </head>
+  <body class="td-page">
+    <header>
+      
+<nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
+        <a class="navbar-brand" href="/">
+		<span class="navbar-logo"></span><span class="text-uppercase font-weight-bold">Karabiner-Elements</span>
+	</a>
+	<div class="td-navbar-nav-scroll ml-md-auto" id="main_navbar">
+		<ul class="navbar-nav mt-2 mt-lg-0">
+			
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a class="nav-link active" href="/docs/" ><span class="active">Documentation</span></a>
+			</li>
+			
+			
+			
+		</ul>
+	</div>
+	<div class="navbar-nav d-none d-lg-block">
+
+
+<input
+  type="search"
+  class="form-control td-search-input"
+  placeholder="&#xf002; Search this site…"
+  aria-label="Search this site…"
+  autocomplete="off"
+  
+  data-offline-search-index-json-src="/offline-search-index.e1e1dab7e20d42dd92b741c224772a085b202438409a0046c939b7d8808bbd608d6a73191bc261ad57c3c6a2924524ad5c07b775f1a55ce8d0ed4553d7de4a13.json"
+  data-offline-search-base-href="/"
+>
+
+</div>
+</nav>
+
+    </header>
+    <div class="container-fluid td-outer">
+      <div class="td-main">
+        <div class="row flex-xl-nowrap">
+          <div class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
+            
+
+
+
+
+<div id="td-sidebar-menu" class="td-sidebar__inner">
+  
+  <form class="td-sidebar__search d-flex align-items-center">
+    
+
+
+<input
+  type="search"
+  class="form-control td-search-input"
+  placeholder="&#xf002; Search this site…"
+  aria-label="Search this site…"
+  autocomplete="off"
+  
+  data-offline-search-index-json-src="/offline-search-index.e1e1dab7e20d42dd92b741c224772a085b202438409a0046c939b7d8808bbd608d6a73191bc261ad57c3c6a2924524ad5c07b775f1a55ce8d0ed4553d7de4a13.json"
+  data-offline-search-base-href="/"
+>
+
+
+    <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ml-3 fas fa-bars" type="button" data-toggle="collapse" data-target="#td-section-nav" aria-controls="td-docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    </button>
+  </form>
+  
+  <nav class="collapse td-sidebar-nav pt-2 pl-4" id="td-section-nav">
+    
+    
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">Documentation</a>
+  </li>
+  <ul>
+    <li class="collapse show" id="docs">
+      
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/getting-started/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Getting started</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docsgetting-started">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgetting-startedinstallation" href="/docs/getting-started/installation/">Installation</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgetting-startedfeatures" href="/docs/getting-started/features/">Features</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/manual/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">Manual</a>
+  </li>
+  <ul>
+    <li class="collapse show" id="docsmanual">
+      
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/manual/configuration/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Configuration</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docsmanualconfiguration">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsmanualconfigurationconfigure-simple-modifications" href="/docs/manual/configuration/configure-simple-modifications/">Change a key to another key</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsmanualconfigurationconfigure-complex-modifications" href="/docs/manual/configuration/configure-complex-modifications/">Use more complex rules</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsmanualconfigurationconfigure-devices" href="/docs/manual/configuration/configure-devices/">Choose devices</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsmanualconfigurationdisable-built-in-keyboard" href="/docs/manual/configuration/disable-built-in-keyboard/">Disable the built-in keyboard when external keyboard is connected</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsmanualconfigurationconfigure-keyboard-type" href="/docs/manual/configuration/configure-keyboard-type/">Set keyboard type</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/manual/operation/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">Operation</a>
+  </li>
+  <ul>
+    <li class="collapse show" id="docsmanualoperation">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsmanualoperationquit" href="/docs/manual/operation/quit/">How to quit</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsmanualoperationuninstall" href="/docs/manual/operation/uninstall/">Uninstall</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsmanualoperationcheck-for-updates" href="/docs/manual/operation/check-for-updates/">Check for updates</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsmanualoperationeventviewer" href="/docs/manual/operation/eventviewer/">How to confirm the result of configuration (EventViewer)</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page  active" id="m-docsmanualoperationprofiles" href="/docs/manual/operation/profiles/">Multiple profiles</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsmanualoperationlog" href="/docs/manual/operation/log/">Show log messages</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsmanualoperationexport" href="/docs/manual/operation/export/">Export and import configuration</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/manual/misc/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Misc</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docsmanualmisc">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsmanualmiscignored-temporarily" href="/docs/manual/misc/ignored-temporarily/">About &#34;Device is ignored temporarily&#34; alert</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsmanualmiscimplicit-behavior" href="/docs/manual/misc/implicit-behavior/">Implicit behavior</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsmanualmiscevent-modification-chaining" href="/docs/manual/misc/event-modification-chaining/">Input event modification chaining</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsmanualmiscmultitouch-extension" href="/docs/manual/misc/multitouch-extension/">MultitouchExtension</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsmanualmisccommand-line-interface" href="/docs/manual/misc/command-line-interface/">Command line interface</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsmanualmiscconfiguration-file-path" href="/docs/manual/misc/configuration-file-path/">The location of the configuration file</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/help/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Help</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docshelp">
+      
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/help/troubleshooting/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Troubleshooting</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docshelptroubleshooting">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docshelptroubleshootingkext-allow-button-does-not-work" href="/docs/help/troubleshooting/kext-allow-button-does-not-work/">Allow button on System Preferences &gt; Security &gt; Privacy does not work</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docshelptroubleshootingstopped-working-after-macos-update" href="/docs/help/troubleshooting/stopped-working-after-macos-update/">Karabiner-Elements stopped working after macOS update</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docshelptroubleshootingtouch-bar-function-keys" href="/docs/help/troubleshooting/touch-bar-function-keys/">Touch Bar does not change to f1-f12 when I press the fn key</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docshelptroubleshootingcontrol-eject" href="/docs/help/troubleshooting/control-eject/">Control-eject shortcut does not work when Karabiner-Elements is running</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docshelptroubleshootingjson-owner-is-invalid" href="/docs/help/troubleshooting/json-owner-is-invalid/">&#34;karabiner.json is not owned by a valid user&#34; error message in log</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/help/how-to/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">How to</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docshelphow-to">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docshelphow-tomouse-button" href="/docs/help/how-to/mouse-button/">How to change mouse buttons</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docshelphow-todisable-caps-lock-delay" href="/docs/help/how-to/disable-caps-lock-delay/">How to disable caps lock delay</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docshelphow-tokey-repeat" href="/docs/help/how-to/key-repeat/">How to adjust the key repeat rate</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/help/advanced-topics/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Advanced topics</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docshelpadvanced-topics">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docshelpadvanced-topicsinstalled-files" href="/docs/help/advanced-topics/installed-files/">Installed files</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docshelpadvanced-topicssecurity" href="/docs/help/advanced-topics/security/">Security</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docscontact" href="/docs/contact/">Contact</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsreleasenotes" href="/docs/releasenotes/">Release notes</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+  </nav>
+</div>
+
+
+
+
+          </div>
+          <div class="d-none d-xl-block col-xl-2 td-toc d-print-none">
+            
+
+
+
+
+
+
+
+
+
+
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#manage-profiles">Manage profiles</a></li>
+  </ul>
+</nav>
+
+
+
+          </div>
+          <main class="col-12 col-md-9 col-xl-8 pl-md-5" role="main">
+            
+  
+
+            <nav aria-label="breadcrumb" class="d-none d-md-block d-print-none">
+	<ol class="breadcrumb spb-1">
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="breadcrumb-item" >
+	<a href="/docs/">Documentation</a>
+</li>
+
+
+
+
+<li class="breadcrumb-item" >
+	<a href="/docs/manual/">Manual</a>
+</li>
+
+
+
+
+<li class="breadcrumb-item" >
+	<a href="/docs/manual/operation/">Operation</a>
+</li>
+
+
+
+
+<li class="breadcrumb-item active" aria-current="page">
+	<a href="/docs/manual/operation/profiles/">Multiple profiles</a>
+</li>
+
+	</ol>
+</nav	>
+
+            
+<div class="td-content">
+	<h1>Multiple profiles</h1>
+	
+	<p>You can switch profiles from menu bar. <br /></p>
+
+
+
+
+  
+
+
+<figure>
+  <img
+    src="/docs/manual/operation/profiles/images/karabiner-elements-menu-profiles@2x.png"
+    alt="karabiner-elements-menu-profiles@2x.png"
+    style="width: 384px"
+  />
+</figure>
+
+<h2 id="manage-profiles">Manage profiles</h2>
+<p>You can manage profiles from Profiles tab.<br />
+Press <strong>Add profile</strong> button to add new profile.</p>
+
+
+
+
+  
+
+
+<figure>
+  <img
+    src="/docs/manual/operation/profiles/images/karabiner-elements-profiles@2x.png"
+    alt="karabiner-elements-profiles@2x.png"
+    style="width: 900px"
+  />
+</figure>
+
+
+	
+	
+	<div class="text-muted mt-5 pt-3 border-top"></div>
+</div>
+
+
+          </main>
+        </div>
+      </div>
+      <footer class="bg-primary py-5 row d-print-none">
+  <div class="col-12 text-center py-2">
+    <a class="text-white" href="https://pqrs.org" target="_blank">
+      pqrs.org
+    </a>
+  </div>
+</footer>
+
+    </div>
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+<script src="/js/main.min.3587468abafd7ee678f61330f7c574ba0376f12451f11e076f2283f1e0504095.js" integrity="sha256-NYdGirr9fuZ49hMw98V0ugN28SRR8R4HbyKD8eBQQJU=" crossorigin="anonymous"></script>
+
+
+
+<script src="/js/share/pqrs.min.cc2e91ae9594616a05f9b9b53facba94f7d6d2afe7e1a24512991bac1e14268a.js"></script>
+
+
+  </body>
+</html>

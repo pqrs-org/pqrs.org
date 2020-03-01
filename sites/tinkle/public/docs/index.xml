@@ -1,0 +1,404 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tinkle – Documentation</title>
+    <link>/docs/</link>
+    <description>Recent content in Documentation on Tinkle</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="/docs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Getting Started</title>
+      <link>/docs/getting-started/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/getting-started/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;system-requirements&#34;&gt;System requirements&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;macOS Catalina (10.15) or later&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Download dmg file from &lt;a href=&#34;/&#34;&gt;here&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Open a downloaded dmg file.&lt;/li&gt;
+&lt;li&gt;Move Tinkle.app into Applications.
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/getting-started/images/install@2x.png&#34;
+    alt=&#34;install@2x.png&#34;
+    style=&#34;width: 660px&#34;
+  /&gt;
+&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;Open Tinkle from Launchpad.
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/getting-started/images/launchpad@2x.png&#34;
+    alt=&#34;launchpad@2x.png&#34;
+    style=&#34;width: 420px&#34;
+  /&gt;
+&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;Accessibility Access dialog will be shown.&lt;br /&gt;
+Click the &lt;code&gt;Open System Preferences&lt;/code&gt; button.&lt;br /&gt;
+(Tinkle uses the accessibility features in order to detect the focused window changes.)
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/getting-started/images/accessibility-access@2x.png&#34;
+    alt=&#34;accessibility-access@2x.png&#34;
+    style=&#34;width: 461px&#34;
+  /&gt;
+&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;Enable Tinkle on &lt;code&gt;System Preferences &amp;gt; Privacy &amp;gt; Accessibility&lt;/code&gt;.
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/getting-started/images/privacy@2x.png&#34;
+    alt=&#34;privacy@2x.png&#34;
+    style=&#34;width: 668px&#34;
+  /&gt;
+&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;Finished!&lt;br /&gt;
+A visual effect is shown when you change the focused window while Tinkle is running.&lt;br /&gt;
+&lt;img src=&#34;images/shockwave.gif&#34; width=&#34;200&#34; alt=&#34;shockwave&#34; /&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;whats-next&#34;&gt;What&amp;rsquo;s next?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;../configuration&#34;&gt;Configuration&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: How to quit Tinkle</title>
+      <link>/docs/help/quit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/help/quit/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Tinkle keeps running in the background even if you close the preferences window.&lt;br /&gt;
+To quit Tinkle, proceed as follows:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;../../configuration/open-preferences-window/&#34;&gt;Open preferences window&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Press &lt;code&gt;Quit Tinkle&lt;/code&gt; button.
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/help/quit/images/quit@2x.png&#34;
+    alt=&#34;quit@2x.png&#34;
+    style=&#34;width: 600px&#34;
+  /&gt;
+&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Open preferences window</title>
+      <link>/docs/configuration/open-preferences-window/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/configuration/open-preferences-window/</guid>
+      <description>
+        
+        
+        &lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Open Tinkle again from Launchpad while Tinkle is already running.
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/configuration/open-preferences-window/images/launchpad@2x.png&#34;
+    alt=&#34;launchpad@2x.png&#34;
+    style=&#34;width: 420px&#34;
+  /&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;The preferences window will be shown.
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/configuration/open-preferences-window/images/preferences@2x.png&#34;
+    alt=&#34;preferences@2x.png&#34;
+    style=&#34;width: 600px&#34;
+  /&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Effect configuration</title>
+      <link>/docs/configuration/effect-configuration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/configuration/effect-configuration/</guid>
+      <description>
+        
+        
+        &lt;p&gt;You can change the effect.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;../open-preferences-window/&#34;&gt;Open preferences window&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Choose the effect.
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/configuration/effect-configuration/images/effect@2x.png&#34;
+    alt=&#34;effect@2x.png&#34;
+    style=&#34;width: 600px&#34;
+  /&gt;
+&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;effects&#34;&gt;Effects&lt;/h2&gt;
+&lt;div class=&#34;d-flex&#34;&gt;
+    &lt;div class=&#34;mr-4 p-2 border&#34;&gt;
+        Shock wave (blue)&lt;br /&gt;
+        &lt;img src=&#34;images/shockwave.gif&#34; width=&#34;200&#34; alt=&#34;shockwave&#34; /&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;mr-4 p-2 border&#34;&gt;
+        Neon (blue)&lt;br /&gt;
+        &lt;img src=&#34;images/neon.gif&#34; width=&#34;200&#34; alt=&#34;neon&#34; /&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: How to uninstall Tinkle</title>
+      <link>/docs/help/uninstall/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/help/uninstall/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Remove Tinkle from your system as follows.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;/docs/help/quit/&#34;&gt;Quit Tinkle&lt;/a&gt; before uninstallaion.&lt;/li&gt;
+&lt;li&gt;Open &lt;code&gt;Applications&lt;/code&gt; folder in Finder, then move Tinkle to trash.
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/help/uninstall/images/uninstall@2x.png&#34;
+    alt=&#34;uninstall@2x.png&#34;
+    style=&#34;width: 647px&#34;
+  /&gt;
+&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Donwload older versions</title>
+      <link>/docs/help/donwload-older-versions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/help/donwload-older-versions/</guid>
+      <description>
+        
+        
+        &lt;p&gt;You can download older versions of Tinkle from &lt;a href=&#34;/docs/releasenotes/&#34;&gt;Release notes&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Open at login</title>
+      <link>/docs/configuration/open-at-login/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/configuration/open-at-login/</guid>
+      <description>
+        
+        
+        &lt;p&gt;You can launch Tinkle automaticaly at login.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;../open-preferences-window/&#34;&gt;Open preferences window&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Enable &lt;code&gt;Open at login&lt;/code&gt;.
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/configuration/open-at-login/images/open-at-login@2x.png&#34;
+    alt=&#34;open-at-login@2x.png&#34;
+    style=&#34;width: 600px&#34;
+  /&gt;
+&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Use beta version</title>
+      <link>/docs/help/use-beta/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/help/use-beta/</guid>
+      <description>
+        
+        
+        &lt;p&gt;You can install beta version from &lt;code&gt;Check for beta updates&lt;/code&gt; button on Misc tab.&lt;/p&gt;
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/help/use-beta/images/check-for-beta-updates@2x.png&#34;
+    alt=&#34;check-for-beta-updates@2x.png&#34;
+    style=&#34;width: 600px&#34;
+  /&gt;
+&lt;/figure&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Pricing</title>
+      <link>/docs/pricing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/pricing/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;img src=&#34;/images/pricing-free.svg&#34; alt=&#34;Free&#34; style=&#34;height: 2em&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Tinkle is an &lt;a href=&#34;https://github.com/pqrs-org/Tinkle/&#34;&gt;open source software&lt;/a&gt; and you can use it without any purchases.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Release notes</title>
+      <link>/docs/releasenotes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/releasenotes/</guid>
+      <description>
+        
+        
+        &lt;style&gt;
+.td-content img {
+    margin: 20px 0;
+    border: 1px solid $border-color;
+    border-radius: 10px;
+}
+.td-content &gt; ul &gt; li {
+    list-style-type: none;
+    font-weight: bold;
+}
+.td-content &gt; ul &gt; li &gt; ul {
+    font-weight: normal;
+}
+&lt;/style&gt;
+&lt;h2 id=&#34;tinkle-100&#34;&gt;Tinkle 1.0.0&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/pqrs-org/Tinkle/releases/download/v1.0.0/Tinkle-1.0.0.dmg&#34;&gt;📦 Download&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;📅 Release date
+&lt;ul&gt;
+&lt;li&gt;Feb 9, 2020&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;✨ New Features
+&lt;ul&gt;
+&lt;li&gt;First release.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

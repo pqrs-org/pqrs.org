@@ -1,0 +1,28 @@
+{{- $pages := (where .Site.Pages "Section" .Section).ByWeight -}}
+{{- $parent := .Page -}}
+
+{{- $targetPages := (slice) -}}
+{{- range $pages -}}
+    {{- if eq .Parent $parent -}}
+        {{- $targetPages = $targetPages | append . -}}
+    {{- end -}}
+{{- end -}}
+
+{{- if gt $targetPages 0 -}}
+    <div class="section-index">
+        {{- if $parent.Params.no_list -}}
+            {{/* If no_list is true we don't show a list of subpages */}}
+        {{- else if $parent.Params.simple_list -}}
+            {{/* If simple_list is true we show a bulleted list of subpages */}}
+            <ul>
+                {{- range $targetPages -}}
+                    <li>
+                        <a href="{{ .RelPermalink }}">{{- .Title -}}</a>
+                        {{/* Show nested pages */}}
+                        {{- partial "section-index.html" . -}}
+                    </li>
+                {{- end -}}
+            </ul>
+        {{- end -}}
+    </div>
+{{- end -}}

@@ -1,0 +1,222 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Disable DragAndDrop – Documentation</title>
+    <link>/docs/</link>
+    <description>Recent content in Documentation on Disable DragAndDrop</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="/docs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Disable this add-on temporarily</title>
+      <link>/docs/help/disable-temporarily/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/help/disable-temporarily/</guid>
+      <description>
+        
+        
+        &lt;ol&gt;
+&lt;li&gt;Open Add-ons Manager on Thunderbird.&lt;/li&gt;
+&lt;li&gt;Press Disable button.
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/help/disable-temporarily/images/disable-temporarily@2x.png&#34;
+    alt=&#34;disable-temporarily@2x.png&#34;
+    style=&#34;width: 953px&#34;
+  /&gt;
+&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;You can enable it again by pressing Enable button.&lt;/li&gt;
+&lt;/ol&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Pricing</title>
+      <link>/docs/pricing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/pricing/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;img src=&#34;/images/pricing-free.svg&#34; alt=&#34;Free&#34; style=&#34;height: 2em&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Disable DragAndDrop is an &lt;a href=&#34;https://github.com/pqrs-org/disable-draganddrop-tb/&#34;&gt;open source software&lt;/a&gt; and you can use it without any purchases.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Release notes</title>
+      <link>/docs/releasenotes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/releasenotes/</guid>
+      <description>
+        
+        
+        &lt;style&gt;
+.td-content img {
+    margin: 20px 0;
+    border: 1px solid $border-color;
+    border-radius: 10px;
+}
+.td-content &gt; ul &gt; li {
+    list-style-type: none;
+    font-weight: bold;
+}
+.td-content &gt; ul &gt; li &gt; ul {
+    font-weight: normal;
+}
+&lt;/style&gt;
+&lt;h2 id=&#34;disable-draganddrop-430&#34;&gt;Disable DragAndDrop 4.3.0&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;📅 Release date
+&lt;ul&gt;
+&lt;li&gt;Oct 25, 2019&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;⚡️ Improvements
+&lt;ul&gt;
+&lt;li&gt;Updated home page URL.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;disable-draganddrop-410&#34;&gt;Disable DragAndDrop 4.1.0&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;📅 Release date
+&lt;ul&gt;
+&lt;li&gt;Jul 7, 2019&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;⚡️ Improvements
+&lt;ul&gt;
+&lt;li&gt;Removed unused files from the package.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;disable-draganddrop-400&#34;&gt;Disable DragAndDrop 4.0.0&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;📅 Release date
+&lt;ul&gt;
+&lt;li&gt;Jul 6, 2019&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;⚡️ Improvements
+&lt;ul&gt;
+&lt;li&gt;Updated targetApplication to Thunderbird 68.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;disable-draganddrop-320&#34;&gt;Disable DragAndDrop 3.2.0&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;📅 Release date
+&lt;ul&gt;
+&lt;li&gt;May 29, 2018&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;⚡️ Improvements
+&lt;ul&gt;
+&lt;li&gt;Update targetApplication to Thunderbird 45-60.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;disable-draganddrop-310&#34;&gt;Disable DragAndDrop 3.1.0&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;📅 Release date
+&lt;ul&gt;
+&lt;li&gt;Dec 8, 2017&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;⚡️ Improvements
+&lt;ul&gt;
+&lt;li&gt;Update targetApplication to Thunderbird 45-58.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;disable-draganddrop-300&#34;&gt;Disable DragAndDrop 3.0.0&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;📅 Release date
+&lt;ul&gt;
+&lt;li&gt;Apr 28, 2016&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;⚡️ Improvements
+&lt;ul&gt;
+&lt;li&gt;Update for Thunderbird 45+.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;disable-draganddrop-210&#34;&gt;Disable DragAndDrop 2.1.0&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;📅 Release date
+&lt;ul&gt;
+&lt;li&gt;Jun 29, 2011&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;⚡️ Improvements
+&lt;ul&gt;
+&lt;li&gt;Update for Thunderbird 5+.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;disable-draganddrop-200&#34;&gt;Disable DragAndDrop 2.0.0&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;📅 Release date
+&lt;ul&gt;
+&lt;li&gt;Aug 14, 2010&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;⚡️ Improvements
+&lt;ul&gt;
+&lt;li&gt;Update for Thunderbird 3.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;disable-draganddrop-101&#34;&gt;Disable DragAndDrop 1.0.1&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;📅 Release date
+&lt;ul&gt;
+&lt;li&gt;Apr 12, 2007&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;⚡️ Improvements
+&lt;ul&gt;
+&lt;li&gt;Update for Thunderbird 2.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;disable-draganddrop-100&#34;&gt;Disable DragAndDrop 1.0.0&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;📅 Release date
+&lt;ul&gt;
+&lt;li&gt;Feb 28, 2007&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;✨ New Features
+&lt;ul&gt;
+&lt;li&gt;First release.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

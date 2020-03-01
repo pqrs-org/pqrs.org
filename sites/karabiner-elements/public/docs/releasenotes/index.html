@@ -1,0 +1,1343 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="generator" content="Hugo 0.65.3" />
+
+<META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+
+
+
+<link rel="shortcut icon" href="/favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
+
+<title>Release notes | Karabiner-Elements</title><meta property="og:title" content="Release notes" />
+<meta property="og:description" content=".td-content img { margin: 20px 0; border: 1px solid $border-color; border-radius: 10px; } .td-content  ul  li { list-style-type: none; font-weight: bold; } .td-content  ul  li  ul { font-weight: normal; }  Karabiner-Elements 12.9.0  📦 Download 📅 Release date  Jan 18, 2020   ✨ New Features  Open config folder button has been added into Preferences.
+The feature provides an easy way exporting configuration." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/docs/releasenotes/" />
+<meta property="og:image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
+<meta property="og:site_name" content="Karabiner-Elements" />
+<meta itemprop="name" content="Release notes">
+<meta itemprop="description" content=".td-content img { margin: 20px 0; border: 1px solid $border-color; border-radius: 10px; } .td-content  ul  li { list-style-type: none; font-weight: bold; } .td-content  ul  li  ul { font-weight: normal; }  Karabiner-Elements 12.9.0  📦 Download 📅 Release date  Jan 18, 2020   ✨ New Features  Open config folder button has been added into Preferences.
+The feature provides an easy way exporting configuration.">
+
+<meta itemprop="wordCount" content="1835">
+<meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
+
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
+
+<meta name="twitter:title" content="Release notes"/>
+<meta name="twitter:description" content=".td-content img { margin: 20px 0; border: 1px solid $border-color; border-radius: 10px; } .td-content  ul  li { list-style-type: none; font-weight: bold; } .td-content  ul  li  ul { font-weight: normal; }  Karabiner-Elements 12.9.0  📦 Download 📅 Release date  Jan 18, 2020   ✨ New Features  Open config folder button has been added into Preferences.
+The feature provides an easy way exporting configuration."/>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-56715024-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+
+
+
+<link rel="preload" href="/scss/main.min.d2322273188f337ba1f9241060181eb5318c07567dfaed791d4a41a5c7536ed7.css" as="style">
+<link href="/scss/main.min.d2322273188f337ba1f9241060181eb5318c07567dfaed791d4a41a5c7536ed7.css" rel="stylesheet" integrity="">
+
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+<script
+  src="https://unpkg.com/lunr@2.3.8/lunr.min.js"
+  integrity="sha384-vRQ9bDyE0Wnu+lMfm57BlYLO0/XauFuKpVsZPs7KEDwYKktWi5+Kz3MP8++DFlRY"
+  crossorigin="anonymous"></script>
+
+
+    <title>Release notes | Karabiner-Elements</title>
+  </head>
+  <body class="td-page">
+    <header>
+      
+<nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
+        <a class="navbar-brand" href="/">
+		<span class="navbar-logo"></span><span class="text-uppercase font-weight-bold">Karabiner-Elements</span>
+	</a>
+	<div class="td-navbar-nav-scroll ml-md-auto" id="main_navbar">
+		<ul class="navbar-nav mt-2 mt-lg-0">
+			
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a class="nav-link active" href="/docs/" ><span class="active">Documentation</span></a>
+			</li>
+			
+			
+			
+		</ul>
+	</div>
+	<div class="navbar-nav d-none d-lg-block">
+
+
+<input
+  type="search"
+  class="form-control td-search-input"
+  placeholder="&#xf002; Search this site…"
+  aria-label="Search this site…"
+  autocomplete="off"
+  
+  data-offline-search-index-json-src="/offline-search-index.e1e1dab7e20d42dd92b741c224772a085b202438409a0046c939b7d8808bbd608d6a73191bc261ad57c3c6a2924524ad5c07b775f1a55ce8d0ed4553d7de4a13.json"
+  data-offline-search-base-href="/"
+>
+
+</div>
+</nav>
+
+    </header>
+    <div class="container-fluid td-outer">
+      <div class="td-main">
+        <div class="row flex-xl-nowrap">
+          <div class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
+            
+
+
+
+
+<div id="td-sidebar-menu" class="td-sidebar__inner">
+  
+  <form class="td-sidebar__search d-flex align-items-center">
+    
+
+
+<input
+  type="search"
+  class="form-control td-search-input"
+  placeholder="&#xf002; Search this site…"
+  aria-label="Search this site…"
+  autocomplete="off"
+  
+  data-offline-search-index-json-src="/offline-search-index.e1e1dab7e20d42dd92b741c224772a085b202438409a0046c939b7d8808bbd608d6a73191bc261ad57c3c6a2924524ad5c07b775f1a55ce8d0ed4553d7de4a13.json"
+  data-offline-search-base-href="/"
+>
+
+
+    <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ml-3 fas fa-bars" type="button" data-toggle="collapse" data-target="#td-section-nav" aria-controls="td-docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    </button>
+  </form>
+  
+  <nav class="collapse td-sidebar-nav pt-2 pl-4" id="td-section-nav">
+    
+    
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">Documentation</a>
+  </li>
+  <ul>
+    <li class="collapse show" id="docs">
+      
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/getting-started/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Getting started</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docsgetting-started">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgetting-startedinstallation" href="/docs/getting-started/installation/">Installation</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgetting-startedfeatures" href="/docs/getting-started/features/">Features</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/manual/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Manual</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docsmanual">
+      
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/manual/configuration/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Configuration</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docsmanualconfiguration">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsmanualconfigurationconfigure-simple-modifications" href="/docs/manual/configuration/configure-simple-modifications/">Change a key to another key</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsmanualconfigurationconfigure-complex-modifications" href="/docs/manual/configuration/configure-complex-modifications/">Use more complex rules</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsmanualconfigurationconfigure-devices" href="/docs/manual/configuration/configure-devices/">Choose devices</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsmanualconfigurationdisable-built-in-keyboard" href="/docs/manual/configuration/disable-built-in-keyboard/">Disable the built-in keyboard when external keyboard is connected</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsmanualconfigurationconfigure-keyboard-type" href="/docs/manual/configuration/configure-keyboard-type/">Set keyboard type</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/manual/operation/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Operation</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docsmanualoperation">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsmanualoperationquit" href="/docs/manual/operation/quit/">How to quit</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsmanualoperationuninstall" href="/docs/manual/operation/uninstall/">Uninstall</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsmanualoperationcheck-for-updates" href="/docs/manual/operation/check-for-updates/">Check for updates</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsmanualoperationeventviewer" href="/docs/manual/operation/eventviewer/">How to confirm the result of configuration (EventViewer)</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsmanualoperationprofiles" href="/docs/manual/operation/profiles/">Multiple profiles</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsmanualoperationlog" href="/docs/manual/operation/log/">Show log messages</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsmanualoperationexport" href="/docs/manual/operation/export/">Export and import configuration</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/manual/misc/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Misc</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docsmanualmisc">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsmanualmiscignored-temporarily" href="/docs/manual/misc/ignored-temporarily/">About &#34;Device is ignored temporarily&#34; alert</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsmanualmiscimplicit-behavior" href="/docs/manual/misc/implicit-behavior/">Implicit behavior</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsmanualmiscevent-modification-chaining" href="/docs/manual/misc/event-modification-chaining/">Input event modification chaining</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsmanualmiscmultitouch-extension" href="/docs/manual/misc/multitouch-extension/">MultitouchExtension</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsmanualmisccommand-line-interface" href="/docs/manual/misc/command-line-interface/">Command line interface</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsmanualmiscconfiguration-file-path" href="/docs/manual/misc/configuration-file-path/">The location of the configuration file</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/help/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Help</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docshelp">
+      
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/help/troubleshooting/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Troubleshooting</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docshelptroubleshooting">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docshelptroubleshootingkext-allow-button-does-not-work" href="/docs/help/troubleshooting/kext-allow-button-does-not-work/">Allow button on System Preferences &gt; Security &gt; Privacy does not work</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docshelptroubleshootingstopped-working-after-macos-update" href="/docs/help/troubleshooting/stopped-working-after-macos-update/">Karabiner-Elements stopped working after macOS update</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docshelptroubleshootingtouch-bar-function-keys" href="/docs/help/troubleshooting/touch-bar-function-keys/">Touch Bar does not change to f1-f12 when I press the fn key</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docshelptroubleshootingcontrol-eject" href="/docs/help/troubleshooting/control-eject/">Control-eject shortcut does not work when Karabiner-Elements is running</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docshelptroubleshootingjson-owner-is-invalid" href="/docs/help/troubleshooting/json-owner-is-invalid/">&#34;karabiner.json is not owned by a valid user&#34; error message in log</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/help/how-to/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">How to</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docshelphow-to">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docshelphow-tomouse-button" href="/docs/help/how-to/mouse-button/">How to change mouse buttons</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docshelphow-todisable-caps-lock-delay" href="/docs/help/how-to/disable-caps-lock-delay/">How to disable caps lock delay</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docshelphow-tokey-repeat" href="/docs/help/how-to/key-repeat/">How to adjust the key repeat rate</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/help/advanced-topics/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Advanced topics</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docshelpadvanced-topics">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docshelpadvanced-topicsinstalled-files" href="/docs/help/advanced-topics/installed-files/">Installed files</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docshelpadvanced-topicssecurity" href="/docs/help/advanced-topics/security/">Security</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docscontact" href="/docs/contact/">Contact</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page  active" id="m-docsreleasenotes" href="/docs/releasenotes/">Release notes</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+  </nav>
+</div>
+
+
+
+
+          </div>
+          <div class="d-none d-xl-block col-xl-2 td-toc d-print-none">
+            
+
+
+
+
+
+
+
+
+
+
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#karabiner-elements-1290">Karabiner-Elements 12.9.0</a></li>
+    <li><a href="#karabiner-elements-1280">Karabiner-Elements 12.8.0</a></li>
+    <li><a href="#karabiner-elements-1270">Karabiner-Elements 12.7.0</a></li>
+    <li><a href="#karabiner-elements-1260">Karabiner-Elements 12.6.0</a></li>
+    <li><a href="#karabiner-elements-1250">Karabiner-Elements 12.5.0</a></li>
+    <li><a href="#karabiner-elements-1240">Karabiner-Elements 12.4.0</a></li>
+    <li><a href="#karabiner-elements-1230">Karabiner-Elements 12.3.0</a></li>
+    <li><a href="#karabiner-elements-1220">Karabiner-Elements 12.2.0</a></li>
+    <li><a href="#karabiner-elements-1210">Karabiner-Elements 12.1.0</a></li>
+    <li><a href="#karabiner-elements-1200">Karabiner-Elements 12.0.0</a></li>
+    <li><a href="#karabiner-elements-1160">Karabiner-Elements 11.6.0</a></li>
+    <li><a href="#karabiner-elements-1150">Karabiner-Elements 11.5.0</a></li>
+    <li><a href="#karabiner-elements-1140">Karabiner-Elements 11.4.0</a></li>
+    <li><a href="#karabiner-elements-1130">Karabiner-Elements 11.3.0</a></li>
+    <li><a href="#karabiner-elements-1120">Karabiner-Elements 11.2.0</a></li>
+    <li><a href="#karabiner-elements-1110">Karabiner-Elements 11.1.0</a></li>
+    <li><a href="#karabiner-elements-1100">Karabiner-Elements 11.0.0</a></li>
+    <li><a href="#karabiner-10220">Karabiner 10.22.0</a></li>
+    <li><a href="#karabiner-10210">Karabiner 10.21.0</a></li>
+    <li><a href="#karabiner-10200">Karabiner 10.20.0</a></li>
+    <li><a href="#karabiner-10190">Karabiner 10.19.0</a></li>
+  </ul>
+</nav>
+
+
+
+          </div>
+          <main class="col-12 col-md-9 col-xl-8 pl-md-5" role="main">
+            
+  
+
+            <nav aria-label="breadcrumb" class="d-none d-md-block d-print-none">
+	<ol class="breadcrumb spb-1">
+		
+
+
+
+
+
+
+
+<li class="breadcrumb-item" >
+	<a href="/docs/">Documentation</a>
+</li>
+
+
+
+
+<li class="breadcrumb-item active" aria-current="page">
+	<a href="/docs/releasenotes/">Release notes</a>
+</li>
+
+	</ol>
+</nav	>
+
+            
+<div class="td-content">
+	<h1>Release notes</h1>
+	
+	<style>
+.td-content img {
+    margin: 20px 0;
+    border: 1px solid $border-color;
+    border-radius: 10px;
+}
+.td-content > ul > li {
+    list-style-type: none;
+    font-weight: bold;
+}
+.td-content > ul > li > ul {
+    font-weight: normal;
+}
+</style>
+<h2 id="karabiner-elements-1290">Karabiner-Elements 12.9.0</h2>
+<ul>
+<li><a href="https://github.com/pqrs-org/Karabiner-Elements/releases/download/v12.9.0/Karabiner-Elements-12.9.0.dmg">📦 Download</a></li>
+<li>📅 Release date
+<ul>
+<li>Jan 18, 2020</li>
+</ul>
+</li>
+<li>✨ New Features
+<ul>
+<li><code>Open config folder</code> button has been added into Preferences.<br>
+The feature provides <a href="https://pqrs.org/osx/karabiner/document.html#export">an easy way exporting configuration</a>.</li>
+</ul>
+</li>
+<li>⚡️ Improvements
+<ul>
+<li>Added a workaround for non-dismissible <code>Device is ignored temporarily</code> alert
+which is caused by some devices that sends abnormal input events.</li>
+</ul>
+</li>
+<li>🐛 Bug Fixes
+<ul>
+<li>Fixed <code>Add {key_code} to Karabiner-Elements</code> button on EventViewer for unnamed keys (raw number key codes).</li>
+<li>Fixed an issue that modifier flag events are not dispatched when changing pointing button while other character keys are pressed.
+(e.g., when changing pointing_button::button3 -&gt; command+pointing_button::button1, command modifier is not sent when button1 is pressed while <code>t</code> key is also pressed.)</li>
+</ul>
+</li>
+</ul>
+<h2 id="karabiner-elements-1280">Karabiner-Elements 12.8.0</h2>
+<ul>
+<li><a href="https://github.com/pqrs-org/Karabiner-Elements/releases/download/v12.8.0/Karabiner-Elements-12.8.0.dmg">📦 Download</a></li>
+<li>📅 Release date
+<ul>
+<li>Nov 17, 2019</li>
+</ul>
+</li>
+<li>✨ New Features
+<ul>
+<li>Add <code>--show-current-profile-name</code> option into <code>karabiner_cli</code>.</li>
+<li>Add <code>--list-profile-names</code> option into <code>karabiner_cli</code>.</li>
+</ul>
+</li>
+<li>🐛 Bug Fixes
+<ul>
+<li>Fixed an issue that Karabiner-Elements stops working after switching user on macOS Catalina.</li>
+<li>Fixed an issue that Caps Lock LED is always manipulated even <code>Manipulate LED</code> setting is off.</li>
+<li>Fixed an issue that MultitouchExtension does not handle ignored area properly when a finger is touched ignored area repeatedly.</li>
+</ul>
+</li>
+</ul>
+<h2 id="karabiner-elements-1270">Karabiner-Elements 12.7.0</h2>
+<ul>
+<li><a href="https://github.com/pqrs-org/Karabiner-Elements/releases/download/v12.7.0/Karabiner-Elements-12.7.0.dmg">📦 Download</a></li>
+<li>📅 Release date
+<ul>
+<li>Sep 12, 2019</li>
+</ul>
+</li>
+<li>✨ New Features
+<ul>
+<li>MultitouchExtension app has been added.
+<ul>
+<li>Documentation:
+<ul>
+<li><a href="https://pqrs.org/osx/karabiner/document.html#multitouch-extension">Usage</a></li>
+<li><a href="https://pqrs.org/osx/karabiner/json.html#multitouch-extension">How to integrate MultitouchExtension to your complex modifications</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Dark Mode has been supported.</li>
+<li>Added <code>--set-variables</code> option into <code>karabiner_cli</code>.</li>
+</ul>
+</li>
+<li>🐛 Bug Fixes
+<ul>
+<li>Fixed an issue that Karabiner-Elements might stop working after sleep on macOS Catalina.</li>
+</ul>
+</li>
+</ul>
+<h2 id="karabiner-elements-1260">Karabiner-Elements 12.6.0</h2>
+<ul>
+<li><a href="https://github.com/pqrs-org/Karabiner-Elements/releases/download/v12.6.0/Karabiner-Elements-12.6.0.dmg">📦 Download</a></li>
+<li>📅 Release date
+<ul>
+<li>Aug 16, 2019</li>
+</ul>
+</li>
+<li>✨ New Features
+<ul>
+<li>Support macOS Catalina.<br/>
+(You need <a href="https://pqrs.org/osx/karabiner/document.html#usage-catalina">an extra configuration</a> on macOS Catalina.)</li>
+</ul>
+</li>
+<li>🐛 Bug Fixes
+<ul>
+<li>Fixed an issue that Karabiner-Elements fails to grab a device in rare cases.</li>
+</ul>
+</li>
+<li>⚡️ Improvements
+<ul>
+<li>Introduced karabiner_kextd.
+(kext loading function was separated from karabiner_grabber.)</li>
+<li>Improved EventViewer to show modifier flags of key events.</li>
+<li>Suppressed unnecessary log messages.</li>
+</ul>
+</li>
+</ul>
+<h2 id="karabiner-elements-1250">Karabiner-Elements 12.5.0</h2>
+<ul>
+<li><a href="https://github.com/pqrs-org/Karabiner-Elements/releases/download/v12.5.0/Karabiner-Elements-12.5.0.dmg">📦 Download</a></li>
+<li>📅 Release date
+<ul>
+<li>Jun 10, 2019</li>
+</ul>
+</li>
+<li>✨ New Features
+<ul>
+<li>Add <code>Delay before open device</code> configuration into <code>Karabiner-Elements Preferences &gt; Devices &gt; Advanced</code> tab.</li>
+<li>Added <code>Show key code in hexadecimal format</code> option into EventViewer.</li>
+</ul>
+</li>
+<li>🐛 Bug Fixes
+<ul>
+<li>Fixed a key stuck issue which occurs when the key is released,
+and at the exact same moment Karabiner-Elements opens the device.</li>
+<li>Fixed an issue which Karabiner-Elements mistakes a remote user for a current console user
+if another user is logged in from Screen Sharing while console is used.</li>
+</ul>
+</li>
+<li>⚡️ Improvements
+<ul>
+<li>Improved <code>XXX is ignored temporarily until YYY is pressed again</code> behavior.</li>
+<li>Move <code>Disable the built-in keyboard while one of the following selected devices is connected</code> configuration
+into <code>Karabiner-Elements Preferences &gt; Devices &gt; Advanced</code> tab.</li>
+</ul>
+</li>
+</ul>
+<h2 id="karabiner-elements-1240">Karabiner-Elements 12.4.0</h2>
+<ul>
+<li><a href="https://github.com/pqrs-org/Karabiner-Elements/releases/download/v12.4.0/Karabiner-Elements-12.4.0.dmg">📦 Download</a></li>
+<li>📅 Release date
+<ul>
+<li>May 14, 2019</li>
+</ul>
+</li>
+<li>✨ New Features
+<ul>
+<li>Add <code>Mouse Key XY speed</code> configuration into <code>Karabiner-Elements Preferences &gt; Virtual Keyboard</code> tab.</li>
+<li><code>Device is ignored temporarily</code> alert has been introduced.<br/>
+This alert will be shown if you hold keys or buttons down before Karabiner-Elements opens the device.<br/>
+Please press the described key or button again to dismiss the alert.<br/>
+<img src="https://pqrs.org/osx/karabiner/img/news/v12.4.0_0.png" alt="alert" style="width: 420px" /></li>
+</ul>
+</li>
+<li>🐛 Bug Fixes
+<ul>
+<li>Fixed a key stuck issue which occurs when the key is held down before Karabiner-Elements opens the device.</li>
+</ul>
+</li>
+<li>⚡️ Improvements
+<ul>
+<li>Event code format on EventViewer changed to decimal number from hex.</li>
+</ul>
+</li>
+</ul>
+<h2 id="karabiner-elements-1230">Karabiner-Elements 12.3.0</h2>
+<ul>
+<li><a href="https://github.com/pqrs-org/Karabiner-Elements/releases/download/v12.3.0/Karabiner-Elements-12.3.0.dmg">📦 Download</a></li>
+<li>📅 Release date
+<ul>
+<li>Apr 24, 2019</li>
+</ul>
+</li>
+<li>💥 Breaking changes
+<ul>
+<li>complex modifications json will be checked strictly since this release.<br/>
+Please check <a href="https://pqrs.org/osx/karabiner/json.html#location">error messages</a> if your complex modifications do not work after upgrade.</li>
+</ul>
+</li>
+<li>✨ New Features
+<ul>
+<li>Added <a href="https://ke-complex-modifications.pqrs.org/#mouse_motion_to_scroll">Change mouse motion to scroll</a> feature.<br/>
+<ul>
+<li>Note: You have to enable your mice on <a href="https://pqrs.org/osx/karabiner/document.html#configuration-devices">Devices tab</a> when you want to use this feature.</li>
+</ul>
+</li>
+<li>Added <code>--lint-complex-modifications</code> option into <code>karabiner_cli</code>.
+It allows you checks a complex-modifications json file.</li>
+</ul>
+</li>
+<li>⚡️ Improvements
+<ul>
+<li>Set Karabiner-Elements.app and Karabiner-EventViewer.app immutable
+in order to ensure unremovable them except built-in uninstaller.
+Please use the <a href="https://pqrs.org/osx/karabiner/document.html#uninstall">uninstaller</a> when you want to remove Karabiner-Elements.</li>
+<li>Added a wait before grabbing device in order to avoid an macOS issue that device will be unusable after Karabiner-Elements is quit.</li>
+<li>Changes for users who write their own json.
+<ul>
+<li><code>to</code> and <code>to_*</code> support single object, e.g., <code>&quot;to&quot;: { &quot;key_code&quot;: &quot;spacebar&quot; }</code>.</li>
+<li>New modifier aliases are added: <code>left_alt</code>, <code>left_gui</code>, <code>right_alt</code>, <code>right_gui</code>.</li>
+<li><code>key_code</code>, <code>consumer_key_code</code> and <code>pointing_button</code> supports a number value, e.g., <code>&quot;from&quot;: {&quot;key_code&quot;: 175}</code>.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="karabiner-elements-1220">Karabiner-Elements 12.2.0</h2>
+<ul>
+<li><a href="https://github.com/pqrs-org/Karabiner-Elements/releases/download/v12.2.0/Karabiner-Elements-12.2.0.dmg">📦 Download</a></li>
+<li>📅 Release date
+<ul>
+<li>Feb 1, 2019</li>
+</ul>
+</li>
+<li>✨ New Features
+<ul>
+<li>Karabiner-Elements makes a backup file of karabiner.json before updating it if the backup file does not exists.
+(~/.config/karabiner/automatic_backups/karabiner_YYYYMMDD.json)</li>
+</ul>
+</li>
+<li>🐛 Bug Fixes
+<ul>
+<li>Fixed an issue that Caps Lock LED does not work on macOS Mojave.</li>
+</ul>
+</li>
+<li>⚡️ Improvements
+<ul>
+<li><code>shell_command</code> string max length has been expanded. (256 byte -&gt; 32 KB)</li>
+<li>A device grabbing process has been improved. (Observing device state by a separated <code>karabiner_observer</code> process.)</li>
+<li>The event processing has been improved and the latency has been reduced by using <a href="https://github.com/pqrs-org/cpp-dispatcher">pqrs::dispatcher</a>.</li>
+</ul>
+</li>
+</ul>
+<h2 id="karabiner-elements-1210">Karabiner-Elements 12.1.0</h2>
+<ul>
+<li><a href="https://github.com/pqrs-org/Karabiner-Elements/releases/download/v12.1.0/Karabiner-Elements-12.1.0.dmg">📦 Download</a></li>
+<li>📅 Release date
+<ul>
+<li>May 30, 2018</li>
+</ul>
+</li>
+<li>💥 Breaking changes
+<ul>
+<li>Changed the order of <code>to_if_alone</code> and <code>to_after_key_up</code> event handling.<br />
+<code>to_if_alone</code> will be handled before <code>to_after_key_up</code>.</li>
+</ul>
+</li>
+<li>✨ New Features
+<ul>
+<li>Added new items into <code>simultaneous_options</code>:
+<ul>
+<li><code>simultaneous_options.detect_key_down_uninterruptedly</code></li>
+<li><code>simultaneous_options.key_up_when</code></li>
+</ul>
+</li>
+<li>Added new parameters into <code>to event definition</code>:
+<ul>
+<li><code>hold_down_milliseconds</code></li>
+<li><code>halt</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>🐛 Bug Fixes
+<ul>
+<li>Fixed an issue that random key repeat happen at extremely high system CPU usage.</li>
+</ul>
+</li>
+<li>⚡️ Improvements
+<ul>
+<li>Increased rollover limit of virtual keyboard. (6 -&gt; 32)<br />
+This change mainly improves usability when you are using multiple keyboards at the same time.</li>
+<li>Improved modifier flags handling in <code>to_after_key_up</code> and <code>to_if_alone</code>.</li>
+</ul>
+</li>
+</ul>
+<h2 id="karabiner-elements-1200">Karabiner-Elements 12.0.0</h2>
+<ul>
+<li><a href="https://github.com/pqrs-org/Karabiner-Elements/releases/download/v12.0.0/Karabiner-Elements-12.0.0.dmg">📦 Download</a></li>
+<li>📅 Release date
+<ul>
+<li>Apr 12, 2018</li>
+</ul>
+</li>
+<li>💥 Breaking changes
+<ul>
+<li>macOS 10.11 support has been dropped.<br />
+Karabiner-Elements works on macOS 10.12 (Sierra) or later.</li>
+<li><code>Keyboard type</code> in the virtual keyboard preferences has been removed. (Adverse effect of virtual keyboard improvement.)<br />
+Please change the keyboard type from <code>System Preferences &gt; Keyboard &gt; Change Keyboard Type...</code>.
+<img src="https://pqrs.org/osx/karabiner/img/news/v12.0.0_0.png" alt="Keyboard Preferences" style="width: 668px" /></li>
+<li><code>Caps Lock Delay</code> in the virtual keyboard preferences has been removed. (Adverse effect of virtual keyboard improvement.)</li>
+<li>Changed <code>simultaneous</code> behaviour to post key_up events when any key is released.</li>
+<li>Changed <code>to_after_key_up</code> and <code>to_if_alone</code> behaviour as mandatory modifiers are removed from these events.</li>
+</ul>
+</li>
+<li>✨ New Features
+<ul>
+<li>Added <code>simultaneous_options.key_down_order</code>, <code>simultaneous_options.key_up_order</code> and <code>simultaneous_options.to_after_key_up</code>.</li>
+</ul>
+</li>
+<li>🐛 Bug Fixes
+<ul>
+<li>Fixed an issue that <code>to_if_alone</code>, <code>to_if_held_down</code> and <code>to_delayed_action</code> does not work properly with <code>simultaneous</code>.</li>
+</ul>
+</li>
+<li>⚡️ Improvements
+<ul>
+<li>The virtual keyboard compatibility has been improved.</li>
+<li>EventViewer has been improved showing the correct key name for PC keyboard keys and international keys.</li>
+<li>Improved keyboard repeat handling with <code>simultaneous</code>.</li>
+</ul>
+</li>
+</ul>
+<h2 id="karabiner-elements-1160">Karabiner-Elements 11.6.0</h2>
+<ul>
+<li><a href="https://github.com/pqrs-org/Karabiner-Elements/releases/download/v11.6.0/Karabiner-Elements-11.6.0.dmg">📦 Download</a></li>
+<li>📅 Release date
+<ul>
+<li>Feb 20, 2018</li>
+</ul>
+</li>
+<li>✨ New Features
+<ul>
+<li>Simultaneous key presses has been supported in complex modifications.
+<ul>
+<li><a href="https://pqrs.org/osx/karabiner/json.html#typical-complex_modifications-examples-simultaneous-equal-delete-to-forward-delete">json example</a></li>
+<li><a href="https://pqrs.org/osx/karabiner/json.html#simultaneous">Document</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>⚡️ Improvements
+<ul>
+<li>Improved Mouse key scroll wheel direction referring <code>System Preferences &gt; Mouse &gt; Scroll direction</code>.</li>
+<li>Improved modifier flags handling around pointing button manipulations.</li>
+<li>Mouse keys have been added into Simple Modifications.
+<img src="https://pqrs.org/osx/karabiner/img/news/v11.6.0_0.png" alt="mouse keys in Simple Modifications" style="width: 1000px" /></li>
+<li>The eject key has been added into the from key of Simple Modifications.</li>
+<li>The Vendor ID and Product ID of virtual devices has been changed. (0x0,0x0 -&gt; 0x16c0,0x27db and 0x16c0,0x27da)</li>
+</ul>
+</li>
+</ul>
+<h2 id="karabiner-elements-1150">Karabiner-Elements 11.5.0</h2>
+<ul>
+<li><a href="https://github.com/pqrs-org/Karabiner-Elements/releases/download/v11.5.0/Karabiner-Elements-11.5.0.dmg">📦 Download</a></li>
+<li>📅 Release date
+<ul>
+<li>Dec 30, 2017</li>
+</ul>
+</li>
+<li>✨ New Features
+<ul>
+<li><code>to_if_held_down</code> has been added.
+<ul>
+<li>Examples:
+<ul>
+<li><a href="https://pqrs.org/osx/karabiner/json.html#typical-complex_modifications-examples-open-alfred-when-escape-is-held-down">Open Alfred 3 if escape is held down</a></li>
+<li><a href="https://ke-complex-modifications.pqrs.org/#command_q">Quit application by holding command-q</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>🐛 Bug Fixes
+<ul>
+<li>Avoided a VMware Remote Console issue that mouse pointer does not work properly on VMRC when Karabiner-Elements grabs the pointing device.</li>
+<li>Fixed an issue that <code>to_if_alone</code> does not work properly when <code>to</code> is empty.</li>
+</ul>
+</li>
+<li>⚡️ Improvements
+<ul>
+<li>Improved modifier flags handling in <code>to events</code>.</li>
+<li>Improved a way to save karabiner.json.</li>
+</ul>
+</li>
+</ul>
+<h2 id="karabiner-elements-1140">Karabiner-Elements 11.4.0</h2>
+<ul>
+<li><a href="https://github.com/pqrs-org/Karabiner-Elements/releases/download/v11.4.0/Karabiner-Elements-11.4.0.dmg">📦 Download</a></li>
+<li>📅 Release date
+<ul>
+<li>Dec 7, 2017</li>
+</ul>
+</li>
+<li>✨ New Features
+<ul>
+<li><code>mouse_key</code> has been added.
+<ul>
+<li>Examples:
+<ul>
+<li>Mouse keys (simple):
+<a href="https://github.com/pqrs-org/KE-complex_modifications/blob/master/docs/json/mouse_keys_simple.json">json</a>
+<a href="https://github.com/pqrs-org/KE-complex_modifications/blob/master/src/json/mouse_keys_simple.json.erb">(src)</a></li>
+<li>Mouse keys (full)
+<a href="https://github.com/pqrs-org/KE-complex_modifications/blob/master/docs/json/mouse_keys_full.json">json</a>
+<a href="https://github.com/pqrs-org/KE-complex_modifications/blob/master/src/json/mouse_keys_full.json.erb">(src)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>location_id</code> has been added to <code>device_if</code> and <code>device_unless</code>.</li>
+</ul>
+</li>
+<li>🐛 Bug Fixes
+<ul>
+<li>Fixed an issue that the checkbox in <code>Preferences &gt; Devices</code> is disabled for keyboards which do not have their own vendor id.</li>
+</ul>
+</li>
+</ul>
+<h2 id="karabiner-elements-1130">Karabiner-Elements 11.3.0</h2>
+<ul>
+<li><a href="https://github.com/pqrs-org/Karabiner-Elements/releases/download/v11.3.0/Karabiner-Elements-11.3.0.dmg">📦 Download</a></li>
+<li>📅 Release date
+<ul>
+<li>Nov 12, 2017</li>
+</ul>
+</li>
+<li>🐛 Bug Fixes
+<ul>
+<li>Fixed an issue that Karabiner-11.2.0 does not work properly on some environments due to a possibility of macOS kernel extension cache problem.</li>
+</ul>
+</li>
+</ul>
+<h2 id="karabiner-elements-1120">Karabiner-Elements 11.2.0</h2>
+<ul>
+<li><a href="https://github.com/pqrs-org/Karabiner-Elements/releases/download/v11.2.0/Karabiner-Elements-11.2.0.dmg">📦 Download</a></li>
+<li>📅 Release date
+<ul>
+<li>Nov 9, 2017</li>
+</ul>
+</li>
+<li>✨ New Features
+<ul>
+<li>Mouse button modifications has been added.<br />
+Note:
+<ul>
+<li>You have to enable your Mouse manually in Preferences &gt; Devices tab.</li>
+<li>Karabiner-Elements cannot modify Apple&rsquo;s pointing devices.</li>
+</ul>
+</li>
+<li><code>to_delayed_action</code> has been added.
+<ul>
+<li>Examples:
+<ul>
+<li>Quit application by pressing command-q twice
+<a href="https://github.com/pqrs-org/KE-complex_modifications/blob/master/docs/json/command_q.json">json</a>
+<a href="https://github.com/pqrs-org/KE-complex_modifications/blob/master/src/json/command_q.json.erb">(src)</a></li>
+<li>Emacs key bindings (C-x key strokes)
+<a href="https://github.com/pqrs-org/KE-complex_modifications/blob/master/docs/json/emacs_key_bindings.json">json</a>
+<a href="https://github.com/pqrs-org/KE-complex_modifications/blob/master/src/json/emacs_key_bindings.json.rb">(src)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>input_source_if</code> and <code>input_source_unless</code> has been added to <code>conditions</code>.
+<ul>
+<li><a href="https://pqrs.org/osx/karabiner/json.html#condition-definition-input-source">Document</a></li>
+<li>Example:
+<ul>
+<li><a href="https://github.com/pqrs-org/KE-complex_modifications/blob/master/docs/json/example_input_source.json">example_input_source.json</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>select_input_source</code> has been added.
+<ul>
+<li><a href="https://pqrs.org/osx/karabiner/json.html#to-event-definition">Document</a></li>
+<li>Example:
+<ul>
+<li><a href="https://github.com/pqrs-org/KE-complex_modifications/blob/master/docs/json/example_select_input_source.json">example_select_input_source.json</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>keyboard_type_if</code> and <code>keyboard_type_unless</code> has been added to <code>conditions</code>.
+<ul>
+<li>Example
+<ul>
+<li>Change control-[ to escape
+<a href="https://github.com/pqrs-org/KE-complex_modifications/blob/master/docs/json/example_keyboard_type.json">json</a>
+<a href="https://github.com/pqrs-org/KE-complex_modifications/blob/master/src/json/example_keyboard_type.json.erb">(src)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>The caps lock LED manipulation has been disabled with non Apple keyboards until it is enabled manually.
+<img src="https://pqrs.org/osx/karabiner/img/news/v11.1.16_0.png" alt="has caps lock led" style="width: 1000px" /></li>
+</ul>
+</li>
+<li>⚡️ Improvements
+<ul>
+<li>The virtual keyboard handling has been improved.</li>
+</ul>
+</li>
+</ul>
+<h2 id="karabiner-elements-1110">Karabiner-Elements 11.1.0</h2>
+<ul>
+<li><a href="https://github.com/pqrs-org/Karabiner-Elements/releases/download/v11.1.0/Karabiner-Elements-11.1.0.dmg">📦 Download</a></li>
+<li>📅 Release date
+<ul>
+<li>Oct 4, 2017</li>
+</ul>
+</li>
+<li>🐛 Bug Fixes
+<ul>
+<li>Fixed an issue that modifier flags becomes improperly state by mouse events.</li>
+</ul>
+</li>
+</ul>
+<h2 id="karabiner-elements-1100">Karabiner-Elements 11.0.0</h2>
+<ul>
+<li><a href="https://github.com/pqrs-org/Karabiner-Elements/releases/download/v11.0.0/Karabiner-Elements-11.0.0.dmg">📦 Download</a></li>
+<li>📅 Release date
+<ul>
+<li>Sep 18, 2017</li>
+</ul>
+</li>
+<li>✨ New Features
+<ul>
+<li>The first stable release of Karabiner-Elements.</li>
+</ul>
+</li>
+</ul>
+<h2 id="karabiner-10220">Karabiner 10.22.0</h2>
+<ul>
+<li><a href="/files/Karabiner-10.22.0.dmg">📦 Download</a></li>
+<li>📅 Release date
+<ul>
+<li>Oct 31, 2016</li>
+</ul>
+</li>
+<li>🐛 Bug Fixes
+<ul>
+<li>Fixed an issue that some Qt apps might be crash when AXNotifier is enabled. (VirtualBox, LyX, Wireshark)</li>
+</ul>
+</li>
+<li>⚡️ Improvements
+<ul>
+<li>Default setting of AXNotifier has been changed. (Enabled in Microsoft Office)</li>
+<li>Prepared settings have been updated.</li>
+</ul>
+</li>
+</ul>
+<h2 id="karabiner-10210">Karabiner 10.21.0</h2>
+<ul>
+<li><a href="/files/Karabiner-10.21.0.dmg">📦 Download</a></li>
+<li>📅 Release date
+<ul>
+<li>Jul 5, 2016</li>
+</ul>
+</li>
+<li>🐛 Bug Fixes
+<ul>
+<li>Fixed an issue that the initial key repeat rate of Karabiner will be set the slower value if you have not changed the key repeat rate in System Preferences.</li>
+<li>Fixed an issue that Karabiner does not save preferences properly in an edge case.</li>
+</ul>
+</li>
+<li>⚡️ Improvements
+<ul>
+<li>Prepared settings have been updated.</li>
+</ul>
+</li>
+</ul>
+<h2 id="karabiner-10200">Karabiner 10.20.0</h2>
+<ul>
+<li><a href="/files/Karabiner-10.20.0.dmg">📦 Download</a></li>
+<li>📅 Release date
+<ul>
+<li>Jun 16, 2016</li>
+</ul>
+</li>
+<li>✨ New Features
+<ul>
+<li><code>Option::FLIPSCROLLWHEEL_HORIZONTAL</code> and <code>Option::FLIPSCROLLWHEEL_VERTICAL</code> have been supported in <code>__PointingRelativeToScroll__</code>.</li>
+</ul>
+</li>
+<li>🐛 Bug Fixes
+<ul>
+<li>Fixed an issue that Remote Desktop detection will be failed in some cases.</li>
+<li>Fixed an issue that input source switching settings does not work in some environments.</li>
+</ul>
+</li>
+</ul>
+<h2 id="karabiner-10190">Karabiner 10.19.0</h2>
+<ul>
+<li><a href="/files/Karabiner-10.19.0.dmg">📦 Download</a></li>
+<li>📅 Release date
+<ul>
+<li>Jun 9, 2016</li>
+</ul>
+</li>
+<li>💥 Breaking changes
+<ul>
+<li>The multi-touch extension default configuration has been changed.<br/>
+If you are using ThumbSense, please enable ThumbSense setting manually in multi-touch extension preferences.</li>
+</ul>
+</li>
+<li>✨ New Features
+<ul>
+<li><code>Use modifier symbols (⌘⌃⌥⇧⇪) in place of the modifier names</code> has been added into Karabiner Preferences &gt; Status Message tab.</li>
+<li><code>&lt;bundleidentifieroverridedef&gt;</code> has been introduced.</li>
+<li><code>Option::KEYTOKEY_DELAYED_ACTION_MILLISECONDS</code> has been added.</li>
+<li>The following filters have been added.
+<ul>
+<li><code>&lt;deviceexists_not&gt;</code></li>
+<li><code>&lt;deviceexists_only&gt;</code></li>
+</ul>
+</li>
+<li>The following environment variables has been added into replacementdef.
+<ul>
+<li><code>{{ ENV_Select_the_previous_input_source_shortcut }}</code></li>
+<li><code>{{ ENV_Select_next_source_in_input_menu_shortcut }}</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>🐛 Bug Fixes
+<ul>
+<li>Fixed an issue that the argument treatment in <code>warp-mouse-cursor-position</code> utility is wrong.<br/>
+These adjustment values for <code>screen</code> and <code>front_window</code> were exchanged.
+For example, the vertical adjustment value for <code>screen</code> and <code>front_window</code> is used in horizontal adjustment.</li>
+<li>Fixed an issue that some Java apps might be crash when AXNotifier is enabled. (SAP GUI for Java)</li>
+<li>Fixed an issue that ModifierFlag pattern matching of <code>Option::KEYTOKEY_AFTER_KEYUP</code> in <code>__KeyOverlaidModifier__</code> and <code>__HoldingKeyToKey__</code> does not work property in some cases.</li>
+</ul>
+</li>
+<li>⚡️ Improvements
+<ul>
+<li>The device disconnect handling has been improved.</li>
+<li>Prepared settings have been updated.</li>
+</ul>
+</li>
+</ul>
+
+	
+	
+	<div class="text-muted mt-5 pt-3 border-top"></div>
+</div>
+
+
+          </main>
+        </div>
+      </div>
+      <footer class="bg-primary py-5 row d-print-none">
+  <div class="col-12 text-center py-2">
+    <a class="text-white" href="https://pqrs.org" target="_blank">
+      pqrs.org
+    </a>
+  </div>
+</footer>
+
+    </div>
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+<script src="/js/main.min.3587468abafd7ee678f61330f7c574ba0376f12451f11e076f2283f1e0504095.js" integrity="sha256-NYdGirr9fuZ49hMw98V0ugN28SRR8R4HbyKD8eBQQJU=" crossorigin="anonymous"></script>
+
+
+
+<script src="/js/share/pqrs.min.cc2e91ae9594616a05f9b9b53facba94f7d6d2afe7e1a24512991bac1e14268a.js"></script>
+
+
+  </body>
+</html>

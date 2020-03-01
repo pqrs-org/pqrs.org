@@ -1,0 +1,248 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ShowyEdge – Configuration</title>
+    <link>/docs/configuration/</link>
+    <description>Recent content in Configuration on ShowyEdge</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="/docs/configuration/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Open preferences window</title>
+      <link>/docs/configuration/open-preferences-window/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/configuration/open-preferences-window/</guid>
+      <description>
+        
+        
+        &lt;ol&gt;
+&lt;li&gt;Open ShowyEdge from Launchpad. The preferences window will be shown.
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/configuration/open-preferences-window/images/launchpad@2x.png&#34;
+    alt=&#34;launchpad@2x.png&#34;
+    style=&#34;width: 595px&#34;
+  /&gt;
+&lt;/figure&gt;
+
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/configuration/open-preferences-window/images/preferences@2x.png&#34;
+    alt=&#34;preferences@2x.png&#34;
+    style=&#34;width: 640px&#34;
+  /&gt;
+&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Input source color configuration</title>
+      <link>/docs/configuration/color-configuration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/configuration/color-configuration/</guid>
+      <description>
+        
+        
+        &lt;p&gt;You can change indicator colors of input sources.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;../open-preferences-window/&#34;&gt;Open preferences window&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Press &lt;code&gt;Add custom color&lt;/code&gt; button on Preferences.
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/configuration/color-configuration/images/add-color@2x.png&#34;
+    alt=&#34;add-color@2x.png&#34;
+    style=&#34;width: 640px&#34;
+  /&gt;
+&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;Change colors.
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/configuration/color-configuration/images/change-color@2x.png&#34;
+    alt=&#34;change-color@2x.png&#34;
+    style=&#34;width: 640px&#34;
+  /&gt;
+&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Indicator size configuration</title>
+      <link>/docs/configuration/indicator-size-configuration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/configuration/indicator-size-configuration/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;basic&#34;&gt;Basic&lt;/h2&gt;
+&lt;p&gt;You can change the indicator height.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;../open-preferences-window/&#34;&gt;Open preferences window&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Adjust height.
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/configuration/indicator-size-configuration/images/indicator-height@2x.png&#34;
+    alt=&#34;indicator-height@2x.png&#34;
+    style=&#34;width: 640px&#34;
+  /&gt;
+&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;advanced&#34;&gt;Advanced&lt;/h2&gt;
+&lt;p&gt;You can put the indicator by custom size and origin.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;../open-preferences-window/&#34;&gt;Open preferences window&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Open &lt;code&gt;Advanced&lt;/code&gt; tab, then enable &lt;code&gt;Use custom frame&lt;/code&gt;, and then adjust the indicator size and origin.
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/configuration/indicator-size-configuration/images/indicator-size@2x.png&#34;
+    alt=&#34;indicator-size@2x.png&#34;
+    style=&#34;width: 640px&#34;
+  /&gt;
+&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;tips&#34;&gt;Tips&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;You can specify size by pixel or percentage of screen.
+&lt;ul&gt;
+&lt;li&gt;(e.g., width = 100%, height = 20px)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Choose &lt;code&gt;lower-left&lt;/code&gt; from origin options if you want to put indicator to the bottom of screen.&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Indicator options</title>
+      <link>/docs/configuration/indicator-options/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/configuration/indicator-options/</guid>
+      <description>
+        
+        
+        &lt;ul&gt;
+&lt;li&gt;Hide indicator when full screen&lt;/li&gt;
+&lt;li&gt;Show indicator behind app windows
+&lt;ul&gt;
+&lt;li&gt;This option is useful with &lt;a href=&#34;/docs/configuration/indicator-size-configuration/#advanced&#34;&gt;custom frame&lt;/a&gt;.&lt;br/&gt;
+You can use the Desktop background as an indicator.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/configuration/indicator-options/images/indicator-options@2x.png&#34;
+    alt=&#34;indicator-options@2x.png&#34;
+    style=&#34;width: 640px&#34;
+  /&gt;
+&lt;/figure&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Resume configuration</title>
+      <link>/docs/configuration/resume-configuration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/configuration/resume-configuration/</guid>
+      <description>
+        
+        
+        &lt;p&gt;ShowyEdge will be automatically started at login by default.&lt;br&gt;
+Follow instructions if you want to disable the feature.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;../open-preferences-window/&#34;&gt;Open preferences window&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Open &lt;code&gt;Advanced&lt;/code&gt; tab, then enable &lt;code&gt;Resume at login&lt;/code&gt;.
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/configuration/resume-configuration/images/resume-at-login@2x.png&#34;
+    alt=&#34;resume-at-login@2x.png&#34;
+    style=&#34;width: 640px&#34;
+  /&gt;
+&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Karabiner-Elements Changelog</title>
+    <link>https://karabiner-elements.pqrs.org/files/karabiner-elements-appcast-devel.xml</link>
+    <description>Most recent changes with links to updates.</description>
+    <language>en</language>
+
+    <item>
+      <title>Version 12.9.2</title>
+      <sparkle:minimumSystemVersion>10.12.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+<h2>About v12.9.2 Update</h2>
+<ul>
+<li>✨ New Features
+
+<ul>
+<li><code>event_changed_if</code> and <code>event_changed_unless</code> has been added to <code>conditions</code>.</li>
+</ul></li>
+<li>⚡️ Improvements
+
+<ul>
+<li>Improved sending f1-f12 keys in complex modification (e.g., &ldquo;change command+e to f2&rdquo;) by ignoring media key mappings for these keys.</li>
+<li>Improved uninstaller adding the kernel extension staging area clean up.</li>
+</ul></li>
+</ul>
+<p>
+  <a href="https://pqrs.org/osx/karabiner/history.html">More</a>
+</p>
+]]>
+      </description>
+      <pubDate>Tue, 18 Feb 2020 05:14:54 -0000</pubDate>
+      <enclosure url="https://github.com/pqrs-org/Karabiner-Elements/releases/download/beta/Karabiner-Elements-12.9.2.dmg"
+                 sparkle:version="12.9.2" length="8823850" type="application/octet-stream"
+                 sparkle:dsaSignature="MC0CFQDSkod/siJxP9kTP7+N0+KpOP8ZXwIUSXdx9FQTuU5QqpZtBdi5yRwUS5k="
+      />
+    </item>
+
+  </channel>
+</rss>

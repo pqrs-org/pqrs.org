@@ -1,0 +1,143 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tinkle – Configuration</title>
+    <link>/docs/configuration/</link>
+    <description>Recent content in Configuration on Tinkle</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="/docs/configuration/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Open preferences window</title>
+      <link>/docs/configuration/open-preferences-window/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/configuration/open-preferences-window/</guid>
+      <description>
+        
+        
+        &lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Open Tinkle again from Launchpad while Tinkle is already running.
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/configuration/open-preferences-window/images/launchpad@2x.png&#34;
+    alt=&#34;launchpad@2x.png&#34;
+    style=&#34;width: 420px&#34;
+  /&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;The preferences window will be shown.
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/configuration/open-preferences-window/images/preferences@2x.png&#34;
+    alt=&#34;preferences@2x.png&#34;
+    style=&#34;width: 600px&#34;
+  /&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Effect configuration</title>
+      <link>/docs/configuration/effect-configuration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/configuration/effect-configuration/</guid>
+      <description>
+        
+        
+        &lt;p&gt;You can change the effect.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;../open-preferences-window/&#34;&gt;Open preferences window&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Choose the effect.
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/configuration/effect-configuration/images/effect@2x.png&#34;
+    alt=&#34;effect@2x.png&#34;
+    style=&#34;width: 600px&#34;
+  /&gt;
+&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;effects&#34;&gt;Effects&lt;/h2&gt;
+&lt;div class=&#34;d-flex&#34;&gt;
+    &lt;div class=&#34;mr-4 p-2 border&#34;&gt;
+        Shock wave (blue)&lt;br /&gt;
+        &lt;img src=&#34;images/shockwave.gif&#34; width=&#34;200&#34; alt=&#34;shockwave&#34; /&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;mr-4 p-2 border&#34;&gt;
+        Neon (blue)&lt;br /&gt;
+        &lt;img src=&#34;images/neon.gif&#34; width=&#34;200&#34; alt=&#34;neon&#34; /&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Open at login</title>
+      <link>/docs/configuration/open-at-login/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/configuration/open-at-login/</guid>
+      <description>
+        
+        
+        &lt;p&gt;You can launch Tinkle automaticaly at login.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;../open-preferences-window/&#34;&gt;Open preferences window&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Enable &lt;code&gt;Open at login&lt;/code&gt;.
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/configuration/open-at-login/images/open-at-login@2x.png&#34;
+    alt=&#34;open-at-login@2x.png&#34;
+    style=&#34;width: 600px&#34;
+  /&gt;
+&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,2409 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Karabiner-Elements – Documentation</title>
+    <link>/docs/</link>
+    <description>Recent content in Documentation on Karabiner-Elements</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="/docs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: About &#34;Device is ignored temporarily&#34; alert</title>
+      <link>/docs/manual/misc/ignored-temporarily/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/manual/misc/ignored-temporarily/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&amp;ldquo;Device is ignored temporarily&amp;rdquo; alert will be shown in any of the following cases:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;If you hold keys or buttons down before Karabiner-Elements open the device.&lt;/li&gt;
+&lt;li&gt;Your device sends unintented key up events regardless you do not touch the keys.&lt;br /&gt;
+(e.g., Swiftpoint ProPoint sends key up events of the music play key periodically.)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Press the described key or button again to dismiss the alert.&lt;/p&gt;
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/manual/misc/ignored-temporarily/images/karabiner-elements-notification-window@2x.png&#34;
+    alt=&#34;karabiner-elements-notification-window@2x.png&#34;
+    style=&#34;width: 419px&#34;
+  /&gt;
+&lt;/figure&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Allow button on System Preferences &gt; Security &gt; Privacy does not work</title>
+      <link>/docs/help/troubleshooting/kext-allow-button-does-not-work/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/help/troubleshooting/kext-allow-button-does-not-work/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The allow button on System Preferences &amp;gt; Security &amp;gt; Privacy should be hidden after you click it.&lt;br/&gt;
+If the button does not hide after click, you did not succeed to click it.&lt;/p&gt;
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/help/troubleshooting/kext-allow-button-does-not-work/images/system-preferences-security-and-privacy@2x.png&#34;
+    alt=&#34;system-preferences-security-and-privacy@2x.png&#34;
+    style=&#34;width: 668px&#34;
+  /&gt;
+&lt;/figure&gt;
+
+&lt;h2 id=&#34;reason&#34;&gt;Reason&lt;/h2&gt;
+&lt;p&gt;It&amp;rsquo;s because macOS blocks the click if you are using an app which intercepts mouse events.&lt;br/&gt;
+You have to quit them before pressing the allow button.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Apps which prevent the click:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Google Chrome&lt;/li&gt;
+&lt;li&gt;Dropbox&lt;/li&gt;
+&lt;li&gt;MagicPrefs&lt;/li&gt;
+&lt;li&gt;SteerMouse&lt;/li&gt;
+&lt;li&gt;Witch&lt;/li&gt;
+&lt;li&gt;Sonos Desktop Controller for Mac&lt;/li&gt;
+&lt;li&gt;If you are using macOS from remote via Screen Sharing, you cannot click the allow button.&lt;/li&gt;
+&lt;li&gt;etc.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;find-what-app-prevents-the-click&#34;&gt;Find what app prevents the click&lt;/h3&gt;
+&lt;p&gt;You can find apps which prevents the click if you are using macOS Mojave or later.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Choose Privacy tab on System Preferences &amp;gt; Security &amp;gt; Privacy.
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/help/troubleshooting/kext-allow-button-does-not-work/images/system-preferences-security-and-privacy-general@2x.png&#34;
+    alt=&#34;system-preferences-security-and-privacy-general@2x.png&#34;
+    style=&#34;width: 668px&#34;
+  /&gt;
+&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;Choose Accessibility.&lt;br/&gt;
+The enabled apps in the list prevent the click. You have to close these apps.
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/help/troubleshooting/kext-allow-button-does-not-work/images/system-preferences-security-and-privacy-accessibility@2x.png&#34;
+    alt=&#34;system-preferences-security-and-privacy-accessibility@2x.png&#34;
+    style=&#34;width: 668px&#34;
+  /&gt;
+&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;other-workarounds&#34;&gt;Other workarounds&lt;/h3&gt;
+&lt;p&gt;There are other workarounds if you cannot find apps that intercept mouse events.&lt;/p&gt;
+&lt;h4 id=&#34;click-allow-button-via-keyboard-operation&#34;&gt;Click Allow button via keyboard operation&lt;/h4&gt;
+&lt;p&gt;You can press Allow button via keyboard operation.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Change Full Keyboard Access configuration.
+&lt;ol&gt;
+&lt;li&gt;Open System Preferences &amp;gt; Keyboard &amp;gt; Shortcuts.&lt;/li&gt;
+&lt;li&gt;Change Full Keyboard Access configuration to All controls.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;Click Allow button.
+&lt;ol&gt;
+&lt;li&gt;Open System Preferences &amp;gt; Security &amp;gt; Privacy.&lt;/li&gt;
+&lt;li&gt;Move focus to Allow button by using tab or shift+tab key.&lt;/li&gt;
+&lt;li&gt;Press spacebar on Allow button.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;using-safe-mode&#34;&gt;Using safe mode&lt;/h4&gt;
+&lt;p&gt;You can press Allow button by starting your Mac in safe mode since any extra apps which prevent clicking the Allow button is not launched automatically in safe mode.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Download &lt;a href=&#34;/&#34;&gt;Karabiner-Elements&lt;/a&gt; before restarting your Mac.&lt;/li&gt;
+&lt;li&gt;Restart your Mac in safe mode by &lt;a href=&#34;https://support.apple.com/en-us/HT201262&#34;&gt;press and hold the shift key at boot&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Reinstall Karabiner-Elements from downloaded file.&lt;/li&gt;
+&lt;li&gt;Open System Preferences and confirm the Allow button is shown.&lt;br/&gt;
+If the Allow button is hidden, close System Preferences and open it again.&lt;/li&gt;
+&lt;li&gt;Click the Allow button.&lt;/li&gt;
+&lt;li&gt;Restart your Mac and boot in normal mode.&lt;/li&gt;
+&lt;/ol&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Change a key to another key</title>
+      <link>/docs/manual/configuration/configure-simple-modifications/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/manual/configuration/configure-simple-modifications/</guid>
+      <description>
+        
+        
+        &lt;p&gt;You can change a key to another key on &lt;strong&gt;Simple Modifications&lt;/strong&gt; tab.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Choose target device, then press Add item button.
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/manual/configuration/configure-simple-modifications/images/karabiner-elements-simple-modifications-1@2x.png&#34;
+    alt=&#34;karabiner-elements-simple-modifications-1@2x.png&#34;
+    style=&#34;width: 900px&#34;
+  /&gt;
+&lt;/figure&gt;
+
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/manual/configuration/configure-simple-modifications/images/karabiner-elements-simple-modifications-2@2x.png&#34;
+    alt=&#34;karabiner-elements-simple-modifications-2@2x.png&#34;
+    style=&#34;width: 900px&#34;
+  /&gt;
+&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;Select &lt;strong&gt;From key&lt;/strong&gt; and &lt;strong&gt;To key&lt;/strong&gt;.
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/manual/configuration/configure-simple-modifications/images/karabiner-elements-simple-modifications-3@2x.png&#34;
+    alt=&#34;karabiner-elements-simple-modifications-3@2x.png&#34;
+    style=&#34;width: 900px&#34;
+  /&gt;
+&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;Confirm the result using &lt;a href=&#34;/docs/manual/operation/eventviewer/&#34;&gt;Karabiner-EventViewer&lt;/a&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Tip&lt;/h4&gt;
+You can find the key name by &lt;a href=&#34;/docs/manual/operation/eventviewer/&#34;&gt;Karabiner-EventViewer&lt;/a&gt;.&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/manual/configuration/configure-simple-modifications/images/karabiner-elements-eventviewer-name@2x.png&#34;
+    alt=&#34;karabiner-elements-eventviewer-name@2x.png&#34;
+    style=&#34;width: 874px&#34;
+  /&gt;
+&lt;/figure&gt;
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: How to change mouse buttons</title>
+      <link>/docs/help/how-to/mouse-button/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/help/how-to/mouse-button/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Karabiner-Elements does not modify mouse devices by default.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;You have to enable your mouse on Karabiner-Elements Preferences &amp;gt; Devices.
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/help/how-to/mouse-button/images/karabiner-elements-mouse-button-devices@2x.png&#34;
+    alt=&#34;karabiner-elements-mouse-button-devices@2x.png&#34;
+    style=&#34;width: 1000px&#34;
+  /&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Then, use Simple Modifications to assign a key to a button or
+use &lt;a href=&#34;https://ke-complex-modifications.pqrs.org/#mouse_button&#34;&gt;Complex Modifications&lt;/a&gt; for more advanced usage.
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/help/how-to/mouse-button/images/karabiner-elements-mouse-button-simple-modifications@2x.png&#34;
+    alt=&#34;karabiner-elements-mouse-button-simple-modifications@2x.png&#34;
+    style=&#34;width: 1000px&#34;
+  /&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: How to quit</title>
+      <link>/docs/manual/operation/quit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/manual/operation/quit/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Quit from menu bar or Misc tab on Preferences.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/manual/operation/quit/images/karabiner-elements-menu-quit@2x.png&#34;
+    alt=&#34;karabiner-elements-menu-quit@2x.png&#34;
+    style=&#34;width: 441px&#34;
+  /&gt;
+&lt;/figure&gt;
+
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/manual/operation/quit/images/karabiner-elements-quit@2x.png&#34;
+    alt=&#34;karabiner-elements-quit@2x.png&#34;
+    style=&#34;width: 900px&#34;
+  /&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Installation</title>
+      <link>/docs/getting-started/installation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/getting-started/installation/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Some operations are required to grant properly permission from macOS to Karabiner-Elements.
+Follow this instruction to set up Karabiner-Elements.&lt;/p&gt;
+&lt;h2 id=&#34;install-karabiner-elements&#34;&gt;Install Karabiner-Elements&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Open the downloaded file.
+&lt;img src=&#34;images/dmg-icon@2x.png&#34; alt=&#34;dmg&#34; width=&#34;64&#34; /&gt;&lt;/li&gt;
+&lt;li&gt;Open a pkg file.
+&lt;img src=&#34;images/pkg-icon@2x.png&#34; alt=&#34;pkg&#34; width=&#34;64&#34; /&gt;&lt;/li&gt;
+&lt;li&gt;The installer will be opened. Install Karabiner-Elements.
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/getting-started/installation/images/installer@2x.png&#34;
+    alt=&#34;installer@2x.png&#34;
+    style=&#34;width: 620px&#34;
+  /&gt;
+&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;open-karabiner-elements-preferences&#34;&gt;Open Karabiner-Elements Preferences&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Open Karabiner-Elements from Launchpad.
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/getting-started/installation/images/karabiner-elements-icon@2x.png&#34;
+    alt=&#34;karabiner-elements-icon@2x.png&#34;
+    style=&#34;width: 184px&#34;
+  /&gt;
+&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;allow-using-kext-which-provides-virtual-devices-for-karabiner-elements&#34;&gt;Allow using kext which provides virtual devices for Karabiner-Elements&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;An alert about kext policy will be shown since macOS High Sierra when you open Karabiner-Elements Preferences.&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;Open System Preferences &amp;gt; Security &amp;amp; Privacy&lt;/strong&gt; button, then press &lt;strong&gt;Allow&lt;/strong&gt; button.
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/getting-started/installation/images/high-sierra-kext-policy@2x.png&#34;
+    alt=&#34;high-sierra-kext-policy@2x.png&#34;
+    style=&#34;width: 1000px&#34;
+  /&gt;
+&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
+Please follow &lt;a href=&#34;../../help/troubleshooting/kext-allow-button-does-not-work/&#34;&gt;this instruction&lt;/a&gt; if there are any problem about the &lt;strong&gt;Allow&lt;/strong&gt; button.
+&lt;/div&gt;
+
+&lt;h2 id=&#34;grant-input-monitoring-to-karabiner-elements-processes&#34;&gt;Grant Input Monitoring to Karabiner-Elements processes&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Two Keystroke Receiving&lt;/strong&gt; alerts will be shown on macOS Catalina or later after you allow the kernel extension.&lt;/li&gt;
+&lt;li&gt;Press &lt;strong&gt;Open System Preferences&lt;/strong&gt; button on both alerts.
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/getting-started/installation/images/catalina-karabiner-grabber@2x.png&#34;
+    alt=&#34;catalina-karabiner-grabber@2x.png&#34;
+    style=&#34;width: 461px&#34;
+  /&gt;
+&lt;/figure&gt;
+
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/getting-started/installation/images/catalina-karabiner-observer@2x.png&#34;
+    alt=&#34;catalina-karabiner-observer@2x.png&#34;
+    style=&#34;width: 461px&#34;
+  /&gt;
+&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;System Preferences will be open after you press the Open System Preferences button.&lt;br/&gt;
+Choose &lt;strong&gt;Privacy &amp;gt; Input Monitoring&lt;/strong&gt;, and then enable &lt;strong&gt;karabiner_grabber&lt;/strong&gt; and &lt;strong&gt;karabiner_observer&lt;/strong&gt;. &lt;br /&gt;
+(You have to unlock configuration by the left bottom icon.)
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/getting-started/installation/images/catalina-input-monitoring@2x.png&#34;
+    alt=&#34;catalina-input-monitoring@2x.png&#34;
+    style=&#34;width: 668px&#34;
+  /&gt;
+&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;setup-your-keyboard-layout&#34;&gt;Setup your keyboard layout&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Keyboard Setup Assistant will be opened.&lt;br/&gt;
+Choose your keyboard layout. (ANSI, ISO or JIS)
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/getting-started/installation/images/keyboard-setup-assistant@2x.png&#34;
+    alt=&#34;keyboard-setup-assistant@2x.png&#34;
+    style=&#34;width: 616px&#34;
+  /&gt;
+&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;configure-karabiner-elements&#34;&gt;Configure Karabiner-Elements&lt;/h2&gt;
+&lt;p&gt;Enjoy keyboard configuration!&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;../../manual/configuration/&#34;&gt;Configuration manual&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Installed files</title>
+      <link>/docs/help/advanced-topics/installed-files/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/help/advanced-topics/installed-files/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Karabiner-Elements installs files into the following locations.&lt;/p&gt;
+&lt;h2 id=&#34;system-files&#34;&gt;System files&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;/Applications/Karabiner-Elements.app
+/Applications/Karabiner-EventViewer.app
+/Library/Application Support/org.pqrs/Karabiner-Elements
+/Library/Application Support/org.pqrs/Karabiner-VirtualHIDDevice
+/Library/Application Support/org.pqrs/config
+/Library/Application Support/org.pqrs/tmp
+/Library/LaunchDaemons/org.pqrs.karabiner.karabiner_grabber.plist
+/Library/LaunchDaemons/org.pqrs.karabiner.karabiner_kextd.plist
+/Library/LaunchDaemons/org.pqrs.karabiner.karabiner_observer.plist
+/Library/LaunchAgents/org.pqrs.karabiner.agent.karabiner_grabber.plist
+/Library/LaunchAgents/org.pqrs.karabiner.agent.karabiner_observer.plist
+/Library/LaunchAgents/org.pqrs.karabiner.karabiner_console_user_server.plist
+/Library/LaunchAgents/org.pqrs.karabiner.karabiner_session_monitor.plist
+/var/log/karabiner
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;user-files&#34;&gt;User files&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;~/.config/karabiner
+~/.local/share/karabiner
+~/Library/Preferences/org.pqrs.Karabiner-Elements.Preferences.plist
+~/Library/Preferences/org.pqrs.Karabiner-Elements.Updater.plist
+~/Library/Preferences/org.pqrs.Karabiner-EventViewer.plist
+~/Library/Preferences/org.pqrs.Karabiner-Menu.plist
+~/Library/Preferences/org.pqrs.Karabiner-MultitouchExtension.plist
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Warning&lt;/h4&gt;
+If you want to remove Karabiner-Elements, you have to use &lt;a href=&#34;/docs/manual/operation/uninstall&#34;&gt;uninstaller&lt;/a&gt;.
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Features</title>
+      <link>/docs/getting-started/features/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/getting-started/features/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Karabiner-Elements is a powerful and stable keyboard customizer for macOS.&lt;/p&gt;
+&lt;h2 id=&#34;core-features&#34;&gt;Core features&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Simple Modifications&lt;/strong&gt;: Change normal keys to other keys.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Complex Modifications&lt;/strong&gt;: Change keys by complex rules.
+&lt;ul&gt;
+&lt;li&gt;Change a key to combination of modifiers. (e.g. change capslock to control+command)&lt;/li&gt;
+&lt;li&gt;Change modifiers+key to key. (e.g. change control+m to return)&lt;/li&gt;
+&lt;li&gt;Send key events if a key is pressed alone.&lt;/li&gt;
+&lt;li&gt;Send key events if keys are pressed simultaneously.&lt;/li&gt;
+&lt;li&gt;Mouse keys.&lt;/li&gt;
+&lt;li&gt;etc.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Function Keys&lt;/strong&gt;: Change f1-f12 keys to media controls.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Devices&lt;/strong&gt;: Apply modifications to specified keyboards only.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Profiles&lt;/strong&gt;: Support multiple profiles.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Modifier Flag Sync&lt;/strong&gt;: Synchronize modifier flags across all connected keyboards.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Secure Keyboard Entry Support&lt;/strong&gt;: Work well on Secure Keyboard Entry environment such as a password prompt, terminal with Secure Keyboard Entry, etc.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;current-limitations&#34;&gt;Current limitations&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Karabiner-Elements cannot modify the eject key on some keyboard (e.g., Apple Wired Keyboard) due to the limitation of macOS API.&lt;/li&gt;
+&lt;li&gt;Karabiner-Elements cannot modify the fn key on non-Apple keyboards such as Logitech keyboards.&lt;/li&gt;
+&lt;li&gt;Karabiner-Elements ignores the &lt;code&gt;System Preferences &amp;gt; Keyboard &amp;gt; Modifier Keys...&lt;/code&gt; configuration.&lt;br/&gt;
+Change modifiers by using Simple Modifications.
+&lt;a href=&#34;../../manual/misc/event-modification-chaining/&#34;&gt;(Detail of input event modification chaining)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: How to disable caps lock delay</title>
+      <link>/docs/help/how-to/disable-caps-lock-delay/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/help/how-to/disable-caps-lock-delay/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Enable &lt;strong&gt;Disable caps_lock delay&lt;/strong&gt; setting from Complex Modification.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Import &lt;a href=&#34;https://ke-complex-modifications.pqrs.org/#caps_lock&#34;&gt;Change caps_lock key&lt;/a&gt; setting.&lt;/li&gt;
+&lt;li&gt;Enable &lt;strong&gt;Disable caps_lock delay&lt;/strong&gt;.
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/help/how-to/disable-caps-lock-delay/images/karabiner-elements-disable-caps-lock-delay@2x.png&#34;
+    alt=&#34;karabiner-elements-disable-caps-lock-delay@2x.png&#34;
+    style=&#34;width: 1000px&#34;
+  /&gt;
+&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
+&lt;p&gt;Actually, this setting does not disable the caps lock delay of macOS.&lt;/p&gt;
+&lt;p&gt;This setting puts a wait between caps lock key down and key up event
+in order to ensure macOS recognize the caps lock event.&lt;/p&gt;
+
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Implicit behavior</title>
+      <link>/docs/manual/misc/implicit-behavior/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/manual/misc/implicit-behavior/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Karabiner-Elements modifies following behavior automatically without any configurations:&lt;/p&gt;
+&lt;h2 id=&#34;share-state-of-modifier-keys-with-all-connected-keyboards&#34;&gt;Share state of modifier keys with all connected keyboards&lt;/h2&gt;
+&lt;p&gt;When you are using multiple keyboards, modifier keys are shared with all keyboards.&lt;/p&gt;
+&lt;p&gt;For example, pressing &amp;ldquo;shift key on keyboard1&amp;rdquo; and &amp;ldquo;space key on keyboard2&amp;rdquo; sends shift-space.&lt;/p&gt;
+&lt;h2 id=&#34;add-fn-key-combinations&#34;&gt;Add fn-key combinations&lt;/h2&gt;
+&lt;p&gt;Karabiner adds fn-key combinations:&lt;/p&gt;
+&lt;h3 id=&#34;fn-arrow-keys&#34;&gt;fn-arrow keys&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Key combination&lt;/th&gt;
+&lt;th&gt;Result&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;fn-up arrow&lt;/td&gt;
+&lt;td&gt;page up&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;fn-down arrow&lt;/td&gt;
+&lt;td&gt;page down&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;fn-left arrow&lt;/td&gt;
+&lt;td&gt;home&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;fn-right arrow&lt;/td&gt;
+&lt;td&gt;end&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;others&#34;&gt;others&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Key combination&lt;/th&gt;
+&lt;th&gt;Result&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;fn-return&lt;/td&gt;
+&lt;td&gt;enter&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;fn-delete&lt;/td&gt;
+&lt;td&gt;forward delete&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Karabiner-Elements stopped working after macOS update</title>
+      <link>/docs/help/troubleshooting/stopped-working-after-macos-update/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/help/troubleshooting/stopped-working-after-macos-update/</guid>
+      <description>
+        
+        
+        &lt;p&gt;It&amp;rsquo;s an issue of macOS that macOS update sometimes does not restore the running process state sufficiently after macOS update.&lt;/p&gt;
+&lt;p&gt;Please follow the instruction to solve the problem.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Restart macOS once again after macOS update.&lt;/li&gt;
+&lt;li&gt;Reinstall Karabiner-Elements if restart macOS does not solve the problem.&lt;/li&gt;
+&lt;/ol&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Security</title>
+      <link>/docs/help/advanced-topics/security/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/help/advanced-topics/security/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Security is one of the most important point of Karabiner-Elements architecture design.&lt;/p&gt;
+&lt;p&gt;Separating process and running them with properly privileges to prevent event leaks.&lt;/p&gt;
+&lt;h2 id=&#34;process&#34;&gt;Process&lt;/h2&gt;
+&lt;p&gt;Karabiner-Elements restricts the input event handling to &lt;strong&gt;karabiner_observer&lt;/strong&gt; and &lt;strong&gt;karabiner_grabber&lt;/strong&gt; processes.&lt;/p&gt;
+&lt;p&gt;These process are running with root privilege and other process including malicious attacker cannot steal your input events.&lt;/p&gt;
+&lt;h3 id=&#34;list-of-process&#34;&gt;List of process&lt;/h3&gt;
+&lt;p&gt;Running with root privilege&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;karabiner_observer&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Role:
+&lt;ul&gt;
+&lt;li&gt;Observe the keyboard hardware events and tell grabber the devices state.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;karabiner_grabber&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Role:
+&lt;ul&gt;
+&lt;li&gt;Grab the keyboard hardware and catch events, modify events then post them.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;karabiner_kextd&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Role:
+&lt;ul&gt;
+&lt;li&gt;Load &lt;strong&gt;Karabiner VirtualHIDDevice&lt;/strong&gt; kernel extension.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Karabiner VirtualHIDDevice&lt;/strong&gt; kernel extension
+&lt;ul&gt;
+&lt;li&gt;Role:
+&lt;ul&gt;
+&lt;li&gt;Virtual keyboard and pointing device.&lt;/li&gt;
+&lt;li&gt;The virtual devices deny any requires (sending input events) from non root privileged processes.&lt;br /&gt;
+Typically, karabiner_grabber is the only process which can send input events to the virtual devices.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Running with logged in user privilege&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;karabiner_console_user_server&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Role:
+&lt;ul&gt;
+&lt;li&gt;Tell karabiner_grabber starting device grabbing.&lt;/li&gt;
+&lt;li&gt;Execute shell commands which is triggered by karabiner_grabber.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;karabiner_session_monitor&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Role:
+&lt;ul&gt;
+&lt;li&gt;Monitor user login status and tell it to karabiner_grabber.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;karabiner_observer&lt;/strong&gt; (Running with logged in user)
+&lt;ul&gt;
+&lt;li&gt;Role:
+&lt;ul&gt;
+&lt;li&gt;Tell macOS karabiner_observer will be use Input Monitoring.&lt;br /&gt;
+And do nothing if the process is running with non root user.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;karabiner_grabber&lt;/strong&gt; (Running with logged in user)
+&lt;ul&gt;
+&lt;li&gt;Role:
+&lt;ul&gt;
+&lt;li&gt;Tell macOS karabiner_grabber will be use Input Monitoring.&lt;br /&gt;
+And do nothing if the process is running with non root user.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Uninstall</title>
+      <link>/docs/manual/operation/uninstall/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/manual/operation/uninstall/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Karabiner-Elements provides built-in uninstaller.&lt;br /&gt;
+Use the uninstaller to remove Karabiner-Elements from your system.&lt;/p&gt;
+&lt;p&gt;You can launch the uninstaller from &amp;ldquo;Uninstall Karabiner-Elements&amp;rdquo; button on Misc tab.
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/manual/operation/uninstall/images/karabiner-elements-uninstall@2x.png&#34;
+    alt=&#34;karabiner-elements-uninstall@2x.png&#34;
+    style=&#34;width: 900px&#34;
+  /&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Advanced topic&lt;/h4&gt;
+&lt;p&gt;If you don&amp;rsquo;t want to use above GUI, you can also uninstall Karabiner-Elements from command line.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;sudo &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;/Library/Application Support/org.pqrs/Karabiner-Elements/uninstall_core.sh&amp;#39;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;(Administrator password is required to run the above command.)&lt;/p&gt;
+
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Use more complex rules</title>
+      <link>/docs/manual/configuration/configure-complex-modifications/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/manual/configuration/configure-complex-modifications/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Karabiner-Elements provides more complex event modifications.&lt;br /&gt;
+These rules change keys by conditions.&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Examples&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Modifier flags + key to keys:
+&lt;ul&gt;
+&lt;li&gt;Change control-m to return key.&lt;/li&gt;
+&lt;li&gt;Change control-h to delete key.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Key to modifier flags + keys:
+&lt;ul&gt;
+&lt;li&gt;Change caps lock to command+control+option+shift key&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Post other key events when a key pressed alone:
+&lt;ul&gt;
+&lt;li&gt;Post escape key when you press left control key alone.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Change keys in specific apps:
+&lt;ul&gt;
+&lt;li&gt;Change left command key to left control key in virtual machines.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Execute shell command:
+&lt;ul&gt;
+&lt;li&gt;Open Activity Monitor by right shift+a.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;p&gt;You can import predefined rules from the internet or make your own rules.&lt;/p&gt;
+&lt;h2 id=&#34;step-1&#34;&gt;Step 1&lt;/h2&gt;
+&lt;p&gt;Open Complex Modifications tab and press &lt;strong&gt;Add rule&lt;/strong&gt; button, then press &lt;strong&gt;Import more rules from the internet&lt;/strong&gt; button.&lt;br /&gt;
+&lt;a href=&#34;https://ke-complex-modifications.pqrs.org/&#34;&gt;Official rules site&lt;/a&gt; will be open using your default web browser.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/manual/configuration/configure-complex-modifications/images/karabiner-elements-complex-modifications-1@2x.png&#34;
+    alt=&#34;karabiner-elements-complex-modifications-1@2x.png&#34;
+    style=&#34;width: 900px&#34;
+  /&gt;
+&lt;/figure&gt;
+
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/manual/configuration/configure-complex-modifications/images/karabiner-elements-complex-modifications-2@2x.png&#34;
+    alt=&#34;karabiner-elements-complex-modifications-2@2x.png&#34;
+    style=&#34;width: 894px&#34;
+  /&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;step-2&#34;&gt;Step 2&lt;/h2&gt;
+&lt;p&gt;Press &lt;strong&gt;Import&lt;/strong&gt; button in the page.&lt;br /&gt;
+A confirmation dialog is shown. Press &lt;strong&gt;Allow&lt;/strong&gt; button.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/manual/configuration/configure-complex-modifications/images/karabiner-elements-complex-modifications-3@2x.png&#34;
+    alt=&#34;karabiner-elements-complex-modifications-3@2x.png&#34;
+    style=&#34;width: 1246px&#34;
+  /&gt;
+&lt;/figure&gt;
+
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/manual/configuration/configure-complex-modifications/images/karabiner-elements-complex-modifications-4@2x.png&#34;
+    alt=&#34;karabiner-elements-complex-modifications-4@2x.png&#34;
+    style=&#34;width: 1241px&#34;
+  /&gt;
+&lt;/figure&gt;
+
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/manual/configuration/configure-complex-modifications/images/karabiner-elements-complex-modifications-5@2x.png&#34;
+    alt=&#34;karabiner-elements-complex-modifications-5@2x.png&#34;
+    style=&#34;width: 492px&#34;
+  /&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;step-3&#34;&gt;Step 3&lt;/h2&gt;
+&lt;p&gt;Karabiner-Elements is shown again.
+Press &lt;strong&gt;Import&lt;/strong&gt; button, then new rules are imported.&lt;br /&gt;&lt;/p&gt;
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/manual/configuration/configure-complex-modifications/images/karabiner-elements-complex-modifications-6@2x.png&#34;
+    alt=&#34;karabiner-elements-complex-modifications-6@2x.png&#34;
+    style=&#34;width: 894px&#34;
+  /&gt;
+&lt;/figure&gt;
+
+&lt;h2 id=&#34;step-4&#34;&gt;Step 4&lt;/h2&gt;
+&lt;p&gt;Press &lt;strong&gt;Enable&lt;/strong&gt; button.&lt;/p&gt;
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/manual/configuration/configure-complex-modifications/images/karabiner-elements-complex-modifications-7@2x.png&#34;
+    alt=&#34;karabiner-elements-complex-modifications-7@2x.png&#34;
+    style=&#34;width: 894px&#34;
+  /&gt;
+&lt;/figure&gt;
+
+&lt;h2 id=&#34;step-5&#34;&gt;Step 5&lt;/h2&gt;
+&lt;p&gt;New rule is enabled.&lt;br /&gt;
+Confirm the result using &lt;a href=&#34;/docs/manual/operation/eventviewer/&#34;&gt;Karabiner-EventViewer&lt;/a&gt;.&lt;/p&gt;
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/manual/configuration/configure-complex-modifications/images/karabiner-elements-complex-modifications-8@2x.png&#34;
+    alt=&#34;karabiner-elements-complex-modifications-8@2x.png&#34;
+    style=&#34;width: 900px&#34;
+  /&gt;
+&lt;/figure&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Check for updates</title>
+      <link>/docs/manual/operation/check-for-updates/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/manual/operation/check-for-updates/</guid>
+      <description>
+        
+        
+        &lt;p&gt;You can check for updates from &amp;ldquo;Misc&amp;rdquo; tab.&lt;/p&gt;
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/manual/operation/check-for-updates/images/karabiner-elements-check-for-updates@2x.png&#34;
+    alt=&#34;karabiner-elements-check-for-updates@2x.png&#34;
+    style=&#34;width: 900px&#34;
+  /&gt;
+&lt;/figure&gt;
+
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Tip&lt;/h4&gt;
+If you want to use the latest beta version, use &amp;ldquo;Check for beta updates&amp;rdquo; button.&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/manual/operation/check-for-updates/images/karabiner-elements-check-for-updates-beta@2x.png&#34;
+    alt=&#34;karabiner-elements-check-for-updates-beta@2x.png&#34;
+    style=&#34;width: 900px&#34;
+  /&gt;
+&lt;/figure&gt;
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Choose devices</title>
+      <link>/docs/manual/configuration/configure-devices/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/manual/configuration/configure-devices/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Choose devices which Karabiner-Elements modifies events on &lt;strong&gt;Devices&lt;/strong&gt; tab.&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Tip&lt;/h4&gt;
+Mice are disabled by default.&lt;br /&gt;
+You have to enable them if you want to change the mouse buttons in Karabiner-Elements.
+&lt;/div&gt;
+
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/manual/configuration/configure-devices/images/karabiner-elements-devices@2x.png&#34;
+    alt=&#34;karabiner-elements-devices@2x.png&#34;
+    style=&#34;width: 1000px&#34;
+  /&gt;
+&lt;/figure&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: How to adjust the key repeat rate</title>
+      <link>/docs/help/how-to/key-repeat/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/help/how-to/key-repeat/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Karabiner-Elements does not provide a feature to adjust key repeat rate.&lt;/p&gt;
+&lt;p&gt;Use System Preferences &amp;gt; Keyboard.&lt;/p&gt;
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/help/how-to/key-repeat/images/system-preferences-keyboard-key-repeat@2x.png&#34;
+    alt=&#34;system-preferences-keyboard-key-repeat@2x.png&#34;
+    style=&#34;width: 668px&#34;
+  /&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;You can also adjust the key repeat rate using &lt;code&gt;defaults write&lt;/code&gt; command.
+&lt;a href=&#34;https://apple.stackexchange.com/questions/10467/how-to-increase-keyboard-key-repeat-rate-on-os-x&#34;&gt;https://apple.stackexchange.com/questions/10467/how-to-increase-keyboard-key-repeat-rate-on-os-x&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Input event modification chaining</title>
+      <link>/docs/manual/misc/event-modification-chaining/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/manual/misc/event-modification-chaining/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Karabiner-Elements treats input events by the following order:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Catch events from hardware.&lt;/li&gt;
+&lt;li&gt;Apply &lt;strong&gt;Simple Modifications&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Apply &lt;strong&gt;Complex Modifications&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Apply &lt;strong&gt;Function Keys Modifications&lt;/strong&gt;. (change f1&amp;hellip;f12 keys to media controls)&lt;/li&gt;
+&lt;li&gt;Post events to applications via a virtual keyboard.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
+&lt;p&gt;System modifier keys configuration in &lt;strong&gt;System Preferences &amp;gt; Keyboard&lt;/strong&gt; is ignored when you use
+Karabiner-Elements.&lt;/p&gt;
+&lt;p&gt;Change modifier keys in Karabiner-Elements&amp;rsquo;s Simple Modifications.&lt;/p&gt;
+
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Touch Bar does not change to f1-f12 when I press the fn key</title>
+      <link>/docs/help/troubleshooting/touch-bar-function-keys/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/help/troubleshooting/touch-bar-function-keys/</guid>
+      <description>
+        
+        
+        &lt;p&gt;It&amp;rsquo;s an issue of macOS, and unfortunately, Karabiner-Elements cannot avoid this issue.&lt;br /&gt;
+Instead, please change fn+number keys to function keys in Karabiner-Elements configuration.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Import &lt;a href=&#34;https://ke-complex-modifications.pqrs.org/#fn_plus_numbers_to_function_keys&#34;&gt;Map fn + number keys to function keys&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Enable &lt;code&gt;Map fn + number keys to their corresponding function keys&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;You can use f1-f12 keys by fn+number keys.
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/help/troubleshooting/touch-bar-function-keys/images/karabiner-elements-fn_plus_numbers_to_function_keys@2x.png&#34;
+    alt=&#34;karabiner-elements-fn_plus_numbers_to_function_keys@2x.png&#34;
+    style=&#34;width: 1000px&#34;
+  /&gt;
+&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
+If you are using &amp;ldquo;Use all F1, F2, etc. keys as standard function keys.&amp;quot;,
+enable &lt;code&gt;Map fn + number keys to their corresponding media control keys&lt;/code&gt; instead.
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;alert alert-dark&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Detail of the problem&lt;/h4&gt;
+&lt;p&gt;The fn key events are ignored by Touch Bar since the following facts.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Touch Bar accepts the fn key event only from the build-in keyboard.&lt;/li&gt;
+&lt;li&gt;The fn key events are sent from Karabiner&amp;rsquo;s virtual keyboard when Karabiner-Elements is running.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Unfortunately, posting input events via own virtual keyboard is the only way to accomplish the stable input event modification.&lt;br /&gt;
+In other words, we cannot post the fn key event through the built-in keyboard if we want to change key events stably.&lt;/p&gt;
+
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Control-eject shortcut does not work when Karabiner-Elements is running</title>
+      <link>/docs/help/troubleshooting/control-eject/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/help/troubleshooting/control-eject/</guid>
+      <description>
+        
+        
+        &lt;p&gt;It&amp;rsquo;s an issue of macOS, and unfortunately, Karabiner-Elements cannot avoid this issue.&lt;br /&gt;
+Instead, please change fn+escape to eject and use control+fn+escape (== control+eject) shortcut.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Import &lt;a href=&#34;https://ke-complex-modifications.pqrs.org/#escape&#34;&gt;Change escape key&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Enable &lt;strong&gt;Change fn+escape to eject&lt;/strong&gt;.&lt;br /&gt;
+You can use control+fn+escape as control+eject.
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/help/troubleshooting/control-eject/images/karabiner-elements-fn-escape-to-eject@2x.png&#34;
+    alt=&#34;karabiner-elements-fn-escape-to-eject@2x.png&#34;
+    style=&#34;width: 1000px&#34;
+  /&gt;
+&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Disable the built-in keyboard when external keyboard is connected</title>
+      <link>/docs/manual/configuration/disable-built-in-keyboard/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/manual/configuration/disable-built-in-keyboard/</guid>
+      <description>
+        
+        
+        &lt;p&gt;You can disable MacBook built-in keyboard if external keyboards are connected.&lt;br /&gt;
+This feature is useful when you put the external keybaord on top of the built-in keyboard.&lt;/p&gt;
+&lt;p&gt;Choose your external keyboards on Deviecs &amp;gt; Advanced.&lt;/p&gt;
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/manual/configuration/disable-built-in-keyboard/images/karabiner-elements-devices-built-in@2x.png&#34;
+    alt=&#34;karabiner-elements-devices-built-in@2x.png&#34;
+    style=&#34;width: 1000px&#34;
+  /&gt;
+&lt;/figure&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: How to confirm the result of configuration (EventViewer)</title>
+      <link>/docs/manual/operation/eventviewer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/manual/operation/eventviewer/</guid>
+      <description>
+        
+        
+        &lt;p&gt;You can show keyboard and mouse events by using EventViewer.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Open Karabiner-EventViewer from Launchpad.
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/manual/operation/eventviewer/images/karabiner-elements-eventviewer-icon@2x.png&#34;
+    alt=&#34;karabiner-elements-eventviewer-icon@2x.png&#34;
+    style=&#34;width: 210px&#34;
+  /&gt;
+&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;Input events will be shown when you type keyboard on EventViewer or press pointing buttons on Mouse Area.
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/manual/operation/eventviewer/images/karabiner-elements-eventviewer@2x.png&#34;
+    alt=&#34;karabiner-elements-eventviewer@2x.png&#34;
+    style=&#34;width: 874px&#34;
+  /&gt;
+&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: MultitouchExtension</title>
+      <link>/docs/manual/misc/multitouch-extension/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/manual/misc/multitouch-extension/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Karabiner-MultitouchExtension allows you to change keys only when your finger is on the trackpad.&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
+Karabiner-MultitouchExtension is available since Karabiner-Elements 12.6.9
+&lt;/div&gt;
+
+&lt;h3 id=&#34;related-complex-modifications-examples&#34;&gt;Related Complex Modifications examples&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://ke-complex-modifications.pqrs.org/#multitouch_vi_mode&#34;&gt;Multitouch Vi Mode&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ke-complex-modifications.pqrs.org/#multitouch_diamond_cursor&#34;&gt;Multitouch Diamond Cursor&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ke-complex-modifications.pqrs.org/#multitouch_mouse_buttons&#34;&gt;Multitouch Mouse Buttons&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ke-complex-modifications.pqrs.org/#thumbsense&#34;&gt;ThumbSense&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;multitouchextension-usage&#34;&gt;MultitouchExtension usage&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Open MultitouchExtension app from Preferences &amp;gt; Misc.
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/manual/misc/multitouch-extension/images/karabiner-elements-multitouch-extension-1@2x.png&#34;
+    alt=&#34;karabiner-elements-multitouch-extension-1@2x.png&#34;
+    style=&#34;width: 1000px&#34;
+  /&gt;
+&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;Enable &amp;ldquo;Start at login&amp;rdquo; on MultitouchExtension Preferences.
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/manual/misc/multitouch-extension/images/karabiner-elements-multitouch-extension-2@2x.png&#34;
+    alt=&#34;karabiner-elements-multitouch-extension-2@2x.png&#34;
+    style=&#34;width: 540px&#34;
+  /&gt;
+&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Tip&lt;/h4&gt;
+If you hid Karabiner-MultitouchExtension icon in Dock,
+press &amp;ldquo;Open MultitouchExtension app&amp;rdquo; button on Preferences &amp;gt; Misc to open Karabiner-MultitouchExtension Preferences.
+&lt;/div&gt;
+
+&lt;h3 id=&#34;how-to-integrate-multitouchextension-to-your-complex-modifications&#34;&gt;How to integrate MultitouchExtension to your complex modifications&lt;/h3&gt;
+&lt;p&gt;See &lt;a href=&#34;json.html#multitouch-extension&#34; target=&#34;_blank&#34;&gt;karabiner.json reference manual&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: &#34;karabiner.json is not owned by a valid user&#34; error message in log</title>
+      <link>/docs/help/troubleshooting/json-owner-is-invalid/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/help/troubleshooting/json-owner-is-invalid/</guid>
+      <description>
+        
+        
+        &lt;p&gt;If the following error message is appeared in log, your home directory owner ship is not valid.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;[warning] [grabber] /Users/.../karabiner.json is not owned by a valid user.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The cause is that you are using an external storage and locating your home directory into the volume.&lt;/p&gt;
+&lt;p&gt;You have to enable ownership on the external volume by the following command in Terminal.app.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;sudo diskutil enableOwnership disk99999s99999
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;(Replace &lt;code&gt;disk99999s99999&lt;/code&gt; with your disk identifier which you can find by &lt;code&gt;diskutil list&lt;/code&gt; command.)&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Command line interface</title>
+      <link>/docs/manual/misc/command-line-interface/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/manual/misc/command-line-interface/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Karabiner-Elements provides a command line interface which provides the following functions.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Switch a profile by name.&lt;/li&gt;
+&lt;li&gt;Show current profile name.&lt;/li&gt;
+&lt;li&gt;Show all profile names.&lt;/li&gt;
+&lt;li&gt;Set variables which are used in complex modifications.&lt;/li&gt;
+&lt;li&gt;Copy the current profile to system default profile. (Administrator privilege is required.)&lt;/li&gt;
+&lt;li&gt;Remove the system default profile. (Administrator privilege is required.)&lt;/li&gt;
+&lt;li&gt;Lint complex_modifications.json.&lt;/li&gt;
+&lt;li&gt;Display version.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;usage&#34;&gt;Usage&lt;/h2&gt;
+&lt;h3 id=&#34;show-help&#34;&gt;Show help&lt;/h3&gt;
+&lt;p&gt;Run the following command in terminal.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;/Library/Application Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli&amp;#39;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Result:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;A command line utility of Karabiner-Elements.
+Usage:
+  karabiner_cli [OPTION...]
+
+      --select-profile arg      Select a profile by name.
+      --show-current-profile-name
+                                Show current profile name
+      --list-profile-names      Show all profile names
+      --set-variables arg       Json string: {[key: string]: number}
+      --copy-current-profile-to-system-default-profile
+                                Copy the current profile to system default
+                                profile.
+      --remove-system-default-profile
+                                Remove the system default profile.
+      --lint-complex-modifications complex_modifications.json
+                                Check complex_modifications.json
+      --version                 Displays version.
+      --version-number          Displays version_number.
+      --help                    Print help.
+
+Examples:
+  karabiner_cli --select-profile &amp;#39;Default profile&amp;#39;
+  karabiner_cli --show-current-profile-name
+  karabiner_cli --list-profile-names
+  karabiner_cli --set-variables &amp;#39;{&amp;#34;cli_flag1&amp;#34;:1, &amp;#34;cli_flag2&amp;#34;:2}&amp;#39;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h3 id=&#34;examples&#34;&gt;Examples&lt;/h3&gt;
+&lt;h4 id=&#34;switch-profile&#34;&gt;Switch profile&lt;/h4&gt;
+&lt;p&gt;Run the following command in terminal.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;/Library/Application Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli&amp;#39;&lt;/span&gt; --select-profile &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;Default profile&amp;#39;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;show-current-profile-name&#34;&gt;Show current profile name&lt;/h4&gt;
+&lt;p&gt;Run the following command in terminal.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;/Library/Application Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli&amp;#39;&lt;/span&gt; --show-current-profile-name
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;show-all-profile-names&#34;&gt;Show all profile names&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;/Library/Application Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli&amp;#39;&lt;/span&gt; --list-profile-names
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Multiple profiles</title>
+      <link>/docs/manual/operation/profiles/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/manual/operation/profiles/</guid>
+      <description>
+        
+        
+        &lt;p&gt;You can switch profiles from menu bar. &lt;br /&gt;&lt;/p&gt;
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/manual/operation/profiles/images/karabiner-elements-menu-profiles@2x.png&#34;
+    alt=&#34;karabiner-elements-menu-profiles@2x.png&#34;
+    style=&#34;width: 384px&#34;
+  /&gt;
+&lt;/figure&gt;
+
+&lt;h2 id=&#34;manage-profiles&#34;&gt;Manage profiles&lt;/h2&gt;
+&lt;p&gt;You can manage profiles from Profiles tab.&lt;br /&gt;
+Press &lt;strong&gt;Add profile&lt;/strong&gt; button to add new profile.&lt;/p&gt;
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/manual/operation/profiles/images/karabiner-elements-profiles@2x.png&#34;
+    alt=&#34;karabiner-elements-profiles@2x.png&#34;
+    style=&#34;width: 900px&#34;
+  /&gt;
+&lt;/figure&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Set keyboard type</title>
+      <link>/docs/manual/configuration/configure-keyboard-type/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/manual/configuration/configure-keyboard-type/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Karabiner-Elements does not provide a way to change the keyboard type (ANSI, ISO, JIS).&lt;/p&gt;
+&lt;p&gt;You can change keyboard type via Keyboard Setup Assistant from System Preferences &amp;gt; Keyboard.&lt;/p&gt;
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/manual/configuration/configure-keyboard-type/images/system-preferences-keyboard-setup-assistant@2x.png&#34;
+    alt=&#34;system-preferences-keyboard-setup-assistant@2x.png&#34;
+    style=&#34;width: 668px&#34;
+  /&gt;
+&lt;/figure&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Show log messages</title>
+      <link>/docs/manual/operation/log/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/manual/operation/log/</guid>
+      <description>
+        
+        
+        &lt;p&gt;You can confirm log messages on Log tab.&lt;/p&gt;
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/manual/operation/log/images/karabiner-elements-error-log@2x.png&#34;
+    alt=&#34;karabiner-elements-error-log@2x.png&#34;
+    style=&#34;width: 1000px&#34;
+  /&gt;
+&lt;/figure&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: The location of the configuration file</title>
+      <link>/docs/manual/misc/configuration-file-path/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/manual/misc/configuration-file-path/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Karabiner-Elements stores configuration to a json file which is located &lt;strong&gt;~/.config/karabiner/karabiner.json&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;about-symbolic-link&#34;&gt;About symbolic link&lt;/h3&gt;
+&lt;p&gt;If you want to move karabiner.json to another place and make symbolic link, make a symbolic link to &lt;strong&gt;~/.config/karabiner&lt;/strong&gt; directory instead of karabiner.json.&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Warning&lt;/h4&gt;
+&lt;p&gt;Do not make a symlink to karabiner.json directly.&lt;/p&gt;
+&lt;p&gt;Karabiner-Elements will fail to detect the configuration file update and fail to reload the configuration if karabiner.json is a symbolic link.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;h4 id=&#34;making-symbolic-link-example&#34;&gt;Making symbolic link example&lt;/h4&gt;
+&lt;p&gt;The following command allows you to put karabiner.json on ~/Dropbox/private.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;mv ~/.config/karabiner ~/Dropbox/private
+ln -s ~/Dropbox/private/karabiner ~/.config
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
+&lt;p&gt;You have to restart karabiner_console_user_server process by the
+following command after you made a symlink in ordre to tell
+Karabiner-Elements that the parent directory is changed.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;launchctl kickstart -k gui/&lt;span style=&#34;color:#4e9a06&#34;&gt;`&lt;/span&gt;id -u&lt;span style=&#34;color:#4e9a06&#34;&gt;`&lt;/span&gt;/org.pqrs.karabiner.karabiner_console_user_server
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Export and import configuration</title>
+      <link>/docs/manual/operation/export/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/manual/operation/export/</guid>
+      <description>
+        
+        
+        &lt;p&gt;You can export and import configuration by copying karabiner.json file to another machine.&lt;/p&gt;
+&lt;h2 id=&#34;export&#34;&gt;Export&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Open config folder from Preferences &amp;gt; Misc.
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/manual/operation/export/images/karabiner-elements-export@2x.png&#34;
+    alt=&#34;karabiner-elements-export@2x.png&#34;
+    style=&#34;width: 1000px&#34;
+  /&gt;
+&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;Configuration folder will be opened by Finder. Copy the &lt;strong&gt;karabiner.json&lt;/strong&gt; file.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;import&#34;&gt;Import&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Open config folder from Preferences &amp;gt; Misc.&lt;/li&gt;
+&lt;li&gt;Replace &lt;strong&gt;karabiner.json&lt;/strong&gt; with the exported file.&lt;br/&gt;
+(The configuration file will be reloaded automatically.)&lt;/li&gt;
+&lt;/ol&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Contact</title>
+      <link>/docs/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/contact/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;reporting-bugs-feature-requests&#34;&gt;Reporting Bugs, Feature requests&lt;/h2&gt;
+&lt;p&gt;Please post an issue to GitHub.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/pqrs-org/Karabiner-Elements&#34;&gt;Karabiner-Elements&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/pqrs-org/KE-complex_modifications&#34;&gt;KE-complex_modifications&lt;/a&gt; (About complex modifications)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Or post to &lt;a href=&#34;https://groups.google.com/forum/#!forum/osx-karabiner&#34;&gt;Google Groups&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;required-information-with-bug-reports&#34;&gt;Required information with bug reports&lt;/h3&gt;
+&lt;p&gt;Please fill your information when you send bug reports:&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Required information&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;macOS version:&lt;/li&gt;
+&lt;li&gt;Karabiner version:&lt;br /&gt;
+(You can confirm the version in &amp;ldquo;Misc &amp;amp; Uninstall&amp;rdquo; tab in Karabiner Preferences.)&lt;/li&gt;
+&lt;li&gt;Your Mac hardware:&lt;/li&gt;
+&lt;li&gt;Your keyboard hardware:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;macOS version: macOS 10.15.2
+Karabiner version: Karabiner-Elements 12.9.0
+Your Mac hardware: MacBook Pro
+Your keyboard hardware: Das Keyboard 4 Professional for Mac Mechanical Keyboard
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h2 id=&#34;other&#34;&gt;Other&lt;/h2&gt;
+&lt;p&gt;Send a message to &lt;a href=&#34;https://pqrs.org/profile.html&#34;&gt;author of Karabiner-Elements&lt;/a&gt;.&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
+I&amp;rsquo;m sorry I cannot spend enough time to reply for all mails since I&amp;rsquo;m receiving a lot mails.&lt;br /&gt;
+GitHub or Google Groups are suitable place to post it unless you have a private question.
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Release notes</title>
+      <link>/docs/releasenotes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/releasenotes/</guid>
+      <description>
+        
+        
+        &lt;style&gt;
+.td-content img {
+    margin: 20px 0;
+    border: 1px solid $border-color;
+    border-radius: 10px;
+}
+.td-content &gt; ul &gt; li {
+    list-style-type: none;
+    font-weight: bold;
+}
+.td-content &gt; ul &gt; li &gt; ul {
+    font-weight: normal;
+}
+&lt;/style&gt;
+&lt;h2 id=&#34;karabiner-elements-1290&#34;&gt;Karabiner-Elements 12.9.0&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/pqrs-org/Karabiner-Elements/releases/download/v12.9.0/Karabiner-Elements-12.9.0.dmg&#34;&gt;📦 Download&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;📅 Release date
+&lt;ul&gt;
+&lt;li&gt;Jan 18, 2020&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;✨ New Features
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Open config folder&lt;/code&gt; button has been added into Preferences.&lt;br&gt;
+The feature provides &lt;a href=&#34;https://pqrs.org/osx/karabiner/document.html#export&#34;&gt;an easy way exporting configuration&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;⚡️ Improvements
+&lt;ul&gt;
+&lt;li&gt;Added a workaround for non-dismissible &lt;code&gt;Device is ignored temporarily&lt;/code&gt; alert
+which is caused by some devices that sends abnormal input events.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;🐛 Bug Fixes
+&lt;ul&gt;
+&lt;li&gt;Fixed &lt;code&gt;Add {key_code} to Karabiner-Elements&lt;/code&gt; button on EventViewer for unnamed keys (raw number key codes).&lt;/li&gt;
+&lt;li&gt;Fixed an issue that modifier flag events are not dispatched when changing pointing button while other character keys are pressed.
+(e.g., when changing pointing_button::button3 -&amp;gt; command+pointing_button::button1, command modifier is not sent when button1 is pressed while &lt;code&gt;t&lt;/code&gt; key is also pressed.)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;karabiner-elements-1280&#34;&gt;Karabiner-Elements 12.8.0&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/pqrs-org/Karabiner-Elements/releases/download/v12.8.0/Karabiner-Elements-12.8.0.dmg&#34;&gt;📦 Download&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;📅 Release date
+&lt;ul&gt;
+&lt;li&gt;Nov 17, 2019&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;✨ New Features
+&lt;ul&gt;
+&lt;li&gt;Add &lt;code&gt;--show-current-profile-name&lt;/code&gt; option into &lt;code&gt;karabiner_cli&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Add &lt;code&gt;--list-profile-names&lt;/code&gt; option into &lt;code&gt;karabiner_cli&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;🐛 Bug Fixes
+&lt;ul&gt;
+&lt;li&gt;Fixed an issue that Karabiner-Elements stops working after switching user on macOS Catalina.&lt;/li&gt;
+&lt;li&gt;Fixed an issue that Caps Lock LED is always manipulated even &lt;code&gt;Manipulate LED&lt;/code&gt; setting is off.&lt;/li&gt;
+&lt;li&gt;Fixed an issue that MultitouchExtension does not handle ignored area properly when a finger is touched ignored area repeatedly.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;karabiner-elements-1270&#34;&gt;Karabiner-Elements 12.7.0&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/pqrs-org/Karabiner-Elements/releases/download/v12.7.0/Karabiner-Elements-12.7.0.dmg&#34;&gt;📦 Download&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;📅 Release date
+&lt;ul&gt;
+&lt;li&gt;Sep 12, 2019&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;✨ New Features
+&lt;ul&gt;
+&lt;li&gt;MultitouchExtension app has been added.
+&lt;ul&gt;
+&lt;li&gt;Documentation:
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://pqrs.org/osx/karabiner/document.html#multitouch-extension&#34;&gt;Usage&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://pqrs.org/osx/karabiner/json.html#multitouch-extension&#34;&gt;How to integrate MultitouchExtension to your complex modifications&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Dark Mode has been supported.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;--set-variables&lt;/code&gt; option into &lt;code&gt;karabiner_cli&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;🐛 Bug Fixes
+&lt;ul&gt;
+&lt;li&gt;Fixed an issue that Karabiner-Elements might stop working after sleep on macOS Catalina.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;karabiner-elements-1260&#34;&gt;Karabiner-Elements 12.6.0&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/pqrs-org/Karabiner-Elements/releases/download/v12.6.0/Karabiner-Elements-12.6.0.dmg&#34;&gt;📦 Download&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;📅 Release date
+&lt;ul&gt;
+&lt;li&gt;Aug 16, 2019&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;✨ New Features
+&lt;ul&gt;
+&lt;li&gt;Support macOS Catalina.&lt;br/&gt;
+(You need &lt;a href=&#34;https://pqrs.org/osx/karabiner/document.html#usage-catalina&#34;&gt;an extra configuration&lt;/a&gt; on macOS Catalina.)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;🐛 Bug Fixes
+&lt;ul&gt;
+&lt;li&gt;Fixed an issue that Karabiner-Elements fails to grab a device in rare cases.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;⚡️ Improvements
+&lt;ul&gt;
+&lt;li&gt;Introduced karabiner_kextd.
+(kext loading function was separated from karabiner_grabber.)&lt;/li&gt;
+&lt;li&gt;Improved EventViewer to show modifier flags of key events.&lt;/li&gt;
+&lt;li&gt;Suppressed unnecessary log messages.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;karabiner-elements-1250&#34;&gt;Karabiner-Elements 12.5.0&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/pqrs-org/Karabiner-Elements/releases/download/v12.5.0/Karabiner-Elements-12.5.0.dmg&#34;&gt;📦 Download&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;📅 Release date
+&lt;ul&gt;
+&lt;li&gt;Jun 10, 2019&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;✨ New Features
+&lt;ul&gt;
+&lt;li&gt;Add &lt;code&gt;Delay before open device&lt;/code&gt; configuration into &lt;code&gt;Karabiner-Elements Preferences &amp;gt; Devices &amp;gt; Advanced&lt;/code&gt; tab.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;Show key code in hexadecimal format&lt;/code&gt; option into EventViewer.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;🐛 Bug Fixes
+&lt;ul&gt;
+&lt;li&gt;Fixed a key stuck issue which occurs when the key is released,
+and at the exact same moment Karabiner-Elements opens the device.&lt;/li&gt;
+&lt;li&gt;Fixed an issue which Karabiner-Elements mistakes a remote user for a current console user
+if another user is logged in from Screen Sharing while console is used.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;⚡️ Improvements
+&lt;ul&gt;
+&lt;li&gt;Improved &lt;code&gt;XXX is ignored temporarily until YYY is pressed again&lt;/code&gt; behavior.&lt;/li&gt;
+&lt;li&gt;Move &lt;code&gt;Disable the built-in keyboard while one of the following selected devices is connected&lt;/code&gt; configuration
+into &lt;code&gt;Karabiner-Elements Preferences &amp;gt; Devices &amp;gt; Advanced&lt;/code&gt; tab.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;karabiner-elements-1240&#34;&gt;Karabiner-Elements 12.4.0&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/pqrs-org/Karabiner-Elements/releases/download/v12.4.0/Karabiner-Elements-12.4.0.dmg&#34;&gt;📦 Download&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;📅 Release date
+&lt;ul&gt;
+&lt;li&gt;May 14, 2019&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;✨ New Features
+&lt;ul&gt;
+&lt;li&gt;Add &lt;code&gt;Mouse Key XY speed&lt;/code&gt; configuration into &lt;code&gt;Karabiner-Elements Preferences &amp;gt; Virtual Keyboard&lt;/code&gt; tab.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Device is ignored temporarily&lt;/code&gt; alert has been introduced.&lt;br/&gt;
+This alert will be shown if you hold keys or buttons down before Karabiner-Elements opens the device.&lt;br/&gt;
+Please press the described key or button again to dismiss the alert.&lt;br/&gt;
+&lt;img src=&#34;https://pqrs.org/osx/karabiner/img/news/v12.4.0_0.png&#34; alt=&#34;alert&#34; style=&#34;width: 420px&#34; /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;🐛 Bug Fixes
+&lt;ul&gt;
+&lt;li&gt;Fixed a key stuck issue which occurs when the key is held down before Karabiner-Elements opens the device.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;⚡️ Improvements
+&lt;ul&gt;
+&lt;li&gt;Event code format on EventViewer changed to decimal number from hex.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;karabiner-elements-1230&#34;&gt;Karabiner-Elements 12.3.0&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/pqrs-org/Karabiner-Elements/releases/download/v12.3.0/Karabiner-Elements-12.3.0.dmg&#34;&gt;📦 Download&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;📅 Release date
+&lt;ul&gt;
+&lt;li&gt;Apr 24, 2019&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;💥 Breaking changes
+&lt;ul&gt;
+&lt;li&gt;complex modifications json will be checked strictly since this release.&lt;br/&gt;
+Please check &lt;a href=&#34;https://pqrs.org/osx/karabiner/json.html#location&#34;&gt;error messages&lt;/a&gt; if your complex modifications do not work after upgrade.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;✨ New Features
+&lt;ul&gt;
+&lt;li&gt;Added &lt;a href=&#34;https://ke-complex-modifications.pqrs.org/#mouse_motion_to_scroll&#34;&gt;Change mouse motion to scroll&lt;/a&gt; feature.&lt;br/&gt;
+&lt;ul&gt;
+&lt;li&gt;Note: You have to enable your mice on &lt;a href=&#34;https://pqrs.org/osx/karabiner/document.html#configuration-devices&#34;&gt;Devices tab&lt;/a&gt; when you want to use this feature.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;--lint-complex-modifications&lt;/code&gt; option into &lt;code&gt;karabiner_cli&lt;/code&gt;.
+It allows you checks a complex-modifications json file.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;⚡️ Improvements
+&lt;ul&gt;
+&lt;li&gt;Set Karabiner-Elements.app and Karabiner-EventViewer.app immutable
+in order to ensure unremovable them except built-in uninstaller.
+Please use the &lt;a href=&#34;https://pqrs.org/osx/karabiner/document.html#uninstall&#34;&gt;uninstaller&lt;/a&gt; when you want to remove Karabiner-Elements.&lt;/li&gt;
+&lt;li&gt;Added a wait before grabbing device in order to avoid an macOS issue that device will be unusable after Karabiner-Elements is quit.&lt;/li&gt;
+&lt;li&gt;Changes for users who write their own json.
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;to&lt;/code&gt; and &lt;code&gt;to_*&lt;/code&gt; support single object, e.g., &lt;code&gt;&amp;quot;to&amp;quot;: { &amp;quot;key_code&amp;quot;: &amp;quot;spacebar&amp;quot; }&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;New modifier aliases are added: &lt;code&gt;left_alt&lt;/code&gt;, &lt;code&gt;left_gui&lt;/code&gt;, &lt;code&gt;right_alt&lt;/code&gt;, &lt;code&gt;right_gui&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;key_code&lt;/code&gt;, &lt;code&gt;consumer_key_code&lt;/code&gt; and &lt;code&gt;pointing_button&lt;/code&gt; supports a number value, e.g., &lt;code&gt;&amp;quot;from&amp;quot;: {&amp;quot;key_code&amp;quot;: 175}&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;karabiner-elements-1220&#34;&gt;Karabiner-Elements 12.2.0&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/pqrs-org/Karabiner-Elements/releases/download/v12.2.0/Karabiner-Elements-12.2.0.dmg&#34;&gt;📦 Download&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;📅 Release date
+&lt;ul&gt;
+&lt;li&gt;Feb 1, 2019&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;✨ New Features
+&lt;ul&gt;
+&lt;li&gt;Karabiner-Elements makes a backup file of karabiner.json before updating it if the backup file does not exists.
+(~/.config/karabiner/automatic_backups/karabiner_YYYYMMDD.json)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;🐛 Bug Fixes
+&lt;ul&gt;
+&lt;li&gt;Fixed an issue that Caps Lock LED does not work on macOS Mojave.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;⚡️ Improvements
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;shell_command&lt;/code&gt; string max length has been expanded. (256 byte -&amp;gt; 32 KB)&lt;/li&gt;
+&lt;li&gt;A device grabbing process has been improved. (Observing device state by a separated &lt;code&gt;karabiner_observer&lt;/code&gt; process.)&lt;/li&gt;
+&lt;li&gt;The event processing has been improved and the latency has been reduced by using &lt;a href=&#34;https://github.com/pqrs-org/cpp-dispatcher&#34;&gt;pqrs::dispatcher&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;karabiner-elements-1210&#34;&gt;Karabiner-Elements 12.1.0&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/pqrs-org/Karabiner-Elements/releases/download/v12.1.0/Karabiner-Elements-12.1.0.dmg&#34;&gt;📦 Download&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;📅 Release date
+&lt;ul&gt;
+&lt;li&gt;May 30, 2018&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;💥 Breaking changes
+&lt;ul&gt;
+&lt;li&gt;Changed the order of &lt;code&gt;to_if_alone&lt;/code&gt; and &lt;code&gt;to_after_key_up&lt;/code&gt; event handling.&lt;br /&gt;
+&lt;code&gt;to_if_alone&lt;/code&gt; will be handled before &lt;code&gt;to_after_key_up&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;✨ New Features
+&lt;ul&gt;
+&lt;li&gt;Added new items into &lt;code&gt;simultaneous_options&lt;/code&gt;:
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;simultaneous_options.detect_key_down_uninterruptedly&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;simultaneous_options.key_up_when&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Added new parameters into &lt;code&gt;to event definition&lt;/code&gt;:
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;hold_down_milliseconds&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;halt&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;🐛 Bug Fixes
+&lt;ul&gt;
+&lt;li&gt;Fixed an issue that random key repeat happen at extremely high system CPU usage.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;⚡️ Improvements
+&lt;ul&gt;
+&lt;li&gt;Increased rollover limit of virtual keyboard. (6 -&amp;gt; 32)&lt;br /&gt;
+This change mainly improves usability when you are using multiple keyboards at the same time.&lt;/li&gt;
+&lt;li&gt;Improved modifier flags handling in &lt;code&gt;to_after_key_up&lt;/code&gt; and &lt;code&gt;to_if_alone&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;karabiner-elements-1200&#34;&gt;Karabiner-Elements 12.0.0&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/pqrs-org/Karabiner-Elements/releases/download/v12.0.0/Karabiner-Elements-12.0.0.dmg&#34;&gt;📦 Download&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;📅 Release date
+&lt;ul&gt;
+&lt;li&gt;Apr 12, 2018&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;💥 Breaking changes
+&lt;ul&gt;
+&lt;li&gt;macOS 10.11 support has been dropped.&lt;br /&gt;
+Karabiner-Elements works on macOS 10.12 (Sierra) or later.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Keyboard type&lt;/code&gt; in the virtual keyboard preferences has been removed. (Adverse effect of virtual keyboard improvement.)&lt;br /&gt;
+Please change the keyboard type from &lt;code&gt;System Preferences &amp;gt; Keyboard &amp;gt; Change Keyboard Type...&lt;/code&gt;.
+&lt;img src=&#34;https://pqrs.org/osx/karabiner/img/news/v12.0.0_0.png&#34; alt=&#34;Keyboard Preferences&#34; style=&#34;width: 668px&#34; /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Caps Lock Delay&lt;/code&gt; in the virtual keyboard preferences has been removed. (Adverse effect of virtual keyboard improvement.)&lt;/li&gt;
+&lt;li&gt;Changed &lt;code&gt;simultaneous&lt;/code&gt; behaviour to post key_up events when any key is released.&lt;/li&gt;
+&lt;li&gt;Changed &lt;code&gt;to_after_key_up&lt;/code&gt; and &lt;code&gt;to_if_alone&lt;/code&gt; behaviour as mandatory modifiers are removed from these events.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;✨ New Features
+&lt;ul&gt;
+&lt;li&gt;Added &lt;code&gt;simultaneous_options.key_down_order&lt;/code&gt;, &lt;code&gt;simultaneous_options.key_up_order&lt;/code&gt; and &lt;code&gt;simultaneous_options.to_after_key_up&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;🐛 Bug Fixes
+&lt;ul&gt;
+&lt;li&gt;Fixed an issue that &lt;code&gt;to_if_alone&lt;/code&gt;, &lt;code&gt;to_if_held_down&lt;/code&gt; and &lt;code&gt;to_delayed_action&lt;/code&gt; does not work properly with &lt;code&gt;simultaneous&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;⚡️ Improvements
+&lt;ul&gt;
+&lt;li&gt;The virtual keyboard compatibility has been improved.&lt;/li&gt;
+&lt;li&gt;EventViewer has been improved showing the correct key name for PC keyboard keys and international keys.&lt;/li&gt;
+&lt;li&gt;Improved keyboard repeat handling with &lt;code&gt;simultaneous&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;karabiner-elements-1160&#34;&gt;Karabiner-Elements 11.6.0&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/pqrs-org/Karabiner-Elements/releases/download/v11.6.0/Karabiner-Elements-11.6.0.dmg&#34;&gt;📦 Download&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;📅 Release date
+&lt;ul&gt;
+&lt;li&gt;Feb 20, 2018&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;✨ New Features
+&lt;ul&gt;
+&lt;li&gt;Simultaneous key presses has been supported in complex modifications.
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://pqrs.org/osx/karabiner/json.html#typical-complex_modifications-examples-simultaneous-equal-delete-to-forward-delete&#34;&gt;json example&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://pqrs.org/osx/karabiner/json.html#simultaneous&#34;&gt;Document&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;⚡️ Improvements
+&lt;ul&gt;
+&lt;li&gt;Improved Mouse key scroll wheel direction referring &lt;code&gt;System Preferences &amp;gt; Mouse &amp;gt; Scroll direction&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Improved modifier flags handling around pointing button manipulations.&lt;/li&gt;
+&lt;li&gt;Mouse keys have been added into Simple Modifications.
+&lt;img src=&#34;https://pqrs.org/osx/karabiner/img/news/v11.6.0_0.png&#34; alt=&#34;mouse keys in Simple Modifications&#34; style=&#34;width: 1000px&#34; /&gt;&lt;/li&gt;
+&lt;li&gt;The eject key has been added into the from key of Simple Modifications.&lt;/li&gt;
+&lt;li&gt;The Vendor ID and Product ID of virtual devices has been changed. (0x0,0x0 -&amp;gt; 0x16c0,0x27db and 0x16c0,0x27da)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;karabiner-elements-1150&#34;&gt;Karabiner-Elements 11.5.0&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/pqrs-org/Karabiner-Elements/releases/download/v11.5.0/Karabiner-Elements-11.5.0.dmg&#34;&gt;📦 Download&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;📅 Release date
+&lt;ul&gt;
+&lt;li&gt;Dec 30, 2017&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;✨ New Features
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;to_if_held_down&lt;/code&gt; has been added.
+&lt;ul&gt;
+&lt;li&gt;Examples:
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://pqrs.org/osx/karabiner/json.html#typical-complex_modifications-examples-open-alfred-when-escape-is-held-down&#34;&gt;Open Alfred 3 if escape is held down&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ke-complex-modifications.pqrs.org/#command_q&#34;&gt;Quit application by holding command-q&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;🐛 Bug Fixes
+&lt;ul&gt;
+&lt;li&gt;Avoided a VMware Remote Console issue that mouse pointer does not work properly on VMRC when Karabiner-Elements grabs the pointing device.&lt;/li&gt;
+&lt;li&gt;Fixed an issue that &lt;code&gt;to_if_alone&lt;/code&gt; does not work properly when &lt;code&gt;to&lt;/code&gt; is empty.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;⚡️ Improvements
+&lt;ul&gt;
+&lt;li&gt;Improved modifier flags handling in &lt;code&gt;to events&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Improved a way to save karabiner.json.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;karabiner-elements-1140&#34;&gt;Karabiner-Elements 11.4.0&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/pqrs-org/Karabiner-Elements/releases/download/v11.4.0/Karabiner-Elements-11.4.0.dmg&#34;&gt;📦 Download&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;📅 Release date
+&lt;ul&gt;
+&lt;li&gt;Dec 7, 2017&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;✨ New Features
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;mouse_key&lt;/code&gt; has been added.
+&lt;ul&gt;
+&lt;li&gt;Examples:
+&lt;ul&gt;
+&lt;li&gt;Mouse keys (simple):
+&lt;a href=&#34;https://github.com/pqrs-org/KE-complex_modifications/blob/master/docs/json/mouse_keys_simple.json&#34;&gt;json&lt;/a&gt;
+&lt;a href=&#34;https://github.com/pqrs-org/KE-complex_modifications/blob/master/src/json/mouse_keys_simple.json.erb&#34;&gt;(src)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Mouse keys (full)
+&lt;a href=&#34;https://github.com/pqrs-org/KE-complex_modifications/blob/master/docs/json/mouse_keys_full.json&#34;&gt;json&lt;/a&gt;
+&lt;a href=&#34;https://github.com/pqrs-org/KE-complex_modifications/blob/master/src/json/mouse_keys_full.json.erb&#34;&gt;(src)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;location_id&lt;/code&gt; has been added to &lt;code&gt;device_if&lt;/code&gt; and &lt;code&gt;device_unless&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;🐛 Bug Fixes
+&lt;ul&gt;
+&lt;li&gt;Fixed an issue that the checkbox in &lt;code&gt;Preferences &amp;gt; Devices&lt;/code&gt; is disabled for keyboards which do not have their own vendor id.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;karabiner-elements-1130&#34;&gt;Karabiner-Elements 11.3.0&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/pqrs-org/Karabiner-Elements/releases/download/v11.3.0/Karabiner-Elements-11.3.0.dmg&#34;&gt;📦 Download&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;📅 Release date
+&lt;ul&gt;
+&lt;li&gt;Nov 12, 2017&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;🐛 Bug Fixes
+&lt;ul&gt;
+&lt;li&gt;Fixed an issue that Karabiner-11.2.0 does not work properly on some environments due to a possibility of macOS kernel extension cache problem.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;karabiner-elements-1120&#34;&gt;Karabiner-Elements 11.2.0&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/pqrs-org/Karabiner-Elements/releases/download/v11.2.0/Karabiner-Elements-11.2.0.dmg&#34;&gt;📦 Download&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;📅 Release date
+&lt;ul&gt;
+&lt;li&gt;Nov 9, 2017&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;✨ New Features
+&lt;ul&gt;
+&lt;li&gt;Mouse button modifications has been added.&lt;br /&gt;
+Note:
+&lt;ul&gt;
+&lt;li&gt;You have to enable your Mouse manually in Preferences &amp;gt; Devices tab.&lt;/li&gt;
+&lt;li&gt;Karabiner-Elements cannot modify Apple&amp;rsquo;s pointing devices.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;to_delayed_action&lt;/code&gt; has been added.
+&lt;ul&gt;
+&lt;li&gt;Examples:
+&lt;ul&gt;
+&lt;li&gt;Quit application by pressing command-q twice
+&lt;a href=&#34;https://github.com/pqrs-org/KE-complex_modifications/blob/master/docs/json/command_q.json&#34;&gt;json&lt;/a&gt;
+&lt;a href=&#34;https://github.com/pqrs-org/KE-complex_modifications/blob/master/src/json/command_q.json.erb&#34;&gt;(src)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Emacs key bindings (C-x key strokes)
+&lt;a href=&#34;https://github.com/pqrs-org/KE-complex_modifications/blob/master/docs/json/emacs_key_bindings.json&#34;&gt;json&lt;/a&gt;
+&lt;a href=&#34;https://github.com/pqrs-org/KE-complex_modifications/blob/master/src/json/emacs_key_bindings.json.rb&#34;&gt;(src)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;input_source_if&lt;/code&gt; and &lt;code&gt;input_source_unless&lt;/code&gt; has been added to &lt;code&gt;conditions&lt;/code&gt;.
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://pqrs.org/osx/karabiner/json.html#condition-definition-input-source&#34;&gt;Document&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Example:
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/pqrs-org/KE-complex_modifications/blob/master/docs/json/example_input_source.json&#34;&gt;example_input_source.json&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;select_input_source&lt;/code&gt; has been added.
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://pqrs.org/osx/karabiner/json.html#to-event-definition&#34;&gt;Document&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Example:
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/pqrs-org/KE-complex_modifications/blob/master/docs/json/example_select_input_source.json&#34;&gt;example_select_input_source.json&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;keyboard_type_if&lt;/code&gt; and &lt;code&gt;keyboard_type_unless&lt;/code&gt; has been added to &lt;code&gt;conditions&lt;/code&gt;.
+&lt;ul&gt;
+&lt;li&gt;Example
+&lt;ul&gt;
+&lt;li&gt;Change control-[ to escape
+&lt;a href=&#34;https://github.com/pqrs-org/KE-complex_modifications/blob/master/docs/json/example_keyboard_type.json&#34;&gt;json&lt;/a&gt;
+&lt;a href=&#34;https://github.com/pqrs-org/KE-complex_modifications/blob/master/src/json/example_keyboard_type.json.erb&#34;&gt;(src)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;The caps lock LED manipulation has been disabled with non Apple keyboards until it is enabled manually.
+&lt;img src=&#34;https://pqrs.org/osx/karabiner/img/news/v11.1.16_0.png&#34; alt=&#34;has caps lock led&#34; style=&#34;width: 1000px&#34; /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;⚡️ Improvements
+&lt;ul&gt;
+&lt;li&gt;The virtual keyboard handling has been improved.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;karabiner-elements-1110&#34;&gt;Karabiner-Elements 11.1.0&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/pqrs-org/Karabiner-Elements/releases/download/v11.1.0/Karabiner-Elements-11.1.0.dmg&#34;&gt;📦 Download&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;📅 Release date
+&lt;ul&gt;
+&lt;li&gt;Oct 4, 2017&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;🐛 Bug Fixes
+&lt;ul&gt;
+&lt;li&gt;Fixed an issue that modifier flags becomes improperly state by mouse events.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;karabiner-elements-1100&#34;&gt;Karabiner-Elements 11.0.0&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/pqrs-org/Karabiner-Elements/releases/download/v11.0.0/Karabiner-Elements-11.0.0.dmg&#34;&gt;📦 Download&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;📅 Release date
+&lt;ul&gt;
+&lt;li&gt;Sep 18, 2017&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;✨ New Features
+&lt;ul&gt;
+&lt;li&gt;The first stable release of Karabiner-Elements.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;karabiner-10220&#34;&gt;Karabiner 10.22.0&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;/files/Karabiner-10.22.0.dmg&#34;&gt;📦 Download&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;📅 Release date
+&lt;ul&gt;
+&lt;li&gt;Oct 31, 2016&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;🐛 Bug Fixes
+&lt;ul&gt;
+&lt;li&gt;Fixed an issue that some Qt apps might be crash when AXNotifier is enabled. (VirtualBox, LyX, Wireshark)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;⚡️ Improvements
+&lt;ul&gt;
+&lt;li&gt;Default setting of AXNotifier has been changed. (Enabled in Microsoft Office)&lt;/li&gt;
+&lt;li&gt;Prepared settings have been updated.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;karabiner-10210&#34;&gt;Karabiner 10.21.0&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;/files/Karabiner-10.21.0.dmg&#34;&gt;📦 Download&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;📅 Release date
+&lt;ul&gt;
+&lt;li&gt;Jul 5, 2016&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;🐛 Bug Fixes
+&lt;ul&gt;
+&lt;li&gt;Fixed an issue that the initial key repeat rate of Karabiner will be set the slower value if you have not changed the key repeat rate in System Preferences.&lt;/li&gt;
+&lt;li&gt;Fixed an issue that Karabiner does not save preferences properly in an edge case.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;⚡️ Improvements
+&lt;ul&gt;
+&lt;li&gt;Prepared settings have been updated.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;karabiner-10200&#34;&gt;Karabiner 10.20.0&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;/files/Karabiner-10.20.0.dmg&#34;&gt;📦 Download&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;📅 Release date
+&lt;ul&gt;
+&lt;li&gt;Jun 16, 2016&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;✨ New Features
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Option::FLIPSCROLLWHEEL_HORIZONTAL&lt;/code&gt; and &lt;code&gt;Option::FLIPSCROLLWHEEL_VERTICAL&lt;/code&gt; have been supported in &lt;code&gt;__PointingRelativeToScroll__&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;🐛 Bug Fixes
+&lt;ul&gt;
+&lt;li&gt;Fixed an issue that Remote Desktop detection will be failed in some cases.&lt;/li&gt;
+&lt;li&gt;Fixed an issue that input source switching settings does not work in some environments.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;karabiner-10190&#34;&gt;Karabiner 10.19.0&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;/files/Karabiner-10.19.0.dmg&#34;&gt;📦 Download&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;📅 Release date
+&lt;ul&gt;
+&lt;li&gt;Jun 9, 2016&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;💥 Breaking changes
+&lt;ul&gt;
+&lt;li&gt;The multi-touch extension default configuration has been changed.&lt;br/&gt;
+If you are using ThumbSense, please enable ThumbSense setting manually in multi-touch extension preferences.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;✨ New Features
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Use modifier symbols (⌘⌃⌥⇧⇪) in place of the modifier names&lt;/code&gt; has been added into Karabiner Preferences &amp;gt; Status Message tab.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;bundleidentifieroverridedef&amp;gt;&lt;/code&gt; has been introduced.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Option::KEYTOKEY_DELAYED_ACTION_MILLISECONDS&lt;/code&gt; has been added.&lt;/li&gt;
+&lt;li&gt;The following filters have been added.
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;deviceexists_not&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;deviceexists_only&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;The following environment variables has been added into replacementdef.
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;{{ ENV_Select_the_previous_input_source_shortcut }}&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;{{ ENV_Select_next_source_in_input_menu_shortcut }}&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;🐛 Bug Fixes
+&lt;ul&gt;
+&lt;li&gt;Fixed an issue that the argument treatment in &lt;code&gt;warp-mouse-cursor-position&lt;/code&gt; utility is wrong.&lt;br/&gt;
+These adjustment values for &lt;code&gt;screen&lt;/code&gt; and &lt;code&gt;front_window&lt;/code&gt; were exchanged.
+For example, the vertical adjustment value for &lt;code&gt;screen&lt;/code&gt; and &lt;code&gt;front_window&lt;/code&gt; is used in horizontal adjustment.&lt;/li&gt;
+&lt;li&gt;Fixed an issue that some Java apps might be crash when AXNotifier is enabled. (SAP GUI for Java)&lt;/li&gt;
+&lt;li&gt;Fixed an issue that ModifierFlag pattern matching of &lt;code&gt;Option::KEYTOKEY_AFTER_KEYUP&lt;/code&gt; in &lt;code&gt;__KeyOverlaidModifier__&lt;/code&gt; and &lt;code&gt;__HoldingKeyToKey__&lt;/code&gt; does not work property in some cases.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;⚡️ Improvements
+&lt;ul&gt;
+&lt;li&gt;The device disconnect handling has been improved.&lt;/li&gt;
+&lt;li&gt;Prepared settings have been updated.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

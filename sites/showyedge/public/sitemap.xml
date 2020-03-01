@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/docs/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/getting-started/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/help/quit/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/configuration/open-preferences-window/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/configuration/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/help/uninstall/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/configuration/color-configuration/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/configuration/indicator-size-configuration/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/configuration/indicator-options/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/help/donwload-older-versions/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/help/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/configuration/resume-configuration/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/help/use-beta/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/pricing/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/releasenotes/</loc>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+  </url>
+  
+</urlset>

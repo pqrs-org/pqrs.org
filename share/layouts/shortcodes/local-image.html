@@ -1,0 +1,14 @@
+{{ $image := ($.Page.Resources.ByType "image").GetMatch (.Get "src") }}
+
+{{ $pixelDensity := 1 }}
+{{ if in $image.Name "@2x." }}
+  {{ $pixelDensity = 2 }}
+{{ end }}
+
+<figure>
+  <img
+    src="{{ $image.RelPermalink }}"
+    alt="{{ path.Base $image.Name }}"
+    style="width: {{ div $image.Width $pixelDensity }}px"
+  />
+</figure>

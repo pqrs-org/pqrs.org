@@ -1,0 +1,10 @@
+{
+  "name": "pqrs.org",
+  "version": "1.0.0",
+  "description": "",
+  "dependencies": {
+    "autoprefixer": "^9.7.4",
+    "postcss-cli": "^7.1.0"
+  },
+  "devDependencies": {}
+}

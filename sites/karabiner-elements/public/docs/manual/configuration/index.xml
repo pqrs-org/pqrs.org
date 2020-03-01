@@ -1,0 +1,377 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Karabiner-Elements – Configuration</title>
+    <link>/docs/manual/configuration/</link>
+    <description>Recent content in Configuration on Karabiner-Elements</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="/docs/manual/configuration/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Change a key to another key</title>
+      <link>/docs/manual/configuration/configure-simple-modifications/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/manual/configuration/configure-simple-modifications/</guid>
+      <description>
+        
+        
+        &lt;p&gt;You can change a key to another key on &lt;strong&gt;Simple Modifications&lt;/strong&gt; tab.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Choose target device, then press Add item button.
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/manual/configuration/configure-simple-modifications/images/karabiner-elements-simple-modifications-1@2x.png&#34;
+    alt=&#34;karabiner-elements-simple-modifications-1@2x.png&#34;
+    style=&#34;width: 900px&#34;
+  /&gt;
+&lt;/figure&gt;
+
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/manual/configuration/configure-simple-modifications/images/karabiner-elements-simple-modifications-2@2x.png&#34;
+    alt=&#34;karabiner-elements-simple-modifications-2@2x.png&#34;
+    style=&#34;width: 900px&#34;
+  /&gt;
+&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;Select &lt;strong&gt;From key&lt;/strong&gt; and &lt;strong&gt;To key&lt;/strong&gt;.
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/manual/configuration/configure-simple-modifications/images/karabiner-elements-simple-modifications-3@2x.png&#34;
+    alt=&#34;karabiner-elements-simple-modifications-3@2x.png&#34;
+    style=&#34;width: 900px&#34;
+  /&gt;
+&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;Confirm the result using &lt;a href=&#34;/docs/manual/operation/eventviewer/&#34;&gt;Karabiner-EventViewer&lt;/a&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Tip&lt;/h4&gt;
+You can find the key name by &lt;a href=&#34;/docs/manual/operation/eventviewer/&#34;&gt;Karabiner-EventViewer&lt;/a&gt;.&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/manual/configuration/configure-simple-modifications/images/karabiner-elements-eventviewer-name@2x.png&#34;
+    alt=&#34;karabiner-elements-eventviewer-name@2x.png&#34;
+    style=&#34;width: 874px&#34;
+  /&gt;
+&lt;/figure&gt;
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Use more complex rules</title>
+      <link>/docs/manual/configuration/configure-complex-modifications/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/manual/configuration/configure-complex-modifications/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Karabiner-Elements provides more complex event modifications.&lt;br /&gt;
+These rules change keys by conditions.&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Examples&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Modifier flags + key to keys:
+&lt;ul&gt;
+&lt;li&gt;Change control-m to return key.&lt;/li&gt;
+&lt;li&gt;Change control-h to delete key.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Key to modifier flags + keys:
+&lt;ul&gt;
+&lt;li&gt;Change caps lock to command+control+option+shift key&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Post other key events when a key pressed alone:
+&lt;ul&gt;
+&lt;li&gt;Post escape key when you press left control key alone.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Change keys in specific apps:
+&lt;ul&gt;
+&lt;li&gt;Change left command key to left control key in virtual machines.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Execute shell command:
+&lt;ul&gt;
+&lt;li&gt;Open Activity Monitor by right shift+a.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;p&gt;You can import predefined rules from the internet or make your own rules.&lt;/p&gt;
+&lt;h2 id=&#34;step-1&#34;&gt;Step 1&lt;/h2&gt;
+&lt;p&gt;Open Complex Modifications tab and press &lt;strong&gt;Add rule&lt;/strong&gt; button, then press &lt;strong&gt;Import more rules from the internet&lt;/strong&gt; button.&lt;br /&gt;
+&lt;a href=&#34;https://ke-complex-modifications.pqrs.org/&#34;&gt;Official rules site&lt;/a&gt; will be open using your default web browser.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/manual/configuration/configure-complex-modifications/images/karabiner-elements-complex-modifications-1@2x.png&#34;
+    alt=&#34;karabiner-elements-complex-modifications-1@2x.png&#34;
+    style=&#34;width: 900px&#34;
+  /&gt;
+&lt;/figure&gt;
+
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/manual/configuration/configure-complex-modifications/images/karabiner-elements-complex-modifications-2@2x.png&#34;
+    alt=&#34;karabiner-elements-complex-modifications-2@2x.png&#34;
+    style=&#34;width: 894px&#34;
+  /&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;step-2&#34;&gt;Step 2&lt;/h2&gt;
+&lt;p&gt;Press &lt;strong&gt;Import&lt;/strong&gt; button in the page.&lt;br /&gt;
+A confirmation dialog is shown. Press &lt;strong&gt;Allow&lt;/strong&gt; button.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/manual/configuration/configure-complex-modifications/images/karabiner-elements-complex-modifications-3@2x.png&#34;
+    alt=&#34;karabiner-elements-complex-modifications-3@2x.png&#34;
+    style=&#34;width: 1246px&#34;
+  /&gt;
+&lt;/figure&gt;
+
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/manual/configuration/configure-complex-modifications/images/karabiner-elements-complex-modifications-4@2x.png&#34;
+    alt=&#34;karabiner-elements-complex-modifications-4@2x.png&#34;
+    style=&#34;width: 1241px&#34;
+  /&gt;
+&lt;/figure&gt;
+
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/manual/configuration/configure-complex-modifications/images/karabiner-elements-complex-modifications-5@2x.png&#34;
+    alt=&#34;karabiner-elements-complex-modifications-5@2x.png&#34;
+    style=&#34;width: 492px&#34;
+  /&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;step-3&#34;&gt;Step 3&lt;/h2&gt;
+&lt;p&gt;Karabiner-Elements is shown again.
+Press &lt;strong&gt;Import&lt;/strong&gt; button, then new rules are imported.&lt;br /&gt;&lt;/p&gt;
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/manual/configuration/configure-complex-modifications/images/karabiner-elements-complex-modifications-6@2x.png&#34;
+    alt=&#34;karabiner-elements-complex-modifications-6@2x.png&#34;
+    style=&#34;width: 894px&#34;
+  /&gt;
+&lt;/figure&gt;
+
+&lt;h2 id=&#34;step-4&#34;&gt;Step 4&lt;/h2&gt;
+&lt;p&gt;Press &lt;strong&gt;Enable&lt;/strong&gt; button.&lt;/p&gt;
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/manual/configuration/configure-complex-modifications/images/karabiner-elements-complex-modifications-7@2x.png&#34;
+    alt=&#34;karabiner-elements-complex-modifications-7@2x.png&#34;
+    style=&#34;width: 894px&#34;
+  /&gt;
+&lt;/figure&gt;
+
+&lt;h2 id=&#34;step-5&#34;&gt;Step 5&lt;/h2&gt;
+&lt;p&gt;New rule is enabled.&lt;br /&gt;
+Confirm the result using &lt;a href=&#34;/docs/manual/operation/eventviewer/&#34;&gt;Karabiner-EventViewer&lt;/a&gt;.&lt;/p&gt;
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/manual/configuration/configure-complex-modifications/images/karabiner-elements-complex-modifications-8@2x.png&#34;
+    alt=&#34;karabiner-elements-complex-modifications-8@2x.png&#34;
+    style=&#34;width: 900px&#34;
+  /&gt;
+&lt;/figure&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Choose devices</title>
+      <link>/docs/manual/configuration/configure-devices/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/manual/configuration/configure-devices/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Choose devices which Karabiner-Elements modifies events on &lt;strong&gt;Devices&lt;/strong&gt; tab.&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Tip&lt;/h4&gt;
+Mice are disabled by default.&lt;br /&gt;
+You have to enable them if you want to change the mouse buttons in Karabiner-Elements.
+&lt;/div&gt;
+
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/manual/configuration/configure-devices/images/karabiner-elements-devices@2x.png&#34;
+    alt=&#34;karabiner-elements-devices@2x.png&#34;
+    style=&#34;width: 1000px&#34;
+  /&gt;
+&lt;/figure&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Disable the built-in keyboard when external keyboard is connected</title>
+      <link>/docs/manual/configuration/disable-built-in-keyboard/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/manual/configuration/disable-built-in-keyboard/</guid>
+      <description>
+        
+        
+        &lt;p&gt;You can disable MacBook built-in keyboard if external keyboards are connected.&lt;br /&gt;
+This feature is useful when you put the external keybaord on top of the built-in keyboard.&lt;/p&gt;
+&lt;p&gt;Choose your external keyboards on Deviecs &amp;gt; Advanced.&lt;/p&gt;
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/manual/configuration/disable-built-in-keyboard/images/karabiner-elements-devices-built-in@2x.png&#34;
+    alt=&#34;karabiner-elements-devices-built-in@2x.png&#34;
+    style=&#34;width: 1000px&#34;
+  /&gt;
+&lt;/figure&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Set keyboard type</title>
+      <link>/docs/manual/configuration/configure-keyboard-type/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/manual/configuration/configure-keyboard-type/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Karabiner-Elements does not provide a way to change the keyboard type (ANSI, ISO, JIS).&lt;/p&gt;
+&lt;p&gt;You can change keyboard type via Keyboard Setup Assistant from System Preferences &amp;gt; Keyboard.&lt;/p&gt;
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/manual/configuration/configure-keyboard-type/images/system-preferences-keyboard-setup-assistant@2x.png&#34;
+    alt=&#34;system-preferences-keyboard-setup-assistant@2x.png&#34;
+    style=&#34;width: 668px&#34;
+  /&gt;
+&lt;/figure&gt;
+
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,127 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tinkle – Help</title>
+    <link>/docs/help/</link>
+    <description>Recent content in Help on Tinkle</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="/docs/help/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: How to quit Tinkle</title>
+      <link>/docs/help/quit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/help/quit/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Tinkle keeps running in the background even if you close the preferences window.&lt;br /&gt;
+To quit Tinkle, proceed as follows:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;../../configuration/open-preferences-window/&#34;&gt;Open preferences window&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Press &lt;code&gt;Quit Tinkle&lt;/code&gt; button.
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/help/quit/images/quit@2x.png&#34;
+    alt=&#34;quit@2x.png&#34;
+    style=&#34;width: 600px&#34;
+  /&gt;
+&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: How to uninstall Tinkle</title>
+      <link>/docs/help/uninstall/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/help/uninstall/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Remove Tinkle from your system as follows.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;/docs/help/quit/&#34;&gt;Quit Tinkle&lt;/a&gt; before uninstallaion.&lt;/li&gt;
+&lt;li&gt;Open &lt;code&gt;Applications&lt;/code&gt; folder in Finder, then move Tinkle to trash.
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/help/uninstall/images/uninstall@2x.png&#34;
+    alt=&#34;uninstall@2x.png&#34;
+    style=&#34;width: 647px&#34;
+  /&gt;
+&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Donwload older versions</title>
+      <link>/docs/help/donwload-older-versions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/help/donwload-older-versions/</guid>
+      <description>
+        
+        
+        &lt;p&gt;You can download older versions of Tinkle from &lt;a href=&#34;/docs/releasenotes/&#34;&gt;Release notes&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Use beta version</title>
+      <link>/docs/help/use-beta/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/help/use-beta/</guid>
+      <description>
+        
+        
+        &lt;p&gt;You can install beta version from &lt;code&gt;Check for beta updates&lt;/code&gt; button on Misc tab.&lt;/p&gt;
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/help/use-beta/images/check-for-beta-updates@2x.png&#34;
+    alt=&#34;check-for-beta-updates@2x.png&#34;
+    style=&#34;width: 600px&#34;
+  /&gt;
+&lt;/figure&gt;
+
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

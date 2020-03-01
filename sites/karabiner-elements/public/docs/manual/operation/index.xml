@@ -1,0 +1,309 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Karabiner-Elements – Operation</title>
+    <link>/docs/manual/operation/</link>
+    <description>Recent content in Operation on Karabiner-Elements</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="/docs/manual/operation/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: How to quit</title>
+      <link>/docs/manual/operation/quit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/manual/operation/quit/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Quit from menu bar or Misc tab on Preferences.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/manual/operation/quit/images/karabiner-elements-menu-quit@2x.png&#34;
+    alt=&#34;karabiner-elements-menu-quit@2x.png&#34;
+    style=&#34;width: 441px&#34;
+  /&gt;
+&lt;/figure&gt;
+
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/manual/operation/quit/images/karabiner-elements-quit@2x.png&#34;
+    alt=&#34;karabiner-elements-quit@2x.png&#34;
+    style=&#34;width: 900px&#34;
+  /&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Uninstall</title>
+      <link>/docs/manual/operation/uninstall/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/manual/operation/uninstall/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Karabiner-Elements provides built-in uninstaller.&lt;br /&gt;
+Use the uninstaller to remove Karabiner-Elements from your system.&lt;/p&gt;
+&lt;p&gt;You can launch the uninstaller from &amp;ldquo;Uninstall Karabiner-Elements&amp;rdquo; button on Misc tab.
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/manual/operation/uninstall/images/karabiner-elements-uninstall@2x.png&#34;
+    alt=&#34;karabiner-elements-uninstall@2x.png&#34;
+    style=&#34;width: 900px&#34;
+  /&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Advanced topic&lt;/h4&gt;
+&lt;p&gt;If you don&amp;rsquo;t want to use above GUI, you can also uninstall Karabiner-Elements from command line.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;sudo &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;/Library/Application Support/org.pqrs/Karabiner-Elements/uninstall_core.sh&amp;#39;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;(Administrator password is required to run the above command.)&lt;/p&gt;
+
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Check for updates</title>
+      <link>/docs/manual/operation/check-for-updates/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/manual/operation/check-for-updates/</guid>
+      <description>
+        
+        
+        &lt;p&gt;You can check for updates from &amp;ldquo;Misc&amp;rdquo; tab.&lt;/p&gt;
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/manual/operation/check-for-updates/images/karabiner-elements-check-for-updates@2x.png&#34;
+    alt=&#34;karabiner-elements-check-for-updates@2x.png&#34;
+    style=&#34;width: 900px&#34;
+  /&gt;
+&lt;/figure&gt;
+
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Tip&lt;/h4&gt;
+If you want to use the latest beta version, use &amp;ldquo;Check for beta updates&amp;rdquo; button.&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/manual/operation/check-for-updates/images/karabiner-elements-check-for-updates-beta@2x.png&#34;
+    alt=&#34;karabiner-elements-check-for-updates-beta@2x.png&#34;
+    style=&#34;width: 900px&#34;
+  /&gt;
+&lt;/figure&gt;
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: How to confirm the result of configuration (EventViewer)</title>
+      <link>/docs/manual/operation/eventviewer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/manual/operation/eventviewer/</guid>
+      <description>
+        
+        
+        &lt;p&gt;You can show keyboard and mouse events by using EventViewer.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Open Karabiner-EventViewer from Launchpad.
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/manual/operation/eventviewer/images/karabiner-elements-eventviewer-icon@2x.png&#34;
+    alt=&#34;karabiner-elements-eventviewer-icon@2x.png&#34;
+    style=&#34;width: 210px&#34;
+  /&gt;
+&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;Input events will be shown when you type keyboard on EventViewer or press pointing buttons on Mouse Area.
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/manual/operation/eventviewer/images/karabiner-elements-eventviewer@2x.png&#34;
+    alt=&#34;karabiner-elements-eventviewer@2x.png&#34;
+    style=&#34;width: 874px&#34;
+  /&gt;
+&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Multiple profiles</title>
+      <link>/docs/manual/operation/profiles/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/manual/operation/profiles/</guid>
+      <description>
+        
+        
+        &lt;p&gt;You can switch profiles from menu bar. &lt;br /&gt;&lt;/p&gt;
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/manual/operation/profiles/images/karabiner-elements-menu-profiles@2x.png&#34;
+    alt=&#34;karabiner-elements-menu-profiles@2x.png&#34;
+    style=&#34;width: 384px&#34;
+  /&gt;
+&lt;/figure&gt;
+
+&lt;h2 id=&#34;manage-profiles&#34;&gt;Manage profiles&lt;/h2&gt;
+&lt;p&gt;You can manage profiles from Profiles tab.&lt;br /&gt;
+Press &lt;strong&gt;Add profile&lt;/strong&gt; button to add new profile.&lt;/p&gt;
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/manual/operation/profiles/images/karabiner-elements-profiles@2x.png&#34;
+    alt=&#34;karabiner-elements-profiles@2x.png&#34;
+    style=&#34;width: 900px&#34;
+  /&gt;
+&lt;/figure&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Show log messages</title>
+      <link>/docs/manual/operation/log/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/manual/operation/log/</guid>
+      <description>
+        
+        
+        &lt;p&gt;You can confirm log messages on Log tab.&lt;/p&gt;
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/manual/operation/log/images/karabiner-elements-error-log@2x.png&#34;
+    alt=&#34;karabiner-elements-error-log@2x.png&#34;
+    style=&#34;width: 1000px&#34;
+  /&gt;
+&lt;/figure&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Export and import configuration</title>
+      <link>/docs/manual/operation/export/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/manual/operation/export/</guid>
+      <description>
+        
+        
+        &lt;p&gt;You can export and import configuration by copying karabiner.json file to another machine.&lt;/p&gt;
+&lt;h2 id=&#34;export&#34;&gt;Export&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Open config folder from Preferences &amp;gt; Misc.
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/manual/operation/export/images/karabiner-elements-export@2x.png&#34;
+    alt=&#34;karabiner-elements-export@2x.png&#34;
+    style=&#34;width: 1000px&#34;
+  /&gt;
+&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;Configuration folder will be opened by Finder. Copy the &lt;strong&gt;karabiner.json&lt;/strong&gt; file.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;import&#34;&gt;Import&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Open config folder from Preferences &amp;gt; Misc.&lt;/li&gt;
+&lt;li&gt;Replace &lt;strong&gt;karabiner.json&lt;/strong&gt; with the exported file.&lt;br/&gt;
+(The configuration file will be reloaded automatically.)&lt;/li&gt;
+&lt;/ol&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,220 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Karabiner-Elements – Getting started</title>
+    <link>/docs/getting-started/</link>
+    <description>Recent content in Getting started on Karabiner-Elements</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="/docs/getting-started/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Installation</title>
+      <link>/docs/getting-started/installation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/getting-started/installation/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Some operations are required to grant properly permission from macOS to Karabiner-Elements.
+Follow this instruction to set up Karabiner-Elements.&lt;/p&gt;
+&lt;h2 id=&#34;install-karabiner-elements&#34;&gt;Install Karabiner-Elements&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Open the downloaded file.
+&lt;img src=&#34;images/dmg-icon@2x.png&#34; alt=&#34;dmg&#34; width=&#34;64&#34; /&gt;&lt;/li&gt;
+&lt;li&gt;Open a pkg file.
+&lt;img src=&#34;images/pkg-icon@2x.png&#34; alt=&#34;pkg&#34; width=&#34;64&#34; /&gt;&lt;/li&gt;
+&lt;li&gt;The installer will be opened. Install Karabiner-Elements.
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/getting-started/installation/images/installer@2x.png&#34;
+    alt=&#34;installer@2x.png&#34;
+    style=&#34;width: 620px&#34;
+  /&gt;
+&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;open-karabiner-elements-preferences&#34;&gt;Open Karabiner-Elements Preferences&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Open Karabiner-Elements from Launchpad.
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/getting-started/installation/images/karabiner-elements-icon@2x.png&#34;
+    alt=&#34;karabiner-elements-icon@2x.png&#34;
+    style=&#34;width: 184px&#34;
+  /&gt;
+&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;allow-using-kext-which-provides-virtual-devices-for-karabiner-elements&#34;&gt;Allow using kext which provides virtual devices for Karabiner-Elements&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;An alert about kext policy will be shown since macOS High Sierra when you open Karabiner-Elements Preferences.&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;Open System Preferences &amp;gt; Security &amp;amp; Privacy&lt;/strong&gt; button, then press &lt;strong&gt;Allow&lt;/strong&gt; button.
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/getting-started/installation/images/high-sierra-kext-policy@2x.png&#34;
+    alt=&#34;high-sierra-kext-policy@2x.png&#34;
+    style=&#34;width: 1000px&#34;
+  /&gt;
+&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
+Please follow &lt;a href=&#34;../../help/troubleshooting/kext-allow-button-does-not-work/&#34;&gt;this instruction&lt;/a&gt; if there are any problem about the &lt;strong&gt;Allow&lt;/strong&gt; button.
+&lt;/div&gt;
+
+&lt;h2 id=&#34;grant-input-monitoring-to-karabiner-elements-processes&#34;&gt;Grant Input Monitoring to Karabiner-Elements processes&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Two Keystroke Receiving&lt;/strong&gt; alerts will be shown on macOS Catalina or later after you allow the kernel extension.&lt;/li&gt;
+&lt;li&gt;Press &lt;strong&gt;Open System Preferences&lt;/strong&gt; button on both alerts.
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/getting-started/installation/images/catalina-karabiner-grabber@2x.png&#34;
+    alt=&#34;catalina-karabiner-grabber@2x.png&#34;
+    style=&#34;width: 461px&#34;
+  /&gt;
+&lt;/figure&gt;
+
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/getting-started/installation/images/catalina-karabiner-observer@2x.png&#34;
+    alt=&#34;catalina-karabiner-observer@2x.png&#34;
+    style=&#34;width: 461px&#34;
+  /&gt;
+&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;System Preferences will be open after you press the Open System Preferences button.&lt;br/&gt;
+Choose &lt;strong&gt;Privacy &amp;gt; Input Monitoring&lt;/strong&gt;, and then enable &lt;strong&gt;karabiner_grabber&lt;/strong&gt; and &lt;strong&gt;karabiner_observer&lt;/strong&gt;. &lt;br /&gt;
+(You have to unlock configuration by the left bottom icon.)
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/getting-started/installation/images/catalina-input-monitoring@2x.png&#34;
+    alt=&#34;catalina-input-monitoring@2x.png&#34;
+    style=&#34;width: 668px&#34;
+  /&gt;
+&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;setup-your-keyboard-layout&#34;&gt;Setup your keyboard layout&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Keyboard Setup Assistant will be opened.&lt;br/&gt;
+Choose your keyboard layout. (ANSI, ISO or JIS)
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/getting-started/installation/images/keyboard-setup-assistant@2x.png&#34;
+    alt=&#34;keyboard-setup-assistant@2x.png&#34;
+    style=&#34;width: 616px&#34;
+  /&gt;
+&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;configure-karabiner-elements&#34;&gt;Configure Karabiner-Elements&lt;/h2&gt;
+&lt;p&gt;Enjoy keyboard configuration!&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;../../manual/configuration/&#34;&gt;Configuration manual&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Features</title>
+      <link>/docs/getting-started/features/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/getting-started/features/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Karabiner-Elements is a powerful and stable keyboard customizer for macOS.&lt;/p&gt;
+&lt;h2 id=&#34;core-features&#34;&gt;Core features&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Simple Modifications&lt;/strong&gt;: Change normal keys to other keys.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Complex Modifications&lt;/strong&gt;: Change keys by complex rules.
+&lt;ul&gt;
+&lt;li&gt;Change a key to combination of modifiers. (e.g. change capslock to control+command)&lt;/li&gt;
+&lt;li&gt;Change modifiers+key to key. (e.g. change control+m to return)&lt;/li&gt;
+&lt;li&gt;Send key events if a key is pressed alone.&lt;/li&gt;
+&lt;li&gt;Send key events if keys are pressed simultaneously.&lt;/li&gt;
+&lt;li&gt;Mouse keys.&lt;/li&gt;
+&lt;li&gt;etc.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Function Keys&lt;/strong&gt;: Change f1-f12 keys to media controls.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Devices&lt;/strong&gt;: Apply modifications to specified keyboards only.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Profiles&lt;/strong&gt;: Support multiple profiles.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Modifier Flag Sync&lt;/strong&gt;: Synchronize modifier flags across all connected keyboards.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Secure Keyboard Entry Support&lt;/strong&gt;: Work well on Secure Keyboard Entry environment such as a password prompt, terminal with Secure Keyboard Entry, etc.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;current-limitations&#34;&gt;Current limitations&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Karabiner-Elements cannot modify the eject key on some keyboard (e.g., Apple Wired Keyboard) due to the limitation of macOS API.&lt;/li&gt;
+&lt;li&gt;Karabiner-Elements cannot modify the fn key on non-Apple keyboards such as Logitech keyboards.&lt;/li&gt;
+&lt;li&gt;Karabiner-Elements ignores the &lt;code&gt;System Preferences &amp;gt; Keyboard &amp;gt; Modifier Keys...&lt;/code&gt; configuration.&lt;br/&gt;
+Change modifiers by using Simple Modifications.
+&lt;a href=&#34;../../manual/misc/event-modification-chaining/&#34;&gt;(Detail of input event modification chaining)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>
