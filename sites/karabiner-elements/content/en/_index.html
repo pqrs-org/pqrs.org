@@ -105,30 +105,30 @@ title = "Karabiner-Elements"
 {{< /blocks/lead >}}
 
 <!-- ======================================== -->
-<!-- section -->
+<!-- feature -->
 <!-- ======================================== -->
 
-{{< blocks/section color="dark" >}}
+{{< blocks/section color="dark" type="features">}}
 
-<div class="text-center mx-auto">
-  <p>
-    Karabiner-Elements is an ultimate tool for the keyboard customization.
-  </p>
-  <ul class="text-left" style="list-style-type: '✨'">
-    <li>Change a key to another key.</li>
-    <li>
-      Change a key to combination of modifiers.<br />
-      (e.g. change capslock to control+command)
-    </li>
-    <li>
-      Change modifiers+key to key.<br />
-      (e.g. change control+m to return)
-    </li>
-    <li>Send key events if a key is pressed alone.</li>
-    <li>Send key events if a key is kept held down.</li>
-    <li>Send key events if keys are pressed simultaneously.</li>
-    <li>Mouse keys.</li>
-  </ul>
-</div>
+{{% blocks/feature icon="fas fa-coffee" title="Easy to use" url="docs/manual/configuration/configure-simple-modifications/" %}}
+You can configure simple key mappings from GUI.
+{{% /blocks/feature %}}
+
+{{% blocks/feature icon="fas fa-tools" title="Powerful" url="docs/manual/configuration/configure-complex-modifications/" %}}
+There are many predefined powerful rules.
+
+- Diamond cursor
+- Emacs key bindings anywhere
+- Vi key bindings
+- Prevent unintended command-q
+- Mouse keys
+
+You can them import from the Internet.
+
+{{% /blocks/feature %}}
+
+{{% blocks/feature icon="fas fa-palette" title="Flexible" %}}
+You can write your own rules.
+{{% /blocks/feature %}}
 
 {{< /blocks/section >}}
