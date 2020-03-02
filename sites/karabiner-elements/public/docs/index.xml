@@ -1653,46 +1653,6 @@ Karabiner-Elements that the parent directory is changed.&lt;/p&gt;
     </item>
     
     <item>
-      <title>Docs: Export and import configuration</title>
-      <link>/docs/manual/operation/export/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/docs/manual/operation/export/</guid>
-      <description>
-        
-        
-        &lt;p&gt;You can export and import configuration by copying karabiner.json file to another machine.&lt;/p&gt;
-&lt;h2 id=&#34;export&#34;&gt;Export&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;Open config folder from Preferences &amp;gt; Misc.
-
-
-
-
-  
-
-
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/manual/operation/export/images/karabiner-elements-export@2x.png&#34;
-    alt=&#34;karabiner-elements-export@2x.png&#34;
-    style=&#34;width: 1000px&#34;
-  /&gt;
-&lt;/figure&gt;
-&lt;/li&gt;
-&lt;li&gt;Configuration folder will be opened by Finder. Copy the &lt;strong&gt;karabiner.json&lt;/strong&gt; file.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;import&#34;&gt;Import&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;Open config folder from Preferences &amp;gt; Misc.&lt;/li&gt;
-&lt;li&gt;Replace &lt;strong&gt;karabiner.json&lt;/strong&gt; with the exported file.&lt;br/&gt;
-(The configuration file will be reloaded automatically.)&lt;/li&gt;
-&lt;/ol&gt;
-
-      </description>
-    </item>
-    
-    <item>
       <title>Docs: Contact</title>
       <link>/docs/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1737,6 +1697,137 @@ Your keyboard hardware: Das Keyboard 4 Professional for Mac Mechanical Keyboard
 &lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
 I&amp;rsquo;m sorry I cannot spend enough time to reply for all mails since I&amp;rsquo;m receiving a lot mails.&lt;br /&gt;
 GitHub or Google Groups are suitable place to post it unless you have a private question.
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Export and import configuration</title>
+      <link>/docs/manual/operation/export/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/manual/operation/export/</guid>
+      <description>
+        
+        
+        &lt;p&gt;You can export and import configuration by copying karabiner.json file to another machine.&lt;/p&gt;
+&lt;h2 id=&#34;export&#34;&gt;Export&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Open config folder from Preferences &amp;gt; Misc.
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/manual/operation/export/images/karabiner-elements-export@2x.png&#34;
+    alt=&#34;karabiner-elements-export@2x.png&#34;
+    style=&#34;width: 1000px&#34;
+  /&gt;
+&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;Configuration folder will be opened by Finder. Copy the &lt;strong&gt;karabiner.json&lt;/strong&gt; file.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;import&#34;&gt;Import&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Open config folder from Preferences &amp;gt; Misc.&lt;/li&gt;
+&lt;li&gt;Replace &lt;strong&gt;karabiner.json&lt;/strong&gt; with the exported file.&lt;br/&gt;
+(The configuration file will be reloaded automatically.)&lt;/li&gt;
+&lt;/ol&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Pricing</title>
+      <link>/docs/pricing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/pricing/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;img src=&#34;/images/pricing-free.svg&#34; alt=&#34;Free&#34; style=&#34;height: 2em&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Karabiner-Elements is an &lt;a href=&#34;https://github.com/pqrs-org/Karabiner-Elements/&#34;&gt;open source software&lt;/a&gt; and you can use it without any purchases.&lt;/p&gt;
+&lt;h2 id=&#34;supporting-this-project&#34;&gt;Supporting this project&lt;/h2&gt;
+&lt;p&gt;This project accepts your funding via GitHub Sponsors or PayPal.&lt;/p&gt;
+&lt;div class=&#34;card mb-4&#34;&gt;
+    &lt;div class=&#34;card-header&#34;&gt;
+        Monthly (GitHub Sponsors)
+    &lt;/div&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+        &lt;div style=&#34;display: flex; align-items: center&#34;&gt;
+            &lt;div&gt;
+                &lt;img src=&#34;images/profile.jpg&#34; style=&#34;width: 64px; height: 64px&#34; /&gt;
+            &lt;/div&gt;
+            &lt;div class=&#34;px-4&#34;&gt;
+                Takayama Fumihiko&lt;br/&gt;
+                @tekezo
+            &lt;/div&gt;
+            &lt;a
+                href=&#34;https://github.com/sponsors/tekezo&#34;
+                target=&#34;_blank&#34;
+                class=&#34;btn btn-primary px-4&#34;
+            &gt;
+                Open GitHub Sponsors page
+            &lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;card&#34;&gt;
+    &lt;div class=&#34;card-header&#34;&gt;
+        One-time (PayPal)
+    &lt;/div&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+        &lt;div style=&#34;display: flex; align-items: center&#34;&gt;
+            &lt;div&gt;
+                &lt;img
+                    class=&#34;pull-left&#34;
+                    alt=&#34;PayPal&#34;
+                    style=&#34;margin-right: 20px&#34;
+                    src=&#34;images/PayPal_mark_180x113.gif&#34;
+                    width=&#34;180&#34;
+                    height=&#34;113&#34;
+                /&gt;
+            &lt;/div&gt;
+            &lt;form action=&#34;https://www.paypal.com/cgi-bin/webscr&#34; target=&#34;_blank&#34; method=&#34;post&#34;&gt;
+                &lt;input type=&#34;hidden&#34; name=&#34;cmd&#34; value=&#34;_xclick&#34;/&gt;
+                &lt;input type=&#34;hidden&#34; name=&#34;business&#34; value=&#34;tekezo@pqrs.org&#34;/&gt;
+                &lt;input type=&#34;hidden&#34; name=&#34;lc&#34; value=&#34;US&#34;/&gt;
+                &lt;input type=&#34;hidden&#34; name=&#34;item_name&#34; value=&#34;Karabiner-Elements for macOS&#34;/&gt;
+                &lt;input type=&#34;hidden&#34; name=&#34;no_note&#34; value=&#34;0&#34;/&gt;
+                &lt;input type=&#34;hidden&#34; name=&#34;no_shipping&#34; value=&#34;1&#34;/&gt;
+                &lt;input type=&#34;hidden&#34; name=&#34;currency_code&#34; value=&#34;USD&#34;/&gt;
+                &lt;input type=&#34;hidden&#34; name=&#34;bn&#34; value=&#34;PP-DonationsBF:btn_donateCC_LG.gif:NonHostedGuest&#34;/&gt;
+                &lt;input type=&#34;hidden&#34; name=&#34;amount&#34; value=&#34;10.00&#34;/&gt;
+                &lt;button type=&#34;submit&#34; class=&#34;btn btn-primary px-4&#34;&gt;
+                    Open PayPal Payments Form (Pay $10 for Karabiner-Elements)
+                &lt;/button&gt;
+            &lt;/form&gt;
+        &lt;/div&gt;
+        &lt;div style=&#34;margin: 1em&#34;&gt;
+            Note:
+            This is effectively a donation but it has taken the form of software fee because of Japanese law and the constraints on government regulation.
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;For donors&lt;/h4&gt;
+&lt;p&gt;I appreciate all donors. I received your donations!&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m afraid I don&amp;rsquo;t have enough time to reply for donors.&lt;br /&gt;
+(I&amp;rsquo;m giving priority to develop Karabiner-Elements at the moment.)&lt;/p&gt;
+&lt;div class=&#34;text-right&#34;&gt;
+    Mar 3, 2020&lt;br /&gt;
+    Takayama Fumihiko
+&lt;/div&gt;
+
 &lt;/div&gt;
 
 
@@ -2294,7 +2385,7 @@ Note:
 &lt;/ul&gt;
 &lt;h2 id=&#34;karabiner-10220&#34;&gt;Karabiner 10.22.0&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;/files/Karabiner-10.22.0.dmg&#34;&gt;📦 Download&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/tekezo/Karabiner/releases/download/files/Karabiner-10.22.0.dmg&#34;&gt;📦 Download&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;📅 Release date
 &lt;ul&gt;
 &lt;li&gt;Oct 31, 2016&lt;/li&gt;
@@ -2314,7 +2405,7 @@ Note:
 &lt;/ul&gt;
 &lt;h2 id=&#34;karabiner-10210&#34;&gt;Karabiner 10.21.0&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;/files/Karabiner-10.21.0.dmg&#34;&gt;📦 Download&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/tekezo/Karabiner/releases/download/files/Karabiner-10.21.0.dmg&#34;&gt;📦 Download&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;📅 Release date
 &lt;ul&gt;
 &lt;li&gt;Jul 5, 2016&lt;/li&gt;
@@ -2334,7 +2425,7 @@ Note:
 &lt;/ul&gt;
 &lt;h2 id=&#34;karabiner-10200&#34;&gt;Karabiner 10.20.0&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;/files/Karabiner-10.20.0.dmg&#34;&gt;📦 Download&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/tekezo/Karabiner/releases/download/files/Karabiner-10.20.0.dmg&#34;&gt;📦 Download&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;📅 Release date
 &lt;ul&gt;
 &lt;li&gt;Jun 16, 2016&lt;/li&gt;
@@ -2354,7 +2445,7 @@ Note:
 &lt;/ul&gt;
 &lt;h2 id=&#34;karabiner-10190&#34;&gt;Karabiner 10.19.0&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;/files/Karabiner-10.19.0.dmg&#34;&gt;📦 Download&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/tekezo/Karabiner/releases/download/files/Karabiner-10.19.0.dmg&#34;&gt;📦 Download&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;📅 Release date
 &lt;ul&gt;
 &lt;li&gt;Jun 9, 2016&lt;/li&gt;
@@ -2398,6 +2489,515 @@ For example, the vertical adjustment value for &lt;code&gt;screen&lt;/code&gt; a
 &lt;ul&gt;
 &lt;li&gt;The device disconnect handling has been improved.&lt;/li&gt;
 &lt;li&gt;Prepared settings have been updated.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;karabiner-10180&#34;&gt;Karabiner 10.18.0&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/tekezo/Karabiner/releases/download/files/Karabiner-10.18.0.dmg&#34;&gt;📦 Download&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;📅 Release date
+&lt;ul&gt;
+&lt;li&gt;Mar 7, 2016&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;🐛 Bug Fixes
+&lt;ul&gt;
+&lt;li&gt;Fixed an issue that is introduced in Karabiner 10.17.0:
+&lt;ul&gt;
+&lt;li&gt;Karabiner will be crashed when you change settings after you opened and closed the Preferences window in macOS 10.10.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;karabiner-10170&#34;&gt;Karabiner 10.17.0&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/tekezo/Karabiner/releases/download/files/Karabiner-10.17.0.dmg&#34;&gt;📦 Download&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;📅 Release date
+&lt;ul&gt;
+&lt;li&gt;Mar 5, 2016&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;✨ New Features
+&lt;ul&gt;
+&lt;li&gt;&amp;ldquo;Show icon in Dock&amp;rdquo; setting has been added.&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;Resume at login&amp;rdquo; setting has been added.&lt;br/&gt;
+You can disable auto resume function.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Option::FLIPSCROLLWHEEL_ROTATE&lt;/code&gt; has been added.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;PointingRelative::ANY&lt;/code&gt; has been added into &lt;code&gt;__PointingRelativeToKey__&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;⚡️ Improvements
+&lt;ul&gt;
+&lt;li&gt;&amp;ldquo;Disable an internal keyboard while external keyboards are connected&amp;rdquo; setting has been improved.
+&lt;ul&gt;
+&lt;li&gt;Mionix Naos 7000 has been supported.&lt;/li&gt;
+&lt;li&gt;Logitech Bluetooth Mouse M555b has been supported.&lt;/li&gt;
+&lt;li&gt;Microsoft Sculpt Touch Mouse has been supported.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;The word-wrap property of setting description in Preferences became break-word.&lt;/li&gt;
+&lt;li&gt;The font size in Preferences has been selectable from &amp;ldquo;default font&amp;rdquo; and &amp;ldquo;large font&amp;rdquo;.&lt;/li&gt;
+&lt;li&gt;The consumer keys (media keys) repeat values has been synchronized with the key repeat values.&lt;/li&gt;
+&lt;li&gt;The behavior of starting Karabiner on system startup has been improved.&lt;/li&gt;
+&lt;li&gt;Prepared settings have been updated.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;🐛 Bug Fixes
+&lt;ul&gt;
+&lt;li&gt;Fixed an issue that some Qt apps might be crash when AXNotifier is enabled. (WISO apps)&lt;/li&gt;
+&lt;li&gt;Fixed an issue that Microsoft Excel scroll position is sometimes reset while using scroll wheel.&lt;/li&gt;
+&lt;li&gt;Fixed an issue that &lt;code&gt;__KeyDownUpToKey__&lt;/code&gt; sends only the last interrupted events when multiple interrupted events are specified.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;karabiner-10150&#34;&gt;Karabiner 10.15.0&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/tekezo/Karabiner/releases/download/files/Karabiner-10.15.0.dmg&#34;&gt;📦 Download&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;📅 Release date
+&lt;ul&gt;
+&lt;li&gt;Dec 21, 2015&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;⚡️ Improvements
+&lt;ul&gt;
+&lt;li&gt;The safety limit of key repeat rate has been removed.&lt;br/&gt;
+You can overwrite key repeat rate by extreme fast values.
+&lt;ul&gt;
+&lt;li&gt;The limit was 200 ms and 5 ms in the previous versions of Karabiner.&lt;br/&gt;
+Please increase the key repeat values to 200 ms and 5 ms if you feel new key repeat is too fast.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;GUI for enabling debug mode has been added into Karabiner Preferences.&lt;/li&gt;
+&lt;li&gt;Prepared settings have been updated.&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;Disable an internal keyboard while external keyboards are connected&amp;rdquo; setting has been improved.
+&lt;ul&gt;
+&lt;li&gt;Razer DeathAdder Chroma has been supported.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;ModifierFlag treatment has been improved in Option::KEYTOKEY_DELAYED_ACTION.&lt;/li&gt;
+&lt;li&gt;Some error messages have been improved.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;🐛 Bug Fixes
+Fixed an issue that some Java apps might be crash when AXNotifier is enabled. (Fiji)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;karabiner-10140&#34;&gt;Karabiner 10.14.0&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/tekezo/Karabiner/releases/download/files/Karabiner-10.14.0.dmg&#34;&gt;📦 Download&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;📅 Release date
+&lt;ul&gt;
+&lt;li&gt;Nov 5, 2015&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;⚡️ Improvements
+&lt;ul&gt;
+&lt;li&gt;&amp;ldquo;Karabiner Preferences &amp;gt; Key Repeat tab&amp;rdquo; UI has been improved.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;🐛 Bug Fixes
+&lt;ul&gt;
+&lt;li&gt;Fixed an issue that the key repeat configuration migration sometimes does not set properly values when Karabiner has been upgrade from v10.11.0 or prior.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;karabiner-10130&#34;&gt;Karabiner 10.13.0&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/tekezo/Karabiner/releases/download/files/Karabiner-10.13.0.dmg&#34;&gt;📦 Download&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;📅 Release date
+&lt;ul&gt;
+&lt;li&gt;Nov 2, 2015&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;⚡️ Improvements
+&lt;ul&gt;
+&lt;li&gt;&amp;ldquo;Overwrite the key repeat values of system&amp;rdquo; option has been added.&lt;br/&gt;
+Karabiner uses the system values unless this option is enabled.&lt;/li&gt;
+&lt;li&gt;The key up event handling has been improved in some keyboards.&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;Don&amp;rsquo;t remap Apple&amp;rsquo;s keyboards&amp;rdquo; setting supported Magic Keyboard.&lt;/li&gt;
+&lt;li&gt;Karabiner Preferences became resizable.&lt;/li&gt;
+&lt;li&gt;Prepared settings have been updated.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;🐛 Bug Fixes
+&lt;ul&gt;
+&lt;li&gt;Fixed an issue that &lt;code&gt;__SimultaneousKeyPresses__&lt;/code&gt; sometimes fails sending key up event when &lt;code&gt;__BlockUntilKeyUp__&lt;/code&gt; is used together.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;karabiner-10110&#34;&gt;Karabiner 10.11.0&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/tekezo/Karabiner/releases/download/files/Karabiner-10.11.0.dmg&#34;&gt;📦 Download&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;📅 Release date
+&lt;ul&gt;
+&lt;li&gt;Oct 10, 2015&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;🐛 Bug Fixes
+&lt;ul&gt;
+&lt;li&gt;Fixed an issue that &lt;code&gt;__SimultaneousKeyPresses__&lt;/code&gt; sends key events continuously even if all keys are released when using multiple keyboards at the same time and both keyboards are pressed.&lt;/li&gt;
+&lt;li&gt;Fixed an issue that some Java apps might be crash when AXNotifier is enabled. (Spine, SpineTrial)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;karabiner-10100&#34;&gt;Karabiner 10.10.0&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/tekezo/Karabiner/releases/download/files/Karabiner-10.10.0.dmg&#34;&gt;📦 Download&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;📅 Release date
+&lt;ul&gt;
+&lt;li&gt;Oct 8, 2015&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;⚡️ Improvements
+&lt;ul&gt;
+&lt;li&gt;&amp;ldquo;Use prepared settings&amp;rdquo; option has been added into Karabiner Preferences &amp;gt; Misc &amp;amp; Uninstall tab.&lt;br/&gt;
+Turning off the setting allows you to drop prepared settings and improve the speed of reloading XML.&lt;/li&gt;
+&lt;li&gt;EventViewer has been improved.&lt;br/&gt;
+Media control events and some key combinations are supported.&lt;/li&gt;
+&lt;li&gt;Event modification has been improved when you are using multiple keyboards at the same time.&lt;/li&gt;
+&lt;li&gt;AXNotifier supported OmniFocus2 Quick Entry.&lt;/li&gt;
+&lt;li&gt;Prepared settings have been updated.&lt;/li&gt;
+&lt;li&gt;Updates for people who add new settings by oneself:
+&lt;ul&gt;
+&lt;li&gt;once attribute has been introduced into &lt;code&gt;&amp;lt;include&amp;gt;&lt;/code&gt; tag.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;🐛 Bug Fixes
+&lt;ul&gt;
+&lt;li&gt;Fixed an issue that the CPU usage of Preview.app might be 100% at opening a huge PDF file when AXNotifier is enabled.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;karabiner-1090&#34;&gt;Karabiner 10.9.0&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/tekezo/Karabiner/releases/download/files/Karabiner-10.9.0.dmg&#34;&gt;📦 Download&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;📅 Release date
+&lt;ul&gt;
+&lt;li&gt;Sep 7, 2015&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;💥 Breaking changes
+&lt;ul&gt;
+&lt;li&gt;The fn keypad has been removed from implicit behavior.&lt;br/&gt;
+Please use either of the following settings instead if you need.
+&lt;ul&gt;
+&lt;li&gt;&amp;ldquo;Fn+Number to KeyPad&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;Use old style fn keypad&amp;rdquo;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;⚡️ Improvements
+&lt;ul&gt;
+&lt;li&gt;The external keyboard handling has been improved.&lt;/li&gt;
+&lt;li&gt;Prepared settings have been updated.&lt;/li&gt;
+&lt;li&gt;The following filters have been added.
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;lastsentevent_not&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;lastsentevent_only&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;🐛 Bug Fixes
+&lt;ul&gt;
+&lt;li&gt;Fixed an issue that &lt;code&gt;__DropKeyAfterRemap__&lt;/code&gt; does not work properly if the target key is changed by &lt;code&gt;&amp;lt;autogen&amp;gt;&lt;/code&gt; that is defined before &lt;code&gt;__DropKeyAfterRemap__&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;karabiner-1080&#34;&gt;Karabiner 10.8.0&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/tekezo/Karabiner/releases/download/files/Karabiner-10.8.0.dmg&#34;&gt;📦 Download&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;📅 Release date
+&lt;ul&gt;
+&lt;li&gt;Aug 24, 2015&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;⚡️ Improvements
+&lt;ul&gt;
+&lt;li&gt;AXNotifier supported new Alfred (Alfred 2.7.2).&lt;/li&gt;
+&lt;li&gt;Prepared settings have been updated.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;__PassThrough__&lt;/code&gt; behavior has been improved.&lt;/li&gt;
+&lt;li&gt;The following filters have been added.
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;lastreleasedphysicalkey_only&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;lastreleasedphysicalkey_not&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;elapsedtimesincelastreleased_greaterthan&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;elapsedtimesincelastreleased_lessthan&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;🐛 Bug Fixes
+&lt;ul&gt;
+&lt;li&gt;Fixed an issue that multi-touch extension might stop working after wake up.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;karabiner-1070&#34;&gt;Karabiner 10.7.0&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/tekezo/Karabiner/releases/download/files/Karabiner-10.7.0.dmg&#34;&gt;📦 Download&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;📅 Release date
+&lt;ul&gt;
+&lt;li&gt;Aug 10, 2015&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;💥 Breaking changes
+&lt;ul&gt;
+&lt;li&gt;The default mouse keys scroll direction has been changed to natural.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;inputsourcedetail_only&amp;gt;&lt;/code&gt; and &lt;code&gt;&amp;lt;inputsourcedetail_not&amp;gt;&lt;/code&gt; filters have been merged into &lt;code&gt;&amp;lt;inputsource_only&amp;gt;&lt;/code&gt; and &lt;code&gt;&amp;lt;inputsource_not&amp;gt;&lt;/code&gt;.&lt;br/&gt;
+Please use &lt;code&gt;&amp;lt;inputsource_only&amp;gt;&lt;/code&gt; and &lt;code&gt;&amp;lt;inputsource_not&amp;gt;&lt;/code&gt; in your private.xml.&lt;/li&gt;
+&lt;li&gt;Launcher Mode v2 uses own modifier flag in order to improve usability.&lt;br /&gt;
+If you extended Launcher Mode v2 by &lt;code&gt;LAUNCHER_MODE_V2_EXTRA&lt;/code&gt;, please remove &lt;code&gt;ModifierFlag::NONE&lt;/code&gt; from &lt;code&gt;LAUNCHER_MODE_V2_EXTRA&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Example:
+&lt;ul&gt;
+&lt;li&gt;old: &lt;code&gt;&amp;lt;autogen&amp;gt;__KeyDownUpToKey__ KeyCode::A, ModifierFlag::NONE, KeyCode::VK_OPEN_URL_APP_Activity_Monitor&amp;lt;/autogen&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;new: &lt;code&gt;&amp;lt;autogen&amp;gt;__KeyDownUpToKey__ KeyCode::A, KeyCode::VK_OPEN_URL_APP_Activity_Monitor&amp;lt;/autogen&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;⚡️ Improvements
+&lt;ul&gt;
+&lt;li&gt;New option has been added into command line interface: &lt;code&gt;toggle&lt;/code&gt;, &lt;code&gt;be_careful_to_use__clear_all_values_by_name&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;New option has been added into post-hid-event command line utility: &lt;code&gt;--flag&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;Status Message &amp;gt; Show caps lock state&amp;rdquo; option has been added.&lt;/li&gt;
+&lt;li&gt;Multiple displays support has been improved. The status message will be shown in the all screen.&lt;/li&gt;
+&lt;li&gt;Fast User Switching support has been improved.&lt;/li&gt;
+&lt;li&gt;Prepared settings have been updated.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;__DropAllKeys__&lt;/code&gt; has been added.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Option::KEYTOKEY_DELAYED_ACTION&lt;/code&gt; has been added.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Option::KEYTOKEY_INCREASE_MODIFIER_FLAGS&lt;/code&gt; has been added.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Option::SIMULTANEOUSKEYPRESSES_POST_FROM_EVENTS_AS_RAW&lt;/code&gt; has been added.&lt;/li&gt;
+&lt;li&gt;The following filters have been added.
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;pressingphysicalkeys_greaterthan&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;pressingphysicalkeys_lessthan&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;__HoldingKeyToKey__&lt;/code&gt; has been improved at you pressed modifiers while holding target key down.&lt;/li&gt;
+&lt;li&gt;ModifierFlag pattern matching has been introduced into &lt;code&gt;Option::KEYTOKEY_AFTER_KEYUP&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;background /&amp;gt;&lt;/code&gt; support has been added into &lt;code&gt;&amp;lt;vkopenurldef&amp;gt;&lt;/code&gt; tag.&lt;/li&gt;
+&lt;li&gt;high_priority attribute has been introduced into &lt;code&gt;&amp;lt;identifier&amp;gt;&lt;/code&gt; tag.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;appdef&amp;gt;&lt;/code&gt; behavior has been improved. It preserves prepared settings when you use &lt;code&gt;&amp;lt;appdef&amp;gt;&lt;/code&gt; in private.xml for bundle identifiers that are in prepared appdef.xml.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;KeyCode::VK_MOUSEKEY_FIXED_DISTANCE_SCROLL_*&lt;/code&gt; have been added.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;🐛 Bug Fixes
+&lt;ul&gt;
+&lt;li&gt;Fixed an issue that some Java apps might be crash when AXNotifier is enabled. (Eclipse, Screencast-O-Matic, RazorSQL, EditRocket)&lt;/li&gt;
+&lt;li&gt;The kext loading issue on macOS 10.11 beta 6 has been fixed.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;karabiner-1060&#34;&gt;Karabiner 10.6.0&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/tekezo/Karabiner/releases/download/files/Karabiner-10.6.0.dmg&#34;&gt;📦 Download&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;📅 Release date
+&lt;ul&gt;
+&lt;li&gt;Jan 13, 2015&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;⚡️ Improvements
+&lt;ul&gt;
+&lt;li&gt;&amp;ldquo;Sort by name&amp;rdquo; and &amp;ldquo;Sort by created&amp;rdquo; button have been added in Preferences &amp;gt; MenuBar.&lt;/li&gt;
+&lt;li&gt;Prepared settings have been updated.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;🐛 Bug Fixes
+&lt;ul&gt;
+&lt;li&gt;A following prepared setting has been fixed:
+&lt;ul&gt;
+&lt;li&gt;General &amp;gt; Disable an internal keyboard while external keyboards are connected.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;karabiner-1050&#34;&gt;Karabiner 10.5.0&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/tekezo/Karabiner/releases/download/files/Karabiner-10.5.0.dmg&#34;&gt;📦 Download&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;📅 Release date
+&lt;ul&gt;
+&lt;li&gt;Dec 12, 2014&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;🐛 Bug Fixes
+&lt;ul&gt;
+&lt;li&gt;Fixed an issue that some Java apps might be crash when AXNotifier is enabled. (IntelliJ IDEA, PhpStorm, RubyMine, Android Studio)&lt;/li&gt;
+&lt;li&gt;Fixed an issue that &lt;code&gt;&amp;lt;device_only&amp;gt;&lt;/code&gt; and &lt;code&gt;&amp;lt;device_not&amp;gt;&lt;/code&gt; filters are ignored when multiple keyboards are connected and same keys are pressed at the same time.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;⚡️ Improvements
+&lt;ul&gt;
+&lt;li&gt;&amp;ldquo;Ignore bouncing (chattering) events&amp;rdquo; setting has been added.&lt;/li&gt;
+&lt;li&gt;Spotlight has been supported in &lt;code&gt;&amp;lt;only&amp;gt;&lt;/code&gt; and &lt;code&gt;&amp;lt;not&amp;gt;&lt;/code&gt; filters.&lt;/li&gt;
+&lt;li&gt;Quit button has been added into Preferences.&lt;/li&gt;
+&lt;li&gt;Simultaneous presses detection with rapid key typing has been improved.&lt;/li&gt;
+&lt;li&gt;ModifierFlag manipulation when key up has been improved.&lt;/li&gt;
+&lt;li&gt;Prepared settings have been updated.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Option::FORCENUMLOCKON_FORCE_OFF&lt;/code&gt; has been added.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;__KeyDownUpToKey__&lt;/code&gt; has been added.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;include&amp;gt;&lt;/code&gt; ignores missing files. (Karabiner does not show an alert dialog when &lt;code&gt;&amp;lt;include&amp;gt;&lt;/code&gt; refers missing files.)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;karabiner-1040&#34;&gt;Karabiner 10.4.0&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/tekezo/Karabiner/releases/download/files/Karabiner-10.4.0.dmg&#34;&gt;📦 Download&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;📅 Release date
+&lt;ul&gt;
+&lt;li&gt;Oct 14, 2014&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;🐛 Bug Fixes
+&lt;ul&gt;
+&lt;li&gt;A broken prepared setting has been fixed.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;karabiner-1030&#34;&gt;Karabiner 10.3.0&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/tekezo/Karabiner/releases/download/files/Karabiner-10.3.0.dmg&#34;&gt;📦 Download&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;📅 Release date
+&lt;ul&gt;
+&lt;li&gt;Oct 7, 2014&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;⚡️ Improvements
+&lt;ul&gt;
+&lt;li&gt;Stability at reloading XML has been improved.&lt;/li&gt;
+&lt;li&gt;macOS 10.10 support has been improved.&lt;/li&gt;
+&lt;li&gt;Prepared settings have been updated.&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;Check for updates&amp;rdquo; (Sparkle) has been updated.&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;Restart AXNotifier&amp;rdquo; button has been added into Preferences.&lt;/li&gt;
+&lt;li&gt;The following filters have been added.
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;modifierlocked_only&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;modifierlocked_not&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;modifierstuck_only&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;modifierstuck_not&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;🐛 Bug Fixes
+Fixed an issue that EventViewer does not show control-tab and control-shift-tab event when Full Keyboard Access is enabled.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;karabiner-1020&#34;&gt;Karabiner 10.2.0&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/tekezo/Karabiner/releases/download/files/Karabiner-10.2.0.dmg&#34;&gt;📦 Download&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;📅 Release date
+&lt;ul&gt;
+&lt;li&gt;Aug 20, 2014&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;🐛 Bug Fixes
+&lt;ul&gt;
+&lt;li&gt;Fixed an issue that shortcuts (eg. Ctrl-C, Ctrl-V) might not work properly in Microsoft Remote Desktop.&lt;/li&gt;
+&lt;li&gt;Fixed an issue that some Java apps will be crash.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;⚡️ Improvements
+&lt;ul&gt;
+&lt;li&gt;Added an option to disable AXNotifier. (&amp;ldquo;AXNotifier&amp;rdquo; tab in Preferences.)&lt;/li&gt;
+&lt;li&gt;Updated prepared settings.&lt;/li&gt;
+&lt;li&gt;Some minor improvements.&lt;/li&gt;
+&lt;li&gt;Profile management functions have been added into command line interface.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;__HoldingKeyToKey__&lt;/code&gt; and &lt;code&gt;__KeyOverlaidModifier__&lt;/code&gt; support &lt;code&gt;Option::KEYTOKEY_BEFORE_KEYDOWN&lt;/code&gt; and &lt;code&gt;Option::KEYTOKEY_AFTER_KEYUP&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;You can also use &lt;code&gt;__{ }__&lt;/code&gt; as well as &lt;code&gt;@begin&lt;/code&gt;, &lt;code&gt;@end&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;karabiner-1010&#34;&gt;Karabiner 10.1.0&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/tekezo/Karabiner/releases/download/files/Karabiner-10.1.0.dmg&#34;&gt;📦 Download&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;📅 Release date
+&lt;ul&gt;
+&lt;li&gt;Jul 21, 2014&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;🐛 Bug Fixes
+&lt;ul&gt;
+&lt;li&gt;Fixed an issue that the continuous key sequence will be improper order in environments which VMWare Fusion is installed.&lt;/li&gt;
+&lt;li&gt;Fixed an issue that a message &amp;ldquo;Karabiner cannot connect with kernel extension&amp;rdquo; might be shown in some environment.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;⚡️ Improvements
+&lt;ul&gt;
+&lt;li&gt;Show an error alert when Karabiner is not placed in /Applications.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;KeyCode::VK_IOHIKEYBOARD_TOGGLE_NUMLOCK&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Updated prepared settings.&lt;/li&gt;
+&lt;li&gt;Some minor improvements.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;karabiner-1000&#34;&gt;Karabiner 10.0.0&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/tekezo/Karabiner/releases/download/files/Karabiner-10.0.0.dmg&#34;&gt;📦 Download&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;📅 Release date
+&lt;ul&gt;
+&lt;li&gt;Jul 9, 2014&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;💥 Breaking changes
+&lt;ul&gt;
+&lt;li&gt;KeyRemap4MacBook has been renamed to &amp;ldquo;Karabiner&amp;rdquo;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;KeyCode::VK_JIS_TEMPORARY_*&lt;/code&gt; are removed.&lt;br/&gt;
+Please use &lt;code&gt;&amp;lt;inputsource_filter&amp;gt;&lt;/code&gt;, &lt;code&gt;Option::KEYTOKEY_BEFORE_KEYDOWN&lt;/code&gt;, &lt;code&gt;Option::KEYTOKEY_AFTER_KEYUP&lt;/code&gt;, &lt;code&gt;KeyCode::JIS_EISUU&lt;/code&gt; and &lt;code&gt;KeyCode::JIS_KANA&lt;/code&gt; instead.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;🐛 Bug Fixes
+&lt;ul&gt;
+&lt;li&gt;Fixed an issue that a message &amp;ldquo;Kernel extension is not loaded&amp;rdquo; might be shown in some environment.&lt;/li&gt;
+&lt;li&gt;Fixed an issue that status message will not be shown properly when you are using multiple displays.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;⚡️ Improvements
+&lt;ul&gt;
+&lt;li&gt;AXNotifier has been added.&lt;br/&gt;
+AXNotifier allows you to observe the window name (window title) and the focused ui element role (eg. whether textarea or not).&lt;br/&gt;
+For example, a setting that allows you to use hjkl keys as arrow keys in Finder when you are not editing text such as filename has been added.&lt;/li&gt;
+&lt;li&gt;A command line utility &amp;ldquo;warp-mouse-cursor-position&amp;rdquo; has been added.&lt;br/&gt;
+Settings which use this utility have been added, too.&lt;br/&gt;
+For example, this setting allows you to move mouse cursor by tapping fn key:
+&lt;ul&gt;
+&lt;li&gt;Custom Shortcuts
+&lt;ul&gt;
+&lt;li&gt;Move mouse cursor to the center of the frontmost app&amp;rsquo;s window:
+&lt;ul&gt;
+&lt;li&gt;By pressing fn key alone.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Updated prepared settings.&lt;/li&gt;
+&lt;li&gt;Some minor improvements.&lt;/li&gt;
+&lt;li&gt;You can add your own modifiers by &lt;code&gt;&amp;lt;modifierdef&amp;gt;&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;&amp;lt;windowname_only&amp;gt;&lt;/code&gt; and &lt;code&gt;&amp;lt;windowname_not&amp;gt;&lt;/code&gt; filters.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;&amp;lt;uielementrole_only&amp;gt;&lt;/code&gt; and &lt;code&gt;&amp;lt;uielementrole_not&amp;gt;&lt;/code&gt; filters.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;__PointingRelativeToKey__&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;__PassThrough__&lt;/code&gt;. You can disable all settings in specific situations.&lt;br/&gt;
+For example, this item allow you to disable all settings while you are using virtual machine.&lt;br/&gt;
+(This setting is already included in prepared settings.)&lt;/li&gt;
+&lt;li&gt;You can use KeyCode and ConsumerKeyCode in &lt;code&gt;__PointingRelativeToScroll__&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added ThresholdMillisecond into &lt;code&gt;__HoldingKeyToKey__&lt;/code&gt;.&lt;br/&gt;
+You can control a holding threshold:&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;__BlockUntilKeyUp__&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;Option::KEYOVERLAIDMODIFIER_REPEAT_TOKEYS&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;Option::DROPSCROLLWHEEL_DROP_MOMENTUM_SCROLL&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;KeyCode::VK_NEGATIVE_LOCK_*&lt;/code&gt;. (eg. &lt;code&gt;KeyCode::VK_NEGATIVE_LOCK_COMMAND_L&lt;/code&gt;, &lt;code&gt;KeyCode::VK_NEGATIVE_LOCK_SHIFT_L&lt;/code&gt;.)&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;KeyCode::VK_STICKY_ACTIVE_MODIFIERS_*&lt;/code&gt;:
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;KeyCode::VK_STICKY_ACTIVE_MODIFIERS_TOGGLE&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;KeyCode::VK_STICKY_ACTIVE_MODIFIERS_FORCE_ON&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;KeyCode::VK_STICKY_ACTIVE_MODIFIERS_FORCE_OFF&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
