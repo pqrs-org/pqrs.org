@@ -369,3 +369,314 @@ exclude_search: true
 -   ⚡️ Improvements
     -   The device disconnect handling has been improved.
     -   Prepared settings have been updated.
+
+## Karabiner 10.18.0
+
+-   [📦 Download](https://github.com/tekezo/Karabiner/releases/download/files/Karabiner-10.18.0.dmg)
+-   📅 Release date
+    -   Mar 7, 2016
+-   🐛 Bug Fixes
+    -   Fixed an issue that is introduced in Karabiner 10.17.0:
+        -   Karabiner will be crashed when you change settings after you opened and closed the Preferences window in macOS 10.10.
+
+## Karabiner 10.17.0
+
+-   [📦 Download](https://github.com/tekezo/Karabiner/releases/download/files/Karabiner-10.17.0.dmg)
+-   📅 Release date
+    -   Mar 5, 2016
+-   ✨ New Features
+    -   "Show icon in Dock" setting has been added.
+    -   "Resume at login" setting has been added.<br/>
+        You can disable auto resume function.
+    -   `Option::FLIPSCROLLWHEEL_ROTATE` has been added.
+    -   `PointingRelative::ANY` has been added into `__PointingRelativeToKey__`.
+-   ⚡️ Improvements
+    -   "Disable an internal keyboard while external keyboards are connected" setting has been improved.
+        -   Mionix Naos 7000 has been supported.
+        -   Logitech Bluetooth Mouse M555b has been supported.
+        -   Microsoft Sculpt Touch Mouse has been supported.
+    -   The word-wrap property of setting description in Preferences became break-word.
+    -   The font size in Preferences has been selectable from "default font" and "large font".
+    -   The consumer keys (media keys) repeat values has been synchronized with the key repeat values.
+    -   The behavior of starting Karabiner on system startup has been improved.
+    -   Prepared settings have been updated.
+-   🐛 Bug Fixes
+    -   Fixed an issue that some Qt apps might be crash when AXNotifier is enabled. (WISO apps)
+    -   Fixed an issue that Microsoft Excel scroll position is sometimes reset while using scroll wheel.
+    -   Fixed an issue that `__KeyDownUpToKey__` sends only the last interrupted events when multiple interrupted events are specified.
+
+## Karabiner 10.15.0
+
+-   [📦 Download](https://github.com/tekezo/Karabiner/releases/download/files/Karabiner-10.15.0.dmg)
+-   📅 Release date
+    -   Dec 21, 2015
+-   ⚡️ Improvements
+    -   The safety limit of key repeat rate has been removed.<br/>
+        You can overwrite key repeat rate by extreme fast values.
+        -   The limit was 200 ms and 5 ms in the previous versions of Karabiner.<br/>
+            Please increase the key repeat values to 200 ms and 5 ms if you feel new key repeat is too fast.
+    -   GUI for enabling debug mode has been added into Karabiner Preferences.
+    -   Prepared settings have been updated.
+    -   "Disable an internal keyboard while external keyboards are connected" setting has been improved.
+        -   Razer DeathAdder Chroma has been supported.
+    -   ModifierFlag treatment has been improved in Option::KEYTOKEY_DELAYED_ACTION.
+    -   Some error messages have been improved.
+-   🐛 Bug Fixes
+    Fixed an issue that some Java apps might be crash when AXNotifier is enabled. (Fiji)
+
+## Karabiner 10.14.0
+
+-   [📦 Download](https://github.com/tekezo/Karabiner/releases/download/files/Karabiner-10.14.0.dmg)
+-   📅 Release date
+    -   Nov 5, 2015
+-   ⚡️ Improvements
+    -   "Karabiner Preferences > Key Repeat tab" UI has been improved.
+-   🐛 Bug Fixes
+    -   Fixed an issue that the key repeat configuration migration sometimes does not set properly values when Karabiner has been upgrade from v10.11.0 or prior.
+
+## Karabiner 10.13.0
+
+-   [📦 Download](https://github.com/tekezo/Karabiner/releases/download/files/Karabiner-10.13.0.dmg)
+-   📅 Release date
+    -   Nov 2, 2015
+-   ⚡️ Improvements
+    -   "Overwrite the key repeat values of system" option has been added.<br/>
+        Karabiner uses the system values unless this option is enabled.
+    -   The key up event handling has been improved in some keyboards.
+    -   "Don't remap Apple's keyboards" setting supported Magic Keyboard.
+    -   Karabiner Preferences became resizable.
+    -   Prepared settings have been updated.
+-   🐛 Bug Fixes
+    -   Fixed an issue that `__SimultaneousKeyPresses__` sometimes fails sending key up event when `__BlockUntilKeyUp__` is used together.
+
+## Karabiner 10.11.0
+
+-   [📦 Download](https://github.com/tekezo/Karabiner/releases/download/files/Karabiner-10.11.0.dmg)
+-   📅 Release date
+    -   Oct 10, 2015
+-   🐛 Bug Fixes
+    -   Fixed an issue that `__SimultaneousKeyPresses__` sends key events continuously even if all keys are released when using multiple keyboards at the same time and both keyboards are pressed.
+    -   Fixed an issue that some Java apps might be crash when AXNotifier is enabled. (Spine, SpineTrial)
+
+## Karabiner 10.10.0
+
+-   [📦 Download](https://github.com/tekezo/Karabiner/releases/download/files/Karabiner-10.10.0.dmg)
+-   📅 Release date
+    -   Oct 8, 2015
+-   ⚡️ Improvements
+    -   "Use prepared settings" option has been added into Karabiner Preferences > Misc & Uninstall tab.<br/>
+        Turning off the setting allows you to drop prepared settings and improve the speed of reloading XML.
+    -   EventViewer has been improved.<br/>
+        Media control events and some key combinations are supported.
+    -   Event modification has been improved when you are using multiple keyboards at the same time.
+    -   AXNotifier supported OmniFocus2 Quick Entry.
+    -   Prepared settings have been updated.
+    -   Updates for people who add new settings by oneself:
+        -   once attribute has been introduced into `<include>` tag.
+-   🐛 Bug Fixes
+    -   Fixed an issue that the CPU usage of Preview.app might be 100% at opening a huge PDF file when AXNotifier is enabled.
+
+## Karabiner 10.9.0
+
+-   [📦 Download](https://github.com/tekezo/Karabiner/releases/download/files/Karabiner-10.9.0.dmg)
+-   📅 Release date
+    -   Sep 7, 2015
+-   💥 Breaking changes
+    -   The fn keypad has been removed from implicit behavior.<br/>
+        Please use either of the following settings instead if you need.
+        -   "Fn+Number to KeyPad"
+        -   "Use old style fn keypad"
+-   ⚡️ Improvements
+    -   The external keyboard handling has been improved.
+    -   Prepared settings have been updated.
+    -   The following filters have been added.
+        -   `<lastsentevent_not>`
+        -   `<lastsentevent_only>`
+-   🐛 Bug Fixes
+    -   Fixed an issue that `__DropKeyAfterRemap__` does not work properly if the target key is changed by `<autogen>` that is defined before `__DropKeyAfterRemap__`.
+
+## Karabiner 10.8.0
+
+-   [📦 Download](https://github.com/tekezo/Karabiner/releases/download/files/Karabiner-10.8.0.dmg)
+-   📅 Release date
+    -   Aug 24, 2015
+-   ⚡️ Improvements
+    -   AXNotifier supported new Alfred (Alfred 2.7.2).
+    -   Prepared settings have been updated.
+    -   `__PassThrough__` behavior has been improved.
+    -   The following filters have been added.
+        -   `<lastreleasedphysicalkey_only>`
+        -   `<lastreleasedphysicalkey_not>`
+        -   `<elapsedtimesincelastreleased_greaterthan>`
+        -   `<elapsedtimesincelastreleased_lessthan>`
+-   🐛 Bug Fixes
+    -   Fixed an issue that multi-touch extension might stop working after wake up.
+
+## Karabiner 10.7.0
+
+-   [📦 Download](https://github.com/tekezo/Karabiner/releases/download/files/Karabiner-10.7.0.dmg)
+-   📅 Release date
+    -   Aug 10, 2015
+-   💥 Breaking changes
+    -   The default mouse keys scroll direction has been changed to natural.
+    -   `<inputsourcedetail_only>` and `<inputsourcedetail_not>` filters have been merged into `<inputsource_only>` and `<inputsource_not>`.<br/>
+        Please use `<inputsource_only>` and `<inputsource_not>` in your private.xml.
+    -   Launcher Mode v2 uses own modifier flag in order to improve usability.<br />
+        If you extended Launcher Mode v2 by `LAUNCHER_MODE_V2_EXTRA`, please remove `ModifierFlag::NONE` from `LAUNCHER_MODE_V2_EXTRA`.
+    -   Example:
+        -   old: `<autogen>__KeyDownUpToKey__ KeyCode::A, ModifierFlag::NONE, KeyCode::VK_OPEN_URL_APP_Activity_Monitor</autogen>`
+        -   new: `<autogen>__KeyDownUpToKey__ KeyCode::A, KeyCode::VK_OPEN_URL_APP_Activity_Monitor</autogen>`
+-   ⚡️ Improvements
+    -   New option has been added into command line interface: `toggle`, `be_careful_to_use__clear_all_values_by_name`
+    -   New option has been added into post-hid-event command line utility: `--flag`
+    -   "Status Message > Show caps lock state" option has been added.
+    -   Multiple displays support has been improved. The status message will be shown in the all screen.
+    -   Fast User Switching support has been improved.
+    -   Prepared settings have been updated.
+    -   `__DropAllKeys__` has been added.
+    -   `Option::KEYTOKEY_DELAYED_ACTION` has been added.
+    -   `Option::KEYTOKEY_INCREASE_MODIFIER_FLAGS` has been added.
+    -   `Option::SIMULTANEOUSKEYPRESSES_POST_FROM_EVENTS_AS_RAW` has been added.
+    -   The following filters have been added.
+        -   `<pressingphysicalkeys_greaterthan>`
+        -   `<pressingphysicalkeys_lessthan>`
+    -   `__HoldingKeyToKey__` has been improved at you pressed modifiers while holding target key down.
+    -   ModifierFlag pattern matching has been introduced into `Option::KEYTOKEY_AFTER_KEYUP`.
+    -   `<background />` support has been added into `<vkopenurldef>` tag.
+    -   high_priority attribute has been introduced into `<identifier>` tag.
+    -   `<appdef>` behavior has been improved. It preserves prepared settings when you use `<appdef>` in private.xml for bundle identifiers that are in prepared appdef.xml.
+    -   `KeyCode::VK_MOUSEKEY_FIXED_DISTANCE_SCROLL_*` have been added.
+-   🐛 Bug Fixes
+    -   Fixed an issue that some Java apps might be crash when AXNotifier is enabled. (Eclipse, Screencast-O-Matic, RazorSQL, EditRocket)
+    -   The kext loading issue on macOS 10.11 beta 6 has been fixed.
+
+## Karabiner 10.6.0
+
+-   [📦 Download](https://github.com/tekezo/Karabiner/releases/download/files/Karabiner-10.6.0.dmg)
+-   📅 Release date
+    -   Jan 13, 2015
+-   ⚡️ Improvements
+    -   "Sort by name" and "Sort by created" button have been added in Preferences > MenuBar.
+    -   Prepared settings have been updated.
+-   🐛 Bug Fixes
+    -   A following prepared setting has been fixed:
+        -   General > Disable an internal keyboard while external keyboards are connected.
+
+## Karabiner 10.5.0
+
+-   [📦 Download](https://github.com/tekezo/Karabiner/releases/download/files/Karabiner-10.5.0.dmg)
+-   📅 Release date
+    -   Dec 12, 2014
+-   🐛 Bug Fixes
+    -   Fixed an issue that some Java apps might be crash when AXNotifier is enabled. (IntelliJ IDEA, PhpStorm, RubyMine, Android Studio)
+    -   Fixed an issue that `<device_only>` and `<device_not>` filters are ignored when multiple keyboards are connected and same keys are pressed at the same time.
+-   ⚡️ Improvements
+    -   "Ignore bouncing (chattering) events" setting has been added.
+    -   Spotlight has been supported in `<only>` and `<not>` filters.
+    -   Quit button has been added into Preferences.
+    -   Simultaneous presses detection with rapid key typing has been improved.
+    -   ModifierFlag manipulation when key up has been improved.
+    -   Prepared settings have been updated.
+    -   `Option::FORCENUMLOCKON_FORCE_OFF` has been added.
+    -   `__KeyDownUpToKey__` has been added.
+    -   `<include>` ignores missing files. (Karabiner does not show an alert dialog when `<include>` refers missing files.)
+
+## Karabiner 10.4.0
+
+-   [📦 Download](https://github.com/tekezo/Karabiner/releases/download/files/Karabiner-10.4.0.dmg)
+-   📅 Release date
+    -   Oct 14, 2014
+-   🐛 Bug Fixes
+    -   A broken prepared setting has been fixed.
+
+## Karabiner 10.3.0
+
+-   [📦 Download](https://github.com/tekezo/Karabiner/releases/download/files/Karabiner-10.3.0.dmg)
+-   📅 Release date
+    -   Oct 7, 2014
+-   ⚡️ Improvements
+    -   Stability at reloading XML has been improved.
+    -   macOS 10.10 support has been improved.
+    -   Prepared settings have been updated.
+    -   "Check for updates" (Sparkle) has been updated.
+    -   "Restart AXNotifier" button has been added into Preferences.
+    -   The following filters have been added.
+        -   `<modifierlocked_only>`
+        -   `<modifierlocked_not>`
+        -   `<modifierstuck_only>`
+        -   `<modifierstuck_not>`
+-   🐛 Bug Fixes
+    Fixed an issue that EventViewer does not show control-tab and control-shift-tab event when Full Keyboard Access is enabled.
+
+## Karabiner 10.2.0
+
+-   [📦 Download](https://github.com/tekezo/Karabiner/releases/download/files/Karabiner-10.2.0.dmg)
+-   📅 Release date
+    -   Aug 20, 2014
+-   🐛 Bug Fixes
+    -   Fixed an issue that shortcuts (eg. Ctrl-C, Ctrl-V) might not work properly in Microsoft Remote Desktop.
+    -   Fixed an issue that some Java apps will be crash.
+-   ⚡️ Improvements
+    -   Added an option to disable AXNotifier. ("AXNotifier" tab in Preferences.)
+    -   Updated prepared settings.
+    -   Some minor improvements.
+    -   Profile management functions have been added into command line interface.
+    -   `__HoldingKeyToKey__` and `__KeyOverlaidModifier__` support `Option::KEYTOKEY_BEFORE_KEYDOWN` and `Option::KEYTOKEY_AFTER_KEYUP`.
+    -   You can also use `__{ }__` as well as `@begin`, `@end`.
+
+## Karabiner 10.1.0
+
+-   [📦 Download](https://github.com/tekezo/Karabiner/releases/download/files/Karabiner-10.1.0.dmg)
+-   📅 Release date
+    -   Jul 21, 2014
+-   🐛 Bug Fixes
+    -   Fixed an issue that the continuous key sequence will be improper order in environments which VMWare Fusion is installed.
+    -   Fixed an issue that a message "Karabiner cannot connect with kernel extension" might be shown in some environment.
+-   ⚡️ Improvements
+    -   Show an error alert when Karabiner is not placed in /Applications.
+    -   Added `KeyCode::VK_IOHIKEYBOARD_TOGGLE_NUMLOCK`.
+    -   Updated prepared settings.
+    -   Some minor improvements.
+
+## Karabiner 10.0.0
+
+-   [📦 Download](https://github.com/tekezo/Karabiner/releases/download/files/Karabiner-10.0.0.dmg)
+-   📅 Release date
+    -   Jul 9, 2014
+-   💥 Breaking changes
+    -   KeyRemap4MacBook has been renamed to "Karabiner".
+    -   `KeyCode::VK_JIS_TEMPORARY_*` are removed.<br/>
+        Please use `<inputsource_filter>`, `Option::KEYTOKEY_BEFORE_KEYDOWN`, `Option::KEYTOKEY_AFTER_KEYUP`, `KeyCode::JIS_EISUU` and `KeyCode::JIS_KANA` instead.
+-   🐛 Bug Fixes
+    -   Fixed an issue that a message "Kernel extension is not loaded" might be shown in some environment.
+    -   Fixed an issue that status message will not be shown properly when you are using multiple displays.
+-   ⚡️ Improvements
+    -   AXNotifier has been added.<br/>
+        AXNotifier allows you to observe the window name (window title) and the focused ui element role (eg. whether textarea or not).<br/>
+        For example, a setting that allows you to use hjkl keys as arrow keys in Finder when you are not editing text such as filename has been added.
+    -   A command line utility "warp-mouse-cursor-position" has been added.<br/>
+        Settings which use this utility have been added, too.<br/>
+        For example, this setting allows you to move mouse cursor by tapping fn key:
+        -   Custom Shortcuts
+            -   Move mouse cursor to the center of the frontmost app's window:
+                -   By pressing fn key alone.
+    -   Updated prepared settings.
+    -   Some minor improvements.
+    -   You can add your own modifiers by `<modifierdef>`.
+    -   Added `<windowname_only>` and `<windowname_not>` filters.
+    -   Added `<uielementrole_only>` and `<uielementrole_not>` filters.
+    -   Added `__PointingRelativeToKey__`.
+    -   Added `__PassThrough__`. You can disable all settings in specific situations.<br/>
+        For example, this item allow you to disable all settings while you are using virtual machine.<br/>
+        (This setting is already included in prepared settings.)
+    -   You can use KeyCode and ConsumerKeyCode in `__PointingRelativeToScroll__`.
+    -   Added ThresholdMillisecond into `__HoldingKeyToKey__`.<br/>
+        You can control a holding threshold:
+    -   Added `__BlockUntilKeyUp__`.
+    -   Added `Option::KEYOVERLAIDMODIFIER_REPEAT_TOKEYS`.
+    -   Added `Option::DROPSCROLLWHEEL_DROP_MOMENTUM_SCROLL`.
+    -   Added `KeyCode::VK_NEGATIVE_LOCK_*`. (eg. `KeyCode::VK_NEGATIVE_LOCK_COMMAND_L`, `KeyCode::VK_NEGATIVE_LOCK_SHIFT_L`.)
+    -   Added `KeyCode::VK_STICKY_ACTIVE_MODIFIERS_*`:
+        -   `KeyCode::VK_STICKY_ACTIVE_MODIFIERS_TOGGLE`
+        -   `KeyCode::VK_STICKY_ACTIVE_MODIFIERS_FORCE_ON`
+        -   `KeyCode::VK_STICKY_ACTIVE_MODIFIERS_FORCE_OFF`
