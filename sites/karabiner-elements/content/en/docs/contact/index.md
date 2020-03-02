@@ -1,6 +1,6 @@
 ---
 title: 'Contact'
-weight: 800
+weight: 700
 ---
 
 ## Reporting Bugs, Feature requests
