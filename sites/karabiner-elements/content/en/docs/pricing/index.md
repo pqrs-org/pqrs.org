@@ -1,7 +1,6 @@
 ---
 title: 'Pricing'
 weight: 800
-simple_list: true
 ---
 
 <img src="/images/pricing-free.svg" alt="Free" style="height: 2em" />
@@ -73,7 +72,6 @@ This project accepts your funding via GitHub Sponsors or PayPal.
         </div>
     </div>
 </div>
-
 
 {{% alert title="For donors" color="primary" %}}
 
