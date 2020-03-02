@@ -1810,7 +1810,7 @@ GitHub or Google Groups are suitable place to post it unless you have a private 
                 &lt;/button&gt;
             &lt;/form&gt;
         &lt;/div&gt;
-        &lt;div style=&#34;margin: 1em&#34;&gt;
+        &lt;div style=&#34;margin: 1em&#34; class=&#34;-text-gray&#34;&gt;
             Note:
             This is effectively a donation but it has taken the form of software fee because of Japanese law and the constraints on government regulation.
         &lt;/div&gt;
