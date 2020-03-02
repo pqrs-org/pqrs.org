@@ -311,7 +311,7 @@ exclude_search: true
 
 ## Karabiner 10.22.0
 
--   [📦 Download](/files/Karabiner-10.22.0.dmg)
+-   [📦 Download](https://github.com/tekezo/Karabiner/releases/download/files/Karabiner-10.22.0.dmg)
 -   📅 Release date
     -   Oct 31, 2016
 -   🐛 Bug Fixes
@@ -322,7 +322,7 @@ exclude_search: true
 
 ## Karabiner 10.21.0
 
--   [📦 Download](/files/Karabiner-10.21.0.dmg)
+-   [📦 Download](https://github.com/tekezo/Karabiner/releases/download/files/Karabiner-10.21.0.dmg)
 -   📅 Release date
     -   Jul 5, 2016
 -   🐛 Bug Fixes
@@ -333,7 +333,7 @@ exclude_search: true
 
 ## Karabiner 10.20.0
 
--   [📦 Download](/files/Karabiner-10.20.0.dmg)
+-   [📦 Download](https://github.com/tekezo/Karabiner/releases/download/files/Karabiner-10.20.0.dmg)
 -   📅 Release date
     -   Jun 16, 2016
 -   ✨ New Features
@@ -344,7 +344,7 @@ exclude_search: true
 
 ## Karabiner 10.19.0
 
--   [📦 Download](/files/Karabiner-10.19.0.dmg)
+-   [📦 Download](https://github.com/tekezo/Karabiner/releases/download/files/Karabiner-10.19.0.dmg)
 -   📅 Release date
     -   Jun 9, 2016
 -   💥 Breaking changes
