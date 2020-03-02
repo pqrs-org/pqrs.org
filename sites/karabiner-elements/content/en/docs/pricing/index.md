@@ -67,7 +67,7 @@ This project accepts your funding via GitHub Sponsors or PayPal.
                 </button>
             </form>
         </div>
-        <div style="margin: 1em">
+        <div style="margin: 1em" class="-text-gray">
             Note:
             This is effectively a donation but it has taken the form of software fee because of Japanese law and the constraints on government regulation.
         </div>
