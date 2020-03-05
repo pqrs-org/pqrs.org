@@ -1662,51 +1662,15 @@ weight: 500
 }
 ```
 
-```text
-        <div class="alert alert-info" role="alert">
-          <code>variable_if</code> and <code>variable_unless</code> are designed to use with <code>set_variable</code>.
-        </div>
+{{% alert title="Tip" color="primary" %}}
 
-        <table class="table">
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Required</th>
-              <th>Description</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><code>type</code></td>
-              <td><code class="required">required</code></td>
-              <td>
-                Either:
-                <ul>
-                  <li><code>"type": "variable_if"</code></li>
-                  <li><code>"type": "variable_unless"</code></li>
-                </ul>
-              </td>
-            </tr>
-            <tr>
-              <td><code>name</code></td>
-              <td><code class="required">required</code></td>
-              <td>
-                Target variable name.
-              </td>
-            </tr>
-            <tr>
-              <td><code>value</code></td>
-              <td><code class="required">required</code></td>
-              <td>
-                Target variable value.
-              </td>
-            </tr>
-            <tr>
-              <td><code>description</code></td>
-              <td><code class="optional">optional</code></td>
-              <td>A condition description for human.</td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
-```
+`variable_if` and `variable_unless` are designed to use with `set_variable`.
+
+{{% /alert %}}
+
+| Name          | Required     | Description                             |
+| ------------- | ------------ | --------------------------------------- |
+| `type`        | **required** | `"variable_if"` or `"variable_unless"`. |
+| `name`        | **required** | Target variable name.                   |
+| `value`       | **required** | Target variable value.                  |
+| `description` | optional     | A condition description for human.      |
