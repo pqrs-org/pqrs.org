@@ -4,7 +4,7 @@ weight: 300
 ---
 
 {{% alert title="Note" color="warning" %}}
-Karabiner-Elements does not allow you including comments in any json files.
+Karabiner-Elements does not allow you including comments (`// ...` or `/* ... */`) in any json files.
 {{% /alert %}}
 
 ## karabiner.json
