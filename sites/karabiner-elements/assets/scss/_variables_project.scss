@@ -34,6 +34,41 @@ body {
         border-radius: 10px;
       }
     }
+
+    table {
+      thead {
+        tr {
+          th,
+          td {
+            background-color: #eeeeee;
+            border: 1px solid $border-color;
+          }
+        }
+      }
+
+      tbody {
+        tr {
+          th,
+          td {
+            border: 1px solid $border-color;
+          }
+
+          &:nth-of-type(odd) {
+            th,
+            td {
+              background-color: white;
+            }
+          }
+
+          &:hover {
+            th,
+            td {
+              background-color: #eeeeee;
+            }
+          }
+        }
+      }
+    }
   }
 }
 
