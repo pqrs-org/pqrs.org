@@ -732,55 +732,24 @@ Events will be posted just before the last from event's key_up.
 }
 ```
 
-```text
-        <h4 id="simultaneous-options-key-up-when">About <code>simultaneous_options</code> &gt; <code>key_up_when</code></h4>
+### `simultaneous_options.key_up_when`
 
-        Specify when key_up events are posted.
+Specify when key_up events are posted.
 
-        <table class="table">
-          <thead>
-            <tr>
-              <th>Value</th>
-              <th>Description</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>
-                <code>any</code>
-              </td>
-              <td>
-                Post key_up events when any key is released.
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <code>all</code>
-              </td>
-              <td>
-                Post key_up events when all keys are released.
-              </td>
-            </tr>
-          </tbody>
-        </table>
+| Value | Description                                   |
+| ----- | --------------------------------------------- |
+| `any` | Post key_up events when any key is released   |
+| `all` | Post key_up events when all keys are released |
 
+### `simultaneous_options.to_after_key_up`
 
-        <h4 id="simultaneous-options-key-up-order">About <code>simultaneous_options</code> &gt; <code>to_after_key_up</code></h4>
+`simultaneous_options.to_after_key_up` will be posted when all `from` events are released.
 
-        <p><code>simultaneous_options</code> &gt; <code>to_after_key_up</code> will be posted when all <b>from events</b> are released.</p>
+This feature is typically used to clear mode flag variables when all `from` events are released.
 
-        <p>
-          This feature is typically used to clear mode flag variables when all <b>from events</b> are released.
-        </p>
+Example:
 
-        Example:<br />
-        <ul>
-          <li>
-            <a href="https://github.com/pqrs-org/KE-complex_modifications/blob/master/docs/json/mouse_keys_mode_v4.json">Mouse Keys Mode v4 json</a>
-            <ul>
-              <li><a href="https://github.com/pqrs-org/KE-complex_modifications/blob/master/src/json/mouse_keys_mode_v4.json.rb">(json generator)</a></li>
-              <li><a href="https://ke-complex-modifications.pqrs.org/#mouse_keys_mode_v4">(import)</a></li>
-            </ul>
-          </li>
-        </ul>
-```
+-   Mouse Keys Mode v4
+    -   [json](https://github.com/pqrs-org/KE-complex_modifications/blob/master/public/json/mouse_keys_mode_v4.json)
+    -   [json generator](https://github.com/pqrs-org/KE-complex_modifications/blob/master/src/json/mouse_keys_mode_v4.json.rb)
+    -   [Import](https://ke-complex-modifications.pqrs.org/#mouse_keys_mode_v4)
