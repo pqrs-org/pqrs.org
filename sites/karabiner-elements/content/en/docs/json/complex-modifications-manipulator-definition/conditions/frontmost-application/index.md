@@ -23,10 +23,10 @@ Change an event if/unless the frontmost application is the specified application
 
 | Name                 | Required     | Description                                                                                    |
 | -------------------- | ------------ | ---------------------------------------------------------------------------------------------- |
-| `type`               | **required** | `"frontmost_application_if"` or `"frontmost_application_unless"`                               |
-| `bundle_identifiers` | optional     | Bundle identifier regexs such as `["^com\\.apple\\.Terminal$", "^com\\.googlecode\\.iterm2$"]` |
-| `file_paths`         | optional     | File path regexs such as `["/Finder$"]`                                                        |
-| `description`        | optional     | A human-readable comment                                                                       |
+| `type`               | **Required** | `"frontmost_application_if"` or `"frontmost_application_unless"`                               |
+| `bundle_identifiers` | Optional     | Bundle identifier regexs such as `["^com\\.apple\\.Terminal$", "^com\\.googlecode\\.iterm2$"]` |
+| `file_paths`         | Optional     | File path regexs such as `["/Finder$"]`                                                        |
+| `description`        | Optional     | A human-readable comment                                                                       |
 
 ## Multiple bundle identifiers or file paths
 

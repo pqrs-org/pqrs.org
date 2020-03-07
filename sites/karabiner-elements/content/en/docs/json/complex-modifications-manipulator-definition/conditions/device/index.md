@@ -26,9 +26,9 @@ Change an event if/unless the event is from specified device.
 
 | Name          | Required     | Description                        |
 | ------------- | ------------ | ---------------------------------- |
-| `type`        | **required** | `"device_if"` or `"device_unless"` |
-| `identifiers` | **required** | Target device definitions          |
-| `description` | optional     | A human-readable comment           |
+| `type`        | **Required** | `"device_if"` or `"device_unless"` |
+| `identifiers` | **Required** | Target device definitions          |
+| `description` | Optional     | A human-readable comment           |
 
 ## `identifiers`
 
@@ -36,11 +36,11 @@ Change an event if/unless the event is from specified device.
 
 | Name                 | Required | Description                                                                       |
 | -------------------- | -------- | --------------------------------------------------------------------------------- |
-| `vendor_id`          | optional | Vendor ID of device which is fixed value for each device                          |
-| `product_id`         | optional | Product ID of device which is fixed value for each device                         |
-| `location_id`        | optional | Location ID of device which is changed by where the port your device is connected |
-| `is_keyboard`        | optional | `true` or `false`                                                                 |
-| `is_pointing_device` | optional | `true` or `false`                                                                 |
+| `vendor_id`          | Optional | Vendor ID of device which is fixed value for each device                          |
+| `product_id`         | Optional | Product ID of device which is fixed value for each device                         |
+| `location_id`        | Optional | Location ID of device which is changed by where the port your device is connected |
+| `is_keyboard`        | Optional | `true` or `false`                                                                 |
+| `is_pointing_device` | Optional | `true` or `false`                                                                 |
 
 ### Multiple identifiers
 

@@ -21,7 +21,7 @@ Change an event if/unless the variable is the specified value.
 
 | Name          | Required     | Description                             |
 | ------------- | ------------ | --------------------------------------- |
-| `type`        | **required** | `"variable_if"` or `"variable_unless"`. |
-| `name`        | **required** | Target variable name.                   |
-| `value`       | **required** | Target variable value.                  |
-| `description` | optional     | A human-readable comment                |
+| `type`        | **Required** | `"variable_if"` or `"variable_unless"`. |
+| `name`        | **Required** | Target variable name.                   |
+| `value`       | **Required** | Target variable value.                  |
+| `description` | Optional     | A human-readable comment                |

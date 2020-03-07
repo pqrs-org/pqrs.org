@@ -26,9 +26,9 @@ Change an event if/unless the current input source is the specified value.
 
 | Name            | Required     | Description                                    |
 | --------------- | ------------ | ---------------------------------------------- |
-| `type`          | **required** | `"input_source_if"` or `"input_source_unless"` |
-| `input_sources` | **required** | Target input source definitions                |
-| `description`   | optional     | A human-readable comment                       |
+| `type`          | **Required** | `"input_source_if"` or `"input_source_unless"` |
+| `input_sources` | **Required** | Target input source definitions                |
+| `description`   | Optional     | A human-readable comment                       |
 
 ## `input_sources`
 
@@ -36,9 +36,9 @@ Change an event if/unless the current input source is the specified value.
 
 | Name              | Required | Description                                                                           |
 | ----------------- | -------- | ------------------------------------------------------------------------------------- |
-| `language`        | optional | The language regex such as `"^en$"`, `"^ja$"`                                         |
-| `input_source_id` | optional | The input source id regex such as `"^com\\.apple\\.keylayout\\.US$"`                  |
-| `input_mode_id`   | optional | The input mode id regex such as `"^com\\.apple\\.inputmethod\\.Japanese\\.Hiragana$"` |
+| `language`        | Optional | The language regex such as `"^en$"`, `"^ja$"`                                         |
+| `input_source_id` | Optional | The input source id regex such as `"^com\\.apple\\.keylayout\\.US$"`                  |
+| `input_mode_id`   | Optional | The input mode id regex such as `"^com\\.apple\\.inputmethod\\.Japanese\\.Hiragana$"` |
 
 ### Multiple identifiers
 

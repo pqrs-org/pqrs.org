@@ -14,6 +14,6 @@ Change an event if/unless the event is already changed by other manipulators.
 
 | Name          | Required     | Description                                      |
 | ------------- | ------------ | ------------------------------------------------ |
-| `type`        | **required** | `"event_changed_if"` or `"event_changed_unless"` |
-| `value`       | **required** | `true` or `false`                                |
-| `description` | optional     | A human-readable comment                         |
+| `type`        | **Required** | `"event_changed_if"` or `"event_changed_unless"` |
+| `value`       | **Required** | `true` or `false`                                |
+| `description` | Optional     | A human-readable comment                         |
