@@ -40,9 +40,9 @@ Change an event if/unless the current input source is the specified value.
 | `input_source_id` | optional | The input source id regex such as `"^com\\.apple\\.keylayout\\.US$"`                  |
 | `input_mode_id`   | optional | The input mode id regex such as `"^com\\.apple\\.inputmethod\\.Japanese\\.Hiragana$"` |
 
-### Multiple conditions
+### Multiple identifiers
 
-If you specify multiple values, condictions are joined by "and".
+If you specify multiple identifiers (`language`, `input_source_id` or `input_mode_id`), these are joined by "and".
 
 The following condition is matched if language is "ja" **and** input_mode_id is "com.apple.inputmethod.Japanese.Hiragana".
 
