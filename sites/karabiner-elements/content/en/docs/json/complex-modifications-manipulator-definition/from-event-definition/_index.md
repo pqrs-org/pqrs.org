@@ -168,40 +168,13 @@ You have to specify one of them.
 }
 ```
 
-```text
-            <table class="table">
-              <thead>
-                <tr>
-                  <th>key</th>
-                  <th>manipulated</th>
-                  <th>result</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>escape</td>
-                  <td><b>manipulated</b></td>
-                  <td>tab</td>
-                </tr>
-                <tr>
-                  <td>left_shift + escape</td>
-                  <td>not manipulated</td>
-                  <td>left_shift + escape</td>
-                </tr>
-                <tr>
-                  <td>left_control + escape</td>
-                  <td>not manipulated</td>
-                  <td>left_control + escape</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
+| Input                     | Output                    | Manipulated     |
+| ------------------------- | ------------------------- | --------------- |
+| `escape`                  | `tab`                     | **Manipulated** |
+| `left_shift` + `escape`   | `left_shift` + `escape`   | Not manipulated |
+| `left_control` + `escape` | `left_control` + `escape` | Not manipulated |
 
-        <div class="panel panel-default">
-          <div class="panel-body">
-            <p>Change escape to tab with <code>optional modifiers</code></p>
-```
+### Change escape to tab with `optional modifiers`
 
 ```json
 {
@@ -220,7 +193,7 @@ You have to specify one of them.
 }
 ```
 
-| Key                                     | Result                                  | Manipulated     |
+| Input                                   | Output                                  | Manipulated     |
 | --------------------------------------- | --------------------------------------- | --------------- |
 | `escape`                                | `tab`                                   | **Manipulated** |
 | `left_shift` + `escape`                 | `left_shift` + `tab`                    | **Manipulated** |
@@ -247,7 +220,7 @@ You have to specify one of them.
 }
 ```
 
-| Key                                  | Result                               | Manipulated     |
+| Input                                | Output                               | Manipulated     |
 | ------------------------------------ | ------------------------------------ | --------------- |
 | `h`                                  | `h`                                  | Not manipulated |
 | `left_control` + `h`                 | `delete_or_backspace`                | **Manipulated** |
@@ -277,7 +250,7 @@ The last input contains `left_option` which is not included in both `modifiers.m
 }
 ```
 
-| Key                                  | Result                                | Manipulated     |
+| Input                                | Output                                | Manipulated     |
 | ------------------------------------ | ------------------------------------- | --------------- |
 | `h`                                  | `h`                                   | Not manipulated |
 | `left_control` + `h`                 | `delete_or_backspace`                 | **Manipulated** |
