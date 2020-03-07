@@ -3,91 +3,18 @@ title: 'complex_modifications manipulator definition'
 weight: 500
 ---
 
-```text
-      <section>
-        <div class="page-header">
-          <h1 id="complex_modifications-manipulator-definition"></h1>
-        </div>
-
-        <table class="table">
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Required</th>
-              <th>Description</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><code>type</code></td>
-              <td><code class="required">required</code></td>
-              <td>Always <code>"type": "basic"</code></td>
-            </tr>
-            <tr>
-              <td><code>from</code></td>
-              <td><code class="required">required</code></td>
-              <td>
-                The name of key code, consumer key code or pointing button which you want to change.
-                <a href="#from-event-definition">(detail)</a>
-              </td>
-            </tr>
-            <tr>
-              <td><code>to</code></td>
-              <td><code class="optional">optional</code></td>
-              <td>events which are sent when you press <code>from</code> key.</td>
-            </tr>
-            <tr>
-              <td><code>to_if_alone</code></td>
-              <td><code class="optional">optional</code></td>
-              <td>events which are sent when you press <code>from</code> key alone.</td>
-            </tr>
-            <tr>
-              <td><code>to_if_held_down</code></td>
-              <td><code class="optional">optional</code></td>
-              <td>
-                events which are sent when you hold down <code>from</code> key.
-              </td>
-            </tr>
-            <tr>
-              <td><code>to_after_key_up</code></td>
-              <td><code class="optional">optional</code></td>
-              <td>events which are sent after you release <code>from</code> key.</td>
-            </tr>
-            <tr>
-              <td><code>to_delayed_action</code></td>
-              <td><code class="optional">optional</code></td>
-              <td>
-                <code>to_delayed_action</code> sends <code>to_delayed_action &gt; to_if_invoked</code> events after 500 milliseconds at you press <code>from</code> key.<br />
-                <code>to_delayed_action &gt; to_if_canceled</code> events are sent if you press another key between <code>from</code> key and to_delayed_action invoked. (<code>to_if_invoked</code> events are not sent if <code>to_if_canceled</code> events are sent.)
-              </td>
-            </tr>
-            <tr>
-              <td><code>description</code></td>
-              <td><code class="optional">optional</code></td>
-              <td>A manipulator description for human.</td>
-            </tr>
-            <tr>
-              <td><code>conditions</code></td>
-              <td><code class="optional">optional</code></td>
-              <td>
-                Manipulator is applied only if condition is matched. (The frontmost application, device, etc.)
-              </td>
-            </tr>
-            <tr>
-              <td><code>parameters</code></td>
-              <td><code class="optional">optional</code></td>
-              <td>
-                Override parameters such as <code>to_delayed_action_delay_milliseconds</code>.
-              </td>
-            </tr>
-          </tbody>
-        </table>
-
-        {{! ================================================================================ }}
-
-        <h2 id="from-event-definition">from event definition</h2>
-
-```
+| Name                | Required     | Description                                                                           |
+| ------------------- | ------------ | ------------------------------------------------------------------------------------- |
+| `type`              | **required** | `"basic"` is specified                                                                |
+| `from`              | **required** | The name of key code, consumer key code or pointing button which you want to change   |
+| `to`                | optional     | Events which are sent when you press `from` key                                       |
+| `to_if_alone`       | optional     | Events which are sent when you press `from` key alone                                 |
+| `to_if_held_down`   | optional     | Events which are sent when you hold down `from` key                                   |
+| `to_after_key_up`   | optional     | Events which are sent after you release `from` key                                    |
+| `to_delayed_action` | optional     | Events which are sent after 500 milliseconds at you press `from` key                  |
+| `conditions`        | optional     | Manipulator is applied only if condition is matched (e.g., the frontmost application) |
+| `parameters`        | optional     | Override parameters such as `to_if_alone_timeout_milliseconds`                        |
+| `description`       | optional     | A human-readable comment                                                              |
 
 ## from event definition
 
