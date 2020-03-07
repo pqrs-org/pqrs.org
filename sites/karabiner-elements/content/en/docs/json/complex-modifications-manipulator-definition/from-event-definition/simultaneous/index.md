@@ -99,11 +99,12 @@ The key_up event is posted when you release any `from` events.
 
 For example, changing `tab+q` to `mission_control` works as follows.
 
-| Input | Output |
-| `tab` key_down | --- |
-| `q` key_down | `mission_control` key_down |
-| `tab` key_up | `mission_control` key_up |
-| `q` key_up | --- |
+| Input          | Output                     |
+| -------------- | -------------------------- |
+| `tab` key_down | ---                        |
+| `q` key_down   | `mission_control` key_down |
+| `tab` key_up   | `mission_control` key_up   |
+| `q` key_up     | ---                        |
 
 ## Change threshold milliseconds
 
