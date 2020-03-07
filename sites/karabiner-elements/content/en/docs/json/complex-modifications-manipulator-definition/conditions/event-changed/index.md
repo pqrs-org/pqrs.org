@@ -1,6 +1,6 @@
 ---
 title: 'event_changed_if, event_changed_unless'
-weight: 500
+weight: 600
 ---
 
 Change an event if/unless the event is already changed by other manipulators.
