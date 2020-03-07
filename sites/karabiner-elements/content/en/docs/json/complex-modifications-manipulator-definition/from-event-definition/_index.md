@@ -220,54 +220,15 @@ You have to specify one of them.
 }
 ```
 
-```text
-            <table class="table">
-              <thead>
-                <tr>
-                  <th>key</th>
-                  <th>manipulated</th>
-                  <th>result</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>escape</td>
-                  <td><b>manipulated</b></td>
-                  <td>tab</td>
-                </tr>
-                <tr>
-                  <td>left_shift + escape</td>
-                  <td><b>manipulated</b></td>
-                  <td>left_shift + tab</td>
-                </tr>
-                <tr>
-                  <td>left_control + escape</td>
-                  <td><b>manipulated</b></td>
-                  <td>left_control + tab</td>
-                </tr>
-                <tr>
-                  <td>left_option + escape</td>
-                  <td>not manipulated</td>
-                  <td>left_option + escape</td>
-                </tr>
-                <tr>
-                  <td>left_shift + left_option + escape</td>
-                  <td>not manipulated</td>
-                  <td>
-                    left_shift + left_option + escape<br />
-                    (because left_option is not in optional modifiers)
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
+| Key                                     | Result                                  | Manipulated     |
+| --------------------------------------- | --------------------------------------- | --------------- |
+| `escape`                                | `tab`                                   | **Manipulated** |
+| `left_shift` + `escape`                 | `left_shift` + `tab`                    | **Manipulated** |
+| `left_control` + `escape`               | `left_control` + `tab`                  | **Manipulated** |
+| `left_option` + `escape`                | `left_option` + `escape`                | Not manipulated |
+| `left_shift` + `left_option` + `escape` | `left_shift` + `left_option` + `escape` | Not manipulated |
 
-        <div class="panel panel-default">
-          <div class="panel-body">
-            <p>Change control-h to delete without <code>optional modifiers</code></p>
-
-```
+### Change control-h to delete without `optional modifiers`
 
 ```json
 {
@@ -326,7 +287,6 @@ The last input contains `left_option` which is not included in both `modifiers.m
 {{% alert title="Note" color="primary" %}}
 The last input contains `left_shift` which is not included in both `modifiers.mandatory` and `modifiers.optional`.
 {{% /alert %}}
-
 
 -   [modifiers](modifiers/)
 -   [simultaneous](simultaneous/)
