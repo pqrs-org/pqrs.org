@@ -342,46 +342,12 @@ You have to specify one of them.
 }
 ```
 
-```text
-            <table class="table">
-              <thead>
-                <tr>
-                  <th>key</th>
-                  <th>manipulated</th>
-                  <th>result</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>h</td>
-                  <td>not manipulated</td>
-                  <td>h</td>
-                </tr>
-                <tr>
-                  <td>left_control + h</td>
-                  <td><b>manipulated</b></td>
-                  <td>delete_or_backspace</td>
-                </tr>
-                <tr>
-                  <td>left_control + left_option + h</td>
-                  <td><b>manipulated</b></td>
-                  <td>left_option + delete_or_backspace</td>
-                </tr>
-                <tr>
-                  <td>left_control + left_shift + h</td>
-                  <td>not manipulated</td>
-                  <td>
-                    left_control + left_shift + h<br />
-                    (because left_shift is not in optional modifiers)
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-
-        <hr class="horizontal-separator thin" />
-```
+| Key                                  | Result                                | Manipulated     |
+| ------------------------------------ | ------------------------------------- | --------------- |
+| `h`                                  | `h`                                   | Not manipulated |
+| `left_control` + `h`                 | `delete_or_backspace`                 | **Manipulated** |
+| `left_control` + `left_option` + `h` | `left_option` + `delete_or_backspace` | **Manipulated** |
+| `left_control` + `left_shift` + `h`  | `left_control` + `left_shift` + `h`   | Not manipulated |
 
 -   [modifiers](modifiers/)
 -   [simultaneous](simultaneous/)
