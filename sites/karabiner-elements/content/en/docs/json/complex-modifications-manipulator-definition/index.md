@@ -1652,6 +1652,14 @@ weight: 500
 
 ### `variable_if` and `variable_unless`
 
+Change an event if/unless the variable is the specified value.
+
+{{% alert title="Tip" color="primary" %}}
+
+`variable_if` and `variable_unless` are designed to use with `set_variable`.
+
+{{% /alert %}}
+
 ```json
 {
     "type": "variable_if",
@@ -1660,67 +1668,26 @@ weight: 500
 }
 ```
 
-{{% alert title="Tip" color="primary" %}}
-
-`variable_if` and `variable_unless` are designed to use with `set_variable`.
-
-{{% /alert %}}
-
 | Name          | Required     | Description                             |
 | ------------- | ------------ | --------------------------------------- |
 | `type`        | **required** | `"variable_if"` or `"variable_unless"`. |
 | `name`        | **required** | Target variable name.                   |
 | `value`       | **required** | Target variable value.                  |
-| `description` | optional     | A condition description for human.      |
+| `description` | optional     | A human-readable comment                |
 
-```text
-        <hr class="horizontal-separator thin" />
+### `event_changed_if` and `event_changed_unless`
 
-        <h3 id="condition-definition-event-changed"><code>event_changed_if</code> and <code>event_changed_unless</code></h3>
+Change an event if/unless the event is already changed by other manipulators.
 
-        <p>
-          Change an event if/unless the event is already changed by other manipulators.
-        </p>
-
-        {{#indented_json}}
-          |{
-          |    "type": "event_changed_if",
-          |    "value": true
-          |}
-        {{/indented_json}}
-
-        <table class="table">
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Required</th>
-              <th>Description</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><code>type</code></td>
-              <td><code class="required">required</code></td>
-              <td>
-                Either:
-                <ul>
-                  <li><code>"type": "event_changed_if"</code></li>
-                  <li><code>"type": "event_changed_unless"</code></li>
-                </ul>
-              </td>
-            </tr>
-            <tr>
-              <td><code>value</code></td>
-              <td><code class="required">required</code></td>
-              <td>
-                <code>true</code> or <code>false</code>
-              </td>
-            </tr>
-            <tr>
-              <td><code>description</code></td>
-              <td><code class="optional">optional</code></td>
-              <td>A condition description for human.</td>
-            </tr>
-          </tbody>
-        </table>
+```json
+{
+    "type": "event_changed_if",
+    "value": true
+}
 ```
+
+| Name          | Required     | Description                                      |
+| ------------- | ------------ | ------------------------------------------------ |
+| `type`        | **required** | `"event_changed_if"` or `"event_changed_unless"` |
+| `value`       | **required** | `true` or `false`                                |
+| `description` | optional     | A human-readable comment                         |
