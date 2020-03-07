@@ -635,19 +635,19 @@ You have to specify one of them.
 | `key_up_when`                     | `any` or `all`                              | When key_up events are posted                                           |
 | `to_after_key_up`                 | An array of <b>to event definitions</b>     | Events will be posted when all `from` events are released               |
 
-```text
-        <h4 id="simultaneous-options-key-down-order">About <code>simultaneous_options</code> &gt; <code>key_down_order</code></h4>
+### `simultaneous_options.detect_key_down_uninterruptedly`
 
-        <p>
-          <code>simultaneous</code> checks the order of key_down events
-          if <code>key_down_order</code> is specified and is not <code>insensitive</code>.
-        </p>
+If `detect_key_down_uninterruptedly` is true, Karabiner-Elements changes simultaneous events even if unrelated key down event exists between target events.
 
-        <p>
-          For example, this definition manipulates <b>tab,q</b> to <b>mission_control</b> and
-          does not manipulate <b>q,tab</b> events.
-        </p>
-```
+For example, when `escape+3 -> mission_control`, `escape,1,3` will be `mission_control,1` if `detect_key_down_uninterruptedly` is true.
+
+The default value is `false`.
+
+### `simultaneous_options.key_down_order`
+
+`simultaneous` checks the order of key_down events if `key_down_order` is specified and is not `insensitive`.
+
+For example, this definition manipulates `tab,q` to `mission_control` and does not manipulate `q,tab` events.
 
 ```json
 {
@@ -676,64 +676,31 @@ You have to specify one of them.
 }
 ```
 
-```text
-        <h4 id="simultaneous-options-key-up-order">About <code>simultaneous_options</code> &gt; <code>key_up_order</code></h4>
+### `simultaneous_options.key_up_order`
 
-        <p>
-          <code>simultaneous</code> checks the order of key_up events
-          if <code>key_up_order</code> is specified and is not <code>insensitive</code>.
-        </p>
+`simultaneous` checks the order of key_up events if `key_up_order` is specified and is not `insensitive`.
 
-        <div class="alert alert-info" role="alert">
-          <h5>Note:</h5>
-          <p><code>key_up_order</code> is ignored if <code>simultaneous_threshold_milliseconds</code> is reached.</p>
-        </div>
+{{% alert title="Tip" color="primary" %}}
 
-        <p>
-          For example, this definition manipulates <b>tab,q</b> to <b>mission_control</b> if the <b>tab</b> key is released before the <b>q</b> key within 500 milliseconds.<br />
-          (You should set a large value to <code>simultaneous_threshold_milliseconds</code> when you use <code>key_up_order</code>.)
-        </p>
+`key_up_order` is ignored if `simultaneous_threshold_milliseconds` is reached.
 
-        <table class="table">
-          <thead>
-            <tr>
-              <th>Input</th>
-              <th>Output</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>
-                <b>tab</b> &amp; <b>q</b> key_down
-              </td>
-              <td>
-                ---
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <b>tab</b> key_up
-              </td>
-              <td>
-                <p>
-                  <b>mission_control</b> key_down<br />
-                  <b>mission_control</b> key_up
-                </p>
+You should set a large value to `simultaneous_threshold_milliseconds` when you use `key_up_order`.
 
-                <span class="label label-info">NOTE</span> Events will be posted just before <b>the last from event's key_up</b>.
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <b>q</b> key_up
-              </td>
-              <td>
-                ---
-              </td>
-            </tr>
-          </tbody>
-        </table>
-```
+{{% /alert %}}
+
+For example, this definition manipulates `tab,q` to `mission_control` if the `tab` key is released before the `q` key within 500 milliseconds.
+
+| Input                | Output                                               |
+| -------------------- | ---------------------------------------------------- |
+| `tab` & `q` key_down | ---                                                  |
+| `tab` key_up         | `mission_control` key_down, `mission_control` key_up |
+| `q` key_up           | ---                                                  |
+
+{{% alert title="Note" color="primary" %}}
+
+Events will be posted just before the last from event's key_up.
+
+{{% /alert %}}
 
 ```json
 {
