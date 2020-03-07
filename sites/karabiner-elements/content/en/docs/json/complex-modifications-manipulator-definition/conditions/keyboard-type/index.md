@@ -25,7 +25,7 @@ Some characters have different key code for each keyboard types.<br />
 | Name             | Required     | Description                                      |
 | ---------------- | ------------ | ------------------------------------------------ |
 | `type`           | **required** | `"keyboard_type_if"` or `"keyboard_type_unless"` |
-| `keyboard_types` | **required** | array of `"ansi"`, `"iso"` or `"jis"`            |
+| `keyboard_types` | **required** | An array of `"ansi"`, `"iso"` or `"jis"`         |
 | `description`    | optional     | A human-readable comment                         |
 
 ## Multiple keyboard types
