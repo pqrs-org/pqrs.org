@@ -48,15 +48,15 @@ weight: 100
 }
 ```
 
-| Name                   | Required | Description                                                                     |
-| ---------------------- | -------- | ------------------------------------------------------------------------------- |
-| `key_code`             | Optional | Key code which you want to change                                               |
-| `consumer_key_code`    | Optional | Consumer key code (media key code) which you want to change                     |
-| `pointing_button`      | Optional | Pointing button name which you want to change                                   |
-| `any`                  | Optional | `"any": "key_code"`, `"any": "consumer_key_code"` or `"any": "pointing_button"` |
-| `modifiers`            | Optional | Specify mandatory and optional modifiers (e.g., "change control-h to delete")   |
-| `simultaneous`         | Optional | Specify multiple events which are pressed simultaneously                        |
-| `simultaneous_options` | Optional | Options for `simultaneous`                                                      |
+| Name                                           | Required | Description                                                                     |
+| ---------------------------------------------- | -------- | ------------------------------------------------------------------------------- |
+| `key_code`                                     | Optional | Key code which you want to change                                               |
+| `consumer_key_code`                            | Optional | Consumer key code (media key code) which you want to change                     |
+| `pointing_button`                              | Optional | Pointing button name which you want to change                                   |
+| [`any`](any/)                                  | Optional | `"any": "key_code"`, `"any": "consumer_key_code"` or `"any": "pointing_button"` |
+| [`modifiers`](modifiers/)                      | Optional | Specify mandatory and optional modifiers (e.g., "change control-h to delete")   |
+| [`simultaneous`](simultaneous/)                | Optional | Specify multiple events which are pressed simultaneously                        |
+| [`simultaneous_options`](simultaneous-options) | Optional | Options for `simultaneous`                                                      |
 
 {{% alert title="Note" color="primary" %}}
 `key_code`, `consumer_key_code`, `pointing_button` and `any` are exclusive.<br />
@@ -68,29 +68,31 @@ Be careful using `"pointing_button": "button1"` and `"any": "pointing_button"`.<
 You may lose the left click button and system will be unusable.
 {{% /alert %}}
 
-<a href="document.html#eventviewer">You can find key_code by EventViewer.</a>
-<a href="https://github.com/pqrs-org/Karabiner-Elements/blob/master/src/apps/PreferencesWindow/Resources/simple_modifications.json">(list)</a>
+## Detail
 
-```text
-        <div id="raw-number-key-code">
-          <div class="alert alert-info" role="alert">
-            <p>
-              Tips:<br/>
-              You can also specify <code>key_code</code>, <code>consumer_key_code</code>, <code>pointing_button</code> with raw number as follows.<br/>
-              (Do not add double quotes to the number!)
-            </p>
+-   [from.any](any/)
+-   [from.modifiers](modifiers/)
+-   [from.simultaneous](simultaneous/)
+-   [from.simultaneous_options](simultaneous-options/)
 
-```
+## Investigate `key_code`, `consumer_key_code` and `pointing_button` names
+
+-   You can find names by [EventViewer](../../../manual/operation/eventviewer/).
+-   You can also confirm [names in list](https://github.com/pqrs-org/Karabiner-Elements/blob/master/src/apps/PreferencesWindow/Resources/simple_modifications.json).
+    (See `"data"` in the list.)
+
+{{% alert title="Tips" color="primary" %}}
+
+You can also specify `key_code`, `consumer_key_code`, `pointing_button` with raw number as follows.<br />
 
 ```json
 {
     "from": {
         "key_code": 41
-    },
-    ...
+    }
 }
 ```
 
--   [modifiers](modifiers/)
--   [simultaneous](simultaneous/)
--   [simultaneous_options](simultaneous-options/)
+**Do not add double quotes when you use the raw number.**
+
+{{% /alert %}}
