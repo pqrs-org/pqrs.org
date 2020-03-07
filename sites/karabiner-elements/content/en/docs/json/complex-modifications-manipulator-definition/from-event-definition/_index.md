@@ -286,43 +286,17 @@ You have to specify one of them.
 }
 ```
 
-```text
-            <table class="table">
-              <thead>
-                <tr>
-                  <th>key</th>
-                  <th>manipulated</th>
-                  <th>result</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>h</td>
-                  <td>not manipulated</td>
-                  <td>h</td>
-                </tr>
-                <tr>
-                  <td>left_control + h</td>
-                  <td><b>manipulated</b></td>
-                  <td>delete_or_backspace</td>
-                </tr>
-                <tr>
-                  <td>left_control + left_option + h</td>
-                  <td>not manipulated</td>
-                  <td>
-                    left_control + left_option + h<br />
-                    (because left_option is not in optional modifiers)
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
+| Key                                  | Result                               | Manipulated     |
+| ------------------------------------ | ------------------------------------ | --------------- |
+| `h`                                  | `h`                                  | Not manipulated |
+| `left_control` + `h`                 | `delete_or_backspace`                | **Manipulated** |
+| `left_control` + `left_option` + `h` | `left_control` + `left_option` + `h` | Not manipulated |
 
-        <div class="panel panel-default">
-          <div class="panel-body">
-            <p>Change control-h to delete with <code>optional modifiers</code></p>
-```
+{{% alert title="Note" color="primary" %}}
+The last input contains `left_option` which is not included in both `modifiers.mandatory`.
+{{% /alert %}}
+
+### Change control-h to delete with `optional modifiers`
 
 ```json
 {
@@ -348,6 +322,11 @@ You have to specify one of them.
 | `left_control` + `h`                 | `delete_or_backspace`                 | **Manipulated** |
 | `left_control` + `left_option` + `h` | `left_option` + `delete_or_backspace` | **Manipulated** |
 | `left_control` + `left_shift` + `h`  | `left_control` + `left_shift` + `h`   | Not manipulated |
+
+{{% alert title="Note" color="primary" %}}
+The last input contains `left_shift` which is not included in both `modifiers.mandatory` and `modifiers.optional`.
+{{% /alert %}}
+
 
 -   [modifiers](modifiers/)
 -   [simultaneous](simultaneous/)
