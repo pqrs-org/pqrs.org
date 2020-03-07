@@ -435,100 +435,33 @@ weight: 500
         </div>
 
         <hr class="horizontal-separator thin" />
+```
 
-        <h3 id="from-event-definition-modifiers-list">The list of modifiers in from definition</h3>
+### The list of modifiers in from definition
 
-        <table class="table">
-          <thead>
-            <tr>
-              <th>name</th>
-              <th>description</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><code>caps_lock</code></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td><code>left_command</code></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td><code>left_control</code></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td><code>left_option</code></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td><code>left_shift</code></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td><code>right_command</code></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td><code>right_control</code></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td><code>right_option</code></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td><code>right_shift</code></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td><code>fn</code></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td><code>command</code></td>
-              <td>left command or right command</td>
-            </tr>
-            <tr>
-              <td><code>control</code></td>
-              <td>left control or right control</td>
-            </tr>
-            <tr>
-              <td><code>option</code></td>
-              <td>left option or right option</td>
-            </tr>
-            <tr>
-              <td><code>shift</code></td>
-              <td>left shift or right shift</td>
-            </tr>
-            <tr>
-              <td><code>left_alt</code></td>
-              <td>Alias of left_option (available since Karabiner-Elements 12.3.0)</td>
-            </tr>
-            <tr>
-              <td><code>left_gui</code></td>
-              <td>Alias of left_command (available since Karabiner-Elements 12.3.0)</td>
-            </tr>
-            <tr>
-              <td><code>right_alt</code></td>
-              <td>Alias of right_option (available since Karabiner-Elements 12.3.0)</td>
-            </tr>
-            <tr>
-              <td><code>right_gui</code></td>
-              <td>Alias of right_command (available since Karabiner-Elements 12.3.0)</td>
-            </tr>
-            <tr>
-              <td><code>any</code></td>
-              <td>any modifiers</td>
-            </tr>
-          </tbody>
-        </table>
+| Name            | Description                                                        |
+| --------------- | ------------------------------------------------------------------ |
+| `caps_lock`     | ---                                                                |
+| `left_command`  | ---                                                                |
+| `left_control`  | ---                                                                |
+| `left_option`   | ---                                                                |
+| `left_shift`    | ---                                                                |
+| `right_command` | ---                                                                |
+| `right_control` | ---                                                                |
+| `right_option`  | ---                                                                |
+| `right_shift`   | ---                                                                |
+| `fn`            | ---                                                                |
+| `command`       | Either left command or right command is pressed                    |
+| `control`       | Either left control or right control is pressed                    |
+| `option`        | Either left option or right option is pressed                      |
+| `shift`         | Either left shift or right shift is pressed                        |
+| `left_alt`      | Alias of left_option (available since Karabiner-Elements 12.3.0)   |
+| `left_gui`      | Alias of left_command (available since Karabiner-Elements 12.3.0)  |
+| `right_alt`     | Alias of right_option (available since Karabiner-Elements 12.3.0)  |
+| `right_gui`     | Alias of right_command (available since Karabiner-Elements 12.3.0) |
+| `any`           | Any modifiers                                                      |
 
-        {{! ================================================================================ }}
-
-        <hr class="horizontal-separator thin" />
-
+```text
         <h3 id="simultaneous">Detail of <code>simultaneous</code></h3>
 
         <p>
