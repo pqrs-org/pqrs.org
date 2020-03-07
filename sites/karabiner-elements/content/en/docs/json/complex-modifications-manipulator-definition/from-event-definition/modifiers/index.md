@@ -1,6 +1,6 @@
 ---
-title: 'modifiers'
-weight: 400
+title: 'from.modifiers'
+weight: 200
 ---
 
 `from.modifiers` is a object which has the following keys.

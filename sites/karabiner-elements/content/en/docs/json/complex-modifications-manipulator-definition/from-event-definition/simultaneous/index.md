@@ -1,6 +1,6 @@
 ---
-title: 'simultaneous'
-weight: 800
+title: 'from.simultaneous'
+weight: 300
 ---
 
 `simultaneous` manipulates keys which are pressed simultaneously in 50 milliseconds.

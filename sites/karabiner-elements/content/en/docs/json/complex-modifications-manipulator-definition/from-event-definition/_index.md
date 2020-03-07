@@ -48,11 +48,6 @@ weight: 100
 }
 ```
 
-{{% alert title="Note" color="primary" %}}
-`key_code`, `consumer_key_code`, `pointing_button` and `any` are exclusive.<br />
-You have to specify one of them.
-{{% /alert %}}
-
 | Name                   | Required | Description                                                                     |
 | ---------------------- | -------- | ------------------------------------------------------------------------------- |
 | `key_code`             | Optional | Key code which you want to change                                               |
@@ -63,32 +58,15 @@ You have to specify one of them.
 | `simultaneous`         | Optional | Specify multiple events which are pressed simultaneously                        |
 | `simultaneous_options` | Optional | Options for `simultaneous`                                                      |
 
-<a href="#simultaneous-options">(detail)</a>
+{{% alert title="Note" color="primary" %}}
+`key_code`, `consumer_key_code`, `pointing_button` and `any` are exclusive.<br />
+You have to specify one of them.
+{{% /alert %}}
 
-<a href="#from-event-definition-modifiers">(detail)</a>
-
-<div class="alert alert-warning" role="alert">
-    Caution:<br />
-    Be careful when manipulating <code>button1</code> to avoid losing the left click button.
-</div>
-</td>
-
-              <td><code>any</code></td>
-              <td><code class="optional">optional</code></td>
-              <td>
-                You can use <code>any</code> as follows.<br />
-                These matches all key codes, consumer key codes or pointing buttons.
-                <ul>
-                  <li><code>"any": "key_code"</code></li>
-                  <li><code>"any": "consumer_key_code"</code></li>
-                  <li><code>"any": "pointing_button"</code></li>
-                </ul>
-
-                <div class="alert alert-warning" role="alert">
-                  Caution:<br />
-                  Be careful when using <code>"any": "pointing_button"</code> to avoid losing the left click button.
-                </div>
-              </td>
+{{% alert title="Caution" color="danger" %}}
+Be careful using `"pointing_button": "button1"` and `"any": "pointing_button"`.<br />
+You may lose the left click button and system will be unusable.
+{{% /alert %}}
 
 <a href="document.html#eventviewer">You can find key_code by EventViewer.</a>
 <a href="https://github.com/pqrs-org/Karabiner-Elements/blob/master/src/apps/PreferencesWindow/Resources/simple_modifications.json">(list)</a>

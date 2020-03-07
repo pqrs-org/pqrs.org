@@ -1,6 +1,6 @@
 ---
-title: 'simultaneous_options'
-weight: 900
+title: 'from.simultaneous_options'
+weight: 400
 ---
 
 `simultaneous_options` adjust the `simultaneous` behavior.
