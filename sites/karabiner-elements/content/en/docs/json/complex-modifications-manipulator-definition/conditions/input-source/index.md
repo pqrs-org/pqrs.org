@@ -1,6 +1,6 @@
 ---
 title: 'input_source_if, input_source_unless'
-weight: 300
+weight: 400
 ---
 
 Change an event if/unless the current input source is the specified value.
