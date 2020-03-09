@@ -7,7 +7,7 @@ Change an event if/unless the variable is the specified value.
 
 {{% alert title="Tip" color="primary" %}}
 
-`variable_if` and `variable_unless` are designed to use with `set_variable`.
+`variable_if` and `variable_unless` are designed to use with [`set_variable`](../../to-event-definition/set-variable/).
 
 {{% /alert %}}
 
@@ -25,3 +25,9 @@ Change an event if/unless the variable is the specified value.
 | `name`        | **Required** | Target variable name.                   |
 | `value`       | **Required** | Target variable value.                  |
 | `description` | Optional     | A human-readable comment                |
+
+## Confirm the current variable values
+
+You can see the current variable values by EventViewer > Variables.
+
+{{< local-image src="images/eventviewer-variables@2x.png" >}}
