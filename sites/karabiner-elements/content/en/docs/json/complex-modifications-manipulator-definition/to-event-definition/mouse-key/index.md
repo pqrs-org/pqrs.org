@@ -3,51 +3,50 @@ title: 'to.mouse_key'
 weight: 400
 ---
 
-            <tr>
-              <td><code>mouse_key</code></td>
-              <td><code class="optional">optional</code></td>
-              <td>
-                Move mouse pointer and scroll by <code>mouse_key</code>.<br />
-                You can specify operations by combination of follows.<br />
-                <ul>
-                  <li><code>{ "x": speed }</code></li>
-                  <li><code>{ "y": speed }</code></li>
-                  <li><code>{ "vertical_wheel": speed }</code></li>
-                  <li><code>{ "horizontal_wheel": speed }</code></li>
-                  <li><code>{ "speed_multiplier": 1.0 }</code></li>
-                </ul>
+Move mouse pointer and scroll by `mouse_key`.
 
-                Examples:<br />
-                <ul>
-                  <li>move left: <code>{ "mouse_key": { "x": -1536 } }</code></li>
-                  <li>move right: <code>{ "mouse_key": { "x": 1536 } }</code></li>
-                  <li>move up: <code>{ "mouse_key": { "y": -1536 } }</code></li>
-                  <li>move down: <code>{ "mouse_key": { "y": 1536 } }</code></li>
-                  <li>scroll left: <code>{ "mouse_key": { "horizontal_wheel": 32 } }</code></li>
-                  <li>scroll right: <code>{ "mouse_key": { "horizontal_wheel": -32 } }</code></li>
-                  <li>scroll up: <code>{ "mouse_key": { "vertical_wheel": -32 } }</code></li>
-                  <li>scroll down: <code>{ "mouse_key": { "vertical_wheel": 32 } }</code></li>
-                </ul>
+```json
+{
+    "to": [
+        {
+            "mouse_key": {
+                "x": speed,
+                "y": speed,
+                "vertical_wheel": speed,
+                "horizontal_wheel": speed,
+                "speed_multiplier": 1.0
+            }
+        }
+    ]
+}
+```
 
-                <ul>
-                  <li>fast move left: <code>{ "mouse_key": { "x": -3072 } }</code></li>
-                  <li>fast move right: <code>{ "mouse_key": { "x": 3072 } }</code></li>
-                  <li>fast move up: <code>{ "mouse_key": { "y": -3072 } }</code></li>
-                  <li>fast move down: <code>{ "mouse_key": { "y": 3072 } }</code></li>
-                  <li>fast scroll left: <code>{ "mouse_key": { "horizontal_wheel": 64 } }</code></li>
-                  <li>fast scroll right: <code>{ "mouse_key": { "horizontal_wheel": -64 } }</code></li>
-                  <li>fast scroll up: <code>{ "mouse_key": { "vertical_wheel": -64 } }</code></li>
-                  <li>fast scroll down: <code>{ "mouse_key": { "vertical_wheel": 64 } }</code></li>
-                </ul>
+| Name               | Required | Description                                                        |
+| ------------------ | -------- | ------------------------------------------------------------------ |
+| `x`                | Optional | Move left (x < 0) or right (x > 0)                                 |
+| `y`                | Optional | Move up (y < 0) or down (y > 0)                                    |
+| `vertical_wheel`   | Optional | Scroll up (vertical_wheel < 0) or down (vertical_wheel > 0)        |
+| `horizontal_wheel` | Optional | Scroll left (horizontal_wheel > 0) or right (horizontal_wheel < 0) |
+| `speed_multiplier` | Optional | Multiply mouse keys speed while this key is hold down              |
 
-                <ul>
-                  <li>speed multiplier x2: <code>{ "mouse_key": { "speed_multiplier": 2.0 } }</code></li>
-                  <li>speed multiplier /2: <code>{ "mouse_key": { "speed_multiplier": 0.5 } }</code></li>
-                </ul>
+{{% alert title="Note" color="primary" %}}
+Speed and scroll direction depend on System Preferences > Mouse configuration.
+{{% /alert %}}
 
-                <div class="alert alert-info" role="alert">
-                  Note:<br />
-                  Speed and direction depend on <b>System Preferences &gt; Mouse</b> configuration.
-                </div>
-              </td>
-            </tr>
+## Examples
+
+|              | json                                           |
+| ------------ | ---------------------------------------------- |
+| Move left    | `{ "mouse_key": { "x": -1536 } }`              |
+| Move right   | `{ "mouse_key": { "x": 1536 } }`               |
+| Move up      | `{ "mouse_key": { "y": -1536 } }`              |
+| Move down    | `{ "mouse_key": { "y": 1536 } }`               |
+| Scroll left  | `{ "mouse_key": { "horizontal_wheel": 32 } }`  |
+| Scroll right | `{ "mouse_key": { "horizontal_wheel": -32 } }` |
+| Scroll up    | `{ "mouse_key": { "vertical_wheel": -32 } }`   |
+| Scroll down  | `{ "mouse_key": { "vertical_wheel": 32 } }`    |
+
+### Complete json examples
+
+-   [Mouse keys (simple)](https://ke-complex-modifications.pqrs.org/#mouse_keys_simple)
+-   [Mouse Keys Mode v4](https://ke-complex-modifications.pqrs.org/#mouse_keys_mode_v4)
