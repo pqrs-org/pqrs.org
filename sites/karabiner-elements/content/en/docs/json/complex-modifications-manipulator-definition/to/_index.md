@@ -63,28 +63,9 @@ You cannot specify multiple items into one `to` entry.
 | [`mouse_key`](mouse-key/)                     | Optional | A mouse key definition                                    |
 | [`modifiers`](modifiers/)                     | Optional | Modifiers which are post with the event                   |
 | [`lazy`](lazy/)                               | Optional | Lazy modifier flag                                        |
+| [`repeat`](repeat/)                           | Optional | Key repeat flag                                           |
 
 ```text
-            <tr>
-              <td><code>repeat</code></td>
-              <td><code class="optional">optional</code></td>
-              <td>
-                <p>
-                  <code>true</code> or <code>false</code>. The default value is <code>true</code>.
-                </p>
-                <p>
-                  When <code>"repeat": false</code>, both <b>key_down</b> and <b>key_up</b> events are sent when you press the key.<br />
-                  (When <code>"repeat": true</code>, <b>key_up</b> event is sent when you release the key.)
-                </p>
-                <p>
-                  This behavior suppresses the key repeating when <code>"repeat": false</code>.
-                </p>
-                <div class="alert alert-info" role="alert">
-                  Note:<br />
-                  When you want to use <code>"repeat": false</code>, you have to set <code>repeat</code> in the last to event if you have multiple to events in a manipulator.
-                </div>
-              </td>
-            </tr>
             <tr>
               <td><code>halt</code></td>
               <td><code class="optional">optional</code></td>
