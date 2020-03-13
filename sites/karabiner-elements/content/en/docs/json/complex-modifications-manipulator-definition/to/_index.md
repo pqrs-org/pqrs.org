@@ -61,7 +61,7 @@ You cannot specify multiple items into one `to` entry.
 | [`select_input_source`](select-input-source/) | Optional | Input source which you want to switch                     |
 | [`set_variable`](set-variable/)               | Optional | A varaible name and value which you want to change        |
 | [`mouse_key`](mouse-key/)                     | Optional | A mouse key definition                                    |
-| `modifiers`                                   | Optional | Modifiers which are post with the event                   |
+| [`modifiers`](modifiers/)                     | Optional | Modifiers which are post with the event                   |
 
 ```text
             <tr>
@@ -136,23 +136,6 @@ You cannot specify multiple items into one `to` entry.
 
                 <a href="document.html#eventviewer">You can find key_code by EventViewer.</a>
                 <a href="https://github.com/pqrs-org/Karabiner-Elements/blob/master/src/apps/PreferencesWindow/Resources/simple_modifications.json">(list)</a>
-
-        <hr class="horizontal-separator thin" />
-
-        <h3 id="to-event-definition-modifiers-list">The list of modifiers in to definition</h3>
-
-        <ul>
-          <li><code>caps_lock</code></li>
-          <li><code>left_command</code></li>
-          <li><code>left_control</code></li>
-          <li><code>left_option</code></li>
-          <li><code>left_shift</code></li>
-          <li><code>right_command</code></li>
-          <li><code>right_control</code></li>
-          <li><code>right_option</code></li>
-          <li><code>right_shift</code></li>
-          <li><code>fn</code></li>
-        </ul>
 
         {{! ================================================================================ }}
 
