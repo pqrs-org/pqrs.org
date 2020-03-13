@@ -7,7 +7,7 @@ Change an event if/unless the variable is the specified value.
 
 {{% alert title="Tip" color="primary" %}}
 
-`variable_if` and `variable_unless` are designed to use with [`set_variable`](../../to-event-definition/set-variable/).
+`variable_if` and `variable_unless` are designed to use with [`set_variable`](../../to/set-variable/).
 
 {{% /alert %}}
 
