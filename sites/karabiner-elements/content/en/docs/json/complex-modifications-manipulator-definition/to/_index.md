@@ -62,22 +62,9 @@ You cannot specify multiple items into one `to` entry.
 | [`set_variable`](set-variable/)               | Optional | A varaible name and value which you want to change        |
 | [`mouse_key`](mouse-key/)                     | Optional | A mouse key definition                                    |
 | [`modifiers`](modifiers/)                     | Optional | Modifiers which are post with the event                   |
+| [`lazy`](lazy/)                               | Optional | Lazy modifier flag                                        |
 
 ```text
-            <tr>
-              <td><code>lazy</code></td>
-              <td><code class="optional">optional</code></td>
-              <td>
-                <p>
-                  <code>true</code> or <code>false</code>. The default value is <code>false</code>.
-                </p>
-                <p>
-                  <code>lazy</code> parameter works with modifier. (e.g., <code>"key_code": "left_shift"</code>)<br />
-                  When <code>"lazy": true</code>, the modifier works as the lazy modifier.<br />
-                  The lazy modifier does not send own key events until another key is pressed together.
-                </p>
-              </td>
-            </tr>
             <tr>
               <td><code>repeat</code></td>
               <td><code class="optional">optional</code></td>
