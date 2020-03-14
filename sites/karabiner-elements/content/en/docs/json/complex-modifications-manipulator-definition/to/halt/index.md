@@ -7,7 +7,7 @@ weight: 800
 
 The typical usage of `to.halt` is to cancel `to_after_key_up` if `to_if_alone` or `to_if_held_down` is triggered.
 
-If `"halt": true` exists in `to_if_alone` or `to_if_held_down`, the `to_after_key_up` is suppressed when `to_if_alone` or `to_if_held_down` is triggered.
+Put `"halt": true` into `to_if_alone` or `to_if_held_down` if you want to suppress `to_after_key_up` when `to_if_alone` or `to_if_held_down` is triggered.
 
 ## Example
 
