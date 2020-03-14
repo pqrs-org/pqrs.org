@@ -25,3 +25,9 @@ weight: 500
 -   [to_after_key_up](to-after-key-up/)
 -   [to_delayed_action](to-delayed-action/)
 -   [conditions](conditions/)
+
+## Other manipulators
+
+Manipulators which `type` is not `"basic"`.
+
+-   [`mouse_motion_to_scroll`](other-types/mouse-motion-to-scroll/)
