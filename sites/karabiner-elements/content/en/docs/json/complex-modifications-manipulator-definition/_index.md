@@ -3,6 +3,27 @@ title: 'complex_modifications manipulator definition'
 weight: 500
 ---
 
+```json
+"manipulators": [
+    {
+        "type": "basic",
+        "from": {...},
+        "to": [...],
+        "to_if_alone": [...],
+        "to_if_held_down": [...],
+        "to_after_key_up": [...],
+        "to_delayed_action": {
+            "to_if_invoked": [...],
+            "to_if_canceled": [...],
+        },
+        "conditions": [...],
+        "parameters": {...},
+        "description": "Optional description for human"
+    },
+    ...
+]
+```
+
 | Name                                      | Required     | Description                                                                           |
 | ----------------------------------------- | ------------ | ------------------------------------------------------------------------------------- |
 | `type`                                    | **Required** | `"basic"` is specified                                                                |
