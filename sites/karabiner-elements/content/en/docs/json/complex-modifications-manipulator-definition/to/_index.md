@@ -70,22 +70,4 @@ You cannot specify multiple items into one `to` entry.
 ```text
                 <a href="document.html#eventviewer">You can find key_code by EventViewer.</a>
                 <a href="https://github.com/pqrs-org/Karabiner-Elements/blob/master/src/apps/PreferencesWindow/Resources/simple_modifications.json">(list)</a>
-
-        {{! ================================================================================ }}
-
-        <hr class="horizontal-separator thin" />
-
-        <h3 id="to-if-held-down">Detail of <code>to_if_held_down</code></h3>
-
-        <p>
-          <code>to_if_held_down</code> posts events when the <b>from key</b> is held down.<br />
-        </p>
-
-        <p>
-          If <code>to</code> events are specified, <code>to</code> events are released before <code>to_if_held_down</code> are posted.
-        </p>
-
-        {{! ================================================================================ }}
-
-        <hr class="horizontal-separator" />
 ```
