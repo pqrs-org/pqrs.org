@@ -64,26 +64,9 @@ You cannot specify multiple items into one `to` entry.
 | [`modifiers`](modifiers/)                     | Optional | Modifiers which are post with the event                   |
 | [`lazy`](lazy/)                               | Optional | Lazy modifier flag                                        |
 | [`repeat`](repeat/)                           | Optional | Key repeat flag                                           |
+| [`halt`](halt/)                               | Optional | A flag for `to_after_key_up`                              |
 
 ```text
-            <tr>
-              <td><code>halt</code></td>
-              <td><code class="optional">optional</code></td>
-              <td>
-                <p>
-                  <code>true</code> or <code>false</code>. The default value is <code>false</code>.
-                </p>
-                <p>
-                  The typical usage of <code>halt</code> is to cancel <code>to_after_key_up</code> if <code>to_if_alone</code> or <code>to_if_held_down</code> is triggered.
-                </p>
-                <p>
-                  If <code>"halt": true</code> exists in <code>to_if_alone</code> or <code>to_if_held_down</code>, the <code>to_after_key_up</code> is suppressed when <code>to_if_alone</code> or <code>to_if_held_down</code> is triggered.
-                </p>
-                <p>
-                  An example: <a target="_blank" href="https://github.com/pqrs-org/KE-complex_modifications/blob/master/docs/json/example_halt.json">https://github.com/pqrs-org/KE-complex_modifications/blob/master/docs/json/example_halt.json</a>
-                </p>
-              </td>
-            </tr>
             <tr>
               <td><code>hold_down_milliseconds</code></td>
               <td><code class="optional">optional</code></td>
