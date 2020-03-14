@@ -1,6 +1,6 @@
 ---
 title: 'karabiner.json data structure'
-weight: 300
+weight: 400
 ---
 
 {{% alert title="Note" color="warning" %}}

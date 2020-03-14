@@ -1,6 +1,6 @@
 ---
 title: 'complex_modifications manipulator evaluation priority'
-weight: 400
+weight: 300
 ---
 
 The manipulators are evaluated from the top to the bottom and the input event is manipulated only the first matched manipulator.
