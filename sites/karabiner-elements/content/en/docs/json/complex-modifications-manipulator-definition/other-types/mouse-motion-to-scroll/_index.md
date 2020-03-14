@@ -46,3 +46,52 @@ Your mouse cursor movement will be always changed to scroll and your mouse will 
 | ------------------------- | ----------------- | -------- | ---------------------------------------------------- |
 | `momentum_scroll_enabled` | `true` or `false` | Optional | Enable Momentum scroll. The default value is `true`. |
 | `speed_multiplier`        | float value       | Optional | Multiply scroll speed. The default value is `1.0`.   |
+
+## Example
+
+The following json changes `button4 + mouse movement` to `scroll`.
+
+```json
+[
+    {
+        "type": "basic",
+        "from": {
+            "pointing_button": "button4",
+            "modifiers": {
+                "optional": ["any"]
+            }
+        },
+        "to": [
+            {
+                "set_variable": {
+                    "name": "enable_mouse_motion_to_scroll",
+                    "value": 1
+                }
+            }
+        ],
+        "to_after_key_up": [
+            {
+                "set_variable": {
+                    "name": "enable_mouse_motion_to_scroll",
+                    "value": 0
+                }
+            }
+        ]
+    },
+    {
+        "type": "mouse_motion_to_scroll",
+        "from": {
+            "modifiers": {
+                "optional": ["any"]
+            }
+        },
+        "conditions": [
+            {
+                "type": "variable_if",
+                "name": "enable_mouse_motion_to_scroll",
+                "value": 1
+            }
+        ]
+    }
+]
+```
