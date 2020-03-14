@@ -67,7 +67,22 @@ You cannot specify multiple items into one `to` entry.
 | [`halt`](halt/)                                     | Optional | A flag for `to_after_key_up`                                                    |
 | [`hold_down_milliseconds`](hold-down-milliseconds/) | Optional | Interval of `key_down` and `key_up` when these events are sent at the same time |
 
-```text
-                <a href="document.html#eventviewer">You can find key_code by EventViewer.</a>
-                <a href="https://github.com/pqrs-org/Karabiner-Elements/blob/master/src/apps/PreferencesWindow/Resources/simple_modifications.json">(list)</a>
+## Investigate key names
+
+-   You can find `key_code`, `consumer_key_code` and `pointing_button` names by [EventViewer](../../../manual/operation/eventviewer/).
+-   You can also confirm [names in list](https://github.com/pqrs-org/Karabiner-Elements/blob/master/src/apps/PreferencesWindow/Resources/simple_modifications.json).
+    (See `"data"` in the list.)
+
+{{% alert title="Tips" color="primary" %}}
+
+You can also specify `key_code`, `consumer_key_code`, `pointing_button` with raw number as follows.<br />
+
+```json
+{
+    "to": [
+        {
+            "key_code": 41
+        }
+    ]
+}
 ```
