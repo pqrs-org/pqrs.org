@@ -75,53 +75,6 @@ You cannot specify multiple items into one `to` entry.
 
         <hr class="horizontal-separator thin" />
 
-        <h3 id="to-if-alone">Detail of <code>to_if_alone</code></h3>
-
-        <p>
-          <code>to_if_alone</code> posts events when the <b>from key</b> is pressed alone.<br />
-          The events are posted at the <b>from key</b> is released.
-        </p>
-
-        <h4 id="to-if-alone-cancellation">About cancellation</h4>
-
-        <p>
-          <code>to_if_alone</code> is canceled if other events (keys, buttons or scroll wheel) is happen while the <b>from key</b> is pressed down.
-        </p>
-        <p>
-          The cancellation also happens when you press <b>from key</b> long. (The default timeout is 1000 milliseconds.)<br />
-          You can adjust the timeout milliseconds by <code>parameters &gt; basic.to_if_alone_timeout_milliseconds</code>.<br />
-          The following examples set the timeout 500 milliseconds.
-        </p>
-```
-
-```json
-{
-    "from": ...,
-    "to": ...,
-    "to_if_alone": [
-        {
-            "key_code": "escape"
-        }
-    ],
-    "parameters": {
-        "basic.to_if_alone_timeout_milliseconds": 500
-    },
-    "type": "basic"
-}
-```
-
-```text
-        <h4 id="to-if-alone-keyboard-repeat">About keyboard repeat</h4>
-
-        <p>
-          <code>to_if_alone</code> posts both <b>key_down</b> and <b>key_up</b> events at the same time.<br />
-          Thus, you cannot use key repeat for <code>to_if_alone</code> events.
-        </p>
-
-        {{! ================================================================================ }}
-
-        <hr class="horizontal-separator thin" />
-
         <h3 id="to-if-held-down">Detail of <code>to_if_held_down</code></h3>
 
         <p>
