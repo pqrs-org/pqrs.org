@@ -52,39 +52,22 @@ You cannot specify multiple items into one `to` entry.
 
 {{% /alert %}}
 
-| Name                                          | Required | Description                                               |
-| --------------------------------------------- | -------- | --------------------------------------------------------- |
-| `key_code`                                    | Optional | Key code which you want to post                           |
-| `consumer_key_code`                           | Optional | Consumer key code (media key code) which you want to post |
-| `pointing_button`                             | Optional | Pointing button name which you want to post               |
-| [`shell_command`](shell-command/)             | Optional | Shell command which you want to execute                   |
-| [`select_input_source`](select-input-source/) | Optional | Input source which you want to switch                     |
-| [`set_variable`](set-variable/)               | Optional | A varaible name and value which you want to change        |
-| [`mouse_key`](mouse-key/)                     | Optional | A mouse key definition                                    |
-| [`modifiers`](modifiers/)                     | Optional | Modifiers which are post with the event                   |
-| [`lazy`](lazy/)                               | Optional | Lazy modifier flag                                        |
-| [`repeat`](repeat/)                           | Optional | Key repeat flag                                           |
-| [`halt`](halt/)                               | Optional | A flag for `to_after_key_up`                              |
+| Name                                                | Required | Description                                                                     |
+| --------------------------------------------------- | -------- | ------------------------------------------------------------------------------- |
+| `key_code`                                          | Optional | Key code which you want to post                                                 |
+| `consumer_key_code`                                 | Optional | Consumer key code (media key code) which you want to post                       |
+| `pointing_button`                                   | Optional | Pointing button name which you want to post                                     |
+| [`shell_command`](shell-command/)                   | Optional | Shell command which you want to execute                                         |
+| [`select_input_source`](select-input-source/)       | Optional | Input source which you want to switch                                           |
+| [`set_variable`](set-variable/)                     | Optional | A varaible name and value which you want to change                              |
+| [`mouse_key`](mouse-key/)                           | Optional | A mouse key definition                                                          |
+| [`modifiers`](modifiers/)                           | Optional | Modifiers which are post with the event                                         |
+| [`lazy`](lazy/)                                     | Optional | Lazy modifier flag                                                              |
+| [`repeat`](repeat/)                                 | Optional | Key repeat flag                                                                 |
+| [`halt`](halt/)                                     | Optional | A flag for `to_after_key_up`                                                    |
+| [`hold_down_milliseconds`](hold-down-milliseconds/) | Optional | Interval of `key_down` and `key_up` when these events are sent at the same time |
 
 ```text
-            <tr>
-              <td><code>hold_down_milliseconds</code></td>
-              <td><code class="optional">optional</code></td>
-              <td>
-                <p>
-                  An integer value. The default value is <code>0</code>.
-                </p>
-                <p>
-                  Specify a key press period for when both key down and key up events are posted at the same time (e.g. <code>to_if_alone</code>)
-                </p>
-                <p>
-                  Generally <code>hold_down_milliseconds</code> is used with <code>"key_code": "caps_lock"</code>.
-                </p>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-
                 <a href="document.html#eventviewer">You can find key_code by EventViewer.</a>
                 <a href="https://github.com/pqrs-org/Karabiner-Elements/blob/master/src/apps/PreferencesWindow/Resources/simple_modifications.json">(list)</a>
 
