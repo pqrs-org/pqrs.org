@@ -27,7 +27,7 @@ exclude_search: true
     -   Jan 18, 2020
 -   ✨ New Features
     -   `Open config folder` button has been added into Preferences.<br>
-        The feature provides [an easy way exporting configuration](https://pqrs.org/osx/karabiner/document.html#export).
+        The feature provides [an easy way exporting configuration](https://karabiner-elements.pqrs.org/docs/manual/operation/export/).
 -   ⚡️ Improvements
     -   Added a workaround for non-dismissible `Device is ignored temporarily` alert
         which is caused by some devices that sends abnormal input events.
@@ -56,9 +56,6 @@ exclude_search: true
     -   Sep 12, 2019
 -   ✨ New Features
     -   MultitouchExtension app has been added.
-        -   Documentation:
-            -   [Usage](https://pqrs.org/osx/karabiner/document.html#multitouch-extension)
-            -   [How to integrate MultitouchExtension to your complex modifications](https://pqrs.org/osx/karabiner/json.html#multitouch-extension)
     -   Dark Mode has been supported.
     -   Added `--set-variables` option into `karabiner_cli`.
 -   🐛 Bug Fixes
@@ -121,7 +118,7 @@ exclude_search: true
     -   Apr 24, 2019
 -   💥 Breaking changes
     -   complex modifications json will be checked strictly since this release.<br/>
-        Please check [error messages](https://pqrs.org/osx/karabiner/json.html#location) if your complex modifications do not work after upgrade.
+        Please check error messages if your complex modifications do not work after upgrade.
 -   ✨ New Features
     -   Added [Change mouse motion to scroll](https://ke-complex-modifications.pqrs.org/#mouse_motion_to_scroll) feature.<br/>
         -   Note: You have to enable your mice on [Devices tab](https://pqrs.org/osx/karabiner/document.html#configuration-devices) when you want to use this feature.
