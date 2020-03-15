@@ -1,0 +1,1221 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="generator" content="Hugo 0.67.0" />
+
+<META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+
+<link rel="alternate" type="application/rss&#43;xml" href="/docs/json/complex-modifications-manipulator-definition/to-delayed-action/index.xml">
+
+
+<link rel="shortcut icon" href="/favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
+
+<title>to_delayed_action | Karabiner-Elements</title><meta property="og:title" content="to_delayed_action" />
+<meta property="og:description" content="A powerful and stable keyboard customizer for macOS." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="/docs/json/complex-modifications-manipulator-definition/to-delayed-action/" />
+<meta property="og:image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
+<meta property="og:site_name" content="Karabiner-Elements" />
+<meta itemprop="name" content="to_delayed_action">
+<meta itemprop="description" content="A powerful and stable keyboard customizer for macOS."><meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
+
+<meta name="twitter:title" content="to_delayed_action"/>
+<meta name="twitter:description" content="A powerful and stable keyboard customizer for macOS."/>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-56715024-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+
+
+
+<link rel="preload" href="/scss/main.min.6264eea44bcf33fc0f39c091eb85b9e0e7b4608ac3e49d313c1e90fbe8a1ed91.css" as="style">
+<link href="/scss/main.min.6264eea44bcf33fc0f39c091eb85b9e0e7b4608ac3e49d313c1e90fbe8a1ed91.css" rel="stylesheet" integrity="">
+
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+<script
+  src="https://unpkg.com/lunr@2.3.8/lunr.min.js"
+  integrity="sha384-vRQ9bDyE0Wnu+lMfm57BlYLO0/XauFuKpVsZPs7KEDwYKktWi5+Kz3MP8++DFlRY"
+  crossorigin="anonymous"></script>
+
+
+    <title>to_delayed_action | Karabiner-Elements</title>
+  </head>
+  <body class="td-section">
+    <header>
+      
+<nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
+        <a class="navbar-brand" href="/">
+		<span class="navbar-logo"></span><span class="text-uppercase font-weight-bold">Karabiner-Elements</span>
+	</a>
+	<div class="td-navbar-nav-scroll ml-md-auto" id="main_navbar">
+		<ul class="navbar-nav mt-2 mt-lg-0">
+			
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a class="nav-link active" href="/docs/" ><span class="active">Documentation</span></a>
+			</li>
+			
+			
+			
+		</ul>
+	</div>
+	<div class="navbar-nav d-none d-lg-block">
+
+
+<input
+  type="search"
+  class="form-control td-search-input"
+  placeholder="&#xf002; Search this site…"
+  aria-label="Search this site…"
+  autocomplete="off"
+  
+  data-offline-search-index-json-src="/offline-search-index.b67efa6e066f41249e8e893b5554db15bc8ad9cd6711794a05b4938fbcdbaac9918517c38dbda29ae4ac9e28546a6417a74411242490c754c9af90cb0e2dcb7a.json"
+  data-offline-search-base-href="/"
+>
+
+</div>
+</nav>
+
+    </header>
+    <div class="container-fluid td-outer">
+      <div class="td-main">
+        <div class="row flex-xl-nowrap">
+          <div class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
+            
+
+
+
+
+<div id="td-sidebar-menu" class="td-sidebar__inner">
+  
+  <form class="td-sidebar__search d-flex align-items-center">
+    
+
+
+<input
+  type="search"
+  class="form-control td-search-input"
+  placeholder="&#xf002; Search this site…"
+  aria-label="Search this site…"
+  autocomplete="off"
+  
+  data-offline-search-index-json-src="/offline-search-index.b67efa6e066f41249e8e893b5554db15bc8ad9cd6711794a05b4938fbcdbaac9918517c38dbda29ae4ac9e28546a6417a74411242490c754c9af90cb0e2dcb7a.json"
+  data-offline-search-base-href="/"
+>
+
+
+    <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ml-3 fas fa-bars" type="button" data-toggle="collapse" data-target="#td-section-nav" aria-controls="td-docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    </button>
+  </form>
+  
+  <nav class="collapse td-sidebar-nav pt-2 pl-4" id="td-section-nav">
+    
+    
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">Documentation</a>
+  </li>
+  <ul>
+    <li class="collapse show" id="docs">
+      
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/getting-started/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Getting started</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docsgetting-started">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgetting-startedinstallation" href="/docs/getting-started/installation/">Installation</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgetting-startedfeatures" href="/docs/getting-started/features/">Features</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/manual/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Manual</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docsmanual">
+      
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/manual/configuration/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Configuration</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docsmanualconfiguration">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsmanualconfigurationconfigure-simple-modifications" href="/docs/manual/configuration/configure-simple-modifications/">Change a key to another key</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsmanualconfigurationconfigure-complex-modifications" href="/docs/manual/configuration/configure-complex-modifications/">Use more complex rules</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsmanualconfigurationconfigure-devices" href="/docs/manual/configuration/configure-devices/">Choose devices</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsmanualconfigurationdisable-built-in-keyboard" href="/docs/manual/configuration/disable-built-in-keyboard/">Disable the built-in keyboard when external keyboard is connected</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsmanualconfigurationconfigure-keyboard-type" href="/docs/manual/configuration/configure-keyboard-type/">Set keyboard type</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsmanualconfigurationconfigure-menu-bar-icon" href="/docs/manual/configuration/configure-menu-bar-icon/">Configure icon in menu bar</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/manual/operation/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Operation</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docsmanualoperation">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsmanualoperationquit" href="/docs/manual/operation/quit/">How to quit</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsmanualoperationuninstall" href="/docs/manual/operation/uninstall/">Uninstall</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsmanualoperationcheck-for-updates" href="/docs/manual/operation/check-for-updates/">Check for updates</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsmanualoperationeventviewer" href="/docs/manual/operation/eventviewer/">How to confirm the result of configuration (EventViewer)</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsmanualoperationprofiles" href="/docs/manual/operation/profiles/">Multiple profiles</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsmanualoperationlog" href="/docs/manual/operation/log/">Show log messages</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsmanualoperationexport" href="/docs/manual/operation/export/">Export and import configuration</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/manual/misc/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Misc</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docsmanualmisc">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsmanualmiscignored-temporarily" href="/docs/manual/misc/ignored-temporarily/">About &#34;Device is ignored temporarily&#34; alert</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsmanualmiscimplicit-behavior" href="/docs/manual/misc/implicit-behavior/">Implicit behavior</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsmanualmiscevent-modification-chaining" href="/docs/manual/misc/event-modification-chaining/">Input event modification chaining</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsmanualmiscmultitouch-extension" href="/docs/manual/misc/multitouch-extension/">MultitouchExtension</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsmanualmisccommand-line-interface" href="/docs/manual/misc/command-line-interface/">Command line interface</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsmanualmiscconfiguration-file-path" href="/docs/manual/misc/configuration-file-path/">The location of the configuration file</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/help/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Help</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docshelp">
+      
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/help/troubleshooting/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Troubleshooting</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docshelptroubleshooting">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docshelptroubleshootingkext-allow-button-does-not-work" href="/docs/help/troubleshooting/kext-allow-button-does-not-work/">Allow button on System Preferences &gt; Security &gt; Privacy does not work</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docshelptroubleshootingstopped-working-after-macos-update" href="/docs/help/troubleshooting/stopped-working-after-macos-update/">Karabiner-Elements stopped working after macOS update</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docshelptroubleshootingtouch-bar-function-keys" href="/docs/help/troubleshooting/touch-bar-function-keys/">Touch Bar does not change to f1-f12 when I press the fn key</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docshelptroubleshootingcontrol-eject" href="/docs/help/troubleshooting/control-eject/">Control-eject shortcut does not work when Karabiner-Elements is running</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docshelptroubleshootingjson-owner-is-invalid" href="/docs/help/troubleshooting/json-owner-is-invalid/">&#34;karabiner.json is not owned by a valid user&#34; error message in log</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/help/how-to/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">How to</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docshelphow-to">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docshelphow-tomouse-button" href="/docs/help/how-to/mouse-button/">How to change mouse buttons</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docshelphow-todisable-caps-lock-delay" href="/docs/help/how-to/disable-caps-lock-delay/">How to disable caps lock delay</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docshelphow-tokey-repeat" href="/docs/help/how-to/key-repeat/">How to adjust the key repeat rate</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/help/advanced-topics/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Advanced topics</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docshelpadvanced-topics">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docshelpadvanced-topicsinstalled-files" href="/docs/help/advanced-topics/installed-files/">Installed files</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docshelpadvanced-topicssecurity" href="/docs/help/advanced-topics/security/">Security</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docscontact" href="/docs/contact/">Contact</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docspricing" href="/docs/pricing/">Pricing</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsreleasenotes" href="/docs/releasenotes/">Release notes</a>
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/json/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">karabiner.json Reference Manual</a>
+  </li>
+  <ul>
+    <li class="collapse show" id="docsjson">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsjsonlocation" href="/docs/json/location/">File location</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsjsontypical-complex-modifications-examples" href="/docs/json/typical-complex-modifications-examples/">Typical complex_modifications examples</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsjsoncomplex-modifications-manipulator-evaluation-priority" href="/docs/json/complex-modifications-manipulator-evaluation-priority/">complex_modifications manipulator evaluation priority</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsjsonroot-data-structure" href="/docs/json/root-data-structure/">karabiner.json data structure</a>
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/json/complex-modifications-manipulator-definition/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">complex_modifications manipulator definition</a>
+  </li>
+  <ul>
+    <li class="collapse show" id="docsjsoncomplex-modifications-manipulator-definition">
+      
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/json/complex-modifications-manipulator-definition/from/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">from event definition</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docsjsoncomplex-modifications-manipulator-definitionfrom">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsjsoncomplex-modifications-manipulator-definitionfromany" href="/docs/json/complex-modifications-manipulator-definition/from/any/">from.any</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsjsoncomplex-modifications-manipulator-definitionfrommodifiers" href="/docs/json/complex-modifications-manipulator-definition/from/modifiers/">from.modifiers</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsjsoncomplex-modifications-manipulator-definitionfromsimultaneous" href="/docs/json/complex-modifications-manipulator-definition/from/simultaneous/">from.simultaneous</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsjsoncomplex-modifications-manipulator-definitionfromsimultaneous-options" href="/docs/json/complex-modifications-manipulator-definition/from/simultaneous-options/">from.simultaneous_options</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/json/complex-modifications-manipulator-definition/to/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">to event definition</a>
+  </li>
+  <ul>
+    <li class="collapse show" id="docsjsoncomplex-modifications-manipulator-definitionto">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsjsoncomplex-modifications-manipulator-definitiontoshell-command" href="/docs/json/complex-modifications-manipulator-definition/to/shell-command/">to.shell_command</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsjsoncomplex-modifications-manipulator-definitiontoselect-input-source" href="/docs/json/complex-modifications-manipulator-definition/to/select-input-source/">to.select_input_source</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsjsoncomplex-modifications-manipulator-definitiontoset-variable" href="/docs/json/complex-modifications-manipulator-definition/to/set-variable/">to.set_variable</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsjsoncomplex-modifications-manipulator-definitiontomouse-key" href="/docs/json/complex-modifications-manipulator-definition/to/mouse-key/">to.mouse_key</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsjsoncomplex-modifications-manipulator-definitiontomodifiers" href="/docs/json/complex-modifications-manipulator-definition/to/modifiers/">to.modifiers</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsjsoncomplex-modifications-manipulator-definitiontolazy" href="/docs/json/complex-modifications-manipulator-definition/to/lazy/">to.lazy</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsjsoncomplex-modifications-manipulator-definitiontorepeat" href="/docs/json/complex-modifications-manipulator-definition/to/repeat/">to.repeat</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsjsoncomplex-modifications-manipulator-definitiontohalt" href="/docs/json/complex-modifications-manipulator-definition/to/halt/">to.halt</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsjsoncomplex-modifications-manipulator-definitiontohold-down-milliseconds" href="/docs/json/complex-modifications-manipulator-definition/to/hold-down-milliseconds/">to.hold_down_milliseconds</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/json/complex-modifications-manipulator-definition/to-if-alone/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">to_if_alone</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docsjsoncomplex-modifications-manipulator-definitionto-if-alone">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/json/complex-modifications-manipulator-definition/to-if-held-down/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">to_if_held_down</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docsjsoncomplex-modifications-manipulator-definitionto-if-held-down">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/json/complex-modifications-manipulator-definition/to-after-key-up/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">to_after_key_up</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docsjsoncomplex-modifications-manipulator-definitionto-after-key-up">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/json/complex-modifications-manipulator-definition/to-delayed-action/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">to_delayed_action</a>
+  </li>
+  <ul>
+    <li class="collapse show" id="docsjsoncomplex-modifications-manipulator-definitionto-delayed-action">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/json/complex-modifications-manipulator-definition/conditions/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Conditions</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docsjsoncomplex-modifications-manipulator-definitionconditions">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsjsoncomplex-modifications-manipulator-definitionconditionsfrontmost-application" href="/docs/json/complex-modifications-manipulator-definition/conditions/frontmost-application/">frontmost_application_if, frontmost_application_unless</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsjsoncomplex-modifications-manipulator-definitionconditionsdevice" href="/docs/json/complex-modifications-manipulator-definition/conditions/device/">device_if, device_unless</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsjsoncomplex-modifications-manipulator-definitionconditionskeyboard-type" href="/docs/json/complex-modifications-manipulator-definition/conditions/keyboard-type/">keyboard_type_if, keyboard_type_unless</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsjsoncomplex-modifications-manipulator-definitionconditionsinput-source" href="/docs/json/complex-modifications-manipulator-definition/conditions/input-source/">input_source_if, input_source_unless</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsjsoncomplex-modifications-manipulator-definitionconditionsvariable" href="/docs/json/complex-modifications-manipulator-definition/conditions/variable/">variable_if, variable_unless</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsjsoncomplex-modifications-manipulator-definitionconditionsevent-changed" href="/docs/json/complex-modifications-manipulator-definition/conditions/event-changed/">event_changed_if, event_changed_unless</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/json/complex-modifications-manipulator-definition/other-types/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Other types</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docsjsoncomplex-modifications-manipulator-definitionother-types">
+      
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/json/complex-modifications-manipulator-definition/other-types/mouse-motion-to-scroll/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">mouse_motion_to_scroll</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docsjsoncomplex-modifications-manipulator-definitionother-typesmouse-motion-to-scroll">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/json/extra/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Extra documents</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docsjsonextra">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsjsonextramultitouch-extension" href="/docs/json/extra/multitouch-extension/">MultitouchExtension integration</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsjsonextravirtual-modifier" href="/docs/json/extra/virtual-modifier/">Virtual modifier</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+    </li>
+  </ul>
+</ul>
+
+  </nav>
+</div>
+
+
+
+
+          </div>
+          <div class="d-none d-xl-block col-xl-2 td-toc d-print-none">
+            
+
+
+
+
+
+
+
+
+
+
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#example">Example</a></li>
+    <li><a href="#parameters">Parameters</a></li>
+  </ul>
+</nav>
+
+
+
+          </div>
+          <main class="col-12 col-md-9 col-xl-8 pl-md-5" role="main">
+            
+  
+
+            <nav aria-label="breadcrumb" class="d-none d-md-block d-print-none">
+	<ol class="breadcrumb spb-1">
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="breadcrumb-item" >
+	<a href="/docs/">Documentation</a>
+</li>
+
+
+
+
+<li class="breadcrumb-item" >
+	<a href="/docs/json/">karabiner.json Reference Manual</a>
+</li>
+
+
+
+
+<li class="breadcrumb-item" >
+	<a href="/docs/json/complex-modifications-manipulator-definition/">complex_modifications manipulator definition</a>
+</li>
+
+
+
+
+<li class="breadcrumb-item active" aria-current="page">
+	<a href="/docs/json/complex-modifications-manipulator-definition/to-delayed-action/">to_delayed_action</a>
+</li>
+
+	</ol>
+</nav	>
+
+            
+<div class="td-content">
+	<h1>to_delayed_action</h1>
+	
+	<p><code>to_delayed_action</code> posts events after 500 milliseconds from the <code>from</code> key is pressed.</p>
+<ul>
+<li><code>to_delayed_action.to_if_invoked</code>
+<ul>
+<li>An array of <code>to</code> events that will be sent if no other key is pressed after the <code>from</code> key is pressed.</li>
+</ul>
+</li>
+<li><code>to_delayed_action.to_if_canceled</code>
+<ul>
+<li>An array of <code>to</code> events that will be sent if another key is pressed after the <code>from</code> key is pressed before <code>to_delayed_action.to_if_invoked</code> is sent.</li>
+</ul>
+</li>
+</ul>
+
+
+<div class="alert alert-primary" role="alert">
+<h4 class="alert-heading">Tips</h4>
+<code>to_delayed_action</code> is typically used to:</p>
+<ul>
+<li>Double tap key (e.g., change <code>right_shift x2</code>)</li>
+<li>2 stroke keys such as C-x of Emacs Mode.</li>
+</ul>
+</div>
+
+<h2 id="example">Example</h2>
+<p>The following json provide <code>Quit application by pressing command-q twice</code>.</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json"><span style="color:#000;font-weight:bold">[</span>
+    <span style="color:#000;font-weight:bold">{</span>
+        <span style="color:#204a87;font-weight:bold">&#34;type&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;basic&#34;</span><span style="color:#000;font-weight:bold">,</span>
+        <span style="color:#204a87;font-weight:bold">&#34;conditions&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+            <span style="color:#000;font-weight:bold">{</span>
+                <span style="color:#204a87;font-weight:bold">&#34;type&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;variable_if&#34;</span><span style="color:#000;font-weight:bold">,</span>
+                <span style="color:#204a87;font-weight:bold">&#34;name&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;command-q&#34;</span><span style="color:#000;font-weight:bold">,</span>
+                <span style="color:#204a87;font-weight:bold">&#34;value&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#0000cf;font-weight:bold">1</span>
+            <span style="color:#000;font-weight:bold">}</span>
+        <span style="color:#000;font-weight:bold">],</span>
+        <span style="color:#204a87;font-weight:bold">&#34;from&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+            <span style="color:#204a87;font-weight:bold">&#34;key_code&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;q&#34;</span><span style="color:#000;font-weight:bold">,</span>
+            <span style="color:#204a87;font-weight:bold">&#34;modifiers&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+                <span style="color:#204a87;font-weight:bold">&#34;mandatory&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">&#34;command&#34;</span><span style="color:#000;font-weight:bold">],</span>
+                <span style="color:#204a87;font-weight:bold">&#34;optional&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">&#34;caps_lock&#34;</span><span style="color:#000;font-weight:bold">]</span>
+            <span style="color:#000;font-weight:bold">}</span>
+        <span style="color:#000;font-weight:bold">},</span>
+        <span style="color:#204a87;font-weight:bold">&#34;to&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+            <span style="color:#000;font-weight:bold">{</span>
+                <span style="color:#204a87;font-weight:bold">&#34;key_code&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;q&#34;</span><span style="color:#000;font-weight:bold">,</span>
+                <span style="color:#204a87;font-weight:bold">&#34;modifiers&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;left_command&#34;</span>
+            <span style="color:#000;font-weight:bold">}</span>
+        <span style="color:#000;font-weight:bold">]</span>
+    <span style="color:#000;font-weight:bold">},</span>
+    <span style="color:#000;font-weight:bold">{</span>
+        <span style="color:#204a87;font-weight:bold">&#34;type&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;basic&#34;</span><span style="color:#000;font-weight:bold">,</span>
+        <span style="color:#204a87;font-weight:bold">&#34;from&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+            <span style="color:#204a87;font-weight:bold">&#34;key_code&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;q&#34;</span><span style="color:#000;font-weight:bold">,</span>
+            <span style="color:#204a87;font-weight:bold">&#34;modifiers&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+                <span style="color:#204a87;font-weight:bold">&#34;mandatory&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">&#34;command&#34;</span><span style="color:#000;font-weight:bold">],</span>
+                <span style="color:#204a87;font-weight:bold">&#34;optional&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">&#34;caps_lock&#34;</span><span style="color:#000;font-weight:bold">]</span>
+            <span style="color:#000;font-weight:bold">}</span>
+        <span style="color:#000;font-weight:bold">},</span>
+        <span style="color:#204a87;font-weight:bold">&#34;to&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+            <span style="color:#000;font-weight:bold">{</span>
+                <span style="color:#204a87;font-weight:bold">&#34;set_variable&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+                    <span style="color:#204a87;font-weight:bold">&#34;name&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;command-q&#34;</span><span style="color:#000;font-weight:bold">,</span>
+                    <span style="color:#204a87;font-weight:bold">&#34;value&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#0000cf;font-weight:bold">1</span>
+                <span style="color:#000;font-weight:bold">}</span>
+            <span style="color:#000;font-weight:bold">}</span>
+        <span style="color:#000;font-weight:bold">],</span>
+        <span style="color:#204a87;font-weight:bold">&#34;to_delayed_action&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+            <span style="color:#204a87;font-weight:bold">&#34;to_if_invoked&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+                <span style="color:#000;font-weight:bold">{</span>
+                    <span style="color:#204a87;font-weight:bold">&#34;set_variable&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+                        <span style="color:#204a87;font-weight:bold">&#34;name&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;command-q&#34;</span><span style="color:#000;font-weight:bold">,</span>
+                        <span style="color:#204a87;font-weight:bold">&#34;value&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#0000cf;font-weight:bold">0</span>
+                    <span style="color:#000;font-weight:bold">}</span>
+                <span style="color:#000;font-weight:bold">}</span>
+            <span style="color:#000;font-weight:bold">],</span>
+            <span style="color:#204a87;font-weight:bold">&#34;to_if_canceled&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+                <span style="color:#000;font-weight:bold">{</span>
+                    <span style="color:#204a87;font-weight:bold">&#34;set_variable&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+                        <span style="color:#204a87;font-weight:bold">&#34;name&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;command-q&#34;</span><span style="color:#000;font-weight:bold">,</span>
+                        <span style="color:#204a87;font-weight:bold">&#34;value&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#0000cf;font-weight:bold">0</span>
+                    <span style="color:#000;font-weight:bold">}</span>
+                <span style="color:#000;font-weight:bold">}</span>
+            <span style="color:#000;font-weight:bold">]</span>
+        <span style="color:#000;font-weight:bold">}</span>
+    <span style="color:#000;font-weight:bold">}</span>
+<span style="color:#000;font-weight:bold">]</span>
+</code></pre></div><h2 id="parameters">Parameters</h2>
+<p>You can adjust the milliseconds invoking <code>to_delayed_action</code> by <code>parameters &gt; basic.to_delayed_action_delay_milliseconds</code> as follows.</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json"><span style="color:#000;font-weight:bold">{</span>
+    <span style="color:#204a87;font-weight:bold">&#34;type&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;basic&#34;</span><span style="color:#000;font-weight:bold">,</span>
+    <span style="color:#204a87;font-weight:bold">&#34;from&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#a40000">...</span><span style="color:#000;font-weight:bold">,</span>
+    <span style="color:#204a87;font-weight:bold">&#34;to_delayed_action&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#a40000">...</span><span style="color:#000;font-weight:bold">,</span>
+    <span style="color:#204a87;font-weight:bold">&#34;parameters&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+        <span style="color:#204a87;font-weight:bold">&#34;basic.to_delayed_action_delay_milliseconds&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#0000cf;font-weight:bold">1000</span>
+    <span style="color:#000;font-weight:bold">}</span>
+<span style="color:#000;font-weight:bold">}</span>
+</code></pre></div>
+        
+	
+	
+	<div class="text-muted mt-5 pt-3 border-top"></div>
+</div>
+
+          </main>
+        </div>
+      </div>
+      <footer class="bg-primary py-5 row d-print-none">
+  <div class="col-12 text-center py-2">
+    <a class="text-white" href="https://pqrs.org" target="_blank">
+      pqrs.org
+    </a>
+  </div>
+</footer>
+
+    </div>
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+<script src="/js/main.min.3587468abafd7ee678f61330f7c574ba0376f12451f11e076f2283f1e0504095.js" integrity="sha256-NYdGirr9fuZ49hMw98V0ugN28SRR8R4HbyKD8eBQQJU=" crossorigin="anonymous"></script>
+
+
+
+<script src="/js/share/pqrs.min.cc2e91ae9594616a05f9b9b53facba94f7d6d2afe7e1a24512991bac1e14268a.js"></script>
+
+
+  </body>
+</html>

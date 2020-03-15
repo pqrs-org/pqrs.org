@@ -212,7 +212,7 @@ press &amp;ldquo;Open MultitouchExtension app&amp;rdquo; button on Preferences &
 &lt;/div&gt;
 
 &lt;h3 id=&#34;how-to-integrate-multitouchextension-to-your-complex-modifications&#34;&gt;How to integrate MultitouchExtension to your complex modifications&lt;/h3&gt;
-&lt;p&gt;See &lt;a href=&#34;json.html#multitouch-extension&#34; target=&#34;_blank&#34;&gt;karabiner.json reference manual&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;See &lt;a href=&#34;../../../json/extra/multitouch-extension/&#34;&gt;karabiner.json reference manual&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>

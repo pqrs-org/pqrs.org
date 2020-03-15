@@ -373,5 +373,42 @@ This feature is useful when you put the external keybaord on top of the built-in
       </description>
     </item>
     
+    <item>
+      <title>Docs: Configure icon in menu bar</title>
+      <link>/docs/manual/configuration/configure-menu-bar-icon/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/manual/configuration/configure-menu-bar-icon/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Karabiner-Elements shows an icon in menu bar which provides the following functions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Switch profiles.&lt;/li&gt;
+&lt;li&gt;Open Preferences.&lt;/li&gt;
+&lt;li&gt;Check for updates.&lt;/li&gt;
+&lt;li&gt;Open EventViewer.&lt;/li&gt;
+&lt;li&gt;Quit Karabiner-Elements.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you want to hide it, turn off &amp;ldquo;Show icon in menu bar&amp;rdquo; on Preferences &amp;gt; Misc tab.&lt;/p&gt;
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/manual/configuration/configure-menu-bar-icon/images/menu-bar-icon-preferences@2x.png&#34;
+    alt=&#34;menu-bar-icon-preferences@2x.png&#34;
+    style=&#34;width: 1000px&#34;
+  /&gt;
+&lt;/figure&gt;
+
+
+      </description>
+    </item>
+    
   </channel>
 </rss>

@@ -23,6 +23,22 @@
   </url>
   
   <url>
+    <loc>/docs/json/location/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/json/complex-modifications-manipulator-definition/from/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/json/complex-modifications-manipulator-definition/from/any/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/json/complex-modifications-manipulator-definition/conditions/frontmost-application/</loc>
+  </url>
+  
+  <url>
     <loc>/docs/getting-started/</loc>
   </url>
   
@@ -43,11 +59,31 @@
   </url>
   
   <url>
+    <loc>/docs/json/complex-modifications-manipulator-definition/other-types/mouse-motion-to-scroll/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/json/extra/multitouch-extension/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/json/complex-modifications-manipulator-definition/to/shell-command/</loc>
+  </url>
+  
+  <url>
     <loc>/docs/help/troubleshooting/</loc>
   </url>
   
   <url>
+    <loc>/docs/json/complex-modifications-manipulator-definition/conditions/device/</loc>
+  </url>
+  
+  <url>
     <loc>/docs/getting-started/features/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/json/complex-modifications-manipulator-definition/from/modifiers/</loc>
   </url>
   
   <url>
@@ -79,11 +115,27 @@
   </url>
   
   <url>
+    <loc>/docs/json/complex-modifications-manipulator-definition/to/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/json/complex-modifications-manipulator-definition/to/select-input-source/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/json/typical-complex-modifications-examples/</loc>
+  </url>
+  
+  <url>
     <loc>/docs/manual/operation/uninstall/</loc>
   </url>
   
   <url>
     <loc>/docs/manual/configuration/configure-complex-modifications/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/json/extra/virtual-modifier/</loc>
   </url>
   
   <url>
@@ -99,6 +151,14 @@
   </url>
   
   <url>
+    <loc>/docs/json/complex-modifications-manipulator-evaluation-priority/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/json/complex-modifications-manipulator-definition/from/simultaneous/</loc>
+  </url>
+  
+  <url>
     <loc>/docs/help/how-to/key-repeat/</loc>
   </url>
   
@@ -107,7 +167,19 @@
   </url>
   
   <url>
+    <loc>/docs/json/complex-modifications-manipulator-definition/conditions/keyboard-type/</loc>
+  </url>
+  
+  <url>
     <loc>/docs/manual/misc/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/json/complex-modifications-manipulator-definition/to/set-variable/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/json/complex-modifications-manipulator-definition/to-if-alone/</loc>
   </url>
   
   <url>
@@ -123,6 +195,10 @@
   </url>
   
   <url>
+    <loc>/docs/json/complex-modifications-manipulator-definition/from/simultaneous-options/</loc>
+  </url>
+  
+  <url>
     <loc>/docs/help/</loc>
   </url>
   
@@ -131,7 +207,23 @@
   </url>
   
   <url>
+    <loc>/docs/json/complex-modifications-manipulator-definition/conditions/input-source/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/json/root-data-structure/</loc>
+  </url>
+  
+  <url>
     <loc>/docs/manual/misc/multitouch-extension/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/json/complex-modifications-manipulator-definition/to/mouse-key/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/json/complex-modifications-manipulator-definition/to-if-held-down/</loc>
   </url>
   
   <url>
@@ -143,11 +235,39 @@
   </url>
   
   <url>
+    <loc>/docs/json/complex-modifications-manipulator-definition/</loc>
+  </url>
+  
+  <url>
     <loc>/docs/manual/operation/profiles/</loc>
   </url>
   
   <url>
     <loc>/docs/manual/configuration/configure-keyboard-type/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/json/complex-modifications-manipulator-definition/to/modifiers/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/json/complex-modifications-manipulator-definition/to-after-key-up/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/json/complex-modifications-manipulator-definition/conditions/variable/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/manual/configuration/configure-menu-bar-icon/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/json/complex-modifications-manipulator-definition/conditions/event-changed/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/json/extra/</loc>
   </url>
   
   <url>
@@ -159,6 +279,14 @@
   </url>
   
   <url>
+    <loc>/docs/json/complex-modifications-manipulator-definition/to/lazy/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/json/complex-modifications-manipulator-definition/to-delayed-action/</loc>
+  </url>
+  
+  <url>
     <loc>/docs/contact/</loc>
   </url>
   
@@ -167,11 +295,35 @@
   </url>
   
   <url>
+    <loc>/docs/json/complex-modifications-manipulator-definition/to/repeat/</loc>
+  </url>
+  
+  <url>
     <loc>/docs/pricing/</loc>
   </url>
   
   <url>
+    <loc>/docs/json/complex-modifications-manipulator-definition/to/halt/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/json/complex-modifications-manipulator-definition/conditions/</loc>
+  </url>
+  
+  <url>
     <loc>/docs/releasenotes/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/json/complex-modifications-manipulator-definition/to/hold-down-milliseconds/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/json/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/json/complex-modifications-manipulator-definition/other-types/</loc>
   </url>
   
   <url>
