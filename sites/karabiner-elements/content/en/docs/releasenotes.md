@@ -67,8 +67,7 @@ exclude_search: true
 -   📅 Release date
     -   Aug 16, 2019
 -   ✨ New Features
-    -   Support macOS Catalina.<br/>
-        (You need [an extra configuration](https://pqrs.org/osx/karabiner/document.html#usage-catalina) on macOS Catalina.)
+    -   Support macOS Catalina.
 -   🐛 Bug Fixes
     -   Fixed an issue that Karabiner-Elements fails to grab a device in rare cases.
 -   ⚡️ Improvements
@@ -104,8 +103,7 @@ exclude_search: true
     -   Add `Mouse Key XY speed` configuration into `Karabiner-Elements Preferences > Virtual Keyboard` tab.
     -   `Device is ignored temporarily` alert has been introduced.<br/>
         This alert will be shown if you hold keys or buttons down before Karabiner-Elements opens the device.<br/>
-        Please press the described key or button again to dismiss the alert.<br/>
-        <img src="https://pqrs.org/osx/karabiner/img/news/v12.4.0_0.png" alt="alert" style="width: 420px" />
+        Please press the described key or button again to dismiss the alert.
 -   🐛 Bug Fixes
     -   Fixed a key stuck issue which occurs when the key is held down before Karabiner-Elements opens the device.
 -   ⚡️ Improvements
@@ -121,13 +119,13 @@ exclude_search: true
         Please check error messages if your complex modifications do not work after upgrade.
 -   ✨ New Features
     -   Added [Change mouse motion to scroll](https://ke-complex-modifications.pqrs.org/#mouse_motion_to_scroll) feature.<br/>
-        -   Note: You have to enable your mice on [Devices tab](https://pqrs.org/osx/karabiner/document.html#configuration-devices) when you want to use this feature.
+        -   Note: You have to enable your mice on [Devices tab](https://karabiner-elements.pqrs.org/docs/manual/configuration/configure-devices/) when you want to use this feature.
     -   Added `--lint-complex-modifications` option into `karabiner_cli`.
         It allows you checks a complex-modifications json file.
 -   ⚡️ Improvements
     -   Set Karabiner-Elements.app and Karabiner-EventViewer.app immutable
         in order to ensure unremovable them except built-in uninstaller.
-        Please use the [uninstaller](https://pqrs.org/osx/karabiner/document.html#uninstall) when you want to remove Karabiner-Elements.
+        Please use the [uninstaller](https://karabiner-elements.pqrs.org/docs/manual/operation/uninstall/) when you want to remove Karabiner-Elements.
     -   Added a wait before grabbing device in order to avoid an macOS issue that device will be unusable after Karabiner-Elements is quit.
     -   Changes for users who write their own json.
         -   `to` and `to_*` support single object, e.g., `"to": { "key_code": "spacebar" }`.
@@ -181,7 +179,6 @@ exclude_search: true
         Karabiner-Elements works on macOS 10.12 (Sierra) or later.
     -   `Keyboard type` in the virtual keyboard preferences has been removed. (Adverse effect of virtual keyboard improvement.)<br />
         Please change the keyboard type from `System Preferences > Keyboard > Change Keyboard Type...`.
-        <img src="https://pqrs.org/osx/karabiner/img/news/v12.0.0_0.png" alt="Keyboard Preferences" style="width: 668px" />
     -   `Caps Lock Delay` in the virtual keyboard preferences has been removed. (Adverse effect of virtual keyboard improvement.)
     -   Changed `simultaneous` behaviour to post key_up events when any key is released.
     -   Changed `to_after_key_up` and `to_if_alone` behaviour as mandatory modifiers are removed from these events.
@@ -201,13 +198,10 @@ exclude_search: true
     -   Feb 20, 2018
 -   ✨ New Features
     -   Simultaneous key presses has been supported in complex modifications.
-        -   [json example](https://pqrs.org/osx/karabiner/json.html#typical-complex_modifications-examples-simultaneous-equal-delete-to-forward-delete)
-        -   [Document](https://pqrs.org/osx/karabiner/json.html#simultaneous)
 -   ⚡️ Improvements
     -   Improved Mouse key scroll wheel direction referring `System Preferences > Mouse > Scroll direction`.
     -   Improved modifier flags handling around pointing button manipulations.
     -   Mouse keys have been added into Simple Modifications.
-        <img src="https://pqrs.org/osx/karabiner/img/news/v11.6.0_0.png" alt="mouse keys in Simple Modifications" style="width: 1000px" />
     -   The eject key has been added into the from key of Simple Modifications.
     -   The Vendor ID and Product ID of virtual devices has been changed. (0x0,0x0 -> 0x16c0,0x27db and 0x16c0,0x27da)
 
@@ -218,9 +212,6 @@ exclude_search: true
     -   Dec 30, 2017
 -   ✨ New Features
     -   `to_if_held_down` has been added.
-        -   Examples:
-            -   [Open Alfred 3 if escape is held down](https://pqrs.org/osx/karabiner/json.html#typical-complex_modifications-examples-open-alfred-when-escape-is-held-down)
-            -   [Quit application by holding command-q](https://ke-complex-modifications.pqrs.org/#command_q)
 -   🐛 Bug Fixes
     -   Avoided a VMware Remote Console issue that mouse pointer does not work properly on VMRC when Karabiner-Elements grabs the pointing device.
     -   Fixed an issue that `to_if_alone` does not work properly when `to` is empty.
@@ -265,28 +256,10 @@ exclude_search: true
         -   You have to enable your Mouse manually in Preferences &gt; Devices tab.
         -   Karabiner-Elements cannot modify Apple's pointing devices.
     -   `to_delayed_action` has been added.
-        -   Examples:
-            -   Quit application by pressing command-q twice
-                [json](https://github.com/pqrs-org/KE-complex_modifications/blob/master/docs/json/command_q.json)
-                [(src)](https://github.com/pqrs-org/KE-complex_modifications/blob/master/src/json/command_q.json.erb)
-            -   Emacs key bindings (C-x key strokes)
-                [json](https://github.com/pqrs-org/KE-complex_modifications/blob/master/docs/json/emacs_key_bindings.json)
-                [(src)](https://github.com/pqrs-org/KE-complex_modifications/blob/master/src/json/emacs_key_bindings.json.rb)
     -   `input_source_if` and `input_source_unless` has been added to `conditions`.
-        -   [Document](https://pqrs.org/osx/karabiner/json.html#condition-definition-input-source)
-        -   Example:
-            -   [example_input_source.json](https://github.com/pqrs-org/KE-complex_modifications/blob/master/docs/json/example_input_source.json)
     -   `select_input_source` has been added.
-        -   [Document](https://pqrs.org/osx/karabiner/json.html#to-event-definition)
-        -   Example:
-            -   [example_select_input_source.json](https://github.com/pqrs-org/KE-complex_modifications/blob/master/docs/json/example_select_input_source.json)
     -   `keyboard_type_if` and `keyboard_type_unless` has been added to `conditions`.
-        -   Example
-            -   Change control-[ to escape
-                [json](https://github.com/pqrs-org/KE-complex_modifications/blob/master/docs/json/example_keyboard_type.json)
-                [(src)](https://github.com/pqrs-org/KE-complex_modifications/blob/master/src/json/example_keyboard_type.json.erb)
     -   The caps lock LED manipulation has been disabled with non Apple keyboards until it is enabled manually.
-        <img src="https://pqrs.org/osx/karabiner/img/news/v11.1.16_0.png" alt="has caps lock led" style="width: 1000px" />
 -   ⚡️ Improvements
     -   The virtual keyboard handling has been improved.
 
