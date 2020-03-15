@@ -30,4 +30,4 @@ press "Open MultitouchExtension app" button on Preferences > Misc to open Karabi
 
 ### How to integrate MultitouchExtension to your complex modifications
 
-See <a href="json.html#multitouch-extension" target="_blank">karabiner.json reference manual</a>.
+See [karabiner.json reference manual](../../../json/extra/multitouch-extension/)
