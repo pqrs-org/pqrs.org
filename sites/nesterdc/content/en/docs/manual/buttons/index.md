@@ -3,9 +3,7 @@ title: 'Buttons'
 weight: 10
 ---
 
-## Buttons
-
-### Main Menu
+## Main Menu
 
 | Button            | Function    |
 | ----------------- | ----------- |
@@ -15,7 +13,7 @@ weight: 10
 | Y                 | Credit      |
 | START + Y + L + R | Reset       |
 
-### ROM Menu
+## ROM Menu
 
 | Button       | Function                     |
 | ------------ | ---------------------------- |
@@ -24,7 +22,7 @@ weight: 10
 | X + D-pad    | Accelerate cursor            |
 | Analog stick | Adjust cursor wait           |
 
-### In game
+## In game
 
 | Button          | Function                                                                |
 | --------------- | ----------------------------------------------------------------------- |
