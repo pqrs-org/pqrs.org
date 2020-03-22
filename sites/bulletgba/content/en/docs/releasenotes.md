@@ -26,7 +26,7 @@ exclude_search: true
 -   📅 Release date
     -   May 21, 2007
 -   ✨ New Features
-    -   Added sound composed by Nullsleep.
+    -   Added sound composed by [Nullsleep](http://nullsleep.com/).
 -   ⚡️ Improvements
     -   Improved graphic resources.
     -   Adjusted the level design of Shooting Mode.
