@@ -36,6 +36,10 @@ deploy \
   sites/karabiner-elements/public/
 
 deploy \
+  ../gh-pages-nesterdc.pqrs.org \
+  sites/nesterdc/public/
+
+deploy \
   ../gh-pages-showyedge.pqrs.org \
   sites/showyedge/public/
 
