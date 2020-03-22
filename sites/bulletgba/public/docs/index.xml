@@ -1,0 +1,433 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>BulletGBA – Documentation</title>
+    <link>/docs/</link>
+    <description>Recent content in Documentation on BulletGBA</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="/docs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Buttons</title>
+      <link>/docs/manual/buttons/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/manual/buttons/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;main-menu&#34;&gt;Main Menu&lt;/h2&gt;
+
+
+
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/manual/buttons/images/title.png&#34;
+    alt=&#34;title.png&#34;
+    style=&#34;width: 160px&#34;
+  /&gt;
+&lt;/figure&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Button&lt;/th&gt;
+&lt;th&gt;Function&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;A&lt;/td&gt;
+&lt;td&gt;Choose&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;B&lt;/td&gt;
+&lt;td&gt;Cancel&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Control Pad&lt;/td&gt;
+&lt;td&gt;Move cursor&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;in-game&#34;&gt;In Game&lt;/h2&gt;
+
+
+
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/manual/buttons/images/normal.png&#34;
+    alt=&#34;normal.png&#34;
+    style=&#34;width: 160px&#34;
+  /&gt;
+&lt;/figure&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Button&lt;/th&gt;
+&lt;th&gt;Function&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;B&lt;/td&gt;
+&lt;td&gt;Back to Main Menu&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;R&lt;/td&gt;
+&lt;td&gt;Skip to next barrage (You cannot skip in Shooting Mode)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Start, Select&lt;/td&gt;
+&lt;td&gt;Toggle slow mode&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Control Pad&lt;/td&gt;
+&lt;td&gt;Move&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;show-mode&#34;&gt;Show Mode&lt;/h3&gt;
+&lt;p&gt;You can toggle slow mode by START or SELECT.&lt;/p&gt;
+&lt;p&gt;Bullets will be slowed down to 1/4 speed.
+The color of the bullets becomes purple.
+You need &amp;ldquo;Jewel&amp;rdquo; to enter slow mode. Slow mode will be canceled when jewel becomes zero or you are bombarded.&lt;/p&gt;
+&lt;div class=&#34;row&#34;&gt;
+    
+
+
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/manual/buttons/images/shooting.png&#34;
+    alt=&#34;shooting.png&#34;
+    style=&#34;width: 160px&#34;
+  /&gt;
+&lt;/figure&gt;
+
+    
+
+
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/manual/buttons/images/slowmode.png&#34;
+    alt=&#34;slowmode.png&#34;
+    style=&#34;width: 160px&#34;
+  /&gt;
+&lt;/figure&gt;
+
+&lt;/div&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Development</title>
+      <link>/docs/developmemt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/developmemt/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;how-to-build&#34;&gt;How to build&lt;/h2&gt;
+&lt;h3 id=&#34;requirements&#34;&gt;Requirements&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;devkitPro r18 (buildscripts 20060412)
+&lt;ul&gt;
+&lt;li&gt;You need to use version r18. Do not use the latest release!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;steps&#34;&gt;Steps&lt;/h3&gt;
+&lt;p&gt;Execute the following commands in Terminal.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;git clone --depth &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;1&lt;/span&gt; https://github.com/pqrs-org/BulletGBA.git
+&lt;span style=&#34;color:#204a87&#34;&gt;cd&lt;/span&gt; BulletGBA/bulletgba/
+make
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;how-to-replace-graphic-resources&#34;&gt;How to replace graphic resources&lt;/h2&gt;
+&lt;h3 id=&#34;steps-1&#34;&gt;Steps&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Download &lt;a href=&#34;https://github.com/pqrs-org/BulletGBA/releases/download/v5.0.0/tools.tar.gz&#34;&gt;tools.tar.gz&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Execute following commands to setup gba-tools.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;mkdir ~/gba
+&lt;span style=&#34;color:#204a87&#34;&gt;cd&lt;/span&gt; ~/gba
+tar zxf tools.tar.gz
+&lt;span style=&#34;color:#204a87&#34;&gt;cd&lt;/span&gt; tools/bmp2c
+make clean all
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Modify graphic resources under &lt;code&gt;bulletgba/images&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Execute following commands to convert graphic resources.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;color:#204a87&#34;&gt;cd&lt;/span&gt; bulletgba/images/
+./conv.sh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;how-to-add-bulletml&#34;&gt;How to add BulletML&lt;/h2&gt;
+&lt;h3 id=&#34;requirements-1&#34;&gt;Requirements&lt;/h3&gt;
+&lt;p&gt;You need PHP 5.0+ to convert BulletML to C++.&lt;/p&gt;
+&lt;h3 id=&#34;steps-2&#34;&gt;Steps&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Extract source code.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Put BulletML to &lt;code&gt;bulletgba/generator/data/xml/user&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Execute following commands to convert BulletML into C++.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;color:#204a87&#34;&gt;cd&lt;/span&gt; bulletgba/generator/
+make copy all
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;supported-bulletml&#34;&gt;Supported BulletML&lt;/h3&gt;
+&lt;p&gt;The most BulletML are supported. But there are little exception.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;accel&amp;gt;&lt;/code&gt; does not work properly.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;*Ref&amp;gt;&lt;/code&gt; which contains &lt;code&gt;$rand&lt;/code&gt; in &lt;code&gt;&amp;lt;param&amp;gt;&lt;/code&gt; does not work properly.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;fireRef&amp;gt;&lt;/span&gt;
+    &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;param&amp;gt;&lt;/span&gt;1.0 * 3.4 + 4.2&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/param&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&amp;lt;!-- *** This line works fine. *** --&amp;gt;&lt;/span&gt;
+    &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;param&amp;gt;&lt;/span&gt;$rand + 1&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/param&amp;gt;&lt;/span&gt;       &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&amp;lt;!-- *** This line does not work properly. *** --&amp;gt;&lt;/span&gt;
+&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/fireRef&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;thanks&#34;&gt;Thanks&lt;/h2&gt;
+&lt;p&gt;BulletGBA uses following softwares and data.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.devkitpro.org/&#34;&gt;devkitPro&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.asahi-net.or.jp/~cs8k-cyu/bulletml/index_e.html&#34;&gt;BulletML&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://shinh.skr.jp/sdmkun/zipup.cgi&#34;&gt;弾幕やさん&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.math.sci.hiroshima-u.ac.jp/~m-mat/MT/emt.html&#34;&gt;Mersenne Twister&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.graphicartsunit.com/gaupra/&#34;&gt;GAU Cube Bold&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Modes</title>
+      <link>/docs/manual/modes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/manual/modes/</guid>
+      <description>
+        
+        
+        
+
+
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/manual/modes/images/title.png&#34;
+    alt=&#34;title.png&#34;
+    style=&#34;width: 160px&#34;
+  /&gt;
+&lt;/figure&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Mode&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Select Barrage&lt;/td&gt;
+&lt;td&gt;Select the barrage from the list&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Shooting Level 1-4&lt;/td&gt;
+&lt;td&gt;Destroy the boss&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;BulletsMorph&lt;/td&gt;
+&lt;td&gt;Generate the barrage automatically&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Pricing</title>
+      <link>/docs/pricing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/pricing/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;img src=&#34;/images/pricing-free.svg&#34; alt=&#34;Free&#34; style=&#34;height: 2em&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;BulletGBA is an &lt;a href=&#34;https://github.com/pqrs-org/BulletGBA/&#34;&gt;open source software&lt;/a&gt; and you can use it without any purchases.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Release notes</title>
+      <link>/docs/releasenotes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/releasenotes/</guid>
+      <description>
+        
+        
+        &lt;style&gt;
+.td-content img {
+    margin: 20px 0;
+    border: 1px solid $border-color;
+    border-radius: 10px;
+}
+.td-content &gt; ul &gt; li {
+    list-style-type: none;
+    font-weight: bold;
+}
+.td-content &gt; ul &gt; li &gt; ul {
+    font-weight: normal;
+}
+&lt;/style&gt;
+&lt;h2 id=&#34;bulletgba-50&#34;&gt;BulletGBA 5.0&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/pqrs-org/BulletGBA/releases/download/v5.0.0/bulletgba-5.0.rom.gba.zip&#34;&gt;📦 Download&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;📅 Release date
+&lt;ul&gt;
+&lt;li&gt;May 21, 2007&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;✨ New Features
+&lt;ul&gt;
+&lt;li&gt;Added sound composed by Nullsleep.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;⚡️ Improvements
+&lt;ul&gt;
+&lt;li&gt;Improved graphic resources.&lt;/li&gt;
+&lt;li&gt;Adjusted the level design of Shooting Mode.&lt;/li&gt;
+&lt;li&gt;Improved BulletML handling.&lt;/li&gt;
+&lt;li&gt;Added some BulletML.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;bulletgba-40&#34;&gt;BulletGBA 4.0&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/pqrs-org/BulletGBA/releases/download/v5.0.0/bulletgba-4.0.rom.gba.zip&#34;&gt;📦 Download&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;📅 Release date
+&lt;ul&gt;
+&lt;li&gt;May 29, 2006&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;✨ New Features
+&lt;ul&gt;
+&lt;li&gt;Added &amp;ldquo;Replay&amp;rdquo; feature. You can record your game play into SRAM. (&amp;ldquo;Challenge &amp;amp; Shooting Mode&amp;rdquo;)&lt;/li&gt;
+&lt;li&gt;Added demo replay data.&lt;/li&gt;
+&lt;li&gt;Added Shooting Mode Level 4.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;⚡️ Improvements
+&lt;ul&gt;
+&lt;li&gt;Improved font graphic.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;bulletgba-30&#34;&gt;BulletGBA 3.0&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/pqrs-org/BulletGBA/releases/download/v5.0.0/bulletgba-3.0.rom.gba.zip&#34;&gt;📦 Download&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;📅 Release date
+&lt;ul&gt;
+&lt;li&gt;May 2, 2006&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;✨ New Features
+&lt;ul&gt;
+&lt;li&gt;Added Shooting Mode.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;⚡️ Improvements
+&lt;ul&gt;
+&lt;li&gt;Improved graphic resources.&lt;/li&gt;
+&lt;li&gt;Improved BulletML handling.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;bulletgba-20&#34;&gt;BulletGBA 2.0&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/pqrs-org/BulletGBA/releases/download/v5.0.0/bulletgba-2.0.rom.gba.zip&#34;&gt;📦 Download&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;📅 Release date
+&lt;ul&gt;
+&lt;li&gt;Apr 8, 2006&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;✨ New Features
+&lt;ul&gt;
+&lt;li&gt;Added slow mode. (a.k.a. kakusei in Espgaluda.) You can toggle slow mode by press START or SELECT.&lt;/li&gt;
+&lt;li&gt;Added Challenge Mode.&lt;/li&gt;
+&lt;li&gt;Added BulletsMorph.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;⚡️ Improvements
+&lt;ul&gt;
+&lt;li&gt;Improved sprite handling. (less flicker, less vanishing of sprite.)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;bulletgba-11&#34;&gt;BulletGBA 1.1&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/pqrs-org/BulletGBA/releases/download/v5.0.0/bulletgba-1.1.gba.zip&#34;&gt;📦 Download&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;📅 Release date
+&lt;ul&gt;
+&lt;li&gt;Mar 9, 2006&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;⚡️ Improvements
+&lt;ul&gt;
+&lt;li&gt;Added some BulletML.&lt;/li&gt;
+&lt;li&gt;Optimized game engine.&lt;/li&gt;
+&lt;li&gt;Some minor improvements.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;bulletgba-10&#34;&gt;BulletGBA 1.0&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/pqrs-org/BulletGBA/releases/download/v5.0.0/bulletgba-1.0.gba.zip&#34;&gt;📦 Download&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;📅 Release date
+&lt;ul&gt;
+&lt;li&gt;Feb 27, 2006&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;✨ New Features
+&lt;ul&gt;
+&lt;li&gt;Initial release.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>
