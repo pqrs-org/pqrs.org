@@ -1,0 +1,226 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>dcgnuboy – Documentation</title>
+    <link>/docs/</link>
+    <description>Recent content in Documentation on dcgnuboy</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="/docs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Buttons</title>
+      <link>/docs/manual/buttons/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/manual/buttons/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;buttons&#34;&gt;Buttons&lt;/h2&gt;
+&lt;h3 id=&#34;main-menu&#34;&gt;Main Menu&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Button&lt;/th&gt;
+&lt;th&gt;Function&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;A&lt;/td&gt;
+&lt;td&gt;ROM menu&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;B&lt;/td&gt;
+&lt;td&gt;VMU menu&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Y&lt;/td&gt;
+&lt;td&gt;Credit&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;START + Y + L + R&lt;/td&gt;
+&lt;td&gt;Reset&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;rom-menu&#34;&gt;ROM Menu&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Button&lt;/th&gt;
+&lt;th&gt;Function&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;A&lt;/td&gt;
+&lt;td&gt;Move to the directory&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Y&lt;/td&gt;
+&lt;td&gt;Move to the parent directory&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;X + D-pad&lt;/td&gt;
+&lt;td&gt;Accelerate cursor&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Analog stick&lt;/td&gt;
+&lt;td&gt;Adjust cursor wait&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;in-game&#34;&gt;In game&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Button&lt;/th&gt;
+&lt;th&gt;Function&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;X&lt;/td&gt;
+&lt;td&gt;Gameboy B button&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;A&lt;/td&gt;
+&lt;td&gt;Gameboy A button&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Y&lt;/td&gt;
+&lt;td&gt;Gameboy Select button&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;START&lt;/td&gt;
+&lt;td&gt;Gameboy Start button&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;D-pad&lt;/td&gt;
+&lt;td&gt;Gameboy D-pad&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;L + R + START&lt;/td&gt;
+&lt;td&gt;Exit game&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;R + B&lt;/td&gt;
+&lt;td&gt;Quick state save menu&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;R + Y&lt;/td&gt;
+&lt;td&gt;VMU state save menu&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Features</title>
+      <link>/docs/manual/features/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/manual/features/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;implemented&#34;&gt;Implemented&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Gameboy &amp;amp; Gameboy Color emulation&lt;/li&gt;
+&lt;li&gt;Sound emulation&lt;/li&gt;
+&lt;li&gt;Save and Load&lt;/li&gt;
+&lt;li&gt;Quick State Save and Load&lt;/li&gt;
+&lt;li&gt;VMU State Save and Load&lt;/li&gt;
+&lt;li&gt;Frame skipping&lt;/li&gt;
+&lt;li&gt;Screen adjustment&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;not-implemented&#34;&gt;Not implemented&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Suitable emulation speed on some Gameboy Color games&lt;/li&gt;
+&lt;li&gt;Refactoring of source code&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Pricing</title>
+      <link>/docs/pricing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/pricing/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;img src=&#34;/images/pricing-free.svg&#34; alt=&#34;Free&#34; style=&#34;height: 2em&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;dcgnuboy is an &lt;a href=&#34;https://github.com/pqrs-org/dcgnuboy/&#34;&gt;open source software&lt;/a&gt; and you can use it without any purchases.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Release notes</title>
+      <link>/docs/releasenotes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/releasenotes/</guid>
+      <description>
+        
+        
+        &lt;style&gt;
+.td-content img {
+    margin: 20px 0;
+    border: 1px solid $border-color;
+    border-radius: 10px;
+}
+.td-content &gt; ul &gt; li {
+    list-style-type: none;
+    font-weight: bold;
+}
+.td-content &gt; ul &gt; li &gt; ul {
+    font-weight: normal;
+}
+&lt;/style&gt;
+&lt;h2 id=&#34;dcgnuboy-103-06&#34;&gt;dcgnuboy 1.0.3-0.6&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/pqrs-org/dcgnuboy/releases/download/v0.6.0/gnuboy-1.0.3-0.6.zip&#34;&gt;📦 Download&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;📅 Release date
+&lt;ul&gt;
+&lt;li&gt;Aug 4, 2002&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;⚡️ Improvements
+&lt;ul&gt;
+&lt;li&gt;Improved Video emulation.&lt;/li&gt;
+&lt;li&gt;Improved Sound emulation.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;dcgnuboy-103-05&#34;&gt;dcgnuboy 1.0.3-0.5&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;📅 Release date
+&lt;ul&gt;
+&lt;li&gt;May 29, 2002&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;⚡️ Improvements
+&lt;ul&gt;
+&lt;li&gt;Some improvements.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>
