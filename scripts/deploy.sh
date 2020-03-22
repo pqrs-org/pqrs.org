@@ -12,11 +12,7 @@ function deploy() {
   local repo="$1"
   local source="$2"
 
-  echo
-  echo '#'
-  echo '#' $repo
-  echo '#'
-  echo
+  echo $repo
 
   if [ ! -d $repo ]; then
     echo "ERROR: $(basename $repo) directory is not found"
@@ -24,8 +20,12 @@ function deploy() {
   fi
 
   rsync -a --delete --exclude CNAME $source $repo/docs
-  (cd $repo && git status)
+  (cd $repo && git status -s)
 }
+
+deploy \
+  ../gh-pages-bulletgba.pqrs.org \
+  sites/bulletgba/public/
 
 deploy \
   ../gh-pages-dcgnuboy.pqrs.org \
