@@ -28,6 +28,10 @@ function deploy() {
 }
 
 deploy \
+  ../gh-pages-dcgnuboy.pqrs.org \
+  sites/dcgnuboy/public/
+
+deploy \
   ../gh-pages-disable-draganddrop-tb.pqrs.org \
   sites/disable-draganddrop-tb/public/
 
