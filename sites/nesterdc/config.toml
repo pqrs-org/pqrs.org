@@ -55,7 +55,7 @@ id = "UA-56715024-1"
 [languages]
 [languages.en]
 title = "NesterDC"
-description = "NES emulator for Dreamcast. (Optimized Dreamcast porting of unofficial nester.)"
+description = "NES emulator for Dreamcast. Optimized Dreamcast porting of unofficial nester."
 languageName ="English"
 # Weight used for sorting.
 weight = 1
