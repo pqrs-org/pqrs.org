@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/docs/manual/buttons/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/manual/features/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/manual/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/pricing/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/releasenotes/</loc>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+  </url>
+  
+</urlset>

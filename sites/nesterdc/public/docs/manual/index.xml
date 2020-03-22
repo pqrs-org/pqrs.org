@@ -1,0 +1,242 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>NesterDC – Manual</title>
+    <link>/docs/manual/</link>
+    <description>Recent content in Manual on NesterDC</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="/docs/manual/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Buttons</title>
+      <link>/docs/manual/buttons/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/manual/buttons/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;buttons&#34;&gt;Buttons&lt;/h2&gt;
+&lt;h3 id=&#34;main-menu&#34;&gt;Main Menu&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Button&lt;/th&gt;
+&lt;th&gt;Function&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;A&lt;/td&gt;
+&lt;td&gt;ROM menu&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;X&lt;/td&gt;
+&lt;td&gt;Option menu&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;B&lt;/td&gt;
+&lt;td&gt;VMU menu&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Y&lt;/td&gt;
+&lt;td&gt;Credit&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;START + Y + L + R&lt;/td&gt;
+&lt;td&gt;Reset&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;rom-menu&#34;&gt;ROM Menu&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Button&lt;/th&gt;
+&lt;th&gt;Function&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;A&lt;/td&gt;
+&lt;td&gt;Move to the directory&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Y&lt;/td&gt;
+&lt;td&gt;Move to the parent directory&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;X + D-pad&lt;/td&gt;
+&lt;td&gt;Accelerate cursor&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Analog stick&lt;/td&gt;
+&lt;td&gt;Adjust cursor wait&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;in-game&#34;&gt;In game&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Button&lt;/th&gt;
+&lt;th&gt;Function&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;X&lt;/td&gt;
+&lt;td&gt;NES B Button&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;A&lt;/td&gt;
+&lt;td&gt;NES A Button&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Y&lt;/td&gt;
+&lt;td&gt;NES Select&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;START&lt;/td&gt;
+&lt;td&gt;NES Start&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;D-pad&lt;/td&gt;
+&lt;td&gt;NES D-pad&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;L Trigger&lt;/td&gt;
+&lt;td&gt;Toggle rapid fire (You can confirm the status of rapid fire at VMU LCD)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;L + R + START&lt;/td&gt;
+&lt;td&gt;Exit game&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;R + B&lt;/td&gt;
+&lt;td&gt;Quick state save menu&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;R + Y&lt;/td&gt;
+&lt;td&gt;VMU state save menu&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;R + X&lt;/td&gt;
+&lt;td&gt;System menu (Reset, Change disk side on FDS)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;R + A&lt;/td&gt;
+&lt;td&gt;Option menu(Rapid fire setting, Adjust screen setting)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;R + START&lt;/td&gt;
+&lt;td&gt;Cheat menu&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Analog stick&lt;/td&gt;
+&lt;td&gt;Adjust frame skip (You can confirm the status of frame skip at VMU LCD)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Analog-Up&lt;/td&gt;
+&lt;td&gt;no skip&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Analog-Down&lt;/td&gt;
+&lt;td&gt;x2.0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Analog-Right&lt;/td&gt;
+&lt;td&gt;x1.0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Analog-Left&lt;/td&gt;
+&lt;td&gt;x1.5&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;R + Analog-Left&lt;/td&gt;
+&lt;td&gt;x4.0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Features</title>
+      <link>/docs/manual/features/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/manual/features/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;implemented&#34;&gt;Implemented&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;NES emulation without frame drop in most games&lt;/li&gt;
+&lt;li&gt;Sound emulation (including external chips)&lt;/li&gt;
+&lt;li&gt;FDS emulation (disksys.rom is necessary)&lt;/li&gt;
+&lt;li&gt;Save and Load&lt;/li&gt;
+&lt;li&gt;Quick State Save and Load&lt;/li&gt;
+&lt;li&gt;VMU State Save and Load&lt;/li&gt;
+&lt;li&gt;Game Genie&lt;/li&gt;
+&lt;li&gt;NNNesterJ style cheat code&lt;/li&gt;
+&lt;li&gt;4 people play simultaneously&lt;/li&gt;
+&lt;li&gt;Frame skipping&lt;/li&gt;
+&lt;li&gt;Screen adjustment&lt;/li&gt;
+&lt;li&gt;NES external devices:
+&lt;ul&gt;
+&lt;li&gt;Family Keyboard (controlled by Dreamcast Keyboard)&lt;/li&gt;
+&lt;li&gt;Optical Gun (controlled by Dreamcast Controller, Dreamcast Mouse)&lt;/li&gt;
+&lt;li&gt;Hyper Shot (controlled by Dreamcast Controller)&lt;/li&gt;
+&lt;li&gt;Crazy Climber (controlled by Dreamcast Controller)&lt;/li&gt;
+&lt;li&gt;Microphone (controlled by Dreamcast Controller)&lt;/li&gt;
+&lt;li&gt;Arkanoid Paddle (controlled by Dreamcast Mouse)&lt;/li&gt;
+&lt;li&gt;Mahjong Controller (controlled by Dreamcast Keyboard)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Dreamcast devices:
+&lt;ul&gt;
+&lt;li&gt;Dreamcast Controller&lt;/li&gt;
+&lt;li&gt;Arcade Stick&lt;/li&gt;
+&lt;li&gt;Dreamcast Keyboard (jp106 only)&lt;/li&gt;
+&lt;li&gt;Dreamcast Mouse&lt;/li&gt;
+&lt;li&gt;VGA&lt;/li&gt;
+&lt;li&gt;VMU&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Directories support in ROM select menu&lt;/li&gt;
+&lt;li&gt;Show information on VMU LCD&lt;/li&gt;
+&lt;li&gt;VMU remove menu (You can erase VMU data easily)&lt;/li&gt;
+&lt;li&gt;Virtual maple port binding on Dreamcast Controllers
+(You can bind DC &amp;lt;=&amp;gt; NES controllers correspondence, like binding Dreamcast Controller #2 as NES Controller #0)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;not-implemented&#34;&gt;Not implemented&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Dreamcast device support:
+&lt;ul&gt;
+&lt;li&gt;Dreamcast Light Gun&lt;/li&gt;
+&lt;li&gt;Dreamcast Keyboard (except jp106)&lt;/li&gt;
+&lt;li&gt;Dreamcast Racing Controller&lt;/li&gt;
+&lt;li&gt;Dreamcast Twin Stick&lt;/li&gt;
+&lt;li&gt;etc&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Known Bug:
+&lt;ul&gt;
+&lt;li&gt;Generating petit-noise on Kirby-adventure (Hoshi-no-kirby).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>
