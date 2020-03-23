@@ -50,3 +50,7 @@ deploy \
 deploy \
   ../gh-pages-tinkle.pqrs.org \
   sites/tinkle/public/
+
+deploy \
+  ../gh-pages-vulkanon.pqrs.org \
+  sites/vulkanon/public/

@@ -6,3 +6,4 @@ all:
 	make -C nesterdc build
 	make -C showyedge build
 	make -C tinkle build
+	make -C vulkanon build
