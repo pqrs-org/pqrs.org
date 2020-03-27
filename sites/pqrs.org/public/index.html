@@ -36,6 +36,28 @@
         border-radius: 12px;
         margin-right: 8px;
       }
+      img.profile {
+        width: 128px;
+        height: 128px;
+        border-radius: 24px;
+      }
+      a.sponsor,
+      a.sponsor:visited {
+        border-color: #d958a7 !important;
+        color: #d958a7 !important;
+      }
+      a.sponsor:hover,
+      a.sponsor:active,
+      a.sponsor:focus {
+        border-color: #d958a7 !important;
+        background-color: #d958a7 !important;
+        color: white !important;
+      }
+      footer {
+        background-color: #3273db;
+        margin-top: 100px;
+        height: 100px;
+      }
     </style>
   </head>
   <body>
@@ -64,9 +86,9 @@
                   Karabiner-Elements
                 </a>
               </div>
-              <p class="card-text">
+              <div class="card-text">
                 A powerful and stable keyboard customizer for macOS.
-              </p>
+              </div>
             </div>
           </div>
         </div>
@@ -80,10 +102,10 @@
                   Tinkle
                 </a>
               </div>
-              <p class="card-text">
+              <div class="card-text">
                 A macOS app that appends a visual effect at the focused window
                 changes.
-              </p>
+              </div>
             </div>
           </div>
         </div>
@@ -101,9 +123,9 @@
                   ShowyEdge
                 </a>
               </div>
-              <p class="card-text">
+              <div class="card-text">
                 A visible indicator of the current input source for macOS.
-              </p>
+              </div>
             </div>
           </div>
         </div>
@@ -125,10 +147,10 @@
                   Disable DragAndDrop
                 </a>
               </div>
-              <p class="card-text">
+              <div class="card-text">
                 A Thunderbird add-on which disables drag and drop on the folder
                 tree in order to prevent unintended folder movement.
-              </p>
+              </div>
             </div>
           </div>
         </div>
@@ -142,13 +164,17 @@
             <div class="card-body">
               <div class="card-title">
                 <a href="https://vulkanon.pqrs.org/">
-                  <img src="images/logo/vulkanon.png" alt="Vulkanon" class="logo" />
+                  <img
+                    src="images/logo/vulkanon.png"
+                    alt="Vulkanon"
+                    class="logo"
+                  />
                   Vulkanon
                 </a>
               </div>
-              <p class="card-text">
+              <div class="card-text">
                 A homebrew bullet hell shooter for Gameboy Advance.
-              </p>
+              </div>
             </div>
           </div>
         </div>
@@ -158,13 +184,17 @@
             <div class="card-body">
               <div class="card-title">
                 <a href="https://bulletgba.pqrs.org/">
-                  <img src="images/logo/bulletgba.png" alt="Vulkanon" class="logo" />
+                  <img
+                    src="images/logo/bulletgba.png"
+                    alt="Vulkanon"
+                    class="logo"
+                  />
                   BulletGBA
                 </a>
               </div>
-              <p class="card-text">
+              <div class="card-text">
                 A homebrew bullet hell simulator for Gameboy Advance.
-              </p>
+              </div>
             </div>
           </div>
         </div>
@@ -181,9 +211,9 @@
                   NesterDC
                 </a>
               </div>
-              <p class="card-text">
+              <div class="card-text">
                 NES emulator for Dreamcast.
-              </p>
+              </div>
             </div>
           </div>
         </div>
@@ -196,15 +226,66 @@
                   dcgnuboy
                 </a>
               </div>
-              <p class="card-text">
+              <div class="card-text">
                 Gameboy and Gameboy Color emulator for Dreamcast.
-              </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
       <h1 class="mt-4">Profile</h1>
+
+      <div class="row px-4">
+        <div class="col-12 p-1">
+          <div class="card">
+            <div class="card-body">
+              <div class="card-text">
+                <div class="d-flex flex-wrap">
+                  <img
+                    src="images/profile/profile.jpg"
+                    alt="Takayama Fumihiko"
+                    class="profile"
+                  />
+
+                  <div class="mx-4 p-2">
+                    <b>Name:</b>
+                    Takayama Fumihiko<br />
+                    ("高山 扶美彦" in kanji)
+                  </div>
+
+                  <div class="mx-4 p-2">
+                    <b>Contact:</b><br />
+                    Email: tekezo@pqrs.org<br />
+                    GitHub
+                    <a href="https://github.com/pqrs-org"> @pqrs-org </a><br />
+                    GitHub
+                    <a href="https://github.com/tekezo"> @tekezo </a><br />
+                    Twitter
+                    <a href="https://twitter.com/tekezo"> @tekezo </a><br />
+                  </div>
+
+                  <div class="mx-4 p-2">
+                    <a
+                      class="btn btn-outline-primary sponsor"
+                      href="https://github.com/sponsors/tekezo"
+                    >
+                      Sponsor
+                      <i class="fas fa-heart ml-1"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+
+    <footer></footer>
+    <script
+      src="https://kit.fontawesome.com/0bda87546d.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
