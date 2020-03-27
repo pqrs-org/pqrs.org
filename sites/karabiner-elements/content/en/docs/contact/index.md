@@ -38,7 +38,7 @@ Your keyboard hardware: Das Keyboard 4 Professional for Mac Mechanical Keyboard
 
 ## Other
 
-Send a message to [author of Karabiner-Elements](https://pqrs.org/profile.html).
+Send a message to [author of Karabiner-Elements](https://pqrs.org/#profile).
 
 {{% alert title="Note" color="warning" %}}
 I'm sorry I cannot spend enough time to reply for all mails since I'm receiving a lot mails.<br />
