@@ -650,3 +650,80 @@ exclude_search: true
         -   `KeyCode::VK_STICKY_ACTIVE_MODIFIERS_TOGGLE`
         -   `KeyCode::VK_STICKY_ACTIVE_MODIFIERS_FORCE_ON`
         -   `KeyCode::VK_STICKY_ACTIVE_MODIFIERS_FORCE_OFF`
+
+## KeyRemap4MacBook 9.3.0
+
+-   [📦 Download](https://github.com/tekezo/Karabiner/releases/download/files/KeyRemap4MacBook-9.3.0.dmg)
+-   📅 Release date
+    -   Feb 15, 2014
+-   🐛 Bug Fixes
+    -   Fixed an issue that "Kernel extension is not loaded" alert might be shown on some machines when automatic login is enabled.
+-   ✨ New Features
+    -   These manipulators have been integrated into `__KeyToKey__`.
+        You can change KeyCode, ConsumerKeyCode and PointingButton by `__KeyToKey__`.
+        -   `__KeyToConsumer__`
+        -   `__ConsumerToKey__`
+        -   `__ConsumerToConsumer__`
+        -   `__KeyToPointingButton__`
+        -   `__PointingButtonToKey__`
+        -   `__PointingButtonToPointingButton__`
+    -   You can use KeyCode, ConsumerKeyCode and PointingButton in these manipulators:
+        -   `__KeyOverlaidModifier__`
+        -   `__HoldingKeyToKey__`
+        -   `__SimultaneousKeyPresses__`
+        -   `__DoublePressModifier__`
+        -   `__ScrollWheelToKey__`
+        -   `__PointingRelativeToScroll__`
+    -   `DelayUntilRepeat` and `KeyRepeat` have been added.
+        You can change the delay and speed of keyboard repeat per autogen.
+-   ⚡️ Improvements
+    -   Updated prepared settings.
+    -   Improved `KeyCode::VK_CONFIG_*` behavior in the edge case.
+
+## KeyRemap4MacBook 9.2.0
+
+-   [📦 Download](https://github.com/tekezo/Karabiner/releases/download/files/KeyRemap4MacBook-9.2.0.dmg)
+-   📅 Release date
+    -   Nov 29, 2013
+-   🐛 Bug Fixes
+    -   Fixed an issue that system might crash when you disconnected a keyboard.
+-   ⚡️ Improvements
+    -   KeyRemap4MacBook no longer requires system restart at installing or upgrading.
+        If you need to restart system for some reason, KeyRemap4MacBook will show an alert which urges you to restart.
+    -   Updated some prepared settings.
+
+## KeyRemap4MacBook 9.0.0
+
+-   [📦 Download](https://github.com/tekezo/Karabiner/releases/download/files/KeyRemap4MacBook-9.0.0.dmg)
+-   📅 Release date
+    -   Nov 15, 2013
+-   💥 Breaking changes
+    -   Optimized for macOS 10.9.
+        KeyRemap4MacBook 9.0.0 requires macOS 10.9+.
+    -   Drop power button support due to limitations of macOS 10.9.
+        You can no longer change the power button on MacBook.
+-   ✨ New Features
+    -   Added delay configurations into multi-touch extension.
+-   ⚡️ Improvements
+    -   Updated installer.
+    -   Updated prepared settings
+    -   Signed with Developer ID.
+    -   Some minor improvements.
+-   🐛 Bug Fixes
+    -   Fixed an issue that ENV_HOME does not work properly in included xml.
+    -   Fixed an issue that new plugged devices will not be recognized on macOS 10.9.
+    -   Fixed an issue that KeyRemap4MacBook disables the shut down dialog.
+    -   Fixed an issue that Fn key on Leopold FC660M cancels mouse dragging.
+    -   Fixed "MarkSet" in Emacs Mode.
+
+## KeyRemap4MacBook 8.4.0
+
+-   [📦 Download](https://github.com/tekezo/Karabiner/releases/download/files/KeyRemap4MacBook-8.4.0.dmg)
+-   📅 Release date
+    -   Sep 23, 2013
+-   ✨ New Features
+    -   `@begin` and `@end` have been introduced in private.xml.
+        You can use more than one key to remapped keys with `__KeyOverlaidModifier__`, `__DoublePressModifier__`.
+    -   Shell commands execution has been supported with `KeyCode::VK_OPEN_URL_*`.
+-   ⚡️ Improvements
+    -   Icons have been refined. (Thanks to Kouji TAMURA.)
