@@ -18,12 +18,23 @@
       h1 {
         font-weight: 300;
         font-size: 24px;
+        border-bottom: 1px solid black;
+        border-left: 4px solid black;
+        padding-bottom: 4px;
+        padding-left: 8px;
       }
       div.navbar {
         background-color: #3273db;
       }
+      div.card-title a {
+        text-decoration: none;
+      }
       img.logo {
         width: 64px;
+        height: 64px;
+        border: 1px solid lightgray;
+        border-radius: 12px;
+        margin-right: 8px;
       }
     </style>
   </head>
@@ -39,7 +50,7 @@
     <div class="container">
       <h1 class="mt-4">macOS apps</h1>
 
-      <div class="row d-flex">
+      <div class="row px-4">
         <div class="col-lg-4 p-1">
           <div class="card">
             <div class="card-body">
@@ -54,7 +65,7 @@
                 </a>
               </div>
               <p class="card-text">
-                A powerful and stable keyboard customizer for macOS
+                A powerful and stable keyboard customizer for macOS.
               </p>
             </div>
           </div>
@@ -82,7 +93,11 @@
             <div class="card-body">
               <div class="card-title">
                 <a href="https://showyedge.pqrs.org/">
-                  <img src="images/showyedge.png" alt="showyedge" class="logo" />
+                  <img
+                    src="images/showyedge.png"
+                    alt="showyedge"
+                    class="logo"
+                  />
                   ShowyEdge
                 </a>
               </div>
@@ -96,9 +111,98 @@
 
       <h1 class="mt-4">Thunderbird add-ons</h1>
 
+      <div class="row px-4">
+        <div class="col-lg-4 p-1">
+          <div class="card">
+            <div class="card-body">
+              <div class="card-title">
+                <a href="https://disable-draganddrop-tb.pqrs.org/">
+                  <img
+                    src="images/disable-draganddrop-tb.png"
+                    alt="Disable DragAndDrop"
+                    class="logo"
+                  />
+                  Disable DragAndDrop
+                </a>
+              </div>
+              <p class="card-text">
+                A Thunderbird add-on which disables drag and drop on the folder
+                tree in order to prevent unintended folder movement.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <h1 class="mt-4">Game Boy Advance games</h1>
 
+      <div class="row px-4">
+        <div class="col-lg-4 p-1">
+          <div class="card">
+            <div class="card-body">
+              <div class="card-title">
+                <a href="https://vulkanon.pqrs.org/">
+                  <img src="images/vulkanon.png" alt="Vulkanon" class="logo" />
+                  Vulkanon
+                </a>
+              </div>
+              <p class="card-text">
+                A homebrew bullet hell shooter for Gameboy Advance.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 p-1">
+          <div class="card">
+            <div class="card-body">
+              <div class="card-title">
+                <a href="https://bulletgba.pqrs.org/">
+                  <img src="images/bulletgba.png" alt="Vulkanon" class="logo" />
+                  BulletGBA
+                </a>
+              </div>
+              <p class="card-text">
+                A homebrew bullet hell simulator for Gameboy Advance.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <h1 class="mt-4">Emulators for Dreamcast</h1>
+
+      <div class="row px-4">
+        <div class="col-lg-4 p-1">
+          <div class="card">
+            <div class="card-body">
+              <div class="card-title">
+                <a href="https://nesterdc.pqrs.org/">
+                  NesterDC
+                </a>
+              </div>
+              <p class="card-text">
+                NES emulator for Dreamcast.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 p-1">
+          <div class="card">
+            <div class="card-body">
+              <div class="card-title">
+                <a href="https://dcgnuboy.pqrs.org/">
+                  dcgnuboy
+                </a>
+              </div>
+              <p class="card-text">
+                Gameboy and Gameboy Color emulator for Dreamcast.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <h1 class="mt-4">Profile</h1>
     </div>
