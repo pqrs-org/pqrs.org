@@ -727,3 +727,66 @@ exclude_search: true
     -   Shell commands execution has been supported with `KeyCode::VK_OPEN_URL_*`.
 -   ⚡️ Improvements
     -   Icons have been refined. (Thanks to Kouji TAMURA.)
+
+## KeyRemap4MacBook 8.3.0
+
+-   [📦 Download](https://github.com/tekezo/Karabiner/releases/download/files/KeyRemap4MacBook-8.3.0.dmg)
+-   📅 Release date
+    -   May 19, 2013
+-   🐛 Bug Fixes
+    -   Fixed an issue that "Look up" feature of macOS (tap trackpad with three fingers) does not work properly.
+-   ⚡️ Improvements
+    -   Some minor improvements.
+
+## KeyRemap4MacBook 8.2.0
+
+-   [📦 Download](https://github.com/tekezo/Karabiner/releases/download/files/KeyRemap4MacBook-8.2.0.dmg)
+-   📅 Release date
+    -   May 17, 2013
+-   🐛 Bug Fixes
+    -   Fixed an issue that object selection is disabled on Adobe Fireworks.
+    -   Fixed an issue that "General > Don't remap XXX" does not take effect immediately.
+    -   Fixed an issue that control-eject shortcut does not work properly on macOS 10.7 and 10.6.
+
+## KeyRemap4MacBook 8.1.0
+
+-   [📦 Download](https://github.com/tekezo/Karabiner/releases/download/files/KeyRemap4MacBook-8.1.0.dmg)
+-   📅 Release date
+    -   May 12, 2013
+-   ✨ New Features
+    -   Power button remapping has been supported. (Thanks to Peter Kamb who is the author of PowerKey.)
+    -   Added "Quit KeyRemap4MacBook" into menu bar.
+    -   Added some styles into status message indicator.
+    -   Added `KeyCode::VK_OPEN_URL_*`.
+    -   Added `KeyCode::VK_PARTIAL_KEYDOWN` and `KeyCode::VK_PARTIAL_KEYUP`.
+    -   Added `Option::POINTINGRELATIVETOSCROLL_TOKEYS`.
+    -   Added `__FlipPointingRelative__`.
+    -   Added `__FlipScrollWheel__`.
+    -   Added filters:
+        -   `<lastpressedphysicalkey_not>`
+        -   `<lastpressedphysicalkey_only>`
+        -   `<elapsedtimesincelastpressed_greaterthan>`
+        -   `<elapsedtimesincelastpressed_lessthan>`
+-   ⚡️ Improvements
+    -   Improved compatibility with SmoothMouse.
+    -   Supported more than three keys at `__SimultaneousKeyPresses__`.
+    -   Some minor improvements.
+
+## KeyRemap4MacBook 8.0.0
+
+-   [📦 Download](https://github.com/tekezo/Karabiner/releases/download/files/KeyRemap4MacBook-8.0.0.dmg)
+-   📅 Release date
+    -   Jan 30, 2013
+-   💥 Breaking changes
+    -   Changed KeyRemap4MacBook_cli location.
+-   ✨ New Features
+    -   Integrated a status message indicator. (Removed Growl support.)
+    -   Added a preference of ignored area into "multi-touch extension".
+    -   Dynamic `KeyCode::VK_CHANGE_INPUTSOURCE` definition feature has been added.
+    -   `<inputsource_only>` definition feature has been added.
+        Added `Option::SIMULTANEOUSKEYPRESSES_STRICT_KEY_ORDER`.
+        Added `DeviceLocation` into `<device_only>`, `<device_not>` filters.
+-   ⚡️ Improvements
+    -   Preferences has been integrated into app.
+    -   Changed `--KeyToKey--` to `__KeyToKey__` at `<autogen>`.
+    -   Some minor improvements.
