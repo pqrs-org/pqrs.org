@@ -1048,3 +1048,164 @@ exclude_search: true
     -   Improved behavior of key-repeating (continuing even if mouse button is clicked.)
     -   Improved the compatibility with Spaces.
     -   Improved the stability in the 64bit environment.
+
+## KeyRemap4MacBook 5.1.0
+
+-   [📦 Download](https://github.com/tekezo/Karabiner/releases/download/files/KeyRemap4MacBook-5.1.0.pkg.tar.gz)
+-   📅 Release date
+    -   May 26, 2008
+-   ✨ New Features
+    -   Added uninstaller.
+-   🐛 Bug Fixes
+    -   Fixed the kernel panic after returning from hibernation.
+    -   Fixed the kernel panic when all keyboard are detached on iMac.
+    -   Fixed the issue which "SettingList" didn't work on some environment.
+-   ⚡️ Improvements
+    -   Increased prepared settings.
+
+## KeyRemap4MacBook 5.0.0
+
+-   [📦 Download](https://github.com/tekezo/Karabiner/releases/download/files/KeyRemap4MacBook-5.0.0.pkg.tar.gz)
+-   📅 Release date
+    -   May 7, 2008
+-   ✨ New Features
+    -   Added the multi-user support.
+    -   Added the multiple settings per user.
+    -   Added remappings which are effective at only specific applications. (ex. Return -> CMD+O only in Finder).
+        "Emacs Mode" will be disabled in Terminal.app and Emacs.app automatically.
+-   ⚡️ Improvements
+    -   Increased prepared settings.
+
+## KeyRemap4MacBook 4.0.0
+
+-   [📦 Download](https://github.com/tekezo/Karabiner/releases/download/files/KeyRemap4MacBook-4.0.0.pkg.tar.gz)
+-   📅 Release date
+    -   Apr 2, 2008
+-   💥 Breaking changes
+    -   Changed a place to install. (/Library/org.pqrs/KeyRemap4MacBook)
+-   🐛 Bug Fixes
+    -   Fixed an issue which disable any remappings when you logged out.
+-   ✨ New Features
+    -   Added the feature to enable remapping for only inside keyboard or an outside keyboard.
+    -   Supported PointingDevice remappings (Key to Mouseclick, Fn+CursorMove to ScrollWheel).
+-   ⚡️ Improvements
+    -   Increased prepared settings.
+
+## KeyRemap4MacBook 3.2.0
+
+-   [📦 Download](https://github.com/tekezo/Karabiner/releases/download/files/KeyRemap4MacBook-3.2.0.pkg.tar.gz)
+-   📅 Release date
+    -   Feb 29, 2008
+-   ✨ New Features
+    -   Support PowerBook G4 & iBook.
+-   🐛 Bug Fixes
+    -   Fixed the key repeat issue on VMware + emacsmode.
+    -   Fixed a minor PreferencePane issue.
+-   ⚡️ Improvements
+    -   Added an existence check of DoubleCommand to installer. If DoubleCommand has already installed, the installation will be aborted.
+    -   Increased prepared settings.
+
+## KeyRemap4MacBook 3.1.0
+
+-   [📦 Download](https://github.com/tekezo/Karabiner/releases/download/files/KeyRemap4MacBook-3.1.0.pkg.tar.gz)
+-   📅 Release date
+    -   Feb 18, 2008
+-   🐛 Bug Fixes
+    -   Correct the key repeat behavior.
+    -   Fixed a minor PreferencePane issue.
+-   ⚡️ Improvements
+    -   Increased prepared settings.
+
+## KeyRemap4MacBook 3.0.0
+
+-   [📦 Download](https://github.com/tekezo/Karabiner/releases/download/files/KeyRemap4MacBook-3.0.0.pkg.tar.gz)
+-   📅 Release date
+    -   Feb 4, 2008
+-   💥 Breaking changes
+    -   Renamed many sysctl entries. Please set up by PreferencePane if you upgrade from older version.
+-   ✨ New Features
+    -   Added PreferencePane. Now, you can configure by System Preferences.
+    -   Added Key Repeat feature.
+-   ⚡️ Improvements
+    -   Improved handling of CapsLock.
+    -   Increased prepared settings.
+
+## KeyRemap4MacBook 2.3.0
+
+-   📅 Release date
+    -   Dec 15, 2007
+-   🐛 Bug Fixes
+    -   Fixed the issue around arrow keys and delete key when remap.fn2\* is enable.
+-   ⚡️ Improvements
+    -   Increased prepared settings.
+
+## KeyRemap4MacBook 2.2.0
+
+-   📅 Release date
+    -   Nov 29, 2007
+-   🐛 Bug Fixes
+    -   Fixed the issue around "key to modifier" (enter2*, return2option, jis_eisuu2*, jis_kana2\*).
+-   ✨ New Features
+    -   Support PowerBook enter key.
+-   ⚡️ Improvements
+    -   Increased prepared settings.
+
+## KeyRemap4MacBook 2.1.0
+
+-   📅 Release date
+    -   Nov 15, 2007
+-   ⚡️ Improvements
+    -   Increased prepared settings.
+
+## KeyRemap4MacBook 2.0.0
+
+-   📅 Release date
+    -   Nov 1, 2007
+-   ✨ New Features
+    -   Added support for Leopard.
+    -   Added support for PowerBook restrictively.
+-   ⚡️ Improvements
+    -   Increased prepared settings.
+
+## KeyRemap4MacBook 1.5.0
+
+-   📅 Release date
+    -   Oct 10, 2007
+-   ⚡️ Improvements
+    -   Increased prepared settings.
+
+## KeyRemap4MacBook 1.4.0
+
+-   📅 Release date
+    -   Sep 9, 2007
+-   ⚡️ Improvements
+    -   Increased prepared settings.
+
+## KeyRemap4MacBook 1.3.0
+
+-   📅 Release date
+    -   Aug 15, 2007
+-   ⚡️ Improvements
+    -   Updated StartupScript.
+    -   Increased prepared settings.
+
+## KeyRemap4MacBook 1.2.0
+
+-   📅 Release date
+    -   Jun 10, 2007
+-   ⚡️ Improvements
+    -   Increased prepared settings.
+
+## KeyRemap4MacBook 1.0.2
+
+-   📅 Release date
+    -   Feb 5, 2007
+-   ✨ New Features
+    -   Universal Binary.
+
+## KeyRemap4MacBook 1.0.1
+
+-   📅 Release date
+    -   Oct 9, 2006
+-   ✨ New Features
+    -   Initial release.
