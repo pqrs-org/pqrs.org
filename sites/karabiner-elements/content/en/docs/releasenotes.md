@@ -924,3 +924,127 @@ exclude_search: true
     -   Added "Mouse Keys Mode". You can move mouse pointer by hjkl keys.
 -   ⚡️ Improvements
     -   Increased prepared settings.
+
+## KeyRemap4MacBook 6.9.0
+
+-   [📦 Download](https://github.com/tekezo/Karabiner/releases/download/files/KeyRemap4MacBook-6.9.0.pkg.zip)
+-   📅 Release date
+    -   Sep 14, 2010
+-   ⚡️ Improvements
+    -   Improved "Simultaneous Vi Mode" behavior. You can use Vi style navigation (hjkl) on all applications.
+    -   Increased prepared settings.
+-   🐛 Bug Fixes
+    -   Fixed a problem that a broken package may be generated depending on environment when we build a package from a source code.
+    -   Fixed a problem which slight setting did not work properly.
+    -   Fixed a minor problem around C-x prefix of "Emacs Mode".
+
+## KeyRemap4MacBook 6.8.0
+
+-   [📦 Download](https://github.com/tekezo/Karabiner/releases/download/files/KeyRemap4MacBook-6.8.0.pkg.zip)
+-   📅 Release date
+    -   Jul 27, 2010
+-   💥 Breaking changes
+    -   Changed the default value of key repeat wait.
+        Please set "[Key Repeat] wait" to "30ms" from "Key Repeat" tab if you prefer the previous default value.
+-   ✨ New Features
+    -   Added "Pass Through Mode". You can cancel all settings temporarily.
+    -   Added "Sticky Modifiers".
+-   ⚡️ Improvements
+    -   Increased prepared settings.
+
+## KeyRemap4MacBook 6.7.0
+
+-   [📦 Download](https://github.com/tekezo/Karabiner/releases/download/files/KeyRemap4MacBook-6.7.0.pkg.zip)
+-   📅 Release date
+    -   May 15, 2010
+-   🐛 Bug Fixes
+    -   Fixed the problem that a key and a mouse were not changed when we used KeyRemap4MacBook-6.6.0 with USB Overdrive.
+
+## KeyRemap4MacBook 6.6.0
+
+-   [📦 Download](https://github.com/tekezo/Karabiner/releases/download/files/KeyRemap4MacBook-6.6.0.pkg.zip)
+-   📅 Release date
+    -   May 11, 2010
+-   ✨ New Features
+    -   Added a function to define effective setting only with a specific keyboard. For example, "Change Control_L to Command_L" only in Happy Hacking Keyboard.
+    -   Added a function of "Simultaneous Key Presses" re-mapping.
+    -   Added virtual modifiers (`ModifierFlag::EXTRA1` - `ModifierFlag::EXTRA5`).
+    -   Added a function to set the repeat speed of the functional keys (volume adjustment, etc).
+-   ⚡️ Improvements
+    -   Increased prepared settings.
+
+## KeyRemap4MacBook 6.5.0
+
+-   [📦 Download](https://github.com/tekezo/Karabiner/releases/download/files/KeyRemap4MacBook-6.5.0.pkg.zip)
+-   📅 Release date
+    -   Mar 16, 2010
+-   ✨ New Features
+    -   Added the key repeat feature to re-mapped functional keys (volume adjustment, etc),
+    -   Added an Event Viewer application that could confirm a key event, a mouse event.
+    -   Added "Complete Vi Mode" that you can move the cursor only in "hjkl" without pushing the command key or any modifier keys.
+    -   Added `KeyCode::VK_CHANGE_INPUTMODE_FRENCH`, and keys for the other languages. It is a virtual key to change the Input Source directly.
+-   ⚡️ Improvements
+    -   Merged the configuration GUI of menu bar to the system preference pane.
+    -   Increased prepared settings.
+
+## KeyRemap4MacBook 6.4.0
+
+-   [📦 Download](https://github.com/tekezo/Karabiner/releases/download/files/KeyRemap4MacBook-6.4.0.pkg.zip)
+-   📅 Release date
+    -   Jan 21, 2010
+-   ⚡️ Improvements
+    -   Improved stability when using with the driver of the 3rd vender such as "Logitech Control Center".
+    -   Improved Paralles Desktop support at the recognition of the application.
+-   🐛 Bug Fixes
+    -   Fixed a mouse drag movement when convert a key into a mouse click.
+
+## KeyRemap4MacBook 6.3.0
+
+-   [📦 Download](https://github.com/tekezo/Karabiner/releases/download/files/KeyRemap4MacBook-6.3.0.pkg.tar.gz)
+-   📅 Release date
+    -   Jan 5, 2010
+-   ✨ New Features
+    -   Supported Fast User Switching.
+    -   Added software update feature.
+-   ⚡️ Improvements
+    -   Improved the movement of the re-mapping.
+    -   Improved the judgement method of the internal/external keyboard.
+    -   Increased prepared settings.
+
+## KeyRemap4MacBook 6.2.0
+
+-   [📦 Download](https://github.com/tekezo/Karabiner/releases/download/files/KeyRemap4MacBook-6.2.0.pkg.tar.gz)
+-   📅 Release date
+    -   Nov 12, 2009
+-   🐛 Bug Fixes
+    -   Fixed the issue that the server process crashes in English environment.
+
+## KeyRemap4MacBook 6.1.0
+
+-   [📦 Download](https://github.com/tekezo/Karabiner/releases/download/files/KeyRemap4MacBook-6.1.0.pkg.tar.gz)
+-   📅 Release date
+    -   Nov 11, 2009
+-   💥 Breaking changes
+    -   Changed to enable the remapping of the third vendor's devices by default.
+-   🐛 Bug Fixes
+    -   Fixed the memory leak of the server process.
+-   ⚡️ Improvements
+    -   Increased prepared settings.
+
+## KeyRemap4MacBook 6.0.0
+
+-   [📦 Download](https://github.com/tekezo/Karabiner/releases/download/files/KeyRemap4MacBook-6.0.0.pkg.tar.gz)
+-   📅 Release date
+    -   Oct 8, 2009
+-   ✨ New Features
+    -   Stable release for Snow Leopard.
+-   🐛 Bug Fixes
+    -   Fixed the third vendor's keyboard/mouse handling.
+    -   Fixed the issue that the fn key doesn't work when "Don't Remap the Internal/External Keyboard" is activated.
+    -   Fixed the uninstaller.
+    -   Fixed the CapsLock handling.
+    -   Fixed to run PreferencePane in 64bit.
+-   ⚡️ Improvements
+    -   Improved behavior of key-repeating (continuing even if mouse button is clicked.)
+    -   Improved the compatibility with Spaces.
+    -   Improved the stability in the 64bit environment.
