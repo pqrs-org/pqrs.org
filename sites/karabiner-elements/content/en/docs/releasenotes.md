@@ -790,3 +790,137 @@ exclude_search: true
     -   Preferences has been integrated into app.
     -   Changed `--KeyToKey--` to `__KeyToKey__` at `<autogen>`.
     -   Some minor improvements.
+
+## KeyRemap4MacBook 7.8.0
+
+-   [📦 Download](https://github.com/tekezo/Karabiner/releases/download/files/KeyRemap4MacBook-7.8.0.dmg)
+-   📅 Release date
+    -   Jun 26, 2012
+-   🐛 Bug Fixes
+    -   Fixed an issue that "General > Don't restore modifiers in the mouse event" does not work properly.
+    -   Fixed an issue that private.xml does not work properly if `<identifier>` contains white space.
+    -   Some minor improvements.
+
+## KeyRemap4MacBook 7.7.0
+
+-   [📦 Download](https://github.com/tekezo/Karabiner/releases/download/files/KeyRemap4MacBook-7.7.0.dmg)
+-   📅 Release date
+    -   May 9, 2012
+-   🐛 Bug Fixes
+    -   Fixed an issue introduced in version 7.6.0 that detecting of Input Sources does not work properly in Japanese and some other languages.
+
+## KeyRemap4MacBook 7.6.0
+
+-   [📦 Download](https://github.com/tekezo/Karabiner/releases/download/files/KeyRemap4MacBook-7.6.0.dmg)
+-   📅 Release date
+    -   May 8, 2012
+-   ✨ New Features
+    -   Added `<replacementdef>`. You can replace preset settings behavior by this.
+    -   Added `<include>`. You can load external xml files in private.xml.
+    -   Added `--ScrollWheelToKey--`.
+    -   Added `--ScrollWheelToScrollWheel--`.
+    -   Added `KeyCode::VK_WAIT_*`.
+-   ⚡️ Improvements
+    -   Improved XML processing engine. (XML reloading is 2x faster.)
+    -   Some minor improvements.
+    -   Increased prepared settings.
+
+## KeyRemap4MacBook 7.5.0
+
+-   [📦 Download](https://github.com/tekezo/Karabiner/releases/download/files/KeyRemap4MacBook-7.5.0.pkg.zip)
+-   📅 Release date
+    -   Nov 2, 2011
+-   ✨ New Features
+    -   Support Growl-1.3 on notifications.
+    -   Dynamic ApplicationType,DeviceVendor,DeviceProduct definition feature has been added.
+    -   Added `--StripModifierFromScrollWheel--`.
+    -   Added `Option::KEYTOKEY_BEFORE_KEYDOWN`, `Option::KEYTOKEY_AFTER_KEYUP`.
+    -   Added `KeyCode::VK_CONSUMERKEY_*`.
+-   ⚡️ Improvements
+    -   Some minor improvements.
+    -   Increased prepared settings.
+-   🐛 Bug Fixes
+    -   Resolved a minor installer issue.
+
+## KeyRemap4MacBook 7.4.0
+
+-   [📦 Download](https://github.com/tekezo/Karabiner/releases/download/files/KeyRemap4MacBook-7.4.0.pkg.zip)
+-   📅 Release date
+    -   Aug 23, 2011
+-   💥 Breaking changes
+    -   Removed "General > Enable CapsLock LED Hack" from preferences.
+        If you're using this setting for PCKeyboardHack, use "No Action" configuration instead.
+    -   Cleaned up "Simultaneous Vi Mode".
+        (Some options have been moved into "Home Row Arrow and Modifier Mode".)
+-   ✨ New Features
+    -   Added "[Key Overlaid Modifier] Initial Modifier Wait" preference into "Key Repeat" tab.
+        KeyOverlaidModifier changes key to modifier after this wait.
+        This preference is useful if your typing speed is too fast.
+    -   Added `KeyCode::VK_STICKY_*_FORCE_ON`, `KeyCode::VK_STICKY_*_FORCE_OFF`.
+    -   Added `--DropScrollWheel--`.
+-   ⚡️ Improvements
+    -   Some improvements on Mac macOS 10.7 (Lion).
+    -   Some minor improvements.
+    -   Increased prepared settings.
+
+## KeyRemap4MacBook 7.3.0
+
+-   [📦 Download](https://github.com/tekezo/Karabiner/releases/download/files/KeyRemap4MacBook-7.3.0.pkg.zip)
+-   📅 Release date
+    -   May 17, 2011
+-   ✨ New Features
+    -   Added `KeyCode::VK_MOUSEKEY_BUTTON_*`.
+    -   Added `Option::NOREPEAT`.
+    -   Added `DeviceProduct::ANY`.
+-   ⚡️ Improvements
+    -   Improved stability when using Sticky Keys in Universal Access.
+    -   Improved stability when using multi-touch extension together.
+    -   Improved "Lazy-Modifier (`KeyCode::VK_LAZY_*`)" behavior.
+    -   Some minor improvements.
+    -   Increased prepared settings.
+
+## KeyRemap4MacBook 7.2.0
+
+-   [📦 Download](https://github.com/tekezo/Karabiner/releases/download/files/KeyRemap4MacBook-7.2.0.pkg.zip)
+-   📅 Release date
+    -   Mar 8, 2011
+-   🐛 Bug Fixes
+    -   Fixed an issue that Growl notification did not work in specific environment.
+    -   Fixed an issue that the default setting of checkForUpdate was "Nothing".
+-   ⚡️ Improvements
+    -   Improved multi-touch extension around sleep/wakeup.
+    -   Increased prepared settings.
+
+## KeyRemap4MacBook 7.1.0
+
+-   [📦 Download](https://github.com/tekezo/Karabiner/releases/download/files/KeyRemap4MacBook-7.1.0.pkg.zip)
+-   📅 Release date
+    -   Feb 22, 2011
+-   ✨ New Features
+    -   Added setting to be able to use "Logitech Number Pad" which we were not able not use in Mac macOS.
+        Activate "Change KeyPad Key > Logitech Number Pad Hack".
+    -   Replaced StatusWindow with Growl.
+        StatusWindow was displaying the lock state of modifiers and extra message.
+        Now, these messages are shown by Growl.
+    -   Attached an application named "multi-touch extension".
+        This application activates specific setting while fingers touch the multi-touch device.
+        ThumbSense is one of the function which this application supplies.
+    -   Added `<modifier_only>`, `<modifier_not>` filters.
+    -   Added `--ForceNumLockOn--` to `<autogen>`.
+-   ⚡️ Improvements
+    -   Increased prepared settings.
+
+## KeyRemap4MacBook 7.0.0
+
+-   [📦 Download](https://github.com/tekezo/Karabiner/releases/download/files/KeyRemap4MacBook-7.0.0.pkg.zip)
+-   📅 Release date
+    -   Dec 14, 2010
+-   ✨ New Features
+    -   Dynamic key configuration rule adding has been added.
+        Now, you can add your original settings very very easily.
+        You don't need to build a package from source code anymore.
+    -   Added momentum scroll feature to "CursorMove to ScrollWheel" on Pointing Devices.
+        If you don't like momentum scroll, turn on "Disable Momentum Scroll" by System Preferences.
+    -   Added "Mouse Keys Mode". You can move mouse pointer by hjkl keys.
+-   ⚡️ Improvements
+    -   Increased prepared settings.
