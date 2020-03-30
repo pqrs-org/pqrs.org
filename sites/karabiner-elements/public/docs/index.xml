@@ -3046,6 +3046,21 @@ Events will be posted just before the last from event&amp;rsquo;s key_up.
     </item>
     
     <item>
+      <title>Docs: How to disable running Karabiner-Elements at login</title>
+      <link>/docs/help/how-to/disable-open-at-login/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/help/how-to/disable-open-at-login/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Karabiner-Elements will be started automatically at login after once you have run Karabiner-ELements.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;../../../manual/operation/quit/&#34;&gt;Quit Karabiner-Elements&lt;/a&gt; if you want to stop running Karabiner-Elements at login.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Docs: input_source_if, input_source_unless</title>
       <link>/docs/json/complex-modifications-manipulator-definition/conditions/input-source/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -3922,35 +3937,6 @@ Press &lt;strong&gt;Add profile&lt;/strong&gt; button to add new profile.&lt;/p&
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: Show log messages</title>
-      <link>/docs/manual/operation/log/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/docs/manual/operation/log/</guid>
-      <description>
-        
-        
-        &lt;p&gt;You can confirm log messages on Log tab.&lt;/p&gt;
-
-
-
-
-  
-
-
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/manual/operation/log/images/karabiner-elements-error-log@2x.png&#34;
-    alt=&#34;karabiner-elements-error-log@2x.png&#34;
-    style=&#34;width: 1000px&#34;
-  /&gt;
-&lt;/figure&gt;
-
 
       </description>
     </item>

@@ -20,16 +20,18 @@
 <link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
-<title>karabiner.json data structure | Karabiner-Elements</title><meta property="og:title" content="karabiner.json data structure" />
-<meta property="og:description" content="Note Karabiner-Elements does not allow you including comments (// ... or /* ... */) in any json files.  karabiner.json { &#34;global&#34;: { &#34;check_for_updates_on_startup&#34;: true, &#34;show_in_menu_bar&#34;: true, &#34;show_profile_name_in_menu_bar&#34;: false }, &#34;profiles&#34;: [ { &#34;name&#34;: &#34;Profile name&#34;, &#34;selected&#34;: true, &#34;simple_modifications&#34;: [ ... ], &#34;fn_function_keys&#34;: [ ... ], &#34;complex_modifications&#34;: { &#34;parameters&#34;: { ... }, &#34;rules&#34;: [ ... ] }, &#34;virtual_hid_keyboard&#34;: { &#34;keyboard_type&#34;: &#34;ansi&#34;, &#34;caps_lock_delay_milliseconds&#34;: 0 }, &#34;devices&#34;: [ ... ], &#34;parameters&#34;: { ." />
+<title>How to disable running Karabiner-Elements at login | Karabiner-Elements</title><meta property="og:title" content="How to disable running Karabiner-Elements at login" />
+<meta property="og:description" content="Karabiner-Elements will be started automatically at login after once you have run Karabiner-ELements.
+Quit Karabiner-Elements if you want to stop running Karabiner-Elements at login." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="/docs/json/root-data-structure/" />
+<meta property="og:url" content="/docs/help/how-to/disable-open-at-login/" />
 <meta property="og:image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
 <meta property="og:site_name" content="Karabiner-Elements" />
-<meta itemprop="name" content="karabiner.json data structure">
-<meta itemprop="description" content="Note Karabiner-Elements does not allow you including comments (// ... or /* ... */) in any json files.  karabiner.json { &#34;global&#34;: { &#34;check_for_updates_on_startup&#34;: true, &#34;show_in_menu_bar&#34;: true, &#34;show_profile_name_in_menu_bar&#34;: false }, &#34;profiles&#34;: [ { &#34;name&#34;: &#34;Profile name&#34;, &#34;selected&#34;: true, &#34;simple_modifications&#34;: [ ... ], &#34;fn_function_keys&#34;: [ ... ], &#34;complex_modifications&#34;: { &#34;parameters&#34;: { ... }, &#34;rules&#34;: [ ... ] }, &#34;virtual_hid_keyboard&#34;: { &#34;keyboard_type&#34;: &#34;ansi&#34;, &#34;caps_lock_delay_milliseconds&#34;: 0 }, &#34;devices&#34;: [ ... ], &#34;parameters&#34;: { .">
+<meta itemprop="name" content="How to disable running Karabiner-Elements at login">
+<meta itemprop="description" content="Karabiner-Elements will be started automatically at login after once you have run Karabiner-ELements.
+Quit Karabiner-Elements if you want to stop running Karabiner-Elements at login.">
 
-<meta itemprop="wordCount" content="215">
+<meta itemprop="wordCount" content="24">
 <meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
 
 
@@ -37,8 +39,9 @@
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
 
-<meta name="twitter:title" content="karabiner.json data structure"/>
-<meta name="twitter:description" content="Note Karabiner-Elements does not allow you including comments (// ... or /* ... */) in any json files.  karabiner.json { &#34;global&#34;: { &#34;check_for_updates_on_startup&#34;: true, &#34;show_in_menu_bar&#34;: true, &#34;show_profile_name_in_menu_bar&#34;: false }, &#34;profiles&#34;: [ { &#34;name&#34;: &#34;Profile name&#34;, &#34;selected&#34;: true, &#34;simple_modifications&#34;: [ ... ], &#34;fn_function_keys&#34;: [ ... ], &#34;complex_modifications&#34;: { &#34;parameters&#34;: { ... }, &#34;rules&#34;: [ ... ] }, &#34;virtual_hid_keyboard&#34;: { &#34;keyboard_type&#34;: &#34;ansi&#34;, &#34;caps_lock_delay_milliseconds&#34;: 0 }, &#34;devices&#34;: [ ... ], &#34;parameters&#34;: { ."/>
+<meta name="twitter:title" content="How to disable running Karabiner-Elements at login"/>
+<meta name="twitter:description" content="Karabiner-Elements will be started automatically at login after once you have run Karabiner-ELements.
+Quit Karabiner-Elements if you want to stop running Karabiner-Elements at login."/>
 
 
 <script type="application/javascript">
@@ -72,7 +75,7 @@ if (!doNotTrack) {
   crossorigin="anonymous"></script>
 
 
-    <title>karabiner.json data structure | Karabiner-Elements</title>
+    <title>How to disable running Karabiner-Elements at login | Karabiner-Elements</title>
   </head>
   <body class="td-page">
     <header>
@@ -417,10 +420,10 @@ if (!doNotTrack) {
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="/docs/help/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Help</a>
+    <a  href="/docs/help/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">Help</a>
   </li>
   <ul>
-    <li class="collapse " id="docshelp">
+    <li class="collapse show" id="docshelp">
       
       
       
@@ -487,10 +490,10 @@ if (!doNotTrack) {
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="/docs/help/how-to/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">How to</a>
+    <a  href="/docs/help/how-to/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">How to</a>
   </li>
   <ul>
-    <li class="collapse " id="docshelphow-to">
+    <li class="collapse show" id="docshelphow-to">
       
       
       
@@ -515,7 +518,7 @@ if (!doNotTrack) {
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docshelphow-todisable-open-at-login" href="/docs/help/how-to/disable-open-at-login/">How to disable running Karabiner-Elements at login</a>
+      <a class="td-sidebar-link td-sidebar-link__page  active" id="m-docshelphow-todisable-open-at-login" href="/docs/help/how-to/disable-open-at-login/">How to disable running Karabiner-Elements at login</a>
       
       
     </li>
@@ -593,10 +596,10 @@ if (!doNotTrack) {
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="/docs/json/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">karabiner.json Reference Manual</a>
+    <a  href="/docs/json/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">karabiner.json Reference Manual</a>
   </li>
   <ul>
-    <li class="collapse show" id="docsjson">
+    <li class="collapse " id="docsjson">
       
       
       
@@ -621,7 +624,7 @@ if (!doNotTrack) {
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page  active" id="m-docsjsonroot-data-structure" href="/docs/json/root-data-structure/">karabiner.json data structure</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsjsonroot-data-structure" href="/docs/json/root-data-structure/">karabiner.json data structure</a>
       
       
       
@@ -1032,12 +1035,7 @@ if (!doNotTrack) {
 
 
 
-<nav id="TableOfContents">
-  <ul>
-    <li><a href="#karabinerjson">karabiner.json</a></li>
-    <li><a href="#complex_modifications-in-karabinerjson--profiles">complex_modifications in karabiner.json &gt; profiles</a></li>
-  </ul>
-</nav>
+<nav id="TableOfContents"></nav>
 
 
 
@@ -1059,6 +1057,9 @@ if (!doNotTrack) {
 
 
 
+
+
+
 <li class="breadcrumb-item" >
 	<a href="/docs/">Documentation</a>
 </li>
@@ -1067,14 +1068,21 @@ if (!doNotTrack) {
 
 
 <li class="breadcrumb-item" >
-	<a href="/docs/json/">karabiner.json Reference Manual</a>
+	<a href="/docs/help/">Help</a>
+</li>
+
+
+
+
+<li class="breadcrumb-item" >
+	<a href="/docs/help/how-to/">How to</a>
 </li>
 
 
 
 
 <li class="breadcrumb-item active" aria-current="page">
-	<a href="/docs/json/root-data-structure/">karabiner.json data structure</a>
+	<a href="/docs/help/how-to/disable-open-at-login/">How to disable running Karabiner-Elements at login</a>
 </li>
 
 	</ol>
@@ -1082,141 +1090,11 @@ if (!doNotTrack) {
 
             
 <div class="td-content">
-	<h1>karabiner.json data structure</h1>
+	<h1>How to disable running Karabiner-Elements at login</h1>
 	
-	
+	<p>Karabiner-Elements will be started automatically at login after once you have run Karabiner-ELements.</p>
+<p><a href="../../../manual/operation/quit/">Quit Karabiner-Elements</a> if you want to stop running Karabiner-Elements at login.</p>
 
-<div class="alert alert-warning" role="alert">
-<h4 class="alert-heading">Note</h4>
-Karabiner-Elements does not allow you including comments (<code>// ...</code> or <code>/* ... */</code>) in any json files.
-</div>
-
-<h2 id="karabinerjson">karabiner.json</h2>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json"><span style="color:#000;font-weight:bold">{</span>
-    <span style="color:#204a87;font-weight:bold">&#34;global&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
-        <span style="color:#204a87;font-weight:bold">&#34;check_for_updates_on_startup&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#204a87;font-weight:bold">true</span><span style="color:#000;font-weight:bold">,</span>
-        <span style="color:#204a87;font-weight:bold">&#34;show_in_menu_bar&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#204a87;font-weight:bold">true</span><span style="color:#000;font-weight:bold">,</span>
-        <span style="color:#204a87;font-weight:bold">&#34;show_profile_name_in_menu_bar&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#204a87;font-weight:bold">false</span>
-    <span style="color:#000;font-weight:bold">},</span>
-    <span style="color:#204a87;font-weight:bold">&#34;profiles&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
-        <span style="color:#000;font-weight:bold">{</span>
-            <span style="color:#204a87;font-weight:bold">&#34;name&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;Profile name&#34;</span><span style="color:#000;font-weight:bold">,</span>
-            <span style="color:#204a87;font-weight:bold">&#34;selected&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#204a87;font-weight:bold">true</span><span style="color:#000;font-weight:bold">,</span>
-            <span style="color:#204a87;font-weight:bold">&#34;simple_modifications&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
-                <span style="color:#a40000">...</span>
-            <span style="color:#000;font-weight:bold">],</span>
-            <span style="color:#204a87;font-weight:bold">&#34;fn_function_keys&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
-                <span style="color:#a40000">...</span>
-            <span style="color:#000;font-weight:bold">],</span>
-            <span style="color:#204a87;font-weight:bold">&#34;complex_modifications&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
-                <span style="color:#204a87;font-weight:bold">&#34;parameters&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
-                    <span style="color:#a40000">...</span>
-                <span style="color:#000;font-weight:bold">},</span>
-                <span style="color:#204a87;font-weight:bold">&#34;rules&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
-                    <span style="color:#a40000">...</span>
-                <span style="color:#000;font-weight:bold">]</span>
-            <span style="color:#000;font-weight:bold">},</span>
-            <span style="color:#204a87;font-weight:bold">&#34;virtual_hid_keyboard&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
-                <span style="color:#204a87;font-weight:bold">&#34;keyboard_type&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;ansi&#34;</span><span style="color:#000;font-weight:bold">,</span>
-                <span style="color:#204a87;font-weight:bold">&#34;caps_lock_delay_milliseconds&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#0000cf;font-weight:bold">0</span>
-            <span style="color:#000;font-weight:bold">},</span>
-            <span style="color:#204a87;font-weight:bold">&#34;devices&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
-                <span style="color:#a40000">...</span>
-            <span style="color:#000;font-weight:bold">],</span>
-            <span style="color:#204a87;font-weight:bold">&#34;parameters&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
-                <span style="color:#a40000">...</span>
-            <span style="color:#000;font-weight:bold">}</span>
-        <span style="color:#000;font-weight:bold">},</span>
-        <span style="color:#000;font-weight:bold">{</span>
-            <span style="color:#204a87;font-weight:bold">&#34;name&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;Profile name&#34;</span><span style="color:#000;font-weight:bold">,</span>
-            <span style="color:#204a87;font-weight:bold">&#34;selected&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#204a87;font-weight:bold">false</span><span style="color:#000;font-weight:bold">,</span>
-            <span style="color:#a40000">...</span>
-        <span style="color:#000;font-weight:bold">},</span>
-        <span style="color:#a40000">...</span>
-    <span style="color:#000;font-weight:bold">]</span>
-<span style="color:#000;font-weight:bold">}</span>
-</code></pre></div><h2 id="complex_modifications-in-karabinerjson--profiles">complex_modifications in karabiner.json &gt; profiles</h2>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json"><span style="color:#000;font-weight:bold">{</span>
-    <span style="color:#204a87;font-weight:bold">&#34;complex_modifications&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
-        <span style="color:#204a87;font-weight:bold">&#34;parameters&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
-            <span style="color:#a40000">...</span>
-        <span style="color:#000;font-weight:bold">},</span>
-        <span style="color:#204a87;font-weight:bold">&#34;rules&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
-            <span style="color:#000;font-weight:bold">{</span>
-                <span style="color:#204a87;font-weight:bold">&#34;description&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;This description is shown in Preferences.&#34;</span><span style="color:#000;font-weight:bold">,</span>
-                <span style="color:#204a87;font-weight:bold">&#34;manipulators&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
-                    <span style="color:#000;font-weight:bold">{</span>
-                        <span style="color:#204a87;font-weight:bold">&#34;type&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;basic&#34;</span><span style="color:#000;font-weight:bold">,</span>
-
-                        <span style="color:#204a87;font-weight:bold">&#34;from&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#a40000">from</span> <span style="color:#a40000">event</span> <span style="color:#a40000">definition</span><span style="color:#000;font-weight:bold">,</span>
-
-                        <span style="color:#204a87;font-weight:bold">&#34;to&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
-                            <span style="color:#a40000">to</span> <span style="color:#a40000">event</span> <span style="color:#a40000">definition</span><span style="color:#000;font-weight:bold">,</span>
-                            <span style="color:#a40000">to</span> <span style="color:#a40000">event</span> <span style="color:#a40000">definition</span><span style="color:#000;font-weight:bold">,</span>
-                            <span style="color:#a40000">...</span>
-                        <span style="color:#000;font-weight:bold">],</span>
-
-                        <span style="color:#204a87;font-weight:bold">&#34;to_if_alone&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
-                            <span style="color:#a40000">to</span> <span style="color:#a40000">event</span> <span style="color:#a40000">definition</span><span style="color:#000;font-weight:bold">,</span>
-                            <span style="color:#a40000">to</span> <span style="color:#a40000">event</span> <span style="color:#a40000">definition</span><span style="color:#000;font-weight:bold">,</span>
-                            <span style="color:#a40000">...</span>
-                        <span style="color:#000;font-weight:bold">],</span>
-
-                        <span style="color:#204a87;font-weight:bold">&#34;to_if_held_down&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
-                            <span style="color:#a40000">to</span> <span style="color:#a40000">event</span> <span style="color:#a40000">definition</span><span style="color:#000;font-weight:bold">,</span>
-                            <span style="color:#a40000">to</span> <span style="color:#a40000">event</span> <span style="color:#a40000">definition</span><span style="color:#000;font-weight:bold">,</span>
-                            <span style="color:#a40000">...</span>
-                        <span style="color:#000;font-weight:bold">],</span>
-
-                        <span style="color:#204a87;font-weight:bold">&#34;to_after_key_up&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
-                            <span style="color:#a40000">to</span> <span style="color:#a40000">event</span> <span style="color:#a40000">definition</span><span style="color:#000;font-weight:bold">,</span>
-                            <span style="color:#a40000">to</span> <span style="color:#a40000">event</span> <span style="color:#a40000">definition</span><span style="color:#000;font-weight:bold">,</span>
-                            <span style="color:#a40000">...</span>
-                        <span style="color:#000;font-weight:bold">],</span>
-
-                        <span style="color:#204a87;font-weight:bold">&#34;to_delayed_action&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
-                            <span style="color:#204a87;font-weight:bold">&#34;to_if_invoked&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
-                                <span style="color:#a40000">to</span> <span style="color:#a40000">event</span> <span style="color:#a40000">definition</span><span style="color:#000;font-weight:bold">,</span>
-                                <span style="color:#a40000">to</span> <span style="color:#a40000">event</span> <span style="color:#a40000">definition</span><span style="color:#000;font-weight:bold">,</span>
-                                <span style="color:#a40000">...</span>
-                            <span style="color:#000;font-weight:bold">],</span>
-                            <span style="color:#204a87;font-weight:bold">&#34;to_if_canceled&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
-                                <span style="color:#a40000">to</span> <span style="color:#a40000">event</span> <span style="color:#a40000">definition</span><span style="color:#000;font-weight:bold">,</span>
-                                <span style="color:#a40000">to</span> <span style="color:#a40000">event</span> <span style="color:#a40000">definition</span><span style="color:#000;font-weight:bold">,</span>
-                                <span style="color:#a40000">...</span>
-                            <span style="color:#000;font-weight:bold">]</span>
-                        <span style="color:#000;font-weight:bold">},</span>
-
-                        <span style="color:#204a87;font-weight:bold">&#34;conditions&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
-                            <span style="color:#a40000">condition</span> <span style="color:#a40000">definition</span><span style="color:#000;font-weight:bold">,</span>
-                            <span style="color:#a40000">condition</span> <span style="color:#a40000">definition</span><span style="color:#000;font-weight:bold">,</span>
-                            <span style="color:#a40000">...</span>
-                        <span style="color:#000;font-weight:bold">],</span>
-
-                        <span style="color:#204a87;font-weight:bold">&#34;parameters&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
-                            <span style="color:#a40000">...</span>
-                        <span style="color:#000;font-weight:bold">},</span>
-
-                        <span style="color:#204a87;font-weight:bold">&#34;description&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;Optional description for human&#34;</span>
-                    <span style="color:#000;font-weight:bold">},</span>
-                    <span style="color:#000;font-weight:bold">{</span>
-                        <span style="color:#204a87;font-weight:bold">&#34;type&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;basic&#34;</span><span style="color:#000;font-weight:bold">,</span>
-                        <span style="color:#a40000">...</span>
-                    <span style="color:#000;font-weight:bold">},</span>
-                    <span style="color:#a40000">...</span>
-                <span style="color:#000;font-weight:bold">]</span>
-            <span style="color:#000;font-weight:bold">},</span>
-            <span style="color:#000;font-weight:bold">{</span>
-                <span style="color:#204a87;font-weight:bold">&#34;description&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;...&#34;</span><span style="color:#000;font-weight:bold">,</span>
-                <span style="color:#204a87;font-weight:bold">&#34;manipulators&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
-                    <span style="color:#a40000">...</span>
-                <span style="color:#000;font-weight:bold">]</span>
-            <span style="color:#000;font-weight:bold">},</span>
-            <span style="color:#a40000">...</span>
-        <span style="color:#000;font-weight:bold">]</span>
-    <span style="color:#000;font-weight:bold">}</span>
-<span style="color:#000;font-weight:bold">}</span>
-</code></pre></div>
 	
 	
 	<div class="text-muted mt-5 pt-3 border-top"></div>

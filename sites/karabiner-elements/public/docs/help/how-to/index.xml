@@ -141,5 +141,20 @@ in order to ensure macOS recognize the caps lock event.&lt;/p&gt;
       </description>
     </item>
     
+    <item>
+      <title>Docs: How to disable running Karabiner-Elements at login</title>
+      <link>/docs/help/how-to/disable-open-at-login/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/help/how-to/disable-open-at-login/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Karabiner-Elements will be started automatically at login after once you have run Karabiner-ELements.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;../../../manual/operation/quit/&#34;&gt;Quit Karabiner-Elements&lt;/a&gt; if you want to stop running Karabiner-Elements at login.&lt;/p&gt;
+
+      </description>
+    </item>
+    
   </channel>
 </rss>
