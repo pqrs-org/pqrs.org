@@ -19,7 +19,7 @@ function deploy() {
     exit 1
   fi
 
-  rsync -a --delete --exclude CNAME $source $repo/docs
+  rsync -a --delete --exclude CNAME --exclude .nojekyll $source $repo/docs
   (cd $repo && git status -s)
 }
 
