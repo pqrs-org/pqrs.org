@@ -2,15 +2,15 @@
 <rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle"  xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
     <title>ShowyEdge Changelog</title>
-    <link>https://showyedge.pqrs.org/files/appcast.xml</link>
+    <link>https://appcast.pqrs.org/showyedge-appcast-devel.xml</link>
     <description>Most recent changes with links to updates.</description>
     <language>en</language>
 
     <item>
-      <title>Version 3.7.1</title>
+      <title>Version 3.7.3</title>
       <sparkle:minimumSystemVersion>10.9.0</sparkle:minimumSystemVersion>
       <description><![CDATA[
-<h2>About v3.7.1 Update</h2>
+<h2>About v3.7.3 Update</h2>
 <ul>
 <li>⚡️ Improvements
 
@@ -23,10 +23,11 @@
 </p>
 ]]>
       </description>
-      <pubDate>Thu, 26 Dec 2019 03:14:57 -0000</pubDate>
-      <enclosure url="https://github.com/pqrs-org/ShowyEdge/releases/download/beta/ShowyEdge-3.7.1.dmg"
-                 sparkle:version="3.7.1" length="2823141" type="application/octet-stream"
-                 sparkle:dsaSignature="MC4CFQCGhRUpOQBuy/dKdiagIIgcCYmwTwIVAJVgXhktXfZK2WDkVaT8uR/Y/VqM"
+      <pubDate>Thu, 02 Apr 2020 14:27:04 -0000</pubDate>
+      <enclosure url="https://github.com/pqrs-org/ShowyEdge/releases/download/beta/ShowyEdge-3.7.3.dmg"
+                 sparkle:version="3.7.3" type="application/octet-stream"
+                 sparkle:edSignature="aCxoE0yMqP58n9pnquSdpxuWw614OLCCFhUstWL4Dg/nknZBx+yNwtX2wVsUJfpLIE15kbijuGqA9sRoNEXOAQ==" length="2824970"
+                 sparkle:dsaSignature="MCwCFDJP8HayGj4jLJfA28de6Il0fCcbAhQwTV6/1dxSffHS0xcIPtPpeqolpg=="
       />
     </item>
 
