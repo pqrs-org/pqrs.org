@@ -3,22 +3,8 @@ title: 'Release notes'
 weight: 900
 simple_list: true
 exclude_search: true
+type: releasenotes
 ---
-
-<style>
-.td-content img {
-    margin: 20px 0;
-    border: 1px solid $border-color;
-    border-radius: 10px;
-}
-.td-content > ul > li {
-    list-style-type: none;
-    font-weight: bold;
-}
-.td-content > ul > li > ul {
-    font-weight: normal;
-}
-</style>
 
 ## Tinkle 1.0.0
 
