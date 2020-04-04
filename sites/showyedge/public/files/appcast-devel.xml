@@ -7,15 +7,20 @@
     <language>en</language>
 
     <item>
-      <title>Version 3.7.3</title>
+      <title>Version 3.7.5</title>
       <sparkle:minimumSystemVersion>10.9.0</sparkle:minimumSystemVersion>
       <description><![CDATA[
-<h2>About v3.7.3 Update</h2>
+<h2>About v3.7.5 Update</h2>
 <ul>
 <li>⚡️ Improvements
 
 <ul>
+<li>&ldquo;Check for updates&rdquo; has been improved.
+
+<ul>
+<li>Updated Sparkle signing to EdDSA (ed25519) from DSA.</li>
 <li>URL of appcast.xml has been updated.</li>
+</ul></li>
 </ul></li>
 </ul>
 <p>
@@ -23,11 +28,11 @@
 </p>
 ]]>
       </description>
-      <pubDate>Thu, 02 Apr 2020 14:31:04 -0000</pubDate>
-      <enclosure url="https://github.com/pqrs-org/ShowyEdge/releases/download/beta/ShowyEdge-3.7.3.dmg"
-                 sparkle:version="3.7.3" type="application/octet-stream"
-                 sparkle:edSignature="aCxoE0yMqP58n9pnquSdpxuWw614OLCCFhUstWL4Dg/nknZBx+yNwtX2wVsUJfpLIE15kbijuGqA9sRoNEXOAQ==" length="2824970"
-                 sparkle:dsaSignature="MCwCFDDZEN2+86tBmnxOF5fuNEH+4/fxAhRN9ryeee4k6r9+CaHs/ssMQ/t7vg=="
+      <pubDate>Sat, 04 Apr 2020 14:04:30 -0000</pubDate>
+      <enclosure url="https://github.com/pqrs-org/ShowyEdge/releases/download/beta/ShowyEdge-3.7.5.dmg"
+                 sparkle:version="3.7.5" type="application/octet-stream"
+                 sparkle:edSignature="b0xHFcrzjax3BO4IoqwNG/PgxhaUpcR8xIqEuhEDliM/8GiYQJCxMwZsCc59Kofih+AshwZ2mfaL49DhGSXdBg==" length="2291699"
+                 sparkle:dsaSignature="MCwCFAfFJ2J5rZkqxO6mkvw/sdmt72g2AhRJ5rO4cBFb+tPwyS0Btr+QRp5e1Q=="
       />
     </item>
 
