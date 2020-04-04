@@ -4,37 +4,10 @@ Add styles or override variables from the theme here.
 
 */
 
-$dark: #403f4c;
-$primary: #3273db;
-$secondary: #db3273;
-$border-color: #dee2e6;
+@import "share/pqrs.scss";
 
 body {
-  .navbar-brand {
-    .text-uppercase {
-      text-transform: none !important;
-    }
-  }
-
   .td-content {
-    overflow-wrap: break-word;
-
-    h1 + p,
-    h1 + ol,
-    h1 + ul,
-    h1 + div.section-index {
-      margin-top: 3em;
-    }
-
-    figure {
-      img {
-        margin: 20px 0;
-        box-sizing: content-box;
-        border: 1px solid $border-color;
-        border-radius: 10px;
-      }
-    }
-
     table {
       thead {
         tr {
