@@ -2,30 +2,24 @@
 <rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle"  xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
     <title>ShowyEdge Changelog</title>
-    <link>https://showyedge.pqrs.org/files/appcast.xml</link>
+    <link>https://appcast.pqrs.org/showyedge-appcast.xml</link>
     <description>Most recent changes with links to updates.</description>
     <language>en</language>
 
     <item>
-      <title>Version 3.7.0</title>
+      <title>Version 3.8.0</title>
       <sparkle:minimumSystemVersion>10.9.0</sparkle:minimumSystemVersion>
       <description><![CDATA[
-<h2>About v3.7.0 Update</h2>
+<h2>About v3.8.0 Update</h2>
 <ul>
-<li>✨ New Features
+<li>⚡️ Improvements
 
 <ul>
-<li><a href="https://showyedge.pqrs.org/docs/configuration/indicator-options/">Indicator options</a> have been added:
+<li>&ldquo;Check for updates&rdquo; has been improved.
 
 <ul>
-<li><code>Hide indicator when full screen</code> option.</li>
-<li><code>Show indicator behind app windows</code> option.</li>
-</ul></li>
-<li><a href="https://showyedge.pqrs.org/docs/configuration/indicator-size-configuration/#advanced">New custom frame options</a> have been added:
-
-<ul>
-<li>Set width and height in percentages.</li>
-<li>Choose origin from upper-left, lower-left, upper-right and lower-right.</li>
+<li>Updated Sparkle signing to EdDSA (ed25519) from DSA.</li>
+<li>URL of appcast.xml has been updated.</li>
 </ul></li>
 </ul></li>
 </ul>
@@ -34,10 +28,11 @@
 </p>
 ]]>
       </description>
-      <pubDate>Thu, 19 Dec 2019 17:40:10 -0000</pubDate>
-      <enclosure url="https://github.com/pqrs-org/ShowyEdge/releases/download/v3.7.0/ShowyEdge-3.7.0.dmg"
-                 sparkle:version="3.7.0" length="2823113" type="application/octet-stream"
-                 sparkle:dsaSignature="MCwCFDXvkWnVFtbpIkHbxFzuu6YhCqmrAhRQtV8VuFdc72LyIrkn/5NFUvKLfA=="
+      <pubDate>Sat, 04 Apr 2020 14:28:42 -0000</pubDate>
+      <enclosure url="https://github.com/pqrs-org/ShowyEdge/releases/download/v3.8.0/ShowyEdge-3.8.0.dmg"
+                 sparkle:version="3.8.0" type="application/octet-stream"
+                 sparkle:edSignature="hCW7uOLI8sTE9pwO2AOd/MzKrk0ACeGwrtQV24+Fqx2wkhzduQLgE2jEwTmOUCwA5AQX7c7e/pkfzP+FW3iVBQ==" length="2291805"
+                 sparkle:dsaSignature="MC0CFQCXR0lQ/0dyAMdqNFvXrUNJbSoT7AIUBW0/1A9TdLpxjR0ro/DMh6ja8N8="
       />
     </item>
 

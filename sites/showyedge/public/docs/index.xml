@@ -467,6 +467,25 @@ Follow instructions if you want to disable the feature.&lt;/p&gt;
     font-weight: normal;
 }
 &lt;/style&gt;
+&lt;h2 id=&#34;showyedge-380&#34;&gt;ShowyEdge 3.8.0&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/pqrs-org/ShowyEdge/releases/download/v3.8.0/ShowyEdge-3.8.0.dmg&#34;&gt;📦 Download&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;📅 Release date
+&lt;ul&gt;
+&lt;li&gt;Apr 4, 2020&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;⚡️ Improvements
+&lt;ul&gt;
+&lt;li&gt;&amp;ldquo;Check for updates&amp;rdquo; has been improved.
+&lt;ul&gt;
+&lt;li&gt;Updated Sparkle signing to EdDSA (ed25519) from DSA.&lt;/li&gt;
+&lt;li&gt;URL of appcast.xml has been updated.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id=&#34;showyedge-370&#34;&gt;ShowyEdge 3.7.0&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/pqrs-org/ShowyEdge/releases/download/v3.7.0/ShowyEdge-3.7.0.dmg&#34;&gt;📦 Download&lt;/a&gt;&lt;/li&gt;

@@ -20,6 +20,16 @@ exclude_search: true
 }
 </style>
 
+## ShowyEdge 3.8.0
+
+-   [📦 Download](https://github.com/pqrs-org/ShowyEdge/releases/download/v3.8.0/ShowyEdge-3.8.0.dmg)
+-   📅 Release date
+    -   Apr 4, 2020
+-   ⚡️ Improvements
+    -   "Check for updates" has been improved.
+        -   Updated Sparkle signing to EdDSA (ed25519) from DSA.
+        -   URL of appcast.xml has been updated.
+
 ## ShowyEdge 3.7.0
 
 -   [📦 Download](https://github.com/pqrs-org/ShowyEdge/releases/download/v3.7.0/ShowyEdge-3.7.0.dmg)
