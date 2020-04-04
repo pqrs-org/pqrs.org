@@ -359,46 +359,5 @@ To quit Tinkle, proceed as follows:&lt;/p&gt;
       </description>
     </item>
     
-    <item>
-      <title>Docs: Release notes</title>
-      <link>/docs/releasenotes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/docs/releasenotes/</guid>
-      <description>
-        
-        
-        &lt;style&gt;
-.td-content img {
-    margin: 20px 0;
-    border: 1px solid $border-color;
-    border-radius: 10px;
-}
-.td-content &gt; ul &gt; li {
-    list-style-type: none;
-    font-weight: bold;
-}
-.td-content &gt; ul &gt; li &gt; ul {
-    font-weight: normal;
-}
-&lt;/style&gt;
-&lt;h2 id=&#34;tinkle-100&#34;&gt;Tinkle 1.0.0&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/pqrs-org/Tinkle/releases/download/v1.0.0/Tinkle-1.0.0.dmg&#34;&gt;📦 Download&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;📅 Release date
-&lt;ul&gt;
-&lt;li&gt;Feb 9, 2020&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;✨ New Features
-&lt;ul&gt;
-&lt;li&gt;First release.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-
-      </description>
-    </item>
-    
   </channel>
 </rss>
