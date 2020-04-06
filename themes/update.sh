@@ -18,3 +18,5 @@ done
 for d in $(find docsy -name '.git'); do
     rm -fr $d
 done
+
+rm -fr docsy/userguide
