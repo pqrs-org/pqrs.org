@@ -15,7 +15,7 @@
 <li>✨ New Features
 
 <ul>
-<li>First release.</li>
+<li>Added an icon to menu bar.</li>
 </ul></li>
 </ul>
 <p>
@@ -23,7 +23,7 @@
 </p>
 ]]>
       </description>
-      <pubDate>Wed, 08 Apr 2020 01:33:20 -0000</pubDate>
+      <pubDate>Wed, 08 Apr 2020 01:38:54 -0000</pubDate>
       <enclosure url="https://github.com/pqrs-org/Tinkle/releases/download/beta/Tinkle-1.0.1.dmg"
                  sparkle:version="1.0.1" type="application/octet-stream"
                  sparkle:edSignature="220FwmBCFIFt+YIVTiCl8R3gBNf2z0m2X9uebkAHeBpXxirBF6upRqDthFf/qCgAfcRPPd6mVD4oXuqEnY9ICg==" length="3022920"
