@@ -2,15 +2,15 @@
 <rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle"  xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
     <title>Tinkle Changelog</title>
-    <link>https://tinkle.pqrs.org/files/appcast.xml</link>
+    <link>https://appcast.pqrs.org/tinkle-appcast-devel.xml</link>
     <description>Most recent changes with links to updates.</description>
     <language>en</language>
 
     <item>
-      <title>Version 1.0.0</title>
+      <title>Version 1.0.1</title>
       <sparkle:minimumSystemVersion>10.15.0</sparkle:minimumSystemVersion>
       <description><![CDATA[
-<h2>About v1.0.0 Update</h2>
+<h2>About v1.0.1 Update</h2>
 <ul>
 <li>✨ New Features
 
@@ -23,10 +23,10 @@
 </p>
 ]]>
       </description>
-      <pubDate>Sun, 09 Feb 2020 13:36:03 -0000</pubDate>
-      <enclosure url="https://github.com/pqrs-org/Tinkle/releases/download/v1.0.0/Tinkle-1.0.0.dmg"
-                 sparkle:version="1.0.0" type="application/octet-stream"
-                 sparkle:edSignature="zxsWWdXwDb4OQHKxSKkUUsZdrqS/3EPU9Al8MzkOZ0Tlp48nHpV8mANg/dBgkeFklMIGvogoCuvuSxlQ9QRFBg==" length="3093445"
+      <pubDate>Wed, 08 Apr 2020 01:33:20 -0000</pubDate>
+      <enclosure url="https://github.com/pqrs-org/Tinkle/releases/download/beta/Tinkle-1.0.1.dmg"
+                 sparkle:version="1.0.1" type="application/octet-stream"
+                 sparkle:edSignature="220FwmBCFIFt+YIVTiCl8R3gBNf2z0m2X9uebkAHeBpXxirBF6upRqDthFf/qCgAfcRPPd6mVD4oXuqEnY9ICg==" length="3022920"
       />
     </item>
 
