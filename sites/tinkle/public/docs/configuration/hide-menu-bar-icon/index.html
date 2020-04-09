@@ -20,16 +20,18 @@
 <link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
-<title>Release notes | Tinkle</title><meta property="og:title" content="Release notes" />
-<meta property="og:description" content="Tinkle 1.1.0  📦 Download 📅 Release date  Apr 9, 2020   ✨ New Features  Added an icon to menu bar.   🐛 Bug Fixes  For open source user:  Fixed an issue that the built binary from source code requires code signing even if you want to run the binary only on your machine.      Tinkle 1.0.0  📦 Download 📅 Release date  Feb 9, 2020   ✨ New Features  First release." />
+<title>Hide the icon in menu bar | Tinkle</title><meta property="og:title" content="Hide the icon in menu bar" />
+<meta property="og:description" content="You can hide the icon in menu bar from preferences.
+ Open preferences window. Turn off Show icon in menu bar.     " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="/docs/releasenotes/" />
+<meta property="og:url" content="/docs/configuration/hide-menu-bar-icon/" />
 <meta property="og:image" content="https://tinkle.pqrs.org/images/logo.png"/>
 <meta property="og:site_name" content="Tinkle" />
-<meta itemprop="name" content="Release notes">
-<meta itemprop="description" content="Tinkle 1.1.0  📦 Download 📅 Release date  Apr 9, 2020   ✨ New Features  Added an icon to menu bar.   🐛 Bug Fixes  For open source user:  Fixed an issue that the built binary from source code requires code signing even if you want to run the binary only on your machine.      Tinkle 1.0.0  📦 Download 📅 Release date  Feb 9, 2020   ✨ New Features  First release.">
+<meta itemprop="name" content="Hide the icon in menu bar">
+<meta itemprop="description" content="You can hide the icon in menu bar from preferences.
+ Open preferences window. Turn off Show icon in menu bar.     ">
 
-<meta itemprop="wordCount" content="66">
+<meta itemprop="wordCount" content="20">
 <meta itemprop="image" content="https://tinkle.pqrs.org/images/logo.png"/>
 
 
@@ -37,8 +39,9 @@
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://tinkle.pqrs.org/images/logo.png"/>
 
-<meta name="twitter:title" content="Release notes"/>
-<meta name="twitter:description" content="Tinkle 1.1.0  📦 Download 📅 Release date  Apr 9, 2020   ✨ New Features  Added an icon to menu bar.   🐛 Bug Fixes  For open source user:  Fixed an issue that the built binary from source code requires code signing even if you want to run the binary only on your machine.      Tinkle 1.0.0  📦 Download 📅 Release date  Feb 9, 2020   ✨ New Features  First release."/>
+<meta name="twitter:title" content="Hide the icon in menu bar"/>
+<meta name="twitter:description" content="You can hide the icon in menu bar from preferences.
+ Open preferences window. Turn off Show icon in menu bar.     "/>
 
 
 <script type="application/javascript">
@@ -158,7 +161,7 @@ if (!doNotTrack) {
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="/docs/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">Documentation</a>
+    <a  href="/docs/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">Documentation</a>
   </li>
   <ul>
     <li class="collapse show" id="docs">
@@ -181,10 +184,10 @@ if (!doNotTrack) {
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="/docs/configuration/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Configuration</a>
+    <a  href="/docs/configuration/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">Configuration</a>
   </li>
   <ul>
-    <li class="collapse " id="docsconfiguration">
+    <li class="collapse show" id="docsconfiguration">
       
       
       
@@ -209,7 +212,7 @@ if (!doNotTrack) {
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsconfigurationhide-menu-bar-icon" href="/docs/configuration/hide-menu-bar-icon/">Hide the icon in menu bar</a>
+      <a class="td-sidebar-link td-sidebar-link__page  active" id="m-docsconfigurationhide-menu-bar-icon" href="/docs/configuration/hide-menu-bar-icon/">Hide the icon in menu bar</a>
       
       
     </li>
@@ -274,7 +277,7 @@ if (!doNotTrack) {
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page  active" id="m-docsreleasenotes" href="/docs/releasenotes/">Release notes</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsreleasenotes" href="/docs/releasenotes/">Release notes</a>
       
       
     </li>
@@ -300,12 +303,7 @@ if (!doNotTrack) {
 
 
 
-<nav id="TableOfContents">
-  <ul>
-    <li><a href="#tinkle-110">Tinkle 1.1.0</a></li>
-    <li><a href="#tinkle-100">Tinkle 1.0.0</a></li>
-  </ul>
-</nav>
+<nav id="TableOfContents"></nav>
 
 
 
@@ -324,6 +322,9 @@ if (!doNotTrack) {
 
 
 
+
+
+
 <li class="breadcrumb-item" >
 	<a href="/docs/">Documentation</a>
 </li>
@@ -331,54 +332,48 @@ if (!doNotTrack) {
 
 
 
+<li class="breadcrumb-item" >
+	<a href="/docs/configuration/">Configuration</a>
+</li>
+
+
+
+
 <li class="breadcrumb-item active" aria-current="page">
-	<a href="/docs/releasenotes/">Release notes</a>
+	<a href="/docs/configuration/hide-menu-bar-icon/">Hide the icon in menu bar</a>
 </li>
 
 	</ol>
 </nav	>
 
             
-<div class="td-content release-notes">
-	<h1>Release notes</h1>
-	<h2 id="tinkle-110">Tinkle 1.1.0</h2>
-<ul>
-<li><a href="https://github.com/pqrs-org/Tinkle/releases/download/v1.1.0/Tinkle-1.1.0.dmg">📦 Download</a></li>
-<li>📅 Release date
-<ul>
-<li>Apr 9, 2020</li>
-</ul>
-</li>
-<li>✨ New Features
-<ul>
-<li>Added an icon to menu bar.</li>
-</ul>
-</li>
-<li>🐛 Bug Fixes
-<ul>
-<li>For open source user:
-<ul>
-<li>Fixed an issue that the built binary from source code requires code signing even if you want to run the binary only on your machine.</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h2 id="tinkle-100">Tinkle 1.0.0</h2>
-<ul>
-<li><a href="https://github.com/pqrs-org/Tinkle/releases/download/v1.0.0/Tinkle-1.0.0.dmg">📦 Download</a></li>
-<li>📅 Release date
-<ul>
-<li>Feb 9, 2020</li>
-</ul>
-</li>
-<li>✨ New Features
-<ul>
-<li>First release.</li>
-</ul>
-</li>
-</ul>
+<div class="td-content">
+	<h1>Hide the icon in menu bar</h1>
+	
+	<p>You can hide the icon in menu bar from preferences.</p>
+<ol>
+<li><a href="../open-preferences-window/">Open preferences window</a>.</li>
+<li>Turn off <code>Show icon in menu bar</code>.
 
+
+
+
+  
+
+
+<figure>
+  <img
+    src="/docs/configuration/hide-menu-bar-icon/images/hide-menu-bar-icon@2x.png"
+    alt="hide-menu-bar-icon@2x.png"
+    style="width: 600px"
+  />
+</figure>
+</li>
+</ol>
+
+	
+	
+	<div class="text-muted mt-5 pt-3 border-top"></div>
 </div>
 
 
