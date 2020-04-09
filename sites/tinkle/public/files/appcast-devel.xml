@@ -7,15 +7,24 @@
     <language>en</language>
 
     <item>
-      <title>Version 1.0.3</title>
+      <title>Version 1.1.0</title>
       <sparkle:minimumSystemVersion>10.15.0</sparkle:minimumSystemVersion>
       <description><![CDATA[
-<h2>About v1.0.3 Update</h2>
+<h2>About v1.1.0 Update</h2>
 <ul>
 <li>✨ New Features
 
 <ul>
 <li>Added an icon to menu bar.</li>
+</ul></li>
+<li>🐛 Bug Fixes
+
+<ul>
+<li>For open source user:
+
+<ul>
+<li>Fixed an issue that the built binary from source code requires code signing even if you want to run the binary only on your machine.</li>
+</ul></li>
 </ul></li>
 </ul>
 <p>
@@ -23,10 +32,10 @@
 </p>
 ]]>
       </description>
-      <pubDate>Wed, 08 Apr 2020 01:59:55 -0000</pubDate>
-      <enclosure url="https://github.com/pqrs-org/Tinkle/releases/download/beta/Tinkle-1.0.3.dmg"
-                 sparkle:version="1.0.3" type="application/octet-stream"
-                 sparkle:edSignature="NcPmzkzxCH09DuRNn4bbDWnm5I52B4x5MxrtctKZMekDTs9P4Yj3QLn2ghG4lP+0ckXy8ic2SiJYj67lbipRCA==" length="3023891"
+      <pubDate>Thu, 09 Apr 2020 12:33:54 -0000</pubDate>
+      <enclosure url="https://github.com/pqrs-org/Tinkle/releases/download/v1.1.0/Tinkle-1.1.0.dmg"
+                 sparkle:version="1.1.0" type="application/octet-stream"
+                 sparkle:edSignature="B6INrhuRgH6MP+MgbgpDSiAgBU8EN9DlrUpGrhRapSXNC44xEmhm8N2/1D42Tgu1gYC4vWwYKL5Jae1V98qOAw==" length="3023212"
       />
     </item>
 
