@@ -118,10 +118,7 @@ A visual effect is shown when you change the focused window while Tinkle is runn
         
         
         &lt;p&gt;Tinkle keeps running in the background even if you close the preferences window.&lt;br /&gt;
-To quit Tinkle, proceed as follows:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;../../configuration/open-preferences-window/&#34;&gt;Open preferences window&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Press &lt;code&gt;Quit Tinkle&lt;/code&gt; button.
+To quit Tinkle, choose &amp;ldquo;Quit Tinkle&amp;rdquo; from menu bar.&lt;/p&gt;
 
 
 
@@ -131,13 +128,30 @@ To quit Tinkle, proceed as follows:&lt;/p&gt;
 
 &lt;figure&gt;
   &lt;img
+    src=&#34;/docs/help/quit/images/menu-quit@2x.png&#34;
+    alt=&#34;menu-quit@2x.png&#34;
+    style=&#34;width: 254px&#34;
+  /&gt;
+&lt;/figure&gt;
+
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
+If you&amp;rsquo;ve hidden the menu bar icon, you can also quit Tinkle from Preferences.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;../../configuration/open-preferences-window/&#34;&gt;Open preferences window&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Press &lt;code&gt;Quit Tinkle&lt;/code&gt; button.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure&gt;
+  &lt;img
     src=&#34;/docs/help/quit/images/quit@2x.png&#34;
     alt=&#34;quit@2x.png&#34;
     style=&#34;width: 600px&#34;
   /&gt;
 &lt;/figure&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
+&lt;/div&gt;
+
 
       </description>
     </item>
