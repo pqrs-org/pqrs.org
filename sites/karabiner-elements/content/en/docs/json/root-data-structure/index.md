@@ -139,3 +139,86 @@ Karabiner-Elements does not allow you including comments (`// ...` or `/* ... */
     }
 }
 ```
+
+## custom .json file in ~/config/karabiner/assets/complex_modifications
+
+Note: Adding a custom .json file allows for enabling and disabling rules/complex modifications through the UI.
+
+```json
+{
+    "title": "Title for the list of rules/complex modifications."
+    "rules": [
+        {
+            "description": "This description is shown in Preferences.",
+            "manipulators": [
+                {
+                    "type": "basic",
+
+                    "from": from event definition,
+
+                    "to": [
+                        to event definition,
+                        to event definition,
+                        ...
+                    ],
+
+                    "to_if_alone": [
+                        to event definition,
+                        to event definition,
+                        ...
+                    ],
+
+                    "to_if_held_down": [
+                        to event definition,
+                        to event definition,
+                        ...
+                    ],
+
+                    "to_after_key_up": [
+                        to event definition,
+                        to event definition,
+                        ...
+                    ],
+
+                    "to_delayed_action": {
+                        "to_if_invoked": [
+                            to event definition,
+                            to event definition,
+                            ...
+                        ],
+                        "to_if_canceled": [
+                            to event definition,
+                            to event definition,
+                            ...
+                        ]
+                    },
+
+                    "conditions": [
+                        condition definition,
+                        condition definition,
+                        ...
+                    ],
+
+                    "parameters": {
+                        ...
+                    },
+
+                    "description": "Optional description for human"
+                },
+                {
+                    "type": "basic",
+                    ...
+                },
+                ...
+            ]
+        },
+        {
+            "description": "...",
+            "manipulators": [
+                ...
+            ]
+        },
+        ...
+    ]
+}
+```
