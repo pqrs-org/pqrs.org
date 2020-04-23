@@ -1,5 +1,5 @@
 ---
-title: 'File location'
+title: 'File locations'
 weight: 100
 ---
 
