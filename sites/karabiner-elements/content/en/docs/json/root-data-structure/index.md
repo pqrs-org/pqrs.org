@@ -140,9 +140,11 @@ Karabiner-Elements does not allow you including comments (`// ...` or `/* ... */
 }
 ```
 
-## custom .json file in ~/config/karabiner/assets/complex_modifications
+## custom `*.json` file in ~/config/karabiner/assets/complex_modifications
 
-Note: Adding a custom .json file allows for enabling and disabling rules/complex modifications through the UI.
+{{% alert title="Note" color="primary" %}}
+Adding a custom .json file allows for enabling and disabling rules/complex modifications through the UI.
+{{% /alert %}}
 
 ```json
 {
