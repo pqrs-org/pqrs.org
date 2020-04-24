@@ -87,6 +87,7 @@
 &lt;li&gt;&lt;code&gt;finger_count_total == finger_count_upper_half_area + finger_count_lower_half_area&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;finger_count_total == finger_count_left_half_area + finger_count_right_half_area&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
+
 &lt;/div&gt;
 
 &lt;p&gt;You can confirm the variables state on Karabiner-EventViewer &amp;gt; Variables.&lt;/p&gt;

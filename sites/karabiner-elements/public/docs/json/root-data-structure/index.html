@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="generator" content="Hugo 0.68.3" />
+<meta name="generator" content="Hugo 0.70.0-DEV" />
 
 <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
 
@@ -29,7 +29,7 @@
 <meta itemprop="name" content="karabiner.json data structure">
 <meta itemprop="description" content="Note Karabiner-Elements does not allow you including comments (// ... or /* ... */) in any json files.  karabiner.json { &#34;global&#34;: { &#34;check_for_updates_on_startup&#34;: true, &#34;show_in_menu_bar&#34;: true, &#34;show_profile_name_in_menu_bar&#34;: false }, &#34;profiles&#34;: [ { &#34;name&#34;: &#34;Profile name&#34;, &#34;selected&#34;: true, &#34;simple_modifications&#34;: [ ... ], &#34;fn_function_keys&#34;: [ ... ], &#34;complex_modifications&#34;: { &#34;parameters&#34;: { ... }, &#34;rules&#34;: [ ... ] }, &#34;virtual_hid_keyboard&#34;: { &#34;keyboard_type&#34;: &#34;ansi&#34;, &#34;caps_lock_delay_milliseconds&#34;: 0 }, &#34;devices&#34;: [ ... ], &#34;parameters&#34;: { .">
 
-<meta itemprop="wordCount" content="215">
+<meta itemprop="wordCount" content="364">
 <meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
 
 
@@ -57,8 +57,8 @@ if (!doNotTrack) {
 
 
 
-<link rel="preload" href="/scss/main.min.af9ce449ea327fa105a20cfa1b07a619af9e4a6daa7f46de0e480cbe6568bb9e.css" as="style">
-<link href="/scss/main.min.af9ce449ea327fa105a20cfa1b07a619af9e4a6daa7f46de0e480cbe6568bb9e.css" rel="stylesheet" integrity="">
+<link rel="preload" href="/scss/main.min.7e90fb273427db61798ddfb4fa9720cf7d5f18efb473ca7185c76afc21039611.css" as="style">
+<link href="/scss/main.min.7e90fb273427db61798ddfb4fa9720cf7d5f18efb473ca7185c76afc21039611.css" rel="stylesheet" integrity="">
 
 
 <script
@@ -108,7 +108,7 @@ if (!doNotTrack) {
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.1345d50c903c266f2b072eed0490b3080caeac11cae58b48f6a2132560977109626f87c204556c7be520e153a354dc0b4a534bd9ac5f98d6fa8e30e5e2f3d35a.json"
+  data-offline-search-index-json-src="/offline-search-index.e307c9bd00229e00b11d5a11029e35c72d53f10414fab88f7312f62cfff15a78541b707a20b704c18f5273fe90cf6be0aa623c6d22b05559b5559c1d96004631.json"
   data-offline-search-base-href="/"
 >
 
@@ -138,7 +138,7 @@ if (!doNotTrack) {
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.1345d50c903c266f2b072eed0490b3080caeac11cae58b48f6a2132560977109626f87c204556c7be520e153a354dc0b4a534bd9ac5f98d6fa8e30e5e2f3d35a.json"
+  data-offline-search-index-json-src="/offline-search-index.e307c9bd00229e00b11d5a11029e35c72d53f10414fab88f7312f62cfff15a78541b707a20b704c18f5273fe90cf6be0aa623c6d22b05559b5559c1d96004631.json"
   data-offline-search-base-href="/"
 >
 
@@ -592,7 +592,7 @@ if (!doNotTrack) {
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="/docs/json/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">karabiner.json Reference Manual</a>
+    <a  href="/docs/json/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">Karabiner Configuration Reference Manual</a>
   </li>
   <ul>
     <li class="collapse show" id="docsjson">
@@ -602,7 +602,7 @@ if (!doNotTrack) {
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsjsonlocation" href="/docs/json/location/">File location</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsjsonlocation" href="/docs/json/location/">File locations</a>
       
       
       
@@ -1035,6 +1035,7 @@ if (!doNotTrack) {
   <ul>
     <li><a href="#karabinerjson">karabiner.json</a></li>
     <li><a href="#complex_modifications-in-karabinerjson--profiles">complex_modifications in karabiner.json &gt; profiles</a></li>
+    <li><a href="#custom-json-file-in-configkarabinerassetscomplex_modifications">custom <code>*.json</code> file in ~/config/karabiner/assets/complex_modifications</a></li>
   </ul>
 </nav>
 
@@ -1066,7 +1067,7 @@ if (!doNotTrack) {
 
 
 <li class="breadcrumb-item" >
-	<a href="/docs/json/">karabiner.json Reference Manual</a>
+	<a href="/docs/json/">Karabiner Configuration Reference Manual</a>
 </li>
 
 
@@ -1082,7 +1083,8 @@ if (!doNotTrack) {
             
 <div class="td-content">
 	<h1>karabiner.json data structure</h1>
-	
+    
+	       
 	
 
 <div class="alert alert-warning" role="alert">
@@ -1214,6 +1216,90 @@ Karabiner-Elements does not allow you including comments (<code>// ...</code> or
             <span style="color:#a40000">...</span>
         <span style="color:#000;font-weight:bold">]</span>
     <span style="color:#000;font-weight:bold">}</span>
+<span style="color:#000;font-weight:bold">}</span>
+</code></pre></div><h2 id="custom-json-file-in-configkarabinerassetscomplex_modifications">custom <code>*.json</code> file in ~/config/karabiner/assets/complex_modifications</h2>
+
+
+<div class="alert alert-primary" role="alert">
+<h4 class="alert-heading">Note</h4>
+Adding a custom .json file allows for enabling and disabling rules/complex modifications through the UI.
+</div>
+
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json"><span style="color:#000;font-weight:bold">{</span>
+    <span style="color:#204a87;font-weight:bold">&#34;title&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;Title for the list of rules/complex modifications.&#34;</span>
+    <span style="color:#4e9a06">&#34;rules&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+        <span style="color:#000;font-weight:bold">{</span>
+            <span style="color:#204a87;font-weight:bold">&#34;description&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;This description is shown in Preferences.&#34;</span><span style="color:#000;font-weight:bold">,</span>
+            <span style="color:#204a87;font-weight:bold">&#34;manipulators&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+                <span style="color:#000;font-weight:bold">{</span>
+                    <span style="color:#204a87;font-weight:bold">&#34;type&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;basic&#34;</span><span style="color:#000;font-weight:bold">,</span>
+
+                    <span style="color:#204a87;font-weight:bold">&#34;from&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#a40000">from</span> <span style="color:#a40000">event</span> <span style="color:#a40000">definition</span><span style="color:#000;font-weight:bold">,</span>
+
+                    <span style="color:#204a87;font-weight:bold">&#34;to&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+                        <span style="color:#a40000">to</span> <span style="color:#a40000">event</span> <span style="color:#a40000">definition</span><span style="color:#000;font-weight:bold">,</span>
+                        <span style="color:#a40000">to</span> <span style="color:#a40000">event</span> <span style="color:#a40000">definition</span><span style="color:#000;font-weight:bold">,</span>
+                        <span style="color:#a40000">...</span>
+                    <span style="color:#000;font-weight:bold">],</span>
+
+                    <span style="color:#204a87;font-weight:bold">&#34;to_if_alone&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+                        <span style="color:#a40000">to</span> <span style="color:#a40000">event</span> <span style="color:#a40000">definition</span><span style="color:#000;font-weight:bold">,</span>
+                        <span style="color:#a40000">to</span> <span style="color:#a40000">event</span> <span style="color:#a40000">definition</span><span style="color:#000;font-weight:bold">,</span>
+                        <span style="color:#a40000">...</span>
+                    <span style="color:#000;font-weight:bold">],</span>
+
+                    <span style="color:#204a87;font-weight:bold">&#34;to_if_held_down&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+                        <span style="color:#a40000">to</span> <span style="color:#a40000">event</span> <span style="color:#a40000">definition</span><span style="color:#000;font-weight:bold">,</span>
+                        <span style="color:#a40000">to</span> <span style="color:#a40000">event</span> <span style="color:#a40000">definition</span><span style="color:#000;font-weight:bold">,</span>
+                        <span style="color:#a40000">...</span>
+                    <span style="color:#000;font-weight:bold">],</span>
+
+                    <span style="color:#204a87;font-weight:bold">&#34;to_after_key_up&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+                        <span style="color:#a40000">to</span> <span style="color:#a40000">event</span> <span style="color:#a40000">definition</span><span style="color:#000;font-weight:bold">,</span>
+                        <span style="color:#a40000">to</span> <span style="color:#a40000">event</span> <span style="color:#a40000">definition</span><span style="color:#000;font-weight:bold">,</span>
+                        <span style="color:#a40000">...</span>
+                    <span style="color:#000;font-weight:bold">],</span>
+
+                    <span style="color:#204a87;font-weight:bold">&#34;to_delayed_action&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+                        <span style="color:#204a87;font-weight:bold">&#34;to_if_invoked&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+                            <span style="color:#a40000">to</span> <span style="color:#a40000">event</span> <span style="color:#a40000">definition</span><span style="color:#000;font-weight:bold">,</span>
+                            <span style="color:#a40000">to</span> <span style="color:#a40000">event</span> <span style="color:#a40000">definition</span><span style="color:#000;font-weight:bold">,</span>
+                            <span style="color:#a40000">...</span>
+                        <span style="color:#000;font-weight:bold">],</span>
+                        <span style="color:#204a87;font-weight:bold">&#34;to_if_canceled&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+                            <span style="color:#a40000">to</span> <span style="color:#a40000">event</span> <span style="color:#a40000">definition</span><span style="color:#000;font-weight:bold">,</span>
+                            <span style="color:#a40000">to</span> <span style="color:#a40000">event</span> <span style="color:#a40000">definition</span><span style="color:#000;font-weight:bold">,</span>
+                            <span style="color:#a40000">...</span>
+                        <span style="color:#000;font-weight:bold">]</span>
+                    <span style="color:#000;font-weight:bold">},</span>
+
+                    <span style="color:#204a87;font-weight:bold">&#34;conditions&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+                        <span style="color:#a40000">condition</span> <span style="color:#a40000">definition</span><span style="color:#000;font-weight:bold">,</span>
+                        <span style="color:#a40000">condition</span> <span style="color:#a40000">definition</span><span style="color:#000;font-weight:bold">,</span>
+                        <span style="color:#a40000">...</span>
+                    <span style="color:#000;font-weight:bold">],</span>
+
+                    <span style="color:#204a87;font-weight:bold">&#34;parameters&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+                        <span style="color:#a40000">...</span>
+                    <span style="color:#000;font-weight:bold">},</span>
+
+                    <span style="color:#204a87;font-weight:bold">&#34;description&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;Optional description for human&#34;</span>
+                <span style="color:#000;font-weight:bold">},</span>
+                <span style="color:#000;font-weight:bold">{</span>
+                    <span style="color:#204a87;font-weight:bold">&#34;type&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;basic&#34;</span><span style="color:#000;font-weight:bold">,</span>
+                    <span style="color:#a40000">...</span>
+                <span style="color:#000;font-weight:bold">},</span>
+                <span style="color:#a40000">...</span>
+            <span style="color:#000;font-weight:bold">]</span>
+        <span style="color:#000;font-weight:bold">},</span>
+        <span style="color:#000;font-weight:bold">{</span>
+            <span style="color:#204a87;font-weight:bold">&#34;description&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;...&#34;</span><span style="color:#000;font-weight:bold">,</span>
+            <span style="color:#204a87;font-weight:bold">&#34;manipulators&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+                <span style="color:#a40000">...</span>
+            <span style="color:#000;font-weight:bold">]</span>
+        <span style="color:#000;font-weight:bold">},</span>
+        <span style="color:#a40000">...</span>
+    <span style="color:#000;font-weight:bold">]</span>
 <span style="color:#000;font-weight:bold">}</span>
 </code></pre></div>
 	

@@ -422,11 +422,12 @@ If you do not include &lt;code&gt;any&lt;/code&gt; in &lt;code&gt;modifiers.opti
 
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
-There are some cases &lt;code&gt;simultaneous&lt;/code&gt; does not modify events.&lt;/p&gt;
+&lt;p&gt;There are some cases &lt;code&gt;simultaneous&lt;/code&gt; does not modify events.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;simultaneous&lt;/code&gt; does not modify events if any &lt;code&gt;from&lt;/code&gt; events are released before all &lt;code&gt;from&lt;/code&gt; events are pressed.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;simultaneous&lt;/code&gt; does not modify events if &lt;code&gt;from&lt;/code&gt; events are interrupted by another key_down event.&lt;/li&gt;
 &lt;/ul&gt;
+
 &lt;/div&gt;
 
 &lt;h3 id=&#34;manipulated-input-1&#34;&gt;Manipulated input #1&lt;/h3&gt;

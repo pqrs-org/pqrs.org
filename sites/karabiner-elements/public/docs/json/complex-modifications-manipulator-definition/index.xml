@@ -201,7 +201,7 @@ You may lose the left click button and system will be unusable.
 
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
-The following keys are exclusive.&lt;br/&gt;
+&lt;p&gt;The following keys are exclusive.&lt;br/&gt;
 You cannot specify multiple items into one &lt;code&gt;to&lt;/code&gt; entry.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;key_code&lt;/code&gt;&lt;/li&gt;
@@ -212,6 +212,7 @@ You cannot specify multiple items into one &lt;code&gt;to&lt;/code&gt; entry.&lt
 &lt;li&gt;&lt;code&gt;set_variable&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;mouse_key&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
+
 &lt;/div&gt;
 
 &lt;table&gt;
@@ -430,11 +431,12 @@ If &lt;code&gt;to&lt;/code&gt; events are specified, &lt;code&gt;key_up&lt;/code
 
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Tips&lt;/h4&gt;
-&lt;code&gt;to_after_key_up&lt;/code&gt; is typically used to:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;to_after_key_up&lt;/code&gt; is typically used to:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Unset variables using &lt;a href=&#34;../to/set-variable/&#34;&gt;&lt;code&gt;set_variable&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Used with &lt;code&gt;to_if_held_down&lt;/code&gt; and &lt;code&gt;to.halt&lt;/code&gt; in order to define fallback behavior.&lt;/li&gt;
 &lt;/ul&gt;
+
 &lt;/div&gt;
 
 &lt;h2 id=&#34;example&#34;&gt;Example&lt;/h2&gt;
@@ -486,11 +488,12 @@ If &lt;code&gt;to&lt;/code&gt; events are specified, &lt;code&gt;key_up&lt;/code
 
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Tips&lt;/h4&gt;
-&lt;code&gt;to_delayed_action&lt;/code&gt; is typically used to:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;to_delayed_action&lt;/code&gt; is typically used to:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Double tap key (e.g., change &lt;code&gt;right_shift x2&lt;/code&gt;)&lt;/li&gt;
 &lt;li&gt;2 stroke keys such as C-x of Emacs Mode.&lt;/li&gt;
 &lt;/ul&gt;
+
 &lt;/div&gt;
 
 &lt;h2 id=&#34;example&#34;&gt;Example&lt;/h2&gt;
