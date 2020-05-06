@@ -463,51 +463,6 @@ use &lt;a href=&#34;https://ke-complex-modifications.pqrs.org/#mouse_button&#34;
     </item>
     
     <item>
-      <title>Docs: How to quit</title>
-      <link>/docs/manual/operation/quit/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/docs/manual/operation/quit/</guid>
-      <description>
-        
-        
-        &lt;p&gt;Karabiner-Elements keeps running in the background even if you close the preferences window.&lt;br /&gt;
-To quit Karabiner-Elements, choose &amp;ldquo;Quit Karabiner-Elements&amp;rdquo; from menu bar.&lt;/p&gt;
-
-
-
-
-  
-
-
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/manual/operation/quit/images/karabiner-elements-menu-quit@2x.png&#34;
-    alt=&#34;karabiner-elements-menu-quit@2x.png&#34;
-    style=&#34;width: 441px&#34;
-  /&gt;
-&lt;/figure&gt;
-
-
-
-&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
-&lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
-&lt;p&gt;If you&amp;rsquo;ve hidden the menu bar icon, you can also quit Karabiner-Elements from Preferences.&lt;/p&gt;
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/manual/operation/quit/images/karabiner-elements-quit@2x.png&#34;
-    alt=&#34;karabiner-elements-quit@2x.png&#34;
-    style=&#34;width: 900px&#34;
-  /&gt;
-&lt;/figure&gt;
-
-&lt;/div&gt;
-
-
-      </description>
-    </item>
-    
-    <item>
       <title>Docs: Installation</title>
       <link>/docs/getting-started/installation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -811,6 +766,51 @@ If you want to remove Karabiner-Elements, you have to use &lt;a href=&#34;/docs/
     </item>
     
     <item>
+      <title>Docs: Quit</title>
+      <link>/docs/manual/operation/quit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/manual/operation/quit/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Karabiner-Elements keeps running in the background even if you close the preferences window.&lt;br /&gt;
+To quit Karabiner-Elements, choose &amp;ldquo;Quit Karabiner-Elements&amp;rdquo; from menu bar.&lt;/p&gt;
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/manual/operation/quit/images/karabiner-elements-menu-quit@2x.png&#34;
+    alt=&#34;karabiner-elements-menu-quit@2x.png&#34;
+    style=&#34;width: 441px&#34;
+  /&gt;
+&lt;/figure&gt;
+
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
+&lt;p&gt;If you&amp;rsquo;ve hidden the menu bar icon, you can also quit Karabiner-Elements from Preferences.&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/manual/operation/quit/images/karabiner-elements-quit@2x.png&#34;
+    alt=&#34;karabiner-elements-quit@2x.png&#34;
+    style=&#34;width: 900px&#34;
+  /&gt;
+&lt;/figure&gt;
+
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
       <title>Docs: to.shell_command</title>
       <link>/docs/json/complex-modifications-manipulator-definition/to/shell-command/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -838,6 +838,35 @@ If you want to remove Karabiner-Elements, you have to use &lt;a href=&#34;/docs/
     &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]&lt;/span&gt;
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Restart</title>
+      <link>/docs/manual/operation/restart/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/manual/operation/restart/</guid>
+      <description>
+        
+        
+        &lt;p&gt;You can restart Karabiner-Elements from Preferences.&lt;/p&gt;
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/manual/operation/restart/images/restart@2x.png&#34;
+    alt=&#34;restart@2x.png&#34;
+    style=&#34;width: 1000px&#34;
+  /&gt;
+&lt;/figure&gt;
+
+
       </description>
     </item>
     
@@ -2757,6 +2786,54 @@ In other words, we cannot post the fn key event through the built-in keyboard if
     </item>
     
     <item>
+      <title>Docs: Confirm the result of configuration (EventViewer)</title>
+      <link>/docs/manual/operation/eventviewer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/manual/operation/eventviewer/</guid>
+      <description>
+        
+        
+        &lt;p&gt;You can show keyboard and mouse events by using EventViewer.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Open Karabiner-EventViewer from Launchpad.
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/manual/operation/eventviewer/images/karabiner-elements-eventviewer-icon@2x.png&#34;
+    alt=&#34;karabiner-elements-eventviewer-icon@2x.png&#34;
+    style=&#34;width: 210px&#34;
+  /&gt;
+&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;Input events will be shown when you type keyboard on EventViewer or press pointing buttons on Mouse Area.
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/manual/operation/eventviewer/images/karabiner-elements-eventviewer@2x.png&#34;
+    alt=&#34;karabiner-elements-eventviewer@2x.png&#34;
+    style=&#34;width: 874px&#34;
+  /&gt;
+&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Docs: Control-eject shortcut does not work when Karabiner-Elements is running</title>
       <link>/docs/help/troubleshooting/control-eject/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -3000,54 +3077,6 @@ Events will be posted just before the last from event&amp;rsquo;s key_up.
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: How to confirm the result of configuration (EventViewer)</title>
-      <link>/docs/manual/operation/eventviewer/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/docs/manual/operation/eventviewer/</guid>
-      <description>
-        
-        
-        &lt;p&gt;You can show keyboard and mouse events by using EventViewer.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Open Karabiner-EventViewer from Launchpad.
-
-
-
-
-  
-
-
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/manual/operation/eventviewer/images/karabiner-elements-eventviewer-icon@2x.png&#34;
-    alt=&#34;karabiner-elements-eventviewer-icon@2x.png&#34;
-    style=&#34;width: 210px&#34;
-  /&gt;
-&lt;/figure&gt;
-&lt;/li&gt;
-&lt;li&gt;Input events will be shown when you type keyboard on EventViewer or press pointing buttons on Mouse Area.
-
-
-
-
-  
-
-
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/manual/operation/eventviewer/images/karabiner-elements-eventviewer@2x.png&#34;
-    alt=&#34;karabiner-elements-eventviewer@2x.png&#34;
-    style=&#34;width: 874px&#34;
-  /&gt;
-&lt;/figure&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
 
       </description>
     </item>
@@ -3705,7 +3734,7 @@ Examples:
     </item>
     
     <item>
-      <title>Docs: Multiple profiles</title>
+      <title>Docs: Manage profiles</title>
       <link>/docs/manual/operation/profiles/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -3984,50 +4013,6 @@ Press &lt;strong&gt;Add profile&lt;/strong&gt; button to add new profile.&lt;/p&
   /&gt;
 &lt;/figure&gt;
 
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: event_changed_if, event_changed_unless</title>
-      <link>/docs/json/complex-modifications-manipulator-definition/conditions/event-changed/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/docs/json/complex-modifications-manipulator-definition/conditions/event-changed/</guid>
-      <description>
-        
-        
-        &lt;p&gt;Change an event if/unless the event is already changed by other manipulators.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
-    &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;#34;type&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;event_changed_if&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
-    &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;#34;value&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;true&lt;/span&gt;
-&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Name&lt;/th&gt;
-&lt;th&gt;Required&lt;/th&gt;
-&lt;th&gt;Description&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;type&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;strong&gt;Required&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;&amp;quot;event_changed_if&amp;quot;&lt;/code&gt; or &lt;code&gt;&amp;quot;event_changed_unless&amp;quot;&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;value&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;strong&gt;Required&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;true&lt;/code&gt; or &lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;description&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;Optional&lt;/td&gt;
-&lt;td&gt;A human-readable comment&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
 
       </description>
     </item>

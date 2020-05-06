@@ -47,10 +47,6 @@
   </url>
   
   <url>
-    <loc>/docs/manual/operation/quit/</loc>
-  </url>
-  
-  <url>
     <loc>/docs/getting-started/installation/</loc>
   </url>
   
@@ -67,11 +63,19 @@
   </url>
   
   <url>
+    <loc>/docs/manual/operation/quit/</loc>
+  </url>
+  
+  <url>
     <loc>/docs/json/complex-modifications-manipulator-definition/to/shell-command/</loc>
   </url>
   
   <url>
     <loc>/docs/help/troubleshooting/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/manual/operation/restart/</loc>
   </url>
   
   <url>
@@ -187,6 +191,10 @@
   </url>
   
   <url>
+    <loc>/docs/manual/operation/eventviewer/</loc>
+  </url>
+  
+  <url>
     <loc>/docs/help/troubleshooting/control-eject/</loc>
   </url>
   
@@ -200,10 +208,6 @@
   
   <url>
     <loc>/docs/help/</loc>
-  </url>
-  
-  <url>
-    <loc>/docs/manual/operation/eventviewer/</loc>
   </url>
   
   <url>
