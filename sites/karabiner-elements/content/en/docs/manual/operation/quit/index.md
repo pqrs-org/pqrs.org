@@ -1,5 +1,5 @@
 ---
-title: 'How to quit'
+title: 'Quit'
 weight: 100
 ---
 

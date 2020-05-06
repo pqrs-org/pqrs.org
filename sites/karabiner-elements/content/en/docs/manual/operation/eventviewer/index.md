@@ -1,5 +1,5 @@
 ---
-title: 'How to confirm the result of configuration (EventViewer)'
+title: 'Confirm the result of configuration (EventViewer)'
 weight: 400
 ---
 

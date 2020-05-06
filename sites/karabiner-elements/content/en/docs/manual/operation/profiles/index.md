@@ -1,5 +1,5 @@
 ---
-title: 'Multiple profiles'
+title: 'Manage profiles'
 weight: 500
 ---
 
