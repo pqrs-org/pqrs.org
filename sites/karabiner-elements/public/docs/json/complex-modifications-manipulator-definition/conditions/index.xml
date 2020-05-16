@@ -547,6 +547,15 @@
 &lt;/tbody&gt;
 &lt;/table&gt;
 
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Tip&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;event_changed_unless&lt;/code&gt; is designed to prevent &lt;code&gt;Function Keys Modifications&lt;/code&gt; from changing fx keys which are changed in &lt;code&gt;Complex Modifications&lt;/code&gt; (e.g., Change command+e to f2).&lt;/p&gt;
+&lt;p&gt;If you use &lt;code&gt;event_changed_if&lt;/code&gt; or &lt;code&gt;event_changed_unless&lt;/code&gt; in &lt;code&gt;Complex Modifications&lt;/code&gt;, your rule is ignored for keys which are changed in &lt;code&gt;Simple Modifications&lt;/code&gt;.&lt;/p&gt;
+
+&lt;/div&gt;
+
+
       </description>
     </item>
     
