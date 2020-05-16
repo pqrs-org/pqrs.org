@@ -5,7 +5,7 @@ weight: 500
 
 `to_after_key_up` posts events when the `from` key is released.
 
-{{% alert title="Tips" color="primary" %}}
+{{% alert title="Tip" color="primary" %}}
 
 `to_after_key_up` is typically used to:
 

@@ -10,7 +10,7 @@ weight: 600
 -   `to_delayed_action.to_if_canceled`
     -   An array of `to` events that will be sent if another key is pressed after the `from` key is pressed before `to_delayed_action.to_if_invoked` is sent.
 
-{{% alert title="Tips" color="primary" %}}
+{{% alert title="Tip" color="primary" %}}
 
 `to_delayed_action` is typically used to:
 

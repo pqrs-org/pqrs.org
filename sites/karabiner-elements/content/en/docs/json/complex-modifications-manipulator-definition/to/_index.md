@@ -73,7 +73,7 @@ You cannot specify multiple items into one `to` entry.
 -   You can also confirm [names in list](https://github.com/pqrs-org/Karabiner-Elements/blob/master/src/apps/PreferencesWindow/Resources/simple_modifications.json).
     (See `"data"` in the list.)
 
-{{% alert title="Tips" color="primary" %}}
+{{% alert title="Tip" color="primary" %}}
 
 You can also specify `key_code`, `consumer_key_code`, `pointing_button` with raw number as follows.<br />
 
