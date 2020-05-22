@@ -3651,6 +3651,26 @@ Speed and scroll direction depend on System Preferences &amp;gt; Mouse configura
     </item>
     
     <item>
+      <title>Docs: Cannot use some three key combinations (key event is not fired)</title>
+      <link>/docs/help/troubleshooting/cannot-use-some-key-combination/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/help/troubleshooting/cannot-use-some-key-combination/</guid>
+      <description>
+        
+        
+        &lt;p&gt;It&amp;rsquo;s a hardware limitation of your keyboard called &amp;ldquo;two-key rollover&amp;rdquo; if you cannot use some three key combinations.
+(e.g., &lt;code&gt;physical left command key + right command key + m&lt;/code&gt;)&lt;/p&gt;
+&lt;p&gt;There are two way to avoid the rollover problem.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Use another hardware which is N-key rollover.&lt;/li&gt;
+&lt;li&gt;Use other key combinations.&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Docs: &#34;karabiner.json is not owned by a valid user&#34; error message in log</title>
       <link>/docs/help/troubleshooting/json-owner-is-invalid/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -3973,43 +3993,6 @@ Press &lt;strong&gt;Add profile&lt;/strong&gt; button to add new profile.&lt;/p&
     src=&#34;/docs/json/complex-modifications-manipulator-definition/conditions/variable/images/eventviewer-variables@2x.png&#34;
     alt=&#34;eventviewer-variables@2x.png&#34;
     style=&#34;width: 874px&#34;
-  /&gt;
-&lt;/figure&gt;
-
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: Configure icon in menu bar</title>
-      <link>/docs/manual/configuration/configure-menu-bar-icon/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/docs/manual/configuration/configure-menu-bar-icon/</guid>
-      <description>
-        
-        
-        &lt;p&gt;Karabiner-Elements shows an icon in menu bar which provides the following functions:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Switch profiles.&lt;/li&gt;
-&lt;li&gt;Open Preferences.&lt;/li&gt;
-&lt;li&gt;Check for updates.&lt;/li&gt;
-&lt;li&gt;Open EventViewer.&lt;/li&gt;
-&lt;li&gt;Quit Karabiner-Elements.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;If you want to hide it, turn off &amp;ldquo;Show icon in menu bar&amp;rdquo; on Preferences &amp;gt; Misc tab.&lt;/p&gt;
-
-
-
-
-  
-
-
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/manual/configuration/configure-menu-bar-icon/images/menu-bar-icon-preferences@2x.png&#34;
-    alt=&#34;menu-bar-icon-preferences@2x.png&#34;
-    style=&#34;width: 1000px&#34;
   /&gt;
 &lt;/figure&gt;
 

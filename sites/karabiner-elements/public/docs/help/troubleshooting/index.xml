@@ -237,6 +237,26 @@ You can use control+fn+escape as control+eject.
     </item>
     
     <item>
+      <title>Docs: Cannot use some three key combinations (key event is not fired)</title>
+      <link>/docs/help/troubleshooting/cannot-use-some-key-combination/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/help/troubleshooting/cannot-use-some-key-combination/</guid>
+      <description>
+        
+        
+        &lt;p&gt;It&amp;rsquo;s a hardware limitation of your keyboard called &amp;ldquo;two-key rollover&amp;rdquo; if you cannot use some three key combinations.
+(e.g., &lt;code&gt;physical left command key + right command key + m&lt;/code&gt;)&lt;/p&gt;
+&lt;p&gt;There are two way to avoid the rollover problem.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Use another hardware which is N-key rollover.&lt;/li&gt;
+&lt;li&gt;Use other key combinations.&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Docs: &#34;karabiner.json is not owned by a valid user&#34; error message in log</title>
       <link>/docs/help/troubleshooting/json-owner-is-invalid/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
