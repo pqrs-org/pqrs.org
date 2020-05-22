@@ -8,5 +8,5 @@ It's a hardware limitation of your keyboard called "two-key rollover" if you can
 
 There are two way to avoid the rollover problem.
 
--   Use another hardware which is N-key rollover.
+-   Use another keyboard which is N-key rollover.
 -   Use other key combinations.
