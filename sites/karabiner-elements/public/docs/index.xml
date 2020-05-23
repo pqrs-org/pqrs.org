@@ -2794,7 +2794,8 @@ In other words, we cannot post the fn key event through the built-in keyboard if
       <description>
         
         
-        &lt;p&gt;You can show keyboard and mouse events by using EventViewer.&lt;/p&gt;
+        &lt;p&gt;Karabiner-Elements provides a built-in event viewer named Karabiner-EventViewer.
+You can show keyboard and mouse events by using it.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Open Karabiner-EventViewer from Launchpad.
 
