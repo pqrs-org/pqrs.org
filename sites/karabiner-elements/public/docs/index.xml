@@ -2763,7 +2763,7 @@ Instead, please change fn+number keys to function keys in Karabiner-Elements con
 
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
-If you are using &amp;ldquo;Use all F1, F2, etc. keys as standard function keys.&amp;quot;,
+If you are using &amp;ldquo;Use all F1, F2, etc. keys as standard function keys.&amp;rdquo;,
 enable &lt;code&gt;Map fn + number keys to their corresponding media control keys&lt;/code&gt; instead.
 &lt;/div&gt;
 
