@@ -21,17 +21,15 @@
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
 <title>Release notes | Karabiner-Elements</title><meta property="og:title" content="Release notes" />
-<meta property="og:description" content="Karabiner-Elements 12.9.0  📦 Download 📅 Release date  Jan 18, 2020   ✨ New Features  Open config folder button has been added into Preferences.
-The feature provides an easy way exporting configuration.   ⚡️ Improvements  Added a workaround for non-dismissible Device is ignored temporarily alert which is caused by some devices that sends abnormal input events.   🐛 Bug Fixes  Fixed Add {key_code} to Karabiner-Elements button on EventViewer for unnamed keys (raw number key codes)." />
+<meta property="og:description" content="Karabiner-Elements 12.10.0  📦 Download 📅 Release date  Jun 27, 2020   ✨ New Features  event_changed_if and event_changed_unless has been added to conditions.   ⚡️ Improvements  Improved sending f1-f12 keys in complex modification (e.g., &ldquo;change command&#43;e to f2&rdquo;) by ignoring media key mappings for these keys. Improved caps lock LED handling. Improved uninstaller adding the kernel extension staging area clean up. Improved complex modifications json checker." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/releasenotes/" />
 <meta property="og:image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
 <meta property="og:site_name" content="Karabiner-Elements" />
 <meta itemprop="name" content="Release notes">
-<meta itemprop="description" content="Karabiner-Elements 12.9.0  📦 Download 📅 Release date  Jan 18, 2020   ✨ New Features  Open config folder button has been added into Preferences.
-The feature provides an easy way exporting configuration.   ⚡️ Improvements  Added a workaround for non-dismissible Device is ignored temporarily alert which is caused by some devices that sends abnormal input events.   🐛 Bug Fixes  Fixed Add {key_code} to Karabiner-Elements button on EventViewer for unnamed keys (raw number key codes).">
+<meta itemprop="description" content="Karabiner-Elements 12.10.0  📦 Download 📅 Release date  Jun 27, 2020   ✨ New Features  event_changed_if and event_changed_unless has been added to conditions.   ⚡️ Improvements  Improved sending f1-f12 keys in complex modification (e.g., &ldquo;change command&#43;e to f2&rdquo;) by ignoring media key mappings for these keys. Improved caps lock LED handling. Improved uninstaller adding the kernel extension staging area clean up. Improved complex modifications json checker.">
 
-<meta itemprop="wordCount" content="5727">
+<meta itemprop="wordCount" content="5810">
 <meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
 
 
@@ -40,8 +38,7 @@ The feature provides an easy way exporting configuration.   ⚡️ Improvements 
 <meta name="twitter:image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
 
 <meta name="twitter:title" content="Release notes"/>
-<meta name="twitter:description" content="Karabiner-Elements 12.9.0  📦 Download 📅 Release date  Jan 18, 2020   ✨ New Features  Open config folder button has been added into Preferences.
-The feature provides an easy way exporting configuration.   ⚡️ Improvements  Added a workaround for non-dismissible Device is ignored temporarily alert which is caused by some devices that sends abnormal input events.   🐛 Bug Fixes  Fixed Add {key_code} to Karabiner-Elements button on EventViewer for unnamed keys (raw number key codes)."/>
+<meta name="twitter:description" content="Karabiner-Elements 12.10.0  📦 Download 📅 Release date  Jun 27, 2020   ✨ New Features  event_changed_if and event_changed_unless has been added to conditions.   ⚡️ Improvements  Improved sending f1-f12 keys in complex modification (e.g., &ldquo;change command&#43;e to f2&rdquo;) by ignoring media key mappings for these keys. Improved caps lock LED handling. Improved uninstaller adding the kernel extension staging area clean up. Improved complex modifications json checker."/>
 
 
 <script type="application/javascript">
@@ -111,7 +108,7 @@ if (!doNotTrack) {
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.032f1753772acaf827e3debd70debfbfe761f3d9a509b722475748c48d07c3b02abf284ae63bdc98f2e493604934c194da106f4d982d0cdc96bb56b7ea6bf9be.json"
+  data-offline-search-index-json-src="/offline-search-index.2ba0edf505bda9f7e4ed0990907ec7c2136486128e75de3117836591bdb231cd3a120bfe3bebab4e2ea458de03d35c188841d989063b688c73892917631dfd9d.json"
   data-offline-search-base-href="/"
   data-offlnie-search-max-results="25"
 >
@@ -142,7 +139,7 @@ if (!doNotTrack) {
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.032f1753772acaf827e3debd70debfbfe761f3d9a509b722475748c48d07c3b02abf284ae63bdc98f2e493604934c194da106f4d982d0cdc96bb56b7ea6bf9be.json"
+  data-offline-search-index-json-src="/offline-search-index.2ba0edf505bda9f7e4ed0990907ec7c2136486128e75de3117836591bdb231cd3a120bfe3bebab4e2ea458de03d35c188841d989063b688c73892917631dfd9d.json"
   data-offline-search-base-href="/"
   data-offlnie-search-max-results="25"
 >
@@ -1056,6 +1053,7 @@ if (!doNotTrack) {
 
 <nav id="TableOfContents">
   <ul>
+    <li><a href="#karabiner-elements-12100">Karabiner-Elements 12.10.0</a></li>
     <li><a href="#karabiner-elements-1290">Karabiner-Elements 12.9.0</a></li>
     <li><a href="#karabiner-elements-1280">Karabiner-Elements 12.8.0</a></li>
     <li><a href="#karabiner-elements-1270">Karabiner-Elements 12.7.0</a></li>
@@ -1174,7 +1172,35 @@ if (!doNotTrack) {
             
 <div class="td-content release-notes">
 	<h1>Release notes</h1>
-	<h2 id="karabiner-elements-1290">Karabiner-Elements 12.9.0</h2>
+	<h2 id="karabiner-elements-12100">Karabiner-Elements 12.10.0</h2>
+<ul>
+<li><a href="https://github.com/pqrs-org/Karabiner-Elements/releases/download/v12.10.0/Karabiner-Elements-12.10.0.dmg">📦 Download</a></li>
+<li>📅 Release date
+<ul>
+<li>Jun 27, 2020</li>
+</ul>
+</li>
+<li>✨ New Features
+<ul>
+<li><code>event_changed_if</code> and <code>event_changed_unless</code> has been added to <code>conditions</code>.</li>
+</ul>
+</li>
+<li>⚡️ Improvements
+<ul>
+<li>Improved sending f1-f12 keys in complex modification (e.g., &ldquo;change command+e to f2&rdquo;) by ignoring media key mappings for these keys.</li>
+<li>Improved caps lock LED handling.</li>
+<li>Improved uninstaller adding the kernel extension staging area clean up.</li>
+<li>Improved complex modifications json checker.</li>
+<li>&ldquo;Check for updates&rdquo; has been improved.
+<ul>
+<li>Updated Sparkle signing to EdDSA (ed25519) from DSA.</li>
+<li>URL of appcast.xml has been updated.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="karabiner-elements-1290">Karabiner-Elements 12.9.0</h2>
 <ul>
 <li><a href="https://github.com/pqrs-org/Karabiner-Elements/releases/download/v12.9.0/Karabiner-Elements-12.9.0.dmg">📦 Download</a></li>
 <li>📅 Release date
