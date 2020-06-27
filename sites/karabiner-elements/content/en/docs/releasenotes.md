@@ -6,6 +6,22 @@ exclude_search: true
 type: releasenotes
 ---
 
+## Karabiner-Elements 12.10.0
+
+-   [📦 Download](https://github.com/pqrs-org/Karabiner-Elements/releases/download/v12.10.0/Karabiner-Elements-12.10.0.dmg)
+-   📅 Release date
+    -   Jun 27, 2020
+-   ✨ New Features
+    -   `event_changed_if` and `event_changed_unless` has been added to `conditions`.
+-   ⚡️ Improvements
+    -   Improved sending f1-f12 keys in complex modification (e.g., "change command+e to f2") by ignoring media key mappings for these keys.
+    -   Improved caps lock LED handling.
+    -   Improved uninstaller adding the kernel extension staging area clean up.
+    -   Improved complex modifications json checker.
+    -   "Check for updates" has been improved.
+        -   Updated Sparkle signing to EdDSA (ed25519) from DSA.
+        -   URL of appcast.xml has been updated.
+
 ## Karabiner-Elements 12.9.0
 
 -   [📦 Download](https://github.com/pqrs-org/Karabiner-Elements/releases/download/v12.9.0/Karabiner-Elements-12.9.0.dmg)

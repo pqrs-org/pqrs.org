@@ -28,8 +28,8 @@ Please fill your information when you send bug reports:
 Example:
 
 ```text
-macOS version: macOS 10.15.2
-Karabiner version: Karabiner-Elements 12.9.0
+macOS version: macOS 10.15.5
+Karabiner version: Karabiner-Elements 12.10.0
 Your Mac hardware: MacBook Pro
 Your keyboard hardware: Das Keyboard 4 Professional for Mac Mechanical Keyboard
 ```
