@@ -321,5 +321,35 @@ Karabiner-Elements that the parent directory is changed.&lt;/p&gt;
       </description>
     </item>
     
+    <item>
+      <title>Docs: About &#34;Legacy System Extension&#34; alert</title>
+      <link>/docs/manual/misc/legacy-system-extension/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/manual/misc/legacy-system-extension/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The following alert will be shown on macOS Catalina because Karabiner-Elements 12.x.x or earlier use kernel extension (aka legacy system extension) in order to provide virtual keyboard and pointing device.&lt;/p&gt;
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/manual/misc/legacy-system-extension/images/legacy-system-extension@2x.png&#34;
+    alt=&#34;legacy-system-extension@2x.png&#34;
+    style=&#34;width: 420px&#34;
+  /&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;We are working to migrate to a newer mechanism, DriverKit, from kernel extension and we plan to support it at Karabiner-Elements 13.0.0.&lt;/p&gt;
+
+      </description>
+    </item>
+    
   </channel>
 </rss>
