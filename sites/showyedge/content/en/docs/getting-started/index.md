@@ -6,7 +6,7 @@ simple_list: true
 
 ## System requirements
 
--   macOS 10.9 or later
+-   macOS Catalina (10.15) or later
 
 ## Installation
 
@@ -16,9 +16,8 @@ simple_list: true
     {{< local-image src="images/install@2x.png" >}}
 4.  Open ShowyEdge from Launchpad.
     {{< local-image src="images/launchpad@2x.png" >}}
-5.  Preferences will be opened.
-    Change values if needed and then close the window.
-    {{< local-image src="images/preferences@2x.png" >}}
+5.  Menu bar icon will be added.
+    {{< local-image src="images/menu@2x.png" >}}
 
 ## What's next?
 
