@@ -24,7 +24,7 @@
         
         &lt;h2 id=&#34;system-requirements&#34;&gt;System requirements&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;macOS 10.9 or later&lt;/li&gt;
+&lt;li&gt;macOS Catalina (10.15) or later&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;
 &lt;ol&gt;
@@ -42,7 +42,7 @@
   &lt;img
     src=&#34;/docs/getting-started/images/install@2x.png&#34;
     alt=&#34;install@2x.png&#34;
-    style=&#34;width: 526px&#34;
+    style=&#34;width: 660px&#34;
   /&gt;
 &lt;/figure&gt;
 &lt;/li&gt;
@@ -62,8 +62,7 @@
   /&gt;
 &lt;/figure&gt;
 &lt;/li&gt;
-&lt;li&gt;Preferences will be opened.
-Change values if needed and then close the window.
+&lt;li&gt;Menu bar icon will be added.
 
 
 
@@ -73,9 +72,9 @@ Change values if needed and then close the window.
 
 &lt;figure&gt;
   &lt;img
-    src=&#34;/docs/getting-started/images/preferences@2x.png&#34;
-    alt=&#34;preferences@2x.png&#34;
-    style=&#34;width: 640px&#34;
+    src=&#34;/docs/getting-started/images/menu@2x.png&#34;
+    alt=&#34;menu@2x.png&#34;
+    style=&#34;width: 386px&#34;
   /&gt;
 &lt;/figure&gt;
 &lt;/li&gt;
@@ -98,10 +97,7 @@ Change values if needed and then close the window.
         
         
         &lt;p&gt;ShowyEdge keeps running in the background even if you close the preferences window.&lt;br /&gt;
-To quit ShowyEdge, proceed as follows:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;../../configuration/open-preferences-window/&#34;&gt;Open preferences window&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Press &lt;code&gt;Quit ShowyEdge&lt;/code&gt; button.
+To quit ShowyEdge, choose &amp;ldquo;Quit ShowyEdge&amp;rdquo; from menu bar.&lt;/p&gt;
 
 
 
@@ -111,13 +107,31 @@ To quit ShowyEdge, proceed as follows:&lt;/p&gt;
 
 &lt;figure&gt;
   &lt;img
+    src=&#34;/docs/help/quit/images/menu-quit@2x.png&#34;
+    alt=&#34;menu-quit@2x.png&#34;
+    style=&#34;width: 273px&#34;
+  /&gt;
+&lt;/figure&gt;
+
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
+&lt;p&gt;If you&amp;rsquo;ve hidden the menu bar icon, you can also quit ShowyEdge from Preferences.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;../../configuration/open-preferences-window/&#34;&gt;Open preferences window&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Press &lt;code&gt;Quit ShowyEdge&lt;/code&gt; button.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure&gt;
+  &lt;img
     src=&#34;/docs/help/quit/images/quit@2x.png&#34;
     alt=&#34;quit@2x.png&#34;
     style=&#34;width: 640px&#34;
   /&gt;
 &lt;/figure&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
+
+&lt;/div&gt;
+
 
       </description>
     </item>
@@ -132,7 +146,7 @@ To quit ShowyEdge, proceed as follows:&lt;/p&gt;
         
         
         &lt;ol&gt;
-&lt;li&gt;Open ShowyEdge from Launchpad. The preferences window will be shown.
+&lt;li&gt;Open Preferences from menu bar.
 
 
 
@@ -140,6 +154,20 @@ To quit ShowyEdge, proceed as follows:&lt;/p&gt;
   
 
 
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/configuration/open-preferences-window/images/menu-icon@2x.png&#34;
+    alt=&#34;menu-icon@2x.png&#34;
+    style=&#34;width: 263px&#34;
+  /&gt;
+&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
+&lt;p&gt;If you&amp;rsquo;ve hidden the menu bar icon, open ShowyEdge again from Launchpad while ShowyEdge is already running to open preferences window.&lt;/p&gt;
 &lt;figure&gt;
   &lt;img
     src=&#34;/docs/configuration/open-preferences-window/images/launchpad@2x.png&#34;
@@ -148,22 +176,8 @@ To quit ShowyEdge, proceed as follows:&lt;/p&gt;
   /&gt;
 &lt;/figure&gt;
 
+&lt;/div&gt;
 
-
-
-
-  
-
-
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/configuration/open-preferences-window/images/preferences@2x.png&#34;
-    alt=&#34;preferences@2x.png&#34;
-    style=&#34;width: 640px&#34;
-  /&gt;
-&lt;/figure&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
 
       </description>
     </item>
@@ -367,19 +381,18 @@ You can use the Desktop background as an indicator.&lt;/li&gt;
     </item>
     
     <item>
-      <title>Docs: Resume configuration</title>
-      <link>/docs/configuration/resume-configuration/</link>
+      <title>Docs: Open at login</title>
+      <link>/docs/configuration/open-at-login/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/configuration/resume-configuration/</guid>
+      <guid>/docs/configuration/open-at-login/</guid>
       <description>
         
         
-        &lt;p&gt;ShowyEdge will be automatically started at login by default.&lt;br&gt;
-Follow instructions if you want to disable the feature.&lt;/p&gt;
+        &lt;p&gt;You can launch ShowyEdge automaticaly at login.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;a href=&#34;../open-preferences-window/&#34;&gt;Open preferences window&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Open &lt;code&gt;Advanced&lt;/code&gt; tab, then enable &lt;code&gt;Resume at login&lt;/code&gt;.
+&lt;li&gt;Enable &lt;code&gt;Open at login&lt;/code&gt;.
 
 
 
@@ -389,8 +402,8 @@ Follow instructions if you want to disable the feature.&lt;/p&gt;
 
 &lt;figure&gt;
   &lt;img
-    src=&#34;/docs/configuration/resume-configuration/images/resume-at-login@2x.png&#34;
-    alt=&#34;resume-at-login@2x.png&#34;
+    src=&#34;/docs/configuration/open-at-login/images/open-at-login@2x.png&#34;
+    alt=&#34;open-at-login@2x.png&#34;
     style=&#34;width: 640px&#34;
   /&gt;
 &lt;/figure&gt;

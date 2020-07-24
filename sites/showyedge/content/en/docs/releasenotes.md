@@ -6,6 +6,19 @@ exclude_search: true
 type: releasenotes
 ---
 
+## ShowyEdge 4.0.0
+
+-   [📦 Download](https://github.com/pqrs-org/ShowyEdge/releases/download/v4.0.0/ShowyEdge-4.0.0.dmg)
+-   📅 Release date
+    -   Jul 24, 2020
+-   ✨ New Features
+    -   Supported both Intel-based Macs and Apple Silicon Macs.
+    -   Added an icon to menu bar.
+-   🐛 Bug Fixes
+    -   Fixed `Hide indicator when full screen` when multiple displays are connected.
+-   💥 Breaking changes
+    -   macOS 10.9 - 10.14 support has been dropped.
+
 ## ShowyEdge 3.8.0
 
 -   [📦 Download](https://github.com/pqrs-org/ShowyEdge/releases/download/v3.8.0/ShowyEdge-3.8.0.dmg)
