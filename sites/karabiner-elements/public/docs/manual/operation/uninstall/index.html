@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="generator" content="Hugo 0.73.0" />
+<meta name="generator" content="Hugo 0.74.3" />
 
 <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
 
@@ -23,9 +23,9 @@
 <title>Uninstall | Karabiner-Elements</title><meta property="og:title" content="Uninstall" />
 <meta property="og:description" content="Karabiner-Elements provides built-in uninstaller.
 Use the uninstaller to remove Karabiner-Elements from your system.
-You can launch the uninstaller from &ldquo;Uninstall Karabiner-Elements&rdquo; button on Misc tab.   Advanced topic If you don&rsquo;t want to use above GUI, you can also uninstall Karabiner-Elements from command line.
+You can launch the uninstaller from &ldquo;Uninstall Karabiner-Elements&rdquo; button on Misc tab.   Uninstall from command line If you don&rsquo;t want to use above GUI, you can also uninstall Karabiner-Elements from command line.
 sudo &#39;/Library/Application Support/org.pqrs/Karabiner-Elements/uninstall_core.sh&#39; (Administrator password is required to run the above command.)
- " />
+ Advanced topic Operation not permitted error will occur if you try removing files by rm command." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/manual/operation/uninstall/" />
 <meta property="og:image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
@@ -33,24 +33,25 @@ sudo &#39;/Library/Application Support/org.pqrs/Karabiner-Elements/uninstall_cor
 <meta itemprop="name" content="Uninstall">
 <meta itemprop="description" content="Karabiner-Elements provides built-in uninstaller.
 Use the uninstaller to remove Karabiner-Elements from your system.
-You can launch the uninstaller from &ldquo;Uninstall Karabiner-Elements&rdquo; button on Misc tab.   Advanced topic If you don&rsquo;t want to use above GUI, you can also uninstall Karabiner-Elements from command line.
+You can launch the uninstaller from &ldquo;Uninstall Karabiner-Elements&rdquo; button on Misc tab.   Uninstall from command line If you don&rsquo;t want to use above GUI, you can also uninstall Karabiner-Elements from command line.
 sudo &#39;/Library/Application Support/org.pqrs/Karabiner-Elements/uninstall_core.sh&#39; (Administrator password is required to run the above command.)
- ">
+ Advanced topic Operation not permitted error will occur if you try removing files by rm command.">
 
-<meta itemprop="wordCount" content="55">
+<meta itemprop="wordCount" content="109">
 <meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
 
 
 
-<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image"/>
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
 
 <meta name="twitter:title" content="Uninstall"/>
 <meta name="twitter:description" content="Karabiner-Elements provides built-in uninstaller.
 Use the uninstaller to remove Karabiner-Elements from your system.
-You can launch the uninstaller from &ldquo;Uninstall Karabiner-Elements&rdquo; button on Misc tab.   Advanced topic If you don&rsquo;t want to use above GUI, you can also uninstall Karabiner-Elements from command line.
+You can launch the uninstaller from &ldquo;Uninstall Karabiner-Elements&rdquo; button on Misc tab.   Uninstall from command line If you don&rsquo;t want to use above GUI, you can also uninstall Karabiner-Elements from command line.
 sudo &#39;/Library/Application Support/org.pqrs/Karabiner-Elements/uninstall_core.sh&#39; (Administrator password is required to run the above command.)
- "/>
+ Advanced topic Operation not permitted error will occur if you try removing files by rm command."/>
 
 
 <script type="application/javascript">
@@ -120,7 +121,7 @@ if (!doNotTrack) {
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.2ba0edf505bda9f7e4ed0990907ec7c2136486128e75de3117836591bdb231cd3a120bfe3bebab4e2ea458de03d35c188841d989063b688c73892917631dfd9d.json"
+  data-offline-search-index-json-src="/offline-search-index.dc836c85af01e739127c1bf2806edbc713b4dde65725949c3328686755358a9ec461e4ec244b124341b4e24142723bd9fe66c04d674fd8e4175ab9cd6666b8d3.json"
   data-offline-search-base-href="/"
   data-offlnie-search-max-results="25"
 >
@@ -151,7 +152,7 @@ if (!doNotTrack) {
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.2ba0edf505bda9f7e4ed0990907ec7c2136486128e75de3117836591bdb231cd3a120bfe3bebab4e2ea458de03d35c188841d989063b688c73892917631dfd9d.json"
+  data-offline-search-index-json-src="/offline-search-index.dc836c85af01e739127c1bf2806edbc713b4dde65725949c3328686755358a9ec461e4ec244b124341b4e24142723bd9fe66c04d674fd8e4175ab9cd6666b8d3.json"
   data-offline-search-base-href="/"
   data-offlnie-search-max-results="25"
 >
@@ -1142,10 +1143,23 @@ Use the uninstaller to remove Karabiner-Elements from your system.</p>
 
 
 <div class="alert alert-warning" role="alert">
-<h4 class="alert-heading">Advanced topic</h4>
+<h4 class="alert-heading">Uninstall from command line</h4>
 <p>If you don&rsquo;t want to use above GUI, you can also uninstall Karabiner-Elements from command line.</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">sudo <span style="color:#4e9a06">&#39;/Library/Application Support/org.pqrs/Karabiner-Elements/uninstall_core.sh&#39;</span>
 </code></pre></div><p>(Administrator password is required to run the above command.)</p>
+
+</div>
+
+
+
+<div class="alert alert-success" role="alert">
+<h4 class="alert-heading">Advanced topic</h4>
+<p><code>Operation not permitted</code> error will occur if you try removing files by <code>rm</code> command.</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">sudo rm -rf /Applications/Karabiner-Elements.app
+rm: /Applications/Karabiner-Elements.app/Contents: Operation not permitted
+rm: /Applications/Karabiner-Elements.app: Operation not permitted
+</code></pre></div><p>Karabiner-Elements forces using uninstaller to remove files in order to ensure remove files outside /Applications.</p>
+<p>See <a href="/docs/help/advanced-topics/installed-files/">Installed files</a> to confirm the files.</p>
 
 </div>
 
