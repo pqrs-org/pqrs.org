@@ -1968,7 +1968,7 @@ Use the uninstaller to remove Karabiner-Elements from your system.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;sudo rm -rf /Applications/Karabiner-Elements.app
 rm: /Applications/Karabiner-Elements.app/Contents: Operation not permitted
 rm: /Applications/Karabiner-Elements.app: Operation not permitted
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Karabiner-Elements forces using uninstaller to remove files in order to ensure remove files outside /Applications.&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Karabiner-Elements forces you to use uninstaller to remove files in order to ensure remove files outside /Applications.&lt;/p&gt;
 &lt;p&gt;See &lt;a href=&#34;/docs/help/advanced-topics/installed-files/&#34;&gt;Installed files&lt;/a&gt; to confirm the files.&lt;/p&gt;
 
 &lt;/div&gt;

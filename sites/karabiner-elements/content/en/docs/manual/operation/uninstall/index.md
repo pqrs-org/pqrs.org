@@ -30,7 +30,7 @@ rm: /Applications/Karabiner-Elements.app/Contents: Operation not permitted
 rm: /Applications/Karabiner-Elements.app: Operation not permitted
 ```
 
-Karabiner-Elements forces using uninstaller to remove files in order to ensure remove files outside /Applications.
+Karabiner-Elements forces you to use uninstaller to remove files in order to ensure remove files outside /Applications.
 
 See [Installed files](/docs/help/advanced-topics/installed-files/) to confirm the files.
 
