@@ -10,14 +10,16 @@ weight: 1000
 -   macOS Big Sur (11.0)
     -   Supported both Intel-based Macs and Apple Silicon Macs.
 
-{{% alert title="Important Notice" color="danger" %}}
+{{% alert title="Important Notice for macOS Big Sur Beta users" color="danger" %}}
 
 macOS Big Sur Beta 6 has a very serious DriverKit issue.<br/>
-Karabiner-Elements will stop working after restarting your Mac due to the issue.<br/>
+Karabiner-Elements will stop working after restarting your Mac due to the issue on macOS Big Sur Beta 6.<br/>
 
 You have to reinstall the driver by the following way every reboot on macOS Big Sur Beta 6.
 
 [How to reinstall the driver.](#how-to-reinstall-the-driver)
+
+There is no such issue on macOS Catalina.
 
 {{% /alert %}}
 
