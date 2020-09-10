@@ -17,7 +17,7 @@ Karabiner-Elements will stop working after restarting your Mac due to the issue.
 
 You have to reinstall the driver by the following way every reboot on macOS Big Sur Beta 6.
 
-[How to reinstall the driver.](#reinstall-the-driver)
+[How to reinstall the driver.](#how-to-reinstall-the-driver)
 
 {{% /alert %}}
 
