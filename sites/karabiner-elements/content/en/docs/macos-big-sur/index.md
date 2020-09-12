@@ -25,14 +25,14 @@ There is no such issue on macOS Catalina.
 
 ## Download
 
-<a href="https://github.com/pqrs-org/Karabiner-Elements/releases/download/beta/Karabiner-Elements-12.93.0.dmg" class="btn btn-primary">Download v12.93.0</a>
+<a href="https://github.com/pqrs-org/Karabiner-Elements/releases/download/beta/Karabiner-Elements-12.93.0.dmg" class="btn btn-primary btn-lg">Download v12.93.0</a>
 
 -   📅 Release date
     -   Sep 10, 2020
 -   🐛 Bug Fixes
     -   Fixed a crash issue when pointing device is not grabbed.
 
-<a href="https://github.com/pqrs-org/Karabiner-Elements/releases/download/beta/Karabiner-Elements-12.92.0.dmg" class="btn btn-primary disabled">Download v12.92.0</a>
+<a href="https://github.com/pqrs-org/Karabiner-Elements/releases/download/beta/Karabiner-Elements-12.92.0.dmg" class="btn btn-primary btn-sm disabled">Download v12.92.0</a>
 
 -   📅 Release date
     -   Sep 10, 2020
