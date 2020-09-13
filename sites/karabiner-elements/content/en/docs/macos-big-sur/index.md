@@ -25,7 +25,16 @@ There is no such issue on macOS Catalina.
 
 ## Download
 
-<a href="https://github.com/pqrs-org/Karabiner-Elements/releases/download/beta/Karabiner-Elements-12.93.0.dmg" class="btn btn-primary btn-lg">Download v12.93.0</a>
+<a href="https://github.com/pqrs-org/Karabiner-Elements/releases/download/beta/Karabiner-Elements-12.93.1.dmg" class="btn btn-primary btn-lg">Download v12.93.1</a>
+
+-   📅 Release date
+    -   Sep 13, 2020
+-   ⚡️ Improvements
+    -   Minor improvements:
+        -   Show `/var/log/karabiner/virtual_hid_device_service.log` on Preferences > Log tab.
+        -   Fix alert window title of Preferences.
+
+<a href="https://github.com/pqrs-org/Karabiner-Elements/releases/download/beta/Karabiner-Elements-12.93.0.dmg" class="btn btn-primary btn-sm disabled">Download v12.93.0</a>
 
 -   📅 Release date
     -   Sep 10, 2020
