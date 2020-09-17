@@ -25,7 +25,14 @@ There is no such issue on macOS Catalina.
 
 ## Download
 
-<a href="https://github.com/pqrs-org/Karabiner-Elements/releases/download/beta/Karabiner-Elements-12.93.1.dmg" class="btn btn-primary btn-lg">Download v12.93.1</a>
+<a href="https://github.com/pqrs-org/Karabiner-Elements/releases/download/beta/Karabiner-Elements-12.94.0.dmg" class="btn btn-primary btn-lg">Download v12.94.0</a>
+
+-   📅 Release date
+    -   Sep 17, 2020
+-   🐛 Bug Fixes
+    -   Fixed an issue that uninstaller does not remove DriverKit driver on macOS Catalina.
+
+<a href="https://github.com/pqrs-org/Karabiner-Elements/releases/download/beta/Karabiner-Elements-12.93.1.dmg" class="btn btn-primary btn-sm disabled">Download v12.93.1</a>
 
 -   📅 Release date
     -   Sep 13, 2020
