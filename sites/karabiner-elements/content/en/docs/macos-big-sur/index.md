@@ -12,6 +12,10 @@ weight: 1000
 
 ## Download
 
+You can download dmg file (e.g., `Karabiner-Elements-12.95.1.dmg`) from <https://github.com/pqrs-org/Karabiner-Elements/releases/tag/beta>.
+
+### Updates
+
 Karabiner-Elements for macOS Big Sur is available in the beta channel.
 
-You can download it from [Check for beta updates](/docs/manual/operation/check-for-updates/)
+You can also download it from [Check for beta updates](/docs/manual/operation/check-for-updates/).
