@@ -6,6 +6,22 @@ exclude_search: true
 type: releasenotes
 ---
 
+## Tinkle 1.6.0
+
+-   [📦 Download](https://github.com/pqrs-org/Tinkle/releases/download/v1.6.0/Tinkle-1.6.0.dmg)
+-   📅 Release date
+    -   Oct 3, 2020
+-   ⚡️ Improvements
+    -   New effect colors:
+        -   Shock wave (light)
+        -   Shock wave (gray)
+        -   Shock wave (dark)
+        -   Neon (light)
+        -   Neon (gray)
+        -   Neon (dark)
+    -   Updated the app icon.
+    -   Improved preferences window layout on macOS Big Sur.
+
 ## Tinkle 1.2.0
 
 -   [📦 Download](https://github.com/pqrs-org/Tinkle/releases/download/v1.2.0/Tinkle-1.2.0.dmg)
