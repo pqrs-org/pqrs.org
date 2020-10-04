@@ -330,7 +330,8 @@ Karabiner-Elements that the parent directory is changed.&lt;/p&gt;
       <description>
         
         
-        &lt;p&gt;The following alert will be shown on macOS Catalina because Karabiner-Elements 12.x.x or earlier use kernel extension (aka legacy system extension) in order to provide virtual keyboard and pointing device.&lt;/p&gt;
+        &lt;p&gt;The following alert will be shown when you are using Karabiner-elements 12.x.x on macOS Catalina.&lt;/p&gt;
+&lt;p&gt;Upgrading Karabiner-Elements 13.0.0 or later solves this issue.&lt;/p&gt;
 
 
 
@@ -346,7 +347,6 @@ Karabiner-Elements that the parent directory is changed.&lt;/p&gt;
   /&gt;
 &lt;/figure&gt;
 
-&lt;p&gt;We are working to migrate to a newer mechanism, DriverKit, from kernel extension and we plan to support it at Karabiner-Elements 13.0.0.&lt;/p&gt;
 
       </description>
     </item>

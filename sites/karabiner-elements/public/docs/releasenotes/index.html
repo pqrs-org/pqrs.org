@@ -21,15 +21,15 @@
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
 <title>Release notes | Karabiner-Elements</title><meta property="og:title" content="Release notes" />
-<meta property="og:description" content="Karabiner-Elements 12.10.0  📦 Download 📅 Release date  Jun 27, 2020   ✨ New Features  event_changed_if and event_changed_unless has been added to conditions.   ⚡️ Improvements  Improved sending f1-f12 keys in complex modification (e.g., &ldquo;change command&#43;e to f2&rdquo;) by ignoring media key mappings for these keys. Improved caps lock LED handling. Improved uninstaller adding the kernel extension staging area clean up. Improved complex modifications json checker." />
+<meta property="og:description" content="Karabiner-Elements 13.0.0  📦 Download 📅 Release date  Oct 4, 2020   💥 Breaking changes  macOS 10.12 - 10.14 support has been dropped.   ✨ New Features  Supported macOS Big Sur (11.0) Supported both Intel-based Macs and Apple Silicon Macs. Changed the virtual keyboard and mouse implementation to DriverKit from deprecated kernel extension.   ⚡️ Improvements  Improved preferences window messages. Partial support for comments in karabiner." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/releasenotes/" />
 <meta property="og:image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
 <meta property="og:site_name" content="Karabiner-Elements" />
 <meta itemprop="name" content="Release notes">
-<meta itemprop="description" content="Karabiner-Elements 12.10.0  📦 Download 📅 Release date  Jun 27, 2020   ✨ New Features  event_changed_if and event_changed_unless has been added to conditions.   ⚡️ Improvements  Improved sending f1-f12 keys in complex modification (e.g., &ldquo;change command&#43;e to f2&rdquo;) by ignoring media key mappings for these keys. Improved caps lock LED handling. Improved uninstaller adding the kernel extension staging area clean up. Improved complex modifications json checker.">
+<meta itemprop="description" content="Karabiner-Elements 13.0.0  📦 Download 📅 Release date  Oct 4, 2020   💥 Breaking changes  macOS 10.12 - 10.14 support has been dropped.   ✨ New Features  Supported macOS Big Sur (11.0) Supported both Intel-based Macs and Apple Silicon Macs. Changed the virtual keyboard and mouse implementation to DriverKit from deprecated kernel extension.   ⚡️ Improvements  Improved preferences window messages. Partial support for comments in karabiner.">
 
-<meta itemprop="wordCount" content="5810">
+<meta itemprop="wordCount" content="5899">
 <meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
 
 
@@ -39,7 +39,7 @@
 <meta name="twitter:image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
 
 <meta name="twitter:title" content="Release notes"/>
-<meta name="twitter:description" content="Karabiner-Elements 12.10.0  📦 Download 📅 Release date  Jun 27, 2020   ✨ New Features  event_changed_if and event_changed_unless has been added to conditions.   ⚡️ Improvements  Improved sending f1-f12 keys in complex modification (e.g., &ldquo;change command&#43;e to f2&rdquo;) by ignoring media key mappings for these keys. Improved caps lock LED handling. Improved uninstaller adding the kernel extension staging area clean up. Improved complex modifications json checker."/>
+<meta name="twitter:description" content="Karabiner-Elements 13.0.0  📦 Download 📅 Release date  Oct 4, 2020   💥 Breaking changes  macOS 10.12 - 10.14 support has been dropped.   ✨ New Features  Supported macOS Big Sur (11.0) Supported both Intel-based Macs and Apple Silicon Macs. Changed the virtual keyboard and mouse implementation to DriverKit from deprecated kernel extension.   ⚡️ Improvements  Improved preferences window messages. Partial support for comments in karabiner."/>
 
 
 <script type="application/javascript">
@@ -109,7 +109,7 @@ if (!doNotTrack) {
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.7bd045f90f9a69a6f23a89d0a362d3c4f1badfa39e4d602ddabb8f26aeefda28522691c88a215e76d4d08e70aa9168a37496b1fff51785a252ae55b7e5adcf6e.json"
+  data-offline-search-index-json-src="/offline-search-index.f6b851fb7da6e6b2b123aa4eb738f00c8251bb793e8821c8d61e2389cf04703f2bbd79d4707d64bd4ba7d96a99b7356cd7182006cd5b389f2debbe1a4e231c27.json"
   data-offline-search-base-href="/"
   data-offlnie-search-max-results="25"
 >
@@ -140,7 +140,7 @@ if (!doNotTrack) {
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.7bd045f90f9a69a6f23a89d0a362d3c4f1badfa39e4d602ddabb8f26aeefda28522691c88a215e76d4d08e70aa9168a37496b1fff51785a252ae55b7e5adcf6e.json"
+  data-offline-search-index-json-src="/offline-search-index.f6b851fb7da6e6b2b123aa4eb738f00c8251bb793e8821c8d61e2389cf04703f2bbd79d4707d64bd4ba7d96a99b7356cd7182006cd5b389f2debbe1a4e231c27.json"
   data-offline-search-base-href="/"
   data-offlnie-search-max-results="25"
 >
@@ -605,12 +605,6 @@ if (!doNotTrack) {
       
       
       
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsmacos-big-sur" href="/docs/macos-big-sur/">Karabiner-Elements for macOS Big Sur</a>
-      
-      
-      
-      
 
 
 
@@ -1060,6 +1054,7 @@ if (!doNotTrack) {
 
 <nav id="TableOfContents">
   <ul>
+    <li><a href="#karabiner-elements-1300">Karabiner-Elements 13.0.0</a></li>
     <li><a href="#karabiner-elements-12100">Karabiner-Elements 12.10.0</a></li>
     <li><a href="#karabiner-elements-1290">Karabiner-Elements 12.9.0</a></li>
     <li><a href="#karabiner-elements-1280">Karabiner-Elements 12.8.0</a></li>
@@ -1179,7 +1174,39 @@ if (!doNotTrack) {
             
 <div class="td-content release-notes">
 	<h1>Release notes</h1>
-	<h2 id="karabiner-elements-12100">Karabiner-Elements 12.10.0</h2>
+	<h2 id="karabiner-elements-1300">Karabiner-Elements 13.0.0</h2>
+<ul>
+<li><a href="https://github.com/pqrs-org/Karabiner-Elements/releases/download/v13.0.0/Karabiner-Elements-13.0.0.dmg">📦 Download</a></li>
+<li>📅 Release date
+<ul>
+<li>Oct 4, 2020</li>
+</ul>
+</li>
+<li>💥 Breaking changes
+<ul>
+<li>macOS 10.12 - 10.14 support has been dropped.</li>
+</ul>
+</li>
+<li>✨ New Features
+<ul>
+<li>Supported macOS Big Sur (11.0)</li>
+<li>Supported both Intel-based Macs and Apple Silicon Macs.</li>
+<li>Changed the virtual keyboard and mouse implementation to DriverKit from deprecated kernel extension.</li>
+</ul>
+</li>
+<li>⚡️ Improvements
+<ul>
+<li>Improved preferences window messages.</li>
+<li>Partial support for comments in karabiner.json configuration file.
+<ul>
+<li>Supported reading json file with comments.</li>
+<li>Limitation: The json comments will be removed if you change the json from Preferences GUI or command line interface.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="karabiner-elements-12100">Karabiner-Elements 12.10.0</h2>
 <ul>
 <li><a href="https://github.com/pqrs-org/Karabiner-Elements/releases/download/v12.10.0/Karabiner-Elements-12.10.0.dmg">📦 Download</a></li>
 <li>📅 Release date

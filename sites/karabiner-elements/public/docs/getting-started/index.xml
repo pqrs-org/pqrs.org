@@ -61,15 +61,15 @@ Follow this instruction to set up Karabiner-Elements.&lt;/p&gt;
   &lt;img
     src=&#34;/docs/getting-started/installation/images/karabiner-elements-icon@2x.png&#34;
     alt=&#34;karabiner-elements-icon@2x.png&#34;
-    style=&#34;width: 184px&#34;
+    style=&#34;width: 176px&#34;
   /&gt;
 &lt;/figure&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&#34;allow-using-kext-which-provides-virtual-devices-for-karabiner-elements&#34;&gt;Allow using kext which provides virtual devices for Karabiner-Elements&lt;/h2&gt;
+&lt;h2 id=&#34;allow-system-software-which-provides-virtual-devices-for-karabiner-elements&#34;&gt;Allow system software which provides virtual devices for Karabiner-Elements&lt;/h2&gt;
 &lt;ol&gt;
-&lt;li&gt;An alert about kext policy will be shown since macOS High Sierra when you open Karabiner-Elements Preferences.&lt;/li&gt;
-&lt;li&gt;Click &lt;strong&gt;Open System Preferences &amp;gt; Security &amp;amp; Privacy&lt;/strong&gt; button, then press &lt;strong&gt;Allow&lt;/strong&gt; button.
+&lt;li&gt;The following alert will be shown when you open Karabiner-Elements Preferences.&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;Open Security &amp;amp; Privacy System Preferences&lt;/strong&gt; button, then press &lt;strong&gt;Allow&lt;/strong&gt; button.
 
 
 
@@ -79,8 +79,8 @@ Follow this instruction to set up Karabiner-Elements.&lt;/p&gt;
 
 &lt;figure&gt;
   &lt;img
-    src=&#34;/docs/getting-started/installation/images/high-sierra-kext-policy@2x.png&#34;
-    alt=&#34;high-sierra-kext-policy@2x.png&#34;
+    src=&#34;/docs/getting-started/installation/images/dext-alert@2x.png&#34;
+    alt=&#34;dext-alert@2x.png&#34;
     style=&#34;width: 1000px&#34;
   /&gt;
 &lt;/figure&gt;
