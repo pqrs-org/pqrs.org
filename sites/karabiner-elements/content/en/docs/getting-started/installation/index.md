@@ -20,11 +20,11 @@ Follow this instruction to set up Karabiner-Elements.
 1.  Open Karabiner-Elements from Launchpad.
     {{< local-image src="images/karabiner-elements-icon@2x.png" >}}
 
-## Allow using kext which provides virtual devices for Karabiner-Elements
+## Allow system software which provides virtual devices for Karabiner-Elements
 
-1.  An alert about kext policy will be shown since macOS High Sierra when you open Karabiner-Elements Preferences.
-2.  Click **Open System Preferences > Security & Privacy** button, then press **Allow** button.
-    {{< local-image src="images/high-sierra-kext-policy@2x.png" >}}
+1.  The following alert will be shown when you open Karabiner-Elements Preferences.
+2.  Click **Open Security & Privacy System Preferences** button, then press **Allow** button.
+    {{< local-image src="images/dext-alert@2x.png" >}}
 
 {{% alert title="Note" color="primary" %}}
 
