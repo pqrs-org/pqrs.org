@@ -6,6 +6,23 @@ exclude_search: true
 type: releasenotes
 ---
 
+## Karabiner-Elements 13.0.0
+
+-   [📦 Download](https://github.com/pqrs-org/Karabiner-Elements/releases/download/v13.0.0/Karabiner-Elements-13.0.0.dmg)
+-   📅 Release date
+    -   Oct 4, 2020
+-   💥 Breaking changes
+    -   macOS 10.12 - 10.14 support has been dropped.
+-   ✨ New Features
+    -   Supported macOS Big Sur (11.0)
+    -   Supported both Intel-based Macs and Apple Silicon Macs.
+    -   Changed the virtual keyboard and mouse implementation to DriverKit from deprecated kernel extension.
+-   ⚡️ Improvements
+    -   Improved preferences window messages.
+    -   Partial support for comments in karabiner.json configuration file.
+        -   Supported reading json file with comments.
+        -   Limitation: The json comments will be removed if you change the json from Preferences GUI or command line interface.
+
 ## Karabiner-Elements 12.10.0
 
 -   [📦 Download](https://github.com/pqrs-org/Karabiner-Elements/releases/download/v12.10.0/Karabiner-Elements-12.10.0.dmg)
