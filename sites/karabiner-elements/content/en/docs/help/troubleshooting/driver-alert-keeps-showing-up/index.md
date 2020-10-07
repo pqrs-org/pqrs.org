@@ -8,7 +8,7 @@ The following driver alerts will appear on first start-up and the alerts will di
 Unfortunately, the allow button may sometimes not appear in System Preferences due to a problem with macOS driver loading.<br />
 In this case, you can display the allow button by deactivating and activating driver as described in the Advanced section.
 
-{{% alert title="macOS Catalina Note" color="danger" %}}
+{{% alert title="macOS Catalina Note #1" color="primary" %}}
 
 Even worse, there is an additional problem on the macOS side if you are using macOS Catalina.<br/>
 The above steps might not resolve the issue and the alert may keep showing up.
@@ -20,6 +20,17 @@ If you are facing the problem, restart macOS between deactivating and activating
 3.  **Restart macOS.**
 4.  Press `Activate driver` button.
 5.  Open Security & Privacy System Preferences and press the allow button.
+
+{{% /alert %}}
+
+{{% alert title="macOS Catalina Note #2" color="danger" %}}
+
+The problem is caused by macOS Catalina issues around DriverKit driver.
+
+Karabiner-Elements v12.10.0 uses a legacy kernel extension, so it is not affected by the macOS issues.
+So, downgrading to v12.10.0 also solves the issue.
+
+[Karabiner-Elements 12.10.0](/docs/releasenotes/#karabiner-elements-12100)
 
 {{% /alert %}}
 
