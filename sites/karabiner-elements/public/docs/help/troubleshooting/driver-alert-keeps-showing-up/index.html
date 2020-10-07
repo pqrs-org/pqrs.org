@@ -24,7 +24,7 @@
 <meta property="og:description" content="The following driver alerts will appear on first start-up and the alerts will disappear after you allow the system software from System Preferences.
 Unfortunately, the allow button may sometimes not appear in System Preferences due to a problem with macOS driver loading.
 In this case, you can display the allow button by deactivating and activating driver as described in the Advanced section.
-macOS Catalina Note Even worse, there is an additional problem on the macOS side if you are using macOS Catalina." />
+macOS Catalina Note #1 Even worse, there is an additional problem on the macOS side if you are using macOS Catalina." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/help/troubleshooting/driver-alert-keeps-showing-up/" />
 <meta property="og:image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
@@ -33,9 +33,9 @@ macOS Catalina Note Even worse, there is an additional problem on the macOS side
 <meta itemprop="description" content="The following driver alerts will appear on first start-up and the alerts will disappear after you allow the system software from System Preferences.
 Unfortunately, the allow button may sometimes not appear in System Preferences due to a problem with macOS driver loading.
 In this case, you can display the allow button by deactivating and activating driver as described in the Advanced section.
-macOS Catalina Note Even worse, there is an additional problem on the macOS side if you are using macOS Catalina.">
+macOS Catalina Note #1 Even worse, there is an additional problem on the macOS side if you are using macOS Catalina.">
 
-<meta itemprop="wordCount" content="140">
+<meta itemprop="wordCount" content="182">
 <meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
 
 
@@ -48,7 +48,7 @@ macOS Catalina Note Even worse, there is an additional problem on the macOS side
 <meta name="twitter:description" content="The following driver alerts will appear on first start-up and the alerts will disappear after you allow the system software from System Preferences.
 Unfortunately, the allow button may sometimes not appear in System Preferences due to a problem with macOS driver loading.
 In this case, you can display the allow button by deactivating and activating driver as described in the Advanced section.
-macOS Catalina Note Even worse, there is an additional problem on the macOS side if you are using macOS Catalina."/>
+macOS Catalina Note #1 Even worse, there is an additional problem on the macOS side if you are using macOS Catalina."/>
 
 
 <script type="application/javascript">
@@ -118,7 +118,7 @@ if (!doNotTrack) {
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.154b3d2c467ed9d4f239bfcabddb01c66615ef3146aa710cb68b6ebd4935e80bd9f74dc4b3a49d5820b69dc75271eb0c0ddc210ab91ade0dbc80020f1ad476cf.json"
+  data-offline-search-index-json-src="/offline-search-index.432d16e5385a18a4e331c0215723019beef679189ec090c86ba275b9341a0a2db9f8ddb728e19832fbaa9590ec8df09e791e16671a9f09da2a54e1f5e05052d5.json"
   data-offline-search-base-href="/"
   data-offlnie-search-max-results="25"
 >
@@ -149,7 +149,7 @@ if (!doNotTrack) {
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.154b3d2c467ed9d4f239bfcabddb01c66615ef3146aa710cb68b6ebd4935e80bd9f74dc4b3a49d5820b69dc75271eb0c0ddc210ab91ade0dbc80020f1ad476cf.json"
+  data-offline-search-index-json-src="/offline-search-index.432d16e5385a18a4e331c0215723019beef679189ec090c86ba275b9341a0a2db9f8ddb728e19832fbaa9590ec8df09e791e16671a9f09da2a54e1f5e05052d5.json"
   data-offline-search-base-href="/"
   data-offlnie-search-max-results="25"
 >
@@ -1130,8 +1130,8 @@ if (!doNotTrack) {
 In this case, you can display the allow button by deactivating and activating driver as described in the Advanced section.</p>
 
 
-<div class="alert alert-danger" role="alert">
-<h4 class="alert-heading">macOS Catalina Note</h4>
+<div class="alert alert-primary" role="alert">
+<h4 class="alert-heading">macOS Catalina Note #1</h4>
 <p>Even worse, there is an additional problem on the macOS side if you are using macOS Catalina.<br/>
 The above steps might not resolve the issue and the alert may keep showing up.</p>
 <p>If you are facing the problem, restart macOS between deactivating and activating to refresh the macOS internal state.</p>
@@ -1142,6 +1142,17 @@ The above steps might not resolve the issue and the alert may keep showing up.</
 <li>Press <code>Activate driver</code> button.</li>
 <li>Open Security &amp; Privacy System Preferences and press the allow button.</li>
 </ol>
+
+</div>
+
+
+
+<div class="alert alert-danger" role="alert">
+<h4 class="alert-heading">macOS Catalina Note #2</h4>
+<p>The problem is caused by macOS Catalina issues around DriverKit driver.</p>
+<p>Karabiner-Elements v12.10.0 uses a legacy kernel extension, so it is not affected by the macOS issues.
+So, downgrading to v12.10.0 also solves the issue.</p>
+<p><a href="/docs/releasenotes/#karabiner-elements-12100">Karabiner-Elements 12.10.0</a></p>
 
 </div>
 
