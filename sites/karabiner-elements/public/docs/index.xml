@@ -14,6 +14,54 @@
     
     
     <item>
+      <title>Docs: Driver alert keeps showing up</title>
+      <link>/docs/help/troubleshooting/driver-alert-keeps-showing-up/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/help/troubleshooting/driver-alert-keeps-showing-up/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The following driver alerts will appear on first start-up and the alerts will disappear after you allow the system software from System Preferences.&lt;/p&gt;
+&lt;p&gt;Unfortunately, the allow button may sometimes not appear in System Preferences due to a problem with macOS driver loading.&lt;br /&gt;
+In this case, you can display the allow button by deactivating and activating driver as described in the Advanced section.&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-danger&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;macOS Catalina Note&lt;/h4&gt;
+&lt;p&gt;Even worse, there is an additional problem on the macOS side if you are using macOS Catalina.&lt;br/&gt;
+The above steps might not resolve the issue and the alert may keep showing up.&lt;/p&gt;
+&lt;p&gt;If you are facing the problem, restart macOS between deactivating and activating to refresh the macOS internal state.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Press &lt;code&gt;Deactivate driver&lt;/code&gt; button.&lt;/li&gt;
+&lt;li&gt;Enter the administrator password.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Restart macOS.&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Press &lt;code&gt;Activate driver&lt;/code&gt; button.&lt;/li&gt;
+&lt;li&gt;Open Security &amp;amp; Privacy System Preferences and press the allow button.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;/div&gt;
+
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/help/troubleshooting/driver-alert-keeps-showing-up/images/dext-alert@2x.png&#34;
+    alt=&#34;dext-alert@2x.png&#34;
+    style=&#34;width: 1000px&#34;
+  /&gt;
+&lt;/figure&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
       <title>Docs: About &#34;Device is ignored temporarily&#34; alert</title>
       <link>/docs/manual/misc/ignored-temporarily/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -3936,80 +3984,6 @@ Press &lt;strong&gt;Add profile&lt;/strong&gt; button to add new profile.&lt;/p&
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: variable_if, variable_unless</title>
-      <link>/docs/json/complex-modifications-manipulator-definition/conditions/variable/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/docs/json/complex-modifications-manipulator-definition/conditions/variable/</guid>
-      <description>
-        
-        
-        &lt;p&gt;Change an event if/unless the variable is the specified value.&lt;/p&gt;
-
-
-&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
-&lt;h4 class=&#34;alert-heading&#34;&gt;Tip&lt;/h4&gt;
-&lt;code&gt;variable_if&lt;/code&gt; and &lt;code&gt;variable_unless&lt;/code&gt; are designed to use with &lt;a href=&#34;../../to/set-variable/&#34;&gt;&lt;code&gt;set_variable&lt;/code&gt;&lt;/a&gt;.
-&lt;/div&gt;
-
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
-    &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;#34;type&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;variable_if&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
-    &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;#34;name&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;variable name&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
-    &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;#34;value&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#a40000&#34;&gt;variable&lt;/span&gt; &lt;span style=&#34;color:#a40000&#34;&gt;value&lt;/span&gt;
-&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Name&lt;/th&gt;
-&lt;th&gt;Required&lt;/th&gt;
-&lt;th&gt;Description&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;type&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;strong&gt;Required&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;&amp;quot;variable_if&amp;quot;&lt;/code&gt; or &lt;code&gt;&amp;quot;variable_unless&amp;quot;&lt;/code&gt;.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;name&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;strong&gt;Required&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;Target variable name.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;value&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;strong&gt;Required&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;Target variable value.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;description&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;Optional&lt;/td&gt;
-&lt;td&gt;A human-readable comment&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h2 id=&#34;confirm-the-current-variable-values&#34;&gt;Confirm the current variable values&lt;/h2&gt;
-&lt;p&gt;You can see the current variable values by EventViewer &amp;gt; Variables.&lt;/p&gt;
-
-
-
-
-  
-
-
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/json/complex-modifications-manipulator-definition/conditions/variable/images/eventviewer-variables@2x.png&#34;
-    alt=&#34;eventviewer-variables@2x.png&#34;
-    style=&#34;width: 874px&#34;
-  /&gt;
-&lt;/figure&gt;
-
 
       </description>
     </item>
