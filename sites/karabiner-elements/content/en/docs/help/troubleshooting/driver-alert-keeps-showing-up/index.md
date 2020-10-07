@@ -3,10 +3,16 @@ title: 'Driver alert keeps showing up'
 weight: 10
 ---
 
-The following driver alerts will appear on first start-up and the alerts will disappear after you allow the system software from System Preferences.
+Usually, the following driver alert will appear on first start-up and the alert will disappear after you allow the system software from System Preferences.
 
 Unfortunately, the allow button may sometimes not appear in System Preferences due to a problem with macOS driver loading.<br />
-In this case, you can display the allow button by deactivating and activating driver as described in the Advanced section.
+In this case, you can display the allow button by deactivating and activating driver as described in the Advanced section on the alert.
+
+<div style="max-width: 600px">
+{{< local-image src="images/dext-alert@2x.png" >}}
+</div>
+
+## macOS Catalina Notes
 
 {{% alert title="macOS Catalina Note #1" color="primary" %}}
 
@@ -33,5 +39,3 @@ So, downgrading to v12.10.0 also solves the issue.
 [Karabiner-Elements 12.10.0](/docs/releasenotes/#karabiner-elements-12100)
 
 {{% /alert %}}
-
-{{< local-image src="images/dext-alert@2x.png" >}}
