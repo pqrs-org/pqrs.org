@@ -14,6 +14,10 @@ In this case, you can display the allow button by deactivating and activating dr
 
 ## macOS Catalina Notes
 
+Karabiner-Elements requires macOS 10.15.6 or later, because macOS 10.15.5 or earlier has an issue around DriverKit.
+
+Please use [Karabiner-Elements 12.10.0](/docs/releasenotes/#karabiner-elements-12100) if you are using macOS 10.15.5 or earlier.
+
 {{% alert title="macOS Catalina Note #1" color="primary" %}}
 
 Even worse, there is an additional problem on the macOS side if you are using macOS Catalina.<br/>
@@ -34,8 +38,6 @@ If you are facing the problem, restart macOS between deactivating and activating
 The problem is caused by macOS Catalina issues around DriverKit driver.
 
 Karabiner-Elements v12.10.0 uses a legacy kernel extension, so it is not affected by the macOS issues.
-So, downgrading to v12.10.0 also solves the issue.
-
-[Karabiner-Elements 12.10.0](/docs/releasenotes/#karabiner-elements-12100)
+So, downgrading to [Karabiner-Elements 12.10.0](/docs/releasenotes/#karabiner-elements-12100) also solves the issue.
 
 {{% /alert %}}
