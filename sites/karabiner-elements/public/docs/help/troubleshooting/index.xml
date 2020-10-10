@@ -43,6 +43,8 @@ In this case, you can display the allow button by deactivating and activating dr
 
 &lt;/div&gt;
 &lt;h2 id=&#34;macos-catalina-notes&#34;&gt;macOS Catalina Notes&lt;/h2&gt;
+&lt;p&gt;Karabiner-Elements requires macOS 10.15.6 or later, because macOS 10.15.5 or earlier has an issue around DriverKit.&lt;/p&gt;
+&lt;p&gt;Please use &lt;a href=&#34;/docs/releasenotes/#karabiner-elements-12100&#34;&gt;Karabiner-Elements 12.10.0&lt;/a&gt; if you are using macOS 10.15.5 or earlier.&lt;/p&gt;
 
 
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
@@ -66,8 +68,7 @@ The above steps might not resolve the issue and the alert may keep showing up.&l
 &lt;h4 class=&#34;alert-heading&#34;&gt;macOS Catalina Note #2&lt;/h4&gt;
 &lt;p&gt;The problem is caused by macOS Catalina issues around DriverKit driver.&lt;/p&gt;
 &lt;p&gt;Karabiner-Elements v12.10.0 uses a legacy kernel extension, so it is not affected by the macOS issues.
-So, downgrading to v12.10.0 also solves the issue.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;/docs/releasenotes/#karabiner-elements-12100&#34;&gt;Karabiner-Elements 12.10.0&lt;/a&gt;&lt;/p&gt;
+So, downgrading to &lt;a href=&#34;/docs/releasenotes/#karabiner-elements-12100&#34;&gt;Karabiner-Elements 12.10.0&lt;/a&gt; also solves the issue.&lt;/p&gt;
 
 &lt;/div&gt;
 

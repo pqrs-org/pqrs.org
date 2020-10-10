@@ -43,6 +43,8 @@ In this case, you can display the allow button by deactivating and activating dr
 
 &lt;/div&gt;
 &lt;h2 id=&#34;macos-catalina-notes&#34;&gt;macOS Catalina Notes&lt;/h2&gt;
+&lt;p&gt;Karabiner-Elements requires macOS 10.15.6 or later, because macOS 10.15.5 or earlier has an issue around DriverKit.&lt;/p&gt;
+&lt;p&gt;Please use &lt;a href=&#34;/docs/releasenotes/#karabiner-elements-12100&#34;&gt;Karabiner-Elements 12.10.0&lt;/a&gt; if you are using macOS 10.15.5 or earlier.&lt;/p&gt;
 
 
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
@@ -66,8 +68,7 @@ The above steps might not resolve the issue and the alert may keep showing up.&l
 &lt;h4 class=&#34;alert-heading&#34;&gt;macOS Catalina Note #2&lt;/h4&gt;
 &lt;p&gt;The problem is caused by macOS Catalina issues around DriverKit driver.&lt;/p&gt;
 &lt;p&gt;Karabiner-Elements v12.10.0 uses a legacy kernel extension, so it is not affected by the macOS issues.
-So, downgrading to v12.10.0 also solves the issue.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;/docs/releasenotes/#karabiner-elements-12100&#34;&gt;Karabiner-Elements 12.10.0&lt;/a&gt;&lt;/p&gt;
+So, downgrading to &lt;a href=&#34;/docs/releasenotes/#karabiner-elements-12100&#34;&gt;Karabiner-Elements 12.10.0&lt;/a&gt; also solves the issue.&lt;/p&gt;
 
 &lt;/div&gt;
 
@@ -3830,6 +3831,20 @@ Examples:
     </item>
     
     <item>
+      <title>Docs: Downgrade to older version</title>
+      <link>/docs/help/how-to/downgrade/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/help/how-to/downgrade/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Download an older version package from &lt;a href=&#34;/docs/releasenotes/&#34;&gt;Release notes&lt;/a&gt; and install it.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Docs: Manage profiles</title>
       <link>/docs/manual/operation/profiles/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -3902,102 +3917,6 @@ Press &lt;strong&gt;Add profile&lt;/strong&gt; button to add new profile.&lt;/p&
   /&gt;
 &lt;/figure&gt;
 
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: to.modifiers</title>
-      <link>/docs/json/complex-modifications-manipulator-definition/to/modifiers/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/docs/json/complex-modifications-manipulator-definition/to/modifiers/</guid>
-      <description>
-        
-        
-        &lt;p&gt;&lt;code&gt;to.modifiers&lt;/code&gt; is an array of the following strings.&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Name&lt;/th&gt;
-&lt;th&gt;Description&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;caps_lock&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&amp;mdash;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;left_command&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&amp;mdash;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;left_control&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&amp;mdash;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;left_option&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&amp;mdash;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;left_shift&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&amp;mdash;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;right_command&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&amp;mdash;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;right_control&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&amp;mdash;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;right_option&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&amp;mdash;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;right_shift&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&amp;mdash;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;fn&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&amp;mdash;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;command&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;Alias of &lt;code&gt;left_command&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;control&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;Alias of &lt;code&gt;left_control&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;option&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;Alias of &lt;code&gt;left_option&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;shift&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;Alias of &lt;code&gt;left_shift&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;left_alt&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;Alias of &lt;code&gt;left_option&lt;/code&gt; (available since Karabiner-Elements 12.3.0)&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;left_gui&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;Alias of &lt;code&gt;left_command&lt;/code&gt; (available since Karabiner-Elements 12.3.0)&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;right_alt&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;Alias of &lt;code&gt;right_option&lt;/code&gt; (available since Karabiner-Elements 12.3.0)&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;right_gui&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;Alias of &lt;code&gt;right_command&lt;/code&gt; (available since Karabiner-Elements 12.3.0)&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
 
       </description>
     </item>
