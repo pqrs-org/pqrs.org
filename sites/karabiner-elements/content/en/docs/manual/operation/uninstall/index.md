@@ -13,7 +13,8 @@ You can launch the uninstaller from "Uninstall Karabiner-Elements" button on Mis
 If you don't want to use above GUI, you can also uninstall Karabiner-Elements from command line.
 
 ```shell
-sudo '/Library/Application Support/org.pqrs/Karabiner-Elements/uninstall_core.sh'
+bash '/Library/Application Support/org.pqrs/Karabiner-DriverKit-VirtualHIDDevice/scripts/uninstall/deactivate_driver.sh'
+sudo '/Library/Application Support/org.pqrs/Karabiner-Elements/uninstall.sh'
 ```
 
 (Administrator password is required to run the above command.)
