@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="generator" content="Hugo 0.75.1" />
+<meta name="generator" content="Hugo 0.76.3" />
 
 <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
 
@@ -24,7 +24,7 @@
 <meta property="og:description" content="Karabiner-Elements provides built-in uninstaller.
 Use the uninstaller to remove Karabiner-Elements from your system.
 You can launch the uninstaller from &ldquo;Uninstall Karabiner-Elements&rdquo; button on Misc tab.   Uninstall from command line If you don&rsquo;t want to use above GUI, you can also uninstall Karabiner-Elements from command line.
-sudo &#39;/Library/Application Support/org.pqrs/Karabiner-Elements/uninstall_core.sh&#39; (Administrator password is required to run the above command.)
+bash &#39;/Library/Application Support/org.pqrs/Karabiner-DriverKit-VirtualHIDDevice/scripts/uninstall/deactivate_driver.sh&#39; sudo &#39;/Library/Application Support/org.pqrs/Karabiner-Elements/uninstall.sh&#39; (Administrator password is required to run the above command.)
  Advanced topic Operation not permitted error will occur if you try removing files by rm command." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/manual/operation/uninstall/" />
@@ -34,10 +34,10 @@ sudo &#39;/Library/Application Support/org.pqrs/Karabiner-Elements/uninstall_cor
 <meta itemprop="description" content="Karabiner-Elements provides built-in uninstaller.
 Use the uninstaller to remove Karabiner-Elements from your system.
 You can launch the uninstaller from &ldquo;Uninstall Karabiner-Elements&rdquo; button on Misc tab.   Uninstall from command line If you don&rsquo;t want to use above GUI, you can also uninstall Karabiner-Elements from command line.
-sudo &#39;/Library/Application Support/org.pqrs/Karabiner-Elements/uninstall_core.sh&#39; (Administrator password is required to run the above command.)
+bash &#39;/Library/Application Support/org.pqrs/Karabiner-DriverKit-VirtualHIDDevice/scripts/uninstall/deactivate_driver.sh&#39; sudo &#39;/Library/Application Support/org.pqrs/Karabiner-Elements/uninstall.sh&#39; (Administrator password is required to run the above command.)
  Advanced topic Operation not permitted error will occur if you try removing files by rm command.">
 
-<meta itemprop="wordCount" content="111">
+<meta itemprop="wordCount" content="114">
 <meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
 
 
@@ -50,7 +50,7 @@ sudo &#39;/Library/Application Support/org.pqrs/Karabiner-Elements/uninstall_cor
 <meta name="twitter:description" content="Karabiner-Elements provides built-in uninstaller.
 Use the uninstaller to remove Karabiner-Elements from your system.
 You can launch the uninstaller from &ldquo;Uninstall Karabiner-Elements&rdquo; button on Misc tab.   Uninstall from command line If you don&rsquo;t want to use above GUI, you can also uninstall Karabiner-Elements from command line.
-sudo &#39;/Library/Application Support/org.pqrs/Karabiner-Elements/uninstall_core.sh&#39; (Administrator password is required to run the above command.)
+bash &#39;/Library/Application Support/org.pqrs/Karabiner-DriverKit-VirtualHIDDevice/scripts/uninstall/deactivate_driver.sh&#39; sudo &#39;/Library/Application Support/org.pqrs/Karabiner-Elements/uninstall.sh&#39; (Administrator password is required to run the above command.)
  Advanced topic Operation not permitted error will occur if you try removing files by rm command."/>
 
 
@@ -121,7 +121,7 @@ if (!doNotTrack) {
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.7ad830b2e6a8b96340c3f12aac6b513209170d5ae8b97ab1b2965e03109dbc2e1ba00654a02dc30580453f101fdcfaa6af0cfa63b028a48266ce873427066fd4.json"
+  data-offline-search-index-json-src="/offline-search-index.4ee498784860ba0da61eab6208cff832307c359d52384e20bcd8673829ef62f8704ac10ab73be004eb7a6b37963a9b38d61e6b6d4305450e253a0d287f2d8fa6.json"
   data-offline-search-base-href="/"
   data-offlnie-search-max-results="25"
 >
@@ -152,7 +152,7 @@ if (!doNotTrack) {
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.7ad830b2e6a8b96340c3f12aac6b513209170d5ae8b97ab1b2965e03109dbc2e1ba00654a02dc30580453f101fdcfaa6af0cfa63b028a48266ce873427066fd4.json"
+  data-offline-search-index-json-src="/offline-search-index.4ee498784860ba0da61eab6208cff832307c359d52384e20bcd8673829ef62f8704ac10ab73be004eb7a6b37963a9b38d61e6b6d4305450e253a0d287f2d8fa6.json"
   data-offline-search-base-href="/"
   data-offlnie-search-max-results="25"
 >
@@ -1157,7 +1157,8 @@ Use the uninstaller to remove Karabiner-Elements from your system.</p>
 <div class="alert alert-warning" role="alert">
 <h4 class="alert-heading">Uninstall from command line</h4>
 <p>If you don&rsquo;t want to use above GUI, you can also uninstall Karabiner-Elements from command line.</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">sudo <span style="color:#4e9a06">&#39;/Library/Application Support/org.pqrs/Karabiner-Elements/uninstall_core.sh&#39;</span>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">bash <span style="color:#4e9a06">&#39;/Library/Application Support/org.pqrs/Karabiner-DriverKit-VirtualHIDDevice/scripts/uninstall/deactivate_driver.sh&#39;</span>
+sudo <span style="color:#4e9a06">&#39;/Library/Application Support/org.pqrs/Karabiner-Elements/uninstall.sh&#39;</span>
 </code></pre></div><p>(Administrator password is required to run the above command.)</p>
 
 </div>
