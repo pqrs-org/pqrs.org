@@ -6,6 +6,18 @@ exclude_search: true
 type: releasenotes
 ---
 
+## Karabiner-Elements 13.1.0
+
+-   [📦 Download](https://github.com/pqrs-org/Karabiner-Elements/releases/download/v13.1.0/Karabiner-Elements-13.1.0.dmg)
+-   📅 Release date
+    -   Oct 30, 2020
+-   🔔 Important Notes
+    -   **Restarting macOS is required** after upgrading from v13.0.0.<br />
+        The following alert will be shown after upgrade. Please follow the instructions.<br />
+        <img src="https://karabiner-elements.pqrs.org/docs/releasenotes/images/v13.1.0/driver-version-not-matched-alert.png" alt="driver version not matched alert" width="400" />
+-   🐛 Bug Fixes
+    -   Fixed an issue that Karabiner-DriverKit-VirtualHIDDevice might crash when caps lock key is pressed in some environments.
+
 ## Karabiner-Elements 13.0.0
 
 -   [📦 Download](https://github.com/pqrs-org/Karabiner-Elements/releases/download/v13.0.0/Karabiner-Elements-13.0.0.dmg)
