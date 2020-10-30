@@ -21,15 +21,19 @@
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
 <title>Release notes | Karabiner-Elements</title><meta property="og:title" content="Release notes" />
-<meta property="og:description" content="Karabiner-Elements 13.0.0  📦 Download 📅 Release date  Oct 4, 2020   💥 Breaking changes  macOS 10.12 - 10.14 support has been dropped.   ✨ New Features  Supported macOS Big Sur (11.0) Supported both Intel-based Macs and Apple Silicon Macs. Changed the virtual keyboard and mouse implementation to DriverKit from deprecated kernel extension.   ⚡️ Improvements  Improved preferences window messages. Partial support for comments in karabiner." />
+<meta property="og:description" content="Karabiner-Elements 13.1.0  📦 Download 📅 Release date  Oct 30, 2020   🔔 Important Notes  Restarting macOS is required after upgrading from v13.0.0.
+The following alert will be shown after upgrade. Please follow the instructions.
+   🐛 Bug Fixes  Fixed an issue that Karabiner-DriverKit-VirtualHIDDevice might crash when caps lock key is pressed in some environments.    Karabiner-Elements 13.0.0  📦 Download 📅 Release date  Oct 4, 2020   💥 Breaking changes  macOS 10." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/releasenotes/" />
 <meta property="og:image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
 <meta property="og:site_name" content="Karabiner-Elements" />
 <meta itemprop="name" content="Release notes">
-<meta itemprop="description" content="Karabiner-Elements 13.0.0  📦 Download 📅 Release date  Oct 4, 2020   💥 Breaking changes  macOS 10.12 - 10.14 support has been dropped.   ✨ New Features  Supported macOS Big Sur (11.0) Supported both Intel-based Macs and Apple Silicon Macs. Changed the virtual keyboard and mouse implementation to DriverKit from deprecated kernel extension.   ⚡️ Improvements  Improved preferences window messages. Partial support for comments in karabiner.">
+<meta itemprop="description" content="Karabiner-Elements 13.1.0  📦 Download 📅 Release date  Oct 30, 2020   🔔 Important Notes  Restarting macOS is required after upgrading from v13.0.0.
+The following alert will be shown after upgrade. Please follow the instructions.
+   🐛 Bug Fixes  Fixed an issue that Karabiner-DriverKit-VirtualHIDDevice might crash when caps lock key is pressed in some environments.    Karabiner-Elements 13.0.0  📦 Download 📅 Release date  Oct 4, 2020   💥 Breaking changes  macOS 10.">
 
-<meta itemprop="wordCount" content="5899">
+<meta itemprop="wordCount" content="5951">
 <meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
 
 
@@ -39,7 +43,9 @@
 <meta name="twitter:image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
 
 <meta name="twitter:title" content="Release notes"/>
-<meta name="twitter:description" content="Karabiner-Elements 13.0.0  📦 Download 📅 Release date  Oct 4, 2020   💥 Breaking changes  macOS 10.12 - 10.14 support has been dropped.   ✨ New Features  Supported macOS Big Sur (11.0) Supported both Intel-based Macs and Apple Silicon Macs. Changed the virtual keyboard and mouse implementation to DriverKit from deprecated kernel extension.   ⚡️ Improvements  Improved preferences window messages. Partial support for comments in karabiner."/>
+<meta name="twitter:description" content="Karabiner-Elements 13.1.0  📦 Download 📅 Release date  Oct 30, 2020   🔔 Important Notes  Restarting macOS is required after upgrading from v13.0.0.
+The following alert will be shown after upgrade. Please follow the instructions.
+   🐛 Bug Fixes  Fixed an issue that Karabiner-DriverKit-VirtualHIDDevice might crash when caps lock key is pressed in some environments.    Karabiner-Elements 13.0.0  📦 Download 📅 Release date  Oct 4, 2020   💥 Breaking changes  macOS 10."/>
 
 
 <script type="application/javascript">
@@ -112,7 +118,7 @@ if (!doNotTrack) {
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.9b2397b05238cf3c8f3e4b30cad4603b.json"
+  data-offline-search-index-json-src="/offline-search-index.0b1ef0052568165f82a2159654e8747d.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="25"
 >
@@ -144,7 +150,7 @@ if (!doNotTrack) {
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.9b2397b05238cf3c8f3e4b30cad4603b.json"
+  data-offline-search-index-json-src="/offline-search-index.0b1ef0052568165f82a2159654e8747d.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="25"
 >
@@ -1070,6 +1076,7 @@ if (!doNotTrack) {
 
 <nav id="TableOfContents">
   <ul>
+    <li><a href="#karabiner-elements-1310">Karabiner-Elements 13.1.0</a></li>
     <li><a href="#karabiner-elements-1300">Karabiner-Elements 13.0.0</a></li>
     <li><a href="#karabiner-elements-12100">Karabiner-Elements 12.10.0</a></li>
     <li><a href="#karabiner-elements-1290">Karabiner-Elements 12.9.0</a></li>
@@ -1190,7 +1197,28 @@ if (!doNotTrack) {
             
 <div class="td-content release-notes">
 	<h1>Release notes</h1>
-	<h2 id="karabiner-elements-1300">Karabiner-Elements 13.0.0</h2>
+	<h2 id="karabiner-elements-1310">Karabiner-Elements 13.1.0</h2>
+<ul>
+<li><a href="https://github.com/pqrs-org/Karabiner-Elements/releases/download/v13.1.0/Karabiner-Elements-13.1.0.dmg">📦 Download</a></li>
+<li>📅 Release date
+<ul>
+<li>Oct 30, 2020</li>
+</ul>
+</li>
+<li>🔔 Important Notes
+<ul>
+<li><strong>Restarting macOS is required</strong> after upgrading from v13.0.0.<br />
+The following alert will be shown after upgrade. Please follow the instructions.<br />
+<img src="https://karabiner-elements.pqrs.org/docs/releasenotes/images/v13.1.0/driver-version-not-matched-alert.png" alt="driver version not matched alert" width="400" /></li>
+</ul>
+</li>
+<li>🐛 Bug Fixes
+<ul>
+<li>Fixed an issue that Karabiner-DriverKit-VirtualHIDDevice might crash when caps lock key is pressed in some environments.</li>
+</ul>
+</li>
+</ul>
+<h2 id="karabiner-elements-1300">Karabiner-Elements 13.0.0</h2>
 <ul>
 <li><a href="https://github.com/pqrs-org/Karabiner-Elements/releases/download/v13.0.0/Karabiner-Elements-13.0.0.dmg">📦 Download</a></li>
 <li>📅 Release date
