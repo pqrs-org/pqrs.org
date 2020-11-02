@@ -3,7 +3,7 @@ const href=$this.attr('href')
 if(href.startsWith('http://')||href.startsWith('https://')){if(href.endsWith('.zip')||href.endsWith('.gz')||href.endsWith('.dmg')){return}
 $this.attr('target','_blank')
 $this.append($('<span>').addClass('fas fa-external-link-alt ml-1'))}})
-const $sponsorsOuter=$('#pqrs-org-sponsors')
+const $sponsorsOuter=$('#sponsors')
 if($sponsorsOuter.length>0){$.ajax('https://pqrs.org/sponsors/sponsors.json').then((response)=>{let $sponsors=$('<div>').addClass('sponsors')
 let scale=null
 response.forEach((sponsor)=>{if(scale!==null&&sponsor.avatar.scale!==scale){$sponsorsOuter.append($sponsors)
