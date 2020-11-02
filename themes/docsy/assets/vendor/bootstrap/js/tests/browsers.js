@@ -13,8 +13,8 @@ const browsers = {
     base: 'BrowserStack',
     os: 'OS X',
     os_version: 'High Sierra',
-    browser : 'Chrome',
-    browser_version : 'latest'
+    browser: 'Chrome',
+    browser_version: 'latest'
   },
   firefoxMac: {
     base: 'BrowserStack',
@@ -28,7 +28,7 @@ const browsers = {
     os: 'Windows',
     os_version: '10',
     browser: 'Edge',
-    browser_version: 'latest'
+    browser_version: '15'
   },
   ie11Win10: {
     base: 'BrowserStack',
