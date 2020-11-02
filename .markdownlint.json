@@ -16,7 +16,7 @@
     "ol_multi": 2
   },
   "MD033": {
-    "allowed_elements": ["br", "img", "style", "div", "form", "input", "button"]
+    "allowed_elements": ["br", "img", "style", "div", "form", "input", "button", "i"]
   },
   "MD041": false
 }

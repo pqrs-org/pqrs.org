@@ -50,4 +50,13 @@ body {
   .popover.offline-search-result {
     max-width: 800px;
   }
+
+  #pqrs-org-sponsors {
+    .sponsors {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+    }
+  }
 }

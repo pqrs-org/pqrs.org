@@ -81,8 +81,18 @@ I'm afraid I don't have enough time to reply for donors.<br />
 (I'm giving priority to develop Karabiner-Elements at the moment.)
 
 <div class="text-right">
-    Mar 3, 2020<br />
+    Nov 2, 2020<br />
     Takayama Fumihiko
 </div>
 
 {{% /alert %}}
+
+<div id="pqrs-org-sponsors" class="text-center border border-secondary rounded py-4">
+  <div class="text-center font-weight-bold h3">
+    Sponsors
+    <i class="fas fa-heart ml-1"></i>
+  </div>
+  <div class="mb-4">
+    Thank you for supporting Karabiner-Elements!
+  </div>
+</div>
