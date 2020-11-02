@@ -87,7 +87,7 @@ I'm afraid I don't have enough time to reply for donors.<br />
 
 {{% /alert %}}
 
-<div id="pqrs-org-sponsors" class="text-center border border-secondary rounded py-4">
+<div id="sponsors" class="text-center border border-secondary rounded py-4">
   <div class="text-center font-weight-bold h3">
     Sponsors
     <i class="fas fa-heart ml-1"></i>

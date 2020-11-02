@@ -1,5 +1,5 @@
 $(function () {
-  const $sponsorsOuter = $('#pqrs-org-sponsors')
+  const $sponsorsOuter = $('#sponsors')
   if ($sponsorsOuter.length > 0) {
     $.ajax('https://pqrs.org/sponsors/sponsors.json').then((response) => {
       let $sponsors = $('<div>').addClass('sponsors')
