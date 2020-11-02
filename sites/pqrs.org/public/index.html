@@ -6,69 +6,14 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <link rel="stylesheet" href="assets/bootstrap-4.4.1.min.css" />
+    <link rel="stylesheet" href="assets/vendor/bootstrap-4.5.3.min.css" />
+    <link rel="stylesheet" href="assets/pqrs.css" />
     <link rel="icon" href="favicons/favicon.ico" />
     <title>pqrs.org</title>
-    <style>
-      h1 {
-        font-weight: 300;
-        font-size: 24px;
-        border-bottom: 1px solid black;
-        border-left: 4px solid black;
-        padding-bottom: 4px;
-        padding-left: 8px;
-      }
-      .icon {
-        display: inline-block;
-        width: 1em;
-        height: 1em;
-        stroke-width: 0;
-        stroke: currentColor;
-        fill: currentColor;
-      }
-      div.navbar {
-        background-color: #3273db;
-      }
-      div.card-title a {
-        text-decoration: none;
-      }
-      img.logo {
-        width: 64px;
-        height: 64px;
-        border: 1px solid lightgray;
-        border-radius: 16px;
-        margin-right: 8px;
-      }
-      #profile {
-        margin-top: 100px;
-      }
-      img.profile {
-        width: 128px;
-        height: 128px;
-        border-radius: 24px;
-      }
-      a.sponsor,
-      a.sponsor:visited {
-        border-color: #d958a7 !important;
-        color: #d958a7 !important;
-      }
-      a.sponsor:hover,
-      a.sponsor:active,
-      a.sponsor:focus {
-        border-color: #d958a7 !important;
-        background-color: #d958a7 !important;
-        color: white !important;
-      }
-      footer {
-        background-color: #3273db;
-        margin-top: 100px;
-        height: 100px;
-      }
-    </style>
   </head>
   <body>
     <svg
-      style="position: absolute; width: 0; height: 0; overflow: hidden;"
+      style="position: absolute; width: 0; height: 0; overflow: hidden"
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
       xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -228,13 +173,9 @@
           <div class="card">
             <div class="card-body">
               <div class="card-title">
-                <a href="https://nesterdc.pqrs.org/">
-                  NesterDC
-                </a>
+                <a href="https://nesterdc.pqrs.org/"> NesterDC </a>
               </div>
-              <div class="card-text">
-                NES emulator for Dreamcast.
-              </div>
+              <div class="card-text">NES emulator for Dreamcast.</div>
             </div>
           </div>
         </div>
@@ -243,9 +184,7 @@
           <div class="card">
             <div class="card-body">
               <div class="card-title">
-                <a href="https://dcgnuboy.pqrs.org/">
-                  dcgnuboy
-                </a>
+                <a href="https://dcgnuboy.pqrs.org/"> dcgnuboy </a>
               </div>
               <div class="card-text">
                 Gameboy and Gameboy Color emulator for Dreamcast.
@@ -303,8 +242,18 @@
           </div>
         </div>
       </div>
+
+      <div id="pqrs-org-sponsors" class="text-center border border-dark rounded py-4" style="margin-top: 100px">
+        <div class="text-center font-weight-bold h3 pb-1">
+          Sponsors
+          <i class="fas fa-heart ml-1"></i>
+        </div>
+        <div class="mb-4">Thank you for supporting!</div>
+      </div>
     </div>
 
     <footer></footer>
+    <script src="assets/vendor/jquery-3.5.1.min.js"></script>
+    <script src="assets/pqrs.js"></script>
   </body>
 </html>
