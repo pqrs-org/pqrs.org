@@ -61,3 +61,31 @@ footer {
   margin-top: 100px;
   height: 100px;
 }
+
+#sponsors .sponsors {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#sponsors .sponsors a {
+  font-size: 10px;
+  padding: 10px 2px;
+  margin: 5px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  color: black;
+  overflow-wrap: break-word;
+  text-align: center;
+}
+
+#sponsors .sponsors img {
+  margin-bottom: 5px;
+  border: 1px solid lightgray;
+}
+
+#sponsors .sponsors a:hover {
+  background-color: #007bff;
+  color: white;
+}

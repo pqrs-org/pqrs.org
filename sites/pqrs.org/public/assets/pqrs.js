@@ -13,15 +13,31 @@ $(function () {
         scale = sponsor.avatar.scale
 
         const name = sponsor.name !== '' ? sponsor.name : sponsor.login
+
         const $img = $('<img>')
           .attr('src', sponsor.avatar.url)
           .attr('alt', name)
           .attr('title', name)
           .attr('width', 80 * sponsor.avatar.scale)
+          .attr('height', 80 * sponsor.avatar.scale)
+
+        const paddingY = 10 * sponsor.avatar.scale + 'px'
+        const paddingX = 5 * sponsor.avatar.scale + 'px'
         const $a = $('<a>')
           .attr('href', 'https://github.com/' + sponsor.login)
           .attr('target', '_blank')
+          .css({
+            width: 100 * sponsor.avatar.scale + 'px',
+            padding: paddingY + ' ' + paddingX,
+          })
           .append($img)
+        $a.append($('<div>').text('@' + sponsor.login))
+        if (sponsor.name !== '') {
+          $a.append($('<div>').text(sponsor.name))
+        } else {
+          $a.append($('<div>').css({ height: '15px' }))
+        }
+
         $sponsors.append($a)
       })
 
