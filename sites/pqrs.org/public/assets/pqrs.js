@@ -17,7 +17,6 @@ $(function () {
         const $img = $('<img>')
           .attr('src', sponsor.avatar.url)
           .attr('alt', name)
-          .attr('title', name)
           .attr('width', 80 * sponsor.avatar.scale)
           .attr('height', 80 * sponsor.avatar.scale)
 
