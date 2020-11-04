@@ -17,4 +17,4 @@ const $a=$('<a>').attr('href','https://github.com/'+sponsor.login).attr('target'
 $a.append($('<div>').text('@'+sponsor.login))
 if(sponsor.name!==''){$a.append($('<div>').text(sponsor.name))}else{$a.append($('<div>').css({height:'15px'}))}
 $sponsors.append($a)})
-$sponsorsOuter.append($sponsors)})}})
+$sponsorsOuter.append($sponsors)},(reason)=>{$sponsorsOuter.append($('<div>').addClass('alert alert-danger').text('Error: Failed to fetch the sponsors list.'))})}})
