@@ -95,4 +95,10 @@ I'm afraid I don't have enough time to reply for donors.<br />
   <div class="mb-4">
     Thank you for supporting Karabiner-Elements!
   </div>
+
+  <noscript>
+    <div class="alert alert-warning">
+      JavaScript is required to show sponsors.
+    </div>
+  </noscript>
 </div>
