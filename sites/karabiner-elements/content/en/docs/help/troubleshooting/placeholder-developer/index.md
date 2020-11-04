@@ -21,7 +21,7 @@ In this case, you can choose one of the following three options to use Karabiner
     Download the package from the above page, and then re-install Karabiner-Elements from the downloaded package.
 -   Allow "Placeholder Developer".
 
-{{% alert title="This issue is solved with macOS Big Sur " color="primary" %}}
+{{% alert title="This issue is solved with macOS Big Sur (11.0)" color="primary" %}}
 
 The developer name is shown properly on macOS Big Sur.
 
