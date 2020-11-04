@@ -338,5 +338,76 @@ You can use control+fn+escape as control+eject.
       </description>
     </item>
     
+    <item>
+      <title>Docs: Placeholder Developer is shown in Security &amp; Privacy System Preferences</title>
+      <link>/docs/help/troubleshooting/placeholder-developer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/help/troubleshooting/placeholder-developer/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&amp;ldquo;.Karabiner-VirtualHIDDevice-Manager&amp;rdquo; is usually shown in Security &amp;amp; Privacy System Preferences when macOS requires your approval.&lt;/p&gt;
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/help/troubleshooting/placeholder-developer/images/normal@2x.png&#34;
+    alt=&#34;normal@2x.png&#34;
+    style=&#34;width: 668px&#34;
+  /&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;However, &amp;ldquo;Placeholder Developer&amp;rdquo; will be shown if you meet all of the following criteria due to a macOS issue.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You are using macOS Catalina (10.15)&lt;/li&gt;
+&lt;li&gt;Multiple system software are waiting your approval.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/help/troubleshooting/placeholder-developer/images/placeholder-developer@2x.png&#34;
+    alt=&#34;placeholder-developer@2x.png&#34;
+    style=&#34;width: 668px&#34;
+  /&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;In this case, you can choose one of the following three options to use Karabiner-Elements:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgrade to macOS Big Sur (11.0) or later.&lt;/li&gt;
+&lt;li&gt;Downgrade to &lt;a href=&#34;/docs/releasenotes/#karabiner-elements-12100&#34;&gt;Karabiner-Elements v12.10.0&lt;/a&gt;.&lt;br /&gt;
+Download the package from the above page, and then re-install Karabiner-Elements from the downloaded package.&lt;/li&gt;
+&lt;li&gt;Allow &amp;ldquo;Placeholder Developer&amp;rdquo;.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;This issue is solved with macOS Big Sur (11.0)&lt;/h4&gt;
+&lt;p&gt;The developer name is shown properly on macOS Big Sur.&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/help/troubleshooting/placeholder-developer/images/big-sur@2x.png&#34;
+    alt=&#34;big-sur@2x.png&#34;
+    style=&#34;width: 668px&#34;
+  /&gt;
+&lt;/figure&gt;
+
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
   </channel>
 </rss>
