@@ -401,7 +401,7 @@ Download the package from the above page, and then re-install Karabiner-Elements
 
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Info: This issue is solved with macOS Big Sur (11.0)&lt;/h4&gt;
-&lt;p&gt;The developer name is shown properly on macOS Big Sur.&lt;/p&gt;
+&lt;p&gt;The name is shown properly on macOS Big Sur.&lt;/p&gt;
 &lt;figure&gt;
   &lt;img
     src=&#34;/docs/help/troubleshooting/placeholder-developer/images/big-sur@2x.png&#34;
