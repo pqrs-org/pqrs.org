@@ -7,7 +7,7 @@ weight: 600
 
 {{< local-image src="images/normal@2x.png" >}}
 
-However, "Placeholder Developer" will be shown if you meet all of the following criteria due to a macOS issue.
+However, "Placeholder Developer" will be shown due to a macOS issue if you meet all of the following criteria:
 
 -   You are using macOS Catalina (10.15)
 -   Multiple system software are waiting your approval.
