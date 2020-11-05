@@ -52,17 +52,17 @@ body {
   }
 
   //
-  // #sponsors
+  // #supporters
   //
 
-  #sponsors .sponsors {
+  #supporters .supporters {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
   }
 
-  #sponsors .sponsors a {
+  #supporters .supporters a {
     font-size: 10px;
     padding: 10px 2px;
     margin: 5px;
@@ -73,12 +73,12 @@ body {
     text-align: center;
   }
 
-  #sponsors .sponsors img {
+  #supporters .supporters img {
     margin-bottom: 5px;
     border: 1px solid lightgray;
   }
 
-  #sponsors .sponsors a:hover {
+  #supporters .supporters a:hover {
     background-color: #007bff;
     color: white;
   }
