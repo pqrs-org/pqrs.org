@@ -1,15 +1,15 @@
 $(function () {
-  const $sponsorsOuter = $('#sponsors')
-  if ($sponsorsOuter.length > 0) {
-    $.ajax('https://pqrs.org/sponsors/sponsors.json').then(
+  const $supportersOuter = $('#supporters')
+  if ($supportersOuter.length > 0) {
+    $.ajax('https://pqrs.org/supporters/supporters.json').then(
       (response) => {
-        let $sponsors = $('<div>').addClass('sponsors')
+        let $supporters = $('<div>').addClass('supporters')
 
         let scale = null
         response.forEach((sponsor) => {
           if (scale !== null && sponsor.avatar.scale !== scale) {
-            $sponsorsOuter.append($sponsors)
-            $sponsors = $('<div>').addClass('sponsors')
+            $supportersOuter.append($supporters)
+            $supporters = $('<div>').addClass('supporters')
           }
           scale = sponsor.avatar.scale
 
@@ -38,13 +38,13 @@ $(function () {
             $a.append($('<div>').css({ height: '15px' }))
           }
 
-          $sponsors.append($a)
+          $supporters.append($a)
         })
 
-        $sponsorsOuter.append($sponsors)
+        $supportersOuter.append($supporters)
       },
       (reason) => {
-        $sponsorsOuter.append(
+        $supportersOuter.append(
           $('<div>')
             .addClass('alert alert-danger')
             .text('Error: Failed to fetch the sponsors list.')
