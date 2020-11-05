@@ -363,7 +363,7 @@ You can use control+fn+escape as control+eject.
   /&gt;
 &lt;/figure&gt;
 
-&lt;p&gt;However, &amp;ldquo;Placeholder Developer&amp;rdquo; will be shown if you meet all of the following criteria due to a macOS issue.&lt;/p&gt;
+&lt;p&gt;However, &amp;ldquo;Placeholder Developer&amp;rdquo; will be shown due to a macOS issue if you meet all of the following criteria:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;You are using macOS Catalina (10.15)&lt;/li&gt;
 &lt;li&gt;Multiple system software are waiting your approval.&lt;/li&gt;
