@@ -7,7 +7,6 @@
 
 <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
 
-<link rel="alternate" type="application/rss&#43;xml" href="/docs/help/how-to/index.xml">
 
 
 <link rel="shortcut icon" href="/favicons/favicon.ico" >
@@ -21,19 +20,32 @@
 <link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
-<title>How to | Karabiner-Elements</title><meta property="og:title" content="How to" />
-<meta property="og:description" content="A powerful and stable keyboard customizer for macOS." />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="/docs/help/how-to/" />
+<title>Caps Lock LED not working | Karabiner-Elements</title><meta property="og:title" content="Caps Lock LED not working" />
+<meta property="og:description" content="Karabiner-Elements does not control the caps lock LED for non Apple keyboards by default in order to avoid a macOS deadlock issue at turning LED on with some devices which does not have the caps lock LED.
+If you are using non Apple keyboards and you want to use caps lock LED, please turn on Manipulate LED checkbox.
+  " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/docs/help/troubleshooting/caps-lock-led-not-working/" />
 <meta property="og:image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
 <meta property="og:site_name" content="Karabiner-Elements" />
-<meta itemprop="name" content="How to">
-<meta itemprop="description" content="A powerful and stable keyboard customizer for macOS.">
+<meta itemprop="name" content="Caps Lock LED not working">
+<meta itemprop="description" content="Karabiner-Elements does not control the caps lock LED for non Apple keyboards by default in order to avoid a macOS deadlock issue at turning LED on with some devices which does not have the caps lock LED.
+If you are using non Apple keyboards and you want to use caps lock LED, please turn on Manipulate LED checkbox.
+  ">
+
+<meta itemprop="wordCount" content="58">
+<meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
+
+
+
+<meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
 
-<meta name="twitter:title" content="How to"/>
-<meta name="twitter:description" content="A powerful and stable keyboard customizer for macOS."/>
+<meta name="twitter:title" content="Caps Lock LED not working"/>
+<meta name="twitter:description" content="Karabiner-Elements does not control the caps lock LED for non Apple keyboards by default in order to avoid a macOS deadlock issue at turning LED on with some devices which does not have the caps lock LED.
+If you are using non Apple keyboards and you want to use caps lock LED, please turn on Manipulate LED checkbox.
+  "/>
 
 
 <script type="application/javascript">
@@ -70,7 +82,7 @@ if (!doNotTrack) {
 
 
   </head>
-  <body class="td-section">
+  <body class="td-page">
     <header>
       
 <nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
@@ -446,10 +458,10 @@ if (!doNotTrack) {
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="/docs/help/troubleshooting/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Troubleshooting</a>
+    <a  href="/docs/help/troubleshooting/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">Troubleshooting</a>
   </li>
   <ul>
-    <li class="collapse " id="docshelptroubleshooting">
+    <li class="collapse show" id="docshelptroubleshooting">
       
       
       
@@ -504,7 +516,7 @@ if (!doNotTrack) {
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docshelptroubleshootingcaps-lock-led-not-working" href="/docs/help/troubleshooting/caps-lock-led-not-working/">Caps Lock LED not working</a>
+      <a class="td-sidebar-link td-sidebar-link__page  active" id="m-docshelptroubleshootingcaps-lock-led-not-working" href="/docs/help/troubleshooting/caps-lock-led-not-working/">Caps Lock LED not working</a>
       
       
     </li>
@@ -523,10 +535,10 @@ if (!doNotTrack) {
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="/docs/help/how-to/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">How to</a>
+    <a  href="/docs/help/how-to/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">How to</a>
   </li>
   <ul>
-    <li class="collapse show" id="docshelphow-to">
+    <li class="collapse " id="docshelphow-to">
       
       
       
@@ -1096,6 +1108,9 @@ if (!doNotTrack) {
 
 
 
+
+
+
 <li class="breadcrumb-item" >
 	<a href="/docs/">Documentation</a>
 </li>
@@ -1110,8 +1125,15 @@ if (!doNotTrack) {
 
 
 
+<li class="breadcrumb-item" >
+	<a href="/docs/help/troubleshooting/">Troubleshooting</a>
+</li>
+
+
+
+
 <li class="breadcrumb-item active" aria-current="page">
-	<a href="/docs/help/how-to/">How to</a>
+	<a href="/docs/help/troubleshooting/caps-lock-led-not-working/">Caps Lock LED not working</a>
 </li>
 
 	</ol>
@@ -1119,26 +1141,32 @@ if (!doNotTrack) {
 
             
 <div class="td-content">
-	<h1>How to</h1>
-        
-	
-	
-        <div class="section-index">
-            <ul><li>
-                        <a href="/docs/help/how-to/mouse-button/">How to change mouse buttons</a>
-                        </li><li>
-                        <a href="/docs/help/how-to/disable-caps-lock-delay/">How to disable caps lock delay</a>
-                        </li><li>
-                        <a href="/docs/help/how-to/key-repeat/">How to adjust the key repeat rate</a>
-                        </li><li>
-                        <a href="/docs/help/how-to/disable-open-at-login/">How to disable running Karabiner-Elements at login</a>
-                        </li><li>
-                        <a href="/docs/help/how-to/downgrade/">Downgrade to older version</a>
-                        </li></ul></div>
+	<h1>Caps Lock LED not working</h1>
+    
+	       
+	<p>Karabiner-Elements does not control the caps lock LED for non Apple keyboards by default in order to avoid a macOS deadlock issue at turning LED on with some devices which does not have the caps lock LED.</p>
+<p>If you are using non Apple keyboards and you want to use caps lock LED, please turn on <code>Manipulate LED</code> checkbox.</p>
+
+
+
+
+  
+
+
+<figure>
+  <img
+    src="/docs/help/troubleshooting/caps-lock-led-not-working/images/devices@2x.png"
+    alt="devices@2x.png"
+    style="width: 1000px"
+  />
+</figure>
+
+
 	
 	
 	<div class="text-muted mt-5 pt-3 border-top"></div>
 </div>
+
 
           </main>
         </div>

@@ -416,5 +416,35 @@ Download the package from the above page, and then re-install Karabiner-Elements
       </description>
     </item>
     
+    <item>
+      <title>Docs: Caps Lock LED not working</title>
+      <link>/docs/help/troubleshooting/caps-lock-led-not-working/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/help/troubleshooting/caps-lock-led-not-working/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Karabiner-Elements does not control the caps lock LED for non Apple keyboards by default in order to avoid a macOS deadlock issue at turning LED on with some devices which does not have the caps lock LED.&lt;/p&gt;
+&lt;p&gt;If you are using non Apple keyboards and you want to use caps lock LED, please turn on &lt;code&gt;Manipulate LED&lt;/code&gt; checkbox.&lt;/p&gt;
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/help/troubleshooting/caps-lock-led-not-working/images/devices@2x.png&#34;
+    alt=&#34;devices@2x.png&#34;
+    style=&#34;width: 1000px&#34;
+  /&gt;
+&lt;/figure&gt;
+
+
+      </description>
+    </item>
+    
   </channel>
 </rss>
