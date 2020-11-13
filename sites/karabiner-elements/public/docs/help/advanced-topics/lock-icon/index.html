@@ -20,18 +20,24 @@
 <link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
-<title>variable_if, variable_unless | Karabiner-Elements</title><meta property="og:title" content="variable_if, variable_unless" />
-<meta property="og:description" content="Change an event if/unless the variable is the specified value.
-Tip variable_if and variable_unless are designed to use with set_variable.  { &#34;type&#34;: &#34;variable_if&#34;, &#34;name&#34;: &#34;variable name&#34;, &#34;value&#34;: variable value }    Name Required Description     type Required &quot;variable_if&quot; or &quot;variable_unless&quot;.   name Required Target variable name.   value Required Target variable value.   description Optional A human-readable comment    Confirm the current variable values You can see the current variable values by EventViewer &gt; Variables." />
+<title>What is the lock indicator on Karabiner-Elements and Karabiner-EventViewer icon | Karabiner-Elements</title><meta property="og:title" content="What is the lock indicator on Karabiner-Elements and Karabiner-EventViewer icon" />
+<meta property="og:description" content="A lock indicator is shown on Karabiner-Elements and Karabiner-EventViewer icon since macOS 11.0 (Big Sur).
+These indicators show that these files are protected so that they cannot be deleted from the Finder.
+  Why these files are protected This protection is intended to prevent incomplete uninstallation.
+Karabiner-Elements is a system-wide software, and files are installed in appropriate locations besides the Applications folder.
+Therefore, if you just put the application icon in the Trash like a normal app uninstallation, some files will be left behind." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="/docs/json/complex-modifications-manipulator-definition/conditions/variable/" />
+<meta property="og:url" content="/docs/help/advanced-topics/lock-icon/" />
 <meta property="og:image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
 <meta property="og:site_name" content="Karabiner-Elements" />
-<meta itemprop="name" content="variable_if, variable_unless">
-<meta itemprop="description" content="Change an event if/unless the variable is the specified value.
-Tip variable_if and variable_unless are designed to use with set_variable.  { &#34;type&#34;: &#34;variable_if&#34;, &#34;name&#34;: &#34;variable name&#34;, &#34;value&#34;: variable value }    Name Required Description     type Required &quot;variable_if&quot; or &quot;variable_unless&quot;.   name Required Target variable name.   value Required Target variable value.   description Optional A human-readable comment    Confirm the current variable values You can see the current variable values by EventViewer &gt; Variables.">
+<meta itemprop="name" content="What is the lock indicator on Karabiner-Elements and Karabiner-EventViewer icon">
+<meta itemprop="description" content="A lock indicator is shown on Karabiner-Elements and Karabiner-EventViewer icon since macOS 11.0 (Big Sur).
+These indicators show that these files are protected so that they cannot be deleted from the Finder.
+  Why these files are protected This protection is intended to prevent incomplete uninstallation.
+Karabiner-Elements is a system-wide software, and files are installed in appropriate locations besides the Applications folder.
+Therefore, if you just put the application icon in the Trash like a normal app uninstallation, some files will be left behind.">
 
-<meta itemprop="wordCount" content="69">
+<meta itemprop="wordCount" content="100">
 <meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
 
 
@@ -40,9 +46,12 @@ Tip variable_if and variable_unless are designed to use with set_variable.  { &#
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
 
-<meta name="twitter:title" content="variable_if, variable_unless"/>
-<meta name="twitter:description" content="Change an event if/unless the variable is the specified value.
-Tip variable_if and variable_unless are designed to use with set_variable.  { &#34;type&#34;: &#34;variable_if&#34;, &#34;name&#34;: &#34;variable name&#34;, &#34;value&#34;: variable value }    Name Required Description     type Required &quot;variable_if&quot; or &quot;variable_unless&quot;.   name Required Target variable name.   value Required Target variable value.   description Optional A human-readable comment    Confirm the current variable values You can see the current variable values by EventViewer &gt; Variables."/>
+<meta name="twitter:title" content="What is the lock indicator on Karabiner-Elements and Karabiner-EventViewer icon"/>
+<meta name="twitter:description" content="A lock indicator is shown on Karabiner-Elements and Karabiner-EventViewer icon since macOS 11.0 (Big Sur).
+These indicators show that these files are protected so that they cannot be deleted from the Finder.
+  Why these files are protected This protection is intended to prevent incomplete uninstallation.
+Karabiner-Elements is a system-wide software, and files are installed in appropriate locations besides the Applications folder.
+Therefore, if you just put the application icon in the Trash like a normal app uninstallation, some files will be left behind."/>
 
 
 <script type="application/javascript">
@@ -438,10 +447,10 @@ if (!doNotTrack) {
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="/docs/help/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Help</a>
+    <a  href="/docs/help/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">Help</a>
   </li>
   <ul>
-    <li class="collapse " id="docshelp">
+    <li class="collapse show" id="docshelp">
       
       
       
@@ -585,10 +594,10 @@ if (!doNotTrack) {
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="/docs/help/advanced-topics/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Advanced topics</a>
+    <a  href="/docs/help/advanced-topics/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">Advanced topics</a>
   </li>
   <ul>
-    <li class="collapse " id="docshelpadvanced-topics">
+    <li class="collapse show" id="docshelpadvanced-topics">
       
       
       
@@ -607,7 +616,7 @@ if (!doNotTrack) {
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docshelpadvanced-topicslock-icon" href="/docs/help/advanced-topics/lock-icon/">What is the lock indicator on Karabiner-Elements and Karabiner-EventViewer icon</a>
+      <a class="td-sidebar-link td-sidebar-link__page  active" id="m-docshelpadvanced-topicslock-icon" href="/docs/help/advanced-topics/lock-icon/">What is the lock indicator on Karabiner-Elements and Karabiner-EventViewer icon</a>
       
       
     </li>
@@ -650,10 +659,10 @@ if (!doNotTrack) {
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="/docs/json/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">Karabiner Configuration Reference Manual</a>
+    <a  href="/docs/json/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Karabiner Configuration Reference Manual</a>
   </li>
   <ul>
-    <li class="collapse show" id="docsjson">
+    <li class="collapse " id="docsjson">
       
       
       
@@ -691,10 +700,10 @@ if (!doNotTrack) {
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="/docs/json/complex-modifications-manipulator-definition/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">complex_modifications manipulator definition</a>
+    <a  href="/docs/json/complex-modifications-manipulator-definition/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">complex_modifications manipulator definition</a>
   </li>
   <ul>
-    <li class="collapse show" id="docsjsoncomplex-modifications-manipulator-definition">
+    <li class="collapse " id="docsjsoncomplex-modifications-manipulator-definition">
       
       
       
@@ -924,10 +933,10 @@ if (!doNotTrack) {
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="/docs/json/complex-modifications-manipulator-definition/conditions/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">Conditions</a>
+    <a  href="/docs/json/complex-modifications-manipulator-definition/conditions/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Conditions</a>
   </li>
   <ul>
-    <li class="collapse show" id="docsjsoncomplex-modifications-manipulator-definitionconditions">
+    <li class="collapse " id="docsjsoncomplex-modifications-manipulator-definitionconditions">
       
       
       
@@ -958,7 +967,7 @@ if (!doNotTrack) {
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page  active" id="m-docsjsoncomplex-modifications-manipulator-definitionconditionsvariable" href="/docs/json/complex-modifications-manipulator-definition/conditions/variable/">variable_if, variable_unless</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsjsoncomplex-modifications-manipulator-definitionconditionsvariable" href="/docs/json/complex-modifications-manipulator-definition/conditions/variable/">variable_if, variable_unless</a>
       
       
       
@@ -1091,7 +1100,7 @@ if (!doNotTrack) {
 
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#confirm-the-current-variable-values">Confirm the current variable values</a></li>
+    <li><a href="#why-these-files-are-protected">Why these files are protected</a></li>
   </ul>
 </nav>
 
@@ -1118,9 +1127,6 @@ if (!doNotTrack) {
 
 
 
-
-
-
 <li class="breadcrumb-item" >
 	<a href="/docs/">Documentation</a>
 </li>
@@ -1129,28 +1135,21 @@ if (!doNotTrack) {
 
 
 <li class="breadcrumb-item" >
-	<a href="/docs/json/">Karabiner Configuration Reference Manual</a>
+	<a href="/docs/help/">Help</a>
 </li>
 
 
 
 
 <li class="breadcrumb-item" >
-	<a href="/docs/json/complex-modifications-manipulator-definition/">complex_modifications manipulator definition</a>
-</li>
-
-
-
-
-<li class="breadcrumb-item" >
-	<a href="/docs/json/complex-modifications-manipulator-definition/conditions/">Conditions</a>
+	<a href="/docs/help/advanced-topics/">Advanced topics</a>
 </li>
 
 
 
 
 <li class="breadcrumb-item active" aria-current="page">
-	<a href="/docs/json/complex-modifications-manipulator-definition/conditions/variable/">variable_if, variable_unless</a>
+	<a href="/docs/help/advanced-topics/lock-icon/">What is the lock indicator on Karabiner-Elements and Karabiner-EventViewer icon</a>
 </li>
 
 	</ol>
@@ -1158,55 +1157,11 @@ if (!doNotTrack) {
 
             
 <div class="td-content">
-	<h1>variable_if, variable_unless</h1>
+	<h1>What is the lock indicator on Karabiner-Elements and Karabiner-EventViewer icon</h1>
     
 	       
-	<p>Change an event if/unless the variable is the specified value.</p>
-
-
-<div class="alert alert-primary" role="alert">
-<h4 class="alert-heading">Tip</h4>
-<code>variable_if</code> and <code>variable_unless</code> are designed to use with <a href="../../to/set-variable/"><code>set_variable</code></a>.
-</div>
-
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json"><span style="color:#000;font-weight:bold">{</span>
-    <span style="color:#204a87;font-weight:bold">&#34;type&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;variable_if&#34;</span><span style="color:#000;font-weight:bold">,</span>
-    <span style="color:#204a87;font-weight:bold">&#34;name&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;variable name&#34;</span><span style="color:#000;font-weight:bold">,</span>
-    <span style="color:#204a87;font-weight:bold">&#34;value&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#a40000">variable</span> <span style="color:#a40000">value</span>
-<span style="color:#000;font-weight:bold">}</span>
-</code></pre></div><table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Required</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>type</code></td>
-<td><strong>Required</strong></td>
-<td><code>&quot;variable_if&quot;</code> or <code>&quot;variable_unless&quot;</code>.</td>
-</tr>
-<tr>
-<td><code>name</code></td>
-<td><strong>Required</strong></td>
-<td>Target variable name.</td>
-</tr>
-<tr>
-<td><code>value</code></td>
-<td><strong>Required</strong></td>
-<td>Target variable value.</td>
-</tr>
-<tr>
-<td><code>description</code></td>
-<td>Optional</td>
-<td>A human-readable comment</td>
-</tr>
-</tbody>
-</table>
-<h2 id="confirm-the-current-variable-values">Confirm the current variable values</h2>
-<p>You can see the current variable values by EventViewer &gt; Variables.</p>
+	<p>A lock indicator is shown on Karabiner-Elements and Karabiner-EventViewer icon since macOS 11.0 (Big Sur).</p>
+<p>These indicators show that these files are protected so that they cannot be deleted from the Finder.</p>
 
 
 
@@ -1216,12 +1171,17 @@ if (!doNotTrack) {
 
 <figure>
   <img
-    src="/docs/json/complex-modifications-manipulator-definition/conditions/variable/images/eventviewer-variables@2x.png"
-    alt="eventviewer-variables@2x.png"
-    style="width: 874px"
+    src="/docs/help/advanced-topics/lock-icon/images/lock@2x.png"
+    alt="lock@2x.png"
+    style="width: 423px"
   />
 </figure>
 
+<h2 id="why-these-files-are-protected">Why these files are protected</h2>
+<p>This protection is intended to prevent incomplete uninstallation.</p>
+<p>Karabiner-Elements is a system-wide software, and <a href="../installed-files/">files are installed in appropriate locations</a> besides the Applications folder.</p>
+<p>Therefore, if you just put the application icon in the Trash like a normal app uninstallation, some files will be left behind.</p>
+<p>The file protection forces to use <a href="/docs/manual/operation/uninstall">the built-in uninstaller</a> and remove installed files properly at the uninstallation.</p>
 
 	
 	

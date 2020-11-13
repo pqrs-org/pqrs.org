@@ -159,5 +159,40 @@ And do nothing if the process is running with non root user.&lt;/li&gt;
       </description>
     </item>
     
+    <item>
+      <title>Docs: What is the lock indicator on Karabiner-Elements and Karabiner-EventViewer icon</title>
+      <link>/docs/help/advanced-topics/lock-icon/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/help/advanced-topics/lock-icon/</guid>
+      <description>
+        
+        
+        &lt;p&gt;A lock indicator is shown on Karabiner-Elements and Karabiner-EventViewer icon since macOS 11.0 (Big Sur).&lt;/p&gt;
+&lt;p&gt;These indicators show that these files are protected so that they cannot be deleted from the Finder.&lt;/p&gt;
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/help/advanced-topics/lock-icon/images/lock@2x.png&#34;
+    alt=&#34;lock@2x.png&#34;
+    style=&#34;width: 423px&#34;
+  /&gt;
+&lt;/figure&gt;
+
+&lt;h2 id=&#34;why-these-files-are-protected&#34;&gt;Why these files are protected&lt;/h2&gt;
+&lt;p&gt;This protection is intended to prevent incomplete uninstallation.&lt;/p&gt;
+&lt;p&gt;Karabiner-Elements is a system-wide software, and &lt;a href=&#34;../installed-files/&#34;&gt;files are installed in appropriate locations&lt;/a&gt; besides the Applications folder.&lt;/p&gt;
+&lt;p&gt;Therefore, if you just put the application icon in the Trash like a normal app uninstallation, some files will be left behind.&lt;/p&gt;
+&lt;p&gt;The file protection forces to use &lt;a href=&#34;/docs/manual/operation/uninstall&#34;&gt;the built-in uninstaller&lt;/a&gt; and remove installed files properly at the uninstallation.&lt;/p&gt;
+
+      </description>
+    </item>
+    
   </channel>
 </rss>
