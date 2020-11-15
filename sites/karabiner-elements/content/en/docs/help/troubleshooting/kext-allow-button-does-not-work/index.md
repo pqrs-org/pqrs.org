@@ -57,7 +57,7 @@ You can press Allow button via keyboard operation.
 You can press Allow button by starting your Mac in safe mode since any extra apps which prevent clicking the Allow button is not launched automatically in safe mode.
 
 1.  Download [Karabiner-Elements](/) before restarting your Mac.
-2.  Restart your Mac in safe mode by [press and hold the shift key at boot](https://support.apple.com/en-us/HT201262).
+2.  Restart your Mac in safe mode by [this instruction](https://support.apple.com/guide/mac-help/start-up-your-mac-in-safe-mode-mh21245/mac).
 3.  Reinstall Karabiner-Elements from downloaded file.
 4.  Open System Preferences and confirm the Allow button is shown.<br/>
     If the Allow button is hidden, close System Preferences and open it again.
