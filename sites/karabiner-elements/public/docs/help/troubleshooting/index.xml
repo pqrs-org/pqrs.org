@@ -77,15 +77,65 @@ So, downgrading to &lt;a href=&#34;/docs/releasenotes/#karabiner-elements-12100&
     </item>
     
     <item>
-      <title>Docs: Allow button on System Preferences &gt; Security &gt; Privacy does not work</title>
-      <link>/docs/help/troubleshooting/kext-allow-button-does-not-work/</link>
+      <title>Docs: Allow button in Security &amp; Privacy System Preferences does not appear</title>
+      <link>/docs/help/troubleshooting/allow-button-does-not-appear/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/help/troubleshooting/kext-allow-button-does-not-work/</guid>
+      <guid>/docs/help/troubleshooting/allow-button-does-not-appear/</guid>
       <description>
         
         
-        &lt;p&gt;The allow button on System Preferences &amp;gt; Security &amp;gt; Privacy should be hidden after you click it.&lt;br/&gt;
+        &lt;p&gt;The allow button in Security &amp;amp; Privacy System Preferences appear in order to gain your approval after you open Karabiner-Elements for the first time.&lt;/p&gt;
+&lt;p&gt;However, this allow button may not appear in some environments.&lt;/p&gt;
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/help/troubleshooting/allow-button-does-not-appear/images/allow@2x.png&#34;
+    alt=&#34;allow@2x.png&#34;
+    style=&#34;width: 668px&#34;
+  /&gt;
+&lt;/figure&gt;
+
+&lt;h2 id=&#34;reason&#34;&gt;Reason&lt;/h2&gt;
+&lt;p&gt;The exact cause of the issue has not been determined, but it may be caused by the corrupted system cache by a macOS issue.&lt;/p&gt;
+&lt;p&gt;This issue may be resolved by starting macOS in safe mode to refresh the system cache.&lt;/p&gt;
+&lt;h2 id=&#34;steps&#34;&gt;Steps&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Restart your Mac in safe mode by &lt;a href=&#34;https://support.apple.com/guide/mac-help/start-up-your-mac-in-safe-mode-mh21245/mac&#34;&gt;this instruction&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Open Karabiner-Elements from Launchpad to ensure that Allow button is shown on System Preferences.&lt;/li&gt;
+&lt;li&gt;Open System Preferences and confirm the Allow button is shown.&lt;br/&gt;
+If the Allow button is hidden, close System Preferences and open it again.&lt;/li&gt;
+&lt;li&gt;Click the Allow button.&lt;/li&gt;
+&lt;li&gt;Restart your Mac and boot in normal mode.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
+Karabiner-Elements does not work in safe mode.
+You have to restart macOS in normal mode to use Karabiner-Elements.
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Allow button in Security &amp; Privacy System Preferences does not work</title>
+      <link>/docs/help/troubleshooting/allow-button-does-not-work/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/help/troubleshooting/allow-button-does-not-work/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The allow button in Security &amp;amp; Privacy System Preferences should be hidden after you click it.&lt;br/&gt;
 If the button does not hide after click, you did not succeed to click it.&lt;/p&gt;
 
 
@@ -96,94 +146,32 @@ If the button does not hide after click, you did not succeed to click it.&lt;/p&
 
 &lt;figure&gt;
   &lt;img
-    src=&#34;/docs/help/troubleshooting/kext-allow-button-does-not-work/images/system-preferences-security-and-privacy@2x.png&#34;
-    alt=&#34;system-preferences-security-and-privacy@2x.png&#34;
+    src=&#34;/docs/help/troubleshooting/allow-button-does-not-work/images/allow@2x.png&#34;
+    alt=&#34;allow@2x.png&#34;
     style=&#34;width: 668px&#34;
   /&gt;
 &lt;/figure&gt;
 
 &lt;h2 id=&#34;reason&#34;&gt;Reason&lt;/h2&gt;
-&lt;p&gt;It&amp;rsquo;s because macOS blocks the click if you are using an app which intercepts mouse events.&lt;br/&gt;
-You have to quit them before pressing the allow button.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Apps which prevent the click:&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Google Chrome&lt;/li&gt;
-&lt;li&gt;Dropbox&lt;/li&gt;
-&lt;li&gt;MagicPrefs&lt;/li&gt;
-&lt;li&gt;SteerMouse&lt;/li&gt;
-&lt;li&gt;Witch&lt;/li&gt;
-&lt;li&gt;Sonos Desktop Controller for Mac&lt;/li&gt;
-&lt;li&gt;If you are using macOS from remote via Screen Sharing, you cannot click the allow button.&lt;/li&gt;
-&lt;li&gt;etc.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;find-what-app-prevents-the-click&#34;&gt;Find what app prevents the click&lt;/h3&gt;
-&lt;p&gt;You can find apps which prevents the click if you are using macOS Mojave or later.&lt;/p&gt;
+&lt;p&gt;The exact cause of the issue has not been determined, but it may be caused by the corrupted system cache by a macOS issue.&lt;/p&gt;
+&lt;p&gt;This issue may be resolved by starting macOS in safe mode to refresh the system cache.&lt;/p&gt;
+&lt;h2 id=&#34;steps&#34;&gt;Steps&lt;/h2&gt;
 &lt;ol&gt;
-&lt;li&gt;Choose Privacy tab on System Preferences &amp;gt; Security &amp;gt; Privacy.
-
-
-
-
-  
-
-
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/help/troubleshooting/kext-allow-button-does-not-work/images/system-preferences-security-and-privacy-general@2x.png&#34;
-    alt=&#34;system-preferences-security-and-privacy-general@2x.png&#34;
-    style=&#34;width: 668px&#34;
-  /&gt;
-&lt;/figure&gt;
-&lt;/li&gt;
-&lt;li&gt;Choose Accessibility.&lt;br/&gt;
-The enabled apps in the list prevent the click. You have to close these apps.
-
-
-
-
-  
-
-
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/help/troubleshooting/kext-allow-button-does-not-work/images/system-preferences-security-and-privacy-accessibility@2x.png&#34;
-    alt=&#34;system-preferences-security-and-privacy-accessibility@2x.png&#34;
-    style=&#34;width: 668px&#34;
-  /&gt;
-&lt;/figure&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;other-workarounds&#34;&gt;Other workarounds&lt;/h3&gt;
-&lt;p&gt;There are other workarounds if you cannot find apps that intercept mouse events.&lt;/p&gt;
-&lt;h4 id=&#34;click-allow-button-via-keyboard-operation&#34;&gt;Click Allow button via keyboard operation&lt;/h4&gt;
-&lt;p&gt;You can press Allow button via keyboard operation.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Change Full Keyboard Access configuration.
-&lt;ol&gt;
-&lt;li&gt;Open System Preferences &amp;gt; Keyboard &amp;gt; Shortcuts.&lt;/li&gt;
-&lt;li&gt;Change Full Keyboard Access configuration to All controls.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;Click Allow button.
-&lt;ol&gt;
-&lt;li&gt;Open System Preferences &amp;gt; Security &amp;gt; Privacy.&lt;/li&gt;
-&lt;li&gt;Move focus to Allow button by using tab or shift+tab key.&lt;/li&gt;
-&lt;li&gt;Press spacebar on Allow button.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h4 id=&#34;using-safe-mode&#34;&gt;Using safe mode&lt;/h4&gt;
-&lt;p&gt;You can press Allow button by starting your Mac in safe mode since any extra apps which prevent clicking the Allow button is not launched automatically in safe mode.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Download &lt;a href=&#34;/&#34;&gt;Karabiner-Elements&lt;/a&gt; before restarting your Mac.&lt;/li&gt;
-&lt;li&gt;Restart your Mac in safe mode by &lt;a href=&#34;https://support.apple.com/en-us/HT201262&#34;&gt;press and hold the shift key at boot&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Reinstall Karabiner-Elements from downloaded file.&lt;/li&gt;
+&lt;li&gt;Restart your Mac in safe mode by &lt;a href=&#34;https://support.apple.com/guide/mac-help/start-up-your-mac-in-safe-mode-mh21245/mac&#34;&gt;this instruction&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Open Karabiner-Elements from Launchpad to ensure that Allow button is shown on System Preferences.&lt;/li&gt;
 &lt;li&gt;Open System Preferences and confirm the Allow button is shown.&lt;br/&gt;
 If the Allow button is hidden, close System Preferences and open it again.&lt;/li&gt;
 &lt;li&gt;Click the Allow button.&lt;/li&gt;
 &lt;li&gt;Restart your Mac and boot in normal mode.&lt;/li&gt;
 &lt;/ol&gt;
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
+Karabiner-Elements does not work in safe mode.
+You have to restart macOS in normal mode to use Karabiner-Elements.
+&lt;/div&gt;
+
 
       </description>
     </item>

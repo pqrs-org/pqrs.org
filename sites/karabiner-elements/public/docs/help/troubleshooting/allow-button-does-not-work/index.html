@@ -20,22 +20,20 @@
 <link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
-<title>from.simultaneous | Karabiner-Elements</title><meta property="og:title" content="from.simultaneous" />
-<meta property="og:description" content="simultaneous manipulates keys which are pressed simultaneously in 50 milliseconds.
-Example This json defines manipulator which changes a&#43;s&#43;d to mission_control.
-{ &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;simultaneous&#34;: [ { &#34;key_code&#34;: &#34;a&#34; }, { &#34;key_code&#34;: &#34;s&#34; }, { &#34;key_code&#34;: &#34;d&#34; } ], &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [ { &#34;key_code&#34;: &#34;mission_control&#34; } ] }  Note There are some cases simultaneous does not modify events.
- simultaneous does not modify events if any from events are released before all from events are pressed." />
+<title>Allow button in Security &amp; Privacy System Preferences does not work | Karabiner-Elements</title><meta property="og:title" content="Allow button in Security &amp; Privacy System Preferences does not work" />
+<meta property="og:description" content="The allow button in Security &amp; Privacy System Preferences should be hidden after you click it. If the button does not hide after click, you did not succeed to click it.
+  Reason The exact cause of the issue has not been determined, but it may be caused by the corrupted system cache by a macOS issue.
+This issue may be resolved by starting macOS in safe mode to refresh the system cache." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="/docs/json/complex-modifications-manipulator-definition/from/simultaneous/" />
+<meta property="og:url" content="/docs/help/troubleshooting/allow-button-does-not-work/" />
 <meta property="og:image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
 <meta property="og:site_name" content="Karabiner-Elements" />
-<meta itemprop="name" content="from.simultaneous">
-<meta itemprop="description" content="simultaneous manipulates keys which are pressed simultaneously in 50 milliseconds.
-Example This json defines manipulator which changes a&#43;s&#43;d to mission_control.
-{ &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;simultaneous&#34;: [ { &#34;key_code&#34;: &#34;a&#34; }, { &#34;key_code&#34;: &#34;s&#34; }, { &#34;key_code&#34;: &#34;d&#34; } ], &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [ { &#34;key_code&#34;: &#34;mission_control&#34; } ] }  Note There are some cases simultaneous does not modify events.
- simultaneous does not modify events if any from events are released before all from events are pressed.">
+<meta itemprop="name" content="Allow button in Security &amp; Privacy System Preferences does not work">
+<meta itemprop="description" content="The allow button in Security &amp; Privacy System Preferences should be hidden after you click it. If the button does not hide after click, you did not succeed to click it.
+  Reason The exact cause of the issue has not been determined, but it may be caused by the corrupted system cache by a macOS issue.
+This issue may be resolved by starting macOS in safe mode to refresh the system cache.">
 
-<meta itemprop="wordCount" content="244">
+<meta itemprop="wordCount" content="150">
 <meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
 
 
@@ -44,11 +42,10 @@ Example This json defines manipulator which changes a&#43;s&#43;d to mission_con
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
 
-<meta name="twitter:title" content="from.simultaneous"/>
-<meta name="twitter:description" content="simultaneous manipulates keys which are pressed simultaneously in 50 milliseconds.
-Example This json defines manipulator which changes a&#43;s&#43;d to mission_control.
-{ &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;simultaneous&#34;: [ { &#34;key_code&#34;: &#34;a&#34; }, { &#34;key_code&#34;: &#34;s&#34; }, { &#34;key_code&#34;: &#34;d&#34; } ], &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [ { &#34;key_code&#34;: &#34;mission_control&#34; } ] }  Note There are some cases simultaneous does not modify events.
- simultaneous does not modify events if any from events are released before all from events are pressed."/>
+<meta name="twitter:title" content="Allow button in Security &amp; Privacy System Preferences does not work"/>
+<meta name="twitter:description" content="The allow button in Security &amp; Privacy System Preferences should be hidden after you click it. If the button does not hide after click, you did not succeed to click it.
+  Reason The exact cause of the issue has not been determined, but it may be caused by the corrupted system cache by a macOS issue.
+This issue may be resolved by starting macOS in safe mode to refresh the system cache."/>
 
 
 <script type="application/javascript">
@@ -444,10 +441,10 @@ if (!doNotTrack) {
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="/docs/help/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Help</a>
+    <a  href="/docs/help/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">Help</a>
   </li>
   <ul>
-    <li class="collapse " id="docshelp">
+    <li class="collapse show" id="docshelp">
       
       
       
@@ -461,10 +458,10 @@ if (!doNotTrack) {
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="/docs/help/troubleshooting/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Troubleshooting</a>
+    <a  href="/docs/help/troubleshooting/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">Troubleshooting</a>
   </li>
   <ul>
-    <li class="collapse " id="docshelptroubleshooting">
+    <li class="collapse show" id="docshelptroubleshooting">
       
       
       
@@ -483,7 +480,7 @@ if (!doNotTrack) {
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docshelptroubleshootingallow-button-does-not-work" href="/docs/help/troubleshooting/allow-button-does-not-work/">Allow button in Security &amp; Privacy System Preferences does not work</a>
+      <a class="td-sidebar-link td-sidebar-link__page  active" id="m-docshelptroubleshootingallow-button-does-not-work" href="/docs/help/troubleshooting/allow-button-does-not-work/">Allow button in Security &amp; Privacy System Preferences does not work</a>
       
       
       
@@ -662,10 +659,10 @@ if (!doNotTrack) {
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="/docs/json/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">Karabiner Configuration Reference Manual</a>
+    <a  href="/docs/json/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Karabiner Configuration Reference Manual</a>
   </li>
   <ul>
-    <li class="collapse show" id="docsjson">
+    <li class="collapse " id="docsjson">
       
       
       
@@ -703,10 +700,10 @@ if (!doNotTrack) {
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="/docs/json/complex-modifications-manipulator-definition/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">complex_modifications manipulator definition</a>
+    <a  href="/docs/json/complex-modifications-manipulator-definition/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">complex_modifications manipulator definition</a>
   </li>
   <ul>
-    <li class="collapse show" id="docsjsoncomplex-modifications-manipulator-definition">
+    <li class="collapse " id="docsjsoncomplex-modifications-manipulator-definition">
       
       
       
@@ -720,10 +717,10 @@ if (!doNotTrack) {
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="/docs/json/complex-modifications-manipulator-definition/from/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">from event definition</a>
+    <a  href="/docs/json/complex-modifications-manipulator-definition/from/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">from event definition</a>
   </li>
   <ul>
-    <li class="collapse show" id="docsjsoncomplex-modifications-manipulator-definitionfrom">
+    <li class="collapse " id="docsjsoncomplex-modifications-manipulator-definitionfrom">
       
       
       
@@ -742,7 +739,7 @@ if (!doNotTrack) {
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page  active" id="m-docsjsoncomplex-modifications-manipulator-definitionfromsimultaneous" href="/docs/json/complex-modifications-manipulator-definition/from/simultaneous/">from.simultaneous</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsjsoncomplex-modifications-manipulator-definitionfromsimultaneous" href="/docs/json/complex-modifications-manipulator-definition/from/simultaneous/">from.simultaneous</a>
       
       
       
@@ -1103,16 +1100,8 @@ if (!doNotTrack) {
 
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#example">Example</a>
-      <ul>
-        <li><a href="#manipulated-input-1">Manipulated input #1</a></li>
-        <li><a href="#manipulated-input-2">Manipulated input #2</a></li>
-        <li><a href="#not-manipulated-input-1">Not manipulated input #1</a></li>
-        <li><a href="#not-manipulated-input-2">Not manipulated input #2</a></li>
-      </ul>
-    </li>
-    <li><a href="#about-key_up">About key_up</a></li>
-    <li><a href="#change-threshold-milliseconds">Change threshold milliseconds</a></li>
+    <li><a href="#reason">Reason</a></li>
+    <li><a href="#steps">Steps</a></li>
   </ul>
 </nav>
 
@@ -1139,9 +1128,6 @@ if (!doNotTrack) {
 
 
 
-
-
-
 <li class="breadcrumb-item" >
 	<a href="/docs/">Documentation</a>
 </li>
@@ -1150,28 +1136,21 @@ if (!doNotTrack) {
 
 
 <li class="breadcrumb-item" >
-	<a href="/docs/json/">Karabiner Configuration Reference Manual</a>
+	<a href="/docs/help/">Help</a>
 </li>
 
 
 
 
 <li class="breadcrumb-item" >
-	<a href="/docs/json/complex-modifications-manipulator-definition/">complex_modifications manipulator definition</a>
-</li>
-
-
-
-
-<li class="breadcrumb-item" >
-	<a href="/docs/json/complex-modifications-manipulator-definition/from/">from event definition</a>
+	<a href="/docs/help/troubleshooting/">Troubleshooting</a>
 </li>
 
 
 
 
 <li class="breadcrumb-item active" aria-current="page">
-	<a href="/docs/json/complex-modifications-manipulator-definition/from/simultaneous/">from.simultaneous</a>
+	<a href="/docs/help/troubleshooting/allow-button-does-not-work/">Allow button in Security &amp; Privacy System Preferences does not work</a>
 </li>
 
 	</ol>
@@ -1179,149 +1158,11 @@ if (!doNotTrack) {
 
             
 <div class="td-content">
-	<h1>from.simultaneous</h1>
+	<h1>Allow button in Security &amp; Privacy System Preferences does not work</h1>
     
 	       
-	<p><code>simultaneous</code> manipulates keys which are pressed simultaneously in 50 milliseconds.</p>
-<h2 id="example">Example</h2>
-<p>This json defines manipulator which changes <code>a+s+d</code> to <code>mission_control</code>.</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json"><span style="color:#000;font-weight:bold">{</span>
-    <span style="color:#204a87;font-weight:bold">&#34;type&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;basic&#34;</span><span style="color:#000;font-weight:bold">,</span>
-    <span style="color:#204a87;font-weight:bold">&#34;from&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
-        <span style="color:#204a87;font-weight:bold">&#34;simultaneous&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
-            <span style="color:#000;font-weight:bold">{</span>
-                <span style="color:#204a87;font-weight:bold">&#34;key_code&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;a&#34;</span>
-            <span style="color:#000;font-weight:bold">},</span>
-            <span style="color:#000;font-weight:bold">{</span>
-                <span style="color:#204a87;font-weight:bold">&#34;key_code&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;s&#34;</span>
-            <span style="color:#000;font-weight:bold">},</span>
-            <span style="color:#000;font-weight:bold">{</span>
-                <span style="color:#204a87;font-weight:bold">&#34;key_code&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;d&#34;</span>
-            <span style="color:#000;font-weight:bold">}</span>
-        <span style="color:#000;font-weight:bold">],</span>
-        <span style="color:#204a87;font-weight:bold">&#34;modifiers&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
-            <span style="color:#204a87;font-weight:bold">&#34;optional&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">&#34;any&#34;</span><span style="color:#000;font-weight:bold">]</span>
-        <span style="color:#000;font-weight:bold">}</span>
-    <span style="color:#000;font-weight:bold">},</span>
-    <span style="color:#204a87;font-weight:bold">&#34;to&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
-        <span style="color:#000;font-weight:bold">{</span>
-            <span style="color:#204a87;font-weight:bold">&#34;key_code&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;mission_control&#34;</span>
-        <span style="color:#000;font-weight:bold">}</span>
-    <span style="color:#000;font-weight:bold">]</span>
-<span style="color:#000;font-weight:bold">}</span>
-</code></pre></div>
-
-<div class="alert alert-primary" role="alert">
-<h4 class="alert-heading">Note</h4>
-<p>There are some cases <code>simultaneous</code> does not modify events.</p>
-<ul>
-<li><code>simultaneous</code> does not modify events if any <code>from</code> events are released before all <code>from</code> events are pressed.</li>
-<li><code>simultaneous</code> does not modify events if <code>from</code> events are interrupted by another key_down event.</li>
-</ul>
-
-</div>
-
-<h3 id="manipulated-input-1">Manipulated input #1</h3>
-<ul>
-<li>Input:
-<ol>
-<li><code>a</code> key_down</li>
-<li><code>s</code> key_down</li>
-<li><code>d</code> key_down</li>
-</ol>
-</li>
-<li>Output:
-<ol>
-<li><code>mission_control</code></li>
-</ol>
-</li>
-</ul>
-<h3 id="manipulated-input-2">Manipulated input #2</h3>
-<ul>
-<li>Input:
-<ol>
-<li><code>s</code> key_down</li>
-<li><code>a</code> key_down</li>
-<li><code>d</code> key_down</li>
-</ol>
-</li>
-<li>Output:
-<ol>
-<li><code>mission_control</code></li>
-</ol>
-</li>
-</ul>
-<h3 id="not-manipulated-input-1">Not manipulated input #1</h3>
-<p><code>a</code> is released before all input events are pressed.</p>
-<ul>
-<li>Input:
-<ol>
-<li><code>a</code> key_down</li>
-<li><code>s</code> key_down</li>
-<li><code>a</code> key_up</li>
-<li><code>d</code> key_down</li>
-</ol>
-</li>
-<li>Output:
-<ol>
-<li><code>a</code> key_down</li>
-<li><code>s</code> key_down</li>
-<li><code>a</code> key_up</li>
-<li><code>d</code> key_down</li>
-</ol>
-</li>
-</ul>
-<h3 id="not-manipulated-input-2">Not manipulated input #2</h3>
-<p>Another key (<code>f</code>) is pressed before all input events are pressed.</p>
-<ul>
-<li>Input:
-<ol>
-<li><code>a</code> key_down</li>
-<li><code>s</code> key_down</li>
-<li><code>f</code> key_down</li>
-<li><code>d</code> key_down</li>
-</ol>
-</li>
-<li>Output:
-<ol>
-<li><code>a</code> key_down</li>
-<li><code>s</code> key_down</li>
-<li><code>f</code> key_down</li>
-<li><code>d</code> key_down</li>
-</ol>
-</li>
-</ul>
-<h2 id="about-key_up">About key_up</h2>
-<p>The key_up event is posted when you release any <code>from</code> events.</p>
-<p>For example, changing <code>tab+q</code> to <code>mission_control</code> works as follows.</p>
-<table>
-<thead>
-<tr>
-<th>Input</th>
-<th>Output</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>tab</code> key_down</td>
-<td>&mdash;</td>
-</tr>
-<tr>
-<td><code>q</code> key_down</td>
-<td><code>mission_control</code> key_down</td>
-</tr>
-<tr>
-<td><code>tab</code> key_up</td>
-<td><code>mission_control</code> key_up</td>
-</tr>
-<tr>
-<td><code>q</code> key_up</td>
-<td>&mdash;</td>
-</tr>
-</tbody>
-</table>
-<h2 id="change-threshold-milliseconds">Change threshold milliseconds</h2>
-<p>You can adjust threshold on Preferences &gt; Complex Modifications &gt; Parameters.</p>
+	<p>The allow button in Security &amp; Privacy System Preferences should be hidden after you click it.<br/>
+If the button does not hide after click, you did not succeed to click it.</p>
 
 
 
@@ -1331,13 +1172,32 @@ if (!doNotTrack) {
 
 <figure>
   <img
-    src="/docs/json/complex-modifications-manipulator-definition/from/simultaneous/images/karabiner-elements-simultaneous_threshold_milliseconds@2x.png"
-    alt="karabiner-elements-simultaneous_threshold_milliseconds@2x.png"
-    style="width: 1000px"
+    src="/docs/help/troubleshooting/allow-button-does-not-work/images/allow@2x.png"
+    alt="allow@2x.png"
+    style="width: 668px"
   />
 </figure>
 
-<p>It is same as adjusting <code>basic.simultaneous_threshold_milliseconds</code> parameter in json.</p>
+<h2 id="reason">Reason</h2>
+<p>The exact cause of the issue has not been determined, but it may be caused by the corrupted system cache by a macOS issue.</p>
+<p>This issue may be resolved by starting macOS in safe mode to refresh the system cache.</p>
+<h2 id="steps">Steps</h2>
+<ol>
+<li>Restart your Mac in safe mode by <a href="https://support.apple.com/guide/mac-help/start-up-your-mac-in-safe-mode-mh21245/mac">this instruction</a>.</li>
+<li>Open Karabiner-Elements from Launchpad to ensure that Allow button is shown on System Preferences.</li>
+<li>Open System Preferences and confirm the Allow button is shown.<br/>
+If the Allow button is hidden, close System Preferences and open it again.</li>
+<li>Click the Allow button.</li>
+<li>Restart your Mac and boot in normal mode.</li>
+</ol>
+
+
+<div class="alert alert-primary" role="alert">
+<h4 class="alert-heading">Note</h4>
+Karabiner-Elements does not work in safe mode.
+You have to restart macOS in normal mode to use Karabiner-Elements.
+</div>
+
 
 	
 	
