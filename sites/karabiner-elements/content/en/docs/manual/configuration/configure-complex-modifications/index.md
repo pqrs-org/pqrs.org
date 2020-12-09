@@ -24,6 +24,10 @@ These rules change keys by conditions.
 
 You can import predefined rules from the internet or make your own rules.
 
+{{% alert title="Tips" color="secondary" %}}
+If you want to write your own rules, try [external config generators](/docs/json/external-json-generators/).
+{{% /alert %}}
+
 ## Step 1
 
 Open Complex Modifications tab and press **Add rule** button, then press **Import more rules from the internet** button.<br />
