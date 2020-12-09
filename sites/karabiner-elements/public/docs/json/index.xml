@@ -668,5 +668,31 @@ Adding a custom .json file allows for enabling and disabling rules/complex modif
       </description>
     </item>
     
+    <item>
+      <title>Docs: External JSON generators</title>
+      <link>/docs/json/external-json-generators/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/json/external-json-generators/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Karabiner-Elements configuration generators:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/yqrashawn/GokuRakuJoudo#usage&#34;&gt;GokuRakuJoudo&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;Goku generates &lt;code&gt;karabiner.json&lt;/code&gt; from well designed edn format file.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://genesy.github.io/karabiner-complex-rules-generator/&#34;&gt;Karabiner Complex Modification&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;The web UI for creating json of complex modification rules.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
   </channel>
 </rss>
