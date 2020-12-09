@@ -24,8 +24,8 @@ These rules change keys by conditions.
 
 You can import predefined rules from the internet or make your own rules.
 
-{{% alert title="Tips" color="secondary" %}}
-If you want to write your own rules, try [external config generators](/docs/json/external-json-generators/).
+{{% alert title="Tip" color="secondary" %}}
+If you want to write your own rules, try [external config generators](/docs/json/external-json-generators/) or modify [existing rules](https://github.com/pqrs-org/KE-complex_modifications).
 {{% /alert %}}
 
 ## Step 1
