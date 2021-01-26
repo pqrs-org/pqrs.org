@@ -4,7 +4,6 @@
 
 {{ if .Site.Params.mermaid.enable }}
 <script src="https://cdn.jsdelivr.net/npm/mermaid@8.8.1/dist/mermaid.min.js" integrity="sha384-to2w0I1OqmbJ9J6yTnIX+KYU8grNpZoD1dKPLjgEJvMe5L5+/7qvuNa2sQo8WAWj" crossorigin="anonymous"></script>
-
 {{ end }}
 
 {{ $jsBase := resources.Get "js/base.js" }}
@@ -21,8 +20,8 @@
 {{ $js := $js | minify | fingerprint }}
 <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" crossorigin="anonymous"></script>
 {{ end }}
-{{ with .Site.Params.prism_syntax_highlighting }}
+{{ if .Site.Params.prism_syntax_highlighting }}
 <!-- scripts for prism -->
-<script src='/js/prism.js'></script>
+<script src='{{ "/js/prism.js" | relURL }}'></script>
 {{ end }}
 {{ partial "hooks/body-end.html" . }}
