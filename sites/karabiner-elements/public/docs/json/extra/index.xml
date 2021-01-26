@@ -83,10 +83,12 @@
 
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
-&lt;ul&gt;
+
+    &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;finger_count_total == finger_count_upper_half_area + finger_count_lower_half_area&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;finger_count_total == finger_count_left_half_area + finger_count_right_half_area&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
+
 
 &lt;/div&gt;
 

@@ -49,7 +49,8 @@ In this case, you can display the allow button by deactivating and activating dr
 
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;macOS Catalina Note #1&lt;/h4&gt;
-&lt;p&gt;Even worse, there is an additional problem on the macOS side if you are using macOS Catalina.&lt;br/&gt;
+
+    &lt;p&gt;Even worse, there is an additional problem on the macOS side if you are using macOS Catalina.&lt;br/&gt;
 The above steps might not resolve the issue and the alert may keep showing up.&lt;/p&gt;
 &lt;p&gt;If you are facing the problem, restart macOS between deactivating and activating to refresh the macOS internal state.&lt;/p&gt;
 &lt;ol&gt;
@@ -60,15 +61,18 @@ The above steps might not resolve the issue and the alert may keep showing up.&l
 &lt;li&gt;Open Security &amp;amp; Privacy System Preferences and press the allow button.&lt;/li&gt;
 &lt;/ol&gt;
 
+
 &lt;/div&gt;
 
 
 
 &lt;div class=&#34;alert alert-danger&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;macOS Catalina Note #2&lt;/h4&gt;
-&lt;p&gt;The problem is caused by macOS Catalina issues around DriverKit driver.&lt;/p&gt;
+
+    &lt;p&gt;The problem is caused by macOS Catalina issues around DriverKit driver.&lt;/p&gt;
 &lt;p&gt;Karabiner-Elements v12.10.0 uses a legacy kernel extension, so it is not affected by the macOS issues.
 So, downgrading to &lt;a href=&#34;/docs/releasenotes/#karabiner-elements-12100&#34;&gt;Karabiner-Elements 12.10.0&lt;/a&gt; also solves the issue.&lt;/p&gt;
+
 
 &lt;/div&gt;
 
@@ -118,8 +122,10 @@ If the Allow button is hidden, close System Preferences and open it again.&lt;/l
 
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
-Karabiner-Elements does not work in safe mode.
+
+    Karabiner-Elements does not work in safe mode.
 You have to restart macOS in normal mode to use Karabiner-Elements.
+
 &lt;/div&gt;
 
 
@@ -203,8 +209,10 @@ If the Allow button is hidden, close System Preferences and open it again.&lt;/l
 
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
-Karabiner-Elements does not work in safe mode.
+
+    Karabiner-Elements does not work in safe mode.
 You have to restart macOS in normal mode to use Karabiner-Elements.
+
 &lt;/div&gt;
 
 
@@ -275,7 +283,8 @@ You have to restart macOS in normal mode to use Karabiner-Elements.
 
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Tip&lt;/h4&gt;
-&lt;p&gt;You can find the key name by &lt;a href=&#34;/docs/manual/operation/eventviewer/&#34;&gt;Karabiner-EventViewer&lt;/a&gt;.&lt;/p&gt;
+
+    &lt;p&gt;You can find the key name by &lt;a href=&#34;/docs/manual/operation/eventviewer/&#34;&gt;Karabiner-EventViewer&lt;/a&gt;.&lt;/p&gt;
 &lt;figure&gt;
   &lt;img
     src=&#34;/docs/manual/configuration/configure-simple-modifications/images/karabiner-elements-eventviewer-name@2x.png&#34;
@@ -283,6 +292,7 @@ You have to restart macOS in normal mode to use Karabiner-Elements.
     style=&#34;width: 874px&#34;
   /&gt;
 &lt;/figure&gt;
+
 
 &lt;/div&gt;
 
@@ -318,9 +328,11 @@ You can use them in Preferences &amp;gt; Complex Modifications &amp;gt; Add rule
 
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Tip: file update detection and automatic reload&lt;/h4&gt;
-&lt;p&gt;Karabiner-Elements watches &lt;code&gt;~/.config/karabiner/karabiner.json&lt;/code&gt; and reloads it if updated.&lt;/p&gt;
+
+    &lt;p&gt;Karabiner-Elements watches &lt;code&gt;~/.config/karabiner/karabiner.json&lt;/code&gt; and reloads it if updated.&lt;/p&gt;
 &lt;p&gt;The mechanism is that Karabiner-Elements watches the parent directory &lt;code&gt;~/.config/karabiner&lt;/code&gt; by using the File System Events API.&lt;br /&gt;
 Thus, Karabiner-Elements fails detecting file updates after you change the parent directory (e.g., recreate the parent directory).&lt;/p&gt;
+
 
 &lt;/div&gt;
 
@@ -366,8 +378,10 @@ These matches all key codes, consumer key codes or pointing buttons.&lt;/p&gt;
 
 &lt;div class=&#34;alert alert-danger&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Caution&lt;/h4&gt;
-Be careful using &lt;code&gt;&amp;quot;any&amp;quot;: &amp;quot;pointing_button&amp;quot;&lt;/code&gt;.&lt;br /&gt;
+
+    Be careful using &lt;code&gt;&amp;quot;any&amp;quot;: &amp;quot;pointing_button&amp;quot;&lt;/code&gt;.&lt;br /&gt;
 You may lose the left click button and system will be unusable.
+
 &lt;/div&gt;
 
 
@@ -590,7 +604,9 @@ Follow this instruction to set up Karabiner-Elements.&lt;/p&gt;
 
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
-Please follow &lt;a href=&#34;../../help/troubleshooting/kext-allow-button-does-not-work/&#34;&gt;this instruction&lt;/a&gt; if there are any problem about the &lt;strong&gt;Allow&lt;/strong&gt; button.
+
+    Please follow &lt;a href=&#34;../../help/troubleshooting/kext-allow-button-does-not-work/&#34;&gt;this instruction&lt;/a&gt; if there are any problem about the &lt;strong&gt;Allow&lt;/strong&gt; button.
+
 &lt;/div&gt;
 
 &lt;h2 id=&#34;grant-input-monitoring-to-karabiner-elements-processes&#34;&gt;Grant Input Monitoring to Karabiner-Elements processes&lt;/h2&gt;
@@ -712,7 +728,9 @@ Choose your keyboard layout. (ANSI, ISO or JIS)
 
 &lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Warning&lt;/h4&gt;
-If you want to remove Karabiner-Elements, you have to use &lt;a href=&#34;/docs/manual/operation/uninstall&#34;&gt;uninstaller&lt;/a&gt;.
+
+    If you want to remove Karabiner-Elements, you have to use &lt;a href=&#34;/docs/manual/operation/uninstall&#34;&gt;uninstaller&lt;/a&gt;.
+
 &lt;/div&gt;
 
 
@@ -789,10 +807,12 @@ If you want to remove Karabiner-Elements, you have to use &lt;a href=&#34;/docs/
 
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
-&lt;ul&gt;
+
+    &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;finger_count_total == finger_count_upper_half_area + finger_count_lower_half_area&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;finger_count_total == finger_count_left_half_area + finger_count_right_half_area&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
+
 
 &lt;/div&gt;
 
@@ -846,7 +866,8 @@ To quit Karabiner-Elements, choose &amp;ldquo;Quit Karabiner-Elements&amp;rdquo;
 
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
-&lt;p&gt;If you&amp;rsquo;ve hidden the menu bar icon, you can also quit Karabiner-Elements from Preferences.&lt;/p&gt;
+
+    &lt;p&gt;If you&amp;rsquo;ve hidden the menu bar icon, you can also quit Karabiner-Elements from Preferences.&lt;/p&gt;
 &lt;figure&gt;
   &lt;img
     src=&#34;/docs/manual/operation/quit/images/karabiner-elements-quit@2x.png&#34;
@@ -854,6 +875,7 @@ To quit Karabiner-Elements, choose &amp;ldquo;Quit Karabiner-Elements&amp;rdquo;
     style=&#34;width: 900px&#34;
   /&gt;
 &lt;/figure&gt;
+
 
 &lt;/div&gt;
 
@@ -1147,7 +1169,9 @@ Change modifiers by using Simple Modifications.
 
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Tip&lt;/h4&gt;
-If you do not include &lt;code&gt;any&lt;/code&gt; in &lt;code&gt;modifiers.optional&lt;/code&gt;, your manipulator does not change event if extra modifiers (modifiers which are not included in &lt;code&gt;modifiers.mandatory&lt;/code&gt;) are pressed.
+
+    If you do not include &lt;code&gt;any&lt;/code&gt; in &lt;code&gt;modifiers.optional&lt;/code&gt;, your manipulator does not change event if extra modifiers (modifiers which are not included in &lt;code&gt;modifiers.mandatory&lt;/code&gt;) are pressed.
+
 &lt;/div&gt;
 
 &lt;h2 id=&#34;list-of-modifiers&#34;&gt;List of modifiers&lt;/h2&gt;
@@ -1473,9 +1497,11 @@ If you do not include &lt;code&gt;any&lt;/code&gt; in &lt;code&gt;modifiers.opti
 
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
-&lt;p&gt;Actually, this setting does not disable the caps lock delay of macOS.&lt;/p&gt;
+
+    &lt;p&gt;Actually, this setting does not disable the caps lock delay of macOS.&lt;/p&gt;
 &lt;p&gt;This setting puts a wait between caps lock key down and key up event
 in order to ensure macOS recognize the caps lock event.&lt;/p&gt;
+
 
 &lt;/div&gt;
 
@@ -1683,8 +1709,10 @@ And do nothing if the process is running with non root user.&lt;/li&gt;
 
 &lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Caution&lt;/h4&gt;
-&lt;p&gt;Switching to input sources which have input_mode_id (Chinese, Japanese, Korean, Vietnamese) may be failed due to an macOS issue.&lt;/p&gt;
+
+    &lt;p&gt;Switching to input sources which have input_mode_id (Chinese, Japanese, Korean, Vietnamese) may be failed due to an macOS issue.&lt;/p&gt;
 &lt;p&gt;For CJKV input sources, sending the input source switch shortcut (e.g., control-space) is better than using &lt;code&gt;select_input_source&lt;/code&gt;.&lt;/p&gt;
+
 
 &lt;/div&gt;
 
@@ -2005,10 +2033,12 @@ Use the uninstaller to remove Karabiner-Elements from your system.&lt;/p&gt;
 
 &lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Uninstall from command line&lt;/h4&gt;
-&lt;p&gt;If you don&amp;rsquo;t want to use above GUI, you can also uninstall Karabiner-Elements from command line.&lt;/p&gt;
+
+    &lt;p&gt;If you don&amp;rsquo;t want to use above GUI, you can also uninstall Karabiner-Elements from command line.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;bash &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;/Library/Application Support/org.pqrs/Karabiner-DriverKit-VirtualHIDDevice/scripts/uninstall/deactivate_driver.sh&amp;#39;&lt;/span&gt;
 sudo &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;/Library/Application Support/org.pqrs/Karabiner-Elements/uninstall.sh&amp;#39;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;(Administrator password is required to run the above command.)&lt;/p&gt;
+
 
 &lt;/div&gt;
 
@@ -2016,12 +2046,14 @@ sudo &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;/Library/Application Sup
 
 &lt;div class=&#34;alert alert-success&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Advanced topic&lt;/h4&gt;
-&lt;p&gt;&lt;code&gt;Operation not permitted&lt;/code&gt; error will occur if you try removing files by &lt;code&gt;rm&lt;/code&gt; command.&lt;/p&gt;
+
+    &lt;p&gt;&lt;code&gt;Operation not permitted&lt;/code&gt; error will occur if you try removing files by &lt;code&gt;rm&lt;/code&gt; command.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;sudo rm -rf /Applications/Karabiner-Elements.app
 rm: /Applications/Karabiner-Elements.app/Contents: Operation not permitted
 rm: /Applications/Karabiner-Elements.app: Operation not permitted
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Karabiner-Elements forces you to use uninstaller to remove files in order to ensure remove files outside /Applications.&lt;/p&gt;
 &lt;p&gt;See &lt;a href=&#34;/docs/help/advanced-topics/installed-files/&#34;&gt;Installed files&lt;/a&gt; to confirm the files.&lt;/p&gt;
+
 
 &lt;/div&gt;
 
@@ -2044,7 +2076,8 @@ These rules change keys by conditions.&lt;/p&gt;
 
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Examples&lt;/h4&gt;
-&lt;ul&gt;
+
+    &lt;ul&gt;
 &lt;li&gt;Modifier flags + key to keys:
 &lt;ul&gt;
 &lt;li&gt;Change control-m to return key.&lt;/li&gt;
@@ -2073,6 +2106,7 @@ These rules change keys by conditions.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 
+
 &lt;/div&gt;
 
 &lt;p&gt;You can import predefined rules from the internet or make your own rules.&lt;/p&gt;
@@ -2080,7 +2114,9 @@ These rules change keys by conditions.&lt;/p&gt;
 
 &lt;div class=&#34;alert alert-secondary&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Tip&lt;/h4&gt;
-If you want to write your own rules, try &lt;a href=&#34;/docs/json/external-json-generators/&#34;&gt;external config generators&lt;/a&gt; or modify &lt;a href=&#34;https://github.com/pqrs-org/KE-complex_modifications&#34;&gt;existing rules&lt;/a&gt;.
+
+    If you want to write your own rules, try &lt;a href=&#34;/docs/json/external-json-generators/&#34;&gt;external config generators&lt;/a&gt; or modify &lt;a href=&#34;https://github.com/pqrs-org/KE-complex_modifications&#34;&gt;existing rules&lt;/a&gt;.
+
 &lt;/div&gt;
 
 &lt;h2 id=&#34;step-1&#34;&gt;Step 1&lt;/h2&gt;
@@ -2345,7 +2381,8 @@ Confirm the result using &lt;a href=&#34;/docs/manual/operation/eventviewer/&#34
 
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Tip&lt;/h4&gt;
-&lt;p&gt;If you want to use the latest beta version, use &amp;ldquo;Check for beta updates&amp;rdquo; button.&lt;/p&gt;
+
+    &lt;p&gt;If you want to use the latest beta version, use &amp;ldquo;Check for beta updates&amp;rdquo; button.&lt;/p&gt;
 &lt;figure&gt;
   &lt;img
     src=&#34;/docs/manual/operation/check-for-updates/images/karabiner-elements-check-for-updates-beta@2x.png&#34;
@@ -2353,6 +2390,7 @@ Confirm the result using &lt;a href=&#34;/docs/manual/operation/eventviewer/&#34
     style=&#34;width: 900px&#34;
   /&gt;
 &lt;/figure&gt;
+
 
 &lt;/div&gt;
 
@@ -2374,8 +2412,10 @@ Confirm the result using &lt;a href=&#34;/docs/manual/operation/eventviewer/&#34
 
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Tip&lt;/h4&gt;
-Mice are disabled by default.&lt;br /&gt;
+
+    Mice are disabled by default.&lt;br /&gt;
 You have to enable them if you want to change the mouse buttons in Karabiner-Elements.
+
 &lt;/div&gt;
 
 
@@ -2417,7 +2457,8 @@ Karabiner-Elements changes keys by Simple Modifications, and then changes them b
 
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Example&lt;/h4&gt;
-&lt;p&gt;If there are the following manipulators, &lt;code&gt;right shift&lt;/code&gt; key will be &lt;code&gt;right command + right option&lt;/code&gt;.&lt;/p&gt;
+
+    &lt;p&gt;If there are the following manipulators, &lt;code&gt;right shift&lt;/code&gt; key will be &lt;code&gt;right command + right option&lt;/code&gt;.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Simple Modifications
 &lt;ul&gt;
@@ -2430,6 +2471,7 @@ Karabiner-Elements changes keys by Simple Modifications, and then changes them b
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+
 
 &lt;/div&gt;
 
@@ -2477,11 +2519,13 @@ Karabiner-Elements changes keys by Simple Modifications, and then changes them b
 
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
-&lt;p&gt;There are some cases &lt;code&gt;simultaneous&lt;/code&gt; does not modify events.&lt;/p&gt;
+
+    &lt;p&gt;There are some cases &lt;code&gt;simultaneous&lt;/code&gt; does not modify events.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;simultaneous&lt;/code&gt; does not modify events if any &lt;code&gt;from&lt;/code&gt; events are released before all &lt;code&gt;from&lt;/code&gt; events are pressed.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;simultaneous&lt;/code&gt; does not modify events if &lt;code&gt;from&lt;/code&gt; events are interrupted by another key_down event.&lt;/li&gt;
 &lt;/ul&gt;
+
 
 &lt;/div&gt;
 
@@ -2659,9 +2703,11 @@ Karabiner-Elements changes keys by Simple Modifications, and then changes them b
 
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
-&lt;p&gt;System modifier keys configuration in &lt;strong&gt;System Preferences &amp;gt; Keyboard&lt;/strong&gt; is ignored when you use
+
+    &lt;p&gt;System modifier keys configuration in &lt;strong&gt;System Preferences &amp;gt; Keyboard&lt;/strong&gt; is ignored when you use
 Karabiner-Elements.&lt;/p&gt;
 &lt;p&gt;Change modifier keys in Karabiner-Elements&amp;rsquo;s Simple Modifications.&lt;/p&gt;
+
 
 &lt;/div&gt;
 
@@ -2687,10 +2733,12 @@ Karabiner-Elements.&lt;/p&gt;
 
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Tip&lt;/h4&gt;
-&lt;p&gt;It&amp;rsquo;s useful for supporting &amp;ldquo;change control-[ to escape&amp;rdquo; with all keyboard types.
+
+    &lt;p&gt;It&amp;rsquo;s useful for supporting &amp;ldquo;change control-[ to escape&amp;rdquo; with all keyboard types.
 &lt;a href=&#34;https://github.com/pqrs-org/KE-complex_modifications/blob/master/public/json/example_keyboard_type.json&#34;&gt;(example json)&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Some characters have different key code for each keyboard types.&lt;br /&gt;
 (e.g., &lt;strong&gt;[&lt;/strong&gt; is &lt;code&gt;open_bracket&lt;/code&gt; on ansi and iso, &lt;code&gt;close_bracket&lt;/code&gt; on jis.)&lt;/p&gt;
+
 
 &lt;/div&gt;
 
@@ -2745,7 +2793,9 @@ Karabiner-Elements.&lt;/p&gt;
 
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Tip&lt;/h4&gt;
-&lt;code&gt;set_variable&lt;/code&gt; is designed to use with &lt;a href=&#34;../../conditions/variable/&#34;&gt;&lt;code&gt;variable_if&lt;/code&gt; and &lt;code&gt;variable_unless&lt;/code&gt; conditions&lt;/a&gt;.
+
+    &lt;code&gt;set_variable&lt;/code&gt; is designed to use with &lt;a href=&#34;../../conditions/variable/&#34;&gt;&lt;code&gt;variable_if&lt;/code&gt; and &lt;code&gt;variable_unless&lt;/code&gt; conditions&lt;/a&gt;.
+
 &lt;/div&gt;
 
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
@@ -2835,21 +2885,25 @@ Instead, please change fn+number keys to function keys in Karabiner-Elements con
 
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
-If you are using &amp;ldquo;Use all F1, F2, etc. keys as standard function keys.&amp;rdquo;,
+
+    If you are using &amp;ldquo;Use all F1, F2, etc. keys as standard function keys.&amp;rdquo;,
 enable &lt;code&gt;Map fn + number keys to their corresponding media control keys&lt;/code&gt; instead.
+
 &lt;/div&gt;
 
 
 
 &lt;div class=&#34;alert alert-dark&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Detail of the problem&lt;/h4&gt;
-&lt;p&gt;The fn key events are ignored by Touch Bar since the following facts.&lt;/p&gt;
+
+    &lt;p&gt;The fn key events are ignored by Touch Bar since the following facts.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Touch Bar accepts the fn key event only from the build-in keyboard.&lt;/li&gt;
 &lt;li&gt;The fn key events are sent from Karabiner&amp;rsquo;s virtual keyboard when Karabiner-Elements is running.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Unfortunately, posting input events via own virtual keyboard is the only way to accomplish the stable input event modification.&lt;br /&gt;
 In other words, we cannot post the fn key event through the built-in keyboard if we want to change key events stably.&lt;/p&gt;
+
 
 &lt;/div&gt;
 
@@ -3090,8 +3144,10 @@ This feature is useful when you put the external keybaord on top of the built-in
 
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Tip&lt;/h4&gt;
-&lt;p&gt;&lt;code&gt;key_up_order&lt;/code&gt; is ignored if &lt;code&gt;simultaneous_threshold_milliseconds&lt;/code&gt; is reached.&lt;/p&gt;
+
+    &lt;p&gt;&lt;code&gt;key_up_order&lt;/code&gt; is ignored if &lt;code&gt;simultaneous_threshold_milliseconds&lt;/code&gt; is reached.&lt;/p&gt;
 &lt;p&gt;You should set a large value to &lt;code&gt;simultaneous_threshold_milliseconds&lt;/code&gt; when you use &lt;code&gt;key_up_order&lt;/code&gt;.&lt;/p&gt;
+
 
 &lt;/div&gt;
 
@@ -3122,7 +3178,9 @@ This feature is useful when you put the external keybaord on top of the built-in
 
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
-Events will be posted just before the last from event&amp;rsquo;s key_up.
+
+    Events will be posted just before the last from event&amp;rsquo;s key_up.
+
 &lt;/div&gt;
 
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
@@ -3351,7 +3409,9 @@ Events will be posted just before the last from event&amp;rsquo;s key_up.
 
 &lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
-Karabiner-Elements does not allow you including comments (&lt;code&gt;// ...&lt;/code&gt; or &lt;code&gt;/* ... */&lt;/code&gt;) in any json files.
+
+    Karabiner-Elements does not allow you including comments (&lt;code&gt;// ...&lt;/code&gt; or &lt;code&gt;/* ... */&lt;/code&gt;) in any json files.
+
 &lt;/div&gt;
 
 &lt;h2 id=&#34;karabinerjson&#34;&gt;karabiner.json&lt;/h2&gt;
@@ -3484,7 +3544,9 @@ Karabiner-Elements does not allow you including comments (&lt;code&gt;// ...&lt;
 
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
-Adding a custom .json file allows for enabling and disabling rules/complex modifications through the UI.
+
+    Adding a custom .json file allows for enabling and disabling rules/complex modifications through the UI.
+
 &lt;/div&gt;
 
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
@@ -3581,7 +3643,9 @@ Adding a custom .json file allows for enabling and disabling rules/complex modif
 
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
-Karabiner-MultitouchExtension is available since Karabiner-Elements 12.6.9
+
+    Karabiner-MultitouchExtension is available since Karabiner-Elements 12.6.9
+
 &lt;/div&gt;
 
 &lt;h3 id=&#34;related-complex-modifications-examples&#34;&gt;Related Complex Modifications examples&lt;/h3&gt;
@@ -3630,8 +3694,10 @@ Karabiner-MultitouchExtension is available since Karabiner-Elements 12.6.9
 
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Tip&lt;/h4&gt;
-If you hid Karabiner-MultitouchExtension icon in Dock,
+
+    If you hid Karabiner-MultitouchExtension icon in Dock,
 press &amp;ldquo;Open MultitouchExtension app&amp;rdquo; button on Preferences &amp;gt; Misc to open Karabiner-MultitouchExtension Preferences.
+
 &lt;/div&gt;
 
 &lt;h3 id=&#34;how-to-integrate-multitouchextension-to-your-complex-modifications&#34;&gt;How to integrate MultitouchExtension to your complex modifications&lt;/h3&gt;
@@ -3703,7 +3769,9 @@ press &amp;ldquo;Open MultitouchExtension app&amp;rdquo; button on Preferences &
 
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
-Speed and scroll direction depend on System Preferences &amp;gt; Mouse configuration.
+
+    Speed and scroll direction depend on System Preferences &amp;gt; Mouse configuration.
+
 &lt;/div&gt;
 
 &lt;h2 id=&#34;examples&#34;&gt;Examples&lt;/h2&gt;

@@ -90,7 +90,9 @@ Follow this instruction to set up Karabiner-Elements.&lt;/p&gt;
 
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
-Please follow &lt;a href=&#34;../../help/troubleshooting/kext-allow-button-does-not-work/&#34;&gt;this instruction&lt;/a&gt; if there are any problem about the &lt;strong&gt;Allow&lt;/strong&gt; button.
+
+    Please follow &lt;a href=&#34;../../help/troubleshooting/kext-allow-button-does-not-work/&#34;&gt;this instruction&lt;/a&gt; if there are any problem about the &lt;strong&gt;Allow&lt;/strong&gt; button.
+
 &lt;/div&gt;
 
 &lt;h2 id=&#34;grant-input-monitoring-to-karabiner-elements-processes&#34;&gt;Grant Input Monitoring to Karabiner-Elements processes&lt;/h2&gt;

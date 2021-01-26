@@ -80,8 +80,10 @@
 
 &lt;div class=&#34;alert alert-danger&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Caution&lt;/h4&gt;
-&lt;p&gt;You should set either &lt;code&gt;from.modifiers&lt;/code&gt; or &lt;code&gt;conditions&lt;/code&gt;.&lt;/p&gt;
+
+    &lt;p&gt;You should set either &lt;code&gt;from.modifiers&lt;/code&gt; or &lt;code&gt;conditions&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Your mouse cursor movement will be always changed to scroll and your mouse will be unusable without &lt;code&gt;from.modifiers&lt;/code&gt; and &lt;code&gt;conditions&lt;/code&gt;.&lt;/p&gt;
+
 
 &lt;/div&gt;
 

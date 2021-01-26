@@ -58,8 +58,10 @@
 
 &lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Caution&lt;/h4&gt;
-&lt;p&gt;Switching to input sources which have input_mode_id (Chinese, Japanese, Korean, Vietnamese) may be failed due to an macOS issue.&lt;/p&gt;
+
+    &lt;p&gt;Switching to input sources which have input_mode_id (Chinese, Japanese, Korean, Vietnamese) may be failed due to an macOS issue.&lt;/p&gt;
 &lt;p&gt;For CJKV input sources, sending the input source switch shortcut (e.g., control-space) is better than using &lt;code&gt;select_input_source&lt;/code&gt;.&lt;/p&gt;
+
 
 &lt;/div&gt;
 
@@ -153,7 +155,9 @@
 
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Tip&lt;/h4&gt;
-&lt;code&gt;set_variable&lt;/code&gt; is designed to use with &lt;a href=&#34;../../conditions/variable/&#34;&gt;&lt;code&gt;variable_if&lt;/code&gt; and &lt;code&gt;variable_unless&lt;/code&gt; conditions&lt;/a&gt;.
+
+    &lt;code&gt;set_variable&lt;/code&gt; is designed to use with &lt;a href=&#34;../../conditions/variable/&#34;&gt;&lt;code&gt;variable_if&lt;/code&gt; and &lt;code&gt;variable_unless&lt;/code&gt; conditions&lt;/a&gt;.
+
 &lt;/div&gt;
 
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
@@ -271,7 +275,9 @@
 
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
-Speed and scroll direction depend on System Preferences &amp;gt; Mouse configuration.
+
+    Speed and scroll direction depend on System Preferences &amp;gt; Mouse configuration.
+
 &lt;/div&gt;
 
 &lt;h2 id=&#34;examples&#34;&gt;Examples&lt;/h2&gt;
@@ -438,7 +444,9 @@ Speed and scroll direction depend on System Preferences &amp;gt; Mouse configura
 
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Tip&lt;/h4&gt;
-The lazy modifier is designed using with &lt;code&gt;to_if_alone&lt;/code&gt; or key combinations such as changing &lt;code&gt;left_control + h&lt;/code&gt; to &lt;code&gt;delete_or_backspace&lt;/code&gt; in order to suppress unnecessary modifier key events.
+
+    The lazy modifier is designed using with &lt;code&gt;to_if_alone&lt;/code&gt; or key combinations such as changing &lt;code&gt;left_control + h&lt;/code&gt; to &lt;code&gt;delete_or_backspace&lt;/code&gt; in order to suppress unnecessary modifier key events.
+
 &lt;/div&gt;
 
 &lt;h2 id=&#34;example&#34;&gt;Example&lt;/h2&gt;
@@ -501,7 +509,8 @@ The lazy modifier is designed using with &lt;code&gt;to_if_alone&lt;/code&gt; or
 
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
-&lt;p&gt;You have to set &lt;code&gt;repeat&lt;/code&gt; in the last &lt;code&gt;to&lt;/code&gt; event as follows if you have multiple &lt;code&gt;to&lt;/code&gt; events and want to set &lt;code&gt;to.repeat&lt;/code&gt; &lt;code&gt;false&lt;/code&gt;.&lt;/p&gt;
+
+    &lt;p&gt;You have to set &lt;code&gt;repeat&lt;/code&gt; in the last &lt;code&gt;to&lt;/code&gt; event as follows if you have multiple &lt;code&gt;to&lt;/code&gt; events and want to set &lt;code&gt;to.repeat&lt;/code&gt; &lt;code&gt;false&lt;/code&gt;.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
     &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;#34;to&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;
         &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
@@ -523,13 +532,15 @@ The lazy modifier is designed using with &lt;code&gt;to_if_alone&lt;/code&gt; or
     &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]&lt;/span&gt;
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
 &lt;/div&gt;
 
 
 
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Tip&lt;/h4&gt;
-&lt;p&gt;&lt;code&gt;to.repeat&lt;/code&gt; affects &lt;code&gt;key_up&lt;/code&gt; event sending timing as follows.&lt;/p&gt;
+
+    &lt;p&gt;&lt;code&gt;to.repeat&lt;/code&gt; affects &lt;code&gt;key_up&lt;/code&gt; event sending timing as follows.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;If &lt;code&gt;to.repeat&lt;/code&gt; is &lt;code&gt;true&lt;/code&gt;:
 &lt;ul&gt;
@@ -542,6 +553,7 @@ The lazy modifier is designed using with &lt;code&gt;to_if_alone&lt;/code&gt; or
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+
 
 &lt;/div&gt;
 
@@ -600,7 +612,9 @@ The lazy modifier is designed using with &lt;code&gt;to_if_alone&lt;/code&gt; or
 
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
-Generally &lt;code&gt;to.hold_down_milliseconds&lt;/code&gt; is used with &lt;code&gt;&amp;quot;key_code&amp;quot;: &amp;quot;caps_lock&amp;quot;&lt;/code&gt;.
+
+    Generally &lt;code&gt;to.hold_down_milliseconds&lt;/code&gt; is used with &lt;code&gt;&amp;quot;key_code&amp;quot;: &amp;quot;caps_lock&amp;quot;&lt;/code&gt;.
+
 &lt;/div&gt;
 
 &lt;h2 id=&#34;example&#34;&gt;Example&lt;/h2&gt;

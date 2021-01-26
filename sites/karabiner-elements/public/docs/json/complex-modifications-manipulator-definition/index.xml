@@ -114,16 +114,20 @@
 
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
-&lt;code&gt;key_code&lt;/code&gt;, &lt;code&gt;consumer_key_code&lt;/code&gt;, &lt;code&gt;pointing_button&lt;/code&gt; and &lt;code&gt;any&lt;/code&gt; are exclusive.&lt;br /&gt;
+
+    &lt;code&gt;key_code&lt;/code&gt;, &lt;code&gt;consumer_key_code&lt;/code&gt;, &lt;code&gt;pointing_button&lt;/code&gt; and &lt;code&gt;any&lt;/code&gt; are exclusive.&lt;br /&gt;
 You have to specify one of them.
+
 &lt;/div&gt;
 
 
 
 &lt;div class=&#34;alert alert-danger&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Caution&lt;/h4&gt;
-Be careful using &lt;code&gt;&amp;quot;pointing_button&amp;quot;: &amp;quot;button1&amp;quot;&lt;/code&gt; and &lt;code&gt;&amp;quot;any&amp;quot;: &amp;quot;pointing_button&amp;quot;&lt;/code&gt;.&lt;br /&gt;
+
+    Be careful using &lt;code&gt;&amp;quot;pointing_button&amp;quot;: &amp;quot;button1&amp;quot;&lt;/code&gt; and &lt;code&gt;&amp;quot;any&amp;quot;: &amp;quot;pointing_button&amp;quot;&lt;/code&gt;.&lt;br /&gt;
 You may lose the left click button and system will be unusable.
+
 &lt;/div&gt;
 
 &lt;h2 id=&#34;detail&#34;&gt;Detail&lt;/h2&gt;
@@ -143,13 +147,15 @@ You may lose the left click button and system will be unusable.
 
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Tip&lt;/h4&gt;
-&lt;p&gt;You can also specify &lt;code&gt;key_code&lt;/code&gt;, &lt;code&gt;consumer_key_code&lt;/code&gt;, &lt;code&gt;pointing_button&lt;/code&gt; with raw number as follows.&lt;br /&gt;&lt;/p&gt;
+
+    &lt;p&gt;You can also specify &lt;code&gt;key_code&lt;/code&gt;, &lt;code&gt;consumer_key_code&lt;/code&gt;, &lt;code&gt;pointing_button&lt;/code&gt; with raw number as follows.&lt;br /&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
     &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;#34;from&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
         &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;#34;key_code&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;41&lt;/span&gt;
     &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Do not add double quotes when you use the raw number.&lt;/strong&gt;&lt;/p&gt;
+
 
 &lt;/div&gt;
 
@@ -201,7 +207,8 @@ You may lose the left click button and system will be unusable.
 
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
-&lt;p&gt;The following keys are exclusive.&lt;br/&gt;
+
+    &lt;p&gt;The following keys are exclusive.&lt;br/&gt;
 You cannot specify multiple items into one &lt;code&gt;to&lt;/code&gt; entry.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;key_code&lt;/code&gt;&lt;/li&gt;
@@ -212,6 +219,7 @@ You cannot specify multiple items into one &lt;code&gt;to&lt;/code&gt; entry.&lt
 &lt;li&gt;&lt;code&gt;set_variable&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;mouse_key&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
+
 
 &lt;/div&gt;
 
@@ -296,7 +304,8 @@ You cannot specify multiple items into one &lt;code&gt;to&lt;/code&gt; entry.&lt
 
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Tip&lt;/h4&gt;
-&lt;p&gt;You can also specify &lt;code&gt;key_code&lt;/code&gt;, &lt;code&gt;consumer_key_code&lt;/code&gt;, &lt;code&gt;pointing_button&lt;/code&gt; with raw number as follows.&lt;br /&gt;&lt;/p&gt;
+
+    &lt;p&gt;You can also specify &lt;code&gt;key_code&lt;/code&gt;, &lt;code&gt;consumer_key_code&lt;/code&gt;, &lt;code&gt;pointing_button&lt;/code&gt; with raw number as follows.&lt;br /&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
     &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;#34;to&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;
         &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
@@ -305,6 +314,7 @@ You cannot specify multiple items into one &lt;code&gt;to&lt;/code&gt; entry.&lt
     &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]&lt;/span&gt;
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
 &lt;/div&gt;
 
 
@@ -383,7 +393,9 @@ Thus, you cannot use key repeat for &lt;code&gt;to_if_alone&lt;/code&gt; events.
 
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
-If &lt;code&gt;to&lt;/code&gt; events are specified, &lt;code&gt;key_up&lt;/code&gt; event of &lt;code&gt;to&lt;/code&gt; is sent before &lt;code&gt;to_if_held_down&lt;/code&gt; events are posted.
+
+    If &lt;code&gt;to&lt;/code&gt; events are specified, &lt;code&gt;key_up&lt;/code&gt; event of &lt;code&gt;to&lt;/code&gt; is sent before &lt;code&gt;to_if_held_down&lt;/code&gt; events are posted.
+
 &lt;/div&gt;
 
 &lt;h2 id=&#34;example&#34;&gt;Example&lt;/h2&gt;
@@ -431,11 +443,13 @@ If &lt;code&gt;to&lt;/code&gt; events are specified, &lt;code&gt;key_up&lt;/code
 
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Tip&lt;/h4&gt;
-&lt;p&gt;&lt;code&gt;to_after_key_up&lt;/code&gt; is typically used to:&lt;/p&gt;
+
+    &lt;p&gt;&lt;code&gt;to_after_key_up&lt;/code&gt; is typically used to:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Unset variables using &lt;a href=&#34;../to/set-variable/&#34;&gt;&lt;code&gt;set_variable&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Used with &lt;code&gt;to_if_held_down&lt;/code&gt; and &lt;code&gt;to.halt&lt;/code&gt; in order to define fallback behavior.&lt;/li&gt;
 &lt;/ul&gt;
+
 
 &lt;/div&gt;
 
@@ -488,11 +502,13 @@ If &lt;code&gt;to&lt;/code&gt; events are specified, &lt;code&gt;key_up&lt;/code
 
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Tip&lt;/h4&gt;
-&lt;p&gt;&lt;code&gt;to_delayed_action&lt;/code&gt; is typically used to:&lt;/p&gt;
+
+    &lt;p&gt;&lt;code&gt;to_delayed_action&lt;/code&gt; is typically used to:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Double tap key (e.g., change &lt;code&gt;right_shift x2&lt;/code&gt;)&lt;/li&gt;
 &lt;li&gt;2 stroke keys such as C-x of Emacs Mode.&lt;/li&gt;
 &lt;/ul&gt;
+
 
 &lt;/div&gt;
 

@@ -33,8 +33,10 @@ These matches all key codes, consumer key codes or pointing buttons.&lt;/p&gt;
 
 &lt;div class=&#34;alert alert-danger&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Caution&lt;/h4&gt;
-Be careful using &lt;code&gt;&amp;quot;any&amp;quot;: &amp;quot;pointing_button&amp;quot;&lt;/code&gt;.&lt;br /&gt;
+
+    Be careful using &lt;code&gt;&amp;quot;any&amp;quot;: &amp;quot;pointing_button&amp;quot;&lt;/code&gt;.&lt;br /&gt;
 You may lose the left click button and system will be unusable.
+
 &lt;/div&gt;
 
 
@@ -89,7 +91,9 @@ You may lose the left click button and system will be unusable.
 
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Tip&lt;/h4&gt;
-If you do not include &lt;code&gt;any&lt;/code&gt; in &lt;code&gt;modifiers.optional&lt;/code&gt;, your manipulator does not change event if extra modifiers (modifiers which are not included in &lt;code&gt;modifiers.mandatory&lt;/code&gt;) are pressed.
+
+    If you do not include &lt;code&gt;any&lt;/code&gt; in &lt;code&gt;modifiers.optional&lt;/code&gt;, your manipulator does not change event if extra modifiers (modifiers which are not included in &lt;code&gt;modifiers.mandatory&lt;/code&gt;) are pressed.
+
 &lt;/div&gt;
 
 &lt;h2 id=&#34;list-of-modifiers&#34;&gt;List of modifiers&lt;/h2&gt;
@@ -422,11 +426,13 @@ If you do not include &lt;code&gt;any&lt;/code&gt; in &lt;code&gt;modifiers.opti
 
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
-&lt;p&gt;There are some cases &lt;code&gt;simultaneous&lt;/code&gt; does not modify events.&lt;/p&gt;
+
+    &lt;p&gt;There are some cases &lt;code&gt;simultaneous&lt;/code&gt; does not modify events.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;simultaneous&lt;/code&gt; does not modify events if any &lt;code&gt;from&lt;/code&gt; events are released before all &lt;code&gt;from&lt;/code&gt; events are pressed.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;simultaneous&lt;/code&gt; does not modify events if &lt;code&gt;from&lt;/code&gt; events are interrupted by another key_down event.&lt;/li&gt;
 &lt;/ul&gt;
+
 
 &lt;/div&gt;
 
@@ -634,8 +640,10 @@ If you do not include &lt;code&gt;any&lt;/code&gt; in &lt;code&gt;modifiers.opti
 
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Tip&lt;/h4&gt;
-&lt;p&gt;&lt;code&gt;key_up_order&lt;/code&gt; is ignored if &lt;code&gt;simultaneous_threshold_milliseconds&lt;/code&gt; is reached.&lt;/p&gt;
+
+    &lt;p&gt;&lt;code&gt;key_up_order&lt;/code&gt; is ignored if &lt;code&gt;simultaneous_threshold_milliseconds&lt;/code&gt; is reached.&lt;/p&gt;
 &lt;p&gt;You should set a large value to &lt;code&gt;simultaneous_threshold_milliseconds&lt;/code&gt; when you use &lt;code&gt;key_up_order&lt;/code&gt;.&lt;/p&gt;
+
 
 &lt;/div&gt;
 
@@ -666,7 +674,9 @@ If you do not include &lt;code&gt;any&lt;/code&gt; in &lt;code&gt;modifiers.opti
 
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
-Events will be posted just before the last from event&amp;rsquo;s key_up.
+
+    Events will be posted just before the last from event&amp;rsquo;s key_up.
+
 &lt;/div&gt;
 
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;

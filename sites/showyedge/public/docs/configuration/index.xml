@@ -44,7 +44,8 @@
 
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
-&lt;p&gt;If you&amp;rsquo;ve hidden the menu bar icon, open ShowyEdge again from Launchpad while ShowyEdge is already running to open preferences window.&lt;/p&gt;
+
+    &lt;p&gt;If you&amp;rsquo;ve hidden the menu bar icon, open ShowyEdge again from Launchpad while ShowyEdge is already running to open preferences window.&lt;/p&gt;
 &lt;figure&gt;
   &lt;img
     src=&#34;/docs/configuration/open-preferences-window/images/launchpad@2x.png&#34;
@@ -52,6 +53,7 @@
     style=&#34;width: 595px&#34;
   /&gt;
 &lt;/figure&gt;
+
 
 &lt;/div&gt;
 

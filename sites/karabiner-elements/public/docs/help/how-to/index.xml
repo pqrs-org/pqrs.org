@@ -99,9 +99,11 @@ use &lt;a href=&#34;https://ke-complex-modifications.pqrs.org/#mouse_button&#34;
 
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
-&lt;p&gt;Actually, this setting does not disable the caps lock delay of macOS.&lt;/p&gt;
+
+    &lt;p&gt;Actually, this setting does not disable the caps lock delay of macOS.&lt;/p&gt;
 &lt;p&gt;This setting puts a wait between caps lock key down and key up event
 in order to ensure macOS recognize the caps lock event.&lt;/p&gt;
+
 
 &lt;/div&gt;
 

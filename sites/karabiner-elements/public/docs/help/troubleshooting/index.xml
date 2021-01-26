@@ -49,7 +49,8 @@ In this case, you can display the allow button by deactivating and activating dr
 
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;macOS Catalina Note #1&lt;/h4&gt;
-&lt;p&gt;Even worse, there is an additional problem on the macOS side if you are using macOS Catalina.&lt;br/&gt;
+
+    &lt;p&gt;Even worse, there is an additional problem on the macOS side if you are using macOS Catalina.&lt;br/&gt;
 The above steps might not resolve the issue and the alert may keep showing up.&lt;/p&gt;
 &lt;p&gt;If you are facing the problem, restart macOS between deactivating and activating to refresh the macOS internal state.&lt;/p&gt;
 &lt;ol&gt;
@@ -60,15 +61,18 @@ The above steps might not resolve the issue and the alert may keep showing up.&l
 &lt;li&gt;Open Security &amp;amp; Privacy System Preferences and press the allow button.&lt;/li&gt;
 &lt;/ol&gt;
 
+
 &lt;/div&gt;
 
 
 
 &lt;div class=&#34;alert alert-danger&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;macOS Catalina Note #2&lt;/h4&gt;
-&lt;p&gt;The problem is caused by macOS Catalina issues around DriverKit driver.&lt;/p&gt;
+
+    &lt;p&gt;The problem is caused by macOS Catalina issues around DriverKit driver.&lt;/p&gt;
 &lt;p&gt;Karabiner-Elements v12.10.0 uses a legacy kernel extension, so it is not affected by the macOS issues.
 So, downgrading to &lt;a href=&#34;/docs/releasenotes/#karabiner-elements-12100&#34;&gt;Karabiner-Elements 12.10.0&lt;/a&gt; also solves the issue.&lt;/p&gt;
+
 
 &lt;/div&gt;
 
@@ -118,8 +122,10 @@ If the Allow button is hidden, close System Preferences and open it again.&lt;/l
 
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
-Karabiner-Elements does not work in safe mode.
+
+    Karabiner-Elements does not work in safe mode.
 You have to restart macOS in normal mode to use Karabiner-Elements.
+
 &lt;/div&gt;
 
 
@@ -168,8 +174,10 @@ If the Allow button is hidden, close System Preferences and open it again.&lt;/l
 
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
-Karabiner-Elements does not work in safe mode.
+
+    Karabiner-Elements does not work in safe mode.
 You have to restart macOS in normal mode to use Karabiner-Elements.
+
 &lt;/div&gt;
 
 
@@ -230,21 +238,25 @@ Instead, please change fn+number keys to function keys in Karabiner-Elements con
 
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
-If you are using &amp;ldquo;Use all F1, F2, etc. keys as standard function keys.&amp;rdquo;,
+
+    If you are using &amp;ldquo;Use all F1, F2, etc. keys as standard function keys.&amp;rdquo;,
 enable &lt;code&gt;Map fn + number keys to their corresponding media control keys&lt;/code&gt; instead.
+
 &lt;/div&gt;
 
 
 
 &lt;div class=&#34;alert alert-dark&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Detail of the problem&lt;/h4&gt;
-&lt;p&gt;The fn key events are ignored by Touch Bar since the following facts.&lt;/p&gt;
+
+    &lt;p&gt;The fn key events are ignored by Touch Bar since the following facts.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Touch Bar accepts the fn key event only from the build-in keyboard.&lt;/li&gt;
 &lt;li&gt;The fn key events are sent from Karabiner&amp;rsquo;s virtual keyboard when Karabiner-Elements is running.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Unfortunately, posting input events via own virtual keyboard is the only way to accomplish the stable input event modification.&lt;br /&gt;
 In other words, we cannot post the fn key event through the built-in keyboard if we want to change key events stably.&lt;/p&gt;
+
 
 &lt;/div&gt;
 
@@ -375,7 +387,8 @@ You can use control+fn+escape as control+eject.
 
 &lt;div class=&#34;alert alert-secondary&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Workarounds&lt;/h4&gt;
-&lt;p&gt;In this case, you can choose one of the following three options to use Karabiner-Elements:&lt;/p&gt;
+
+    &lt;p&gt;In this case, you can choose one of the following three options to use Karabiner-Elements:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Upgrade to macOS Big Sur (11.0) or later.&lt;/li&gt;
 &lt;li&gt;Downgrade to &lt;a href=&#34;/docs/releasenotes/#karabiner-elements-12100&#34;&gt;Karabiner-Elements v12.10.0&lt;/a&gt;.&lt;br /&gt;
@@ -383,13 +396,15 @@ Download the package from the above page, and then re-install Karabiner-Elements
 &lt;li&gt;Allow &amp;ldquo;Placeholder Developer&amp;rdquo;.&lt;/li&gt;
 &lt;/ul&gt;
 
+
 &lt;/div&gt;
 
 
 
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Info: This issue is solved with macOS Big Sur (11.0)&lt;/h4&gt;
-&lt;p&gt;The name is shown properly on macOS Big Sur.&lt;/p&gt;
+
+    &lt;p&gt;The name is shown properly on macOS Big Sur.&lt;/p&gt;
 &lt;figure&gt;
   &lt;img
     src=&#34;/docs/help/troubleshooting/placeholder-developer/images/big-sur@2x.png&#34;
@@ -397,6 +412,7 @@ Download the package from the above page, and then re-install Karabiner-Elements
     style=&#34;width: 668px&#34;
   /&gt;
 &lt;/figure&gt;
+
 
 &lt;/div&gt;
 

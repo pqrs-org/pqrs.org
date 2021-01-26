@@ -254,10 +254,12 @@
 
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Tip&lt;/h4&gt;
-&lt;p&gt;It&amp;rsquo;s useful for supporting &amp;ldquo;change control-[ to escape&amp;rdquo; with all keyboard types.
+
+    &lt;p&gt;It&amp;rsquo;s useful for supporting &amp;ldquo;change control-[ to escape&amp;rdquo; with all keyboard types.
 &lt;a href=&#34;https://github.com/pqrs-org/KE-complex_modifications/blob/master/public/json/example_keyboard_type.json&#34;&gt;(example json)&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Some characters have different key code for each keyboard types.&lt;br /&gt;
 (e.g., &lt;strong&gt;[&lt;/strong&gt; is &lt;code&gt;open_bracket&lt;/code&gt; on ansi and iso, &lt;code&gt;close_bracket&lt;/code&gt; on jis.)&lt;/p&gt;
+
 
 &lt;/div&gt;
 
@@ -446,7 +448,9 @@
 
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Tip&lt;/h4&gt;
-&lt;code&gt;variable_if&lt;/code&gt; and &lt;code&gt;variable_unless&lt;/code&gt; are designed to use with &lt;a href=&#34;../../to/set-variable/&#34;&gt;&lt;code&gt;set_variable&lt;/code&gt;&lt;/a&gt;.
+
+    &lt;code&gt;variable_if&lt;/code&gt; and &lt;code&gt;variable_unless&lt;/code&gt; are designed to use with &lt;a href=&#34;../../to/set-variable/&#34;&gt;&lt;code&gt;set_variable&lt;/code&gt;&lt;/a&gt;.
+
 &lt;/div&gt;
 
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
@@ -550,8 +554,10 @@
 
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Tip&lt;/h4&gt;
-&lt;p&gt;&lt;code&gt;event_changed_unless&lt;/code&gt; is designed to prevent &lt;code&gt;Function Keys Modifications&lt;/code&gt; from changing fx keys which are changed in &lt;code&gt;Complex Modifications&lt;/code&gt; (e.g., Change command+e to f2).&lt;/p&gt;
+
+    &lt;p&gt;&lt;code&gt;event_changed_unless&lt;/code&gt; is designed to prevent &lt;code&gt;Function Keys Modifications&lt;/code&gt; from changing fx keys which are changed in &lt;code&gt;Complex Modifications&lt;/code&gt; (e.g., Change command+e to f2).&lt;/p&gt;
 &lt;p&gt;If you use &lt;code&gt;event_changed_if&lt;/code&gt; or &lt;code&gt;event_changed_unless&lt;/code&gt; in &lt;code&gt;Complex Modifications&lt;/code&gt;, your rule is ignored for keys which are changed in &lt;code&gt;Simple Modifications&lt;/code&gt;.&lt;/p&gt;
+
 
 &lt;/div&gt;
 
