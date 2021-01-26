@@ -1,5 +1,5 @@
 ---
-title: 'How to adjust the key repeat rate'
+title: 'Is it possible to adjust the key repeat rate?'
 weight: 300
 ---
 
