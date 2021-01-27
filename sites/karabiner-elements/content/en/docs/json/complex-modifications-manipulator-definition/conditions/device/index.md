@@ -41,6 +41,7 @@ Change an event if/unless the event is from specified device.
 | `location_id`        | Optional | Location ID of device which is changed by where the port your device is connected |
 | `is_keyboard`        | Optional | `true` or `false`                                                                 |
 | `is_pointing_device` | Optional | `true` or `false`                                                                 |
+| `is_touch_bar`       | Optional | `true` or `false`                                                                 |
 
 ### Multiple identifiers
 
