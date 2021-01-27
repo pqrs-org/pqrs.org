@@ -17,18 +17,20 @@
 <link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
-<title>to.shell_command | Karabiner-Elements</title><meta property="og:title" content="to.shell_command" />
-<meta property="og:description" content="shell_command executes the shell command.
-Examples Open application { &#34;to&#34;: [ { &#34;shell_command&#34;: &#34;open -a &#39;Safari.app&#39;&#34; } ] } Execute shell from file { &#34;to&#34;: [ { &#34;shell_command&#34;: &#34;/bin/sh ~/opt/shell_commands/hello.sh&#34; } ] } " />
+<title>How to use sticky modifier keys | Karabiner-Elements</title><meta property="og:title" content="How to use sticky modifier keys" />
+<meta property="og:description" content="You can enable the sticky modifier keys from Preferences &gt; Simple modifications.   Note The sticky modifier keys acts as general modifier key while you are pressing and holding down the key.
+For example, the following operation result is AA instead of Aa.
+ Press sticky left shift key Press a key Release a key Press a key Release a key Release sticky left shift key  If you want to disable this feature, use stciky modifier key (pressing and holding down is disabled)." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="/docs/json/complex-modifications-manipulator-definition/to/shell-command/" />
+<meta property="og:url" content="/docs/help/how-to/sticky-modifier-key/" />
 <meta property="og:image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
 <meta property="og:site_name" content="Karabiner-Elements" />
-<meta itemprop="name" content="to.shell_command">
-<meta itemprop="description" content="shell_command executes the shell command.
-Examples Open application { &#34;to&#34;: [ { &#34;shell_command&#34;: &#34;open -a &#39;Safari.app&#39;&#34; } ] } Execute shell from file { &#34;to&#34;: [ { &#34;shell_command&#34;: &#34;/bin/sh ~/opt/shell_commands/hello.sh&#34; } ] } ">
+<meta itemprop="name" content="How to use sticky modifier keys">
+<meta itemprop="description" content="You can enable the sticky modifier keys from Preferences &gt; Simple modifications.   Note The sticky modifier keys acts as general modifier key while you are pressing and holding down the key.
+For example, the following operation result is AA instead of Aa.
+ Press sticky left shift key Press a key Release a key Press a key Release a key Release sticky left shift key  If you want to disable this feature, use stciky modifier key (pressing and holding down is disabled).">
 
-<meta itemprop="wordCount" content="33">
+<meta itemprop="wordCount" content="148">
 <meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
 
 
@@ -37,9 +39,10 @@ Examples Open application { &#34;to&#34;: [ { &#34;shell_command&#34;: &#34;open
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
 
-<meta name="twitter:title" content="to.shell_command"/>
-<meta name="twitter:description" content="shell_command executes the shell command.
-Examples Open application { &#34;to&#34;: [ { &#34;shell_command&#34;: &#34;open -a &#39;Safari.app&#39;&#34; } ] } Execute shell from file { &#34;to&#34;: [ { &#34;shell_command&#34;: &#34;/bin/sh ~/opt/shell_commands/hello.sh&#34; } ] } "/>
+<meta name="twitter:title" content="How to use sticky modifier keys"/>
+<meta name="twitter:description" content="You can enable the sticky modifier keys from Preferences &gt; Simple modifications.   Note The sticky modifier keys acts as general modifier key while you are pressing and holding down the key.
+For example, the following operation result is AA instead of Aa.
+ Press sticky left shift key Press a key Release a key Press a key Release a key Release sticky left shift key  If you want to disable this feature, use stciky modifier key (pressing and holding down is disabled)."/>
 
 
 <script type="application/javascript">
@@ -493,10 +496,10 @@ if (!doNotTrack) {
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="/docs/help/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Help</a>
+    <a  href="/docs/help/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">Help</a>
   </li>
   <ul>
-    <li class="collapse " id="docshelp">
+    <li class="collapse show" id="docshelp">
       
       
       
@@ -616,10 +619,10 @@ if (!doNotTrack) {
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="/docs/help/how-to/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">How to</a>
+    <a  href="/docs/help/how-to/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">How to</a>
   </li>
   <ul>
-    <li class="collapse " id="docshelphow-to">
+    <li class="collapse show" id="docshelphow-to">
       
       
       
@@ -635,7 +638,7 @@ if (!doNotTrack) {
         
           
           
-          <a class="td-sidebar-link td-sidebar-link__page " id="m-docshelphow-tosticky-modifier-key" href="/docs/help/how-to/sticky-modifier-key/">How to use sticky modifier keys</a>
+          <a class="td-sidebar-link td-sidebar-link__page  active" id="m-docshelphow-tosticky-modifier-key" href="/docs/help/how-to/sticky-modifier-key/">How to use sticky modifier keys</a>
         
       
       
@@ -769,10 +772,10 @@ if (!doNotTrack) {
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="/docs/json/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">Karabiner Configuration Reference Manual</a>
+    <a  href="/docs/json/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Karabiner Configuration Reference Manual</a>
   </li>
   <ul>
-    <li class="collapse show" id="docsjson">
+    <li class="collapse " id="docsjson">
       
       
       
@@ -819,10 +822,10 @@ if (!doNotTrack) {
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="/docs/json/complex-modifications-manipulator-definition/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">complex_modifications manipulator definition</a>
+    <a  href="/docs/json/complex-modifications-manipulator-definition/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">complex_modifications manipulator definition</a>
   </li>
   <ul>
-    <li class="collapse show" id="docsjsoncomplex-modifications-manipulator-definition">
+    <li class="collapse " id="docsjsoncomplex-modifications-manipulator-definition">
       
       
       
@@ -894,10 +897,10 @@ if (!doNotTrack) {
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="/docs/json/complex-modifications-manipulator-definition/to/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">to event definition</a>
+    <a  href="/docs/json/complex-modifications-manipulator-definition/to/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">to event definition</a>
   </li>
   <ul>
-    <li class="collapse show" id="docsjsoncomplex-modifications-manipulator-definitionto">
+    <li class="collapse " id="docsjsoncomplex-modifications-manipulator-definitionto">
       
       
       
@@ -905,7 +908,7 @@ if (!doNotTrack) {
         
           
           
-          <a class="td-sidebar-link td-sidebar-link__page  active" id="m-docsjsoncomplex-modifications-manipulator-definitiontoshell-command" href="/docs/json/complex-modifications-manipulator-definition/to/shell-command/">to.shell_command</a>
+          <a class="td-sidebar-link td-sidebar-link__page " id="m-docsjsoncomplex-modifications-manipulator-definitiontoshell-command" href="/docs/json/complex-modifications-manipulator-definition/to/shell-command/">to.shell_command</a>
         
       
       
@@ -1302,12 +1305,8 @@ if (!doNotTrack) {
 
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#examples">Examples</a>
-      <ul>
-        <li><a href="#open-application">Open application</a></li>
-        <li><a href="#execute-shell-from-file">Execute shell from file</a></li>
-      </ul>
-    </li>
+    <li><a href="#sticky-modifier-key-indicator">Sticky modifier key indicator</a></li>
+    <li><a href="#sticky-modifiers-and-mouse-events">Sticky modifiers and mouse events</a></li>
   </ul>
 </nav>
 
@@ -1334,9 +1333,6 @@ if (!doNotTrack) {
 
 
 
-
-
-
 <li class="breadcrumb-item" >
 	<a href="/docs/">Documentation</a>
 </li>
@@ -1345,28 +1341,21 @@ if (!doNotTrack) {
 
 
 <li class="breadcrumb-item" >
-	<a href="/docs/json/">Karabiner Configuration Reference Manual</a>
+	<a href="/docs/help/">Help</a>
 </li>
 
 
 
 
 <li class="breadcrumb-item" >
-	<a href="/docs/json/complex-modifications-manipulator-definition/">complex_modifications manipulator definition</a>
-</li>
-
-
-
-
-<li class="breadcrumb-item" >
-	<a href="/docs/json/complex-modifications-manipulator-definition/to/">to event definition</a>
+	<a href="/docs/help/how-to/">How to</a>
 </li>
 
 
 
 
 <li class="breadcrumb-item active" aria-current="page">
-	<a href="/docs/json/complex-modifications-manipulator-definition/to/shell-command/">to.shell_command</a>
+	<a href="/docs/help/how-to/sticky-modifier-key/">How to use sticky modifier keys</a>
 </li>
 
 	</ol>
@@ -1374,28 +1363,86 @@ if (!doNotTrack) {
 
             
 <div class="td-content">
-	<h1>to.shell_command</h1>
+	<h1>How to use sticky modifier keys</h1>
     
 	       
-	<p><code>shell_command</code> executes the shell command.</p>
-<h2 id="examples">Examples</h2>
-<h3 id="open-application">Open application</h3>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json"><span style="color:#000;font-weight:bold">{</span>
-    <span style="color:#204a87;font-weight:bold">&#34;to&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
-        <span style="color:#000;font-weight:bold">{</span>
-            <span style="color:#204a87;font-weight:bold">&#34;shell_command&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;open -a &#39;Safari.app&#39;&#34;</span>
-        <span style="color:#000;font-weight:bold">}</span>
-    <span style="color:#000;font-weight:bold">]</span>
-<span style="color:#000;font-weight:bold">}</span>
-</code></pre></div><h3 id="execute-shell-from-file">Execute shell from file</h3>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json"><span style="color:#000;font-weight:bold">{</span>
-    <span style="color:#204a87;font-weight:bold">&#34;to&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
-        <span style="color:#000;font-weight:bold">{</span>
-            <span style="color:#204a87;font-weight:bold">&#34;shell_command&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;/bin/sh ~/opt/shell_commands/hello.sh&#34;</span>
-        <span style="color:#000;font-weight:bold">}</span>
-    <span style="color:#000;font-weight:bold">]</span>
-<span style="color:#000;font-weight:bold">}</span>
-</code></pre></div>
+	<p>You can enable the sticky modifier keys from Preferences &gt; Simple modifications.
+
+
+
+
+  
+
+
+<figure>
+  <img
+    src="/docs/help/how-to/sticky-modifier-key/images/simple-modifications@2x.png"
+    alt="simple-modifications@2x.png"
+    style="width: 997px"
+  />
+</figure>
+</p>
+
+
+<div class="alert alert-primary" role="alert">
+<h4 class="alert-heading">Note</h4>
+
+    <p>The sticky modifier keys acts as general modifier key while you are pressing and holding down the key.</p>
+<p>For example, the following operation result is <code>AA</code> instead of <code>Aa</code>.</p>
+<ol>
+<li>Press <code>sticky left shift</code> key</li>
+<li>Press <code>a</code> key</li>
+<li>Release <code>a</code> key</li>
+<li>Press <code>a</code> key</li>
+<li>Release <code>a</code> key</li>
+<li>Release <code>sticky left shift</code> key</li>
+</ol>
+<p>If you want to disable this feature, use <code>stciky modifier key (pressing and holding down is disabled)</code>.</p>
+
+
+</div>
+
+<h2 id="sticky-modifier-key-indicator">Sticky modifier key indicator</h2>
+<p>Sticky modifier key indicator will be shown while the sticky modifiers are active.</p>
+
+
+
+
+  
+
+
+<figure>
+  <img
+    src="/docs/help/how-to/sticky-modifier-key/images/sticky-modifier-key-indicator@2x.png"
+    alt="sticky-modifier-key-indicator@2x.png"
+    style="width: 408px"
+  />
+</figure>
+
+<p>You can hide the indicator from Preferences &gt; Virtual keyboard.</p>
+
+
+
+
+  
+
+
+<figure>
+  <img
+    src="/docs/help/how-to/sticky-modifier-key/images/indicator-configuration@2x.png"
+    alt="indicator-configuration@2x.png"
+    style="width: 1000px"
+  />
+</figure>
+
+<h2 id="sticky-modifiers-and-mouse-events">Sticky modifiers and mouse events</h2>
+<p>The sticky modifiers are not deactivate by mouse buttons if you are not enabled the mouse.</p>
+<p>There are two solutions:</p>
+<ul>
+<li>Deactivate sticky modifier by press the sticky modifier key again.</li>
+<li><a href="../mouse-button/">Enable your mouse on Devices.</a></li>
+</ul>
+
 	
 	
 	<div class="text-muted mt-5 pt-3 border-top"></div>

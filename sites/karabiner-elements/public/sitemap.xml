@@ -87,6 +87,10 @@
   </url>
   
   <url>
+    <loc>/docs/help/how-to/sticky-modifier-key/</loc>
+  </url>
+  
+  <url>
     <loc>/docs/json/complex-modifications-manipulator-definition/conditions/device/</loc>
   </url>
   
@@ -171,11 +175,11 @@
   </url>
   
   <url>
-    <loc>/docs/help/how-to/key-repeat/</loc>
+    <loc>/docs/manual/misc/event-modification-chaining/</loc>
   </url>
   
   <url>
-    <loc>/docs/manual/misc/event-modification-chaining/</loc>
+    <loc>/docs/help/how-to/key-repeat/</loc>
   </url>
   
   <url>
@@ -248,6 +252,10 @@
   
   <url>
     <loc>/docs/help/troubleshooting/cannot-use-some-key-combination/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/json/complex-modifications-manipulator-definition/to/sticky-modifier/</loc>
   </url>
   
   <url>

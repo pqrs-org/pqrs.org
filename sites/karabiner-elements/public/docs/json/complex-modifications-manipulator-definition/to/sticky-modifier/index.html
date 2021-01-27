@@ -17,18 +17,22 @@
 <link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
-<title>to.shell_command | Karabiner-Elements</title><meta property="og:title" content="to.shell_command" />
-<meta property="og:description" content="shell_command executes the shell command.
-Examples Open application { &#34;to&#34;: [ { &#34;shell_command&#34;: &#34;open -a &#39;Safari.app&#39;&#34; } ] } Execute shell from file { &#34;to&#34;: [ { &#34;shell_command&#34;: &#34;/bin/sh ~/opt/shell_commands/hello.sh&#34; } ] } " />
+<title>to.sticky_modifier | Karabiner-Elements</title><meta property="og:title" content="to.sticky_modifier" />
+<meta property="og:description" content="sticky_modifier changes a key to a sticky modifier key.
+{ &#34;to&#34;: [ { &#34;sticky_modifier&#34;: { &#34;{modifier_name}&#34;: &#34;on | off | toggle&#34; } } ] }    Name Required Description     {modifier_name} Optional - on always activates a sticky modifier.
+- off is vice versa.
+- toggle toggles a sticky modifier. toggle is suitable for most cases.    Supported modifiers  left_control left_shift left_option left_command right_control right_shift right_option right_command fn  Examples { &#34;to&#34;: [ { &#34;sticky_modifier&#34;: { &#34;right_option&#34;: &#34;toggle&#34; } } ] }  Note You have to specify only one modifier." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="/docs/json/complex-modifications-manipulator-definition/to/shell-command/" />
+<meta property="og:url" content="/docs/json/complex-modifications-manipulator-definition/to/sticky-modifier/" />
 <meta property="og:image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
 <meta property="og:site_name" content="Karabiner-Elements" />
-<meta itemprop="name" content="to.shell_command">
-<meta itemprop="description" content="shell_command executes the shell command.
-Examples Open application { &#34;to&#34;: [ { &#34;shell_command&#34;: &#34;open -a &#39;Safari.app&#39;&#34; } ] } Execute shell from file { &#34;to&#34;: [ { &#34;shell_command&#34;: &#34;/bin/sh ~/opt/shell_commands/hello.sh&#34; } ] } ">
+<meta itemprop="name" content="to.sticky_modifier">
+<meta itemprop="description" content="sticky_modifier changes a key to a sticky modifier key.
+{ &#34;to&#34;: [ { &#34;sticky_modifier&#34;: { &#34;{modifier_name}&#34;: &#34;on | off | toggle&#34; } } ] }    Name Required Description     {modifier_name} Optional - on always activates a sticky modifier.
+- off is vice versa.
+- toggle toggles a sticky modifier. toggle is suitable for most cases.    Supported modifiers  left_control left_shift left_option left_command right_control right_shift right_option right_command fn  Examples { &#34;to&#34;: [ { &#34;sticky_modifier&#34;: { &#34;right_option&#34;: &#34;toggle&#34; } } ] }  Note You have to specify only one modifier.">
 
-<meta itemprop="wordCount" content="33">
+<meta itemprop="wordCount" content="118">
 <meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
 
 
@@ -37,9 +41,11 @@ Examples Open application { &#34;to&#34;: [ { &#34;shell_command&#34;: &#34;open
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
 
-<meta name="twitter:title" content="to.shell_command"/>
-<meta name="twitter:description" content="shell_command executes the shell command.
-Examples Open application { &#34;to&#34;: [ { &#34;shell_command&#34;: &#34;open -a &#39;Safari.app&#39;&#34; } ] } Execute shell from file { &#34;to&#34;: [ { &#34;shell_command&#34;: &#34;/bin/sh ~/opt/shell_commands/hello.sh&#34; } ] } "/>
+<meta name="twitter:title" content="to.sticky_modifier"/>
+<meta name="twitter:description" content="sticky_modifier changes a key to a sticky modifier key.
+{ &#34;to&#34;: [ { &#34;sticky_modifier&#34;: { &#34;{modifier_name}&#34;: &#34;on | off | toggle&#34; } } ] }    Name Required Description     {modifier_name} Optional - on always activates a sticky modifier.
+- off is vice versa.
+- toggle toggles a sticky modifier. toggle is suitable for most cases.    Supported modifiers  left_control left_shift left_option left_command right_control right_shift right_option right_command fn  Examples { &#34;to&#34;: [ { &#34;sticky_modifier&#34;: { &#34;right_option&#34;: &#34;toggle&#34; } } ] }  Note You have to specify only one modifier."/>
 
 
 <script type="application/javascript">
@@ -905,7 +911,7 @@ if (!doNotTrack) {
         
           
           
-          <a class="td-sidebar-link td-sidebar-link__page  active" id="m-docsjsoncomplex-modifications-manipulator-definitiontoshell-command" href="/docs/json/complex-modifications-manipulator-definition/to/shell-command/">to.shell_command</a>
+          <a class="td-sidebar-link td-sidebar-link__page " id="m-docsjsoncomplex-modifications-manipulator-definitiontoshell-command" href="/docs/json/complex-modifications-manipulator-definition/to/shell-command/">to.shell_command</a>
         
       
       
@@ -937,7 +943,7 @@ if (!doNotTrack) {
         
           
           
-          <a class="td-sidebar-link td-sidebar-link__page " id="m-docsjsoncomplex-modifications-manipulator-definitiontosticky-modifier" href="/docs/json/complex-modifications-manipulator-definition/to/sticky-modifier/">to.sticky_modifier</a>
+          <a class="td-sidebar-link td-sidebar-link__page  active" id="m-docsjsoncomplex-modifications-manipulator-definitiontosticky-modifier" href="/docs/json/complex-modifications-manipulator-definition/to/sticky-modifier/">to.sticky_modifier</a>
         
       
       
@@ -1302,12 +1308,8 @@ if (!doNotTrack) {
 
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#examples">Examples</a>
-      <ul>
-        <li><a href="#open-application">Open application</a></li>
-        <li><a href="#execute-shell-from-file">Execute shell from file</a></li>
-      </ul>
-    </li>
+    <li><a href="#supported-modifiers">Supported modifiers</a></li>
+    <li><a href="#examples">Examples</a></li>
   </ul>
 </nav>
 
@@ -1366,7 +1368,7 @@ if (!doNotTrack) {
 
 
 <li class="breadcrumb-item active" aria-current="page">
-	<a href="/docs/json/complex-modifications-manipulator-definition/to/shell-command/">to.shell_command</a>
+	<a href="/docs/json/complex-modifications-manipulator-definition/to/sticky-modifier/">to.sticky_modifier</a>
 </li>
 
 	</ol>
@@ -1374,28 +1376,83 @@ if (!doNotTrack) {
 
             
 <div class="td-content">
-	<h1>to.shell_command</h1>
+	<h1>to.sticky_modifier</h1>
     
 	       
-	<p><code>shell_command</code> executes the shell command.</p>
-<h2 id="examples">Examples</h2>
-<h3 id="open-application">Open application</h3>
+	<p><code>sticky_modifier</code> changes a key to a sticky modifier key.</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json"><span style="color:#000;font-weight:bold">{</span>
     <span style="color:#204a87;font-weight:bold">&#34;to&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
         <span style="color:#000;font-weight:bold">{</span>
-            <span style="color:#204a87;font-weight:bold">&#34;shell_command&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;open -a &#39;Safari.app&#39;&#34;</span>
+            <span style="color:#204a87;font-weight:bold">&#34;sticky_modifier&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+                <span style="color:#204a87;font-weight:bold">&#34;{modifier_name}&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;on | off | toggle&#34;</span>
+            <span style="color:#000;font-weight:bold">}</span>
         <span style="color:#000;font-weight:bold">}</span>
     <span style="color:#000;font-weight:bold">]</span>
 <span style="color:#000;font-weight:bold">}</span>
-</code></pre></div><h3 id="execute-shell-from-file">Execute shell from file</h3>
+</code></pre></div><table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>{modifier_name}</code></td>
+<td>Optional</td>
+<td>- <code>on</code> always activates a sticky modifier.<br />- <code>off</code> is vice versa.<br />- <code>toggle</code> toggles a sticky modifier. <br /><br /><code>toggle</code> is suitable for most cases.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="supported-modifiers">Supported modifiers</h2>
+<ul>
+<li>left_control</li>
+<li>left_shift</li>
+<li>left_option</li>
+<li>left_command</li>
+<li>right_control</li>
+<li>right_shift</li>
+<li>right_option</li>
+<li>right_command</li>
+<li>fn</li>
+</ul>
+<h2 id="examples">Examples</h2>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json"><span style="color:#000;font-weight:bold">{</span>
     <span style="color:#204a87;font-weight:bold">&#34;to&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
         <span style="color:#000;font-weight:bold">{</span>
-            <span style="color:#204a87;font-weight:bold">&#34;shell_command&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;/bin/sh ~/opt/shell_commands/hello.sh&#34;</span>
+            <span style="color:#204a87;font-weight:bold">&#34;sticky_modifier&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+                <span style="color:#204a87;font-weight:bold">&#34;right_option&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;toggle&#34;</span>
+            <span style="color:#000;font-weight:bold">}</span>
         <span style="color:#000;font-weight:bold">}</span>
     <span style="color:#000;font-weight:bold">]</span>
 <span style="color:#000;font-weight:bold">}</span>
 </code></pre></div>
+
+<div class="alert alert-danger" role="alert">
+<h4 class="alert-heading">Note</h4>
+
+    <p>You have to specify only one modifier.</p>
+<p>If you want to activate multiple sticky modifiers, put multiple sticky_modifier as follows.</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json"><span style="color:#000;font-weight:bold">{</span>
+    <span style="color:#204a87;font-weight:bold">&#34;to&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+        <span style="color:#000;font-weight:bold">{</span>
+            <span style="color:#204a87;font-weight:bold">&#34;sticky_modifier&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+                <span style="color:#204a87;font-weight:bold">&#34;left_control&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;toggle&#34;</span>
+            <span style="color:#000;font-weight:bold">}</span>
+        <span style="color:#000;font-weight:bold">},</span>
+        <span style="color:#000;font-weight:bold">{</span>
+            <span style="color:#204a87;font-weight:bold">&#34;sticky_modifier&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+                <span style="color:#204a87;font-weight:bold">&#34;left_shift&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;toggle&#34;</span>
+            <span style="color:#000;font-weight:bold">}</span>
+        <span style="color:#000;font-weight:bold">}</span>
+    <span style="color:#000;font-weight:bold">]</span>
+<span style="color:#000;font-weight:bold">}</span>
+</code></pre></div>
+
+</div>
+
+
 	
 	
 	<div class="text-muted mt-5 pt-3 border-top"></div>

@@ -944,6 +944,95 @@ To quit Karabiner-Elements, choose &amp;ldquo;Quit Karabiner-Elements&amp;rdquo;
     </item>
     
     <item>
+      <title>Docs: How to use sticky modifier keys</title>
+      <link>/docs/help/how-to/sticky-modifier-key/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/help/how-to/sticky-modifier-key/</guid>
+      <description>
+        
+        
+        &lt;p&gt;You can enable the sticky modifier keys from Preferences &amp;gt; Simple modifications.
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/help/how-to/sticky-modifier-key/images/simple-modifications@2x.png&#34;
+    alt=&#34;simple-modifications@2x.png&#34;
+    style=&#34;width: 997px&#34;
+  /&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
+
+    &lt;p&gt;The sticky modifier keys acts as general modifier key while you are pressing and holding down the key.&lt;/p&gt;
+&lt;p&gt;For example, the following operation result is &lt;code&gt;AA&lt;/code&gt; instead of &lt;code&gt;Aa&lt;/code&gt;.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Press &lt;code&gt;sticky left shift&lt;/code&gt; key&lt;/li&gt;
+&lt;li&gt;Press &lt;code&gt;a&lt;/code&gt; key&lt;/li&gt;
+&lt;li&gt;Release &lt;code&gt;a&lt;/code&gt; key&lt;/li&gt;
+&lt;li&gt;Press &lt;code&gt;a&lt;/code&gt; key&lt;/li&gt;
+&lt;li&gt;Release &lt;code&gt;a&lt;/code&gt; key&lt;/li&gt;
+&lt;li&gt;Release &lt;code&gt;sticky left shift&lt;/code&gt; key&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;If you want to disable this feature, use &lt;code&gt;stciky modifier key (pressing and holding down is disabled)&lt;/code&gt;.&lt;/p&gt;
+
+
+&lt;/div&gt;
+
+&lt;h2 id=&#34;sticky-modifier-key-indicator&#34;&gt;Sticky modifier key indicator&lt;/h2&gt;
+&lt;p&gt;Sticky modifier key indicator will be shown while the sticky modifiers are active.&lt;/p&gt;
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/help/how-to/sticky-modifier-key/images/sticky-modifier-key-indicator@2x.png&#34;
+    alt=&#34;sticky-modifier-key-indicator@2x.png&#34;
+    style=&#34;width: 408px&#34;
+  /&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;You can hide the indicator from Preferences &amp;gt; Virtual keyboard.&lt;/p&gt;
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/help/how-to/sticky-modifier-key/images/indicator-configuration@2x.png&#34;
+    alt=&#34;indicator-configuration@2x.png&#34;
+    style=&#34;width: 1000px&#34;
+  /&gt;
+&lt;/figure&gt;
+
+&lt;h2 id=&#34;sticky-modifiers-and-mouse-events&#34;&gt;Sticky modifiers and mouse events&lt;/h2&gt;
+&lt;p&gt;The sticky modifiers are not deactivate by mouse buttons if you are not enabled the mouse.&lt;/p&gt;
+&lt;p&gt;There are two solutions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Deactivate sticky modifier by press the sticky modifier key again.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../mouse-button/&#34;&gt;Enable your mouse on Devices.&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Docs: device_if, device_unless</title>
       <link>/docs/json/complex-modifications-manipulator-definition/conditions/device/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1028,6 +1117,11 @@ To quit Karabiner-Elements, choose &amp;ldquo;Quit Karabiner-Elements&amp;rdquo;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;code&gt;is_pointing_device&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Optional&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;true&lt;/code&gt; or &lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;is_touch_bar&lt;/code&gt;&lt;/td&gt;
 &lt;td&gt;Optional&lt;/td&gt;
 &lt;td&gt;&lt;code&gt;true&lt;/code&gt; or &lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
 &lt;/tr&gt;
@@ -1473,38 +1567,7 @@ Change modifiers by using Simple Modifications.
       <description>
         
         
-        &lt;p&gt;Enable &lt;strong&gt;Disable caps_lock delay&lt;/strong&gt; setting from Complex Modification.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Import &lt;a href=&#34;https://ke-complex-modifications.pqrs.org/#caps_lock&#34;&gt;Change caps_lock key&lt;/a&gt; setting.&lt;/li&gt;
-&lt;li&gt;Enable &lt;strong&gt;Disable caps_lock delay&lt;/strong&gt;.
-
-
-
-
-  
-
-
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/help/how-to/disable-caps-lock-delay/images/karabiner-elements-disable-caps-lock-delay@2x.png&#34;
-    alt=&#34;karabiner-elements-disable-caps-lock-delay@2x.png&#34;
-    style=&#34;width: 1000px&#34;
-  /&gt;
-&lt;/figure&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
-&lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
-
-    &lt;p&gt;Actually, this setting does not disable the caps lock delay of macOS.&lt;/p&gt;
-&lt;p&gt;This setting puts a wait between caps lock key down and key up event
-in order to ensure macOS recognize the caps lock event.&lt;/p&gt;
-
-
-&lt;/div&gt;
-
+        &lt;p&gt;Karabiner-Elements disables the caps lock delay without any action since v13.2.0.&lt;/p&gt;
 
       </description>
     </item>
@@ -2651,38 +2714,6 @@ Karabiner-Elements changes keys by Simple Modifications, and then changes them b
     </item>
     
     <item>
-      <title>Docs: How to adjust the key repeat rate</title>
-      <link>/docs/help/how-to/key-repeat/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/docs/help/how-to/key-repeat/</guid>
-      <description>
-        
-        
-        &lt;p&gt;Karabiner-Elements does not provide a feature to adjust key repeat rate.&lt;/p&gt;
-&lt;p&gt;Use System Preferences &amp;gt; Keyboard.&lt;/p&gt;
-
-
-
-
-  
-
-
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/help/how-to/key-repeat/images/system-preferences-keyboard-key-repeat@2x.png&#34;
-    alt=&#34;system-preferences-keyboard-key-repeat@2x.png&#34;
-    style=&#34;width: 668px&#34;
-  /&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;You can also adjust the key repeat rate using &lt;code&gt;defaults write&lt;/code&gt; command.
-&lt;a href=&#34;https://apple.stackexchange.com/questions/10467/how-to-increase-keyboard-key-repeat-rate-on-os-x&#34;&gt;https://apple.stackexchange.com/questions/10467/how-to-increase-keyboard-key-repeat-rate-on-os-x&lt;/a&gt;&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
       <title>Docs: Input event modification chaining</title>
       <link>/docs/manual/misc/event-modification-chaining/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -2711,6 +2742,38 @@ Karabiner-Elements.&lt;/p&gt;
 
 &lt;/div&gt;
 
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Is it possible to adjust the key repeat rate?</title>
+      <link>/docs/help/how-to/key-repeat/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/help/how-to/key-repeat/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Karabiner-Elements does not provide a feature to adjust key repeat rate.&lt;/p&gt;
+&lt;p&gt;Use System Preferences &amp;gt; Keyboard.&lt;/p&gt;
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/help/how-to/key-repeat/images/system-preferences-keyboard-key-repeat@2x.png&#34;
+    alt=&#34;system-preferences-keyboard-key-repeat@2x.png&#34;
+    style=&#34;width: 668px&#34;
+  /&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;You can also adjust the key repeat rate using &lt;code&gt;defaults write&lt;/code&gt; command.
+&lt;a href=&#34;https://apple.stackexchange.com/questions/10467/how-to-increase-keyboard-key-repeat-rate-on-os-x&#34;&gt;https://apple.stackexchange.com/questions/10467/how-to-increase-keyboard-key-repeat-rate-on-os-x&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>
@@ -3847,6 +3910,92 @@ press &amp;ldquo;Open MultitouchExtension app&amp;rdquo; button on Preferences &
     </item>
     
     <item>
+      <title>Docs: to.sticky_modifier</title>
+      <link>/docs/json/complex-modifications-manipulator-definition/to/sticky-modifier/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/json/complex-modifications-manipulator-definition/to/sticky-modifier/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;code&gt;sticky_modifier&lt;/code&gt; changes a key to a sticky modifier key.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+    &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;#34;to&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;
+        &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+            &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;#34;sticky_modifier&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+                &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;#34;{modifier_name}&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;on | off | toggle&amp;#34;&lt;/span&gt;
+            &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+        &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+    &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]&lt;/span&gt;
+&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Name&lt;/th&gt;
+&lt;th&gt;Required&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;{modifier_name}&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Optional&lt;/td&gt;
+&lt;td&gt;- &lt;code&gt;on&lt;/code&gt; always activates a sticky modifier.&lt;br /&gt;- &lt;code&gt;off&lt;/code&gt; is vice versa.&lt;br /&gt;- &lt;code&gt;toggle&lt;/code&gt; toggles a sticky modifier. &lt;br /&gt;&lt;br /&gt;&lt;code&gt;toggle&lt;/code&gt; is suitable for most cases.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;supported-modifiers&#34;&gt;Supported modifiers&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;left_control&lt;/li&gt;
+&lt;li&gt;left_shift&lt;/li&gt;
+&lt;li&gt;left_option&lt;/li&gt;
+&lt;li&gt;left_command&lt;/li&gt;
+&lt;li&gt;right_control&lt;/li&gt;
+&lt;li&gt;right_shift&lt;/li&gt;
+&lt;li&gt;right_option&lt;/li&gt;
+&lt;li&gt;right_command&lt;/li&gt;
+&lt;li&gt;fn&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;examples&#34;&gt;Examples&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+    &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;#34;to&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;
+        &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+            &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;#34;sticky_modifier&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+                &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;#34;right_option&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;toggle&amp;#34;&lt;/span&gt;
+            &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+        &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+    &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]&lt;/span&gt;
+&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class=&#34;alert alert-danger&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
+
+    &lt;p&gt;You have to specify only one modifier.&lt;/p&gt;
+&lt;p&gt;If you want to activate multiple sticky modifiers, put multiple sticky_modifier as follows.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+    &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;#34;to&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;
+        &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+            &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;#34;sticky_modifier&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+                &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;#34;left_control&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;toggle&amp;#34;&lt;/span&gt;
+            &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+        &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;},&lt;/span&gt;
+        &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+            &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;#34;sticky_modifier&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+                &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;#34;left_shift&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;toggle&amp;#34;&lt;/span&gt;
+            &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+        &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+    &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]&lt;/span&gt;
+&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
       <title>Docs: &#34;karabiner.json is not owned by a valid user&#34; error message in log</title>
       <link>/docs/help/troubleshooting/json-owner-is-invalid/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -3861,84 +4010,6 @@ press &amp;ldquo;Open MultitouchExtension app&amp;rdquo; button on Preferences &
 &lt;p&gt;You have to enable ownership on the external volume by the following command in Terminal.app.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;sudo diskutil enableOwnership disk99999s99999
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;(Replace &lt;code&gt;disk99999s99999&lt;/code&gt; with your disk identifier which you can find by &lt;code&gt;diskutil list&lt;/code&gt; command.)&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: Command line interface</title>
-      <link>/docs/manual/misc/command-line-interface/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/docs/manual/misc/command-line-interface/</guid>
-      <description>
-        
-        
-        &lt;p&gt;Karabiner-Elements provides a command line interface which provides the following functions.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Switch a profile by name.&lt;/li&gt;
-&lt;li&gt;Show current profile name.&lt;/li&gt;
-&lt;li&gt;Show all profile names.&lt;/li&gt;
-&lt;li&gt;Set variables which are used in complex modifications.&lt;/li&gt;
-&lt;li&gt;Copy the current profile to system default profile. (Administrator privilege is required.)&lt;/li&gt;
-&lt;li&gt;Remove the system default profile. (Administrator privilege is required.)&lt;/li&gt;
-&lt;li&gt;Lint complex_modifications.json.&lt;/li&gt;
-&lt;li&gt;Display version.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;usage&#34;&gt;Usage&lt;/h2&gt;
-&lt;h3 id=&#34;show-help&#34;&gt;Show help&lt;/h3&gt;
-&lt;p&gt;Run the following command in terminal.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;/Library/Application Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli&amp;#39;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Result:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;A command line utility of Karabiner-Elements.
-Usage:
-  karabiner_cli [OPTION...]
-
-      --select-profile arg      Select a profile by name.
-      --show-current-profile-name
-                                Show current profile name
-      --list-profile-names      Show all profile names
-      --set-variables arg       Json string: {[key: string]: number}
-      --copy-current-profile-to-system-default-profile
-                                Copy the current profile to system default
-                                profile.
-      --remove-system-default-profile
-                                Remove the system default profile.
-      --lint-complex-modifications complex_modifications.json
-                                Check complex_modifications.json
-      --version                 Displays version.
-      --version-number          Displays version_number.
-      --help                    Print help.
-
-Examples:
-  karabiner_cli --select-profile &amp;#39;Default profile&amp;#39;
-  karabiner_cli --show-current-profile-name
-  karabiner_cli --list-profile-names
-  karabiner_cli --set-variables &amp;#39;{&amp;#34;cli_flag1&amp;#34;:1, &amp;#34;cli_flag2&amp;#34;:2}&amp;#39;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
-&lt;h3 id=&#34;examples&#34;&gt;Examples&lt;/h3&gt;
-&lt;h4 id=&#34;switch-profile&#34;&gt;Switch profile&lt;/h4&gt;
-&lt;p&gt;Run the following command in terminal.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;/Library/Application Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli&amp;#39;&lt;/span&gt; --select-profile &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;Default profile&amp;#39;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;show-current-profile-name&#34;&gt;Show current profile name&lt;/h4&gt;
-&lt;p&gt;Run the following command in terminal.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;/Library/Application Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli&amp;#39;&lt;/span&gt; --show-current-profile-name
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;show-all-profile-names&#34;&gt;Show all profile names&lt;/h4&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;/Library/Application Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli&amp;#39;&lt;/span&gt; --list-profile-names
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: Downgrade to older version</title>
-      <link>/docs/help/how-to/downgrade/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/docs/help/how-to/downgrade/</guid>
-      <description>
-        
-        
-        &lt;p&gt;Download an older version package from &lt;a href=&#34;/docs/releasenotes/&#34;&gt;Release notes&lt;/a&gt; and install it.&lt;/p&gt;
 
       </description>
     </item>
