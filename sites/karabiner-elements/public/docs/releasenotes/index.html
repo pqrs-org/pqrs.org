@@ -18,19 +18,15 @@
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
 <title>Release notes | Karabiner-Elements</title><meta property="og:title" content="Release notes" />
-<meta property="og:description" content="Karabiner-Elements 13.1.0  📦 Download 📅 Release date  Oct 30, 2020   🔔 Important Notes  Restarting macOS is required after upgrading from v13.0.0.
-The following alert will be shown after upgrade. Please follow the instructions.
-   🐛 Bug Fixes  Fixed an issue that Karabiner-DriverKit-VirtualHIDDevice might crash when caps lock key is pressed in some environments.    Karabiner-Elements 13.0.0  📦 Download 📅 Release date  Oct 4, 2020   💥 Breaking changes  macOS 10." />
+<meta property="og:description" content="Karabiner-Elements 13.3.0  📦 Download 📅 Release date  Jan 29, 2021   🐛 Bug Fixes  Fixed an issue that installer requires Rosetta 2 on Apple Silicon Macs.   💥 Breaking changes  Changed the default function of f4 key to spotlight, f5 key to dictation, f6 key to f6.  Note: This change will be applied when you create a new profile.   Changed to Karabiner-Elements does not modify f1-f12 keys on touch bar." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/releasenotes/" />
 <meta property="og:image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
 <meta property="og:site_name" content="Karabiner-Elements" />
 <meta itemprop="name" content="Release notes">
-<meta itemprop="description" content="Karabiner-Elements 13.1.0  📦 Download 📅 Release date  Oct 30, 2020   🔔 Important Notes  Restarting macOS is required after upgrading from v13.0.0.
-The following alert will be shown after upgrade. Please follow the instructions.
-   🐛 Bug Fixes  Fixed an issue that Karabiner-DriverKit-VirtualHIDDevice might crash when caps lock key is pressed in some environments.    Karabiner-Elements 13.0.0  📦 Download 📅 Release date  Oct 4, 2020   💥 Breaking changes  macOS 10.">
+<meta itemprop="description" content="Karabiner-Elements 13.3.0  📦 Download 📅 Release date  Jan 29, 2021   🐛 Bug Fixes  Fixed an issue that installer requires Rosetta 2 on Apple Silicon Macs.   💥 Breaking changes  Changed the default function of f4 key to spotlight, f5 key to dictation, f6 key to f6.  Note: This change will be applied when you create a new profile.   Changed to Karabiner-Elements does not modify f1-f12 keys on touch bar.">
 
-<meta itemprop="wordCount" content="5951">
+<meta itemprop="wordCount" content="6078">
 <meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
 
 
@@ -40,9 +36,7 @@ The following alert will be shown after upgrade. Please follow the instructions.
 <meta name="twitter:image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
 
 <meta name="twitter:title" content="Release notes"/>
-<meta name="twitter:description" content="Karabiner-Elements 13.1.0  📦 Download 📅 Release date  Oct 30, 2020   🔔 Important Notes  Restarting macOS is required after upgrading from v13.0.0.
-The following alert will be shown after upgrade. Please follow the instructions.
-   🐛 Bug Fixes  Fixed an issue that Karabiner-DriverKit-VirtualHIDDevice might crash when caps lock key is pressed in some environments.    Karabiner-Elements 13.0.0  📦 Download 📅 Release date  Oct 4, 2020   💥 Breaking changes  macOS 10."/>
+<meta name="twitter:description" content="Karabiner-Elements 13.3.0  📦 Download 📅 Release date  Jan 29, 2021   🐛 Bug Fixes  Fixed an issue that installer requires Rosetta 2 on Apple Silicon Macs.   💥 Breaking changes  Changed the default function of f4 key to spotlight, f5 key to dictation, f6 key to f6.  Note: This change will be applied when you create a new profile.   Changed to Karabiner-Elements does not modify f1-f12 keys on touch bar."/>
 
 
 <script type="application/javascript">
@@ -115,7 +109,7 @@ if (!doNotTrack) {
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.7659d42ee259331f5e3f83baf39a83c8.json"
+  data-offline-search-index-json-src="/offline-search-index.aa53677fb67ecee20802ed7a38b942c0.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="25"
 >
@@ -147,7 +141,7 @@ if (!doNotTrack) {
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.7659d42ee259331f5e3f83baf39a83c8.json"
+  data-offline-search-index-json-src="/offline-search-index.aa53677fb67ecee20802ed7a38b942c0.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="25"
 >
@@ -1305,6 +1299,7 @@ if (!doNotTrack) {
 
 <nav id="TableOfContents">
   <ul>
+    <li><a href="#karabiner-elements-1330">Karabiner-Elements 13.3.0</a></li>
     <li><a href="#karabiner-elements-1310">Karabiner-Elements 13.1.0</a></li>
     <li><a href="#karabiner-elements-1300">Karabiner-Elements 13.0.0</a></li>
     <li><a href="#karabiner-elements-12100">Karabiner-Elements 12.10.0</a></li>
@@ -1426,7 +1421,50 @@ if (!doNotTrack) {
             
 <div class="td-content release-notes">
 	<h1>Release notes</h1>
-	<h2 id="karabiner-elements-1310">Karabiner-Elements 13.1.0</h2>
+	<h2 id="karabiner-elements-1330">Karabiner-Elements 13.3.0</h2>
+<ul>
+<li><a href="https://github.com/pqrs-org/Karabiner-Elements/releases/download/v13.3.0/Karabiner-Elements-13.3.0.dmg">📦 Download</a></li>
+<li>📅 Release date
+<ul>
+<li>Jan 29, 2021</li>
+</ul>
+</li>
+<li>🐛 Bug Fixes
+<ul>
+<li>Fixed an issue that installer requires Rosetta 2 on Apple Silicon Macs.</li>
+</ul>
+</li>
+<li>💥 Breaking changes
+<ul>
+<li>Changed the default function of f4 key to <code>spotlight</code>, f5 key to <code>dictation</code>, f6 key to <code>f6</code>.
+<ul>
+<li>Note: This change will be applied when you create a new profile.</li>
+</ul>
+</li>
+<li>Changed to Karabiner-Elements does not modify f1-f12 keys on touch bar.</li>
+<li>The caps lock delay of Karabiner Virtual HID Keyboard has been removed.
+The state of caps lock will be changed immediately after you press the caps lock key.</li>
+</ul>
+</li>
+<li>✨ New Features
+<ul>
+<li>Supported <a href="https://karabiner-elements.pqrs.org/docs/help/how-to/sticky-modifier-key/"><code>sticky modifier keys</code></a></li>
+<li>Added <code>apple_vendor_keyboard_key_code</code> and <code>apple_vendor_top_case_key_code</code> to event definitions.
+<ul>
+<li><a href="https://github.com/pqrs-org/Karabiner-Elements/blob/master/src/share/types/momentary_switch_event_details/apple_vendor_keyboard_key_code.hpp">apple_vendor_keyboard_key_code</a></li>
+<li><a href="https://github.com/pqrs-org/Karabiner-Elements/blob/master/src/share/types/momentary_switch_event_details/apple_vendor_top_case_key_code.hpp">apple_vendor_top_case_key_code</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>⚡️ Improvements
+<ul>
+<li>Updated in-app screenshots to Big Sur.</li>
+<li>Added the close button to notification window.</li>
+</ul>
+</li>
+</ul>
+<h2 id="karabiner-elements-1310">Karabiner-Elements 13.1.0</h2>
 <ul>
 <li><a href="https://github.com/pqrs-org/Karabiner-Elements/releases/download/v13.1.0/Karabiner-Elements-13.1.0.dmg">📦 Download</a></li>
 <li>📅 Release date
