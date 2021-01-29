@@ -28,7 +28,6 @@ type: releasenotes
     -   Updated in-app screenshots to Big Sur.
     -   Added the close button to notification window.
 
-
 ## Karabiner-Elements 13.1.0
 
 -   [📦 Download](https://github.com/pqrs-org/Karabiner-Elements/releases/download/v13.1.0/Karabiner-Elements-13.1.0.dmg)
