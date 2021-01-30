@@ -4,6 +4,8 @@ weight: 150
 ---
 
 You can enable the sticky modifier keys from Preferences &gt; Simple modifications.
+
+{{< local-image src="images/to-keys@2x.png" >}}
 {{< local-image src="images/simple-modifications@2x.png" >}}
 
 {{% alert title="Note" color="primary" %}}
