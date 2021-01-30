@@ -19,7 +19,7 @@ For example, the following operation result is `AA` instead of `Aa`.
 5.  Release `a` key
 6.  Release `sticky left shift` key
 
-If you want to disable this feature, use `stciky modifier key (pressing and holding down is disabled)`.
+If you want to disable this feature, use `sticky modifier key (pressing and holding down is disabled)`.
 
 {{% /alert %}}
 
