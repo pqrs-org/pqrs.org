@@ -23,7 +23,8 @@ Please fill your information when you send bug reports:
     (You can confirm the version in "Misc &amp; Uninstall" tab in Karabiner Preferences.)
 -   Your Mac hardware:
 -   Your keyboard hardware:
-    {{% /alert %}}
+
+{{% /alert %}}
 
 Example:
 
