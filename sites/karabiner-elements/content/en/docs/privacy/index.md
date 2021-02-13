@@ -52,13 +52,6 @@ The received data contains:
 
 {{% /alert %}}
 
-| Name                       | Example                                  |
-| -------------------------- | ---------------------------------------- |
-| Access source IP address   | 150.249.243.141                          |
-| Access time                | 13/Feb/2021:18:37:14 +0900               |
-| Karabiner-Elements version | Karabiner-Elements/13.3.0 Sparkle/1.24.0 |
-
-
 ## Related documents
 
 -   [Security](../help/advanced-topics/security)
