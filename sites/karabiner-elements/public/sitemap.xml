@@ -1,389 +1,197 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>/docs/help/troubleshooting/driver-alert-keeps-showing-up/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/docs/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/docs/help/troubleshooting/allow-button-does-not-appear/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/docs/manual/misc/ignored-temporarily/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/docs/help/troubleshooting/allow-button-does-not-work/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/docs/manual/configuration/configure-simple-modifications/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/docs/manual/configuration/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/docs/json/location/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/docs/json/complex-modifications-manipulator-definition/from/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/docs/json/complex-modifications-manipulator-definition/from/any/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/docs/json/complex-modifications-manipulator-definition/conditions/frontmost-application/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/docs/getting-started/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/docs/help/how-to/mouse-button/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/docs/getting-started/installation/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/docs/help/advanced-topics/installed-files/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/docs/json/complex-modifications-manipulator-definition/other-types/mouse-motion-to-scroll/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/docs/json/extra/multitouch-extension/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/docs/manual/operation/quit/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/docs/json/complex-modifications-manipulator-definition/to/shell-command/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/docs/help/troubleshooting/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/docs/manual/operation/restart/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/docs/help/how-to/sticky-modifier-key/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/docs/json/complex-modifications-manipulator-definition/conditions/device/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/docs/getting-started/features/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/docs/json/complex-modifications-manipulator-definition/from/modifiers/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/docs/help/how-to/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/docs/help/how-to/disable-caps-lock-delay/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/docs/manual/misc/implicit-behavior/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/docs/help/troubleshooting/stopped-working-after-macos-update/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/docs/manual/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/docs/manual/operation/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/docs/help/advanced-topics/security/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/docs/json/complex-modifications-manipulator-definition/to/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/docs/json/complex-modifications-manipulator-definition/to/select-input-source/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/docs/json/typical-complex-modifications-examples/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/docs/manual/operation/uninstall/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/docs/manual/configuration/configure-complex-modifications/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/docs/json/extra/virtual-modifier/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/docs/help/advanced-topics/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/docs/manual/operation/check-for-updates/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/docs/manual/configuration/configure-devices/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/docs/json/complex-modifications-manipulator-evaluation-priority/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/docs/json/complex-modifications-manipulator-definition/from/simultaneous/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/docs/manual/misc/event-modification-chaining/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/docs/help/how-to/key-repeat/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/docs/json/complex-modifications-manipulator-definition/conditions/keyboard-type/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/docs/manual/misc/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/docs/json/complex-modifications-manipulator-definition/to/set-variable/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/docs/json/complex-modifications-manipulator-definition/to-if-alone/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/docs/help/troubleshooting/touch-bar-function-keys/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/docs/help/advanced-topics/lock-icon/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/docs/manual/operation/eventviewer/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/docs/help/troubleshooting/control-eject/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/docs/manual/configuration/disable-built-in-keyboard/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/docs/json/complex-modifications-manipulator-definition/from/simultaneous-options/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/docs/help/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/docs/help/how-to/disable-open-at-login/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/docs/json/complex-modifications-manipulator-definition/conditions/input-source/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/docs/json/root-data-structure/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/docs/manual/misc/multitouch-extension/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/docs/json/complex-modifications-manipulator-definition/to/mouse-key/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/docs/json/complex-modifications-manipulator-definition/to-if-held-down/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/docs/help/troubleshooting/cannot-use-some-key-combination/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/docs/json/complex-modifications-manipulator-definition/to/sticky-modifier/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/docs/help/troubleshooting/json-owner-is-invalid/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/docs/manual/misc/command-line-interface/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/docs/json/complex-modifications-manipulator-definition/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/docs/help/how-to/downgrade/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/docs/manual/operation/profiles/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/docs/manual/configuration/configure-keyboard-type/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/docs/json/complex-modifications-manipulator-definition/to/modifiers/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/docs/json/complex-modifications-manipulator-definition/to-after-key-up/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/docs/json/complex-modifications-manipulator-definition/conditions/variable/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/docs/manual/configuration/configure-menu-bar-icon/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/docs/json/complex-modifications-manipulator-definition/conditions/event-changed/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/docs/json/extra/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/docs/help/troubleshooting/placeholder-developer/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/docs/manual/operation/log/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/docs/manual/misc/configuration-file-path/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/docs/json/complex-modifications-manipulator-definition/to/lazy/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/docs/json/complex-modifications-manipulator-definition/to-delayed-action/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/docs/privacy/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/docs/manual/misc/legacy-system-extension/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/docs/help/troubleshooting/caps-lock-led-not-working/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/docs/contact/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/docs/manual/operation/export/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/docs/json/external-json-generators/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/docs/json/complex-modifications-manipulator-definition/to/repeat/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/docs/pricing/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/docs/json/complex-modifications-manipulator-definition/to/halt/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/docs/json/complex-modifications-manipulator-definition/conditions/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/docs/releasenotes/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/docs/json/complex-modifications-manipulator-definition/to/hold-down-milliseconds/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/docs/json/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/docs/json/complex-modifications-manipulator-definition/other-types/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/</loc>
   </url>
-  
 </urlset>
