@@ -18,21 +18,21 @@
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
 <title>Release notes | Karabiner-Elements</title><meta property="og:title" content="Release notes" />
-<meta property="og:description" content="Karabiner-Elements 13.3.0  📦 Download 📅 Release date  Jan 29, 2021   🐛 Bug Fixes  Fixed an issue that installer requires Rosetta 2 on Apple Silicon Macs.   💥 Breaking changes  Changed the default function of f4 key to spotlight, f5 key to dictation, f6 key to f6.  Note: This change will be applied when you create a new profile.   Changed to Karabiner-Elements does not modify f1-f12 keys on touch bar." />
+<meta property="og:description" content="Karabiner-Elements 13.4.0  📦 Download 📅 Release date  Apr 4, 2021   🐛 Bug Fixes  Fixed an issue that Karabiner-Elements stops working with virtual_hid_keyboard is not ready. Please wait for a while. error message when you kill karabiner_console_user_server process manually.   ⚡️ Improvements  Changed to terminate virtual HID devices immediately after quit Karabiner-Elements.    🔔 Notes for Mac computers with Apple Silicon (Apple M1) users macOS Big Sur 11." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/releasenotes/" /><meta property="og:image" content="https://karabiner-elements.pqrs.org/images/logo.png"/><meta property="article:section" content="docs" />
 
 <meta property="og:site_name" content="Karabiner-Elements" />
 
 <meta itemprop="name" content="Release notes">
-<meta itemprop="description" content="Karabiner-Elements 13.3.0  📦 Download 📅 Release date  Jan 29, 2021   🐛 Bug Fixes  Fixed an issue that installer requires Rosetta 2 on Apple Silicon Macs.   💥 Breaking changes  Changed the default function of f4 key to spotlight, f5 key to dictation, f6 key to f6.  Note: This change will be applied when you create a new profile.   Changed to Karabiner-Elements does not modify f1-f12 keys on touch bar.">
+<meta itemprop="description" content="Karabiner-Elements 13.4.0  📦 Download 📅 Release date  Apr 4, 2021   🐛 Bug Fixes  Fixed an issue that Karabiner-Elements stops working with virtual_hid_keyboard is not ready. Please wait for a while. error message when you kill karabiner_console_user_server process manually.   ⚡️ Improvements  Changed to terminate virtual HID devices immediately after quit Karabiner-Elements.    🔔 Notes for Mac computers with Apple Silicon (Apple M1) users macOS Big Sur 11.">
 
-<meta itemprop="wordCount" content="6078"><meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
+<meta itemprop="wordCount" content="6219"><meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
 
 <meta name="twitter:title" content="Release notes"/>
-<meta name="twitter:description" content="Karabiner-Elements 13.3.0  📦 Download 📅 Release date  Jan 29, 2021   🐛 Bug Fixes  Fixed an issue that installer requires Rosetta 2 on Apple Silicon Macs.   💥 Breaking changes  Changed the default function of f4 key to spotlight, f5 key to dictation, f6 key to f6.  Note: This change will be applied when you create a new profile.   Changed to Karabiner-Elements does not modify f1-f12 keys on touch bar."/>
+<meta name="twitter:description" content="Karabiner-Elements 13.4.0  📦 Download 📅 Release date  Apr 4, 2021   🐛 Bug Fixes  Fixed an issue that Karabiner-Elements stops working with virtual_hid_keyboard is not ready. Please wait for a while. error message when you kill karabiner_console_user_server process manually.   ⚡️ Improvements  Changed to terminate virtual HID devices immediately after quit Karabiner-Elements.    🔔 Notes for Mac computers with Apple Silicon (Apple M1) users macOS Big Sur 11."/>
 
 
 <script type="application/javascript">
@@ -105,7 +105,7 @@ if (!doNotTrack) {
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.b4b239de9718aa0abaa442a9522ba71f.json"
+  data-offline-search-index-json-src="/offline-search-index.e5c643c4419ded2add73649c8a3b820b.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="25"
 >
@@ -137,7 +137,7 @@ if (!doNotTrack) {
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.b4b239de9718aa0abaa442a9522ba71f.json"
+  data-offline-search-index-json-src="/offline-search-index.e5c643c4419ded2add73649c8a3b820b.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="25"
 >
@@ -1303,6 +1303,11 @@ if (!doNotTrack) {
 
 <nav id="TableOfContents">
   <ul>
+    <li><a href="#karabiner-elements-1340">Karabiner-Elements 13.4.0</a>
+      <ul>
+        <li><a href="#-notes-for-mac-computers-with-apple-silicon-apple-m1-users">🔔 Notes for Mac computers with Apple Silicon (Apple M1) users</a></li>
+      </ul>
+    </li>
     <li><a href="#karabiner-elements-1330">Karabiner-Elements 13.3.0</a></li>
     <li><a href="#karabiner-elements-1310">Karabiner-Elements 13.1.0</a></li>
     <li><a href="#karabiner-elements-1300">Karabiner-Elements 13.0.0</a></li>
@@ -1425,7 +1430,31 @@ if (!doNotTrack) {
             
 <div class="td-content release-notes">
 	<h1>Release notes</h1>
-	<h2 id="karabiner-elements-1330">Karabiner-Elements 13.3.0</h2>
+	<h2 id="karabiner-elements-1340">Karabiner-Elements 13.4.0</h2>
+<ul>
+<li><a href="https://github.com/pqrs-org/Karabiner-Elements/releases/download/v13.4.0/Karabiner-Elements-13.4.0.dmg">📦 Download</a></li>
+<li>📅 Release date
+<ul>
+<li>Apr 4, 2021</li>
+</ul>
+</li>
+<li>🐛 Bug Fixes
+<ul>
+<li>Fixed an issue that Karabiner-Elements stops working with <code>virtual_hid_keyboard is not ready. Please wait for a while.</code> error message when you kill <code>karabiner_console_user_server</code> process manually.</li>
+</ul>
+</li>
+<li>⚡️ Improvements
+<ul>
+<li>Changed to terminate virtual HID devices immediately after quit Karabiner-Elements.</li>
+</ul>
+</li>
+</ul>
+<h3 id="-notes-for-mac-computers-with-apple-silicon-apple-m1-users">🔔 Notes for Mac computers with Apple Silicon (Apple M1) users</h3>
+<p>macOS Big Sur 11.2 or earlier have an issue within memory management and HID device handling that causes kernel panics on Mac computers with Apple Silicon.
+The virtual device that is used internally by Karabiner-Elements triggers this issue, and a kernel panic might be caused at macOS shutdown.</p>
+<p>We confirmed that this issue has been fixed in <a href="https://beta.apple.com/sp/betaprogram/">macOS Big Sur 11.3 Beta</a>.
+Please use macOS Big Sur 11.3 Beta or later versions if you are facing the kernel panic issue.</p>
+<h2 id="karabiner-elements-1330">Karabiner-Elements 13.3.0</h2>
 <ul>
 <li><a href="https://github.com/pqrs-org/Karabiner-Elements/releases/download/v13.3.0/Karabiner-Elements-13.3.0.dmg">📦 Download</a></li>
 <li>📅 Release date

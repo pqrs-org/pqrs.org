@@ -101,7 +101,7 @@ if (!doNotTrack) {
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.b4b239de9718aa0abaa442a9522ba71f.json"
+  data-offline-search-index-json-src="/offline-search-index.e5c643c4419ded2add73649c8a3b820b.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="25"
 >
@@ -140,10 +140,10 @@ if (!doNotTrack) {
 <div class="mt-4">
   <div class="btn-group mx-2 my-2">
     <a
-      href="https://github.com/pqrs-org/Karabiner-Elements/releases/download/v13.3.0/Karabiner-Elements-13.3.0.dmg"
+      href="https://github.com/pqrs-org/Karabiner-Elements/releases/download/v13.4.0/Karabiner-Elements-13.4.0.dmg"
       class="btn btn-primary btn-lg px-4"
     >
-      Download v13.3.0
+      Download v13.4.0
       <i class="fas fa-download ml-1"></i>
     </a>
     <button
@@ -158,9 +158,9 @@ if (!doNotTrack) {
     <div class="dropdown-menu">
       <a
         class="dropdown-item"
-        href="https://github.com/pqrs-org/Karabiner-Elements/releases/download/v13.3.0/Karabiner-Elements-13.3.0.dmg"
+        href="https://github.com/pqrs-org/Karabiner-Elements/releases/download/v13.4.0/Karabiner-Elements-13.4.0.dmg"
       >
-        Download Karabiner-Elements-13.3.0<br />
+        Download Karabiner-Elements-13.4.0<br />
         <ul>
           <li>For macOS Big Sur (11.0)</li>
           <li>For macOS Catalina (10.15.6 or later)</li>
@@ -222,7 +222,7 @@ if (!doNotTrack) {
 </div>
 
 <div class="small mt-4">
-  <div class="d-inline-block p-2 border border-light" style="border-radius: 10px;">
+  <div class="d-inline-block px-4 py-2 border border-light" style="border-radius: 10px;">
     <div class="small">
       Supported systems
     </div>
@@ -236,6 +236,24 @@ if (!doNotTrack) {
       <div class="d-inline-block small mt-3 text-left mx-auto">
         <i class="fas fa-star"></i> Both Intel-based Macs and Apple Silicon Macs are supported.<br/>
         <i class="fas fa-star"></i> macOS 10.15.6 or later is required.<br/>
+      </div>
+    </div>
+  </div>
+
+  <div class="d-block -bg-white px-4 py-4 mt-4 mx-auto border border-light" style="border-radius: 10px; max-width: 600px;">
+    <div class="small">
+      🔔 Notes for Mac computers with Apple Silicon (Apple M1) users
+    </div>
+
+    <div class="mt-2 small text-left">
+      <div>
+        macOS Big Sur 11.2 or earlier have an issue within memory management and HID device handling that causes kernel panics on Mac computers with Apple Silicon.
+        The virtual device that is used internally by Karabiner-Elements triggers this issue, and a kernel panic might be caused at macOS shutdown.
+      </div>
+
+      <div class="mt-2">
+        We confirmed that this issue has been fixed in <a href="https://beta.apple.com/sp/betaprogram/" target="_blank">macOS Big Sur 11.3 Beta</a>.
+        Please use macOS Big Sur 11.3 Beta or later versions if you are facing the kernel panic issue.
       </div>
     </div>
   </div>
