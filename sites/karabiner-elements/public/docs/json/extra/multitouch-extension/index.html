@@ -44,16 +44,18 @@ Example The following json changes k key to up_arrow when the finger is on the t
 { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;k&#34;, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [ { &#34;key_code&#34;: &#34;up_arrow&#34; } ], &#34;conditions&#34;: [ { &#34;type&#34;: &#34;variable_unless&#34;, &#34;name&#34;: &#34;multitouch_extension_finger_count_total&#34;, &#34;value&#34;: 0 } ] } Variables Karabiner-MultitouchExtension changes the following variables when the finger count on the trackpad is changed."/>
 
 
-<script type="application/javascript">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NL3CW99MZS"></script>
+<script>
 var doNotTrack = false;
 if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-56715024-1', 'auto');
-	
-	ga('send', 'pageview');
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-NL3CW99MZS', { 'anonymize_ip': false });
 }
 </script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
+
 
 
 

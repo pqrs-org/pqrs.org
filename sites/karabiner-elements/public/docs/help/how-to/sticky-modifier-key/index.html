@@ -44,16 +44,18 @@ For example, the following operation result is AA instead of Aa.
  Press sticky left shift key Press a key Release a key Press a key Release a key Release sticky left shift key  If you want to disable this feature, use sticky modifier key (pressing and holding down is disabled)."/>
 
 
-<script type="application/javascript">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NL3CW99MZS"></script>
+<script>
 var doNotTrack = false;
 if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-56715024-1', 'auto');
-	
-	ga('send', 'pageview');
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-NL3CW99MZS', { 'anonymize_ip': false });
 }
 </script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
+
 
 
 

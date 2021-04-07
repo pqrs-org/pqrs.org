@@ -47,16 +47,18 @@ We use the data only for checking updates, and we do not share these data to oth
 How we receive the data The version information will be sent in order to check updates when automatic update is enabled, or when you press the update button manually."/>
 
 
-<script type="application/javascript">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NL3CW99MZS"></script>
+<script>
 var doNotTrack = false;
 if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-56715024-1', 'auto');
-	
-	ga('send', 'pageview');
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-NL3CW99MZS', { 'anonymize_ip': false });
 }
 </script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
+
 
 
 

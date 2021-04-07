@@ -38,16 +38,18 @@
    Key Value Description     detect_key_down_uninterruptedly true or false Specify whether key_down detection is interrupted with unrelated events   key_down_order insensitive, strict or strict_inverse Restriction of key_down order   key_up_order insensitive, strict or strict_inverse Restriction of key_up order   key_up_when any or all When key_up events are posted   to_after_key_up An array of to event definitions Events will be posted when all from events are released    detect_key_down_uninterruptedly If detect_key_down_uninterruptedly is true, Karabiner-Elements changes simultaneous events even if unrelated key down event exists between target events."/>
 
 
-<script type="application/javascript">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NL3CW99MZS"></script>
+<script>
 var doNotTrack = false;
 if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-56715024-1', 'auto');
-	
-	ga('send', 'pageview');
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-NL3CW99MZS', { 'anonymize_ip': false });
 }
 </script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
+
 
 
 
