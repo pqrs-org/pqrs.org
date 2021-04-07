@@ -20,7 +20,11 @@
 {{- template "_internal/schema.html" . -}}
 {{- template "_internal/twitter_cards.html" . -}}
 {{ if hugo.IsProduction }}
+{{ if hasPrefix .Site.GoogleAnalytics "G-"}}
+{{ template "_internal/google_analytics.html" . }}
+{{ else }}
 {{ template "_internal/google_analytics_async.html" . }}
+{{ end }}
 {{ end }}
 {{ partialCached "head-css.html" . "asdf" }}
 <script
