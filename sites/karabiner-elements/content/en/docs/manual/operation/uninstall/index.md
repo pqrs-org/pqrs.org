@@ -7,7 +7,11 @@ Karabiner-Elements provides built-in uninstaller.<br />
 Use the uninstaller to remove Karabiner-Elements from your system.
 
 You can launch the uninstaller from "Uninstall Karabiner-Elements" button on Misc tab.
-{{< local-image src="images/karabiner-elements-uninstall@2x.png" >}}
+{{< local-image src="images/uninstall-button@2x.png" >}}
+
+Then, follow the instruction of the dialog. (The uninstaller ask your administrator password in order to remove files.)
+
+{{< local-image src="images/uninstaller@2x.png" >}}
 
 {{% alert title="Uninstall from command line" color="warning" %}}
 If you don't want to use above GUI, you can also uninstall Karabiner-Elements from command line.
