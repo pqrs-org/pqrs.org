@@ -2,7 +2,6 @@
 title: 'Configuration'
 weight: 200
 simple_list: true
-exclude_search: true
 ---
 
 Disable DragAndDrop works without any configuration.<br>
