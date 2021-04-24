@@ -24,7 +24,7 @@
         
         &lt;ol&gt;
 &lt;li&gt;Open Add-ons Manager on Thunderbird.&lt;/li&gt;
-&lt;li&gt;Press Disable button.
+&lt;li&gt;Turn off this add-on.
 
 
 
@@ -36,11 +36,10 @@
   &lt;img
     src=&#34;/docs/help/disable-temporarily/images/disable-temporarily@2x.png&#34;
     alt=&#34;disable-temporarily@2x.png&#34;
-    style=&#34;width: 953px&#34;
+    style=&#34;width: 1014px&#34;
   /&gt;
 &lt;/figure&gt;
 &lt;/li&gt;
-&lt;li&gt;You can enable it again by pressing Enable button.&lt;/li&gt;
 &lt;/ol&gt;
 
       </description>

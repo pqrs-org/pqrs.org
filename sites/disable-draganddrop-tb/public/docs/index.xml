@@ -14,6 +14,78 @@
     
     
     <item>
+      <title>Docs: Getting Started</title>
+      <link>/docs/getting-started/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/getting-started/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;system-requirements&#34;&gt;System requirements&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Thunderbird 68 or later&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Open Add-ons for Thunderbird site from &lt;a href=&#34;/&#34;&gt;here&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Download Disable DragAndDrop and install it.&lt;/li&gt;
+&lt;/ol&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Configuration</title>
+      <link>/docs/configuration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/configuration/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Disable DragAndDrop works without any configuration.&lt;br&gt;
+Your mail folder is protected from drag and drop after you installed the add-on.&lt;/p&gt;
+&lt;h2 id=&#34;options&#34;&gt;Options&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Prompt for confirmation rather than completely locking down the drag and drop of folders&lt;/code&gt; option allows the folder movement if you intended it.&lt;br /&gt;
+When the folder is dropped, the confirmation prompt will be shown. Press OK to move the folder.
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/configuration/images/prompt-preferences@2x.png&#34;
+    alt=&#34;prompt-preferences@2x.png&#34;
+    style=&#34;width: 688px&#34;
+  /&gt;
+&lt;/figure&gt;
+
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/configuration/images/prompt@2x.png&#34;
+    alt=&#34;prompt@2x.png&#34;
+    style=&#34;width: 640px&#34;
+  /&gt;
+&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Docs: Disable this add-on temporarily</title>
       <link>/docs/help/disable-temporarily/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -24,7 +96,7 @@
         
         &lt;ol&gt;
 &lt;li&gt;Open Add-ons Manager on Thunderbird.&lt;/li&gt;
-&lt;li&gt;Press Disable button.
+&lt;li&gt;Turn off this add-on.
 
 
 
@@ -36,11 +108,10 @@
   &lt;img
     src=&#34;/docs/help/disable-temporarily/images/disable-temporarily@2x.png&#34;
     alt=&#34;disable-temporarily@2x.png&#34;
-    style=&#34;width: 953px&#34;
+    style=&#34;width: 1014px&#34;
   /&gt;
 &lt;/figure&gt;
 &lt;/li&gt;
-&lt;li&gt;You can enable it again by pressing Enable button.&lt;/li&gt;
 &lt;/ol&gt;
 
       </description>
