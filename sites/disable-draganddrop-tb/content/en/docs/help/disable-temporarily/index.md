@@ -5,6 +5,5 @@ simple_list: true
 ---
 
 1.  Open Add-ons Manager on Thunderbird.
-2.  Press Disable button.
+2.  Turn off this add-on.
     {{< local-image src="images/disable-temporarily@2x.png" >}}
-3.  You can enable it again by pressing Enable button.
