@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="generator" content="Hugo 0.82.0" /><META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+<meta name="generator" content="Hugo 0.82.1" /><META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
 
 
 <link rel="shortcut icon" href="/favicons/favicon.ico" >
@@ -18,21 +18,21 @@
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
 <title>Release notes | Disable DragAndDrop</title><meta property="og:title" content="Release notes" />
-<meta property="og:description" content="Disable DragAndDrop 4.9.0  📅 Release date  Apr 24, 2021   ✨ New Features  Add an option: Prompt for confirmation rather than completely locking down the drag and drop of folders. (@das-peter)    Disable DragAndDrop 4.4.0  📅 Release date  Aug 13, 2020   ⚡️ Improvements  Supported Thunderbird 78.    Disable DragAndDrop 4.3.0  📅 Release date  Oct 25, 2019   ⚡️ Improvements  Updated home page URL." />
+<meta property="og:description" content="Disable DragAndDrop 4.10.0  📅 Release date  Apr 28, 2021   🐛 Bug Fixes  Fixed an issue that the folder movement approval prompt will be shown even when the mail message movement.    Disable DragAndDrop 4.9.0  📅 Release date  Apr 24, 2021   ✨ New Features  Add an option: Prompt for confirmation rather than completely locking down the drag and drop of folders." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/releasenotes/" /><meta property="og:image" content="https://disable-draganddrop-tb.pqrs.org/images/logo.png"/><meta property="article:section" content="docs" />
 
 <meta property="og:site_name" content="Disable DragAndDrop" />
 
 <meta itemprop="name" content="Release notes">
-<meta itemprop="description" content="Disable DragAndDrop 4.9.0  📅 Release date  Apr 24, 2021   ✨ New Features  Add an option: Prompt for confirmation rather than completely locking down the drag and drop of folders. (@das-peter)    Disable DragAndDrop 4.4.0  📅 Release date  Aug 13, 2020   ⚡️ Improvements  Supported Thunderbird 78.    Disable DragAndDrop 4.3.0  📅 Release date  Oct 25, 2019   ⚡️ Improvements  Updated home page URL.">
+<meta itemprop="description" content="Disable DragAndDrop 4.10.0  📅 Release date  Apr 28, 2021   🐛 Bug Fixes  Fixed an issue that the folder movement approval prompt will be shown even when the mail message movement.    Disable DragAndDrop 4.9.0  📅 Release date  Apr 24, 2021   ✨ New Features  Add an option: Prompt for confirmation rather than completely locking down the drag and drop of folders.">
 
-<meta itemprop="wordCount" content="198"><meta itemprop="image" content="https://disable-draganddrop-tb.pqrs.org/images/logo.png"/>
+<meta itemprop="wordCount" content="228"><meta itemprop="image" content="https://disable-draganddrop-tb.pqrs.org/images/logo.png"/>
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://disable-draganddrop-tb.pqrs.org/images/logo.png"/>
 
 <meta name="twitter:title" content="Release notes"/>
-<meta name="twitter:description" content="Disable DragAndDrop 4.9.0  📅 Release date  Apr 24, 2021   ✨ New Features  Add an option: Prompt for confirmation rather than completely locking down the drag and drop of folders. (@das-peter)    Disable DragAndDrop 4.4.0  📅 Release date  Aug 13, 2020   ⚡️ Improvements  Supported Thunderbird 78.    Disable DragAndDrop 4.3.0  📅 Release date  Oct 25, 2019   ⚡️ Improvements  Updated home page URL."/>
+<meta name="twitter:description" content="Disable DragAndDrop 4.10.0  📅 Release date  Apr 28, 2021   🐛 Bug Fixes  Fixed an issue that the folder movement approval prompt will be shown even when the mail message movement.    Disable DragAndDrop 4.9.0  📅 Release date  Apr 24, 2021   ✨ New Features  Add an option: Prompt for confirmation rather than completely locking down the drag and drop of folders."/>
 
 
 
@@ -109,7 +109,7 @@ if (!doNotTrack) {
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.20be7d4f287f0fe0ab99357071dbc98f.json"
+  data-offline-search-index-json-src="/offline-search-index.eba658a12542514618406ad0035fb7d4.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="25"
 >
@@ -144,7 +144,7 @@ if (!doNotTrack) {
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.20be7d4f287f0fe0ab99357071dbc98f.json"
+  data-offline-search-index-json-src="/offline-search-index.eba658a12542514618406ad0035fb7d4.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="25"
 >
@@ -354,6 +354,7 @@ if (!doNotTrack) {
 
 <nav id="TableOfContents">
   <ul>
+    <li><a href="#disable-draganddrop-4100">Disable DragAndDrop 4.10.0</a></li>
     <li><a href="#disable-draganddrop-490">Disable DragAndDrop 4.9.0</a></li>
     <li><a href="#disable-draganddrop-440">Disable DragAndDrop 4.4.0</a></li>
     <li><a href="#disable-draganddrop-430">Disable DragAndDrop 4.3.0</a></li>
@@ -403,7 +404,20 @@ if (!doNotTrack) {
             
 <div class="td-content release-notes">
 	<h1>Release notes</h1>
-	<h2 id="disable-draganddrop-490">Disable DragAndDrop 4.9.0</h2>
+	<h2 id="disable-draganddrop-4100">Disable DragAndDrop 4.10.0</h2>
+<ul>
+<li>📅 Release date
+<ul>
+<li>Apr 28, 2021</li>
+</ul>
+</li>
+<li>🐛 Bug Fixes
+<ul>
+<li>Fixed an issue that the folder movement approval prompt will be shown even when the mail message movement.</li>
+</ul>
+</li>
+</ul>
+<h2 id="disable-draganddrop-490">Disable DragAndDrop 4.9.0</h2>
 <ul>
 <li>📅 Release date
 <ul>
