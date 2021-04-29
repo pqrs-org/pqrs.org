@@ -6,6 +6,13 @@ exclude_search: true
 type: releasenotes
 ---
 
+## Disable DragAndDrop 4.10.0
+
+-   📅 Release date
+    -   Apr 28, 2021
+-   🐛 Bug Fixes
+    -   Fixed an issue that the folder movement approval prompt will be shown even when the mail message movement.
+
 ## Disable DragAndDrop 4.9.0
 
 -   📅 Release date
