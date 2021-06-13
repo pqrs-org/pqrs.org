@@ -7,7 +7,7 @@
 <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}">
 {{ end -}}
 
-{{ if and hugo.IsProduction (ne $outputFormat "print") -}}
+{{ if and (eq (getenv "HUGO_ENV") "production") (ne $outputFormat "print") -}}
 <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
 {{ else -}}
 <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -15,17 +15,12 @@
 
 {{ partialCached "favicons.html" . }}
 <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ with .Title }}{{ . }} | {{ end }}{{ .Site.Title }}{{ end }}</title>
+<meta name="description" content="{{ .Site.Params.Description }}">
 {{- template "_internal/opengraph.html" . -}}
 {{- template "_internal/google_news.html" . -}}
 {{- template "_internal/schema.html" . -}}
 {{- template "_internal/twitter_cards.html" . -}}
-{{ if hugo.IsProduction }}
-{{ if hasPrefix .Site.GoogleAnalytics "G-"}}
-{{ template "_internal/google_analytics.html" . }}
-{{ else }}
-{{ template "_internal/google_analytics_async.html" . }}
-{{ end }}
-{{ end }}
+
 {{ partialCached "head-css.html" . "asdf" }}
 <script
   src="https://code.jquery.com/jquery-3.5.1.min.js"
@@ -33,8 +28,8 @@
   crossorigin="anonymous"></script>
 {{ if .Site.Params.offlineSearch }}
 <script
-  src="https://unpkg.com/lunr@2.3.9/lunr.min.js"
-  integrity="sha384-203J0SNzyqHby3iU6hzvzltrWi/M41wOP5Gu+BiJMz5nwKykbkUx8Kp7iti0Lpli"
+  src="https://unpkg.com/lunr@2.3.8/lunr.min.js"
+  integrity="sha384-vRQ9bDyE0Wnu+lMfm57BlYLO0/XauFuKpVsZPs7KEDwYKktWi5+Kz3MP8++DFlRY"
   crossorigin="anonymous"></script>
 {{end}}
 {{ if .Site.Params.prism_syntax_highlighting }}
@@ -42,3 +37,7 @@
 <link rel="stylesheet" href="{{ "/css/prism.css" | relURL }}"/>
 {{ end }}
 {{ partial "hooks/head-end.html" . }}
+<!--To comply with GDPR, cookie consent scripts places in head-end must execute before Google Analytics is enabled -->
+{{ if eq (getenv "HUGO_ENV") "production" }}
+{{ template "_internal/google_analytics_async.html" . }}
+{{ end }}
