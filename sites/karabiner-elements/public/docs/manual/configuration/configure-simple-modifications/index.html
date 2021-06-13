@@ -17,7 +17,8 @@
 <link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
-<title>Change a key to another key | Karabiner-Elements</title><meta property="og:title" content="Change a key to another key" />
+<title>Change a key to another key | Karabiner-Elements</title>
+<meta name="description" content="A powerful and stable keyboard customizer for macOS."><meta property="og:title" content="Change a key to another key" />
 <meta property="og:description" content="You can change a key to another key on Simple Modifications tab.
  Choose target device, then press Add item button.      Select From key and To key.    Confirm the result using Karabiner-EventViewer.  Tip You can find the key name by Karabiner-EventViewer.
    " />
@@ -42,6 +43,27 @@
 
 
 
+
+<link rel="preload" href="/scss/main.min.1d01062889ec27e9f36fc43c88319d42e7b384a6069d75b199ed25275a4a8f3d.css" as="style">
+<link href="/scss/main.min.1d01062889ec27e9f36fc43c88319d42e7b384a6069d75b199ed25275a4a8f3d.css" rel="stylesheet" integrity="">
+
+
+<script
+  src="https://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+  crossorigin="anonymous"></script>
+
+<script
+  src="https://unpkg.com/lunr@2.3.8/lunr.min.js"
+  integrity="sha384-vRQ9bDyE0Wnu+lMfm57BlYLO0/XauFuKpVsZPs7KEDwYKktWi5+Kz3MP8++DFlRY"
+  crossorigin="anonymous"></script>
+
+
+
+
+
+
+
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-NL3CW99MZS"></script>
 <script>
 var doNotTrack = false;
@@ -52,26 +74,6 @@ if (!doNotTrack) {
 	gtag('config', 'G-NL3CW99MZS', { 'anonymize_ip': false });
 }
 </script>
-
-
-
-
-
-
-
-<link rel="preload" href="/scss/main.min.cf48a6256baabd746f902f615804bf1454c066708aa5013dfb7ddc3bfff2b3e3.css" as="style">
-<link href="/scss/main.min.cf48a6256baabd746f902f615804bf1454c066708aa5013dfb7ddc3bfff2b3e3.css" rel="stylesheet" integrity="">
-
-
-<script
-  src="https://code.jquery.com/jquery-3.5.1.min.js"
-  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
-  crossorigin="anonymous"></script>
-
-<script
-  src="https://unpkg.com/lunr@2.3.9/lunr.min.js"
-  integrity="sha384-203J0SNzyqHby3iU6hzvzltrWi/M41wOP5Gu+BiJMz5nwKykbkUx8Kp7iti0Lpli"
-  crossorigin="anonymous"></script>
 
 
 
@@ -115,7 +117,7 @@ if (!doNotTrack) {
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.6c24117945d76805811cf4ee6897942e.json"
+  data-offline-search-index-json-src="/offline-search-index.9c81d4d406d4eb8e23d2c0ae05ddcc65.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="25"
 >
@@ -127,7 +129,7 @@ if (!doNotTrack) {
     <div class="container-fluid td-outer">
       <div class="td-main">
         <div class="row flex-xl-nowrap">
-          <div class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
+          <aside class="col-12 col-md-4 col-xl-3 td-sidebar d-print-none">
             
 
 
@@ -150,7 +152,7 @@ if (!doNotTrack) {
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.6c24117945d76805811cf4ee6897942e.json"
+  data-offline-search-index-json-src="/offline-search-index.9c81d4d406d4eb8e23d2c0ae05ddcc65.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="25"
 >
@@ -168,6 +170,8 @@ if (!doNotTrack) {
     
     <ul class="td-sidebar-nav__section pr-md-3 ul-0">
       
+  
+  
   
   
   
@@ -204,6 +208,8 @@ if (!doNotTrack) {
   
   
   
+  
+  
   <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsgetting-started-li">
     <a href="/docs/getting-started/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section" id="m-docsgetting-started"><span class="">Getting started</span></a>
     
@@ -212,6 +218,8 @@ if (!doNotTrack) {
         
           
             
+  
+  
   
   
   
@@ -235,6 +243,8 @@ if (!doNotTrack) {
         
           
             
+  
+  
   
   
   
@@ -278,6 +288,8 @@ if (!doNotTrack) {
   
   
   
+  
+  
   <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docsmanual-li">
     <a href="/docs/manual/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section" id="m-docsmanual"><span class="">Manual</span></a>
     
@@ -300,6 +312,8 @@ if (!doNotTrack) {
   
   
   
+  
+  
   <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docsmanualconfiguration-li">
     <a href="/docs/manual/configuration/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section" id="m-docsmanualconfiguration"><span class="">Configuration</span></a>
     
@@ -308,6 +322,8 @@ if (!doNotTrack) {
         
           
             
+  
+  
   
   
   
@@ -345,6 +361,8 @@ if (!doNotTrack) {
   
   
   
+  
+  
   <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsmanualconfigurationconfigure-complex-modifications-li">
     <a href="/docs/manual/configuration/configure-complex-modifications/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__page" id="m-docsmanualconfigurationconfigure-complex-modifications"><span class="">Use more complex rules</span></a>
     
@@ -354,6 +372,8 @@ if (!doNotTrack) {
         
           
             
+  
+  
   
   
   
@@ -391,6 +411,8 @@ if (!doNotTrack) {
   
   
   
+  
+  
   <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsmanualconfigurationdisable-built-in-keyboard-li">
     <a href="/docs/manual/configuration/disable-built-in-keyboard/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__page" id="m-docsmanualconfigurationdisable-built-in-keyboard"><span class="">Disable the built-in keyboard when external keyboard is connected</span></a>
     
@@ -414,6 +436,8 @@ if (!doNotTrack) {
   
   
   
+  
+  
   <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsmanualconfigurationconfigure-keyboard-type-li">
     <a href="/docs/manual/configuration/configure-keyboard-type/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__page" id="m-docsmanualconfigurationconfigure-keyboard-type"><span class="">Set keyboard type</span></a>
     
@@ -423,6 +447,8 @@ if (!doNotTrack) {
         
           
             
+  
+  
   
   
   
@@ -466,6 +492,8 @@ if (!doNotTrack) {
   
   
   
+  
+  
   <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsmanualoperation-li">
     <a href="/docs/manual/operation/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section" id="m-docsmanualoperation"><span class="">Operation</span></a>
     
@@ -474,6 +502,8 @@ if (!doNotTrack) {
         
           
             
+  
+  
   
   
   
@@ -511,6 +541,8 @@ if (!doNotTrack) {
   
   
   
+  
+  
   <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsmanualoperationrestart-li">
     <a href="/docs/manual/operation/restart/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__page" id="m-docsmanualoperationrestart"><span class="">Restart</span></a>
     
@@ -520,6 +552,8 @@ if (!doNotTrack) {
         
           
             
+  
+  
   
   
   
@@ -557,6 +591,8 @@ if (!doNotTrack) {
   
   
   
+  
+  
   <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsmanualoperationcheck-for-updates-li">
     <a href="/docs/manual/operation/check-for-updates/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__page" id="m-docsmanualoperationcheck-for-updates"><span class="">Check for updates</span></a>
     
@@ -566,6 +602,8 @@ if (!doNotTrack) {
         
           
             
+  
+  
   
   
   
@@ -603,6 +641,8 @@ if (!doNotTrack) {
   
   
   
+  
+  
   <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsmanualoperationprofiles-li">
     <a href="/docs/manual/operation/profiles/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__page" id="m-docsmanualoperationprofiles"><span class="">Manage profiles</span></a>
     
@@ -626,6 +666,8 @@ if (!doNotTrack) {
   
   
   
+  
+  
   <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsmanualoperationlog-li">
     <a href="/docs/manual/operation/log/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__page" id="m-docsmanualoperationlog"><span class="">Show log messages</span></a>
     
@@ -635,6 +677,8 @@ if (!doNotTrack) {
         
           
             
+  
+  
   
   
   
@@ -678,6 +722,8 @@ if (!doNotTrack) {
   
   
   
+  
+  
   <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsmanualmisc-li">
     <a href="/docs/manual/misc/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section" id="m-docsmanualmisc"><span class="">Misc</span></a>
     
@@ -686,6 +732,8 @@ if (!doNotTrack) {
         
           
             
+  
+  
   
   
   
@@ -723,6 +771,8 @@ if (!doNotTrack) {
   
   
   
+  
+  
   <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsmanualmiscimplicit-behavior-li">
     <a href="/docs/manual/misc/implicit-behavior/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__page" id="m-docsmanualmiscimplicit-behavior"><span class="">Implicit behavior</span></a>
     
@@ -732,6 +782,8 @@ if (!doNotTrack) {
         
           
             
+  
+  
   
   
   
@@ -769,6 +821,8 @@ if (!doNotTrack) {
   
   
   
+  
+  
   <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsmanualmiscmultitouch-extension-li">
     <a href="/docs/manual/misc/multitouch-extension/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__page" id="m-docsmanualmiscmultitouch-extension"><span class="">MultitouchExtension</span></a>
     
@@ -778,6 +832,8 @@ if (!doNotTrack) {
         
           
             
+  
+  
   
   
   
@@ -815,6 +871,8 @@ if (!doNotTrack) {
   
   
   
+  
+  
   <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsmanualmiscconfiguration-file-path-li">
     <a href="/docs/manual/misc/configuration-file-path/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__page" id="m-docsmanualmiscconfiguration-file-path"><span class="">The location of the configuration file</span></a>
     
@@ -824,6 +882,8 @@ if (!doNotTrack) {
         
           
             
+  
+  
   
   
   
@@ -873,6 +933,8 @@ if (!doNotTrack) {
   
   
   
+  
+  
   <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docshelp-li">
     <a href="/docs/help/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section" id="m-docshelp"><span class="">Help</span></a>
     
@@ -895,6 +957,8 @@ if (!doNotTrack) {
   
   
   
+  
+  
   <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docshelptroubleshooting-li">
     <a href="/docs/help/troubleshooting/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section" id="m-docshelptroubleshooting"><span class="">Troubleshooting</span></a>
     
@@ -903,6 +967,8 @@ if (!doNotTrack) {
         
           
             
+  
+  
   
   
   
@@ -940,6 +1006,8 @@ if (!doNotTrack) {
   
   
   
+  
+  
   <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docshelptroubleshootingallow-button-does-not-appear-li">
     <a href="/docs/help/troubleshooting/allow-button-does-not-appear/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__page" id="m-docshelptroubleshootingallow-button-does-not-appear"><span class="">Allow button in Security &amp; Privacy System Preferences does not appear</span></a>
     
@@ -949,6 +1017,8 @@ if (!doNotTrack) {
         
           
             
+  
+  
   
   
   
@@ -986,6 +1056,8 @@ if (!doNotTrack) {
   
   
   
+  
+  
   <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docshelptroubleshootingstopped-working-after-macos-update-li">
     <a href="/docs/help/troubleshooting/stopped-working-after-macos-update/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__page" id="m-docshelptroubleshootingstopped-working-after-macos-update"><span class="">Karabiner-Elements stopped working after macOS update</span></a>
     
@@ -995,6 +1067,8 @@ if (!doNotTrack) {
         
           
             
+  
+  
   
   
   
@@ -1032,6 +1106,8 @@ if (!doNotTrack) {
   
   
   
+  
+  
   <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docshelptroubleshootingcontrol-eject-li">
     <a href="/docs/help/troubleshooting/control-eject/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__page" id="m-docshelptroubleshootingcontrol-eject"><span class="">Control-eject shortcut does not work when Karabiner-Elements is running</span></a>
     
@@ -1041,6 +1117,8 @@ if (!doNotTrack) {
         
           
             
+  
+  
   
   
   
@@ -1078,6 +1156,8 @@ if (!doNotTrack) {
   
   
   
+  
+  
   <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docshelptroubleshootingjson-owner-is-invalid-li">
     <a href="/docs/help/troubleshooting/json-owner-is-invalid/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__page" id="m-docshelptroubleshootingjson-owner-is-invalid"><span class="">&#34;karabiner.json is not owned by a valid user&#34; error message in log</span></a>
     
@@ -1101,6 +1181,8 @@ if (!doNotTrack) {
   
   
   
+  
+  
   <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docshelptroubleshootingplaceholder-developer-li">
     <a href="/docs/help/troubleshooting/placeholder-developer/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__page" id="m-docshelptroubleshootingplaceholder-developer"><span class="">Placeholder Developer is shown in Security &amp; Privacy System Preferences</span></a>
     
@@ -1110,6 +1192,8 @@ if (!doNotTrack) {
         
           
             
+  
+  
   
   
   
@@ -1153,6 +1237,8 @@ if (!doNotTrack) {
   
   
   
+  
+  
   <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docshelphow-to-li">
     <a href="/docs/help/how-to/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section" id="m-docshelphow-to"><span class="">How to</span></a>
     
@@ -1161,6 +1247,8 @@ if (!doNotTrack) {
         
           
             
+  
+  
   
   
   
@@ -1198,6 +1286,8 @@ if (!doNotTrack) {
   
   
   
+  
+  
   <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docshelphow-tosticky-modifier-key-li">
     <a href="/docs/help/how-to/sticky-modifier-key/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__page" id="m-docshelphow-tosticky-modifier-key"><span class="">How to use sticky modifier keys</span></a>
     
@@ -1207,6 +1297,8 @@ if (!doNotTrack) {
         
           
             
+  
+  
   
   
   
@@ -1244,6 +1336,8 @@ if (!doNotTrack) {
   
   
   
+  
+  
   <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docshelphow-tokey-repeat-li">
     <a href="/docs/help/how-to/key-repeat/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__page" id="m-docshelphow-tokey-repeat"><span class="">Is it possible to adjust the key repeat rate?</span></a>
     
@@ -1267,6 +1361,8 @@ if (!doNotTrack) {
   
   
   
+  
+  
   <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docshelphow-todisable-open-at-login-li">
     <a href="/docs/help/how-to/disable-open-at-login/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__page" id="m-docshelphow-todisable-open-at-login"><span class="">How to disable running Karabiner-Elements at login</span></a>
     
@@ -1276,6 +1372,8 @@ if (!doNotTrack) {
         
           
             
+  
+  
   
   
   
@@ -1319,6 +1417,8 @@ if (!doNotTrack) {
   
   
   
+  
+  
   <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docshelpadvanced-topics-li">
     <a href="/docs/help/advanced-topics/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section" id="m-docshelpadvanced-topics"><span class="">Advanced topics</span></a>
     
@@ -1327,6 +1427,8 @@ if (!doNotTrack) {
         
           
             
+  
+  
   
   
   
@@ -1364,6 +1466,8 @@ if (!doNotTrack) {
   
   
   
+  
+  
   <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docshelpadvanced-topicssecurity-li">
     <a href="/docs/help/advanced-topics/security/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__page" id="m-docshelpadvanced-topicssecurity"><span class="">Security</span></a>
     
@@ -1373,6 +1477,8 @@ if (!doNotTrack) {
         
           
             
+  
+  
   
   
   
@@ -1422,6 +1528,8 @@ if (!doNotTrack) {
   
   
   
+  
+  
   <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsprivacy-li">
     <a href="/docs/privacy/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__page" id="m-docsprivacy"><span class="">Privacy</span></a>
     
@@ -1431,6 +1539,8 @@ if (!doNotTrack) {
         
           
             
+  
+  
   
   
   
@@ -1468,6 +1578,8 @@ if (!doNotTrack) {
   
   
   
+  
+  
   <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docspricing-li">
     <a href="/docs/pricing/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__page" id="m-docspricing"><span class="">Pricing</span></a>
     
@@ -1477,6 +1589,8 @@ if (!doNotTrack) {
         
           
             
+  
+  
   
   
   
@@ -1514,6 +1628,8 @@ if (!doNotTrack) {
   
   
   
+  
+  
   <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsjson-li">
     <a href="/docs/json/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section" id="m-docsjson"><span class="">Karabiner Configuration Reference Manual</span></a>
     
@@ -1522,6 +1638,8 @@ if (!doNotTrack) {
         
           
             
+  
+  
   
   
   
@@ -1559,6 +1677,8 @@ if (!doNotTrack) {
   
   
   
+  
+  
   <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsjsontypical-complex-modifications-examples-li">
     <a href="/docs/json/typical-complex-modifications-examples/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__page" id="m-docsjsontypical-complex-modifications-examples"><span class="">Typical complex_modifications examples</span></a>
     
@@ -1568,6 +1688,8 @@ if (!doNotTrack) {
         
           
             
+  
+  
   
   
   
@@ -1605,6 +1727,8 @@ if (!doNotTrack) {
   
   
   
+  
+  
   <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsjsonroot-data-structure-li">
     <a href="/docs/json/root-data-structure/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__page" id="m-docsjsonroot-data-structure"><span class="">karabiner.json data structure</span></a>
     
@@ -1614,6 +1738,8 @@ if (!doNotTrack) {
         
           
             
+  
+  
   
   
   
@@ -1650,6 +1776,8 @@ if (!doNotTrack) {
   
   
   
+  
+  
   <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsjsoncomplex-modifications-manipulator-definitionfrom-li">
     <a href="/docs/json/complex-modifications-manipulator-definition/from/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section" id="m-docsjsoncomplex-modifications-manipulator-definitionfrom"><span class="">from event definition</span></a>
     
@@ -1658,6 +1786,8 @@ if (!doNotTrack) {
         
           
             
+  
+  
   
   
   
@@ -1695,6 +1825,8 @@ if (!doNotTrack) {
   
   
   
+  
+  
   <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsjsoncomplex-modifications-manipulator-definitionfrommodifiers-li">
     <a href="/docs/json/complex-modifications-manipulator-definition/from/modifiers/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__page" id="m-docsjsoncomplex-modifications-manipulator-definitionfrommodifiers"><span class="">from.modifiers</span></a>
     
@@ -1718,6 +1850,8 @@ if (!doNotTrack) {
   
   
   
+  
+  
   <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsjsoncomplex-modifications-manipulator-definitionfromsimultaneous-li">
     <a href="/docs/json/complex-modifications-manipulator-definition/from/simultaneous/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__page" id="m-docsjsoncomplex-modifications-manipulator-definitionfromsimultaneous"><span class="">from.simultaneous</span></a>
     
@@ -1727,6 +1861,8 @@ if (!doNotTrack) {
         
           
             
+  
+  
   
   
   
@@ -1770,6 +1906,8 @@ if (!doNotTrack) {
   
   
   
+  
+  
   <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsjsoncomplex-modifications-manipulator-definitionto-li">
     <a href="/docs/json/complex-modifications-manipulator-definition/to/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section" id="m-docsjsoncomplex-modifications-manipulator-definitionto"><span class="">to event definition</span></a>
     
@@ -1778,6 +1916,8 @@ if (!doNotTrack) {
         
           
             
+  
+  
   
   
   
@@ -1815,6 +1955,8 @@ if (!doNotTrack) {
   
   
   
+  
+  
   <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsjsoncomplex-modifications-manipulator-definitiontoselect-input-source-li">
     <a href="/docs/json/complex-modifications-manipulator-definition/to/select-input-source/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__page" id="m-docsjsoncomplex-modifications-manipulator-definitiontoselect-input-source"><span class="">to.select_input_source</span></a>
     
@@ -1824,6 +1966,8 @@ if (!doNotTrack) {
         
           
             
+  
+  
   
   
   
@@ -1861,6 +2005,8 @@ if (!doNotTrack) {
   
   
   
+  
+  
   <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsjsoncomplex-modifications-manipulator-definitiontomouse-key-li">
     <a href="/docs/json/complex-modifications-manipulator-definition/to/mouse-key/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__page" id="m-docsjsoncomplex-modifications-manipulator-definitiontomouse-key"><span class="">to.mouse_key</span></a>
     
@@ -1870,6 +2016,8 @@ if (!doNotTrack) {
         
           
             
+  
+  
   
   
   
@@ -1907,6 +2055,8 @@ if (!doNotTrack) {
   
   
   
+  
+  
   <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsjsoncomplex-modifications-manipulator-definitiontomodifiers-li">
     <a href="/docs/json/complex-modifications-manipulator-definition/to/modifiers/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__page" id="m-docsjsoncomplex-modifications-manipulator-definitiontomodifiers"><span class="">to.modifiers</span></a>
     
@@ -1916,6 +2066,8 @@ if (!doNotTrack) {
         
           
             
+  
+  
   
   
   
@@ -1953,6 +2105,8 @@ if (!doNotTrack) {
   
   
   
+  
+  
   <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsjsoncomplex-modifications-manipulator-definitiontorepeat-li">
     <a href="/docs/json/complex-modifications-manipulator-definition/to/repeat/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__page" id="m-docsjsoncomplex-modifications-manipulator-definitiontorepeat"><span class="">to.repeat</span></a>
     
@@ -1976,6 +2130,8 @@ if (!doNotTrack) {
   
   
   
+  
+  
   <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsjsoncomplex-modifications-manipulator-definitiontohalt-li">
     <a href="/docs/json/complex-modifications-manipulator-definition/to/halt/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__page" id="m-docsjsoncomplex-modifications-manipulator-definitiontohalt"><span class="">to.halt</span></a>
     
@@ -1985,6 +2141,8 @@ if (!doNotTrack) {
         
           
             
+  
+  
   
   
   
@@ -2028,6 +2186,8 @@ if (!doNotTrack) {
   
   
   
+  
+  
   <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsjsoncomplex-modifications-manipulator-definitionto-if-alone-li">
     <a href="/docs/json/complex-modifications-manipulator-definition/to-if-alone/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section" id="m-docsjsoncomplex-modifications-manipulator-definitionto-if-alone"><span class="">to_if_alone</span></a>
     
@@ -2037,6 +2197,8 @@ if (!doNotTrack) {
         
           
             
+  
+  
   
   
   
@@ -2074,6 +2236,8 @@ if (!doNotTrack) {
   
   
   
+  
+  
   <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsjsoncomplex-modifications-manipulator-definitionto-after-key-up-li">
     <a href="/docs/json/complex-modifications-manipulator-definition/to-after-key-up/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section" id="m-docsjsoncomplex-modifications-manipulator-definitionto-after-key-up"><span class="">to_after_key_up</span></a>
     
@@ -2083,6 +2247,8 @@ if (!doNotTrack) {
         
           
             
+  
+  
   
   
   
@@ -2120,6 +2286,8 @@ if (!doNotTrack) {
   
   
   
+  
+  
   <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsjsoncomplex-modifications-manipulator-definitionconditions-li">
     <a href="/docs/json/complex-modifications-manipulator-definition/conditions/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section" id="m-docsjsoncomplex-modifications-manipulator-definitionconditions"><span class="">Conditions</span></a>
     
@@ -2128,6 +2296,8 @@ if (!doNotTrack) {
         
           
             
+  
+  
   
   
   
@@ -2165,6 +2335,8 @@ if (!doNotTrack) {
   
   
   
+  
+  
   <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsjsoncomplex-modifications-manipulator-definitionconditionsdevice-li">
     <a href="/docs/json/complex-modifications-manipulator-definition/conditions/device/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__page" id="m-docsjsoncomplex-modifications-manipulator-definitionconditionsdevice"><span class="">device_if, device_unless</span></a>
     
@@ -2174,6 +2346,8 @@ if (!doNotTrack) {
         
           
             
+  
+  
   
   
   
@@ -2211,6 +2385,8 @@ if (!doNotTrack) {
   
   
   
+  
+  
   <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsjsoncomplex-modifications-manipulator-definitionconditionsinput-source-li">
     <a href="/docs/json/complex-modifications-manipulator-definition/conditions/input-source/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__page" id="m-docsjsoncomplex-modifications-manipulator-definitionconditionsinput-source"><span class="">input_source_if, input_source_unless</span></a>
     
@@ -2234,6 +2410,8 @@ if (!doNotTrack) {
   
   
   
+  
+  
   <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsjsoncomplex-modifications-manipulator-definitionconditionsvariable-li">
     <a href="/docs/json/complex-modifications-manipulator-definition/conditions/variable/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__page" id="m-docsjsoncomplex-modifications-manipulator-definitionconditionsvariable"><span class="">variable_if, variable_unless</span></a>
     
@@ -2243,6 +2421,8 @@ if (!doNotTrack) {
         
           
             
+  
+  
   
   
   
@@ -2286,6 +2466,8 @@ if (!doNotTrack) {
   
   
   
+  
+  
   <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsjsoncomplex-modifications-manipulator-definitionother-types-li">
     <a href="/docs/json/complex-modifications-manipulator-definition/other-types/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section" id="m-docsjsoncomplex-modifications-manipulator-definitionother-types"><span class="">Other types</span></a>
     
@@ -2294,6 +2476,8 @@ if (!doNotTrack) {
         
           
             
+  
+  
   
   
   
@@ -2343,6 +2527,8 @@ if (!doNotTrack) {
   
   
   
+  
+  
   <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsjsonextra-li">
     <a href="/docs/json/extra/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section" id="m-docsjsonextra"><span class="">Extra documents</span></a>
     
@@ -2351,6 +2537,8 @@ if (!doNotTrack) {
         
           
             
+  
+  
   
   
   
@@ -2374,6 +2562,8 @@ if (!doNotTrack) {
         
           
             
+  
+  
   
   
   
@@ -2417,6 +2607,8 @@ if (!doNotTrack) {
   
   
   
+  
+  
   <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsjsonexternal-json-generators-li">
     <a href="/docs/json/external-json-generators/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__page" id="m-docsjsonexternal-json-generators"><span class="">External JSON generators</span></a>
     
@@ -2441,8 +2633,20 @@ if (!doNotTrack) {
 
 
 
-          </div>
-          <div class="d-none d-xl-block col-xl-2 td-toc d-print-none">
+          </aside>
+          <aside class="d-none d-xl-block col-xl-2 td-sidebar-toc d-print-none">
+            
+  
+  
+  
+  
+  
+  <div class="td-page-meta ml-2 pb-1 pt-2 mb-0">
+  
+  
+  </div>
+
+
             
   
   
@@ -2461,8 +2665,28 @@ if (!doNotTrack) {
 
 
 
-          </div>
-          <main class="col-12 col-md-9 col-xl-8 pl-md-5" role="main">
+            
+
+	
+		
+
+
+
+  
+  
+
+	
+		
+
+
+
+  
+  
+
+	
+
+          </aside>
+          <main class="col-12 col-md-8 col-xl-7 pl-md-5" role="main">
             
   
 
@@ -2513,8 +2737,22 @@ if (!doNotTrack) {
             
 <div class="td-content">
 	<h1>Change a key to another key</h1>
-    
-	       
+	
+	<header class="article-meta">
+		
+		
+			
+				
+
+
+			
+				
+
+
+			
+		
+		
+	</header>    
 	<p>You can change a key to another key on <strong>Simple Modifications</strong> tab.</p>
 <ol>
 <li>Choose target device, then press Add item button.
@@ -2586,7 +2824,7 @@ if (!doNotTrack) {
 
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top"></div>
+	
 </div>
 
 
@@ -2603,7 +2841,7 @@ if (!doNotTrack) {
 
     </div>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
 
 
 
