@@ -19,21 +19,21 @@
 
 <title>Release notes | Karabiner-Elements</title>
 <meta name="description" content="A powerful and stable keyboard customizer for macOS."><meta property="og:title" content="Release notes" />
-<meta property="og:description" content="Karabiner-Elements 13.4.0  📦 Download 📅 Release date  Apr 4, 2021   🐛 Bug Fixes  Fixed an issue that Karabiner-Elements stops working with virtual_hid_keyboard is not ready. Please wait for a while. error message when you kill karabiner_console_user_server process manually.   ⚡️ Improvements  Changed to terminate virtual HID devices immediately after quit Karabiner-Elements.    🔔 Notes for Mac computers with Apple Silicon (Apple M1) users macOS Big Sur 11." />
+<meta property="og:description" content="Karabiner-Elements 13.5.0  📦 Download 📅 Release date  Jun 20, 2021   ⚡️ Improvements  Improved temporary directory handling to reduce the frequency of mds process accessing it. Improved mouse_key.speed_multiplier handling when it is used with to.modifiers, the modifier is retained while speed_multiplier is active. The caps lock LED manipulation has been enabled by default.  Note: This change applies to newly connected keyboards.   Several Objective-C code around GUI has been rewritten in Swift &#43; SwiftUI." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/releasenotes/" /><meta property="og:image" content="https://karabiner-elements.pqrs.org/images/logo.png"/><meta property="article:section" content="docs" />
 
 <meta property="og:site_name" content="Karabiner-Elements" />
 
 <meta itemprop="name" content="Release notes">
-<meta itemprop="description" content="Karabiner-Elements 13.4.0  📦 Download 📅 Release date  Apr 4, 2021   🐛 Bug Fixes  Fixed an issue that Karabiner-Elements stops working with virtual_hid_keyboard is not ready. Please wait for a while. error message when you kill karabiner_console_user_server process manually.   ⚡️ Improvements  Changed to terminate virtual HID devices immediately after quit Karabiner-Elements.    🔔 Notes for Mac computers with Apple Silicon (Apple M1) users macOS Big Sur 11.">
+<meta itemprop="description" content="Karabiner-Elements 13.5.0  📦 Download 📅 Release date  Jun 20, 2021   ⚡️ Improvements  Improved temporary directory handling to reduce the frequency of mds process accessing it. Improved mouse_key.speed_multiplier handling when it is used with to.modifiers, the modifier is retained while speed_multiplier is active. The caps lock LED manipulation has been enabled by default.  Note: This change applies to newly connected keyboards.   Several Objective-C code around GUI has been rewritten in Swift &#43; SwiftUI.">
 
-<meta itemprop="wordCount" content="6219"><meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
+<meta itemprop="wordCount" content="6291"><meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
 
 <meta name="twitter:title" content="Release notes"/>
-<meta name="twitter:description" content="Karabiner-Elements 13.4.0  📦 Download 📅 Release date  Apr 4, 2021   🐛 Bug Fixes  Fixed an issue that Karabiner-Elements stops working with virtual_hid_keyboard is not ready. Please wait for a while. error message when you kill karabiner_console_user_server process manually.   ⚡️ Improvements  Changed to terminate virtual HID devices immediately after quit Karabiner-Elements.    🔔 Notes for Mac computers with Apple Silicon (Apple M1) users macOS Big Sur 11."/>
+<meta name="twitter:description" content="Karabiner-Elements 13.5.0  📦 Download 📅 Release date  Jun 20, 2021   ⚡️ Improvements  Improved temporary directory handling to reduce the frequency of mds process accessing it. Improved mouse_key.speed_multiplier handling when it is used with to.modifiers, the modifier is retained while speed_multiplier is active. The caps lock LED manipulation has been enabled by default.  Note: This change applies to newly connected keyboards.   Several Objective-C code around GUI has been rewritten in Swift &#43; SwiftUI."/>
 
 
 
@@ -111,7 +111,7 @@ if (!doNotTrack) {
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.3d4baa64e97ac4a3fe710836e958a122.json"
+  data-offline-search-index-json-src="/offline-search-index.9f49b2f6539fe8b83d1eba59108d585a.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="25"
 >
@@ -146,7 +146,7 @@ if (!doNotTrack) {
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.3d4baa64e97ac4a3fe710836e958a122.json"
+  data-offline-search-index-json-src="/offline-search-index.9f49b2f6539fe8b83d1eba59108d585a.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="25"
 >
@@ -2657,6 +2657,7 @@ if (!doNotTrack) {
 
 <nav id="TableOfContents">
   <ul>
+    <li><a href="#karabiner-elements-1350">Karabiner-Elements 13.5.0</a></li>
     <li><a href="#karabiner-elements-1340">Karabiner-Elements 13.4.0</a>
       <ul>
         <li><a href="#-notes-for-mac-computers-with-apple-silicon-apple-m1-users">🔔 Notes for Mac computers with Apple Silicon (Apple M1) users</a></li>
@@ -2804,7 +2805,28 @@ if (!doNotTrack) {
             
 <div class="td-content release-notes">
 	<h1>Release notes</h1>
-	<h2 id="karabiner-elements-1340">Karabiner-Elements 13.4.0</h2>
+	<h2 id="karabiner-elements-1350">Karabiner-Elements 13.5.0</h2>
+<ul>
+<li><a href="https://github.com/pqrs-org/Karabiner-Elements/releases/download/v13.5.0/Karabiner-Elements-13.5.0.dmg">📦 Download</a></li>
+<li>📅 Release date
+<ul>
+<li>Jun 20, 2021</li>
+</ul>
+</li>
+<li>⚡️ Improvements
+<ul>
+<li>Improved temporary directory handling to reduce the frequency of mds process accessing it.</li>
+<li>Improved <code>mouse_key.speed_multiplier</code> handling when it is used with <code>to.modifiers</code>, the modifier is retained while speed_multiplier is active.</li>
+<li>The caps lock LED manipulation has been enabled by default.
+<ul>
+<li>Note: This change applies to newly connected keyboards.</li>
+</ul>
+</li>
+<li>Several Objective-C code around GUI has been rewritten in Swift + SwiftUI.</li>
+</ul>
+</li>
+</ul>
+<h2 id="karabiner-elements-1340">Karabiner-Elements 13.4.0</h2>
 <ul>
 <li><a href="https://github.com/pqrs-org/Karabiner-Elements/releases/download/v13.4.0/Karabiner-Elements-13.4.0.dmg">📦 Download</a></li>
 <li>📅 Release date
