@@ -23,9 +23,6 @@ Running with root privilege
 -   **karabiner_grabber**
     -   Role:
         -   Grab the keyboard hardware and catch events, modify events then post them.
--   **karabiner_kextd**
-    -   Role:
-        -   Load **Karabiner VirtualHIDDevice** kernel extension.
 -   **Karabiner VirtualHIDDevice** kernel extension
     -   Role:
         -   Virtual keyboard and pointing device.
