@@ -18,3 +18,17 @@ Karabiner-Elements is a system-wide software, and [files are installed in approp
 Therefore, if you just put the application icon in Trash like a normal app uninstallation, some files will be left behind.
 
 The file protection forces to use [the built-in uninstaller](/docs/manual/operation/uninstall) and remove installed files properly at the uninstallation.
+
+{{% alert title="Advanced topic" color="danger" %}}
+This file locking is achieved with `schg` and `uchg` flags.
+
+You can unlock these files by the following commands in Terminal.
+
+```shell
+sudo chflags nouchg,noschg /Applications/Karabiner-Elements.app
+sudo chflags nouchg,noschg /Applications/Karabiner-EventViewer.app
+```
+
+(Administrator password is required to run the above command.)
+
+{{% /alert %}}
