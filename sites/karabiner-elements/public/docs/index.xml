@@ -1706,15 +1706,6 @@ Change modifiers by using Simple Modifications.
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;karabiner_kextd&lt;/strong&gt;
-&lt;ul&gt;
-&lt;li&gt;Role:
-&lt;ul&gt;
-&lt;li&gt;Load &lt;strong&gt;Karabiner VirtualHIDDevice&lt;/strong&gt; kernel extension.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Karabiner VirtualHIDDevice&lt;/strong&gt; kernel extension
 &lt;ul&gt;
 &lt;li&gt;Role:
