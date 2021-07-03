@@ -3,10 +3,6 @@
     "stylelint-config-twbs-bootstrap/scss"
   ],
   "rules": {
-    "declaration-property-value-disallowed-list": {
-      "border": "none",
-      "outline": "none"
-    },
     "function-disallowed-list": [
       "calc"
     ],

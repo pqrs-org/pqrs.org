@@ -1,14 +1,8 @@
 name: CSS (Dart Sass)
-
-on:
-  push:
-    branches-ignore:
-      - "dependabot/**"
-  pull_request:
-
+on: [push, pull_request]
 env:
-  FORCE_COLOR: 2
-  NODE: 14
+  CI: true
+  NODE: 12.x
 
 jobs:
   css:
@@ -18,8 +12,8 @@ jobs:
       - name: Clone repository
         uses: actions/checkout@v2
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
+      - name: Set Node.js version
+        uses: actions/setup-node@v1
         with:
           node-version: "${{ env.NODE }}"
 

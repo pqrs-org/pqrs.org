@@ -1,13 +1,7 @@
 name: JS Tests
-
-on:
-  push:
-    branches-ignore:
-      - "dependabot/**"
-  pull_request:
-
+on: [push, pull_request]
 env:
-  FORCE_COLOR: 2
+  CI: true
 
 jobs:
   run:
@@ -17,14 +11,14 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        node: [10, 12, 14]
+        node: [10, 12]
 
     steps:
       - name: Clone repository
         uses: actions/checkout@v2
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
+      - name: Set Node.js version
+        uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node }}
 
@@ -34,8 +28,8 @@ jobs:
           path: ~/.npm
           key: ${{ runner.os }}-node-v${{ matrix.node }}-${{ hashFiles('package.json') }}-${{ hashFiles('package-lock.json') }}}
           restore-keys: |
-            ${{ runner.os }}-node-v${{ matrix.node }}-${{ hashFiles('package.json') }}-${{ hashFiles('package-lock.json') }}
-            ${{ runner.os }}-node-v${{ matrix.node }}-
+            ${{ runner.OS }}-node-v${{ matrix.node }}-${{ hashFiles('package.json') }}-${{ hashFiles('package-lock.json') }}
+            ${{ runner.OS }}-node-v${{ matrix.node }}-
 
       - name: Install npm dependencies
         run: npm ci
@@ -48,7 +42,7 @@ jobs:
 
       - name: Run Coveralls
         uses: coverallsapp/github-action@master
-        if: matrix.node == 14
+        if: matrix.node == 12
         with:
           github-token: "${{ secrets.GITHUB_TOKEN }}"
           path-to-lcov: "./js/coverage/lcov.info"

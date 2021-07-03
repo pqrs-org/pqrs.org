@@ -1,24 +1,20 @@
 name: BrowserStack
-
-on:
-  push:
-
+on: [push]
 env:
-  FORCE_COLOR: 2
-  NODE: 14
+  CI: true
+  NODE: 12.x
 
 jobs:
   browserstack:
     runs-on: ubuntu-latest
-    if: github.repository == 'twbs/bootstrap' && (!contains(github.event.commits[0].message, '[ci skip]') && !contains(github.event.commits[0].message, '[skip ci]'))
-    timeout-minutes: 30
+    if: github.repository == 'twbs/bootstrap'
 
     steps:
       - name: Clone repository
         uses: actions/checkout@v2
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
+      - name: Set Node.js version
+        uses: actions/setup-node@v1
         with:
           node-version: "${{ env.NODE }}"
 
@@ -28,8 +24,8 @@ jobs:
           path: ~/.npm
           key: ${{ runner.os }}-node-v${{ env.NODE }}-${{ hashFiles('package.json') }}-${{ hashFiles('package-lock.json') }}
           restore-keys: |
-            ${{ runner.os }}-node-v${{ env.NODE }}-${{ hashFiles('package.json') }}-${{ hashFiles('package-lock.json') }}
-            ${{ runner.os }}-node-v${{ env.NODE }}-
+            ${{ runner.OS }}-node-v${{ env.NODE }}-${{ hashFiles('package.json') }}-${{ hashFiles('package-lock.json') }}
+            ${{ runner.OS }}-node-v${{ env.NODE }}-
 
       - name: Install npm dependencies
         run: npm ci

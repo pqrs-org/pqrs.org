@@ -1,33 +1,22 @@
-name: "CodeQL"
+name: "Code Scanning - Action"
 
 on:
   push:
-    branches:
-      - main
-      - v4-dev
-      - "!dependabot/**"
-  pull_request:
-    # The branches below must be a subset of the branches above
-    branches:
-      - main
-      - v4-dev
   schedule:
-    - cron: "0 2 * * 5"
+    - cron: "0 0 * * 0"
 
 jobs:
-  analyze:
-    name: Analyze
+  CodeQL-Build:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      # Initializes the CodeQL tools for scanning.
       - name: Initialize CodeQL
         uses: github/codeql-action/init@v1
         with:
-          languages: "javascript"
+          languages: javascript
 
       - name: Autobuild
         uses: github/codeql-action/autobuild@v1
