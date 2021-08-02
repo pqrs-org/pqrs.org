@@ -246,9 +246,9 @@ press &amp;ldquo;Open MultitouchExtension app&amp;rdquo; button on Preferences &
 &lt;h2 id=&#34;usage&#34;&gt;Usage&lt;/h2&gt;
 &lt;h3 id=&#34;show-help&#34;&gt;Show help&lt;/h3&gt;
 &lt;p&gt;Run the following command in terminal.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;/Library/Application Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli&amp;#39;&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;/Library/Application Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli&amp;#39;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Result:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;A command line utility of Karabiner-Elements.
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;A command line utility of Karabiner-Elements.
 Usage:
   karabiner_cli [OPTION...]
 
@@ -277,12 +277,12 @@ Examples:
 &lt;h3 id=&#34;examples&#34;&gt;Examples&lt;/h3&gt;
 &lt;h4 id=&#34;switch-profile&#34;&gt;Switch profile&lt;/h4&gt;
 &lt;p&gt;Run the following command in terminal.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;/Library/Application Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli&amp;#39;&lt;/span&gt; --select-profile &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;Default profile&amp;#39;&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;/Library/Application Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli&amp;#39;&lt;/span&gt; --select-profile &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;Default profile&amp;#39;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;show-current-profile-name&#34;&gt;Show current profile name&lt;/h4&gt;
 &lt;p&gt;Run the following command in terminal.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;/Library/Application Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli&amp;#39;&lt;/span&gt; --show-current-profile-name
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;/Library/Application Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli&amp;#39;&lt;/span&gt; --show-current-profile-name
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;show-all-profile-names&#34;&gt;Show all profile names&lt;/h4&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;/Library/Application Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli&amp;#39;&lt;/span&gt; --list-profile-names
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;/Library/Application Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli&amp;#39;&lt;/span&gt; --list-profile-names
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
       </description>
     </item>
@@ -312,7 +312,7 @@ Examples:
 
 &lt;h4 id=&#34;making-symbolic-link-example&#34;&gt;Making symbolic link example&lt;/h4&gt;
 &lt;p&gt;The following command allows you to put karabiner.json on ~/Dropbox/private.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;mv ~/.config/karabiner ~/Dropbox/private
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;mv ~/.config/karabiner ~/Dropbox/private
 ln -s ~/Dropbox/private/karabiner ~/.config
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
@@ -322,7 +322,7 @@ ln -s ~/Dropbox/private/karabiner ~/.config
     &lt;p&gt;You have to restart karabiner_console_user_server process by the
 following command after you made a symlink in ordre to tell
 Karabiner-Elements that the parent directory is changed.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;launchctl kickstart -k gui/&lt;span style=&#34;color:#4e9a06&#34;&gt;`&lt;/span&gt;id -u&lt;span style=&#34;color:#4e9a06&#34;&gt;`&lt;/span&gt;/org.pqrs.karabiner.karabiner_console_user_server
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;launchctl kickstart -k gui/&lt;span style=&#34;color:#4e9a06&#34;&gt;`&lt;/span&gt;id -u&lt;span style=&#34;color:#4e9a06&#34;&gt;`&lt;/span&gt;/org.pqrs.karabiner.karabiner_console_user_server
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;/div&gt;

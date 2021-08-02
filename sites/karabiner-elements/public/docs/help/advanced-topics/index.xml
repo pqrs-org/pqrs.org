@@ -24,7 +24,7 @@
         
         &lt;p&gt;Karabiner-Elements installs files into the following locations.&lt;/p&gt;
 &lt;h2 id=&#34;system-files&#34;&gt;System files&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;/Applications/Karabiner-Elements.app
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;/Applications/Karabiner-Elements.app
 /Applications/Karabiner-EventViewer.app
 /Library/Application Support/org.pqrs/Karabiner-Elements
 /Library/Application Support/org.pqrs/Karabiner-VirtualHIDDevice
@@ -39,7 +39,7 @@
 /Library/LaunchAgents/org.pqrs.karabiner.karabiner_session_monitor.plist
 /var/log/karabiner
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;user-files&#34;&gt;User files&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;~/.config/karabiner
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;~/.config/karabiner
 ~/.local/share/karabiner
 ~/Library/Preferences/org.pqrs.Karabiner-Elements.Preferences.plist
 ~/Library/Preferences/org.pqrs.Karabiner-Elements.Updater.plist
@@ -190,7 +190,7 @@ And do nothing if the process is running with non root user.&lt;/li&gt;
 
     &lt;p&gt;This file locking is achieved with &lt;code&gt;schg&lt;/code&gt; and &lt;code&gt;uchg&lt;/code&gt; flags.&lt;/p&gt;
 &lt;p&gt;You can unlock these files by the following commands in Terminal.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;sudo chflags nouchg,noschg /Applications/Karabiner-Elements.app
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;sudo chflags nouchg,noschg /Applications/Karabiner-Elements.app
 sudo chflags nouchg,noschg /Applications/Karabiner-EventViewer.app
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;(Administrator password is required to run the above command.)&lt;/p&gt;
 

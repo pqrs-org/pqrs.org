@@ -329,10 +329,10 @@ You can use control+fn+escape as control+eject.
         
         
         &lt;p&gt;If the following error message is appeared in log, your home directory owner ship is not valid.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;[warning] [grabber] /Users/.../karabiner.json is not owned by a valid user.
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;[warning] [grabber] /Users/.../karabiner.json is not owned by a valid user.
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The cause is that you are using an external storage and locating your home directory into the volume.&lt;/p&gt;
 &lt;p&gt;You have to enable ownership on the external volume by the following command in Terminal.app.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;sudo diskutil enableOwnership disk99999s99999
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;sudo diskutil enableOwnership disk99999s99999
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;(Replace &lt;code&gt;disk99999s99999&lt;/code&gt; with your disk identifier which you can find by &lt;code&gt;diskutil list&lt;/code&gt; command.)&lt;/p&gt;
 
       </description>
