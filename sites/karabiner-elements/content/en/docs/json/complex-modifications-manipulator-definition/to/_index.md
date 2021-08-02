@@ -26,6 +26,8 @@ weight: 200
 
     "sticky_modifier": sticky modifier definition,
 
+    "software_function": software function definition,
+
     "modifiers": [
         modifier,
         modifier,
@@ -52,6 +54,7 @@ You cannot specify multiple items into one `to` entry.
 -   `set_variable`
 -   `mouse_key`
 -   `sticky_modifier`
+-   `software_function` (`software_function` is available since Karabiner-Elements v13.5.1)
 
 {{% /alert %}}
 
@@ -65,6 +68,7 @@ You cannot specify multiple items into one `to` entry.
 | [`set_variable`](set-variable/)                     | Optional | A varaible name and value which you want to change                              |
 | [`mouse_key`](mouse-key/)                           | Optional | A mouse key definition                                                          |
 | [`sticky_modifier`](sticky_modifier/)               | Optional | A sticky modifier key definition                                                |
+| [`software_function`](software_function/)           | Optional | A software function definition                                                  |
 | [`modifiers`](modifiers/)                           | Optional | Modifiers which are post with the event                                         |
 | [`lazy`](lazy/)                                     | Optional | Lazy modifier flag                                                              |
 | [`repeat`](repeat/)                                 | Optional | Key repeat flag                                                                 |
