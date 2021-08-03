@@ -12,6 +12,8 @@
   </url><url>
     <loc>/docs/help/troubleshooting/allow-button-does-not-work/</loc>
   </url><url>
+    <loc>/docs/json/complex-modifications-manipulator-definition/to/software_function/cg_event_double_click/</loc>
+  </url><url>
     <loc>/docs/manual/configuration/configure-simple-modifications/</loc>
   </url><url>
     <loc>/docs/manual/configuration/</loc>
@@ -65,6 +67,8 @@
     <loc>/docs/manual/operation/</loc>
   </url><url>
     <loc>/docs/help/advanced-topics/security/</loc>
+  </url><url>
+    <loc>/docs/json/complex-modifications-manipulator-definition/to/software_function/set_mouse_cursor_position/</loc>
   </url><url>
     <loc>/docs/json/complex-modifications-manipulator-definition/to/</loc>
   </url><url>
@@ -129,6 +133,8 @@
     <loc>/docs/help/troubleshooting/cannot-use-some-key-combination/</loc>
   </url><url>
     <loc>/docs/json/complex-modifications-manipulator-definition/to/sticky-modifier/</loc>
+  </url><url>
+    <loc>/docs/json/complex-modifications-manipulator-definition/to/software_function/</loc>
   </url><url>
     <loc>/docs/help/troubleshooting/json-owner-is-invalid/</loc>
   </url><url>

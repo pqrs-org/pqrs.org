@@ -419,6 +419,33 @@
     </item>
     
     <item>
+      <title>Docs: to.software_function</title>
+      <link>/docs/json/complex-modifications-manipulator-definition/to/software_function/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/json/complex-modifications-manipulator-definition/to/software_function/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;code&gt;software_function&lt;/code&gt; triggers a function that is implemented by software.&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-danger&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Beta feature&lt;/h4&gt;
+
+    &lt;code&gt;software_function&lt;/code&gt; is available since Karabiner-Elements 13.5.1.
+
+&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;./cg_event_double_click/&#34;&gt;cg_event_double_click&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;./set_mouse_cursor_position/&#34;&gt;set_mouse_cursor_position&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Docs: to.modifiers</title>
       <link>/docs/json/complex-modifications-manipulator-definition/to/modifiers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

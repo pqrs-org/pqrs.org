@@ -194,6 +194,8 @@ You may lose the left click button and system will be unusable.
 
     &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;#34;sticky_modifier&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#a40000&#34;&gt;sticky&lt;/span&gt; &lt;span style=&#34;color:#a40000&#34;&gt;modifier&lt;/span&gt; &lt;span style=&#34;color:#a40000&#34;&gt;definition&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
 
+    &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;#34;software_function&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#a40000&#34;&gt;software&lt;/span&gt; &lt;span style=&#34;color:#a40000&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#a40000&#34;&gt;definition&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+
     &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;#34;modifiers&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;
         &lt;span style=&#34;color:#a40000&#34;&gt;modifier&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
         &lt;span style=&#34;color:#a40000&#34;&gt;modifier&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
@@ -221,6 +223,7 @@ You cannot specify multiple items into one &lt;code&gt;to&lt;/code&gt; entry.&lt
 &lt;li&gt;&lt;code&gt;set_variable&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;mouse_key&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;sticky_modifier&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;software_function&lt;/code&gt; (&lt;code&gt;software_function&lt;/code&gt; is available since Karabiner-Elements v13.5.1)&lt;/li&gt;
 &lt;/ul&gt;
 
 
@@ -274,6 +277,11 @@ You cannot specify multiple items into one &lt;code&gt;to&lt;/code&gt; entry.&lt
 &lt;td&gt;&lt;a href=&#34;sticky_modifier/&#34;&gt;&lt;code&gt;sticky_modifier&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Optional&lt;/td&gt;
 &lt;td&gt;A sticky modifier key definition&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;software_function/&#34;&gt;&lt;code&gt;software_function&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Optional&lt;/td&gt;
+&lt;td&gt;A software function definition&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;a href=&#34;modifiers/&#34;&gt;&lt;code&gt;modifiers&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
