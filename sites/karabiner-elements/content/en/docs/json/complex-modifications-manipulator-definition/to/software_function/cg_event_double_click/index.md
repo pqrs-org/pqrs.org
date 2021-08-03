@@ -30,8 +30,8 @@ Send pseudo double click event.
 
 {{% alert title="Low responsiveness" color="primary" %}}
 
-This event will be lagged since these events are sent by software implementation.
-It is better response sending `pointing_button::button1` twice instead of using `cg_event_double_click`.
+This event will be lagged since it is sent by software implementation.
+It is better to send `pointing_button::button1` twice instead of `cg_event_double_click` to get a better response.
 
 {{% /alert %}}
 
