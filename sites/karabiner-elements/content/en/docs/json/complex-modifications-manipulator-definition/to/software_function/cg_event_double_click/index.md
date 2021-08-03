@@ -1,11 +1,11 @@
 ---
-title: 'to.software_function'
-weight: 460
+title: 'cg_event_double_click'
+weight: 100
 ---
 
-`software_function` triggers a function that is implemented by software.
-
-## `cg_event_double_click`
+{{% alert title="Beta feature" color="danger" %}}
+`cg_event_double_click` is available since Karabiner-Elements 13.5.1.
+{{% /alert %}}
 
 Send pseudo double click event.
 `cg_event_double_click` ensures that the click event occurs at the same location even if the mouse cursor is moving between the first click and the second click.
@@ -24,8 +24,8 @@ Send pseudo double click event.
 }
 ```
 
-| Name     | Required     | Description                                                             |
-| -------- | ------------ | ----------------------------------------------------------------------- |
+| Name     | Required     | Description                                                                                                           |
+| -------- | ------------ | --------------------------------------------------------------------------------------------------------------------- |
 | `button` | **Required** | An integer of CGMouseButton.<br><br>0: Left Click<br>1: Right Click<br>2: Middle Click<br>3,4,5,...,31: Other Buttons |
 
 {{% alert title="Low responsiveness" color="primary" %}}
@@ -44,7 +44,7 @@ You have to allow `karabiner_console_user_server` in Security & Privacy System P
 
 {{% /alert %}}
 
-### Examples
+## Examples
 
 Sending right button double click:
 
