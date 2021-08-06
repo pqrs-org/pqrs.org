@@ -20,7 +20,7 @@
 <title>set_mouse_cursor_position | Karabiner-Elements</title>
 <meta name="description" content="A powerful and stable keyboard customizer for macOS."><meta property="og:title" content="set_mouse_cursor_position" />
 <meta property="og:description" content="Beta feature set_mouse_cursor_position is available since Karabiner-Elements 13.5.1.  Move the mouse cursor to the specified point.
-{ &#34;to&#34;: [ { &#34;software_function&#34;: { &#34;set_mouse_cursor_position&#34;: { &#34;x&#34;: 0, &#34;y&#34;: 0, &#34;screen&#34;: 0 } } } ] }    Name Required Description     x Required The new mouse cursor position   y Required The new mouse cursor position   screen Optional The screen index of the new mouse cursor origin    Examples Set the mouse cursor position to (0,0) of the second screen." />
+{ &#34;to&#34;: [ { &#34;software_function&#34;: { &#34;set_mouse_cursor_position&#34;: { &#34;x&#34;: 0, &#34;y&#34;: 0, &#34;screen&#34;: 0 } } } ] }    Name Required Description     x Required The new mouse cursor position   y Required The new mouse cursor position   screen Optional The screen index of the new mouse cursor origin    Position format There are two styles to specify the position." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/json/complex-modifications-manipulator-definition/to/software_function/set_mouse_cursor_position/" /><meta property="og:image" content="https://karabiner-elements.pqrs.org/images/logo.png"/><meta property="article:section" content="docs" />
 
@@ -28,15 +28,15 @@
 
 <meta itemprop="name" content="set_mouse_cursor_position">
 <meta itemprop="description" content="Beta feature set_mouse_cursor_position is available since Karabiner-Elements 13.5.1.  Move the mouse cursor to the specified point.
-{ &#34;to&#34;: [ { &#34;software_function&#34;: { &#34;set_mouse_cursor_position&#34;: { &#34;x&#34;: 0, &#34;y&#34;: 0, &#34;screen&#34;: 0 } } } ] }    Name Required Description     x Required The new mouse cursor position   y Required The new mouse cursor position   screen Optional The screen index of the new mouse cursor origin    Examples Set the mouse cursor position to (0,0) of the second screen.">
+{ &#34;to&#34;: [ { &#34;software_function&#34;: { &#34;set_mouse_cursor_position&#34;: { &#34;x&#34;: 0, &#34;y&#34;: 0, &#34;screen&#34;: 0 } } } ] }    Name Required Description     x Required The new mouse cursor position   y Required The new mouse cursor position   screen Optional The screen index of the new mouse cursor origin    Position format There are two styles to specify the position.">
 
-<meta itemprop="wordCount" content="94"><meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
+<meta itemprop="wordCount" content="149"><meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
 
 <meta name="twitter:title" content="set_mouse_cursor_position"/>
 <meta name="twitter:description" content="Beta feature set_mouse_cursor_position is available since Karabiner-Elements 13.5.1.  Move the mouse cursor to the specified point.
-{ &#34;to&#34;: [ { &#34;software_function&#34;: { &#34;set_mouse_cursor_position&#34;: { &#34;x&#34;: 0, &#34;y&#34;: 0, &#34;screen&#34;: 0 } } } ] }    Name Required Description     x Required The new mouse cursor position   y Required The new mouse cursor position   screen Optional The screen index of the new mouse cursor origin    Examples Set the mouse cursor position to (0,0) of the second screen."/>
+{ &#34;to&#34;: [ { &#34;software_function&#34;: { &#34;set_mouse_cursor_position&#34;: { &#34;x&#34;: 0, &#34;y&#34;: 0, &#34;screen&#34;: 0 } } } ] }    Name Required Description     x Required The new mouse cursor position   y Required The new mouse cursor position   screen Optional The screen index of the new mouse cursor origin    Position format There are two styles to specify the position."/>
 
 
 
@@ -114,7 +114,7 @@ if (!doNotTrack) {
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.79aa555b75d841c57d67bda9f266c426.json"
+  data-offline-search-index-json-src="/offline-search-index.aa3d9f9ccc68d14898df425592875672.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="25"
 >
@@ -141,7 +141,7 @@ if (!doNotTrack) {
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.79aa555b75d841c57d67bda9f266c426.json"
+  data-offline-search-index-json-src="/offline-search-index.aa3d9f9ccc68d14898df425592875672.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="25"
 >
@@ -633,6 +633,11 @@ if (!doNotTrack) {
 
 <nav id="TableOfContents">
   <ul>
+    <li>
+      <ul>
+        <li><a href="#position-format">Position format</a></li>
+      </ul>
+    </li>
     <li><a href="#examples">Examples</a></li>
   </ul>
 </nav>
@@ -796,6 +801,29 @@ if (!doNotTrack) {
 </tr>
 </tbody>
 </table>
+<h3 id="position-format">Position format</h3>
+<p>There are two styles to specify the position.</p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Format</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Point</td>
+<td>integer</td>
+<td><code>{ &quot;x&quot;: 100 }</code></td>
+</tr>
+<tr>
+<td>Percent</td>
+<td>&ldquo;xx%&rdquo;</td>
+<td><code>{ &quot;x&quot;: &quot;50%&quot; }</code></td>
+</tr>
+</tbody>
+</table>
 <h2 id="examples">Examples</h2>
 <p>Set the mouse cursor position to (0,0) of the second screen.</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json"><span style="color:#000;font-weight:bold">{</span>
@@ -806,6 +834,20 @@ if (!doNotTrack) {
                     <span style="color:#204a87;font-weight:bold">&#34;x&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#0000cf;font-weight:bold">0</span><span style="color:#000;font-weight:bold">,</span>
                     <span style="color:#204a87;font-weight:bold">&#34;y&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#0000cf;font-weight:bold">0</span><span style="color:#000;font-weight:bold">,</span>
                     <span style="color:#204a87;font-weight:bold">&#34;screen&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#0000cf;font-weight:bold">1</span>
+                <span style="color:#000;font-weight:bold">}</span>
+            <span style="color:#000;font-weight:bold">}</span>
+        <span style="color:#000;font-weight:bold">}</span>
+    <span style="color:#000;font-weight:bold">]</span>
+<span style="color:#000;font-weight:bold">}</span>
+</code></pre></div><p>Set the mouse cursor position to center of the first screen.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json"><span style="color:#000;font-weight:bold">{</span>
+    <span style="color:#204a87;font-weight:bold">&#34;to&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+        <span style="color:#000;font-weight:bold">{</span>
+            <span style="color:#204a87;font-weight:bold">&#34;software_function&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+                <span style="color:#204a87;font-weight:bold">&#34;set_mouse_cursor_position&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+                    <span style="color:#204a87;font-weight:bold">&#34;x&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;50%&#34;</span><span style="color:#000;font-weight:bold">,</span>
+                    <span style="color:#204a87;font-weight:bold">&#34;y&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;50%&#34;</span><span style="color:#000;font-weight:bold">,</span>
+                    <span style="color:#204a87;font-weight:bold">&#34;screen&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#0000cf;font-weight:bold">0</span>
                 <span style="color:#000;font-weight:bold">}</span>
             <span style="color:#000;font-weight:bold">}</span>
         <span style="color:#000;font-weight:bold">}</span>
