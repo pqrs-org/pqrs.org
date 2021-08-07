@@ -261,7 +261,7 @@
 &lt;h4 class=&#34;alert-heading&#34;&gt;Tip&lt;/h4&gt;
 
     &lt;p&gt;It&amp;rsquo;s useful for supporting &amp;ldquo;change control-[ to escape&amp;rdquo; with all keyboard types.
-&lt;a href=&#34;https://github.com/pqrs-org/KE-complex_modifications/blob/master/public/json/example_keyboard_type.json&#34;&gt;(example json)&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://github.com/pqrs-org/KE-complex_modifications/blob/main/public/json/example_keyboard_type.json&#34;&gt;(example json)&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Some characters have different key code for each keyboard types.&lt;br /&gt;
 (e.g., &lt;strong&gt;[&lt;/strong&gt; is &lt;code&gt;open_bracket&lt;/code&gt; on ansi and iso, &lt;code&gt;close_bracket&lt;/code&gt; on jis.)&lt;/p&gt;
 

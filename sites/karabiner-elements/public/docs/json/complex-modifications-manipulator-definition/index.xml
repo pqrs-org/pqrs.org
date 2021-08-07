@@ -140,7 +140,7 @@ You may lose the left click button and system will be unusable.
 &lt;h2 id=&#34;investigate-key-names&#34;&gt;Investigate key names&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;You can find &lt;code&gt;key_code&lt;/code&gt;, &lt;code&gt;consumer_key_code&lt;/code&gt; and &lt;code&gt;pointing_button&lt;/code&gt; names by &lt;a href=&#34;../../../manual/operation/eventviewer/&#34;&gt;EventViewer&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;You can also confirm &lt;a href=&#34;https://github.com/pqrs-org/Karabiner-Elements/blob/master/src/apps/PreferencesWindow/Resources/simple_modifications.json&#34;&gt;names in list&lt;/a&gt;.
+&lt;li&gt;You can also confirm &lt;a href=&#34;https://github.com/pqrs-org/Karabiner-Elements/blob/main/src/apps/PreferencesWindow/Resources/simple_modifications.json&#34;&gt;names in list&lt;/a&gt;.
 (See &lt;code&gt;&amp;quot;data&amp;quot;&lt;/code&gt; in the list.)&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -313,7 +313,7 @@ You cannot specify multiple items into one &lt;code&gt;to&lt;/code&gt; entry.&lt
 &lt;h2 id=&#34;investigate-key-names&#34;&gt;Investigate key names&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;You can find &lt;code&gt;key_code&lt;/code&gt;, &lt;code&gt;consumer_key_code&lt;/code&gt; and &lt;code&gt;pointing_button&lt;/code&gt; names by &lt;a href=&#34;../../../manual/operation/eventviewer/&#34;&gt;EventViewer&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;You can also confirm &lt;a href=&#34;https://github.com/pqrs-org/Karabiner-Elements/blob/master/src/apps/PreferencesWindow/Resources/simple_modifications.json&#34;&gt;names in list&lt;/a&gt;.
+&lt;li&gt;You can also confirm &lt;a href=&#34;https://github.com/pqrs-org/Karabiner-Elements/blob/main/src/apps/PreferencesWindow/Resources/simple_modifications.json&#34;&gt;names in list&lt;/a&gt;.
 (See &lt;code&gt;&amp;quot;data&amp;quot;&lt;/code&gt; in the list.)&lt;/li&gt;
 &lt;/ul&gt;
 
