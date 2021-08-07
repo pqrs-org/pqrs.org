@@ -52,8 +52,8 @@ Please use macOS Big Sur 11.3 Beta or later versions if you are facing the kerne
 -   ✨ New Features
     -   Supported [`sticky modifier keys`](https://karabiner-elements.pqrs.org/docs/help/how-to/sticky-modifier-key/)
     -   Added `apple_vendor_keyboard_key_code` and `apple_vendor_top_case_key_code` to event definitions.
-        -   [apple_vendor_keyboard_key_code](https://github.com/pqrs-org/Karabiner-Elements/blob/master/src/share/types/momentary_switch_event_details/apple_vendor_keyboard_key_code.hpp)
-        -   [apple_vendor_top_case_key_code](https://github.com/pqrs-org/Karabiner-Elements/blob/master/src/share/types/momentary_switch_event_details/apple_vendor_top_case_key_code.hpp)
+        -   [apple_vendor_keyboard_key_code](https://github.com/pqrs-org/Karabiner-Elements/blob/main/src/share/types/momentary_switch_event_details/apple_vendor_keyboard_key_code.hpp)
+        -   [apple_vendor_top_case_key_code](https://github.com/pqrs-org/Karabiner-Elements/blob/main/src/share/types/momentary_switch_event_details/apple_vendor_top_case_key_code.hpp)
 -   ⚡️ Improvements
     -   Updated in-app screenshots to Big Sur.
     -   Added the close button to notification window.
@@ -311,11 +311,11 @@ Please use macOS Big Sur 11.3 Beta or later versions if you are facing the kerne
     -   `mouse_key` has been added.
         -   Examples:
             -   Mouse keys (simple):
-                [json](https://github.com/pqrs-org/KE-complex_modifications/blob/master/docs/json/mouse_keys_simple.json)
-                [(src)](https://github.com/pqrs-org/KE-complex_modifications/blob/master/src/json/mouse_keys_simple.json.erb)
+                [json](https://github.com/pqrs-org/KE-complex_modifications/blob/main/public/json/mouse_keys_simple.json)
+                [(src)](https://github.com/pqrs-org/KE-complex_modifications/blob/main/src/json/mouse_keys_simple.json.erb)
             -   Mouse keys (full)
-                [json](https://github.com/pqrs-org/KE-complex_modifications/blob/master/docs/json/mouse_keys_full.json)
-                [(src)](https://github.com/pqrs-org/KE-complex_modifications/blob/master/src/json/mouse_keys_full.json.erb)
+                [json](https://github.com/pqrs-org/KE-complex_modifications/blob/main/public/json/mouse_keys_full.json)
+                [(src)](https://github.com/pqrs-org/KE-complex_modifications/blob/main/src/json/mouse_keys_full.json.erb)
     -   `location_id` has been added to `device_if` and `device_unless`.
 -   🐛 Bug Fixes
     -   Fixed an issue that the checkbox in `Preferences > Devices` is disabled for keyboards which do not have their own vendor id.
