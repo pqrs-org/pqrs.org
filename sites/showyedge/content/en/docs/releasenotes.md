@@ -6,6 +6,19 @@ exclude_search: true
 type: releasenotes
 ---
 
+## ShowyEdge 5.2.0
+
+-   [📦 Download](https://github.com/pqrs-org/ShowyEdge/releases/download/v5.2.0/ShowyEdge-5.2.0.dmg)
+-   📅 Release date
+    -   Aug 17, 2021
+-   💥 Breaking changes
+    -   macOS 10.15 Catalina support has been dropped.
+    -   The indicator height configuration has been changed to absolute px from the ratio of the menu bar.
+-   🐛 Bug Fixes
+    -   Fixed an issue that indicator is not shown when the menu bar is hidden.
+-   ⚡️ Improvements
+    -   Completely rewritten in Swift and SwiftUI.
+
 ## ShowyEdge 4.0.0
 
 -   [📦 Download](https://github.com/pqrs-org/ShowyEdge/releases/download/v4.0.0/ShowyEdge-4.0.0.dmg)
