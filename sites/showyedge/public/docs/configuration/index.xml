@@ -85,7 +85,7 @@
   &lt;img
     src=&#34;/docs/configuration/color-configuration/images/add-color@2x.png&#34;
     alt=&#34;add-color@2x.png&#34;
-    style=&#34;width: 640px&#34;
+    style=&#34;width: 900px&#34;
   /&gt;
 &lt;/figure&gt;
 &lt;/li&gt;
@@ -101,7 +101,7 @@
   &lt;img
     src=&#34;/docs/configuration/color-configuration/images/change-color@2x.png&#34;
     alt=&#34;change-color@2x.png&#34;
-    style=&#34;width: 640px&#34;
+    style=&#34;width: 900px&#34;
   /&gt;
 &lt;/figure&gt;
 &lt;/li&gt;
@@ -123,6 +123,7 @@
 &lt;p&gt;You can change the indicator height.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;a href=&#34;../open-preferences-window/&#34;&gt;Open preferences window&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Choose &lt;code&gt;Indicator&lt;/code&gt; from the sidebar.&lt;/li&gt;
 &lt;li&gt;Adjust height.
 
 
@@ -135,7 +136,7 @@
   &lt;img
     src=&#34;/docs/configuration/indicator-size-configuration/images/indicator-height@2x.png&#34;
     alt=&#34;indicator-height@2x.png&#34;
-    style=&#34;width: 640px&#34;
+    style=&#34;width: 900px&#34;
   /&gt;
 &lt;/figure&gt;
 &lt;/li&gt;
@@ -145,7 +146,8 @@
 &lt;p&gt;You can put the indicator by custom size and origin.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;a href=&#34;../open-preferences-window/&#34;&gt;Open preferences window&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Open &lt;code&gt;Advanced&lt;/code&gt; tab, then enable &lt;code&gt;Use custom frame&lt;/code&gt;, and then adjust the indicator size and origin.
+&lt;li&gt;Choose &lt;code&gt;Custom Frame&lt;/code&gt; from the sidebar.&lt;/li&gt;
+&lt;li&gt;Enable &lt;code&gt;Use custom frame&lt;/code&gt;, and then adjust the indicator size and origin.
 
 
 
@@ -157,7 +159,7 @@
   &lt;img
     src=&#34;/docs/configuration/indicator-size-configuration/images/indicator-size@2x.png&#34;
     alt=&#34;indicator-size@2x.png&#34;
-    style=&#34;width: 640px&#34;
+    style=&#34;width: 900px&#34;
   /&gt;
 &lt;/figure&gt;
 &lt;/li&gt;
@@ -166,10 +168,10 @@
 &lt;ul&gt;
 &lt;li&gt;You can specify size by pixel or percentage of screen.
 &lt;ul&gt;
-&lt;li&gt;(e.g., width = 100%, height = 20px)&lt;/li&gt;
+&lt;li&gt;(e.g., width = 100%, height = 20pt)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Choose &lt;code&gt;lower-left&lt;/code&gt; from origin options if you want to put indicator to the bottom of screen.&lt;/li&gt;
+&lt;li&gt;Choose &lt;code&gt;Lower-Left&lt;/code&gt; from origin options if you want to put indicator to the bottom of screen.&lt;/li&gt;
 &lt;/ul&gt;
 
       </description>
@@ -204,7 +206,7 @@ You can use the Desktop background as an indicator.&lt;/li&gt;
   &lt;img
     src=&#34;/docs/configuration/indicator-options/images/indicator-options@2x.png&#34;
     alt=&#34;indicator-options@2x.png&#34;
-    style=&#34;width: 640px&#34;
+    style=&#34;width: 900px&#34;
   /&gt;
 &lt;/figure&gt;
 
@@ -236,7 +238,7 @@ You can use the Desktop background as an indicator.&lt;/li&gt;
   &lt;img
     src=&#34;/docs/configuration/open-at-login/images/open-at-login@2x.png&#34;
     alt=&#34;open-at-login@2x.png&#34;
-    style=&#34;width: 640px&#34;
+    style=&#34;width: 900px&#34;
   /&gt;
 &lt;/figure&gt;
 &lt;/li&gt;
@@ -269,7 +271,7 @@ You can use the Desktop background as an indicator.&lt;/li&gt;
   &lt;img
     src=&#34;/docs/configuration/hide-menu-bar-icon/images/hide-menu-bar-icon@2x.png&#34;
     alt=&#34;hide-menu-bar-icon@2x.png&#34;
-    style=&#34;width: 640px&#34;
+    style=&#34;width: 900px&#34;
   /&gt;
 &lt;/figure&gt;
 &lt;/li&gt;
