@@ -461,6 +461,13 @@ Download the package from the above page, and then re-install Karabiner-Elements
         
         &lt;p&gt;If you manually registered Karabiner-Elements to login items, the preferences window will always appear at startup.&lt;/p&gt;
 &lt;p&gt;Karabiner-Elements will start automatically via launchd even if it is not in login item, so remove it from your login items.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Open System Preferences.&lt;/li&gt;
+&lt;li&gt;Open Users &amp;amp; Groups.&lt;/li&gt;
+&lt;li&gt;Choose your account from the sidebar.&lt;/li&gt;
+&lt;li&gt;Open Login Items tab.&lt;/li&gt;
+&lt;li&gt;Remove Karabiner-Elements from login items.&lt;/li&gt;
+&lt;/ol&gt;
 
 
 
