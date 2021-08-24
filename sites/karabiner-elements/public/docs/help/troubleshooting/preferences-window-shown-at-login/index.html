@@ -17,35 +17,29 @@
 <link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
-<title>Uninstall | Karabiner-Elements</title>
-<meta name="description" content="A powerful and stable keyboard customizer for macOS."><meta property="og:title" content="Uninstall" />
-<meta property="og:description" content="Karabiner-Elements provides built-in uninstaller.
-Use the uninstaller to remove Karabiner-Elements from your system.
-You can launch the uninstaller from &ldquo;Uninstall Karabiner-Elements&rdquo; button on Misc tab.   Then, follow the instruction of the dialog. (The uninstaller ask your administrator password in order to remove files.)
-  Uninstall from command line If you don&rsquo;t want to use above GUI, you can also uninstall Karabiner-Elements from command line.
-bash &#39;/Library/Application Support/org.pqrs/Karabiner-DriverKit-VirtualHIDDevice/scripts/uninstall/deactivate_driver.sh&#39; sudo &#39;/Library/Application Support/org." />
+<title>Preferences window is shown at login | Karabiner-Elements</title>
+<meta name="description" content="A powerful and stable keyboard customizer for macOS."><meta property="og:title" content="Preferences window is shown at login" />
+<meta property="og:description" content="If you manually registered Karabiner-Elements to login items, the preferences window will always appear at startup.
+Karabiner-Elements will start automatically via launchd even if it is not in login item, so remove it from your login items.
+  " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="/docs/manual/operation/uninstall/" /><meta property="og:image" content="https://karabiner-elements.pqrs.org/images/logo.png"/><meta property="article:section" content="docs" />
+<meta property="og:url" content="/docs/help/troubleshooting/preferences-window-shown-at-login/" /><meta property="og:image" content="https://karabiner-elements.pqrs.org/images/logo.png"/><meta property="article:section" content="docs" />
 
 <meta property="og:site_name" content="Karabiner-Elements" />
 
-<meta itemprop="name" content="Uninstall">
-<meta itemprop="description" content="Karabiner-Elements provides built-in uninstaller.
-Use the uninstaller to remove Karabiner-Elements from your system.
-You can launch the uninstaller from &ldquo;Uninstall Karabiner-Elements&rdquo; button on Misc tab.   Then, follow the instruction of the dialog. (The uninstaller ask your administrator password in order to remove files.)
-  Uninstall from command line If you don&rsquo;t want to use above GUI, you can also uninstall Karabiner-Elements from command line.
-bash &#39;/Library/Application Support/org.pqrs/Karabiner-DriverKit-VirtualHIDDevice/scripts/uninstall/deactivate_driver.sh&#39; sudo &#39;/Library/Application Support/org.">
+<meta itemprop="name" content="Preferences window is shown at login">
+<meta itemprop="description" content="If you manually registered Karabiner-Elements to login items, the preferences window will always appear at startup.
+Karabiner-Elements will start automatically via launchd even if it is not in login item, so remove it from your login items.
+  ">
 
-<meta itemprop="wordCount" content="132"><meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
+<meta itemprop="wordCount" content="37"><meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
 
-<meta name="twitter:title" content="Uninstall"/>
-<meta name="twitter:description" content="Karabiner-Elements provides built-in uninstaller.
-Use the uninstaller to remove Karabiner-Elements from your system.
-You can launch the uninstaller from &ldquo;Uninstall Karabiner-Elements&rdquo; button on Misc tab.   Then, follow the instruction of the dialog. (The uninstaller ask your administrator password in order to remove files.)
-  Uninstall from command line If you don&rsquo;t want to use above GUI, you can also uninstall Karabiner-Elements from command line.
-bash &#39;/Library/Application Support/org.pqrs/Karabiner-DriverKit-VirtualHIDDevice/scripts/uninstall/deactivate_driver.sh&#39; sudo &#39;/Library/Application Support/org."/>
+<meta name="twitter:title" content="Preferences window is shown at login"/>
+<meta name="twitter:description" content="If you manually registered Karabiner-Elements to login items, the preferences window will always appear at startup.
+Karabiner-Elements will start automatically via launchd even if it is not in login item, so remove it from your login items.
+  "/>
 
 
 
@@ -179,8 +173,8 @@ if (!doNotTrack) {
   
 </li>
   </ul>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docsmanual-li">
-  <input type="checkbox" id="m-docsmanual-check" checked/>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsmanual-li">
+  <input type="checkbox" id="m-docsmanual-check"/>
   <label for="m-docsmanual-check"><a href="/docs/manual/" class="align-left pl-0  td-sidebar-link td-sidebar-link__section" id="m-docsmanual"><span class="">Manual</span></a></label>
   
   <ul class="ul-2 foldable">
@@ -215,8 +209,8 @@ if (!doNotTrack) {
   
 </li>
   </ul>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docsmanualoperation-li">
-  <input type="checkbox" id="m-docsmanualoperation-check" checked/>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsmanualoperation-li">
+  <input type="checkbox" id="m-docsmanualoperation-check"/>
   <label for="m-docsmanualoperation-check"><a href="/docs/manual/operation/" class="align-left pl-0  td-sidebar-link td-sidebar-link__section" id="m-docsmanualoperation"><span class="">Operation</span></a></label>
   
   <ul class="ul-3 foldable">
@@ -228,9 +222,9 @@ if (!doNotTrack) {
   <input type="checkbox" id="m-docsmanualoperationrestart-check"/>
   <label for="m-docsmanualoperationrestart-check"><a href="/docs/manual/operation/restart/" class="align-left pl-0  td-sidebar-link td-sidebar-link__page" id="m-docsmanualoperationrestart"><span class="">Restart</span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-docsmanualoperationuninstall-li">
-  <input type="checkbox" id="m-docsmanualoperationuninstall-check" checked/>
-  <label for="m-docsmanualoperationuninstall-check"><a href="/docs/manual/operation/uninstall/" class="align-left pl-0  active td-sidebar-link td-sidebar-link__page" id="m-docsmanualoperationuninstall"><span class="td-sidebar-nav-active-item">Uninstall</span></a></label>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsmanualoperationuninstall-li">
+  <input type="checkbox" id="m-docsmanualoperationuninstall-check"/>
+  <label for="m-docsmanualoperationuninstall-check"><a href="/docs/manual/operation/uninstall/" class="align-left pl-0  td-sidebar-link td-sidebar-link__page" id="m-docsmanualoperationuninstall"><span class="">Uninstall</span></a></label>
   
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsmanualoperationcheck-for-updates-li">
   <input type="checkbox" id="m-docsmanualoperationcheck-for-updates-check"/>
@@ -291,13 +285,13 @@ if (!doNotTrack) {
   </ul>
 </li>
   </ul>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docshelp-li">
-  <input type="checkbox" id="m-docshelp-check"/>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docshelp-li">
+  <input type="checkbox" id="m-docshelp-check" checked/>
   <label for="m-docshelp-check"><a href="/docs/help/" class="align-left pl-0  td-sidebar-link td-sidebar-link__section" id="m-docshelp"><span class="">Help</span></a></label>
   
   <ul class="ul-2 foldable">
-    <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docshelptroubleshooting-li">
-  <input type="checkbox" id="m-docshelptroubleshooting-check"/>
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docshelptroubleshooting-li">
+  <input type="checkbox" id="m-docshelptroubleshooting-check" checked/>
   <label for="m-docshelptroubleshooting-check"><a href="/docs/help/troubleshooting/" class="align-left pl-0  td-sidebar-link td-sidebar-link__section" id="m-docshelptroubleshooting"><span class="">Troubleshooting</span></a></label>
   
   <ul class="ul-3 foldable">
@@ -341,9 +335,9 @@ if (!doNotTrack) {
   <input type="checkbox" id="m-docshelptroubleshootingcaps-lock-led-not-working-check"/>
   <label for="m-docshelptroubleshootingcaps-lock-led-not-working-check"><a href="/docs/help/troubleshooting/caps-lock-led-not-working/" class="align-left pl-0  td-sidebar-link td-sidebar-link__page" id="m-docshelptroubleshootingcaps-lock-led-not-working"><span class="">Caps Lock LED not working</span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docshelptroubleshootingpreferences-window-shown-at-login-li">
-  <input type="checkbox" id="m-docshelptroubleshootingpreferences-window-shown-at-login-check"/>
-  <label for="m-docshelptroubleshootingpreferences-window-shown-at-login-check"><a href="/docs/help/troubleshooting/preferences-window-shown-at-login/" class="align-left pl-0  td-sidebar-link td-sidebar-link__page" id="m-docshelptroubleshootingpreferences-window-shown-at-login"><span class="">Preferences window is shown at login</span></a></label>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-docshelptroubleshootingpreferences-window-shown-at-login-li">
+  <input type="checkbox" id="m-docshelptroubleshootingpreferences-window-shown-at-login-check" checked/>
+  <label for="m-docshelptroubleshootingpreferences-window-shown-at-login-check"><a href="/docs/help/troubleshooting/preferences-window-shown-at-login/" class="align-left pl-0  active td-sidebar-link td-sidebar-link__page" id="m-docshelptroubleshootingpreferences-window-shown-at-login"><span class="td-sidebar-nav-active-item">Preferences window is shown at login</span></a></label>
   
 </li>
   </ul>
@@ -697,21 +691,21 @@ if (!doNotTrack) {
 
 
 <li class="breadcrumb-item" >
-	<a href="/docs/manual/">Manual</a>
+	<a href="/docs/help/">Help</a>
 </li>
 
 
 
 
 <li class="breadcrumb-item" >
-	<a href="/docs/manual/operation/">Operation</a>
+	<a href="/docs/help/troubleshooting/">Troubleshooting</a>
 </li>
 
 
 
 
 <li class="breadcrumb-item active" aria-current="page">
-	<a href="/docs/manual/operation/uninstall/">Uninstall</a>
+	<a href="/docs/help/troubleshooting/preferences-window-shown-at-login/">Preferences window is shown at login</a>
 </li>
 
 	</ol>
@@ -719,7 +713,7 @@ if (!doNotTrack) {
 
             
 <div class="td-content">
-	<h1>Uninstall</h1>
+	<h1>Preferences window is shown at login</h1>
 	
 	<header class="article-meta">
 		
@@ -736,9 +730,8 @@ if (!doNotTrack) {
 		
 		
 	</header>    
-	<p>Karabiner-Elements provides built-in uninstaller.<br />
-Use the uninstaller to remove Karabiner-Elements from your system.</p>
-<p>You can launch the uninstaller from &ldquo;Uninstall Karabiner-Elements&rdquo; button on Misc tab.
+	<p>If you manually registered Karabiner-Elements to login items, the preferences window will always appear at startup.</p>
+<p>Karabiner-Elements will start automatically via launchd even if it is not in login item, so remove it from your login items.</p>
 
 
 
@@ -748,55 +741,11 @@ Use the uninstaller to remove Karabiner-Elements from your system.</p>
 
 <figure>
   <img
-    src="/docs/manual/operation/uninstall/images/uninstall-button@2x.png"
-    alt="uninstall-button@2x.png"
-    style="width: 1000px"
+    src="/docs/help/troubleshooting/preferences-window-shown-at-login/images/login-items@2x.png"
+    alt="login-items@2x.png"
+    style="width: 668px"
   />
 </figure>
-</p>
-<p>Then, follow the instruction of the dialog. (The uninstaller ask your administrator password in order to remove files.)</p>
-
-
-
-
-  
-
-
-<figure>
-  <img
-    src="/docs/manual/operation/uninstall/images/uninstaller@2x.png"
-    alt="uninstaller@2x.png"
-    style="width: 999px"
-  />
-</figure>
-
-
-
-<div class="alert alert-warning" role="alert">
-<h4 class="alert-heading">Uninstall from command line</h4>
-
-    <p>If you don&rsquo;t want to use above GUI, you can also uninstall Karabiner-Elements from command line.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">bash <span style="color:#4e9a06">&#39;/Library/Application Support/org.pqrs/Karabiner-DriverKit-VirtualHIDDevice/scripts/uninstall/deactivate_driver.sh&#39;</span>
-sudo <span style="color:#4e9a06">&#39;/Library/Application Support/org.pqrs/Karabiner-Elements/uninstall.sh&#39;</span>
-</code></pre></div><p>(Administrator password is required to run the above command.)</p>
-
-
-</div>
-
-
-
-<div class="alert alert-success" role="alert">
-<h4 class="alert-heading">Advanced topic</h4>
-
-    <p><code>Operation not permitted</code> error will occur if you try removing files by <code>rm</code> command.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">sudo rm -rf /Applications/Karabiner-Elements.app
-rm: /Applications/Karabiner-Elements.app/Contents: Operation not permitted
-rm: /Applications/Karabiner-Elements.app: Operation not permitted
-</code></pre></div><p>Karabiner-Elements forces you to use uninstaller to remove files in order to ensure remove files outside /Applications.</p>
-<p>See <a href="/docs/help/advanced-topics/installed-files/">Installed files</a> to confirm the files.</p>
-
-
-</div>
 
 
 	
