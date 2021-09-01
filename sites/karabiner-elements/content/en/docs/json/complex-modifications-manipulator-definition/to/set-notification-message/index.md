@@ -1,0 +1,75 @@
+---
+title: 'to.set_notification_message'
+weight: 310
+---
+
+`set_notification_message` sets or remove the notification message.
+
+{{< local-image src="images/set-notification-message@2x.png" >}}
+
+{{% alert title="Beta feature" color="danger" %}}
+`software_function` is available since Karabiner-Elements 13.5.9.
+{{% /alert %}}
+
+```json
+{
+    "to": [
+        {
+            "set_notificaion_message": {
+                "id": "identifier of the message",
+                "text": "message text"
+            }
+        }
+    ]
+}
+```
+
+| Name   | Required     | Description                                            |
+| ------ | ------------ | ------------------------------------------------------ |
+| `id`   | **Required** | Specify an unique string for your notification message |
+| `text` | **Required** | Message body                                           |
+
+{{% alert title="How to remove the notification message" color="success" %}}
+Set empty string to `text` to remove the notification message.
+{{% /alert %}}
+
+## Examples
+
+Show the notification message while you press right shift key.
+
+```json
+{
+    "type": "basic",
+    "from": {
+        "key_code": "right_shift",
+        "modifiers": {
+            "optional": ["any"]
+        }
+    },
+    "to": [
+        {
+            // Show the notification message
+            "set_notification_message": {
+                "id": "org.pqrs.notificaion_message_example",
+                "text": "Hello World!"
+            }
+        },
+        {
+            "key_code": "right_shift"
+        }
+    ],
+    "to_after_key_up": [
+        {
+            // Hide the notification message
+            "set_notification_message": {
+                "id": "org.pqrs.notificaion_message_example",
+                "text": ""
+            }
+        }
+    ]
+}
+```
+
+{{% alert title="Important" color="danger" %}}
+Do not forget to remove the notification message.
+{{% /alert %}}
