@@ -17,26 +17,26 @@
 <link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
-<title>Export and import configuration | Karabiner-Elements</title>
-<meta name="description" content="A powerful and stable keyboard customizer for macOS."><meta property="og:title" content="Export and import configuration" />
-<meta property="og:description" content="You can export and import configuration by copying karabiner.json file to another machine.
-Export  Open config folder from Preferences &gt; Misc.    Configuration folder will be opened by Finder. Copy the karabiner.json file.  Import  Open config folder from Preferences &gt; Misc. Replace karabiner.json with the exported file. (The configuration file will be reloaded automatically.)  " />
+<title>to.set_notification_message | Karabiner-Elements</title>
+<meta name="description" content="A powerful and stable keyboard customizer for macOS."><meta property="og:title" content="to.set_notification_message" />
+<meta property="og:description" content="set_notification_message sets or remove the notification message.
+  Beta feature software_function is available since Karabiner-Elements 13.5.9.  { &#34;to&#34;: [ { &#34;set_notificaion_message&#34;: { &#34;id&#34;: &#34;identifier of the message&#34;, &#34;text&#34;: &#34;message text&#34; } } ] }    Name Required Description     id Required Specify an unique string for your notification message   text Required Message body    How to remove the notification message Set empty string to text to remove the notification message." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="/docs/manual/operation/export/" /><meta property="og:image" content="https://karabiner-elements.pqrs.org/images/logo.png"/><meta property="article:section" content="docs" />
+<meta property="og:url" content="/docs/json/complex-modifications-manipulator-definition/to/set-notification-message/" /><meta property="og:image" content="https://karabiner-elements.pqrs.org/images/logo.png"/><meta property="article:section" content="docs" />
 
 <meta property="og:site_name" content="Karabiner-Elements" />
 
-<meta itemprop="name" content="Export and import configuration">
-<meta itemprop="description" content="You can export and import configuration by copying karabiner.json file to another machine.
-Export  Open config folder from Preferences &gt; Misc.    Configuration folder will be opened by Finder. Copy the karabiner.json file.  Import  Open config folder from Preferences &gt; Misc. Replace karabiner.json with the exported file. (The configuration file will be reloaded automatically.)  ">
+<meta itemprop="name" content="to.set_notification_message">
+<meta itemprop="description" content="set_notification_message sets or remove the notification message.
+  Beta feature software_function is available since Karabiner-Elements 13.5.9.  { &#34;to&#34;: [ { &#34;set_notificaion_message&#34;: { &#34;id&#34;: &#34;identifier of the message&#34;, &#34;text&#34;: &#34;message text&#34; } } ] }    Name Required Description     id Required Specify an unique string for your notification message   text Required Message body    How to remove the notification message Set empty string to text to remove the notification message.">
 
-<meta itemprop="wordCount" content="53"><meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
+<meta itemprop="wordCount" content="139"><meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
 
-<meta name="twitter:title" content="Export and import configuration"/>
-<meta name="twitter:description" content="You can export and import configuration by copying karabiner.json file to another machine.
-Export  Open config folder from Preferences &gt; Misc.    Configuration folder will be opened by Finder. Copy the karabiner.json file.  Import  Open config folder from Preferences &gt; Misc. Replace karabiner.json with the exported file. (The configuration file will be reloaded automatically.)  "/>
+<meta name="twitter:title" content="to.set_notification_message"/>
+<meta name="twitter:description" content="set_notification_message sets or remove the notification message.
+  Beta feature software_function is available since Karabiner-Elements 13.5.9.  { &#34;to&#34;: [ { &#34;set_notificaion_message&#34;: { &#34;id&#34;: &#34;identifier of the message&#34;, &#34;text&#34;: &#34;message text&#34; } } ] }    Name Required Description     id Required Specify an unique string for your notification message   text Required Message body    How to remove the notification message Set empty string to text to remove the notification message."/>
 
 
 
@@ -170,8 +170,8 @@ if (!doNotTrack) {
   
 </li>
   </ul>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docsmanual-li">
-  <input type="checkbox" id="m-docsmanual-check" checked/>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsmanual-li">
+  <input type="checkbox" id="m-docsmanual-check"/>
   <label for="m-docsmanual-check"><a href="/docs/manual/" class="align-left pl-0  td-sidebar-link td-sidebar-link__section" id="m-docsmanual"><span class="">Manual</span></a></label>
   
   <ul class="ul-2 foldable">
@@ -206,8 +206,8 @@ if (!doNotTrack) {
   
 </li>
   </ul>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docsmanualoperation-li">
-  <input type="checkbox" id="m-docsmanualoperation-check" checked/>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsmanualoperation-li">
+  <input type="checkbox" id="m-docsmanualoperation-check"/>
   <label for="m-docsmanualoperation-check"><a href="/docs/manual/operation/" class="align-left pl-0  td-sidebar-link td-sidebar-link__section" id="m-docsmanualoperation"><span class="">Operation</span></a></label>
   
   <ul class="ul-3 foldable">
@@ -239,9 +239,9 @@ if (!doNotTrack) {
   <input type="checkbox" id="m-docsmanualoperationlog-check"/>
   <label for="m-docsmanualoperationlog-check"><a href="/docs/manual/operation/log/" class="align-left pl-0  td-sidebar-link td-sidebar-link__page" id="m-docsmanualoperationlog"><span class="">Show log messages</span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-docsmanualoperationexport-li">
-  <input type="checkbox" id="m-docsmanualoperationexport-check" checked/>
-  <label for="m-docsmanualoperationexport-check"><a href="/docs/manual/operation/export/" class="align-left pl-0  active td-sidebar-link td-sidebar-link__page" id="m-docsmanualoperationexport"><span class="td-sidebar-nav-active-item">Export and import configuration</span></a></label>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsmanualoperationexport-li">
+  <input type="checkbox" id="m-docsmanualoperationexport-check"/>
+  <label for="m-docsmanualoperationexport-check"><a href="/docs/manual/operation/export/" class="align-left pl-0  td-sidebar-link td-sidebar-link__page" id="m-docsmanualoperationexport"><span class="">Export and import configuration</span></a></label>
   
 </li>
   </ul>
@@ -406,8 +406,8 @@ if (!doNotTrack) {
   <input type="checkbox" id="m-docsreleasenotes-check"/>
   <label for="m-docsreleasenotes-check"><a href="/docs/releasenotes/" class="align-left pl-0  td-sidebar-link td-sidebar-link__page" id="m-docsreleasenotes"><span class="">Release notes</span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsjson-li">
-  <input type="checkbox" id="m-docsjson-check"/>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docsjson-li">
+  <input type="checkbox" id="m-docsjson-check" checked/>
   <label for="m-docsjson-check"><a href="/docs/json/" class="align-left pl-0  td-sidebar-link td-sidebar-link__section" id="m-docsjson"><span class="">Karabiner Configuration Reference Manual</span></a></label>
   
   <ul class="ul-2 foldable">
@@ -427,8 +427,8 @@ if (!doNotTrack) {
   <input type="checkbox" id="m-docsjsonroot-data-structure-check"/>
   <label for="m-docsjsonroot-data-structure-check"><a href="/docs/json/root-data-structure/" class="align-left pl-0  td-sidebar-link td-sidebar-link__page" id="m-docsjsonroot-data-structure"><span class="">karabiner.json data structure</span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsjsoncomplex-modifications-manipulator-definition-li">
-  <input type="checkbox" id="m-docsjsoncomplex-modifications-manipulator-definition-check"/>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docsjsoncomplex-modifications-manipulator-definition-li">
+  <input type="checkbox" id="m-docsjsoncomplex-modifications-manipulator-definition-check" checked/>
   <label for="m-docsjsoncomplex-modifications-manipulator-definition-check"><a href="/docs/json/complex-modifications-manipulator-definition/" class="align-left pl-0  td-sidebar-link td-sidebar-link__section" id="m-docsjsoncomplex-modifications-manipulator-definition"><span class="">complex_modifications manipulator definition</span></a></label>
   
   <ul class="ul-3 foldable">
@@ -455,8 +455,8 @@ if (!doNotTrack) {
   
 </li>
   </ul>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsjsoncomplex-modifications-manipulator-definitionto-li">
-  <input type="checkbox" id="m-docsjsoncomplex-modifications-manipulator-definitionto-check"/>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docsjsoncomplex-modifications-manipulator-definitionto-li">
+  <input type="checkbox" id="m-docsjsoncomplex-modifications-manipulator-definitionto-check" checked/>
   <label for="m-docsjsoncomplex-modifications-manipulator-definitionto-check"><a href="/docs/json/complex-modifications-manipulator-definition/to/" class="align-left pl-0  td-sidebar-link td-sidebar-link__section" id="m-docsjsoncomplex-modifications-manipulator-definitionto"><span class="">to event definition</span></a></label>
   
   <ul class="ul-4 foldable">
@@ -472,9 +472,9 @@ if (!doNotTrack) {
   <input type="checkbox" id="m-docsjsoncomplex-modifications-manipulator-definitiontoset-variable-check"/>
   <label for="m-docsjsoncomplex-modifications-manipulator-definitiontoset-variable-check"><a href="/docs/json/complex-modifications-manipulator-definition/to/set-variable/" class="align-left pl-0  td-sidebar-link td-sidebar-link__page" id="m-docsjsoncomplex-modifications-manipulator-definitiontoset-variable"><span class="">to.set_variable</span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsjsoncomplex-modifications-manipulator-definitiontoset-notification-message-li">
-  <input type="checkbox" id="m-docsjsoncomplex-modifications-manipulator-definitiontoset-notification-message-check"/>
-  <label for="m-docsjsoncomplex-modifications-manipulator-definitiontoset-notification-message-check"><a href="/docs/json/complex-modifications-manipulator-definition/to/set-notification-message/" class="align-left pl-0  td-sidebar-link td-sidebar-link__page" id="m-docsjsoncomplex-modifications-manipulator-definitiontoset-notification-message"><span class="">to.set_notification_message</span></a></label>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-docsjsoncomplex-modifications-manipulator-definitiontoset-notification-message-li">
+  <input type="checkbox" id="m-docsjsoncomplex-modifications-manipulator-definitiontoset-notification-message-check" checked/>
+  <label for="m-docsjsoncomplex-modifications-manipulator-definitiontoset-notification-message-check"><a href="/docs/json/complex-modifications-manipulator-definition/to/set-notification-message/" class="align-left pl-0  active td-sidebar-link td-sidebar-link__page" id="m-docsjsoncomplex-modifications-manipulator-definitiontoset-notification-message"><span class="td-sidebar-nav-active-item">to.set_notification_message</span></a></label>
   
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsjsoncomplex-modifications-manipulator-definitiontomouse-key-li">
   <input type="checkbox" id="m-docsjsoncomplex-modifications-manipulator-definitiontomouse-key-check"/>
@@ -641,8 +641,7 @@ if (!doNotTrack) {
 
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#export">Export</a></li>
-    <li><a href="#import">Import</a></li>
+    <li><a href="#examples">Examples</a></li>
   </ul>
 </nav>
 
@@ -689,6 +688,9 @@ if (!doNotTrack) {
 
 
 
+
+
+
 <li class="breadcrumb-item" >
 	<a href="/docs/">Documentation</a>
 </li>
@@ -697,21 +699,28 @@ if (!doNotTrack) {
 
 
 <li class="breadcrumb-item" >
-	<a href="/docs/manual/">Manual</a>
+	<a href="/docs/json/">Karabiner Configuration Reference Manual</a>
 </li>
 
 
 
 
 <li class="breadcrumb-item" >
-	<a href="/docs/manual/operation/">Operation</a>
+	<a href="/docs/json/complex-modifications-manipulator-definition/">complex_modifications manipulator definition</a>
+</li>
+
+
+
+
+<li class="breadcrumb-item" >
+	<a href="/docs/json/complex-modifications-manipulator-definition/to/">to event definition</a>
 </li>
 
 
 
 
 <li class="breadcrumb-item active" aria-current="page">
-	<a href="/docs/manual/operation/export/">Export and import configuration</a>
+	<a href="/docs/json/complex-modifications-manipulator-definition/to/set-notification-message/">to.set_notification_message</a>
 </li>
 
 	</ol>
@@ -719,7 +728,7 @@ if (!doNotTrack) {
 
             
 <div class="td-content">
-	<h1>Export and import configuration</h1>
+	<h1>to.set_notification_message</h1>
 	
 	<header class="article-meta">
 		
@@ -736,10 +745,7 @@ if (!doNotTrack) {
 		
 		
 	</header>    
-	<p>You can export and import configuration by copying karabiner.json file to another machine.</p>
-<h2 id="export">Export</h2>
-<ol>
-<li>Open config folder from Preferences &gt; Misc.
+	<p><code>set_notification_message</code> sets or remove the notification message.</p>
 
 
 
@@ -749,20 +755,102 @@ if (!doNotTrack) {
 
 <figure>
   <img
-    src="/docs/manual/operation/export/images/karabiner-elements-export@2x.png"
-    alt="karabiner-elements-export@2x.png"
-    style="width: 1000px"
+    src="/docs/json/complex-modifications-manipulator-definition/to/set-notification-message/images/set-notification-message@2x.png"
+    alt="set-notification-message@2x.png"
+    style="width: 425px"
   />
 </figure>
-</li>
-<li>Configuration folder will be opened by Finder. Copy the <strong>karabiner.json</strong> file.</li>
-</ol>
-<h2 id="import">Import</h2>
-<ol>
-<li>Open config folder from Preferences &gt; Misc.</li>
-<li>Replace <strong>karabiner.json</strong> with the exported file.<br/>
-(The configuration file will be reloaded automatically.)</li>
-</ol>
+
+
+
+<div class="alert alert-danger" role="alert">
+<h4 class="alert-heading">Beta feature</h4>
+
+    <code>software_function</code> is available since Karabiner-Elements 13.5.9.
+
+</div>
+
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json"><span style="color:#000;font-weight:bold">{</span>
+    <span style="color:#204a87;font-weight:bold">&#34;to&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+        <span style="color:#000;font-weight:bold">{</span>
+            <span style="color:#204a87;font-weight:bold">&#34;set_notificaion_message&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+                <span style="color:#204a87;font-weight:bold">&#34;id&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;identifier of the message&#34;</span><span style="color:#000;font-weight:bold">,</span>
+                <span style="color:#204a87;font-weight:bold">&#34;text&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;message text&#34;</span>
+            <span style="color:#000;font-weight:bold">}</span>
+        <span style="color:#000;font-weight:bold">}</span>
+    <span style="color:#000;font-weight:bold">]</span>
+<span style="color:#000;font-weight:bold">}</span>
+</code></pre></div><table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>id</code></td>
+<td><strong>Required</strong></td>
+<td>Specify an unique string for your notification message</td>
+</tr>
+<tr>
+<td><code>text</code></td>
+<td><strong>Required</strong></td>
+<td>Message body</td>
+</tr>
+</tbody>
+</table>
+
+
+<div class="alert alert-success" role="alert">
+<h4 class="alert-heading">How to remove the notification message</h4>
+
+    Set empty string to <code>text</code> to remove the notification message.
+
+</div>
+
+<h2 id="examples">Examples</h2>
+<p>Show the notification message while you press right shift key.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json"><span style="color:#000;font-weight:bold">{</span>
+    <span style="color:#204a87;font-weight:bold">&#34;type&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;basic&#34;</span><span style="color:#000;font-weight:bold">,</span>
+    <span style="color:#204a87;font-weight:bold">&#34;from&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+        <span style="color:#204a87;font-weight:bold">&#34;key_code&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;right_shift&#34;</span><span style="color:#000;font-weight:bold">,</span>
+        <span style="color:#204a87;font-weight:bold">&#34;modifiers&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+            <span style="color:#204a87;font-weight:bold">&#34;optional&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">&#34;any&#34;</span><span style="color:#000;font-weight:bold">]</span>
+        <span style="color:#000;font-weight:bold">}</span>
+    <span style="color:#000;font-weight:bold">},</span>
+    <span style="color:#204a87;font-weight:bold">&#34;to&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+        <span style="color:#000;font-weight:bold">{</span>
+            <span style="color:#a40000">//</span> <span style="color:#a40000">Show</span> <span style="color:#a40000">the</span> <span style="color:#a40000">notification</span> <span style="color:#a40000">message</span>
+            <span style="color:#204a87;font-weight:bold">&#34;set_notification_message&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+                <span style="color:#204a87;font-weight:bold">&#34;id&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;org.pqrs.notificaion_message_example&#34;</span><span style="color:#000;font-weight:bold">,</span>
+                <span style="color:#204a87;font-weight:bold">&#34;text&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;Hello World!&#34;</span>
+            <span style="color:#000;font-weight:bold">}</span>
+        <span style="color:#000;font-weight:bold">},</span>
+        <span style="color:#000;font-weight:bold">{</span>
+            <span style="color:#204a87;font-weight:bold">&#34;key_code&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;right_shift&#34;</span>
+        <span style="color:#000;font-weight:bold">}</span>
+    <span style="color:#000;font-weight:bold">],</span>
+    <span style="color:#204a87;font-weight:bold">&#34;to_after_key_up&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+        <span style="color:#000;font-weight:bold">{</span>
+            <span style="color:#a40000">//</span> <span style="color:#a40000">Hide</span> <span style="color:#a40000">the</span> <span style="color:#a40000">notification</span> <span style="color:#a40000">message</span>
+            <span style="color:#204a87;font-weight:bold">&#34;set_notification_message&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+                <span style="color:#204a87;font-weight:bold">&#34;id&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;org.pqrs.notificaion_message_example&#34;</span><span style="color:#000;font-weight:bold">,</span>
+                <span style="color:#204a87;font-weight:bold">&#34;text&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;&#34;</span>
+            <span style="color:#000;font-weight:bold">}</span>
+        <span style="color:#000;font-weight:bold">}</span>
+    <span style="color:#000;font-weight:bold">]</span>
+<span style="color:#000;font-weight:bold">}</span>
+</code></pre></div>
+
+<div class="alert alert-danger" role="alert">
+<h4 class="alert-heading">Important</h4>
+
+    Do not forget to remove the notification message.
+
+</div>
+
 
 	
 	
