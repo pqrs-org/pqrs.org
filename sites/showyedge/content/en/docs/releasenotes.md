@@ -11,7 +11,7 @@ type: releasenotes
 -   [📦 Download](https://github.com/pqrs-org/ShowyEdge/releases/download/v5.2.0/ShowyEdge-5.2.0.dmg)
 -   📅 Release date
     -   Aug 17, 2021
--   💥 Breaking changes
+-   💥 Breaking Changes
     -   macOS 10.15 Catalina support has been dropped.
     -   The indicator height configuration has been changed to absolute px from the ratio of the menu bar.
 -   🐛 Bug Fixes
@@ -29,7 +29,7 @@ type: releasenotes
     -   Added an icon to menu bar.
 -   🐛 Bug Fixes
     -   Fixed `Hide indicator when full screen` when multiple displays are connected.
--   💥 Breaking changes
+-   💥 Breaking Changes
     -   macOS 10.9 - 10.14 support has been dropped.
 
 ## ShowyEdge 3.8.0
@@ -100,7 +100,7 @@ type: releasenotes
 -   [📦 Download](https://github.com/pqrs-org/ShowyEdge/releases/download/v3.0.0/ShowyEdge-3.0.0.dmg)
 -   📅 Release date
     -   Dec 3, 2015
--   💥 Breaking changes
+-   💥 Breaking Changes
     -   macOS 10.8 support has been dropped.
     -   macOS 10.7 support has been dropped.
 -   ⚡️ Improvements
@@ -130,7 +130,7 @@ type: releasenotes
 -   [📦 Download](https://github.com/pqrs-org/ShowyEdge/releases/download/v2.0.0/ShowyEdge-2.0.0.dmg)
 -   📅 Release date
     -   Aug 24, 2014
--   💥 Breaking changes
+-   💥 Breaking Changes
     -   The minimum OS version requirement has been changed. (macOS 10.6 -> macOS 10.7)
 -   ⚡️ Improvements
     -   "Check for updates" (Sparkle) has been updated.

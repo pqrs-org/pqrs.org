@@ -43,7 +43,7 @@ Please use macOS Big Sur 11.3 Beta or later versions if you are facing the kerne
     -   Jan 29, 2021
 -   🐛 Bug Fixes
     -   Fixed an issue that installer requires Rosetta 2 on Apple Silicon Macs.
--   💥 Breaking changes
+-   💥 Breaking Changes
     -   Changed the default function of f4 key to `spotlight`, f5 key to `dictation`, f6 key to `f6`.
         -   Note: This change will be applied when you create a new profile.
     -   Changed to Karabiner-Elements does not modify f1-f12 keys on touch bar.
@@ -75,7 +75,7 @@ Please use macOS Big Sur 11.3 Beta or later versions if you are facing the kerne
 -   [📦 Download](https://github.com/pqrs-org/Karabiner-Elements/releases/download/v13.0.0/Karabiner-Elements-13.0.0.dmg)
 -   📅 Release date
     -   Oct 4, 2020
--   💥 Breaking changes
+-   💥 Breaking Changes
     -   macOS 10.12 - 10.14 support has been dropped.
 -   ✨ New Features
     -   Supported macOS Big Sur (11.0)
@@ -197,7 +197,7 @@ Please use macOS Big Sur 11.3 Beta or later versions if you are facing the kerne
 -   [📦 Download](https://github.com/pqrs-org/Karabiner-Elements/releases/download/v12.3.0/Karabiner-Elements-12.3.0.dmg)
 -   📅 Release date
     -   Apr 24, 2019
--   💥 Breaking changes
+-   💥 Breaking Changes
     -   complex modifications json will be checked strictly since this release.<br/>
         Please check error messages if your complex modifications do not work after upgrade.
 -   ✨ New Features
@@ -235,7 +235,7 @@ Please use macOS Big Sur 11.3 Beta or later versions if you are facing the kerne
 -   [📦 Download](https://github.com/pqrs-org/Karabiner-Elements/releases/download/v12.1.0/Karabiner-Elements-12.1.0.dmg)
 -   📅 Release date
     -   May 30, 2018
--   💥 Breaking changes
+-   💥 Breaking Changes
     -   Changed the order of `to_if_alone` and `to_after_key_up` event handling.<br />
         `to_if_alone` will be handled before `to_after_key_up`.
 -   ✨ New Features
@@ -257,7 +257,7 @@ Please use macOS Big Sur 11.3 Beta or later versions if you are facing the kerne
 -   [📦 Download](https://github.com/pqrs-org/Karabiner-Elements/releases/download/v12.0.0/Karabiner-Elements-12.0.0.dmg)
 -   📅 Release date
     -   Apr 12, 2018
--   💥 Breaking changes
+-   💥 Breaking Changes
     -   macOS 10.11 support has been dropped.<br />
         Karabiner-Elements works on macOS 10.12 (Sierra) or later.
     -   `Keyboard type` in the virtual keyboard preferences has been removed. (Adverse effect of virtual keyboard improvement.)<br />
@@ -400,7 +400,7 @@ Please use macOS Big Sur 11.3 Beta or later versions if you are facing the kerne
 -   [📦 Download](https://github.com/tekezo/Karabiner/releases/download/files/Karabiner-10.19.0.dmg)
 -   📅 Release date
     -   Jun 9, 2016
--   💥 Breaking changes
+-   💥 Breaking Changes
     -   The multi-touch extension default configuration has been changed.<br/>
         If you are using ThumbSense, please enable ThumbSense setting manually in multi-touch extension preferences.
 -   ✨ New Features
@@ -534,7 +534,7 @@ Please use macOS Big Sur 11.3 Beta or later versions if you are facing the kerne
 -   [📦 Download](https://github.com/tekezo/Karabiner/releases/download/files/Karabiner-10.9.0.dmg)
 -   📅 Release date
     -   Sep 7, 2015
--   💥 Breaking changes
+-   💥 Breaking Changes
     -   The fn keypad has been removed from implicit behavior.<br/>
         Please use either of the following settings instead if you need.
         -   "Fn+Number to KeyPad"
@@ -570,7 +570,7 @@ Please use macOS Big Sur 11.3 Beta or later versions if you are facing the kerne
 -   [📦 Download](https://github.com/tekezo/Karabiner/releases/download/files/Karabiner-10.7.0.dmg)
 -   📅 Release date
     -   Aug 10, 2015
--   💥 Breaking changes
+-   💥 Breaking Changes
     -   The default mouse keys scroll direction has been changed to natural.
     -   `<inputsourcedetail_only>` and `<inputsourcedetail_not>` filters have been merged into `<inputsource_only>` and `<inputsource_not>`.<br/>
         Please use `<inputsource_only>` and `<inputsource_not>` in your private.xml.
@@ -696,7 +696,7 @@ Please use macOS Big Sur 11.3 Beta or later versions if you are facing the kerne
 -   [📦 Download](https://github.com/tekezo/Karabiner/releases/download/files/Karabiner-10.0.0.dmg)
 -   📅 Release date
     -   Jul 9, 2014
--   💥 Breaking changes
+-   💥 Breaking Changes
     -   KeyRemap4MacBook has been renamed to "Karabiner".
     -   `KeyCode::VK_JIS_TEMPORARY_*` are removed.<br/>
         Please use `<inputsource_filter>`, `Option::KEYTOKEY_BEFORE_KEYDOWN`, `Option::KEYTOKEY_AFTER_KEYUP`, `KeyCode::JIS_EISUU` and `KeyCode::JIS_KANA` instead.
@@ -780,7 +780,7 @@ Please use macOS Big Sur 11.3 Beta or later versions if you are facing the kerne
 -   [📦 Download](https://github.com/tekezo/Karabiner/releases/download/files/KeyRemap4MacBook-9.0.0.dmg)
 -   📅 Release date
     -   Nov 15, 2013
--   💥 Breaking changes
+-   💥 Breaking Changes
     -   Optimized for macOS 10.9.
         KeyRemap4MacBook 9.0.0 requires macOS 10.9+.
     -   Drop power button support due to limitations of macOS 10.9.
@@ -860,7 +860,7 @@ Please use macOS Big Sur 11.3 Beta or later versions if you are facing the kerne
 -   [📦 Download](https://github.com/tekezo/Karabiner/releases/download/files/KeyRemap4MacBook-8.0.0.dmg)
 -   📅 Release date
     -   Jan 30, 2013
--   💥 Breaking changes
+-   💥 Breaking Changes
     -   Changed KeyRemap4MacBook_cli location.
 -   ✨ New Features
     -   Integrated a status message indicator. (Removed Growl support.)
@@ -930,7 +930,7 @@ Please use macOS Big Sur 11.3 Beta or later versions if you are facing the kerne
 -   [📦 Download](https://github.com/tekezo/Karabiner/releases/download/files/KeyRemap4MacBook-7.4.0.pkg.zip)
 -   📅 Release date
     -   Aug 23, 2011
--   💥 Breaking changes
+-   💥 Breaking Changes
     -   Removed "General > Enable CapsLock LED Hack" from preferences.
         If you're using this setting for PCKeyboardHack, use "No Action" configuration instead.
     -   Cleaned up "Simultaneous Vi Mode".
@@ -1026,7 +1026,7 @@ Please use macOS Big Sur 11.3 Beta or later versions if you are facing the kerne
 -   [📦 Download](https://github.com/tekezo/Karabiner/releases/download/files/KeyRemap4MacBook-6.8.0.pkg.zip)
 -   📅 Release date
     -   Jul 27, 2010
--   💥 Breaking changes
+-   💥 Breaking Changes
     -   Changed the default value of key repeat wait.
         Please set "[Key Repeat] wait" to "30ms" from "Key Repeat" tab if you prefer the previous default value.
 -   ✨ New Features
@@ -1107,7 +1107,7 @@ Please use macOS Big Sur 11.3 Beta or later versions if you are facing the kerne
 -   [📦 Download](https://github.com/tekezo/Karabiner/releases/download/files/KeyRemap4MacBook-6.1.0.pkg.tar.gz)
 -   📅 Release date
     -   Nov 11, 2009
--   💥 Breaking changes
+-   💥 Breaking Changes
     -   Changed to enable the remapping of the third vendor's devices by default.
 -   🐛 Bug Fixes
     -   Fixed the memory leak of the server process.
@@ -1164,7 +1164,7 @@ Please use macOS Big Sur 11.3 Beta or later versions if you are facing the kerne
 -   [📦 Download](https://github.com/tekezo/Karabiner/releases/download/files/KeyRemap4MacBook-4.0.0.pkg.tar.gz)
 -   📅 Release date
     -   Apr 2, 2008
--   💥 Breaking changes
+-   💥 Breaking Changes
     -   Changed a place to install. (/Library/org.pqrs/KeyRemap4MacBook)
 -   🐛 Bug Fixes
     -   Fixed an issue which disable any remappings when you logged out.
@@ -1204,7 +1204,7 @@ Please use macOS Big Sur 11.3 Beta or later versions if you are facing the kerne
 -   [📦 Download](https://github.com/tekezo/Karabiner/releases/download/files/KeyRemap4MacBook-3.0.0.pkg.tar.gz)
 -   📅 Release date
     -   Feb 4, 2008
--   💥 Breaking changes
+-   💥 Breaking Changes
     -   Renamed many sysctl entries. Please set up by PreferencePane if you upgrade from older version.
 -   ✨ New Features
     -   Added PreferencePane. Now, you can configure by System Preferences.
