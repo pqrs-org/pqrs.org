@@ -11,4 +11,4 @@ weight: 100
 
 Press the described key or button again to dismiss the alert.
 
-{{< local-image src="images/karabiner-elements-notification-window@2x.png" >}}
+{{< local-image src="images/notification-window@2x.png" >}}
