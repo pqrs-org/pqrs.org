@@ -6,6 +6,13 @@ exclude_search: true
 type: releasenotes
 ---
 
+## Disable DragAndDrop 4.13.0
+
+-   📅 Release date
+    -   Sep 3, 2021
+-   🍰 Minor Changes
+    -   Add `strict_max_version` into the manifest file.
+
 ## Disable DragAndDrop 4.11.0
 
 -   📅 Release date
