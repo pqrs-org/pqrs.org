@@ -19,21 +19,21 @@
 
 <title>Release notes | Karabiner-Elements</title>
 <meta name="description" content="A powerful and stable keyboard customizer for macOS."><meta property="og:title" content="Release notes" />
-<meta property="og:description" content="Karabiner-Elements 13.5.0  📦 Download 📅 Release date  Jun 20, 2021   ⚡️ Improvements  Improved temporary directory handling to reduce the frequency of mds process accessing it. Improved mouse_key.speed_multiplier handling when it is used with to.modifiers, the modifier is retained while speed_multiplier is active. The caps lock LED manipulation has been enabled by default.  Note: This change applies to newly connected keyboards.   Several Objective-C code around GUI has been rewritten in Swift &#43; SwiftUI." />
+<meta property="og:description" content="Karabiner-Elements 13.6.0  📦 Download 📅 Release date  Sep 3, 2021   ✨ New Features  Add new features for writing your own settings:  Added software_function.cg_event_double_click. Added software_function.set_mouse_cursor_position. Added set_notification_message.     🐛 Bug Fixes  Fixed an issue that karabiner.json parse error message is not shown in Preferences &gt; Log if the error message contains corrupted characters.   ⚡️ Improvements  Changed to log the output of shell_command into console_user_server." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/releasenotes/" /><meta property="og:image" content="https://karabiner-elements.pqrs.org/images/logo.png"/><meta property="article:section" content="docs" />
 
 <meta property="og:site_name" content="Karabiner-Elements" />
 
 <meta itemprop="name" content="Release notes">
-<meta itemprop="description" content="Karabiner-Elements 13.5.0  📦 Download 📅 Release date  Jun 20, 2021   ⚡️ Improvements  Improved temporary directory handling to reduce the frequency of mds process accessing it. Improved mouse_key.speed_multiplier handling when it is used with to.modifiers, the modifier is retained while speed_multiplier is active. The caps lock LED manipulation has been enabled by default.  Note: This change applies to newly connected keyboards.   Several Objective-C code around GUI has been rewritten in Swift &#43; SwiftUI.">
+<meta itemprop="description" content="Karabiner-Elements 13.6.0  📦 Download 📅 Release date  Sep 3, 2021   ✨ New Features  Add new features for writing your own settings:  Added software_function.cg_event_double_click. Added software_function.set_mouse_cursor_position. Added set_notification_message.     🐛 Bug Fixes  Fixed an issue that karabiner.json parse error message is not shown in Preferences &gt; Log if the error message contains corrupted characters.   ⚡️ Improvements  Changed to log the output of shell_command into console_user_server.">
 
-<meta itemprop="wordCount" content="6291"><meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
+<meta itemprop="wordCount" content="6367"><meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
 
 <meta name="twitter:title" content="Release notes"/>
-<meta name="twitter:description" content="Karabiner-Elements 13.5.0  📦 Download 📅 Release date  Jun 20, 2021   ⚡️ Improvements  Improved temporary directory handling to reduce the frequency of mds process accessing it. Improved mouse_key.speed_multiplier handling when it is used with to.modifiers, the modifier is retained while speed_multiplier is active. The caps lock LED manipulation has been enabled by default.  Note: This change applies to newly connected keyboards.   Several Objective-C code around GUI has been rewritten in Swift &#43; SwiftUI."/>
+<meta name="twitter:description" content="Karabiner-Elements 13.6.0  📦 Download 📅 Release date  Sep 3, 2021   ✨ New Features  Add new features for writing your own settings:  Added software_function.cg_event_double_click. Added software_function.set_mouse_cursor_position. Added set_notification_message.     🐛 Bug Fixes  Fixed an issue that karabiner.json parse error message is not shown in Preferences &gt; Log if the error message contains corrupted characters.   ⚡️ Improvements  Changed to log the output of shell_command into console_user_server."/>
 
 
 
@@ -111,7 +111,7 @@ if (!doNotTrack) {
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.1ee4826b2ce7dc834d368b2114e0d45f.json"
+  data-offline-search-index-json-src="/offline-search-index.c4c8ee2369fc02d281dbba50fb4720a4.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="25"
 >
@@ -138,7 +138,7 @@ if (!doNotTrack) {
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.1ee4826b2ce7dc834d368b2114e0d45f.json"
+  data-offline-search-index-json-src="/offline-search-index.c4c8ee2369fc02d281dbba50fb4720a4.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="25"
 >
@@ -638,6 +638,7 @@ if (!doNotTrack) {
 
 <nav id="TableOfContents">
   <ul>
+    <li><a href="#karabiner-elements-1360">Karabiner-Elements 13.6.0</a></li>
     <li><a href="#karabiner-elements-1350">Karabiner-Elements 13.5.0</a></li>
     <li><a href="#karabiner-elements-1340">Karabiner-Elements 13.4.0</a>
       <ul>
@@ -786,7 +787,38 @@ if (!doNotTrack) {
             
 <div class="td-content release-notes">
 	<h1>Release notes</h1>
-	<h2 id="karabiner-elements-1350">Karabiner-Elements 13.5.0</h2>
+	<h2 id="karabiner-elements-1360">Karabiner-Elements 13.6.0</h2>
+<ul>
+<li><a href="https://github.com/pqrs-org/Karabiner-Elements/releases/download/v13.6.0/Karabiner-Elements-13.6.0.dmg">📦 Download</a></li>
+<li>📅 Release date
+<ul>
+<li>Sep 3, 2021</li>
+</ul>
+</li>
+<li>✨ New Features
+<ul>
+<li>Add new features for writing your own settings:
+<ul>
+<li>Added <a href="https://karabiner-elements.pqrs.org/docs/json/complex-modifications-manipulator-definition/to/software_function/cg_event_double_click/"><code>software_function.cg_event_double_click</code></a>.</li>
+<li>Added <a href="https://karabiner-elements.pqrs.org/docs/json/complex-modifications-manipulator-definition/to/software_function/set_mouse_cursor_position/"><code>software_function.set_mouse_cursor_position</code></a>.</li>
+<li>Added <a href="https://karabiner-elements.pqrs.org/docs/json/complex-modifications-manipulator-definition/to/set-notification-message/"><code>set_notification_message</code></a>.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>🐛 Bug Fixes
+<ul>
+<li>Fixed an issue that karabiner.json parse error message is not shown in Preferences &gt; Log if the error message contains corrupted characters.</li>
+</ul>
+</li>
+<li>⚡️ Improvements
+<ul>
+<li>Changed to log the output of shell_command into console_user_server.log.</li>
+<li>The notification window transparency will be increased when the mouse cursor is hovered.</li>
+</ul>
+</li>
+</ul>
+<h2 id="karabiner-elements-1350">Karabiner-Elements 13.5.0</h2>
 <ul>
 <li><a href="https://github.com/pqrs-org/Karabiner-Elements/releases/download/v13.5.0/Karabiner-Elements-13.5.0.dmg">📦 Download</a></li>
 <li>📅 Release date

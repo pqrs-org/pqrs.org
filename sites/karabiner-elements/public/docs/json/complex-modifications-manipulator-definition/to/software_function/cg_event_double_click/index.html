@@ -19,24 +19,33 @@
 
 <title>cg_event_double_click | Karabiner-Elements</title>
 <meta name="description" content="A powerful and stable keyboard customizer for macOS."><meta property="og:title" content="cg_event_double_click" />
-<meta property="og:description" content="Beta feature cg_event_double_click is available since Karabiner-Elements 13.5.1.  Send pseudo double click event. cg_event_double_click ensures that the click event occurs at the same location even if the mouse cursor is moving between the first click and the second click.
-{ &#34;to&#34;: [ { &#34;software_function&#34;: { &#34;cg_event_double_click&#34;: { &#34;button&#34;: 0 } } } ] }    Name Required Description     button Required An integer of CGMouseButton." />
+<meta property="og:description" content="Send pseudo double click event. cg_event_double_click ensures that the click event occurs at the same location even if the mouse cursor is moving between the first click and the second click.
+{ &#34;to&#34;: [ { &#34;software_function&#34;: { &#34;cg_event_double_click&#34;: { &#34;button&#34;: 0 } } } ] }    Name Required Description     button Required An integer of CGMouseButton.
+0: Left Click
+1: Right Click
+2: Middle Click" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/json/complex-modifications-manipulator-definition/to/software_function/cg_event_double_click/" /><meta property="og:image" content="https://karabiner-elements.pqrs.org/images/logo.png"/><meta property="article:section" content="docs" />
 
 <meta property="og:site_name" content="Karabiner-Elements" />
 
 <meta itemprop="name" content="cg_event_double_click">
-<meta itemprop="description" content="Beta feature cg_event_double_click is available since Karabiner-Elements 13.5.1.  Send pseudo double click event. cg_event_double_click ensures that the click event occurs at the same location even if the mouse cursor is moving between the first click and the second click.
-{ &#34;to&#34;: [ { &#34;software_function&#34;: { &#34;cg_event_double_click&#34;: { &#34;button&#34;: 0 } } } ] }    Name Required Description     button Required An integer of CGMouseButton.">
+<meta itemprop="description" content="Send pseudo double click event. cg_event_double_click ensures that the click event occurs at the same location even if the mouse cursor is moving between the first click and the second click.
+{ &#34;to&#34;: [ { &#34;software_function&#34;: { &#34;cg_event_double_click&#34;: { &#34;button&#34;: 0 } } } ] }    Name Required Description     button Required An integer of CGMouseButton.
+0: Left Click
+1: Right Click
+2: Middle Click">
 
-<meta itemprop="wordCount" content="142"><meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
+<meta itemprop="wordCount" content="134"><meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
 
 <meta name="twitter:title" content="cg_event_double_click"/>
-<meta name="twitter:description" content="Beta feature cg_event_double_click is available since Karabiner-Elements 13.5.1.  Send pseudo double click event. cg_event_double_click ensures that the click event occurs at the same location even if the mouse cursor is moving between the first click and the second click.
-{ &#34;to&#34;: [ { &#34;software_function&#34;: { &#34;cg_event_double_click&#34;: { &#34;button&#34;: 0 } } } ] }    Name Required Description     button Required An integer of CGMouseButton."/>
+<meta name="twitter:description" content="Send pseudo double click event. cg_event_double_click ensures that the click event occurs at the same location even if the mouse cursor is moving between the first click and the second click.
+{ &#34;to&#34;: [ { &#34;software_function&#34;: { &#34;cg_event_double_click&#34;: { &#34;button&#34;: 0 } } } ] }    Name Required Description     button Required An integer of CGMouseButton.
+0: Left Click
+1: Right Click
+2: Middle Click"/>
 
 
 
@@ -114,7 +123,7 @@ if (!doNotTrack) {
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.1ee4826b2ce7dc834d368b2114e0d45f.json"
+  data-offline-search-index-json-src="/offline-search-index.c4c8ee2369fc02d281dbba50fb4720a4.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="25"
 >
@@ -141,7 +150,7 @@ if (!doNotTrack) {
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.1ee4826b2ce7dc834d368b2114e0d45f.json"
+  data-offline-search-index-json-src="/offline-search-index.c4c8ee2369fc02d281dbba50fb4720a4.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="25"
 >
@@ -755,16 +764,7 @@ if (!doNotTrack) {
 		
 		
 	</header>    
-	
-
-<div class="alert alert-danger" role="alert">
-<h4 class="alert-heading">Beta feature</h4>
-
-    <code>cg_event_double_click</code> is available since Karabiner-Elements 13.5.1.
-
-</div>
-
-<p>Send pseudo double click event.
+	<p>Send pseudo double click event.
 <code>cg_event_double_click</code> ensures that the click event occurs at the same location even if the mouse cursor is moving between the first click and the second click.</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json"><span style="color:#000;font-weight:bold">{</span>
     <span style="color:#204a87;font-weight:bold">&#34;to&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
