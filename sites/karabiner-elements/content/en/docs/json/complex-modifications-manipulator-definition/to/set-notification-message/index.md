@@ -7,10 +7,6 @@ weight: 310
 
 {{< local-image src="images/set-notification-message@2x.png" >}}
 
-{{% alert title="Beta feature" color="danger" %}}
-`software_function` is available since Karabiner-Elements 13.5.9.
-{{% /alert %}}
-
 ```json
 {
     "to": [

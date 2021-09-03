@@ -3,10 +3,6 @@ title: 'set_mouse_cursor_position'
 weight: 200
 ---
 
-{{% alert title="Beta feature" color="danger" %}}
-`set_mouse_cursor_position` is available since Karabiner-Elements 13.5.1.
-{{% /alert %}}
-
 Move the mouse cursor to the specified point.
 
 ```json

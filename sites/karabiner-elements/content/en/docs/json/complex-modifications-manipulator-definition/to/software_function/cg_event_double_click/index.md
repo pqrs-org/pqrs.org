@@ -3,10 +3,6 @@ title: 'cg_event_double_click'
 weight: 100
 ---
 
-{{% alert title="Beta feature" color="danger" %}}
-`cg_event_double_click` is available since Karabiner-Elements 13.5.1.
-{{% /alert %}}
-
 Send pseudo double click event.
 `cg_event_double_click` ensures that the click event occurs at the same location even if the mouse cursor is moving between the first click and the second click.
 
