@@ -6,6 +6,14 @@ exclude_search: true
 type: releasenotes
 ---
 
+## Karabiner-Elements 13.7.0
+
+-   [📦 Download](https://github.com/pqrs-org/Karabiner-Elements/releases/download/v13.7.0/Karabiner-Elements-13.7.0.dmg)
+-   📅 Release date
+    -   Sep 6, 2021
+-   🐛 Bug Fixes
+    -   Fix an issue that `shell_command` does not set environment variables (HOME, USER, etc.).
+
 ## Karabiner-Elements 13.6.0
 
 -   [📦 Download](https://github.com/pqrs-org/Karabiner-Elements/releases/download/v13.6.0/Karabiner-Elements-13.6.0.dmg)
