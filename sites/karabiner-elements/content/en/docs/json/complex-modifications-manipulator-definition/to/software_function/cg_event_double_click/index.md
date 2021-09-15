@@ -3,7 +3,7 @@ title: 'cg_event_double_click'
 weight: 100
 ---
 
-Send pseudo double click event.
+Send  double click event by software.
 `cg_event_double_click` ensures that the click event occurs at the same location even if the mouse cursor is moving between the first click and the second click.
 
 ```json
