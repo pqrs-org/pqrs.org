@@ -539,8 +539,21 @@
         
         &lt;p&gt;&lt;code&gt;software_function&lt;/code&gt; triggers a function that is implemented by software.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;./cg_event_double_click/&#34;&gt;cg_event_double_click&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;./set_mouse_cursor_position/&#34;&gt;set_mouse_cursor_position&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;./cg_event_double_click/&#34;&gt;cg_event_double_click&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;Send double click event by software.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;./set_mouse_cursor_position/&#34;&gt;set_mouse_cursor_position&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;Move the mouse cursor to the specified point.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;./iokit_power_management_sleep_system&#34;&gt;iokit_power_management_sleep_system&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;Causes an immediate system sleep.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 
       </description>
