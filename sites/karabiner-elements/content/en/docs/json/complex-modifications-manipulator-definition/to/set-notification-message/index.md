@@ -11,7 +11,7 @@ weight: 310
 {
     "to": [
         {
-            "set_notificaion_message": {
+            "set_notification_message": {
                 "id": "identifier of the message",
                 "text": "message text"
             }
