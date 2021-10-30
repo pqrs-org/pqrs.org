@@ -6,6 +6,22 @@ exclude_search: true
 type: releasenotes
 ---
 
+## Karabiner-Elements 14.0.0
+
+-   [📦 Download](https://github.com/pqrs-org/Karabiner-Elements/releases/download/v14.0.0/Karabiner-Elements-14.0.0.dmg)
+-   📅 Release date
+    -   Oct 30, 2021
+-   💥 Breaking changes
+    -   macOS 10.15 support has been dropped.
+-   ✨ New Features
+    -   Supported Touch ID on Magic Keyboard.
+    -   Supported application launcher keys (Mail, Browser, Calculator, etc.) which are belong to HID Consumer Usage Page and Application Launch Buttons Usage.
+    -   Add new features for writing your own settings:
+        -   Added [`software_function.iokit_power_management_sleep_system`](https://karabiner-elements.pqrs.org/docs/json/complex-modifications-manipulator-definition/to/software_function/iokit_power_management_sleep_system/).
+-   ⚡️ Improvements
+    -   Update application icons. (Thanks to Kouji TAMURA)
+    -   EventViewer is rewritten in SwiftUI.
+
 ## Karabiner-Elements 13.7.0
 
 -   [📦 Download](https://github.com/pqrs-org/Karabiner-Elements/releases/download/v13.7.0/Karabiner-Elements-13.7.0.dmg)
