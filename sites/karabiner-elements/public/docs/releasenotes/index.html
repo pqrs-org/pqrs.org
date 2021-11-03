@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="generator" content="Hugo 0.88.1" /><META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+<meta name="generator" content="Hugo 0.89.0" /><META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
 
 
 <link rel="shortcut icon" href="/favicons/favicon.ico" >
@@ -21,33 +21,36 @@
 
 
   
-  <meta name="description" content="Karabiner-Elements 13.7.0
+  <meta name="description" content="Karabiner-Elements 14.2.0
 
 📦 Download
 📅 Release date
 
-Sep 6, 2021
+Nov 3, 2021
 
 
-🐛 Bug Fixes
+💥 Breaking changes
 
-Fix an issue that shell_command does not set environment variables …">
+macOS 10.15 support has been dropped.
+
+
+✨ New Features …">
 <meta property="og:title" content="Release notes" />
-<meta property="og:description" content="Karabiner-Elements 13.7.0  📦 Download 📅 Release date  Sep 6, 2021   🐛 Bug Fixes  Fix an issue that shell_command does not set environment variables (HOME, USER, etc.).    Karabiner-Elements 13.6.0  📦 Download 📅 Release date  Sep 3, 2021   ✨ New Features  Add new features for writing your own settings:  Added software_function.cg_event_double_click. Added software_function.set_mouse_cursor_position. Added set_notification_message.     🐛 Bug Fixes  Fixed an issue that karabiner." />
+<meta property="og:description" content="Karabiner-Elements 14.2.0  📦 Download 📅 Release date  Nov 3, 2021   💥 Breaking changes  macOS 10.15 support has been dropped.   ✨ New Features  Supported Touch ID on Magic Keyboard. Supported application launcher keys (Mail, Browser, Calculator, etc.) which are belong to HID Consumer Usage Page and Application Launch Buttons Usage. Add new features for writing your own settings:  Added software_function.iokit_power_management_sleep_system.     🐛 Bug Fixes  Fixed an issue that an alert window appears in an incorrect position on macOS 12 Monterey." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/releasenotes/" /><meta property="og:image" content="https://karabiner-elements.pqrs.org/images/logo.png"/><meta property="article:section" content="docs" />
 
 <meta property="og:site_name" content="Karabiner-Elements" />
 
 <meta itemprop="name" content="Release notes">
-<meta itemprop="description" content="Karabiner-Elements 13.7.0  📦 Download 📅 Release date  Sep 6, 2021   🐛 Bug Fixes  Fix an issue that shell_command does not set environment variables (HOME, USER, etc.).    Karabiner-Elements 13.6.0  📦 Download 📅 Release date  Sep 3, 2021   ✨ New Features  Add new features for writing your own settings:  Added software_function.cg_event_double_click. Added software_function.set_mouse_cursor_position. Added set_notification_message.     🐛 Bug Fixes  Fixed an issue that karabiner.">
+<meta itemprop="description" content="Karabiner-Elements 14.2.0  📦 Download 📅 Release date  Nov 3, 2021   💥 Breaking changes  macOS 10.15 support has been dropped.   ✨ New Features  Supported Touch ID on Magic Keyboard. Supported application launcher keys (Mail, Browser, Calculator, etc.) which are belong to HID Consumer Usage Page and Application Launch Buttons Usage. Add new features for writing your own settings:  Added software_function.iokit_power_management_sleep_system.     🐛 Bug Fixes  Fixed an issue that an alert window appears in an incorrect position on macOS 12 Monterey.">
 
-<meta itemprop="wordCount" content="6393"><meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
+<meta itemprop="wordCount" content="6485"><meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
 
 <meta name="twitter:title" content="Release notes"/>
-<meta name="twitter:description" content="Karabiner-Elements 13.7.0  📦 Download 📅 Release date  Sep 6, 2021   🐛 Bug Fixes  Fix an issue that shell_command does not set environment variables (HOME, USER, etc.).    Karabiner-Elements 13.6.0  📦 Download 📅 Release date  Sep 3, 2021   ✨ New Features  Add new features for writing your own settings:  Added software_function.cg_event_double_click. Added software_function.set_mouse_cursor_position. Added set_notification_message.     🐛 Bug Fixes  Fixed an issue that karabiner."/>
+<meta name="twitter:description" content="Karabiner-Elements 14.2.0  📦 Download 📅 Release date  Nov 3, 2021   💥 Breaking changes  macOS 10.15 support has been dropped.   ✨ New Features  Supported Touch ID on Magic Keyboard. Supported application launcher keys (Mail, Browser, Calculator, etc.) which are belong to HID Consumer Usage Page and Application Launch Buttons Usage. Add new features for writing your own settings:  Added software_function.iokit_power_management_sleep_system.     🐛 Bug Fixes  Fixed an issue that an alert window appears in an incorrect position on macOS 12 Monterey."/>
 
 
 
@@ -121,7 +124,7 @@ if (!doNotTrack) {
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.943ed1ccbf9974f29d8a3448f977b04a.json"
+  data-offline-search-index-json-src="/offline-search-index.e3dae2a93e4b5c25017129fee00f8476.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="25"
 >
@@ -143,7 +146,7 @@ if (!doNotTrack) {
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.943ed1ccbf9974f29d8a3448f977b04a.json"
+  data-offline-search-index-json-src="/offline-search-index.e3dae2a93e4b5c25017129fee00f8476.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="25"
 >
@@ -646,6 +649,7 @@ if (!doNotTrack) {
 
 <nav id="TableOfContents">
   <ul>
+    <li><a href="#karabiner-elements-1420">Karabiner-Elements 14.2.0</a></li>
     <li><a href="#karabiner-elements-1370">Karabiner-Elements 13.7.0</a></li>
     <li><a href="#karabiner-elements-1360">Karabiner-Elements 13.6.0</a></li>
     <li><a href="#karabiner-elements-1350">Karabiner-Elements 13.5.0</a></li>
@@ -796,7 +800,43 @@ if (!doNotTrack) {
             
 <div class="td-content release-notes">
 	<h1>Release notes</h1>
-	<h2 id="karabiner-elements-1370">Karabiner-Elements 13.7.0</h2>
+	<h2 id="karabiner-elements-1420">Karabiner-Elements 14.2.0</h2>
+<ul>
+<li><a href="https://github.com/pqrs-org/Karabiner-Elements/releases/download/v14.2.0/Karabiner-Elements-14.2.0.dmg">📦 Download</a></li>
+<li>📅 Release date
+<ul>
+<li>Nov 3, 2021</li>
+</ul>
+</li>
+<li>💥 Breaking changes
+<ul>
+<li>macOS 10.15 support has been dropped.</li>
+</ul>
+</li>
+<li>✨ New Features
+<ul>
+<li>Supported Touch ID on Magic Keyboard.</li>
+<li>Supported application launcher keys (Mail, Browser, Calculator, etc.) which are belong to HID Consumer Usage Page and Application Launch Buttons Usage.</li>
+<li>Add new features for writing your own settings:
+<ul>
+<li>Added <a href="https://karabiner-elements.pqrs.org/docs/json/complex-modifications-manipulator-definition/to/software_function/iokit_power_management_sleep_system/"><code>software_function.iokit_power_management_sleep_system</code></a>.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>🐛 Bug Fixes
+<ul>
+<li>Fixed an issue that an alert window appears in an incorrect position on macOS 12 Monterey.</li>
+</ul>
+</li>
+<li>⚡️ Improvements
+<ul>
+<li>Update application icons. (Thanks to Kouji TAMURA)</li>
+<li>EventViewer is rewritten in SwiftUI.</li>
+</ul>
+</li>
+</ul>
+<h2 id="karabiner-elements-1370">Karabiner-Elements 13.7.0</h2>
 <ul>
 <li><a href="https://github.com/pqrs-org/Karabiner-Elements/releases/download/v13.7.0/Karabiner-Elements-13.7.0.dmg">📦 Download</a></li>
 <li>📅 Release date

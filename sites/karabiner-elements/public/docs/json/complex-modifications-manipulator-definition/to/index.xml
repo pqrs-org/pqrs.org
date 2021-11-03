@@ -289,8 +289,8 @@
     &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;},&lt;/span&gt;
     &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;#34;to&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;
         &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
-            &lt;span style=&#34;color:#a40000&#34;&gt;//&lt;/span&gt; &lt;span style=&#34;color:#a40000&#34;&gt;Show&lt;/span&gt; &lt;span style=&#34;color:#a40000&#34;&gt;the&lt;/span&gt; &lt;span style=&#34;color:#a40000&#34;&gt;notification&lt;/span&gt; &lt;span style=&#34;color:#a40000&#34;&gt;message&lt;/span&gt;
-            &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;#34;set_notification_message&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+            &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// Show the notification message
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;            &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;#34;set_notification_message&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
                 &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;#34;id&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;org.pqrs.notificaion_message_example&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
                 &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;#34;text&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;Hello World!&amp;#34;&lt;/span&gt;
             &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
@@ -301,8 +301,8 @@
     &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;],&lt;/span&gt;
     &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;#34;to_after_key_up&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;
         &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
-            &lt;span style=&#34;color:#a40000&#34;&gt;//&lt;/span&gt; &lt;span style=&#34;color:#a40000&#34;&gt;Hide&lt;/span&gt; &lt;span style=&#34;color:#a40000&#34;&gt;the&lt;/span&gt; &lt;span style=&#34;color:#a40000&#34;&gt;notification&lt;/span&gt; &lt;span style=&#34;color:#a40000&#34;&gt;message&lt;/span&gt;
-            &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;#34;set_notification_message&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+            &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// Hide the notification message
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;            &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;#34;set_notification_message&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
                 &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;#34;id&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;org.pqrs.notificaion_message_example&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
                 &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;#34;text&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;
             &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;

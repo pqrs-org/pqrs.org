@@ -61,7 +61,7 @@ Follow this instruction to set up Karabiner-Elements.&lt;/p&gt;
   &lt;img
     src=&#34;/docs/getting-started/installation/images/karabiner-elements-icon@2x.png&#34;
     alt=&#34;karabiner-elements-icon@2x.png&#34;
-    style=&#34;width: 176px&#34;
+    style=&#34;width: 177px&#34;
   /&gt;
 &lt;/figure&gt;
 &lt;/li&gt;
@@ -108,8 +108,8 @@ Follow this instruction to set up Karabiner-Elements.&lt;/p&gt;
 
 &lt;figure&gt;
   &lt;img
-    src=&#34;/docs/getting-started/installation/images/catalina-karabiner-grabber@2x.png&#34;
-    alt=&#34;catalina-karabiner-grabber@2x.png&#34;
+    src=&#34;/docs/getting-started/installation/images/karabiner-grabber@2x.png&#34;
+    alt=&#34;karabiner-grabber@2x.png&#34;
     style=&#34;width: 461px&#34;
   /&gt;
 &lt;/figure&gt;
@@ -123,8 +123,8 @@ Follow this instruction to set up Karabiner-Elements.&lt;/p&gt;
 
 &lt;figure&gt;
   &lt;img
-    src=&#34;/docs/getting-started/installation/images/catalina-karabiner-observer@2x.png&#34;
-    alt=&#34;catalina-karabiner-observer@2x.png&#34;
+    src=&#34;/docs/getting-started/installation/images/karabiner-observer@2x.png&#34;
+    alt=&#34;karabiner-observer@2x.png&#34;
     style=&#34;width: 461px&#34;
   /&gt;
 &lt;/figure&gt;
@@ -141,9 +141,9 @@ Choose &lt;strong&gt;Privacy &amp;gt; Input Monitoring&lt;/strong&gt;, and then 
 
 &lt;figure&gt;
   &lt;img
-    src=&#34;/docs/getting-started/installation/images/catalina-input-monitoring@2x.png&#34;
-    alt=&#34;catalina-input-monitoring@2x.png&#34;
-    style=&#34;width: 668px&#34;
+    src=&#34;/docs/getting-started/installation/images/input-monitoring@2x.png&#34;
+    alt=&#34;input-monitoring@2x.png&#34;
+    style=&#34;width: 1000px&#34;
   /&gt;
 &lt;/figure&gt;
 &lt;/li&gt;
@@ -163,7 +163,7 @@ Choose your keyboard layout. (ANSI, ISO or JIS)
   &lt;img
     src=&#34;/docs/getting-started/installation/images/keyboard-setup-assistant@2x.png&#34;
     alt=&#34;keyboard-setup-assistant@2x.png&#34;
-    style=&#34;width: 616px&#34;
+    style=&#34;width: 800px&#34;
   /&gt;
 &lt;/figure&gt;
 &lt;/li&gt;

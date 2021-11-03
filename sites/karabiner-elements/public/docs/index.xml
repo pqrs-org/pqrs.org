@@ -159,7 +159,7 @@ You have to restart macOS in normal mode to use Karabiner-Elements.
   &lt;img
     src=&#34;/docs/manual/misc/ignored-temporarily/images/notification-window@2x.png&#34;
     alt=&#34;notification-window@2x.png&#34;
-    style=&#34;width: 455px&#34;
+    style=&#34;width: 434px&#34;
   /&gt;
 &lt;/figure&gt;
 
@@ -372,7 +372,7 @@ You have to allow &lt;code&gt;karabiner_console_user_server&lt;/code&gt; in Secu
   &lt;img
     src=&#34;/docs/manual/configuration/configure-simple-modifications/images/karabiner-elements-eventviewer-name@2x.png&#34;
     alt=&#34;karabiner-elements-eventviewer-name@2x.png&#34;
-    style=&#34;width: 874px&#34;
+    style=&#34;width: 1100px&#34;
   /&gt;
 &lt;/figure&gt;
 
@@ -658,7 +658,7 @@ Follow this instruction to set up Karabiner-Elements.&lt;/p&gt;
   &lt;img
     src=&#34;/docs/getting-started/installation/images/karabiner-elements-icon@2x.png&#34;
     alt=&#34;karabiner-elements-icon@2x.png&#34;
-    style=&#34;width: 176px&#34;
+    style=&#34;width: 177px&#34;
   /&gt;
 &lt;/figure&gt;
 &lt;/li&gt;
@@ -705,8 +705,8 @@ Follow this instruction to set up Karabiner-Elements.&lt;/p&gt;
 
 &lt;figure&gt;
   &lt;img
-    src=&#34;/docs/getting-started/installation/images/catalina-karabiner-grabber@2x.png&#34;
-    alt=&#34;catalina-karabiner-grabber@2x.png&#34;
+    src=&#34;/docs/getting-started/installation/images/karabiner-grabber@2x.png&#34;
+    alt=&#34;karabiner-grabber@2x.png&#34;
     style=&#34;width: 461px&#34;
   /&gt;
 &lt;/figure&gt;
@@ -720,8 +720,8 @@ Follow this instruction to set up Karabiner-Elements.&lt;/p&gt;
 
 &lt;figure&gt;
   &lt;img
-    src=&#34;/docs/getting-started/installation/images/catalina-karabiner-observer@2x.png&#34;
-    alt=&#34;catalina-karabiner-observer@2x.png&#34;
+    src=&#34;/docs/getting-started/installation/images/karabiner-observer@2x.png&#34;
+    alt=&#34;karabiner-observer@2x.png&#34;
     style=&#34;width: 461px&#34;
   /&gt;
 &lt;/figure&gt;
@@ -738,9 +738,9 @@ Choose &lt;strong&gt;Privacy &amp;gt; Input Monitoring&lt;/strong&gt;, and then 
 
 &lt;figure&gt;
   &lt;img
-    src=&#34;/docs/getting-started/installation/images/catalina-input-monitoring@2x.png&#34;
-    alt=&#34;catalina-input-monitoring@2x.png&#34;
-    style=&#34;width: 668px&#34;
+    src=&#34;/docs/getting-started/installation/images/input-monitoring@2x.png&#34;
+    alt=&#34;input-monitoring@2x.png&#34;
+    style=&#34;width: 1000px&#34;
   /&gt;
 &lt;/figure&gt;
 &lt;/li&gt;
@@ -760,7 +760,7 @@ Choose your keyboard layout. (ANSI, ISO or JIS)
   &lt;img
     src=&#34;/docs/getting-started/installation/images/keyboard-setup-assistant@2x.png&#34;
     alt=&#34;keyboard-setup-assistant@2x.png&#34;
-    style=&#34;width: 616px&#34;
+    style=&#34;width: 800px&#34;
   /&gt;
 &lt;/figure&gt;
 &lt;/li&gt;
@@ -911,7 +911,7 @@ Choose your keyboard layout. (ANSI, ISO or JIS)
   &lt;img
     src=&#34;/docs/json/extra/multitouch-extension/images/karabiner-elements-eventviewer-variables@2x.png&#34;
     alt=&#34;karabiner-elements-eventviewer-variables@2x.png&#34;
-    style=&#34;width: 874px&#34;
+    style=&#34;width: 1100px&#34;
   /&gt;
 &lt;/figure&gt;
 
@@ -941,7 +941,7 @@ To quit Karabiner-Elements, choose &amp;ldquo;Quit Karabiner-Elements&amp;rdquo;
   &lt;img
     src=&#34;/docs/manual/operation/quit/images/karabiner-elements-menu-quit@2x.png&#34;
     alt=&#34;karabiner-elements-menu-quit@2x.png&#34;
-    style=&#34;width: 441px&#34;
+    style=&#34;width: 338px&#34;
   /&gt;
 &lt;/figure&gt;
 
@@ -1099,7 +1099,7 @@ To quit Karabiner-Elements, choose &amp;ldquo;Quit Karabiner-Elements&amp;rdquo;
   &lt;img
     src=&#34;/docs/help/how-to/sticky-modifier-key/images/sticky-modifier-key-indicator@2x.png&#34;
     alt=&#34;sticky-modifier-key-indicator@2x.png&#34;
-    style=&#34;width: 408px&#34;
+    style=&#34;width: 438px&#34;
   /&gt;
 &lt;/figure&gt;
 
@@ -3267,7 +3267,7 @@ In other words, we cannot post the fn key event through the built-in keyboard if
   &lt;img
     src=&#34;/docs/help/advanced-topics/lock-icon/images/lock@2x.png&#34;
     alt=&#34;lock@2x.png&#34;
-    style=&#34;width: 423px&#34;
+    style=&#34;width: 390px&#34;
   /&gt;
 &lt;/figure&gt;
 
@@ -3371,8 +3371,8 @@ sudo chflags nouchg,noschg /Applications/Karabiner-EventViewer.app
     &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;},&lt;/span&gt;
     &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;#34;to&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;
         &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
-            &lt;span style=&#34;color:#a40000&#34;&gt;//&lt;/span&gt; &lt;span style=&#34;color:#a40000&#34;&gt;Show&lt;/span&gt; &lt;span style=&#34;color:#a40000&#34;&gt;the&lt;/span&gt; &lt;span style=&#34;color:#a40000&#34;&gt;notification&lt;/span&gt; &lt;span style=&#34;color:#a40000&#34;&gt;message&lt;/span&gt;
-            &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;#34;set_notification_message&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+            &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// Show the notification message
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;            &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;#34;set_notification_message&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
                 &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;#34;id&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;org.pqrs.notificaion_message_example&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
                 &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;#34;text&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;Hello World!&amp;#34;&lt;/span&gt;
             &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
@@ -3383,8 +3383,8 @@ sudo chflags nouchg,noschg /Applications/Karabiner-EventViewer.app
     &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;],&lt;/span&gt;
     &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;#34;to_after_key_up&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;
         &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
-            &lt;span style=&#34;color:#a40000&#34;&gt;//&lt;/span&gt; &lt;span style=&#34;color:#a40000&#34;&gt;Hide&lt;/span&gt; &lt;span style=&#34;color:#a40000&#34;&gt;the&lt;/span&gt; &lt;span style=&#34;color:#a40000&#34;&gt;notification&lt;/span&gt; &lt;span style=&#34;color:#a40000&#34;&gt;message&lt;/span&gt;
-            &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;#34;set_notification_message&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+            &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// Hide the notification message
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;            &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;#34;set_notification_message&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
                 &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;#34;id&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;org.pqrs.notificaion_message_example&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
                 &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;#34;text&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;
             &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
@@ -3428,7 +3428,7 @@ You can show keyboard and mouse events by using it.&lt;/p&gt;
   &lt;img
     src=&#34;/docs/manual/operation/eventviewer/images/karabiner-elements-eventviewer-icon@2x.png&#34;
     alt=&#34;karabiner-elements-eventviewer-icon@2x.png&#34;
-    style=&#34;width: 200px&#34;
+    style=&#34;width: 198px&#34;
   /&gt;
 &lt;/figure&gt;
 &lt;/li&gt;
@@ -3444,7 +3444,7 @@ You can show keyboard and mouse events by using it.&lt;/p&gt;
   &lt;img
     src=&#34;/docs/manual/operation/eventviewer/images/karabiner-elements-eventviewer@2x.png&#34;
     alt=&#34;karabiner-elements-eventviewer@2x.png&#34;
-    style=&#34;width: 874px&#34;
+    style=&#34;width: 1100px&#34;
   /&gt;
 &lt;/figure&gt;
 &lt;/li&gt;
