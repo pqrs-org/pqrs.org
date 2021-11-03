@@ -41,7 +41,7 @@ Please follow [this instruction](../../help/troubleshooting/kext-allow-button-do
 3.  System Preferences will be open after you press the Open System Preferences button.<br/>
     Choose **Privacy > Input Monitoring**, and then enable **karabiner_grabber** and **karabiner_observer**. <br />
     (You have to unlock configuration by the left bottom icon.)
-    {{< local-image src="images/catalina-input-monitoring@2x.png" >}}
+    {{< local-image src="images/input-monitoring@2x.png" >}}
 
 ## Setup your keyboard layout
 
