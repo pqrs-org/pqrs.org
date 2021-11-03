@@ -36,8 +36,8 @@ Please follow [this instruction](../../help/troubleshooting/kext-allow-button-do
 
 1.  **Two Keystroke Receiving** alerts will be shown on macOS Catalina or later after you allow the kernel extension.
 2.  Press **Open System Preferences** button on both alerts.
-    {{< local-image src="images/catalina-karabiner-grabber@2x.png" >}}
-    {{< local-image src="images/catalina-karabiner-observer@2x.png" >}}
+    {{< local-image src="images/karabiner-grabber@2x.png" >}}
+    {{< local-image src="images/karabiner-observer@2x.png" >}}
 3.  System Preferences will be open after you press the Open System Preferences button.<br/>
     Choose **Privacy > Input Monitoring**, and then enable **karabiner_grabber** and **karabiner_observer**. <br />
     (You have to unlock configuration by the left bottom icon.)
