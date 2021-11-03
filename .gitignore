@@ -1,2 +1,3 @@
 .DS_Store
 .well-known/
+.hugo_build.lock
