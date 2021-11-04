@@ -6,6 +6,16 @@ exclude_search: true
 type: releasenotes
 ---
 
+## ShowyEdge 5.3.0
+
+-   [📦 Download](https://github.com/pqrs-org/ShowyEdge/releases/download/v5.3.0/ShowyEdge-5.3.0.dmg)
+-   📅 Release date
+    -   Nov 4, 2021
+-   ⚡️ Improvements
+    -   Update application icons. (Thanks to Kouji TAMURA)
+    -   Minor source code improvement.
+    -   Sparkle Framework has been updated.
+
 ## ShowyEdge 5.2.0
 
 -   [📦 Download](https://github.com/pqrs-org/ShowyEdge/releases/download/v5.2.0/ShowyEdge-5.2.0.dmg)
