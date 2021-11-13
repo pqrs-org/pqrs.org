@@ -3,7 +3,7 @@ title: 'Downgrade'
 weight: 800
 ---
 
-If you faced a problem and you want to revert previous version, please downgrade Karabiner-Elements as follows.
+If you face a problem and you want to revert previous version, please downgrade Karabiner-Elements as follows.
 
 1.  [Uninstall Karabiner-Elements from uninstaller](../uninstall/).
 2.  [Download a previous version from here](../../../releasenotes/).
