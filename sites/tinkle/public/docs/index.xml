@@ -24,7 +24,7 @@
         
         &lt;h2 id=&#34;system-requirements&#34;&gt;System requirements&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;macOS Catalina (10.15) or later&lt;/li&gt;
+&lt;li&gt;macOS 11 Big Sur or later&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;
 &lt;ol&gt;
@@ -58,7 +58,7 @@
   &lt;img
     src=&#34;/docs/getting-started/images/launchpad@2x.png&#34;
     alt=&#34;launchpad@2x.png&#34;
-    style=&#34;width: 602px&#34;
+    style=&#34;width: 426px&#34;
   /&gt;
 &lt;/figure&gt;
 &lt;/li&gt;
@@ -130,7 +130,7 @@ To quit Tinkle, choose &amp;ldquo;Quit Tinkle&amp;rdquo; from menu bar.&lt;/p&gt
   &lt;img
     src=&#34;/docs/help/quit/images/menu-quit@2x.png&#34;
     alt=&#34;menu-quit@2x.png&#34;
-    style=&#34;width: 254px&#34;
+    style=&#34;width: 214px&#34;
   /&gt;
 &lt;/figure&gt;
 
@@ -181,7 +181,7 @@ To quit Tinkle, choose &amp;ldquo;Quit Tinkle&amp;rdquo; from menu bar.&lt;/p&gt
   &lt;img
     src=&#34;/docs/configuration/open-preferences-window/images/menu-icon@2x.png&#34;
     alt=&#34;menu-icon@2x.png&#34;
-    style=&#34;width: 308px&#34;
+    style=&#34;width: 219px&#34;
   /&gt;
 &lt;/figure&gt;
 &lt;/li&gt;
@@ -196,7 +196,7 @@ To quit Tinkle, choose &amp;ldquo;Quit Tinkle&amp;rdquo; from menu bar.&lt;/p&gt
   &lt;img
     src=&#34;/docs/configuration/open-preferences-window/images/launchpad@2x.png&#34;
     alt=&#34;launchpad@2x.png&#34;
-    style=&#34;width: 602px&#34;
+    style=&#34;width: 426px&#34;
   /&gt;
 &lt;/figure&gt;
 
@@ -275,7 +275,7 @@ To quit Tinkle, choose &amp;ldquo;Quit Tinkle&amp;rdquo; from menu bar.&lt;/p&gt
   &lt;img
     src=&#34;/docs/help/uninstall/images/uninstall@2x.png&#34;
     alt=&#34;uninstall@2x.png&#34;
-    style=&#34;width: 628px&#34;
+    style=&#34;width: 651px&#34;
   /&gt;
 &lt;/figure&gt;
 &lt;/li&gt;

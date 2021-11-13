@@ -21,40 +21,38 @@
 
 
   
-  <meta name="description" content="Tinkle 1.7.0
+  <meta name="description" content="Tinkle 2.0.0
 
 📦 Download
 📅 Release date
 
-Jul 4, 2021
+Nov 13, 2021
+
+
+💥 Breaking changes
+
+macOS 10.15 support has been dropped.
 
 
 ⚡️ Improvements
 
-Sparkle Framework has been updated.
-
-
-
-Tinkle 1.6.0
-
-📦 Download
-📅 Release date …">
+Update …">
 <meta property="og:title" content="Release notes" />
-<meta property="og:description" content="Tinkle 1.7.0  📦 Download 📅 Release date  Jul 4, 2021   ⚡️ Improvements  Sparkle Framework has been updated.    Tinkle 1.6.0  📦 Download 📅 Release date  Oct 3, 2020   ⚡️ Improvements  New effect colors:  Shock wave (light) Shock wave (gray) Shock wave (dark) Neon (light) Neon (gray) Neon (dark)   Updated the app icon. Improved preferences window layout on macOS Big Sur." />
+<meta property="og:description" content="Tinkle 2.0.0  📦 Download 📅 Release date  Nov 13, 2021   💥 Breaking changes  macOS 10.15 support has been dropped.   ⚡️ Improvements  Update application icons. (Thanks to Kouji TAMURA) Minor source code improvement. Sparkle Framework has been updated.    Tinkle 1.7.0  📦 Download 📅 Release date  Jul 4, 2021   ⚡️ Improvements  Sparkle Framework has been updated.    Tinkle 1." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/releasenotes/" /><meta property="og:image" content="https://tinkle.pqrs.org/images/logo.png"/><meta property="article:section" content="docs" />
 
 <meta property="og:site_name" content="Tinkle" />
 
 <meta itemprop="name" content="Release notes">
-<meta itemprop="description" content="Tinkle 1.7.0  📦 Download 📅 Release date  Jul 4, 2021   ⚡️ Improvements  Sparkle Framework has been updated.    Tinkle 1.6.0  📦 Download 📅 Release date  Oct 3, 2020   ⚡️ Improvements  New effect colors:  Shock wave (light) Shock wave (gray) Shock wave (dark) Neon (light) Neon (gray) Neon (dark)   Updated the app icon. Improved preferences window layout on macOS Big Sur.">
+<meta itemprop="description" content="Tinkle 2.0.0  📦 Download 📅 Release date  Nov 13, 2021   💥 Breaking changes  macOS 10.15 support has been dropped.   ⚡️ Improvements  Update application icons. (Thanks to Kouji TAMURA) Minor source code improvement. Sparkle Framework has been updated.    Tinkle 1.7.0  📦 Download 📅 Release date  Jul 4, 2021   ⚡️ Improvements  Sparkle Framework has been updated.    Tinkle 1.">
 
-<meta itemprop="wordCount" content="152"><meta itemprop="image" content="https://tinkle.pqrs.org/images/logo.png"/>
+<meta itemprop="wordCount" content="189"><meta itemprop="image" content="https://tinkle.pqrs.org/images/logo.png"/>
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://tinkle.pqrs.org/images/logo.png"/>
 
 <meta name="twitter:title" content="Release notes"/>
-<meta name="twitter:description" content="Tinkle 1.7.0  📦 Download 📅 Release date  Jul 4, 2021   ⚡️ Improvements  Sparkle Framework has been updated.    Tinkle 1.6.0  📦 Download 📅 Release date  Oct 3, 2020   ⚡️ Improvements  New effect colors:  Shock wave (light) Shock wave (gray) Shock wave (dark) Neon (light) Neon (gray) Neon (dark)   Updated the app icon. Improved preferences window layout on macOS Big Sur."/>
+<meta name="twitter:description" content="Tinkle 2.0.0  📦 Download 📅 Release date  Nov 13, 2021   💥 Breaking changes  macOS 10.15 support has been dropped.   ⚡️ Improvements  Update application icons. (Thanks to Kouji TAMURA) Minor source code improvement. Sparkle Framework has been updated.    Tinkle 1.7.0  📦 Download 📅 Release date  Jul 4, 2021   ⚡️ Improvements  Sparkle Framework has been updated.    Tinkle 1."/>
 
 
 
@@ -128,7 +126,7 @@ if (!doNotTrack) {
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.f4775f60078b160f5ec1a615ecc8ce0f.json"
+  data-offline-search-index-json-src="/offline-search-index.e82d7b1b1da0a847431393c2f9853d14.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="25"
 >
@@ -150,7 +148,7 @@ if (!doNotTrack) {
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.f4775f60078b160f5ec1a615ecc8ce0f.json"
+  data-offline-search-index-json-src="/offline-search-index.e82d7b1b1da0a847431393c2f9853d14.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="25"
 >
@@ -260,6 +258,7 @@ if (!doNotTrack) {
 
 <nav id="TableOfContents">
   <ul>
+    <li><a href="#tinkle-200">Tinkle 2.0.0</a></li>
     <li><a href="#tinkle-170">Tinkle 1.7.0</a></li>
     <li><a href="#tinkle-160">Tinkle 1.6.0</a></li>
     <li><a href="#tinkle-120">Tinkle 1.2.0</a></li>
@@ -322,7 +321,28 @@ if (!doNotTrack) {
             
 <div class="td-content release-notes">
 	<h1>Release notes</h1>
-	<h2 id="tinkle-170">Tinkle 1.7.0</h2>
+	<h2 id="tinkle-200">Tinkle 2.0.0</h2>
+<ul>
+<li><a href="https://github.com/pqrs-org/Tinkle/releases/download/v2.0.0/Tinkle-2.0.0.dmg">📦 Download</a></li>
+<li>📅 Release date
+<ul>
+<li>Nov 13, 2021</li>
+</ul>
+</li>
+<li>💥 Breaking changes
+<ul>
+<li>macOS 10.15 support has been dropped.</li>
+</ul>
+</li>
+<li>⚡️ Improvements
+<ul>
+<li>Update application icons. (Thanks to Kouji TAMURA)</li>
+<li>Minor source code improvement.</li>
+<li>Sparkle Framework has been updated.</li>
+</ul>
+</li>
+</ul>
+<h2 id="tinkle-170">Tinkle 1.7.0</h2>
 <ul>
 <li><a href="https://github.com/pqrs-org/Tinkle/releases/download/v1.7.0/Tinkle-1.7.0.dmg">📦 Download</a></li>
 <li>📅 Release date
