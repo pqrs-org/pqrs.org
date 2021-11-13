@@ -6,7 +6,7 @@ simple_list: true
 
 ## System requirements
 
--   macOS Catalina (10.15) or later
+-   macOS 11 Big Sur or later
 
 ## Installation
 

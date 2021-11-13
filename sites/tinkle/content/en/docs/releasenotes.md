@@ -6,6 +6,18 @@ exclude_search: true
 type: releasenotes
 ---
 
+## Tinkle 2.0.0
+
+-   [📦 Download](https://github.com/pqrs-org/Tinkle/releases/download/v2.0.0/Tinkle-2.0.0.dmg)
+-   📅 Release date
+    -   Nov 13, 2021
+-   💥 Breaking changes
+    -   macOS 10.15 support has been dropped.
+-   ⚡️ Improvements
+    -   Update application icons. (Thanks to Kouji TAMURA)
+    -   Minor source code improvement.
+    -   Sparkle Framework has been updated.
+
 ## Tinkle 1.7.0
 
 -   [📦 Download](https://github.com/pqrs-org/Tinkle/releases/download/v1.7.0/Tinkle-1.7.0.dmg)
