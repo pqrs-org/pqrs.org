@@ -19,36 +19,34 @@
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
 <title>Release notes | Karabiner-Elements</title>
-<meta name="description" content="Karabiner-Elements 14.2.0
+<meta name="description" content="Karabiner-Elements 14.3.0
 
 📦 Download
 📅 Release date
 
-Nov 3, 2021
+Nov 20, 2021
 
 
-💥 Breaking changes
+⚡️ Improvements
 
-macOS 10.15 support has been dropped.
-
-
-✨ New Features …">
+Added System Extensions tab to EventViewer.
+Added a workaround …">
 <meta property="og:title" content="Release notes" />
-<meta property="og:description" content="Karabiner-Elements 14.2.0  📦 Download 📅 Release date  Nov 3, 2021   💥 Breaking changes  macOS 10.15 support has been dropped.   ✨ New Features  Supported Touch ID on Magic Keyboard. Supported application launcher keys (Mail, Browser, Calculator, etc.) which are belong to HID Consumer Usage Page and Application Launch Buttons Usage. Add new features for writing your own settings:  Added software_function.iokit_power_management_sleep_system.     🐛 Bug Fixes  Fixed an issue that an alert window appears in an incorrect position on macOS 12 Monterey." />
+<meta property="og:description" content="Karabiner-Elements 14.3.0  📦 Download 📅 Release date  Nov 20, 2021   ⚡️ Improvements  Added System Extensions tab to EventViewer. Added a workaround for macOS&rsquo;s ioreg command issue that consumes high CPU usage on macOS Monterey.    Karabiner-Elements 14.2.0  📦 Download 📅 Release date  Nov 3, 2021   💥 Breaking changes  macOS 10.15 support has been dropped.   ✨ New Features  Supported Touch ID on Magic Keyboard." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/releasenotes/" /><meta property="og:image" content="https://karabiner-elements.pqrs.org/images/logo.png"/><meta property="article:section" content="docs" />
 
 <meta property="og:site_name" content="Karabiner-Elements" />
 
 <meta itemprop="name" content="Release notes">
-<meta itemprop="description" content="Karabiner-Elements 14.2.0  📦 Download 📅 Release date  Nov 3, 2021   💥 Breaking changes  macOS 10.15 support has been dropped.   ✨ New Features  Supported Touch ID on Magic Keyboard. Supported application launcher keys (Mail, Browser, Calculator, etc.) which are belong to HID Consumer Usage Page and Application Launch Buttons Usage. Add new features for writing your own settings:  Added software_function.iokit_power_management_sleep_system.     🐛 Bug Fixes  Fixed an issue that an alert window appears in an incorrect position on macOS 12 Monterey.">
+<meta itemprop="description" content="Karabiner-Elements 14.3.0  📦 Download 📅 Release date  Nov 20, 2021   ⚡️ Improvements  Added System Extensions tab to EventViewer. Added a workaround for macOS&rsquo;s ioreg command issue that consumes high CPU usage on macOS Monterey.    Karabiner-Elements 14.2.0  📦 Download 📅 Release date  Nov 3, 2021   💥 Breaking changes  macOS 10.15 support has been dropped.   ✨ New Features  Supported Touch ID on Magic Keyboard.">
 
-<meta itemprop="wordCount" content="6485"><meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
+<meta itemprop="wordCount" content="6519"><meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
 
 <meta name="twitter:title" content="Release notes"/>
-<meta name="twitter:description" content="Karabiner-Elements 14.2.0  📦 Download 📅 Release date  Nov 3, 2021   💥 Breaking changes  macOS 10.15 support has been dropped.   ✨ New Features  Supported Touch ID on Magic Keyboard. Supported application launcher keys (Mail, Browser, Calculator, etc.) which are belong to HID Consumer Usage Page and Application Launch Buttons Usage. Add new features for writing your own settings:  Added software_function.iokit_power_management_sleep_system.     🐛 Bug Fixes  Fixed an issue that an alert window appears in an incorrect position on macOS 12 Monterey."/>
+<meta name="twitter:description" content="Karabiner-Elements 14.3.0  📦 Download 📅 Release date  Nov 20, 2021   ⚡️ Improvements  Added System Extensions tab to EventViewer. Added a workaround for macOS&rsquo;s ioreg command issue that consumes high CPU usage on macOS Monterey.    Karabiner-Elements 14.2.0  📦 Download 📅 Release date  Nov 3, 2021   💥 Breaking changes  macOS 10.15 support has been dropped.   ✨ New Features  Supported Touch ID on Magic Keyboard."/>
 
 
 
@@ -111,7 +109,7 @@ if (!doNotTrack) {
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.a1f76114cf4cc888bf7575675fd1afde.json"
+  data-offline-search-index-json-src="/offline-search-index.ead09cfdf4a3d9e16214a446206eab7a.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="25"
 >
@@ -133,7 +131,7 @@ if (!doNotTrack) {
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.a1f76114cf4cc888bf7575675fd1afde.json"
+  data-offline-search-index-json-src="/offline-search-index.ead09cfdf4a3d9e16214a446206eab7a.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="25"
 >
@@ -624,6 +622,7 @@ if (!doNotTrack) {
 
 <nav id="TableOfContents">
   <ul>
+    <li><a href="#karabiner-elements-1430">Karabiner-Elements 14.3.0</a></li>
     <li><a href="#karabiner-elements-1420">Karabiner-Elements 14.2.0</a></li>
     <li><a href="#karabiner-elements-1370">Karabiner-Elements 13.7.0</a></li>
     <li><a href="#karabiner-elements-1360">Karabiner-Elements 13.6.0</a></li>
@@ -775,7 +774,22 @@ if (!doNotTrack) {
             
 <div class="td-content release-notes">
 	<h1>Release notes</h1>
-	<h2 id="karabiner-elements-1420">Karabiner-Elements 14.2.0</h2>
+	<h2 id="karabiner-elements-1430">Karabiner-Elements 14.3.0</h2>
+<ul>
+<li><a href="https://github.com/pqrs-org/Karabiner-Elements/releases/download/v14.3.0/Karabiner-Elements-14.3.0.dmg">📦 Download</a></li>
+<li>📅 Release date
+<ul>
+<li>Nov 20, 2021</li>
+</ul>
+</li>
+<li>⚡️ Improvements
+<ul>
+<li>Added System Extensions tab to EventViewer.</li>
+<li>Added a workaround for macOS&rsquo;s ioreg command issue that consumes high CPU usage on macOS Monterey.</li>
+</ul>
+</li>
+</ul>
+<h2 id="karabiner-elements-1420">Karabiner-Elements 14.2.0</h2>
 <ul>
 <li><a href="https://github.com/pqrs-org/Karabiner-Elements/releases/download/v14.2.0/Karabiner-Elements-14.2.0.dmg">📦 Download</a></li>
 <li>📅 Release date
