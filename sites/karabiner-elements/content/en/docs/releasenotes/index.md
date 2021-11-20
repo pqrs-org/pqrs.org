@@ -15,7 +15,6 @@ type: releasenotes
     -   Added System Extensions tab to EventViewer.
     -   Added a workaround for macOS's ioreg command issue that consumes high CPU usage on macOS Monterey.
 
-
 ## Karabiner-Elements 14.2.0
 
 -   [📦 Download](https://github.com/pqrs-org/Karabiner-Elements/releases/download/v14.2.0/Karabiner-Elements-14.2.0.dmg)
