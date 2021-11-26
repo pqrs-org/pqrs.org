@@ -497,10 +497,10 @@ Download the package from the above page, and then re-install Karabiner-Elements
         
         
         &lt;p&gt;This is the intended behavior.&lt;/p&gt;
-&lt;p&gt;The key code using in Karabiner-Elements is HID usage name.
-This is close to the physical location of the ANSI layout keyboard.&lt;/p&gt;
+&lt;p&gt;The key code name using in Karabiner-Elements is HID usage name.
+This is close to the physical key location on the ANSI layout keyboard.&lt;/p&gt;
 &lt;p&gt;For this reason, there are mismatches of symbols actually input and key code names on non-ANSI keyboards.&lt;/p&gt;
-&lt;p&gt;Determining which characters are to be input by keyboard event is later step in processing flow.
+&lt;p&gt;Determining which characters are to be input by keyboard event is the later step in the processing flow of macOS.
 Karabiner-Elements changes input events on a layer closer to the hardware, which is why it works like this.&lt;/p&gt;
 &lt;p&gt;Please use key code names that matches your layout.&lt;/p&gt;
 &lt;h2 id=&#34;ansi-layout&#34;&gt;ANSI layout&lt;/h2&gt;
