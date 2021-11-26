@@ -5,8 +5,8 @@ weight: 900
 
 This is the intended behavior.
 
-The key code using in Karabiner-Elements is HID usage name.
-This is close to the physical location of the ANSI layout keyboard.
+The key code name using in Karabiner-Elements is HID usage name.
+This is close to the physical key location on the ANSI layout keyboard.
 
 For this reason, there are mismatches of symbols actually input and key code names on non-ANSI keyboards.
 
