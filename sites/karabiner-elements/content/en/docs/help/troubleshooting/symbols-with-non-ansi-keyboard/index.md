@@ -29,6 +29,7 @@ Please use key code names that matches your layout.
 | ------ | ------- | -------------- |
 | JIS    | `@`     | open_bracket   |
 | JIS    | `[`     | close_bracket  |
+| JIS    | `]`     | backslash      |
 | JIS    | `\`     | international3 |
 | JIS    | `_`     | international1 |
 
