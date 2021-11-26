@@ -31,3 +31,7 @@ Please use key code names that matches your layout.
 | JIS    | `[`     | close_bracket  |
 | JIS    | `\`     | international3 |
 | JIS    | `_`     | international1 |
+
+## Related articles
+
+-   [Manual > Configuration > Set keyboard type](/docs/manual/configuration/configure-keyboard-type/)
