@@ -10,7 +10,7 @@ This is close to the physical key location on the ANSI layout keyboard.
 
 For this reason, there are mismatches of symbols actually input and key code names on non-ANSI keyboards.
 
-Determining which characters are to be input by keyboard event is later step in processing flow.
+Determining which characters are to be input by keyboard event is the later step in the processing flow of macOS.
 Karabiner-Elements changes input events on a layer closer to the hardware, which is why it works like this.
 
 Please use key code names that matches your layout.
