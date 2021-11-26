@@ -557,6 +557,11 @@ Karabiner-Elements changes input events on a layer closer to the hardware, which
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;JIS&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;]&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;backslash&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;JIS&lt;/td&gt;
 &lt;td&gt;&lt;code&gt;\&lt;/code&gt;&lt;/td&gt;
 &lt;td&gt;international3&lt;/td&gt;
 &lt;/tr&gt;
