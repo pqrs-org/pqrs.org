@@ -487,5 +487,93 @@ Download the package from the above page, and then re-install Karabiner-Elements
       </description>
     </item>
     
+    <item>
+      <title>Docs: Input symbols are different from the key code name on non-ANSI keyboards</title>
+      <link>/docs/help/troubleshooting/symbols-with-non-ansi-keyboard/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/help/troubleshooting/symbols-with-non-ansi-keyboard/</guid>
+      <description>
+        
+        
+        &lt;p&gt;This is the intended behavior.&lt;/p&gt;
+&lt;p&gt;The key code using in Karabiner-Elements is HID usage name.
+This is close to the physical location of the ANSI layout keyboard.&lt;/p&gt;
+&lt;p&gt;For this reason, there are mismatches of symbols actually input and key code names on non-ANSI keyboards.&lt;/p&gt;
+&lt;p&gt;Determining which characters are to be input by keyboard event is later step in processing flow.
+Karabiner-Elements changes input events on a layer closer to the hardware, which is why it works like this.&lt;/p&gt;
+&lt;p&gt;Please use key code names that matches your layout.&lt;/p&gt;
+&lt;h2 id=&#34;ansi-layout&#34;&gt;ANSI layout&lt;/h2&gt;
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/help/troubleshooting/symbols-with-non-ansi-keyboard/images/us@2x.png&#34;
+    alt=&#34;us@2x.png&#34;
+    style=&#34;width: 598px&#34;
+  /&gt;
+&lt;/figure&gt;
+
+&lt;h2 id=&#34;jis-layout&#34;&gt;JIS layout&lt;/h2&gt;
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/help/troubleshooting/symbols-with-non-ansi-keyboard/images/jis@2x.png&#34;
+    alt=&#34;jis@2x.png&#34;
+    style=&#34;width: 598px&#34;
+  /&gt;
+&lt;/figure&gt;
+
+&lt;h2 id=&#34;key-code-table&#34;&gt;Key code table&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Layout&lt;/th&gt;
+&lt;th&gt;Symbols&lt;/th&gt;
+&lt;th&gt;Key code name&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;JIS&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;@&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;open_bracket&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;JIS&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;[&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;close_bracket&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;JIS&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;\&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;international3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;JIS&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;_&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;international1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;related-articles&#34;&gt;Related articles&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;/docs/manual/configuration/configure-keyboard-type/&#34;&gt;Manual &amp;gt; Configuration &amp;gt; Set keyboard type&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
   </channel>
 </rss>

@@ -18,41 +18,35 @@
 <link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
-<title>Change a key to another key | Karabiner-Elements</title>
-<meta name="description" content="You can change a key to another key on Simple Modifications tab.
-
-Choose target device, then press Add item button.
-
-
-
-
-  
-
-
-
-  ">
-<meta property="og:title" content="Change a key to another key" />
-<meta property="og:description" content="You can change a key to another key on Simple Modifications tab.
- Choose target device, then press Add item button.      Select From key and To key.    Confirm the result using Karabiner-EventViewer.  Tip You can find the key name by Karabiner-EventViewer.
-   " />
+<title>Input symbols are different from the key code name on non-ANSI keyboards | Karabiner-Elements</title>
+<meta name="description" content="This is the intended behavior.
+The key code using in Karabiner-Elements is HID usage name.
+This is close to the physical location of the ANSI layout …">
+<meta property="og:title" content="Input symbols are different from the key code name on non-ANSI keyboards" />
+<meta property="og:description" content="This is the intended behavior.
+The key code using in Karabiner-Elements is HID usage name. This is close to the physical location of the ANSI layout keyboard.
+For this reason, there are mismatches of symbols actually input and key code names on non-ANSI keyboards.
+Determining which characters are to be input by keyboard event is later step in processing flow. Karabiner-Elements changes input events on a layer closer to the hardware, which is why it works like this." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="/docs/manual/configuration/configure-simple-modifications/" /><meta property="og:image" content="https://karabiner-elements.pqrs.org/images/logo.png"/><meta property="article:section" content="docs" />
+<meta property="og:url" content="/docs/help/troubleshooting/symbols-with-non-ansi-keyboard/" /><meta property="og:image" content="https://karabiner-elements.pqrs.org/images/logo.png"/><meta property="article:section" content="docs" />
 
 <meta property="og:site_name" content="Karabiner-Elements" />
 
-<meta itemprop="name" content="Change a key to another key">
-<meta itemprop="description" content="You can change a key to another key on Simple Modifications tab.
- Choose target device, then press Add item button.      Select From key and To key.    Confirm the result using Karabiner-EventViewer.  Tip You can find the key name by Karabiner-EventViewer.
-   ">
+<meta itemprop="name" content="Input symbols are different from the key code name on non-ANSI keyboards">
+<meta itemprop="description" content="This is the intended behavior.
+The key code using in Karabiner-Elements is HID usage name. This is close to the physical location of the ANSI layout keyboard.
+For this reason, there are mismatches of symbols actually input and key code names on non-ANSI keyboards.
+Determining which characters are to be input by keyboard event is later step in processing flow. Karabiner-Elements changes input events on a layer closer to the hardware, which is why it works like this.">
 
-<meta itemprop="wordCount" content="40"><meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
+<meta itemprop="wordCount" content="120"><meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
 
-<meta name="twitter:title" content="Change a key to another key"/>
-<meta name="twitter:description" content="You can change a key to another key on Simple Modifications tab.
- Choose target device, then press Add item button.      Select From key and To key.    Confirm the result using Karabiner-EventViewer.  Tip You can find the key name by Karabiner-EventViewer.
-   "/>
+<meta name="twitter:title" content="Input symbols are different from the key code name on non-ANSI keyboards"/>
+<meta name="twitter:description" content="This is the intended behavior.
+The key code using in Karabiner-Elements is HID usage name. This is close to the physical location of the ANSI layout keyboard.
+For this reason, there are mismatches of symbols actually input and key code names on non-ANSI keyboards.
+Determining which characters are to be input by keyboard event is later step in processing flow. Karabiner-Elements changes input events on a layer closer to the hardware, which is why it works like this."/>
 
 
 
@@ -165,19 +159,19 @@ if (!doNotTrack) {
   
 </li>
   </ul>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docsmanual-li">
-  <input type="checkbox" id="m-docsmanual-check" checked/>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsmanual-li">
+  <input type="checkbox" id="m-docsmanual-check"/>
   <label for="m-docsmanual-check"><a href="/docs/manual/" class="align-left pl-0  td-sidebar-link td-sidebar-link__section" id="m-docsmanual"><span class="">Manual</span></a></label>
   
   <ul class="ul-2 foldable">
-    <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docsmanualconfiguration-li">
-  <input type="checkbox" id="m-docsmanualconfiguration-check" checked/>
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsmanualconfiguration-li">
+  <input type="checkbox" id="m-docsmanualconfiguration-check"/>
   <label for="m-docsmanualconfiguration-check"><a href="/docs/manual/configuration/" class="align-left pl-0  td-sidebar-link td-sidebar-link__section" id="m-docsmanualconfiguration"><span class="">Configuration</span></a></label>
   
   <ul class="ul-3 foldable">
-    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-docsmanualconfigurationconfigure-simple-modifications-li">
-  <input type="checkbox" id="m-docsmanualconfigurationconfigure-simple-modifications-check" checked/>
-  <label for="m-docsmanualconfigurationconfigure-simple-modifications-check"><a href="/docs/manual/configuration/configure-simple-modifications/" class="align-left pl-0  active td-sidebar-link td-sidebar-link__page" id="m-docsmanualconfigurationconfigure-simple-modifications"><span class="td-sidebar-nav-active-item">Change a key to another key</span></a></label>
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsmanualconfigurationconfigure-simple-modifications-li">
+  <input type="checkbox" id="m-docsmanualconfigurationconfigure-simple-modifications-check"/>
+  <label for="m-docsmanualconfigurationconfigure-simple-modifications-check"><a href="/docs/manual/configuration/configure-simple-modifications/" class="align-left pl-0  td-sidebar-link td-sidebar-link__page" id="m-docsmanualconfigurationconfigure-simple-modifications"><span class="">Change a key to another key</span></a></label>
   
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsmanualconfigurationconfigure-complex-modifications-li">
   <input type="checkbox" id="m-docsmanualconfigurationconfigure-complex-modifications-check"/>
@@ -281,13 +275,13 @@ if (!doNotTrack) {
   </ul>
 </li>
   </ul>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docshelp-li">
-  <input type="checkbox" id="m-docshelp-check"/>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docshelp-li">
+  <input type="checkbox" id="m-docshelp-check" checked/>
   <label for="m-docshelp-check"><a href="/docs/help/" class="align-left pl-0  td-sidebar-link td-sidebar-link__section" id="m-docshelp"><span class="">Help</span></a></label>
   
   <ul class="ul-2 foldable">
-    <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docshelptroubleshooting-li">
-  <input type="checkbox" id="m-docshelptroubleshooting-check"/>
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docshelptroubleshooting-li">
+  <input type="checkbox" id="m-docshelptroubleshooting-check" checked/>
   <label for="m-docshelptroubleshooting-check"><a href="/docs/help/troubleshooting/" class="align-left pl-0  td-sidebar-link td-sidebar-link__section" id="m-docshelptroubleshooting"><span class="">Troubleshooting</span></a></label>
   
   <ul class="ul-3 foldable">
@@ -335,9 +329,9 @@ if (!doNotTrack) {
   <input type="checkbox" id="m-docshelptroubleshootingpreferences-window-shown-at-login-check"/>
   <label for="m-docshelptroubleshootingpreferences-window-shown-at-login-check"><a href="/docs/help/troubleshooting/preferences-window-shown-at-login/" class="align-left pl-0  td-sidebar-link td-sidebar-link__page" id="m-docshelptroubleshootingpreferences-window-shown-at-login"><span class="">Preferences window is shown at login</span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docshelptroubleshootingsymbols-with-non-ansi-keyboard-li">
-  <input type="checkbox" id="m-docshelptroubleshootingsymbols-with-non-ansi-keyboard-check"/>
-  <label for="m-docshelptroubleshootingsymbols-with-non-ansi-keyboard-check"><a href="/docs/help/troubleshooting/symbols-with-non-ansi-keyboard/" class="align-left pl-0  td-sidebar-link td-sidebar-link__page" id="m-docshelptroubleshootingsymbols-with-non-ansi-keyboard"><span class="">Input symbols are different from the key code name on non-ANSI keyboards</span></a></label>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-docshelptroubleshootingsymbols-with-non-ansi-keyboard-li">
+  <input type="checkbox" id="m-docshelptroubleshootingsymbols-with-non-ansi-keyboard-check" checked/>
+  <label for="m-docshelptroubleshootingsymbols-with-non-ansi-keyboard-check"><a href="/docs/help/troubleshooting/symbols-with-non-ansi-keyboard/" class="align-left pl-0  active td-sidebar-link td-sidebar-link__page" id="m-docshelptroubleshootingsymbols-with-non-ansi-keyboard"><span class="td-sidebar-nav-active-item">Input symbols are different from the key code name on non-ANSI keyboards</span></a></label>
   
 </li>
   </ul>
@@ -630,7 +624,14 @@ if (!doNotTrack) {
 
 
 
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#ansi-layout">ANSI layout</a></li>
+    <li><a href="#jis-layout">JIS layout</a></li>
+    <li><a href="#key-code-table">Key code table</a></li>
+    <li><a href="#related-articles">Related articles</a></li>
+  </ul>
+</nav>
 
 
 
@@ -683,21 +684,21 @@ if (!doNotTrack) {
 
 
 <li class="breadcrumb-item" >
-	<a href="/docs/manual/">Manual</a>
+	<a href="/docs/help/">Help</a>
 </li>
 
 
 
 
 <li class="breadcrumb-item" >
-	<a href="/docs/manual/configuration/">Configuration</a>
+	<a href="/docs/help/troubleshooting/">Troubleshooting</a>
 </li>
 
 
 
 
 <li class="breadcrumb-item active" aria-current="page">
-	<a href="/docs/manual/configuration/configure-simple-modifications/">Change a key to another key</a>
+	<a href="/docs/help/troubleshooting/symbols-with-non-ansi-keyboard/">Input symbols are different from the key code name on non-ANSI keyboards</a>
 </li>
 
 	</ol>
@@ -705,7 +706,7 @@ if (!doNotTrack) {
 
             
 <div class="td-content">
-	<h1>Change a key to another key</h1>
+	<h1>Input symbols are different from the key code name on non-ANSI keyboards</h1>
 	
 	<header class="article-meta">
 		
@@ -722,9 +723,14 @@ if (!doNotTrack) {
 		
 		
 	</header>    
-	<p>You can change a key to another key on <strong>Simple Modifications</strong> tab.</p>
-<ol>
-<li>Choose target device, then press Add item button.
+	<p>This is the intended behavior.</p>
+<p>The key code using in Karabiner-Elements is HID usage name.
+This is close to the physical location of the ANSI layout keyboard.</p>
+<p>For this reason, there are mismatches of symbols actually input and key code names on non-ANSI keyboards.</p>
+<p>Determining which characters are to be input by keyboard event is later step in processing flow.
+Karabiner-Elements changes input events on a layer closer to the hardware, which is why it works like this.</p>
+<p>Please use key code names that matches your layout.</p>
+<h2 id="ansi-layout">ANSI layout</h2>
 
 
 
@@ -734,12 +740,13 @@ if (!doNotTrack) {
 
 <figure>
   <img
-    src="/docs/manual/configuration/configure-simple-modifications/images/karabiner-elements-simple-modifications-1@2x.png"
-    alt="karabiner-elements-simple-modifications-1@2x.png"
-    style="width: 900px"
+    src="/docs/help/troubleshooting/symbols-with-non-ansi-keyboard/images/us@2x.png"
+    alt="us@2x.png"
+    style="width: 598px"
   />
 </figure>
 
+<h2 id="jis-layout">JIS layout</h2>
 
 
 
@@ -749,47 +756,48 @@ if (!doNotTrack) {
 
 <figure>
   <img
-    src="/docs/manual/configuration/configure-simple-modifications/images/karabiner-elements-simple-modifications-2@2x.png"
-    alt="karabiner-elements-simple-modifications-2@2x.png"
-    style="width: 900px"
-  />
-</figure>
-</li>
-<li>Select <strong>From key</strong> and <strong>To key</strong>.
-
-
-
-
-  
-
-
-<figure>
-  <img
-    src="/docs/manual/configuration/configure-simple-modifications/images/karabiner-elements-simple-modifications-3@2x.png"
-    alt="karabiner-elements-simple-modifications-3@2x.png"
-    style="width: 900px"
-  />
-</figure>
-</li>
-<li>Confirm the result using <a href="/docs/manual/operation/eventviewer/">Karabiner-EventViewer</a>.</li>
-</ol>
-
-
-<div class="alert alert-primary" role="alert">
-<h4 class="alert-heading">Tip</h4>
-
-    <p>You can find the key name by <a href="/docs/manual/operation/eventviewer/">Karabiner-EventViewer</a>.</p>
-<figure>
-  <img
-    src="/docs/manual/configuration/configure-simple-modifications/images/karabiner-elements-eventviewer-name@2x.png"
-    alt="karabiner-elements-eventviewer-name@2x.png"
-    style="width: 1100px"
+    src="/docs/help/troubleshooting/symbols-with-non-ansi-keyboard/images/jis@2x.png"
+    alt="jis@2x.png"
+    style="width: 598px"
   />
 </figure>
 
-
-</div>
-
+<h2 id="key-code-table">Key code table</h2>
+<table>
+<thead>
+<tr>
+<th>Layout</th>
+<th>Symbols</th>
+<th>Key code name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>JIS</td>
+<td><code>@</code></td>
+<td>open_bracket</td>
+</tr>
+<tr>
+<td>JIS</td>
+<td><code>[</code></td>
+<td>close_bracket</td>
+</tr>
+<tr>
+<td>JIS</td>
+<td><code>\</code></td>
+<td>international3</td>
+</tr>
+<tr>
+<td>JIS</td>
+<td><code>_</code></td>
+<td>international1</td>
+</tr>
+</tbody>
+</table>
+<h2 id="related-articles">Related articles</h2>
+<ul>
+<li><a href="/docs/manual/configuration/configure-keyboard-type/">Manual &gt; Configuration &gt; Set keyboard type</a></li>
+</ul>
 
 	
 	
