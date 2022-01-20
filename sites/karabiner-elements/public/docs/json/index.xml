@@ -697,6 +697,11 @@ Karabiner-Elements changes keys by Simple Modifications, and then changes them b
 &lt;li&gt;The web UI for creating json of complex modification rules.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/sdondley/Karabiner-CompModGenerator&#34;&gt;Karabiner::CompModGenerator&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;Raku module for easily bulk generating and regenerating complex modification from pre-defined templates.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 
       </description>
