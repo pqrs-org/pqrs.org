@@ -6,18 +6,18 @@ weight: 650
 ## Privacy
 
 Security and privacy protection is one of the most important point of Karabiner-Elements architecture design.<br />
-Of course, Karabiner-Elements does not collect any your input data, your configuration data, your usage statistics.
+Of course, Karabiner-Elements does not collect any of your input data, your configuration data, nor your usage statistics.
 
 ### Data being collected
 
 The only data we are collecting is Karabiner-Elements version information.<br />
-We use the data only for checking updates, and we do not share these data to others.
+We use the data only for checking updates, and we do not share these data with others.
 
 {{% alert title="How we receive the data" color="primary" %}}
 
 The version information will be sent in order to check updates when automatic update is enabled, or when you press the update button manually.
 
-The URL to send the version information are as follows:
+The URLs to send the version information are as follows:
 
 -   <https://appcast.pqrs.org/karabiner-elements-appcast.xml>
 -   <https://appcast.pqrs.org/karabiner-elements-appcast-devel.xml>
