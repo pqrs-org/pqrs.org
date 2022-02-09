@@ -3,14 +3,14 @@ title: 'Installation'
 weight: 100
 ---
 
-Some operations are required to grant properly permission from macOS to Karabiner-Elements.
-Follow this instruction to set up Karabiner-Elements.
+Some operations are required to grant proper permission from macOS to Karabiner-Elements.
+Follow these instructions to set up Karabiner-Elements.
 
 ## Install Karabiner-Elements
 
 1.  Open the downloaded file.
     <img src="images/dmg-icon@2x.png" alt="dmg" width="64" />
-2.  Open a pkg file.
+2.  Open the .pkg file.
     <img src="images/pkg-icon@2x.png" alt="pkg" width="64" />
 3.  The installer will be opened. Install Karabiner-Elements.
     {{< local-image src="images/installer@2x.png" >}}
@@ -23,24 +23,24 @@ Follow this instruction to set up Karabiner-Elements.
 ## Allow system software which provides virtual devices for Karabiner-Elements
 
 1.  The following alert will be shown when you open Karabiner-Elements Preferences.
-2.  Click **Open Security & Privacy System Preferences** button, then press **Allow** button.
+2.  Click **Open Security & Privacy System Preferences** button, then press the **Allow** button.
     {{< local-image src="images/dext-alert@2x.png" >}}
 
 {{% alert title="Note" color="primary" %}}
 
-Please follow [this instruction](../../help/troubleshooting/kext-allow-button-does-not-work/) if there are any problem about the **Allow** button.
+Please follow [this instruction](../../help/troubleshooting/kext-allow-button-does-not-work/) if there is any problem with the **Allow** button.
 
 {{% /alert %}}
 
 ## Grant Input Monitoring to Karabiner-Elements processes
 
 1.  **Two Keystroke Receiving** alerts will be shown on macOS Catalina or later after you allow the kernel extension.
-2.  Press **Open System Preferences** button on both alerts.
+2.  Press the **Open System Preferences** button on both alerts.
     {{< local-image src="images/karabiner-grabber@2x.png" >}}
     {{< local-image src="images/karabiner-observer@2x.png" >}}
-3.  System Preferences will be open after you press the Open System Preferences button.<br/>
+3.  System Preferences will be opened after you press the **Open System Preferences** button.<br/>
     Choose **Privacy > Input Monitoring**, and then enable **karabiner_grabber** and **karabiner_observer**. <br />
-    (You have to unlock configuration by the left bottom icon.)
+    (You have to unlock configuration by clicking the padlock icon in the bottom-left corner and providing a valid admin account username and password.)
     {{< local-image src="images/input-monitoring@2x.png" >}}
 
 ## Setup your keyboard layout
