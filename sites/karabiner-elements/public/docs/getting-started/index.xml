@@ -22,13 +22,13 @@
       <description>
         
         
-        &lt;p&gt;Some operations are required to grant properly permission from macOS to Karabiner-Elements.
-Follow this instruction to set up Karabiner-Elements.&lt;/p&gt;
+        &lt;p&gt;Some operations are required to grant proper permission from macOS to Karabiner-Elements.
+Follow these instructions to set up Karabiner-Elements.&lt;/p&gt;
 &lt;h2 id=&#34;install-karabiner-elements&#34;&gt;Install Karabiner-Elements&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;Open the downloaded file.
 &lt;img src=&#34;images/dmg-icon@2x.png&#34; alt=&#34;dmg&#34; width=&#34;64&#34; /&gt;&lt;/li&gt;
-&lt;li&gt;Open a pkg file.
+&lt;li&gt;Open the .pkg file.
 &lt;img src=&#34;images/pkg-icon@2x.png&#34; alt=&#34;pkg&#34; width=&#34;64&#34; /&gt;&lt;/li&gt;
 &lt;li&gt;The installer will be opened. Install Karabiner-Elements.
 
@@ -69,7 +69,7 @@ Follow this instruction to set up Karabiner-Elements.&lt;/p&gt;
 &lt;h2 id=&#34;allow-system-software-which-provides-virtual-devices-for-karabiner-elements&#34;&gt;Allow system software which provides virtual devices for Karabiner-Elements&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;The following alert will be shown when you open Karabiner-Elements Preferences.&lt;/li&gt;
-&lt;li&gt;Click &lt;strong&gt;Open Security &amp;amp; Privacy System Preferences&lt;/strong&gt; button, then press &lt;strong&gt;Allow&lt;/strong&gt; button.
+&lt;li&gt;Click &lt;strong&gt;Open Security &amp;amp; Privacy System Preferences&lt;/strong&gt; button, then press the &lt;strong&gt;Allow&lt;/strong&gt; button.
 
 
 
@@ -91,14 +91,14 @@ Follow this instruction to set up Karabiner-Elements.&lt;/p&gt;
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
 
-    Please follow &lt;a href=&#34;../../help/troubleshooting/kext-allow-button-does-not-work/&#34;&gt;this instruction&lt;/a&gt; if there are any problem about the &lt;strong&gt;Allow&lt;/strong&gt; button.
+    Please follow &lt;a href=&#34;../../help/troubleshooting/kext-allow-button-does-not-work/&#34;&gt;this instruction&lt;/a&gt; if there is any problem with the &lt;strong&gt;Allow&lt;/strong&gt; button.
 
 &lt;/div&gt;
 
 &lt;h2 id=&#34;grant-input-monitoring-to-karabiner-elements-processes&#34;&gt;Grant Input Monitoring to Karabiner-Elements processes&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;strong&gt;Two Keystroke Receiving&lt;/strong&gt; alerts will be shown on macOS Catalina or later after you allow the kernel extension.&lt;/li&gt;
-&lt;li&gt;Press &lt;strong&gt;Open System Preferences&lt;/strong&gt; button on both alerts.
+&lt;li&gt;Press the &lt;strong&gt;Open System Preferences&lt;/strong&gt; button on both alerts.
 
 
 
@@ -129,9 +129,9 @@ Follow this instruction to set up Karabiner-Elements.&lt;/p&gt;
   /&gt;
 &lt;/figure&gt;
 &lt;/li&gt;
-&lt;li&gt;System Preferences will be open after you press the Open System Preferences button.&lt;br/&gt;
+&lt;li&gt;System Preferences will be opened after you press the &lt;strong&gt;Open System Preferences&lt;/strong&gt; button.&lt;br/&gt;
 Choose &lt;strong&gt;Privacy &amp;gt; Input Monitoring&lt;/strong&gt;, and then enable &lt;strong&gt;karabiner_grabber&lt;/strong&gt; and &lt;strong&gt;karabiner_observer&lt;/strong&gt;. &lt;br /&gt;
-(You have to unlock configuration by the left bottom icon.)
+(You have to unlock configuration by clicking the padlock icon in the bottom-left corner and providing a valid admin account username and password.)
 
 
 
