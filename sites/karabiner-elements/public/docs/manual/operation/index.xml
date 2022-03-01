@@ -138,9 +138,9 @@ Use the uninstaller to remove Karabiner-Elements from your system.&lt;/p&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Uninstall from command line&lt;/h4&gt;
 
     &lt;p&gt;If you don&amp;rsquo;t want to use above GUI, you can also uninstall Karabiner-Elements from command line.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;bash &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;/Library/Application Support/org.pqrs/Karabiner-DriverKit-VirtualHIDDevice/scripts/uninstall/deactivate_driver.sh&amp;#39;&lt;/span&gt;
-sudo &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;/Library/Application Support/org.pqrs/Karabiner-Elements/uninstall.sh&amp;#39;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;(Administrator password is required to run the above command.)&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;bash &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;/Library/Application Support/org.pqrs/Karabiner-DriverKit-VirtualHIDDevice/scripts/uninstall/deactivate_driver.sh&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;/Library/Application Support/org.pqrs/Karabiner-Elements/uninstall.sh&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;(Administrator password is required to run the above command.)&lt;/p&gt;
 
 
 &lt;/div&gt;
@@ -151,10 +151,10 @@ sudo &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;/Library/Application Sup
 &lt;h4 class=&#34;alert-heading&#34;&gt;Advanced topic&lt;/h4&gt;
 
     &lt;p&gt;&lt;code&gt;Operation not permitted&lt;/code&gt; error will occur if you try removing files by &lt;code&gt;rm&lt;/code&gt; command.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;sudo rm -rf /Applications/Karabiner-Elements.app
-rm: /Applications/Karabiner-Elements.app/Contents: Operation not permitted
-rm: /Applications/Karabiner-Elements.app: Operation not permitted
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Karabiner-Elements forces you to use uninstaller to remove files in order to ensure remove files outside /Applications.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo rm -rf /Applications/Karabiner-Elements.app
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;rm: /Applications/Karabiner-Elements.app/Contents: Operation not permitted
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;rm: /Applications/Karabiner-Elements.app: Operation not permitted
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Karabiner-Elements forces you to use uninstaller to remove files in order to ensure remove files outside /Applications.&lt;/p&gt;
 &lt;p&gt;See &lt;a href=&#34;/docs/help/advanced-topics/installed-files/&#34;&gt;Installed files&lt;/a&gt; to confirm the files.&lt;/p&gt;
 
 

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="generator" content="Hugo 0.92.1" />
+<meta name="generator" content="Hugo 0.93.0" />
 <meta name="robots" content="index, follow">
 
 
@@ -105,7 +105,7 @@ if (!doNotTrack) {
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.94bd96b71f991338da51a1a738d642b4.json"
+  data-offline-search-index-json-src="/offline-search-index.ff52a2609bf6a1695d2f88401ebe8dcb.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="25"
 >
@@ -127,7 +127,7 @@ if (!doNotTrack) {
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.94bd96b71f991338da51a1a738d642b4.json"
+  data-offline-search-index-json-src="/offline-search-index.ff52a2609bf6a1695d2f88401ebe8dcb.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="25"
 >
@@ -279,10 +279,10 @@ if (!doNotTrack) {
 </ul>
 <h3 id="steps">Steps</h3>
 <p>Execute the following commands in Terminal.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git clone --depth <span style="color:#0000cf;font-weight:bold">1</span> https://github.com/pqrs-org/BulletGBA.git
-<span style="color:#204a87">cd</span> BulletGBA/bulletgba/
-make
-</code></pre></div><h2 id="how-to-replace-graphic-resources">How to replace graphic resources</h2>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git clone --depth <span style="color:#0000cf;font-weight:bold">1</span> https://github.com/pqrs-org/BulletGBA.git
+</span></span><span style="display:flex;"><span><span style="color:#204a87">cd</span> BulletGBA/bulletgba/
+</span></span><span style="display:flex;"><span>make
+</span></span></code></pre></div><h2 id="how-to-replace-graphic-resources">How to replace graphic resources</h2>
 <h3 id="steps-1">Steps</h3>
 <ol>
 <li>
@@ -290,20 +290,20 @@ make
 </li>
 <li>
 <p>Execute following commands to setup gba-tools.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">mkdir ~/gba
-<span style="color:#204a87">cd</span> ~/gba
-tar zxf tools.tar.gz
-<span style="color:#204a87">cd</span> tools/bmp2c
-make clean all
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>mkdir ~/gba
+</span></span><span style="display:flex;"><span><span style="color:#204a87">cd</span> ~/gba
+</span></span><span style="display:flex;"><span>tar zxf tools.tar.gz
+</span></span><span style="display:flex;"><span><span style="color:#204a87">cd</span> tools/bmp2c
+</span></span><span style="display:flex;"><span>make clean all
+</span></span></code></pre></div></li>
 <li>
 <p>Modify graphic resources under <code>bulletgba/images</code>.</p>
 </li>
 <li>
 <p>Execute following commands to convert graphic resources.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#204a87">cd</span> bulletgba/images/
-./conv.sh
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#204a87">cd</span> bulletgba/images/
+</span></span><span style="display:flex;"><span>./conv.sh
+</span></span></code></pre></div></li>
 </ol>
 <h2 id="how-to-add-bulletml">How to add BulletML</h2>
 <h3 id="requirements-1">Requirements</h3>
@@ -318,9 +318,9 @@ make clean all
 </li>
 <li>
 <p>Execute following commands to convert BulletML into C++.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#204a87">cd</span> bulletgba/generator/
-make copy all
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#204a87">cd</span> bulletgba/generator/
+</span></span><span style="display:flex;"><span>make copy all
+</span></span></code></pre></div></li>
 </ol>
 <h3 id="supported-bulletml">Supported BulletML</h3>
 <p>The most BulletML are supported. But there are little exception.</p>
@@ -330,11 +330,11 @@ make copy all
 </li>
 <li>
 <p><code>&lt;*Ref&gt;</code> which contains <code>$rand</code> in <code>&lt;param&gt;</code> does not work properly.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#204a87;font-weight:bold">&lt;fireRef&gt;</span>
-    <span style="color:#204a87;font-weight:bold">&lt;param&gt;</span>1.0 * 3.4 + 4.2<span style="color:#204a87;font-weight:bold">&lt;/param&gt;</span> <span style="color:#8f5902;font-style:italic">&lt;!-- *** This line works fine. *** --&gt;</span>
-    <span style="color:#204a87;font-weight:bold">&lt;param&gt;</span>$rand + 1<span style="color:#204a87;font-weight:bold">&lt;/param&gt;</span>       <span style="color:#8f5902;font-style:italic">&lt;!-- *** This line does not work properly. *** --&gt;</span>
-<span style="color:#204a87;font-weight:bold">&lt;/fireRef&gt;</span>
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">&lt;fireRef&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&lt;param&gt;</span>1.0 * 3.4 + 4.2<span style="color:#204a87;font-weight:bold">&lt;/param&gt;</span> <span style="color:#8f5902;font-style:italic">&lt;!-- *** This line works fine. *** --&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&lt;param&gt;</span>$rand + 1<span style="color:#204a87;font-weight:bold">&lt;/param&gt;</span>       <span style="color:#8f5902;font-style:italic">&lt;!-- *** This line does not work properly. *** --&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">&lt;/fireRef&gt;</span>
+</span></span></code></pre></div></li>
 </ul>
 <h2 id="thanks">Thanks</h2>
 <p>BulletGBA uses following softwares and data.</p>
@@ -396,12 +396,12 @@ make copy all
 
 
 
-<script src="/js/main.min.8ab8f81ff7e1454d30024cd6f956d4d341c3a97e2a673f988065f2ee4e147922.js" integrity="sha256-irj4H/fhRU0wAkzW&#43;VbU00HDqX4qZz&#43;YgGXy7k4UeSI=" crossorigin="anonymous"></script>
+<script src="/js/main.min.fc1551b8c1b40a6eaa08f3cb9c76f12ccd9aebc436cecdaf2341c890206d024a.js" integrity="sha256-/BVRuMG0Cm6qCPPLnHbxLM2a68Q2zs2vI0HIkCBtAko=" crossorigin="anonymous"></script>
 
 
 
 
-<script src="/js/share/pqrs.min.7dca6dee4af6c0552efb858d5377ea7ab27e20b9415fd2181b13305d6e3fb459.js"></script>
+<script src="/js/share/pqrs.min.8214a7cd291edcc47ab0dca65c506e2f4c464d42753ba873419484faedf58853.js"></script>
 
 
   </body>
