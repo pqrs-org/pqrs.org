@@ -12,7 +12,7 @@ type: releasenotes
 -   📅 Release date
     -   Mar 1, 2022
 -   🐛 Bug Fixes
-    -   Fixed an issue that NotificationWindow cause high CPU usage in some environments.
+    -   Fixed an issue that NotificationWindow causes high CPU usage in some environments.
 
 ## Karabiner-Elements 14.3.0
 
