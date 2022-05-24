@@ -38,6 +38,21 @@ $(function () {
             $a.append($('<div>').css({ height: '15px' }))
           }
 
+          switch (scale) {
+            case 4:
+              $a.css({ fontSize: 20 })
+              break
+            case 2:
+              $a.css({ fontSize: 16 })
+              break
+          }
+
+          if (sponsor.tier >= 40) {
+            $a.addClass('gold')
+          } else if (sponsor.tier >= 20) {
+            $a.addClass('silver')
+          }
+
           $supporters.append($a)
         })
 

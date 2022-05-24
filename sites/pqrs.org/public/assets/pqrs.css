@@ -78,6 +78,7 @@ footer {
   color: black;
   overflow-wrap: break-word;
   text-align: center;
+  text-decoration: none;
 }
 
 #supporters .supporters img {
@@ -85,7 +86,39 @@ footer {
   border: 1px solid lightgray;
 }
 
+#supporters .supporters a.gold {
+  background: linear-gradient(
+    45deg,
+    #b67b03 0%,
+    #daaf08 45%,
+    #fee9a0 70%,
+    #daaf08 85%,
+    #b67b03 90% 100%
+  );
+  color: white;
+}
+
+#supporters .supporters a.silver {
+  background: linear-gradient(
+    -72deg,
+    #dedeff,
+    #ffffff 16%,
+    #dedeff 21%,
+    #ffffff 24%,
+    #cccccc 27%,
+    #dedeff 36%,
+    #ffffff 45%,
+    #ffffff 60%,
+    #dedeff 72%,
+    #ffffff 80%,
+    #dedeff 84%,
+    #cccccc
+  );
+  color: white;
+}
+
 #supporters .supporters a:hover {
+  background: none;
   background-color: #007bff;
   color: white;
 }
