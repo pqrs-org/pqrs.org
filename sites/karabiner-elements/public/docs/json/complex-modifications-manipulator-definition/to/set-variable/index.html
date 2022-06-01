@@ -32,7 +32,7 @@ Tip
 { …">
 <meta property="og:title" content="to.set_variable" />
 <meta property="og:description" content="set_variable defines and updates the variable value.
-Tip set_variable is designed to use with variable_if and variable_unless conditions.  {  &#34;to&#34;: [  {  &#34;set_variable&#34;: {  &#34;name&#34;: &#34;variable name&#34;,  &#34;value&#34;: &#34;variable value&#34;  }  }  ] }    Name Required Description     name Required Target variable name.   value Required Target variable value.    Confirm the current variable values You can see the current variable values by EventViewer &gt; Variables." />
+Tip set_variable is designed to use with variable_if and variable_unless conditions.  {  &#34;to&#34;: [  {  &#34;set_variable&#34;: {  &#34;name&#34;: &#34;variable name&#34;,  &#34;value&#34;: variable value  }  }  ] }    Name Required Description     name Required Target variable name.   value Required Target variable value.    Available types of value    Type Example value Available since     integer 0,1,2,&hellip; Karabiner-Elements 11." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/json/complex-modifications-manipulator-definition/to/set-variable/" /><meta property="og:image" content="https://karabiner-elements.pqrs.org/images/logo.png"/><meta property="article:section" content="docs" />
 
@@ -40,15 +40,15 @@ Tip set_variable is designed to use with variable_if and variable_unless conditi
 
 <meta itemprop="name" content="to.set_variable">
 <meta itemprop="description" content="set_variable defines and updates the variable value.
-Tip set_variable is designed to use with variable_if and variable_unless conditions.  {  &#34;to&#34;: [  {  &#34;set_variable&#34;: {  &#34;name&#34;: &#34;variable name&#34;,  &#34;value&#34;: &#34;variable value&#34;  }  }  ] }    Name Required Description     name Required Target variable name.   value Required Target variable value.    Confirm the current variable values You can see the current variable values by EventViewer &gt; Variables.">
+Tip set_variable is designed to use with variable_if and variable_unless conditions.  {  &#34;to&#34;: [  {  &#34;set_variable&#34;: {  &#34;name&#34;: &#34;variable name&#34;,  &#34;value&#34;: variable value  }  }  ] }    Name Required Description     name Required Target variable name.   value Required Target variable value.    Available types of value    Type Example value Available since     integer 0,1,2,&hellip; Karabiner-Elements 11.">
 
-<meta itemprop="wordCount" content="63"><meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
+<meta itemprop="wordCount" content="114"><meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
 
 <meta name="twitter:title" content="to.set_variable"/>
 <meta name="twitter:description" content="set_variable defines and updates the variable value.
-Tip set_variable is designed to use with variable_if and variable_unless conditions.  {  &#34;to&#34;: [  {  &#34;set_variable&#34;: {  &#34;name&#34;: &#34;variable name&#34;,  &#34;value&#34;: &#34;variable value&#34;  }  }  ] }    Name Required Description     name Required Target variable name.   value Required Target variable value.    Confirm the current variable values You can see the current variable values by EventViewer &gt; Variables."/>
+Tip set_variable is designed to use with variable_if and variable_unless conditions.  {  &#34;to&#34;: [  {  &#34;set_variable&#34;: {  &#34;name&#34;: &#34;variable name&#34;,  &#34;value&#34;: variable value  }  }  ] }    Name Required Description     name Required Target variable name.   value Required Target variable value.    Available types of value    Type Example value Available since     integer 0,1,2,&hellip; Karabiner-Elements 11."/>
 
 
 
@@ -111,7 +111,7 @@ if (!doNotTrack) {
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.c060d41cefb50117a0b3b4df65bf84af.json"
+  data-offline-search-index-json-src="/offline-search-index.f31bc22b259614f464f453819e25c08e.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="25"
 >
@@ -133,7 +133,7 @@ if (!doNotTrack) {
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.c060d41cefb50117a0b3b4df65bf84af.json"
+  data-offline-search-index-json-src="/offline-search-index.f31bc22b259614f464f453819e25c08e.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="25"
 >
@@ -628,6 +628,8 @@ if (!doNotTrack) {
 
 <nav id="TableOfContents">
   <ul>
+    <li><a href="#available-types-of-value">Available types of <code>value</code></a></li>
+    <li><a href="#examples">Examples</a></li>
     <li><a href="#confirm-the-current-variable-values">Confirm the current variable values</a></li>
   </ul>
 </nav>
@@ -712,7 +714,7 @@ if (!doNotTrack) {
 </span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">{</span>
 </span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;set_variable&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
 </span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">&#34;name&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;variable name&#34;</span><span style="color:#000;font-weight:bold">,</span>
-</span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">&#34;value&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;variable value&#34;</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">&#34;value&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#a40000">variable</span> <span style="color:#a40000">value</span>
 </span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">}</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">}</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">]</span>
@@ -738,7 +740,53 @@ if (!doNotTrack) {
 </tr>
 </tbody>
 </table>
-<h2 id="confirm-the-current-variable-values">Confirm the current variable values</h2>
+<h2 id="available-types-of-value">Available types of <code>value</code></h2>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Example value</th>
+<th>Available since</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>integer</td>
+<td>0,1,2,&hellip;</td>
+<td>Karabiner-Elements 11.0.0</td>
+</tr>
+<tr>
+<td>boolean</td>
+<td>true, false</td>
+<td>Karabiner-Elements 14.4.20</td>
+</tr>
+<tr>
+<td>string</td>
+<td>&ldquo;layer1&rdquo;, &ldquo;layer2&rdquo;</td>
+<td>Karabiner-Elements 14.4.20</td>
+</tr>
+</tbody>
+</table>
+<h2 id="examples">Examples</h2>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;set_variable&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#204a87;font-weight:bold">&#34;name&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;mode_flag&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#204a87;font-weight:bold">&#34;value&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#0000cf;font-weight:bold">42</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;set_variable&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#204a87;font-weight:bold">&#34;name&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;mode_enabled&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#204a87;font-weight:bold">&#34;value&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#204a87;font-weight:bold">true</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;set_variable&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#204a87;font-weight:bold">&#34;name&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;layer_name&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#204a87;font-weight:bold">&#34;value&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;layer1&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></div><h2 id="confirm-the-current-variable-values">Confirm the current variable values</h2>
 <p>You can see the current variable values by EventViewer &gt; Variables.</p>
 
 

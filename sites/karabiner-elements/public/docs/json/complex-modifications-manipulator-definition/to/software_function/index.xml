@@ -214,7 +214,7 @@ You have to allow &lt;code&gt;karabiner_console_user_server&lt;/code&gt; in Secu
 
 
 &lt;div class=&#34;alert alert-danger&#34; role=&#34;alert&#34;&gt;
-&lt;h4 class=&#34;alert-heading&#34;&gt;Beta feature&lt;/h4&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Available since&lt;/h4&gt;
 
     &lt;code&gt;iokit_power_management_sleep_system&lt;/code&gt; is available since Karabiner-Elements 13.7.1.
 
