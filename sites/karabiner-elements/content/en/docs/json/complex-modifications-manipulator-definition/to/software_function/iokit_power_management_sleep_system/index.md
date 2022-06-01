@@ -5,7 +5,7 @@ weight: 300
 
 Causes an immediate system sleep.
 
-{{% alert title="Beta feature" color="danger" %}}
+{{% alert title="Available since" color="danger" %}}
 `iokit_power_management_sleep_system` is available since Karabiner-Elements 13.7.1.
 {{% /alert %}}
 
