@@ -17,17 +17,17 @@ weight: 300
         {
             "set_variable": {
                 "name": "variable name",
-                "value": "variable value"
+                "value": variable value
             }
         }
     ]
 }
 ```
 
-| Name    | Required     | Description            |
-| ------- | ------------ | ---------------------- |
-| `name`  | **Required** | Target variable name.  |
-| `value` | **Required** | Target variable value. |
+| Name    | Required     | Description                                 |
+| ------- | ------------ | ------------------------------------------- |
+| `name`  | **Required** | Target variable name.                       |
+| `value` | **Required** | Target variable value (must be an integer). |
 
 ## Confirm the current variable values
 

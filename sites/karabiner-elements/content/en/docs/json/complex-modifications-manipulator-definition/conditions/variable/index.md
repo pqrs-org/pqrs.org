@@ -19,12 +19,12 @@ Change an event if/unless the variable is the specified value.
 }
 ```
 
-| Name          | Required     | Description                             |
-| ------------- | ------------ | --------------------------------------- |
-| `type`        | **Required** | `"variable_if"` or `"variable_unless"`. |
-| `name`        | **Required** | Target variable name.                   |
-| `value`       | **Required** | Target variable value.                  |
-| `description` | Optional     | A human-readable comment                |
+| Name          | Required     | Description                                 |
+| ------------- | ------------ | ------------------------------------------- |
+| `type`        | **Required** | `"variable_if"` or `"variable_unless"`.     |
+| `name`        | **Required** | Target variable name.                       |
+| `value`       | **Required** | Target variable value (must be an integer). |
+| `description` | Optional     | A human-readable comment                    |
 
 ## Confirm the current variable values
 
