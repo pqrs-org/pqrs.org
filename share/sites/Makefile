@@ -8,4 +8,4 @@ build:
 	HUGO_ENV="production" hugo --gc --themesDir ../../themes
 
 public-server:
-	cd public && python -m SimpleHTTPServer 1314
+	cd public && python3 -m http.server 1314
