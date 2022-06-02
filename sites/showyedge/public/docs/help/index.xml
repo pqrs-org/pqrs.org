@@ -46,9 +46,11 @@ To quit ShowyEdge, choose &amp;ldquo;Quit ShowyEdge&amp;rdquo; from menu bar.&lt
 
     &lt;p&gt;If you&amp;rsquo;ve hidden the menu bar icon, you can also quit ShowyEdge from Preferences.&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;../../configuration/open-preferences-window/&#34;&gt;Open preferences window&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Press &lt;code&gt;Quit ShowyEdge&lt;/code&gt; button.&lt;/li&gt;
-&lt;/ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;../../configuration/open-preferences-window/&#34;&gt;Open preferences window&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Press &lt;code&gt;Quit ShowyEdge&lt;/code&gt; button.&lt;/p&gt;
 &lt;figure&gt;
   &lt;img
     src=&#34;/docs/help/quit/images/quit@2x.png&#34;
@@ -56,6 +58,8 @@ To quit ShowyEdge, choose &amp;ldquo;Quit ShowyEdge&amp;rdquo; from menu bar.&lt
     style=&#34;width: 900px&#34;
   /&gt;
 &lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
 
 
 &lt;/div&gt;
@@ -78,19 +82,19 @@ To quit ShowyEdge, choose &amp;ldquo;Quit ShowyEdge&amp;rdquo; from menu bar.&lt
 &lt;li&gt;&lt;a href=&#34;/docs/help/quit/&#34;&gt;Quit ShowyEdge&lt;/a&gt; before uninstallaion.&lt;/li&gt;
 &lt;li&gt;Open &lt;code&gt;Applications&lt;/code&gt; folder in Finder, then move ShowyEdge to trash.
 
-
-
-
-  
-
-
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/help/uninstall/images/uninstall@2x.png&#34;
-    alt=&#34;uninstall@2x.png&#34;
-    style=&#34;width: 646px&#34;
-  /&gt;
-&lt;/figure&gt;
+    
+    
+    
+      
+    
+    
+    &lt;figure&gt;
+      &lt;img
+        src=&#34;/docs/help/uninstall/images/uninstall@2x.png&#34;
+        alt=&#34;uninstall@2x.png&#34;
+        style=&#34;width: 646px&#34;
+      /&gt;
+    &lt;/figure&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 

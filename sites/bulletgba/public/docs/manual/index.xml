@@ -105,30 +105,30 @@ The color of the bullets becomes purple.
 You need &amp;ldquo;Jewel&amp;rdquo; to enter slow mode. Slow mode will be canceled when jewel becomes zero or you are bombarded.&lt;/p&gt;
 &lt;div class=&#34;row&#34;&gt;
     
-
-
-
-
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/manual/buttons/images/shooting.png&#34;
-    alt=&#34;shooting.png&#34;
-    style=&#34;width: 160px&#34;
-  /&gt;
-&lt;/figure&gt;
+    
+    
+    
+    
+    &lt;figure&gt;
+      &lt;img
+        src=&#34;/docs/manual/buttons/images/shooting.png&#34;
+        alt=&#34;shooting.png&#34;
+        style=&#34;width: 160px&#34;
+      /&gt;
+    &lt;/figure&gt;
 
     
-
-
-
-
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/manual/buttons/images/slowmode.png&#34;
-    alt=&#34;slowmode.png&#34;
-    style=&#34;width: 160px&#34;
-  /&gt;
-&lt;/figure&gt;
+    
+    
+    
+    
+    &lt;figure&gt;
+      &lt;img
+        src=&#34;/docs/manual/buttons/images/slowmode.png&#34;
+        alt=&#34;slowmode.png&#34;
+        style=&#34;width: 160px&#34;
+      /&gt;
+    &lt;/figure&gt;
 
 &lt;/div&gt;
 

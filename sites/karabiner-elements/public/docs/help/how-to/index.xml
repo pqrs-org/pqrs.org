@@ -27,38 +27,38 @@
 &lt;li&gt;
 &lt;p&gt;You have to enable your mouse on Karabiner-Elements Preferences &amp;gt; Devices.
 
-
-
-
-  
-
-
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/help/how-to/mouse-button/images/karabiner-elements-mouse-button-devices@2x.png&#34;
-    alt=&#34;karabiner-elements-mouse-button-devices@2x.png&#34;
-    style=&#34;width: 1000px&#34;
-  /&gt;
-&lt;/figure&gt;
+    
+    
+    
+      
+    
+    
+    &lt;figure&gt;
+      &lt;img
+        src=&#34;/docs/help/how-to/mouse-button/images/karabiner-elements-mouse-button-devices@2x.png&#34;
+        alt=&#34;karabiner-elements-mouse-button-devices@2x.png&#34;
+        style=&#34;width: 1000px&#34;
+      /&gt;
+    &lt;/figure&gt;
 &lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Then, use Simple Modifications to assign a key to a button or
 use &lt;a href=&#34;https://ke-complex-modifications.pqrs.org/#mouse_button&#34;&gt;Complex Modifications&lt;/a&gt; for more advanced usage.
 
-
-
-
-  
-
-
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/help/how-to/mouse-button/images/karabiner-elements-mouse-button-simple-modifications@2x.png&#34;
-    alt=&#34;karabiner-elements-mouse-button-simple-modifications@2x.png&#34;
-    style=&#34;width: 1000px&#34;
-  /&gt;
-&lt;/figure&gt;
+    
+    
+    
+      
+    
+    
+    &lt;figure&gt;
+      &lt;img
+        src=&#34;/docs/help/how-to/mouse-button/images/karabiner-elements-mouse-button-simple-modifications@2x.png&#34;
+        alt=&#34;karabiner-elements-mouse-button-simple-modifications@2x.png&#34;
+        style=&#34;width: 1000px&#34;
+      /&gt;
+    &lt;/figure&gt;
 &lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;

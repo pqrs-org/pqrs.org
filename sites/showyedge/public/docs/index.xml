@@ -32,51 +32,51 @@
 &lt;li&gt;Open a downloaded dmg file.&lt;/li&gt;
 &lt;li&gt;Move ShowyEdge icon into Applications icon.
 
-
-
-
-  
-
-
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/getting-started/images/install@2x.png&#34;
-    alt=&#34;install@2x.png&#34;
-    style=&#34;width: 660px&#34;
-  /&gt;
-&lt;/figure&gt;
+    
+    
+    
+      
+    
+    
+    &lt;figure&gt;
+      &lt;img
+        src=&#34;/docs/getting-started/images/install@2x.png&#34;
+        alt=&#34;install@2x.png&#34;
+        style=&#34;width: 660px&#34;
+      /&gt;
+    &lt;/figure&gt;
 &lt;/li&gt;
 &lt;li&gt;Open ShowyEdge from Launchpad.
 
-
-
-
-  
-
-
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/getting-started/images/launchpad@2x.png&#34;
-    alt=&#34;launchpad@2x.png&#34;
-    style=&#34;width: 172px&#34;
-  /&gt;
-&lt;/figure&gt;
+    
+    
+    
+      
+    
+    
+    &lt;figure&gt;
+      &lt;img
+        src=&#34;/docs/getting-started/images/launchpad@2x.png&#34;
+        alt=&#34;launchpad@2x.png&#34;
+        style=&#34;width: 172px&#34;
+      /&gt;
+    &lt;/figure&gt;
 &lt;/li&gt;
 &lt;li&gt;Menu bar icon will be added.
 
-
-
-
-  
-
-
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/getting-started/images/menu@2x.png&#34;
-    alt=&#34;menu@2x.png&#34;
-    style=&#34;width: 395px&#34;
-  /&gt;
-&lt;/figure&gt;
+    
+    
+    
+      
+    
+    
+    &lt;figure&gt;
+      &lt;img
+        src=&#34;/docs/getting-started/images/menu@2x.png&#34;
+        alt=&#34;menu@2x.png&#34;
+        style=&#34;width: 395px&#34;
+      /&gt;
+    &lt;/figure&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;whats-next&#34;&gt;What&amp;rsquo;s next?&lt;/h2&gt;
@@ -120,9 +120,11 @@ To quit ShowyEdge, choose &amp;ldquo;Quit ShowyEdge&amp;rdquo; from menu bar.&lt
 
     &lt;p&gt;If you&amp;rsquo;ve hidden the menu bar icon, you can also quit ShowyEdge from Preferences.&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;../../configuration/open-preferences-window/&#34;&gt;Open preferences window&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Press &lt;code&gt;Quit ShowyEdge&lt;/code&gt; button.&lt;/li&gt;
-&lt;/ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;../../configuration/open-preferences-window/&#34;&gt;Open preferences window&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Press &lt;code&gt;Quit ShowyEdge&lt;/code&gt; button.&lt;/p&gt;
 &lt;figure&gt;
   &lt;img
     src=&#34;/docs/help/quit/images/quit@2x.png&#34;
@@ -130,6 +132,8 @@ To quit ShowyEdge, choose &amp;ldquo;Quit ShowyEdge&amp;rdquo; from menu bar.&lt
     style=&#34;width: 900px&#34;
   /&gt;
 &lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
 
 
 &lt;/div&gt;
@@ -150,19 +154,19 @@ To quit ShowyEdge, choose &amp;ldquo;Quit ShowyEdge&amp;rdquo; from menu bar.&lt
         &lt;ol&gt;
 &lt;li&gt;Open Preferences from menu bar.
 
-
-
-
-  
-
-
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/configuration/open-preferences-window/images/menu-icon@2x.png&#34;
-    alt=&#34;menu-icon@2x.png&#34;
-    style=&#34;width: 404px&#34;
-  /&gt;
-&lt;/figure&gt;
+    
+    
+    
+      
+    
+    
+    &lt;figure&gt;
+      &lt;img
+        src=&#34;/docs/configuration/open-preferences-window/images/menu-icon@2x.png&#34;
+        alt=&#34;menu-icon@2x.png&#34;
+        style=&#34;width: 404px&#34;
+      /&gt;
+    &lt;/figure&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 
@@ -200,19 +204,19 @@ To quit ShowyEdge, choose &amp;ldquo;Quit ShowyEdge&amp;rdquo; from menu bar.&lt
 &lt;li&gt;&lt;a href=&#34;/docs/help/quit/&#34;&gt;Quit ShowyEdge&lt;/a&gt; before uninstallaion.&lt;/li&gt;
 &lt;li&gt;Open &lt;code&gt;Applications&lt;/code&gt; folder in Finder, then move ShowyEdge to trash.
 
-
-
-
-  
-
-
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/help/uninstall/images/uninstall@2x.png&#34;
-    alt=&#34;uninstall@2x.png&#34;
-    style=&#34;width: 646px&#34;
-  /&gt;
-&lt;/figure&gt;
+    
+    
+    
+      
+    
+    
+    &lt;figure&gt;
+      &lt;img
+        src=&#34;/docs/help/uninstall/images/uninstall@2x.png&#34;
+        alt=&#34;uninstall@2x.png&#34;
+        style=&#34;width: 646px&#34;
+      /&gt;
+    &lt;/figure&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 
@@ -233,35 +237,35 @@ To quit ShowyEdge, choose &amp;ldquo;Quit ShowyEdge&amp;rdquo; from menu bar.&lt
 &lt;li&gt;&lt;a href=&#34;../open-preferences-window/&#34;&gt;Open preferences window&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;Press &lt;code&gt;Add custom color&lt;/code&gt; button on Preferences.
 
-
-
-
-  
-
-
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/configuration/color-configuration/images/add-color@2x.png&#34;
-    alt=&#34;add-color@2x.png&#34;
-    style=&#34;width: 900px&#34;
-  /&gt;
-&lt;/figure&gt;
+    
+    
+    
+      
+    
+    
+    &lt;figure&gt;
+      &lt;img
+        src=&#34;/docs/configuration/color-configuration/images/add-color@2x.png&#34;
+        alt=&#34;add-color@2x.png&#34;
+        style=&#34;width: 900px&#34;
+      /&gt;
+    &lt;/figure&gt;
 &lt;/li&gt;
 &lt;li&gt;Change colors.
 
-
-
-
-  
-
-
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/configuration/color-configuration/images/change-color@2x.png&#34;
-    alt=&#34;change-color@2x.png&#34;
-    style=&#34;width: 900px&#34;
-  /&gt;
-&lt;/figure&gt;
+    
+    
+    
+      
+    
+    
+    &lt;figure&gt;
+      &lt;img
+        src=&#34;/docs/configuration/color-configuration/images/change-color@2x.png&#34;
+        alt=&#34;change-color@2x.png&#34;
+        style=&#34;width: 900px&#34;
+      /&gt;
+    &lt;/figure&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 
@@ -284,19 +288,19 @@ To quit ShowyEdge, choose &amp;ldquo;Quit ShowyEdge&amp;rdquo; from menu bar.&lt
 &lt;li&gt;Choose &lt;code&gt;Indicator&lt;/code&gt; from the sidebar.&lt;/li&gt;
 &lt;li&gt;Adjust height.
 
-
-
-
-  
-
-
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/configuration/indicator-size-configuration/images/indicator-height@2x.png&#34;
-    alt=&#34;indicator-height@2x.png&#34;
-    style=&#34;width: 900px&#34;
-  /&gt;
-&lt;/figure&gt;
+    
+    
+    
+      
+    
+    
+    &lt;figure&gt;
+      &lt;img
+        src=&#34;/docs/configuration/indicator-size-configuration/images/indicator-height@2x.png&#34;
+        alt=&#34;indicator-height@2x.png&#34;
+        style=&#34;width: 900px&#34;
+      /&gt;
+    &lt;/figure&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;hr&gt;
@@ -307,19 +311,19 @@ To quit ShowyEdge, choose &amp;ldquo;Quit ShowyEdge&amp;rdquo; from menu bar.&lt
 &lt;li&gt;Choose &lt;code&gt;Custom Frame&lt;/code&gt; from the sidebar.&lt;/li&gt;
 &lt;li&gt;Enable &lt;code&gt;Use custom frame&lt;/code&gt;, and then adjust the indicator size and origin.
 
-
-
-
-  
-
-
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/configuration/indicator-size-configuration/images/indicator-size@2x.png&#34;
-    alt=&#34;indicator-size@2x.png&#34;
-    style=&#34;width: 900px&#34;
-  /&gt;
-&lt;/figure&gt;
+    
+    
+    
+      
+    
+    
+    &lt;figure&gt;
+      &lt;img
+        src=&#34;/docs/configuration/indicator-size-configuration/images/indicator-size@2x.png&#34;
+        alt=&#34;indicator-size@2x.png&#34;
+        style=&#34;width: 900px&#34;
+      /&gt;
+    &lt;/figure&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id=&#34;tips&#34;&gt;Tips&lt;/h3&gt;
@@ -400,19 +404,19 @@ You can use the Desktop background as an indicator.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;../open-preferences-window/&#34;&gt;Open preferences window&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;Enable &lt;code&gt;Open at login&lt;/code&gt;.
 
-
-
-
-  
-
-
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/configuration/open-at-login/images/open-at-login@2x.png&#34;
-    alt=&#34;open-at-login@2x.png&#34;
-    style=&#34;width: 900px&#34;
-  /&gt;
-&lt;/figure&gt;
+    
+    
+    
+      
+    
+    
+    &lt;figure&gt;
+      &lt;img
+        src=&#34;/docs/configuration/open-at-login/images/open-at-login@2x.png&#34;
+        alt=&#34;open-at-login@2x.png&#34;
+        style=&#34;width: 900px&#34;
+      /&gt;
+    &lt;/figure&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 
@@ -462,19 +466,19 @@ You can use the Desktop background as an indicator.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;../open-preferences-window/&#34;&gt;Open preferences window&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;Turn off &lt;code&gt;Show icon in menu bar&lt;/code&gt;.
 
-
-
-
-  
-
-
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/configuration/hide-menu-bar-icon/images/hide-menu-bar-icon@2x.png&#34;
-    alt=&#34;hide-menu-bar-icon@2x.png&#34;
-    style=&#34;width: 900px&#34;
-  /&gt;
-&lt;/figure&gt;
+    
+    
+    
+      
+    
+    
+    &lt;figure&gt;
+      &lt;img
+        src=&#34;/docs/configuration/hide-menu-bar-icon/images/hide-menu-bar-icon@2x.png&#34;
+        alt=&#34;hide-menu-bar-icon@2x.png&#34;
+        style=&#34;width: 900px&#34;
+      /&gt;
+    &lt;/figure&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 

@@ -25,19 +25,19 @@
         &lt;ol&gt;
 &lt;li&gt;Open Preferences from menu bar.
 
-
-
-
-  
-
-
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/configuration/open-preferences-window/images/menu-icon@2x.png&#34;
-    alt=&#34;menu-icon@2x.png&#34;
-    style=&#34;width: 404px&#34;
-  /&gt;
-&lt;/figure&gt;
+    
+    
+    
+      
+    
+    
+    &lt;figure&gt;
+      &lt;img
+        src=&#34;/docs/configuration/open-preferences-window/images/menu-icon@2x.png&#34;
+        alt=&#34;menu-icon@2x.png&#34;
+        style=&#34;width: 404px&#34;
+      /&gt;
+    &lt;/figure&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 
@@ -75,35 +75,35 @@
 &lt;li&gt;&lt;a href=&#34;../open-preferences-window/&#34;&gt;Open preferences window&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;Press &lt;code&gt;Add custom color&lt;/code&gt; button on Preferences.
 
-
-
-
-  
-
-
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/configuration/color-configuration/images/add-color@2x.png&#34;
-    alt=&#34;add-color@2x.png&#34;
-    style=&#34;width: 900px&#34;
-  /&gt;
-&lt;/figure&gt;
+    
+    
+    
+      
+    
+    
+    &lt;figure&gt;
+      &lt;img
+        src=&#34;/docs/configuration/color-configuration/images/add-color@2x.png&#34;
+        alt=&#34;add-color@2x.png&#34;
+        style=&#34;width: 900px&#34;
+      /&gt;
+    &lt;/figure&gt;
 &lt;/li&gt;
 &lt;li&gt;Change colors.
 
-
-
-
-  
-
-
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/configuration/color-configuration/images/change-color@2x.png&#34;
-    alt=&#34;change-color@2x.png&#34;
-    style=&#34;width: 900px&#34;
-  /&gt;
-&lt;/figure&gt;
+    
+    
+    
+      
+    
+    
+    &lt;figure&gt;
+      &lt;img
+        src=&#34;/docs/configuration/color-configuration/images/change-color@2x.png&#34;
+        alt=&#34;change-color@2x.png&#34;
+        style=&#34;width: 900px&#34;
+      /&gt;
+    &lt;/figure&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 
@@ -126,19 +126,19 @@
 &lt;li&gt;Choose &lt;code&gt;Indicator&lt;/code&gt; from the sidebar.&lt;/li&gt;
 &lt;li&gt;Adjust height.
 
-
-
-
-  
-
-
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/configuration/indicator-size-configuration/images/indicator-height@2x.png&#34;
-    alt=&#34;indicator-height@2x.png&#34;
-    style=&#34;width: 900px&#34;
-  /&gt;
-&lt;/figure&gt;
+    
+    
+    
+      
+    
+    
+    &lt;figure&gt;
+      &lt;img
+        src=&#34;/docs/configuration/indicator-size-configuration/images/indicator-height@2x.png&#34;
+        alt=&#34;indicator-height@2x.png&#34;
+        style=&#34;width: 900px&#34;
+      /&gt;
+    &lt;/figure&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;hr&gt;
@@ -149,19 +149,19 @@
 &lt;li&gt;Choose &lt;code&gt;Custom Frame&lt;/code&gt; from the sidebar.&lt;/li&gt;
 &lt;li&gt;Enable &lt;code&gt;Use custom frame&lt;/code&gt;, and then adjust the indicator size and origin.
 
-
-
-
-  
-
-
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/configuration/indicator-size-configuration/images/indicator-size@2x.png&#34;
-    alt=&#34;indicator-size@2x.png&#34;
-    style=&#34;width: 900px&#34;
-  /&gt;
-&lt;/figure&gt;
+    
+    
+    
+      
+    
+    
+    &lt;figure&gt;
+      &lt;img
+        src=&#34;/docs/configuration/indicator-size-configuration/images/indicator-size@2x.png&#34;
+        alt=&#34;indicator-size@2x.png&#34;
+        style=&#34;width: 900px&#34;
+      /&gt;
+    &lt;/figure&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id=&#34;tips&#34;&gt;Tips&lt;/h3&gt;
@@ -228,19 +228,19 @@ You can use the Desktop background as an indicator.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;../open-preferences-window/&#34;&gt;Open preferences window&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;Enable &lt;code&gt;Open at login&lt;/code&gt;.
 
-
-
-
-  
-
-
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/configuration/open-at-login/images/open-at-login@2x.png&#34;
-    alt=&#34;open-at-login@2x.png&#34;
-    style=&#34;width: 900px&#34;
-  /&gt;
-&lt;/figure&gt;
+    
+    
+    
+      
+    
+    
+    &lt;figure&gt;
+      &lt;img
+        src=&#34;/docs/configuration/open-at-login/images/open-at-login@2x.png&#34;
+        alt=&#34;open-at-login@2x.png&#34;
+        style=&#34;width: 900px&#34;
+      /&gt;
+    &lt;/figure&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 
@@ -261,19 +261,19 @@ You can use the Desktop background as an indicator.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;../open-preferences-window/&#34;&gt;Open preferences window&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;Turn off &lt;code&gt;Show icon in menu bar&lt;/code&gt;.
 
-
-
-
-  
-
-
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/configuration/hide-menu-bar-icon/images/hide-menu-bar-icon@2x.png&#34;
-    alt=&#34;hide-menu-bar-icon@2x.png&#34;
-    style=&#34;width: 900px&#34;
-  /&gt;
-&lt;/figure&gt;
+    
+    
+    
+      
+    
+    
+    &lt;figure&gt;
+      &lt;img
+        src=&#34;/docs/configuration/hide-menu-bar-icon/images/hide-menu-bar-icon@2x.png&#34;
+        alt=&#34;hide-menu-bar-icon@2x.png&#34;
+        style=&#34;width: 900px&#34;
+      /&gt;
+    &lt;/figure&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 

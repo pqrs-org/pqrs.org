@@ -51,34 +51,34 @@ Your mail folder is protected from drag and drop after you installed the add-on.
 &lt;li&gt;&lt;code&gt;Prompt for approval rather than completely locking down the drag and drop of folders&lt;/code&gt; option allows the folder movement if you intended it.&lt;br /&gt;
 When the folder is dropped, the approval prompt will be shown. Press OK to move the folder.
 
+    
+    
+    
+      
+    
+    
+    &lt;figure&gt;
+      &lt;img
+        src=&#34;/docs/configuration/images/prompt-preferences@2x.png&#34;
+        alt=&#34;prompt-preferences@2x.png&#34;
+        style=&#34;width: 688px&#34;
+      /&gt;
+    &lt;/figure&gt;
 
 
-
-  
-
-
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/configuration/images/prompt-preferences@2x.png&#34;
-    alt=&#34;prompt-preferences@2x.png&#34;
-    style=&#34;width: 688px&#34;
-  /&gt;
-&lt;/figure&gt;
-
-
-
-
-
-  
-
-
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/configuration/images/prompt@2x.png&#34;
-    alt=&#34;prompt@2x.png&#34;
-    style=&#34;width: 640px&#34;
-  /&gt;
-&lt;/figure&gt;
+    
+    
+    
+      
+    
+    
+    &lt;figure&gt;
+      &lt;img
+        src=&#34;/docs/configuration/images/prompt@2x.png&#34;
+        alt=&#34;prompt@2x.png&#34;
+        style=&#34;width: 640px&#34;
+      /&gt;
+    &lt;/figure&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 
@@ -98,19 +98,19 @@ When the folder is dropped, the approval prompt will be shown. Press OK to move 
 &lt;li&gt;Open Add-ons Manager on Thunderbird.&lt;/li&gt;
 &lt;li&gt;Turn off this add-on.
 
-
-
-
-  
-
-
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/help/disable-temporarily/images/disable-temporarily@2x.png&#34;
-    alt=&#34;disable-temporarily@2x.png&#34;
-    style=&#34;width: 1014px&#34;
-  /&gt;
-&lt;/figure&gt;
+    
+    
+    
+      
+    
+    
+    &lt;figure&gt;
+      &lt;img
+        src=&#34;/docs/help/disable-temporarily/images/disable-temporarily@2x.png&#34;
+        alt=&#34;disable-temporarily@2x.png&#34;
+        style=&#34;width: 1014px&#34;
+      /&gt;
+    &lt;/figure&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 

@@ -315,50 +315,50 @@ You have to allow &lt;code&gt;karabiner_console_user_server&lt;/code&gt; in Secu
 &lt;ol&gt;
 &lt;li&gt;Choose target device, then press Add item button.
 
+    
+    
+    
+      
+    
+    
+    &lt;figure&gt;
+      &lt;img
+        src=&#34;/docs/manual/configuration/configure-simple-modifications/images/karabiner-elements-simple-modifications-1@2x.png&#34;
+        alt=&#34;karabiner-elements-simple-modifications-1@2x.png&#34;
+        style=&#34;width: 900px&#34;
+      /&gt;
+    &lt;/figure&gt;
 
 
-
-  
-
-
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/manual/configuration/configure-simple-modifications/images/karabiner-elements-simple-modifications-1@2x.png&#34;
-    alt=&#34;karabiner-elements-simple-modifications-1@2x.png&#34;
-    style=&#34;width: 900px&#34;
-  /&gt;
-&lt;/figure&gt;
-
-
-
-
-
-  
-
-
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/manual/configuration/configure-simple-modifications/images/karabiner-elements-simple-modifications-2@2x.png&#34;
-    alt=&#34;karabiner-elements-simple-modifications-2@2x.png&#34;
-    style=&#34;width: 900px&#34;
-  /&gt;
-&lt;/figure&gt;
+    
+    
+    
+      
+    
+    
+    &lt;figure&gt;
+      &lt;img
+        src=&#34;/docs/manual/configuration/configure-simple-modifications/images/karabiner-elements-simple-modifications-2@2x.png&#34;
+        alt=&#34;karabiner-elements-simple-modifications-2@2x.png&#34;
+        style=&#34;width: 900px&#34;
+      /&gt;
+    &lt;/figure&gt;
 &lt;/li&gt;
 &lt;li&gt;Select &lt;strong&gt;From key&lt;/strong&gt; and &lt;strong&gt;To key&lt;/strong&gt;.
 
-
-
-
-  
-
-
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/manual/configuration/configure-simple-modifications/images/karabiner-elements-simple-modifications-3@2x.png&#34;
-    alt=&#34;karabiner-elements-simple-modifications-3@2x.png&#34;
-    style=&#34;width: 900px&#34;
-  /&gt;
-&lt;/figure&gt;
+    
+    
+    
+      
+    
+    
+    &lt;figure&gt;
+      &lt;img
+        src=&#34;/docs/manual/configuration/configure-simple-modifications/images/karabiner-elements-simple-modifications-3@2x.png&#34;
+        alt=&#34;karabiner-elements-simple-modifications-3@2x.png&#34;
+        style=&#34;width: 900px&#34;
+      /&gt;
+    &lt;/figure&gt;
 &lt;/li&gt;
 &lt;li&gt;Confirm the result using &lt;a href=&#34;/docs/manual/operation/eventviewer/&#34;&gt;Karabiner-EventViewer&lt;/a&gt;.&lt;/li&gt;
 &lt;/ol&gt;
@@ -571,38 +571,38 @@ You may lose the left click button and system will be unusable.
 &lt;li&gt;
 &lt;p&gt;You have to enable your mouse on Karabiner-Elements Preferences &amp;gt; Devices.
 
-
-
-
-  
-
-
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/help/how-to/mouse-button/images/karabiner-elements-mouse-button-devices@2x.png&#34;
-    alt=&#34;karabiner-elements-mouse-button-devices@2x.png&#34;
-    style=&#34;width: 1000px&#34;
-  /&gt;
-&lt;/figure&gt;
+    
+    
+    
+      
+    
+    
+    &lt;figure&gt;
+      &lt;img
+        src=&#34;/docs/help/how-to/mouse-button/images/karabiner-elements-mouse-button-devices@2x.png&#34;
+        alt=&#34;karabiner-elements-mouse-button-devices@2x.png&#34;
+        style=&#34;width: 1000px&#34;
+      /&gt;
+    &lt;/figure&gt;
 &lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Then, use Simple Modifications to assign a key to a button or
 use &lt;a href=&#34;https://ke-complex-modifications.pqrs.org/#mouse_button&#34;&gt;Complex Modifications&lt;/a&gt; for more advanced usage.
 
-
-
-
-  
-
-
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/help/how-to/mouse-button/images/karabiner-elements-mouse-button-simple-modifications@2x.png&#34;
-    alt=&#34;karabiner-elements-mouse-button-simple-modifications@2x.png&#34;
-    style=&#34;width: 1000px&#34;
-  /&gt;
-&lt;/figure&gt;
+    
+    
+    
+      
+    
+    
+    &lt;figure&gt;
+      &lt;img
+        src=&#34;/docs/help/how-to/mouse-button/images/karabiner-elements-mouse-button-simple-modifications@2x.png&#34;
+        alt=&#34;karabiner-elements-mouse-button-simple-modifications@2x.png&#34;
+        style=&#34;width: 1000px&#34;
+      /&gt;
+    &lt;/figure&gt;
 &lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
@@ -629,38 +629,38 @@ Follow these instructions to set up Karabiner-Elements.&lt;/p&gt;
 &lt;img src=&#34;images/pkg-icon@2x.png&#34; alt=&#34;pkg&#34; width=&#34;64&#34; /&gt;&lt;/li&gt;
 &lt;li&gt;The installer will be opened. Install Karabiner-Elements.
 
-
-
-
-  
-
-
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/getting-started/installation/images/installer@2x.png&#34;
-    alt=&#34;installer@2x.png&#34;
-    style=&#34;width: 620px&#34;
-  /&gt;
-&lt;/figure&gt;
+    
+    
+    
+      
+    
+    
+    &lt;figure&gt;
+      &lt;img
+        src=&#34;/docs/getting-started/installation/images/installer@2x.png&#34;
+        alt=&#34;installer@2x.png&#34;
+        style=&#34;width: 620px&#34;
+      /&gt;
+    &lt;/figure&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;open-karabiner-elements-preferences&#34;&gt;Open Karabiner-Elements Preferences&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;Open Karabiner-Elements from Launchpad.
 
-
-
-
-  
-
-
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/getting-started/installation/images/karabiner-elements-icon@2x.png&#34;
-    alt=&#34;karabiner-elements-icon@2x.png&#34;
-    style=&#34;width: 177px&#34;
-  /&gt;
-&lt;/figure&gt;
+    
+    
+    
+      
+    
+    
+    &lt;figure&gt;
+      &lt;img
+        src=&#34;/docs/getting-started/installation/images/karabiner-elements-icon@2x.png&#34;
+        alt=&#34;karabiner-elements-icon@2x.png&#34;
+        style=&#34;width: 177px&#34;
+      /&gt;
+    &lt;/figure&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;allow-system-software-which-provides-virtual-devices-for-karabiner-elements&#34;&gt;Allow system software which provides virtual devices for Karabiner-Elements&lt;/h2&gt;
@@ -668,19 +668,19 @@ Follow these instructions to set up Karabiner-Elements.&lt;/p&gt;
 &lt;li&gt;The following alert will be shown when you open Karabiner-Elements Preferences.&lt;/li&gt;
 &lt;li&gt;Click &lt;strong&gt;Open Security &amp;amp; Privacy System Preferences&lt;/strong&gt; button, then press the &lt;strong&gt;Allow&lt;/strong&gt; button.
 
-
-
-
-  
-
-
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/getting-started/installation/images/dext-alert@2x.png&#34;
-    alt=&#34;dext-alert@2x.png&#34;
-    style=&#34;width: 1000px&#34;
-  /&gt;
-&lt;/figure&gt;
+    
+    
+    
+      
+    
+    
+    &lt;figure&gt;
+      &lt;img
+        src=&#34;/docs/getting-started/installation/images/dext-alert@2x.png&#34;
+        alt=&#34;dext-alert@2x.png&#34;
+        style=&#34;width: 1000px&#34;
+      /&gt;
+    &lt;/figure&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 
@@ -697,52 +697,52 @@ Follow these instructions to set up Karabiner-Elements.&lt;/p&gt;
 &lt;li&gt;&lt;strong&gt;Two Keystroke Receiving&lt;/strong&gt; alerts will be shown on macOS Catalina or later after you allow the kernel extension.&lt;/li&gt;
 &lt;li&gt;Press the &lt;strong&gt;Open System Preferences&lt;/strong&gt; button on both alerts.
 
+    
+    
+    
+      
+    
+    
+    &lt;figure&gt;
+      &lt;img
+        src=&#34;/docs/getting-started/installation/images/karabiner-grabber@2x.png&#34;
+        alt=&#34;karabiner-grabber@2x.png&#34;
+        style=&#34;width: 461px&#34;
+      /&gt;
+    &lt;/figure&gt;
 
 
-
-  
-
-
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/getting-started/installation/images/karabiner-grabber@2x.png&#34;
-    alt=&#34;karabiner-grabber@2x.png&#34;
-    style=&#34;width: 461px&#34;
-  /&gt;
-&lt;/figure&gt;
-
-
-
-
-
-  
-
-
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/getting-started/installation/images/karabiner-observer@2x.png&#34;
-    alt=&#34;karabiner-observer@2x.png&#34;
-    style=&#34;width: 461px&#34;
-  /&gt;
-&lt;/figure&gt;
+    
+    
+    
+      
+    
+    
+    &lt;figure&gt;
+      &lt;img
+        src=&#34;/docs/getting-started/installation/images/karabiner-observer@2x.png&#34;
+        alt=&#34;karabiner-observer@2x.png&#34;
+        style=&#34;width: 461px&#34;
+      /&gt;
+    &lt;/figure&gt;
 &lt;/li&gt;
 &lt;li&gt;System Preferences will be opened after you press the &lt;strong&gt;Open System Preferences&lt;/strong&gt; button.&lt;br/&gt;
 Choose &lt;strong&gt;Privacy &amp;gt; Input Monitoring&lt;/strong&gt;, and then enable &lt;strong&gt;karabiner_grabber&lt;/strong&gt; and &lt;strong&gt;karabiner_observer&lt;/strong&gt;. &lt;br /&gt;
 (You have to unlock configuration by clicking the padlock icon in the bottom-left corner and providing a valid admin account username and password.)
 
-
-
-
-  
-
-
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/getting-started/installation/images/input-monitoring@2x.png&#34;
-    alt=&#34;input-monitoring@2x.png&#34;
-    style=&#34;width: 1000px&#34;
-  /&gt;
-&lt;/figure&gt;
+    
+    
+    
+      
+    
+    
+    &lt;figure&gt;
+      &lt;img
+        src=&#34;/docs/getting-started/installation/images/input-monitoring@2x.png&#34;
+        alt=&#34;input-monitoring@2x.png&#34;
+        style=&#34;width: 1000px&#34;
+      /&gt;
+    &lt;/figure&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;setup-your-keyboard-layout&#34;&gt;Setup your keyboard layout&lt;/h2&gt;
@@ -750,19 +750,19 @@ Choose &lt;strong&gt;Privacy &amp;gt; Input Monitoring&lt;/strong&gt;, and then 
 &lt;li&gt;Keyboard Setup Assistant will be opened.&lt;br/&gt;
 Choose your keyboard layout. (ANSI, ISO or JIS)
 
-
-
-
-  
-
-
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/getting-started/installation/images/keyboard-setup-assistant@2x.png&#34;
-    alt=&#34;keyboard-setup-assistant@2x.png&#34;
-    style=&#34;width: 800px&#34;
-  /&gt;
-&lt;/figure&gt;
+    
+    
+    
+      
+    
+    
+    &lt;figure&gt;
+      &lt;img
+        src=&#34;/docs/getting-started/installation/images/keyboard-setup-assistant@2x.png&#34;
+        alt=&#34;keyboard-setup-assistant@2x.png&#34;
+        style=&#34;width: 800px&#34;
+      /&gt;
+    &lt;/figure&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;configure-karabiner-elements&#34;&gt;Configure Karabiner-Elements&lt;/h2&gt;
@@ -3273,19 +3273,19 @@ Instead, please change fn+number keys to function keys in Karabiner-Elements con
 &lt;li&gt;Enable &lt;code&gt;Map fn + number keys to their corresponding function keys&lt;/code&gt;.&lt;/li&gt;
 &lt;li&gt;You can use f1-f12 keys by fn+number keys.
 
-
-
-
-  
-
-
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/help/troubleshooting/touch-bar-function-keys/images/karabiner-elements-fn_plus_numbers_to_function_keys@2x.png&#34;
-    alt=&#34;karabiner-elements-fn_plus_numbers_to_function_keys@2x.png&#34;
-    style=&#34;width: 1000px&#34;
-  /&gt;
-&lt;/figure&gt;
+    
+    
+    
+      
+    
+    
+    &lt;figure&gt;
+      &lt;img
+        src=&#34;/docs/help/troubleshooting/touch-bar-function-keys/images/karabiner-elements-fn_plus_numbers_to_function_keys@2x.png&#34;
+        alt=&#34;karabiner-elements-fn_plus_numbers_to_function_keys@2x.png&#34;
+        style=&#34;width: 1000px&#34;
+      /&gt;
+    &lt;/figure&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 
@@ -3491,35 +3491,35 @@ You can show keyboard and mouse events by using it.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Open Karabiner-EventViewer from Launchpad.
 
-
-
-
-  
-
-
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/manual/operation/eventviewer/images/karabiner-elements-eventviewer-icon@2x.png&#34;
-    alt=&#34;karabiner-elements-eventviewer-icon@2x.png&#34;
-    style=&#34;width: 198px&#34;
-  /&gt;
-&lt;/figure&gt;
+    
+    
+    
+      
+    
+    
+    &lt;figure&gt;
+      &lt;img
+        src=&#34;/docs/manual/operation/eventviewer/images/karabiner-elements-eventviewer-icon@2x.png&#34;
+        alt=&#34;karabiner-elements-eventviewer-icon@2x.png&#34;
+        style=&#34;width: 198px&#34;
+      /&gt;
+    &lt;/figure&gt;
 &lt;/li&gt;
 &lt;li&gt;Input events will be shown when you type keyboard on EventViewer or press pointing buttons on Mouse Area.
 
-
-
-
-  
-
-
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/manual/operation/eventviewer/images/karabiner-elements-eventviewer@2x.png&#34;
-    alt=&#34;karabiner-elements-eventviewer@2x.png&#34;
-    style=&#34;width: 1100px&#34;
-  /&gt;
-&lt;/figure&gt;
+    
+    
+    
+      
+    
+    
+    &lt;figure&gt;
+      &lt;img
+        src=&#34;/docs/manual/operation/eventviewer/images/karabiner-elements-eventviewer@2x.png&#34;
+        alt=&#34;karabiner-elements-eventviewer@2x.png&#34;
+        style=&#34;width: 1100px&#34;
+      /&gt;
+    &lt;/figure&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 
@@ -3542,19 +3542,19 @@ Instead, please change fn+escape to eject and use control+fn+escape (== control+
 &lt;li&gt;Enable &lt;strong&gt;Change fn+escape to eject&lt;/strong&gt;.&lt;br /&gt;
 You can use control+fn+escape as control+eject.
 
-
-
-
-  
-
-
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/help/troubleshooting/control-eject/images/karabiner-elements-fn-escape-to-eject@2x.png&#34;
-    alt=&#34;karabiner-elements-fn-escape-to-eject@2x.png&#34;
-    style=&#34;width: 1000px&#34;
-  /&gt;
-&lt;/figure&gt;
+    
+    
+    
+      
+    
+    
+    &lt;figure&gt;
+      &lt;img
+        src=&#34;/docs/help/troubleshooting/control-eject/images/karabiner-elements-fn-escape-to-eject@2x.png&#34;
+        alt=&#34;karabiner-elements-fn-escape-to-eject@2x.png&#34;
+        style=&#34;width: 1000px&#34;
+      /&gt;
+    &lt;/figure&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 
@@ -4190,35 +4190,35 @@ This feature is useful when you put the external keybaord on top of the built-in
 &lt;ol&gt;
 &lt;li&gt;Open MultitouchExtension app from Preferences &amp;gt; Misc.
 
-
-
-
-  
-
-
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/manual/misc/multitouch-extension/images/karabiner-elements-multitouch-extension-1@2x.png&#34;
-    alt=&#34;karabiner-elements-multitouch-extension-1@2x.png&#34;
-    style=&#34;width: 1000px&#34;
-  /&gt;
-&lt;/figure&gt;
+    
+    
+    
+      
+    
+    
+    &lt;figure&gt;
+      &lt;img
+        src=&#34;/docs/manual/misc/multitouch-extension/images/karabiner-elements-multitouch-extension-1@2x.png&#34;
+        alt=&#34;karabiner-elements-multitouch-extension-1@2x.png&#34;
+        style=&#34;width: 1000px&#34;
+      /&gt;
+    &lt;/figure&gt;
 &lt;/li&gt;
 &lt;li&gt;Enable &amp;ldquo;Start at login&amp;rdquo; on MultitouchExtension Preferences.
 
-
-
-
-  
-
-
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/manual/misc/multitouch-extension/images/karabiner-elements-multitouch-extension-2@2x.png&#34;
-    alt=&#34;karabiner-elements-multitouch-extension-2@2x.png&#34;
-    style=&#34;width: 540px&#34;
-  /&gt;
-&lt;/figure&gt;
+    
+    
+    
+      
+    
+    
+    &lt;figure&gt;
+      &lt;img
+        src=&#34;/docs/manual/misc/multitouch-extension/images/karabiner-elements-multitouch-extension-2@2x.png&#34;
+        alt=&#34;karabiner-elements-multitouch-extension-2@2x.png&#34;
+        style=&#34;width: 540px&#34;
+      /&gt;
+    &lt;/figure&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 

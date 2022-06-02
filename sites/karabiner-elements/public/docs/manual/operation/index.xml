@@ -224,35 +224,35 @@ You can show keyboard and mouse events by using it.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Open Karabiner-EventViewer from Launchpad.
 
-
-
-
-  
-
-
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/manual/operation/eventviewer/images/karabiner-elements-eventviewer-icon@2x.png&#34;
-    alt=&#34;karabiner-elements-eventviewer-icon@2x.png&#34;
-    style=&#34;width: 198px&#34;
-  /&gt;
-&lt;/figure&gt;
+    
+    
+    
+      
+    
+    
+    &lt;figure&gt;
+      &lt;img
+        src=&#34;/docs/manual/operation/eventviewer/images/karabiner-elements-eventviewer-icon@2x.png&#34;
+        alt=&#34;karabiner-elements-eventviewer-icon@2x.png&#34;
+        style=&#34;width: 198px&#34;
+      /&gt;
+    &lt;/figure&gt;
 &lt;/li&gt;
 &lt;li&gt;Input events will be shown when you type keyboard on EventViewer or press pointing buttons on Mouse Area.
 
-
-
-
-  
-
-
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/manual/operation/eventviewer/images/karabiner-elements-eventviewer@2x.png&#34;
-    alt=&#34;karabiner-elements-eventviewer@2x.png&#34;
-    style=&#34;width: 1100px&#34;
-  /&gt;
-&lt;/figure&gt;
+    
+    
+    
+      
+    
+    
+    &lt;figure&gt;
+      &lt;img
+        src=&#34;/docs/manual/operation/eventviewer/images/karabiner-elements-eventviewer@2x.png&#34;
+        alt=&#34;karabiner-elements-eventviewer@2x.png&#34;
+        style=&#34;width: 1100px&#34;
+      /&gt;
+    &lt;/figure&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 
@@ -372,19 +372,19 @@ Press &lt;strong&gt;Add profile&lt;/strong&gt; button to add new profile.&lt;/p&
 &lt;ol&gt;
 &lt;li&gt;Open config folder from Preferences &amp;gt; Misc.
 
-
-
-
-  
-
-
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/manual/operation/export/images/karabiner-elements-export@2x.png&#34;
-    alt=&#34;karabiner-elements-export@2x.png&#34;
-    style=&#34;width: 1000px&#34;
-  /&gt;
-&lt;/figure&gt;
+    
+    
+    
+      
+    
+    
+    &lt;figure&gt;
+      &lt;img
+        src=&#34;/docs/manual/operation/export/images/karabiner-elements-export@2x.png&#34;
+        alt=&#34;karabiner-elements-export@2x.png&#34;
+        style=&#34;width: 1000px&#34;
+      /&gt;
+    &lt;/figure&gt;
 &lt;/li&gt;
 &lt;li&gt;Configuration folder will be opened by Finder. Copy the &lt;strong&gt;karabiner.json&lt;/strong&gt; file.&lt;/li&gt;
 &lt;/ol&gt;

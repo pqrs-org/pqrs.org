@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="generator" content="Hugo 0.98.0" />
+<meta name="generator" content="Hugo 0.100.1" />
 <meta name="robots" content="index, follow">
 
 
@@ -28,8 +28,9 @@ Open application
             &#34;shell_command&#34;: &#34;open -a …">
 <meta property="og:title" content="to.shell_command" />
 <meta property="og:description" content="shell_command executes the shell command.
-Examples Open application {  &#34;to&#34;: [  {  &#34;shell_command&#34;: &#34;open -a &#39;Safari.app&#39;&#34;  }  ] } Execute shell from file {  &#34;to&#34;: [  {  &#34;shell_command&#34;: &#34;/bin/sh ~/opt/shell_commands/hello.sh&#34;  }  ] }  Advanced topic The very limited environment variables are passed to the command, $HOME, $UID, $USER, etc.
-Export environment variables in shell_command if your commands depend them." />
+Examples Open application { &#34;to&#34;: [ { &#34;shell_command&#34;: &#34;open -a &#39;Safari.app&#39;&#34; } ] } Execute shell from file { &#34;to&#34;: [ { &#34;shell_command&#34;: &#34;/bin/sh ~/opt/shell_commands/hello.sh&#34; } ] } Advanced topic The very limited environment variables are passed to the command, $HOME, $UID, $USER, etc.
+Export environment variables in shell_command if your commands depend them.
+For example, the following command does not work well with unicode characters because tr command depends the current locale." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/json/complex-modifications-manipulator-definition/to/shell-command/" /><meta property="og:image" content="https://karabiner-elements.pqrs.org/images/logo.png"/><meta property="article:section" content="docs" />
 
@@ -37,8 +38,9 @@ Export environment variables in shell_command if your commands depend them." />
 
 <meta itemprop="name" content="to.shell_command">
 <meta itemprop="description" content="shell_command executes the shell command.
-Examples Open application {  &#34;to&#34;: [  {  &#34;shell_command&#34;: &#34;open -a &#39;Safari.app&#39;&#34;  }  ] } Execute shell from file {  &#34;to&#34;: [  {  &#34;shell_command&#34;: &#34;/bin/sh ~/opt/shell_commands/hello.sh&#34;  }  ] }  Advanced topic The very limited environment variables are passed to the command, $HOME, $UID, $USER, etc.
-Export environment variables in shell_command if your commands depend them.">
+Examples Open application { &#34;to&#34;: [ { &#34;shell_command&#34;: &#34;open -a &#39;Safari.app&#39;&#34; } ] } Execute shell from file { &#34;to&#34;: [ { &#34;shell_command&#34;: &#34;/bin/sh ~/opt/shell_commands/hello.sh&#34; } ] } Advanced topic The very limited environment variables are passed to the command, $HOME, $UID, $USER, etc.
+Export environment variables in shell_command if your commands depend them.
+For example, the following command does not work well with unicode characters because tr command depends the current locale.">
 
 <meta itemprop="wordCount" content="120"><meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image"/>
@@ -46,8 +48,9 @@ Export environment variables in shell_command if your commands depend them.">
 
 <meta name="twitter:title" content="to.shell_command"/>
 <meta name="twitter:description" content="shell_command executes the shell command.
-Examples Open application {  &#34;to&#34;: [  {  &#34;shell_command&#34;: &#34;open -a &#39;Safari.app&#39;&#34;  }  ] } Execute shell from file {  &#34;to&#34;: [  {  &#34;shell_command&#34;: &#34;/bin/sh ~/opt/shell_commands/hello.sh&#34;  }  ] }  Advanced topic The very limited environment variables are passed to the command, $HOME, $UID, $USER, etc.
-Export environment variables in shell_command if your commands depend them."/>
+Examples Open application { &#34;to&#34;: [ { &#34;shell_command&#34;: &#34;open -a &#39;Safari.app&#39;&#34; } ] } Execute shell from file { &#34;to&#34;: [ { &#34;shell_command&#34;: &#34;/bin/sh ~/opt/shell_commands/hello.sh&#34; } ] } Advanced topic The very limited environment variables are passed to the command, $HOME, $UID, $USER, etc.
+Export environment variables in shell_command if your commands depend them.
+For example, the following command does not work well with unicode characters because tr command depends the current locale."/>
 
 
 
@@ -110,7 +113,7 @@ if (!doNotTrack) {
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.f31bc22b259614f464f453819e25c08e.json"
+  data-offline-search-index-json-src="/offline-search-index.9632e8364f4866c65f950acc5d3e9384.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="25"
 >
@@ -132,7 +135,7 @@ if (!doNotTrack) {
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.f31bc22b259614f464f453819e25c08e.json"
+  data-offline-search-index-json-src="/offline-search-index.9632e8364f4866c65f950acc5d3e9384.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="25"
 >
@@ -458,8 +461,8 @@ if (!doNotTrack) {
   <label for="m-docsjsoncomplex-modifications-manipulator-definitionto-check"><a href="/docs/json/complex-modifications-manipulator-definition/to/" class="align-left pl-0  td-sidebar-link td-sidebar-link__section" id="m-docsjsoncomplex-modifications-manipulator-definitionto"><span class="">to event definition</span></a></label>
   
   <ul class="ul-4 foldable">
-    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-docsjsoncomplex-modifications-manipulator-definitiontoshell-command-li">
-  <input type="checkbox" id="m-docsjsoncomplex-modifications-manipulator-definitiontoshell-command-check" checked/>
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsjsoncomplex-modifications-manipulator-definitiontoshell-command-li">
+  <input type="checkbox" id="m-docsjsoncomplex-modifications-manipulator-definitiontoshell-command-check"/>
   <label for="m-docsjsoncomplex-modifications-manipulator-definitiontoshell-command-check"><a href="/docs/json/complex-modifications-manipulator-definition/to/shell-command/" class="align-left pl-0  active td-sidebar-link td-sidebar-link__page" id="m-docsjsoncomplex-modifications-manipulator-definitiontoshell-command"><span class="td-sidebar-nav-active-item">to.shell_command</span></a></label>
   
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsjsoncomplex-modifications-manipulator-definitiontoselect-input-source-li">
@@ -797,12 +800,12 @@ if (!doNotTrack) {
 
 
 
-<script src="/js/main.min.42193e94c144a53fc86f5be701ff2d0833936ce47504213b8207eb5546a1bcf1.js" integrity="sha256-Qhk&#43;lMFEpT/Ib1vnAf8tCDOTbOR1BCE7ggfrVUahvPE=" crossorigin="anonymous"></script>
+<script src="/js/main.min.63f7ccf0f6f052be82a52cc628622eadcdaa7d38aa242c60a3cad13badb12dd9.js" integrity="sha256-Y/fM8PbwUr6CpSzGKGIurc2qfTiqJCxgo8rRO62xLdk=" crossorigin="anonymous"></script>
 
 
 
 
-<script src="/js/share/pqrs.min.e3cd70ba7da460a44ec63dd0515f2b0a6526af14b39b25c0e7a1540af4afa588.js"></script>
+<script src="/js/share/pqrs.min.01200e8003824adc20cb15509ce8f73103d78d953ad3e6ef61e4c2fee3ae538f.js"></script>
 
 
   </body>

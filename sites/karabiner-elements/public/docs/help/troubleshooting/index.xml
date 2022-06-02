@@ -219,19 +219,19 @@ Instead, please change fn+number keys to function keys in Karabiner-Elements con
 &lt;li&gt;Enable &lt;code&gt;Map fn + number keys to their corresponding function keys&lt;/code&gt;.&lt;/li&gt;
 &lt;li&gt;You can use f1-f12 keys by fn+number keys.
 
-
-
-
-  
-
-
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/help/troubleshooting/touch-bar-function-keys/images/karabiner-elements-fn_plus_numbers_to_function_keys@2x.png&#34;
-    alt=&#34;karabiner-elements-fn_plus_numbers_to_function_keys@2x.png&#34;
-    style=&#34;width: 1000px&#34;
-  /&gt;
-&lt;/figure&gt;
+    
+    
+    
+      
+    
+    
+    &lt;figure&gt;
+      &lt;img
+        src=&#34;/docs/help/troubleshooting/touch-bar-function-keys/images/karabiner-elements-fn_plus_numbers_to_function_keys@2x.png&#34;
+        alt=&#34;karabiner-elements-fn_plus_numbers_to_function_keys@2x.png&#34;
+        style=&#34;width: 1000px&#34;
+      /&gt;
+    &lt;/figure&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 
@@ -280,19 +280,19 @@ Instead, please change fn+escape to eject and use control+fn+escape (== control+
 &lt;li&gt;Enable &lt;strong&gt;Change fn+escape to eject&lt;/strong&gt;.&lt;br /&gt;
 You can use control+fn+escape as control+eject.
 
-
-
-
-  
-
-
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/help/troubleshooting/control-eject/images/karabiner-elements-fn-escape-to-eject@2x.png&#34;
-    alt=&#34;karabiner-elements-fn-escape-to-eject@2x.png&#34;
-    style=&#34;width: 1000px&#34;
-  /&gt;
-&lt;/figure&gt;
+    
+    
+    
+      
+    
+    
+    &lt;figure&gt;
+      &lt;img
+        src=&#34;/docs/help/troubleshooting/control-eject/images/karabiner-elements-fn-escape-to-eject@2x.png&#34;
+        alt=&#34;karabiner-elements-fn-escape-to-eject@2x.png&#34;
+        style=&#34;width: 1000px&#34;
+      /&gt;
+    &lt;/figure&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 
