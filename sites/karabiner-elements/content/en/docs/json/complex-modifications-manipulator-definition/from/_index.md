@@ -96,3 +96,5 @@ You can also specify `key_code`, `consumer_key_code`, `pointing_button` with raw
 **Do not add double quotes when you use the raw number.**
 
 {{% /alert %}}
+
+## Table of Contents

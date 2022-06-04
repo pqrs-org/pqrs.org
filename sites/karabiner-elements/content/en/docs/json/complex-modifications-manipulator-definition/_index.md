@@ -52,3 +52,5 @@ weight: 500
 Manipulators which `type` is not `"basic"`.
 
 -   [`mouse_motion_to_scroll`](other-types/mouse-motion-to-scroll/)
+
+## Table of Contents

@@ -94,3 +94,7 @@ You can also specify `key_code`, `consumer_key_code`, `pointing_button` with raw
     ]
 }
 ```
+
+{{% /alert %}}
+
+## Table of Contents
