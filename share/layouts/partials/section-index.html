@@ -12,8 +12,8 @@
     <div class="section-index">
         {{- if $parent.Params.no_list -}}
             {{/* If no_list is true we don't show a list of subpages */}}
-        {{- else if $parent.Params.simple_list -}}
-            {{/* If simple_list is true we show a bulleted list of subpages */}}
+        {{- else if $parent.IsNode -}}
+            {{/* If the page is node we show a bulleted list of subpages */}}
             <ul>
                 {{- range $targetPages -}}
                     <li>
