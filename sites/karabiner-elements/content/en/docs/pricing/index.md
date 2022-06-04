@@ -11,14 +11,14 @@ Karabiner-Elements is an [open source software](https://github.com/pqrs-org/Kara
 
 This project accepts your funding via GitHub Sponsors or PayPal.
 
-<div class="card mb-4">
-    <div class="card-header">
-        Monthly (GitHub Sponsors)
+<div class="card border-success" style="margin-top: 60px">
+    <div class="card-header bg-success text-white">
+        <b>Monthly</b> or <b>One-time</b> (GitHub Sponsors)
     </div>
     <div class="card-body">
         <div style="display: flex; align-items: center">
             <div>
-                <img src="images/profile.jpg" style="width: 64px; height: 64px" />
+                <img src="images/profile.jpg" style="width: 128px; height: 128px" />
             </div>
             <div class="px-4">
                 Takayama Fumihiko<br/>
@@ -35,9 +35,9 @@ This project accepts your funding via GitHub Sponsors or PayPal.
     </div>
 </div>
 
-<div class="card">
+<div class="card" style="margin-top: 60px">
     <div class="card-header">
-        One-time (PayPal)
+        <b>One-time</b> (PayPal)
     </div>
     <div class="card-body">
         <div style="display: flex; align-items: center">
@@ -81,7 +81,7 @@ I'm afraid I don't have enough time to reply for donors.<br />
 (I'm giving priority to develop Karabiner-Elements at the moment.)
 
 <div class="text-right">
-    Sep 3, 2021<br />
+    Jun 4, 2022<br />
     Takayama Fumihiko
 </div>
 
