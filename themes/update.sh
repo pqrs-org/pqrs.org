@@ -3,7 +3,7 @@
 set -u # forbid undefined variables
 set -e # forbid command failure
 
-docsyrev=v0.2.0
+docsyrev=v0.3.0
 
 basedir=$(dirname $0)
 cd $basedir
