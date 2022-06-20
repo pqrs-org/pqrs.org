@@ -6,6 +6,13 @@ exclude_search: true
 type: releasenotes
 ---
 
+## Disable DragAndDrop 4.14.0
+
+-   📅 Release date
+    -   Jun 20, 2022
+-   🍰 Minor Changes
+    -   Supported Thunderbird 102.
+
 ## Disable DragAndDrop 4.13.0
 
 -   📅 Release date
