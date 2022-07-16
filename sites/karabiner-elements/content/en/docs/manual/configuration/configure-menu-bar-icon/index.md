@@ -7,7 +7,6 @@ Karabiner-Elements shows an icon in menu bar which provides the following functi
 
 -   Switch profiles.
 -   Open Preferences.
--   Check for updates.
 -   Open EventViewer.
 -   Quit Karabiner-Elements.
 
