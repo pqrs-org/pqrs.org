@@ -153,8 +153,8 @@ if (!doNotTrack) {
   <input type="checkbox" id="m-docspricing-check"/>
   <label for="m-docspricing-check"><a href="/docs/pricing/" class="align-left pl-0  td-sidebar-link td-sidebar-link__page" id="m-docspricing"><span class="">Pricing</span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsreleasenotes-li">
-  <input type="checkbox" id="m-docsreleasenotes-check"/>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-docsreleasenotes-li">
+  <input type="checkbox" id="m-docsreleasenotes-check" checked/>
   <label for="m-docsreleasenotes-check"><a href="/docs/releasenotes/" class="align-left pl-0  active td-sidebar-link td-sidebar-link__page" id="m-docsreleasenotes"><span class="td-sidebar-nav-active-item">Release notes</span></a></label>
   
 </li>
@@ -214,16 +214,33 @@ if (!doNotTrack) {
 
             <nav aria-label="breadcrumb" class="td-breadcrumbs">
   <ol class="breadcrumb">
-  <li class="breadcrumb-item"><a href="/docs/">Documentation</a>
-    </li>
-  <li class="breadcrumb-item active">
-      <span>Release notes</span>
-    </li>
+  <li class="breadcrumb-item">
+    <a href="/docs/">Documentation</a>
+  </li>
+  <li class="breadcrumb-item active" aria-current="page">
+    <a href="/docs/releasenotes/" aria-disabled="true" class="btn-link disabled">Release notes</a>
+  </li>
   </ol>
 </nav>
             
-<div class="td-content release-notes">
+<div class="td-content">
 	<h1>Release notes</h1>
+	
+	<header class="article-meta">
+		
+
+  
+    
+
+
+  
+    
+
+
+  
+
+		
+	</header>    
 	<h2 id="dcgnuboy-103-06">dcgnuboy 1.0.3-0.6</h2>
 <ul>
 <li><a href="https://github.com/pqrs-org/dcgnuboy/releases/download/v0.6.0/gnuboy-1.0.3-0.6.zip">📦 Download</a></li>
@@ -253,6 +270,9 @@ if (!doNotTrack) {
 </li>
 </ul>
 
+	
+	
+	
 </div>
 
 
