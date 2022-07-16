@@ -146,8 +146,8 @@ if (!doNotTrack) {
   <input type="checkbox" id="m-docsmanualbuttons-check"/>
   <label for="m-docsmanualbuttons-check"><a href="/docs/manual/buttons/" class="align-left pl-0  td-sidebar-link td-sidebar-link__page" id="m-docsmanualbuttons"><span class="">Buttons</span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsmanualplay-li">
-  <input type="checkbox" id="m-docsmanualplay-check"/>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-docsmanualplay-li">
+  <input type="checkbox" id="m-docsmanualplay-check" checked/>
   <label for="m-docsmanualplay-check"><a href="/docs/manual/play/" class="align-left pl-0  active td-sidebar-link td-sidebar-link__page" id="m-docsmanualplay"><span class="td-sidebar-nav-active-item">Playing the game</span></a></label>
   
 </li>
@@ -221,13 +221,15 @@ if (!doNotTrack) {
 
             <nav aria-label="breadcrumb" class="td-breadcrumbs">
   <ol class="breadcrumb">
-  <li class="breadcrumb-item"><a href="/docs/">Documentation</a>
-    </li>
-  <li class="breadcrumb-item"><a href="/docs/manual/">Manual</a>
-    </li>
-  <li class="breadcrumb-item active">
-      <span>Playing the game</span>
-    </li>
+  <li class="breadcrumb-item">
+    <a href="/docs/">Documentation</a>
+  </li>
+  <li class="breadcrumb-item">
+    <a href="/docs/manual/">Manual</a>
+  </li>
+  <li class="breadcrumb-item active" aria-current="page">
+    <a href="/docs/manual/play/" aria-disabled="true" class="btn-link disabled">Playing the game</a>
+  </li>
   </ol>
 </nav>
             
