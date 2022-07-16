@@ -3,7 +3,6 @@ title: 'Release notes'
 weight: 900
 simple_list: true
 exclude_search: true
-type: releasenotes
 ---
 
 ## Karabiner-Elements 14.4.0

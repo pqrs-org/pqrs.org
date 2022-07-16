@@ -3,7 +3,6 @@ title: 'Release notes'
 weight: 900
 simple_list: true
 exclude_search: true
-type: releasenotes
 ---
 
 ## Disable DragAndDrop 4.14.0

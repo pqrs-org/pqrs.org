@@ -3,7 +3,6 @@ title: 'Release notes'
 weight: 900
 simple_list: true
 exclude_search: true
-type: releasenotes
 ---
 
 ## Vulkanon 2.1

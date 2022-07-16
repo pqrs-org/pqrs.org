@@ -3,7 +3,6 @@ title: 'Release notes'
 weight: 900
 simple_list: true
 exclude_search: true
-type: releasenotes
 ---
 
 ## dcgnuboy 1.0.3-0.6
