@@ -3,9 +3,6 @@ title = "Karabiner-Elements"
 
 enableRobotsTXT = true
 
-# Hugo allows theme composition (and inheritance). The precedence is from left to right.
-theme = ["docsy"]
-
 # Will give values to .Lastmod etc.
 enableGitInfo = false
 
@@ -90,3 +87,10 @@ footer_about_disable = false
 # add "hide_feedback: true" to the page's front matter.
 [params.ui.feedback]
 enable = false
+
+[module]
+proxy = "direct"
+[[module.imports]]
+path = "github.com/google/docsy"
+[[module.imports]]
+path = "github.com/google/docsy/dependencies"
