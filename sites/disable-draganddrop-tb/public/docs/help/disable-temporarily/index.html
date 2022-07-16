@@ -157,8 +157,8 @@ if (!doNotTrack) {
   <label for="m-docshelp-check"><a href="/docs/help/" class="align-left pl-0  td-sidebar-link td-sidebar-link__section" id="m-docshelp"><span class="">Help</span></a></label>
   
   <ul class="ul-2 foldable">
-    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docshelpdisable-temporarily-li">
-  <input type="checkbox" id="m-docshelpdisable-temporarily-check"/>
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-docshelpdisable-temporarily-li">
+  <input type="checkbox" id="m-docshelpdisable-temporarily-check" checked/>
   <label for="m-docshelpdisable-temporarily-check"><a href="/docs/help/disable-temporarily/" class="align-left pl-0  active td-sidebar-link td-sidebar-link__page" id="m-docshelpdisable-temporarily"><span class="td-sidebar-nav-active-item">Disable this add-on temporarily</span></a></label>
   
 </li>
@@ -223,13 +223,15 @@ if (!doNotTrack) {
 
             <nav aria-label="breadcrumb" class="td-breadcrumbs">
   <ol class="breadcrumb">
-  <li class="breadcrumb-item"><a href="/docs/">Documentation</a>
-    </li>
-  <li class="breadcrumb-item"><a href="/docs/help/">Help</a>
-    </li>
-  <li class="breadcrumb-item active">
-      <span>Disable this add-on temporarily</span>
-    </li>
+  <li class="breadcrumb-item">
+    <a href="/docs/">Documentation</a>
+  </li>
+  <li class="breadcrumb-item">
+    <a href="/docs/help/">Help</a>
+  </li>
+  <li class="breadcrumb-item active" aria-current="page">
+    <a href="/docs/help/disable-temporarily/" aria-disabled="true" class="btn-link disabled">Disable this add-on temporarily</a>
+  </li>
   </ol>
 </nav>
             

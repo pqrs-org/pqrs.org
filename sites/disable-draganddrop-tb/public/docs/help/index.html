@@ -137,8 +137,8 @@ if (!doNotTrack) {
   <input type="checkbox" id="m-docsconfiguration-check"/>
   <label for="m-docsconfiguration-check"><a href="/docs/configuration/" class="align-left pl-0  td-sidebar-link td-sidebar-link__page" id="m-docsconfiguration"><span class="">Configuration</span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docshelp-li">
-  <input type="checkbox" id="m-docshelp-check"/>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docshelp-li">
+  <input type="checkbox" id="m-docshelp-check" checked/>
   <label for="m-docshelp-check"><a href="/docs/help/" class="align-left pl-0  active td-sidebar-link td-sidebar-link__section" id="m-docshelp"><span class="td-sidebar-nav-active-item">Help</span></a></label>
   
   <ul class="ul-2 foldable">
@@ -208,11 +208,12 @@ if (!doNotTrack) {
 
             <nav aria-label="breadcrumb" class="td-breadcrumbs">
   <ol class="breadcrumb">
-  <li class="breadcrumb-item"><a href="/docs/">Documentation</a>
-    </li>
-  <li class="breadcrumb-item active">
-      <span>Help</span>
-    </li>
+  <li class="breadcrumb-item">
+    <a href="/docs/">Documentation</a>
+  </li>
+  <li class="breadcrumb-item active" aria-current="page">
+    <a href="/docs/help/" aria-disabled="true" class="btn-link disabled">Help</a>
+  </li>
   </ol>
 </nav>
             
