@@ -148,8 +148,8 @@ if (!doNotTrack) {
   <input type="checkbox" id="m-docsmanualbuttons-check"/>
   <label for="m-docsmanualbuttons-check"><a href="/docs/manual/buttons/" class="align-left pl-0  td-sidebar-link td-sidebar-link__page" id="m-docsmanualbuttons"><span class="">Buttons</span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsmanualmodes-li">
-  <input type="checkbox" id="m-docsmanualmodes-check"/>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-docsmanualmodes-li">
+  <input type="checkbox" id="m-docsmanualmodes-check" checked/>
   <label for="m-docsmanualmodes-check"><a href="/docs/manual/modes/" class="align-left pl-0  active td-sidebar-link td-sidebar-link__page" id="m-docsmanualmodes"><span class="td-sidebar-nav-active-item">Modes</span></a></label>
   
 </li>
@@ -218,13 +218,15 @@ if (!doNotTrack) {
 
             <nav aria-label="breadcrumb" class="td-breadcrumbs">
   <ol class="breadcrumb">
-  <li class="breadcrumb-item"><a href="/docs/">Documentation</a>
-    </li>
-  <li class="breadcrumb-item"><a href="/docs/manual/">Manual</a>
-    </li>
-  <li class="breadcrumb-item active">
-      <span>Modes</span>
-    </li>
+  <li class="breadcrumb-item">
+    <a href="/docs/">Documentation</a>
+  </li>
+  <li class="breadcrumb-item">
+    <a href="/docs/manual/">Manual</a>
+  </li>
+  <li class="breadcrumb-item active" aria-current="page">
+    <a href="/docs/manual/modes/" aria-disabled="true" class="btn-link disabled">Modes</a>
+  </li>
   </ol>
 </nav>
             
