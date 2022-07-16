@@ -223,8 +223,8 @@ if (!doNotTrack) {
   <input type="checkbox" id="m-docsmanualoperationlog-check"/>
   <label for="m-docsmanualoperationlog-check"><a href="/docs/manual/operation/log/" class="align-left pl-0  td-sidebar-link td-sidebar-link__page" id="m-docsmanualoperationlog"><span class="">Show log messages</span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsmanualoperationexport-li">
-  <input type="checkbox" id="m-docsmanualoperationexport-check"/>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-docsmanualoperationexport-li">
+  <input type="checkbox" id="m-docsmanualoperationexport-check" checked/>
   <label for="m-docsmanualoperationexport-check"><a href="/docs/manual/operation/export/" class="align-left pl-0  active td-sidebar-link td-sidebar-link__page" id="m-docsmanualoperationexport"><span class="td-sidebar-nav-active-item">Export and import configuration</span></a></label>
   
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsmanualoperationdowngrade-li">
@@ -655,15 +655,18 @@ if (!doNotTrack) {
 
             <nav aria-label="breadcrumb" class="td-breadcrumbs">
   <ol class="breadcrumb">
-  <li class="breadcrumb-item"><a href="/docs/">Documentation</a>
-    </li>
-  <li class="breadcrumb-item"><a href="/docs/manual/">Manual</a>
-    </li>
-  <li class="breadcrumb-item"><a href="/docs/manual/operation/">Operation</a>
-    </li>
-  <li class="breadcrumb-item active">
-      <span>Export and import configuration</span>
-    </li>
+  <li class="breadcrumb-item">
+    <a href="/docs/">Documentation</a>
+  </li>
+  <li class="breadcrumb-item">
+    <a href="/docs/manual/">Manual</a>
+  </li>
+  <li class="breadcrumb-item">
+    <a href="/docs/manual/operation/">Operation</a>
+  </li>
+  <li class="breadcrumb-item active" aria-current="page">
+    <a href="/docs/manual/operation/export/" aria-disabled="true" class="btn-link disabled">Export and import configuration</a>
+  </li>
   </ol>
 </nav>
             

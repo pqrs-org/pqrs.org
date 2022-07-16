@@ -202,8 +202,8 @@ if (!doNotTrack) {
   <input type="checkbox" id="m-docsmanualoperationquit-check"/>
   <label for="m-docsmanualoperationquit-check"><a href="/docs/manual/operation/quit/" class="align-left pl-0  td-sidebar-link td-sidebar-link__page" id="m-docsmanualoperationquit"><span class="">Quit</span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsmanualoperationrestart-li">
-  <input type="checkbox" id="m-docsmanualoperationrestart-check"/>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-docsmanualoperationrestart-li">
+  <input type="checkbox" id="m-docsmanualoperationrestart-check" checked/>
   <label for="m-docsmanualoperationrestart-check"><a href="/docs/manual/operation/restart/" class="align-left pl-0  active td-sidebar-link td-sidebar-link__page" id="m-docsmanualoperationrestart"><span class="td-sidebar-nav-active-item">Restart</span></a></label>
   
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsmanualoperationuninstall-li">
@@ -653,15 +653,18 @@ if (!doNotTrack) {
 
             <nav aria-label="breadcrumb" class="td-breadcrumbs">
   <ol class="breadcrumb">
-  <li class="breadcrumb-item"><a href="/docs/">Documentation</a>
-    </li>
-  <li class="breadcrumb-item"><a href="/docs/manual/">Manual</a>
-    </li>
-  <li class="breadcrumb-item"><a href="/docs/manual/operation/">Operation</a>
-    </li>
-  <li class="breadcrumb-item active">
-      <span>Restart</span>
-    </li>
+  <li class="breadcrumb-item">
+    <a href="/docs/">Documentation</a>
+  </li>
+  <li class="breadcrumb-item">
+    <a href="/docs/manual/">Manual</a>
+  </li>
+  <li class="breadcrumb-item">
+    <a href="/docs/manual/operation/">Operation</a>
+  </li>
+  <li class="breadcrumb-item active" aria-current="page">
+    <a href="/docs/manual/operation/restart/" aria-disabled="true" class="btn-link disabled">Restart</a>
+  </li>
   </ol>
 </nav>
             

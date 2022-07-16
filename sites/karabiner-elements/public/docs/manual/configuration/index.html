@@ -149,8 +149,8 @@ if (!doNotTrack) {
   <label for="m-docsmanual-check"><a href="/docs/manual/" class="align-left pl-0  td-sidebar-link td-sidebar-link__section" id="m-docsmanual"><span class="">Manual</span></a></label>
   
   <ul class="ul-2 foldable">
-    <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsmanualconfiguration-li">
-  <input type="checkbox" id="m-docsmanualconfiguration-check"/>
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docsmanualconfiguration-li">
+  <input type="checkbox" id="m-docsmanualconfiguration-check" checked/>
   <label for="m-docsmanualconfiguration-check"><a href="/docs/manual/configuration/" class="align-left pl-0  active td-sidebar-link td-sidebar-link__section" id="m-docsmanualconfiguration"><span class="td-sidebar-nav-active-item">Configuration</span></a></label>
   
   <ul class="ul-3 foldable">
@@ -640,13 +640,15 @@ if (!doNotTrack) {
 
             <nav aria-label="breadcrumb" class="td-breadcrumbs">
   <ol class="breadcrumb">
-  <li class="breadcrumb-item"><a href="/docs/">Documentation</a>
-    </li>
-  <li class="breadcrumb-item"><a href="/docs/manual/">Manual</a>
-    </li>
-  <li class="breadcrumb-item active">
-      <span>Configuration</span>
-    </li>
+  <li class="breadcrumb-item">
+    <a href="/docs/">Documentation</a>
+  </li>
+  <li class="breadcrumb-item">
+    <a href="/docs/manual/">Manual</a>
+  </li>
+  <li class="breadcrumb-item active" aria-current="page">
+    <a href="/docs/manual/configuration/" aria-disabled="true" class="btn-link disabled">Configuration</a>
+  </li>
   </ol>
 </nav>
             
