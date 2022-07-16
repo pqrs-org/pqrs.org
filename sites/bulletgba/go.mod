@@ -1,0 +1,1 @@
+../../share/sites/go.mod
