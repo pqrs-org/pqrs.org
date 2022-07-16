@@ -412,5 +412,148 @@ To quit Tinkle, choose &amp;ldquo;Quit Tinkle&amp;rdquo; from menu bar.&lt;/p&gt
       </description>
     </item>
     
+    <item>
+      <title>Docs: Release notes</title>
+      <link>/docs/releasenotes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/releasenotes/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;tinkle-210&#34;&gt;Tinkle 2.1.0&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/pqrs-org/Tinkle/releases/download/v2.1.0/Tinkle-2.1.0.dmg&#34;&gt;📦 Download&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;📅 Release date
+&lt;ul&gt;
+&lt;li&gt;May 7, 2022&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;⚡️ Improvements
+&lt;ul&gt;
+&lt;li&gt;Sparkle Framework has been updated.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;tinkle-200&#34;&gt;Tinkle 2.0.0&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/pqrs-org/Tinkle/releases/download/v2.0.0/Tinkle-2.0.0.dmg&#34;&gt;📦 Download&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;📅 Release date
+&lt;ul&gt;
+&lt;li&gt;Nov 13, 2021&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;💥 Breaking changes
+&lt;ul&gt;
+&lt;li&gt;macOS 10.15 support has been dropped.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;⚡️ Improvements
+&lt;ul&gt;
+&lt;li&gt;Update application icons. (Thanks to Kouji TAMURA)&lt;/li&gt;
+&lt;li&gt;Minor source code improvement.&lt;/li&gt;
+&lt;li&gt;Sparkle Framework has been updated.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;tinkle-170&#34;&gt;Tinkle 1.7.0&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/pqrs-org/Tinkle/releases/download/v1.7.0/Tinkle-1.7.0.dmg&#34;&gt;📦 Download&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;📅 Release date
+&lt;ul&gt;
+&lt;li&gt;Jul 4, 2021&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;⚡️ Improvements
+&lt;ul&gt;
+&lt;li&gt;Sparkle Framework has been updated.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;tinkle-160&#34;&gt;Tinkle 1.6.0&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/pqrs-org/Tinkle/releases/download/v1.6.0/Tinkle-1.6.0.dmg&#34;&gt;📦 Download&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;📅 Release date
+&lt;ul&gt;
+&lt;li&gt;Oct 3, 2020&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;⚡️ Improvements
+&lt;ul&gt;
+&lt;li&gt;New effect colors:
+&lt;ul&gt;
+&lt;li&gt;Shock wave (light)&lt;/li&gt;
+&lt;li&gt;Shock wave (gray)&lt;/li&gt;
+&lt;li&gt;Shock wave (dark)&lt;/li&gt;
+&lt;li&gt;Neon (light)&lt;/li&gt;
+&lt;li&gt;Neon (gray)&lt;/li&gt;
+&lt;li&gt;Neon (dark)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Updated the app icon.&lt;/li&gt;
+&lt;li&gt;Improved preferences window layout on macOS Big Sur.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;tinkle-120&#34;&gt;Tinkle 1.2.0&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/pqrs-org/Tinkle/releases/download/v1.2.0/Tinkle-1.2.0.dmg&#34;&gt;📦 Download&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;📅 Release date
+&lt;ul&gt;
+&lt;li&gt;Jul 18, 2020&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;✨ New Features
+&lt;ul&gt;
+&lt;li&gt;Supported both Intel-based Macs and Apple Silicon Macs.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;⚡️ Improvements
+&lt;ul&gt;
+&lt;li&gt;Updated the app icon.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;tinkle-110&#34;&gt;Tinkle 1.1.0&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/pqrs-org/Tinkle/releases/download/v1.1.0/Tinkle-1.1.0.dmg&#34;&gt;📦 Download&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;📅 Release date
+&lt;ul&gt;
+&lt;li&gt;Apr 9, 2020&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;✨ New Features
+&lt;ul&gt;
+&lt;li&gt;Added an icon to menu bar.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;🐛 Bug Fixes
+&lt;ul&gt;
+&lt;li&gt;For open source user:
+&lt;ul&gt;
+&lt;li&gt;Fixed an issue that the built binary from source code requires code signing even if you want to run the binary only on your machine.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;tinkle-100&#34;&gt;Tinkle 1.0.0&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/pqrs-org/Tinkle/releases/download/v1.0.0/Tinkle-1.0.0.dmg&#34;&gt;📦 Download&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;📅 Release date
+&lt;ul&gt;
+&lt;li&gt;Feb 9, 2020&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;✨ New Features
+&lt;ul&gt;
+&lt;li&gt;First release.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
   </channel>
 </rss>
