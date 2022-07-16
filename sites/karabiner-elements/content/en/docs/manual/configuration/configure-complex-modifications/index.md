@@ -43,24 +43,21 @@ A confirmation dialog is shown. Press **Allow** button.
 
 {{< local-image src="images/karabiner-elements-complex-modifications-3@2x.png" >}}
 {{< local-image src="images/karabiner-elements-complex-modifications-4@2x.png" >}}
-{{< local-image src="images/karabiner-elements-complex-modifications-5@2x.png" >}}
 
 ## Step 3
 
 Karabiner-Elements is shown again.
 Press **Import** button, then new rules are imported.<br />
 
-{{< local-image src="images/karabiner-elements-complex-modifications-6@2x.png" >}}
+{{< local-image src="images/karabiner-elements-complex-modifications-5@2x.png" >}}
 
 ## Step 4
 
 Press **Enable** button.
 
-{{< local-image src="images/karabiner-elements-complex-modifications-7@2x.png" >}}
+{{< local-image src="images/karabiner-elements-complex-modifications-6@2x.png" >}}
 
 ## Step 5
 
 New rule is enabled.<br />
 Confirm the result using [Karabiner-EventViewer](/docs/manual/operation/eventviewer/).
-
-{{< local-image src="images/karabiner-elements-complex-modifications-8@2x.png" >}}
