@@ -6,7 +6,7 @@ weight: 200
 Karabiner-Elements provides built-in uninstaller.<br />
 Use the uninstaller to remove Karabiner-Elements from your system.
 
-You can launch the uninstaller from "Uninstall Karabiner-Elements" button on Misc tab.
+You can launch the uninstaller from "Launch uninstaller" button on Uninstall tab.
 {{< local-image src="images/uninstall-button@2x.png" >}}
 
 Then, follow the instruction of the dialog. (The uninstaller ask your administrator password in order to remove files.)
@@ -38,5 +38,13 @@ rm: /Applications/Karabiner-Elements.app: Operation not permitted
 Karabiner-Elements forces you to use uninstaller to remove files in order to ensure remove files outside /Applications.
 
 See [Installed files](/docs/help/advanced-topics/installed-files/) to confirm the files.
+
+{{% /alert %}}
+
+{{% alert title="Manual uninstallation" color="danger" %}}
+
+If you want to remove files without uninstaller, unlock app files from command line with [this instruction](/docs/help/advanced-topics/lock-icon/#why-these-files-are-protected).
+
+And then, remove [installed files](/docs/help/advanced-topics/installed-files/) by hand, and reboot your Mac.
 
 {{% /alert %}}
