@@ -25,7 +25,21 @@
         &lt;p&gt;Usually, the following driver alert will appear on first start-up and the alert will disappear after you allow the system software from System Preferences.&lt;/p&gt;
 &lt;p&gt;Unfortunately, the allow button may sometimes not appear in System Preferences due to a problem with macOS driver loading.&lt;br /&gt;
 In this case, you can display the allow button by deactivating and activating driver as described in the Advanced section on the alert.&lt;/p&gt;
-&lt;div style=&#34;max-width: 600px&#34;&gt;
+&lt;p&gt;
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/help/troubleshooting/driver-alert-keeps-showing-up/images/dext-alert-1@2x.png&#34;
+    alt=&#34;dext-alert-1@2x.png&#34;
+    style=&#34;width: 1100px&#34;
+  /&gt;
+&lt;/figure&gt;
+
 
 
 
@@ -35,13 +49,12 @@ In this case, you can display the allow button by deactivating and activating dr
 
 &lt;figure&gt;
   &lt;img
-    src=&#34;/docs/help/troubleshooting/driver-alert-keeps-showing-up/images/dext-alert@2x.png&#34;
-    alt=&#34;dext-alert@2x.png&#34;
-    style=&#34;width: 1000px&#34;
+    src=&#34;/docs/help/troubleshooting/driver-alert-keeps-showing-up/images/dext-alert-2@2x.png&#34;
+    alt=&#34;dext-alert-2@2x.png&#34;
+    style=&#34;width: 1100px&#34;
   /&gt;
 &lt;/figure&gt;
-
-&lt;/div&gt;
+&lt;/p&gt;
 &lt;h2 id=&#34;macos-catalina-notes&#34;&gt;macOS Catalina Notes&lt;/h2&gt;
 &lt;p&gt;Karabiner-Elements requires macOS 10.15.6 or later, because macOS 10.15.5 or earlier has an issue around DriverKit.&lt;/p&gt;
 &lt;p&gt;Please use &lt;a href=&#34;/docs/releasenotes/#karabiner-elements-12100&#34;&gt;Karabiner-Elements 12.10.0&lt;/a&gt; if you are using macOS 10.15.5 or earlier.&lt;/p&gt;
@@ -229,7 +242,7 @@ Instead, please change fn+number keys to function keys in Karabiner-Elements con
       &lt;img
         src=&#34;/docs/help/troubleshooting/touch-bar-function-keys/images/karabiner-elements-fn_plus_numbers_to_function_keys@2x.png&#34;
         alt=&#34;karabiner-elements-fn_plus_numbers_to_function_keys@2x.png&#34;
-        style=&#34;width: 1000px&#34;
+        style=&#34;width: 1100px&#34;
       /&gt;
     &lt;/figure&gt;
 &lt;/li&gt;
@@ -290,7 +303,7 @@ You can use control+fn+escape as control+eject.
       &lt;img
         src=&#34;/docs/help/troubleshooting/control-eject/images/karabiner-elements-fn-escape-to-eject@2x.png&#34;
         alt=&#34;karabiner-elements-fn-escape-to-eject@2x.png&#34;
-        style=&#34;width: 1000px&#34;
+        style=&#34;width: 1100px&#34;
       /&gt;
     &lt;/figure&gt;
 &lt;/li&gt;
@@ -442,7 +455,7 @@ Download the package from the above page, and then re-install Karabiner-Elements
   &lt;img
     src=&#34;/docs/help/troubleshooting/caps-lock-led-not-working/images/devices@2x.png&#34;
     alt=&#34;devices@2x.png&#34;
-    style=&#34;width: 1000px&#34;
+    style=&#34;width: 1100px&#34;
   /&gt;
 &lt;/figure&gt;
 

@@ -36,10 +36,12 @@
       &lt;img
         src=&#34;/docs/manual/configuration/configure-simple-modifications/images/karabiner-elements-simple-modifications-1@2x.png&#34;
         alt=&#34;karabiner-elements-simple-modifications-1@2x.png&#34;
-        style=&#34;width: 900px&#34;
+        style=&#34;width: 1100px&#34;
       /&gt;
     &lt;/figure&gt;
-
+&lt;/li&gt;
+&lt;li&gt;Select keys.&lt;br/&gt;
+(Tips: The following example changes the right option key to mouse button 3)
 
     
     
@@ -51,23 +53,7 @@
       &lt;img
         src=&#34;/docs/manual/configuration/configure-simple-modifications/images/karabiner-elements-simple-modifications-2@2x.png&#34;
         alt=&#34;karabiner-elements-simple-modifications-2@2x.png&#34;
-        style=&#34;width: 900px&#34;
-      /&gt;
-    &lt;/figure&gt;
-&lt;/li&gt;
-&lt;li&gt;Select &lt;strong&gt;From key&lt;/strong&gt; and &lt;strong&gt;To key&lt;/strong&gt;.
-
-    
-    
-    
-      
-    
-    
-    &lt;figure&gt;
-      &lt;img
-        src=&#34;/docs/manual/configuration/configure-simple-modifications/images/karabiner-elements-simple-modifications-3@2x.png&#34;
-        alt=&#34;karabiner-elements-simple-modifications-3@2x.png&#34;
-        style=&#34;width: 900px&#34;
+        style=&#34;width: 818px&#34;
       /&gt;
     &lt;/figure&gt;
 &lt;/li&gt;
@@ -166,7 +152,7 @@ These rules change keys by conditions.&lt;/p&gt;
   &lt;img
     src=&#34;/docs/manual/configuration/configure-complex-modifications/images/karabiner-elements-complex-modifications-1@2x.png&#34;
     alt=&#34;karabiner-elements-complex-modifications-1@2x.png&#34;
-    style=&#34;width: 900px&#34;
+    style=&#34;width: 1100px&#34;
   /&gt;
 &lt;/figure&gt;
 
@@ -181,7 +167,7 @@ These rules change keys by conditions.&lt;/p&gt;
   &lt;img
     src=&#34;/docs/manual/configuration/configure-complex-modifications/images/karabiner-elements-complex-modifications-2@2x.png&#34;
     alt=&#34;karabiner-elements-complex-modifications-2@2x.png&#34;
-    style=&#34;width: 894px&#34;
+    style=&#34;width: 1100px&#34;
   /&gt;
 &lt;/figure&gt;
 &lt;/p&gt;
@@ -199,7 +185,7 @@ A confirmation dialog is shown. Press &lt;strong&gt;Allow&lt;/strong&gt; button.
   &lt;img
     src=&#34;/docs/manual/configuration/configure-complex-modifications/images/karabiner-elements-complex-modifications-3@2x.png&#34;
     alt=&#34;karabiner-elements-complex-modifications-3@2x.png&#34;
-    style=&#34;width: 1246px&#34;
+    style=&#34;width: 1576px&#34;
   /&gt;
 &lt;/figure&gt;
 
@@ -214,21 +200,6 @@ A confirmation dialog is shown. Press &lt;strong&gt;Allow&lt;/strong&gt; button.
   &lt;img
     src=&#34;/docs/manual/configuration/configure-complex-modifications/images/karabiner-elements-complex-modifications-4@2x.png&#34;
     alt=&#34;karabiner-elements-complex-modifications-4@2x.png&#34;
-    style=&#34;width: 1241px&#34;
-  /&gt;
-&lt;/figure&gt;
-
-
-
-
-
-  
-
-
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/manual/configuration/configure-complex-modifications/images/karabiner-elements-complex-modifications-5@2x.png&#34;
-    alt=&#34;karabiner-elements-complex-modifications-5@2x.png&#34;
     style=&#34;width: 492px&#34;
   /&gt;
 &lt;/figure&gt;
@@ -245,9 +216,9 @@ Press &lt;strong&gt;Import&lt;/strong&gt; button, then new rules are imported.&l
 
 &lt;figure&gt;
   &lt;img
-    src=&#34;/docs/manual/configuration/configure-complex-modifications/images/karabiner-elements-complex-modifications-6@2x.png&#34;
-    alt=&#34;karabiner-elements-complex-modifications-6@2x.png&#34;
-    style=&#34;width: 894px&#34;
+    src=&#34;/docs/manual/configuration/configure-complex-modifications/images/karabiner-elements-complex-modifications-5@2x.png&#34;
+    alt=&#34;karabiner-elements-complex-modifications-5@2x.png&#34;
+    style=&#34;width: 1100px&#34;
   /&gt;
 &lt;/figure&gt;
 
@@ -262,30 +233,15 @@ Press &lt;strong&gt;Import&lt;/strong&gt; button, then new rules are imported.&l
 
 &lt;figure&gt;
   &lt;img
-    src=&#34;/docs/manual/configuration/configure-complex-modifications/images/karabiner-elements-complex-modifications-7@2x.png&#34;
-    alt=&#34;karabiner-elements-complex-modifications-7@2x.png&#34;
-    style=&#34;width: 894px&#34;
+    src=&#34;/docs/manual/configuration/configure-complex-modifications/images/karabiner-elements-complex-modifications-6@2x.png&#34;
+    alt=&#34;karabiner-elements-complex-modifications-6@2x.png&#34;
+    style=&#34;width: 1100px&#34;
   /&gt;
 &lt;/figure&gt;
 
 &lt;h2 id=&#34;step-5&#34;&gt;Step 5&lt;/h2&gt;
 &lt;p&gt;New rule is enabled.&lt;br /&gt;
 Confirm the result using &lt;a href=&#34;/docs/manual/operation/eventviewer/&#34;&gt;Karabiner-EventViewer&lt;/a&gt;.&lt;/p&gt;
-
-
-
-
-  
-
-
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/manual/configuration/configure-complex-modifications/images/karabiner-elements-complex-modifications-8@2x.png&#34;
-    alt=&#34;karabiner-elements-complex-modifications-8@2x.png&#34;
-    style=&#34;width: 900px&#34;
-  /&gt;
-&lt;/figure&gt;
-
 
       </description>
     </item>
@@ -321,7 +277,7 @@ You have to enable them if you want to change the mouse buttons in Karabiner-Ele
   &lt;img
     src=&#34;/docs/manual/configuration/configure-devices/images/karabiner-elements-devices@2x.png&#34;
     alt=&#34;karabiner-elements-devices@2x.png&#34;
-    style=&#34;width: 1000px&#34;
+    style=&#34;width: 1100px&#34;
   /&gt;
 &lt;/figure&gt;
 
@@ -352,7 +308,7 @@ This feature is useful when you put the external keybaord on top of the built-in
   &lt;img
     src=&#34;/docs/manual/configuration/disable-built-in-keyboard/images/karabiner-elements-devices-built-in@2x.png&#34;
     alt=&#34;karabiner-elements-devices-built-in@2x.png&#34;
-    style=&#34;width: 1000px&#34;
+    style=&#34;width: 1100px&#34;
   /&gt;
 &lt;/figure&gt;
 
@@ -369,8 +325,11 @@ This feature is useful when you put the external keybaord on top of the built-in
       <description>
         
         
-        &lt;p&gt;Karabiner-Elements does not provide a way to change the keyboard type (ANSI, ISO, JIS).&lt;/p&gt;
-&lt;p&gt;You can change keyboard type via Keyboard Setup Assistant from System Preferences &amp;gt; Keyboard.&lt;/p&gt;
+        &lt;p&gt;You can change the keyboard type (ANSI, ISO, JIS) from Virtual Keyboard tab.&lt;/p&gt;
+&lt;p&gt;The keyboard type is tied to the country code due to the macOS specification.
+And we have to log out to apply the keyboard type changes.&lt;/p&gt;
+&lt;p&gt;So, we recommend to assign each keyboard types to country code 0,1,2.
+And then, choose the country code when you want to change the current keyboard type.&lt;/p&gt;
 
 
 
@@ -380,11 +339,28 @@ This feature is useful when you put the external keybaord on top of the built-in
 
 &lt;figure&gt;
   &lt;img
-    src=&#34;/docs/manual/configuration/configure-keyboard-type/images/system-preferences-keyboard-setup-assistant@2x.png&#34;
-    alt=&#34;system-preferences-keyboard-setup-assistant@2x.png&#34;
-    style=&#34;width: 668px&#34;
+    src=&#34;/docs/manual/configuration/configure-keyboard-type/images/keyboard-type-1@2x.png&#34;
+    alt=&#34;keyboard-type-1@2x.png&#34;
+    style=&#34;width: 1100px&#34;
   /&gt;
 &lt;/figure&gt;
+
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
+
+    &lt;p&gt;We have to log out after the keyboard type (ANSI, ISO, JIS) is changed to apply the changes.&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/manual/configuration/configure-keyboard-type/images/keyboard-type-2@2x.png&#34;
+    alt=&#34;keyboard-type-2@2x.png&#34;
+    style=&#34;width: 1100px&#34;
+  /&gt;
+&lt;/figure&gt;
+
+
+&lt;/div&gt;
 
 &lt;h2 id=&#34;related-articles&#34;&gt;Related articles&lt;/h2&gt;
 &lt;ul&gt;
@@ -407,7 +383,6 @@ This feature is useful when you put the external keybaord on top of the built-in
 &lt;ul&gt;
 &lt;li&gt;Switch profiles.&lt;/li&gt;
 &lt;li&gt;Open Preferences.&lt;/li&gt;
-&lt;li&gt;Check for updates.&lt;/li&gt;
 &lt;li&gt;Open EventViewer.&lt;/li&gt;
 &lt;li&gt;Quit Karabiner-Elements.&lt;/li&gt;
 &lt;/ul&gt;
@@ -423,7 +398,7 @@ This feature is useful when you put the external keybaord on top of the built-in
   &lt;img
     src=&#34;/docs/manual/configuration/configure-menu-bar-icon/images/menu-bar-icon-preferences@2x.png&#34;
     alt=&#34;menu-bar-icon-preferences@2x.png&#34;
-    style=&#34;width: 1000px&#34;
+    style=&#34;width: 1100px&#34;
   /&gt;
 &lt;/figure&gt;
 

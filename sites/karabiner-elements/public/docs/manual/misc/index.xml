@@ -186,7 +186,7 @@ Karabiner-Elements.&lt;/p&gt;
       &lt;img
         src=&#34;/docs/manual/misc/multitouch-extension/images/karabiner-elements-multitouch-extension-1@2x.png&#34;
         alt=&#34;karabiner-elements-multitouch-extension-1@2x.png&#34;
-        style=&#34;width: 1000px&#34;
+        style=&#34;width: 1100px&#34;
       /&gt;
     &lt;/figure&gt;
 &lt;/li&gt;
@@ -256,7 +256,8 @@ press &amp;ldquo;Open MultitouchExtension app&amp;rdquo; button on Preferences &
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      --show-current-profile-name
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                                Show current profile name
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      --list-profile-names      Show all profile names
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      --set-variables arg       Json string: {[key: string]: number}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      --set-variables arg       Json string: {[key: string]:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                                number|boolean|string}
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      --copy-current-profile-to-system-default-profile
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                                Copy the current profile to system default
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                                profile.
@@ -340,8 +341,8 @@ Karabiner-Elements that the parent directory is changed.&lt;/p&gt;
       <description>
         
         
-        &lt;p&gt;The following alert will be shown when you are using Karabiner-elements 12.x.x on macOS Catalina.&lt;/p&gt;
-&lt;p&gt;Upgrading Karabiner-Elements 13.0.0 or later solves this issue.&lt;/p&gt;
+        &lt;p&gt;If you are using old Karabiner-Elements (12.x.x or earlier) on macOS Catalina or later, the following alert will be shown.&lt;/p&gt;
+&lt;p&gt;Please upgrade Karabiner-Elements 13.0.0 or later.&lt;/p&gt;
 
 
 

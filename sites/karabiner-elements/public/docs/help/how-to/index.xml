@@ -37,7 +37,7 @@
       &lt;img
         src=&#34;/docs/help/how-to/mouse-button/images/karabiner-elements-mouse-button-devices@2x.png&#34;
         alt=&#34;karabiner-elements-mouse-button-devices@2x.png&#34;
-        style=&#34;width: 1000px&#34;
+        style=&#34;width: 1100px&#34;
       /&gt;
     &lt;/figure&gt;
 &lt;/p&gt;
@@ -56,7 +56,7 @@ use &lt;a href=&#34;https://ke-complex-modifications.pqrs.org/#mouse_button&#34;
       &lt;img
         src=&#34;/docs/help/how-to/mouse-button/images/karabiner-elements-mouse-button-simple-modifications@2x.png&#34;
         alt=&#34;karabiner-elements-mouse-button-simple-modifications@2x.png&#34;
-        style=&#34;width: 1000px&#34;
+        style=&#34;width: 1100px&#34;
       /&gt;
     &lt;/figure&gt;
 &lt;/p&gt;
@@ -76,7 +76,7 @@ use &lt;a href=&#34;https://ke-complex-modifications.pqrs.org/#mouse_button&#34;
         
         
         &lt;p&gt;You can enable the sticky modifier keys from Preferences &amp;gt; Simple modifications.&lt;/p&gt;
-&lt;p&gt;
+
 
 
 
@@ -87,25 +87,10 @@ use &lt;a href=&#34;https://ke-complex-modifications.pqrs.org/#mouse_button&#34;
   &lt;img
     src=&#34;/docs/help/how-to/sticky-modifier-key/images/to-keys@2x.png&#34;
     alt=&#34;to-keys@2x.png&#34;
-    style=&#34;width: 1000px&#34;
+    style=&#34;width: 1092px&#34;
   /&gt;
 &lt;/figure&gt;
 
-
-
-
-
-  
-
-
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/help/how-to/sticky-modifier-key/images/simple-modifications@2x.png&#34;
-    alt=&#34;simple-modifications@2x.png&#34;
-    style=&#34;width: 997px&#34;
-  /&gt;
-&lt;/figure&gt;
-&lt;/p&gt;
 
 
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
@@ -155,7 +140,7 @@ use &lt;a href=&#34;https://ke-complex-modifications.pqrs.org/#mouse_button&#34;
   &lt;img
     src=&#34;/docs/help/how-to/sticky-modifier-key/images/indicator-configuration@2x.png&#34;
     alt=&#34;indicator-configuration@2x.png&#34;
-    style=&#34;width: 1000px&#34;
+    style=&#34;width: 1100px&#34;
   /&gt;
 &lt;/figure&gt;
 

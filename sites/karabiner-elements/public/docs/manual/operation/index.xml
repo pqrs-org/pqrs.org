@@ -49,7 +49,7 @@ To quit Karabiner-Elements, choose &amp;ldquo;Quit Karabiner-Elements&amp;rdquo;
   &lt;img
     src=&#34;/docs/manual/operation/quit/images/karabiner-elements-quit@2x.png&#34;
     alt=&#34;karabiner-elements-quit@2x.png&#34;
-    style=&#34;width: 900px&#34;
+    style=&#34;width: 1100px&#34;
   /&gt;
 &lt;/figure&gt;
 
@@ -81,7 +81,7 @@ To quit Karabiner-Elements, choose &amp;ldquo;Quit Karabiner-Elements&amp;rdquo;
   &lt;img
     src=&#34;/docs/manual/operation/restart/images/restart@2x.png&#34;
     alt=&#34;restart@2x.png&#34;
-    style=&#34;width: 1000px&#34;
+    style=&#34;width: 1100px&#34;
   /&gt;
 &lt;/figure&gt;
 
@@ -100,7 +100,7 @@ To quit Karabiner-Elements, choose &amp;ldquo;Quit Karabiner-Elements&amp;rdquo;
         
         &lt;p&gt;Karabiner-Elements provides built-in uninstaller.&lt;br /&gt;
 Use the uninstaller to remove Karabiner-Elements from your system.&lt;/p&gt;
-&lt;p&gt;You can launch the uninstaller from &amp;ldquo;Uninstall Karabiner-Elements&amp;rdquo; button on Misc tab.
+&lt;p&gt;You can launch the uninstaller from &amp;ldquo;Launch uninstaller&amp;rdquo; button on Uninstall tab.
 
 
 
@@ -112,7 +112,7 @@ Use the uninstaller to remove Karabiner-Elements from your system.&lt;/p&gt;
   &lt;img
     src=&#34;/docs/manual/operation/uninstall/images/uninstall-button@2x.png&#34;
     alt=&#34;uninstall-button@2x.png&#34;
-    style=&#34;width: 1000px&#34;
+    style=&#34;width: 1100px&#34;
   /&gt;
 &lt;/figure&gt;
 &lt;/p&gt;
@@ -128,7 +128,7 @@ Use the uninstaller to remove Karabiner-Elements from your system.&lt;/p&gt;
   &lt;img
     src=&#34;/docs/manual/operation/uninstall/images/uninstaller@2x.png&#34;
     alt=&#34;uninstaller@2x.png&#34;
-    style=&#34;width: 945px&#34;
+    style=&#34;width: 1091px&#34;
   /&gt;
 &lt;/figure&gt;
 
@@ -161,6 +161,17 @@ Use the uninstaller to remove Karabiner-Elements from your system.&lt;/p&gt;
 &lt;/div&gt;
 
 
+
+&lt;div class=&#34;alert alert-danger&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Manual uninstallation&lt;/h4&gt;
+
+    &lt;p&gt;If you want to remove files without uninstaller, unlock app files from command line with &lt;a href=&#34;/docs/help/advanced-topics/lock-icon/#why-these-files-are-protected&#34;&gt;this instruction&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;And then, remove &lt;a href=&#34;/docs/help/advanced-topics/installed-files/&#34;&gt;installed files&lt;/a&gt; by hand, and reboot your Mac.&lt;/p&gt;
+
+
+&lt;/div&gt;
+
+
       </description>
     </item>
     
@@ -173,7 +184,7 @@ Use the uninstaller to remove Karabiner-Elements from your system.&lt;/p&gt;
       <description>
         
         
-        &lt;p&gt;You can check for updates from &amp;ldquo;Misc&amp;rdquo; tab.&lt;/p&gt;
+        &lt;p&gt;You can check for updates from Update tab.&lt;/p&gt;
 
 
 
@@ -185,7 +196,7 @@ Use the uninstaller to remove Karabiner-Elements from your system.&lt;/p&gt;
   &lt;img
     src=&#34;/docs/manual/operation/check-for-updates/images/karabiner-elements-check-for-updates@2x.png&#34;
     alt=&#34;karabiner-elements-check-for-updates@2x.png&#34;
-    style=&#34;width: 900px&#34;
+    style=&#34;width: 1100px&#34;
   /&gt;
 &lt;/figure&gt;
 
@@ -199,7 +210,7 @@ Use the uninstaller to remove Karabiner-Elements from your system.&lt;/p&gt;
   &lt;img
     src=&#34;/docs/manual/operation/check-for-updates/images/karabiner-elements-check-for-updates-beta@2x.png&#34;
     alt=&#34;karabiner-elements-check-for-updates-beta@2x.png&#34;
-    style=&#34;width: 900px&#34;
+    style=&#34;width: 1100px&#34;
   /&gt;
 &lt;/figure&gt;
 
@@ -286,7 +297,7 @@ You can show keyboard and mouse events by using it.&lt;/p&gt;
 
 &lt;h2 id=&#34;manage-profiles&#34;&gt;Manage profiles&lt;/h2&gt;
 &lt;p&gt;You can manage profiles from Profiles tab.&lt;br /&gt;
-Press &lt;strong&gt;Add profile&lt;/strong&gt; button to add new profile.&lt;/p&gt;
+Press &lt;strong&gt;Add new profile&lt;/strong&gt; button to add new profile.&lt;/p&gt;
 
 
 
@@ -298,7 +309,7 @@ Press &lt;strong&gt;Add profile&lt;/strong&gt; button to add new profile.&lt;/p&
   &lt;img
     src=&#34;/docs/manual/operation/profiles/images/karabiner-elements-profiles@2x.png&#34;
     alt=&#34;karabiner-elements-profiles@2x.png&#34;
-    style=&#34;width: 900px&#34;
+    style=&#34;width: 1100px&#34;
   /&gt;
 &lt;/figure&gt;
 
@@ -327,7 +338,7 @@ Press &lt;strong&gt;Add profile&lt;/strong&gt; button to add new profile.&lt;/p&
   &lt;img
     src=&#34;/docs/manual/operation/log/images/karabiner-elements-error-log@2x.png&#34;
     alt=&#34;karabiner-elements-error-log@2x.png&#34;
-    style=&#34;width: 1000px&#34;
+    style=&#34;width: 1100px&#34;
   /&gt;
 &lt;/figure&gt;
 
@@ -382,7 +393,7 @@ Press &lt;strong&gt;Add profile&lt;/strong&gt; button to add new profile.&lt;/p&
       &lt;img
         src=&#34;/docs/manual/operation/export/images/karabiner-elements-export@2x.png&#34;
         alt=&#34;karabiner-elements-export@2x.png&#34;
-        style=&#34;width: 1000px&#34;
+        style=&#34;width: 1100px&#34;
       /&gt;
     &lt;/figure&gt;
 &lt;/li&gt;

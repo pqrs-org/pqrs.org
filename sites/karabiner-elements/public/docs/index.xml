@@ -25,7 +25,21 @@
         &lt;p&gt;Usually, the following driver alert will appear on first start-up and the alert will disappear after you allow the system software from System Preferences.&lt;/p&gt;
 &lt;p&gt;Unfortunately, the allow button may sometimes not appear in System Preferences due to a problem with macOS driver loading.&lt;br /&gt;
 In this case, you can display the allow button by deactivating and activating driver as described in the Advanced section on the alert.&lt;/p&gt;
-&lt;div style=&#34;max-width: 600px&#34;&gt;
+&lt;p&gt;
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/help/troubleshooting/driver-alert-keeps-showing-up/images/dext-alert-1@2x.png&#34;
+    alt=&#34;dext-alert-1@2x.png&#34;
+    style=&#34;width: 1100px&#34;
+  /&gt;
+&lt;/figure&gt;
+
 
 
 
@@ -35,13 +49,12 @@ In this case, you can display the allow button by deactivating and activating dr
 
 &lt;figure&gt;
   &lt;img
-    src=&#34;/docs/help/troubleshooting/driver-alert-keeps-showing-up/images/dext-alert@2x.png&#34;
-    alt=&#34;dext-alert@2x.png&#34;
-    style=&#34;width: 1000px&#34;
+    src=&#34;/docs/help/troubleshooting/driver-alert-keeps-showing-up/images/dext-alert-2@2x.png&#34;
+    alt=&#34;dext-alert-2@2x.png&#34;
+    style=&#34;width: 1100px&#34;
   /&gt;
 &lt;/figure&gt;
-
-&lt;/div&gt;
+&lt;/p&gt;
 &lt;h2 id=&#34;macos-catalina-notes&#34;&gt;macOS Catalina Notes&lt;/h2&gt;
 &lt;p&gt;Karabiner-Elements requires macOS 10.15.6 or later, because macOS 10.15.5 or earlier has an issue around DriverKit.&lt;/p&gt;
 &lt;p&gt;Please use &lt;a href=&#34;/docs/releasenotes/#karabiner-elements-12100&#34;&gt;Karabiner-Elements 12.10.0&lt;/a&gt; if you are using macOS 10.15.5 or earlier.&lt;/p&gt;
@@ -325,10 +338,12 @@ You have to allow &lt;code&gt;karabiner_console_user_server&lt;/code&gt; in Secu
       &lt;img
         src=&#34;/docs/manual/configuration/configure-simple-modifications/images/karabiner-elements-simple-modifications-1@2x.png&#34;
         alt=&#34;karabiner-elements-simple-modifications-1@2x.png&#34;
-        style=&#34;width: 900px&#34;
+        style=&#34;width: 1100px&#34;
       /&gt;
     &lt;/figure&gt;
-
+&lt;/li&gt;
+&lt;li&gt;Select keys.&lt;br/&gt;
+(Tips: The following example changes the right option key to mouse button 3)
 
     
     
@@ -340,23 +355,7 @@ You have to allow &lt;code&gt;karabiner_console_user_server&lt;/code&gt; in Secu
       &lt;img
         src=&#34;/docs/manual/configuration/configure-simple-modifications/images/karabiner-elements-simple-modifications-2@2x.png&#34;
         alt=&#34;karabiner-elements-simple-modifications-2@2x.png&#34;
-        style=&#34;width: 900px&#34;
-      /&gt;
-    &lt;/figure&gt;
-&lt;/li&gt;
-&lt;li&gt;Select &lt;strong&gt;From key&lt;/strong&gt; and &lt;strong&gt;To key&lt;/strong&gt;.
-
-    
-    
-    
-      
-    
-    
-    &lt;figure&gt;
-      &lt;img
-        src=&#34;/docs/manual/configuration/configure-simple-modifications/images/karabiner-elements-simple-modifications-3@2x.png&#34;
-        alt=&#34;karabiner-elements-simple-modifications-3@2x.png&#34;
-        style=&#34;width: 900px&#34;
+        style=&#34;width: 818px&#34;
       /&gt;
     &lt;/figure&gt;
 &lt;/li&gt;
@@ -433,7 +432,7 @@ Thus, Karabiner-Elements fails detecting file updates after you change the paren
   &lt;img
     src=&#34;/docs/json/location/images/karabiner-elements-error-log@2x.png&#34;
     alt=&#34;karabiner-elements-error-log@2x.png&#34;
-    style=&#34;width: 1000px&#34;
+    style=&#34;width: 1100px&#34;
   /&gt;
 &lt;/figure&gt;
 
@@ -581,7 +580,7 @@ You may lose the left click button and system will be unusable.
       &lt;img
         src=&#34;/docs/help/how-to/mouse-button/images/karabiner-elements-mouse-button-devices@2x.png&#34;
         alt=&#34;karabiner-elements-mouse-button-devices@2x.png&#34;
-        style=&#34;width: 1000px&#34;
+        style=&#34;width: 1100px&#34;
       /&gt;
     &lt;/figure&gt;
 &lt;/p&gt;
@@ -600,7 +599,7 @@ use &lt;a href=&#34;https://ke-complex-modifications.pqrs.org/#mouse_button&#34;
       &lt;img
         src=&#34;/docs/help/how-to/mouse-button/images/karabiner-elements-mouse-button-simple-modifications@2x.png&#34;
         alt=&#34;karabiner-elements-mouse-button-simple-modifications@2x.png&#34;
-        style=&#34;width: 1000px&#34;
+        style=&#34;width: 1100px&#34;
       /&gt;
     &lt;/figure&gt;
 &lt;/p&gt;
@@ -955,7 +954,7 @@ To quit Karabiner-Elements, choose &amp;ldquo;Quit Karabiner-Elements&amp;rdquo;
   &lt;img
     src=&#34;/docs/manual/operation/quit/images/karabiner-elements-quit@2x.png&#34;
     alt=&#34;karabiner-elements-quit@2x.png&#34;
-    style=&#34;width: 900px&#34;
+    style=&#34;width: 1100px&#34;
   /&gt;
 &lt;/figure&gt;
 
@@ -1045,7 +1044,7 @@ To quit Karabiner-Elements, choose &amp;ldquo;Quit Karabiner-Elements&amp;rdquo;
   &lt;img
     src=&#34;/docs/manual/operation/restart/images/restart@2x.png&#34;
     alt=&#34;restart@2x.png&#34;
-    style=&#34;width: 1000px&#34;
+    style=&#34;width: 1100px&#34;
   /&gt;
 &lt;/figure&gt;
 
@@ -1063,7 +1062,7 @@ To quit Karabiner-Elements, choose &amp;ldquo;Quit Karabiner-Elements&amp;rdquo;
         
         
         &lt;p&gt;You can enable the sticky modifier keys from Preferences &amp;gt; Simple modifications.&lt;/p&gt;
-&lt;p&gt;
+
 
 
 
@@ -1074,25 +1073,10 @@ To quit Karabiner-Elements, choose &amp;ldquo;Quit Karabiner-Elements&amp;rdquo;
   &lt;img
     src=&#34;/docs/help/how-to/sticky-modifier-key/images/to-keys@2x.png&#34;
     alt=&#34;to-keys@2x.png&#34;
-    style=&#34;width: 1000px&#34;
+    style=&#34;width: 1092px&#34;
   /&gt;
 &lt;/figure&gt;
 
-
-
-
-
-  
-
-
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/help/how-to/sticky-modifier-key/images/simple-modifications@2x.png&#34;
-    alt=&#34;simple-modifications@2x.png&#34;
-    style=&#34;width: 997px&#34;
-  /&gt;
-&lt;/figure&gt;
-&lt;/p&gt;
 
 
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
@@ -1142,7 +1126,7 @@ To quit Karabiner-Elements, choose &amp;ldquo;Quit Karabiner-Elements&amp;rdquo;
   &lt;img
     src=&#34;/docs/help/how-to/sticky-modifier-key/images/indicator-configuration@2x.png&#34;
     alt=&#34;indicator-configuration@2x.png&#34;
-    style=&#34;width: 1000px&#34;
+    style=&#34;width: 1100px&#34;
   /&gt;
 &lt;/figure&gt;
 
@@ -2297,7 +2281,7 @@ And do nothing if the process is running with non root user.&lt;/li&gt;
         
         &lt;p&gt;Karabiner-Elements provides built-in uninstaller.&lt;br /&gt;
 Use the uninstaller to remove Karabiner-Elements from your system.&lt;/p&gt;
-&lt;p&gt;You can launch the uninstaller from &amp;ldquo;Uninstall Karabiner-Elements&amp;rdquo; button on Misc tab.
+&lt;p&gt;You can launch the uninstaller from &amp;ldquo;Launch uninstaller&amp;rdquo; button on Uninstall tab.
 
 
 
@@ -2309,7 +2293,7 @@ Use the uninstaller to remove Karabiner-Elements from your system.&lt;/p&gt;
   &lt;img
     src=&#34;/docs/manual/operation/uninstall/images/uninstall-button@2x.png&#34;
     alt=&#34;uninstall-button@2x.png&#34;
-    style=&#34;width: 1000px&#34;
+    style=&#34;width: 1100px&#34;
   /&gt;
 &lt;/figure&gt;
 &lt;/p&gt;
@@ -2325,7 +2309,7 @@ Use the uninstaller to remove Karabiner-Elements from your system.&lt;/p&gt;
   &lt;img
     src=&#34;/docs/manual/operation/uninstall/images/uninstaller@2x.png&#34;
     alt=&#34;uninstaller@2x.png&#34;
-    style=&#34;width: 945px&#34;
+    style=&#34;width: 1091px&#34;
   /&gt;
 &lt;/figure&gt;
 
@@ -2353,6 +2337,17 @@ Use the uninstaller to remove Karabiner-Elements from your system.&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;rm: /Applications/Karabiner-Elements.app: Operation not permitted
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Karabiner-Elements forces you to use uninstaller to remove files in order to ensure remove files outside /Applications.&lt;/p&gt;
 &lt;p&gt;See &lt;a href=&#34;/docs/help/advanced-topics/installed-files/&#34;&gt;Installed files&lt;/a&gt; to confirm the files.&lt;/p&gt;
+
+
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;alert alert-danger&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Manual uninstallation&lt;/h4&gt;
+
+    &lt;p&gt;If you want to remove files without uninstaller, unlock app files from command line with &lt;a href=&#34;/docs/help/advanced-topics/lock-icon/#why-these-files-are-protected&#34;&gt;this instruction&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;And then, remove &lt;a href=&#34;/docs/help/advanced-topics/installed-files/&#34;&gt;installed files&lt;/a&gt; by hand, and reboot your Mac.&lt;/p&gt;
 
 
 &lt;/div&gt;
@@ -2433,7 +2428,7 @@ These rules change keys by conditions.&lt;/p&gt;
   &lt;img
     src=&#34;/docs/manual/configuration/configure-complex-modifications/images/karabiner-elements-complex-modifications-1@2x.png&#34;
     alt=&#34;karabiner-elements-complex-modifications-1@2x.png&#34;
-    style=&#34;width: 900px&#34;
+    style=&#34;width: 1100px&#34;
   /&gt;
 &lt;/figure&gt;
 
@@ -2448,7 +2443,7 @@ These rules change keys by conditions.&lt;/p&gt;
   &lt;img
     src=&#34;/docs/manual/configuration/configure-complex-modifications/images/karabiner-elements-complex-modifications-2@2x.png&#34;
     alt=&#34;karabiner-elements-complex-modifications-2@2x.png&#34;
-    style=&#34;width: 894px&#34;
+    style=&#34;width: 1100px&#34;
   /&gt;
 &lt;/figure&gt;
 &lt;/p&gt;
@@ -2466,7 +2461,7 @@ A confirmation dialog is shown. Press &lt;strong&gt;Allow&lt;/strong&gt; button.
   &lt;img
     src=&#34;/docs/manual/configuration/configure-complex-modifications/images/karabiner-elements-complex-modifications-3@2x.png&#34;
     alt=&#34;karabiner-elements-complex-modifications-3@2x.png&#34;
-    style=&#34;width: 1246px&#34;
+    style=&#34;width: 1576px&#34;
   /&gt;
 &lt;/figure&gt;
 
@@ -2481,21 +2476,6 @@ A confirmation dialog is shown. Press &lt;strong&gt;Allow&lt;/strong&gt; button.
   &lt;img
     src=&#34;/docs/manual/configuration/configure-complex-modifications/images/karabiner-elements-complex-modifications-4@2x.png&#34;
     alt=&#34;karabiner-elements-complex-modifications-4@2x.png&#34;
-    style=&#34;width: 1241px&#34;
-  /&gt;
-&lt;/figure&gt;
-
-
-
-
-
-  
-
-
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/manual/configuration/configure-complex-modifications/images/karabiner-elements-complex-modifications-5@2x.png&#34;
-    alt=&#34;karabiner-elements-complex-modifications-5@2x.png&#34;
     style=&#34;width: 492px&#34;
   /&gt;
 &lt;/figure&gt;
@@ -2512,9 +2492,9 @@ Press &lt;strong&gt;Import&lt;/strong&gt; button, then new rules are imported.&l
 
 &lt;figure&gt;
   &lt;img
-    src=&#34;/docs/manual/configuration/configure-complex-modifications/images/karabiner-elements-complex-modifications-6@2x.png&#34;
-    alt=&#34;karabiner-elements-complex-modifications-6@2x.png&#34;
-    style=&#34;width: 894px&#34;
+    src=&#34;/docs/manual/configuration/configure-complex-modifications/images/karabiner-elements-complex-modifications-5@2x.png&#34;
+    alt=&#34;karabiner-elements-complex-modifications-5@2x.png&#34;
+    style=&#34;width: 1100px&#34;
   /&gt;
 &lt;/figure&gt;
 
@@ -2529,30 +2509,15 @@ Press &lt;strong&gt;Import&lt;/strong&gt; button, then new rules are imported.&l
 
 &lt;figure&gt;
   &lt;img
-    src=&#34;/docs/manual/configuration/configure-complex-modifications/images/karabiner-elements-complex-modifications-7@2x.png&#34;
-    alt=&#34;karabiner-elements-complex-modifications-7@2x.png&#34;
-    style=&#34;width: 894px&#34;
+    src=&#34;/docs/manual/configuration/configure-complex-modifications/images/karabiner-elements-complex-modifications-6@2x.png&#34;
+    alt=&#34;karabiner-elements-complex-modifications-6@2x.png&#34;
+    style=&#34;width: 1100px&#34;
   /&gt;
 &lt;/figure&gt;
 
 &lt;h2 id=&#34;step-5&#34;&gt;Step 5&lt;/h2&gt;
 &lt;p&gt;New rule is enabled.&lt;br /&gt;
 Confirm the result using &lt;a href=&#34;/docs/manual/operation/eventviewer/&#34;&gt;Karabiner-EventViewer&lt;/a&gt;.&lt;/p&gt;
-
-
-
-
-  
-
-
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/manual/configuration/configure-complex-modifications/images/karabiner-elements-complex-modifications-8@2x.png&#34;
-    alt=&#34;karabiner-elements-complex-modifications-8@2x.png&#34;
-    style=&#34;width: 900px&#34;
-  /&gt;
-&lt;/figure&gt;
-
 
       </description>
     </item>
@@ -2661,7 +2626,7 @@ Confirm the result using &lt;a href=&#34;/docs/manual/operation/eventviewer/&#34
       <description>
         
         
-        &lt;p&gt;You can check for updates from &amp;ldquo;Misc&amp;rdquo; tab.&lt;/p&gt;
+        &lt;p&gt;You can check for updates from Update tab.&lt;/p&gt;
 
 
 
@@ -2673,7 +2638,7 @@ Confirm the result using &lt;a href=&#34;/docs/manual/operation/eventviewer/&#34
   &lt;img
     src=&#34;/docs/manual/operation/check-for-updates/images/karabiner-elements-check-for-updates@2x.png&#34;
     alt=&#34;karabiner-elements-check-for-updates@2x.png&#34;
-    style=&#34;width: 900px&#34;
+    style=&#34;width: 1100px&#34;
   /&gt;
 &lt;/figure&gt;
 
@@ -2687,7 +2652,7 @@ Confirm the result using &lt;a href=&#34;/docs/manual/operation/eventviewer/&#34
   &lt;img
     src=&#34;/docs/manual/operation/check-for-updates/images/karabiner-elements-check-for-updates-beta@2x.png&#34;
     alt=&#34;karabiner-elements-check-for-updates-beta@2x.png&#34;
-    style=&#34;width: 900px&#34;
+    style=&#34;width: 1100px&#34;
   /&gt;
 &lt;/figure&gt;
 
@@ -2729,7 +2694,7 @@ You have to enable them if you want to change the mouse buttons in Karabiner-Ele
   &lt;img
     src=&#34;/docs/manual/configuration/configure-devices/images/karabiner-elements-devices@2x.png&#34;
     alt=&#34;karabiner-elements-devices@2x.png&#34;
-    style=&#34;width: 1000px&#34;
+    style=&#34;width: 1100px&#34;
   /&gt;
 &lt;/figure&gt;
 
@@ -3283,7 +3248,7 @@ Instead, please change fn+number keys to function keys in Karabiner-Elements con
       &lt;img
         src=&#34;/docs/help/troubleshooting/touch-bar-function-keys/images/karabiner-elements-fn_plus_numbers_to_function_keys@2x.png&#34;
         alt=&#34;karabiner-elements-fn_plus_numbers_to_function_keys@2x.png&#34;
-        style=&#34;width: 1000px&#34;
+        style=&#34;width: 1100px&#34;
       /&gt;
     &lt;/figure&gt;
 &lt;/li&gt;
@@ -3552,7 +3517,7 @@ You can use control+fn+escape as control+eject.
       &lt;img
         src=&#34;/docs/help/troubleshooting/control-eject/images/karabiner-elements-fn-escape-to-eject@2x.png&#34;
         alt=&#34;karabiner-elements-fn-escape-to-eject@2x.png&#34;
-        style=&#34;width: 1000px&#34;
+        style=&#34;width: 1100px&#34;
       /&gt;
     &lt;/figure&gt;
 &lt;/li&gt;
@@ -3584,7 +3549,7 @@ This feature is useful when you put the external keybaord on top of the built-in
   &lt;img
     src=&#34;/docs/manual/configuration/disable-built-in-keyboard/images/karabiner-elements-devices-built-in@2x.png&#34;
     alt=&#34;karabiner-elements-devices-built-in@2x.png&#34;
-    style=&#34;width: 1000px&#34;
+    style=&#34;width: 1100px&#34;
   /&gt;
 &lt;/figure&gt;
 
@@ -4200,7 +4165,7 @@ This feature is useful when you put the external keybaord on top of the built-in
       &lt;img
         src=&#34;/docs/manual/misc/multitouch-extension/images/karabiner-elements-multitouch-extension-1@2x.png&#34;
         alt=&#34;karabiner-elements-multitouch-extension-1@2x.png&#34;
-        style=&#34;width: 1000px&#34;
+        style=&#34;width: 1100px&#34;
       /&gt;
     &lt;/figure&gt;
 &lt;/li&gt;
