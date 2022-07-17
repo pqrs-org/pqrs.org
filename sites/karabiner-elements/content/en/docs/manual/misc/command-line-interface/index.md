@@ -35,7 +35,8 @@ Usage:
       --show-current-profile-name
                                 Show current profile name
       --list-profile-names      Show all profile names
-      --set-variables arg       Json string: {[key: string]: number}
+      --set-variables arg       Json string: {[key: string]:
+                                number|boolean|string}
       --copy-current-profile-to-system-default-profile
                                 Copy the current profile to system default
                                 profile.
