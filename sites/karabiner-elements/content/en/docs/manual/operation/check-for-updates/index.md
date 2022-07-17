@@ -3,7 +3,7 @@ title: 'Check for updates'
 weight: 300
 ---
 
-You can check for updates from "Misc" tab.
+You can check for updates from Update tab.
 
 {{< local-image src="images/karabiner-elements-check-for-updates@2x.png" >}}
 
