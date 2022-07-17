@@ -8,9 +8,8 @@ Usually, the following driver alert will appear on first start-up and the alert 
 Unfortunately, the allow button may sometimes not appear in System Preferences due to a problem with macOS driver loading.<br />
 In this case, you can display the allow button by deactivating and activating driver as described in the Advanced section on the alert.
 
-<div style="max-width: 600px">
-{{< local-image src="images/dext-alert@2x.png" >}}
-</div>
+{{< local-image src="images/dext-alert-1@2x.png" >}}
+{{< local-image src="images/dext-alert-2@2x.png" >}}
 
 ## macOS Catalina Notes
 
