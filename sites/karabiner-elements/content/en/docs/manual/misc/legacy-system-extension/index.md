@@ -3,8 +3,8 @@ title: 'About "Legacy System Extension" alert'
 weight: 700
 ---
 
-The following alert will be shown when you are using Karabiner-elements 12.x.x on macOS Catalina.
+If you are using old Karabiner-Elements (12.x.x or earlier) on macOS Catalina or later, the following alert will be shown.
 
-Upgrading Karabiner-Elements 13.0.0 or later solves this issue.
+Please upgrade Karabiner-Elements 13.0.0 or later.
 
 {{< local-image src="images/legacy-system-extension@2x.png" >}}
