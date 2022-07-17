@@ -22,6 +22,8 @@ The URLs to send the version information are as follows:
 -   <https://appcast.pqrs.org/karabiner-elements-appcast.xml>
 -   <https://appcast.pqrs.org/karabiner-elements-appcast-devel.xml>
 
+You can change the automatic update setting in Update tab.
+
 {{< local-image src="images/automatic-update@2x.png" >}}
 
 {{% /alert %}}
