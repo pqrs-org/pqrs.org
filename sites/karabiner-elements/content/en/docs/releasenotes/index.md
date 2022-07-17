@@ -5,6 +5,23 @@ simple_list: true
 exclude_search: true
 ---
 
+## Karabiner-Elements 14.5.0
+
+-   [📦 Download](https://github.com/pqrs-org/Karabiner-Elements/releases/download/v14.5.0/Karabiner-Elements-14.5.0.dmg)
+-   📅 Release date
+    -   Jul 17, 2022
+-   💥 Breaking changes
+    -   The following modifier flags and manipulators are now canceled even for events from devices not grabbed by Karabiner-Elements, e.g. mouse clicks.
+        -   `sticky modifiers`
+        -   `to_if_alone`
+        -   `to_if_held_down`
+        -   `to_delayed_action`
+-   ⚡️ Improvements
+    -   Improved behavior the sticky modifiers when used together with the built-in trackpad. (Thanks to @quarkw)
+    -   Preferences Window is rewritten in SwiftUI.
+    -   `set_variable` now supports bool and string value.
+    -   Sparkle Framework has been updated.
+
 ## Karabiner-Elements 14.4.0
 
 -   [📦 Download](https://github.com/pqrs-org/Karabiner-Elements/releases/download/v14.4.0/Karabiner-Elements-14.4.0.dmg)
