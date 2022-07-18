@@ -37,17 +37,20 @@ $(function () {
           const $img = $('<img>')
             .attr('src', sponsor.avatar.url)
             .attr('alt', name)
-            .attr('width', 80 * sponsor.avatar.scale)
-            .attr('height', 80 * sponsor.avatar.scale)
+            .css({
+              width: `${80 * sponsor.avatar.scale}px`,
+              maxWidth: '100%',
+            })
 
-          const paddingY = 10 * sponsor.avatar.scale + 'px'
-          const paddingX = 5 * sponsor.avatar.scale + 'px'
+          const paddingY = `${10 * sponsor.avatar.scale}px`
+          const paddingX = `${5 * sponsor.avatar.scale}px`
           const $a = $('<a>')
             .attr('href', 'https://github.com/' + sponsor.login)
             .attr('target', '_blank')
             .css({
-              width: 100 * sponsor.avatar.scale + 'px',
-              padding: paddingY + ' ' + paddingX,
+              width: `${100 * sponsor.avatar.scale}px`,
+              maxWidth: 'calc(100vw - 80px)',
+              padding: `${paddingY} ${paddingX}`,
             })
             .append($img)
           $a.append($('<div>').text('@' + sponsor.login))
