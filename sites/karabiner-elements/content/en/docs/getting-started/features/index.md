@@ -20,6 +20,11 @@ Karabiner-Elements is a powerful and stable keyboard customizer for macOS.
 -   **Profiles**: Support multiple profiles.
 -   **Modifier Flag Sync**: Synchronize modifier flags across all connected keyboards.
 -   **Secure Keyboard Entry Support**: Work well on Secure Keyboard Entry environment such as a password prompt, terminal with Secure Keyboard Entry, etc.
+-   **Extra Key Support**: Enable extra keys on PC keyboard that are not recognized by default in macOS.
+    -   Home key
+    -   International keys
+    -   Language keys (e.g., `無変換`,`変換`, `カタカナ` keys on JIS PC keyboard)
+    -   Application Launch Keys
 
 ## Current limitations
 
