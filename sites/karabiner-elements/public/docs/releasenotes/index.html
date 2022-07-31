@@ -19,33 +19,33 @@
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
 <title>Release notes | Karabiner-Elements</title>
-<meta name="description" content="Karabiner-Elements 14.5.0
+<meta name="description" content="Karabiner-Elements 14.6.0
 
 📦 Download
 📅 Release date
 
-Jul 17, 2022
+Jul 31, 2022
 
 
-💥 Breaking changes
+✨ New Features
 
-The following modifier flags and manipulators are now …">
+Treat as built-in keyboard setting has been added into Devices …">
 <meta property="og:title" content="Release notes" />
-<meta property="og:description" content="Karabiner-Elements 14.5.0 📦 Download 📅 Release date Jul 17, 2022 💥 Breaking changes The following modifier flags and manipulators are now canceled even for events from devices not grabbed by Karabiner-Elements, e.g. mouse clicks. sticky modifiers to_if_alone to_if_held_down to_delayed_action ⚡️ Improvements Improved behavior the sticky modifiers when used together with the built-in trackpad. (Thanks to @quarkw) Preferences Window is rewritten in SwiftUI. set_variable now supports bool and string value. Sparkle Framework has been updated." />
+<meta property="og:description" content="Karabiner-Elements 14.6.0 📦 Download 📅 Release date Jul 31, 2022 ✨ New Features Treat as built-in keyboard setting has been added into Devices configuration. It works with &ldquo;Disable the built-in keyboard&rdquo; feature. 🐛 Bug Fixes Fixed an issue that &ldquo;Disable the built-in keyboard&rdquo; feature does not work if the built-in keyboard is not included in the event modification target devices. Karabiner-Elements 14.5.0 📦 Download 📅 Release date Jul 17, 2022 💥 Breaking changes The following modifier flags and manipulators are now canceled even for events from devices not grabbed by Karabiner-Elements, e." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/releasenotes/" /><meta property="og:image" content="https://karabiner-elements.pqrs.org/images/logo.png"/><meta property="article:section" content="docs" />
 
 <meta property="og:site_name" content="Karabiner-Elements" />
 
 <meta itemprop="name" content="Release notes">
-<meta itemprop="description" content="Karabiner-Elements 14.5.0 📦 Download 📅 Release date Jul 17, 2022 💥 Breaking changes The following modifier flags and manipulators are now canceled even for events from devices not grabbed by Karabiner-Elements, e.g. mouse clicks. sticky modifiers to_if_alone to_if_held_down to_delayed_action ⚡️ Improvements Improved behavior the sticky modifiers when used together with the built-in trackpad. (Thanks to @quarkw) Preferences Window is rewritten in SwiftUI. set_variable now supports bool and string value. Sparkle Framework has been updated.">
+<meta itemprop="description" content="Karabiner-Elements 14.6.0 📦 Download 📅 Release date Jul 31, 2022 ✨ New Features Treat as built-in keyboard setting has been added into Devices configuration. It works with &ldquo;Disable the built-in keyboard&rdquo; feature. 🐛 Bug Fixes Fixed an issue that &ldquo;Disable the built-in keyboard&rdquo; feature does not work if the built-in keyboard is not included in the event modification target devices. Karabiner-Elements 14.5.0 📦 Download 📅 Release date Jul 17, 2022 💥 Breaking changes The following modifier flags and manipulators are now canceled even for events from devices not grabbed by Karabiner-Elements, e.">
 
-<meta itemprop="wordCount" content="6618"><meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
+<meta itemprop="wordCount" content="6678"><meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
 
 <meta name="twitter:title" content="Release notes"/>
-<meta name="twitter:description" content="Karabiner-Elements 14.5.0 📦 Download 📅 Release date Jul 17, 2022 💥 Breaking changes The following modifier flags and manipulators are now canceled even for events from devices not grabbed by Karabiner-Elements, e.g. mouse clicks. sticky modifiers to_if_alone to_if_held_down to_delayed_action ⚡️ Improvements Improved behavior the sticky modifiers when used together with the built-in trackpad. (Thanks to @quarkw) Preferences Window is rewritten in SwiftUI. set_variable now supports bool and string value. Sparkle Framework has been updated."/>
+<meta name="twitter:description" content="Karabiner-Elements 14.6.0 📦 Download 📅 Release date Jul 31, 2022 ✨ New Features Treat as built-in keyboard setting has been added into Devices configuration. It works with &ldquo;Disable the built-in keyboard&rdquo; feature. 🐛 Bug Fixes Fixed an issue that &ldquo;Disable the built-in keyboard&rdquo; feature does not work if the built-in keyboard is not included in the event modification target devices. Karabiner-Elements 14.5.0 📦 Download 📅 Release date Jul 17, 2022 💥 Breaking changes The following modifier flags and manipulators are now canceled even for events from devices not grabbed by Karabiner-Elements, e."/>
 
 
 
@@ -108,7 +108,7 @@ if (!doNotTrack) {
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.f1cb17aee55e3582b7a24d20d4d5ead6.json"
+  data-offline-search-index-json-src="/offline-search-index.86c4f8f3ae12e8e91794b6a0008c7fd0.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="25"
 >
@@ -130,7 +130,7 @@ if (!doNotTrack) {
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.f1cb17aee55e3582b7a24d20d4d5ead6.json"
+  data-offline-search-index-json-src="/offline-search-index.86c4f8f3ae12e8e91794b6a0008c7fd0.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="25"
 >
@@ -625,6 +625,7 @@ if (!doNotTrack) {
 
 <nav id="TableOfContents">
   <ul>
+    <li><a href="#karabiner-elements-1460">Karabiner-Elements 14.6.0</a></li>
     <li><a href="#karabiner-elements-1450">Karabiner-Elements 14.5.0</a></li>
     <li><a href="#karabiner-elements-1440">Karabiner-Elements 14.4.0</a></li>
     <li><a href="#karabiner-elements-1430">Karabiner-Elements 14.3.0</a></li>
@@ -781,7 +782,26 @@ if (!doNotTrack) {
 
 		
 	</header>    
-	<h2 id="karabiner-elements-1450">Karabiner-Elements 14.5.0</h2>
+	<h2 id="karabiner-elements-1460">Karabiner-Elements 14.6.0</h2>
+<ul>
+<li><a href="https://github.com/pqrs-org/Karabiner-Elements/releases/download/v14.6.0/Karabiner-Elements-14.6.0.dmg">📦 Download</a></li>
+<li>📅 Release date
+<ul>
+<li>Jul 31, 2022</li>
+</ul>
+</li>
+<li>✨ New Features
+<ul>
+<li><code>Treat as built-in keyboard</code> setting has been added into Devices configuration. It works with &ldquo;Disable the built-in keyboard&rdquo; feature.</li>
+</ul>
+</li>
+<li>🐛 Bug Fixes
+<ul>
+<li>Fixed an issue that &ldquo;Disable the built-in keyboard&rdquo; feature does not work if the built-in keyboard is not included in the event modification target devices.</li>
+</ul>
+</li>
+</ul>
+<h2 id="karabiner-elements-1450">Karabiner-Elements 14.5.0</h2>
 <ul>
 <li><a href="https://github.com/pqrs-org/Karabiner-Elements/releases/download/v14.5.0/Karabiner-Elements-14.5.0.dmg">📦 Download</a></li>
 <li>📅 Release date

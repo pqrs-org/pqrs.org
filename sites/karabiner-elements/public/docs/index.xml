@@ -3561,6 +3561,23 @@ This feature is useful when you put the external keybaord on top of the built-in
   /&gt;
 &lt;/figure&gt;
 
+&lt;h2 id=&#34;configure-the-built-in-keyboard-detection&#34;&gt;Configure the built-in keyboard detection&lt;/h2&gt;
+&lt;p&gt;Enable &lt;code&gt;Treat as a built-in keyboard&lt;/code&gt; in Devices if your built-in keyboard is not recognized properly or you want to add a device that will be disabled,&lt;/p&gt;
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/manual/configuration/disable-built-in-keyboard/images/treat-as-built-in-keyboard@2x.png&#34;
+    alt=&#34;treat-as-built-in-keyboard@2x.png&#34;
+    style=&#34;width: 1100px&#34;
+  /&gt;
+&lt;/figure&gt;
+
 
       </description>
     </item>
