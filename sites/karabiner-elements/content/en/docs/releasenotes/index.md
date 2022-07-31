@@ -5,6 +5,16 @@ simple_list: true
 exclude_search: true
 ---
 
+## Karabiner-Elements 14.6.0
+
+-   [📦 Download](https://github.com/pqrs-org/Karabiner-Elements/releases/download/v14.6.0/Karabiner-Elements-14.6.0.dmg)
+-   📅 Release date
+    -   Jul 31, 2022
+-   ✨ New Features
+    -   `Treat as built-in keyboard` setting has been added into Devices configuration. It works with "Disable the built-in keyboard" feature.
+-   🐛 Bug Fixes
+    -   Fixed an issue that "Disable the built-in keyboard" feature does not work if the built-in keyboard is not included in the event modification target devices.
+
 ## Karabiner-Elements 14.5.0
 
 -   [📦 Download](https://github.com/pqrs-org/Karabiner-Elements/releases/download/v14.5.0/Karabiner-Elements-14.5.0.dmg)
