@@ -7,5 +7,8 @@ build:
 	find * -name '._*' -delete
 	HUGO_ENV="production" hugo --gc
 
+clean:
+	hugo mod clean
+
 public-server:
 	cd public && python3 -m http.server 1314
