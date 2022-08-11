@@ -5,6 +5,16 @@ simple_list: true
 exclude_search: true
 ---
 
+## Karabiner-Elements 14.8.0
+
+-   [📦 Download](https://github.com/pqrs-org/Karabiner-Elements/releases/download/v14.8.0/Karabiner-Elements-14.8.0.dmg)
+-   📅 Release date
+    -   Aug 11, 2022
+-   ✨ New Features
+    -   Add `Enable unsafe configuration` feature into Preferences > Pro tab.
+-   🐛 Bug Fixes
+    -   Fixed an issue that the built-in keyboard is not be treated as the built-in keyboard if the keyboard is connected via SPI (Serial Peripheral Interface), such as M2 MacBook Air.
+
 ## Karabiner-Elements 14.6.0
 
 -   [📦 Download](https://github.com/pqrs-org/Karabiner-Elements/releases/download/v14.6.0/Karabiner-Elements-14.6.0.dmg)
