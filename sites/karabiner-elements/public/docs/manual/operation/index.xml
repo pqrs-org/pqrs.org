@@ -410,6 +410,82 @@ Press &lt;strong&gt;Add new profile&lt;/strong&gt; button to add new profile.&lt
     </item>
     
     <item>
+      <title>Docs: About Unsafe Configuration</title>
+      <link>/docs/manual/operation/about-unsafe-configuration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/manual/operation/about-unsafe-configuration/</guid>
+      <description>
+        
+        
+        &lt;p&gt;There are several settings that cannot be enabled by default in the GUI to prevent improper configuration which breaks macOS operation.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Although never recommended&lt;/strong&gt;, enabling Unsafe Configuration from the Pro tab allows you the following operations.&lt;/p&gt;
+&lt;p&gt;If you want to enable the unsafe configuration, remember how to &lt;a href=&#34;https://support.apple.com/guide/mac-help/start-up-your-mac-in-safe-mode-mh21245/mac&#34;&gt;start up your Mac in safe mode&lt;/a&gt;.
+You can restore the settings in safe mode even if you make a mistake.&lt;/p&gt;
+&lt;h2 id=&#34;how-to-enable-unsafe-configuration&#34;&gt;How to enable unsafe configuration&lt;/h2&gt;
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/manual/operation/about-unsafe-configuration/images/enable-unsafe-configuration@2x.png&#34;
+    alt=&#34;enable-unsafe-configuration@2x.png&#34;
+    style=&#34;width: 1100px&#34;
+  /&gt;
+&lt;/figure&gt;
+
+&lt;h2 id=&#34;enabled-operations&#34;&gt;Enabled operations&lt;/h2&gt;
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Allow to modify Apple pointing devices&lt;/h4&gt;
+
+    &lt;p&gt;Before:&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/manual/operation/about-unsafe-configuration/images/apple-pointing-device-1@2x.png&#34;
+    alt=&#34;apple-pointing-device-1@2x.png&#34;
+    style=&#34;width: 1100px&#34;
+  /&gt;
+&lt;/figure&gt;
+&lt;p&gt;After:&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/manual/operation/about-unsafe-configuration/images/apple-pointing-device-2@2x.png&#34;
+    alt=&#34;apple-pointing-device-2@2x.png&#34;
+    style=&#34;width: 1100px&#34;
+  /&gt;
+&lt;/figure&gt;
+
+
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Allow to change the mouse button 1&lt;/h4&gt;
+
+    &lt;p&gt;It is possible to change the left click.&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/manual/operation/about-unsafe-configuration/images/button1@2x.png&#34;
+    alt=&#34;button1@2x.png&#34;
+    style=&#34;width: 1095px&#34;
+  /&gt;
+&lt;/figure&gt;
+
+
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
       <title>Docs: Downgrade</title>
       <link>/docs/manual/operation/downgrade/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

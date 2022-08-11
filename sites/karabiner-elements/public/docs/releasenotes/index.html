@@ -19,33 +19,33 @@
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
 <title>Release notes | Karabiner-Elements</title>
-<meta name="description" content="Karabiner-Elements 14.6.0
+<meta name="description" content="Karabiner-Elements 14.8.0
 
 📦 Download
 📅 Release date
 
-Jul 31, 2022
+Aug 11, 2022
 
 
 ✨ New Features
 
-Treat as a built-in keyboard setting has been added into Devices …">
+Add Enable unsafe configuration feature into Preferences &gt; Pro …">
 <meta property="og:title" content="Release notes" />
-<meta property="og:description" content="Karabiner-Elements 14.6.0 📦 Download 📅 Release date Jul 31, 2022 ✨ New Features Treat as a built-in keyboard setting has been added into Devices configuration. It works with &ldquo;Disable the built-in keyboard&rdquo; feature. 🐛 Bug Fixes Fixed an issue that &ldquo;Disable the built-in keyboard&rdquo; feature does not work if the built-in keyboard is not included in the event modification target devices. Karabiner-Elements 14.5.0 📦 Download 📅 Release date Jul 17, 2022 💥 Breaking changes The following modifier flags and manipulators are now canceled even for events from devices not grabbed by Karabiner-Elements, e." />
+<meta property="og:description" content="Karabiner-Elements 14.8.0 📦 Download 📅 Release date Aug 11, 2022 ✨ New Features Add Enable unsafe configuration feature into Preferences &gt; Pro tab. 🐛 Bug Fixes Fixed an issue that the built-in keyboard is not be treated as the built-in keyboard if the keyboard is connected via SPI (Serial Peripheral Interface), such as M2 MacBook Air. Karabiner-Elements 14.6.0 📦 Download 📅 Release date Jul 31, 2022 ✨ New Features Treat as a built-in keyboard setting has been added into Devices configuration." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/releasenotes/" /><meta property="og:image" content="https://karabiner-elements.pqrs.org/images/logo.png"/><meta property="article:section" content="docs" />
 
 <meta property="og:site_name" content="Karabiner-Elements" />
 
 <meta itemprop="name" content="Release notes">
-<meta itemprop="description" content="Karabiner-Elements 14.6.0 📦 Download 📅 Release date Jul 31, 2022 ✨ New Features Treat as a built-in keyboard setting has been added into Devices configuration. It works with &ldquo;Disable the built-in keyboard&rdquo; feature. 🐛 Bug Fixes Fixed an issue that &ldquo;Disable the built-in keyboard&rdquo; feature does not work if the built-in keyboard is not included in the event modification target devices. Karabiner-Elements 14.5.0 📦 Download 📅 Release date Jul 17, 2022 💥 Breaking changes The following modifier flags and manipulators are now canceled even for events from devices not grabbed by Karabiner-Elements, e.">
+<meta itemprop="description" content="Karabiner-Elements 14.8.0 📦 Download 📅 Release date Aug 11, 2022 ✨ New Features Add Enable unsafe configuration feature into Preferences &gt; Pro tab. 🐛 Bug Fixes Fixed an issue that the built-in keyboard is not be treated as the built-in keyboard if the keyboard is connected via SPI (Serial Peripheral Interface), such as M2 MacBook Air. Karabiner-Elements 14.6.0 📦 Download 📅 Release date Jul 31, 2022 ✨ New Features Treat as a built-in keyboard setting has been added into Devices configuration.">
 
-<meta itemprop="wordCount" content="6679"><meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
+<meta itemprop="wordCount" content="6735"><meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
 
 <meta name="twitter:title" content="Release notes"/>
-<meta name="twitter:description" content="Karabiner-Elements 14.6.0 📦 Download 📅 Release date Jul 31, 2022 ✨ New Features Treat as a built-in keyboard setting has been added into Devices configuration. It works with &ldquo;Disable the built-in keyboard&rdquo; feature. 🐛 Bug Fixes Fixed an issue that &ldquo;Disable the built-in keyboard&rdquo; feature does not work if the built-in keyboard is not included in the event modification target devices. Karabiner-Elements 14.5.0 📦 Download 📅 Release date Jul 17, 2022 💥 Breaking changes The following modifier flags and manipulators are now canceled even for events from devices not grabbed by Karabiner-Elements, e."/>
+<meta name="twitter:description" content="Karabiner-Elements 14.8.0 📦 Download 📅 Release date Aug 11, 2022 ✨ New Features Add Enable unsafe configuration feature into Preferences &gt; Pro tab. 🐛 Bug Fixes Fixed an issue that the built-in keyboard is not be treated as the built-in keyboard if the keyboard is connected via SPI (Serial Peripheral Interface), such as M2 MacBook Air. Karabiner-Elements 14.6.0 📦 Download 📅 Release date Jul 31, 2022 ✨ New Features Treat as a built-in keyboard setting has been added into Devices configuration."/>
 
 
 
@@ -108,7 +108,7 @@ if (!doNotTrack) {
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.cb53999c94860769bb312d820cbed048.json"
+  data-offline-search-index-json-src="/offline-search-index.bbe2d6d93b908a434f2806f5eda26832.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="25"
 >
@@ -130,7 +130,7 @@ if (!doNotTrack) {
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.cb53999c94860769bb312d820cbed048.json"
+  data-offline-search-index-json-src="/offline-search-index.bbe2d6d93b908a434f2806f5eda26832.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="25"
 >
@@ -230,6 +230,10 @@ if (!doNotTrack) {
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsmanualoperationexport-li">
   <input type="checkbox" id="m-docsmanualoperationexport-check"/>
   <label for="m-docsmanualoperationexport-check"><a href="/docs/manual/operation/export/" class="align-left pl-0  td-sidebar-link td-sidebar-link__page" id="m-docsmanualoperationexport"><span class="">Export and import configuration</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsmanualoperationabout-unsafe-configuration-li">
+  <input type="checkbox" id="m-docsmanualoperationabout-unsafe-configuration-check"/>
+  <label for="m-docsmanualoperationabout-unsafe-configuration-check"><a href="/docs/manual/operation/about-unsafe-configuration/" class="align-left pl-0  td-sidebar-link td-sidebar-link__page" id="m-docsmanualoperationabout-unsafe-configuration"><span class="">About Unsafe Configuration</span></a></label>
   
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsmanualoperationdowngrade-li">
   <input type="checkbox" id="m-docsmanualoperationdowngrade-check"/>
@@ -629,6 +633,7 @@ if (!doNotTrack) {
 
 <nav id="TableOfContents">
   <ul>
+    <li><a href="#karabiner-elements-1480">Karabiner-Elements 14.8.0</a></li>
     <li><a href="#karabiner-elements-1460">Karabiner-Elements 14.6.0</a></li>
     <li><a href="#karabiner-elements-1450">Karabiner-Elements 14.5.0</a></li>
     <li><a href="#karabiner-elements-1440">Karabiner-Elements 14.4.0</a></li>
@@ -786,7 +791,26 @@ if (!doNotTrack) {
 
 		
 	</header>    
-	<h2 id="karabiner-elements-1460">Karabiner-Elements 14.6.0</h2>
+	<h2 id="karabiner-elements-1480">Karabiner-Elements 14.8.0</h2>
+<ul>
+<li><a href="https://github.com/pqrs-org/Karabiner-Elements/releases/download/v14.8.0/Karabiner-Elements-14.8.0.dmg">📦 Download</a></li>
+<li>📅 Release date
+<ul>
+<li>Aug 11, 2022</li>
+</ul>
+</li>
+<li>✨ New Features
+<ul>
+<li>Add <code>Enable unsafe configuration</code> feature into Preferences &gt; Pro tab.</li>
+</ul>
+</li>
+<li>🐛 Bug Fixes
+<ul>
+<li>Fixed an issue that the built-in keyboard is not be treated as the built-in keyboard if the keyboard is connected via SPI (Serial Peripheral Interface), such as M2 MacBook Air.</li>
+</ul>
+</li>
+</ul>
+<h2 id="karabiner-elements-1460">Karabiner-Elements 14.6.0</h2>
 <ul>
 <li><a href="https://github.com/pqrs-org/Karabiner-Elements/releases/download/v14.6.0/Karabiner-Elements-14.6.0.dmg">📦 Download</a></li>
 <li>📅 Release date
