@@ -18,34 +18,30 @@
 <link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
-<title>Disable the built-in keyboard when external keyboard is connected | Karabiner-Elements</title>
-<meta name="description" content="You can disable MacBook built-in keyboard if external keyboards are connected.
-This feature is useful when you put the external keybaord on top of the …">
-<meta property="og:title" content="Disable the built-in keyboard when external keyboard is connected" />
-<meta property="og:description" content="You can disable MacBook built-in keyboard if external keyboards are connected.
-This feature is useful when you put the external keybaord on top of the built-in keyboard.
-Choose your external keyboards on Deviecs &gt; Advanced.
-Configure the built-in keyboard detection Enable Treat as a built-in keyboard in Devices if your built-in keyboard is not recognized properly or you want to add a device that will be disabled," />
+<title>Compatibility with Logitech Logi Options&#43;: Fn keys | Karabiner-Elements</title>
+<meta name="description" content="This was discovered when using an MX Keys keyboard with the “Logi Options&#43;” software.  While Karabiner Elements is running, the Logitech specific …">
+<meta property="og:title" content="Compatibility with Logitech Logi Options&#43;: Fn keys" />
+<meta property="og:description" content="This was discovered when using an MX Keys keyboard with the “Logi Options&#43;” software. While Karabiner Elements is running, the Logitech specific function keys (such as Fn-esc to toggle between function keys and media keys and f1, f2, f3 to switch between inputs) are not recognized.
+The solution is to edit karabiner.json such that the &quot;fn_function_keys&quot; array is empty:
+&#34;fn_function_keys&#34;: [] Credit: https://github.com/pqrs-org/Karabiner-Elements/issues/1450#issuecomment-1013932206" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="/docs/manual/configuration/disable-built-in-keyboard/" /><meta property="og:image" content="https://karabiner-elements.pqrs.org/images/logo.png"/><meta property="article:section" content="docs" />
+<meta property="og:url" content="/docs/help/troubleshooting/logitech-logi-options-plus-compatibility/" /><meta property="og:image" content="https://karabiner-elements.pqrs.org/images/logo.png"/><meta property="article:section" content="docs" />
 
 <meta property="og:site_name" content="Karabiner-Elements" />
 
-<meta itemprop="name" content="Disable the built-in keyboard when external keyboard is connected">
-<meta itemprop="description" content="You can disable MacBook built-in keyboard if external keyboards are connected.
-This feature is useful when you put the external keybaord on top of the built-in keyboard.
-Choose your external keyboards on Deviecs &gt; Advanced.
-Configure the built-in keyboard detection Enable Treat as a built-in keyboard in Devices if your built-in keyboard is not recognized properly or you want to add a device that will be disabled,">
+<meta itemprop="name" content="Compatibility with Logitech Logi Options&#43;: Fn keys">
+<meta itemprop="description" content="This was discovered when using an MX Keys keyboard with the “Logi Options&#43;” software. While Karabiner Elements is running, the Logitech specific function keys (such as Fn-esc to toggle between function keys and media keys and f1, f2, f3 to switch between inputs) are not recognized.
+The solution is to edit karabiner.json such that the &quot;fn_function_keys&quot; array is empty:
+&#34;fn_function_keys&#34;: [] Credit: https://github.com/pqrs-org/Karabiner-Elements/issues/1450#issuecomment-1013932206">
 
-<meta itemprop="wordCount" content="67"><meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
+<meta itemprop="wordCount" content="63"><meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
 
-<meta name="twitter:title" content="Disable the built-in keyboard when external keyboard is connected"/>
-<meta name="twitter:description" content="You can disable MacBook built-in keyboard if external keyboards are connected.
-This feature is useful when you put the external keybaord on top of the built-in keyboard.
-Choose your external keyboards on Deviecs &gt; Advanced.
-Configure the built-in keyboard detection Enable Treat as a built-in keyboard in Devices if your built-in keyboard is not recognized properly or you want to add a device that will be disabled,"/>
+<meta name="twitter:title" content="Compatibility with Logitech Logi Options&#43;: Fn keys"/>
+<meta name="twitter:description" content="This was discovered when using an MX Keys keyboard with the “Logi Options&#43;” software. While Karabiner Elements is running, the Logitech specific function keys (such as Fn-esc to toggle between function keys and media keys and f1, f2, f3 to switch between inputs) are not recognized.
+The solution is to edit karabiner.json such that the &quot;fn_function_keys&quot; array is empty:
+&#34;fn_function_keys&#34;: [] Credit: https://github.com/pqrs-org/Karabiner-Elements/issues/1450#issuecomment-1013932206"/>
 
 
 
@@ -158,13 +154,13 @@ if (!doNotTrack) {
   
 </li>
   </ul>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docsmanual-li">
-  <input type="checkbox" id="m-docsmanual-check" checked/>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsmanual-li">
+  <input type="checkbox" id="m-docsmanual-check"/>
   <label for="m-docsmanual-check"><a href="/docs/manual/" class="align-left pl-0  td-sidebar-link td-sidebar-link__section" id="m-docsmanual"><span class="">Manual</span></a></label>
   
   <ul class="ul-2 foldable">
-    <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docsmanualconfiguration-li">
-  <input type="checkbox" id="m-docsmanualconfiguration-check" checked/>
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsmanualconfiguration-li">
+  <input type="checkbox" id="m-docsmanualconfiguration-check"/>
   <label for="m-docsmanualconfiguration-check"><a href="/docs/manual/configuration/" class="align-left pl-0  td-sidebar-link td-sidebar-link__section" id="m-docsmanualconfiguration"><span class="">Configuration</span></a></label>
   
   <ul class="ul-3 foldable">
@@ -180,9 +176,9 @@ if (!doNotTrack) {
   <input type="checkbox" id="m-docsmanualconfigurationconfigure-devices-check"/>
   <label for="m-docsmanualconfigurationconfigure-devices-check"><a href="/docs/manual/configuration/configure-devices/" class="align-left pl-0  td-sidebar-link td-sidebar-link__page" id="m-docsmanualconfigurationconfigure-devices"><span class="">Choose devices</span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-docsmanualconfigurationdisable-built-in-keyboard-li">
-  <input type="checkbox" id="m-docsmanualconfigurationdisable-built-in-keyboard-check" checked/>
-  <label for="m-docsmanualconfigurationdisable-built-in-keyboard-check"><a href="/docs/manual/configuration/disable-built-in-keyboard/" class="align-left pl-0  active td-sidebar-link td-sidebar-link__page" id="m-docsmanualconfigurationdisable-built-in-keyboard"><span class="td-sidebar-nav-active-item">Disable the built-in keyboard when external keyboard is connected</span></a></label>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsmanualconfigurationdisable-built-in-keyboard-li">
+  <input type="checkbox" id="m-docsmanualconfigurationdisable-built-in-keyboard-check"/>
+  <label for="m-docsmanualconfigurationdisable-built-in-keyboard-check"><a href="/docs/manual/configuration/disable-built-in-keyboard/" class="align-left pl-0  td-sidebar-link td-sidebar-link__page" id="m-docsmanualconfigurationdisable-built-in-keyboard"><span class="">Disable the built-in keyboard when external keyboard is connected</span></a></label>
   
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsmanualconfigurationconfigure-keyboard-type-li">
   <input type="checkbox" id="m-docsmanualconfigurationconfigure-keyboard-type-check"/>
@@ -274,13 +270,13 @@ if (!doNotTrack) {
   </ul>
 </li>
   </ul>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docshelp-li">
-  <input type="checkbox" id="m-docshelp-check"/>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docshelp-li">
+  <input type="checkbox" id="m-docshelp-check" checked/>
   <label for="m-docshelp-check"><a href="/docs/help/" class="align-left pl-0  td-sidebar-link td-sidebar-link__section" id="m-docshelp"><span class="">Help</span></a></label>
   
   <ul class="ul-2 foldable">
-    <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docshelptroubleshooting-li">
-  <input type="checkbox" id="m-docshelptroubleshooting-check"/>
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docshelptroubleshooting-li">
+  <input type="checkbox" id="m-docshelptroubleshooting-check" checked/>
   <label for="m-docshelptroubleshooting-check"><a href="/docs/help/troubleshooting/" class="align-left pl-0  td-sidebar-link td-sidebar-link__section" id="m-docshelptroubleshooting"><span class="">Troubleshooting</span></a></label>
   
   <ul class="ul-3 foldable">
@@ -332,9 +328,9 @@ if (!doNotTrack) {
   <input type="checkbox" id="m-docshelptroubleshootingsymbols-with-non-ansi-keyboard-check"/>
   <label for="m-docshelptroubleshootingsymbols-with-non-ansi-keyboard-check"><a href="/docs/help/troubleshooting/symbols-with-non-ansi-keyboard/" class="align-left pl-0  td-sidebar-link td-sidebar-link__page" id="m-docshelptroubleshootingsymbols-with-non-ansi-keyboard"><span class="">Input symbols are different from the key code name on non-ANSI keyboards</span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docshelptroubleshootinglogitech-logi-options-plus-compatibility-li">
-  <input type="checkbox" id="m-docshelptroubleshootinglogitech-logi-options-plus-compatibility-check"/>
-  <label for="m-docshelptroubleshootinglogitech-logi-options-plus-compatibility-check"><a href="/docs/help/troubleshooting/logitech-logi-options-plus-compatibility/" class="align-left pl-0  td-sidebar-link td-sidebar-link__page" id="m-docshelptroubleshootinglogitech-logi-options-plus-compatibility"><span class="">Compatibility with Logitech Logi Options&#43;: Fn keys</span></a></label>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-docshelptroubleshootinglogitech-logi-options-plus-compatibility-li">
+  <input type="checkbox" id="m-docshelptroubleshootinglogitech-logi-options-plus-compatibility-check" checked/>
+  <label for="m-docshelptroubleshootinglogitech-logi-options-plus-compatibility-check"><a href="/docs/help/troubleshooting/logitech-logi-options-plus-compatibility/" class="align-left pl-0  active td-sidebar-link td-sidebar-link__page" id="m-docshelptroubleshootinglogitech-logi-options-plus-compatibility"><span class="td-sidebar-nav-active-item">Compatibility with Logitech Logi Options&#43;: Fn keys</span></a></label>
   
 </li>
   </ul>
@@ -627,11 +623,7 @@ if (!doNotTrack) {
 
 
 
-<nav id="TableOfContents">
-  <ul>
-    <li><a href="#configure-the-built-in-keyboard-detection">Configure the built-in keyboard detection</a></li>
-  </ul>
-</nav>
+<nav id="TableOfContents"></nav>
 
 
 
@@ -666,19 +658,19 @@ if (!doNotTrack) {
     <a href="/docs/">Documentation</a>
   </li>
   <li class="breadcrumb-item">
-    <a href="/docs/manual/">Manual</a>
+    <a href="/docs/help/">Help</a>
   </li>
   <li class="breadcrumb-item">
-    <a href="/docs/manual/configuration/">Configuration</a>
+    <a href="/docs/help/troubleshooting/">Troubleshooting</a>
   </li>
   <li class="breadcrumb-item active" aria-current="page">
-    <a href="/docs/manual/configuration/disable-built-in-keyboard/" aria-disabled="true" class="btn-link disabled">Disable the built-in keyboard when external keyboard is connected</a>
+    <a href="/docs/help/troubleshooting/logitech-logi-options-plus-compatibility/" aria-disabled="true" class="btn-link disabled">Compatibility with Logitech Logi Options&#43;: Fn keys</a>
   </li>
   </ol>
 </nav>
             
 <div class="td-content">
-	<h1>Disable the built-in keyboard when external keyboard is connected</h1>
+	<h1>Compatibility with Logitech Logi Options&#43;: Fn keys</h1>
 	
 	<header class="article-meta">
 		
@@ -695,41 +687,10 @@ if (!doNotTrack) {
 
 		
 	</header>    
-	<p>You can disable MacBook built-in keyboard if external keyboards are connected.<br />
-This feature is useful when you put the external keybaord on top of the built-in keyboard.</p>
-<p>Choose your external keyboards on Deviecs &gt; Advanced.</p>
-
-
-
-
-  
-
-
-<figure>
-  <img
-    src="/docs/manual/configuration/disable-built-in-keyboard/images/karabiner-elements-devices-built-in@2x.png"
-    alt="karabiner-elements-devices-built-in@2x.png"
-    style="width: 1100px"
-  />
-</figure>
-
-<h2 id="configure-the-built-in-keyboard-detection">Configure the built-in keyboard detection</h2>
-<p>Enable <code>Treat as a built-in keyboard</code> in Devices if your built-in keyboard is not recognized properly or you want to add a device that will be disabled,</p>
-
-
-
-
-  
-
-
-<figure>
-  <img
-    src="/docs/manual/configuration/disable-built-in-keyboard/images/treat-as-built-in-keyboard@2x.png"
-    alt="treat-as-built-in-keyboard@2x.png"
-    style="width: 1100px"
-  />
-</figure>
-
+	<p>This was discovered when using an MX Keys keyboard with the “Logi Options+” software.  While Karabiner Elements is running, the Logitech specific function keys (such as <code>Fn-esc</code> to toggle between function keys and media keys and <code>f1</code>, <code>f2</code>, <code>f3</code> to switch between inputs) are not recognized.</p>
+<p>The solution is to edit <code>karabiner.json</code> such that the <code>&quot;fn_function_keys&quot;</code> array is empty:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>    <span style="color:#4e9a06">&#34;fn_function_keys&#34;</span><span style="color:#a40000">:</span> <span style="color:#000;font-weight:bold">[]</span>
+</span></span></code></pre></div><p>Credit: <a href="https://github.com/pqrs-org/Karabiner-Elements/issues/1450#issuecomment-1013932206">https://github.com/pqrs-org/Karabiner-Elements/issues/1450#issuecomment-1013932206</a></p>
 
 	
 	
