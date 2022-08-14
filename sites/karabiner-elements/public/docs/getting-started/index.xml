@@ -207,7 +207,7 @@ Choose your keyboard layout. (ANSI, ISO or JIS)
 &lt;li&gt;&lt;strong&gt;Secure Keyboard Entry Support&lt;/strong&gt;: Work well on Secure Keyboard Entry environment such as a password prompt, terminal with Secure Keyboard Entry, etc.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Extra Key Support&lt;/strong&gt;: Enable extra keys on PC keyboard that are not recognized by default in macOS.
 &lt;ul&gt;
-&lt;li&gt;Home key&lt;/li&gt;
+&lt;li&gt;Home key on iPad keyboards such as Logitech K480&lt;/li&gt;
 &lt;li&gt;International keys&lt;/li&gt;
 &lt;li&gt;Language keys (e.g., &lt;code&gt;無変換&lt;/code&gt;,&lt;code&gt;変換&lt;/code&gt;, &lt;code&gt;カタカナ&lt;/code&gt; keys on JIS PC keyboard)&lt;/li&gt;
 &lt;li&gt;Application Launch Keys&lt;/li&gt;
