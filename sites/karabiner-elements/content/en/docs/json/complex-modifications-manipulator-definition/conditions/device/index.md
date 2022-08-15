@@ -34,14 +34,15 @@ Change an event if/unless the event is from specified device.
 
 `identifiers` is an array of objects.
 
-| Name                 | Required | Description                                                                       |
-| -------------------- | -------- | --------------------------------------------------------------------------------- |
-| `vendor_id`          | Optional | Vendor ID of device which is fixed value for each device                          |
-| `product_id`         | Optional | Product ID of device which is fixed value for each device                         |
-| `location_id`        | Optional | Location ID of device which is changed by where the port your device is connected |
-| `is_keyboard`        | Optional | `true` or `false`                                                                 |
-| `is_pointing_device` | Optional | `true` or `false`                                                                 |
-| `is_touch_bar`       | Optional | `true` or `false`                                                                 |
+| Name                   | Required | Description                                                                       |
+| ---------------------- | -------- | --------------------------------------------------------------------------------- |
+| `vendor_id`            | Optional | Vendor ID of device which is fixed value for each device                          |
+| `product_id`           | Optional | Product ID of device which is fixed value for each device                         |
+| `location_id`          | Optional | Location ID of device which is changed by where the port your device is connected |
+| `is_keyboard`          | Optional | `true` or `false`                                                                 |
+| `is_pointing_device`   | Optional | `true` or `false`                                                                 |
+| `is_touch_bar`         | Optional | `true` or `false`                                                                 |
+| `is_built_in_keyboard` | Optional | `true` or `false` (available since Karabiner-Elements 14.8.2)                     |
 
 ### Multiple identifiers
 
