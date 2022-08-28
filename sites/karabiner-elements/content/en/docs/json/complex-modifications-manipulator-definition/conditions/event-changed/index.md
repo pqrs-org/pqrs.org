@@ -5,6 +5,38 @@ weight: 600
 
 Change an event if/unless the event is already changed by other manipulators.
 
+## Example
+
+Change `tab` key to `return_or_enter` if the tab key is the physical tab key.
+(If the tab key is the result of modifying another key by simple modification, the key is ignored.)
+
+```json
+{
+    "type": "basic",
+    "from": {
+        "key_code": "tab",
+        "modifiers": {
+            "optional": ["any"]
+        }
+    },
+    "to": [
+        {
+            "key_code": "return_or_enter"
+        }
+    ],
+    "conditions": [
+        {
+            "type": "event_changed_if",
+            "value": false
+        }
+    ]
+}
+```
+
+---
+
+## Specification
+
 ```json
 {
     "type": "event_changed_if",
