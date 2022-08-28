@@ -108,7 +108,7 @@ if (!doNotTrack) {
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.6a56bfeace923a8f2ab1fbfb60156459.json"
+  data-offline-search-index-json-src="/offline-search-index.bdd00f0c5e9e73b9e1e58726e31745b6.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="25"
 >
@@ -130,7 +130,7 @@ if (!doNotTrack) {
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.6a56bfeace923a8f2ab1fbfb60156459.json"
+  data-offline-search-index-json-src="/offline-search-index.bdd00f0c5e9e73b9e1e58726e31745b6.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="25"
 >
@@ -556,7 +556,7 @@ if (!doNotTrack) {
   
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsjsoncomplex-modifications-manipulator-definitionconditionsdevice-li">
   <input type="checkbox" id="m-docsjsoncomplex-modifications-manipulator-definitionconditionsdevice-check"/>
-  <label for="m-docsjsoncomplex-modifications-manipulator-definitionconditionsdevice-check"><a href="/docs/json/complex-modifications-manipulator-definition/conditions/device/" class="align-left pl-0  td-sidebar-link td-sidebar-link__page" id="m-docsjsoncomplex-modifications-manipulator-definitionconditionsdevice"><span class="">device_if, device_unless</span></a></label>
+  <label for="m-docsjsoncomplex-modifications-manipulator-definitionconditionsdevice-check"><a href="/docs/json/complex-modifications-manipulator-definition/conditions/device/" class="align-left pl-0  td-sidebar-link td-sidebar-link__page" id="m-docsjsoncomplex-modifications-manipulator-definitionconditionsdevice"><span class="">device_if, device_unless, device_exists_if, device_exists_unless</span></a></label>
   
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsjsoncomplex-modifications-manipulator-definitionconditionskeyboard-type-li">
   <input type="checkbox" id="m-docsjsoncomplex-modifications-manipulator-definitionconditionskeyboard-type-check"/>
@@ -718,12 +718,12 @@ if (!doNotTrack) {
 <p>The following json changes:</p>
 <ul>
 <li><code>left_control</code> to the lazy left control</li>
-<li><code>left_control + m</code> to <code>return</code></li>
+<li><code>left_control + m</code> to <code>return_or_enter</code></li>
 </ul>
 <p>Behavior of the json:</p>
 <ul>
 <li>The <code>left_control</code> key event will not be sent when you press <code>left_control</code> alone.</li>
-<li>Only the <code>return</code> key event will be sent when you press <code>left_control + m</code>.</li>
+<li>Only the <code>return_or_enter</code> key event will be sent when you press <code>left_control + m</code>.</li>
 <li>You can use <code>left_control</code> for other keys such as <code>left_control + a</code>, <code>left_control + b</code>, etc.</li>
 </ul>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>
@@ -750,7 +750,7 @@ if (!doNotTrack) {
 </span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">},</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#204a87;font-weight:bold">&#34;to&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
 </span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">{</span>
-</span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">&#34;key_code&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;return&#34;</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">&#34;key_code&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;return_or_enter&#34;</span>
 </span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">}</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">]</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">}</span>

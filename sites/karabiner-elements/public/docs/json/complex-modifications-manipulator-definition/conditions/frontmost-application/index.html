@@ -20,11 +20,12 @@
 
 <title>frontmost_application_if, frontmost_application_unless | Karabiner-Elements</title>
 <meta name="description" content="Change an event if/unless the frontmost application is the specified application.
-{
-    &#34;type&#34;: &#34;frontmost_application_if&#34;, …">
+Example
+Change control-h key to delete_or_backspace except in …">
 <meta property="og:title" content="frontmost_application_if, frontmost_application_unless" />
 <meta property="og:description" content="Change an event if/unless the frontmost application is the specified application.
-{ &#34;type&#34;: &#34;frontmost_application_if&#34;, &#34;bundle_identifiers&#34;: [ bundle identifier regex, bundle identifier regex, ... ], &#34;file_paths&#34;: [ file path regex, file path regex, ... ] } Name Required Description type Required &quot;frontmost_application_if&quot; or &quot;frontmost_application_unless&quot; bundle_identifiers Optional Bundle identifier regexs such as [&quot;^com\\.apple\\.Terminal$&quot;, &quot;^com\\.googlecode\\.iterm2$&quot;] file_paths Optional File path regexs such as [&quot;/Finder$&quot;] description Optional A human-readable comment Multiple bundle identifiers or file paths Multiple entries in bundle_identifiers and file_paths are joined by &ldquo;or&rdquo;." />
+Example Change control-h key to delete_or_backspace except in Terminal.
+{ &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;h&#34;, &#34;modifiers&#34;: { &#34;mandatory&#34;: [&#34;control&#34;], &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [ { &#34;key_code&#34;: &#34;delete_or_backspace&#34; } ], &#34;conditions&#34;: [ { &#34;type&#34;: &#34;frontmost_application_unless&#34;, &#34;bundle_identifiers&#34;: [&#34;^com\\.apple\\.Terminal$&#34;] } ] } Specification { &#34;type&#34;: &#34;frontmost_application_if&#34;, &#34;bundle_identifiers&#34;: [ bundle identifier regex, bundle identifier regex, ... ], &#34;file_paths&#34;: [ file path regex, file path regex, ." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/json/complex-modifications-manipulator-definition/conditions/frontmost-application/" /><meta property="og:image" content="https://karabiner-elements.pqrs.org/images/logo.png"/><meta property="article:section" content="docs" />
 
@@ -32,15 +33,17 @@
 
 <meta itemprop="name" content="frontmost_application_if, frontmost_application_unless">
 <meta itemprop="description" content="Change an event if/unless the frontmost application is the specified application.
-{ &#34;type&#34;: &#34;frontmost_application_if&#34;, &#34;bundle_identifiers&#34;: [ bundle identifier regex, bundle identifier regex, ... ], &#34;file_paths&#34;: [ file path regex, file path regex, ... ] } Name Required Description type Required &quot;frontmost_application_if&quot; or &quot;frontmost_application_unless&quot; bundle_identifiers Optional Bundle identifier regexs such as [&quot;^com\\.apple\\.Terminal$&quot;, &quot;^com\\.googlecode\\.iterm2$&quot;] file_paths Optional File path regexs such as [&quot;/Finder$&quot;] description Optional A human-readable comment Multiple bundle identifiers or file paths Multiple entries in bundle_identifiers and file_paths are joined by &ldquo;or&rdquo;.">
+Example Change control-h key to delete_or_backspace except in Terminal.
+{ &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;h&#34;, &#34;modifiers&#34;: { &#34;mandatory&#34;: [&#34;control&#34;], &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [ { &#34;key_code&#34;: &#34;delete_or_backspace&#34; } ], &#34;conditions&#34;: [ { &#34;type&#34;: &#34;frontmost_application_unless&#34;, &#34;bundle_identifiers&#34;: [&#34;^com\\.apple\\.Terminal$&#34;] } ] } Specification { &#34;type&#34;: &#34;frontmost_application_if&#34;, &#34;bundle_identifiers&#34;: [ bundle identifier regex, bundle identifier regex, ... ], &#34;file_paths&#34;: [ file path regex, file path regex, .">
 
-<meta itemprop="wordCount" content="146"><meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
+<meta itemprop="wordCount" content="188"><meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
 
 <meta name="twitter:title" content="frontmost_application_if, frontmost_application_unless"/>
 <meta name="twitter:description" content="Change an event if/unless the frontmost application is the specified application.
-{ &#34;type&#34;: &#34;frontmost_application_if&#34;, &#34;bundle_identifiers&#34;: [ bundle identifier regex, bundle identifier regex, ... ], &#34;file_paths&#34;: [ file path regex, file path regex, ... ] } Name Required Description type Required &quot;frontmost_application_if&quot; or &quot;frontmost_application_unless&quot; bundle_identifiers Optional Bundle identifier regexs such as [&quot;^com\\.apple\\.Terminal$&quot;, &quot;^com\\.googlecode\\.iterm2$&quot;] file_paths Optional File path regexs such as [&quot;/Finder$&quot;] description Optional A human-readable comment Multiple bundle identifiers or file paths Multiple entries in bundle_identifiers and file_paths are joined by &ldquo;or&rdquo;."/>
+Example Change control-h key to delete_or_backspace except in Terminal.
+{ &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;h&#34;, &#34;modifiers&#34;: { &#34;mandatory&#34;: [&#34;control&#34;], &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [ { &#34;key_code&#34;: &#34;delete_or_backspace&#34; } ], &#34;conditions&#34;: [ { &#34;type&#34;: &#34;frontmost_application_unless&#34;, &#34;bundle_identifiers&#34;: [&#34;^com\\.apple\\.Terminal$&#34;] } ] } Specification { &#34;type&#34;: &#34;frontmost_application_if&#34;, &#34;bundle_identifiers&#34;: [ bundle identifier regex, bundle identifier regex, ... ], &#34;file_paths&#34;: [ file path regex, file path regex, ."/>
 
 
 
@@ -103,7 +106,7 @@ if (!doNotTrack) {
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.6a56bfeace923a8f2ab1fbfb60156459.json"
+  data-offline-search-index-json-src="/offline-search-index.bdd00f0c5e9e73b9e1e58726e31745b6.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="25"
 >
@@ -125,7 +128,7 @@ if (!doNotTrack) {
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.6a56bfeace923a8f2ab1fbfb60156459.json"
+  data-offline-search-index-json-src="/offline-search-index.bdd00f0c5e9e73b9e1e58726e31745b6.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="25"
 >
@@ -551,7 +554,7 @@ if (!doNotTrack) {
   
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsjsoncomplex-modifications-manipulator-definitionconditionsdevice-li">
   <input type="checkbox" id="m-docsjsoncomplex-modifications-manipulator-definitionconditionsdevice-check"/>
-  <label for="m-docsjsoncomplex-modifications-manipulator-definitionconditionsdevice-check"><a href="/docs/json/complex-modifications-manipulator-definition/conditions/device/" class="align-left pl-0  td-sidebar-link td-sidebar-link__page" id="m-docsjsoncomplex-modifications-manipulator-definitionconditionsdevice"><span class="">device_if, device_unless</span></a></label>
+  <label for="m-docsjsoncomplex-modifications-manipulator-definitionconditionsdevice-check"><a href="/docs/json/complex-modifications-manipulator-definition/conditions/device/" class="align-left pl-0  td-sidebar-link td-sidebar-link__page" id="m-docsjsoncomplex-modifications-manipulator-definitionconditionsdevice"><span class="">device_if, device_unless, device_exists_if, device_exists_unless</span></a></label>
   
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsjsoncomplex-modifications-manipulator-definitionconditionskeyboard-type-li">
   <input type="checkbox" id="m-docsjsoncomplex-modifications-manipulator-definitionconditionskeyboard-type-check"/>
@@ -628,8 +631,13 @@ if (!doNotTrack) {
 
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#multiple-bundle-identifiers-or-file-paths">Multiple bundle identifiers or file paths</a></li>
-    <li><a href="#investigate-the-bundle-identifier-and-file-path">Investigate the bundle identifier and file path</a></li>
+    <li><a href="#example">Example</a></li>
+    <li><a href="#specification">Specification</a>
+      <ul>
+        <li><a href="#multiple-bundle-identifiers-or-file-paths">Multiple bundle identifiers or file paths</a></li>
+        <li><a href="#investigate-the-bundle-identifier-and-file-path">Investigate the bundle identifier and file path</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 
@@ -699,6 +707,31 @@ if (!doNotTrack) {
 		
 	</header>    
 	<p>Change an event if/unless the frontmost application is the specified application.</p>
+<h2 id="example">Example</h2>
+<p>Change <code>control-h</code> key to <code>delete_or_backspace</code> except in Terminal.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;type&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;basic&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;from&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#204a87;font-weight:bold">&#34;key_code&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;h&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#204a87;font-weight:bold">&#34;modifiers&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;mandatory&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">&#34;control&#34;</span><span style="color:#000;font-weight:bold">],</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;optional&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">&#34;any&#34;</span><span style="color:#000;font-weight:bold">]</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">},</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;to&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;key_code&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;delete_or_backspace&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">],</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;conditions&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;type&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;frontmost_application_unless&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;bundle_identifiers&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">&#34;^com\\.apple\\.Terminal$&#34;</span><span style="color:#000;font-weight:bold">]</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">]</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></div><hr>
+<h2 id="specification">Specification</h2>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;type&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;frontmost_application_if&#34;</span><span style="color:#000;font-weight:bold">,</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;bundle_identifiers&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
@@ -743,7 +776,7 @@ if (!doNotTrack) {
 </tr>
 </tbody>
 </table>
-<h2 id="multiple-bundle-identifiers-or-file-paths">Multiple bundle identifiers or file paths</h2>
+<h3 id="multiple-bundle-identifiers-or-file-paths">Multiple bundle identifiers or file paths</h3>
 <p>Multiple entries in <code>bundle_identifiers</code> and <code>file_paths</code> are joined by &ldquo;or&rdquo;.</p>
 <p>The following condition is matched if bundle identifier is &ldquo;com.apple.Terminal&rdquo; <strong>or</strong> &ldquo;com.googlecode.iterm2&rdquo;.</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>
@@ -753,7 +786,7 @@ if (!doNotTrack) {
 </span></span><span style="display:flex;"><span>        <span style="color:#4e9a06">&#34;^com\\.googlecode\\.iterm2$&#34;</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">]</span>
 </span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
-</span></span></code></pre></div><h2 id="investigate-the-bundle-identifier-and-file-path">Investigate the bundle identifier and file path</h2>
+</span></span></code></pre></div><h3 id="investigate-the-bundle-identifier-and-file-path">Investigate the bundle identifier and file path</h3>
 <p>You can find the bundle identifier and file path by EventViewer &gt; Frontmost Application tab.</p>
 <p>Open EventViewer, and then switch the frontmost application to an application which you want to know the bundle identifer or file path.</p>
 
@@ -767,7 +800,7 @@ if (!doNotTrack) {
   <img
     src="/docs/json/complex-modifications-manipulator-definition/conditions/frontmost-application/images/eventviewer-frontmost-application@2x.png"
     alt="eventviewer-frontmost-application@2x.png"
-    style="width: 874px"
+    style="width: 1100px"
   />
 </figure>
 

@@ -754,12 +754,12 @@
 &lt;p&gt;The following json changes:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;left_control&lt;/code&gt; to the lazy left control&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;left_control + m&lt;/code&gt; to &lt;code&gt;return&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;left_control + m&lt;/code&gt; to &lt;code&gt;return_or_enter&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Behavior of the json:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;The &lt;code&gt;left_control&lt;/code&gt; key event will not be sent when you press &lt;code&gt;left_control&lt;/code&gt; alone.&lt;/li&gt;
-&lt;li&gt;Only the &lt;code&gt;return&lt;/code&gt; key event will be sent when you press &lt;code&gt;left_control + m&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Only the &lt;code&gt;return_or_enter&lt;/code&gt; key event will be sent when you press &lt;code&gt;left_control + m&lt;/code&gt;.&lt;/li&gt;
 &lt;li&gt;You can use &lt;code&gt;left_control&lt;/code&gt; for other keys such as &lt;code&gt;left_control + a&lt;/code&gt;, &lt;code&gt;left_control + b&lt;/code&gt;, etc.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;
@@ -786,7 +786,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;},&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;#34;to&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;#34;key_code&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;return&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;#34;key_code&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;return_or_enter&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;

@@ -18,34 +18,34 @@
 <link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
-<title>device_if, device_unless | Karabiner-Elements</title>
+<title>device_if, device_unless, device_exists_if, device_exists_unless | Karabiner-Elements</title>
 <meta name="description" content="Change an event if/unless the event is from specified device.
+Example
+Change 1 key to f1 if the device is Apple keyboard.
 {
-    &#34;type&#34;: &#34;device_if&#34;,
-    &#34;identifiers&#34;: [
-        { …">
-<meta property="og:title" content="device_if, device_unless" />
+    &#34;type&#34;: …">
+<meta property="og:title" content="device_if, device_unless, device_exists_if, device_exists_unless" />
 <meta property="og:description" content="Change an event if/unless the event is from specified device.
-{ &#34;type&#34;: &#34;device_if&#34;, &#34;identifiers&#34;: [ { &#34;vendor_id&#34;: 1111, &#34;product_id&#34;: 2222, &#34;description&#34;: &#34;my keyboard 1&#34; }, { &#34;vendor_id&#34;: 3333, &#34;product_id&#34;: 4444, &#34;description&#34;: &#34;my keyboard 2&#34; }, ... ] } Name Required Description type Required &quot;device_if&quot; or &quot;device_unless&quot; identifiers Required Target device definitions description Optional A human-readable comment identifiers identifiers is an array of objects.
-Name Required Description vendor_id Optional Vendor ID of device which is fixed value for each device product_id Optional Product ID of device which is fixed value for each device location_id Optional Location ID of device which is changed by where the port your device is connected is_keyboard Optional true or false is_pointing_device Optional true or false is_touch_bar Optional true or false is_built_in_keyboard Optional true or false (available since Karabiner-Elements 14." />
+Example Change 1 key to f1 if the device is Apple keyboard.
+{ &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;1&#34;, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [ { &#34;key_code&#34;: &#34;f1&#34; } ], &#34;conditions&#34;: [ { &#34;type&#34;: &#34;device_if&#34;, &#34;identifiers&#34;: [ { &#34;vendor_id&#34;: 1452 }, { &#34;vendor_id&#34;: 76 } ] } ] } Specification { &#34;type&#34;: &#34;device_if&#34;, &#34;identifiers&#34;: [ { &#34;vendor_id&#34;: 1111, &#34;product_id&#34;: 2222, &#34;description&#34;: &#34;my keyboard 1&#34; }, { &#34;vendor_id&#34;: 3333, &#34;product_id&#34;: 4444, &#34;description&#34;: &#34;my keyboard 2&#34; }, ." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/json/complex-modifications-manipulator-definition/conditions/device/" /><meta property="og:image" content="https://karabiner-elements.pqrs.org/images/logo.png"/><meta property="article:section" content="docs" />
 
 <meta property="og:site_name" content="Karabiner-Elements" />
 
-<meta itemprop="name" content="device_if, device_unless">
+<meta itemprop="name" content="device_if, device_unless, device_exists_if, device_exists_unless">
 <meta itemprop="description" content="Change an event if/unless the event is from specified device.
-{ &#34;type&#34;: &#34;device_if&#34;, &#34;identifiers&#34;: [ { &#34;vendor_id&#34;: 1111, &#34;product_id&#34;: 2222, &#34;description&#34;: &#34;my keyboard 1&#34; }, { &#34;vendor_id&#34;: 3333, &#34;product_id&#34;: 4444, &#34;description&#34;: &#34;my keyboard 2&#34; }, ... ] } Name Required Description type Required &quot;device_if&quot; or &quot;device_unless&quot; identifiers Required Target device definitions description Optional A human-readable comment identifiers identifiers is an array of objects.
-Name Required Description vendor_id Optional Vendor ID of device which is fixed value for each device product_id Optional Product ID of device which is fixed value for each device location_id Optional Location ID of device which is changed by where the port your device is connected is_keyboard Optional true or false is_pointing_device Optional true or false is_touch_bar Optional true or false is_built_in_keyboard Optional true or false (available since Karabiner-Elements 14.">
+Example Change 1 key to f1 if the device is Apple keyboard.
+{ &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;1&#34;, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [ { &#34;key_code&#34;: &#34;f1&#34; } ], &#34;conditions&#34;: [ { &#34;type&#34;: &#34;device_if&#34;, &#34;identifiers&#34;: [ { &#34;vendor_id&#34;: 1452 }, { &#34;vendor_id&#34;: 76 } ] } ] } Specification { &#34;type&#34;: &#34;device_if&#34;, &#34;identifiers&#34;: [ { &#34;vendor_id&#34;: 1111, &#34;product_id&#34;: 2222, &#34;description&#34;: &#34;my keyboard 1&#34; }, { &#34;vendor_id&#34;: 3333, &#34;product_id&#34;: 4444, &#34;description&#34;: &#34;my keyboard 2&#34; }, .">
 
-<meta itemprop="wordCount" content="231"><meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
+<meta itemprop="wordCount" content="334"><meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
 
-<meta name="twitter:title" content="device_if, device_unless"/>
+<meta name="twitter:title" content="device_if, device_unless, device_exists_if, device_exists_unless"/>
 <meta name="twitter:description" content="Change an event if/unless the event is from specified device.
-{ &#34;type&#34;: &#34;device_if&#34;, &#34;identifiers&#34;: [ { &#34;vendor_id&#34;: 1111, &#34;product_id&#34;: 2222, &#34;description&#34;: &#34;my keyboard 1&#34; }, { &#34;vendor_id&#34;: 3333, &#34;product_id&#34;: 4444, &#34;description&#34;: &#34;my keyboard 2&#34; }, ... ] } Name Required Description type Required &quot;device_if&quot; or &quot;device_unless&quot; identifiers Required Target device definitions description Optional A human-readable comment identifiers identifiers is an array of objects.
-Name Required Description vendor_id Optional Vendor ID of device which is fixed value for each device product_id Optional Product ID of device which is fixed value for each device location_id Optional Location ID of device which is changed by where the port your device is connected is_keyboard Optional true or false is_pointing_device Optional true or false is_touch_bar Optional true or false is_built_in_keyboard Optional true or false (available since Karabiner-Elements 14."/>
+Example Change 1 key to f1 if the device is Apple keyboard.
+{ &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;1&#34;, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [ { &#34;key_code&#34;: &#34;f1&#34; } ], &#34;conditions&#34;: [ { &#34;type&#34;: &#34;device_if&#34;, &#34;identifiers&#34;: [ { &#34;vendor_id&#34;: 1452 }, { &#34;vendor_id&#34;: 76 } ] } ] } Specification { &#34;type&#34;: &#34;device_if&#34;, &#34;identifiers&#34;: [ { &#34;vendor_id&#34;: 1111, &#34;product_id&#34;: 2222, &#34;description&#34;: &#34;my keyboard 1&#34; }, { &#34;vendor_id&#34;: 3333, &#34;product_id&#34;: 4444, &#34;description&#34;: &#34;my keyboard 2&#34; }, ."/>
 
 
 
@@ -108,7 +108,7 @@ if (!doNotTrack) {
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.6a56bfeace923a8f2ab1fbfb60156459.json"
+  data-offline-search-index-json-src="/offline-search-index.bdd00f0c5e9e73b9e1e58726e31745b6.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="25"
 >
@@ -130,7 +130,7 @@ if (!doNotTrack) {
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.6a56bfeace923a8f2ab1fbfb60156459.json"
+  data-offline-search-index-json-src="/offline-search-index.bdd00f0c5e9e73b9e1e58726e31745b6.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="25"
 >
@@ -556,7 +556,7 @@ if (!doNotTrack) {
   
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-docsjsoncomplex-modifications-manipulator-definitionconditionsdevice-li">
   <input type="checkbox" id="m-docsjsoncomplex-modifications-manipulator-definitionconditionsdevice-check" checked/>
-  <label for="m-docsjsoncomplex-modifications-manipulator-definitionconditionsdevice-check"><a href="/docs/json/complex-modifications-manipulator-definition/conditions/device/" class="align-left pl-0  active td-sidebar-link td-sidebar-link__page" id="m-docsjsoncomplex-modifications-manipulator-definitionconditionsdevice"><span class="td-sidebar-nav-active-item">device_if, device_unless</span></a></label>
+  <label for="m-docsjsoncomplex-modifications-manipulator-definitionconditionsdevice-check"><a href="/docs/json/complex-modifications-manipulator-definition/conditions/device/" class="align-left pl-0  active td-sidebar-link td-sidebar-link__page" id="m-docsjsoncomplex-modifications-manipulator-definitionconditionsdevice"><span class="td-sidebar-nav-active-item">device_if, device_unless, device_exists_if, device_exists_unless</span></a></label>
   
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsjsoncomplex-modifications-manipulator-definitionconditionskeyboard-type-li">
   <input type="checkbox" id="m-docsjsoncomplex-modifications-manipulator-definitionconditionskeyboard-type-check"/>
@@ -633,10 +633,11 @@ if (!doNotTrack) {
 
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#identifiers"><code>identifiers</code></a>
+    <li><a href="#example">Example</a></li>
+    <li><a href="#specification">Specification</a>
       <ul>
-        <li><a href="#multiple-identifiers">Multiple identifiers</a></li>
-        <li><a href="#multiple-entries">Multiple entries</a></li>
+        <li><a href="#type"><code>type</code></a></li>
+        <li><a href="#identifiers"><code>identifiers</code></a></li>
       </ul>
     </li>
     <li><a href="#investigate-the-device-identifiers">Investigate the device identifiers</a></li>
@@ -685,13 +686,13 @@ if (!doNotTrack) {
     <a href="/docs/json/complex-modifications-manipulator-definition/conditions/">Conditions</a>
   </li>
   <li class="breadcrumb-item active" aria-current="page">
-    <a href="/docs/json/complex-modifications-manipulator-definition/conditions/device/" aria-disabled="true" class="btn-link disabled">device_if, device_unless</a>
+    <a href="/docs/json/complex-modifications-manipulator-definition/conditions/device/" aria-disabled="true" class="btn-link disabled">device_if, device_unless, device_exists_if, device_exists_unless</a>
   </li>
   </ol>
 </nav>
             
 <div class="td-content">
-	<h1>device_if, device_unless</h1>
+	<h1>device_if, device_unless, device_exists_if, device_exists_unless</h1>
 	
 	<header class="article-meta">
 		
@@ -709,6 +710,37 @@ if (!doNotTrack) {
 		
 	</header>    
 	<p>Change an event if/unless the event is from specified device.</p>
+<h2 id="example">Example</h2>
+<p>Change <code>1</code> key to <code>f1</code> if the device is Apple keyboard.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;type&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;basic&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;from&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#204a87;font-weight:bold">&#34;key_code&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;1&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#204a87;font-weight:bold">&#34;modifiers&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;optional&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">&#34;any&#34;</span><span style="color:#000;font-weight:bold">]</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">},</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;to&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;key_code&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;f1&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">],</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;conditions&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;type&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;device_if&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;identifiers&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;vendor_id&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#0000cf;font-weight:bold">1452</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">},</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;vendor_id&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#0000cf;font-weight:bold">76</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">]</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">]</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></div><hr>
+<h2 id="specification">Specification</h2>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;type&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;device_if&#34;</span><span style="color:#000;font-weight:bold">,</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;identifiers&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
@@ -737,7 +769,7 @@ if (!doNotTrack) {
 <tr>
 <td><code>type</code></td>
 <td><strong>Required</strong></td>
-<td><code>&quot;device_if&quot;</code> or <code>&quot;device_unless&quot;</code></td>
+<td><code>&quot;device_if&quot;</code> or <code>&quot;device_unless&quot;</code> or <code>&quot;device_exists_if&quot;</code> or `&ldquo;device_exists_unless&rdquo;</td>
 </tr>
 <tr>
 <td><code>identifiers</code></td>
@@ -751,7 +783,39 @@ if (!doNotTrack) {
 </tr>
 </tbody>
 </table>
-<h2 id="identifiers"><code>identifiers</code></h2>
+<h3 id="type"><code>type</code></h3>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Description</th>
+<th>Available since</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>device_if</code></td>
+<td>Valid only for devices specified in identifiers</td>
+<td>Karabiner-Elements 11.0.0</td>
+</tr>
+<tr>
+<td><code>device_unless</code></td>
+<td>Valid only for devices other than specified in identifiers</td>
+<td>Karabiner-Elements 11.0.0</td>
+</tr>
+<tr>
+<td><code>device_exists_if</code></td>
+<td>Valid if a specified device is connected</td>
+<td>Karabiner-Elements 14.8.4</td>
+</tr>
+<tr>
+<td><code>device_exists_unless</code></td>
+<td>Valid unless a specified device is connected</td>
+<td>Karabiner-Elements 14.8.4</td>
+</tr>
+</tbody>
+</table>
+<h3 id="identifiers"><code>identifiers</code></h3>
 <p><code>identifiers</code> is an array of objects.</p>
 <table>
 <thead>
@@ -799,7 +863,7 @@ if (!doNotTrack) {
 </tr>
 </tbody>
 </table>
-<h3 id="multiple-identifiers">Multiple identifiers</h3>
+<h4 id="multiple-identifiers">Multiple identifiers</h4>
 <p>If you specify multiple identifiers (<code>vendor_id</code>, <code>product_id</code>, <code>location_id</code>, &hellip;), these are joined by &ldquo;and&rdquo;.</p>
 <p>The following condition is matched if Vendor ID is 1111 <strong>and</strong> Product ID is 2222.</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>
@@ -811,7 +875,7 @@ if (!doNotTrack) {
 </span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">}</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">]</span>
 </span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
-</span></span></code></pre></div><h3 id="multiple-entries">Multiple entries</h3>
+</span></span></code></pre></div><h4 id="multiple-entries">Multiple entries</h4>
 <p>If you specify multiple entries at <code>identifiers</code>, conditions are joined by &ldquo;or&rdquo;.</p>
 <p>The following condition is matched if Vendor ID is 1111 <strong>or</strong> 1112.</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>
@@ -825,7 +889,8 @@ if (!doNotTrack) {
 </span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">}</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">]</span>
 </span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
-</span></span></code></pre></div><h2 id="investigate-the-device-identifiers">Investigate the device identifiers</h2>
+</span></span></code></pre></div><hr>
+<h2 id="investigate-the-device-identifiers">Investigate the device identifiers</h2>
 <p>You can find them by EventViewer &gt; Devices tab.</p>
 
 
@@ -838,7 +903,7 @@ if (!doNotTrack) {
   <img
     src="/docs/json/complex-modifications-manipulator-definition/conditions/device/images/eventviewer-devices@2x.png"
     alt="eventviewer-devices@2x.png"
-    style="width: 874px"
+    style="width: 1100px"
   />
 </figure>
 
