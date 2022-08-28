@@ -73,7 +73,7 @@ Change `control-[` key to `escape`, including JIS layout support. ([the `[` key 
 | `keyboard_types` | **Required** | An array of `"ansi"`, `"iso"` or `"jis"`         |
 | `description`    | Optional     | A human-readable comment                         |
 
-## Multiple keyboard types
+### Multiple keyboard types
 
 `keyboard_types` are joined by "or".
 

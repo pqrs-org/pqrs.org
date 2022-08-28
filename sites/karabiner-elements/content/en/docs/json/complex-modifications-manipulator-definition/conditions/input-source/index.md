@@ -5,6 +5,95 @@ weight: 400
 
 Change an event if/unless the current input source is the specified value.
 
+## Example
+
+Switching input source between Japanese and English at tapping the left command key.
+
+```json
+[
+    {
+        "type": "basic",
+        "from": {
+            "key_code": "left_command",
+            "modifiers": {
+                "optional": ["any"]
+            }
+        },
+        "to": [
+            {
+                "key_code": "left_command",
+                "lazy": true
+            }
+        ],
+        "to_if_alone": [
+            {
+                "key_code": "japanese_eisuu"
+            }
+        ],
+        "to_if_held_down": [
+            {
+                "key_code": "left_command"
+            }
+        ],
+        "conditions": [
+            {
+                "input_sources": [
+                    {
+                        "language": "ja"
+                    }
+                ],
+                "type": "input_source_if"
+            }
+        ],
+        "parameters": {
+            "basic.to_if_held_down_threshold_milliseconds": 100
+        }
+    },
+    {
+        "type": "basic",
+        "from": {
+            "key_code": "left_command",
+            "modifiers": {
+                "optional": ["any"]
+            }
+        },
+        "to": [
+            {
+                "key_code": "left_command",
+                "lazy": true
+            }
+        ],
+        "to_if_alone": [
+            {
+                "key_code": "japanese_kana"
+            }
+        ],
+        "to_if_held_down": [
+            {
+                "key_code": "left_command"
+            }
+        ],
+        "conditions": [
+            {
+                "input_sources": [
+                    {
+                        "language": "en"
+                    }
+                ],
+                "type": "input_source_if"
+            }
+        ],
+        "parameters": {
+            "basic.to_if_held_down_threshold_milliseconds": 100
+        }
+    }
+]
+```
+
+---
+
+## Specification
+
 ```json
 {
     "type": "input_source_if",
@@ -30,7 +119,7 @@ Change an event if/unless the current input source is the specified value.
 | `input_sources` | **Required** | Target input source definitions                |
 | `description`   | Optional     | A human-readable comment                       |
 
-## `input_sources`
+### `input_sources`
 
 `input_sources` is an array of objects.
 
@@ -40,7 +129,7 @@ Change an event if/unless the current input source is the specified value.
 | `input_source_id` | Optional | The input source id regex such as `"^com\\.apple\\.keylayout\\.US$"`                  |
 | `input_mode_id`   | Optional | The input mode id regex such as `"^com\\.apple\\.inputmethod\\.Japanese\\.Hiragana$"` |
 
-### Multiple identifiers
+#### Multiple identifiers
 
 If you specify multiple identifiers (`language`, `input_source_id` or `input_mode_id`), these are joined by "and".
 
@@ -58,7 +147,7 @@ The following condition is matched if language is "ja" **and** input_mode_id is 
 }
 ```
 
-### Multiple entries
+#### Multiple entries
 
 If you specify multiple entries at `input_sources`, conditions are joined by "or".
 
@@ -77,6 +166,8 @@ The following condition is matched if language is "en" **or** "ja".
     ]
 }
 ```
+
+---
 
 ## Investigate the input source identifiers
 

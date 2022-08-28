@@ -129,6 +129,8 @@ The following condition is matched if Vendor ID is 1111 **or** 1112.
 }
 ```
 
+---
+
 ## Investigate the device identifiers
 
 You can find them by EventViewer > Devices tab.
