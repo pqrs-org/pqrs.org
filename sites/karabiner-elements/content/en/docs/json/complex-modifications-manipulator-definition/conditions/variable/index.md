@@ -5,6 +5,15 @@ weight: 500
 
 Change an event if/unless the variable is the specified value.
 
+## Example
+
+-   [Change `right_shift` x2 to `mission_control`](/docs/json/typical-complex-modifications-examples/#change-right_shift-x2-to-mission_control)
+-   [Virtual modifier](/docs/json/extra/virtual-modifier/)
+
+---
+
+## Specification
+
 {{% alert title="Tip" color="primary" %}}
 
 `variable_if` and `variable_unless` are designed to use with [`set_variable`](../../to/set-variable/).
@@ -26,7 +35,7 @@ Change an event if/unless the variable is the specified value.
 | `value`       | **Required** | Target variable value.                  |
 | `description` | Optional     | A human-readable comment                |
 
-## Available types of `value`
+### Available types of `value`
 
 | Type    | Example value      | Available since            |
 | ------- | ------------------ | -------------------------- |
@@ -48,6 +57,8 @@ Whenever the type of `value` is different, it is treated as having different con
 If the variable is not set to a value, the value is treated as `0`.
 
 {{% /alert %}}
+
+---
 
 ## Confirm the current variable values
 
