@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="generator" content="Hugo 0.101.0" />
+<meta name="generator" content="Hugo 0.102.3" />
 <meta name="robots" content="index, follow">
 
 
@@ -19,33 +19,33 @@
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
 <title>Release notes | Karabiner-Elements</title>
-<meta name="description" content="Karabiner-Elements 14.8.0
+<meta name="description" content="Karabiner-Elements 14.9.0
 
 📦 Download
 📅 Release date
 
-Aug 11, 2022
+Sep 11, 2022
 
 
 ✨ New Features
 
-Add Enable unsafe configuration feature into Preferences &gt; Pro …">
+Supported Remote control buttons. (menu arrows buttons, color …">
 <meta property="og:title" content="Release notes" />
-<meta property="og:description" content="Karabiner-Elements 14.8.0 📦 Download 📅 Release date Aug 11, 2022 ✨ New Features Add Enable unsafe configuration feature into Preferences &gt; Pro tab. 🐛 Bug Fixes Fixed an issue that the built-in keyboard is not be treated as the built-in keyboard if the keyboard is connected via SPI (Serial Peripheral Interface), such as M2 MacBook Air. Karabiner-Elements 14.6.0 📦 Download 📅 Release date Jul 31, 2022 ✨ New Features Treat as a built-in keyboard setting has been added into Devices configuration." />
+<meta property="og:description" content="Karabiner-Elements 14.9.0 📦 Download 📅 Release date Sep 11, 2022 ✨ New Features Supported Remote control buttons. (menu arrows buttons, color buttons) The is_built_in_keyboard has been added into device_if and device_unless. The device_exists_if and device_exists_unless has been added into conditions. 🐛 Bug Fixes Fixed an issue that the ignored device&rsquo;s modifier keys are not ignored properly. Karabiner-Elements 14.8.0 📦 Download 📅 Release date Aug 11, 2022 ✨ New Features Add Enable unsafe configuration feature into Preferences &gt; Pro tab." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/releasenotes/" /><meta property="og:image" content="https://karabiner-elements.pqrs.org/images/logo.png"/><meta property="article:section" content="docs" />
 
 <meta property="og:site_name" content="Karabiner-Elements" />
 
 <meta itemprop="name" content="Release notes">
-<meta itemprop="description" content="Karabiner-Elements 14.8.0 📦 Download 📅 Release date Aug 11, 2022 ✨ New Features Add Enable unsafe configuration feature into Preferences &gt; Pro tab. 🐛 Bug Fixes Fixed an issue that the built-in keyboard is not be treated as the built-in keyboard if the keyboard is connected via SPI (Serial Peripheral Interface), such as M2 MacBook Air. Karabiner-Elements 14.6.0 📦 Download 📅 Release date Jul 31, 2022 ✨ New Features Treat as a built-in keyboard setting has been added into Devices configuration.">
+<meta itemprop="description" content="Karabiner-Elements 14.9.0 📦 Download 📅 Release date Sep 11, 2022 ✨ New Features Supported Remote control buttons. (menu arrows buttons, color buttons) The is_built_in_keyboard has been added into device_if and device_unless. The device_exists_if and device_exists_unless has been added into conditions. 🐛 Bug Fixes Fixed an issue that the ignored device&rsquo;s modifier keys are not ignored properly. Karabiner-Elements 14.8.0 📦 Download 📅 Release date Aug 11, 2022 ✨ New Features Add Enable unsafe configuration feature into Preferences &gt; Pro tab.">
 
-<meta itemprop="wordCount" content="6735"><meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
+<meta itemprop="wordCount" content="6791"><meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
 
 <meta name="twitter:title" content="Release notes"/>
-<meta name="twitter:description" content="Karabiner-Elements 14.8.0 📦 Download 📅 Release date Aug 11, 2022 ✨ New Features Add Enable unsafe configuration feature into Preferences &gt; Pro tab. 🐛 Bug Fixes Fixed an issue that the built-in keyboard is not be treated as the built-in keyboard if the keyboard is connected via SPI (Serial Peripheral Interface), such as M2 MacBook Air. Karabiner-Elements 14.6.0 📦 Download 📅 Release date Jul 31, 2022 ✨ New Features Treat as a built-in keyboard setting has been added into Devices configuration."/>
+<meta name="twitter:description" content="Karabiner-Elements 14.9.0 📦 Download 📅 Release date Sep 11, 2022 ✨ New Features Supported Remote control buttons. (menu arrows buttons, color buttons) The is_built_in_keyboard has been added into device_if and device_unless. The device_exists_if and device_exists_unless has been added into conditions. 🐛 Bug Fixes Fixed an issue that the ignored device&rsquo;s modifier keys are not ignored properly. Karabiner-Elements 14.8.0 📦 Download 📅 Release date Aug 11, 2022 ✨ New Features Add Enable unsafe configuration feature into Preferences &gt; Pro tab."/>
 
 
 
@@ -108,7 +108,7 @@ if (!doNotTrack) {
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.bdd00f0c5e9e73b9e1e58726e31745b6.json"
+  data-offline-search-index-json-src="/offline-search-index.57473a081c8df3793e16f527a47adea6.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="25"
 >
@@ -130,7 +130,7 @@ if (!doNotTrack) {
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.bdd00f0c5e9e73b9e1e58726e31745b6.json"
+  data-offline-search-index-json-src="/offline-search-index.57473a081c8df3793e16f527a47adea6.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="25"
 >
@@ -633,6 +633,7 @@ if (!doNotTrack) {
 
 <nav id="TableOfContents">
   <ul>
+    <li><a href="#karabiner-elements-1490">Karabiner-Elements 14.9.0</a></li>
     <li><a href="#karabiner-elements-1480">Karabiner-Elements 14.8.0</a></li>
     <li><a href="#karabiner-elements-1460">Karabiner-Elements 14.6.0</a></li>
     <li><a href="#karabiner-elements-1450">Karabiner-Elements 14.5.0</a></li>
@@ -791,7 +792,28 @@ if (!doNotTrack) {
 
 		
 	</header>    
-	<h2 id="karabiner-elements-1480">Karabiner-Elements 14.8.0</h2>
+	<h2 id="karabiner-elements-1490">Karabiner-Elements 14.9.0</h2>
+<ul>
+<li><a href="https://github.com/pqrs-org/Karabiner-Elements/releases/download/v14.9.0/Karabiner-Elements-14.9.0.dmg">📦 Download</a></li>
+<li>📅 Release date
+<ul>
+<li>Sep 11, 2022</li>
+</ul>
+</li>
+<li>✨ New Features
+<ul>
+<li>Supported Remote control buttons. (menu arrows buttons, color buttons)</li>
+<li>The <code>is_built_in_keyboard</code> has been added into <code>device_if</code> and <code>device_unless</code>.</li>
+<li>The <code>device_exists_if</code> and <code>device_exists_unless</code> has been added into <code>conditions</code>.</li>
+</ul>
+</li>
+<li>🐛 Bug Fixes
+<ul>
+<li>Fixed an issue that the ignored device&rsquo;s modifier keys are not ignored properly.</li>
+</ul>
+</li>
+</ul>
+<h2 id="karabiner-elements-1480">Karabiner-Elements 14.8.0</h2>
 <ul>
 <li><a href="https://github.com/pqrs-org/Karabiner-Elements/releases/download/v14.8.0/Karabiner-Elements-14.8.0.dmg">📦 Download</a></li>
 <li>📅 Release date
