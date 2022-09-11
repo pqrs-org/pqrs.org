@@ -81,7 +81,7 @@ I'm afraid I don't have enough time to reply for donors.<br />
 (I'm giving priority to develop Karabiner-Elements at the moment.)
 
 <div class="text-right">
-    Jun 4, 2022<br />
+    Sep 11, 2022<br />
     Takayama Fumihiko
 </div>
 
