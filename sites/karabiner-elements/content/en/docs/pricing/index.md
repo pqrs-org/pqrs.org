@@ -11,6 +11,20 @@ Karabiner-Elements is an [open source software](https://github.com/pqrs-org/Kara
 
 This project accepts your funding via GitHub Sponsors or PayPal.
 
+{{% alert title="For donors" color="primary" %}}
+
+I appreciate all donors. I received your donations!
+
+I'm afraid I don't have enough time to reply for donors.<br />
+(I'm giving priority to develop Karabiner-Elements at the moment.)
+
+<div class="text-right">
+    Sep 11, 2022<br />
+    Takayama Fumihiko
+</div>
+
+{{% /alert %}}
+
 <div class="card border-success" style="margin-top: 60px">
     <div class="card-header bg-success text-white">
         <b>Monthly</b> or <b>One-time</b> (GitHub Sponsors)
@@ -72,20 +86,6 @@ This project accepts your funding via GitHub Sponsors or PayPal.
         </div>
     </div>
 </div>
-
-{{% alert title="For donors" color="primary" %}}
-
-I appreciate all donors. I received your donations!
-
-I'm afraid I don't have enough time to reply for donors.<br />
-(I'm giving priority to develop Karabiner-Elements at the moment.)
-
-<div class="text-right">
-    Sep 11, 2022<br />
-    Takayama Fumihiko
-</div>
-
-{{% /alert %}}
 
 <div id="supporters" class="text-center border border-dark rounded py-4">
   <div class="text-center font-weight-bold h3">
