@@ -5,6 +5,18 @@ simple_list: true
 exclude_search: true
 ---
 
+## Karabiner-Elements 14.9.0
+
+-   [📦 Download](https://github.com/pqrs-org/Karabiner-Elements/releases/download/v14.9.0/Karabiner-Elements-14.9.0.dmg)
+-   📅 Release date
+    -   Sep 11, 2022
+-   ✨ New Features
+    -   Supported Remote control buttons. (menu arrows buttons, color buttons)
+    -   The `is_built_in_keyboard` has been added into `device_if` and `device_unless`.
+    -   The `device_exists_if` and `device_exists_unless` has been added into `conditions`.
+-   🐛 Bug Fixes
+    -   Fixed an issue that the ignored device's modifier keys are not ignored properly.
+
 ## Karabiner-Elements 14.8.0
 
 -   [📦 Download](https://github.com/pqrs-org/Karabiner-Elements/releases/download/v14.8.0/Karabiner-Elements-14.8.0.dmg)
