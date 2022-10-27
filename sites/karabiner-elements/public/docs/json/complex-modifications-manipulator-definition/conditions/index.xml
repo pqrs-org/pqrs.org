@@ -193,7 +193,7 @@
 &lt;tr&gt;
 &lt;td&gt;&lt;code&gt;type&lt;/code&gt;&lt;/td&gt;
 &lt;td&gt;&lt;strong&gt;Required&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;&amp;quot;device_if&amp;quot;&lt;/code&gt; or &lt;code&gt;&amp;quot;device_unless&amp;quot;&lt;/code&gt; or &lt;code&gt;&amp;quot;device_exists_if&amp;quot;&lt;/code&gt; or `&amp;ldquo;device_exists_unless&amp;rdquo;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;&amp;quot;device_if&amp;quot;&lt;/code&gt; or &lt;code&gt;&amp;quot;device_unless&amp;quot;&lt;/code&gt; or &lt;code&gt;&amp;quot;device_exists_if&amp;quot;&lt;/code&gt; or &lt;code&gt;&amp;quot;device_exists_unless&amp;quot;&lt;/code&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;code&gt;identifiers&lt;/code&gt;&lt;/td&gt;
