@@ -64,7 +64,7 @@ Change `1` key to `f1` if the device is Apple keyboard.
 
 | Name          | Required     | Description                                                                           |
 | ------------- | ------------ | ------------------------------------------------------------------------------------- |
-| `type`        | **Required** | `"device_if"` or `"device_unless"` or `"device_exists_if"` or `"device_exists_unless" |
+| `type`        | **Required** | `"device_if"` or `"device_unless"` or `"device_exists_if"` or `"device_exists_unless"`|
 | `identifiers` | **Required** | Target device definitions                                                             |
 | `description` | Optional     | A human-readable comment                                                              |
 
