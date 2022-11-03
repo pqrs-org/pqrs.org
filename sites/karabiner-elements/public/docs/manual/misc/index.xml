@@ -14,6 +14,153 @@
     
     
     <item>
+      <title>Docs: Required macOS settings</title>
+      <link>/docs/manual/misc/required-macos-settings/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/manual/misc/required-macos-settings/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Under normal circumstances, there is no need to read this page, as the necessary settings have already been made during the initial setup.&lt;/p&gt;
+&lt;p&gt;However, we describe the macOS settings that are made during the initial setup of Karabiner-Elements for the following cases.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;If you canceled during the initial setup and want to continue in the middle of the process&lt;/li&gt;
+&lt;li&gt;If you want to check the macOS settings made during the initial setup&lt;/li&gt;
+&lt;li&gt;If Karabiner-Elements is not working properly and you want to make sure that macOS is configured properly&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;keep-background-items-enabled&#34;&gt;Keep background items enabled&lt;/h2&gt;
+
+
+&lt;div class=&#34;alert alert-danger&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
+
+    This setting exists only on macOS Venture or later
+
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;alert alert-success&#34; role=&#34;alert&#34;&gt;
+
+
+    &lt;p&gt;Karabier-Elements has processes running constantly in the background, that handle input events.
+You have to keep the background items enabled in &lt;code&gt;macOS System Settings &amp;gt; General &amp;gt; Login Items&lt;/code&gt;.&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/manual/misc/required-macos-settings/images/login-items0.png&#34;
+    alt=&#34;login-items0.png&#34;
+    style=&#34;width: 820px&#34;
+  /&gt;
+&lt;/figure&gt;
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/manual/misc/required-macos-settings/images/login-items1.png&#34;
+    alt=&#34;login-items1.png&#34;
+    style=&#34;width: 1430px&#34;
+  /&gt;
+&lt;/figure&gt;
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/manual/misc/required-macos-settings/images/login-items2.png&#34;
+    alt=&#34;login-items2.png&#34;
+    style=&#34;width: 1430px&#34;
+  /&gt;
+&lt;/figure&gt;
+
+
+&lt;/div&gt;
+
+&lt;hr&gt;
+&lt;h2 id=&#34;enable-input-monitoring&#34;&gt;Enable Input Monitoring&lt;/h2&gt;
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+
+
+    &lt;p&gt;Karabiner-Elements requires Input Monitoring permission to receive and modify input events.&lt;/p&gt;
+&lt;p&gt;You can enable it in &lt;code&gt;macOS System Settings &amp;gt; Privacy &amp;amp; Security &amp;gt; Input Monitoring&lt;/code&gt;.&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/manual/misc/required-macos-settings/images/input-monitoring2.png&#34;
+    alt=&#34;input-monitoring2.png&#34;
+    style=&#34;width: 1430px&#34;
+  /&gt;
+&lt;/figure&gt;
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/manual/misc/required-macos-settings/images/input-monitoring3.png&#34;
+    alt=&#34;input-monitoring3.png&#34;
+    style=&#34;width: 1430px&#34;
+  /&gt;
+&lt;/figure&gt;
+
+
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;alert alert-danger&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Troubleshooting&lt;/h4&gt;
+
+    &lt;p&gt;If you cannot find &lt;code&gt;karabiner_grabber&lt;/code&gt; or &lt;code&gt;karabiner_observer&lt;/code&gt; in the list, this is because you have not closed the following &amp;ldquo;Keystroke Receiving&amp;rdquo; dialogs.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;karabiner_grabber&lt;/code&gt; and &lt;code&gt;karabiner_observer&lt;/code&gt; will be shown in the list after the dialogs are closed.&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/manual/misc/required-macos-settings/images/input-monitoring0.png&#34;
+    alt=&#34;input-monitoring0.png&#34;
+    style=&#34;width: 922px&#34;
+  /&gt;
+&lt;/figure&gt;
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/manual/misc/required-macos-settings/images/input-monitoring1.png&#34;
+    alt=&#34;input-monitoring1.png&#34;
+    style=&#34;width: 922px&#34;
+  /&gt;
+&lt;/figure&gt;
+
+
+&lt;/div&gt;
+
+&lt;hr&gt;
+&lt;h2 id=&#34;allow-system-extension&#34;&gt;Allow system extension&lt;/h2&gt;
+
+
+&lt;div class=&#34;alert alert-success&#34; role=&#34;alert&#34;&gt;
+
+
+    &lt;p&gt;Karabiner-Elements uses the system extension to provide a virtual keyboard and mouse.
+You have to approve system extension before using it.
+You can confirm whether the system extension already allowed in &lt;a href=&#34;/docs/manual/operation/eventviewer/&#34;&gt;EventViewer&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If &lt;code&gt;org.pqrs.Karabiner-DriverKit-VirtualHIDDevice&lt;/code&gt; appears in the System Extensions of the EventViewer and the status is &lt;code&gt;[activated enabled]&lt;/code&gt;, the system extension is already allowed.&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/manual/misc/required-macos-settings/images/system-extension0.png&#34;
+    alt=&#34;system-extension0.png&#34;
+    style=&#34;width: 2200px&#34;
+  /&gt;
+&lt;/figure&gt;
+&lt;p&gt;Otherwise, you have to approve the system extension in macOS System Settings.&lt;/p&gt;
+&lt;h3 id=&#34;approve-system-extension&#34;&gt;Approve system extension&lt;/h3&gt;
+&lt;p&gt;You can approve the system extension in &lt;code&gt;macOS System Settings &amp;gt; Privacy &amp;amp; Security&lt;/code&gt;.&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/manual/misc/required-macos-settings/images/system-extension2.png&#34;
+    alt=&#34;system-extension2.png&#34;
+    style=&#34;width: 1430px&#34;
+  /&gt;
+&lt;/figure&gt;
+
+
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
       <title>Docs: About &#34;Device is ignored temporarily&#34; alert</title>
       <link>/docs/manual/misc/ignored-temporarily/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
