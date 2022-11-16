@@ -17,7 +17,7 @@ However, we describe the macOS settings that are made during the initial setup o
 
 {{% alert title="Note" color="danger" %}}
 
-This setting exists only on macOS Venture or later
+This setting exists only on macOS Ventura or later
 
 {{% /alert %}}
 
