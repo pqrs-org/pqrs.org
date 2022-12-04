@@ -52,5 +52,9 @@ deploy \
   sites/tinkle/public/
 
 deploy \
+  ../gh-pages-truewidget.pqrs.org \
+  sites/truewidget/public/
+
+deploy \
   ../gh-pages-vulkanon.pqrs.org \
   sites/vulkanon/public/

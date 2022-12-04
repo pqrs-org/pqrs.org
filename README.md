@@ -16,6 +16,8 @@ Sites constructed by [docsy](https://www.docsy.dev).
     -   <https://showyedge.pqrs.org>
 -   `sites/tinkle`
     -   <https://tinkle.pqrs.org>
+-   `sites/truewidget`
+    -   <https://truewidget.pqrs.org>
 -   `sites/vulkanon`
     -   <https://vulkanon.pqrs.org>
 
