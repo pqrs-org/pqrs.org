@@ -52,7 +52,7 @@ id = "G-NL3CW99MZS"
 [languages]
 [languages.en]
 title = "TrueWidget"
-description = "A macOS app that appends a visual effect at the focused window changes."
+description = "A macOS app that displays the system status on screen at all times."
 languageName ="English"
 # Weight used for sorting.
 weight = 1
