@@ -1,6 +1,10 @@
 {
     "files.exclude": {
         "**/package-lock.json": true,
+        "sites/*/go.mod": true,
+        "sites/*/go.sum": true,
+        "sites/*/layouts/": true,
+        "sites/*/Makefile": true,
         "sites/*/public/": true,
         "sites/*/resources/": true,
         "themes/docsy": true
