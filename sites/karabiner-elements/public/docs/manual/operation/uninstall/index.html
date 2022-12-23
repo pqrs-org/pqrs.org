@@ -41,7 +41,7 @@ You can launch the uninstaller from &ldquo;Launch uninstaller&rdquo; button on U
 Uninstall from command line If you don&rsquo;t want to use above GUI, you can also uninstall Karabiner-Elements from command line.
 bash &#39;/Library/Application Support/org.pqrs/Karabiner-DriverKit-VirtualHIDDevice/scripts/uninstall/deactivate_driver.sh&#39; sudo &#39;/Library/Application Support/org.pqrs/Karabiner-Elements/uninstall.sh&#39; (Administrator password is required to run the above command.">
 
-<meta itemprop="wordCount" content="162"><meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
+<meta itemprop="wordCount" content="233"><meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
 
@@ -98,7 +98,7 @@ if (!doNotTrack) {
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.07df415d8e74209f47fc8ad3f33b7b34.json"
+    data-offline-search-index-json-src="/offline-search-index.d0f9356204d47f6d56b03bbd58022d2b.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="25"
   >
@@ -123,7 +123,7 @@ if (!doNotTrack) {
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.07df415d8e74209f47fc8ad3f33b7b34.json"
+    data-offline-search-index-json-src="/offline-search-index.d0f9356204d47f6d56b03bbd58022d2b.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="25"
   >
@@ -629,7 +629,11 @@ if (!doNotTrack) {
 
 
 
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#additional-uninstallation">Additional uninstallation</a></li>
+  </ul>
+</nav>
 
 
 
@@ -740,6 +744,75 @@ Use the uninstaller to remove Karabiner-Elements from your system.</p>
 
 </div>
 
+<h2 id="additional-uninstallation">Additional uninstallation</h2>
+<p>Some settings and files will remain after uninstallation.
+It does not affect the system even if it remains in place, but if you are concerned about them, please delete them manually.</p>
+<ol>
+<li>Input Monitoring settings
+<ul>
+<li>Remove karabiner_grabber and karabiner_observer from the Input Monitoring settings in macOS Settings.
+
+        
+        
+        
+          
+        
+        
+        <figure>
+          <img
+            src="/docs/manual/operation/uninstall/images/input-monitoring1@2x.png"
+            alt="input-monitoring1@2x.png"
+            style="width: 715px"
+          />
+        </figure>
+
+
+        
+        
+        
+          
+        
+        
+        <figure>
+          <img
+            src="/docs/manual/operation/uninstall/images/input-monitoring2@2x.png"
+            alt="input-monitoring2@2x.png"
+            style="width: 715px"
+          />
+        </figure>
+</li>
+</ul>
+</li>
+<li>Log files
+<ul>
+<li>Delete the following directories:
+<ul>
+<li><code>/var/log/karabiner</code></li>
+<li><code>~/.local/share/karabiner</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Temporary directories
+<ul>
+<li>Delete the following directories:
+<ul>
+<li><code>/Library/Application Support/org.pqrs/tmp</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Setting files
+<ul>
+<li>Delete the following directories:
+<ul>
+<li><code>~/.config/karabiner</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<hr>
 
 
 <div class="alert alert-success" role="alert">
