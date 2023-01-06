@@ -15,16 +15,37 @@ Follow these instructions to set up Karabiner-Elements.
 3.  The installer will be opened. Install Karabiner-Elements.
     {{< local-image src="images/installer@2x.png" >}}
 
-## Open Karabiner-Elements Preferences
+## Keep Login Items enabled
+
+Since macOS 13 Ventura, background item notifications will be shown after the installation.
+
+{{< local-image src="images/login-items0@2x.png" >}}
+
+The following Login Items in System Settings are required, and have to keep enabled.
+
+-   `Karabiner-DriverKit-VirtualHIDDeviceClient.app`
+-   `Karabiner-Elements.app`
+
+{{< local-image src="images/login-items1@2x.png" >}}
+
+{{% alert title="Note" color="primary" %}}
+
+If you are using macOS 12 or prior, these items are not shown in System Preferences.
+Please proceed to the next step.
+
+{{% /alert %}}
+
+## Open Karabiner-Elements Settings
 
 1.  Open Karabiner-Elements from Launchpad.
     {{< local-image src="images/karabiner-elements-icon@2x.png" >}}
 
 ## Allow system software which provides virtual devices for Karabiner-Elements
 
-1.  The following alert will be shown when you open Karabiner-Elements Preferences.
-2.  Click **Open Security & Privacy System Preferences** button, then press the **Allow** button.
-    {{< local-image src="images/dext-alert@2x.png" >}}
+1.  The following alert will be shown when you open Karabiner-Elements Settings.
+2.  Click **Open System Settings** button, then press the **Allow** button.
+    {{< local-image src="images/system-extension-blocked@2x.png" >}}
+    {{< local-image src="images/system-extension-allow@2x.png" >}}
 
 {{% alert title="Note" color="primary" %}}
 
@@ -34,13 +55,12 @@ Please follow [this instruction](../../help/troubleshooting/kext-allow-button-do
 
 ## Grant Input Monitoring to Karabiner-Elements processes
 
-1.  **Two Keystroke Receiving** alerts will be shown on macOS Catalina or later after you allow the kernel extension.
-2.  Press the **Open System Preferences** button on both alerts.
+1.  **Two Keystroke Receiving** alerts will be shown on macOS Catalina or later after you allow the system software.
+2.  Press the **Open System Settings** button on both alerts.
     {{< local-image src="images/karabiner-grabber@2x.png" >}}
     {{< local-image src="images/karabiner-observer@2x.png" >}}
-3.  System Preferences will be opened after you press the **Open System Preferences** button.<br/>
-    Choose **Privacy > Input Monitoring**, and then enable **karabiner_grabber** and **karabiner_observer**. <br />
-    (You have to unlock configuration by clicking the padlock icon in the bottom-left corner and providing a valid admin account username and password.)
+3.  System Settings will be opened after you press the **Open System Settings** button.<br/>
+    Choose **Privacy & Security > Input Monitoring**, and then enable **karabiner_grabber** and **karabiner_observer**. <br />
     {{< local-image src="images/input-monitoring@2x.png" >}}
 
 ## Setup your keyboard layout
