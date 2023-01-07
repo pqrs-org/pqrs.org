@@ -78,7 +78,7 @@ You may lose the left click button and system will be unusable.
 ## Investigate key names
 
 -   You can find `key_code`, `consumer_key_code` and `pointing_button` names by [EventViewer](../../../manual/operation/eventviewer/).
--   You can also confirm [names in list](https://github.com/pqrs-org/Karabiner-Elements/blob/main/src/apps/PreferencesWindow/Resources/simple_modifications.json).
+-   You can also confirm [names in list](https://github.com/pqrs-org/Karabiner-Elements/blob/main/src/apps/SettingsWindow/Resources/simple_modifications.json).
     (See `"data"` in the list.)
 
 {{% alert title="Tip" color="primary" %}}

@@ -108,7 +108,7 @@ For example, changing `tab+q` to `mission_control` works as follows.
 
 ## Change threshold milliseconds
 
-You can adjust threshold on Preferences > Complex Modifications > Parameters.
+You can adjust threshold on Karabiner-Elements Settings > Parameters.
 
 {{< local-image src="images/karabiner-elements-simultaneous_threshold_milliseconds@2x.png" >}}
 
