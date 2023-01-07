@@ -207,7 +207,7 @@ You have to restart macOS in normal mode to use Karabiner-Elements.
         
         
         &lt;p&gt;In Allow in the Background of Login Items, &lt;code&gt;Fumihiko Takayama&lt;/code&gt; may appear instead of &lt;code&gt;Karabiner-Elements&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;There are several causes, but the problem is mainly on the macOS side and is difficult to resolve. (Restarting macOS may solve this issue)
+&lt;p&gt;There are several causes, but the problem is mainly on the macOS side and is difficult to resolve. (&lt;strong&gt;Restarting macOS may solve this issue&lt;/strong&gt;)
 In any case, there is no problem with leaving it as it is.&lt;/p&gt;
 
 
