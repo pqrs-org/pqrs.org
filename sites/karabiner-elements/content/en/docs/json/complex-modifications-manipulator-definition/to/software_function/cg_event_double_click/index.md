@@ -34,7 +34,7 @@ It is better to send `pointing_button::button1` twice instead of `cg_event_doubl
 {{% alert title="Accessibility" color="primary" %}}
 
 `cg_event_double_click` uses the accessibility features.
-You have to allow `karabiner_console_user_server` in Security & Privacy System Preferences.
+You have to allow `karabiner_console_user_server` in Privacy & Security System Settings.
 
 {{< local-image src="images/karabiner_console_user_server_accessibility@2x.png" >}}
 
