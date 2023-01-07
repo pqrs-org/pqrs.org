@@ -28,7 +28,6 @@ You have to keep the background items enabled in `macOS System Settings > Genera
 
 {{< local-image src="images/login-items0.png" >}}
 {{< local-image src="images/login-items1.png" >}}
-{{< local-image src="images/login-items2.png" >}}
 
 {{% /alert %}}
 
