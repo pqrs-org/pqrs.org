@@ -5,7 +5,7 @@ weight: 100
 
 Karabiner-Elements does not modify mouse devices by default.
 
-1.  You have to enable your mouse on Karabiner-Elements Preferences > Devices.
+1.  You have to enable your mouse on Karabiner-Elements Settings > Devices.
     {{< local-image src="images/devices@2x.png" >}}
 
 2.  Then, use Simple Modifications to assign a key to a button or
