@@ -3,9 +3,9 @@ title: 'Driver alert keeps showing up'
 weight: 10
 ---
 
-Usually, the following driver alert will appear on first start-up and the alert will disappear after you allow the system software from System Preferences.
+Usually, the following driver alert will appear on first start-up and the alert will disappear after you allow the system software from System Settings.
 
-Unfortunately, the allow button may sometimes not appear in System Preferences due to a problem with macOS driver loading.<br />
+Unfortunately, the allow button may sometimes not appear in System Settings due to a problem with macOS driver loading.<br />
 In this case, you can display the allow button by deactivating and activating driver as described in the Advanced section on the alert.
 
 {{< local-image src="images/dext-alert-1@2x.png" >}}
