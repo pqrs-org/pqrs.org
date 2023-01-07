@@ -5,7 +5,7 @@ weight: 300
 
 Karabiner-Elements does not provide a feature to adjust key repeat rate.
 
-Use System Preferences > Keyboard.
+Use System Settings > Keyboard.
 
 {{< local-image src="images/system-preferences-keyboard-key-repeat@2x.png" >}}
 
