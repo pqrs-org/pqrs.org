@@ -10,8 +10,6 @@ Please post an issue to GitHub.
 -   [Karabiner-Elements](https://github.com/pqrs-org/Karabiner-Elements)
 -   [KE-complex_modifications](https://github.com/pqrs-org/KE-complex_modifications) (About complex modifications)
 
-Or post to [Google Groups](https://groups.google.com/forum/#!forum/osx-karabiner)
-
 ### Required information with bug reports
 
 Please fill your information when you send bug reports:
@@ -20,7 +18,7 @@ Please fill your information when you send bug reports:
 
 -   macOS version:
 -   Karabiner version:<br />
-    (You can confirm the version in "Misc &amp; Uninstall" tab in Karabiner Preferences.)
+    (You can confirm the version in "Update" tab in Karabiner Settings.)
 -   Your Mac hardware:
 -   Your keyboard hardware:
 
@@ -29,7 +27,7 @@ Please fill your information when you send bug reports:
 Example:
 
 ```text
-macOS version: macOS 12.6
+macOS version: macOS 13.1
 Karabiner version: Karabiner-Elements 14.10.0
 Your Mac hardware: M2 MacBook Air
 Your keyboard hardware: Das Keyboard 4 Professional for Mac Mechanical Keyboard
@@ -43,5 +41,5 @@ Send a message to [author of Karabiner-Elements](https://pqrs.org/#profile).
 
 {{% alert title="Note" color="warning" %}}
 I'm sorry I cannot spend enough time to reply for all mails since I'm receiving a lot mails.<br />
-GitHub or Google Groups are suitable place to post it unless you have a private question.
+GitHub is suitable place to post it unless you have a private question.
 {{% /alert %}}
