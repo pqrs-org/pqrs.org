@@ -3,6 +3,10 @@ title: 'Placeholder Developer is shown in Security & Privacy System Preferences'
 weight: 600
 ---
 
+{{% alert title="Note" color="secondary" %}}
+This page is for macOS 10.15 Catalina, not macOS 11 Big Sur or later.
+{{% /alert %}}
+
 ".Karabiner-VirtualHIDDevice-Manager" is usually shown in Security & Privacy System Preferences when macOS requires your approval.
 
 {{< local-image src="images/normal@2x.png" >}}
