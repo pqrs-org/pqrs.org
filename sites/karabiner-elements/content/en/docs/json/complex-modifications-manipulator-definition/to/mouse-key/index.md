@@ -30,7 +30,7 @@ Move mouse pointer and scroll by `mouse_key`.
 | `speed_multiplier` | Optional | Multiply mouse keys speed while this key is hold down              |
 
 {{% alert title="Note" color="primary" %}}
-Speed and scroll direction depend on System Preferences > Mouse configuration.
+Speed and scroll direction depend on System Settings > Mouse configuration.
 {{% /alert %}}
 
 ## Examples
