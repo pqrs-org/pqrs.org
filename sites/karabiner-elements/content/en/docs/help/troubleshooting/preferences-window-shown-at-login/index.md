@@ -1,16 +1,21 @@
 ---
-title: 'Preferences window is shown at login'
+title: 'Settings window is shown at login'
 weight: 800
 ---
 
-If you manually registered Karabiner-Elements to login items, the preferences window will always appear at startup.
+If you manually registered Karabiner-Elements to `Open at Login`, the settings window will always appear at startup.
 
-Karabiner-Elements will start automatically via launchd even if it is not in login item, so remove it from your login items.
+Karabiner-Elements will start automatically via launchd even if it is not in `Open at Login`, so remove it from your `Open at Login`.
 
-1.  Open System Preferences.
-2.  Open Users & Groups.
-3.  Choose your account from the sidebar.
-4.  Open Login Items tab.
-5.  Remove Karabiner-Elements from login items.
+1.  Open System Settings.
+2.  Open General > Login Items.
+3.  Remove Karabiner-Elements from `Open at Login`.
 
-{{< local-image src="images/login-items@2x.png" >}}
+{{% alert title="Caution" color="danger" %}}
+
+Do not disable Karabiner-Elements.app in `Allow in the Background`.
+It's a required setting for Karabiner-Elements to work.
+
+{{% /alert %}}
+
+{{< local-image src="images/open-at-login@2x.png" >}}
