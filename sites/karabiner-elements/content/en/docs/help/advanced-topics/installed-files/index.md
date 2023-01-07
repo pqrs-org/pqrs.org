@@ -30,6 +30,7 @@ Karabiner-Elements installs files into the following locations.
 ~/.config/karabiner
 ~/.local/share/karabiner
 ~/Library/Preferences/org.pqrs.Karabiner-Elements.Preferences.plist
+~/Library/Preferences/org.pqrs.Karabiner-Elements.Settings.plist
 ~/Library/Preferences/org.pqrs.Karabiner-Elements.Updater.plist
 ~/Library/Preferences/org.pqrs.Karabiner-EventViewer.plist
 ~/Library/Preferences/org.pqrs.Karabiner-Menu.plist
