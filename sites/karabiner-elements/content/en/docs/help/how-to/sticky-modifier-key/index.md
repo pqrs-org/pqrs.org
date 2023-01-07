@@ -3,7 +3,7 @@ title: 'How to use sticky modifier keys'
 weight: 150
 ---
 
-You can enable the sticky modifier keys from Preferences &gt; Simple modifications.
+You can enable the sticky modifier keys from Karabiner-Elements Settings &gt; Simple modifications.
 
 {{< local-image src="images/to-keys@2x.png" >}}
 
@@ -30,7 +30,7 @@ Sticky modifier key indicator will be shown while the sticky modifiers are activ
 
 {{< local-image src="images/sticky-modifier-key-indicator@2x.png" >}}
 
-You can hide the indicator from Preferences &gt; Virtual keyboard.
+You can hide the indicator from Karabiner-Elements Settings &gt; Virtual keyboard.
 
 {{< local-image src="images/indicator-configuration@2x.png" >}}
 
