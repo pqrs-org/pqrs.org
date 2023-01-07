@@ -12,7 +12,7 @@ Karabiner-Elements treats input events by the following order:
 5.  Post events to applications via a virtual keyboard.
 
 {{% alert title="Note" color="primary" %}}
-System modifier keys configuration in **System Preferences > Keyboard** is ignored when you use
+System modifier keys configuration in **System Settings > Keyboard > Keyboard Shortcuts... > Modifier Keys** is ignored when you use
 Karabiner-Elements.
 
 Change modifier keys in Karabiner-Elements's Simple Modifications.
