@@ -28,7 +28,7 @@ Example:
 
 ```text
 macOS version: macOS 13.1
-Karabiner version: Karabiner-Elements 14.10.0
+Karabiner version: Karabiner-Elements 14.11.0
 Your Mac hardware: M2 MacBook Air
 Your keyboard hardware: Das Keyboard 4 Professional for Mac Mechanical Keyboard
 ```

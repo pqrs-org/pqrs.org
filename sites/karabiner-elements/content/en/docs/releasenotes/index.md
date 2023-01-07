@@ -5,6 +5,21 @@ simple_list: true
 exclude_search: true
 ---
 
+## Karabiner-Elements 14.11.0
+
+-   [📦 Download](https://github.com/pqrs-org/Karabiner-Elements/releases/download/v14.11.0/Karabiner-Elements-14.11.0.dmg)
+-   📅 Release date
+    -   Jan 7, 2023
+-   💥 Breaking changes
+    -   Changed bundle identifier of Karabiner-Elements Settings to `org.pqrs.Karabiner-Elements.Settings` from `org.pqrs.Karabiner-Elements.Preferences`.
+-   ✨ New Features
+    -   Added `Ask for confirmation when quitting` option into Preferences > Pro tab. (Thanks to @basti1302)
+-   ⚡️ Improvements
+    -   Improved health checks for inter-process communication to better recover from errors.
+-   🐛 Bug Fixes
+    -   Fixed an issue that uninstaller does not remove Karabiner-Elements.app and Karabiner-EventViewer.app in macOS Ventura.
+    -   Fixed an issue that could cause multiple update windows will be shown.
+
 ## Karabiner-Elements 14.10.0
 
 -   [📦 Download](https://github.com/pqrs-org/Karabiner-Elements/releases/download/v14.10.0/Karabiner-Elements-14.10.0.dmg)
