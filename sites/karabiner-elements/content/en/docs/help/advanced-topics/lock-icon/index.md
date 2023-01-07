@@ -3,7 +3,7 @@ title: 'What is the lock indicator on Karabiner-Elements and Karabiner-EventView
 weight: 300
 ---
 
-A lock indicator is shown on Karabiner-Elements and Karabiner-EventViewer icon since macOS 11.0 (Big Sur).
+Prior to Karabiner-Elements 14.10.0, a lock indicator is shown on Karabiner-Elements and Karabiner-EventViewer icon.
 
 These indicators show that these files are protected so that they cannot be deleted from Finder.
 
