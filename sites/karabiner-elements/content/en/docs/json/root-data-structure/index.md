@@ -65,7 +65,7 @@ Karabiner-Elements does not allow you including comments (`// ...` or `/* ... */
         },
         "rules": [
             {
-                "description": "This description is shown in Preferences.",
+                "description": "This description is shown in Settings.",
                 "manipulators": [
                     {
                         "type": "basic",
@@ -151,7 +151,7 @@ Adding a custom .json file allows for enabling and disabling rules/complex modif
     "title": "Title for the list of rules/complex modifications.",
     "rules": [
         {
-            "description": "This description is shown in Preferences.",
+            "description": "This description is shown in Settings.",
             "manipulators": [
                 {
                     "type": "basic",
