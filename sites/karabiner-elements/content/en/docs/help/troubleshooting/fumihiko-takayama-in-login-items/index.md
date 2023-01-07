@@ -6,6 +6,7 @@ weight: 110
 In Allow in the Background of Login Items, `Fumihiko Takayama` may appear instead of `Karabiner-Elements`.
 
 There are several causes, but the problem is mainly on the macOS side and is difficult to resolve. (**Restarting macOS may solve this issue**)
+
 In any case, there is no problem with leaving it as it is.
 
 {{< local-image src="images/fumihiko-takayama@2x.png" >}}
