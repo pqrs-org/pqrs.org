@@ -14,4 +14,4 @@ Karabiner-Elements shows an icon in menu bar which provides the following functi
 
 If you want to hide it, turn off "Show icon in menu bar" on Settings > Misc tab.
 
-{{< local-image src="images/menu-bar-icon-preferences@2x.png" >}}
+{{< local-image src="images/menu-bar-icon-settings@2x.png" >}}
