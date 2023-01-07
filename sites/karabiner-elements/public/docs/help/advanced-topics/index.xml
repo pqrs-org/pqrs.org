@@ -42,6 +42,7 @@
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;~/.config/karabiner
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;~/.local/share/karabiner
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;~/Library/Preferences/org.pqrs.Karabiner-Elements.Preferences.plist
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;~/Library/Preferences/org.pqrs.Karabiner-Elements.Settings.plist
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;~/Library/Preferences/org.pqrs.Karabiner-Elements.Updater.plist
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;~/Library/Preferences/org.pqrs.Karabiner-EventViewer.plist
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;~/Library/Preferences/org.pqrs.Karabiner-Menu.plist
@@ -161,7 +162,7 @@ And do nothing if the process is running with non root user.&lt;/li&gt;
       <description>
         
         
-        &lt;p&gt;A lock indicator is shown on Karabiner-Elements and Karabiner-EventViewer icon since macOS 11.0 (Big Sur).&lt;/p&gt;
+        &lt;p&gt;Prior to Karabiner-Elements 14.10.0, a lock indicator is shown on Karabiner-Elements and Karabiner-EventViewer icon.&lt;/p&gt;
 &lt;p&gt;These indicators show that these files are protected so that they cannot be deleted from Finder.&lt;/p&gt;
 
 

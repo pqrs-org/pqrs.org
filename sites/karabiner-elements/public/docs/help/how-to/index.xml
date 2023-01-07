@@ -25,7 +25,7 @@
         &lt;p&gt;Karabiner-Elements does not modify mouse devices by default.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;You have to enable your mouse on Karabiner-Elements Preferences &amp;gt; Devices.
+&lt;p&gt;You have to enable your mouse on Karabiner-Elements Settings &amp;gt; Devices.
 
     
     
@@ -35,8 +35,8 @@
     
     &lt;figure&gt;
       &lt;img
-        src=&#34;/docs/help/how-to/mouse-button/images/karabiner-elements-mouse-button-devices@2x.png&#34;
-        alt=&#34;karabiner-elements-mouse-button-devices@2x.png&#34;
+        src=&#34;/docs/help/how-to/mouse-button/images/devices@2x.png&#34;
+        alt=&#34;devices@2x.png&#34;
         style=&#34;width: 1100px&#34;
       /&gt;
     &lt;/figure&gt;
@@ -75,7 +75,7 @@ use &lt;a href=&#34;https://ke-complex-modifications.pqrs.org/#mouse_button&#34;
       <description>
         
         
-        &lt;p&gt;You can enable the sticky modifier keys from Preferences &amp;gt; Simple modifications.&lt;/p&gt;
+        &lt;p&gt;You can enable the sticky modifier keys from Karabiner-Elements Settings &amp;gt; Simple modifications.&lt;/p&gt;
 
 
 
@@ -128,7 +128,7 @@ use &lt;a href=&#34;https://ke-complex-modifications.pqrs.org/#mouse_button&#34;
   /&gt;
 &lt;/figure&gt;
 
-&lt;p&gt;You can hide the indicator from Preferences &amp;gt; Virtual keyboard.&lt;/p&gt;
+&lt;p&gt;You can hide the indicator from Karabiner-Elements Settings &amp;gt; Virtual keyboard.&lt;/p&gt;
 
 
 
@@ -179,7 +179,7 @@ use &lt;a href=&#34;https://ke-complex-modifications.pqrs.org/#mouse_button&#34;
         
         
         &lt;p&gt;Karabiner-Elements does not provide a feature to adjust key repeat rate.&lt;/p&gt;
-&lt;p&gt;Use System Preferences &amp;gt; Keyboard.&lt;/p&gt;
+&lt;p&gt;Use System Settings &amp;gt; Keyboard.&lt;/p&gt;
 
 
 
@@ -189,9 +189,9 @@ use &lt;a href=&#34;https://ke-complex-modifications.pqrs.org/#mouse_button&#34;
 
 &lt;figure&gt;
   &lt;img
-    src=&#34;/docs/help/how-to/key-repeat/images/system-preferences-keyboard-key-repeat@2x.png&#34;
-    alt=&#34;system-preferences-keyboard-key-repeat@2x.png&#34;
-    style=&#34;width: 668px&#34;
+    src=&#34;/docs/help/how-to/key-repeat/images/key-repeat-rate@2x.png&#34;
+    alt=&#34;key-repeat-rate@2x.png&#34;
+    style=&#34;width: 715px&#34;
   /&gt;
 &lt;/figure&gt;
 

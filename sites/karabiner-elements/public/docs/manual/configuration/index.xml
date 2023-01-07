@@ -399,11 +399,10 @@ And then, choose the country code when you want to change the current keyboard t
         &lt;p&gt;Karabiner-Elements shows an icon in menu bar which provides the following functions:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Switch profiles.&lt;/li&gt;
-&lt;li&gt;Open Preferences.&lt;/li&gt;
+&lt;li&gt;Open Settings.&lt;/li&gt;
 &lt;li&gt;Open EventViewer.&lt;/li&gt;
 &lt;li&gt;Quit Karabiner-Elements.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;If you want to hide it, turn off &amp;ldquo;Show icon in menu bar&amp;rdquo; on Preferences &amp;gt; Misc tab.&lt;/p&gt;
 
 
 
@@ -413,8 +412,24 @@ And then, choose the country code when you want to change the current keyboard t
 
 &lt;figure&gt;
   &lt;img
-    src=&#34;/docs/manual/configuration/configure-menu-bar-icon/images/menu-bar-icon-preferences@2x.png&#34;
-    alt=&#34;menu-bar-icon-preferences@2x.png&#34;
+    src=&#34;/docs/manual/configuration/configure-menu-bar-icon/images/menu@2x.png&#34;
+    alt=&#34;menu@2x.png&#34;
+    style=&#34;width: 430px&#34;
+  /&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;If you want to hide it, turn off &amp;ldquo;Show icon in menu bar&amp;rdquo; on Settings &amp;gt; Misc tab.&lt;/p&gt;
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/manual/configuration/configure-menu-bar-icon/images/menu-bar-icon-settings@2x.png&#34;
+    alt=&#34;menu-bar-icon-settings@2x.png&#34;
     style=&#34;width: 1100px&#34;
   /&gt;
 &lt;/figure&gt;

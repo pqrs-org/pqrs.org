@@ -22,7 +22,7 @@
       <description>
         
         
-        &lt;p&gt;Karabiner-Elements keeps running in the background even if you close the preferences window.&lt;br /&gt;
+        &lt;p&gt;Karabiner-Elements keeps running in the background even if you close the settings window.&lt;br /&gt;
 To quit Karabiner-Elements, choose &amp;ldquo;Quit Karabiner-Elements&amp;rdquo; from menu bar.&lt;/p&gt;
 
 
@@ -35,7 +35,7 @@ To quit Karabiner-Elements, choose &amp;ldquo;Quit Karabiner-Elements&amp;rdquo;
   &lt;img
     src=&#34;/docs/manual/operation/quit/images/karabiner-elements-menu-quit@2x.png&#34;
     alt=&#34;karabiner-elements-menu-quit@2x.png&#34;
-    style=&#34;width: 338px&#34;
+    style=&#34;width: 430px&#34;
   /&gt;
 &lt;/figure&gt;
 
@@ -44,7 +44,7 @@ To quit Karabiner-Elements, choose &amp;ldquo;Quit Karabiner-Elements&amp;rdquo;
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
 
-    &lt;p&gt;If you&amp;rsquo;ve hidden the menu bar icon, you can also quit Karabiner-Elements from Preferences.&lt;/p&gt;
+    &lt;p&gt;If you&amp;rsquo;ve hidden the menu bar icon, you can also quit Karabiner-Elements from Settings.&lt;/p&gt;
 &lt;figure&gt;
   &lt;img
     src=&#34;/docs/manual/operation/quit/images/karabiner-elements-quit@2x.png&#34;
@@ -69,7 +69,7 @@ To quit Karabiner-Elements, choose &amp;ldquo;Quit Karabiner-Elements&amp;rdquo;
       <description>
         
         
-        &lt;p&gt;You can restart Karabiner-Elements from Preferences.&lt;/p&gt;
+        &lt;p&gt;You can restart Karabiner-Elements from Settings.&lt;/p&gt;
 
 
 
@@ -128,7 +128,7 @@ Use the uninstaller to remove Karabiner-Elements from your system.&lt;/p&gt;
   &lt;img
     src=&#34;/docs/manual/operation/uninstall/images/uninstaller@2x.png&#34;
     alt=&#34;uninstaller@2x.png&#34;
-    style=&#34;width: 1091px&#34;
+    style=&#34;width: 420px&#34;
   /&gt;
 &lt;/figure&gt;
 
@@ -314,7 +314,7 @@ You can show keyboard and mouse events by using it.&lt;/p&gt;
       &lt;img
         src=&#34;/docs/manual/operation/eventviewer/images/karabiner-elements-eventviewer-icon@2x.png&#34;
         alt=&#34;karabiner-elements-eventviewer-icon@2x.png&#34;
-        style=&#34;width: 198px&#34;
+        style=&#34;width: 418px&#34;
       /&gt;
     &lt;/figure&gt;
 &lt;/li&gt;
@@ -360,7 +360,7 @@ You can show keyboard and mouse events by using it.&lt;/p&gt;
   &lt;img
     src=&#34;/docs/manual/operation/profiles/images/karabiner-elements-menu-profiles@2x.png&#34;
     alt=&#34;karabiner-elements-menu-profiles@2x.png&#34;
-    style=&#34;width: 341px&#34;
+    style=&#34;width: 430px&#34;
   /&gt;
 &lt;/figure&gt;
 
@@ -450,7 +450,7 @@ Press &lt;strong&gt;Add new profile&lt;/strong&gt; button to add new profile.&lt
         &lt;p&gt;You can export and import configuration by copying karabiner.json file to another machine.&lt;/p&gt;
 &lt;h2 id=&#34;export&#34;&gt;Export&lt;/h2&gt;
 &lt;ol&gt;
-&lt;li&gt;Open config folder from Preferences &amp;gt; Misc.
+&lt;li&gt;Open config folder from Karabiner-Elements Settings &amp;gt; Misc.
 
     
     
@@ -470,7 +470,7 @@ Press &lt;strong&gt;Add new profile&lt;/strong&gt; button to add new profile.&lt
 &lt;/ol&gt;
 &lt;h2 id=&#34;import&#34;&gt;Import&lt;/h2&gt;
 &lt;ol&gt;
-&lt;li&gt;Open config folder from Preferences &amp;gt; Misc.&lt;/li&gt;
+&lt;li&gt;Open config folder from Karabiner-Elements Settings &amp;gt; Misc.&lt;/li&gt;
 &lt;li&gt;Replace &lt;strong&gt;karabiner.json&lt;/strong&gt; with the exported file.&lt;br/&gt;
 (The configuration file will be reloaded automatically.)&lt;/li&gt;
 &lt;/ol&gt;

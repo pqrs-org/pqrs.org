@@ -51,20 +51,13 @@ You have to keep the background items enabled in &lt;code&gt;macOS System Settin
   &lt;img
     src=&#34;/docs/manual/misc/required-macos-settings/images/login-items0.png&#34;
     alt=&#34;login-items0.png&#34;
-    style=&#34;width: 820px&#34;
+    style=&#34;width: 896px&#34;
   /&gt;
 &lt;/figure&gt;
 &lt;figure&gt;
   &lt;img
     src=&#34;/docs/manual/misc/required-macos-settings/images/login-items1.png&#34;
     alt=&#34;login-items1.png&#34;
-    style=&#34;width: 1430px&#34;
-  /&gt;
-&lt;/figure&gt;
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/manual/misc/required-macos-settings/images/login-items2.png&#34;
-    alt=&#34;login-items2.png&#34;
     style=&#34;width: 1430px&#34;
   /&gt;
 &lt;/figure&gt;
@@ -169,8 +162,8 @@ You can confirm whether the system extension already allowed in &lt;a href=&#34;
       <description>
         
         
-        &lt;p&gt;Usually, the following driver alert will appear on first start-up and the alert will disappear after you allow the system software from System Preferences.&lt;/p&gt;
-&lt;p&gt;Unfortunately, the allow button may sometimes not appear in System Preferences due to a problem with macOS driver loading.&lt;br /&gt;
+        &lt;p&gt;Usually, the following driver alert will appear on first start-up and the alert will disappear after you allow the system software from System Settings.&lt;/p&gt;
+&lt;p&gt;Unfortunately, the allow button may sometimes not appear in System Settings due to a problem with macOS driver loading.&lt;br /&gt;
 In this case, you can display the allow button by deactivating and activating driver as described in the Advanced section on the alert.&lt;/p&gt;
 &lt;p&gt;
 
@@ -241,7 +234,7 @@ So, downgrading to &lt;a href=&#34;/docs/releasenotes/#karabiner-elements-12100&
     </item>
     
     <item>
-      <title>Docs: Allow button in Security &amp; Privacy System Preferences does not appear</title>
+      <title>Docs: Allow button in Privacy &amp; Security System Settings does not appear</title>
       <link>/docs/help/troubleshooting/allow-button-does-not-appear/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -249,7 +242,7 @@ So, downgrading to &lt;a href=&#34;/docs/releasenotes/#karabiner-elements-12100&
       <description>
         
         
-        &lt;p&gt;The allow button in Security &amp;amp; Privacy System Preferences appear in order to gain your approval after you open Karabiner-Elements for the first time.&lt;/p&gt;
+        &lt;p&gt;The allow button in Privacy &amp;amp; Security System Settings appear for your approval after you open Karabiner-Elements for the first time.&lt;/p&gt;
 &lt;p&gt;However, this allow button may not appear in some environments.&lt;/p&gt;
 
 
@@ -260,9 +253,9 @@ So, downgrading to &lt;a href=&#34;/docs/releasenotes/#karabiner-elements-12100&
 
 &lt;figure&gt;
   &lt;img
-    src=&#34;/docs/help/troubleshooting/allow-button-does-not-appear/images/allow@2x.png&#34;
-    alt=&#34;allow@2x.png&#34;
-    style=&#34;width: 668px&#34;
+    src=&#34;/docs/help/troubleshooting/allow-button-does-not-appear/images/system-extension-allow@2x.png&#34;
+    alt=&#34;system-extension-allow@2x.png&#34;
+    style=&#34;width: 715px&#34;
   /&gt;
 &lt;/figure&gt;
 
@@ -272,9 +265,9 @@ So, downgrading to &lt;a href=&#34;/docs/releasenotes/#karabiner-elements-12100&
 &lt;h2 id=&#34;steps&#34;&gt;Steps&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;Restart your Mac in safe mode by &lt;a href=&#34;https://support.apple.com/guide/mac-help/start-up-your-mac-in-safe-mode-mh21245/mac&#34;&gt;this instruction&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Open Karabiner-Elements from Launchpad to ensure that Allow button is shown on System Preferences.&lt;/li&gt;
-&lt;li&gt;Open System Preferences and confirm the Allow button is shown.&lt;br/&gt;
-If the Allow button is hidden, close System Preferences and open it again.&lt;/li&gt;
+&lt;li&gt;Open Karabiner-Elements from Launchpad to ensure that Allow button is shown on System Settings.&lt;/li&gt;
+&lt;li&gt;Open System Settings and confirm the Allow button is shown.&lt;br/&gt;
+If the Allow button is hidden, close System Settings and open it again.&lt;/li&gt;
 &lt;li&gt;Click the Allow button.&lt;/li&gt;
 &lt;li&gt;Restart your Mac and boot in normal mode.&lt;/li&gt;
 &lt;/ol&gt;
@@ -328,7 +321,7 @@ You have to restart macOS in normal mode to use Karabiner-Elements.
     </item>
     
     <item>
-      <title>Docs: Allow button in Security &amp; Privacy System Preferences does not work</title>
+      <title>Docs: Allow button in Privacy &amp; Security System Settings does not work</title>
       <link>/docs/help/troubleshooting/allow-button-does-not-work/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -336,7 +329,7 @@ You have to restart macOS in normal mode to use Karabiner-Elements.
       <description>
         
         
-        &lt;p&gt;The allow button in Security &amp;amp; Privacy System Preferences should be hidden after you click it.&lt;br/&gt;
+        &lt;p&gt;The allow button in Privacy &amp;amp; Security System Settings should be hidden after you click it.&lt;br/&gt;
 If the button does not hide after click, you did not succeed to click it.&lt;/p&gt;
 
 
@@ -347,9 +340,9 @@ If the button does not hide after click, you did not succeed to click it.&lt;/p&
 
 &lt;figure&gt;
   &lt;img
-    src=&#34;/docs/help/troubleshooting/allow-button-does-not-work/images/allow@2x.png&#34;
-    alt=&#34;allow@2x.png&#34;
-    style=&#34;width: 668px&#34;
+    src=&#34;/docs/help/troubleshooting/allow-button-does-not-work/images/system-extension-allow@2x.png&#34;
+    alt=&#34;system-extension-allow@2x.png&#34;
+    style=&#34;width: 715px&#34;
   /&gt;
 &lt;/figure&gt;
 
@@ -359,9 +352,9 @@ If the button does not hide after click, you did not succeed to click it.&lt;/p&
 &lt;h2 id=&#34;steps&#34;&gt;Steps&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;Restart your Mac in safe mode by &lt;a href=&#34;https://support.apple.com/guide/mac-help/start-up-your-mac-in-safe-mode-mh21245/mac&#34;&gt;this instruction&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Open Karabiner-Elements from Launchpad to ensure that Allow button is shown on System Preferences.&lt;/li&gt;
-&lt;li&gt;Open System Preferences and confirm the Allow button is shown.&lt;br/&gt;
-If the Allow button is hidden, close System Preferences and open it again.&lt;/li&gt;
+&lt;li&gt;Open Karabiner-Elements from Launchpad to ensure that Allow button is shown on System Settings.&lt;/li&gt;
+&lt;li&gt;Open System Settings and confirm the Allow button is shown.&lt;br/&gt;
+If the Allow button is hidden, close System Settings and open it again.&lt;/li&gt;
 &lt;li&gt;Click the Allow button.&lt;/li&gt;
 &lt;li&gt;Restart your Mac and boot in normal mode.&lt;/li&gt;
 &lt;/ol&gt;
@@ -433,7 +426,7 @@ It is better to send &lt;code&gt;pointing_button::button1&lt;/code&gt; twice ins
 &lt;h4 class=&#34;alert-heading&#34;&gt;Accessibility&lt;/h4&gt;
 
     &lt;p&gt;&lt;code&gt;cg_event_double_click&lt;/code&gt; uses the accessibility features.
-You have to allow &lt;code&gt;karabiner_console_user_server&lt;/code&gt; in Security &amp;amp; Privacy System Preferences.&lt;/p&gt;
+You have to allow &lt;code&gt;karabiner_console_user_server&lt;/code&gt; in Privacy &amp;amp; Security System Settings.&lt;/p&gt;
 &lt;figure&gt;
   &lt;img
     src=&#34;/docs/json/complex-modifications-manipulator-definition/to/software_function/cg_event_double_click/images/karabiner_console_user_server_accessibility@2x.png&#34;
@@ -549,7 +542,7 @@ Karabiner-Elements watches this file and reload it automatically when it is upda
 &lt;li&gt;&lt;code&gt;~/.config/karabiner/assets/complex_modifications&lt;/code&gt;
 &lt;ul&gt;
 &lt;li&gt;Imported complex_modifications files.&lt;br /&gt;
-You can use them in Preferences &amp;gt; Complex Modifications &amp;gt; Add rule.&lt;/li&gt;
+You can use them in Karabiner-Elements Settings &amp;gt; Complex Modifications &amp;gt; Add rule.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -567,7 +560,7 @@ Thus, Karabiner-Elements fails detecting file updates after you change the paren
 
 &lt;h2 id=&#34;log-file&#34;&gt;Log file&lt;/h2&gt;
 &lt;p&gt;Error messages will be output into &lt;code&gt;~/.local/share/karabiner/log/console_user_server.log&lt;/code&gt; if there are errors such as parse error.&lt;/p&gt;
-&lt;p&gt;You can also view the error messages in Karabiner-Elements Preferences &amp;gt; Log.&lt;/p&gt;
+&lt;p&gt;You can also view the error messages in Karabiner-Elements Settings &amp;gt; Log.&lt;/p&gt;
 
 
 
@@ -740,7 +733,7 @@ You may lose the left click button and system will be unusable.
         &lt;p&gt;Karabiner-Elements does not modify mouse devices by default.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;You have to enable your mouse on Karabiner-Elements Preferences &amp;gt; Devices.
+&lt;p&gt;You have to enable your mouse on Karabiner-Elements Settings &amp;gt; Devices.
 
     
     
@@ -750,8 +743,8 @@ You may lose the left click button and system will be unusable.
     
     &lt;figure&gt;
       &lt;img
-        src=&#34;/docs/help/how-to/mouse-button/images/karabiner-elements-mouse-button-devices@2x.png&#34;
-        alt=&#34;karabiner-elements-mouse-button-devices@2x.png&#34;
+        src=&#34;/docs/help/how-to/mouse-button/images/devices@2x.png&#34;
+        alt=&#34;devices@2x.png&#34;
         style=&#34;width: 1100px&#34;
       /&gt;
     &lt;/figure&gt;
@@ -815,7 +808,54 @@ Follow these instructions to set up Karabiner-Elements.&lt;/p&gt;
     &lt;/figure&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&#34;open-karabiner-elements-preferences&#34;&gt;Open Karabiner-Elements Preferences&lt;/h2&gt;
+&lt;h2 id=&#34;keep-login-items-enabled&#34;&gt;Keep Login Items enabled&lt;/h2&gt;
+&lt;p&gt;Since macOS 13 Ventura, background item notifications will be shown after the installation.&lt;/p&gt;
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/getting-started/installation/images/login-items0@2x.png&#34;
+    alt=&#34;login-items0@2x.png&#34;
+    style=&#34;width: 448px&#34;
+  /&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;The following Login Items in System Settings are required, and have to keep enabled.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Karabiner-DriverKit-VirtualHIDDeviceClient.app&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Karabiner-Elements.app&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/getting-started/installation/images/login-items1@2x.png&#34;
+    alt=&#34;login-items1@2x.png&#34;
+    style=&#34;width: 715px&#34;
+  /&gt;
+&lt;/figure&gt;
+
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
+
+    If you are using macOS 12 or prior, these items are not shown in System Preferences.
+Please proceed to the next step.
+
+&lt;/div&gt;
+
+&lt;h2 id=&#34;open-karabiner-elements-settings&#34;&gt;Open Karabiner-Elements Settings&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;Open Karabiner-Elements from Launchpad.
 
@@ -829,15 +869,15 @@ Follow these instructions to set up Karabiner-Elements.&lt;/p&gt;
       &lt;img
         src=&#34;/docs/getting-started/installation/images/karabiner-elements-icon@2x.png&#34;
         alt=&#34;karabiner-elements-icon@2x.png&#34;
-        style=&#34;width: 177px&#34;
+        style=&#34;width: 696px&#34;
       /&gt;
     &lt;/figure&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;allow-system-software-which-provides-virtual-devices-for-karabiner-elements&#34;&gt;Allow system software which provides virtual devices for Karabiner-Elements&lt;/h2&gt;
 &lt;ol&gt;
-&lt;li&gt;The following alert will be shown when you open Karabiner-Elements Preferences.&lt;/li&gt;
-&lt;li&gt;Click &lt;strong&gt;Open Security &amp;amp; Privacy System Preferences&lt;/strong&gt; button, then press the &lt;strong&gt;Allow&lt;/strong&gt; button.
+&lt;li&gt;The following alert will be shown when you open Karabiner-Elements Settings.&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;Open System Settings&lt;/strong&gt; button, then press the &lt;strong&gt;Allow&lt;/strong&gt; button.
 
     
     
@@ -847,9 +887,24 @@ Follow these instructions to set up Karabiner-Elements.&lt;/p&gt;
     
     &lt;figure&gt;
       &lt;img
-        src=&#34;/docs/getting-started/installation/images/dext-alert@2x.png&#34;
-        alt=&#34;dext-alert@2x.png&#34;
-        style=&#34;width: 1000px&#34;
+        src=&#34;/docs/getting-started/installation/images/system-extension-blocked@2x.png&#34;
+        alt=&#34;system-extension-blocked@2x.png&#34;
+        style=&#34;width: 260px&#34;
+      /&gt;
+    &lt;/figure&gt;
+
+
+    
+    
+    
+      
+    
+    
+    &lt;figure&gt;
+      &lt;img
+        src=&#34;/docs/getting-started/installation/images/system-extension-allow@2x.png&#34;
+        alt=&#34;system-extension-allow@2x.png&#34;
+        style=&#34;width: 715px&#34;
       /&gt;
     &lt;/figure&gt;
 &lt;/li&gt;
@@ -865,8 +920,8 @@ Follow these instructions to set up Karabiner-Elements.&lt;/p&gt;
 
 &lt;h2 id=&#34;grant-input-monitoring-to-karabiner-elements-processes&#34;&gt;Grant Input Monitoring to Karabiner-Elements processes&lt;/h2&gt;
 &lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;Two Keystroke Receiving&lt;/strong&gt; alerts will be shown on macOS Catalina or later after you allow the kernel extension.&lt;/li&gt;
-&lt;li&gt;Press the &lt;strong&gt;Open System Preferences&lt;/strong&gt; button on both alerts.
+&lt;li&gt;&lt;strong&gt;Two Keystroke Receiving&lt;/strong&gt; alerts will be shown on macOS Catalina or later after you allow the system software.&lt;/li&gt;
+&lt;li&gt;Press the &lt;strong&gt;Open System Settings&lt;/strong&gt; button on both alerts.
 
     
     
@@ -897,9 +952,8 @@ Follow these instructions to set up Karabiner-Elements.&lt;/p&gt;
       /&gt;
     &lt;/figure&gt;
 &lt;/li&gt;
-&lt;li&gt;System Preferences will be opened after you press the &lt;strong&gt;Open System Preferences&lt;/strong&gt; button.&lt;br/&gt;
-Choose &lt;strong&gt;Privacy &amp;gt; Input Monitoring&lt;/strong&gt;, and then enable &lt;strong&gt;karabiner_grabber&lt;/strong&gt; and &lt;strong&gt;karabiner_observer&lt;/strong&gt;. &lt;br /&gt;
-(You have to unlock configuration by clicking the padlock icon in the bottom-left corner and providing a valid admin account username and password.)
+&lt;li&gt;System Settings will be opened after you press the &lt;strong&gt;Open System Settings&lt;/strong&gt; button.&lt;br/&gt;
+Choose &lt;strong&gt;Privacy &amp;amp; Security &amp;gt; Input Monitoring&lt;/strong&gt;, and then enable &lt;strong&gt;karabiner_grabber&lt;/strong&gt; and &lt;strong&gt;karabiner_observer&lt;/strong&gt;. &lt;br /&gt;
 
     
     
@@ -911,7 +965,7 @@ Choose &lt;strong&gt;Privacy &amp;gt; Input Monitoring&lt;/strong&gt;, and then 
       &lt;img
         src=&#34;/docs/getting-started/installation/images/input-monitoring@2x.png&#34;
         alt=&#34;input-monitoring@2x.png&#34;
-        style=&#34;width: 1000px&#34;
+        style=&#34;width: 715px&#34;
       /&gt;
     &lt;/figure&gt;
 &lt;/li&gt;
@@ -974,6 +1028,7 @@ Choose your keyboard layout. (ANSI, ISO or JIS)
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;~/.config/karabiner
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;~/.local/share/karabiner
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;~/Library/Preferences/org.pqrs.Karabiner-Elements.Preferences.plist
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;~/Library/Preferences/org.pqrs.Karabiner-Elements.Settings.plist
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;~/Library/Preferences/org.pqrs.Karabiner-Elements.Updater.plist
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;~/Library/Preferences/org.pqrs.Karabiner-EventViewer.plist
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;~/Library/Preferences/org.pqrs.Karabiner-Menu.plist
@@ -1099,7 +1154,7 @@ Choose your keyboard layout. (ANSI, ISO or JIS)
       <description>
         
         
-        &lt;p&gt;Karabiner-Elements keeps running in the background even if you close the preferences window.&lt;br /&gt;
+        &lt;p&gt;Karabiner-Elements keeps running in the background even if you close the settings window.&lt;br /&gt;
 To quit Karabiner-Elements, choose &amp;ldquo;Quit Karabiner-Elements&amp;rdquo; from menu bar.&lt;/p&gt;
 
 
@@ -1112,7 +1167,7 @@ To quit Karabiner-Elements, choose &amp;ldquo;Quit Karabiner-Elements&amp;rdquo;
   &lt;img
     src=&#34;/docs/manual/operation/quit/images/karabiner-elements-menu-quit@2x.png&#34;
     alt=&#34;karabiner-elements-menu-quit@2x.png&#34;
-    style=&#34;width: 338px&#34;
+    style=&#34;width: 430px&#34;
   /&gt;
 &lt;/figure&gt;
 
@@ -1121,7 +1176,7 @@ To quit Karabiner-Elements, choose &amp;ldquo;Quit Karabiner-Elements&amp;rdquo;
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
 
-    &lt;p&gt;If you&amp;rsquo;ve hidden the menu bar icon, you can also quit Karabiner-Elements from Preferences.&lt;/p&gt;
+    &lt;p&gt;If you&amp;rsquo;ve hidden the menu bar icon, you can also quit Karabiner-Elements from Settings.&lt;/p&gt;
 &lt;figure&gt;
   &lt;img
     src=&#34;/docs/manual/operation/quit/images/karabiner-elements-quit@2x.png&#34;
@@ -1204,7 +1259,7 @@ To quit Karabiner-Elements, choose &amp;ldquo;Quit Karabiner-Elements&amp;rdquo;
       <description>
         
         
-        &lt;p&gt;You can restart Karabiner-Elements from Preferences.&lt;/p&gt;
+        &lt;p&gt;You can restart Karabiner-Elements from Settings.&lt;/p&gt;
 
 
 
@@ -1233,7 +1288,7 @@ To quit Karabiner-Elements, choose &amp;ldquo;Quit Karabiner-Elements&amp;rdquo;
       <description>
         
         
-        &lt;p&gt;You can enable the sticky modifier keys from Preferences &amp;gt; Simple modifications.&lt;/p&gt;
+        &lt;p&gt;You can enable the sticky modifier keys from Karabiner-Elements Settings &amp;gt; Simple modifications.&lt;/p&gt;
 
 
 
@@ -1286,7 +1341,7 @@ To quit Karabiner-Elements, choose &amp;ldquo;Quit Karabiner-Elements&amp;rdquo;
   /&gt;
 &lt;/figure&gt;
 
-&lt;p&gt;You can hide the indicator from Preferences &amp;gt; Virtual keyboard.&lt;/p&gt;
+&lt;p&gt;You can hide the indicator from Karabiner-Elements Settings &amp;gt; Virtual keyboard.&lt;/p&gt;
 
 
 
@@ -1565,7 +1620,7 @@ To quit Karabiner-Elements, choose &amp;ldquo;Quit Karabiner-Elements&amp;rdquo;
 &lt;ul&gt;
 &lt;li&gt;Karabiner-Elements cannot modify the eject key on some keyboard (e.g., Apple Wired Keyboard) due to the limitation of macOS API.&lt;/li&gt;
 &lt;li&gt;Karabiner-Elements cannot modify the fn key on non-Apple keyboards such as Logitech keyboards.&lt;/li&gt;
-&lt;li&gt;Karabiner-Elements ignores the &lt;code&gt;System Preferences &amp;gt; Keyboard &amp;gt; Modifier Keys...&lt;/code&gt; configuration.&lt;br/&gt;
+&lt;li&gt;Karabiner-Elements ignores the &lt;code&gt;System Settings &amp;gt; Keyboard &amp;gt; Keyboard Shortcuts... &amp;gt; Modifier Keys&lt;/code&gt; configuration.&lt;br/&gt;
 Change modifiers by using Simple Modifications.
 &lt;a href=&#34;../../manual/misc/event-modification-chaining/&#34;&gt;(Detail of input event modification chaining)&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -2558,7 +2613,7 @@ Use the uninstaller to remove Karabiner-Elements from your system.&lt;/p&gt;
   &lt;img
     src=&#34;/docs/manual/operation/uninstall/images/uninstaller@2x.png&#34;
     alt=&#34;uninstaller@2x.png&#34;
-    style=&#34;width: 1091px&#34;
+    style=&#34;width: 420px&#34;
   /&gt;
 &lt;/figure&gt;
 
@@ -3212,7 +3267,7 @@ Karabiner-Elements changes keys by Simple Modifications, and then changes them b
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h2 id=&#34;change-threshold-milliseconds&#34;&gt;Change threshold milliseconds&lt;/h2&gt;
-&lt;p&gt;You can adjust threshold on Preferences &amp;gt; Complex Modifications &amp;gt; Parameters.&lt;/p&gt;
+&lt;p&gt;You can adjust threshold on Karabiner-Elements Settings &amp;gt; Parameters.&lt;/p&gt;
 
 
 
@@ -3224,7 +3279,7 @@ Karabiner-Elements changes keys by Simple Modifications, and then changes them b
   &lt;img
     src=&#34;/docs/json/complex-modifications-manipulator-definition/from/simultaneous/images/karabiner-elements-simultaneous_threshold_milliseconds@2x.png&#34;
     alt=&#34;karabiner-elements-simultaneous_threshold_milliseconds@2x.png&#34;
-    style=&#34;width: 1000px&#34;
+    style=&#34;width: 1100px&#34;
   /&gt;
 &lt;/figure&gt;
 
@@ -3255,7 +3310,7 @@ Karabiner-Elements changes keys by Simple Modifications, and then changes them b
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
 
-    &lt;p&gt;System modifier keys configuration in &lt;strong&gt;System Preferences &amp;gt; Keyboard&lt;/strong&gt; is ignored when you use
+    &lt;p&gt;System modifier keys configuration in &lt;strong&gt;System Settings &amp;gt; Keyboard &amp;gt; Keyboard Shortcuts&amp;hellip; &amp;gt; Modifier Keys&lt;/strong&gt; is ignored when you use
 Karabiner-Elements.&lt;/p&gt;
 &lt;p&gt;Change modifier keys in Karabiner-Elements&amp;rsquo;s Simple Modifications.&lt;/p&gt;
 
@@ -3337,7 +3392,7 @@ Karabiner-Elements.&lt;/p&gt;
         
         
         &lt;p&gt;Karabiner-Elements does not provide a feature to adjust key repeat rate.&lt;/p&gt;
-&lt;p&gt;Use System Preferences &amp;gt; Keyboard.&lt;/p&gt;
+&lt;p&gt;Use System Settings &amp;gt; Keyboard.&lt;/p&gt;
 
 
 
@@ -3347,9 +3402,9 @@ Karabiner-Elements.&lt;/p&gt;
 
 &lt;figure&gt;
   &lt;img
-    src=&#34;/docs/help/how-to/key-repeat/images/system-preferences-keyboard-key-repeat@2x.png&#34;
-    alt=&#34;system-preferences-keyboard-key-repeat@2x.png&#34;
-    style=&#34;width: 668px&#34;
+    src=&#34;/docs/help/how-to/key-repeat/images/key-repeat-rate@2x.png&#34;
+    alt=&#34;key-repeat-rate@2x.png&#34;
+    style=&#34;width: 715px&#34;
   /&gt;
 &lt;/figure&gt;
 
@@ -3645,7 +3700,7 @@ In other words, we cannot post the fn key event through the built-in keyboard if
       <description>
         
         
-        &lt;p&gt;A lock indicator is shown on Karabiner-Elements and Karabiner-EventViewer icon since macOS 11.0 (Big Sur).&lt;/p&gt;
+        &lt;p&gt;Prior to Karabiner-Elements 14.10.0, a lock indicator is shown on Karabiner-Elements and Karabiner-EventViewer icon.&lt;/p&gt;
 &lt;p&gt;These indicators show that these files are protected so that they cannot be deleted from Finder.&lt;/p&gt;
 
 
@@ -3819,7 +3874,7 @@ You can show keyboard and mouse events by using it.&lt;/p&gt;
       &lt;img
         src=&#34;/docs/manual/operation/eventviewer/images/karabiner-elements-eventviewer-icon@2x.png&#34;
         alt=&#34;karabiner-elements-eventviewer-icon@2x.png&#34;
-        style=&#34;width: 198px&#34;
+        style=&#34;width: 418px&#34;
       /&gt;
     &lt;/figure&gt;
 &lt;/li&gt;
@@ -4415,7 +4470,7 @@ This feature is useful when you put the external keybaord on top of the built-in
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;},&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;#34;rules&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;#34;description&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;This description is shown in Preferences.&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;#34;description&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;This description is shown in Settings.&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;#34;manipulators&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                        &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;#34;type&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;basic&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
@@ -4502,7 +4557,7 @@ This feature is useful when you put the external keybaord on top of the built-in
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;#34;title&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;Title for the list of rules/complex modifications.&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;#34;rules&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;#34;description&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;This description is shown in Preferences.&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;#34;description&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;This description is shown in Settings.&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;#34;manipulators&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;#34;type&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;basic&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;

@@ -67,7 +67,7 @@ It is better to send &lt;code&gt;pointing_button::button1&lt;/code&gt; twice ins
 &lt;h4 class=&#34;alert-heading&#34;&gt;Accessibility&lt;/h4&gt;
 
     &lt;p&gt;&lt;code&gt;cg_event_double_click&lt;/code&gt; uses the accessibility features.
-You have to allow &lt;code&gt;karabiner_console_user_server&lt;/code&gt; in Security &amp;amp; Privacy System Preferences.&lt;/p&gt;
+You have to allow &lt;code&gt;karabiner_console_user_server&lt;/code&gt; in Privacy &amp;amp; Security System Settings.&lt;/p&gt;
 &lt;figure&gt;
   &lt;img
     src=&#34;/docs/json/complex-modifications-manipulator-definition/to/software_function/cg_event_double_click/images/karabiner_console_user_server_accessibility@2x.png&#34;

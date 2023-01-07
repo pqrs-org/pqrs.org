@@ -22,8 +22,8 @@
       <description>
         
         
-        &lt;p&gt;Usually, the following driver alert will appear on first start-up and the alert will disappear after you allow the system software from System Preferences.&lt;/p&gt;
-&lt;p&gt;Unfortunately, the allow button may sometimes not appear in System Preferences due to a problem with macOS driver loading.&lt;br /&gt;
+        &lt;p&gt;Usually, the following driver alert will appear on first start-up and the alert will disappear after you allow the system software from System Settings.&lt;/p&gt;
+&lt;p&gt;Unfortunately, the allow button may sometimes not appear in System Settings due to a problem with macOS driver loading.&lt;br /&gt;
 In this case, you can display the allow button by deactivating and activating driver as described in the Advanced section on the alert.&lt;/p&gt;
 &lt;p&gt;
 
@@ -94,7 +94,7 @@ So, downgrading to &lt;a href=&#34;/docs/releasenotes/#karabiner-elements-12100&
     </item>
     
     <item>
-      <title>Docs: Allow button in Security &amp; Privacy System Preferences does not appear</title>
+      <title>Docs: Allow button in Privacy &amp; Security System Settings does not appear</title>
       <link>/docs/help/troubleshooting/allow-button-does-not-appear/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -102,7 +102,7 @@ So, downgrading to &lt;a href=&#34;/docs/releasenotes/#karabiner-elements-12100&
       <description>
         
         
-        &lt;p&gt;The allow button in Security &amp;amp; Privacy System Preferences appear in order to gain your approval after you open Karabiner-Elements for the first time.&lt;/p&gt;
+        &lt;p&gt;The allow button in Privacy &amp;amp; Security System Settings appear for your approval after you open Karabiner-Elements for the first time.&lt;/p&gt;
 &lt;p&gt;However, this allow button may not appear in some environments.&lt;/p&gt;
 
 
@@ -113,9 +113,9 @@ So, downgrading to &lt;a href=&#34;/docs/releasenotes/#karabiner-elements-12100&
 
 &lt;figure&gt;
   &lt;img
-    src=&#34;/docs/help/troubleshooting/allow-button-does-not-appear/images/allow@2x.png&#34;
-    alt=&#34;allow@2x.png&#34;
-    style=&#34;width: 668px&#34;
+    src=&#34;/docs/help/troubleshooting/allow-button-does-not-appear/images/system-extension-allow@2x.png&#34;
+    alt=&#34;system-extension-allow@2x.png&#34;
+    style=&#34;width: 715px&#34;
   /&gt;
 &lt;/figure&gt;
 
@@ -125,9 +125,9 @@ So, downgrading to &lt;a href=&#34;/docs/releasenotes/#karabiner-elements-12100&
 &lt;h2 id=&#34;steps&#34;&gt;Steps&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;Restart your Mac in safe mode by &lt;a href=&#34;https://support.apple.com/guide/mac-help/start-up-your-mac-in-safe-mode-mh21245/mac&#34;&gt;this instruction&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Open Karabiner-Elements from Launchpad to ensure that Allow button is shown on System Preferences.&lt;/li&gt;
-&lt;li&gt;Open System Preferences and confirm the Allow button is shown.&lt;br/&gt;
-If the Allow button is hidden, close System Preferences and open it again.&lt;/li&gt;
+&lt;li&gt;Open Karabiner-Elements from Launchpad to ensure that Allow button is shown on System Settings.&lt;/li&gt;
+&lt;li&gt;Open System Settings and confirm the Allow button is shown.&lt;br/&gt;
+If the Allow button is hidden, close System Settings and open it again.&lt;/li&gt;
 &lt;li&gt;Click the Allow button.&lt;/li&gt;
 &lt;li&gt;Restart your Mac and boot in normal mode.&lt;/li&gt;
 &lt;/ol&gt;
@@ -146,7 +146,7 @@ You have to restart macOS in normal mode to use Karabiner-Elements.
     </item>
     
     <item>
-      <title>Docs: Allow button in Security &amp; Privacy System Preferences does not work</title>
+      <title>Docs: Allow button in Privacy &amp; Security System Settings does not work</title>
       <link>/docs/help/troubleshooting/allow-button-does-not-work/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -154,7 +154,7 @@ You have to restart macOS in normal mode to use Karabiner-Elements.
       <description>
         
         
-        &lt;p&gt;The allow button in Security &amp;amp; Privacy System Preferences should be hidden after you click it.&lt;br/&gt;
+        &lt;p&gt;The allow button in Privacy &amp;amp; Security System Settings should be hidden after you click it.&lt;br/&gt;
 If the button does not hide after click, you did not succeed to click it.&lt;/p&gt;
 
 
@@ -165,9 +165,9 @@ If the button does not hide after click, you did not succeed to click it.&lt;/p&
 
 &lt;figure&gt;
   &lt;img
-    src=&#34;/docs/help/troubleshooting/allow-button-does-not-work/images/allow@2x.png&#34;
-    alt=&#34;allow@2x.png&#34;
-    style=&#34;width: 668px&#34;
+    src=&#34;/docs/help/troubleshooting/allow-button-does-not-work/images/system-extension-allow@2x.png&#34;
+    alt=&#34;system-extension-allow@2x.png&#34;
+    style=&#34;width: 715px&#34;
   /&gt;
 &lt;/figure&gt;
 
@@ -177,9 +177,9 @@ If the button does not hide after click, you did not succeed to click it.&lt;/p&
 &lt;h2 id=&#34;steps&#34;&gt;Steps&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;Restart your Mac in safe mode by &lt;a href=&#34;https://support.apple.com/guide/mac-help/start-up-your-mac-in-safe-mode-mh21245/mac&#34;&gt;this instruction&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Open Karabiner-Elements from Launchpad to ensure that Allow button is shown on System Preferences.&lt;/li&gt;
-&lt;li&gt;Open System Preferences and confirm the Allow button is shown.&lt;br/&gt;
-If the Allow button is hidden, close System Preferences and open it again.&lt;/li&gt;
+&lt;li&gt;Open Karabiner-Elements from Launchpad to ensure that Allow button is shown on System Settings.&lt;/li&gt;
+&lt;li&gt;Open System Settings and confirm the Allow button is shown.&lt;br/&gt;
+If the Allow button is hidden, close System Settings and open it again.&lt;/li&gt;
 &lt;li&gt;Click the Allow button.&lt;/li&gt;
 &lt;li&gt;Restart your Mac and boot in normal mode.&lt;/li&gt;
 &lt;/ol&gt;
@@ -360,7 +360,16 @@ You can use control+fn+escape as control+eject.
       <description>
         
         
-        &lt;p&gt;&amp;ldquo;.Karabiner-VirtualHIDDevice-Manager&amp;rdquo; is usually shown in Security &amp;amp; Privacy System Preferences when macOS requires your approval.&lt;/p&gt;
+        
+
+&lt;div class=&#34;alert alert-secondary&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
+
+    This page is for macOS 10.15 Catalina, not macOS 11 Big Sur or later.
+
+&lt;/div&gt;
+
+&lt;p&gt;&amp;ldquo;.Karabiner-VirtualHIDDevice-Manager&amp;rdquo; is usually shown in Security &amp;amp; Privacy System Preferences when macOS requires your approval.&lt;/p&gt;
 
 
 
@@ -464,7 +473,7 @@ Download the package from the above page, and then re-install Karabiner-Elements
     </item>
     
     <item>
-      <title>Docs: Preferences window is shown at login</title>
+      <title>Docs: Settings window is shown at login</title>
       <link>/docs/help/troubleshooting/preferences-window-shown-at-login/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -472,15 +481,23 @@ Download the package from the above page, and then re-install Karabiner-Elements
       <description>
         
         
-        &lt;p&gt;If you manually registered Karabiner-Elements to login items, the preferences window will always appear at startup.&lt;/p&gt;
-&lt;p&gt;Karabiner-Elements will start automatically via launchd even if it is not in login item, so remove it from your login items.&lt;/p&gt;
+        &lt;p&gt;If you manually registered Karabiner-Elements to &lt;code&gt;Open at Login&lt;/code&gt;, the settings window will always appear at startup.&lt;/p&gt;
+&lt;p&gt;Karabiner-Elements will start automatically via launchd even if it is not in &lt;code&gt;Open at Login&lt;/code&gt;, so remove it from your &lt;code&gt;Open at Login&lt;/code&gt;.&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;Open System Preferences.&lt;/li&gt;
-&lt;li&gt;Open Users &amp;amp; Groups.&lt;/li&gt;
-&lt;li&gt;Choose your account from the sidebar.&lt;/li&gt;
-&lt;li&gt;Open Login Items tab.&lt;/li&gt;
-&lt;li&gt;Remove Karabiner-Elements from login items.&lt;/li&gt;
+&lt;li&gt;Open System Settings.&lt;/li&gt;
+&lt;li&gt;Open General &amp;gt; Login Items.&lt;/li&gt;
+&lt;li&gt;Remove Karabiner-Elements from &lt;code&gt;Open at Login&lt;/code&gt;.&lt;/li&gt;
 &lt;/ol&gt;
+
+
+&lt;div class=&#34;alert alert-danger&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Caution&lt;/h4&gt;
+
+    Do not disable Karabiner-Elements.app in &lt;code&gt;Allow in the Background&lt;/code&gt;.
+It&amp;rsquo;s a required setting for Karabiner-Elements to work.
+
+&lt;/div&gt;
+
 
 
 
@@ -490,9 +507,9 @@ Download the package from the above page, and then re-install Karabiner-Elements
 
 &lt;figure&gt;
   &lt;img
-    src=&#34;/docs/help/troubleshooting/preferences-window-shown-at-login/images/login-items@2x.png&#34;
-    alt=&#34;login-items@2x.png&#34;
-    style=&#34;width: 668px&#34;
+    src=&#34;/docs/help/troubleshooting/preferences-window-shown-at-login/images/open-at-login@2x.png&#34;
+    alt=&#34;open-at-login@2x.png&#34;
+    style=&#34;width: 715px&#34;
   /&gt;
 &lt;/figure&gt;
 
