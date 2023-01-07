@@ -224,6 +224,22 @@ In any case, there is no problem with leaving it as it is.&lt;/p&gt;
   /&gt;
 &lt;/figure&gt;
 
+&lt;p&gt;Expected:&lt;/p&gt;
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/help/troubleshooting/fumihiko-takayama-in-login-items/images/expected@2x.png&#34;
+    alt=&#34;expected@2x.png&#34;
+    style=&#34;width: 715px&#34;
+  /&gt;
+&lt;/figure&gt;
+
 &lt;hr&gt;
 &lt;h2 id=&#34;information-for-those-who-want-to-know-more&#34;&gt;Information for those who want to know more&lt;/h2&gt;
 &lt;p&gt;The confirmed causes are as follows:&lt;/p&gt;
