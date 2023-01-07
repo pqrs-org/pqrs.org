@@ -10,6 +10,10 @@ In any case, there is no problem with leaving it as it is.
 
 {{< local-image src="images/fumihiko-takayama@2x.png" >}}
 
+Expected:
+
+{{< local-image src="images/expected@2x.png" >}}
+
 ---
 
 ## Information for those who want to know more
