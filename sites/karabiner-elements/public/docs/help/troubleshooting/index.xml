@@ -198,6 +198,68 @@ You have to restart macOS in normal mode to use Karabiner-Elements.
     </item>
     
     <item>
+      <title>Docs: &#34;Fumihiko Takayama&#34; is shown in Login Items</title>
+      <link>/docs/help/troubleshooting/fumihiko-takayama-in-login-items/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/help/troubleshooting/fumihiko-takayama-in-login-items/</guid>
+      <description>
+        
+        
+        &lt;p&gt;In Allow in the Background of Login Items, &lt;code&gt;Fumihiko Takayama&lt;/code&gt; may appear instead of &lt;code&gt;Karabiner-Elements&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;There are several causes, but the problem is mainly on the macOS side and is difficult to resolve. (Restarting macOS may solve this issue)
+In any case, there is no problem with leaving it as it is.&lt;/p&gt;
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/help/troubleshooting/fumihiko-takayama-in-login-items/images/fumihiko-takayama@2x.png&#34;
+    alt=&#34;fumihiko-takayama@2x.png&#34;
+    style=&#34;width: 715px&#34;
+  /&gt;
+&lt;/figure&gt;
+
+&lt;hr&gt;
+&lt;h2 id=&#34;information-for-those-who-want-to-know-more&#34;&gt;Information for those who want to know more&lt;/h2&gt;
+&lt;p&gt;The confirmed causes are as follows:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;If you have ever git clone the Karabiner-Elements repository and built it&lt;/li&gt;
+&lt;li&gt;If macOS has set the Allow in the Background display name before Karabiner-Elements was registered in the macOS application database&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;how-to-solve-when-you-have-built-karabiner-elements-from-source-code&#34;&gt;How to solve when you have built Karabiner-Elements from source code&lt;/h3&gt;
+&lt;p&gt;The Login Items referes Launch Services database to determine the display name.&lt;/p&gt;
+&lt;p&gt;If you have built Karabiner-Elements from source code, your built binaries in the working directory are registered Launch Services automatically.&lt;/p&gt;
+&lt;p&gt;We assume Login Items mixes the information of binaries in your working directory and installed from the package, and failed to get the correct information.
+Therefore, in Login Items, the signing developer&amp;rsquo;s name is displayed instead.&lt;/p&gt;
+&lt;p&gt;So purging unintended entries in Launch Services database solves this issue.&lt;/p&gt;
+&lt;h4 id=&#34;steps&#34;&gt;Steps&lt;/h4&gt;
+&lt;p&gt;Run the following command in Terminal to get the list of registered applications.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/Support/lsregister -gc -dump &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;|&lt;/span&gt; grep ^path &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;|&lt;/span&gt; grep Karabiner-Elements
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The result example:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;path:    /Users/tekezo/.Trash/Karabiner-Elements.app (0x6a38)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;path:    /Users/tekezo/Library/Developer/Xcode/DerivedData/Karabiner-Elements-aljilynxkbdxwddtylopomxdislp/Build/Products/Debug/Karabiner-Elements.app (0x6bf8)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;path:    /Library/Application Support/org.pqrs/Karabiner-Elements/Karabiner-Menu.app (0x7918)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;path:    /Library/Application Support/org.pqrs/Karabiner-Elements/Karabiner-NotificationWindow.app (0x7930)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;path:    /Library/Application Support/org.pqrs/Karabiner-Elements/Karabiner-Elements.app/Contents/Frameworks/Sparkle.framework/Versions/B/Updater.app (0x7938)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;path:    /Library/Application Support/org.pqrs/Karabiner-Elements/Karabiner-Elements.app (0x793c)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;path:    /Applications/Karabiner-Elements.app (0x7940)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;path:    /Library/Application Support/org.pqrs/Karabiner-Elements/Karabiner-MultitouchExtension.app (0x7944)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;path:    /Users/tekezo/Library/Developer/Xcode/DerivedData/Karabiner-Elements-enyghegdpximkigqjnasmtnnkupb/Build/Products/Release/Karabiner-Elements.app (0x54c4)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Next, unregister the path to the built binaries, those containing Xcode, build, etc, from the list.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-sheel&#34; data-lang=&#34;sheel&#34;&gt;/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/Support/lsregister -u &amp;#39;/Users/tekezo/.Trash/Karabiner-Elements.app&amp;#39;
+/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/Support/lsregister -u &amp;#39;/Users/tekezo/Library/Developer/Xcode/DerivedData/Karabiner-Elements-aljilynxkbdxwddtylopomxdislp/Build/Products/Debug/Karabiner-Elements.app&amp;#39;
+...
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Finally, restart macOS.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Docs: Karabiner-Elements stopped working after macOS update</title>
       <link>/docs/help/troubleshooting/stopped-working-after-macos-update/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
