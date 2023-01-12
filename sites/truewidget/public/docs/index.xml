@@ -356,6 +356,22 @@ To quit TrueWidget, choose &amp;ldquo;Quit TrueWidget&amp;rdquo; from the menu b
   /&gt;
 &lt;/figure&gt;
 
+&lt;h2 id=&#34;xcode&#34;&gt;Xcode&lt;/h2&gt;
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/configuration/layout-configuration/images/xcode@2x.png&#34;
+    alt=&#34;xcode@2x.png&#34;
+    style=&#34;width: 800px&#34;
+  /&gt;
+&lt;/figure&gt;
+
 &lt;h2 id=&#34;cpu-usage&#34;&gt;CPU Usage&lt;/h2&gt;
 
 
@@ -525,7 +541,23 @@ To quit TrueWidget, choose &amp;ldquo;Quit TrueWidget&amp;rdquo; from the menu b
       <description>
         
         
-        &lt;h2 id=&#34;truewidget-100&#34;&gt;TrueWidget 1.0.0&lt;/h2&gt;
+        &lt;h2 id=&#34;truewidget-110&#34;&gt;TrueWidget 1.1.0&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/pqrs-org/TrueWidget/releases/download/v1.1.0/TrueWidget-1.1.0.dmg&#34;&gt;📦 Download&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;📅 Release date
+&lt;ul&gt;
+&lt;li&gt;Jan 11, 2022&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;✨ New Features
+&lt;ul&gt;
+&lt;li&gt;Added option to show local date.&lt;/li&gt;
+&lt;li&gt;Added option to show processes using CPU.&lt;/li&gt;
+&lt;li&gt;Added option to show Xcode bundle path.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;truewidget-100&#34;&gt;TrueWidget 1.0.0&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/pqrs-org/TrueWidget/releases/download/v1.0.0/TrueWidget-1.0.0.dmg&#34;&gt;📦 Download&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;📅 Release date
