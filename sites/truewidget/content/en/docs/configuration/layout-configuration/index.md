@@ -29,6 +29,10 @@ Specifies which screen to display when multiple displays are used.
 
 {{< local-image src="images/operation-system@2x.png" >}}
 
+## Xcode
+
+{{< local-image src="images/xcode@2x.png" >}}
+
 ## CPU Usage
 
 {{< local-image src="images/cpu-usage@2x.png" >}}
