@@ -541,7 +541,27 @@ To quit TrueWidget, choose &amp;ldquo;Quit TrueWidget&amp;rdquo; from the menu b
       <description>
         
         
-        &lt;h2 id=&#34;truewidget-110&#34;&gt;TrueWidget 1.1.0&lt;/h2&gt;
+        &lt;h2 id=&#34;truewidget-120&#34;&gt;TrueWidget 1.2.0&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/pqrs-org/TrueWidget/releases/download/v1.2.0/TrueWidget-1.2.0.dmg&#34;&gt;📦 Download&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;📅 Release date
+&lt;ul&gt;
+&lt;li&gt;Feb 4, 2022&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;🐛 Bug Fixes
+&lt;ul&gt;
+&lt;li&gt;Fixed an issue that &lt;code&gt;Open at login&lt;/code&gt; option does not work properly.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;✨ New Features
+&lt;ul&gt;
+&lt;li&gt;Added option to show time of other time zones.&lt;/li&gt;
+&lt;li&gt;Added option to show the root volume name.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;truewidget-110&#34;&gt;TrueWidget 1.1.0&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/pqrs-org/TrueWidget/releases/download/v1.1.0/TrueWidget-1.1.0.dmg&#34;&gt;📦 Download&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;📅 Release date
