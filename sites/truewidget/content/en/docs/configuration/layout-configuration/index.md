@@ -37,6 +37,6 @@ Specifies which screen to display when multiple displays are used.
 
 {{< local-image src="images/cpu-usage@2x.png" >}}
 
-## Local Time
+## Time
 
-{{< local-image src="images/local-time@2x.png" >}}
+{{< local-image src="images/time@2x.png" >}}
