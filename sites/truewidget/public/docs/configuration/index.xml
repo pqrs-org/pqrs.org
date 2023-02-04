@@ -211,7 +211,7 @@
   /&gt;
 &lt;/figure&gt;
 
-&lt;h2 id=&#34;local-time&#34;&gt;Local Time&lt;/h2&gt;
+&lt;h2 id=&#34;time&#34;&gt;Time&lt;/h2&gt;
 
 
 
@@ -221,8 +221,8 @@
 
 &lt;figure&gt;
   &lt;img
-    src=&#34;/docs/configuration/layout-configuration/images/local-time@2x.png&#34;
-    alt=&#34;local-time@2x.png&#34;
+    src=&#34;/docs/configuration/layout-configuration/images/time@2x.png&#34;
+    alt=&#34;time@2x.png&#34;
     style=&#34;width: 800px&#34;
   /&gt;
 &lt;/figure&gt;
