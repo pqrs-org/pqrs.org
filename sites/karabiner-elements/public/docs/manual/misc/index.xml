@@ -461,7 +461,7 @@ press &amp;ldquo;Open MultitouchExtension app&amp;rdquo; button on Preferences &
 &lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
 
     &lt;p&gt;You have to restart karabiner_console_user_server process by the
-following command after you made a symlink in ordre to tell
+following command after you made a symlink in order to tell
 Karabiner-Elements that the parent directory is changed.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;launchctl kickstart -k gui/&lt;span style=&#34;color:#4e9a06&#34;&gt;`&lt;/span&gt;id -u&lt;span style=&#34;color:#4e9a06&#34;&gt;`&lt;/span&gt;/org.pqrs.karabiner.karabiner_console_user_server
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
