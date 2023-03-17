@@ -29,7 +29,7 @@ ln -s ~/Dropbox/private/karabiner ~/.config
 {{% alert title="Note" color="primary" %}}
 
 You have to restart karabiner_console_user_server process by the
-following command after you made a symlink in ordre to tell
+following command after you made a symlink in order to tell
 Karabiner-Elements that the parent directory is changed.
 
 ```shell
