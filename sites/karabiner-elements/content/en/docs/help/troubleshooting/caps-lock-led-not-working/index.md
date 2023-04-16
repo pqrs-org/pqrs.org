@@ -3,8 +3,8 @@ title: 'Caps Lock LED not working'
 weight: 700
 ---
 
-Karabiner-Elements does not control the caps lock LED for non Apple keyboards by default in order to avoid a macOS deadlock issue at turning LED on with some devices which does not have the caps lock LED.
+Karabiner-Elements has a setting to disable caps lock LED control.
 
-If you are using non Apple keyboards and you want to use caps lock LED, please turn on `Manipulate LED` checkbox.
+If your caps lock LED is not working properly, this setting may be enabled, so check the `Manipulate caps lock LED` setting in the Devices tab.
 
 {{< local-image src="images/devices@2x.png" >}}
