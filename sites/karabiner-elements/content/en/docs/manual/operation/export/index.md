@@ -8,7 +8,7 @@ You can export and import configuration by copying karabiner.json file to anothe
 ## Export
 
 1.  Open config folder from Karabiner-Elements Settings > Misc.
-    {{< local-image src="images/karabiner-elements-export@2x.png" >}}
+    {{< local-image src="images/export@2x.png" >}}
 2.  Configuration folder will be opened by Finder. Copy the **karabiner.json** file.
 
 ## Import
