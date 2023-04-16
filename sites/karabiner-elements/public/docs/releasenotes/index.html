@@ -19,22 +19,22 @@
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
 <title>Release notes | Karabiner-Elements</title>
-<meta name="description" content="Karabiner-Elements 14.11.0 📦 Download 📅 Release date Jan 7, 2023 💥 Breaking changes Changed bundle identifier of Karabiner-Elements Settings to org.pqrs.Karabiner-Elements.Settings from org.pqrs.Karabiner-Elements.Preferences. ✨ New Features Added Ask for confirmation when quitting option into Settings &amp;gt; Misc tab. (Thanks to @basti1302) ⚡️ Improvements Improved health checks for inter-process communication to better recover from errors. 🐛 Bug Fixes Fixed an issue that uninstaller does not remove Karabiner-Elements.app and Karabiner-EventViewer.app in macOS Ventura.">
+<meta name="description" content="Karabiner-Elements 14.12.0 📦 Download 📅 Release date Apr 16, 2023 ✨ New Features Added the ability to switch application icons. This can be changed from the UI tab in Settings. Manual Added new application icons. (Thanks to @Zabriskije) Added the following variables in MultitouchExtension. (Thanks to @codeanpeace) multitouch_extension_finger_count_upper_quarter_area multitouch_extension_finger_count_lower_quarter_area multitouch_extension_finger_count_left_quarter_area multitouch_extension_finger_count_right_quarter_area ⚡️ Improvements Prevent moving the mouse from waking up from sleep by ungrab devices during system sleep. (Thanks to @aspacca) Fixed inconsistent and confusing brightness label in Simple Modifications.">
 <meta property="og:title" content="Release notes" />
-<meta property="og:description" content="Karabiner-Elements 14.11.0 📦 Download 📅 Release date Jan 7, 2023 💥 Breaking changes Changed bundle identifier of Karabiner-Elements Settings to org.pqrs.Karabiner-Elements.Settings from org.pqrs.Karabiner-Elements.Preferences. ✨ New Features Added Ask for confirmation when quitting option into Settings &gt; Misc tab. (Thanks to @basti1302) ⚡️ Improvements Improved health checks for inter-process communication to better recover from errors. 🐛 Bug Fixes Fixed an issue that uninstaller does not remove Karabiner-Elements.app and Karabiner-EventViewer.app in macOS Ventura." />
+<meta property="og:description" content="Karabiner-Elements 14.12.0 📦 Download 📅 Release date Apr 16, 2023 ✨ New Features Added the ability to switch application icons. This can be changed from the UI tab in Settings. Manual Added new application icons. (Thanks to @Zabriskije) Added the following variables in MultitouchExtension. (Thanks to @codeanpeace) multitouch_extension_finger_count_upper_quarter_area multitouch_extension_finger_count_lower_quarter_area multitouch_extension_finger_count_left_quarter_area multitouch_extension_finger_count_right_quarter_area ⚡️ Improvements Prevent moving the mouse from waking up from sleep by ungrab devices during system sleep. (Thanks to @aspacca) Fixed inconsistent and confusing brightness label in Simple Modifications." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/releasenotes/" /><meta property="og:image" content="https://karabiner-elements.pqrs.org/images/logo.png"/><meta property="article:section" content="docs" />
 
 <meta property="og:site_name" content="Karabiner-Elements" />
 <meta itemprop="name" content="Release notes">
-<meta itemprop="description" content="Karabiner-Elements 14.11.0 📦 Download 📅 Release date Jan 7, 2023 💥 Breaking changes Changed bundle identifier of Karabiner-Elements Settings to org.pqrs.Karabiner-Elements.Settings from org.pqrs.Karabiner-Elements.Preferences. ✨ New Features Added Ask for confirmation when quitting option into Settings &gt; Misc tab. (Thanks to @basti1302) ⚡️ Improvements Improved health checks for inter-process communication to better recover from errors. 🐛 Bug Fixes Fixed an issue that uninstaller does not remove Karabiner-Elements.app and Karabiner-EventViewer.app in macOS Ventura.">
+<meta itemprop="description" content="Karabiner-Elements 14.12.0 📦 Download 📅 Release date Apr 16, 2023 ✨ New Features Added the ability to switch application icons. This can be changed from the UI tab in Settings. Manual Added new application icons. (Thanks to @Zabriskije) Added the following variables in MultitouchExtension. (Thanks to @codeanpeace) multitouch_extension_finger_count_upper_quarter_area multitouch_extension_finger_count_lower_quarter_area multitouch_extension_finger_count_left_quarter_area multitouch_extension_finger_count_right_quarter_area ⚡️ Improvements Prevent moving the mouse from waking up from sleep by ungrab devices during system sleep. (Thanks to @aspacca) Fixed inconsistent and confusing brightness label in Simple Modifications.">
 
-<meta itemprop="wordCount" content="6942"><meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
+<meta itemprop="wordCount" content="7087"><meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
 
 <meta name="twitter:title" content="Release notes"/>
-<meta name="twitter:description" content="Karabiner-Elements 14.11.0 📦 Download 📅 Release date Jan 7, 2023 💥 Breaking changes Changed bundle identifier of Karabiner-Elements Settings to org.pqrs.Karabiner-Elements.Settings from org.pqrs.Karabiner-Elements.Preferences. ✨ New Features Added Ask for confirmation when quitting option into Settings &gt; Misc tab. (Thanks to @basti1302) ⚡️ Improvements Improved health checks for inter-process communication to better recover from errors. 🐛 Bug Fixes Fixed an issue that uninstaller does not remove Karabiner-Elements.app and Karabiner-EventViewer.app in macOS Ventura."/>
+<meta name="twitter:description" content="Karabiner-Elements 14.12.0 📦 Download 📅 Release date Apr 16, 2023 ✨ New Features Added the ability to switch application icons. This can be changed from the UI tab in Settings. Manual Added new application icons. (Thanks to @Zabriskije) Added the following variables in MultitouchExtension. (Thanks to @codeanpeace) multitouch_extension_finger_count_upper_quarter_area multitouch_extension_finger_count_lower_quarter_area multitouch_extension_finger_count_left_quarter_area multitouch_extension_finger_count_right_quarter_area ⚡️ Improvements Prevent moving the mouse from waking up from sleep by ungrab devices during system sleep. (Thanks to @aspacca) Fixed inconsistent and confusing brightness label in Simple Modifications."/>
 
 
 
@@ -82,7 +82,7 @@ if (!doNotTrack) {
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.d4efcf13d411a29768d72e80620701e5.json"
+    data-offline-search-index-json-src="/offline-search-index.2763a776c38b43d36ede7851b49b3f9c.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="25"
   >
@@ -107,7 +107,7 @@ if (!doNotTrack) {
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.d4efcf13d411a29768d72e80620701e5.json"
+    data-offline-search-index-json-src="/offline-search-index.2763a776c38b43d36ede7851b49b3f9c.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="25"
   >
@@ -623,6 +623,7 @@ if (!doNotTrack) {
 
 <nav id="TableOfContents">
   <ul>
+    <li><a href="#karabiner-elements-14120">Karabiner-Elements 14.12.0</a></li>
     <li><a href="#karabiner-elements-14110">Karabiner-Elements 14.11.0</a></li>
     <li><a href="#karabiner-elements-14100">Karabiner-Elements 14.10.0</a></li>
     <li><a href="#karabiner-elements-1490">Karabiner-Elements 14.9.0</a></li>
@@ -784,7 +785,47 @@ if (!doNotTrack) {
 
 		
 	</header>    
-	<h2 id="karabiner-elements-14110">Karabiner-Elements 14.11.0</h2>
+	<h2 id="karabiner-elements-14120">Karabiner-Elements 14.12.0</h2>
+<ul>
+<li><a href="https://github.com/pqrs-org/Karabiner-Elements/releases/download/v14.12.0/Karabiner-Elements-14.12.0.dmg">📦 Download</a></li>
+<li>📅 Release date
+<ul>
+<li>Apr 16, 2023</li>
+</ul>
+</li>
+<li>✨ New Features
+<ul>
+<li>Added the ability to switch application icons. This can be changed from the UI tab in Settings.
+<ul>
+<li><a href="https://karabiner-elements.pqrs.org/docs/manual/misc/change-app-icon/">Manual</a></li>
+</ul>
+</li>
+<li>Added new application icons. (Thanks to @Zabriskije)</li>
+<li>Added the following variables in MultitouchExtension. (Thanks to @codeanpeace)
+<ul>
+<li>multitouch_extension_finger_count_upper_quarter_area</li>
+<li>multitouch_extension_finger_count_lower_quarter_area</li>
+<li>multitouch_extension_finger_count_left_quarter_area</li>
+<li>multitouch_extension_finger_count_right_quarter_area</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>⚡️ Improvements
+<ul>
+<li>Prevent moving the mouse from waking up from sleep by ungrab devices during system sleep. (Thanks to @aspacca)</li>
+<li>Fixed inconsistent and confusing brightness label in Simple Modifications. (Thanks to @revolter)</li>
+<li>Improved MultitouchExtension to synchronize finger count (half and quarter) variables with finger movement.</li>
+<li>Moved &ldquo;Disable the built-in keyboard while this device is connected&rdquo; settings into Devices tab from Devices &gt; Advanced tab in Settings.</li>
+</ul>
+</li>
+<li>🐛 Bug Fixes
+<ul>
+<li>Fixed an issue that dynamic keyboard type change (ANSI, ISO and JIS) by changing the country code of the virtual keyboard did not work properly.</li>
+</ul>
+</li>
+</ul>
+<h2 id="karabiner-elements-14110">Karabiner-Elements 14.11.0</h2>
 <ul>
 <li><a href="https://github.com/pqrs-org/Karabiner-Elements/releases/download/v14.11.0/Karabiner-Elements-14.11.0.dmg">📦 Download</a></li>
 <li>📅 Release date
