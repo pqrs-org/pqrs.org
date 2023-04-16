@@ -5,6 +5,28 @@ simple_list: true
 exclude_search: true
 ---
 
+## Karabiner-Elements 14.12.0
+
+-   [📦 Download](https://github.com/pqrs-org/Karabiner-Elements/releases/download/v14.12.0/Karabiner-Elements-14.12.0.dmg)
+-   📅 Release date
+    -   Apr 16, 2023
+-   ✨ New Features
+    -   Added the ability to switch application icons. This can be changed from the UI tab in Settings.
+        -   [Manual](https://karabiner-elements.pqrs.org/docs/manual/misc/change-app-icon/)
+    -   Added new application icons. (Thanks to @Zabriskije)
+    -   Added the following variables in MultitouchExtension. (Thanks to @codeanpeace)
+        -   multitouch_extension_finger_count_upper_quarter_area
+        -   multitouch_extension_finger_count_lower_quarter_area
+        -   multitouch_extension_finger_count_left_quarter_area
+        -   multitouch_extension_finger_count_right_quarter_area
+-   ⚡️ Improvements
+    -   Prevent moving the mouse from waking up from sleep by ungrab devices during system sleep. (Thanks to @aspacca)
+    -   Fixed inconsistent and confusing brightness label in Simple Modifications. (Thanks to @revolter)
+    -   Improved MultitouchExtension to synchronize finger count (half and quarter) variables with finger movement.
+    -   Moved "Disable the built-in keyboard while this device is connected" settings into Devices tab from Devices > Advanced tab in Settings.
+-   🐛 Bug Fixes
+    -   Fixed an issue that dynamic keyboard type change (ANSI, ISO and JIS) by changing the country code of the virtual keyboard did not work properly.
+
 ## Karabiner-Elements 14.11.0
 
 -   [📦 Download](https://github.com/pqrs-org/Karabiner-Elements/releases/download/v14.11.0/Karabiner-Elements-14.11.0.dmg)
