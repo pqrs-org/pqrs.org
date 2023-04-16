@@ -10,4 +10,4 @@ Mice are disabled by default.<br />
 You have to enable them if you want to change the mouse buttons in Karabiner-Elements.
 {{% /alert %}}
 
-{{< local-image src="images/karabiner-elements-devices@2x.png" >}}
+{{< local-image src="images/devices@2x.png" >}}
