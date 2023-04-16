@@ -275,8 +275,8 @@ You have to enable them if you want to change the mouse buttons in Karabiner-Ele
 
 &lt;figure&gt;
   &lt;img
-    src=&#34;/docs/manual/configuration/configure-devices/images/karabiner-elements-devices@2x.png&#34;
-    alt=&#34;karabiner-elements-devices@2x.png&#34;
+    src=&#34;/docs/manual/configuration/configure-devices/images/devices@2x.png&#34;
+    alt=&#34;devices@2x.png&#34;
     style=&#34;width: 1100px&#34;
   /&gt;
 &lt;/figure&gt;
@@ -296,7 +296,7 @@ You have to enable them if you want to change the mouse buttons in Karabiner-Ele
         
         &lt;p&gt;You can disable MacBook built-in keyboard if external keyboards are connected.&lt;br /&gt;
 This feature is useful when you put the external keybaord on top of the built-in keyboard.&lt;/p&gt;
-&lt;p&gt;Choose your external keyboards on Deviecs &amp;gt; Advanced.&lt;/p&gt;
+&lt;p&gt;Enable &lt;code&gt;Disable the built-in keyboard while this device is connected&lt;/code&gt; in Devices tab.&lt;/p&gt;
 
 
 
@@ -306,8 +306,8 @@ This feature is useful when you put the external keybaord on top of the built-in
 
 &lt;figure&gt;
   &lt;img
-    src=&#34;/docs/manual/configuration/disable-built-in-keyboard/images/karabiner-elements-devices-built-in@2x.png&#34;
-    alt=&#34;karabiner-elements-devices-built-in@2x.png&#34;
+    src=&#34;/docs/manual/configuration/disable-built-in-keyboard/images/disable-built-in-keyboard@2x.png&#34;
+    alt=&#34;disable-built-in-keyboard@2x.png&#34;
     style=&#34;width: 1100px&#34;
   /&gt;
 &lt;/figure&gt;

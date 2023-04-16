@@ -324,8 +324,8 @@ Karabiner-Elements.&lt;/p&gt;
     
     &lt;figure&gt;
       &lt;img
-        src=&#34;/docs/manual/misc/multitouch-extension/images/karabiner-elements-multitouch-extension-1@2x.png&#34;
-        alt=&#34;karabiner-elements-multitouch-extension-1@2x.png&#34;
+        src=&#34;/docs/manual/misc/multitouch-extension/images/multitouch-extension-1@2x.png&#34;
+        alt=&#34;multitouch-extension-1@2x.png&#34;
         style=&#34;width: 1100px&#34;
       /&gt;
     &lt;/figure&gt;
@@ -340,8 +340,8 @@ Karabiner-Elements.&lt;/p&gt;
     
     &lt;figure&gt;
       &lt;img
-        src=&#34;/docs/manual/misc/multitouch-extension/images/karabiner-elements-multitouch-extension-2@2x.png&#34;
-        alt=&#34;karabiner-elements-multitouch-extension-2@2x.png&#34;
+        src=&#34;/docs/manual/misc/multitouch-extension/images/multitouch-extension-2@2x.png&#34;
+        alt=&#34;multitouch-extension-2@2x.png&#34;
         style=&#34;width: 540px&#34;
       /&gt;
     &lt;/figure&gt;
@@ -467,6 +467,45 @@ Karabiner-Elements that the parent directory is changed.&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Change app icon</title>
+      <link>/docs/manual/misc/change-app-icon/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/manual/misc/change-app-icon/</guid>
+      <description>
+        
+        
+        &lt;p&gt;You can change the icons that appear in the Finder, Launchpad, Dock, etc from Settings &amp;gt; UI.&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
+
+    The icon in Dock will not reflect changes while the application is open.
+So, you should close and reopen the application to update the icon in Dock.
+
+&lt;/div&gt;
+
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/manual/misc/change-app-icon/images/app-icon@2x.png&#34;
+    alt=&#34;app-icon@2x.png&#34;
+    style=&#34;width: 1100px&#34;
+  /&gt;
+&lt;/figure&gt;
 
 
       </description>
