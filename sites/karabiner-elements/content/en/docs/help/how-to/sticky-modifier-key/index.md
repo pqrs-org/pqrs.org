@@ -30,7 +30,7 @@ Sticky modifier key indicator will be shown while the sticky modifiers are activ
 
 {{< local-image src="images/sticky-modifier-key-indicator@2x.png" >}}
 
-You can hide the indicator from Karabiner-Elements Settings &gt; Virtual keyboard.
+You can hide the indicator from Karabiner-Elements Settings &gt; UI.
 
 {{< local-image src="images/indicator-configuration@2x.png" >}}
 
