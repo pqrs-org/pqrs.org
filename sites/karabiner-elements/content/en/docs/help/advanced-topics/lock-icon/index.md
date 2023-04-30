@@ -36,7 +36,8 @@ sudo chflags nouchg,noschg /Applications/Karabiner-Elements.app
 sudo chflags nouchg,noschg /Applications/Karabiner-EventViewer.app
 ```
 
-If you got the "Operation not permitted" error, grant App Management rights to Terminal.
+In particular, if Full Disk Access rights have not been granted to Terminal, "Operation not permitted" error may be displayed.
+In this case, the safest solution is to grant App Management rights to Terminal.
 
 {{< local-image src="images/app-management1@2x.png" >}}
 {{< local-image src="images/app-management2@2x.png" >}}
