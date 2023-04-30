@@ -203,7 +203,8 @@ And do nothing if the process is running with non root user.&lt;/li&gt;
 (Administrator password is required to run the commands.)&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo chflags nouchg,noschg /Applications/Karabiner-Elements.app
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo chflags nouchg,noschg /Applications/Karabiner-EventViewer.app
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;If you got the &amp;ldquo;Operation not permitted&amp;rdquo; error, grant App Management rights to Terminal.&lt;/p&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;In particular, if Full Disk Access rights have not been granted to Terminal, &amp;ldquo;Operation not permitted&amp;rdquo; error may be displayed.
+In this case, the safest solution is to grant App Management rights to Terminal.&lt;/p&gt;
 &lt;figure&gt;
   &lt;img
     src=&#34;/docs/help/advanced-topics/lock-icon/images/app-management1@2x.png&#34;

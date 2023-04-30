@@ -38,7 +38,7 @@ These indicators show that these files are protected so that they cannot be dele
 Why these files are protected This protection is intended to prevent incomplete uninstallation.
 Karabiner-Elements is a system-wide software, and files are installed in appropriate locations besides the Applications folder.">
 
-<meta itemprop="wordCount" content="161"><meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
+<meta itemprop="wordCount" content="181"><meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://karabiner-elements.pqrs.org/images/logo.png"/>
 
@@ -94,7 +94,7 @@ if (!doNotTrack) {
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.2da637bed4e3c0cb37724a10a0b6d2eb.json"
+    data-offline-search-index-json-src="/offline-search-index.562bc25c0377e157bbeb235dd9706745.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="25"
   >
@@ -119,7 +119,7 @@ if (!doNotTrack) {
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.2da637bed4e3c0cb37724a10a0b6d2eb.json"
+    data-offline-search-index-json-src="/offline-search-index.562bc25c0377e157bbeb235dd9706745.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="25"
   >
@@ -742,7 +742,8 @@ if (!doNotTrack) {
 (Administrator password is required to run the commands.)</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo chflags nouchg,noschg /Applications/Karabiner-Elements.app
 </span></span><span style="display:flex;"><span>sudo chflags nouchg,noschg /Applications/Karabiner-EventViewer.app
-</span></span></code></pre></div><p>If you got the &ldquo;Operation not permitted&rdquo; error, grant App Management rights to Terminal.</p>
+</span></span></code></pre></div><p>In particular, if Full Disk Access rights have not been granted to Terminal, &ldquo;Operation not permitted&rdquo; error may be displayed.
+In this case, the safest solution is to grant App Management rights to Terminal.</p>
 <figure>
   <img
     src="/docs/help/advanced-topics/lock-icon/images/app-management1@2x.png"
