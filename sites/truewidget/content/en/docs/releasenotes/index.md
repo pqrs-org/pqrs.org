@@ -5,6 +5,18 @@ simple_list: true
 exclude_search: true
 ---
 
+## TrueWidget 1.3.0
+
+-   [📦 Download](https://github.com/pqrs-org/TrueWidget/releases/download/v1.3.0/TrueWidget-1.3.0.dmg)
+-   📅 Release date
+    -   May 2, 2023
+-   ✨ New Features
+    -   Added option to show user name.
+-   ⚡️ Improvements
+    -   Supported the security update version in macOS version display.
+        {{< local-image src="images/v1.3.0@2x.png" >}}
+    -   Sparkle Framework has been updated.
+
 ## TrueWidget 1.2.0
 
 -   [📦 Download](https://github.com/pqrs-org/TrueWidget/releases/download/v1.2.0/TrueWidget-1.2.0.dmg)
