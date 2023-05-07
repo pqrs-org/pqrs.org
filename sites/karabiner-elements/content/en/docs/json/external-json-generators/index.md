@@ -13,3 +13,5 @@ Karabiner-Elements configuration generators:
     -   Raku module for easily bulk generating and regenerating complex modification from pre-defined templates.
 -   [Jsonnet](https://jsonnet.org/)
     -   A data templating language as a simple extension of JSON to generate config data with the benefit to organize, simplify, unify, and manage sprawling configurations.
+-   [karabiner.ts](https://github.com/evan-liu/karabiner.ts)
+    -   Write complex modification rules in TypeScript with strong typing.
