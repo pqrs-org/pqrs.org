@@ -708,6 +708,11 @@ Karabiner-Elements changes keys by Simple Modifications, and then changes them b
 &lt;li&gt;A data templating language as a simple extension of JSON to generate config data with the benefit to organize, simplify, unify, and manage sprawling configurations.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/evan-liu/karabiner.ts&#34;&gt;karabiner.ts&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;Write complex modification rules in TypeScript with strong typing.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 
       </description>
