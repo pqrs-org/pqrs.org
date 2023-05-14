@@ -541,7 +541,27 @@ To quit TrueWidget, choose &amp;ldquo;Quit TrueWidget&amp;rdquo; from the menu b
       <description>
         
         
-        &lt;h2 id=&#34;truewidget-130&#34;&gt;TrueWidget 1.3.0&lt;/h2&gt;
+        &lt;h2 id=&#34;truewidget-140&#34;&gt;TrueWidget 1.4.0&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/pqrs-org/TrueWidget/releases/download/v1.4.0/TrueWidget-1.4.0.dmg&#34;&gt;📦 Download&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;📅 Release date
+&lt;ul&gt;
+&lt;li&gt;May 14, 2023&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;✨ New Features
+&lt;ul&gt;
+&lt;li&gt;Changed the widget to fade out on mouseover instead of hiding immediately.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;⚡️ Improvements
+&lt;ul&gt;
+&lt;li&gt;Enabled the setting of &lt;code&gt;Open at login&lt;/code&gt; by default.&lt;/li&gt;
+&lt;li&gt;Changed to open TrueWidget directly instead of via the helper app when opening at login.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;truewidget-130&#34;&gt;TrueWidget 1.3.0&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/pqrs-org/TrueWidget/releases/download/v1.3.0/TrueWidget-1.3.0.dmg&#34;&gt;📦 Download&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;📅 Release date
