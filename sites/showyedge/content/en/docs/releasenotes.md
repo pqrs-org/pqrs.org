@@ -5,6 +5,15 @@ simple_list: true
 exclude_search: true
 ---
 
+## ShowyEdge 5.6.0
+
+-   [📦 Download](https://github.com/pqrs-org/ShowyEdge/releases/download/v5.6.0/ShowyEdge-5.6.0.dmg)
+-   📅 Release date
+    -   May 14, 2023
+-   ⚡️ Improvements
+    -   Became sandboxed app.
+    -   Enabled the setting of `Open at login` by default.
+
 ## ShowyEdge 5.5.0
 
 -   [📦 Download](https://github.com/pqrs-org/ShowyEdge/releases/download/v5.5.0/ShowyEdge-5.5.0.dmg)
