@@ -5,6 +5,17 @@ simple_list: true
 exclude_search: true
 ---
 
+## TrueWidget 1.4.0
+
+-   [📦 Download](https://github.com/pqrs-org/TrueWidget/releases/download/v1.4.0/TrueWidget-1.4.0.dmg)
+-   📅 Release date
+    -   May 14, 2023
+-   ✨ New Features
+    -   Changed the widget to fade out on mouseover instead of hiding immediately.
+-   ⚡️ Improvements
+    -   Enabled the setting of `Open at login` by default.
+    -   Changed to open TrueWidget directly instead of via the helper app when opening at login.
+
 ## TrueWidget 1.3.0
 
 -   [📦 Download](https://github.com/pqrs-org/TrueWidget/releases/download/v1.3.0/TrueWidget-1.3.0.dmg)
