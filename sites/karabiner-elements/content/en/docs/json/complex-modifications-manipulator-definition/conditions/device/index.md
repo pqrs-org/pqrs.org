@@ -86,6 +86,7 @@ Change `1` key to `f1` if the device is Apple keyboard.
 | `vendor_id`            | Optional | Vendor ID of device which is fixed value for each device                          |
 | `product_id`           | Optional | Product ID of device which is fixed value for each device                         |
 | `location_id`          | Optional | Location ID of device which is changed by where the port your device is connected |
+| `device_address`       | Optional | MAC address of device (only available for Bluetooth devices)                      |
 | `is_keyboard`          | Optional | `true` or `false`                                                                 |
 | `is_pointing_device`   | Optional | `true` or `false`                                                                 |
 | `is_touch_bar`         | Optional | `true` or `false`                                                                 |
