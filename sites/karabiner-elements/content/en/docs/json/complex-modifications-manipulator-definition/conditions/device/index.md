@@ -81,16 +81,19 @@ Change `1` key to `f1` if the device is Apple keyboard.
 
 `identifiers` is an array of objects.
 
-| Name                   | Required | Description                                                                                                |
-| ---------------------- | -------- | ---------------------------------------------------------------------------------------------------------- |
-| `vendor_id`            | Optional | Vendor ID of device which is fixed value for each device                                                   |
-| `product_id`           | Optional | Product ID of device which is fixed value for each device                                                  |
-| `device_address`       | Optional | Device Address of device which is fixed value for each device (available since Karabiner-Elements 14.12.2) |
-| `location_id`          | Optional | Location ID of device which is changed by where the port your device is connected                          |
-| `is_keyboard`          | Optional | `true` or `false`                                                                                          |
-| `is_pointing_device`   | Optional | `true` or `false`                                                                                          |
-| `is_touch_bar`         | Optional | `true` or `false`                                                                                          |
-| `is_built_in_keyboard` | Optional | `true` or `false` (available since Karabiner-Elements 14.8.2)                                              |
+| Name                   | Required | Description                                                                                                                                         | Fixed Value |
+| ---------------------- | -------- | --------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
+| `vendor_id`            | Optional | Vendor ID of device                                                                                                                                 | Yes         |
+| `product_id`           | Optional | Product ID of device                                                                                                                                | Yes         |
+| `device_address`       | Optional | Bluetooth address (Bluetooth MAC address) of device <br />(only available for Bluetooth devices) <br />(available since Karabiner-Elements 14.12.2) | Yes `[1]`   |
+| `location_id`          | Optional | Location ID of device                                                                                                                               | No `[2]`    |
+| `is_keyboard`          | Optional | `true` or `false`                                                                                                                                   | Yes         |
+| `is_pointing_device`   | Optional | `true` or `false`                                                                                                                                   | Yes         |
+| `is_touch_bar`         | Optional | `true` or `false`                                                                                                                                   | Yes         |
+| `is_built_in_keyboard` | Optional | `true` or `false` (available since Karabiner-Elements 14.8.2)                                                                                       | Yes         |
+
+-   `[1]` The `device_address` will change when you replace the hardware.
+-   `[2]` The `location_id` will change when you change the USB port which the device is connected.
 
 #### Multiple identifiers
 
