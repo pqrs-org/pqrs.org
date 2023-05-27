@@ -1584,6 +1584,11 @@ Therefore, in Login Items, the signing developer&amp;rsquo;s name is displayed i
 &lt;td&gt;Product ID of device which is fixed value for each device&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
+&lt;td&gt;&lt;code&gt;device_address&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Optional&lt;/td&gt;
+&lt;td&gt;Device Address of device which is fixed value for each device (available since Karabiner-Elements 14.12.2)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
 &lt;td&gt;&lt;code&gt;location_id&lt;/code&gt;&lt;/td&gt;
 &lt;td&gt;Optional&lt;/td&gt;
 &lt;td&gt;Location ID of device which is changed by where the port your device is connected&lt;/td&gt;
