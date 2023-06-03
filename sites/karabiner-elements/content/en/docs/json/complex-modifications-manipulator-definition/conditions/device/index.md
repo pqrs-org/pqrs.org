@@ -89,8 +89,9 @@ Change `1` key to `f1` if the device is Apple keyboard.
 | `location_id`          | Optional | Location ID of device                                                                                                                               | No `[2]`    |
 | `is_keyboard`          | Optional | `true` or `false`                                                                                                                                   | Yes         |
 | `is_pointing_device`   | Optional | `true` or `false`                                                                                                                                   | Yes         |
+| `is_game_pad`          | Optional | `true` or `false`<br />(available since Karabiner-Elements 14.12.4)                                                                                      | Yes         |
 | `is_touch_bar`         | Optional | `true` or `false`                                                                                                                                   | Yes         |
-| `is_built_in_keyboard` | Optional | `true` or `false` (available since Karabiner-Elements 14.8.2)                                                                                       | Yes         |
+| `is_built_in_keyboard` | Optional | `true` or `false`<br />(available since Karabiner-Elements 14.8.2)                                                                                       | Yes         |
 
 -   `[1]` The `device_address` will change when you replace the hardware.
 -   `[2]` The `location_id` will change when you change the USB port which the device is connected.
