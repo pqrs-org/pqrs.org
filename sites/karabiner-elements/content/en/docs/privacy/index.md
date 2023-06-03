@@ -5,7 +5,7 @@ weight: 650
 
 ## Privacy
 
-Security and privacy protection is one of the most important point of Karabiner-Elements architecture design.<br />
+Security and privacy protection is one of the most important points of Karabiner-Elements architecture design.<br />
 Of course, Karabiner-Elements does not collect any of your input data, your configuration data, nor your usage statistics.
 
 {{% alert title="Data not collected" color="primary" %}}
@@ -15,16 +15,16 @@ Karabiner-Elements does not transmit your data externally. The following data is
 -   Your keystrokes
 -   Your configuration data
 -   Your usage statistics
--   And any data except Karabiner-Elements version information.
+-   And all other data except Karabiner-Elements version information.
 
 {{% /alert %}}
 
 {{% alert title="About Input Monitoring" color="primary" %}}
 
 Karabiner-Elements exclusively receives input events from your keyboard, and then modifies them.
-So, Karabiner-Elements requires your Input Monitoring permissions approval.
+To do this, Karabiner-Elements requires your Input Monitoring permissions approval.
 
-Keystrokes obtained with these permissions are processed entirely on your Mac.
+Keystrokes captured with this privilege are processed entirely on your Mac.
 And because the process is protected by administrative privileges, keystrokes cannot be intercepted at by other applications on your Mac.
 
 {{< local-image src="images/input-monitoring@2x.png" >}}
