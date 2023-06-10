@@ -243,11 +243,11 @@ To quit Tinkle, choose &amp;ldquo;Quit Tinkle&amp;rdquo; from menu bar.&lt;/p&gt
 &lt;/ol&gt;
 &lt;h2 id=&#34;effects&#34;&gt;Effects&lt;/h2&gt;
 &lt;div class=&#34;d-flex&#34;&gt;
-    &lt;div class=&#34;mr-4 p-2 border&#34;&gt;
+    &lt;div class=&#34;me-4 p-2 border&#34;&gt;
         Shock wave (blue)&lt;br /&gt;
         &lt;img src=&#34;images/shockwave.gif&#34; width=&#34;200&#34; alt=&#34;shockwave&#34; /&gt;
     &lt;/div&gt;
-    &lt;div class=&#34;mr-4 p-2 border&#34;&gt;
+    &lt;div class=&#34;me-4 p-2 border&#34;&gt;
         Neon (blue)&lt;br /&gt;
         &lt;img src=&#34;images/neon.gif&#34; width=&#34;200&#34; alt=&#34;neon&#34; /&gt;
     &lt;/div&gt;
