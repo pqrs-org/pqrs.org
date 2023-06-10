@@ -6,14 +6,9 @@ Add styles or override variables from the theme here.
 
 @import "share/pqrs.scss";
 
-/* /index.html */
+// _index.html
 body.td-home {
-  background-color: $dark;
-
-  section:first-of-type {
+  section:first-of-type::before {
     background-image: url('/images/background.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: black;
   }
 }
