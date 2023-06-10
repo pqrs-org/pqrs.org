@@ -90,7 +90,7 @@ I'm afraid I don't have enough time to reply for donors.<br />
 <div id="supporters" class="text-center border border-dark rounded py-4">
   <div class="text-center font-weight-bold h3">
     Sponsors
-    <i class="fas fa-heart ml-1"></i>
+    <i class="fas fa-heart ms-1"></i>
   </div>
   <div class="mb-4">
     Thank you for supporting Karabiner-Elements!

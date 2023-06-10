@@ -12,11 +12,11 @@ You can change the effect.
 ## Effects
 
 <div class="d-flex">
-    <div class="mr-4 p-2 border">
+    <div class="me-4 p-2 border">
         Shock wave (blue)<br />
         <img src="images/shockwave.gif" width="200" alt="shockwave" />
     </div>
-    <div class="mr-4 p-2 border">
+    <div class="me-4 p-2 border">
         Neon (blue)<br />
         <img src="images/neon.gif" width="200" alt="neon" />
     </div>
