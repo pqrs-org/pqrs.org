@@ -1,16 +1,10 @@
 $dark: #403f4c;
 $primary: #3273db;
-$secondary: #db3273;
+$secondary: #d10073;
 $success: #28a745;
 $border-color: #dee2e6;
 
 body {
-  .navbar-brand {
-    .text-uppercase {
-      text-transform: none !important;
-    }
-  }
-
   .td-content {
     overflow-wrap: break-word;
 
@@ -27,23 +21,6 @@ body {
         box-sizing: content-box;
         border: 1px solid $border-color;
         border-radius: 10px;
-      }
-    }
-
-    &.release-notes {
-      img {
-        margin: 20px 0;
-        border: 1px solid $border-color;
-        border-radius: 10px;
-      }
-
-      & > ul > li {
-        list-style-type: none;
-        font-weight: bold;
-
-        ul {
-          font-weight: normal;
-        }
       }
     }
   }
