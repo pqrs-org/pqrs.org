@@ -126,18 +126,6 @@ body.td-home {
       filter: blur(4px) brightness(0.5);
     }
 
-    &::after {
-      content: '';
-
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: -5px;
-      height: 15px;
-
-      background-color: $dark;
-    }
-
     .container {
       padding-top: 50px;
       padding-bottom: 50px;
