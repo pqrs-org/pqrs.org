@@ -98,6 +98,30 @@ body {
 }
 
 //
+// release-notes
+//
+
+body.release-notes {
+  .td-content > ul {
+    padding-left: 0;
+    & > li {
+      list-style-type: none;
+      font-weight: bold;
+
+      & > ul {
+        padding-left: 3rem;
+      }
+    }
+  }
+
+  img {
+    margin: 20px 0;
+    border: 1px solid $border-color;
+    border-radius: 10px;
+  }
+}
+
+//
 // _index.html
 //
 

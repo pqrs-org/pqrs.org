@@ -3,6 +3,7 @@ title: 'Release notes'
 weight: 900
 simple_list: true
 exclude_search: true
+body_class: release-notes
 ---
 
 ## Tinkle 2.1.0
