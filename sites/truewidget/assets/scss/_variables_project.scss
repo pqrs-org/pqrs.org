@@ -6,49 +6,9 @@ Add styles or override variables from the theme here.
 
 @import "share/pqrs.scss";
 
-/* /index.html */
+// _index.html
 body.td-home {
-  background-color: $dark;
-
-  section:first-of-type {
-    position: relative;
-    z-index: 0;
-
-    &::before {
-      content: '';
-
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 5px;
-      z-index: -1;
-
-      background-image: url('/images/background.jpg');
-      background-position: center top;
-      background-repeat: no-repeat;
-      background-size: cover;
-
-      filter: blur(4px) brightness(0.5);
-    }
-
-    &::after {
-      content: '';
-
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: -5px;
-      height: 15px;
-
-      background-color: $dark;
-    }
-
-    .container {
-      padding-top: 50px;
-      padding-bottom: 50px;
-      border-radius: 50px;
-      background-color: rgba(0, 0, 0, 0.6);
-    }
+  section:first-of-type::before {
+    background-image: url('/images/background.jpg');
   }
 }
