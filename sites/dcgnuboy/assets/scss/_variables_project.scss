@@ -1,14 +1,3 @@
-/*
+// Add styles or override variables from the theme here.
 
-Add styles or override variables from the theme here.
-
-*/
-
-@import "share/pqrs.scss";
-
-// _index.html
-body.td-home {
-  section:first-of-type::before {
-    background-image: url('/images/background.jpg');
-  }
-}
+@import 'share/pqrs.scss';
