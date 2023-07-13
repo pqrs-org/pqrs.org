@@ -17,17 +17,19 @@ weight: 300
         {
             "set_variable": {
                 "name": "variable name",
-                "value": variable value
+                "value": variable value,
+                "key_up_value": variable value
             }
         }
     ]
 }
 ```
 
-| Name    | Required     | Description            |
-| ------- | ------------ | ---------------------- |
-| `name`  | **Required** | Target variable name.  |
-| `value` | **Required** | Target variable value. |
+| Name           | Required     | Description                     | Available since            |
+| -------------- | ------------ | ------------------------------- | -------------------------- |
+| `name`         | **Required** | Target variable name.           | Karabiner-Elements 11.0.0  |
+| `value`        | **Required** | Target variable value.          | Karabiner-Elements 11.0.0  |
+| `key_up_value` | Optional     | A variable value when key is up | Karabiner-Elements 14.12.6 |
 
 ## Available types of `value`
 
@@ -43,7 +45,8 @@ weight: 300
 {
     "set_variable": {
         "name": "mode_flag",
-        "value": 42
+        "value": 1,
+        "key_up_value": 0
     }
 }
 ```
