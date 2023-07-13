@@ -6,6 +6,15 @@ exclude_search: true
 body_class: release-notes
 ---
 
+## Disable DragAndDrop 5.0.0
+
+-   📅 Release date
+    -   Jul 13, 2023
+-   💥 Breaking changes
+    -   The ability to display a prompt instead of prohibiting folder movement has been removed to support Thunderbird 115.
+-   ⚡️ Improvements
+    -   Supported Thunderbird 115.
+
 ## Disable DragAndDrop 4.14.0
 
 -   📅 Release date
