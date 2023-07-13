@@ -142,7 +142,25 @@ When the folder is dropped, the approval prompt will be shown. Press OK to move 
       <description>
         
         
-        &lt;h2 id=&#34;disable-draganddrop-4140&#34;&gt;Disable DragAndDrop 4.14.0&lt;/h2&gt;
+        &lt;h2 id=&#34;disable-draganddrop-500&#34;&gt;Disable DragAndDrop 5.0.0&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;📅 Release date
+&lt;ul&gt;
+&lt;li&gt;Jul 13, 2023&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;💥 Breaking changes
+&lt;ul&gt;
+&lt;li&gt;The ability to display a prompt instead of prohibiting folder movement has been removed to support Thunderbird 115.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;⚡️ Improvements
+&lt;ul&gt;
+&lt;li&gt;Supported Thunderbird 115.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;disable-draganddrop-4140&#34;&gt;Disable DragAndDrop 4.14.0&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;📅 Release date
 &lt;ul&gt;
