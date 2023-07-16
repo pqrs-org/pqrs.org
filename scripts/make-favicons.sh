@@ -1,5 +1,11 @@
 #!/bin/sh
 
+# forbid undefined variables
+set -u
+
+# forbid command failure
+set -e
+
 echo "favicon-256.png"
 convert favicon.png -resize 256x256 favicon-256.png
 

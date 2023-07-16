@@ -12,3 +12,6 @@ clean:
 
 public-server:
 	cd public && python3 -m http.server 1314
+
+optimize-image:
+	../../scripts/optimize-image.sh `find content static -name '*.png'`
