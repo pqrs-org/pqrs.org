@@ -1,9 +1,9 @@
 ---
-title: 'Open preferences window'
+title: 'Open Settings'
 weight: 100
 ---
 
-1.  Open Preferences from menu bar.
+1.  Open Settings from menu bar.
     {{< local-image src="images/menu-icon@2x.png" >}}
 
 {{% alert title="Note" color="primary" %}}

@@ -5,7 +5,7 @@ weight: 200
 
 You can change the effect.
 
-1.  [Open preferences window](../open-preferences-window/).
+1.  [Open Settings](../open-settings/).
 2.  Choose the effect.
     {{< local-image src="images/effect@2x.png" >}}
 

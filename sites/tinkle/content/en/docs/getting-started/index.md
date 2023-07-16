@@ -17,11 +17,11 @@ simple_list: true
 4.  Open Tinkle from Launchpad.
     {{< local-image src="images/launchpad@2x.png" >}}
 5.  Accessibility Access dialog will be shown.<br />
-    Click the `Open System Preferences` button.<br />
+    Click the `Open System Settings` button.<br />
     (Tinkle uses the accessibility features in order to detect the focused window changes.)
     {{< local-image src="images/accessibility-access@2x.png" >}}
-6.  Enable Tinkle on `System Preferences > Privacy > Accessibility`.
-    {{< local-image src="images/privacy@2x.png" >}}
+6.  Enable Tinkle on `System Settings > Privacy & Security > Accessibility`.
+    {{< local-image src="images/accessibility@2x.png" >}}
 7.  Finished!<br />
     A visual effect is shown when you change the focused window while Tinkle is running.<br />
     <img src="images/shockwave.gif" width="200" alt="shockwave" />
