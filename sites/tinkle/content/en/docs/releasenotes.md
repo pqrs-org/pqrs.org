@@ -6,6 +6,16 @@ exclude_search: true
 body_class: release-notes
 ---
 
+## Tinkle 2.3.0
+
+-   [📦 Download](https://github.com/pqrs-org/Tinkle/releases/download/v2.3.0/Tinkle-2.3.0.dmg)
+-   📅 Release date
+    -   Jul 16, 2023
+-   ⚡️ Improvements
+    -   Changed the default effect to Neon (gray).
+    -   Became sandboxed app.
+    -   Sparkle Framework has been updated.
+
 ## Tinkle 2.1.0
 
 -   [📦 Download](https://github.com/pqrs-org/Tinkle/releases/download/v2.1.0/Tinkle-2.1.0.dmg)
