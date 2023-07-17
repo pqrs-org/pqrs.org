@@ -8,7 +8,7 @@ weight: 100
 
 {{% alert title="Note" color="primary" %}}
 
-If you've hidden the menu bar icon, open Tinkle again from Launchpad while Tinkle is already running to open preferences window.
+If you've hidden the menu bar icon, open Tinkle again from Launchpad while Tinkle is already running to open Settings.
 {{< local-image src="images/launchpad@2x.png" >}}
 
 {{% /alert %}}
