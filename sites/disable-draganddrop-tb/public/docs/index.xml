@@ -47,40 +47,9 @@
         
         &lt;p&gt;Disable DragAndDrop works without any configuration.&lt;br&gt;
 Your mail folder is protected from drag and drop after you installed the add-on.&lt;/p&gt;
-&lt;h2 id=&#34;options&#34;&gt;Options&lt;/h2&gt;
+&lt;h2 id=&#34;related-topics&#34;&gt;Related topics&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;Prompt for approval rather than completely locking down the drag and drop of folders&lt;/code&gt; option allows the folder movement if you intended it.&lt;br /&gt;
-When the folder is dropped, the approval prompt will be shown. Press OK to move the folder.
-
-    
-    
-    
-      
-    
-    
-    &lt;figure&gt;
-      &lt;img
-        src=&#34;/docs/configuration/images/prompt-preferences@2x.png&#34;
-        alt=&#34;prompt-preferences@2x.png&#34;
-        style=&#34;width: 688px&#34;
-      /&gt;
-    &lt;/figure&gt;
-
-
-    
-    
-    
-      
-    
-    
-    &lt;figure&gt;
-      &lt;img
-        src=&#34;/docs/configuration/images/prompt@2x.png&#34;
-        alt=&#34;prompt@2x.png&#34;
-        style=&#34;width: 640px&#34;
-      /&gt;
-    &lt;/figure&gt;
-&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../help/disable-temporarily/&#34;&gt;Disable this add-on temporarily&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
       </description>

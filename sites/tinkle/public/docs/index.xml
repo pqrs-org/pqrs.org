@@ -64,7 +64,7 @@
     &lt;/figure&gt;
 &lt;/li&gt;
 &lt;li&gt;Accessibility Access dialog will be shown.&lt;br /&gt;
-Click the &lt;code&gt;Open System Preferences&lt;/code&gt; button.&lt;br /&gt;
+Click the &lt;code&gt;Open System Settings&lt;/code&gt; button.&lt;br /&gt;
 (Tinkle uses the accessibility features in order to detect the focused window changes.)
 
     
@@ -81,7 +81,7 @@ Click the &lt;code&gt;Open System Preferences&lt;/code&gt; button.&lt;br /&gt;
       /&gt;
     &lt;/figure&gt;
 &lt;/li&gt;
-&lt;li&gt;Enable Tinkle on &lt;code&gt;System Preferences &amp;gt; Privacy &amp;gt; Accessibility&lt;/code&gt;.
+&lt;li&gt;Enable Tinkle on &lt;code&gt;System Settings &amp;gt; Privacy &amp;amp; Security &amp;gt; Accessibility&lt;/code&gt;.
 
     
     
@@ -91,9 +91,9 @@ Click the &lt;code&gt;Open System Preferences&lt;/code&gt; button.&lt;br /&gt;
     
     &lt;figure&gt;
       &lt;img
-        src=&#34;/docs/getting-started/images/privacy@2x.png&#34;
-        alt=&#34;privacy@2x.png&#34;
-        style=&#34;width: 668px&#34;
+        src=&#34;/docs/getting-started/images/accessibility@2x.png&#34;
+        alt=&#34;accessibility@2x.png&#34;
+        style=&#34;width: 715px&#34;
       /&gt;
     &lt;/figure&gt;
 &lt;/li&gt;
@@ -118,7 +118,7 @@ A visual effect is shown when you change the focused window while Tinkle is runn
       <description>
         
         
-        &lt;p&gt;Tinkle keeps running in the background even if you close the preferences window.&lt;br /&gt;
+        &lt;p&gt;Tinkle keeps running in the background even if you close Settings.&lt;br /&gt;
 To quit Tinkle, choose &amp;ldquo;Quit Tinkle&amp;rdquo; from menu bar.&lt;/p&gt;
 
 
@@ -131,7 +131,7 @@ To quit Tinkle, choose &amp;ldquo;Quit Tinkle&amp;rdquo; from menu bar.&lt;/p&gt
   &lt;img
     src=&#34;/docs/help/quit/images/menu-quit@2x.png&#34;
     alt=&#34;menu-quit@2x.png&#34;
-    style=&#34;width: 214px&#34;
+    style=&#34;width: 339px&#34;
   /&gt;
 &lt;/figure&gt;
 
@@ -140,10 +140,10 @@ To quit Tinkle, choose &amp;ldquo;Quit Tinkle&amp;rdquo; from menu bar.&lt;/p&gt
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
 
-    &lt;p&gt;If you&amp;rsquo;ve hidden the menu bar icon, you can also quit Tinkle from Preferences.&lt;/p&gt;
+    &lt;p&gt;If you&amp;rsquo;ve hidden the menu bar icon, you can also quit Tinkle from Settings.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;../../configuration/open-preferences-window/&#34;&gt;Open preferences window&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;../../configuration/open-settings/&#34;&gt;Open Settings&lt;/a&gt;.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Press &lt;code&gt;Quit Tinkle&lt;/code&gt; button.&lt;/p&gt;
@@ -151,7 +151,7 @@ To quit Tinkle, choose &amp;ldquo;Quit Tinkle&amp;rdquo; from menu bar.&lt;/p&gt
   &lt;img
     src=&#34;/docs/help/quit/images/quit@2x.png&#34;
     alt=&#34;quit@2x.png&#34;
-    style=&#34;width: 600px&#34;
+    style=&#34;width: 900px&#34;
   /&gt;
 &lt;/figure&gt;
 &lt;/li&gt;
@@ -165,16 +165,16 @@ To quit Tinkle, choose &amp;ldquo;Quit Tinkle&amp;rdquo; from menu bar.&lt;/p&gt
     </item>
     
     <item>
-      <title>Docs: Open preferences window</title>
-      <link>/docs/configuration/open-preferences-window/</link>
+      <title>Docs: Open Settings</title>
+      <link>/docs/configuration/open-settings/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/configuration/open-preferences-window/</guid>
+      <guid>/docs/configuration/open-settings/</guid>
       <description>
         
         
         &lt;ol&gt;
-&lt;li&gt;Open Preferences from menu bar.
+&lt;li&gt;Open Settings from menu bar.
 
     
     
@@ -184,9 +184,9 @@ To quit Tinkle, choose &amp;ldquo;Quit Tinkle&amp;rdquo; from menu bar.&lt;/p&gt
     
     &lt;figure&gt;
       &lt;img
-        src=&#34;/docs/configuration/open-preferences-window/images/menu-icon@2x.png&#34;
+        src=&#34;/docs/configuration/open-settings/images/menu-icon@2x.png&#34;
         alt=&#34;menu-icon@2x.png&#34;
-        style=&#34;width: 219px&#34;
+        style=&#34;width: 197px&#34;
       /&gt;
     &lt;/figure&gt;
 &lt;/li&gt;
@@ -196,10 +196,10 @@ To quit Tinkle, choose &amp;ldquo;Quit Tinkle&amp;rdquo; from menu bar.&lt;/p&gt
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
 
-    &lt;p&gt;If you&amp;rsquo;ve hidden the menu bar icon, open Tinkle again from Launchpad while Tinkle is already running to open preferences window.&lt;/p&gt;
+    &lt;p&gt;If you&amp;rsquo;ve hidden the menu bar icon, open Tinkle again from Launchpad while Tinkle is already running to open Settings.&lt;/p&gt;
 &lt;figure&gt;
   &lt;img
-    src=&#34;/docs/configuration/open-preferences-window/images/launchpad@2x.png&#34;
+    src=&#34;/docs/configuration/open-settings/images/launchpad@2x.png&#34;
     alt=&#34;launchpad@2x.png&#34;
     style=&#34;width: 426px&#34;
   /&gt;
@@ -223,7 +223,7 @@ To quit Tinkle, choose &amp;ldquo;Quit Tinkle&amp;rdquo; from menu bar.&lt;/p&gt
         
         &lt;p&gt;You can change the effect.&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;../open-preferences-window/&#34;&gt;Open preferences window&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../open-settings/&#34;&gt;Open Settings&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;Choose the effect.
 
     
@@ -236,7 +236,7 @@ To quit Tinkle, choose &amp;ldquo;Quit Tinkle&amp;rdquo; from menu bar.&lt;/p&gt
       &lt;img
         src=&#34;/docs/configuration/effect-configuration/images/effect@2x.png&#34;
         alt=&#34;effect@2x.png&#34;
-        style=&#34;width: 600px&#34;
+        style=&#34;width: 900px&#34;
       /&gt;
     &lt;/figure&gt;
 &lt;/li&gt;
@@ -244,12 +244,12 @@ To quit Tinkle, choose &amp;ldquo;Quit Tinkle&amp;rdquo; from menu bar.&lt;/p&gt
 &lt;h2 id=&#34;effects&#34;&gt;Effects&lt;/h2&gt;
 &lt;div class=&#34;d-flex&#34;&gt;
     &lt;div class=&#34;me-4 p-2 border&#34;&gt;
-        Shock wave (blue)&lt;br /&gt;
-        &lt;img src=&#34;images/shockwave.gif&#34; width=&#34;200&#34; alt=&#34;shockwave&#34; /&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;me-4 p-2 border&#34;&gt;
         Neon (blue)&lt;br /&gt;
         &lt;img src=&#34;images/neon.gif&#34; width=&#34;200&#34; alt=&#34;neon&#34; /&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;me-4 p-2 border&#34;&gt;
+        Shock wave (blue)&lt;br /&gt;
+        &lt;img src=&#34;images/shockwave.gif&#34; width=&#34;200&#34; alt=&#34;shockwave&#34; /&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -314,7 +314,7 @@ To quit Tinkle, choose &amp;ldquo;Quit Tinkle&amp;rdquo; from menu bar.&lt;/p&gt
         
         &lt;p&gt;You can launch Tinkle automaticaly at login.&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;../open-preferences-window/&#34;&gt;Open preferences window&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../open-settings/&#34;&gt;Open Settings&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;Enable &lt;code&gt;Open at login&lt;/code&gt;.
 
     
@@ -327,7 +327,7 @@ To quit Tinkle, choose &amp;ldquo;Quit Tinkle&amp;rdquo; from menu bar.&lt;/p&gt
       &lt;img
         src=&#34;/docs/configuration/open-at-login/images/open-at-login@2x.png&#34;
         alt=&#34;open-at-login@2x.png&#34;
-        style=&#34;width: 600px&#34;
+        style=&#34;width: 900px&#34;
       /&gt;
     &lt;/figure&gt;
 &lt;/li&gt;
@@ -345,9 +345,9 @@ To quit Tinkle, choose &amp;ldquo;Quit Tinkle&amp;rdquo; from menu bar.&lt;/p&gt
       <description>
         
         
-        &lt;p&gt;You can hide the icon in menu bar from preferences.&lt;/p&gt;
+        &lt;p&gt;You can hide the icon in menu bar from Settings.&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;../open-preferences-window/&#34;&gt;Open preferences window&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../open-settings/&#34;&gt;Open Settings&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;Turn off &lt;code&gt;Show icon in menu bar&lt;/code&gt;.
 
     
@@ -360,7 +360,7 @@ To quit Tinkle, choose &amp;ldquo;Quit Tinkle&amp;rdquo; from menu bar.&lt;/p&gt
       &lt;img
         src=&#34;/docs/configuration/hide-menu-bar-icon/images/hide-menu-bar-icon@2x.png&#34;
         alt=&#34;hide-menu-bar-icon@2x.png&#34;
-        style=&#34;width: 600px&#34;
+        style=&#34;width: 900px&#34;
       /&gt;
     &lt;/figure&gt;
 &lt;/li&gt;
@@ -390,7 +390,7 @@ To quit Tinkle, choose &amp;ldquo;Quit Tinkle&amp;rdquo; from menu bar.&lt;/p&gt
   &lt;img
     src=&#34;/docs/help/use-beta/images/check-for-beta-updates@2x.png&#34;
     alt=&#34;check-for-beta-updates@2x.png&#34;
-    style=&#34;width: 600px&#34;
+    style=&#34;width: 900px&#34;
   /&gt;
 &lt;/figure&gt;
 
@@ -422,7 +422,23 @@ To quit Tinkle, choose &amp;ldquo;Quit Tinkle&amp;rdquo; from menu bar.&lt;/p&gt
       <description>
         
         
-        &lt;h2 id=&#34;tinkle-210&#34;&gt;Tinkle 2.1.0&lt;/h2&gt;
+        &lt;h2 id=&#34;tinkle-230&#34;&gt;Tinkle 2.3.0&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/pqrs-org/Tinkle/releases/download/v2.3.0/Tinkle-2.3.0.dmg&#34;&gt;📦 Download&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;📅 Release date
+&lt;ul&gt;
+&lt;li&gt;Jul 16, 2023&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;⚡️ Improvements
+&lt;ul&gt;
+&lt;li&gt;Changed the default effect to Neon (gray).&lt;/li&gt;
+&lt;li&gt;Became sandboxed app.&lt;/li&gt;
+&lt;li&gt;Sparkle Framework has been updated.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;tinkle-210&#34;&gt;Tinkle 2.1.0&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/pqrs-org/Tinkle/releases/download/v2.1.0/Tinkle-2.1.0.dmg&#34;&gt;📦 Download&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;📅 Release date

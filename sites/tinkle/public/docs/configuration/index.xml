@@ -15,16 +15,16 @@
     
     
     <item>
-      <title>Docs: Open preferences window</title>
-      <link>/docs/configuration/open-preferences-window/</link>
+      <title>Docs: Open Settings</title>
+      <link>/docs/configuration/open-settings/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/configuration/open-preferences-window/</guid>
+      <guid>/docs/configuration/open-settings/</guid>
       <description>
         
         
         &lt;ol&gt;
-&lt;li&gt;Open Preferences from menu bar.
+&lt;li&gt;Open Settings from menu bar.
 
     
     
@@ -34,9 +34,9 @@
     
     &lt;figure&gt;
       &lt;img
-        src=&#34;/docs/configuration/open-preferences-window/images/menu-icon@2x.png&#34;
+        src=&#34;/docs/configuration/open-settings/images/menu-icon@2x.png&#34;
         alt=&#34;menu-icon@2x.png&#34;
-        style=&#34;width: 219px&#34;
+        style=&#34;width: 197px&#34;
       /&gt;
     &lt;/figure&gt;
 &lt;/li&gt;
@@ -46,10 +46,10 @@
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
 
-    &lt;p&gt;If you&amp;rsquo;ve hidden the menu bar icon, open Tinkle again from Launchpad while Tinkle is already running to open preferences window.&lt;/p&gt;
+    &lt;p&gt;If you&amp;rsquo;ve hidden the menu bar icon, open Tinkle again from Launchpad while Tinkle is already running to open Settings.&lt;/p&gt;
 &lt;figure&gt;
   &lt;img
-    src=&#34;/docs/configuration/open-preferences-window/images/launchpad@2x.png&#34;
+    src=&#34;/docs/configuration/open-settings/images/launchpad@2x.png&#34;
     alt=&#34;launchpad@2x.png&#34;
     style=&#34;width: 426px&#34;
   /&gt;
@@ -73,7 +73,7 @@
         
         &lt;p&gt;You can change the effect.&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;../open-preferences-window/&#34;&gt;Open preferences window&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../open-settings/&#34;&gt;Open Settings&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;Choose the effect.
 
     
@@ -86,7 +86,7 @@
       &lt;img
         src=&#34;/docs/configuration/effect-configuration/images/effect@2x.png&#34;
         alt=&#34;effect@2x.png&#34;
-        style=&#34;width: 600px&#34;
+        style=&#34;width: 900px&#34;
       /&gt;
     &lt;/figure&gt;
 &lt;/li&gt;
@@ -94,12 +94,12 @@
 &lt;h2 id=&#34;effects&#34;&gt;Effects&lt;/h2&gt;
 &lt;div class=&#34;d-flex&#34;&gt;
     &lt;div class=&#34;me-4 p-2 border&#34;&gt;
-        Shock wave (blue)&lt;br /&gt;
-        &lt;img src=&#34;images/shockwave.gif&#34; width=&#34;200&#34; alt=&#34;shockwave&#34; /&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;me-4 p-2 border&#34;&gt;
         Neon (blue)&lt;br /&gt;
         &lt;img src=&#34;images/neon.gif&#34; width=&#34;200&#34; alt=&#34;neon&#34; /&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;me-4 p-2 border&#34;&gt;
+        Shock wave (blue)&lt;br /&gt;
+        &lt;img src=&#34;images/shockwave.gif&#34; width=&#34;200&#34; alt=&#34;shockwave&#34; /&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -117,7 +117,7 @@
         
         &lt;p&gt;You can launch Tinkle automaticaly at login.&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;../open-preferences-window/&#34;&gt;Open preferences window&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../open-settings/&#34;&gt;Open Settings&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;Enable &lt;code&gt;Open at login&lt;/code&gt;.
 
     
@@ -130,7 +130,7 @@
       &lt;img
         src=&#34;/docs/configuration/open-at-login/images/open-at-login@2x.png&#34;
         alt=&#34;open-at-login@2x.png&#34;
-        style=&#34;width: 600px&#34;
+        style=&#34;width: 900px&#34;
       /&gt;
     &lt;/figure&gt;
 &lt;/li&gt;
@@ -148,9 +148,9 @@
       <description>
         
         
-        &lt;p&gt;You can hide the icon in menu bar from preferences.&lt;/p&gt;
+        &lt;p&gt;You can hide the icon in menu bar from Settings.&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;../open-preferences-window/&#34;&gt;Open preferences window&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../open-settings/&#34;&gt;Open Settings&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;Turn off &lt;code&gt;Show icon in menu bar&lt;/code&gt;.
 
     
@@ -163,7 +163,7 @@
       &lt;img
         src=&#34;/docs/configuration/hide-menu-bar-icon/images/hide-menu-bar-icon@2x.png&#34;
         alt=&#34;hide-menu-bar-icon@2x.png&#34;
-        style=&#34;width: 600px&#34;
+        style=&#34;width: 900px&#34;
       /&gt;
     &lt;/figure&gt;
 &lt;/li&gt;
