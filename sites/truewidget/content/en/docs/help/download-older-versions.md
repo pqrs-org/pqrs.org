@@ -1,7 +1,7 @@
 ---
-title: 'Download older versions'
+title: 'Downgrade to older version'
 weight: 300
 simple_list: true
 ---
 
-You can download older versions of TrueWidget from [Release notes](/docs/releasenotes/).
+Download an older version package from [Release notes](/docs/releasenotes/) and install it.
