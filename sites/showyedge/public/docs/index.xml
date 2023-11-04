@@ -510,7 +510,26 @@ You can use the Desktop background as an indicator.&lt;/li&gt;
       <description>
         
         
-        &lt;h2 id=&#34;showyedge-560&#34;&gt;ShowyEdge 5.6.0&lt;/h2&gt;
+        &lt;h2 id=&#34;showyedge-570&#34;&gt;ShowyEdge 5.7.0&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/pqrs-org/ShowyEdge/releases/download/v5.7.0/ShowyEdge-5.7.0.dmg&#34;&gt;📦 Download&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;📅 Release date
+&lt;ul&gt;
+&lt;li&gt;Mov 4, 2023&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;⚡️ Improvements
+&lt;ul&gt;
+&lt;li&gt;macOS Sonoma support has been improved.
+&lt;ul&gt;
+&lt;li&gt;The color picker opacity now works correctly on macOS Sonoma.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Sparkle Framework has been updated.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;showyedge-560&#34;&gt;ShowyEdge 5.6.0&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/pqrs-org/ShowyEdge/releases/download/v5.6.0/ShowyEdge-5.6.0.dmg&#34;&gt;📦 Download&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;📅 Release date
