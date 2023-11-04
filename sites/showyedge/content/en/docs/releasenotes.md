@@ -6,6 +6,16 @@ exclude_search: true
 body_class: release-notes
 ---
 
+## ShowyEdge 5.7.0
+
+-   [📦 Download](https://github.com/pqrs-org/ShowyEdge/releases/download/v5.7.0/ShowyEdge-5.7.0.dmg)
+-   📅 Release date
+    -   Mov 4, 2023
+-   ⚡️ Improvements
+    -   macOS Sonoma support has been improved.
+        -   The color picker opacity now works correctly on macOS Sonoma.
+    -   Sparkle Framework has been updated.
+
 ## ShowyEdge 5.6.0
 
 -   [📦 Download](https://github.com/pqrs-org/ShowyEdge/releases/download/v5.6.0/ShowyEdge-5.6.0.dmg)
