@@ -13,7 +13,7 @@ defaultContentLanguageInSubdir = false
 # Useful when translating.
 enableMissingTranslationPlaceholders = true
 
-disableKinds = ["taxonomy", "taxonomyTerm"]
+disableKinds = ["taxonomy"]
 
 # Highlighting config
 pygmentsCodeFences = true
@@ -50,7 +50,7 @@ id = "G-NL3CW99MZS"
 # Language configuration
 
 [languages]
-[languages.en]
+[languages.en.params]
 title = "Disable DragAndDrop"
 description = "A Thunderbird add-on which disables drag and drop on the folder tree in order to prevent unintended folder movement."
 languageName ="English"

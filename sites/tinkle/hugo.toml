@@ -13,7 +13,7 @@ defaultContentLanguageInSubdir = false
 # Useful when translating.
 enableMissingTranslationPlaceholders = true
 
-disableKinds = ["taxonomy", "taxonomyTerm"]
+disableKinds = ["taxonomy"]
 
 # Highlighting config
 pygmentsCodeFences = true
@@ -50,7 +50,7 @@ id = "G-NL3CW99MZS"
 # Language configuration
 
 [languages]
-[languages.en]
+[languages.en.params]
 title = "Tinkle"
 description = "A macOS app that appends a visual effect at the focused window changes."
 languageName ="English"
