@@ -20,4 +20,8 @@ You can change the effect.
         Shock wave (blue)<br />
         <img src="images/shockwave.gif" width="200" alt="shockwave" />
     </div>
+    <div class="me-4 p-2 border">
+        Line (blue)<br />
+        <img src="images/line.gif" width="200" alt="shockwave" />
+    </div>
 </div>
