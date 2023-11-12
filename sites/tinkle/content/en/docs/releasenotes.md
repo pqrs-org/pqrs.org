@@ -6,6 +6,16 @@ exclude_search: true
 body_class: release-notes
 ---
 
+## Tinkle 2.4.0
+
+-   [📦 Download](https://github.com/pqrs-org/Tinkle/releases/download/v2.4.0/Tinkle-2.4.0.dmg)
+-   📅 Release date
+    -   Nov 12, 2023
+-   ⚡️ Improvements
+    -   Neon effects have been improved for better visibility.
+    -   Added `Line` into the effect choices.
+    -   Sparkle Framework has been updated.
+
 ## Tinkle 2.3.0
 
 -   [📦 Download](https://github.com/pqrs-org/Tinkle/releases/download/v2.3.0/Tinkle-2.3.0.dmg)
