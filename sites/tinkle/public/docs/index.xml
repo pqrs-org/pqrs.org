@@ -251,6 +251,10 @@ To quit Tinkle, choose &amp;ldquo;Quit Tinkle&amp;rdquo; from menu bar.&lt;/p&gt
         Shock wave (blue)&lt;br /&gt;
         &lt;img src=&#34;images/shockwave.gif&#34; width=&#34;200&#34; alt=&#34;shockwave&#34; /&gt;
     &lt;/div&gt;
+    &lt;div class=&#34;me-4 p-2 border&#34;&gt;
+        Line (blue)&lt;br /&gt;
+        &lt;img src=&#34;images/line.gif&#34; width=&#34;200&#34; alt=&#34;shockwave&#34; /&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 
       </description>
@@ -422,7 +426,23 @@ To quit Tinkle, choose &amp;ldquo;Quit Tinkle&amp;rdquo; from menu bar.&lt;/p&gt
       <description>
         
         
-        &lt;h2 id=&#34;tinkle-230&#34;&gt;Tinkle 2.3.0&lt;/h2&gt;
+        &lt;h2 id=&#34;tinkle-240&#34;&gt;Tinkle 2.4.0&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/pqrs-org/Tinkle/releases/download/v2.4.0/Tinkle-2.4.0.dmg&#34;&gt;📦 Download&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;📅 Release date
+&lt;ul&gt;
+&lt;li&gt;Nov 12, 2023&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;⚡️ Improvements
+&lt;ul&gt;
+&lt;li&gt;Neon effects have been improved for better visibility.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;Line&lt;/code&gt; into the effect choices.&lt;/li&gt;
+&lt;li&gt;Sparkle Framework has been updated.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;tinkle-230&#34;&gt;Tinkle 2.3.0&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/pqrs-org/Tinkle/releases/download/v2.3.0/Tinkle-2.3.0.dmg&#34;&gt;📦 Download&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;📅 Release date
