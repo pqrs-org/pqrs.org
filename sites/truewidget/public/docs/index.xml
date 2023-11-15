@@ -542,7 +542,23 @@ To quit TrueWidget, choose &amp;ldquo;Quit TrueWidget&amp;rdquo; from the menu b
       <description>
         
         
-        &lt;h2 id=&#34;truewidget-140&#34;&gt;TrueWidget 1.4.0&lt;/h2&gt;
+        &lt;h2 id=&#34;truewidget-160&#34;&gt;TrueWidget 1.6.0&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/pqrs-org/TrueWidget/releases/download/v1.6.0/TrueWidget-1.6.0.dmg&#34;&gt;📦 Download&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;📅 Release date
+&lt;ul&gt;
+&lt;li&gt;Nov 15, 2023&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;⚡️ Improvements
+&lt;ul&gt;
+&lt;li&gt;Updated the app icon.&lt;/li&gt;
+&lt;li&gt;Reduced memory usage of TrueWidget Helper.&lt;/li&gt;
+&lt;li&gt;Sparkle Framework has been updated.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;truewidget-140&#34;&gt;TrueWidget 1.4.0&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/pqrs-org/TrueWidget/releases/download/v1.4.0/TrueWidget-1.4.0.dmg&#34;&gt;📦 Download&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;📅 Release date
