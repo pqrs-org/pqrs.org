@@ -6,6 +6,16 @@ exclude_search: true
 body_class: release-notes
 ---
 
+## TrueWidget 1.6.0
+
+-   [📦 Download](https://github.com/pqrs-org/TrueWidget/releases/download/v1.6.0/TrueWidget-1.6.0.dmg)
+-   📅 Release date
+    -   Nov 15, 2023
+-   ⚡️ Improvements
+    -   Updated the app icon.
+    -   Reduced memory usage of TrueWidget Helper.
+    -   Sparkle Framework has been updated.
+
 ## TrueWidget 1.4.0
 
 -   [📦 Download](https://github.com/pqrs-org/TrueWidget/releases/download/v1.4.0/TrueWidget-1.4.0.dmg)
