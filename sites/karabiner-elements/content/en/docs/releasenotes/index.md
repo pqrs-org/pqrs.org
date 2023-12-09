@@ -25,6 +25,7 @@ body_class: release-notes
         -   `Swap mouse wheels`
     -   Gamepad support (DirectInput devices are supported. Xinput is not supported at all)
     -   Added "Add your own rule" button into Complex Modifications settings.
+    -   The json content of Complex Modifications can now be changed via the Edit button.
     -   Added "Move item to top" and "Move item to bottom" into the context menu of the Complex Modifications list.
     -   Add the following options to `karabiner_cli`
         -   `--format-json`
