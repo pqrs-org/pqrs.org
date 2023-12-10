@@ -10,7 +10,7 @@ Karabiner-Elements configuration file paths:
         Karabiner-Elements watches this file and reload it automatically when it is updated.
 -   `~/.config/karabiner/assets/complex_modifications`
     -   Imported complex_modifications files.<br />
-        You can use them in Karabiner-Elements Settings > Complex Modifications > Add rule.
+        You can use them in Karabiner-Elements Settings > Complex Modifications > Add predefined rule.
 
 {{% alert title="Tip: file update detection and automatic reload" color="primary" %}}
 

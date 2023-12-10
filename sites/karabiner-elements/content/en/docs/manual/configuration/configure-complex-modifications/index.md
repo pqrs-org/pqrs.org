@@ -30,7 +30,7 @@ If you want to write your own rules, try [external config generators](/docs/json
 
 ## Step 1
 
-Open Complex Modifications tab and press **Add rule** button, then press **Import more rules from the internet** button.<br />
+Open Complex Modifications tab and press **Add predefined rule** button, then press **Import more rules from the internet** button.<br />
 [Official rules site](https://ke-complex-modifications.pqrs.org/) will be open using your default web browser.
 
 {{< local-image src="images/karabiner-elements-complex-modifications-1@2x.png" >}}
