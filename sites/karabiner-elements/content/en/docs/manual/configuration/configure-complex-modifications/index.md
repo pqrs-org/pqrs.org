@@ -22,13 +22,18 @@ These rules change keys by conditions.
 
 {{% /alert %}}
 
-You can import predefined rules from the internet or make your own rules.
+There are two ways to add rules
 
-{{% alert title="Tip" color="secondary" %}}
-If you want to write your own rules, try [external config generators](/docs/json/external-json-generators/) or modify [existing rules](https://github.com/pqrs-org/KE-complex_modifications).
-{{% /alert %}}
+-   Import predefined rules maintained by the community
+-   Create your own rules
 
-## Step 1
+In both cases, you can modify the rules later to make them more personalised.
+
+---
+
+## Import predefined rules
+
+### Step 1
 
 Open Complex Modifications tab and press **Add predefined rule** button, then press **Import more rules from the internet** button.<br />
 [Official rules site](https://ke-complex-modifications.pqrs.org/) will be open using your default web browser.
@@ -36,7 +41,7 @@ Open Complex Modifications tab and press **Add predefined rule** button, then pr
 {{< local-image src="images/karabiner-elements-complex-modifications-1@2x.png" >}}
 {{< local-image src="images/karabiner-elements-complex-modifications-2@2x.png" >}}
 
-## Step 2
+### Step 2
 
 Press **Import** button in the page.<br />
 A confirmation dialog is shown. Press **Allow** button.
@@ -44,20 +49,51 @@ A confirmation dialog is shown. Press **Allow** button.
 {{< local-image src="images/karabiner-elements-complex-modifications-3@2x.png" >}}
 {{< local-image src="images/karabiner-elements-complex-modifications-4@2x.png" >}}
 
-## Step 3
+### Step 3
 
 Karabiner-Elements is shown again.
 Press **Import** button, then new rules are imported.<br />
 
 {{< local-image src="images/karabiner-elements-complex-modifications-5@2x.png" >}}
 
-## Step 4
+### Step 4
 
 Press **Enable** button.
 
 {{< local-image src="images/karabiner-elements-complex-modifications-6@2x.png" >}}
 
-## Step 5
+### Step 5
 
 New rule is enabled.<br />
 Confirm the result using [Karabiner-EventViewer](/docs/manual/operation/eventviewer/).
+
+---
+
+## Create your own rules
+
+### Step 1
+
+Open Complex Modifications tab and press **Add your own rule** button.<br />
+
+{{< local-image src="images/own-rule-1@2x.png" >}}
+
+### Step 2
+
+An editor will open with sample rules.
+Change the content and press the Save button to register.
+
+When making changes, [Karabiner-EventViewer](/docs/manual/operation/eventviewer/) and [Karabiner Configuration Reference Manual](/docs/json/) can be used to confirm the key names and how to write rules.
+
+{{< local-image src="images/own-rule-2@2x.png" >}}
+
+---
+
+## Edit rules
+
+Open Complex Modifications tab and press **Edit** button.
+The editor will open. Change the contents and save it.
+
+When making changes, [Karabiner-EventViewer](/docs/manual/operation/eventviewer/) and [Karabiner Configuration Reference Manual](/docs/json/) can be used to confirm the key names and how to write rules.
+
+{{< local-image src="images/edit-rule-1@2x.png" >}}
+{{< local-image src="images/edit-rule-2@2x.png" >}}
