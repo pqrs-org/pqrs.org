@@ -26,8 +26,8 @@ This setting exists only on macOS Ventura or later
 Karabier-Elements has processes running constantly in the background, that handle input events.
 You have to keep the background items enabled in `macOS System Settings > General > Login Items`.
 
-{{< local-image src="images/login-items0.png" >}}
-{{< local-image src="images/login-items1.png" >}}
+{{< local-image src="images/login-items0@2x.png" >}}
+{{< local-image src="images/login-items1@2x.png" >}}
 
 {{% /alert %}}
 
@@ -41,8 +41,8 @@ Karabiner-Elements requires Input Monitoring permission to receive and modify in
 
 You can enable it in `macOS System Settings > Privacy & Security > Input Monitoring`.
 
-{{< local-image src="images/input-monitoring2.png" >}}
-{{< local-image src="images/input-monitoring3.png" >}}
+{{< local-image src="images/input-monitoring2@2x.png" >}}
+{{< local-image src="images/input-monitoring3@2x.png" >}}
 
 {{% /alert %}}
 
@@ -52,8 +52,8 @@ If you cannot find `karabiner_grabber` or `karabiner_observer` in the list, this
 
 `karabiner_grabber` and `karabiner_observer` will be shown in the list after the dialogs are closed.
 
-{{< local-image src="images/input-monitoring0.png" >}}
-{{< local-image src="images/input-monitoring1.png" >}}
+{{< local-image src="images/input-monitoring0@2x.png" >}}
+{{< local-image src="images/input-monitoring1@2x.png" >}}
 
 {{% /alert %}}
 
@@ -69,7 +69,7 @@ You can confirm whether the system extension already allowed in [EventViewer](/d
 
 If `org.pqrs.Karabiner-DriverKit-VirtualHIDDevice` appears in the System Extensions of the EventViewer and the status is `[activated enabled]`, the system extension is already allowed.
 
-{{< local-image src="images/system-extension0.png" >}}
+{{< local-image src="images/system-extension0@2x.png" >}}
 
 Otherwise, you have to approve the system extension in macOS System Settings.
 
@@ -77,6 +77,6 @@ Otherwise, you have to approve the system extension in macOS System Settings.
 
 You can approve the system extension in `macOS System Settings > Privacy & Security`.
 
-{{< local-image src="images/system-extension2.png" >}}
+{{< local-image src="images/system-extension2@2x.png" >}}
 
 {{% /alert %}}
