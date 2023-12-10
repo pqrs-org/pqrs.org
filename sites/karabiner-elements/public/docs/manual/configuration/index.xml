@@ -140,7 +140,7 @@ These rules change keys by conditions.&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;h2 id=&#34;step-1&#34;&gt;Step 1&lt;/h2&gt;
-&lt;p&gt;Open Complex Modifications tab and press &lt;strong&gt;Add rule&lt;/strong&gt; button, then press &lt;strong&gt;Import more rules from the internet&lt;/strong&gt; button.&lt;br /&gt;
+&lt;p&gt;Open Complex Modifications tab and press &lt;strong&gt;Add predefined rule&lt;/strong&gt; button, then press &lt;strong&gt;Import more rules from the internet&lt;/strong&gt; button.&lt;br /&gt;
 &lt;a href=&#34;https://ke-complex-modifications.pqrs.org/&#34;&gt;Official rules site&lt;/a&gt; will be open using your default web browser.&lt;/p&gt;
 &lt;p&gt;
 
@@ -415,7 +415,7 @@ And then, choose the country code when you want to change the current keyboard t
   &lt;img
     src=&#34;/docs/manual/configuration/configure-menu-bar-icon/images/menu@2x.png&#34;
     alt=&#34;menu@2x.png&#34;
-    style=&#34;width: 430px&#34;
+    style=&#34;width: 376px&#34;
   /&gt;
 &lt;/figure&gt;
 

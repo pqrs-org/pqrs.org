@@ -50,16 +50,16 @@
 You have to keep the background items enabled in &lt;code&gt;macOS System Settings &amp;gt; General &amp;gt; Login Items&lt;/code&gt;.&lt;/p&gt;
 &lt;figure&gt;
   &lt;img
-    src=&#34;/docs/manual/misc/required-macos-settings/images/login-items0.png&#34;
-    alt=&#34;login-items0.png&#34;
-    style=&#34;width: 896px&#34;
+    src=&#34;/docs/manual/misc/required-macos-settings/images/login-items0@2x.png&#34;
+    alt=&#34;login-items0@2x.png&#34;
+    style=&#34;width: 464px&#34;
   /&gt;
 &lt;/figure&gt;
 &lt;figure&gt;
   &lt;img
-    src=&#34;/docs/manual/misc/required-macos-settings/images/login-items1.png&#34;
-    alt=&#34;login-items1.png&#34;
-    style=&#34;width: 1430px&#34;
+    src=&#34;/docs/manual/misc/required-macos-settings/images/login-items1@2x.png&#34;
+    alt=&#34;login-items1@2x.png&#34;
+    style=&#34;width: 715px&#34;
   /&gt;
 &lt;/figure&gt;
 
@@ -77,16 +77,16 @@ You have to keep the background items enabled in &lt;code&gt;macOS System Settin
 &lt;p&gt;You can enable it in &lt;code&gt;macOS System Settings &amp;gt; Privacy &amp;amp; Security &amp;gt; Input Monitoring&lt;/code&gt;.&lt;/p&gt;
 &lt;figure&gt;
   &lt;img
-    src=&#34;/docs/manual/misc/required-macos-settings/images/input-monitoring2.png&#34;
-    alt=&#34;input-monitoring2.png&#34;
-    style=&#34;width: 1430px&#34;
+    src=&#34;/docs/manual/misc/required-macos-settings/images/input-monitoring2@2x.png&#34;
+    alt=&#34;input-monitoring2@2x.png&#34;
+    style=&#34;width: 715px&#34;
   /&gt;
 &lt;/figure&gt;
 &lt;figure&gt;
   &lt;img
-    src=&#34;/docs/manual/misc/required-macos-settings/images/input-monitoring3.png&#34;
-    alt=&#34;input-monitoring3.png&#34;
-    style=&#34;width: 1430px&#34;
+    src=&#34;/docs/manual/misc/required-macos-settings/images/input-monitoring3@2x.png&#34;
+    alt=&#34;input-monitoring3@2x.png&#34;
+    style=&#34;width: 715px&#34;
   /&gt;
 &lt;/figure&gt;
 
@@ -102,16 +102,16 @@ You have to keep the background items enabled in &lt;code&gt;macOS System Settin
 &lt;p&gt;&lt;code&gt;karabiner_grabber&lt;/code&gt; and &lt;code&gt;karabiner_observer&lt;/code&gt; will be shown in the list after the dialogs are closed.&lt;/p&gt;
 &lt;figure&gt;
   &lt;img
-    src=&#34;/docs/manual/misc/required-macos-settings/images/input-monitoring0.png&#34;
-    alt=&#34;input-monitoring0.png&#34;
-    style=&#34;width: 922px&#34;
+    src=&#34;/docs/manual/misc/required-macos-settings/images/input-monitoring0@2x.png&#34;
+    alt=&#34;input-monitoring0@2x.png&#34;
+    style=&#34;width: 461px&#34;
   /&gt;
 &lt;/figure&gt;
 &lt;figure&gt;
   &lt;img
-    src=&#34;/docs/manual/misc/required-macos-settings/images/input-monitoring1.png&#34;
-    alt=&#34;input-monitoring1.png&#34;
-    style=&#34;width: 922px&#34;
+    src=&#34;/docs/manual/misc/required-macos-settings/images/input-monitoring1@2x.png&#34;
+    alt=&#34;input-monitoring1@2x.png&#34;
+    style=&#34;width: 461px&#34;
   /&gt;
 &lt;/figure&gt;
 
@@ -131,9 +131,9 @@ You can confirm whether the system extension already allowed in &lt;a href=&#34;
 &lt;p&gt;If &lt;code&gt;org.pqrs.Karabiner-DriverKit-VirtualHIDDevice&lt;/code&gt; appears in the System Extensions of the EventViewer and the status is &lt;code&gt;[activated enabled]&lt;/code&gt;, the system extension is already allowed.&lt;/p&gt;
 &lt;figure&gt;
   &lt;img
-    src=&#34;/docs/manual/misc/required-macos-settings/images/system-extension0.png&#34;
-    alt=&#34;system-extension0.png&#34;
-    style=&#34;width: 2200px&#34;
+    src=&#34;/docs/manual/misc/required-macos-settings/images/system-extension0@2x.png&#34;
+    alt=&#34;system-extension0@2x.png&#34;
+    style=&#34;width: 1100px&#34;
   /&gt;
 &lt;/figure&gt;
 &lt;p&gt;Otherwise, you have to approve the system extension in macOS System Settings.&lt;/p&gt;
@@ -141,9 +141,9 @@ You can confirm whether the system extension already allowed in &lt;a href=&#34;
 &lt;p&gt;You can approve the system extension in &lt;code&gt;macOS System Settings &amp;gt; Privacy &amp;amp; Security&lt;/code&gt;.&lt;/p&gt;
 &lt;figure&gt;
   &lt;img
-    src=&#34;/docs/manual/misc/required-macos-settings/images/system-extension2.png&#34;
-    alt=&#34;system-extension2.png&#34;
-    style=&#34;width: 1430px&#34;
+    src=&#34;/docs/manual/misc/required-macos-settings/images/system-extension2@2x.png&#34;
+    alt=&#34;system-extension2@2x.png&#34;
+    style=&#34;width: 715px&#34;
   /&gt;
 &lt;/figure&gt;
 
@@ -343,7 +343,23 @@ Karabiner-Elements.&lt;/p&gt;
       &lt;img
         src=&#34;/docs/manual/misc/multitouch-extension/images/multitouch-extension-2@2x.png&#34;
         alt=&#34;multitouch-extension-2@2x.png&#34;
-        style=&#34;width: 540px&#34;
+        style=&#34;width: 900px&#34;
+      /&gt;
+    &lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;Adjust the effective area of the trackpad.
+
+    
+    
+    
+      
+    
+    
+    &lt;figure&gt;
+      &lt;img
+        src=&#34;/docs/manual/misc/multitouch-extension/images/multitouch-extension-3@2x.png&#34;
+        alt=&#34;multitouch-extension-3@2x.png&#34;
+        style=&#34;width: 900px&#34;
       /&gt;
     &lt;/figure&gt;
 &lt;/li&gt;

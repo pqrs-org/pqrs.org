@@ -34,7 +34,7 @@ Karabiner-Elements watches this file and reload it automatically when it is upda
 &lt;li&gt;&lt;code&gt;~/.config/karabiner/assets/complex_modifications&lt;/code&gt;
 &lt;ul&gt;
 &lt;li&gt;Imported complex_modifications files.&lt;br /&gt;
-You can use them in Karabiner-Elements Settings &amp;gt; Complex Modifications &amp;gt; Add rule.&lt;/li&gt;
+You can use them in Karabiner-Elements Settings &amp;gt; Complex Modifications &amp;gt; Add predefined rule.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
