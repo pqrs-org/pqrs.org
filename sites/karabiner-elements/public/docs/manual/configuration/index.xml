@@ -129,17 +129,15 @@ These rules change keys by conditions.&lt;/p&gt;
 
 &lt;/div&gt;
 
-&lt;p&gt;You can import predefined rules from the internet or make your own rules.&lt;/p&gt;
-
-
-&lt;div class=&#34;alert alert-secondary&#34; role=&#34;alert&#34;&gt;
-&lt;h4 class=&#34;alert-heading&#34;&gt;Tip&lt;/h4&gt;
-
-    If you want to write your own rules, try &lt;a href=&#34;/docs/json/external-json-generators/&#34;&gt;external config generators&lt;/a&gt; or modify &lt;a href=&#34;https://github.com/pqrs-org/KE-complex_modifications&#34;&gt;existing rules&lt;/a&gt;.
-
-&lt;/div&gt;
-
-&lt;h2 id=&#34;step-1&#34;&gt;Step 1&lt;/h2&gt;
+&lt;p&gt;There are two ways to add rules&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Import predefined rules maintained by the community&lt;/li&gt;
+&lt;li&gt;Create your own rules&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In both cases, you can modify the rules later to make them more personalised.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;import-predefined-rules&#34;&gt;Import predefined rules&lt;/h2&gt;
+&lt;h3 id=&#34;step-1&#34;&gt;Step 1&lt;/h3&gt;
 &lt;p&gt;Open Complex Modifications tab and press &lt;strong&gt;Add predefined rule&lt;/strong&gt; button, then press &lt;strong&gt;Import more rules from the internet&lt;/strong&gt; button.&lt;br /&gt;
 &lt;a href=&#34;https://ke-complex-modifications.pqrs.org/&#34;&gt;Official rules site&lt;/a&gt; will be open using your default web browser.&lt;/p&gt;
 &lt;p&gt;
@@ -172,7 +170,7 @@ These rules change keys by conditions.&lt;/p&gt;
   /&gt;
 &lt;/figure&gt;
 &lt;/p&gt;
-&lt;h2 id=&#34;step-2&#34;&gt;Step 2&lt;/h2&gt;
+&lt;h3 id=&#34;step-2&#34;&gt;Step 2&lt;/h3&gt;
 &lt;p&gt;Press &lt;strong&gt;Import&lt;/strong&gt; button in the page.&lt;br /&gt;
 A confirmation dialog is shown. Press &lt;strong&gt;Allow&lt;/strong&gt; button.&lt;/p&gt;
 &lt;p&gt;
@@ -205,7 +203,7 @@ A confirmation dialog is shown. Press &lt;strong&gt;Allow&lt;/strong&gt; button.
   /&gt;
 &lt;/figure&gt;
 &lt;/p&gt;
-&lt;h2 id=&#34;step-3&#34;&gt;Step 3&lt;/h2&gt;
+&lt;h3 id=&#34;step-3&#34;&gt;Step 3&lt;/h3&gt;
 &lt;p&gt;Karabiner-Elements is shown again.
 Press &lt;strong&gt;Import&lt;/strong&gt; button, then new rules are imported.&lt;br /&gt;&lt;/p&gt;
 
@@ -223,7 +221,7 @@ Press &lt;strong&gt;Import&lt;/strong&gt; button, then new rules are imported.&l
   /&gt;
 &lt;/figure&gt;
 
-&lt;h2 id=&#34;step-4&#34;&gt;Step 4&lt;/h2&gt;
+&lt;h3 id=&#34;step-4&#34;&gt;Step 4&lt;/h3&gt;
 &lt;p&gt;Press &lt;strong&gt;Enable&lt;/strong&gt; button.&lt;/p&gt;
 
 
@@ -240,9 +238,82 @@ Press &lt;strong&gt;Import&lt;/strong&gt; button, then new rules are imported.&l
   /&gt;
 &lt;/figure&gt;
 
-&lt;h2 id=&#34;step-5&#34;&gt;Step 5&lt;/h2&gt;
+&lt;h3 id=&#34;step-5&#34;&gt;Step 5&lt;/h3&gt;
 &lt;p&gt;New rule is enabled.&lt;br /&gt;
 Confirm the result using &lt;a href=&#34;/docs/manual/operation/eventviewer/&#34;&gt;Karabiner-EventViewer&lt;/a&gt;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;create-your-own-rules&#34;&gt;Create your own rules&lt;/h2&gt;
+&lt;h3 id=&#34;step-1-1&#34;&gt;Step 1&lt;/h3&gt;
+&lt;p&gt;Open Complex Modifications tab and press &lt;strong&gt;Add your own rule&lt;/strong&gt; button.&lt;br /&gt;&lt;/p&gt;
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/manual/configuration/configure-complex-modifications/images/own-rule-1@2x.png&#34;
+    alt=&#34;own-rule-1@2x.png&#34;
+    style=&#34;width: 1100px&#34;
+  /&gt;
+&lt;/figure&gt;
+
+&lt;h3 id=&#34;step-2-1&#34;&gt;Step 2&lt;/h3&gt;
+&lt;p&gt;An editor will open with sample rules.
+Change the content and press the Save button to register.&lt;/p&gt;
+&lt;p&gt;When making changes, &lt;a href=&#34;/docs/manual/operation/eventviewer/&#34;&gt;Karabiner-EventViewer&lt;/a&gt; and &lt;a href=&#34;/docs/json/&#34;&gt;Karabiner Configuration Reference Manual&lt;/a&gt; can be used to confirm the key names and how to write rules.&lt;/p&gt;
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/manual/configuration/configure-complex-modifications/images/own-rule-2@2x.png&#34;
+    alt=&#34;own-rule-2@2x.png&#34;
+    style=&#34;width: 1100px&#34;
+  /&gt;
+&lt;/figure&gt;
+
+&lt;hr&gt;
+&lt;h2 id=&#34;edit-rules&#34;&gt;Edit rules&lt;/h2&gt;
+&lt;p&gt;Open Complex Modifications tab and press &lt;strong&gt;Edit&lt;/strong&gt; button.
+The editor will open. Change the contents and save it.&lt;/p&gt;
+&lt;p&gt;When making changes, &lt;a href=&#34;/docs/manual/operation/eventviewer/&#34;&gt;Karabiner-EventViewer&lt;/a&gt; and &lt;a href=&#34;/docs/json/&#34;&gt;Karabiner Configuration Reference Manual&lt;/a&gt; can be used to confirm the key names and how to write rules.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/manual/configuration/configure-complex-modifications/images/edit-rule-1@2x.png&#34;
+    alt=&#34;edit-rule-1@2x.png&#34;
+    style=&#34;width: 1100px&#34;
+  /&gt;
+&lt;/figure&gt;
+
+
+
+
+
+  
+
+
+&lt;figure&gt;
+  &lt;img
+    src=&#34;/docs/manual/configuration/configure-complex-modifications/images/edit-rule-2@2x.png&#34;
+    alt=&#34;edit-rule-2@2x.png&#34;
+    style=&#34;width: 1100px&#34;
+  /&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
 
       </description>
     </item>
