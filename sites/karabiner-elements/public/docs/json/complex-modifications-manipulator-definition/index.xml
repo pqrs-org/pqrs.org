@@ -228,7 +228,6 @@ You cannot specify multiple items into one &lt;code&gt;to&lt;/code&gt; entry.&lt
 &lt;li&gt;&lt;code&gt;software_function&lt;/code&gt; (&lt;code&gt;software_function&lt;/code&gt; is available since Karabiner-Elements v13.5.1)&lt;/li&gt;
 &lt;/ul&gt;
 
-
 &lt;/div&gt;
 
 &lt;table&gt;
@@ -469,7 +468,6 @@ Thus, you cannot use key repeat for &lt;code&gt;to_if_alone&lt;/code&gt; events.
 &lt;li&gt;Used with &lt;code&gt;to_if_held_down&lt;/code&gt; and &lt;code&gt;to.halt&lt;/code&gt; in order to define fallback behavior.&lt;/li&gt;
 &lt;/ul&gt;
 
-
 &lt;/div&gt;
 
 &lt;h2 id=&#34;example&#34;&gt;Example&lt;/h2&gt;
@@ -527,7 +525,6 @@ Thus, you cannot use key repeat for &lt;code&gt;to_if_alone&lt;/code&gt; events.
 &lt;li&gt;Double tap key (e.g., change &lt;code&gt;right_shift x2&lt;/code&gt;)&lt;/li&gt;
 &lt;li&gt;2 stroke keys such as C-x of Emacs Mode.&lt;/li&gt;
 &lt;/ul&gt;
-
 
 &lt;/div&gt;
 

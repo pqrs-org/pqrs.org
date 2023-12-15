@@ -63,7 +63,6 @@ You have to keep the background items enabled in &lt;code&gt;macOS System Settin
   /&gt;
 &lt;/figure&gt;
 
-
 &lt;/div&gt;
 
 &lt;hr&gt;
@@ -436,7 +435,6 @@ You have to allow &lt;code&gt;karabiner_console_user_server&lt;/code&gt; in Priv
   /&gt;
 &lt;/figure&gt;
 
-
 &lt;/div&gt;
 
 &lt;h2 id=&#34;examples&#34;&gt;Examples&lt;/h2&gt;
@@ -515,7 +513,6 @@ You have to allow &lt;code&gt;karabiner_console_user_server&lt;/code&gt; in Priv
     style=&#34;width: 1100px&#34;
   /&gt;
 &lt;/figure&gt;
-
 
 &lt;/div&gt;
 
@@ -1185,7 +1182,6 @@ To quit Karabiner-Elements, choose &amp;ldquo;Quit Karabiner-Elements&amp;rdquo;
     style=&#34;width: 1100px&#34;
   /&gt;
 &lt;/figure&gt;
-
 
 &lt;/div&gt;
 
@@ -3203,7 +3199,6 @@ The editor will open. Change the contents and save it.&lt;/p&gt;
   /&gt;
 &lt;/figure&gt;
 
-
 &lt;/div&gt;
 
 
@@ -3284,7 +3279,6 @@ Karabiner-Elements changes keys by Simple Modifications, and then changes them b
 &lt;/li&gt;
 &lt;/ul&gt;
 
-
 &lt;/div&gt;
 
 
@@ -3337,7 +3331,6 @@ Karabiner-Elements changes keys by Simple Modifications, and then changes them b
 &lt;li&gt;&lt;code&gt;simultaneous&lt;/code&gt; does not modify events if any &lt;code&gt;from&lt;/code&gt; events are released before all &lt;code&gt;from&lt;/code&gt; events are pressed.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;simultaneous&lt;/code&gt; does not modify events if &lt;code&gt;from&lt;/code&gt; events are interrupted by another key_down event.&lt;/li&gt;
 &lt;/ul&gt;
-
 
 &lt;/div&gt;
 

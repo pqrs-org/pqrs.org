@@ -434,7 +434,6 @@ You may lose the left click button and system will be unusable.
 &lt;li&gt;&lt;code&gt;simultaneous&lt;/code&gt; does not modify events if &lt;code&gt;from&lt;/code&gt; events are interrupted by another key_down event.&lt;/li&gt;
 &lt;/ul&gt;
 
-
 &lt;/div&gt;
 
 &lt;h3 id=&#34;manipulated-input-1&#34;&gt;Manipulated input #1&lt;/h3&gt;
