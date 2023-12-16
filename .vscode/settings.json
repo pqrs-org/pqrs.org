@@ -5,7 +5,17 @@
         "sites/*/go.sum": true,
         "sites/*/layouts/": true,
         "sites/*/Makefile": true,
-        "sites/*/public/": true,
+        // sites/*/public/ except sites/pqrs.org/public/
+        "sites/bulletgba/public/": true,
+        "sites/dcgnuboy/public/": true,
+        "sites/disable-draganddrop-tb/public/": true,
+        "sites/karabiner-elements/public/": true,
+        "sites/nesterdc/public/": true,
+        // "sites/pqrs.org/public/": true,
+        "sites/showyedge/public/": true,
+        "sites/tinkle/public/": true,
+        "sites/truewidget/public/": true,
+        "sites/vulkanon/public/": true,
         "sites/*/resources/": true,
         "themes/docsy": true
     }
