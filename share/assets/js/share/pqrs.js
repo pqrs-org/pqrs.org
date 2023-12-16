@@ -19,9 +19,12 @@ $(function () {
   })
 
   const $supportersOuter = $('#supporters')
+  const $supportersSpinner = $('#supporters-spinner')
   if ($supportersOuter.length > 0) {
     $.ajax('https://pqrs.org/supporters/supporters.json').then(
       (response) => {
+        $supportersSpinner.fadeOut(500)
+
         let $supporters = $('<div>').addClass('supporters')
 
         let scale = null
@@ -81,6 +84,8 @@ $(function () {
         $supportersOuter.append($supporters)
       },
       (reason) => {
+        $supportersSpinner.fadeOut(500)
+
         $supportersOuter.append(
           $('<div>')
             .addClass('alert alert-danger')

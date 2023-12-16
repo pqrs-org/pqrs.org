@@ -19,7 +19,7 @@ I'm afraid I don't have enough time to reply for donors.<br />
 (I'm giving priority to develop Karabiner-Elements at the moment.)
 
 <div class="text-right">
-    Apr 16, 2023<br />
+    Dec 17, 2023<br />
     Takayama Fumihiko
 </div>
 
@@ -101,4 +101,6 @@ I'm afraid I don't have enough time to reply for donors.<br />
       JavaScript is required to show sponsors.
     </div>
   </noscript>
+
+  <div id="supporters-spinner"></div>
 </div>
