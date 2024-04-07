@@ -1,5 +1,5 @@
 all:
-	hugo server
+	hugo server --renderToMemory
 
 build:
 	rm -fr public
