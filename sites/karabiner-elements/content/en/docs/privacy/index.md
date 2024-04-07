@@ -27,7 +27,40 @@ To do this, Karabiner-Elements requires your Input Monitoring permissions approv
 Keystrokes captured with this privilege are processed entirely on your Mac.
 And because the process is protected by administrative privileges, keystrokes cannot be intercepted at by other applications on your Mac.
 
+Specifically, the processes with administrative privileges are as follows:
+
+-   `karabiner_grabber`
+-   `karabiner_observer`
+
 {{< local-image src="images/input-monitoring@2x.png" >}}
+
+**Note:**
+Karabiner-EventViewer operates with lower privileges than `karabiner_grabber` and `karabiner_observer`.
+Since it runs with user privileges, it cannot receive keystrokes during password inputs or similar actions when Secure Keyboard Entry is enabled.
+
+{{% /alert %}}
+
+{{% alert title="Input event manipulation" color="primary" %}}
+
+After capturing keystrokes, the `karabiner_grabber` process modifies input events based on user settings.
+Modifying input events is also performed with security considerations in mind.
+
+To prevent the addition of malicious input from other applications, `karabiner_grabber` performs closed operations within the process, which has administrative privileges.
+And the `karabiner_grabber` process does not knowingly alter, insert or manipulate any keystrokes other than as configured and expected by the user.
+
+**Note:**
+Some combinations, such as fn+arrow keys, are implicitly changed. For a list, please see [Implicit behavior](/docs/manual/misc/implicit-behavior/).
+
+{{% /alert %}}
+
+{{% alert title="User data and files" color="primary" %}}
+Karabiner-Elements and any bundled softwares, e.g., EventViewer, do not access or modify user data and files, except in the following data:
+
+User files and data referenced by Karabiner-Elements:
+
+-   Configuration files specific to the application.
+-   The keyboard type configuration (ANSI, ISO, JIS) in the system settings.
+-   The "Use F1, F2, etc. keys as standard function keys" configuration in the system settings.
 
 {{% /alert %}}
 
