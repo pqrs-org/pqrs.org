@@ -58,7 +58,7 @@ Some combinations, such as fn+arrow keys, are implicitly changed. For a list, pl
 {{% alert title="User data and files" color="primary" %}}
 Karabiner-Elements and any bundled softwares, e.g., EventViewer, do not access or modify user data and files, except in the following data:
 
-User files and data referenced by Karabiner-Elements:
+**User files and data referenced by Karabiner-Elements:**
 
 -   Configuration files specific to the application.
 -   The keyboard type configuration (ANSI, ISO, JIS) in the system settings.
