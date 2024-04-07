@@ -1036,7 +1036,7 @@ Choose your keyboard layout. (ANSI, ISO or JIS)
 &lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Warning&lt;/h4&gt;
 
-    If you want to remove Karabiner-Elements, you have to use &lt;a href=&#34;/docs/manual/operation/uninstall&#34;&gt;uninstaller&lt;/a&gt;.
+    If you want to remove Karabiner-Elements, you have to use &lt;a href=&#34;/docs/manual/operation/uninstall/&#34;&gt;uninstaller&lt;/a&gt;.
 
 &lt;/div&gt;
 
@@ -3908,7 +3908,7 @@ In other words, we cannot post the fn key event through the built-in keyboard if
 &lt;p&gt;This protection is intended to prevent incomplete uninstallation.&lt;/p&gt;
 &lt;p&gt;Karabiner-Elements is a system-wide software, and &lt;a href=&#34;../installed-files/&#34;&gt;files are installed in appropriate locations&lt;/a&gt; besides the Applications folder.&lt;/p&gt;
 &lt;p&gt;Therefore, if you just put the application icon in Trash like a normal app uninstallation, some files will be left behind.&lt;/p&gt;
-&lt;p&gt;The file protection forces to use &lt;a href=&#34;/docs/manual/operation/uninstall&#34;&gt;the built-in uninstaller&lt;/a&gt; and remove installed files properly at the uninstallation.&lt;/p&gt;
+&lt;p&gt;The file protection forces to use &lt;a href=&#34;/docs/manual/operation/uninstall/&#34;&gt;the built-in uninstaller&lt;/a&gt; and remove installed files properly at the uninstallation.&lt;/p&gt;
 
 
 &lt;div class=&#34;alert alert-danger&#34; role=&#34;alert&#34;&gt;

@@ -59,13 +59,13 @@
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;code&gt;from.modifiers&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;Same as &lt;a href=&#34;../../from/modifiers/&#34;&gt;basic.from.modifiers&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Same as &lt;a href=&#34;/docs/json/complex-modifications-manipulator-definition/from/modifiers/&#34;&gt;basic.from.modifiers&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Optional&lt;/td&gt;
 &lt;td&gt;Enable &lt;code&gt;mouse_motion_to_scroll&lt;/code&gt; if specified modifiers are pressed&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;code&gt;conditions&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;Same as &lt;a href=&#34;../../conditions/&#34;&gt;basic.conditions&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Same as &lt;a href=&#34;/docs/json/complex-modifications-manipulator-definition/conditions/&#34;&gt;basic.conditions&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Optional&lt;/td&gt;
 &lt;td&gt;Enable &lt;code&gt;mouse_motion_to_scroll&lt;/code&gt; when specified conditions&lt;/td&gt;
 &lt;/tr&gt;
