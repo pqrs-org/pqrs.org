@@ -37,7 +37,7 @@ Of course, Karabiner-Elements does not collect any of your input data, your conf
 Data not collected Karabiner-Elements does not transmit your data externally. The following data is never transmitted outside your Mac:
 Your keystrokes Your configuration data Your usage statistics And all other data except Karabiner-Elements version information. About Input Monitoring Karabiner-Elements exclusively receives input events from your keyboard, and then modifies them.">
 
-<meta itemprop="wordCount" content="264"><meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png" />
+<meta itemprop="wordCount" content="496"><meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png" />
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="https://karabiner-elements.pqrs.org/images/logo.png" /><meta name="twitter:title" content="Privacy"/>
 <meta name="twitter:description" content="Privacy Security and privacy protection is one of the most important points of Karabiner-Elements architecture design.
@@ -92,7 +92,7 @@ if (!doNotTrack) {
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.e8b2697952f91a655f7ff2d67801f6b3.json"
+    data-offline-search-index-json-src="/offline-search-index.b9e99ebf425db11768fed4a64df3de5f.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="25"
   >
@@ -116,7 +116,7 @@ if (!doNotTrack) {
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.e8b2697952f91a655f7ff2d67801f6b3.json"
+    data-offline-search-index-json-src="/offline-search-index.b9e99ebf425db11768fed4a64df3de5f.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="25"
   >
@@ -681,6 +681,19 @@ Of course, Karabiner-Elements does not collect any of your input data, your conf
 To do this, Karabiner-Elements requires your Input Monitoring permissions approval.</p>
 <p>Keystrokes captured with this privilege are processed entirely on your Mac.
 And because the process is protected by administrative privileges, keystrokes cannot be intercepted at by other applications on your Mac.</p>
+<p>Specifically, the processes with administrative privileges are as follows:</p>
+<ul>
+<li><code>karabiner_grabber</code>:
+<ul>
+<li>This is the most core process in Karabiner-Elements that captures and modifies keystrokes.</li>
+</ul>
+</li>
+<li><code>karabiner_observer</code>:
+<ul>
+<li>This process monitors input events on non-capturing devices and controls <code>karabiner_grabber</code> so that it does not start capturing while the very keystrokes are being made.</li>
+</ul>
+</li>
+</ul>
 <figure>
   <img
     src="/docs/privacy/images/input-monitoring@2x.png"
@@ -688,6 +701,40 @@ And because the process is protected by administrative privileges, keystrokes ca
     style="width: 715px"
   />
 </figure>
+<p><strong>Note:</strong>
+Karabiner-EventViewer operates with lower privileges than <code>karabiner_grabber</code> and <code>karabiner_observer</code>.
+Since it runs with user privileges, it cannot receive keystrokes during password inputs or similar actions when Secure Keyboard Entry is enabled.</p>
+
+
+</div>
+
+
+
+<div class="alert alert-primary" role="alert">
+<h4 class="alert-heading">Input event manipulation</h4>
+
+    <p>After capturing keystrokes, the <code>karabiner_grabber</code> process modifies input events based on user settings.
+Modifying input events is also performed with security considerations in mind.</p>
+<p>To prevent the addition of malicious input from other applications, <code>karabiner_grabber</code> performs closed operations within the process, which has administrative privileges.
+And the <code>karabiner_grabber</code> process does not knowingly alter, insert or manipulate any keystrokes other than as configured and expected by the user.</p>
+<p><strong>Note:</strong>
+Some combinations, such as fn+arrow keys, are implicitly changed. For a list, please see <a href="/docs/manual/misc/implicit-behavior/">Implicit behavior</a>.</p>
+
+
+</div>
+
+
+
+<div class="alert alert-primary" role="alert">
+<h4 class="alert-heading">User data and files</h4>
+
+    <p>Karabiner-Elements and any bundled softwares, e.g., EventViewer, do not access or modify user data and files, except in the following data:</p>
+<p><strong>User files and data referenced by Karabiner-Elements:</strong></p>
+<ul>
+<li>Configuration files specific to the application.</li>
+<li>The keyboard type configuration (ANSI, ISO, JIS) in the system settings.</li>
+<li>The &ldquo;Use F1, F2, etc. keys as standard function keys&rdquo; configuration in the system settings.</li>
+</ul>
 
 
 </div>
