@@ -29,8 +29,10 @@ And because the process is protected by administrative privileges, keystrokes ca
 
 Specifically, the processes with administrative privileges are as follows:
 
--   `karabiner_grabber`
--   `karabiner_observer`
+-   `karabiner_grabber`:
+    -   This is the most core process in Karabiner-Elements that captures and modifies keystrokes.
+-   `karabiner_observer`:
+    -   This process monitors input events on non-capturing devices and controls `karabiner_grabber` so that it does not start capturing while the very keystrokes are being made.
 
 {{< local-image src="images/input-monitoring@2x.png" >}}
 
