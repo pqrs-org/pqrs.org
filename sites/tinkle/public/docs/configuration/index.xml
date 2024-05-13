@@ -1,179 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tinkle – Configuration</title>
+    <title>Configuration on Tinkle</title>
     <link>/docs/configuration/</link>
     <description>Recent content in Configuration on Tinkle</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
-    
-	  <atom:link href="/docs/configuration/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-      
-        
-      
-    
-    
+    <atom:link href="/docs/configuration/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Docs: Open Settings</title>
+      <title>Open Settings</title>
       <link>/docs/configuration/open-settings/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>/docs/configuration/open-settings/</guid>
-      <description>
-        
-        
-        &lt;ol&gt;
-&lt;li&gt;Open Settings from menu bar.
-
-    
-    
-    
-      
-    
-    
-    &lt;figure&gt;
-      &lt;img
-        src=&#34;/docs/configuration/open-settings/images/menu-icon@2x.png&#34;
-        alt=&#34;menu-icon@2x.png&#34;
-        style=&#34;width: 197px&#34;
-      /&gt;
-    &lt;/figure&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
-&lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
-
-    &lt;p&gt;If you&amp;rsquo;ve hidden the menu bar icon, open Tinkle again from Launchpad while Tinkle is already running to open Settings.&lt;/p&gt;
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/configuration/open-settings/images/launchpad@2x.png&#34;
-    alt=&#34;launchpad@2x.png&#34;
-    style=&#34;width: 426px&#34;
-  /&gt;
-&lt;/figure&gt;
-
-&lt;/div&gt;
-
-
-      </description>
+      <description>Open Settings from menu bar. Note If you&amp;rsquo;ve hidden the menu bar icon, open Tinkle again from Launchpad while Tinkle is already running to open Settings.</description>
     </item>
-    
     <item>
-      <title>Docs: Effect configuration</title>
+      <title>Effect configuration</title>
       <link>/docs/configuration/effect-configuration/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>/docs/configuration/effect-configuration/</guid>
-      <description>
-        
-        
-        &lt;p&gt;You can change the effect.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;../open-settings/&#34;&gt;Open Settings&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Choose the effect.
-
-    
-    
-    
-      
-    
-    
-    &lt;figure&gt;
-      &lt;img
-        src=&#34;/docs/configuration/effect-configuration/images/effect@2x.png&#34;
-        alt=&#34;effect@2x.png&#34;
-        style=&#34;width: 900px&#34;
-      /&gt;
-    &lt;/figure&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;effects&#34;&gt;Effects&lt;/h2&gt;
-&lt;div class=&#34;d-flex&#34;&gt;
-    &lt;div class=&#34;me-4 p-2 border&#34;&gt;
-        Neon (blue)&lt;br /&gt;
-        &lt;img src=&#34;images/neon.gif&#34; width=&#34;200&#34; alt=&#34;neon&#34; /&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;me-4 p-2 border&#34;&gt;
-        Shock wave (blue)&lt;br /&gt;
-        &lt;img src=&#34;images/shockwave.gif&#34; width=&#34;200&#34; alt=&#34;shockwave&#34; /&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;me-4 p-2 border&#34;&gt;
-        Line (blue)&lt;br /&gt;
-        &lt;img src=&#34;images/line.gif&#34; width=&#34;200&#34; alt=&#34;shockwave&#34; /&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-      </description>
+      <description>You can change the effect.&#xA;Open Settings. Choose the effect. Effects Neon (blue)&#xA;Shock wave (blue)&#xA;Line (blue)</description>
     </item>
-    
     <item>
-      <title>Docs: Open at login</title>
+      <title>Open at login</title>
       <link>/docs/configuration/open-at-login/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>/docs/configuration/open-at-login/</guid>
-      <description>
-        
-        
-        &lt;p&gt;You can launch Tinkle automaticaly at login.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;../open-settings/&#34;&gt;Open Settings&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Enable &lt;code&gt;Open at login&lt;/code&gt;.
-
-    
-    
-    
-      
-    
-    
-    &lt;figure&gt;
-      &lt;img
-        src=&#34;/docs/configuration/open-at-login/images/open-at-login@2x.png&#34;
-        alt=&#34;open-at-login@2x.png&#34;
-        style=&#34;width: 900px&#34;
-      /&gt;
-    &lt;/figure&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-
-      </description>
+      <description>You can launch Tinkle automaticaly at login.&#xA;Open Settings. Enable Open at login. </description>
     </item>
-    
     <item>
-      <title>Docs: Hide the icon in menu bar</title>
+      <title>Hide the icon in menu bar</title>
       <link>/docs/configuration/hide-menu-bar-icon/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>/docs/configuration/hide-menu-bar-icon/</guid>
-      <description>
-        
-        
-        &lt;p&gt;You can hide the icon in menu bar from Settings.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;../open-settings/&#34;&gt;Open Settings&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Turn off &lt;code&gt;Show icon in menu bar&lt;/code&gt;.
-
-    
-    
-    
-      
-    
-    
-    &lt;figure&gt;
-      &lt;img
-        src=&#34;/docs/configuration/hide-menu-bar-icon/images/hide-menu-bar-icon@2x.png&#34;
-        alt=&#34;hide-menu-bar-icon@2x.png&#34;
-        style=&#34;width: 900px&#34;
-      /&gt;
-    &lt;/figure&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-
-      </description>
+      <description>You can hide the icon in menu bar from Settings.&#xA;Open Settings. Turn off Show icon in menu bar. </description>
     </item>
-    
   </channel>
 </rss>

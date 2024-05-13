@@ -1,17 +1,599 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Karabiner-Elements – Karabiner-Elements</title>
+    <title>Karabiner-Elements</title>
     <link>/</link>
     <description>Recent content on Karabiner-Elements</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
-    
-	  <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-      
-      
-    
-    
+    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Required macOS settings</title>
+      <link>/docs/manual/misc/required-macos-settings/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/manual/misc/required-macos-settings/</guid>
+      <description>Under normal circumstances, there is no need to read this page, as the necessary settings have already been made during the initial setup.&#xA;However, we describe the macOS settings that are made during the initial setup of Karabiner-Elements for the following cases.&#xA;If you canceled during the initial setup and want to continue in the middle of the process If you want to check the macOS settings made during the initial setup If Karabiner-Elements is not working properly and you want to make sure that macOS is configured properly Keep background items enabled Note This setting exists only on macOS Ventura or later Karabier-Elements has processes running constantly in the background, that handle input events.</description>
+    </item>
+    <item>
+      <title>Driver alert keeps showing up</title>
+      <link>/docs/help/troubleshooting/driver-alert-keeps-showing-up/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/help/troubleshooting/driver-alert-keeps-showing-up/</guid>
+      <description>Usually, the following driver alert will appear on first start-up and the alert will disappear after you allow the system software from System Settings.&#xA;Unfortunately, the allow button may sometimes not appear in System Settings due to a problem with macOS driver loading.&#xA;In this case, you can display the allow button by deactivating and activating driver as described in the Advanced section on the alert.&#xA;macOS Catalina Notes Karabiner-Elements requires macOS 10.</description>
+    </item>
+    <item>
+      <title>Allow button in Privacy &amp; Security System Settings does not appear</title>
+      <link>/docs/help/troubleshooting/allow-button-does-not-appear/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/help/troubleshooting/allow-button-does-not-appear/</guid>
+      <description>The allow button in Privacy &amp;amp; Security System Settings appear for your approval after you open Karabiner-Elements for the first time.&#xA;However, this allow button may not appear in some environments.&#xA;Reason The exact cause of the issue has not been determined, but it may be caused by the corrupted system cache by a macOS issue.&#xA;This issue may be resolved by starting macOS in safe mode to refresh the system cache.</description>
+    </item>
+    <item>
+      <title>About &#34;Device is ignored temporarily&#34; alert</title>
+      <link>/docs/manual/misc/ignored-temporarily/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/manual/misc/ignored-temporarily/</guid>
+      <description>&amp;ldquo;Device is ignored temporarily&amp;rdquo; alert will be shown in any of the following cases:&#xA;If you hold keys or buttons down before Karabiner-Elements open the device. Your device sends unintented key up events regardless you do not touch the keys.&#xA;(e.g., Swiftpoint ProPoint sends key up events of the music play key periodically.) Press the described key or button again to dismiss the alert.</description>
+    </item>
+    <item>
+      <title>Allow button in Privacy &amp; Security System Settings does not work</title>
+      <link>/docs/help/troubleshooting/allow-button-does-not-work/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/help/troubleshooting/allow-button-does-not-work/</guid>
+      <description>The allow button in Privacy &amp;amp; Security System Settings should be hidden after you click it. If the button does not hide after click, you did not succeed to click it.&#xA;Reason The exact cause of the issue has not been determined, but it may be caused by the corrupted system cache by a macOS issue.&#xA;This issue may be resolved by starting macOS in safe mode to refresh the system cache.</description>
+    </item>
+    <item>
+      <title>cg_event_double_click</title>
+      <link>/docs/json/complex-modifications-manipulator-definition/to/software_function/cg_event_double_click/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/json/complex-modifications-manipulator-definition/to/software_function/cg_event_double_click/</guid>
+      <description>Send double click event by software. cg_event_double_click ensures that the click event occurs at the same location even if the mouse cursor is moving between the first click and the second click.&#xA;{ &amp;#34;to&amp;#34;: [ { &amp;#34;software_function&amp;#34;: { &amp;#34;cg_event_double_click&amp;#34;: { &amp;#34;button&amp;#34;: 0 } } } ] } Name Required Description button Required An integer of CGMouseButton.&#xA;0: Left Click&#xA;1: Right Click&#xA;2: Middle Click&#xA;3,4,5,&amp;hellip;,31: Other Buttons Low responsiveness This event will be lagged since it is sent by software implementation.</description>
+    </item>
+    <item>
+      <title>Change a key to another key</title>
+      <link>/docs/manual/configuration/configure-simple-modifications/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/manual/configuration/configure-simple-modifications/</guid>
+      <description>You can change a key to another key on Simple Modifications tab.&#xA;Choose target device, then press Add item button. Select keys. (Tips: The following example changes the right option key to mouse button 3) Confirm the result using Karabiner-EventViewer. Tip You can find the key name by Karabiner-EventViewer.</description>
+    </item>
+    <item>
+      <title>File locations</title>
+      <link>/docs/json/location/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/json/location/</guid>
+      <description>Karabiner-Elements configuration file paths:&#xA;~/.config/karabiner/karabiner.json Main configuration file.&#xA;Karabiner-Elements watches this file and reload it automatically when it is updated. ~/.config/karabiner/assets/complex_modifications Imported complex_modifications files.&#xA;You can use them in Karabiner-Elements Settings &amp;gt; Complex Modifications &amp;gt; Add predefined rule. Tip: file update detection and automatic reload Karabiner-Elements watches ~/.config/karabiner/karabiner.json and reloads it if updated.&#xA;The mechanism is that Karabiner-Elements watches the parent directory ~/.config/karabiner by using the File System Events API.</description>
+    </item>
+    <item>
+      <title>from.any</title>
+      <link>/docs/json/complex-modifications-manipulator-definition/from/any/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/json/complex-modifications-manipulator-definition/from/any/</guid>
+      <description>You can use from.any as follows.&#xA;These matches all key codes, consumer key codes or pointing buttons.&#xA;&amp;quot;any&amp;quot;: &amp;quot;key_code&amp;quot; &amp;quot;any&amp;quot;: &amp;quot;consumer_key_code&amp;quot; &amp;quot;any&amp;quot;: &amp;quot;pointing_button&amp;quot; Caution Be careful using &amp;quot;any&amp;quot;: &amp;quot;pointing_button&amp;quot;.&#xA;You may lose the left click button and system will be unusable. </description>
+    </item>
+    <item>
+      <title>frontmost_application_if, frontmost_application_unless</title>
+      <link>/docs/json/complex-modifications-manipulator-definition/conditions/frontmost-application/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/json/complex-modifications-manipulator-definition/conditions/frontmost-application/</guid>
+      <description>Change an event if/unless the frontmost application is the specified application.&#xA;Example Change control-h key to delete_or_backspace except in Terminal.&#xA;{ &amp;#34;type&amp;#34;: &amp;#34;basic&amp;#34;, &amp;#34;from&amp;#34;: { &amp;#34;key_code&amp;#34;: &amp;#34;h&amp;#34;, &amp;#34;modifiers&amp;#34;: { &amp;#34;mandatory&amp;#34;: [&amp;#34;control&amp;#34;], &amp;#34;optional&amp;#34;: [&amp;#34;any&amp;#34;] } }, &amp;#34;to&amp;#34;: [ { &amp;#34;key_code&amp;#34;: &amp;#34;delete_or_backspace&amp;#34; } ], &amp;#34;conditions&amp;#34;: [ { &amp;#34;type&amp;#34;: &amp;#34;frontmost_application_unless&amp;#34;, &amp;#34;bundle_identifiers&amp;#34;: [&amp;#34;^com\\.apple\\.Terminal$&amp;#34;] } ] } Specification { &amp;#34;type&amp;#34;: &amp;#34;frontmost_application_if&amp;#34;, &amp;#34;bundle_identifiers&amp;#34;: [ bundle identifier regex, bundle identifier regex, ... ], &amp;#34;file_paths&amp;#34;: [ file path regex, file path regex, .</description>
+    </item>
+    <item>
+      <title>How to change mouse buttons</title>
+      <link>/docs/help/how-to/mouse-button/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/help/how-to/mouse-button/</guid>
+      <description>Karabiner-Elements does not modify mouse devices by default.&#xA;You have to enable your mouse on Karabiner-Elements Settings &amp;gt; Devices. Then, use Simple Modifications to assign a key to a button or use Complex Modifications for more advanced usage. </description>
+    </item>
+    <item>
+      <title>Installation</title>
+      <link>/docs/getting-started/installation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/getting-started/installation/</guid>
+      <description>Some operations are required to grant proper permission from macOS to Karabiner-Elements. Follow these instructions to set up Karabiner-Elements.&#xA;Install Karabiner-Elements Open the downloaded file. Open the .pkg file. The installer will be opened. Install Karabiner-Elements. Keep Login Items enabled Since macOS 13 Ventura, background item notifications will be shown after the installation.&#xA;The following Login Items in System Settings are required, and have to keep enabled.&#xA;Karabiner-DriverKit-VirtualHIDDeviceClient.app Karabiner-Elements.app Note If you are using macOS 12 or prior, these items are not shown in System Preferences.</description>
+    </item>
+    <item>
+      <title>Installed files</title>
+      <link>/docs/help/advanced-topics/installed-files/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/help/advanced-topics/installed-files/</guid>
+      <description>Karabiner-Elements installs files into the following locations.&#xA;System files /Applications/Karabiner-Elements.app /Applications/Karabiner-EventViewer.app /Library/Application Support/org.pqrs/Karabiner-Elements /Library/Application Support/org.pqrs/Karabiner-VirtualHIDDevice /Library/Application Support/org.pqrs/config /Library/Application Support/org.pqrs/tmp /Library/LaunchDaemons/org.pqrs.karabiner.karabiner_grabber.plist /Library/LaunchDaemons/org.pqrs.karabiner.karabiner_kextd.plist /Library/LaunchDaemons/org.pqrs.karabiner.karabiner_observer.plist /Library/LaunchAgents/org.pqrs.karabiner.agent.karabiner_grabber.plist /Library/LaunchAgents/org.pqrs.karabiner.agent.karabiner_observer.plist /Library/LaunchAgents/org.pqrs.karabiner.karabiner_console_user_server.plist /Library/LaunchAgents/org.pqrs.karabiner.karabiner_session_monitor.plist /var/log/karabiner User files ~/.config/karabiner ~/.local/share/karabiner ~/Library/Preferences/org.pqrs.Karabiner-Elements.Preferences.plist ~/Library/Preferences/org.pqrs.Karabiner-Elements.Settings.plist ~/Library/Preferences/org.pqrs.Karabiner-Elements.Updater.plist ~/Library/Preferences/org.pqrs.Karabiner-EventViewer.plist ~/Library/Preferences/org.pqrs.Karabiner-Menu.plist ~/Library/Preferences/org.pqrs.Karabiner-MultitouchExtension.plist Warning If you want to remove Karabiner-Elements, you have to use uninstaller. </description>
+    </item>
+    <item>
+      <title>MultitouchExtension integration</title>
+      <link>/docs/json/extra/multitouch-extension/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/json/extra/multitouch-extension/</guid>
+      <description>Karabiner-MultitouchExtension allows you to change keys only when the finger is on the trackpad.&#xA;You can use variable_if or variable_unless to determine either the finger is on trackpad.&#xA;Example The following json changes k key to up_arrow when the finger is on the trackpad.&#xA;{ &amp;#34;type&amp;#34;: &amp;#34;basic&amp;#34;, &amp;#34;from&amp;#34;: { &amp;#34;key_code&amp;#34;: &amp;#34;k&amp;#34;, &amp;#34;modifiers&amp;#34;: { &amp;#34;optional&amp;#34;: [&amp;#34;any&amp;#34;] } }, &amp;#34;to&amp;#34;: [ { &amp;#34;key_code&amp;#34;: &amp;#34;up_arrow&amp;#34; } ], &amp;#34;conditions&amp;#34;: [ { &amp;#34;type&amp;#34;: &amp;#34;variable_unless&amp;#34;, &amp;#34;name&amp;#34;: &amp;#34;multitouch_extension_finger_count_total&amp;#34;, &amp;#34;value&amp;#34;: 0 } ] } Variables Karabiner-MultitouchExtension changes the following variables when the finger count on the trackpad is changed.</description>
+    </item>
+    <item>
+      <title>Quit</title>
+      <link>/docs/manual/operation/quit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/manual/operation/quit/</guid>
+      <description>Karabiner-Elements keeps running in the background even if you close the settings window.&#xA;To quit Karabiner-Elements, choose &amp;ldquo;Quit Karabiner-Elements&amp;rdquo; from menu bar.&#xA;Note If you&amp;rsquo;ve hidden the menu bar icon, you can also quit Karabiner-Elements from Settings.</description>
+    </item>
+    <item>
+      <title>to.shell_command</title>
+      <link>/docs/json/complex-modifications-manipulator-definition/to/shell-command/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/json/complex-modifications-manipulator-definition/to/shell-command/</guid>
+      <description>shell_command executes the shell command.&#xA;Examples Open application { &amp;#34;to&amp;#34;: [ { &amp;#34;shell_command&amp;#34;: &amp;#34;open -a &amp;#39;Safari.app&amp;#39;&amp;#34; } ] } Execute shell from file { &amp;#34;to&amp;#34;: [ { &amp;#34;shell_command&amp;#34;: &amp;#34;/bin/sh ~/opt/shell_commands/hello.sh&amp;#34; } ] } Advanced topic The very limited environment variables are passed to the command, $HOME, $UID, $USER, etc.&#xA;Export environment variables in shell_command if your commands depend them.&#xA;For example, the following command does not work well with unicode characters because tr command depends the current locale.</description>
+    </item>
+    <item>
+      <title>&#34;Fumihiko Takayama&#34; is shown in Login Items</title>
+      <link>/docs/help/troubleshooting/fumihiko-takayama-in-login-items/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/help/troubleshooting/fumihiko-takayama-in-login-items/</guid>
+      <description>In Allow in the Background of Login Items, Fumihiko Takayama may appear instead of Karabiner-Elements.&#xA;There are several causes, but the problem is mainly on the macOS side and is difficult to resolve. (Restarting macOS may solve this issue)&#xA;In any case, there is no problem with leaving it as it is.&#xA;Expected:&#xA;Information for those who want to know more The confirmed causes are as follows:&#xA;If you have ever git clone the Karabiner-Elements repository and built it If macOS has set the Allow in the Background display name before Karabiner-Elements was registered in the macOS application database How to solve when you have built Karabiner-Elements from source code The Login Items referes Launch Services database to determine the display name.</description>
+    </item>
+    <item>
+      <title>Restart</title>
+      <link>/docs/manual/operation/restart/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/manual/operation/restart/</guid>
+      <description>You can restart Karabiner-Elements from Settings.</description>
+    </item>
+    <item>
+      <title>How to use sticky modifier keys</title>
+      <link>/docs/help/how-to/sticky-modifier-key/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/help/how-to/sticky-modifier-key/</guid>
+      <description>You can enable the sticky modifier keys from Karabiner-Elements Settings &amp;gt; Simple modifications.&#xA;Note The sticky modifier keys acts as general modifier key while you are pressing and holding down the key.&#xA;For example, the following operation result is AA instead of Aa.&#xA;Press sticky left shift key Press a key Release a key Press a key Release a key Release sticky left shift key If you want to disable this feature, use sticky modifier key (pressing and holding down is disabled).</description>
+    </item>
+    <item>
+      <title>device_if, device_unless, device_exists_if, device_exists_unless</title>
+      <link>/docs/json/complex-modifications-manipulator-definition/conditions/device/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/json/complex-modifications-manipulator-definition/conditions/device/</guid>
+      <description>Change an event if/unless the event is from specified device.&#xA;Example Change 1 key to f1 if the device is Apple keyboard.&#xA;{ &amp;#34;type&amp;#34;: &amp;#34;basic&amp;#34;, &amp;#34;from&amp;#34;: { &amp;#34;key_code&amp;#34;: &amp;#34;1&amp;#34;, &amp;#34;modifiers&amp;#34;: { &amp;#34;optional&amp;#34;: [&amp;#34;any&amp;#34;] } }, &amp;#34;to&amp;#34;: [ { &amp;#34;key_code&amp;#34;: &amp;#34;f1&amp;#34; } ], &amp;#34;conditions&amp;#34;: [ { &amp;#34;type&amp;#34;: &amp;#34;device_if&amp;#34;, &amp;#34;identifiers&amp;#34;: [ { &amp;#34;vendor_id&amp;#34;: 1452 }, { &amp;#34;vendor_id&amp;#34;: 76 } ] } ] } Specification { &amp;#34;type&amp;#34;: &amp;#34;device_if&amp;#34;, &amp;#34;identifiers&amp;#34;: [ { &amp;#34;vendor_id&amp;#34;: 1111, &amp;#34;product_id&amp;#34;: 2222, &amp;#34;description&amp;#34;: &amp;#34;my keyboard 1&amp;#34; }, { &amp;#34;vendor_id&amp;#34;: 3333, &amp;#34;product_id&amp;#34;: 4444, &amp;#34;description&amp;#34;: &amp;#34;my keyboard 2&amp;#34; }, .</description>
+    </item>
+    <item>
+      <title>Features</title>
+      <link>/docs/getting-started/features/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/getting-started/features/</guid>
+      <description>Karabiner-Elements is a powerful and stable keyboard customizer for macOS.&#xA;Core features Simple Modifications: Change normal keys to other keys. Complex Modifications: Change keys by complex rules. Change a key to combination of modifiers. (e.g. change capslock to control+command) Change modifiers+key to key. (e.g. change control+m to return) Send key events if a key is pressed alone. Send key events if keys are pressed simultaneously. Mouse keys. etc. Function Keys: Change f1-f12 keys to media controls.</description>
+    </item>
+    <item>
+      <title>from.modifiers</title>
+      <link>/docs/json/complex-modifications-manipulator-definition/from/modifiers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/json/complex-modifications-manipulator-definition/from/modifiers/</guid>
+      <description>from.modifiers is a object which has the following keys.&#xA;Key Value Required Description mandatory An array of strings Optional Modifiers which must be pressed optional An array of strings Optional Modifiers which can be pressed from.modifiers.mandatory Events are manipulated only if mandatory modifiers are pressed. Mandatory modifiers are removed from to events. from.modifiers.optional Events are also manipulated even if optional modifiers are pressed. Optional modifiers are kept in to events. Tip If you do not include any in modifiers.</description>
+    </item>
+    <item>
+      <title>How to disable caps lock delay</title>
+      <link>/docs/help/how-to/disable-caps-lock-delay/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/help/how-to/disable-caps-lock-delay/</guid>
+      <description>Karabiner-Elements disables the caps lock delay without any action since v13.3.0.</description>
+    </item>
+    <item>
+      <title>Implicit behavior</title>
+      <link>/docs/manual/misc/implicit-behavior/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/manual/misc/implicit-behavior/</guid>
+      <description>Karabiner-Elements modifies following behavior automatically without any configurations:&#xA;Share state of modifier keys with all connected keyboards When you are using multiple keyboards, modifier keys are shared with all keyboards.&#xA;For example, pressing &amp;ldquo;shift key on keyboard1&amp;rdquo; and &amp;ldquo;space key on keyboard2&amp;rdquo; sends shift-space.&#xA;Add fn-key combinations Karabiner adds fn-key combinations:&#xA;fn-arrow keys Key combination Result fn-up arrow page up fn-down arrow page down fn-left arrow home fn-right arrow end others Key combination Result fn-return enter fn-delete forward delete </description>
+    </item>
+    <item>
+      <title>Karabiner-Elements stopped working after macOS update</title>
+      <link>/docs/help/troubleshooting/stopped-working-after-macos-update/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/help/troubleshooting/stopped-working-after-macos-update/</guid>
+      <description>It&amp;rsquo;s an issue of macOS that macOS update sometimes does not restore the running process state sufficiently after macOS update.&#xA;Please follow the instruction to solve the problem.&#xA;Restart macOS once again after macOS update. Reinstall Karabiner-Elements if restart macOS does not solve the problem. </description>
+    </item>
+    <item>
+      <title>Security</title>
+      <link>/docs/help/advanced-topics/security/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/help/advanced-topics/security/</guid>
+      <description>Security is one of the most important point of Karabiner-Elements architecture design.&#xA;Separating process and running them with properly privileges to prevent event leaks.&#xA;Process Karabiner-Elements restricts the input event handling to karabiner_observer and karabiner_grabber processes.&#xA;These process are running with root privilege and other process including malicious attacker cannot steal your input events.&#xA;List of process Running with root privilege&#xA;karabiner_observer Role: Observe the keyboard hardware events and tell grabber the devices state.</description>
+    </item>
+    <item>
+      <title>set_mouse_cursor_position</title>
+      <link>/docs/json/complex-modifications-manipulator-definition/to/software_function/set_mouse_cursor_position/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/json/complex-modifications-manipulator-definition/to/software_function/set_mouse_cursor_position/</guid>
+      <description>Move the mouse cursor to the specified point.&#xA;{ &amp;#34;to&amp;#34;: [ { &amp;#34;software_function&amp;#34;: { &amp;#34;set_mouse_cursor_position&amp;#34;: { &amp;#34;x&amp;#34;: 0, &amp;#34;y&amp;#34;: 0, &amp;#34;screen&amp;#34;: 0 } } } ] } Name Required Description x Required The new mouse cursor position y Required The new mouse cursor position screen Optional The screen index of the new mouse cursor origin Position format There are two styles to specify the position.&#xA;Type Format Example Point integer { &amp;quot;x&amp;quot;: 100 } Percent &amp;ldquo;xx%&amp;rdquo; { &amp;quot;x&amp;quot;: &amp;quot;50%&amp;quot; } Examples Set the mouse cursor position to (0,0) of the second screen.</description>
+    </item>
+    <item>
+      <title>to.select_input_source</title>
+      <link>/docs/json/complex-modifications-manipulator-definition/to/select-input-source/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/json/complex-modifications-manipulator-definition/to/select-input-source/</guid>
+      <description>select_input_source change the current input source.&#xA;Caution Switching to input sources which have input_mode_id (Chinese, Japanese, Korean, Vietnamese) may be failed due to an macOS issue.&#xA;For CJKV input sources, sending the input source switch shortcut (e.g., control-space) is better than using select_input_source.&#xA;{ &amp;#34;to&amp;#34;: [ { &amp;#34;select_input_source&amp;#34;: { &amp;#34;language&amp;#34;: &amp;#34;language regex&amp;#34;, &amp;#34;input_source_id&amp;#34;: &amp;#34;input source id regex&amp;#34;, &amp;#34;input_mode_id&amp;#34;: &amp;#34;input mode id regex&amp;#34; } } ] } Name Required Description language Optional The language regex such as &amp;quot;^en$&amp;quot;, &amp;quot;^fr$&amp;quot; input_source_id Optional The input source id regex such as &amp;quot;^com\\.</description>
+    </item>
+    <item>
+      <title>Typical complex_modifications examples</title>
+      <link>/docs/json/typical-complex-modifications-examples/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/json/typical-complex-modifications-examples/</guid>
+      <description>Swap ; and : (Equal to swap ; and shift-;)&#xA;[ { &amp;#34;type&amp;#34;: &amp;#34;basic&amp;#34;, &amp;#34;from&amp;#34;: { &amp;#34;key_code&amp;#34;: &amp;#34;semicolon&amp;#34;, &amp;#34;modifiers&amp;#34;: { &amp;#34;mandatory&amp;#34;: [&amp;#34;shift&amp;#34;], &amp;#34;optional&amp;#34;: [&amp;#34;caps_lock&amp;#34;] } }, &amp;#34;to&amp;#34;: [ { &amp;#34;key_code&amp;#34;: &amp;#34;semicolon&amp;#34; } ] }, { &amp;#34;type&amp;#34;: &amp;#34;basic&amp;#34;, &amp;#34;from&amp;#34;: { &amp;#34;key_code&amp;#34;: &amp;#34;semicolon&amp;#34;, &amp;#34;modifiers&amp;#34;: { &amp;#34;optional&amp;#34;: [&amp;#34;caps_lock&amp;#34;] } }, &amp;#34;to&amp;#34;: [ { &amp;#34;key_code&amp;#34;: &amp;#34;semicolon&amp;#34;, &amp;#34;modifiers&amp;#34;: [&amp;#34;left_shift&amp;#34;] } ] } ] Change control-h to delete And change control-option-h to option-delete.&#xA;{ &amp;#34;type&amp;#34;: &amp;#34;basic&amp;#34;, &amp;#34;from&amp;#34;: { &amp;#34;key_code&amp;#34;: &amp;#34;h&amp;#34;, &amp;#34;modifiers&amp;#34;: { &amp;#34;mandatory&amp;#34;: [&amp;#34;control&amp;#34;], &amp;#34;optional&amp;#34;: [&amp;#34;caps_lock&amp;#34;, &amp;#34;option&amp;#34;] } }, &amp;#34;to&amp;#34;: [ { &amp;#34;key_code&amp;#34;: &amp;#34;delete_or_backspace&amp;#34; } ] } Disable command-l on Finder { &amp;#34;type&amp;#34;: &amp;#34;basic&amp;#34;, &amp;#34;from&amp;#34;: { &amp;#34;key_code&amp;#34;: &amp;#34;l&amp;#34;, &amp;#34;modifiers&amp;#34;: { &amp;#34;mandatory&amp;#34;: [&amp;#34;command&amp;#34;], &amp;#34;optional&amp;#34;: [&amp;#34;caps_lock&amp;#34;] } }, &amp;#34;conditions&amp;#34;: [ { &amp;#34;type&amp;#34;: &amp;#34;frontmost_application_if&amp;#34;, &amp;#34;bundle_identifiers&amp;#34;: [&amp;#34;^com\\.</description>
+    </item>
+    <item>
+      <title>Uninstall</title>
+      <link>/docs/manual/operation/uninstall/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/manual/operation/uninstall/</guid>
+      <description>Karabiner-Elements provides built-in uninstaller.&#xA;Use the uninstaller to remove Karabiner-Elements from your system.&#xA;You can launch the uninstaller from &amp;ldquo;Launch uninstaller&amp;rdquo; button on Uninstall tab. Then, follow the instruction of the dialog. (The uninstaller ask your administrator password in order to remove files.)&#xA;Uninstall from command line If you don&amp;rsquo;t want to use above GUI, you can also uninstall Karabiner-Elements from command line.&#xA;bash &amp;#39;/Library/Application Support/org.pqrs/Karabiner-DriverKit-VirtualHIDDevice/scripts/uninstall/deactivate_driver.sh&amp;#39; sudo &amp;#39;/Library/Application Support/org.pqrs/Karabiner-Elements/uninstall.sh&amp;#39; (Administrator password is required to run the above command.</description>
+    </item>
+    <item>
+      <title>Use more complex rules</title>
+      <link>/docs/manual/configuration/configure-complex-modifications/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/manual/configuration/configure-complex-modifications/</guid>
+      <description>Karabiner-Elements provides more complex event modifications.&#xA;These rules change keys by conditions.&#xA;Examples Modifier flags + key to keys: Change control-m to return key. Change control-h to delete key. Key to modifier flags + keys: Change caps lock to command+control+option+shift key Post other key events when a key pressed alone: Post escape key when you press left control key alone. Change keys in specific apps: Change left command key to left control key in virtual machines.</description>
+    </item>
+    <item>
+      <title>Virtual modifier</title>
+      <link>/docs/json/extra/virtual-modifier/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/json/extra/virtual-modifier/</guid>
+      <description>Karabiner-Elements does not provide virtual modifiers, however you can make your own flag similar to virtual modifier using variables.&#xA;Example The following json change keypad_1 to virtual modifier.&#xA;Change keypad_1 to virtual modifier (my_modifier_1). Change keypad_1 + a to mission_control. Change keypad_1 + s to launchpad. [ { &amp;#34;type&amp;#34;: &amp;#34;basic&amp;#34;, &amp;#34;from&amp;#34;: { &amp;#34;key_code&amp;#34;: &amp;#34;keypad_1&amp;#34;, &amp;#34;modifiers&amp;#34;: { &amp;#34;mandatory&amp;#34;: [], &amp;#34;optional&amp;#34;: [&amp;#34;any&amp;#34;] } }, &amp;#34;to&amp;#34;: [ { &amp;#34;set_variable&amp;#34;: { &amp;#34;name&amp;#34;: &amp;#34;my_modifier_1&amp;#34;, &amp;#34;value&amp;#34;: 1 } } ], &amp;#34;to_after_key_up&amp;#34;: [ { &amp;#34;set_variable&amp;#34;: { &amp;#34;name&amp;#34;: &amp;#34;my_modifier_1&amp;#34;, &amp;#34;value&amp;#34;: 0 } } ] }, { &amp;#34;type&amp;#34;: &amp;#34;basic&amp;#34;, &amp;#34;from&amp;#34;: { &amp;#34;key_code&amp;#34;: &amp;#34;a&amp;#34;, &amp;#34;modifiers&amp;#34;: { &amp;#34;mandatory&amp;#34;: [], &amp;#34;optional&amp;#34;: [&amp;#34;any&amp;#34;] } }, &amp;#34;to&amp;#34;: [ { &amp;#34;key_code&amp;#34;: &amp;#34;mission_control&amp;#34; } ], &amp;#34;conditions&amp;#34;: [ { &amp;#34;type&amp;#34;: &amp;#34;variable_if&amp;#34;, &amp;#34;name&amp;#34;: &amp;#34;my_modifier_1&amp;#34;, &amp;#34;value&amp;#34;: 1 } ] }, { &amp;#34;type&amp;#34;: &amp;#34;basic&amp;#34;, &amp;#34;from&amp;#34;: { &amp;#34;key_code&amp;#34;: &amp;#34;s&amp;#34;, &amp;#34;modifiers&amp;#34;: { &amp;#34;mandatory&amp;#34;: [], &amp;#34;optional&amp;#34;: [&amp;#34;any&amp;#34;] } }, &amp;#34;to&amp;#34;: [ { &amp;#34;key_code&amp;#34;: &amp;#34;launchpad&amp;#34; } ], &amp;#34;conditions&amp;#34;: [ { &amp;#34;type&amp;#34;: &amp;#34;variable_if&amp;#34;, &amp;#34;name&amp;#34;: &amp;#34;my_modifier_1&amp;#34;, &amp;#34;value&amp;#34;: 1 } ] } ] </description>
+    </item>
+    <item>
+      <title>Check for updates</title>
+      <link>/docs/manual/operation/check-for-updates/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/manual/operation/check-for-updates/</guid>
+      <description>You can check for updates from Update tab.&#xA;Tip If you want to use the latest beta version, use &amp;ldquo;Check for beta updates&amp;rdquo; button.</description>
+    </item>
+    <item>
+      <title>Choose devices</title>
+      <link>/docs/manual/configuration/configure-devices/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/manual/configuration/configure-devices/</guid>
+      <description>Choose devices which Karabiner-Elements modifies events on Devices tab.&#xA;Tip Mice are disabled by default.&#xA;You have to enable them if you want to change the mouse buttons in Karabiner-Elements. </description>
+    </item>
+    <item>
+      <title>complex_modifications manipulator evaluation priority</title>
+      <link>/docs/json/complex-modifications-manipulator-evaluation-priority/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/json/complex-modifications-manipulator-evaluation-priority/</guid>
+      <description>The manipulators are evaluated from the top to the bottom and the input event is manipulated only the first matched manipulator.&#xA;In other words, if there are multiple manipulators which change the same key, the manipulator placed at the top is applied and other manipulators are ignored.&#xA;Simple Modifications and Complex Modifications Simple Modifications and Complex Modifications are independent.&#xA;Thus, Simple Modifications does not affect above priority.&#xA;Karabiner-Elements changes keys by Simple Modifications, and then changes them by Complex Modifications.</description>
+    </item>
+    <item>
+      <title>from.simultaneous</title>
+      <link>/docs/json/complex-modifications-manipulator-definition/from/simultaneous/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/json/complex-modifications-manipulator-definition/from/simultaneous/</guid>
+      <description>simultaneous manipulates keys which are pressed simultaneously in 50 milliseconds.&#xA;Example This json defines manipulator which changes a+s+d to mission_control.&#xA;{ &amp;#34;type&amp;#34;: &amp;#34;basic&amp;#34;, &amp;#34;from&amp;#34;: { &amp;#34;simultaneous&amp;#34;: [ { &amp;#34;key_code&amp;#34;: &amp;#34;a&amp;#34; }, { &amp;#34;key_code&amp;#34;: &amp;#34;s&amp;#34; }, { &amp;#34;key_code&amp;#34;: &amp;#34;d&amp;#34; } ], &amp;#34;modifiers&amp;#34;: { &amp;#34;optional&amp;#34;: [&amp;#34;any&amp;#34;] } }, &amp;#34;to&amp;#34;: [ { &amp;#34;key_code&amp;#34;: &amp;#34;mission_control&amp;#34; } ] } Note There are some cases simultaneous does not modify events.&#xA;simultaneous does not modify events if any from events are released before all from events are pressed.</description>
+    </item>
+    <item>
+      <title>Input event modification chaining</title>
+      <link>/docs/manual/misc/event-modification-chaining/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/manual/misc/event-modification-chaining/</guid>
+      <description>Karabiner-Elements treats input events by the following order:&#xA;Catch events from hardware. Apply Simple Modifications. Apply Complex Modifications. Apply Function Keys Modifications. (change f1&amp;hellip;f12 keys to media controls) Post events to applications via a virtual keyboard. Note System modifier keys configuration in System Settings &amp;gt; Keyboard &amp;gt; Keyboard Shortcuts&amp;hellip; &amp;gt; Modifier Keys is ignored when you use Karabiner-Elements.&#xA;Change modifier keys in Karabiner-Elements&amp;rsquo;s Simple Modifications.</description>
+    </item>
+    <item>
+      <title>iokit_power_management_sleep_system</title>
+      <link>/docs/json/complex-modifications-manipulator-definition/to/software_function/iokit_power_management_sleep_system/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/json/complex-modifications-manipulator-definition/to/software_function/iokit_power_management_sleep_system/</guid>
+      <description>Causes an immediate system sleep.&#xA;Available since iokit_power_management_sleep_system is available since Karabiner-Elements 13.7.1. { &amp;#34;to&amp;#34;: [ { &amp;#34;software_function&amp;#34;: { &amp;#34;iokit_power_management_sleep_system&amp;#34;: { &amp;#34;delay_milliseconds&amp;#34;: 500 } } } ] } Name Required Description delay_milliseconds Optional Waiting time before the system goes to sleep Examples Use default delay_milliseconds (500 ms).&#xA;{ &amp;#34;to&amp;#34;: [ { &amp;#34;software_function&amp;#34;: { &amp;#34;iokit_power_management_sleep_system&amp;#34;: {} } } ] } </description>
+    </item>
+    <item>
+      <title>Is it possible to adjust the key repeat rate?</title>
+      <link>/docs/help/how-to/key-repeat/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/help/how-to/key-repeat/</guid>
+      <description>Karabiner-Elements does not provide a feature to adjust key repeat rate.&#xA;Use System Settings &amp;gt; Keyboard.&#xA;You can also adjust the key repeat rate using defaults write command. https://apple.stackexchange.com/questions/10467/how-to-increase-keyboard-key-repeat-rate-on-os-x</description>
+    </item>
+    <item>
+      <title>keyboard_type_if, keyboard_type_unless</title>
+      <link>/docs/json/complex-modifications-manipulator-definition/conditions/keyboard-type/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/json/complex-modifications-manipulator-definition/conditions/keyboard-type/</guid>
+      <description>Change an event if/unless the event is from specified type keyboard.&#xA;Example Change control-[ key to escape, including JIS layout support. (the [ key is close_bracket in JIS layout)&#xA;[ { &amp;#34;type&amp;#34;: &amp;#34;basic&amp;#34;, &amp;#34;from&amp;#34;: { &amp;#34;key_code&amp;#34;: &amp;#34;open_bracket&amp;#34;, &amp;#34;modifiers&amp;#34;: { &amp;#34;mandatory&amp;#34;: [&amp;#34;control&amp;#34;], &amp;#34;optional&amp;#34;: [&amp;#34;caps_lock&amp;#34;] } }, &amp;#34;to&amp;#34;: [ { &amp;#34;key_code&amp;#34;: &amp;#34;escape&amp;#34; } ], &amp;#34;conditions&amp;#34;: [ { &amp;#34;keyboard_types&amp;#34;: [&amp;#34;ansi&amp;#34;, &amp;#34;iso&amp;#34;], &amp;#34;type&amp;#34;: &amp;#34;keyboard_type_if&amp;#34; } ] }, { &amp;#34;type&amp;#34;: &amp;#34;basic&amp;#34;, &amp;#34;from&amp;#34;: { &amp;#34;key_code&amp;#34;: &amp;#34;close_bracket&amp;#34;, &amp;#34;modifiers&amp;#34;: { &amp;#34;mandatory&amp;#34;: [&amp;#34;control&amp;#34;], &amp;#34;optional&amp;#34;: [&amp;#34;caps_lock&amp;#34;] } }, &amp;#34;to&amp;#34;: [ { &amp;#34;key_code&amp;#34;: &amp;#34;escape&amp;#34; } ], &amp;#34;conditions&amp;#34;: [ { &amp;#34;keyboard_types&amp;#34;: [&amp;#34;jis&amp;#34;], &amp;#34;type&amp;#34;: &amp;#34;keyboard_type_if&amp;#34; } ] } ] Specification { &amp;#34;type&amp;#34;: &amp;#34;keyboard_type_if&amp;#34;, &amp;#34;keyboard_types&amp;#34;: [&amp;#34;ansi&amp;#34;, &amp;#34;iso&amp;#34;] } Name Required Description type Required &amp;quot;keyboard_type_if&amp;quot; or &amp;quot;keyboard_type_unless&amp;quot; keyboard_types Required An array of &amp;quot;ansi&amp;quot;, &amp;quot;iso&amp;quot; or &amp;quot;jis&amp;quot; description Optional A human-readable comment Multiple keyboard types keyboard_types are joined by &amp;ldquo;or&amp;rdquo;.</description>
+    </item>
+    <item>
+      <title>to.set_variable</title>
+      <link>/docs/json/complex-modifications-manipulator-definition/to/set-variable/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/json/complex-modifications-manipulator-definition/to/set-variable/</guid>
+      <description>set_variable defines and updates the variable value.&#xA;Tip set_variable is designed to use with variable_if and variable_unless conditions. { &amp;#34;to&amp;#34;: [ { &amp;#34;set_variable&amp;#34;: { &amp;#34;name&amp;#34;: &amp;#34;variable name&amp;#34;, &amp;#34;value&amp;#34;: variable value, &amp;#34;key_up_value&amp;#34;: variable value } } ] } Name Required Description Available since name Required Target variable name. Karabiner-Elements 11.0.0 value Required Target variable value. Karabiner-Elements 11.0.0 key_up_value Optional A variable value when key is up Karabiner-Elements 14.12.6 Available types of value Type Example value Available since integer 0,1,2,&amp;hellip; Karabiner-Elements 11.</description>
+    </item>
+    <item>
+      <title>Touch Bar does not change to f1-f12 when I press the fn key</title>
+      <link>/docs/help/troubleshooting/touch-bar-function-keys/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/help/troubleshooting/touch-bar-function-keys/</guid>
+      <description>It&amp;rsquo;s an issue of macOS, and unfortunately, Karabiner-Elements cannot avoid this issue.&#xA;Instead, please change fn+number keys to function keys in Karabiner-Elements configuration.&#xA;Import Map fn + number keys to function keys Enable Map fn + number keys to their corresponding function keys. You can use f1-f12 keys by fn+number keys. Note If you are using &amp;ldquo;Use all F1, F2, etc. keys as standard function keys.&amp;rdquo;, enable Map fn + number keys to their corresponding media control keys instead.</description>
+    </item>
+    <item>
+      <title>What is the lock indicator on Karabiner-Elements and Karabiner-EventViewer icon</title>
+      <link>/docs/help/advanced-topics/lock-icon/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/help/advanced-topics/lock-icon/</guid>
+      <description>Info This content is for older versions of Karabiner Elements. Prior to Karabiner-Elements 14.10.0, a lock indicator is shown on Karabiner-Elements and Karabiner-EventViewer icon.&#xA;These indicators show that these files are protected so that they cannot be deleted from Finder.&#xA;Why these files are protected This protection is intended to prevent incomplete uninstallation.&#xA;Karabiner-Elements is a system-wide software, and files are installed in appropriate locations besides the Applications folder.</description>
+    </item>
+    <item>
+      <title>to.set_notification_message</title>
+      <link>/docs/json/complex-modifications-manipulator-definition/to/set-notification-message/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/json/complex-modifications-manipulator-definition/to/set-notification-message/</guid>
+      <description>set_notification_message sets or remove the notification message.&#xA;{ &amp;#34;to&amp;#34;: [ { &amp;#34;set_notification_message&amp;#34;: { &amp;#34;id&amp;#34;: &amp;#34;identifier of the message&amp;#34;, &amp;#34;text&amp;#34;: &amp;#34;message text&amp;#34; } } ] } Name Required Description id Required Specify an unique string for your notification message text Required Message body How to remove the notification message Set empty string to text to remove the notification message. Examples Show the notification message while you press right shift key.&#xA;{ &amp;#34;type&amp;#34;: &amp;#34;basic&amp;#34;, &amp;#34;from&amp;#34;: { &amp;#34;key_code&amp;#34;: &amp;#34;right_shift&amp;#34;, &amp;#34;modifiers&amp;#34;: { &amp;#34;optional&amp;#34;: [&amp;#34;any&amp;#34;] } }, &amp;#34;to&amp;#34;: [ { // Show the notification message &amp;#34;set_notification_message&amp;#34;: { &amp;#34;id&amp;#34;: &amp;#34;org.</description>
+    </item>
+    <item>
+      <title>Confirm the result of configuration (EventViewer)</title>
+      <link>/docs/manual/operation/eventviewer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/manual/operation/eventviewer/</guid>
+      <description>Karabiner-Elements provides a built-in event viewer named Karabiner-EventViewer. You can show keyboard and mouse events by using it.&#xA;Open Karabiner-EventViewer from Launchpad. Input events will be shown when you type keyboard on EventViewer or press pointing buttons on Mouse Area. </description>
+    </item>
+    <item>
+      <title>Control-eject shortcut does not work when Karabiner-Elements is running</title>
+      <link>/docs/help/troubleshooting/control-eject/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/help/troubleshooting/control-eject/</guid>
+      <description>It&amp;rsquo;s an issue of macOS, and unfortunately, Karabiner-Elements cannot avoid this issue.&#xA;Instead, please change fn+escape to eject and use control+fn+escape (== control+eject) shortcut.&#xA;Import Change escape key. Enable Change fn+escape to eject.&#xA;You can use control+fn+escape as control+eject. </description>
+    </item>
+    <item>
+      <title>Disable the built-in keyboard when external keyboard is connected</title>
+      <link>/docs/manual/configuration/disable-built-in-keyboard/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/manual/configuration/disable-built-in-keyboard/</guid>
+      <description>You can disable MacBook built-in keyboard if external keyboards are connected.&#xA;This feature is useful when you put the external keybaord on top of the built-in keyboard.&#xA;Enable Disable the built-in keyboard while this device is connected in Devices tab.&#xA;Configure the built-in keyboard detection Enable Treat as a built-in keyboard in Devices if your built-in keyboard is not recognized properly or you want to add a device that will be disabled,</description>
+    </item>
+    <item>
+      <title>from.simultaneous_options</title>
+      <link>/docs/json/complex-modifications-manipulator-definition/from/simultaneous-options/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/json/complex-modifications-manipulator-definition/from/simultaneous-options/</guid>
+      <description>simultaneous_options adjust the simultaneous behavior.&#xA;Key Value Description detect_key_down_uninterruptedly true or false Specify whether key_down detection is interrupted with unrelated events key_down_order insensitive, strict or strict_inverse Restriction of key_down order key_up_order insensitive, strict or strict_inverse Restriction of key_up order key_up_when any or all When key_up events are posted to_after_key_up An array of to event definitions Events will be posted when all from events are released detect_key_down_uninterruptedly If detect_key_down_uninterruptedly is true, Karabiner-Elements changes simultaneous events even if unrelated key down event exists between target events.</description>
+    </item>
+    <item>
+      <title>How to disable running Karabiner-Elements at login</title>
+      <link>/docs/help/how-to/disable-open-at-login/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/help/how-to/disable-open-at-login/</guid>
+      <description>Karabiner-Elements will be started automatically at login after once you have run Karabiner-ELements.&#xA;Quit Karabiner-Elements if you want to stop running Karabiner-Elements at login.</description>
+    </item>
+    <item>
+      <title>input_source_if, input_source_unless</title>
+      <link>/docs/json/complex-modifications-manipulator-definition/conditions/input-source/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/json/complex-modifications-manipulator-definition/conditions/input-source/</guid>
+      <description>Change an event if/unless the current input source is the specified value.&#xA;Example Switching input source between Japanese and English at tapping the left command key.&#xA;[ { &amp;#34;type&amp;#34;: &amp;#34;basic&amp;#34;, &amp;#34;from&amp;#34;: { &amp;#34;key_code&amp;#34;: &amp;#34;left_command&amp;#34;, &amp;#34;modifiers&amp;#34;: { &amp;#34;optional&amp;#34;: [&amp;#34;any&amp;#34;] } }, &amp;#34;to&amp;#34;: [ { &amp;#34;key_code&amp;#34;: &amp;#34;left_command&amp;#34;, &amp;#34;lazy&amp;#34;: true } ], &amp;#34;to_if_alone&amp;#34;: [ { &amp;#34;key_code&amp;#34;: &amp;#34;japanese_eisuu&amp;#34; } ], &amp;#34;to_if_held_down&amp;#34;: [ { &amp;#34;key_code&amp;#34;: &amp;#34;left_command&amp;#34; } ], &amp;#34;conditions&amp;#34;: [ { &amp;#34;input_sources&amp;#34;: [ { &amp;#34;language&amp;#34;: &amp;#34;ja&amp;#34; } ], &amp;#34;type&amp;#34;: &amp;#34;input_source_if&amp;#34; } ], &amp;#34;parameters&amp;#34;: { &amp;#34;basic.</description>
+    </item>
+    <item>
+      <title>karabiner.json data structure</title>
+      <link>/docs/json/root-data-structure/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/json/root-data-structure/</guid>
+      <description>Note Karabiner-Elements does not allow you including comments (// ... or /* ... */) in any json files. karabiner.json { &amp;#34;global&amp;#34;: { &amp;#34;check_for_updates_on_startup&amp;#34;: true, &amp;#34;show_in_menu_bar&amp;#34;: true, &amp;#34;show_profile_name_in_menu_bar&amp;#34;: false }, &amp;#34;profiles&amp;#34;: [ { &amp;#34;name&amp;#34;: &amp;#34;Profile name&amp;#34;, &amp;#34;selected&amp;#34;: true, &amp;#34;simple_modifications&amp;#34;: [ ... ], &amp;#34;fn_function_keys&amp;#34;: [ ... ], &amp;#34;complex_modifications&amp;#34;: { &amp;#34;parameters&amp;#34;: { ... }, &amp;#34;rules&amp;#34;: [ ... ] }, &amp;#34;virtual_hid_keyboard&amp;#34;: { &amp;#34;keyboard_type&amp;#34;: &amp;#34;ansi&amp;#34;, &amp;#34;caps_lock_delay_milliseconds&amp;#34;: 0 }, &amp;#34;devices&amp;#34;: [ ... ], &amp;#34;parameters&amp;#34;: { .</description>
+    </item>
+    <item>
+      <title>MultitouchExtension</title>
+      <link>/docs/manual/misc/multitouch-extension/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/manual/misc/multitouch-extension/</guid>
+      <description>Karabiner-MultitouchExtension allows you to change keys only when your finger is on the trackpad.&#xA;Note Karabiner-MultitouchExtension is available since Karabiner-Elements 12.6.9 Related Complex Modifications examples Multitouch Vi Mode Multitouch Diamond Cursor Multitouch Mouse Buttons ThumbSense MultitouchExtension usage Open MultitouchExtension app from Karabiner-Elements Settings &amp;gt; Misc. Enable &amp;ldquo;Start at login&amp;rdquo; on MultitouchExtension Preferences. Adjust the effective area of the trackpad. Tip If you hid Karabiner-MultitouchExtension icon in Dock, press &amp;ldquo;Open MultitouchExtension app&amp;rdquo; button on Preferences &amp;gt; Misc to open Karabiner-MultitouchExtension Preferences.</description>
+    </item>
+    <item>
+      <title>to.mouse_key</title>
+      <link>/docs/json/complex-modifications-manipulator-definition/to/mouse-key/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/json/complex-modifications-manipulator-definition/to/mouse-key/</guid>
+      <description>Move mouse pointer and scroll by mouse_key.&#xA;{ &amp;#34;to&amp;#34;: [ { &amp;#34;mouse_key&amp;#34;: { &amp;#34;x&amp;#34;: speed, &amp;#34;y&amp;#34;: speed, &amp;#34;vertical_wheel&amp;#34;: speed, &amp;#34;horizontal_wheel&amp;#34;: speed, &amp;#34;speed_multiplier&amp;#34;: 1.0 } } ] } Name Required Description x Optional Move left (x &amp;lt; 0) or right (x &amp;gt; 0) y Optional Move up (y &amp;lt; 0) or down (y &amp;gt; 0) vertical_wheel Optional Scroll up (vertical_wheel &amp;lt; 0) or down (vertical_wheel &amp;gt; 0) horizontal_wheel Optional Scroll left (horizontal_wheel &amp;gt; 0) or right (horizontal_wheel &amp;lt; 0) speed_multiplier Optional Multiply mouse keys speed while this key is hold down Note Speed and scroll direction depend on System Settings &amp;gt; Mouse configuration.</description>
+    </item>
+    <item>
+      <title>Cannot use some three key combinations (key event is not fired)</title>
+      <link>/docs/help/troubleshooting/cannot-use-some-key-combination/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/help/troubleshooting/cannot-use-some-key-combination/</guid>
+      <description>It&amp;rsquo;s a hardware limitation of your keyboard called &amp;ldquo;two-key rollover&amp;rdquo; if you cannot use some three key combinations. (e.g., physical left command key + right command key + m)&#xA;There are two way to avoid the rollover problem.&#xA;Use another keyboard which is N-key rollover. Use other key combinations. </description>
+    </item>
+    <item>
+      <title>to.sticky_modifier</title>
+      <link>/docs/json/complex-modifications-manipulator-definition/to/sticky-modifier/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/json/complex-modifications-manipulator-definition/to/sticky-modifier/</guid>
+      <description>sticky_modifier changes a key to a sticky modifier key.&#xA;{ &amp;#34;to&amp;#34;: [ { &amp;#34;sticky_modifier&amp;#34;: { &amp;#34;{modifier_name}&amp;#34;: &amp;#34;on | off | toggle&amp;#34; } } ] } Name Required Description {modifier_name} Optional - on always activates a sticky modifier.&#xA;- off is vice versa.&#xA;- toggle toggles a sticky modifier. toggle is suitable for most cases. Supported modifiers left_control left_shift left_option left_command right_control right_shift right_option right_command fn Examples { &amp;#34;to&amp;#34;: [ { &amp;#34;sticky_modifier&amp;#34;: { &amp;#34;right_option&amp;#34;: &amp;#34;toggle&amp;#34; } } ] } Note You have to specify only one modifier.</description>
+    </item>
+    <item>
+      <title>&#34;karabiner.json is not owned by a valid user&#34; error message in log</title>
+      <link>/docs/help/troubleshooting/json-owner-is-invalid/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/help/troubleshooting/json-owner-is-invalid/</guid>
+      <description>If the following error message is appeared in log, your home directory owner ship is not valid.&#xA;[warning] [grabber] /Users/.../karabiner.json is not owned by a valid user. The cause is that you are using an external storage and locating your home directory into the volume.&#xA;You have to enable ownership on the external volume by the following command in Terminal.app.&#xA;sudo diskutil enableOwnership disk99999s99999 (Replace disk99999s99999 with your disk identifier which you can find by diskutil list command.</description>
+    </item>
+    <item>
+      <title>Command line interface</title>
+      <link>/docs/manual/misc/command-line-interface/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/manual/misc/command-line-interface/</guid>
+      <description>Karabiner-Elements provides a command line interface which provides the following functions.&#xA;Switch a profile by name. Show current profile name. Show all profile names. Set variables which are used in complex modifications. Copy the current profile to system default profile. (Administrator privilege is required.) Remove the system default profile. (Administrator privilege is required.) Lint complex_modifications.json. Display version. Usage Show help Run the following command in terminal.&#xA;&amp;#39;/Library/Application Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli&amp;#39; Result:&#xA;A command line utility of Karabiner-Elements.</description>
+    </item>
+    <item>
+      <title>Manage profiles</title>
+      <link>/docs/manual/operation/profiles/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/manual/operation/profiles/</guid>
+      <description>You can switch profiles from menu bar. Manage profiles You can manage profiles from Profiles tab.&#xA;Press Add new profile button to add new profile.</description>
+    </item>
+    <item>
+      <title>Set keyboard type</title>
+      <link>/docs/manual/configuration/configure-keyboard-type/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/manual/configuration/configure-keyboard-type/</guid>
+      <description>You can change the keyboard type (ANSI, ISO, JIS) from Virtual Keyboard tab.&#xA;The keyboard type is tied to the country code due to the macOS specification. And we have to log out to apply the keyboard type changes.&#xA;So, we recommend to assign each keyboard types to country code 0,1,2. And then, choose the country code when you want to change the current keyboard type.&#xA;Note We have to log out after the keyboard type (ANSI, ISO, JIS) is changed to apply the changes.</description>
+    </item>
+    <item>
+      <title>to.modifiers</title>
+      <link>/docs/json/complex-modifications-manipulator-definition/to/modifiers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/json/complex-modifications-manipulator-definition/to/modifiers/</guid>
+      <description>to.modifiers is an array of the following strings.&#xA;Name Description caps_lock &amp;mdash; left_command &amp;mdash; left_control &amp;mdash; left_option &amp;mdash; left_shift &amp;mdash; right_command &amp;mdash; right_control &amp;mdash; right_option &amp;mdash; right_shift &amp;mdash; fn &amp;mdash; command Alias of left_command control Alias of left_control option Alias of left_option shift Alias of left_shift left_alt Alias of left_option (available since Karabiner-Elements 12.3.0) left_gui Alias of left_command (available since Karabiner-Elements 12.3.0) right_alt Alias of right_option (available since Karabiner-Elements 12.3.0) right_gui Alias of right_command (available since Karabiner-Elements 12.</description>
+    </item>
+    <item>
+      <title>variable_if, variable_unless</title>
+      <link>/docs/json/complex-modifications-manipulator-definition/conditions/variable/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/json/complex-modifications-manipulator-definition/conditions/variable/</guid>
+      <description>Change an event if/unless the variable is the specified value.&#xA;Example Change right_shift x2 to mission_control Virtual modifier Specification Tip variable_if and variable_unless are designed to use with set_variable. { &amp;#34;type&amp;#34;: &amp;#34;variable_if&amp;#34;, &amp;#34;name&amp;#34;: &amp;#34;variable name&amp;#34;, &amp;#34;value&amp;#34;: variable value } Name Required Description type Required &amp;quot;variable_if&amp;quot; or &amp;quot;variable_unless&amp;quot;. name Required Target variable name. value Required Target variable value. description Optional A human-readable comment Available types of value Type Example value Available since integer 0,1,2,&amp;hellip; Karabiner-Elements 11.</description>
+    </item>
+    <item>
+      <title>Configure icon in menu bar</title>
+      <link>/docs/manual/configuration/configure-menu-bar-icon/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/manual/configuration/configure-menu-bar-icon/</guid>
+      <description>Karabiner-Elements shows an icon in menu bar which provides the following functions:&#xA;Switch profiles. Open Settings. Open EventViewer. Quit Karabiner-Elements. If you want to hide it, turn off &amp;ldquo;Show icon in menu bar&amp;rdquo; on Settings &amp;gt; Misc tab.</description>
+    </item>
+    <item>
+      <title>event_changed_if, event_changed_unless</title>
+      <link>/docs/json/complex-modifications-manipulator-definition/conditions/event-changed/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/json/complex-modifications-manipulator-definition/conditions/event-changed/</guid>
+      <description>Change an event if/unless the event is already changed by other manipulators.&#xA;Example Change tab key to return_or_enter if the tab key is the physical tab key. (If the tab key is the result of modifying another key by simple modification, the key is ignored.)&#xA;{ &amp;#34;type&amp;#34;: &amp;#34;basic&amp;#34;, &amp;#34;from&amp;#34;: { &amp;#34;key_code&amp;#34;: &amp;#34;tab&amp;#34;, &amp;#34;modifiers&amp;#34;: { &amp;#34;optional&amp;#34;: [&amp;#34;any&amp;#34;] } }, &amp;#34;to&amp;#34;: [ { &amp;#34;key_code&amp;#34;: &amp;#34;return_or_enter&amp;#34; } ], &amp;#34;conditions&amp;#34;: [ { &amp;#34;type&amp;#34;: &amp;#34;event_changed_if&amp;#34;, &amp;#34;value&amp;#34;: false } ] } Specification { &amp;#34;type&amp;#34;: &amp;#34;event_changed_if&amp;#34;, &amp;#34;value&amp;#34;: true } Name Required Description type Required &amp;quot;event_changed_if&amp;quot; or &amp;quot;event_changed_unless&amp;quot; value Required true or false description Optional A human-readable comment Tip event_changed_unless is designed to prevent Function Keys Modifications from changing fx keys which are changed in Complex Modifications (e.</description>
+    </item>
+    <item>
+      <title>Placeholder Developer is shown in Security &amp; Privacy System Preferences</title>
+      <link>/docs/help/troubleshooting/placeholder-developer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/help/troubleshooting/placeholder-developer/</guid>
+      <description>Note This page is for macOS 10.15 Catalina, not macOS 11 Big Sur or later. &amp;ldquo;.Karabiner-VirtualHIDDevice-Manager&amp;rdquo; is usually shown in Security &amp;amp; Privacy System Preferences when macOS requires your approval.&#xA;However, &amp;ldquo;Placeholder Developer&amp;rdquo; will be shown due to a macOS issue if you meet all of the following criteria:&#xA;You are using macOS Catalina (10.15) Multiple system software are waiting your approval. Workarounds In this case, you can choose one of the following three options to use Karabiner-Elements:</description>
+    </item>
+    <item>
+      <title>Show log messages</title>
+      <link>/docs/manual/operation/log/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/manual/operation/log/</guid>
+      <description>You can confirm log messages on Log tab.&#xA;Advanced topic The log files are placed at:&#xA;System logs&#xA;/var/log/karabiner/grabber.log /var/log/karabiner/observer.log /var/log/karabiner/virtual_hid_device_service.log User logs&#xA;~/.local/share/karabiner/log/console_user_server.log ~/.local/share/karabiner/log/grabber_agent.log ~/.local/share/karabiner/log/observer_agent.log /var/log/karabiner/session_monitor.{uid}.log </description>
+    </item>
+    <item>
+      <title>The location of the configuration file</title>
+      <link>/docs/manual/misc/configuration-file-path/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/manual/misc/configuration-file-path/</guid>
+      <description>Karabiner-Elements stores configuration to a json file which is located ~/.config/karabiner/karabiner.json&#xA;About symbolic link If you want to move karabiner.json to another place and make symbolic link, make a symbolic link to ~/.config/karabiner directory instead of karabiner.json.&#xA;Warning Do not make a symlink to karabiner.json directly.&#xA;Karabiner-Elements will fail to detect the configuration file update and fail to reload the configuration if karabiner.json is a symbolic link.&#xA;Making symbolic link example The following command allows you to put karabiner.</description>
+    </item>
+    <item>
+      <title>to.lazy</title>
+      <link>/docs/json/complex-modifications-manipulator-definition/to/lazy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/json/complex-modifications-manipulator-definition/to/lazy/</guid>
+      <description>to.lazy is true or false. The default value is false.&#xA;If to.lazy is true and to.key_code is modifier flag such as &amp;quot;key_code&amp;quot;: &amp;quot;left_shift&amp;quot;, the to.key_code acts as lazy modifier.&#xA;The lazy modifier does not send own key events until another key is pressed together.&#xA;Tip The lazy modifier is designed using with to_if_alone or key combinations such as changing left_control + h to delete_or_backspace in order to suppress unnecessary modifier key events.</description>
+    </item>
+    <item>
+      <title>Change app icon</title>
+      <link>/docs/manual/misc/change-app-icon/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/manual/misc/change-app-icon/</guid>
+      <description>You can change the icons that appear in the Finder, Launchpad, Dock, etc from Settings &amp;gt; UI.&#xA;Note The icon in Dock will not reflect changes while the application is open. So, you should close and reopen the application to update the icon in Dock. </description>
+    </item>
+    <item>
+      <title>Privacy</title>
+      <link>/docs/privacy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/privacy/</guid>
+      <description>Privacy Security and privacy protection is one of the most important points of Karabiner-Elements architecture design.&#xA;Of course, Karabiner-Elements does not collect any of your input data, your configuration data, nor your usage statistics.&#xA;Data not collected Karabiner-Elements does not transmit your data externally. The following data is never transmitted outside your Mac:&#xA;Your keystrokes Your configuration data Your usage statistics And all other data except Karabiner-Elements version information. About Input Monitoring Karabiner-Elements exclusively receives input events from your keyboard, and then modifies them.</description>
+    </item>
+    <item>
+      <title>About &#34;Legacy System Extension&#34; alert</title>
+      <link>/docs/manual/misc/legacy-system-extension/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/manual/misc/legacy-system-extension/</guid>
+      <description>If you are using old Karabiner-Elements (12.x.x or earlier) on macOS Catalina or later, the following alert will be shown.&#xA;Please upgrade Karabiner-Elements 13.0.0 or later.</description>
+    </item>
+    <item>
+      <title>Caps Lock LED not working</title>
+      <link>/docs/help/troubleshooting/caps-lock-led-not-working/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/help/troubleshooting/caps-lock-led-not-working/</guid>
+      <description>Karabiner-Elements has a setting to disable caps lock LED control.&#xA;If your caps lock LED is not working properly, this setting may be enabled, so check the Manipulate caps lock LED setting in the Devices tab.</description>
+    </item>
+    <item>
+      <title>Contact</title>
+      <link>/docs/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/contact/</guid>
+      <description>Reporting Bugs, Feature requests Please post an issue to GitHub.&#xA;Karabiner-Elements KE-complex_modifications (About complex modifications) Required information with bug reports Please fill your information when you send bug reports:&#xA;Required information macOS version: Karabiner version:&#xA;(You can confirm the version in &amp;ldquo;Update&amp;rdquo; tab in Karabiner Settings.) Your Mac hardware: Your keyboard hardware: Example:&#xA;macOS version: macOS 14.1.2 Karabiner version: Karabiner-Elements 14.13.0 Your Mac hardware: M2 MacBook Air Your keyboard hardware: Das Keyboard 4 Professional for Mac Mechanical Keyboard Other Send a message to author of Karabiner-Elements.</description>
+    </item>
+    <item>
+      <title>Export and import configuration</title>
+      <link>/docs/manual/operation/export/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/manual/operation/export/</guid>
+      <description>You can export and import configuration by copying karabiner.json file to another machine.&#xA;Export Open config folder from Karabiner-Elements Settings &amp;gt; Misc. Configuration folder will be opened by Finder. Copy the karabiner.json file. Import Open config folder from Karabiner-Elements Settings &amp;gt; Misc. Replace karabiner.json with the exported file. (The configuration file will be reloaded automatically.) </description>
+    </item>
+    <item>
+      <title>External JSON generators</title>
+      <link>/docs/json/external-json-generators/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/json/external-json-generators/</guid>
+      <description>Karabiner-Elements configuration generators:&#xA;GokuRakuJoudo Goku generates karabiner.json from well designed edn format file. Karabiner Complex Modification The web UI for creating json of complex modification rules. Karabiner::CompModGenerator Raku module for easily bulk generating and regenerating complex modification from pre-defined templates. Jsonnet A data templating language as a simple extension of JSON to generate config data with the benefit to organize, simplify, unify, and manage sprawling configurations. karabiner.ts Write complex modification rules in TypeScript with strong typing.</description>
+    </item>
+    <item>
+      <title>to.repeat</title>
+      <link>/docs/json/complex-modifications-manipulator-definition/to/repeat/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/json/complex-modifications-manipulator-definition/to/repeat/</guid>
+      <description>to.repeat is true or false. The default value is true.&#xA;The key repeating will be suppressed if to.repeat is false.&#xA;Note You have to set repeat in the last to event as follows if you have multiple to events and want to set to.repeat false.&#xA;{ &amp;#34;to&amp;#34;: [ { &amp;#34;key_code&amp;#34;: &amp;#34;h&amp;#34; }, { &amp;#34;key_code&amp;#34;: &amp;#34;e&amp;#34; }, { &amp;#34;key_code&amp;#34;: &amp;#34;l&amp;#34; }, { &amp;#34;key_code&amp;#34;: &amp;#34;l&amp;#34; }, { &amp;#34;key_code&amp;#34;: &amp;#34;o&amp;#34;, &amp;#34;repeat&amp;#34;: false } ] } Tip to.</description>
+    </item>
+    <item>
+      <title>About Unsafe Configuration</title>
+      <link>/docs/manual/operation/about-unsafe-configuration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/manual/operation/about-unsafe-configuration/</guid>
+      <description>There are several settings that cannot be enabled by default in the GUI to prevent improper configuration which breaks macOS operation.&#xA;Although never recommended, enabling Unsafe Configuration from the Pro tab allows you the following operations.&#xA;If you want to enable the unsafe configuration, remember how to start up your Mac in safe mode. You can restore the settings in safe mode even if you make a mistake.&#xA;How to enable unsafe configuration Enabled operations Allow to modify Apple pointing devices Before:</description>
+    </item>
+    <item>
+      <title>Downgrade</title>
+      <link>/docs/manual/operation/downgrade/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/manual/operation/downgrade/</guid>
+      <description>If you face a problem and you want to revert previous version, please downgrade Karabiner-Elements as follows.&#xA;Uninstall Karabiner-Elements from uninstaller. Download a previous version from here. Install again. Advanced topic The first uninstallation is required to remove the virtual driver. Since virtual drivers cannot be directly downgraded, if you want to install an older version, you need to remove a newer version beforehand. </description>
+    </item>
+    <item>
+      <title>Pricing</title>
+      <link>/docs/pricing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/pricing/</guid>
+      <description>Karabiner-Elements is an open source software and you can use it without any purchases.&#xA;Supporting this project This project accepts your funding via GitHub Sponsors or PayPal.&#xA;For donors I appreciate all donors. I received your donations!&#xA;I&amp;rsquo;m afraid I don&amp;rsquo;t have enough time to reply for donors.&#xA;(I&amp;rsquo;m giving priority to develop Karabiner-Elements at the moment.)&#xA;Dec 17, 2023&#xA;Takayama Fumihiko Monthly or One-time (GitHub Sponsors) Takayama Fumihiko @tekezo Open GitHub Sponsors page One-time (PayPal) Open PayPal Payments Form (Pay $10 for Karabiner-Elements) Note: This is effectively a donation but it has taken the form of software fee because of Japanese law and the constraints on government regulation.</description>
+    </item>
+    <item>
+      <title>Settings window is shown at login</title>
+      <link>/docs/help/troubleshooting/preferences-window-shown-at-login/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/help/troubleshooting/preferences-window-shown-at-login/</guid>
+      <description>If you manually registered Karabiner-Elements to Open at Login, the settings window will always appear at startup.&#xA;Karabiner-Elements will start automatically via launchd even if it is not in Open at Login, so remove it from your Open at Login.&#xA;Open System Settings. Open General &amp;gt; Login Items. Remove Karabiner-Elements from Open at Login. Caution Do not disable Karabiner-Elements.app in Allow in the Background. It&amp;rsquo;s a required setting for Karabiner-Elements to work.</description>
+    </item>
+    <item>
+      <title>to.halt</title>
+      <link>/docs/json/complex-modifications-manipulator-definition/to/halt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/json/complex-modifications-manipulator-definition/to/halt/</guid>
+      <description>to.halt is true or false. The default value is false.&#xA;The typical usage of to.halt is to cancel to_after_key_up if to_if_alone or to_if_held_down is triggered.&#xA;Put &amp;quot;halt&amp;quot;: true into to_if_alone or to_if_held_down if you want to suppress to_after_key_up when to_if_alone or to_if_held_down is triggered.&#xA;Example The following json changes holding tab key to mission_control.&#xA;The halt in to_if_held_down suppresses to_after_key_up after mission_control is sent.&#xA;{ &amp;#34;type&amp;#34;: &amp;#34;basic&amp;#34;, &amp;#34;from&amp;#34;: { &amp;#34;key_code&amp;#34;: &amp;#34;tab&amp;#34; }, &amp;#34;to_after_key_up&amp;#34;: [ { &amp;#34;key_code&amp;#34;: &amp;#34;tab&amp;#34; } ], &amp;#34;to_if_held_down&amp;#34;: [ { &amp;#34;key_code&amp;#34;: &amp;#34;mission_control&amp;#34;, &amp;#34;halt&amp;#34;: true } ] } </description>
+    </item>
+    <item>
+      <title>Input symbols are different from the key code name on non-ANSI keyboards</title>
+      <link>/docs/help/troubleshooting/symbols-with-non-ansi-keyboard/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/help/troubleshooting/symbols-with-non-ansi-keyboard/</guid>
+      <description>This is the intended behavior.&#xA;The key code name using in Karabiner-Elements is HID usage name. This is close to the physical key location on the ANSI layout keyboard.&#xA;For this reason, there are mismatches of symbols actually input and key code names on non-ANSI keyboards.&#xA;Determining which characters are to be input by keyboard event is the later step in the processing flow of macOS. Karabiner-Elements changes input events on a layer closer to the hardware, which is why it works like this.</description>
+    </item>
+    <item>
+      <title>Release notes</title>
+      <link>/docs/releasenotes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/releasenotes/</guid>
+      <description>Karabiner-Elements 14.13.0 📦 Download 📅 Release date Dec 9, 2023 🔔 Important Notes A reboot is required when upgrading from version 14.12.0 or earlier, to update the virtual keyboard driver. ✨ New Features Palm detection is supported in MultitouchExtension. (Thanks to @quarkw) Use Bluetooth address (Bluetooth MAC address) is used to identify the device when the Bluetooth device does not have Vendor ID and Product ID. (Thanks to @stackia) Add the following settings into Devices tab.</description>
+    </item>
+    <item>
+      <title>to.hold_down_milliseconds</title>
+      <link>/docs/json/complex-modifications-manipulator-definition/to/hold-down-milliseconds/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/json/complex-modifications-manipulator-definition/to/hold-down-milliseconds/</guid>
+      <description>to.hold_down_milliseconds is an integer value. The default value is 0.&#xA;The value is an interval of key_down and key_up when key_down and key_up events are sent at the same time such as multiple to events.&#xA;Note Generally to.hold_down_milliseconds is used with &amp;quot;key_code&amp;quot;: &amp;quot;caps_lock&amp;quot;. Example The following json changes caps_lock key to sending caps_lock key_down, wait 200 milliseconds, caps_lock key_up.&#xA;{ &amp;#34;type&amp;#34;: &amp;#34;basic&amp;#34;, &amp;#34;from&amp;#34;: { &amp;#34;key_code&amp;#34;: &amp;#34;caps_lock&amp;#34;, &amp;#34;modifiers&amp;#34;: { &amp;#34;optional&amp;#34;: [&amp;#34;any&amp;#34;] } }, &amp;#34;to&amp;#34;: [ { &amp;#34;key_code&amp;#34;: &amp;#34;caps_lock&amp;#34;, &amp;#34;hold_down_milliseconds&amp;#34;: 200 }, { &amp;#34;key_code&amp;#34;: &amp;#34;vk_none&amp;#34; } ] } </description>
+    </item>
+    <item>
+      <title>Compatibility with Logitech Logi Options&#43;: Fn keys</title>
+      <link>/docs/help/troubleshooting/logitech-logi-options-plus-compatibility/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/help/troubleshooting/logitech-logi-options-plus-compatibility/</guid>
+      <description>This was discovered when using an MX Keys keyboard with the “Logi Options+” software. While Karabiner Elements is running, the Logitech specific function keys (such as Fn-esc to toggle between function keys and media keys and f1, f2, f3 to switch between inputs) are not recognized.&#xA;The solution is to edit karabiner.json such that the &amp;quot;fn_function_keys&amp;quot; array is empty:&#xA;&amp;#34;fn_function_keys&amp;#34;: [] Credit: https://github.com/pqrs-org/Karabiner-Elements/issues/1450#issuecomment-1013932206</description>
+    </item>
   </channel>
 </rss>

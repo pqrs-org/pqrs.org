@@ -1,156 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>dcgnuboy – Manual</title>
+    <title>Manual on dcgnuboy</title>
     <link>/docs/manual/</link>
     <description>Recent content in Manual on dcgnuboy</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
-    
-	  <atom:link href="/docs/manual/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-      
-        
-      
-    
-    
+    <atom:link href="/docs/manual/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Docs: Buttons</title>
+      <title>Buttons</title>
       <link>/docs/manual/buttons/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>/docs/manual/buttons/</guid>
-      <description>
-        
-        
-        &lt;h2 id=&#34;main-menu&#34;&gt;Main Menu&lt;/h2&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Button&lt;/th&gt;
-&lt;th&gt;Function&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;A&lt;/td&gt;
-&lt;td&gt;ROM menu&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;B&lt;/td&gt;
-&lt;td&gt;VMU menu&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Y&lt;/td&gt;
-&lt;td&gt;Credit&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;START + Y + L + R&lt;/td&gt;
-&lt;td&gt;Reset&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h2 id=&#34;rom-menu&#34;&gt;ROM Menu&lt;/h2&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Button&lt;/th&gt;
-&lt;th&gt;Function&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;A&lt;/td&gt;
-&lt;td&gt;Move to the directory&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Y&lt;/td&gt;
-&lt;td&gt;Move to the parent directory&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;X + D-pad&lt;/td&gt;
-&lt;td&gt;Accelerate cursor&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Analog stick&lt;/td&gt;
-&lt;td&gt;Adjust cursor wait&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h2 id=&#34;in-game&#34;&gt;In game&lt;/h2&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Button&lt;/th&gt;
-&lt;th&gt;Function&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;X&lt;/td&gt;
-&lt;td&gt;Gameboy B button&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;A&lt;/td&gt;
-&lt;td&gt;Gameboy A button&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Y&lt;/td&gt;
-&lt;td&gt;Gameboy Select button&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;START&lt;/td&gt;
-&lt;td&gt;Gameboy Start button&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;D-pad&lt;/td&gt;
-&lt;td&gt;Gameboy D-pad&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;L + R + START&lt;/td&gt;
-&lt;td&gt;Exit game&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;R + B&lt;/td&gt;
-&lt;td&gt;Quick state save menu&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;R + Y&lt;/td&gt;
-&lt;td&gt;VMU state save menu&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
-      </description>
+      <description>Main Menu Button Function A ROM menu B VMU menu Y Credit START + Y + L + R Reset ROM Menu Button Function A Move to the directory Y Move to the parent directory X + D-pad Accelerate cursor Analog stick Adjust cursor wait In game Button Function X Gameboy B button A Gameboy A button Y Gameboy Select button START Gameboy Start button D-pad Gameboy D-pad L + R + START Exit game R + B Quick state save menu R + Y VMU state save menu </description>
     </item>
-    
     <item>
-      <title>Docs: Features</title>
+      <title>Features</title>
       <link>/docs/manual/features/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>/docs/manual/features/</guid>
-      <description>
-        
-        
-        &lt;h2 id=&#34;implemented&#34;&gt;Implemented&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Gameboy &amp;amp; Gameboy Color emulation&lt;/li&gt;
-&lt;li&gt;Sound emulation&lt;/li&gt;
-&lt;li&gt;Save and Load&lt;/li&gt;
-&lt;li&gt;Quick State Save and Load&lt;/li&gt;
-&lt;li&gt;VMU State Save and Load&lt;/li&gt;
-&lt;li&gt;Frame skipping&lt;/li&gt;
-&lt;li&gt;Screen adjustment&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;not-implemented&#34;&gt;Not implemented&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Suitable emulation speed on some Gameboy Color games&lt;/li&gt;
-&lt;li&gt;Refactoring of source code&lt;/li&gt;
-&lt;/ul&gt;
-
-      </description>
+      <description>Implemented Gameboy &amp;amp; Gameboy Color emulation Sound emulation Save and Load Quick State Save and Load VMU State Save and Load Frame skipping Screen adjustment Not implemented Suitable emulation speed on some Gameboy Color games Refactoring of source code </description>
     </item>
-    
   </channel>
 </rss>

@@ -1,221 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Karabiner-Elements – How to</title>
+    <title>How to on Karabiner-Elements</title>
     <link>/docs/help/how-to/</link>
     <description>Recent content in How to on Karabiner-Elements</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
-    
-	  <atom:link href="/docs/help/how-to/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-      
-        
-      
-    
-    
+    <atom:link href="/docs/help/how-to/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Docs: How to change mouse buttons</title>
+      <title>How to change mouse buttons</title>
       <link>/docs/help/how-to/mouse-button/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>/docs/help/how-to/mouse-button/</guid>
-      <description>
-        
-        
-        &lt;p&gt;Karabiner-Elements does not modify mouse devices by default.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;You have to enable your mouse on Karabiner-Elements Settings &amp;gt; Devices.
-
-    
-    
-    
-      
-    
-    
-    &lt;figure&gt;
-      &lt;img
-        src=&#34;/docs/help/how-to/mouse-button/images/devices@2x.png&#34;
-        alt=&#34;devices@2x.png&#34;
-        style=&#34;width: 1100px&#34;
-      /&gt;
-    &lt;/figure&gt;
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Then, use Simple Modifications to assign a key to a button or
-use &lt;a href=&#34;https://ke-complex-modifications.pqrs.org/#mouse_button&#34;&gt;Complex Modifications&lt;/a&gt; for more advanced usage.
-
-    
-    
-    
-      
-    
-    
-    &lt;figure&gt;
-      &lt;img
-        src=&#34;/docs/help/how-to/mouse-button/images/karabiner-elements-mouse-button-simple-modifications@2x.png&#34;
-        alt=&#34;karabiner-elements-mouse-button-simple-modifications@2x.png&#34;
-        style=&#34;width: 1100px&#34;
-      /&gt;
-    &lt;/figure&gt;
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-
-      </description>
+      <description>Karabiner-Elements does not modify mouse devices by default.&#xA;You have to enable your mouse on Karabiner-Elements Settings &amp;gt; Devices. Then, use Simple Modifications to assign a key to a button or use Complex Modifications for more advanced usage. </description>
     </item>
-    
     <item>
-      <title>Docs: How to use sticky modifier keys</title>
+      <title>How to use sticky modifier keys</title>
       <link>/docs/help/how-to/sticky-modifier-key/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>/docs/help/how-to/sticky-modifier-key/</guid>
-      <description>
-        
-        
-        &lt;p&gt;You can enable the sticky modifier keys from Karabiner-Elements Settings &amp;gt; Simple modifications.&lt;/p&gt;
-
-
-
-
-  
-
-
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/help/how-to/sticky-modifier-key/images/to-keys@2x.png&#34;
-    alt=&#34;to-keys@2x.png&#34;
-    style=&#34;width: 1092px&#34;
-  /&gt;
-&lt;/figure&gt;
-
-
-
-&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
-&lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
-
-    &lt;p&gt;The sticky modifier keys acts as general modifier key while you are pressing and holding down the key.&lt;/p&gt;
-&lt;p&gt;For example, the following operation result is &lt;code&gt;AA&lt;/code&gt; instead of &lt;code&gt;Aa&lt;/code&gt;.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Press &lt;code&gt;sticky left shift&lt;/code&gt; key&lt;/li&gt;
-&lt;li&gt;Press &lt;code&gt;a&lt;/code&gt; key&lt;/li&gt;
-&lt;li&gt;Release &lt;code&gt;a&lt;/code&gt; key&lt;/li&gt;
-&lt;li&gt;Press &lt;code&gt;a&lt;/code&gt; key&lt;/li&gt;
-&lt;li&gt;Release &lt;code&gt;a&lt;/code&gt; key&lt;/li&gt;
-&lt;li&gt;Release &lt;code&gt;sticky left shift&lt;/code&gt; key&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;If you want to disable this feature, use &lt;code&gt;sticky modifier key (pressing and holding down is disabled)&lt;/code&gt;.&lt;/p&gt;
-
-
-&lt;/div&gt;
-
-&lt;h2 id=&#34;sticky-modifier-key-indicator&#34;&gt;Sticky modifier key indicator&lt;/h2&gt;
-&lt;p&gt;Sticky modifier key indicator will be shown while the sticky modifiers are active.&lt;/p&gt;
-
-
-
-
-  
-
-
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/help/how-to/sticky-modifier-key/images/sticky-modifier-key-indicator@2x.png&#34;
-    alt=&#34;sticky-modifier-key-indicator@2x.png&#34;
-    style=&#34;width: 438px&#34;
-  /&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;You can hide the indicator from Karabiner-Elements Settings &amp;gt; UI.&lt;/p&gt;
-
-
-
-
-  
-
-
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/help/how-to/sticky-modifier-key/images/indicator-configuration@2x.png&#34;
-    alt=&#34;indicator-configuration@2x.png&#34;
-    style=&#34;width: 1100px&#34;
-  /&gt;
-&lt;/figure&gt;
-
-&lt;h2 id=&#34;sticky-modifiers-and-mouse-events&#34;&gt;Sticky modifiers and mouse events&lt;/h2&gt;
-&lt;p&gt;The sticky modifiers are not deactivate by mouse buttons if you are not enabled the mouse.&lt;/p&gt;
-&lt;p&gt;There are two solutions:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Deactivate sticky modifier by press the sticky modifier key again.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;../mouse-button/&#34;&gt;Enable your mouse on Devices.&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-      </description>
+      <description>You can enable the sticky modifier keys from Karabiner-Elements Settings &amp;gt; Simple modifications.&#xA;Note The sticky modifier keys acts as general modifier key while you are pressing and holding down the key.&#xA;For example, the following operation result is AA instead of Aa.&#xA;Press sticky left shift key Press a key Release a key Press a key Release a key Release sticky left shift key If you want to disable this feature, use sticky modifier key (pressing and holding down is disabled).</description>
     </item>
-    
     <item>
-      <title>Docs: How to disable caps lock delay</title>
+      <title>How to disable caps lock delay</title>
       <link>/docs/help/how-to/disable-caps-lock-delay/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>/docs/help/how-to/disable-caps-lock-delay/</guid>
-      <description>
-        
-        
-        &lt;p&gt;Karabiner-Elements disables the caps lock delay without any action since v13.3.0.&lt;/p&gt;
-
-      </description>
+      <description>Karabiner-Elements disables the caps lock delay without any action since v13.3.0.</description>
     </item>
-    
     <item>
-      <title>Docs: Is it possible to adjust the key repeat rate?</title>
+      <title>Is it possible to adjust the key repeat rate?</title>
       <link>/docs/help/how-to/key-repeat/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>/docs/help/how-to/key-repeat/</guid>
-      <description>
-        
-        
-        &lt;p&gt;Karabiner-Elements does not provide a feature to adjust key repeat rate.&lt;/p&gt;
-&lt;p&gt;Use System Settings &amp;gt; Keyboard.&lt;/p&gt;
-
-
-
-
-  
-
-
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/help/how-to/key-repeat/images/key-repeat-rate@2x.png&#34;
-    alt=&#34;key-repeat-rate@2x.png&#34;
-    style=&#34;width: 715px&#34;
-  /&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;You can also adjust the key repeat rate using &lt;code&gt;defaults write&lt;/code&gt; command.
-&lt;a href=&#34;https://apple.stackexchange.com/questions/10467/how-to-increase-keyboard-key-repeat-rate-on-os-x&#34;&gt;https://apple.stackexchange.com/questions/10467/how-to-increase-keyboard-key-repeat-rate-on-os-x&lt;/a&gt;&lt;/p&gt;
-
-      </description>
+      <description>Karabiner-Elements does not provide a feature to adjust key repeat rate.&#xA;Use System Settings &amp;gt; Keyboard.&#xA;You can also adjust the key repeat rate using defaults write command. https://apple.stackexchange.com/questions/10467/how-to-increase-keyboard-key-repeat-rate-on-os-x</description>
     </item>
-    
     <item>
-      <title>Docs: How to disable running Karabiner-Elements at login</title>
+      <title>How to disable running Karabiner-Elements at login</title>
       <link>/docs/help/how-to/disable-open-at-login/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>/docs/help/how-to/disable-open-at-login/</guid>
-      <description>
-        
-        
-        &lt;p&gt;Karabiner-Elements will be started automatically at login after once you have run Karabiner-ELements.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;../../../manual/operation/quit/&#34;&gt;Quit Karabiner-Elements&lt;/a&gt; if you want to stop running Karabiner-Elements at login.&lt;/p&gt;
-
-      </description>
+      <description>Karabiner-Elements will be started automatically at login after once you have run Karabiner-ELements.&#xA;Quit Karabiner-Elements if you want to stop running Karabiner-Elements at login.</description>
     </item>
-    
   </channel>
 </rss>

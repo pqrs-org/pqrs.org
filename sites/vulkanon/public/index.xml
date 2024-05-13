@@ -1,17 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Vulkanon – Vulkanon</title>
+    <title>Vulkanon</title>
     <link>/</link>
     <description>Recent content on Vulkanon</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
-    
-	  <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-      
-      
-    
-    
+    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Buttons</title>
+      <link>/docs/manual/buttons/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/manual/buttons/</guid>
+      <description>Main Menu Button Function A Choose B Cancel Control Pad Move cursor In Game Button Function A, B Shot L, R Laser Select Back to Main Menu Control Pad Move </description>
+    </item>
+    <item>
+      <title>Development</title>
+      <link>/docs/developmemt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/developmemt/</guid>
+      <description>How to build Requirements devkitPro r18 (buildscripts 20060412) You need to use version r18. Do not use the latest release! Steps Execute the following commands in Terminal.&#xA;git clone --depth 1 https://github.com/pqrs-org/Vulkanon.git cd Vulkanon/vulkanon make </description>
+    </item>
+    <item>
+      <title>Playing the game</title>
+      <link>/docs/manual/play/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/manual/play/</guid>
+      <description>Defeat the boss within three minutes time limits.&#xA;Laser Laser destroys all enemy bullets. You can use Laser when Power is 100%.&#xA;Enemy Bullets Suicide Bullets and Aimed Suicide Bullets are generated when you shot Destroyable Bullet.&#xA;Image Type Destroyable Bullet Suicide Bullet Aimed Suicide Bullet </description>
+    </item>
+    <item>
+      <title>Pricing</title>
+      <link>/docs/pricing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/pricing/</guid>
+      <description>Vulkanon is an open source software and you can use it without any purchases.</description>
+    </item>
+    <item>
+      <title>Release notes</title>
+      <link>/docs/releasenotes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/releasenotes/</guid>
+      <description>Vulkanon 2.1 📦 Download 📅 Release date Jul 1, 2007 ⚡️ Improvements Changed some sound-effects. 🐛 Bug Fixes Fixed a bug that screen is not drawn properly when Vulkanon is launched from the G6 Flash cartridge. Vulkanon 2.0 📦 Download 📅 Release date Aug 31, 2006 ✨ New Features Added sound composed by Nullsleep. ⚡️ Improvements Adjusted level design. Vulkanon 1.0 📦 Download 📅 Release date Jul 26, 2006 ✨ New Features Jul 26, 2006 </description>
+    </item>
   </channel>
 </rss>

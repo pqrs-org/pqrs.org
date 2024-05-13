@@ -1,585 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Karabiner-Elements – Operation</title>
+    <title>Operation on Karabiner-Elements</title>
     <link>/docs/manual/operation/</link>
     <description>Recent content in Operation on Karabiner-Elements</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
-    
-	  <atom:link href="/docs/manual/operation/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-      
-        
-      
-    
-    
+    <atom:link href="/docs/manual/operation/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Docs: Quit</title>
+      <title>Quit</title>
       <link>/docs/manual/operation/quit/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>/docs/manual/operation/quit/</guid>
-      <description>
-        
-        
-        &lt;p&gt;Karabiner-Elements keeps running in the background even if you close the settings window.&lt;br /&gt;
-To quit Karabiner-Elements, choose &amp;ldquo;Quit Karabiner-Elements&amp;rdquo; from menu bar.&lt;/p&gt;
-
-
-
-
-  
-
-
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/manual/operation/quit/images/karabiner-elements-menu-quit@2x.png&#34;
-    alt=&#34;karabiner-elements-menu-quit@2x.png&#34;
-    style=&#34;width: 376px&#34;
-  /&gt;
-&lt;/figure&gt;
-
-
-
-&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
-&lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
-
-    &lt;p&gt;If you&amp;rsquo;ve hidden the menu bar icon, you can also quit Karabiner-Elements from Settings.&lt;/p&gt;
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/manual/operation/quit/images/karabiner-elements-quit@2x.png&#34;
-    alt=&#34;karabiner-elements-quit@2x.png&#34;
-    style=&#34;width: 1100px&#34;
-  /&gt;
-&lt;/figure&gt;
-
-&lt;/div&gt;
-
-
-      </description>
+      <description>Karabiner-Elements keeps running in the background even if you close the settings window.&#xA;To quit Karabiner-Elements, choose &amp;ldquo;Quit Karabiner-Elements&amp;rdquo; from menu bar.&#xA;Note If you&amp;rsquo;ve hidden the menu bar icon, you can also quit Karabiner-Elements from Settings.</description>
     </item>
-    
     <item>
-      <title>Docs: Restart</title>
+      <title>Restart</title>
       <link>/docs/manual/operation/restart/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>/docs/manual/operation/restart/</guid>
-      <description>
-        
-        
-        &lt;p&gt;You can restart Karabiner-Elements from Settings.&lt;/p&gt;
-
-
-
-
-  
-
-
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/manual/operation/restart/images/restart@2x.png&#34;
-    alt=&#34;restart@2x.png&#34;
-    style=&#34;width: 1100px&#34;
-  /&gt;
-&lt;/figure&gt;
-
-
-      </description>
+      <description>You can restart Karabiner-Elements from Settings.</description>
     </item>
-    
     <item>
-      <title>Docs: Uninstall</title>
+      <title>Uninstall</title>
       <link>/docs/manual/operation/uninstall/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>/docs/manual/operation/uninstall/</guid>
-      <description>
-        
-        
-        &lt;p&gt;Karabiner-Elements provides built-in uninstaller.&lt;br /&gt;
-Use the uninstaller to remove Karabiner-Elements from your system.&lt;/p&gt;
-&lt;p&gt;You can launch the uninstaller from &amp;ldquo;Launch uninstaller&amp;rdquo; button on Uninstall tab.
-
-
-
-
-  
-
-
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/manual/operation/uninstall/images/uninstall-button@2x.png&#34;
-    alt=&#34;uninstall-button@2x.png&#34;
-    style=&#34;width: 1100px&#34;
-  /&gt;
-&lt;/figure&gt;
-&lt;/p&gt;
-&lt;p&gt;Then, follow the instruction of the dialog. (The uninstaller ask your administrator password in order to remove files.)&lt;/p&gt;
-
-
-
-
-  
-
-
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/manual/operation/uninstall/images/uninstaller@2x.png&#34;
-    alt=&#34;uninstaller@2x.png&#34;
-    style=&#34;width: 420px&#34;
-  /&gt;
-&lt;/figure&gt;
-
-
-
-&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
-&lt;h4 class=&#34;alert-heading&#34;&gt;Uninstall from command line&lt;/h4&gt;
-
-    &lt;p&gt;If you don&amp;rsquo;t want to use above GUI, you can also uninstall Karabiner-Elements from command line.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;bash &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;/Library/Application Support/org.pqrs/Karabiner-DriverKit-VirtualHIDDevice/scripts/uninstall/deactivate_driver.sh&amp;#39;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;/Library/Application Support/org.pqrs/Karabiner-Elements/uninstall.sh&amp;#39;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;(Administrator password is required to run the above command.)&lt;/p&gt;
-
-
-&lt;/div&gt;
-
-&lt;h2 id=&#34;additional-uninstallation&#34;&gt;Additional uninstallation&lt;/h2&gt;
-&lt;p&gt;Some settings and files will remain after uninstallation.
-It does not affect the system even if it remains in place, but if you are concerned about them, please delete them manually.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Input Monitoring settings
-&lt;ul&gt;
-&lt;li&gt;Remove karabiner_grabber and karabiner_observer from the Input Monitoring settings in macOS Settings.
-
-        
-        
-        
-          
-        
-        
-        &lt;figure&gt;
-          &lt;img
-            src=&#34;/docs/manual/operation/uninstall/images/input-monitoring1@2x.png&#34;
-            alt=&#34;input-monitoring1@2x.png&#34;
-            style=&#34;width: 715px&#34;
-          /&gt;
-        &lt;/figure&gt;
-
-
-        
-        
-        
-          
-        
-        
-        &lt;figure&gt;
-          &lt;img
-            src=&#34;/docs/manual/operation/uninstall/images/input-monitoring2@2x.png&#34;
-            alt=&#34;input-monitoring2@2x.png&#34;
-            style=&#34;width: 715px&#34;
-          /&gt;
-        &lt;/figure&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Log files
-&lt;ul&gt;
-&lt;li&gt;Delete the following directories:
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;/var/log/karabiner&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;~/.local/share/karabiner&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Temporary directories
-&lt;ul&gt;
-&lt;li&gt;Delete the following directories:
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;/Library/Application Support/org.pqrs/tmp&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Setting files
-&lt;ul&gt;
-&lt;li&gt;Delete the following directories:
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;~/.config/karabiner&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;hr&gt;
-
-
-&lt;div class=&#34;alert alert-success&#34; role=&#34;alert&#34;&gt;
-&lt;h4 class=&#34;alert-heading&#34;&gt;Advanced topic&lt;/h4&gt;
-
-    &lt;p&gt;&lt;code&gt;Operation not permitted&lt;/code&gt; error will occur if you try removing files by &lt;code&gt;rm&lt;/code&gt; command.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo rm -rf /Applications/Karabiner-Elements.app
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;rm: /Applications/Karabiner-Elements.app/Contents: Operation not permitted
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;rm: /Applications/Karabiner-Elements.app: Operation not permitted
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Karabiner-Elements forces you to use uninstaller to remove files in order to ensure remove files outside /Applications.&lt;/p&gt;
-&lt;p&gt;See &lt;a href=&#34;/docs/help/advanced-topics/installed-files/&#34;&gt;Installed files&lt;/a&gt; to confirm the files.&lt;/p&gt;
-
-
-&lt;/div&gt;
-
-
-
-&lt;div class=&#34;alert alert-danger&#34; role=&#34;alert&#34;&gt;
-&lt;h4 class=&#34;alert-heading&#34;&gt;Manual uninstallation&lt;/h4&gt;
-
-    &lt;p&gt;If you want to remove files without uninstaller, unlock app files from command line with &lt;a href=&#34;/docs/help/advanced-topics/lock-icon/#why-these-files-are-protected&#34;&gt;this instruction&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;And then, remove &lt;a href=&#34;/docs/help/advanced-topics/installed-files/&#34;&gt;installed files&lt;/a&gt; by hand, and reboot your Mac.&lt;/p&gt;
-
-
-&lt;/div&gt;
-
-
-      </description>
+      <description>Karabiner-Elements provides built-in uninstaller.&#xA;Use the uninstaller to remove Karabiner-Elements from your system.&#xA;You can launch the uninstaller from &amp;ldquo;Launch uninstaller&amp;rdquo; button on Uninstall tab. Then, follow the instruction of the dialog. (The uninstaller ask your administrator password in order to remove files.)&#xA;Uninstall from command line If you don&amp;rsquo;t want to use above GUI, you can also uninstall Karabiner-Elements from command line.&#xA;bash &amp;#39;/Library/Application Support/org.pqrs/Karabiner-DriverKit-VirtualHIDDevice/scripts/uninstall/deactivate_driver.sh&amp;#39; sudo &amp;#39;/Library/Application Support/org.pqrs/Karabiner-Elements/uninstall.sh&amp;#39; (Administrator password is required to run the above command.</description>
     </item>
-    
     <item>
-      <title>Docs: Check for updates</title>
+      <title>Check for updates</title>
       <link>/docs/manual/operation/check-for-updates/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>/docs/manual/operation/check-for-updates/</guid>
-      <description>
-        
-        
-        &lt;p&gt;You can check for updates from Update tab.&lt;/p&gt;
-
-
-
-
-  
-
-
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/manual/operation/check-for-updates/images/karabiner-elements-check-for-updates@2x.png&#34;
-    alt=&#34;karabiner-elements-check-for-updates@2x.png&#34;
-    style=&#34;width: 1100px&#34;
-  /&gt;
-&lt;/figure&gt;
-
-
-
-&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
-&lt;h4 class=&#34;alert-heading&#34;&gt;Tip&lt;/h4&gt;
-
-    &lt;p&gt;If you want to use the latest beta version, use &amp;ldquo;Check for beta updates&amp;rdquo; button.&lt;/p&gt;
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/manual/operation/check-for-updates/images/karabiner-elements-check-for-updates-beta@2x.png&#34;
-    alt=&#34;karabiner-elements-check-for-updates-beta@2x.png&#34;
-    style=&#34;width: 1100px&#34;
-  /&gt;
-&lt;/figure&gt;
-
-&lt;/div&gt;
-
-
-      </description>
+      <description>You can check for updates from Update tab.&#xA;Tip If you want to use the latest beta version, use &amp;ldquo;Check for beta updates&amp;rdquo; button.</description>
     </item>
-    
     <item>
-      <title>Docs: Confirm the result of configuration (EventViewer)</title>
+      <title>Confirm the result of configuration (EventViewer)</title>
       <link>/docs/manual/operation/eventviewer/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>/docs/manual/operation/eventviewer/</guid>
-      <description>
-        
-        
-        &lt;p&gt;Karabiner-Elements provides a built-in event viewer named Karabiner-EventViewer.
-You can show keyboard and mouse events by using it.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Open Karabiner-EventViewer from Launchpad.
-
-    
-    
-    
-      
-    
-    
-    &lt;figure&gt;
-      &lt;img
-        src=&#34;/docs/manual/operation/eventviewer/images/karabiner-elements-eventviewer-icon@2x.png&#34;
-        alt=&#34;karabiner-elements-eventviewer-icon@2x.png&#34;
-        style=&#34;width: 546px&#34;
-      /&gt;
-    &lt;/figure&gt;
-&lt;/li&gt;
-&lt;li&gt;Input events will be shown when you type keyboard on EventViewer or press pointing buttons on Mouse Area.
-
-    
-    
-    
-      
-    
-    
-    &lt;figure&gt;
-      &lt;img
-        src=&#34;/docs/manual/operation/eventviewer/images/karabiner-elements-eventviewer@2x.png&#34;
-        alt=&#34;karabiner-elements-eventviewer@2x.png&#34;
-        style=&#34;width: 1100px&#34;
-      /&gt;
-    &lt;/figure&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-
-      </description>
+      <description>Karabiner-Elements provides a built-in event viewer named Karabiner-EventViewer. You can show keyboard and mouse events by using it.&#xA;Open Karabiner-EventViewer from Launchpad. Input events will be shown when you type keyboard on EventViewer or press pointing buttons on Mouse Area. </description>
     </item>
-    
     <item>
-      <title>Docs: Manage profiles</title>
+      <title>Manage profiles</title>
       <link>/docs/manual/operation/profiles/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>/docs/manual/operation/profiles/</guid>
-      <description>
-        
-        
-        &lt;p&gt;You can switch profiles from menu bar. &lt;br /&gt;&lt;/p&gt;
-
-
-
-
-  
-
-
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/manual/operation/profiles/images/karabiner-elements-menu-profiles@2x.png&#34;
-    alt=&#34;karabiner-elements-menu-profiles@2x.png&#34;
-    style=&#34;width: 376px&#34;
-  /&gt;
-&lt;/figure&gt;
-
-&lt;h2 id=&#34;manage-profiles&#34;&gt;Manage profiles&lt;/h2&gt;
-&lt;p&gt;You can manage profiles from Profiles tab.&lt;br /&gt;
-Press &lt;strong&gt;Add new profile&lt;/strong&gt; button to add new profile.&lt;/p&gt;
-
-
-
-
-  
-
-
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/manual/operation/profiles/images/karabiner-elements-profiles@2x.png&#34;
-    alt=&#34;karabiner-elements-profiles@2x.png&#34;
-    style=&#34;width: 1100px&#34;
-  /&gt;
-&lt;/figure&gt;
-
-
-      </description>
+      <description>You can switch profiles from menu bar. Manage profiles You can manage profiles from Profiles tab.&#xA;Press Add new profile button to add new profile.</description>
     </item>
-    
     <item>
-      <title>Docs: Show log messages</title>
+      <title>Show log messages</title>
       <link>/docs/manual/operation/log/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>/docs/manual/operation/log/</guid>
-      <description>
-        
-        
-        &lt;p&gt;You can confirm log messages on Log tab.&lt;/p&gt;
-
-
-
-
-  
-
-
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/manual/operation/log/images/karabiner-elements-error-log@2x.png&#34;
-    alt=&#34;karabiner-elements-error-log@2x.png&#34;
-    style=&#34;width: 1100px&#34;
-  /&gt;
-&lt;/figure&gt;
-
-
-
-&lt;div class=&#34;alert alert-danger&#34; role=&#34;alert&#34;&gt;
-&lt;h4 class=&#34;alert-heading&#34;&gt;Advanced topic&lt;/h4&gt;
-
-    &lt;p&gt;The log files are placed at:&lt;/p&gt;
-&lt;p&gt;System logs&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;/var/log/karabiner/grabber.log&lt;/li&gt;
-&lt;li&gt;/var/log/karabiner/observer.log&lt;/li&gt;
-&lt;li&gt;/var/log/karabiner/virtual_hid_device_service.log&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;User logs&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;~/.local/share/karabiner/log/console_user_server.log&lt;/li&gt;
-&lt;li&gt;~/.local/share/karabiner/log/grabber_agent.log&lt;/li&gt;
-&lt;li&gt;~/.local/share/karabiner/log/observer_agent.log&lt;/li&gt;
-&lt;li&gt;/var/log/karabiner/session_monitor.{uid}.log&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;/div&gt;
-
-
-      </description>
+      <description>You can confirm log messages on Log tab.&#xA;Advanced topic The log files are placed at:&#xA;System logs&#xA;/var/log/karabiner/grabber.log /var/log/karabiner/observer.log /var/log/karabiner/virtual_hid_device_service.log User logs&#xA;~/.local/share/karabiner/log/console_user_server.log ~/.local/share/karabiner/log/grabber_agent.log ~/.local/share/karabiner/log/observer_agent.log /var/log/karabiner/session_monitor.{uid}.log </description>
     </item>
-    
     <item>
-      <title>Docs: Export and import configuration</title>
+      <title>Export and import configuration</title>
       <link>/docs/manual/operation/export/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>/docs/manual/operation/export/</guid>
-      <description>
-        
-        
-        &lt;p&gt;You can export and import configuration by copying karabiner.json file to another machine.&lt;/p&gt;
-&lt;h2 id=&#34;export&#34;&gt;Export&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;Open config folder from Karabiner-Elements Settings &amp;gt; Misc.
-
-    
-    
-    
-      
-    
-    
-    &lt;figure&gt;
-      &lt;img
-        src=&#34;/docs/manual/operation/export/images/export@2x.png&#34;
-        alt=&#34;export@2x.png&#34;
-        style=&#34;width: 1100px&#34;
-      /&gt;
-    &lt;/figure&gt;
-&lt;/li&gt;
-&lt;li&gt;Configuration folder will be opened by Finder. Copy the &lt;strong&gt;karabiner.json&lt;/strong&gt; file.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;import&#34;&gt;Import&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;Open config folder from Karabiner-Elements Settings &amp;gt; Misc.&lt;/li&gt;
-&lt;li&gt;Replace &lt;strong&gt;karabiner.json&lt;/strong&gt; with the exported file.&lt;br/&gt;
-(The configuration file will be reloaded automatically.)&lt;/li&gt;
-&lt;/ol&gt;
-
-      </description>
+      <description>You can export and import configuration by copying karabiner.json file to another machine.&#xA;Export Open config folder from Karabiner-Elements Settings &amp;gt; Misc. Configuration folder will be opened by Finder. Copy the karabiner.json file. Import Open config folder from Karabiner-Elements Settings &amp;gt; Misc. Replace karabiner.json with the exported file. (The configuration file will be reloaded automatically.) </description>
     </item>
-    
     <item>
-      <title>Docs: About Unsafe Configuration</title>
+      <title>About Unsafe Configuration</title>
       <link>/docs/manual/operation/about-unsafe-configuration/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>/docs/manual/operation/about-unsafe-configuration/</guid>
-      <description>
-        
-        
-        &lt;p&gt;There are several settings that cannot be enabled by default in the GUI to prevent improper configuration which breaks macOS operation.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Although never recommended&lt;/strong&gt;, enabling Unsafe Configuration from the Pro tab allows you the following operations.&lt;/p&gt;
-&lt;p&gt;If you want to enable the unsafe configuration, remember how to &lt;a href=&#34;https://support.apple.com/guide/mac-help/start-up-your-mac-in-safe-mode-mh21245/mac&#34;&gt;start up your Mac in safe mode&lt;/a&gt;.
-You can restore the settings in safe mode even if you make a mistake.&lt;/p&gt;
-&lt;h2 id=&#34;how-to-enable-unsafe-configuration&#34;&gt;How to enable unsafe configuration&lt;/h2&gt;
-
-
-
-
-  
-
-
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/manual/operation/about-unsafe-configuration/images/enable-unsafe-configuration@2x.png&#34;
-    alt=&#34;enable-unsafe-configuration@2x.png&#34;
-    style=&#34;width: 1100px&#34;
-  /&gt;
-&lt;/figure&gt;
-
-&lt;h2 id=&#34;enabled-operations&#34;&gt;Enabled operations&lt;/h2&gt;
-
-
-&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
-&lt;h4 class=&#34;alert-heading&#34;&gt;Allow to modify Apple pointing devices&lt;/h4&gt;
-
-    &lt;p&gt;Before:&lt;/p&gt;
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/manual/operation/about-unsafe-configuration/images/apple-pointing-device-1@2x.png&#34;
-    alt=&#34;apple-pointing-device-1@2x.png&#34;
-    style=&#34;width: 1100px&#34;
-  /&gt;
-&lt;/figure&gt;
-&lt;p&gt;After:&lt;/p&gt;
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/manual/operation/about-unsafe-configuration/images/apple-pointing-device-2@2x.png&#34;
-    alt=&#34;apple-pointing-device-2@2x.png&#34;
-    style=&#34;width: 1100px&#34;
-  /&gt;
-&lt;/figure&gt;
-
-
-&lt;/div&gt;
-
-
-
-&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
-&lt;h4 class=&#34;alert-heading&#34;&gt;Allow to change the mouse button 1&lt;/h4&gt;
-
-    &lt;p&gt;It is possible to change the left click.&lt;/p&gt;
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/manual/operation/about-unsafe-configuration/images/button1@2x.png&#34;
-    alt=&#34;button1@2x.png&#34;
-    style=&#34;width: 1095px&#34;
-  /&gt;
-&lt;/figure&gt;
-
-&lt;/div&gt;
-
-
-      </description>
+      <description>There are several settings that cannot be enabled by default in the GUI to prevent improper configuration which breaks macOS operation.&#xA;Although never recommended, enabling Unsafe Configuration from the Pro tab allows you the following operations.&#xA;If you want to enable the unsafe configuration, remember how to start up your Mac in safe mode. You can restore the settings in safe mode even if you make a mistake.&#xA;How to enable unsafe configuration Enabled operations Allow to modify Apple pointing devices Before:</description>
     </item>
-    
     <item>
-      <title>Docs: Downgrade</title>
+      <title>Downgrade</title>
       <link>/docs/manual/operation/downgrade/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>/docs/manual/operation/downgrade/</guid>
-      <description>
-        
-        
-        &lt;p&gt;If you face a problem and you want to revert previous version, please downgrade Karabiner-Elements as follows.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;../uninstall/&#34;&gt;Uninstall Karabiner-Elements from uninstaller&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;../../../releasenotes/&#34;&gt;Download a previous version from here&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Install again.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;div class=&#34;alert alert-danger&#34; role=&#34;alert&#34;&gt;
-&lt;h4 class=&#34;alert-heading&#34;&gt;Advanced topic&lt;/h4&gt;
-
-    The first uninstallation is required to remove the virtual driver.
-Since virtual drivers cannot be directly downgraded, if you want to install an older version, you need to remove a newer version beforehand.
-
-&lt;/div&gt;
-
-
-      </description>
+      <description>If you face a problem and you want to revert previous version, please downgrade Karabiner-Elements as follows.&#xA;Uninstall Karabiner-Elements from uninstaller. Download a previous version from here. Install again. Advanced topic The first uninstallation is required to remove the virtual driver. Since virtual drivers cannot be directly downgraded, if you want to install an older version, you need to remove a newer version beforehand. </description>
     </item>
-    
   </channel>
 </rss>

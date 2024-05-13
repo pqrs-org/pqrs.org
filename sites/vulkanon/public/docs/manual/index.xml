@@ -1,210 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Vulkanon – Manual</title>
+    <title>Manual on Vulkanon</title>
     <link>/docs/manual/</link>
     <description>Recent content in Manual on Vulkanon</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
-    
-	  <atom:link href="/docs/manual/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-      
-        
-      
-    
-    
+    <atom:link href="/docs/manual/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Docs: Buttons</title>
+      <title>Buttons</title>
       <link>/docs/manual/buttons/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>/docs/manual/buttons/</guid>
-      <description>
-        
-        
-        &lt;h2 id=&#34;main-menu&#34;&gt;Main Menu&lt;/h2&gt;
-
-
-
-
-
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/manual/buttons/images/title.png&#34;
-    alt=&#34;title.png&#34;
-    style=&#34;width: 240px&#34;
-  /&gt;
-&lt;/figure&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Button&lt;/th&gt;
-&lt;th&gt;Function&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;A&lt;/td&gt;
-&lt;td&gt;Choose&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;B&lt;/td&gt;
-&lt;td&gt;Cancel&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Control Pad&lt;/td&gt;
-&lt;td&gt;Move cursor&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h2 id=&#34;in-game&#34;&gt;In Game&lt;/h2&gt;
-
-
-
-
-
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/manual/buttons/images/ss-main.png&#34;
-    alt=&#34;ss-main.png&#34;
-    style=&#34;width: 240px&#34;
-  /&gt;
-&lt;/figure&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Button&lt;/th&gt;
-&lt;th&gt;Function&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;A, B&lt;/td&gt;
-&lt;td&gt;Shot&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;L, R&lt;/td&gt;
-&lt;td&gt;Laser&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Select&lt;/td&gt;
-&lt;td&gt;Back to Main Menu&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Control Pad&lt;/td&gt;
-&lt;td&gt;Move&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
-      </description>
+      <description>Main Menu Button Function A Choose B Cancel Control Pad Move cursor In Game Button Function A, B Shot L, R Laser Select Back to Main Menu Control Pad Move </description>
     </item>
-    
     <item>
-      <title>Docs: Playing the game</title>
+      <title>Playing the game</title>
       <link>/docs/manual/play/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>/docs/manual/play/</guid>
-      <description>
-        
-        
-        &lt;p&gt;Defeat the boss within three minutes time limits.&lt;/p&gt;
-
-
-
-
-
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/manual/play/images/bosscore.png&#34;
-    alt=&#34;bosscore.png&#34;
-    style=&#34;width: 240px&#34;
-  /&gt;
-&lt;/figure&gt;
-
-&lt;h2 id=&#34;laser&#34;&gt;Laser&lt;/h2&gt;
-&lt;p&gt;Laser destroys all enemy bullets.
-You can use Laser when Power is 100%.&lt;/p&gt;
-
-
-
-
-
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/manual/play/images/laser.png&#34;
-    alt=&#34;laser.png&#34;
-    style=&#34;width: 240px&#34;
-  /&gt;
-&lt;/figure&gt;
-
-&lt;h2 id=&#34;enemy-bullets&#34;&gt;Enemy Bullets&lt;/h2&gt;
-&lt;p&gt;Suicide Bullets and Aimed Suicide Bullets are generated when you shot Destroyable Bullet.&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Image&lt;/th&gt;
-&lt;th&gt;Type&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;
-
-
-
-
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/manual/play/images/spr_bullet.png&#34;
-    alt=&#34;spr_bullet.png&#34;
-    style=&#34;width: 32px&#34;
-  /&gt;
-&lt;/figure&gt;
-&lt;/td&gt;
-&lt;td&gt;Destroyable Bullet&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;
-
-
-
-
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/manual/play/images/spr_suicide_bullet_original_direction.png&#34;
-    alt=&#34;spr_suicide_bullet_original_direction.png&#34;
-    style=&#34;width: 32px&#34;
-  /&gt;
-&lt;/figure&gt;
-&lt;/td&gt;
-&lt;td&gt;Suicide Bullet&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;
-
-
-
-
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/manual/play/images/spr_suicide_bullet_target_self.png&#34;
-    alt=&#34;spr_suicide_bullet_target_self.png&#34;
-    style=&#34;width: 32px&#34;
-  /&gt;
-&lt;/figure&gt;
-&lt;/td&gt;
-&lt;td&gt;Aimed Suicide Bullet&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
-      </description>
+      <description>Defeat the boss within three minutes time limits.&#xA;Laser Laser destroys all enemy bullets. You can use Laser when Power is 100%.&#xA;Enemy Bullets Suicide Bullets and Aimed Suicide Bullets are generated when you shot Destroyable Bullet.&#xA;Image Type Destroyable Bullet Suicide Bullet Aimed Suicide Bullet </description>
     </item>
-    
   </channel>
 </rss>

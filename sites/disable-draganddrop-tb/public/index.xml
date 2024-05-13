@@ -1,17 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Disable DragAndDrop – Disable DragAndDrop</title>
+    <title>Disable DragAndDrop</title>
     <link>/</link>
     <description>Recent content on Disable DragAndDrop</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
-    
-	  <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-      
-      
-    
-    
+    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Getting Started</title>
+      <link>/docs/getting-started/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/getting-started/</guid>
+      <description>System requirements Thunderbird 68 or later Installation Open Add-ons for Thunderbird site from here. Download Disable DragAndDrop and install it. </description>
+    </item>
+    <item>
+      <title>Configuration</title>
+      <link>/docs/configuration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/configuration/</guid>
+      <description>Disable DragAndDrop works without any configuration.&#xA;Your mail folder is protected from drag and drop after you installed the add-on.&#xA;Related topics Disable this add-on temporarily </description>
+    </item>
+    <item>
+      <title>Disable this add-on temporarily</title>
+      <link>/docs/help/disable-temporarily/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/help/disable-temporarily/</guid>
+      <description> Open Add-ons Manager on Thunderbird. Turn off this add-on. </description>
+    </item>
+    <item>
+      <title>Pricing</title>
+      <link>/docs/pricing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/pricing/</guid>
+      <description>Disable DragAndDrop is an open source software and you can use it without any purchases.</description>
+    </item>
+    <item>
+      <title>Release notes</title>
+      <link>/docs/releasenotes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/releasenotes/</guid>
+      <description>Disable DragAndDrop 5.0.0 📅 Release date Jul 13, 2023 💥 Breaking changes The ability to display a prompt instead of prohibiting folder movement has been removed to support Thunderbird 115. ⚡️ Improvements Supported Thunderbird 115. Disable DragAndDrop 4.14.0 📅 Release date Jun 20, 2022 🍰 Minor Changes Supported Thunderbird 102. Disable DragAndDrop 4.13.0 📅 Release date Sep 3, 2021 🍰 Minor Changes Add strict_max_version into the manifest file. Disable DragAndDrop 4.</description>
+    </item>
   </channel>
 </rss>

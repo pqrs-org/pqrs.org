@@ -1,149 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>ShowyEdge – Help</title>
+    <title>Help on ShowyEdge</title>
     <link>/docs/help/</link>
     <description>Recent content in Help on ShowyEdge</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
-    
-	  <atom:link href="/docs/help/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-      
-        
-      
-    
-    
+    <atom:link href="/docs/help/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Docs: How to quit ShowyEdge</title>
+      <title>How to quit ShowyEdge</title>
       <link>/docs/help/quit/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>/docs/help/quit/</guid>
-      <description>
-        
-        
-        &lt;p&gt;ShowyEdge keeps running in the background even if you close the preferences window.&lt;br /&gt;
-To quit ShowyEdge, choose &amp;ldquo;Quit ShowyEdge&amp;rdquo; from menu bar.&lt;/p&gt;
-
-
-
-
-  
-
-
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/help/quit/images/menu-quit@2x.png&#34;
-    alt=&#34;menu-quit@2x.png&#34;
-    style=&#34;width: 348px&#34;
-  /&gt;
-&lt;/figure&gt;
-
-
-
-&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
-&lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
-
-    &lt;p&gt;If you&amp;rsquo;ve hidden the menu bar icon, you can also quit ShowyEdge from Preferences.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;../../configuration/open-preferences-window/&#34;&gt;Open preferences window&lt;/a&gt;.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Press &lt;code&gt;Quit ShowyEdge&lt;/code&gt; button.&lt;/p&gt;
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/help/quit/images/quit@2x.png&#34;
-    alt=&#34;quit@2x.png&#34;
-    style=&#34;width: 900px&#34;
-  /&gt;
-&lt;/figure&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;/div&gt;
-
-
-      </description>
+      <description>ShowyEdge keeps running in the background even if you close the preferences window.&#xA;To quit ShowyEdge, choose &amp;ldquo;Quit ShowyEdge&amp;rdquo; from menu bar.&#xA;Note If you&amp;rsquo;ve hidden the menu bar icon, you can also quit ShowyEdge from Preferences.&#xA;Open preferences window.&#xA;Press Quit ShowyEdge button.</description>
     </item>
-    
     <item>
-      <title>Docs: How to uninstall ShowyEdge</title>
+      <title>How to uninstall ShowyEdge</title>
       <link>/docs/help/uninstall/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>/docs/help/uninstall/</guid>
-      <description>
-        
-        
-        &lt;p&gt;Remove ShowyEdge from your system as follows.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;/docs/help/quit/&#34;&gt;Quit ShowyEdge&lt;/a&gt; before uninstallaion.&lt;/li&gt;
-&lt;li&gt;Open &lt;code&gt;Applications&lt;/code&gt; folder in Finder, then move ShowyEdge to trash.
-
-    
-    
-    
-      
-    
-    
-    &lt;figure&gt;
-      &lt;img
-        src=&#34;/docs/help/uninstall/images/uninstall@2x.png&#34;
-        alt=&#34;uninstall@2x.png&#34;
-        style=&#34;width: 646px&#34;
-      /&gt;
-    &lt;/figure&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-
-      </description>
+      <description>Remove ShowyEdge from your system as follows.&#xA;Quit ShowyEdge before uninstallaion. Open Applications folder in Finder, then move ShowyEdge to trash. </description>
     </item>
-    
     <item>
-      <title>Docs: Downgrade to older version</title>
+      <title>Downgrade to older version</title>
       <link>/docs/help/downgrade/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>/docs/help/downgrade/</guid>
-      <description>
-        
-        
-        &lt;p&gt;Download an older version from &lt;a href=&#34;/docs/releasenotes/&#34;&gt;Release notes&lt;/a&gt; and install it.&lt;/p&gt;
-
-      </description>
+      <description>Download an older version from Release notes and install it.</description>
     </item>
-    
     <item>
-      <title>Docs: Use beta version</title>
+      <title>Use beta version</title>
       <link>/docs/help/use-beta/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>/docs/help/use-beta/</guid>
-      <description>
-        
-        
-        &lt;p&gt;You can install beta version from &lt;code&gt;Update &amp;gt; Check for beta updates&lt;/code&gt;.&lt;/p&gt;
-
-
-
-
-  
-
-
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/help/use-beta/images/check-for-beta-updates@2x.png&#34;
-    alt=&#34;check-for-beta-updates@2x.png&#34;
-    style=&#34;width: 900px&#34;
-  /&gt;
-&lt;/figure&gt;
-
-
-      </description>
+      <description>You can install beta version from Update &amp;gt; Check for beta updates.</description>
     </item>
-    
   </channel>
 </rss>

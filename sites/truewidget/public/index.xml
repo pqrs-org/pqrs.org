@@ -1,17 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>TrueWidget – TrueWidget</title>
+    <title>TrueWidget</title>
     <link>/</link>
     <description>Recent content on TrueWidget</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
-    
-	  <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-      
-      
-    
-    
+    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Getting Started</title>
+      <link>/docs/getting-started/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/getting-started/</guid>
+      <description>System requirements macOS 11 Big Sur or later Installation Download dmg file from here. Open a downloaded dmg file. Move TrueWidget.app into Applications. Open TrueWidget from Launchpad. A menu bar icon will be added and the application window will appear. What&amp;rsquo;s next? Configuration </description>
+    </item>
+    <item>
+      <title>How to quit TrueWidget</title>
+      <link>/docs/help/quit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/help/quit/</guid>
+      <description>TrueWidget keeps running in the background even if you close the Settings window.&#xA;To quit TrueWidget, choose &amp;ldquo;Quit TrueWidget&amp;rdquo; from the menu bar.&#xA;Note If you&amp;rsquo;ve hidden the menu bar icon, you can also quit TrueWidget from Settings.&#xA;Open Settings.&#xA;Press Quit TrueWidget button.</description>
+    </item>
+    <item>
+      <title>Open Settings</title>
+      <link>/docs/configuration/open-settings/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/configuration/open-settings/</guid>
+      <description>Open Settings from the menu bar. Note If you&amp;rsquo;ve hidden the menu bar icon, open TrueWidget again from Launchpad while TrueWidget is already running to open Settings.</description>
+    </item>
+    <item>
+      <title>How to uninstall TrueWidget</title>
+      <link>/docs/help/uninstall/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/help/uninstall/</guid>
+      <description>Remove TrueWidget from your system as follows.&#xA;Quit TrueWidget before uninstallaion. Open Applications folder in Finder, then move TrueWidget to trash. </description>
+    </item>
+    <item>
+      <title>Layout configuration</title>
+      <link>/docs/configuration/layout-configuration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/configuration/layout-configuration/</guid>
+      <description>You can change the position and appearance.&#xA;Position and size Position Opacity Clear Colored Multiple displays Specifies which screen to display when multiple displays are used.&#xA;Operation System Xcode CPU Usage Time </description>
+    </item>
+    <item>
+      <title>Downgrade to older version</title>
+      <link>/docs/help/downgrade/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/help/downgrade/</guid>
+      <description>Download an older version from Release notes and install it.</description>
+    </item>
+    <item>
+      <title>Open at login</title>
+      <link>/docs/configuration/open-at-login/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/configuration/open-at-login/</guid>
+      <description>You can launch TrueWidget automaticaly at login.&#xA;Open Settings. Enable Open at login. </description>
+    </item>
+    <item>
+      <title>Hide the icon in menu bar</title>
+      <link>/docs/configuration/hide-menu-bar-icon/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/configuration/hide-menu-bar-icon/</guid>
+      <description>You can hide the icon in menu bar from preferences.&#xA;Open Settings. Turn off Show icon in menu bar. </description>
+    </item>
+    <item>
+      <title>Use beta version</title>
+      <link>/docs/help/use-beta/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/help/use-beta/</guid>
+      <description>You can install beta version from Check for beta updates button on Misc tab.</description>
+    </item>
+    <item>
+      <title>Pricing</title>
+      <link>/docs/pricing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/pricing/</guid>
+      <description>TrueWidget is an open source software and you can use it without any purchases.</description>
+    </item>
+    <item>
+      <title>Release notes</title>
+      <link>/docs/releasenotes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/releasenotes/</guid>
+      <description>TrueWidget 1.6.0 📦 Download 📅 Release date Nov 15, 2023 ⚡️ Improvements Updated the app icon. Reduced memory usage of TrueWidget Helper. Sparkle Framework has been updated. TrueWidget 1.4.0 📦 Download 📅 Release date May 14, 2023 ✨ New Features Changed the widget to fade out on mouseover instead of hiding immediately. ⚡️ Improvements Enabled the setting of Open at login by default. Changed to open TrueWidget directly instead of via the helper app when opening at login.</description>
+    </item>
   </channel>
 </rss>

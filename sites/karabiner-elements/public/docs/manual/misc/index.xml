@@ -1,561 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Karabiner-Elements – Misc</title>
+    <title>Misc on Karabiner-Elements</title>
     <link>/docs/manual/misc/</link>
     <description>Recent content in Misc on Karabiner-Elements</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
-    
-	  <atom:link href="/docs/manual/misc/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-      
-        
-      
-    
-    
+    <atom:link href="/docs/manual/misc/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Docs: Required macOS settings</title>
+      <title>Required macOS settings</title>
       <link>/docs/manual/misc/required-macos-settings/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>/docs/manual/misc/required-macos-settings/</guid>
-      <description>
-        
-        
-        &lt;p&gt;Under normal circumstances, there is no need to read this page, as the necessary settings have already been made during the initial setup.&lt;/p&gt;
-&lt;p&gt;However, we describe the macOS settings that are made during the initial setup of Karabiner-Elements for the following cases.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;If you canceled during the initial setup and want to continue in the middle of the process&lt;/li&gt;
-&lt;li&gt;If you want to check the macOS settings made during the initial setup&lt;/li&gt;
-&lt;li&gt;If Karabiner-Elements is not working properly and you want to make sure that macOS is configured properly&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;keep-background-items-enabled&#34;&gt;Keep background items enabled&lt;/h2&gt;
-
-
-&lt;div class=&#34;alert alert-danger&#34; role=&#34;alert&#34;&gt;
-&lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
-
-    This setting exists only on macOS Ventura or later
-
-&lt;/div&gt;
-
-
-
-&lt;div class=&#34;alert alert-success&#34; role=&#34;alert&#34;&gt;
-
-
-    &lt;p&gt;Karabier-Elements has processes running constantly in the background, that handle input events.
-You have to keep the background items enabled in &lt;code&gt;macOS System Settings &amp;gt; General &amp;gt; Login Items&lt;/code&gt;.&lt;/p&gt;
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/manual/misc/required-macos-settings/images/login-items0@2x.png&#34;
-    alt=&#34;login-items0@2x.png&#34;
-    style=&#34;width: 464px&#34;
-  /&gt;
-&lt;/figure&gt;
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/manual/misc/required-macos-settings/images/login-items1@2x.png&#34;
-    alt=&#34;login-items1@2x.png&#34;
-    style=&#34;width: 715px&#34;
-  /&gt;
-&lt;/figure&gt;
-
-&lt;/div&gt;
-
-&lt;hr&gt;
-&lt;h2 id=&#34;enable-input-monitoring&#34;&gt;Enable Input Monitoring&lt;/h2&gt;
-
-
-&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
-
-
-    &lt;p&gt;Karabiner-Elements requires Input Monitoring permission to receive and modify input events.&lt;/p&gt;
-&lt;p&gt;You can enable it in &lt;code&gt;macOS System Settings &amp;gt; Privacy &amp;amp; Security &amp;gt; Input Monitoring&lt;/code&gt;.&lt;/p&gt;
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/manual/misc/required-macos-settings/images/input-monitoring2@2x.png&#34;
-    alt=&#34;input-monitoring2@2x.png&#34;
-    style=&#34;width: 715px&#34;
-  /&gt;
-&lt;/figure&gt;
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/manual/misc/required-macos-settings/images/input-monitoring3@2x.png&#34;
-    alt=&#34;input-monitoring3@2x.png&#34;
-    style=&#34;width: 715px&#34;
-  /&gt;
-&lt;/figure&gt;
-
-
-&lt;/div&gt;
-
-
-
-&lt;div class=&#34;alert alert-danger&#34; role=&#34;alert&#34;&gt;
-&lt;h4 class=&#34;alert-heading&#34;&gt;Troubleshooting&lt;/h4&gt;
-
-    &lt;p&gt;If you cannot find &lt;code&gt;karabiner_grabber&lt;/code&gt; or &lt;code&gt;karabiner_observer&lt;/code&gt; in the list, this is because you have not closed the following &amp;ldquo;Keystroke Receiving&amp;rdquo; dialogs.&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;karabiner_grabber&lt;/code&gt; and &lt;code&gt;karabiner_observer&lt;/code&gt; will be shown in the list after the dialogs are closed.&lt;/p&gt;
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/manual/misc/required-macos-settings/images/input-monitoring0@2x.png&#34;
-    alt=&#34;input-monitoring0@2x.png&#34;
-    style=&#34;width: 461px&#34;
-  /&gt;
-&lt;/figure&gt;
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/manual/misc/required-macos-settings/images/input-monitoring1@2x.png&#34;
-    alt=&#34;input-monitoring1@2x.png&#34;
-    style=&#34;width: 461px&#34;
-  /&gt;
-&lt;/figure&gt;
-
-
-&lt;/div&gt;
-
-&lt;hr&gt;
-&lt;h2 id=&#34;allow-system-extension&#34;&gt;Allow system extension&lt;/h2&gt;
-
-
-&lt;div class=&#34;alert alert-success&#34; role=&#34;alert&#34;&gt;
-
-
-    &lt;p&gt;Karabiner-Elements uses the system extension to provide a virtual keyboard and mouse.
-You have to approve system extension before using it.
-You can confirm whether the system extension already allowed in &lt;a href=&#34;/docs/manual/operation/eventviewer/&#34;&gt;EventViewer&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;If &lt;code&gt;org.pqrs.Karabiner-DriverKit-VirtualHIDDevice&lt;/code&gt; appears in the System Extensions of the EventViewer and the status is &lt;code&gt;[activated enabled]&lt;/code&gt;, the system extension is already allowed.&lt;/p&gt;
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/manual/misc/required-macos-settings/images/system-extension0@2x.png&#34;
-    alt=&#34;system-extension0@2x.png&#34;
-    style=&#34;width: 1100px&#34;
-  /&gt;
-&lt;/figure&gt;
-&lt;p&gt;Otherwise, you have to approve the system extension in macOS System Settings.&lt;/p&gt;
-&lt;h3 id=&#34;approve-system-extension&#34;&gt;Approve system extension&lt;/h3&gt;
-&lt;p&gt;You can approve the system extension in &lt;code&gt;macOS System Settings &amp;gt; Privacy &amp;amp; Security&lt;/code&gt;.&lt;/p&gt;
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/manual/misc/required-macos-settings/images/system-extension2@2x.png&#34;
-    alt=&#34;system-extension2@2x.png&#34;
-    style=&#34;width: 715px&#34;
-  /&gt;
-&lt;/figure&gt;
-
-
-&lt;/div&gt;
-
-
-      </description>
+      <description>Under normal circumstances, there is no need to read this page, as the necessary settings have already been made during the initial setup.&#xA;However, we describe the macOS settings that are made during the initial setup of Karabiner-Elements for the following cases.&#xA;If you canceled during the initial setup and want to continue in the middle of the process If you want to check the macOS settings made during the initial setup If Karabiner-Elements is not working properly and you want to make sure that macOS is configured properly Keep background items enabled Note This setting exists only on macOS Ventura or later Karabier-Elements has processes running constantly in the background, that handle input events.</description>
     </item>
-    
     <item>
-      <title>Docs: About &#34;Device is ignored temporarily&#34; alert</title>
+      <title>About &#34;Device is ignored temporarily&#34; alert</title>
       <link>/docs/manual/misc/ignored-temporarily/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>/docs/manual/misc/ignored-temporarily/</guid>
-      <description>
-        
-        
-        &lt;p&gt;&amp;ldquo;Device is ignored temporarily&amp;rdquo; alert will be shown in any of the following cases:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;If you hold keys or buttons down before Karabiner-Elements open the device.&lt;/li&gt;
-&lt;li&gt;Your device sends unintented key up events regardless you do not touch the keys.&lt;br /&gt;
-(e.g., Swiftpoint ProPoint sends key up events of the music play key periodically.)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Press the described key or button again to dismiss the alert.&lt;/p&gt;
-
-
-
-
-  
-
-
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/manual/misc/ignored-temporarily/images/notification-window@2x.png&#34;
-    alt=&#34;notification-window@2x.png&#34;
-    style=&#34;width: 434px&#34;
-  /&gt;
-&lt;/figure&gt;
-
-
-      </description>
+      <description>&amp;ldquo;Device is ignored temporarily&amp;rdquo; alert will be shown in any of the following cases:&#xA;If you hold keys or buttons down before Karabiner-Elements open the device. Your device sends unintented key up events regardless you do not touch the keys.&#xA;(e.g., Swiftpoint ProPoint sends key up events of the music play key periodically.) Press the described key or button again to dismiss the alert.</description>
     </item>
-    
     <item>
-      <title>Docs: Implicit behavior</title>
+      <title>Implicit behavior</title>
       <link>/docs/manual/misc/implicit-behavior/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>/docs/manual/misc/implicit-behavior/</guid>
-      <description>
-        
-        
-        &lt;p&gt;Karabiner-Elements modifies following behavior automatically without any configurations:&lt;/p&gt;
-&lt;h2 id=&#34;share-state-of-modifier-keys-with-all-connected-keyboards&#34;&gt;Share state of modifier keys with all connected keyboards&lt;/h2&gt;
-&lt;p&gt;When you are using multiple keyboards, modifier keys are shared with all keyboards.&lt;/p&gt;
-&lt;p&gt;For example, pressing &amp;ldquo;shift key on keyboard1&amp;rdquo; and &amp;ldquo;space key on keyboard2&amp;rdquo; sends shift-space.&lt;/p&gt;
-&lt;h2 id=&#34;add-fn-key-combinations&#34;&gt;Add fn-key combinations&lt;/h2&gt;
-&lt;p&gt;Karabiner adds fn-key combinations:&lt;/p&gt;
-&lt;h3 id=&#34;fn-arrow-keys&#34;&gt;fn-arrow keys&lt;/h3&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Key combination&lt;/th&gt;
-&lt;th&gt;Result&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;fn-up arrow&lt;/td&gt;
-&lt;td&gt;page up&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;fn-down arrow&lt;/td&gt;
-&lt;td&gt;page down&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;fn-left arrow&lt;/td&gt;
-&lt;td&gt;home&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;fn-right arrow&lt;/td&gt;
-&lt;td&gt;end&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h3 id=&#34;others&#34;&gt;others&lt;/h3&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Key combination&lt;/th&gt;
-&lt;th&gt;Result&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;fn-return&lt;/td&gt;
-&lt;td&gt;enter&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;fn-delete&lt;/td&gt;
-&lt;td&gt;forward delete&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
-      </description>
+      <description>Karabiner-Elements modifies following behavior automatically without any configurations:&#xA;Share state of modifier keys with all connected keyboards When you are using multiple keyboards, modifier keys are shared with all keyboards.&#xA;For example, pressing &amp;ldquo;shift key on keyboard1&amp;rdquo; and &amp;ldquo;space key on keyboard2&amp;rdquo; sends shift-space.&#xA;Add fn-key combinations Karabiner adds fn-key combinations:&#xA;fn-arrow keys Key combination Result fn-up arrow page up fn-down arrow page down fn-left arrow home fn-right arrow end others Key combination Result fn-return enter fn-delete forward delete </description>
     </item>
-    
     <item>
-      <title>Docs: Input event modification chaining</title>
+      <title>Input event modification chaining</title>
       <link>/docs/manual/misc/event-modification-chaining/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>/docs/manual/misc/event-modification-chaining/</guid>
-      <description>
-        
-        
-        &lt;p&gt;Karabiner-Elements treats input events by the following order:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Catch events from hardware.&lt;/li&gt;
-&lt;li&gt;Apply &lt;strong&gt;Simple Modifications&lt;/strong&gt;.&lt;/li&gt;
-&lt;li&gt;Apply &lt;strong&gt;Complex Modifications&lt;/strong&gt;.&lt;/li&gt;
-&lt;li&gt;Apply &lt;strong&gt;Function Keys Modifications&lt;/strong&gt;. (change f1&amp;hellip;f12 keys to media controls)&lt;/li&gt;
-&lt;li&gt;Post events to applications via a virtual keyboard.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
-&lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
-
-    &lt;p&gt;System modifier keys configuration in &lt;strong&gt;System Settings &amp;gt; Keyboard &amp;gt; Keyboard Shortcuts&amp;hellip; &amp;gt; Modifier Keys&lt;/strong&gt; is ignored when you use
-Karabiner-Elements.&lt;/p&gt;
-&lt;p&gt;Change modifier keys in Karabiner-Elements&amp;rsquo;s Simple Modifications.&lt;/p&gt;
-
-
-&lt;/div&gt;
-
-
-      </description>
+      <description>Karabiner-Elements treats input events by the following order:&#xA;Catch events from hardware. Apply Simple Modifications. Apply Complex Modifications. Apply Function Keys Modifications. (change f1&amp;hellip;f12 keys to media controls) Post events to applications via a virtual keyboard. Note System modifier keys configuration in System Settings &amp;gt; Keyboard &amp;gt; Keyboard Shortcuts&amp;hellip; &amp;gt; Modifier Keys is ignored when you use Karabiner-Elements.&#xA;Change modifier keys in Karabiner-Elements&amp;rsquo;s Simple Modifications.</description>
     </item>
-    
     <item>
-      <title>Docs: MultitouchExtension</title>
+      <title>MultitouchExtension</title>
       <link>/docs/manual/misc/multitouch-extension/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>/docs/manual/misc/multitouch-extension/</guid>
-      <description>
-        
-        
-        &lt;p&gt;Karabiner-MultitouchExtension allows you to change keys only when your finger is on the trackpad.&lt;/p&gt;
-
-
-&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
-&lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
-
-    Karabiner-MultitouchExtension is available since Karabiner-Elements 12.6.9
-
-&lt;/div&gt;
-
-&lt;h3 id=&#34;related-complex-modifications-examples&#34;&gt;Related Complex Modifications examples&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://ke-complex-modifications.pqrs.org/#multitouch_vi_mode&#34;&gt;Multitouch Vi Mode&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://ke-complex-modifications.pqrs.org/#multitouch_diamond_cursor&#34;&gt;Multitouch Diamond Cursor&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://ke-complex-modifications.pqrs.org/#multitouch_mouse_buttons&#34;&gt;Multitouch Mouse Buttons&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://ke-complex-modifications.pqrs.org/#thumbsense&#34;&gt;ThumbSense&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;multitouchextension-usage&#34;&gt;MultitouchExtension usage&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;Open MultitouchExtension app from Karabiner-Elements Settings &amp;gt; Misc.
-
-    
-    
-    
-      
-    
-    
-    &lt;figure&gt;
-      &lt;img
-        src=&#34;/docs/manual/misc/multitouch-extension/images/multitouch-extension-1@2x.png&#34;
-        alt=&#34;multitouch-extension-1@2x.png&#34;
-        style=&#34;width: 1100px&#34;
-      /&gt;
-    &lt;/figure&gt;
-&lt;/li&gt;
-&lt;li&gt;Enable &amp;ldquo;Start at login&amp;rdquo; on MultitouchExtension Preferences.
-
-    
-    
-    
-      
-    
-    
-    &lt;figure&gt;
-      &lt;img
-        src=&#34;/docs/manual/misc/multitouch-extension/images/multitouch-extension-2@2x.png&#34;
-        alt=&#34;multitouch-extension-2@2x.png&#34;
-        style=&#34;width: 900px&#34;
-      /&gt;
-    &lt;/figure&gt;
-&lt;/li&gt;
-&lt;li&gt;Adjust the effective area of the trackpad.
-
-    
-    
-    
-      
-    
-    
-    &lt;figure&gt;
-      &lt;img
-        src=&#34;/docs/manual/misc/multitouch-extension/images/multitouch-extension-3@2x.png&#34;
-        alt=&#34;multitouch-extension-3@2x.png&#34;
-        style=&#34;width: 900px&#34;
-      /&gt;
-    &lt;/figure&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
-&lt;h4 class=&#34;alert-heading&#34;&gt;Tip&lt;/h4&gt;
-
-    If you hid Karabiner-MultitouchExtension icon in Dock,
-press &amp;ldquo;Open MultitouchExtension app&amp;rdquo; button on Preferences &amp;gt; Misc to open Karabiner-MultitouchExtension Preferences.
-
-&lt;/div&gt;
-
-&lt;h3 id=&#34;how-to-integrate-multitouchextension-to-your-complex-modifications&#34;&gt;How to integrate MultitouchExtension to your complex modifications&lt;/h3&gt;
-&lt;p&gt;See &lt;a href=&#34;../../../json/extra/multitouch-extension/&#34;&gt;karabiner.json reference manual&lt;/a&gt;&lt;/p&gt;
-
-      </description>
+      <description>Karabiner-MultitouchExtension allows you to change keys only when your finger is on the trackpad.&#xA;Note Karabiner-MultitouchExtension is available since Karabiner-Elements 12.6.9 Related Complex Modifications examples Multitouch Vi Mode Multitouch Diamond Cursor Multitouch Mouse Buttons ThumbSense MultitouchExtension usage Open MultitouchExtension app from Karabiner-Elements Settings &amp;gt; Misc. Enable &amp;ldquo;Start at login&amp;rdquo; on MultitouchExtension Preferences. Adjust the effective area of the trackpad. Tip If you hid Karabiner-MultitouchExtension icon in Dock, press &amp;ldquo;Open MultitouchExtension app&amp;rdquo; button on Preferences &amp;gt; Misc to open Karabiner-MultitouchExtension Preferences.</description>
     </item>
-    
     <item>
-      <title>Docs: Command line interface</title>
+      <title>Command line interface</title>
       <link>/docs/manual/misc/command-line-interface/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>/docs/manual/misc/command-line-interface/</guid>
-      <description>
-        
-        
-        &lt;p&gt;Karabiner-Elements provides a command line interface which provides the following functions.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Switch a profile by name.&lt;/li&gt;
-&lt;li&gt;Show current profile name.&lt;/li&gt;
-&lt;li&gt;Show all profile names.&lt;/li&gt;
-&lt;li&gt;Set variables which are used in complex modifications.&lt;/li&gt;
-&lt;li&gt;Copy the current profile to system default profile. (Administrator privilege is required.)&lt;/li&gt;
-&lt;li&gt;Remove the system default profile. (Administrator privilege is required.)&lt;/li&gt;
-&lt;li&gt;Lint complex_modifications.json.&lt;/li&gt;
-&lt;li&gt;Display version.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;usage&#34;&gt;Usage&lt;/h2&gt;
-&lt;h3 id=&#34;show-help&#34;&gt;Show help&lt;/h3&gt;
-&lt;p&gt;Run the following command in terminal.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;/Library/Application Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli&amp;#39;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Result:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;A command line utility of Karabiner-Elements.
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Usage:
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  karabiner_cli [OPTION...]
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      --select-profile arg      Select a profile by name.
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      --show-current-profile-name
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                                Show current profile name
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      --list-profile-names      Show all profile names
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      --set-variables arg       Json string: {[key: string]:
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                                number|boolean|string}
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      --copy-current-profile-to-system-default-profile
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                                Copy the current profile to system default
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                                profile.
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      --remove-system-default-profile
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                                Remove the system default profile.
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      --lint-complex-modifications complex_modifications.json
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                                Check complex_modifications.json
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      --version                 Displays version.
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      --version-number          Displays version_number.
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      --help                    Print help.
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Examples:
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  karabiner_cli --select-profile &amp;#39;Default profile&amp;#39;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  karabiner_cli --show-current-profile-name
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  karabiner_cli --list-profile-names
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  karabiner_cli --set-variables &amp;#39;{&amp;#34;cli_flag1&amp;#34;:1, &amp;#34;cli_flag2&amp;#34;:2}&amp;#39;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
-&lt;h3 id=&#34;examples&#34;&gt;Examples&lt;/h3&gt;
-&lt;h4 id=&#34;switch-profile&#34;&gt;Switch profile&lt;/h4&gt;
-&lt;p&gt;Run the following command in terminal.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;/Library/Application Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli&amp;#39;&lt;/span&gt; --select-profile &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;Default profile&amp;#39;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;show-current-profile-name&#34;&gt;Show current profile name&lt;/h4&gt;
-&lt;p&gt;Run the following command in terminal.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;/Library/Application Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli&amp;#39;&lt;/span&gt; --show-current-profile-name
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;show-all-profile-names&#34;&gt;Show all profile names&lt;/h4&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;/Library/Application Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli&amp;#39;&lt;/span&gt; --list-profile-names
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-      </description>
+      <description>Karabiner-Elements provides a command line interface which provides the following functions.&#xA;Switch a profile by name. Show current profile name. Show all profile names. Set variables which are used in complex modifications. Copy the current profile to system default profile. (Administrator privilege is required.) Remove the system default profile. (Administrator privilege is required.) Lint complex_modifications.json. Display version. Usage Show help Run the following command in terminal.&#xA;&amp;#39;/Library/Application Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli&amp;#39; Result:&#xA;A command line utility of Karabiner-Elements.</description>
     </item>
-    
     <item>
-      <title>Docs: The location of the configuration file</title>
+      <title>The location of the configuration file</title>
       <link>/docs/manual/misc/configuration-file-path/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>/docs/manual/misc/configuration-file-path/</guid>
-      <description>
-        
-        
-        &lt;p&gt;Karabiner-Elements stores configuration to a json file which is located &lt;strong&gt;~/.config/karabiner/karabiner.json&lt;/strong&gt;&lt;/p&gt;
-&lt;h3 id=&#34;about-symbolic-link&#34;&gt;About symbolic link&lt;/h3&gt;
-&lt;p&gt;If you want to move karabiner.json to another place and make symbolic link, make a symbolic link to &lt;strong&gt;~/.config/karabiner&lt;/strong&gt; directory instead of karabiner.json.&lt;/p&gt;
-
-
-&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
-&lt;h4 class=&#34;alert-heading&#34;&gt;Warning&lt;/h4&gt;
-
-    &lt;p&gt;Do not make a symlink to karabiner.json directly.&lt;/p&gt;
-&lt;p&gt;Karabiner-Elements will fail to detect the configuration file update and fail to reload the configuration if karabiner.json is a symbolic link.&lt;/p&gt;
-
-
-&lt;/div&gt;
-
-&lt;h4 id=&#34;making-symbolic-link-example&#34;&gt;Making symbolic link example&lt;/h4&gt;
-&lt;p&gt;The following command allows you to put karabiner.json on ~/Dropbox/private.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;mv ~/.config/karabiner ~/Dropbox/private
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ln -s ~/Dropbox/private/karabiner ~/.config
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
-&lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
-
-    &lt;p&gt;You have to restart karabiner_console_user_server process by the
-following command after you made a symlink in order to tell
-Karabiner-Elements that the parent directory is changed.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;launchctl kickstart -k gui/&lt;span style=&#34;color:#4e9a06&#34;&gt;`&lt;/span&gt;id -u&lt;span style=&#34;color:#4e9a06&#34;&gt;`&lt;/span&gt;/org.pqrs.karabiner.karabiner_console_user_server
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;/div&gt;
-
-
-      </description>
+      <description>Karabiner-Elements stores configuration to a json file which is located ~/.config/karabiner/karabiner.json&#xA;About symbolic link If you want to move karabiner.json to another place and make symbolic link, make a symbolic link to ~/.config/karabiner directory instead of karabiner.json.&#xA;Warning Do not make a symlink to karabiner.json directly.&#xA;Karabiner-Elements will fail to detect the configuration file update and fail to reload the configuration if karabiner.json is a symbolic link.&#xA;Making symbolic link example The following command allows you to put karabiner.</description>
     </item>
-    
     <item>
-      <title>Docs: Change app icon</title>
+      <title>Change app icon</title>
       <link>/docs/manual/misc/change-app-icon/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>/docs/manual/misc/change-app-icon/</guid>
-      <description>
-        
-        
-        &lt;p&gt;You can change the icons that appear in the Finder, Launchpad, Dock, etc from Settings &amp;gt; UI.&lt;/p&gt;
-
-
-&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
-&lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
-
-    The icon in Dock will not reflect changes while the application is open.
-So, you should close and reopen the application to update the icon in Dock.
-
-&lt;/div&gt;
-
-
-
-
-
-  
-
-
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/manual/misc/change-app-icon/images/app-icon@2x.png&#34;
-    alt=&#34;app-icon@2x.png&#34;
-    style=&#34;width: 1100px&#34;
-  /&gt;
-&lt;/figure&gt;
-
-
-      </description>
+      <description>You can change the icons that appear in the Finder, Launchpad, Dock, etc from Settings &amp;gt; UI.&#xA;Note The icon in Dock will not reflect changes while the application is open. So, you should close and reopen the application to update the icon in Dock. </description>
     </item>
-    
     <item>
-      <title>Docs: About &#34;Legacy System Extension&#34; alert</title>
+      <title>About &#34;Legacy System Extension&#34; alert</title>
       <link>/docs/manual/misc/legacy-system-extension/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>/docs/manual/misc/legacy-system-extension/</guid>
-      <description>
-        
-        
-        &lt;p&gt;If you are using old Karabiner-Elements (12.x.x or earlier) on macOS Catalina or later, the following alert will be shown.&lt;/p&gt;
-&lt;p&gt;Please upgrade Karabiner-Elements 13.0.0 or later.&lt;/p&gt;
-
-
-
-
-  
-
-
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/manual/misc/legacy-system-extension/images/legacy-system-extension@2x.png&#34;
-    alt=&#34;legacy-system-extension@2x.png&#34;
-    style=&#34;width: 420px&#34;
-  /&gt;
-&lt;/figure&gt;
-
-
-      </description>
+      <description>If you are using old Karabiner-Elements (12.x.x or earlier) on macOS Catalina or later, the following alert will be shown.&#xA;Please upgrade Karabiner-Elements 13.0.0 or later.</description>
     </item>
-    
   </channel>
 </rss>

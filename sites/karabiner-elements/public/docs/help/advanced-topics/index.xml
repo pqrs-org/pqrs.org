@@ -1,232 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Karabiner-Elements – Advanced topics</title>
+    <title>Advanced topics on Karabiner-Elements</title>
     <link>/docs/help/advanced-topics/</link>
     <description>Recent content in Advanced topics on Karabiner-Elements</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
-    
-	  <atom:link href="/docs/help/advanced-topics/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-      
-        
-      
-    
-    
+    <atom:link href="/docs/help/advanced-topics/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Docs: Installed files</title>
+      <title>Installed files</title>
       <link>/docs/help/advanced-topics/installed-files/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>/docs/help/advanced-topics/installed-files/</guid>
-      <description>
-        
-        
-        &lt;p&gt;Karabiner-Elements installs files into the following locations.&lt;/p&gt;
-&lt;h2 id=&#34;system-files&#34;&gt;System files&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/Applications/Karabiner-Elements.app
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/Applications/Karabiner-EventViewer.app
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/Library/Application Support/org.pqrs/Karabiner-Elements
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/Library/Application Support/org.pqrs/Karabiner-VirtualHIDDevice
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/Library/Application Support/org.pqrs/config
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/Library/Application Support/org.pqrs/tmp
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/Library/LaunchDaemons/org.pqrs.karabiner.karabiner_grabber.plist
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/Library/LaunchDaemons/org.pqrs.karabiner.karabiner_kextd.plist
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/Library/LaunchDaemons/org.pqrs.karabiner.karabiner_observer.plist
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/Library/LaunchAgents/org.pqrs.karabiner.agent.karabiner_grabber.plist
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/Library/LaunchAgents/org.pqrs.karabiner.agent.karabiner_observer.plist
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/Library/LaunchAgents/org.pqrs.karabiner.karabiner_console_user_server.plist
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/Library/LaunchAgents/org.pqrs.karabiner.karabiner_session_monitor.plist
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/var/log/karabiner
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;user-files&#34;&gt;User files&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;~/.config/karabiner
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;~/.local/share/karabiner
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;~/Library/Preferences/org.pqrs.Karabiner-Elements.Preferences.plist
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;~/Library/Preferences/org.pqrs.Karabiner-Elements.Settings.plist
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;~/Library/Preferences/org.pqrs.Karabiner-Elements.Updater.plist
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;~/Library/Preferences/org.pqrs.Karabiner-EventViewer.plist
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;~/Library/Preferences/org.pqrs.Karabiner-Menu.plist
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;~/Library/Preferences/org.pqrs.Karabiner-MultitouchExtension.plist
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
-&lt;h4 class=&#34;alert-heading&#34;&gt;Warning&lt;/h4&gt;
-
-    If you want to remove Karabiner-Elements, you have to use &lt;a href=&#34;/docs/manual/operation/uninstall/&#34;&gt;uninstaller&lt;/a&gt;.
-
-&lt;/div&gt;
-
-
-      </description>
+      <description>Karabiner-Elements installs files into the following locations.&#xA;System files /Applications/Karabiner-Elements.app /Applications/Karabiner-EventViewer.app /Library/Application Support/org.pqrs/Karabiner-Elements /Library/Application Support/org.pqrs/Karabiner-VirtualHIDDevice /Library/Application Support/org.pqrs/config /Library/Application Support/org.pqrs/tmp /Library/LaunchDaemons/org.pqrs.karabiner.karabiner_grabber.plist /Library/LaunchDaemons/org.pqrs.karabiner.karabiner_kextd.plist /Library/LaunchDaemons/org.pqrs.karabiner.karabiner_observer.plist /Library/LaunchAgents/org.pqrs.karabiner.agent.karabiner_grabber.plist /Library/LaunchAgents/org.pqrs.karabiner.agent.karabiner_observer.plist /Library/LaunchAgents/org.pqrs.karabiner.karabiner_console_user_server.plist /Library/LaunchAgents/org.pqrs.karabiner.karabiner_session_monitor.plist /var/log/karabiner User files ~/.config/karabiner ~/.local/share/karabiner ~/Library/Preferences/org.pqrs.Karabiner-Elements.Preferences.plist ~/Library/Preferences/org.pqrs.Karabiner-Elements.Settings.plist ~/Library/Preferences/org.pqrs.Karabiner-Elements.Updater.plist ~/Library/Preferences/org.pqrs.Karabiner-EventViewer.plist ~/Library/Preferences/org.pqrs.Karabiner-Menu.plist ~/Library/Preferences/org.pqrs.Karabiner-MultitouchExtension.plist Warning If you want to remove Karabiner-Elements, you have to use uninstaller. </description>
     </item>
-    
     <item>
-      <title>Docs: Security</title>
+      <title>Security</title>
       <link>/docs/help/advanced-topics/security/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>/docs/help/advanced-topics/security/</guid>
-      <description>
-        
-        
-        &lt;p&gt;Security is one of the most important point of Karabiner-Elements architecture design.&lt;/p&gt;
-&lt;p&gt;Separating process and running them with properly privileges to prevent event leaks.&lt;/p&gt;
-&lt;h2 id=&#34;process&#34;&gt;Process&lt;/h2&gt;
-&lt;p&gt;Karabiner-Elements restricts the input event handling to &lt;strong&gt;karabiner_observer&lt;/strong&gt; and &lt;strong&gt;karabiner_grabber&lt;/strong&gt; processes.&lt;/p&gt;
-&lt;p&gt;These process are running with root privilege and other process including malicious attacker cannot steal your input events.&lt;/p&gt;
-&lt;h3 id=&#34;list-of-process&#34;&gt;List of process&lt;/h3&gt;
-&lt;p&gt;Running with root privilege&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;karabiner_observer&lt;/strong&gt;
-&lt;ul&gt;
-&lt;li&gt;Role:
-&lt;ul&gt;
-&lt;li&gt;Observe the keyboard hardware events and tell grabber the devices state.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;karabiner_grabber&lt;/strong&gt;
-&lt;ul&gt;
-&lt;li&gt;Role:
-&lt;ul&gt;
-&lt;li&gt;Grab the keyboard hardware and catch events, modify events then post them.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Karabiner VirtualHIDDevice&lt;/strong&gt; kernel extension
-&lt;ul&gt;
-&lt;li&gt;Role:
-&lt;ul&gt;
-&lt;li&gt;Virtual keyboard and pointing device.&lt;/li&gt;
-&lt;li&gt;The virtual devices deny any requires (sending input events) from non root privileged processes.&lt;br /&gt;
-Typically, karabiner_grabber is the only process which can send input events to the virtual devices.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Running with logged in user privilege&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;karabiner_console_user_server&lt;/strong&gt;
-&lt;ul&gt;
-&lt;li&gt;Role:
-&lt;ul&gt;
-&lt;li&gt;Tell karabiner_grabber starting device grabbing.&lt;/li&gt;
-&lt;li&gt;Execute shell commands which is triggered by karabiner_grabber.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;karabiner_session_monitor&lt;/strong&gt;
-&lt;ul&gt;
-&lt;li&gt;Role:
-&lt;ul&gt;
-&lt;li&gt;Monitor user login status and tell it to karabiner_grabber.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;karabiner_observer&lt;/strong&gt; (Running with logged in user)
-&lt;ul&gt;
-&lt;li&gt;Role:
-&lt;ul&gt;
-&lt;li&gt;Tell macOS karabiner_observer will be use Input Monitoring.&lt;br /&gt;
-And do nothing if the process is running with non root user.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;karabiner_grabber&lt;/strong&gt; (Running with logged in user)
-&lt;ul&gt;
-&lt;li&gt;Role:
-&lt;ul&gt;
-&lt;li&gt;Tell macOS karabiner_grabber will be use Input Monitoring.&lt;br /&gt;
-And do nothing if the process is running with non root user.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-
-      </description>
+      <description>Security is one of the most important point of Karabiner-Elements architecture design.&#xA;Separating process and running them with properly privileges to prevent event leaks.&#xA;Process Karabiner-Elements restricts the input event handling to karabiner_observer and karabiner_grabber processes.&#xA;These process are running with root privilege and other process including malicious attacker cannot steal your input events.&#xA;List of process Running with root privilege&#xA;karabiner_observer Role: Observe the keyboard hardware events and tell grabber the devices state.</description>
     </item>
-    
     <item>
-      <title>Docs: What is the lock indicator on Karabiner-Elements and Karabiner-EventViewer icon</title>
+      <title>What is the lock indicator on Karabiner-Elements and Karabiner-EventViewer icon</title>
       <link>/docs/help/advanced-topics/lock-icon/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>/docs/help/advanced-topics/lock-icon/</guid>
-      <description>
-        
-        
-        
-
-&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
-&lt;h4 class=&#34;alert-heading&#34;&gt;Info&lt;/h4&gt;
-
-    This content is for older versions of Karabiner Elements.
-
-&lt;/div&gt;
-
-&lt;p&gt;Prior to Karabiner-Elements 14.10.0, a lock indicator is shown on Karabiner-Elements and Karabiner-EventViewer icon.&lt;/p&gt;
-&lt;p&gt;These indicators show that these files are protected so that they cannot be deleted from Finder.&lt;/p&gt;
-
-
-
-
-  
-
-
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/help/advanced-topics/lock-icon/images/lock@2x.png&#34;
-    alt=&#34;lock@2x.png&#34;
-    style=&#34;width: 390px&#34;
-  /&gt;
-&lt;/figure&gt;
-
-&lt;h2 id=&#34;why-these-files-are-protected&#34;&gt;Why these files are protected&lt;/h2&gt;
-&lt;p&gt;This protection is intended to prevent incomplete uninstallation.&lt;/p&gt;
-&lt;p&gt;Karabiner-Elements is a system-wide software, and &lt;a href=&#34;../installed-files/&#34;&gt;files are installed in appropriate locations&lt;/a&gt; besides the Applications folder.&lt;/p&gt;
-&lt;p&gt;Therefore, if you just put the application icon in Trash like a normal app uninstallation, some files will be left behind.&lt;/p&gt;
-&lt;p&gt;The file protection forces to use &lt;a href=&#34;/docs/manual/operation/uninstall/&#34;&gt;the built-in uninstaller&lt;/a&gt; and remove installed files properly at the uninstallation.&lt;/p&gt;
-
-
-&lt;div class=&#34;alert alert-danger&#34; role=&#34;alert&#34;&gt;
-&lt;h4 class=&#34;alert-heading&#34;&gt;Advanced topic&lt;/h4&gt;
-
-    &lt;p&gt;This file locking is achieved with &lt;code&gt;schg&lt;/code&gt; and &lt;code&gt;uchg&lt;/code&gt; flags.&lt;/p&gt;
-&lt;p&gt;You can unlock these files by running the following commands in Terminal.
-(Administrator password is required to run the commands.)&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo chflags nouchg,noschg /Applications/Karabiner-Elements.app
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo chflags nouchg,noschg /Applications/Karabiner-EventViewer.app
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;In particular, if Full Disk Access rights have not been granted to Terminal, &amp;ldquo;Operation not permitted&amp;rdquo; error may be displayed.
-In this case, the safest solution is to grant App Management rights to Terminal.&lt;/p&gt;
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/help/advanced-topics/lock-icon/images/app-management1@2x.png&#34;
-    alt=&#34;app-management1@2x.png&#34;
-    style=&#34;width: 715px&#34;
-  /&gt;
-&lt;/figure&gt;
-&lt;figure&gt;
-  &lt;img
-    src=&#34;/docs/help/advanced-topics/lock-icon/images/app-management2@2x.png&#34;
-    alt=&#34;app-management2@2x.png&#34;
-    style=&#34;width: 715px&#34;
-  /&gt;
-&lt;/figure&gt;
-
-
-&lt;/div&gt;
-
-
-      </description>
+      <description>Info This content is for older versions of Karabiner Elements. Prior to Karabiner-Elements 14.10.0, a lock indicator is shown on Karabiner-Elements and Karabiner-EventViewer icon.&#xA;These indicators show that these files are protected so that they cannot be deleted from Finder.&#xA;Why these files are protected This protection is intended to prevent incomplete uninstallation.&#xA;Karabiner-Elements is a system-wide software, and files are installed in appropriate locations besides the Applications folder.</description>
     </item>
-    
   </channel>
 </rss>

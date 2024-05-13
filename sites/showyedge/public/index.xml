@@ -1,17 +1,102 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>ShowyEdge – ShowyEdge</title>
+    <title>ShowyEdge</title>
     <link>/</link>
     <description>Recent content on ShowyEdge</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
-    
-	  <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-      
-      
-    
-    
+    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Getting Started</title>
+      <link>/docs/getting-started/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/getting-started/</guid>
+      <description>System requirements macOS Catalina (10.15) or later Installation Download dmg file from here. Open a downloaded dmg file. Move ShowyEdge icon into Applications icon. Open ShowyEdge from Launchpad. Menu bar icon will be added. What&amp;rsquo;s next? Configuration </description>
+    </item>
+    <item>
+      <title>How to quit ShowyEdge</title>
+      <link>/docs/help/quit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/help/quit/</guid>
+      <description>ShowyEdge keeps running in the background even if you close the preferences window.&#xA;To quit ShowyEdge, choose &amp;ldquo;Quit ShowyEdge&amp;rdquo; from menu bar.&#xA;Note If you&amp;rsquo;ve hidden the menu bar icon, you can also quit ShowyEdge from Preferences.&#xA;Open preferences window.&#xA;Press Quit ShowyEdge button.</description>
+    </item>
+    <item>
+      <title>Open preferences window</title>
+      <link>/docs/configuration/open-preferences-window/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/configuration/open-preferences-window/</guid>
+      <description>Open Preferences from menu bar. Note If you&amp;rsquo;ve hidden the menu bar icon, open ShowyEdge again from Launchpad while ShowyEdge is already running to open preferences window.</description>
+    </item>
+    <item>
+      <title>How to uninstall ShowyEdge</title>
+      <link>/docs/help/uninstall/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/help/uninstall/</guid>
+      <description>Remove ShowyEdge from your system as follows.&#xA;Quit ShowyEdge before uninstallaion. Open Applications folder in Finder, then move ShowyEdge to trash. </description>
+    </item>
+    <item>
+      <title>Input source color configuration</title>
+      <link>/docs/configuration/color-configuration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/configuration/color-configuration/</guid>
+      <description>You can change indicator colors of input sources.&#xA;Open preferences window. Press Add custom color button on Preferences. Change colors. </description>
+    </item>
+    <item>
+      <title>Indicator size configuration</title>
+      <link>/docs/configuration/indicator-size-configuration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/configuration/indicator-size-configuration/</guid>
+      <description>Basic You can change the indicator height.&#xA;Open preferences window. Choose Indicator from the sidebar. Adjust height. Advanced You can put the indicator by custom size and origin.&#xA;Open preferences window. Choose Custom Frame from the sidebar. Enable Use custom frame, and then adjust the indicator size and origin. Tips You can specify size by pixel or percentage of screen. (e.g., width = 100%, height = 20pt) Choose Lower-Left from origin options if you want to put indicator to the bottom of screen.</description>
+    </item>
+    <item>
+      <title>Indicator options</title>
+      <link>/docs/configuration/indicator-options/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/configuration/indicator-options/</guid>
+      <description> Hide indicator when full screen Show indicator behind app windows This option is useful with custom frame. You can use the Desktop background as an indicator. </description>
+    </item>
+    <item>
+      <title>Downgrade to older version</title>
+      <link>/docs/help/downgrade/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/help/downgrade/</guid>
+      <description>Download an older version from Release notes and install it.</description>
+    </item>
+    <item>
+      <title>Open at login</title>
+      <link>/docs/configuration/open-at-login/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/configuration/open-at-login/</guid>
+      <description>You can launch ShowyEdge automaticaly at login.&#xA;Open preferences window. Enable Open at login. </description>
+    </item>
+    <item>
+      <title>Use beta version</title>
+      <link>/docs/help/use-beta/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/help/use-beta/</guid>
+      <description>You can install beta version from Update &amp;gt; Check for beta updates.</description>
+    </item>
+    <item>
+      <title>Hide the icon in menu bar</title>
+      <link>/docs/configuration/hide-menu-bar-icon/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/configuration/hide-menu-bar-icon/</guid>
+      <description>You can hide the icon in menu bar from preferences.&#xA;Open preferences window. Turn off Show icon in menu bar. </description>
+    </item>
+    <item>
+      <title>Pricing</title>
+      <link>/docs/pricing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/pricing/</guid>
+      <description>ShowyEdge is an open source software and you can use it without any purchases.</description>
+    </item>
+    <item>
+      <title>Release notes</title>
+      <link>/docs/releasenotes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/releasenotes/</guid>
+      <description>ShowyEdge 5.7.0 📦 Download 📅 Release date Mov 4, 2023 ⚡️ Improvements macOS Sonoma support has been improved. The color picker opacity now works correctly on macOS Sonoma. Sparkle Framework has been updated. ShowyEdge 5.6.0 📦 Download 📅 Release date May 14, 2023 ⚡️ Improvements Became sandboxed app. Enabled the setting of Open at login by default. ShowyEdge 5.5.0 📦 Download 📅 Release date May 7, 2022 ⚡️ Improvements Sparkle Framework has been updated.</description>
+    </item>
   </channel>
 </rss>
