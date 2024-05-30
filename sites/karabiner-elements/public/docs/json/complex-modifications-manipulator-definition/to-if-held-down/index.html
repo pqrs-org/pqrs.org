@@ -35,9 +35,13 @@ Note If to events are specified, key_up event of to is sent before to_if_held_do
 Note If to events are specified, key_up event of to is sent before to_if_held_down events are posted. Example The following json changes the escape key to open Alfred when the escape key is held down.
 { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;escape&#34;, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;caps_lock&#34;] } }, &#34;parameters&#34;: { &#34;basic.to_if_alone_timeout_milliseconds&#34;: 250, &#34;basic.to_if_held_down_threshold_milliseconds&#34;: 250 }, &#34;to_if_alone&#34;: [ { &#34;key_code&#34;: &#34;escape&#34; } ], &#34;to_if_held_down&#34;: [ { &#34;shell_command&#34;: &#34;open -a &#39;Alfred 4.">
   <meta itemprop="wordCount" content="101">
-  <meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png"><meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://karabiner-elements.pqrs.org/images/logo.png"><meta name="twitter:title" content="to_if_held_down">
-<meta name="twitter:description" content="A powerful and stable keyboard customizer for macOS.">
+  <meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://karabiner-elements.pqrs.org/images/logo.png">
+  <meta name="twitter:title" content="to_if_held_down">
+  <meta name="twitter:description" content="to_if_held_down posts events when the from key is held down.
+Note If to events are specified, key_up event of to is sent before to_if_held_down events are posted. Example The following json changes the escape key to open Alfred when the escape key is held down.
+{ &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;escape&#34;, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;caps_lock&#34;] } }, &#34;parameters&#34;: { &#34;basic.to_if_alone_timeout_milliseconds&#34;: 250, &#34;basic.to_if_held_down_threshold_milliseconds&#34;: 250 }, &#34;to_if_alone&#34;: [ { &#34;key_code&#34;: &#34;escape&#34; } ], &#34;to_if_held_down&#34;: [ { &#34;shell_command&#34;: &#34;open -a &#39;Alfred 4.">
 
 
 
