@@ -66,6 +66,32 @@ Karabiner-Elements and any bundled softwares, e.g., EventViewer, do not access o
 
 {{% /alert %}}
 
+{{% alert title="About karabiner_machine_identifier" color="primary" %}}
+
+Since Karabiner-Elements v14.99.2, a unique random ID called karabiner_machine_identifier is generated for each machine during Karabiner-Elements installation.
+This ID may be included in the configuration file karabiner.json when machine-specific settings are made.
+For instance, when the Multitouch Extension is enabled, the following content is added to karabiner.json, and the string starting with `krbn-` is the karabiner_machine_identifier.
+
+{{< local-image src="images/karabiner-machine-identifier@2x.png" >}}
+
+This string is completely random and does not contain any unique information about the user or the machine.
+In other words, this ID is not linked to information like your Apple ID or Mac’s serial number.
+Therefore, it is a safe ID to share with others.
+
+Of course, Karabiner-Elements never collect this ID.
+
+### Technical Information
+
+The karabiner_machine_identifier is in the format `krbn-{UUID v4}`.
+
+The generated ID is saved in `/Library/Application Support/org.pqrs/tmp/karabiner_machine_identifier.json` as the following forms.
+
+```json
+{ "karabiner_machine_identifier": "krbn-818632bf-2a88-4ac0-ad0b-4524721c217b" }
+```
+
+{{% /alert %}}
+
 {{% alert title="Data being collected" color="secondary" %}}
 
 The only data we are collecting is Karabiner-Elements version information.<br />
