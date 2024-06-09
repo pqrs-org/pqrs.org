@@ -26,7 +26,7 @@
       <link>/docs/json/complex-modifications-manipulator-definition/to/set-variable/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/docs/json/complex-modifications-manipulator-definition/to/set-variable/</guid>
-      <description>set_variable defines and updates the variable value.&#xA;Tip set_variable is designed to use with variable_if and variable_unless conditions. { &amp;#34;to&amp;#34;: [ { &amp;#34;set_variable&amp;#34;: { &amp;#34;name&amp;#34;: &amp;#34;variable name&amp;#34;, &amp;#34;value&amp;#34;: variable value, &amp;#34;key_up_value&amp;#34;: variable value } } ] } Name Required Description Available since name Required Target variable name. Karabiner-Elements 11.0.0 value Required | Optional Target variable value. Karabiner-Elements 11.0.0 key_up_value Optional A variable value when key is up Karabiner-Elements 14.12.6 type Optional &amp;ldquo;set&amp;rdquo; or &amp;ldquo;unset&amp;rdquo; Karabiner-Elements 14.</description>
+      <description>set_variable defines and updates the variable value.&#xA;Tip set_variable is designed to use with variable_if and variable_unless conditions. { &amp;#34;to&amp;#34;: [ { &amp;#34;set_variable&amp;#34;: { &amp;#34;name&amp;#34;: &amp;#34;variable name&amp;#34;, &amp;#34;value&amp;#34;: variable value, &amp;#34;key_up_value&amp;#34;: variable value, &amp;#34;type&amp;#34;: &amp;#34;set&amp;#34; } } ] } Name Required Description Available since name Required Target variable name. Karabiner-Elements 11.0.0 value Required | Optional Target variable value. Karabiner-Elements 11.0.0 key_up_value Optional A variable value when key is up Karabiner-Elements 14.</description>
     </item>
     <item>
       <title>to.set_notification_message</title>
