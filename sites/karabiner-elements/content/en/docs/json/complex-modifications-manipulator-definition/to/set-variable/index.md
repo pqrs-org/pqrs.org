@@ -25,11 +25,14 @@ weight: 300
 }
 ```
 
-| Name           | Required     | Description                     | Available since            |
-| -------------- | ------------ | ------------------------------- | -------------------------- |
-| `name`         | **Required** | Target variable name.           | Karabiner-Elements 11.0.0  |
-| `value`        | **Required** | Target variable value.          | Karabiner-Elements 11.0.0  |
-| `key_up_value` | Optional     | A variable value when key is up | Karabiner-Elements 14.12.6 |
+| Name           | Required             | Description                     | Available since            |
+| -------------- | -------------------- | ------------------------------- | -------------------------- |
+| `name`         | **Required**         | Target variable name.           | Karabiner-Elements 11.0.0  |
+| `value`        | Required \| Optional | Target variable value.          | Karabiner-Elements 11.0.0  |
+| `key_up_value` | Optional             | A variable value when key is up | Karabiner-Elements 14.12.6 |
+| `type`         | Optional             | "set" or "unset"                | Karabiner-Elements 14.99.2 |
+
+Note: If `key_up_value` or `type` is specified, the `value` can be omitted.
 
 ## Available types of `value`
 
@@ -65,6 +68,15 @@ weight: 300
     "set_variable": {
         "name": "layer_name",
         "value": "layer1"
+    }
+}
+```
+
+```json
+{
+    "set_variable": {
+        "name": "my_flag",
+        "type": "unset"
     }
 }
 ```
