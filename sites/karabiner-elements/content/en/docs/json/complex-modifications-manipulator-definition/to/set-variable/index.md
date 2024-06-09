@@ -18,7 +18,8 @@ weight: 300
             "set_variable": {
                 "name": "variable name",
                 "value": variable value,
-                "key_up_value": variable value
+                "key_up_value": variable value,
+                "type": "set"
             }
         }
     ]
