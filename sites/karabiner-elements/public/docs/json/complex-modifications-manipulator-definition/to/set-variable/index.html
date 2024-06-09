@@ -19,12 +19,12 @@
 
 <title>to.set_variable | Karabiner-Elements</title>
 <meta name="description" content="set_variable defines and updates the variable value.
-Tip set_variable is designed to use with variable_if and variable_unless conditions. { &amp;#34;to&amp;#34;: [ { &amp;#34;set_variable&amp;#34;: { &amp;#34;name&amp;#34;: &amp;#34;variable name&amp;#34;, &amp;#34;value&amp;#34;: variable value, &amp;#34;key_up_value&amp;#34;: variable value } } ] } Name Required Description Available since name Required Target variable name. Karabiner-Elements 11.0.0 value Required Target variable value. Karabiner-Elements 11.0.0 key_up_value Optional A variable value when key is up Karabiner-Elements 14.12.6 Available types of value Type Example value Available since integer 0,1,2,&amp;hellip; Karabiner-Elements 11.">
+Tip set_variable is designed to use with variable_if and variable_unless conditions. { &amp;#34;to&amp;#34;: [ { &amp;#34;set_variable&amp;#34;: { &amp;#34;name&amp;#34;: &amp;#34;variable name&amp;#34;, &amp;#34;value&amp;#34;: variable value, &amp;#34;key_up_value&amp;#34;: variable value } } ] } Name Required Description Available since name Required Target variable name. Karabiner-Elements 11.0.0 value Required | Optional Target variable value. Karabiner-Elements 11.0.0 key_up_value Optional A variable value when key is up Karabiner-Elements 14.12.6 type Optional &amp;ldquo;set&amp;rdquo; or &amp;ldquo;unset&amp;rdquo; Karabiner-Elements 14.">
 <meta property="og:url" content="/docs/json/complex-modifications-manipulator-definition/to/set-variable/">
   <meta property="og:site_name" content="Karabiner-Elements">
   <meta property="og:title" content="to.set_variable">
   <meta property="og:description" content="set_variable defines and updates the variable value.
-Tip set_variable is designed to use with variable_if and variable_unless conditions. { &#34;to&#34;: [ { &#34;set_variable&#34;: { &#34;name&#34;: &#34;variable name&#34;, &#34;value&#34;: variable value, &#34;key_up_value&#34;: variable value } } ] } Name Required Description Available since name Required Target variable name. Karabiner-Elements 11.0.0 value Required Target variable value. Karabiner-Elements 11.0.0 key_up_value Optional A variable value when key is up Karabiner-Elements 14.12.6 Available types of value Type Example value Available since integer 0,1,2,… Karabiner-Elements 11.">
+Tip set_variable is designed to use with variable_if and variable_unless conditions. { &#34;to&#34;: [ { &#34;set_variable&#34;: { &#34;name&#34;: &#34;variable name&#34;, &#34;value&#34;: variable value, &#34;key_up_value&#34;: variable value } } ] } Name Required Description Available since name Required Target variable name. Karabiner-Elements 11.0.0 value Required | Optional Target variable value. Karabiner-Elements 11.0.0 key_up_value Optional A variable value when key is up Karabiner-Elements 14.12.6 type Optional “set” or “unset” Karabiner-Elements 14.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
@@ -32,14 +32,14 @@ Tip set_variable is designed to use with variable_if and variable_unless conditi
 
   <meta itemprop="name" content="to.set_variable">
   <meta itemprop="description" content="set_variable defines and updates the variable value.
-Tip set_variable is designed to use with variable_if and variable_unless conditions. { &#34;to&#34;: [ { &#34;set_variable&#34;: { &#34;name&#34;: &#34;variable name&#34;, &#34;value&#34;: variable value, &#34;key_up_value&#34;: variable value } } ] } Name Required Description Available since name Required Target variable name. Karabiner-Elements 11.0.0 value Required Target variable value. Karabiner-Elements 11.0.0 key_up_value Optional A variable value when key is up Karabiner-Elements 14.12.6 Available types of value Type Example value Available since integer 0,1,2,… Karabiner-Elements 11.">
-  <meta itemprop="wordCount" content="136">
+Tip set_variable is designed to use with variable_if and variable_unless conditions. { &#34;to&#34;: [ { &#34;set_variable&#34;: { &#34;name&#34;: &#34;variable name&#34;, &#34;value&#34;: variable value, &#34;key_up_value&#34;: variable value } } ] } Name Required Description Available since name Required Target variable name. Karabiner-Elements 11.0.0 value Required | Optional Target variable value. Karabiner-Elements 11.0.0 key_up_value Optional A variable value when key is up Karabiner-Elements 14.12.6 type Optional “set” or “unset” Karabiner-Elements 14.">
+  <meta itemprop="wordCount" content="166">
   <meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://karabiner-elements.pqrs.org/images/logo.png">
   <meta name="twitter:title" content="to.set_variable">
   <meta name="twitter:description" content="set_variable defines and updates the variable value.
-Tip set_variable is designed to use with variable_if and variable_unless conditions. { &#34;to&#34;: [ { &#34;set_variable&#34;: { &#34;name&#34;: &#34;variable name&#34;, &#34;value&#34;: variable value, &#34;key_up_value&#34;: variable value } } ] } Name Required Description Available since name Required Target variable name. Karabiner-Elements 11.0.0 value Required Target variable value. Karabiner-Elements 11.0.0 key_up_value Optional A variable value when key is up Karabiner-Elements 14.12.6 Available types of value Type Example value Available since integer 0,1,2,… Karabiner-Elements 11.">
+Tip set_variable is designed to use with variable_if and variable_unless conditions. { &#34;to&#34;: [ { &#34;set_variable&#34;: { &#34;name&#34;: &#34;variable name&#34;, &#34;value&#34;: variable value, &#34;key_up_value&#34;: variable value } } ] } Name Required Description Available since name Required Target variable name. Karabiner-Elements 11.0.0 value Required | Optional Target variable value. Karabiner-Elements 11.0.0 key_up_value Optional A variable value when key is up Karabiner-Elements 14.12.6 type Optional “set” or “unset” Karabiner-Elements 14.">
 
 
 
@@ -88,7 +88,7 @@ if (!doNotTrack) {
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.770b3f0c9949ea8e4325344757d81d0d.json"
+    data-offline-search-index-json-src="/offline-search-index.ae99033565d9eebd83c00e30e1f3566d.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="25"
   >
@@ -112,7 +112,7 @@ if (!doNotTrack) {
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.770b3f0c9949ea8e4325344757d81d0d.json"
+    data-offline-search-index-json-src="/offline-search-index.ae99033565d9eebd83c00e30e1f3566d.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="25"
   >
@@ -696,7 +696,7 @@ if (!doNotTrack) {
 </tr>
 <tr>
 <td><code>value</code></td>
-<td><strong>Required</strong></td>
+<td>Required | Optional</td>
 <td>Target variable value.</td>
 <td>Karabiner-Elements 11.0.0</td>
 </tr>
@@ -706,8 +706,15 @@ if (!doNotTrack) {
 <td>A variable value when key is up</td>
 <td>Karabiner-Elements 14.12.6</td>
 </tr>
+<tr>
+<td><code>type</code></td>
+<td>Optional</td>
+<td>&ldquo;set&rdquo; or &ldquo;unset&rdquo;</td>
+<td>Karabiner-Elements 14.99.2</td>
+</tr>
 </tbody>
 </table>
+<p>Note: If <code>key_up_value</code> or <code>type</code> is specified, the <code>value</code> can be omitted.</p>
 <h2 id="available-types-of-value">Available types of <code>value</code></h2>
 <table>
 <thead>
@@ -753,6 +760,12 @@ if (!doNotTrack) {
 </span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;set_variable&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#204a87;font-weight:bold">&#34;name&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;layer_name&#34;</span><span style="color:#000;font-weight:bold">,</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#204a87;font-weight:bold">&#34;value&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;layer1&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;set_variable&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#204a87;font-weight:bold">&#34;name&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;my_flag&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#204a87;font-weight:bold">&#34;type&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;unset&#34;</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">}</span>
 </span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
 </span></span></code></pre></div><h2 id="confirm-the-current-variable-values">Confirm the current variable values</h2>
