@@ -39,7 +39,7 @@ Your keystrokes Your configuration data Your usage statistics And all other data
 Of course, Karabiner-Elements does not collect any of your input data, your configuration data, nor your usage statistics.
 Data not collected Karabiner-Elements does not transmit your data externally. The following data is never transmitted outside your Mac:
 Your keystrokes Your configuration data Your usage statistics And all other data except Karabiner-Elements version information. About Input Monitoring Karabiner-Elements exclusively receives input events from your keyboard, and then modifies them.">
-  <meta itemprop="wordCount" content="496">
+  <meta itemprop="wordCount" content="633">
   <meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://karabiner-elements.pqrs.org/images/logo.png">
@@ -96,7 +96,7 @@ if (!doNotTrack) {
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.b9e99ebf425db11768fed4a64df3de5f.json"
+    data-offline-search-index-json-src="/offline-search-index.27cd62404b12a04dcc47feb87cafbe67.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="25"
   >
@@ -120,7 +120,7 @@ if (!doNotTrack) {
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.b9e99ebf425db11768fed4a64df3de5f.json"
+    data-offline-search-index-json-src="/offline-search-index.27cd62404b12a04dcc47feb87cafbe67.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="25"
   >
@@ -740,6 +740,33 @@ Some combinations, such as fn+arrow keys, are implicitly changed. For a list, pl
 <li>The &ldquo;Use F1, F2, etc. keys as standard function keys&rdquo; configuration in the system settings.</li>
 </ul>
 
+
+</div>
+
+
+
+<div class="alert alert-primary" role="alert">
+<h4 class="alert-heading">About karabiner_machine_identifier</h4>
+
+    <p>Since Karabiner-Elements v14.99.2, a unique random ID called karabiner_machine_identifier is generated for each machine during Karabiner-Elements installation.
+This ID may be included in the configuration file karabiner.json when machine-specific settings are made.
+For instance, when the Multitouch Extension is enabled, the following content is added to karabiner.json, and the string starting with <code>krbn-</code> is the karabiner_machine_identifier.</p>
+<figure>
+  <img
+    src="/docs/privacy/images/karabiner-machine-identifier@2x.png"
+    alt="karabiner-machine-identifier@2x.png"
+    style="width: 554px"
+  />
+</figure>
+<p>This string is completely random and does not contain any unique information about the user or the machine.
+In other words, this ID is not linked to information like your Apple ID or Mac’s serial number.
+Therefore, it is a safe ID to share with others.</p>
+<p>Of course, Karabiner-Elements never collect this ID.</p>
+<h3 id="technical-information">Technical Information</h3>
+<p>The karabiner_machine_identifier is in the format <code>krbn-{UUID v4}</code>.</p>
+<p>The generated ID is saved in <code>/Library/Application Support/org.pqrs/tmp/karabiner_machine_identifier.json</code> as the following forms.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span> <span style="color:#204a87;font-weight:bold">&#34;karabiner_machine_identifier&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;krbn-818632bf-2a88-4ac0-ad0b-4524721c217b&#34;</span> <span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></div>
 
 </div>
 
