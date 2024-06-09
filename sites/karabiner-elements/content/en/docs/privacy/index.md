@@ -76,7 +76,7 @@ For instance, when the Multitouch Extension is enabled, the following content is
 
 This string is completely random and does not contain any unique information about the user or the machine.
 In other words, this ID is not linked to information like your Apple ID or Mac’s serial number.
-Therefore, it is a safe ID to share with others.
+Therefore, it is a safe ID to share with others, and there is no need to mask it when you share karabiner.json with others.
 
 Of course, Karabiner-Elements never collect this ID.
 
