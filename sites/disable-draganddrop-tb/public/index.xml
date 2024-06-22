@@ -40,7 +40,7 @@
       <link>/docs/releasenotes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/docs/releasenotes/</guid>
-      <description>Disable DragAndDrop 5.0.0 📅 Release date Jul 13, 2023 💥 Breaking changes The ability to display a prompt instead of prohibiting folder movement has been removed to support Thunderbird 115. ⚡️ Improvements Supported Thunderbird 115. Disable DragAndDrop 4.14.0 📅 Release date Jun 20, 2022 🍰 Minor Changes Supported Thunderbird 102. Disable DragAndDrop 4.13.0 📅 Release date Sep 3, 2021 🍰 Minor Changes Add strict_max_version into the manifest file. Disable DragAndDrop 4.</description>
+      <description>Disable DragAndDrop 5.3.0 📅 Release date Jun 19, 2024 🐛 Bug Fixes Fixed an issue where drag was not disabled in newly opened tabs. (Thanks to @kudel) Disable DragAndDrop 5.2.0 📅 Release date May 26, 2024 ✨ New Features Added an option: Allow the folder movement if drag starts with the shift key pressed. ⚡️ Improvements Suppressed the debug log messages. Extended the supported Thunderbird versions up to 127. Disable DragAndDrop 5.</description>
     </item>
   </channel>
 </rss>
