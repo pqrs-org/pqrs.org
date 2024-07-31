@@ -6,6 +6,20 @@ exclude_search: true
 body_class: release-notes
 ---
 
+## Disable DragAndDrop 5.5.0
+
+-   📅 Release date
+    -   Jul 31, 2024
+-   ⚡️ Improvements
+    -   Extended the supported Thunderbird versions up to 129.
+
+## Disable DragAndDrop 5.4.0
+
+-   📅 Release date
+    -   Jul 31, 2024
+-   ⚡️ Improvements
+    -   Remove `strict_max_version` from manifest.json.
+
 ## Disable DragAndDrop 5.3.0
 
 -   📅 Release date
