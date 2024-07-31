@@ -18,24 +18,24 @@
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
 <title>Release notes | Disable DragAndDrop</title>
-<meta name="description" content="Disable DragAndDrop 5.3.0 📅 Release date Jun 19, 2024 🐛 Bug Fixes Fixed an issue where drag was not disabled in newly opened tabs. (Thanks to @kudel) Disable DragAndDrop 5.2.0 📅 Release date May 26, 2024 ✨ New Features Added an option: Allow the folder movement if drag starts with the shift key pressed. ⚡️ Improvements Suppressed the debug log messages. Extended the supported Thunderbird versions up to 127. Disable DragAndDrop 5.">
+<meta name="description" content="Disable DragAndDrop 5.5.0 📅 Release date Jul 31, 2024 ⚡️ Improvements Extended the supported Thunderbird versions up to 129. Disable DragAndDrop 5.4.0 📅 Release date Jul 31, 2024 ⚡️ Improvements Remove strict_max_version from manifest.json. Disable DragAndDrop 5.3.0 📅 Release date Jun 19, 2024 🐛 Bug Fixes Fixed an issue where drag was not disabled in newly opened tabs. (Thanks to @kudel) Disable DragAndDrop 5.2.0 📅 Release date May 26, 2024 ✨ New Features Added an option: Allow the folder movement if drag starts with the shift key pressed.">
 <meta property="og:url" content="/docs/releasenotes/">
   <meta property="og:site_name" content="Disable DragAndDrop">
   <meta property="og:title" content="Release notes">
-  <meta property="og:description" content="Disable DragAndDrop 5.3.0 📅 Release date Jun 19, 2024 🐛 Bug Fixes Fixed an issue where drag was not disabled in newly opened tabs. (Thanks to @kudel) Disable DragAndDrop 5.2.0 📅 Release date May 26, 2024 ✨ New Features Added an option: Allow the folder movement if drag starts with the shift key pressed. ⚡️ Improvements Suppressed the debug log messages. Extended the supported Thunderbird versions up to 127. Disable DragAndDrop 5.">
+  <meta property="og:description" content="Disable DragAndDrop 5.5.0 📅 Release date Jul 31, 2024 ⚡️ Improvements Extended the supported Thunderbird versions up to 129. Disable DragAndDrop 5.4.0 📅 Release date Jul 31, 2024 ⚡️ Improvements Remove strict_max_version from manifest.json. Disable DragAndDrop 5.3.0 📅 Release date Jun 19, 2024 🐛 Bug Fixes Fixed an issue where drag was not disabled in newly opened tabs. (Thanks to @kudel) Disable DragAndDrop 5.2.0 📅 Release date May 26, 2024 ✨ New Features Added an option: Allow the folder movement if drag starts with the shift key pressed.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
     <meta property="og:image" content="https://disable-draganddrop-tb.pqrs.org/images/logo.png">
 
   <meta itemprop="name" content="Release notes">
-  <meta itemprop="description" content="Disable DragAndDrop 5.3.0 📅 Release date Jun 19, 2024 🐛 Bug Fixes Fixed an issue where drag was not disabled in newly opened tabs. (Thanks to @kudel) Disable DragAndDrop 5.2.0 📅 Release date May 26, 2024 ✨ New Features Added an option: Allow the folder movement if drag starts with the shift key pressed. ⚡️ Improvements Suppressed the debug log messages. Extended the supported Thunderbird versions up to 127. Disable DragAndDrop 5.">
-  <meta itemprop="wordCount" content="396">
+  <meta itemprop="description" content="Disable DragAndDrop 5.5.0 📅 Release date Jul 31, 2024 ⚡️ Improvements Extended the supported Thunderbird versions up to 129. Disable DragAndDrop 5.4.0 📅 Release date Jul 31, 2024 ⚡️ Improvements Remove strict_max_version from manifest.json. Disable DragAndDrop 5.3.0 📅 Release date Jun 19, 2024 🐛 Bug Fixes Fixed an issue where drag was not disabled in newly opened tabs. (Thanks to @kudel) Disable DragAndDrop 5.2.0 📅 Release date May 26, 2024 ✨ New Features Added an option: Allow the folder movement if drag starts with the shift key pressed.">
+  <meta itemprop="wordCount" content="430">
   <meta itemprop="image" content="https://disable-draganddrop-tb.pqrs.org/images/logo.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://disable-draganddrop-tb.pqrs.org/images/logo.png">
   <meta name="twitter:title" content="Release notes">
-  <meta name="twitter:description" content="Disable DragAndDrop 5.3.0 📅 Release date Jun 19, 2024 🐛 Bug Fixes Fixed an issue where drag was not disabled in newly opened tabs. (Thanks to @kudel) Disable DragAndDrop 5.2.0 📅 Release date May 26, 2024 ✨ New Features Added an option: Allow the folder movement if drag starts with the shift key pressed. ⚡️ Improvements Suppressed the debug log messages. Extended the supported Thunderbird versions up to 127. Disable DragAndDrop 5.">
+  <meta name="twitter:description" content="Disable DragAndDrop 5.5.0 📅 Release date Jul 31, 2024 ⚡️ Improvements Extended the supported Thunderbird versions up to 129. Disable DragAndDrop 5.4.0 📅 Release date Jul 31, 2024 ⚡️ Improvements Remove strict_max_version from manifest.json. Disable DragAndDrop 5.3.0 📅 Release date Jun 19, 2024 🐛 Bug Fixes Fixed an issue where drag was not disabled in newly opened tabs. (Thanks to @kudel) Disable DragAndDrop 5.2.0 📅 Release date May 26, 2024 ✨ New Features Added an option: Allow the folder movement if drag starts with the shift key pressed.">
 
 
 
@@ -169,6 +169,8 @@ if (!doNotTrack) {
 
 <nav id="TableOfContents">
   <ul>
+    <li><a href="#disable-draganddrop-550">Disable DragAndDrop 5.5.0</a></li>
+    <li><a href="#disable-draganddrop-540">Disable DragAndDrop 5.4.0</a></li>
     <li><a href="#disable-draganddrop-530">Disable DragAndDrop 5.3.0</a></li>
     <li><a href="#disable-draganddrop-520">Disable DragAndDrop 5.2.0</a></li>
     <li><a href="#disable-draganddrop-500">Disable DragAndDrop 5.0.0</a></li>
@@ -215,7 +217,33 @@ if (!doNotTrack) {
 	<header class="article-meta">
 		
 </header>
-	<h2 id="disable-draganddrop-530">Disable DragAndDrop 5.3.0</h2>
+	<h2 id="disable-draganddrop-550">Disable DragAndDrop 5.5.0</h2>
+<ul>
+<li>📅 Release date
+<ul>
+<li>Jul 31, 2024</li>
+</ul>
+</li>
+<li>⚡️ Improvements
+<ul>
+<li>Extended the supported Thunderbird versions up to 129.</li>
+</ul>
+</li>
+</ul>
+<h2 id="disable-draganddrop-540">Disable DragAndDrop 5.4.0</h2>
+<ul>
+<li>📅 Release date
+<ul>
+<li>Jul 31, 2024</li>
+</ul>
+</li>
+<li>⚡️ Improvements
+<ul>
+<li>Remove <code>strict_max_version</code> from manifest.json.</li>
+</ul>
+</li>
+</ul>
+<h2 id="disable-draganddrop-530">Disable DragAndDrop 5.3.0</h2>
 <ul>
 <li>📅 Release date
 <ul>
