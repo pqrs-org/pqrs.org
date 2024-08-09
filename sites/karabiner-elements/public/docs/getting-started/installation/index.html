@@ -19,16 +19,12 @@
 
 <title>Installation | Karabiner-Elements</title>
 <meta name="description" content="Some operations are required to grant proper permission from macOS to Karabiner-Elements. Follow these instructions to set up Karabiner-Elements.
-Install Karabiner-Elements Open the downloaded file. Open the .pkg file. The installer will be opened. Install Karabiner-Elements. Keep Login Items enabled Since macOS 13 Ventura, background item notifications will be shown after the installation.
-The following Login Items in System Settings are required, and have to keep enabled.
-Karabiner-DriverKit-VirtualHIDDeviceClient.app Karabiner-Elements.app Note If you are using macOS 12 or prior, these items are not shown in System Preferences.">
+Install Karabiner-Elements Open the downloaded file. Open the .pkg file. The installer will be opened. Install Karabiner-Elements. After installation, you’ll need to grant the necessary permissions for Karabiner-Elements to function. This is part of macOS&amp;rsquo;s protection mechanism to prevent applications from accessing information without user consent. There are a few required steps, so please follow the instructions.">
 <meta property="og:url" content="/docs/getting-started/installation/">
   <meta property="og:site_name" content="Karabiner-Elements">
   <meta property="og:title" content="Installation">
   <meta property="og:description" content="Some operations are required to grant proper permission from macOS to Karabiner-Elements. Follow these instructions to set up Karabiner-Elements.
-Install Karabiner-Elements Open the downloaded file. Open the .pkg file. The installer will be opened. Install Karabiner-Elements. Keep Login Items enabled Since macOS 13 Ventura, background item notifications will be shown after the installation.
-The following Login Items in System Settings are required, and have to keep enabled.
-Karabiner-DriverKit-VirtualHIDDeviceClient.app Karabiner-Elements.app Note If you are using macOS 12 or prior, these items are not shown in System Preferences.">
+Install Karabiner-Elements Open the downloaded file. Open the .pkg file. The installer will be opened. Install Karabiner-Elements. After installation, you’ll need to grant the necessary permissions for Karabiner-Elements to function. This is part of macOS’s protection mechanism to prevent applications from accessing information without user consent. There are a few required steps, so please follow the instructions.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
@@ -36,18 +32,14 @@ Karabiner-DriverKit-VirtualHIDDeviceClient.app Karabiner-Elements.app Note If yo
 
   <meta itemprop="name" content="Installation">
   <meta itemprop="description" content="Some operations are required to grant proper permission from macOS to Karabiner-Elements. Follow these instructions to set up Karabiner-Elements.
-Install Karabiner-Elements Open the downloaded file. Open the .pkg file. The installer will be opened. Install Karabiner-Elements. Keep Login Items enabled Since macOS 13 Ventura, background item notifications will be shown after the installation.
-The following Login Items in System Settings are required, and have to keep enabled.
-Karabiner-DriverKit-VirtualHIDDeviceClient.app Karabiner-Elements.app Note If you are using macOS 12 or prior, these items are not shown in System Preferences.">
-  <meta itemprop="wordCount" content="227">
+Install Karabiner-Elements Open the downloaded file. Open the .pkg file. The installer will be opened. Install Karabiner-Elements. After installation, you’ll need to grant the necessary permissions for Karabiner-Elements to function. This is part of macOS’s protection mechanism to prevent applications from accessing information without user consent. There are a few required steps, so please follow the instructions.">
+  <meta itemprop="wordCount" content="296">
   <meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://karabiner-elements.pqrs.org/images/logo.png">
   <meta name="twitter:title" content="Installation">
   <meta name="twitter:description" content="Some operations are required to grant proper permission from macOS to Karabiner-Elements. Follow these instructions to set up Karabiner-Elements.
-Install Karabiner-Elements Open the downloaded file. Open the .pkg file. The installer will be opened. Install Karabiner-Elements. Keep Login Items enabled Since macOS 13 Ventura, background item notifications will be shown after the installation.
-The following Login Items in System Settings are required, and have to keep enabled.
-Karabiner-DriverKit-VirtualHIDDeviceClient.app Karabiner-Elements.app Note If you are using macOS 12 or prior, these items are not shown in System Preferences.">
+Install Karabiner-Elements Open the downloaded file. Open the .pkg file. The installer will be opened. Install Karabiner-Elements. After installation, you’ll need to grant the necessary permissions for Karabiner-Elements to function. This is part of macOS’s protection mechanism to prevent applications from accessing information without user consent. There are a few required steps, so please follow the instructions.">
 
 
 
@@ -96,7 +88,7 @@ if (!doNotTrack) {
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.7807772b4f01f8e6f5e7a25b2274e3f7.json"
+    data-offline-search-index-json-src="/offline-search-index.43a1d83ff36e29d62b5b07be4c12d599.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="25"
   >
@@ -120,7 +112,7 @@ if (!doNotTrack) {
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.7807772b4f01f8e6f5e7a25b2274e3f7.json"
+    data-offline-search-index-json-src="/offline-search-index.43a1d83ff36e29d62b5b07be4c12d599.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="25"
   >
@@ -630,8 +622,8 @@ if (!doNotTrack) {
 <nav id="TableOfContents">
   <ul>
     <li><a href="#install-karabiner-elements">Install Karabiner-Elements</a></li>
-    <li><a href="#keep-login-items-enabled">Keep Login Items enabled</a></li>
     <li><a href="#open-karabiner-elements-settings">Open Karabiner-Elements Settings</a></li>
+    <li><a href="#keep-login-items-enabled">Keep Login Items enabled</a></li>
     <li><a href="#allow-system-software-which-provides-virtual-devices-for-karabiner-elements">Allow system software which provides virtual devices for Karabiner-Elements</a></li>
     <li><a href="#grant-input-monitoring-to-karabiner-elements-processes">Grant Input Monitoring to Karabiner-Elements processes</a></li>
     <li><a href="#setup-your-keyboard-layout">Setup your keyboard layout</a></li>
@@ -690,8 +682,31 @@ Follow these instructions to set up Karabiner-Elements.</p>
     </figure>
 </li>
 </ol>
+<p>After installation, you’ll need to grant the necessary permissions for Karabiner-Elements to function.
+This is part of macOS&rsquo;s protection mechanism to prevent applications from accessing information without user consent.
+There are a few required steps, so please follow the instructions.</p>
+<p>Additionally, when you open Karabiner-Elements Settings, the necessary actions will be displayed, so you can follow those prompts as well.</p>
+<h2 id="open-karabiner-elements-settings">Open Karabiner-Elements Settings</h2>
+<ol>
+<li>Open Karabiner-Elements from Launchpad.
+
+    
+    
+    
+      
+    
+    
+    <figure>
+      <img
+        src="/docs/getting-started/installation/images/karabiner-elements-icon@2x.png"
+        alt="karabiner-elements-icon@2x.png"
+        style="width: 537px"
+      />
+    </figure>
+</li>
+</ol>
 <h2 id="keep-login-items-enabled">Keep Login Items enabled</h2>
-<p>Since macOS 13 Ventura, background item notifications will be shown after the installation.</p>
+<p>The background item notifications will be shown after the installation.</p>
 
 
 
@@ -703,14 +718,14 @@ Follow these instructions to set up Karabiner-Elements.</p>
   <img
     src="/docs/getting-started/installation/images/login-items0@2x.png"
     alt="login-items0@2x.png"
-    style="width: 464px"
+    style="width: 465px"
   />
 </figure>
 
-<p>The following Login Items in System Settings are required, and have to keep enabled.</p>
+<p>The following Login Items in System Settings must be enabled.</p>
 <ul>
-<li><code>Karabiner-DriverKit-VirtualHIDDeviceClient.app</code></li>
-<li><code>Karabiner-Elements.app</code></li>
+<li><code>Karabiner-Elements Non-Privileged Agents</code></li>
+<li><code>Karabiner-Elements Privileged Daemons</code></li>
 </ul>
 
 
@@ -737,25 +752,6 @@ Please proceed to the next step.
 
 </div>
 
-<h2 id="open-karabiner-elements-settings">Open Karabiner-Elements Settings</h2>
-<ol>
-<li>Open Karabiner-Elements from Launchpad.
-
-    
-    
-    
-      
-    
-    
-    <figure>
-      <img
-        src="/docs/getting-started/installation/images/karabiner-elements-icon@2x.png"
-        alt="karabiner-elements-icon@2x.png"
-        style="width: 537px"
-      />
-    </figure>
-</li>
-</ol>
 <h2 id="allow-system-software-which-provides-virtual-devices-for-karabiner-elements">Allow system software which provides virtual devices for Karabiner-Elements</h2>
 <ol>
 <li>The following alert will be shown when you open Karabiner-Elements Settings.</li>
@@ -802,7 +798,7 @@ Please proceed to the next step.
 
 <h2 id="grant-input-monitoring-to-karabiner-elements-processes">Grant Input Monitoring to Karabiner-Elements processes</h2>
 <ol>
-<li><strong>Two Keystroke Receiving</strong> alerts will be shown on macOS Catalina or later after you allow the system software.</li>
+<li>The <strong>Keystroke Receiving</strong> alerts will be shown.</li>
 <li>Press the <strong>Open System Settings</strong> button on both alerts.
 
     
@@ -818,24 +814,9 @@ Please proceed to the next step.
         style="width: 461px"
       />
     </figure>
-
-
-    
-    
-    
-      
-    
-    
-    <figure>
-      <img
-        src="/docs/getting-started/installation/images/karabiner-observer@2x.png"
-        alt="karabiner-observer@2x.png"
-        style="width: 461px"
-      />
-    </figure>
 </li>
 <li>System Settings will be opened after you press the <strong>Open System Settings</strong> button.<br/>
-Choose <strong>Privacy &amp; Security &gt; Input Monitoring</strong>, and then enable <strong>karabiner_grabber</strong> and <strong>karabiner_observer</strong>. <br />
+Choose <strong>Privacy &amp; Security &gt; Input Monitoring</strong>, and then enable <strong>karabiner_grabber</strong>.<br />
 
     
     
@@ -852,6 +833,15 @@ Choose <strong>Privacy &amp; Security &gt; Input Monitoring</strong>, and then e
     </figure>
 </li>
 </ol>
+
+
+<div class="alert alert-primary" role="alert">
+<h4 class="alert-heading">Note</h4>
+
+    If you are using Karabiner-Elements 14.13.0 or earlier, an alert for karabiner_observer will also be displayed, so please grant permission for that as well.
+
+</div>
+
 <h2 id="setup-your-keyboard-layout">Setup your keyboard layout</h2>
 <ol>
 <li>Keyboard Setup Assistant will be opened.<br/>
