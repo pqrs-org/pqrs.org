@@ -20,19 +20,19 @@
 <title>Security | Karabiner-Elements</title>
 <meta name="description" content="Security is one of the most important point of Karabiner-Elements architecture design.
 Separating process and running them with properly privileges to prevent event leaks.
-Process Karabiner-Elements restricts the input event handling to karabiner_observer and karabiner_grabber processes.
+Process Karabiner-Elements restricts the input event handling to karabiner_grabber processes.
 These process are running with root privilege and other process including malicious attacker cannot steal your input events.
 List of process Running with root privilege
-karabiner_observer Role: Observe the keyboard hardware events and tell grabber the devices state.">
+karabiner_grabber It grabs the keyboard hardware, catches events, modifies them, and then passes them to Karabiner-VirtualHIDDevice-Daemon.">
 <meta property="og:url" content="/docs/help/advanced-topics/security/">
   <meta property="og:site_name" content="Karabiner-Elements">
   <meta property="og:title" content="Security">
   <meta property="og:description" content="Security is one of the most important point of Karabiner-Elements architecture design.
 Separating process and running them with properly privileges to prevent event leaks.
-Process Karabiner-Elements restricts the input event handling to karabiner_observer and karabiner_grabber processes.
+Process Karabiner-Elements restricts the input event handling to karabiner_grabber processes.
 These process are running with root privilege and other process including malicious attacker cannot steal your input events.
 List of process Running with root privilege
-karabiner_observer Role: Observe the keyboard hardware events and tell grabber the devices state.">
+karabiner_grabber It grabs the keyboard hardware, catches events, modifies them, and then passes them to Karabiner-VirtualHIDDevice-Daemon.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
@@ -41,21 +41,21 @@ karabiner_observer Role: Observe the keyboard hardware events and tell grabber t
   <meta itemprop="name" content="Security">
   <meta itemprop="description" content="Security is one of the most important point of Karabiner-Elements architecture design.
 Separating process and running them with properly privileges to prevent event leaks.
-Process Karabiner-Elements restricts the input event handling to karabiner_observer and karabiner_grabber processes.
+Process Karabiner-Elements restricts the input event handling to karabiner_grabber processes.
 These process are running with root privilege and other process including malicious attacker cannot steal your input events.
 List of process Running with root privilege
-karabiner_observer Role: Observe the keyboard hardware events and tell grabber the devices state.">
-  <meta itemprop="wordCount" content="213">
+karabiner_grabber It grabs the keyboard hardware, catches events, modifies them, and then passes them to Karabiner-VirtualHIDDevice-Daemon.">
+  <meta itemprop="wordCount" content="330">
   <meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://karabiner-elements.pqrs.org/images/logo.png">
   <meta name="twitter:title" content="Security">
   <meta name="twitter:description" content="Security is one of the most important point of Karabiner-Elements architecture design.
 Separating process and running them with properly privileges to prevent event leaks.
-Process Karabiner-Elements restricts the input event handling to karabiner_observer and karabiner_grabber processes.
+Process Karabiner-Elements restricts the input event handling to karabiner_grabber processes.
 These process are running with root privilege and other process including malicious attacker cannot steal your input events.
 List of process Running with root privilege
-karabiner_observer Role: Observe the keyboard hardware events and tell grabber the devices state.">
+karabiner_grabber It grabs the keyboard hardware, catches events, modifies them, and then passes them to Karabiner-VirtualHIDDevice-Daemon.">
 
 
 
@@ -104,7 +104,7 @@ if (!doNotTrack) {
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.43a1d83ff36e29d62b5b07be4c12d599.json"
+    data-offline-search-index-json-src="/offline-search-index.918a826730104cfc95b8b6d5b0032d53.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="25"
   >
@@ -128,7 +128,7 @@ if (!doNotTrack) {
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.43a1d83ff36e29d62b5b07be4c12d599.json"
+    data-offline-search-index-json-src="/offline-search-index.918a826730104cfc95b8b6d5b0032d53.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="25"
   >
@@ -642,6 +642,7 @@ if (!doNotTrack) {
         <li><a href="#list-of-process">List of process</a></li>
       </ul>
     </li>
+    <li><a href="#fully-open-source-project">Fully open source project</a></li>
   </ul>
 </nav>
 
@@ -676,38 +677,31 @@ if (!doNotTrack) {
 	<p>Security is one of the most important point of Karabiner-Elements architecture design.</p>
 <p>Separating process and running them with properly privileges to prevent event leaks.</p>
 <h2 id="process">Process</h2>
-<p>Karabiner-Elements restricts the input event handling to <strong>karabiner_observer</strong> and <strong>karabiner_grabber</strong> processes.</p>
+<p>Karabiner-Elements restricts the input event handling to <strong>karabiner_grabber</strong> processes.</p>
 <p>These process are running with root privilege and other process including malicious attacker cannot steal your input events.</p>
 <h3 id="list-of-process">List of process</h3>
 <p>Running with root privilege</p>
 <ul>
-<li><strong>karabiner_observer</strong>
-<ul>
-<li>Role:
-<ul>
-<li>Observe the keyboard hardware events and tell grabber the devices state.</li>
-</ul>
-</li>
-</ul>
-</li>
 <li><strong>karabiner_grabber</strong>
 <ul>
-<li>Role:
+<li>It grabs the keyboard hardware, catches events, modifies them, and then passes them to Karabiner-VirtualHIDDevice-Daemon.</li>
+</ul>
+</li>
+<li><strong>Karabiner-VirtualHIDDevice-Daemon</strong>
 <ul>
-<li>Grab the keyboard hardware and catch events, modify events then post them.</li>
+<li>It controls Karabiner-DriverKit-VirtualHIDDevice and bridges the data between <code>karabiner_grabber</code> and the virtual devices.</li>
+<li>This process only receives data from processes running with root privileges.
+Therefore, regular applications running with user privileges cannot arbitrarily send events to virtual devices.</li>
 </ul>
 </li>
 </ul>
-</li>
-<li><strong>Karabiner VirtualHIDDevice</strong> kernel extension
+<p>Running with DriverKit privilege</p>
 <ul>
-<li>Role:
+<li><strong>Karabiner-DriverKit-VirtualHIDDevice</strong>
 <ul>
-<li>Virtual keyboard and pointing device.</li>
-<li>The virtual devices deny any requires (sending input events) from non root privileged processes.<br />
-Typically, karabiner_grabber is the only process which can send input events to the virtual devices.</li>
-</ul>
-</li>
+<li>The virtual keyboard and pointing device using DriverKit.</li>
+<li>Karabiner-DriverKit-VirtualHIDDevice does not accept control from any processes other than Karabiner-VirtualHIDDevice-Daemon.
+Other apps cannot arbitrarily add/remove virtual devices or send events.</li>
 </ul>
 </li>
 </ul>
@@ -715,44 +709,29 @@ Typically, karabiner_grabber is the only process which can send input events to 
 <ul>
 <li><strong>karabiner_console_user_server</strong>
 <ul>
-<li>Role:
-<ul>
-<li>Tell karabiner_grabber starting device grabbing.</li>
-<li>Execute shell commands which is triggered by karabiner_grabber.</li>
-</ul>
-</li>
+<li>It tells karabiner_grabber starting device grabbing.</li>
+<li>It also executes shell commands triggered by karabiner_grabber.</li>
 </ul>
 </li>
 <li><strong>karabiner_session_monitor</strong>
 <ul>
-<li>Role:
-<ul>
-<li>Monitor user login status and tell it to karabiner_grabber.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><strong>karabiner_observer</strong> (Running with logged in user)
-<ul>
-<li>Role:
-<ul>
-<li>Tell macOS karabiner_observer will be use Input Monitoring.<br />
-And do nothing if the process is running with non root user.</li>
-</ul>
-</li>
+<li>It monitors user login status and communicates it to karabiner_grabber.</li>
 </ul>
 </li>
 <li><strong>karabiner_grabber</strong> (Running with logged in user)
 <ul>
-<li>Role:
-<ul>
-<li>Tell macOS karabiner_grabber will be use Input Monitoring.<br />
-And do nothing if the process is running with non root user.</li>
+<li>Although it’s not necessary for key remapping functionality, due to macOS specifications, karabiner_grabber needs to be launched once with user privileges.
+Specifically, to trigger the macOS Input Monitoring permission notification, the process attempting to access HID devices needs to be running with user privileges instead of administrator privileges.
+Therefore, to display the notification, we temporarily launch karabiner_grabber with user privileges as the agent service.</li>
+<li>When karabiner_grabber is started with user privileges, it attempts to call IOHIDDeviceOpen on the HID devices connected to the system, and then it exits without performing any other actions.</li>
 </ul>
 </li>
 </ul>
-</li>
-</ul>
+<h2 id="fully-open-source-project">Fully open source project</h2>
+<p>The source code for Karabiner-Elements, including all the libraries it uses, is fully open source and publicly available.
+The distributed binaries are built from the source code in the following repository.
+Anyone can create binaries identical to the distributed releases by setting up Apple&rsquo;s code-signing environment.</p>
+<p><a href="https://github.com/pqrs-org/Karabiner-Elements/">https://github.com/pqrs-org/Karabiner-Elements/</a></p>
 
 	
 </div>
