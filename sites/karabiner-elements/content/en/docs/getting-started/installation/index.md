@@ -15,16 +15,27 @@ Follow these instructions to set up Karabiner-Elements.
 3.  The installer will be opened. Install Karabiner-Elements.
     {{< local-image src="images/installer@2x.png" >}}
 
+After installation, you’ll need to grant the necessary permissions for Karabiner-Elements to function.
+This is part of macOS's protection mechanism to prevent applications from accessing information without user consent.
+There are a few required steps, so please follow the instructions.
+
+Additionally, when you open Karabiner-Elements Settings, the necessary actions will be displayed, so you can follow those prompts as well.
+
+## Open Karabiner-Elements Settings
+
+1.  Open Karabiner-Elements from Launchpad.
+    {{< local-image src="images/karabiner-elements-icon@2x.png" >}}
+
 ## Keep Login Items enabled
 
-Since macOS 13 Ventura, background item notifications will be shown after the installation.
+The background item notifications will be shown after the installation.
 
 {{< local-image src="images/login-items0@2x.png" >}}
 
-The following Login Items in System Settings are required, and have to keep enabled.
+The following Login Items in System Settings must be enabled.
 
--   `Karabiner-DriverKit-VirtualHIDDeviceClient.app`
--   `Karabiner-Elements.app`
+-   `Karabiner-Elements Non-Privileged Agents`
+-   `Karabiner-Elements Privileged Daemons`
 
 {{< local-image src="images/login-items1@2x.png" >}}
 
@@ -34,11 +45,6 @@ If you are using macOS 12 or prior, these items are not shown in System Preferen
 Please proceed to the next step.
 
 {{% /alert %}}
-
-## Open Karabiner-Elements Settings
-
-1.  Open Karabiner-Elements from Launchpad.
-    {{< local-image src="images/karabiner-elements-icon@2x.png" >}}
 
 ## Allow system software which provides virtual devices for Karabiner-Elements
 
@@ -55,13 +61,18 @@ Please follow [this instruction](../../help/troubleshooting/kext-allow-button-do
 
 ## Grant Input Monitoring to Karabiner-Elements processes
 
-1.  **Two Keystroke Receiving** alerts will be shown on macOS Catalina or later after you allow the system software.
+1.  The **Keystroke Receiving** alerts will be shown.
 2.  Press the **Open System Settings** button on both alerts.
     {{< local-image src="images/karabiner-grabber@2x.png" >}}
-    {{< local-image src="images/karabiner-observer@2x.png" >}}
 3.  System Settings will be opened after you press the **Open System Settings** button.<br/>
-    Choose **Privacy & Security > Input Monitoring**, and then enable **karabiner_grabber** and **karabiner_observer**. <br />
+    Choose **Privacy & Security > Input Monitoring**, and then enable **karabiner_grabber**.<br />
     {{< local-image src="images/input-monitoring@2x.png" >}}
+
+{{% alert title="Note" color="primary" %}}
+
+If you are using Karabiner-Elements 14.13.0 or earlier, an alert for karabiner_observer will also be displayed, so please grant permission for that as well.
+
+{{% /alert %}}
 
 ## Setup your keyboard layout
 
