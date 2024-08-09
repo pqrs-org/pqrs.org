@@ -33,7 +33,7 @@
       <link>/docs/releasenotes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/docs/releasenotes/</guid>
-      <description>Karabiner-Elements 14.13.0 📦 Download 📅 Release date Dec 9, 2023 🔔 Important Notes A reboot is required when upgrading from version 14.12.0 or earlier, to update the virtual keyboard driver. ✨ New Features Palm detection is supported in MultitouchExtension. (Thanks to @quarkw) Use Bluetooth address (Bluetooth MAC address) is used to identify the device when the Bluetooth device does not have Vendor ID and Product ID. (Thanks to @stackia) Add the following settings into Devices tab.</description>
+      <description>Karabiner-Elements 15.0.0 📦 Download 📅 Release date Aug 8, 2024 💥 Breaking changes macOS 11 and macOS 12 are no longer supported. The background service management method has been changed to a new method compatible with macOS 13 and later. Therefore, permission needs to be granted for the background service to run. Please follow the steps below. Open Karabiner-Elements Settings. Follow the instructions to allow Karabiner-Elements Privileged Daemons to run in the System Settings.</description>
     </item>
   </channel>
 </rss>

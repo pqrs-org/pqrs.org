@@ -18,24 +18,24 @@
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
 <title>Release notes | Karabiner-Elements</title>
-<meta name="description" content="Karabiner-Elements 14.13.0 📦 Download 📅 Release date Dec 9, 2023 🔔 Important Notes A reboot is required when upgrading from version 14.12.0 or earlier, to update the virtual keyboard driver. ✨ New Features Palm detection is supported in MultitouchExtension. (Thanks to @quarkw) Use Bluetooth address (Bluetooth MAC address) is used to identify the device when the Bluetooth device does not have Vendor ID and Product ID. (Thanks to @stackia) Add the following settings into Devices tab.">
+<meta name="description" content="Karabiner-Elements 15.0.0 📦 Download 📅 Release date Aug 8, 2024 💥 Breaking changes macOS 11 and macOS 12 are no longer supported. The background service management method has been changed to a new method compatible with macOS 13 and later. Therefore, permission needs to be granted for the background service to run. Please follow the steps below. Open Karabiner-Elements Settings. Follow the instructions to allow Karabiner-Elements Privileged Daemons to run in the System Settings.">
 <meta property="og:url" content="/docs/releasenotes/">
   <meta property="og:site_name" content="Karabiner-Elements">
   <meta property="og:title" content="Release notes">
-  <meta property="og:description" content="Karabiner-Elements 14.13.0 📦 Download 📅 Release date Dec 9, 2023 🔔 Important Notes A reboot is required when upgrading from version 14.12.0 or earlier, to update the virtual keyboard driver. ✨ New Features Palm detection is supported in MultitouchExtension. (Thanks to @quarkw) Use Bluetooth address (Bluetooth MAC address) is used to identify the device when the Bluetooth device does not have Vendor ID and Product ID. (Thanks to @stackia) Add the following settings into Devices tab.">
+  <meta property="og:description" content="Karabiner-Elements 15.0.0 📦 Download 📅 Release date Aug 8, 2024 💥 Breaking changes macOS 11 and macOS 12 are no longer supported. The background service management method has been changed to a new method compatible with macOS 13 and later. Therefore, permission needs to be granted for the background service to run. Please follow the steps below. Open Karabiner-Elements Settings. Follow the instructions to allow Karabiner-Elements Privileged Daemons to run in the System Settings.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
     <meta property="og:image" content="https://karabiner-elements.pqrs.org/images/logo.png">
 
   <meta itemprop="name" content="Release notes">
-  <meta itemprop="description" content="Karabiner-Elements 14.13.0 📦 Download 📅 Release date Dec 9, 2023 🔔 Important Notes A reboot is required when upgrading from version 14.12.0 or earlier, to update the virtual keyboard driver. ✨ New Features Palm detection is supported in MultitouchExtension. (Thanks to @quarkw) Use Bluetooth address (Bluetooth MAC address) is used to identify the device when the Bluetooth device does not have Vendor ID and Product ID. (Thanks to @stackia) Add the following settings into Devices tab.">
-  <meta itemprop="wordCount" content="7311">
+  <meta itemprop="description" content="Karabiner-Elements 15.0.0 📦 Download 📅 Release date Aug 8, 2024 💥 Breaking changes macOS 11 and macOS 12 are no longer supported. The background service management method has been changed to a new method compatible with macOS 13 and later. Therefore, permission needs to be granted for the background service to run. Please follow the steps below. Open Karabiner-Elements Settings. Follow the instructions to allow Karabiner-Elements Privileged Daemons to run in the System Settings.">
+  <meta itemprop="wordCount" content="7719">
   <meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://karabiner-elements.pqrs.org/images/logo.png">
   <meta name="twitter:title" content="Release notes">
-  <meta name="twitter:description" content="Karabiner-Elements 14.13.0 📦 Download 📅 Release date Dec 9, 2023 🔔 Important Notes A reboot is required when upgrading from version 14.12.0 or earlier, to update the virtual keyboard driver. ✨ New Features Palm detection is supported in MultitouchExtension. (Thanks to @quarkw) Use Bluetooth address (Bluetooth MAC address) is used to identify the device when the Bluetooth device does not have Vendor ID and Product ID. (Thanks to @stackia) Add the following settings into Devices tab.">
+  <meta name="twitter:description" content="Karabiner-Elements 15.0.0 📦 Download 📅 Release date Aug 8, 2024 💥 Breaking changes macOS 11 and macOS 12 are no longer supported. The background service management method has been changed to a new method compatible with macOS 13 and later. Therefore, permission needs to be granted for the background service to run. Please follow the steps below. Open Karabiner-Elements Settings. Follow the instructions to allow Karabiner-Elements Privileged Daemons to run in the System Settings.">
 
 
 
@@ -84,7 +84,7 @@ if (!doNotTrack) {
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.4a99679bb1ae67f7015ad732a689c1b2.json"
+    data-offline-search-index-json-src="/offline-search-index.7807772b4f01f8e6f5e7a25b2274e3f7.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="25"
   >
@@ -108,7 +108,7 @@ if (!doNotTrack) {
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.4a99679bb1ae67f7015ad732a689c1b2.json"
+    data-offline-search-index-json-src="/offline-search-index.7807772b4f01f8e6f5e7a25b2274e3f7.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="25"
   >
@@ -617,6 +617,7 @@ if (!doNotTrack) {
 
 <nav id="TableOfContents">
   <ul>
+    <li><a href="#karabiner-elements-1500">Karabiner-Elements 15.0.0</a></li>
     <li><a href="#karabiner-elements-14130">Karabiner-Elements 14.13.0</a></li>
     <li><a href="#karabiner-elements-14120">Karabiner-Elements 14.12.0</a></li>
     <li><a href="#karabiner-elements-14110">Karabiner-Elements 14.11.0</a></li>
@@ -748,7 +749,72 @@ if (!doNotTrack) {
 	<header class="article-meta">
 		
 </header>
-	<h2 id="karabiner-elements-14130">Karabiner-Elements 14.13.0</h2>
+	<h2 id="karabiner-elements-1500">Karabiner-Elements 15.0.0</h2>
+<ul>
+<li><a href="https://github.com/pqrs-org/Karabiner-Elements/releases/download/v15.0.0/Karabiner-Elements-15.0.0.dmg">📦 Download</a></li>
+<li>📅 Release date
+<ul>
+<li>Aug 8, 2024</li>
+</ul>
+</li>
+<li>💥 Breaking changes
+<ul>
+<li>macOS 11 and macOS 12 are no longer supported.</li>
+<li>The background service management method has been changed to a new method compatible with macOS 13 and later.
+Therefore, permission needs to be granted for the background service to run. Please follow the steps below.
+<ul>
+<li>Open Karabiner-Elements Settings.</li>
+<li>Follow the instructions to allow Karabiner-Elements Privileged Daemons to run in the System Settings.
+<br/><br/>
+<img src="https://karabiner-elements.pqrs.org/docs/releasenotes/images/v15.0.0/settings@2x.png" alt="Karabiner-Elements Setttings" /></li>
+</ul>
+</li>
+<li>The method to enable the Multitouch Extension has changed.
+To enable the Multitouch Extension, go to the Misc tab in the settings and turn on <code>Enable Multitouch Extension</code>.
+<br/><br/>
+<img src="https://karabiner-elements.pqrs.org/docs/releasenotes/images/v15.0.0/multitouch-extension@2x.png" alt="Karabiner-Elements Setttings" /></li>
+</ul>
+</li>
+<li>🔔 Important Notes
+<ul>
+<li>A unique random ID called <code>karabiner_machine_identifier</code> is now generated during installation.
+This ID is used for machine-specific settings and may be included in the karabiner.json file.
+If you are sharing karabiner.json with others, you might be interested in how this ID is generated and whether it is safe to share.
+Since it is a safe ID to share with others, and there is no need to mask it when you share karabiner.json with others.
+For more details, please refer to the <a href="https://karabiner-elements.pqrs.org/docs/privacy/">Privacy</a> page.
+<br/><br/>
+<img src="https://karabiner-elements.pqrs.org/docs/releasenotes/images/v15.0.0/karabiner-machine-identifier@2x.png" alt="karabiner_machine_identifier" /></li>
+</ul>
+</li>
+<li>✨ New Features
+<ul>
+<li>Added the ability to disable Complex Modifications rules.</li>
+<li>Added the ability to duplicate and reorder profiles.</li>
+<li>Added the ability to restart Karabiner-Elements from the menu.</li>
+<li>Added the ability to reset device settings that are not currently connected.</li>
+</ul>
+</li>
+<li>⚡️ Improvements
+<ul>
+<li>Improved &ldquo;{device} is ignored temporarily until {key_code} is pressed again&rdquo; message for to make it more understandable. (Thanks to @adamnovak)</li>
+<li>Added &ldquo;Enable Karabiner Notification Window&rdquo; configuration, which allows you to hide the notification window by turning off this setting. (Thanks to @jwodnicki)</li>
+<li>Support <code>al_consumer_control_configuration</code> key, used as the Music key. (Thanks to @kambala-decapitator)</li>
+<li>Improved behaviour when using the gamepad stick as a pointing device.</li>
+<li>Improved <code>to_if_alone</code> behavior to use the modifier flags of the time the key is pressed, when sending events.</li>
+<li>Added <code>{&quot;type&quot;: &quot;unset&quot;}</code> option to <code>set_variable</code>.</li>
+<li>Integrated <code>karabiner_observer</code> functions into <code>karabiner_grabber</code>, and then <code>karabiner_observer</code> has been removed.
+The number of background processes has been reduced, resolving performance issues caused by inter-process communication that were occurring in some environments.</li>
+<li>A custom JSON formatter has been introduced to save JSON in a more compact format.</li>
+<li>The process for saving the configuration file has been optimized so that settings that have not been changed from their default values are not included in karabiner.json.</li>
+<li>Internal changes:
+<ul>
+<li>Improved the interface of libkrbn to minimize the use of unsafe pointers in Swift.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="karabiner-elements-14130">Karabiner-Elements 14.13.0</h2>
 <ul>
 <li><a href="https://github.com/pqrs-org/Karabiner-Elements/releases/download/v14.13.0/Karabiner-Elements-14.13.0.dmg">📦 Download</a></li>
 <li>📅 Release date
