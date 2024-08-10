@@ -42,7 +42,7 @@ Use the uninstaller to remove Karabiner-Elements from your system.
 You can launch the uninstaller from “Launch uninstaller” button on Uninstall tab. Then, follow the instruction of the dialog. (The uninstaller ask your administrator password in order to remove files.)
 Uninstall from command line If you don’t want to use above GUI, you can also uninstall Karabiner-Elements from command line.
 bash &#39;/Library/Application Support/org.pqrs/Karabiner-DriverKit-VirtualHIDDevice/scripts/uninstall/deactivate_driver.sh&#39; sudo &#39;/Library/Application Support/org.pqrs/Karabiner-Elements/uninstall.sh&#39; (Administrator password is required to run the above command.">
-  <meta itemprop="wordCount" content="233">
+  <meta itemprop="wordCount" content="147">
   <meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://karabiner-elements.pqrs.org/images/logo.png">
@@ -100,7 +100,7 @@ if (!doNotTrack) {
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.918a826730104cfc95b8b6d5b0032d53.json"
+    data-offline-search-index-json-src="/offline-search-index.f25e0063058a9c2c26546e6622a24541.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="25"
   >
@@ -124,7 +124,7 @@ if (!doNotTrack) {
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.918a826730104cfc95b8b6d5b0032d53.json"
+    data-offline-search-index-json-src="/offline-search-index.f25e0063058a9c2c26546e6622a24541.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="25"
   >
@@ -718,7 +718,7 @@ It does not affect the system even if it remains in place, but if you are concer
 <ol>
 <li>Input Monitoring settings
 <ul>
-<li>Remove karabiner_grabber and karabiner_observer from the Input Monitoring settings in macOS Settings.
+<li>Remove karabiner_grabber from the Input Monitoring settings in macOS Settings.
 
         
         
@@ -728,23 +728,8 @@ It does not affect the system even if it remains in place, but if you are concer
         
         <figure>
           <img
-            src="/docs/manual/operation/uninstall/images/input-monitoring1@2x.png"
-            alt="input-monitoring1@2x.png"
-            style="width: 715px"
-          />
-        </figure>
-
-
-        
-        
-        
-          
-        
-        
-        <figure>
-          <img
-            src="/docs/manual/operation/uninstall/images/input-monitoring2@2x.png"
-            alt="input-monitoring2@2x.png"
+            src="/docs/manual/operation/uninstall/images/input-monitoring@2x.png"
+            alt="input-monitoring@2x.png"
             style="width: 715px"
           />
         </figure>
@@ -780,33 +765,6 @@ It does not affect the system even if it remains in place, but if you are concer
 </ul>
 </li>
 </ol>
-<hr>
-
-
-<div class="alert alert-success" role="alert">
-<h4 class="alert-heading">Advanced topic</h4>
-
-    <p><code>Operation not permitted</code> error will occur if you try removing files by <code>rm</code> command.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo rm -rf /Applications/Karabiner-Elements.app
-</span></span><span style="display:flex;"><span>rm: /Applications/Karabiner-Elements.app/Contents: Operation not permitted
-</span></span><span style="display:flex;"><span>rm: /Applications/Karabiner-Elements.app: Operation not permitted
-</span></span></code></pre></div><p>Karabiner-Elements forces you to use uninstaller to remove files in order to ensure remove files outside /Applications.</p>
-<p>See <a href="/docs/help/advanced-topics/installed-files/">Installed files</a> to confirm the files.</p>
-
-
-</div>
-
-
-
-<div class="alert alert-danger" role="alert">
-<h4 class="alert-heading">Manual uninstallation</h4>
-
-    <p>If you want to remove files without uninstaller, unlock app files from command line with <a href="/docs/help/advanced-topics/lock-icon/#why-these-files-are-protected">this instruction</a>.</p>
-<p>And then, remove <a href="/docs/help/advanced-topics/installed-files/">installed files</a> by hand, and reboot your Mac.</p>
-
-
-</div>
-
 
 	
 </div>
