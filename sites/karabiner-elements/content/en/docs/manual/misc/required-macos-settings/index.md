@@ -5,23 +5,16 @@ weight: 5
 
 Under normal circumstances, there is no need to read this page, as the necessary settings have already been made during the initial setup.
 
-However, we describe the macOS settings that are made during the initial setup of Karabiner-Elements for the following cases.
+However, we explain the macOS settings made during the initial setup of Karabiner-Elements for the following purposes:
 
--   If you canceled during the initial setup and want to continue in the middle of the process
--   If you want to check the macOS settings made during the initial setup
--   If Karabiner-Elements is not working properly and you want to make sure that macOS is configured properly
+-   If you want to check the macOS settings made during the initial setup.
+-   If Karabiner-Elements is not working properly and you want to ensure that the macOS settings are correct.
 
 ---
 
-## Keep background items enabled
+## Enable background services
 
-{{% alert title="Note" color="danger" %}}
-
-This setting exists only on macOS Ventura or later
-
-{{% /alert %}}
-
-{{% alert color="success" %}}
+{{% alert color="primary" %}}
 
 Karabier-Elements has processes running constantly in the background, that handle input events.
 You have to keep the background items enabled in `macOS System Settings > General > Login Items`.
@@ -41,19 +34,18 @@ Karabiner-Elements requires Input Monitoring permission to receive and modify in
 
 You can enable it in `macOS System Settings > Privacy & Security > Input Monitoring`.
 
-{{< local-image src="images/input-monitoring2@2x.png" >}}
-{{< local-image src="images/input-monitoring3@2x.png" >}}
+{{< local-image src="images/input-monitoring@2x.png" >}}
 
 {{% /alert %}}
 
 {{% alert title="Troubleshooting" color="danger" %}}
 
-If you cannot find `karabiner_grabber` or `karabiner_observer` in the list, this is because you have not closed the following "Keystroke Receiving" dialogs.
+If you cannot find `karabiner_grabber` in the list, this is because you have not closed the following "Keystroke Receiving" dialogs.
+`karabiner_grabber` will be shown in the list after the dialogs are closed.
 
-`karabiner_grabber` and `karabiner_observer` will be shown in the list after the dialogs are closed.
+If you don’t see the dialog, it might be an issue with macOS not displaying it. Try restarting macOS.​
 
-{{< local-image src="images/input-monitoring0@2x.png" >}}
-{{< local-image src="images/input-monitoring1@2x.png" >}}
+{{< local-image src="images/karabiner-grabber@2x.png" >}}
 
 {{% /alert %}}
 
@@ -61,7 +53,7 @@ If you cannot find `karabiner_grabber` or `karabiner_observer` in the list, this
 
 ## Allow system extension
 
-{{% alert color="success" %}}
+{{% alert color="primary" %}}
 
 Karabiner-Elements uses the system extension to provide a virtual keyboard and mouse.
 You have to approve system extension before using it.
