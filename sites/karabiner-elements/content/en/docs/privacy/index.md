@@ -27,17 +27,12 @@ To do this, Karabiner-Elements requires your Input Monitoring permissions approv
 Keystrokes captured with this privilege are processed entirely on your Mac.
 And because the process is protected by administrative privileges, keystrokes cannot be intercepted at by other applications on your Mac.
 
-Specifically, the processes with administrative privileges are as follows:
-
--   `karabiner_grabber`:
-    -   This is the most core process in Karabiner-Elements that captures and modifies keystrokes.
--   `karabiner_observer`:
-    -   This process monitors input events on non-capturing devices and controls `karabiner_grabber` so that it does not start capturing while the very keystrokes are being made.
+Specifically, the process with administrative privileges is `karabiner_grabber`; it is the core process in Karabiner-Elements that captures and modifies keystrokes.
 
 {{< local-image src="images/input-monitoring@2x.png" >}}
 
 **Note:**
-Karabiner-EventViewer operates with lower privileges than `karabiner_grabber` and `karabiner_observer`.
+`Karabiner-EventViewer` operates with lower privileges than `karabiner_grabber`.
 Since it runs with user privileges, it cannot receive keystrokes during password inputs or similar actions when Secure Keyboard Entry is enabled.
 
 {{% /alert %}}
