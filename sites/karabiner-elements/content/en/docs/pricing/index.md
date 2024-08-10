@@ -19,7 +19,7 @@ I'm afraid I don't have enough time to reply for donors.<br />
 (I'm giving priority to develop Karabiner-Elements at the moment.)
 
 <div class="text-right">
-    Dec 17, 2023<br />
+    Aug 10, 2024<br />
     Takayama Fumihiko
 </div>
 
