@@ -1,5 +1,6 @@
 all:
 	make -C bulletgba build
+	make -C combostick build
 	make -C dcgnuboy build
 	make -C disable-draganddrop-tb build
 	make -C karabiner-elements build

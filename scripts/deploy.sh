@@ -28,6 +28,10 @@ deploy \
   sites/bulletgba/public/
 
 deploy \
+  ../gh-pages-combostick.pqrs.org \
+  sites/combostick/public/
+
+deploy \
   ../gh-pages-dcgnuboy.pqrs.org \
   sites/dcgnuboy/public/
 
