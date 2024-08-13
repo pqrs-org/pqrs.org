@@ -9,4 +9,10 @@ First, ensure that the software works before proceeding with the hardware assemb
 The required software is [Karabiner-Elements](https://karabiner-elements.pqrs.org/).
 After installation, try remapping a few keys on your keyboard to ensure Karabiner-Elements works correctly.
 
+{{% alert title="Example" color="primary" %}}
+
+This setting changes the right shift key on your keyboard.
+
 {{< local-image src="images/simple-modifications@2x.png" >}}
+
+{{% /alert %}}
