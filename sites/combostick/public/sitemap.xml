@@ -8,6 +8,8 @@
   </url><url>
     <loc>/docs/</loc>
   </url><url>
+    <loc>/docs/build/parts/</loc>
+  </url><url>
     <loc>/</loc>
   </url>
 </urlset>
