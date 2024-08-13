@@ -1,6 +1,6 @@
 ---
-title: 'Required Parts and Tools'
-weight: 10
+title: '2. Required Parts and Tools'
+weight: 20
 ---
 
 Here are the parts and tools you’ll need for the build.

@@ -17,3 +17,5 @@ In any case, you can easily assemble it with a few readily available components,
 
 Because the Basic model requires fewer parts, it’s a good idea to start with it.
 You can upgrade to the Advanced model later by adding additional parts.
+
+## Steps

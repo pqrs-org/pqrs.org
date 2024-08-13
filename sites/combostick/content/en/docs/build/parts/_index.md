@@ -1,11 +1,12 @@
 ---
-title: 'Parts to be 3D printed'
-weight: 20
+title: '3. Parts to be 3D printed'
+weight: 30
 ---
 
-The STL files are published in [the GitHub repository](https://github.com/pqrs-org/ComboStick/tree/main/models/stl).
-
+Print the following models in the required quantities.
 The parts to be printed are the same for both the Basic and Advanced models.
+
+The STL files are published in [the GitHub repository](https://github.com/pqrs-org/ComboStick/tree/main/models/stl).
 
 | Name                           | Qty | Photo                                                                                 |
 | ------------------------------ | --- | ------------------------------------------------------------------------------------- |
@@ -18,3 +19,10 @@ The parts to be printed are the same for both the Basic and Advanced models.
 | ComboStick-v1-USB-C Top Holder | 1   | <img style="width: 200px" src="images/usb-c-top-holder.png" alt="USB C Top Holder" /> |
 | ComboStick-v1-Stick Cover      | 2   | <img style="width: 200px" src="images/stick-cover.png" alt="Stick Cover" />           |
 | ComboStick-v1-Wrist-Rest       | 2   | <img style="width: 200px" src="images/wrist-rest.png" alt="Wrist Rest" />             |
+
+{{% alert title="Source files for the STL files" color="primary" %}}
+
+If you need to adjust the STL files, [the FreeCAD file](https://github.com/pqrs-org/ComboStick/tree/main/models) are available.
+Modify the FCStd files and then re-export them as STL files.”
+
+{{% /alert %}}
