@@ -2,6 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>/docs/build/karabiner-elements-install/</loc>
+  </url><url>
     <loc>/docs/build/</loc>
   </url><url>
     <loc>/docs/build/requirements/</loc>
@@ -9,6 +11,10 @@
     <loc>/docs/</loc>
   </url><url>
     <loc>/docs/build/parts/</loc>
+  </url><url>
+    <loc>/docs/build/karabiner-elements-configuration/</loc>
+  </url><url>
+    <loc>/docs/build/modify-f310/</loc>
   </url><url>
     <loc>/</loc>
   </url>
