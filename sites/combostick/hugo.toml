@@ -2,6 +2,7 @@ baseURL = "/"
 title = "ComboStick"
 
 enableRobotsTXT = true
+enableEmoji = true
 
 # Will give values to .Lastmod etc.
 enableGitInfo = false

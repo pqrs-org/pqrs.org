@@ -3,7 +3,7 @@ title: '2. Required Parts and Tools'
 weight: 20
 ---
 
-Here are the parts and tools you’ll need for the build.
+Here are the parts and tools you'll need for the build.
 
 ## Required Parts for the Basic Model
 
