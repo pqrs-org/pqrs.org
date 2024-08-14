@@ -10,7 +10,11 @@
   {{- $width = .Get "width" -}}
 {{- end -}}
 
-<figure>
+<figure
+  {{- if .Get "inline" -}}
+    style="display: inline-block;"
+  {{- end -}}
+>
   <img
     src="{{ $image.RelPermalink }}"
     alt="{{ path.Base $image.Name }}"
