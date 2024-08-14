@@ -1,14 +1,19 @@
-{{ $image := ($.Page.Resources.ByType "image").GetMatch (.Get "src") }}
+{{- $image := ($.Page.Resources.ByType "image").GetMatch (.Get "src") -}}
 
-{{ $pixelDensity := 1 }}
-{{ if in $image.Name "@2x." }}
-  {{ $pixelDensity = 2 }}
-{{ end }}
+{{- $pixelDensity := 1 -}}
+{{- if in $image.Name "@2x." -}}
+  {{- $pixelDensity = 2 -}}
+{{- end -}}
+
+{{- $width := printf "%dpx" (div $image.Width $pixelDensity) -}}
+{{- if .Get "width" -}}
+  {{- $width = .Get "width" -}}
+{{- end -}}
 
 <figure>
   <img
     src="{{ $image.RelPermalink }}"
     alt="{{ path.Base $image.Name }}"
-    style="width: {{ div $image.Width $pixelDensity }}px"
+    style="width: {{ $width }}"
   />
 </figure>
