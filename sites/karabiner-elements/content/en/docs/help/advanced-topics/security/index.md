@@ -39,7 +39,7 @@ Running with logged in user privilege
 -   **karabiner_session_monitor**
     -   It monitors user login status and communicates it to karabiner_grabber.
 -   **karabiner_grabber** (Running with logged in user)
-    -   Although it’s not necessary for key remapping functionality, due to macOS specifications, karabiner_grabber needs to be launched once with user privileges.
+    -   Although it's not necessary for key remapping functionality, due to macOS specifications, karabiner_grabber needs to be launched once with user privileges.
         Specifically, to trigger the macOS Input Monitoring permission notification, the process attempting to access HID devices needs to be running with user privileges instead of administrator privileges.
         Therefore, to display the notification, we temporarily launch karabiner_grabber with user privileges as the agent service.
     -   When karabiner_grabber is started with user privileges, it attempts to call IOHIDDeviceOpen on the HID devices connected to the system, and then it exits without performing any other actions.

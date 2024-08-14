@@ -15,7 +15,7 @@ Follow these instructions to set up Karabiner-Elements.
 3.  The installer will be opened. Install Karabiner-Elements.
     {{< local-image src="images/installer@2x.png" >}}
 
-After installation, you’ll need to grant the necessary permissions for Karabiner-Elements to function.
+After installation, you'll need to grant the necessary permissions for Karabiner-Elements to function.
 This is part of macOS's protection mechanism to prevent applications from accessing information without user consent.
 There are a few required steps, so please follow the instructions.
 

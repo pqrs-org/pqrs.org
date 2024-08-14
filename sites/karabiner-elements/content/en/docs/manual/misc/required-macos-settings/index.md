@@ -43,7 +43,7 @@ You can enable it in `macOS System Settings > Privacy & Security > Input Monitor
 If you cannot find `karabiner_grabber` in the list, this is because you have not closed the following "Keystroke Receiving" dialogs.
 `karabiner_grabber` will be shown in the list after the dialogs are closed.
 
-If you don’t see the dialog, it might be an issue with macOS not displaying it. Try restarting macOS.​
+If you don't see the dialog, it might be an issue with macOS not displaying it. Try restarting macOS.​
 
 {{< local-image src="images/karabiner-grabber@2x.png" >}}
 

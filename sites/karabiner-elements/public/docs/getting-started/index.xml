@@ -12,7 +12,7 @@
       <link>/docs/getting-started/installation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/docs/getting-started/installation/</guid>
-      <description>Some operations are required to grant proper permission from macOS to Karabiner-Elements. Follow these instructions to set up Karabiner-Elements.&#xA;Install Karabiner-Elements Open the downloaded file. Open the .pkg file. The installer will be opened. Install Karabiner-Elements. After installation, you’ll need to grant the necessary permissions for Karabiner-Elements to function. This is part of macOS&amp;rsquo;s protection mechanism to prevent applications from accessing information without user consent. There are a few required steps, so please follow the instructions.</description>
+      <description>Some operations are required to grant proper permission from macOS to Karabiner-Elements. Follow these instructions to set up Karabiner-Elements.&#xA;Install Karabiner-Elements Open the downloaded file. Open the .pkg file. The installer will be opened. Install Karabiner-Elements. After installation, you&amp;rsquo;ll need to grant the necessary permissions for Karabiner-Elements to function. This is part of macOS&amp;rsquo;s protection mechanism to prevent applications from accessing information without user consent. There are a few required steps, so please follow the instructions.</description>
     </item>
     <item>
       <title>Features</title>
