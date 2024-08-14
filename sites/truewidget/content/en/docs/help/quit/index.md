@@ -13,7 +13,7 @@ To quit TrueWidget, choose "Quit TrueWidget" from the menu bar.
 
 If you've hidden the menu bar icon, you can also quit TrueWidget from Settings.
 
-1.  [Open Settings](../../configuration/open-settingsoc/).
+1.  [Open Settings](../../configuration/open-settings/).
 2.  Press `Quit TrueWidget` button.
     {{< local-image src="images/quit@2x.png" >}}
 
