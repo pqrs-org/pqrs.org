@@ -70,7 +70,7 @@ Ensure that the stick and buttons are working correctly.
 ### Tuning the variable resistor
 
 The variable resistor is configured so that changing the resistance triggers button7 and button8.
-You’ll need to tune the resistance to prevent these buttons from being activated.
+You'll need to tune the resistance to prevent these buttons from being activated.
 Use EventViewer to adjust the variable resistor until both buttons are in the `up` state.
 
 {{< local-image src="images/eventviewer@2x.png" >}}
