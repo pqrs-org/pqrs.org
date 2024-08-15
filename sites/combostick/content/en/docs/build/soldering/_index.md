@@ -1,5 +1,5 @@
 ---
-title: '5. Modify F310'
+title: '5. Soldering'
 weight: 50
 ---
 
