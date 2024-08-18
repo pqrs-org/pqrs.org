@@ -16,7 +16,7 @@ Before soldering, ensure that each part fits properly into the holder:
 
 ## Soldering
 
-Connect the wires as shown below. It’s okay to reuse the USB cable that originally came with the Logitech F310.
+Connect the wires as shown below. It's okay to reuse the USB cable that originally came with the Logitech F310.
 
 ```text
 USB-C (left side) -+- USB-Hub --- USB-A (right side)

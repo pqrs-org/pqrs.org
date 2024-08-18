@@ -17,7 +17,7 @@ Here are the parts and tools you'll need for the build.
 | M4 Nuts,Bolts and Washers (M4 10mm)          | 4set | {{< local-image width="200px" inline="true" src="images/nuts.jpg" >}}      |
 
 {{% alert title="Notes" color="primary" %}}
-Logitech F310 and F310r are identical devices, so there’s no issue using either.
+Logitech F310 and F310r are identical devices, so there's no issue using either.
 {{% /alert %}}
 
 ## Required Tools for the Basic Model
