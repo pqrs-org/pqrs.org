@@ -25,11 +25,10 @@ Since ComboStick is used with the Logitech F310 held upside down, verify that th
 
 Since ComboStick uses LB and RB as mouse buttons, you'll need to remap these buttons.
 
-1.  Open Karabiner-Elements and add the settings for button5 and button6 in Simple Modifications.
-    {{< local-image src="images/buttons-1@2x.png" >}}
-2.  It's also convenient to set the stick press to move the mouse cursor to the center of the screen.
-    The stick press is button11 and button12.
-    {{< local-image src="images/buttons-2@2x.png" >}}
+1.  Import the ComboStick rule from <https://ke-complex-modifications.pqrs.org/#combostick>.
+    {{< local-image src="images/import@2x.png" >}}
+1.  Add the ComboStick rule into Complex Modifications.
+    {{< local-image src="images/complex-modifications@2x.png" >}}
 
 To make dragging easier, button1 (primary click) is assigned to the right-side button.
 
