@@ -11,9 +11,9 @@
 {{- end -}}
 
 <figure
-  {{- if .Get "inline" -}}
-    style="display: inline-block;"
-  {{- end -}}
+  {{- if .Get "inline" }}
+    class="inline-local-image"
+  {{ end -}}
 >
   <img
     src="{{ $image.RelPermalink }}"

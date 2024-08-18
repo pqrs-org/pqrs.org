@@ -15,6 +15,15 @@ body {
         border: 1px solid $border-color;
         border-radius: 10px;
       }
+
+      &.inline-local-image {
+        display: inline-block;
+        margin: 0;
+
+        img {
+          margin: 0;
+        }
+      }
     }
 
     table {
