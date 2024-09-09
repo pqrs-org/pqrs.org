@@ -6,6 +6,7 @@ build:
 	find * -name '.DS_Store' -delete
 	find * -name '._*' -delete
 	HUGO_ENV="production" hugo --gc
+	install -m 644 ../../share/assets/public/_headers public
 
 clean:
 	hugo mod clean
