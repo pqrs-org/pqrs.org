@@ -12,28 +12,28 @@
       <link>/docs/help/quit/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/docs/help/quit/</guid>
-      <description>ShowyEdge keeps running in the background even if you close the preferences window.&#xA;To quit ShowyEdge, choose &amp;ldquo;Quit ShowyEdge&amp;rdquo; from menu bar.&#xA;Note If you&amp;rsquo;ve hidden the menu bar icon, you can also quit ShowyEdge from Preferences.&#xA;Open preferences window. Press Quit ShowyEdge button. </description>
+      <description>&lt;p&gt;ShowyEdge keeps running in the background even if you close the preferences window.&lt;br /&gt;&#xA;To quit ShowyEdge, choose &amp;ldquo;Quit ShowyEdge&amp;rdquo; from menu bar.&lt;/p&gt;&#xA;&lt;figure&gt;&#xA;  &lt;img&#xA;    src=&#34;/docs/help/quit/images/menu-quit@2x.png&#34;&#xA;    alt=&#34;menu-quit@2x.png&#34;&#xA;    style=&#34;width: 348px&#34;&#xA;  /&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;&#xA;&lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;&#xA;&#xA;    &lt;p&gt;If you&amp;rsquo;ve hidden the menu bar icon, you can also quit ShowyEdge from Preferences.&lt;/p&gt;</description>
     </item>
     <item>
       <title>How to uninstall ShowyEdge</title>
       <link>/docs/help/uninstall/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/docs/help/uninstall/</guid>
-      <description>Remove ShowyEdge from your system as follows.&#xA;Quit ShowyEdge before uninstallaion. Open Applications folder in Finder, then move ShowyEdge to trash. </description>
+      <description>&lt;p&gt;Remove ShowyEdge from your system as follows.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;a href=&#34;/docs/help/quit/&#34;&gt;Quit ShowyEdge&lt;/a&gt; before uninstallaion.&lt;/li&gt;&#xA;&lt;li&gt;Open &lt;code&gt;Applications&lt;/code&gt; folder in Finder, then move ShowyEdge to trash.&#xA;&lt;figure&gt;&#xA;      &lt;img&#xA;        src=&#34;/docs/help/uninstall/images/uninstall@2x.png&#34;&#xA;        alt=&#34;uninstall@2x.png&#34;&#xA;        style=&#34;width: 646px&#34;&#xA;      /&gt;&#xA;    &lt;/figure&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
     </item>
     <item>
       <title>Downgrade to older version</title>
       <link>/docs/help/downgrade/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/docs/help/downgrade/</guid>
-      <description>Download an older version from Release notes and install it.</description>
+      <description>&lt;p&gt;Download an older version from &lt;a href=&#34;/docs/releasenotes/&#34;&gt;Release notes&lt;/a&gt; and install it.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Use beta version</title>
       <link>/docs/help/use-beta/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/docs/help/use-beta/</guid>
-      <description>You can install beta version from Update &amp;gt; Check for beta updates.</description>
+      <description>&lt;p&gt;You can install beta version from &lt;code&gt;Update &amp;gt; Check for beta updates&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;figure&gt;&#xA;  &lt;img&#xA;    src=&#34;/docs/help/use-beta/images/check-for-beta-updates@2x.png&#34;&#xA;    alt=&#34;check-for-beta-updates@2x.png&#34;&#xA;    style=&#34;width: 900px&#34;&#xA;  /&gt;&#xA;&lt;/figure&gt;</description>
     </item>
   </channel>
 </rss>

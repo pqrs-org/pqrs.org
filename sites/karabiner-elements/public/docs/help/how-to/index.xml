@@ -12,35 +12,35 @@
       <link>/docs/help/how-to/mouse-button/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/docs/help/how-to/mouse-button/</guid>
-      <description>Karabiner-Elements does not modify mouse devices by default.&#xA;You have to enable your mouse on Karabiner-Elements Settings &amp;gt; Devices. Then, use Simple Modifications to assign a key to a button or use Complex Modifications for more advanced usage. </description>
+      <description>&lt;p&gt;Karabiner-Elements does not modify mouse devices by default.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;You have to enable your mouse on Karabiner-Elements Settings &amp;gt; Devices.&#xA;&lt;figure&gt;&#xA;      &lt;img&#xA;        src=&#34;/docs/help/how-to/mouse-button/images/devices@2x.png&#34;&#xA;        alt=&#34;devices@2x.png&#34;&#xA;        style=&#34;width: 1100px&#34;&#xA;      /&gt;&#xA;    &lt;/figure&gt;&#xA;&lt;/p&gt;</description>
     </item>
     <item>
       <title>How to use sticky modifier keys</title>
       <link>/docs/help/how-to/sticky-modifier-key/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/docs/help/how-to/sticky-modifier-key/</guid>
-      <description>You can enable the sticky modifier keys from Karabiner-Elements Settings &amp;gt; Simple modifications.&#xA;Note The sticky modifier keys acts as general modifier key while you are pressing and holding down the key.&#xA;For example, the following operation result is AA instead of Aa.&#xA;Press sticky left shift key Press a key Release a key Press a key Release a key Release sticky left shift key If you want to disable this feature, use sticky modifier key (pressing and holding down is disabled).</description>
+      <description>&lt;p&gt;You can enable the sticky modifier keys from Karabiner-Elements Settings &amp;gt; Simple modifications.&lt;/p&gt;&#xA;&lt;figure&gt;&#xA;  &lt;img&#xA;    src=&#34;/docs/help/how-to/sticky-modifier-key/images/to-keys@2x.png&#34;&#xA;    alt=&#34;to-keys@2x.png&#34;&#xA;    style=&#34;width: 1092px&#34;&#xA;  /&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;&#xA;&lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;&#xA;&#xA;    &lt;p&gt;The sticky modifier keys acts as general modifier key while you are pressing and holding down the key.&lt;/p&gt;</description>
     </item>
     <item>
       <title>How to disable caps lock delay</title>
       <link>/docs/help/how-to/disable-caps-lock-delay/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/docs/help/how-to/disable-caps-lock-delay/</guid>
-      <description>Karabiner-Elements disables the caps lock delay without any action since v13.3.0.</description>
+      <description>&lt;p&gt;Karabiner-Elements disables the caps lock delay without any action since v13.3.0.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Is it possible to adjust the key repeat rate?</title>
       <link>/docs/help/how-to/key-repeat/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/docs/help/how-to/key-repeat/</guid>
-      <description>Karabiner-Elements does not provide a feature to adjust key repeat rate.&#xA;Use System Settings &amp;gt; Keyboard.&#xA;You can also adjust the key repeat rate using defaults write command. https://apple.stackexchange.com/questions/10467/how-to-increase-keyboard-key-repeat-rate-on-os-x</description>
+      <description>&lt;p&gt;Karabiner-Elements does not provide a feature to adjust key repeat rate.&lt;/p&gt;&#xA;&lt;p&gt;Use System Settings &amp;gt; Keyboard.&lt;/p&gt;&#xA;&lt;figure&gt;&#xA;  &lt;img&#xA;    src=&#34;/docs/help/how-to/key-repeat/images/key-repeat-rate@2x.png&#34;&#xA;    alt=&#34;key-repeat-rate@2x.png&#34;&#xA;    style=&#34;width: 715px&#34;&#xA;  /&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;You can also adjust the key repeat rate using &lt;code&gt;defaults write&lt;/code&gt; command.&#xA;&lt;a href=&#34;https://apple.stackexchange.com/questions/10467/how-to-increase-keyboard-key-repeat-rate-on-os-x&#34;&gt;https://apple.stackexchange.com/questions/10467/how-to-increase-keyboard-key-repeat-rate-on-os-x&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>How to disable running Karabiner-Elements at login</title>
       <link>/docs/help/how-to/disable-open-at-login/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/docs/help/how-to/disable-open-at-login/</guid>
-      <description>Karabiner-Elements will be started automatically at login after once you have run Karabiner-ELements.&#xA;Quit Karabiner-Elements if you want to stop running Karabiner-Elements at login.</description>
+      <description>&lt;p&gt;Karabiner-Elements will be started automatically at login after once you have run Karabiner-ELements.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;../../../manual/operation/quit/&#34;&gt;Quit Karabiner-Elements&lt;/a&gt; if you want to stop running Karabiner-Elements at login.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

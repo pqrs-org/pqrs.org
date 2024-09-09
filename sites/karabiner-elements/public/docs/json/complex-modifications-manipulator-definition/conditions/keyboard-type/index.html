@@ -20,13 +20,13 @@
 <title>keyboard_type_if, keyboard_type_unless | Karabiner-Elements</title>
 <meta name="description" content="Change an event if/unless the event is from specified type keyboard.
 Example Change control-[ key to escape, including JIS layout support. (the [ key is close_bracket in JIS layout)
-[ { &amp;#34;type&amp;#34;: &amp;#34;basic&amp;#34;, &amp;#34;from&amp;#34;: { &amp;#34;key_code&amp;#34;: &amp;#34;open_bracket&amp;#34;, &amp;#34;modifiers&amp;#34;: { &amp;#34;mandatory&amp;#34;: [&amp;#34;control&amp;#34;], &amp;#34;optional&amp;#34;: [&amp;#34;caps_lock&amp;#34;] } }, &amp;#34;to&amp;#34;: [ { &amp;#34;key_code&amp;#34;: &amp;#34;escape&amp;#34; } ], &amp;#34;conditions&amp;#34;: [ { &amp;#34;keyboard_types&amp;#34;: [&amp;#34;ansi&amp;#34;, &amp;#34;iso&amp;#34;], &amp;#34;type&amp;#34;: &amp;#34;keyboard_type_if&amp;#34; } ] }, { &amp;#34;type&amp;#34;: &amp;#34;basic&amp;#34;, &amp;#34;from&amp;#34;: { &amp;#34;key_code&amp;#34;: &amp;#34;close_bracket&amp;#34;, &amp;#34;modifiers&amp;#34;: { &amp;#34;mandatory&amp;#34;: [&amp;#34;control&amp;#34;], &amp;#34;optional&amp;#34;: [&amp;#34;caps_lock&amp;#34;] } }, &amp;#34;to&amp;#34;: [ { &amp;#34;key_code&amp;#34;: &amp;#34;escape&amp;#34; } ], &amp;#34;conditions&amp;#34;: [ { &amp;#34;keyboard_types&amp;#34;: [&amp;#34;jis&amp;#34;], &amp;#34;type&amp;#34;: &amp;#34;keyboard_type_if&amp;#34; } ] } ] Specification { &amp;#34;type&amp;#34;: &amp;#34;keyboard_type_if&amp;#34;, &amp;#34;keyboard_types&amp;#34;: [&amp;#34;ansi&amp;#34;, &amp;#34;iso&amp;#34;] } Name Required Description type Required &amp;quot;keyboard_type_if&amp;quot; or &amp;quot;keyboard_type_unless&amp;quot; keyboard_types Required An array of &amp;quot;ansi&amp;quot;, &amp;quot;iso&amp;quot; or &amp;quot;jis&amp;quot; description Optional A human-readable comment Multiple keyboard types keyboard_types are joined by &amp;ldquo;or&amp;rdquo;.">
+[ { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;open_bracket&#34;, &#34;modifiers&#34;: { &#34;mandatory&#34;: [&#34;control&#34;], &#34;optional&#34;: [&#34;caps_lock&#34;] } }, &#34;to&#34;: [ { &#34;key_code&#34;: &#34;escape&#34; } ], &#34;conditions&#34;: [ { &#34;keyboard_types&#34;: [&#34;ansi&#34;, &#34;iso&#34;], &#34;type&#34;: &#34;keyboard_type_if&#34; } ] }, { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;close_bracket&#34;, &#34;modifiers&#34;: { &#34;mandatory&#34;: [&#34;control&#34;], &#34;optional&#34;: [&#34;caps_lock&#34;] } }, &#34;to&#34;: [ { &#34;key_code&#34;: &#34;escape&#34; } ], &#34;conditions&#34;: [ { &#34;keyboard_types&#34;: [&#34;jis&#34;], &#34;type&#34;: &#34;keyboard_type_if&#34; } ] } ] ">
 <meta property="og:url" content="/docs/json/complex-modifications-manipulator-definition/conditions/keyboard-type/">
   <meta property="og:site_name" content="Karabiner-Elements">
   <meta property="og:title" content="keyboard_type_if, keyboard_type_unless">
   <meta property="og:description" content="Change an event if/unless the event is from specified type keyboard.
 Example Change control-[ key to escape, including JIS layout support. (the [ key is close_bracket in JIS layout)
-[ { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;open_bracket&#34;, &#34;modifiers&#34;: { &#34;mandatory&#34;: [&#34;control&#34;], &#34;optional&#34;: [&#34;caps_lock&#34;] } }, &#34;to&#34;: [ { &#34;key_code&#34;: &#34;escape&#34; } ], &#34;conditions&#34;: [ { &#34;keyboard_types&#34;: [&#34;ansi&#34;, &#34;iso&#34;], &#34;type&#34;: &#34;keyboard_type_if&#34; } ] }, { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;close_bracket&#34;, &#34;modifiers&#34;: { &#34;mandatory&#34;: [&#34;control&#34;], &#34;optional&#34;: [&#34;caps_lock&#34;] } }, &#34;to&#34;: [ { &#34;key_code&#34;: &#34;escape&#34; } ], &#34;conditions&#34;: [ { &#34;keyboard_types&#34;: [&#34;jis&#34;], &#34;type&#34;: &#34;keyboard_type_if&#34; } ] } ] Specification { &#34;type&#34;: &#34;keyboard_type_if&#34;, &#34;keyboard_types&#34;: [&#34;ansi&#34;, &#34;iso&#34;] } Name Required Description type Required &#34;keyboard_type_if&#34; or &#34;keyboard_type_unless&#34; keyboard_types Required An array of &#34;ansi&#34;, &#34;iso&#34; or &#34;jis&#34; description Optional A human-readable comment Multiple keyboard types keyboard_types are joined by “or”.">
+[ { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;open_bracket&#34;, &#34;modifiers&#34;: { &#34;mandatory&#34;: [&#34;control&#34;], &#34;optional&#34;: [&#34;caps_lock&#34;] } }, &#34;to&#34;: [ { &#34;key_code&#34;: &#34;escape&#34; } ], &#34;conditions&#34;: [ { &#34;keyboard_types&#34;: [&#34;ansi&#34;, &#34;iso&#34;], &#34;type&#34;: &#34;keyboard_type_if&#34; } ] }, { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;close_bracket&#34;, &#34;modifiers&#34;: { &#34;mandatory&#34;: [&#34;control&#34;], &#34;optional&#34;: [&#34;caps_lock&#34;] } }, &#34;to&#34;: [ { &#34;key_code&#34;: &#34;escape&#34; } ], &#34;conditions&#34;: [ { &#34;keyboard_types&#34;: [&#34;jis&#34;], &#34;type&#34;: &#34;keyboard_type_if&#34; } ] } ] ">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
@@ -35,7 +35,7 @@ Example Change control-[ key to escape, including JIS layout support. (the [ key
   <meta itemprop="name" content="keyboard_type_if, keyboard_type_unless">
   <meta itemprop="description" content="Change an event if/unless the event is from specified type keyboard.
 Example Change control-[ key to escape, including JIS layout support. (the [ key is close_bracket in JIS layout)
-[ { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;open_bracket&#34;, &#34;modifiers&#34;: { &#34;mandatory&#34;: [&#34;control&#34;], &#34;optional&#34;: [&#34;caps_lock&#34;] } }, &#34;to&#34;: [ { &#34;key_code&#34;: &#34;escape&#34; } ], &#34;conditions&#34;: [ { &#34;keyboard_types&#34;: [&#34;ansi&#34;, &#34;iso&#34;], &#34;type&#34;: &#34;keyboard_type_if&#34; } ] }, { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;close_bracket&#34;, &#34;modifiers&#34;: { &#34;mandatory&#34;: [&#34;control&#34;], &#34;optional&#34;: [&#34;caps_lock&#34;] } }, &#34;to&#34;: [ { &#34;key_code&#34;: &#34;escape&#34; } ], &#34;conditions&#34;: [ { &#34;keyboard_types&#34;: [&#34;jis&#34;], &#34;type&#34;: &#34;keyboard_type_if&#34; } ] } ] Specification { &#34;type&#34;: &#34;keyboard_type_if&#34;, &#34;keyboard_types&#34;: [&#34;ansi&#34;, &#34;iso&#34;] } Name Required Description type Required &#34;keyboard_type_if&#34; or &#34;keyboard_type_unless&#34; keyboard_types Required An array of &#34;ansi&#34;, &#34;iso&#34; or &#34;jis&#34; description Optional A human-readable comment Multiple keyboard types keyboard_types are joined by “or”.">
+[ { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;open_bracket&#34;, &#34;modifiers&#34;: { &#34;mandatory&#34;: [&#34;control&#34;], &#34;optional&#34;: [&#34;caps_lock&#34;] } }, &#34;to&#34;: [ { &#34;key_code&#34;: &#34;escape&#34; } ], &#34;conditions&#34;: [ { &#34;keyboard_types&#34;: [&#34;ansi&#34;, &#34;iso&#34;], &#34;type&#34;: &#34;keyboard_type_if&#34; } ] }, { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;close_bracket&#34;, &#34;modifiers&#34;: { &#34;mandatory&#34;: [&#34;control&#34;], &#34;optional&#34;: [&#34;caps_lock&#34;] } }, &#34;to&#34;: [ { &#34;key_code&#34;: &#34;escape&#34; } ], &#34;conditions&#34;: [ { &#34;keyboard_types&#34;: [&#34;jis&#34;], &#34;type&#34;: &#34;keyboard_type_if&#34; } ] } ] ">
   <meta itemprop="wordCount" content="154">
   <meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png">
   <meta name="twitter:card" content="summary_large_image">
@@ -43,7 +43,7 @@ Example Change control-[ key to escape, including JIS layout support. (the [ key
   <meta name="twitter:title" content="keyboard_type_if, keyboard_type_unless">
   <meta name="twitter:description" content="Change an event if/unless the event is from specified type keyboard.
 Example Change control-[ key to escape, including JIS layout support. (the [ key is close_bracket in JIS layout)
-[ { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;open_bracket&#34;, &#34;modifiers&#34;: { &#34;mandatory&#34;: [&#34;control&#34;], &#34;optional&#34;: [&#34;caps_lock&#34;] } }, &#34;to&#34;: [ { &#34;key_code&#34;: &#34;escape&#34; } ], &#34;conditions&#34;: [ { &#34;keyboard_types&#34;: [&#34;ansi&#34;, &#34;iso&#34;], &#34;type&#34;: &#34;keyboard_type_if&#34; } ] }, { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;close_bracket&#34;, &#34;modifiers&#34;: { &#34;mandatory&#34;: [&#34;control&#34;], &#34;optional&#34;: [&#34;caps_lock&#34;] } }, &#34;to&#34;: [ { &#34;key_code&#34;: &#34;escape&#34; } ], &#34;conditions&#34;: [ { &#34;keyboard_types&#34;: [&#34;jis&#34;], &#34;type&#34;: &#34;keyboard_type_if&#34; } ] } ] Specification { &#34;type&#34;: &#34;keyboard_type_if&#34;, &#34;keyboard_types&#34;: [&#34;ansi&#34;, &#34;iso&#34;] } Name Required Description type Required &#34;keyboard_type_if&#34; or &#34;keyboard_type_unless&#34; keyboard_types Required An array of &#34;ansi&#34;, &#34;iso&#34; or &#34;jis&#34; description Optional A human-readable comment Multiple keyboard types keyboard_types are joined by “or”.">
+[ { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;open_bracket&#34;, &#34;modifiers&#34;: { &#34;mandatory&#34;: [&#34;control&#34;], &#34;optional&#34;: [&#34;caps_lock&#34;] } }, &#34;to&#34;: [ { &#34;key_code&#34;: &#34;escape&#34; } ], &#34;conditions&#34;: [ { &#34;keyboard_types&#34;: [&#34;ansi&#34;, &#34;iso&#34;], &#34;type&#34;: &#34;keyboard_type_if&#34; } ] }, { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;close_bracket&#34;, &#34;modifiers&#34;: { &#34;mandatory&#34;: [&#34;control&#34;], &#34;optional&#34;: [&#34;caps_lock&#34;] } }, &#34;to&#34;: [ { &#34;key_code&#34;: &#34;escape&#34; } ], &#34;conditions&#34;: [ { &#34;keyboard_types&#34;: [&#34;jis&#34;], &#34;type&#34;: &#34;keyboard_type_if&#34; } ] } ] ">
 
 
 
@@ -59,16 +59,7 @@ Example Change control-[ key to escape, including JIS layout support. (the [ key
   src="https://unpkg.com/lunr@2.3.9/lunr.min.js"
   integrity="sha384-203J0SNzyqHby3iU6hzvzltrWi/M41wOP5Gu+BiJMz5nwKykbkUx8Kp7iti0Lpli"
   crossorigin="anonymous"></script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-NL3CW99MZS"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-NL3CW99MZS');
-}
-</script>
+
   </head>
   <body class="td-page">
     <header>
@@ -718,30 +709,30 @@ if (!doNotTrack) {
 </span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;keyboard_types&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">&#34;ansi&#34;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">&#34;iso&#34;</span><span style="color:#000;font-weight:bold">]</span>
 </span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
 </span></span></code></pre></div><table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Required</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>type</code></td>
-<td><strong>Required</strong></td>
-<td><code>&quot;keyboard_type_if&quot;</code> or <code>&quot;keyboard_type_unless&quot;</code></td>
-</tr>
-<tr>
-<td><code>keyboard_types</code></td>
-<td><strong>Required</strong></td>
-<td>An array of <code>&quot;ansi&quot;</code>, <code>&quot;iso&quot;</code> or <code>&quot;jis&quot;</code></td>
-</tr>
-<tr>
-<td><code>description</code></td>
-<td>Optional</td>
-<td>A human-readable comment</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left">Name</th>
+          <th style="text-align: left">Required</th>
+          <th style="text-align: left">Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><code>type</code></td>
+          <td style="text-align: left"><strong>Required</strong></td>
+          <td style="text-align: left"><code>&quot;keyboard_type_if&quot;</code> or <code>&quot;keyboard_type_unless&quot;</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>keyboard_types</code></td>
+          <td style="text-align: left"><strong>Required</strong></td>
+          <td style="text-align: left">An array of <code>&quot;ansi&quot;</code>, <code>&quot;iso&quot;</code> or <code>&quot;jis&quot;</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>description</code></td>
+          <td style="text-align: left">Optional</td>
+          <td style="text-align: left">A human-readable comment</td>
+      </tr>
+  </tbody>
 </table>
 <h3 id="multiple-keyboard-types">Multiple keyboard types</h3>
 <p><code>keyboard_types</code> are joined by &ldquo;or&rdquo;.</p>

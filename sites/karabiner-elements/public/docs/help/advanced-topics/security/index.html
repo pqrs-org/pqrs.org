@@ -23,7 +23,7 @@ Separating process and running them with properly privileges to prevent event le
 Process Karabiner-Elements restricts the input event handling to karabiner_grabber processes.
 These process are running with root privilege and other process including malicious attacker cannot steal your input events.
 List of process Running with root privilege
-karabiner_grabber It grabs the keyboard hardware, catches events, modifies them, and then passes them to Karabiner-VirtualHIDDevice-Daemon.">
+karabiner_grabber It grabs the keyboard hardware, catches events, modifies them, and then passes them to Karabiner-VirtualHIDDevice-Daemon. Karabiner-VirtualHIDDevice-Daemon It controls Karabiner-DriverKit-VirtualHIDDevice and bridges the data between karabiner_grabber and the virtual devices. This process only receives data from processes running with root privileges. Therefore, regular applications running with user privileges cannot arbitrarily send events to virtual devices. Running with DriverKit privilege">
 <meta property="og:url" content="/docs/help/advanced-topics/security/">
   <meta property="og:site_name" content="Karabiner-Elements">
   <meta property="og:title" content="Security">
@@ -32,7 +32,7 @@ Separating process and running them with properly privileges to prevent event le
 Process Karabiner-Elements restricts the input event handling to karabiner_grabber processes.
 These process are running with root privilege and other process including malicious attacker cannot steal your input events.
 List of process Running with root privilege
-karabiner_grabber It grabs the keyboard hardware, catches events, modifies them, and then passes them to Karabiner-VirtualHIDDevice-Daemon.">
+karabiner_grabber It grabs the keyboard hardware, catches events, modifies them, and then passes them to Karabiner-VirtualHIDDevice-Daemon. Karabiner-VirtualHIDDevice-Daemon It controls Karabiner-DriverKit-VirtualHIDDevice and bridges the data between karabiner_grabber and the virtual devices. This process only receives data from processes running with root privileges. Therefore, regular applications running with user privileges cannot arbitrarily send events to virtual devices. Running with DriverKit privilege">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
@@ -44,7 +44,7 @@ Separating process and running them with properly privileges to prevent event le
 Process Karabiner-Elements restricts the input event handling to karabiner_grabber processes.
 These process are running with root privilege and other process including malicious attacker cannot steal your input events.
 List of process Running with root privilege
-karabiner_grabber It grabs the keyboard hardware, catches events, modifies them, and then passes them to Karabiner-VirtualHIDDevice-Daemon.">
+karabiner_grabber It grabs the keyboard hardware, catches events, modifies them, and then passes them to Karabiner-VirtualHIDDevice-Daemon. Karabiner-VirtualHIDDevice-Daemon It controls Karabiner-DriverKit-VirtualHIDDevice and bridges the data between karabiner_grabber and the virtual devices. This process only receives data from processes running with root privileges. Therefore, regular applications running with user privileges cannot arbitrarily send events to virtual devices. Running with DriverKit privilege">
   <meta itemprop="wordCount" content="330">
   <meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png">
   <meta name="twitter:card" content="summary_large_image">
@@ -55,7 +55,7 @@ Separating process and running them with properly privileges to prevent event le
 Process Karabiner-Elements restricts the input event handling to karabiner_grabber processes.
 These process are running with root privilege and other process including malicious attacker cannot steal your input events.
 List of process Running with root privilege
-karabiner_grabber It grabs the keyboard hardware, catches events, modifies them, and then passes them to Karabiner-VirtualHIDDevice-Daemon.">
+karabiner_grabber It grabs the keyboard hardware, catches events, modifies them, and then passes them to Karabiner-VirtualHIDDevice-Daemon. Karabiner-VirtualHIDDevice-Daemon It controls Karabiner-DriverKit-VirtualHIDDevice and bridges the data between karabiner_grabber and the virtual devices. This process only receives data from processes running with root privileges. Therefore, regular applications running with user privileges cannot arbitrarily send events to virtual devices. Running with DriverKit privilege">
 
 
 
@@ -71,16 +71,7 @@ karabiner_grabber It grabs the keyboard hardware, catches events, modifies them,
   src="https://unpkg.com/lunr@2.3.9/lunr.min.js"
   integrity="sha384-203J0SNzyqHby3iU6hzvzltrWi/M41wOP5Gu+BiJMz5nwKykbkUx8Kp7iti0Lpli"
   crossorigin="anonymous"></script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-NL3CW99MZS"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-NL3CW99MZS');
-}
-</script>
+
   </head>
   <body class="td-page">
     <header>

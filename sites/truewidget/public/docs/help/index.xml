@@ -12,28 +12,28 @@
       <link>/docs/help/quit/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/docs/help/quit/</guid>
-      <description>TrueWidget keeps running in the background even if you close the Settings window.&#xA;To quit TrueWidget, choose &amp;ldquo;Quit TrueWidget&amp;rdquo; from the menu bar.&#xA;Note If you&amp;rsquo;ve hidden the menu bar icon, you can also quit TrueWidget from Settings.&#xA;Open Settings. Press Quit TrueWidget button. </description>
+      <description>&lt;p&gt;TrueWidget keeps running in the background even if you close the Settings window.&lt;br /&gt;&#xA;To quit TrueWidget, choose &amp;ldquo;Quit TrueWidget&amp;rdquo; from the menu bar.&lt;/p&gt;&#xA;&lt;figure&gt;&#xA;  &lt;img&#xA;    src=&#34;/docs/help/quit/images/menu-quit@2x.png&#34;&#xA;    alt=&#34;menu-quit@2x.png&#34;&#xA;    style=&#34;width: 313px&#34;&#xA;  /&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;&#xA;&lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;&#xA;&#xA;    &lt;p&gt;If you&amp;rsquo;ve hidden the menu bar icon, you can also quit TrueWidget from Settings.&lt;/p&gt;</description>
     </item>
     <item>
       <title>How to uninstall TrueWidget</title>
       <link>/docs/help/uninstall/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/docs/help/uninstall/</guid>
-      <description>Remove TrueWidget from your system as follows.&#xA;Quit TrueWidget before uninstallaion. Open Applications folder in Finder, then move TrueWidget to trash. </description>
+      <description>&lt;p&gt;Remove TrueWidget from your system as follows.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;a href=&#34;/docs/help/quit/&#34;&gt;Quit TrueWidget&lt;/a&gt; before uninstallaion.&lt;/li&gt;&#xA;&lt;li&gt;Open &lt;code&gt;Applications&lt;/code&gt; folder in Finder, then move TrueWidget to trash.&#xA;&lt;figure&gt;&#xA;      &lt;img&#xA;        src=&#34;/docs/help/uninstall/images/uninstall@2x.png&#34;&#xA;        alt=&#34;uninstall@2x.png&#34;&#xA;        style=&#34;width: 894px&#34;&#xA;      /&gt;&#xA;    &lt;/figure&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
     </item>
     <item>
       <title>Downgrade to older version</title>
       <link>/docs/help/downgrade/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/docs/help/downgrade/</guid>
-      <description>Download an older version from Release notes and install it.</description>
+      <description>&lt;p&gt;Download an older version from &lt;a href=&#34;/docs/releasenotes/&#34;&gt;Release notes&lt;/a&gt; and install it.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Use beta version</title>
       <link>/docs/help/use-beta/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/docs/help/use-beta/</guid>
-      <description>You can install beta version from Check for beta updates button on Misc tab.</description>
+      <description>&lt;p&gt;You can install beta version from &lt;code&gt;Check for beta updates&lt;/code&gt; button on Misc tab.&lt;/p&gt;&#xA;&lt;figure&gt;&#xA;  &lt;img&#xA;    src=&#34;/docs/help/use-beta/images/check-for-beta-updates@2x.png&#34;&#xA;    alt=&#34;check-for-beta-updates@2x.png&#34;&#xA;    style=&#34;width: 800px&#34;&#xA;  /&gt;&#xA;&lt;/figure&gt;</description>
     </item>
   </channel>
 </rss>

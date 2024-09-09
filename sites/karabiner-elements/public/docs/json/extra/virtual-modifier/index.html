@@ -20,7 +20,7 @@
 <title>Virtual modifier | Karabiner-Elements</title>
 <meta name="description" content="Karabiner-Elements does not provide virtual modifiers, however you can make your own flag similar to virtual modifier using variables.
 Example The following json change keypad_1 to virtual modifier.
-Change keypad_1 to virtual modifier (my_modifier_1). Change keypad_1 &#43; a to mission_control. Change keypad_1 &#43; s to launchpad. [ { &amp;#34;type&amp;#34;: &amp;#34;basic&amp;#34;, &amp;#34;from&amp;#34;: { &amp;#34;key_code&amp;#34;: &amp;#34;keypad_1&amp;#34;, &amp;#34;modifiers&amp;#34;: { &amp;#34;mandatory&amp;#34;: [], &amp;#34;optional&amp;#34;: [&amp;#34;any&amp;#34;] } }, &amp;#34;to&amp;#34;: [ { &amp;#34;set_variable&amp;#34;: { &amp;#34;name&amp;#34;: &amp;#34;my_modifier_1&amp;#34;, &amp;#34;value&amp;#34;: 1 } } ], &amp;#34;to_after_key_up&amp;#34;: [ { &amp;#34;set_variable&amp;#34;: { &amp;#34;name&amp;#34;: &amp;#34;my_modifier_1&amp;#34;, &amp;#34;value&amp;#34;: 0 } } ] }, { &amp;#34;type&amp;#34;: &amp;#34;basic&amp;#34;, &amp;#34;from&amp;#34;: { &amp;#34;key_code&amp;#34;: &amp;#34;a&amp;#34;, &amp;#34;modifiers&amp;#34;: { &amp;#34;mandatory&amp;#34;: [], &amp;#34;optional&amp;#34;: [&amp;#34;any&amp;#34;] } }, &amp;#34;to&amp;#34;: [ { &amp;#34;key_code&amp;#34;: &amp;#34;mission_control&amp;#34; } ], &amp;#34;conditions&amp;#34;: [ { &amp;#34;type&amp;#34;: &amp;#34;variable_if&amp;#34;, &amp;#34;name&amp;#34;: &amp;#34;my_modifier_1&amp;#34;, &amp;#34;value&amp;#34;: 1 } ] }, { &amp;#34;type&amp;#34;: &amp;#34;basic&amp;#34;, &amp;#34;from&amp;#34;: { &amp;#34;key_code&amp;#34;: &amp;#34;s&amp;#34;, &amp;#34;modifiers&amp;#34;: { &amp;#34;mandatory&amp;#34;: [], &amp;#34;optional&amp;#34;: [&amp;#34;any&amp;#34;] } }, &amp;#34;to&amp;#34;: [ { &amp;#34;key_code&amp;#34;: &amp;#34;launchpad&amp;#34; } ], &amp;#34;conditions&amp;#34;: [ { &amp;#34;type&amp;#34;: &amp;#34;variable_if&amp;#34;, &amp;#34;name&amp;#34;: &amp;#34;my_modifier_1&amp;#34;, &amp;#34;value&amp;#34;: 1 } ] } ] ">
+Change keypad_1 to virtual modifier (my_modifier_1). Change keypad_1 &#43; a to mission_control. Change keypad_1 &#43; s to launchpad. [ { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;keypad_1&#34;, &#34;modifiers&#34;: { &#34;mandatory&#34;: [], &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [ { &#34;set_variable&#34;: { &#34;name&#34;: &#34;my_modifier_1&#34;, &#34;value&#34;: 1 } } ], &#34;to_after_key_up&#34;: [ { &#34;set_variable&#34;: { &#34;name&#34;: &#34;my_modifier_1&#34;, &#34;value&#34;: 0 } } ] }, { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;a&#34;, &#34;modifiers&#34;: { &#34;mandatory&#34;: [], &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [ { &#34;key_code&#34;: &#34;mission_control&#34; } ], &#34;conditions&#34;: [ { &#34;type&#34;: &#34;variable_if&#34;, &#34;name&#34;: &#34;my_modifier_1&#34;, &#34;value&#34;: 1 } ] }, { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;s&#34;, &#34;modifiers&#34;: { &#34;mandatory&#34;: [], &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [ { &#34;key_code&#34;: &#34;launchpad&#34; } ], &#34;conditions&#34;: [ { &#34;type&#34;: &#34;variable_if&#34;, &#34;name&#34;: &#34;my_modifier_1&#34;, &#34;value&#34;: 1 } ] } ] ">
 <meta property="og:url" content="/docs/json/extra/virtual-modifier/">
   <meta property="og:site_name" content="Karabiner-Elements">
   <meta property="og:title" content="Virtual modifier">
@@ -59,16 +59,7 @@ Change keypad_1 to virtual modifier (my_modifier_1). Change keypad_1 &#43; a to 
   src="https://unpkg.com/lunr@2.3.9/lunr.min.js"
   integrity="sha384-203J0SNzyqHby3iU6hzvzltrWi/M41wOP5Gu+BiJMz5nwKykbkUx8Kp7iti0Lpli"
   crossorigin="anonymous"></script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-NL3CW99MZS"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-NL3CW99MZS');
-}
-</script>
+
   </head>
   <body class="td-page">
     <header>

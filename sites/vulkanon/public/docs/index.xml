@@ -12,21 +12,21 @@
       <link>/docs/developmemt/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/docs/developmemt/</guid>
-      <description>How to build Requirements devkitPro r18 (buildscripts 20060412) You need to use version r18. Do not use the latest release! Steps Execute the following commands in Terminal.&#xA;git clone --depth 1 https://github.com/pqrs-org/Vulkanon.git cd Vulkanon/vulkanon make </description>
+      <description>&lt;h2 id=&#34;how-to-build&#34;&gt;How to build&lt;/h2&gt;&#xA;&lt;h3 id=&#34;requirements&#34;&gt;Requirements&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;devkitPro r18 (buildscripts 20060412)&#xA;&lt;ul&gt;&#xA;&lt;li&gt;You need to use version r18. Do not use the latest release!&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;steps&#34;&gt;Steps&lt;/h3&gt;&#xA;&lt;p&gt;Execute the following commands in Terminal.&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git clone --depth &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;1&lt;/span&gt; https://github.com/pqrs-org/Vulkanon.git&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#204a87&#34;&gt;cd&lt;/span&gt; Vulkanon/vulkanon&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;make&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     <item>
       <title>Pricing</title>
       <link>/docs/pricing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/docs/pricing/</guid>
-      <description>Vulkanon is an open source software and you can use it without any purchases.</description>
+      <description>&lt;img src=&#34;/images/pricing-free.svg&#34; alt=&#34;Free&#34; style=&#34;height: 2em&#34; /&gt;&#xA;&lt;p&gt;Vulkanon is an &lt;a href=&#34;https://github.com/pqrs-org/Vulkanon/&#34;&gt;open source software&lt;/a&gt; and you can use it without any purchases.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Release notes</title>
       <link>/docs/releasenotes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/docs/releasenotes/</guid>
-      <description>Vulkanon 2.1 📦 Download 📅 Release date Jul 1, 2007 ⚡️ Improvements Changed some sound-effects. 🐛 Bug Fixes Fixed a bug that screen is not drawn properly when Vulkanon is launched from the G6 Flash cartridge. Vulkanon 2.0 📦 Download 📅 Release date Aug 31, 2006 ✨ New Features Added sound composed by Nullsleep. ⚡️ Improvements Adjusted level design. Vulkanon 1.0 📦 Download 📅 Release date Jul 26, 2006 ✨ New Features Jul 26, 2006 </description>
+      <description>&lt;h2 id=&#34;vulkanon-21&#34;&gt;Vulkanon 2.1&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/pqrs-org/Vulkanon/releases/download/v2.1.0/vulkanon-2.1.rom.gba.zip&#34;&gt;📦 Download&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;📅 Release date&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Jul 1, 2007&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;⚡️ Improvements&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Changed some sound-effects.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;🐛 Bug Fixes&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Fixed a bug that screen is not drawn properly when Vulkanon is launched from the G6 Flash cartridge.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;vulkanon-20&#34;&gt;Vulkanon 2.0&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/pqrs-org/Vulkanon/releases/download/v2.1.0/vulkanon-2.0.rom.gba.zip&#34;&gt;📦 Download&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;📅 Release date&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Aug 31, 2006&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;✨ New Features&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Added sound composed by &lt;a href=&#34;http://nullsleep.com/&#34;&gt;Nullsleep&lt;/a&gt;.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;⚡️ Improvements&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Adjusted level design.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;vulkanon-10&#34;&gt;Vulkanon 1.0&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/pqrs-org/Vulkanon/releases/download/v2.1.0/vulkanon-1.0.rom.gba.zip&#34;&gt;📦 Download&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;📅 Release date&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Jul 26, 2006&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;✨ New Features&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Jul 26, 2006&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>
