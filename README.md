@@ -28,3 +28,10 @@ Sites constructed by [docsy](https://www.docsy.dev).
 ## Build sites
 
 Type `make` on terminal.
+
+## Special thanks
+
+-   2024-09-07:
+    Kunal Mhaske reported a clickjacking risk due to the absence of the X-Frame-Options header in the response headers.
+    The issue has been addressed by updating each site to include the X-Frame-Options header.
+    Thank you for reporting this issue.
