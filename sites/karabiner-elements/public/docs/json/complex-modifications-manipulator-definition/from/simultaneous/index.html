@@ -20,13 +20,15 @@
 <title>from.simultaneous | Karabiner-Elements</title>
 <meta name="description" content="simultaneous manipulates keys which are pressed simultaneously in 50 milliseconds.
 Example This json defines manipulator which changes a&#43;s&#43;d to mission_control.
-{ &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;simultaneous&#34;: [ { &#34;key_code&#34;: &#34;a&#34; }, { &#34;key_code&#34;: &#34;s&#34; }, { &#34;key_code&#34;: &#34;d&#34; } ], &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [ { &#34;key_code&#34;: &#34;mission_control&#34; } ] } ">
+{ &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;simultaneous&#34;: [ { &#34;key_code&#34;: &#34;a&#34; }, { &#34;key_code&#34;: &#34;s&#34; }, { &#34;key_code&#34;: &#34;d&#34; } ], &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [ { &#34;key_code&#34;: &#34;mission_control&#34; } ] } Note There are some cases simultaneous does not modify events.
+simultaneous does not modify events if any from events are released before all from events are pressed. simultaneous does not modify events if from events are interrupted by another key_down event. Manipulated input #1 Input: a key_down s key_down d key_down Output: mission_control Manipulated input #2 Input: s key_down a key_down d key_down Output: mission_control Not manipulated input #1 a is released before all input events are pressed.">
 <meta property="og:url" content="/docs/json/complex-modifications-manipulator-definition/from/simultaneous/">
   <meta property="og:site_name" content="Karabiner-Elements">
   <meta property="og:title" content="from.simultaneous">
   <meta property="og:description" content="simultaneous manipulates keys which are pressed simultaneously in 50 milliseconds.
 Example This json defines manipulator which changes a&#43;s&#43;d to mission_control.
-{ &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;simultaneous&#34;: [ { &#34;key_code&#34;: &#34;a&#34; }, { &#34;key_code&#34;: &#34;s&#34; }, { &#34;key_code&#34;: &#34;d&#34; } ], &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [ { &#34;key_code&#34;: &#34;mission_control&#34; } ] } ">
+{ &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;simultaneous&#34;: [ { &#34;key_code&#34;: &#34;a&#34; }, { &#34;key_code&#34;: &#34;s&#34; }, { &#34;key_code&#34;: &#34;d&#34; } ], &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [ { &#34;key_code&#34;: &#34;mission_control&#34; } ] } Note There are some cases simultaneous does not modify events.
+simultaneous does not modify events if any from events are released before all from events are pressed. simultaneous does not modify events if from events are interrupted by another key_down event. Manipulated input #1 Input: a key_down s key_down d key_down Output: mission_control Manipulated input #2 Input: s key_down a key_down d key_down Output: mission_control Not manipulated input #1 a is released before all input events are pressed.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
@@ -35,7 +37,8 @@ Example This json defines manipulator which changes a&#43;s&#43;d to mission_con
   <meta itemprop="name" content="from.simultaneous">
   <meta itemprop="description" content="simultaneous manipulates keys which are pressed simultaneously in 50 milliseconds.
 Example This json defines manipulator which changes a&#43;s&#43;d to mission_control.
-{ &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;simultaneous&#34;: [ { &#34;key_code&#34;: &#34;a&#34; }, { &#34;key_code&#34;: &#34;s&#34; }, { &#34;key_code&#34;: &#34;d&#34; } ], &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [ { &#34;key_code&#34;: &#34;mission_control&#34; } ] } ">
+{ &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;simultaneous&#34;: [ { &#34;key_code&#34;: &#34;a&#34; }, { &#34;key_code&#34;: &#34;s&#34; }, { &#34;key_code&#34;: &#34;d&#34; } ], &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [ { &#34;key_code&#34;: &#34;mission_control&#34; } ] } Note There are some cases simultaneous does not modify events.
+simultaneous does not modify events if any from events are released before all from events are pressed. simultaneous does not modify events if from events are interrupted by another key_down event. Manipulated input #1 Input: a key_down s key_down d key_down Output: mission_control Manipulated input #2 Input: s key_down a key_down d key_down Output: mission_control Not manipulated input #1 a is released before all input events are pressed.">
   <meta itemprop="wordCount" content="242">
   <meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png">
   <meta name="twitter:card" content="summary_large_image">
@@ -43,7 +46,8 @@ Example This json defines manipulator which changes a&#43;s&#43;d to mission_con
   <meta name="twitter:title" content="from.simultaneous">
   <meta name="twitter:description" content="simultaneous manipulates keys which are pressed simultaneously in 50 milliseconds.
 Example This json defines manipulator which changes a&#43;s&#43;d to mission_control.
-{ &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;simultaneous&#34;: [ { &#34;key_code&#34;: &#34;a&#34; }, { &#34;key_code&#34;: &#34;s&#34; }, { &#34;key_code&#34;: &#34;d&#34; } ], &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [ { &#34;key_code&#34;: &#34;mission_control&#34; } ] } ">
+{ &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;simultaneous&#34;: [ { &#34;key_code&#34;: &#34;a&#34; }, { &#34;key_code&#34;: &#34;s&#34; }, { &#34;key_code&#34;: &#34;d&#34; } ], &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [ { &#34;key_code&#34;: &#34;mission_control&#34; } ] } Note There are some cases simultaneous does not modify events.
+simultaneous does not modify events if any from events are released before all from events are pressed. simultaneous does not modify events if from events are interrupted by another key_down event. Manipulated input #1 Input: a key_down s key_down d key_down Output: mission_control Manipulated input #2 Input: s key_down a key_down d key_down Output: mission_control Not manipulated input #1 a is released before all input events are pressed.">
 
 
 
