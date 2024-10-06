@@ -1,6 +1,6 @@
 ---
 title: 'iokit_power_management_sleep_system'
-weight: 300
+weight: 200
 ---
 
 Causes an immediate system sleep.

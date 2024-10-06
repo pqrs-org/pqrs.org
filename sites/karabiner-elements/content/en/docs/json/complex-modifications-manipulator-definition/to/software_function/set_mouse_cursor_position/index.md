@@ -1,6 +1,6 @@
 ---
 title: 'set_mouse_cursor_position'
-weight: 200
+weight: 400
 ---
 
 Move the mouse cursor to the specified point.
