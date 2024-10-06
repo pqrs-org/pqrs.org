@@ -11,7 +11,11 @@ When you are using multiple keyboards, modifier keys are shared with all keyboar
 
 For example, pressing "shift key on keyboard1" and "space key on keyboard2" sends shift-space.
 
-## Add fn-key combinations
+## Add fn-key combinations (only for Karabiner-Elements 15.0.0 and earlier)
+
+{{% alert title="Notes" color="primary" %}}
+This fn-key combinations were removed in Karabiner-Elements 15.1.0.
+{{% /alert %}}
 
 Karabiner adds fn-key combinations:
 
