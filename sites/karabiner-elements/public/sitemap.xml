@@ -64,6 +64,8 @@
   </url><url>
     <loc>/docs/manual/misc/implicit-behavior/</loc>
   </url><url>
+    <loc>/docs/json/complex-modifications-manipulator-definition/to/software_function/iokit_power_management_sleep_system/</loc>
+  </url><url>
     <loc>/docs/help/troubleshooting/stopped-working-after-macos-update/</loc>
   </url><url>
     <loc>/docs/manual/</loc>
@@ -71,8 +73,6 @@
     <loc>/docs/manual/operation/</loc>
   </url><url>
     <loc>/docs/help/advanced-topics/security/</loc>
-  </url><url>
-    <loc>/docs/json/complex-modifications-manipulator-definition/to/software_function/set_mouse_cursor_position/</loc>
   </url><url>
     <loc>/docs/json/complex-modifications-manipulator-definition/to/</loc>
   </url><url>
@@ -98,13 +98,13 @@
   </url><url>
     <loc>/docs/manual/misc/event-modification-chaining/</loc>
   </url><url>
-    <loc>/docs/json/complex-modifications-manipulator-definition/to/software_function/iokit_power_management_sleep_system/</loc>
-  </url><url>
     <loc>/docs/help/how-to/key-repeat/</loc>
   </url><url>
     <loc>/docs/json/complex-modifications-manipulator-definition/conditions/keyboard-type/</loc>
   </url><url>
     <loc>/docs/manual/misc/</loc>
+  </url><url>
+    <loc>/docs/json/complex-modifications-manipulator-definition/to/software_function/open_application/</loc>
   </url><url>
     <loc>/docs/json/complex-modifications-manipulator-definition/to-if-alone/</loc>
   </url><url>
@@ -133,6 +133,8 @@
     <loc>/docs/json/root-data-structure/</loc>
   </url><url>
     <loc>/docs/manual/misc/multitouch-extension/</loc>
+  </url><url>
+    <loc>/docs/json/complex-modifications-manipulator-definition/to/software_function/set_mouse_cursor_position/</loc>
   </url><url>
     <loc>/docs/json/complex-modifications-manipulator-definition/to-if-held-down/</loc>
   </url><url>
