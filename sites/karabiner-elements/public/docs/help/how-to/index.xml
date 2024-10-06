@@ -42,5 +42,12 @@
       <guid>/docs/help/how-to/disable-open-at-login/</guid>
       <description>&lt;p&gt;Karabiner-Elements will be started automatically at login after once you have run Karabiner-ELements.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;../../../manual/operation/quit/&#34;&gt;Quit Karabiner-Elements&lt;/a&gt; if you want to stop running Karabiner-Elements at login.&lt;/p&gt;</description>
     </item>
+    <item>
+      <title>How to use Karabiner-Elements on the password entry screen before logging in</title>
+      <link>/docs/help/how-to/use-before-logging-in/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/help/how-to/use-before-logging-in/</guid>
+      <description>&lt;p&gt;If you want to use Karabiner-Elements settings on the password entry screen before logging in, press &lt;code&gt;Copy the current configuration to the system default configuration&lt;/code&gt; button in the Misc tab of the settings screen.&#xA;The configuration copied here will be applied even before logging in.&lt;/p&gt;&#xA;&lt;p&gt;Additionally, this will become the default configuration for users who haven&amp;rsquo;t set up Karabiner-Elements, e.g., guest users.&lt;/p&gt;&#xA;&lt;figure&gt;&#xA;  &lt;img&#xA;    src=&#34;/docs/help/how-to/use-before-logging-in/images/system-default-configuration@2x.png&#34;&#xA;    alt=&#34;system-default-configuration@2x.png&#34;&#xA;    style=&#34;width: 1100px&#34;&#xA;  /&gt;&#xA;&lt;/figure&gt;</description>
+    </item>
   </channel>
 </rss>
