@@ -6,6 +6,15 @@ exclude_search: true
 body_class: release-notes
 ---
 
+## Karabiner-Elements 15.2.0
+
+-   [📦 Download](https://github.com/pqrs-org/Karabiner-Elements/releases/download/v15.2.0/Karabiner-Elements-15.2.0.dmg)
+-   📅 Release date
+    -   Oct 7, 2024
+-   🐛 Bug Fixes
+    -   The method for setting "Use all F1, F2, etc. keys as standard function keys" has been changed.
+        Due to internal processing in macOS, with the new virtual keyboard introduced in version 15.0.0, this setting must be changed through System Settings.
+
 ## Karabiner-Elements 15.1.0
 
 -   [📦 Download](https://github.com/pqrs-org/Karabiner-Elements/releases/download/v15.1.0/Karabiner-Elements-15.1.0.dmg)
