@@ -26,7 +26,7 @@
       <link>/docs/help/how-to/disable-caps-lock-delay/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/docs/help/how-to/disable-caps-lock-delay/</guid>
-      <description>&lt;p&gt;Karabiner-Elements disables the caps lock delay without any action since v13.3.0.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Karabiner-Elements disables the caps lock delay without any action since v13.3.0.&lt;/p&gt;&#xA;&lt;h2 id=&#34;disable-the-accidental-keystroke-prevention-of-caps-lock&#34;&gt;Disable the accidental keystroke prevention of Caps Lock&lt;/h2&gt;&#xA;&lt;p&gt;If you want to disable the behavior where a brief press of the Caps Lock key is ignored (the accidental keystroke prevention feature), please import and enable this Complex Modifications setting.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://ke-complex-modifications.pqrs.org/#disable_accidental_keystroke_prevention_of_caps_lock&#34;&gt;https://ke-complex-modifications.pqrs.org/#disable_accidental_keystroke_prevention_of_caps_lock&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Is it possible to adjust the key repeat rate?</title>

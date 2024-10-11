@@ -166,7 +166,7 @@
       <link>/docs/help/how-to/disable-caps-lock-delay/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/docs/help/how-to/disable-caps-lock-delay/</guid>
-      <description>&lt;p&gt;Karabiner-Elements disables the caps lock delay without any action since v13.3.0.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Karabiner-Elements disables the caps lock delay without any action since v13.3.0.&lt;/p&gt;&#xA;&lt;h2 id=&#34;disable-the-accidental-keystroke-prevention-of-caps-lock&#34;&gt;Disable the accidental keystroke prevention of Caps Lock&lt;/h2&gt;&#xA;&lt;p&gt;If you want to disable the behavior where a brief press of the Caps Lock key is ignored (the accidental keystroke prevention feature), please import and enable this Complex Modifications setting.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://ke-complex-modifications.pqrs.org/#disable_accidental_keystroke_prevention_of_caps_lock&#34;&gt;https://ke-complex-modifications.pqrs.org/#disable_accidental_keystroke_prevention_of_caps_lock&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Implicit behavior</title>
@@ -264,7 +264,7 @@
       <link>/docs/manual/misc/event-modification-chaining/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/docs/manual/misc/event-modification-chaining/</guid>
-      <description>&lt;p&gt;Karabiner-Elements treats input events by the following order:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Catch events from hardware.&lt;/li&gt;&#xA;&lt;li&gt;Apply &lt;strong&gt;Simple Modifications&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Apply &lt;strong&gt;Complex Modifications&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Apply &lt;strong&gt;Function Keys Modifications&lt;/strong&gt;. (change f1&amp;hellip;f12 keys to media controls)&lt;/li&gt;&#xA;&lt;li&gt;Post events to applications via a virtual keyboard.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&#xA;&#xA;&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;&#xA;&lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;&#xA;&#xA;    &lt;p&gt;System modifier keys configuration in &lt;strong&gt;System Settings &amp;gt; Keyboard &amp;gt; Keyboard Shortcuts&amp;hellip; &amp;gt; Modifier Keys&lt;/strong&gt; is ignored when you use&#xA;Karabiner-Elements.&lt;/p&gt;&#xA;&lt;p&gt;Change modifier keys in Karabiner-Elements&amp;rsquo;s Simple Modifications.&lt;/p&gt;&#xA;&#xA;&#xA;&lt;/div&gt;</description>
+      <description>&lt;p&gt;Karabiner-Elements treats input events by the following order:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Catch events from hardware.&lt;/li&gt;&#xA;&lt;li&gt;Apply &lt;strong&gt;Simple Modifications&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Apply &lt;strong&gt;Complex Modifications&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Apply &lt;strong&gt;Function Keys Modifications&lt;/strong&gt;. (change f1&amp;hellip;f12 keys to media controls)&lt;/li&gt;&#xA;&lt;li&gt;Apply &lt;strong&gt;System Settings &amp;gt; Keyboard &amp;gt; Keyboard Shortcuts&amp;hellip; &amp;gt; Modifier Keys&lt;/strong&gt;. (Karabiner-Elements 15.1.0 and later)&lt;/li&gt;&#xA;&lt;li&gt;Post events to applications via a virtual keyboard.&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
     </item>
     <item>
       <title>Is it possible to adjust the key repeat rate?</title>
