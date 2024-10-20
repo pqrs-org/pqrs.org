@@ -15,6 +15,8 @@ body_class: release-notes
     -   The method for setting "Use all F1, F2, etc. keys as standard function keys" has been changed.
         Due to internal processing in macOS, with the new virtual keyboard introduced in version 15.1.0, this setting must be changed through System Settings.
 
+[Details of Breaking Changes in v15.1.0](/docs/help/troubleshooting/breaking-changes/#karabiner-elements-1510)
+
 ## Karabiner-Elements 15.1.0
 
 -   [📦 Download](https://github.com/pqrs-org/Karabiner-Elements/releases/download/v15.1.0/Karabiner-Elements-15.1.0.dmg)
@@ -42,6 +44,8 @@ body_class: release-notes
     -   Fixed an issue where disconnected devices would occasionally remain in the device list.
     -   Updated the embedded screenshots and help messages for macOS 15 Sequoia.
     -   Adjusted the gamepad deadzone default value.
+
+[Details of Breaking Changes in v15.1.0](/docs/help/troubleshooting/breaking-changes/#karabiner-elements-1510)
 
 ## Karabiner-Elements 15.0.0
 
