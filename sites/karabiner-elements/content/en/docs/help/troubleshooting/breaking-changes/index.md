@@ -25,6 +25,14 @@ The following changes have been made due to the update where the virtual keyboar
     If you've used this keyboard before, it's worth reviewing your settings.
     {{< local-image src="images/v15.1.0/modifier-keys@2x.png" >}}
 
+### Fn Key (Globe Key)
+
+In previous versions, fn+arrow keys were converted to page up, page down, home, and end, but this behavior has been discontinued.
+
+If the virtual device has Apple's Vendor ID and Product ID, macOS will handle fn+arrow keys for paging without needing this implicit conversion.
+Therefore, this should not cause issues in most applications.
+However, if you explicitly want to change them to home, end, etc., please use Complex Modifications to make these changes.
+
 ### Function Keys
 
 -   The "Use all F1, F2, etc. keys as standard function keys" setting now needs to be changed from System Settings.
