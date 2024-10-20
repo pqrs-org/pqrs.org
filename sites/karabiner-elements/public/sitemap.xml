@@ -2,6 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>/docs/help/troubleshooting/breaking-changes/</loc>
+  </url><url>
     <loc>/docs/manual/misc/required-macos-settings/</loc>
   </url><url>
     <loc>/docs/help/troubleshooting/driver-alert-keeps-showing-up/</loc>

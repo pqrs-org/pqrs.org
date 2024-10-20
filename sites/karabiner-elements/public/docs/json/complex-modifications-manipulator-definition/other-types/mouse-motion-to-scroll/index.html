@@ -78,7 +78,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.23b945ca7100907d56a06356a036de6d.json"
+    data-offline-search-index-json-src="/offline-search-index.8eecbf2ccd4796da8a514a1687d52261.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="25"
   >
@@ -102,7 +102,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.23b945ca7100907d56a06356a036de6d.json"
+    data-offline-search-index-json-src="/offline-search-index.8eecbf2ccd4796da8a514a1687d52261.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="25"
   >
@@ -268,7 +268,11 @@
   <label for="m-docshelptroubleshooting-check"><a href="/docs/help/troubleshooting/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docshelptroubleshooting"><span class="">Troubleshooting</span></a></label>
   
   <ul class="ul-3 foldable">
-    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docshelptroubleshootingdriver-alert-keeps-showing-up-li">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docshelptroubleshootingbreaking-changes-li">
+  <input type="checkbox" id="m-docshelptroubleshootingbreaking-changes-check"/>
+  <label for="m-docshelptroubleshootingbreaking-changes-check"><a href="/docs/help/troubleshooting/breaking-changes/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-docshelptroubleshootingbreaking-changes"><span class="">Breaking changes introduced by the version upgrade</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docshelptroubleshootingdriver-alert-keeps-showing-up-li">
   <input type="checkbox" id="m-docshelptroubleshootingdriver-alert-keeps-showing-up-check"/>
   <label for="m-docshelptroubleshootingdriver-alert-keeps-showing-up-check"><a href="/docs/help/troubleshooting/driver-alert-keeps-showing-up/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-docshelptroubleshootingdriver-alert-keeps-showing-up"><span class="">Driver alert keeps showing up</span></a></label>
   
@@ -675,36 +679,36 @@
 </span></span></code></pre></div><table>
   <thead>
       <tr>
-          <th style="text-align: left">Key</th>
-          <th style="text-align: left">Value</th>
-          <th style="text-align: left">Required</th>
-          <th style="text-align: left">Description</th>
+          <th>Key</th>
+          <th>Value</th>
+          <th>Required</th>
+          <th>Description</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left"><code>type</code></td>
-          <td style="text-align: left"><code>&quot;mouse_motion_to_scroll&quot;</code></td>
-          <td style="text-align: left"><strong>Required</strong></td>
-          <td style="text-align: left">&mdash;</td>
+          <td><code>type</code></td>
+          <td><code>&quot;mouse_motion_to_scroll&quot;</code></td>
+          <td><strong>Required</strong></td>
+          <td>&mdash;</td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>from.modifiers</code></td>
-          <td style="text-align: left">Same as <a href="/docs/json/complex-modifications-manipulator-definition/from/modifiers/">basic.from.modifiers</a></td>
-          <td style="text-align: left">Optional</td>
-          <td style="text-align: left">Enable <code>mouse_motion_to_scroll</code> if specified modifiers are pressed</td>
+          <td><code>from.modifiers</code></td>
+          <td>Same as <a href="/docs/json/complex-modifications-manipulator-definition/from/modifiers/">basic.from.modifiers</a></td>
+          <td>Optional</td>
+          <td>Enable <code>mouse_motion_to_scroll</code> if specified modifiers are pressed</td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>conditions</code></td>
-          <td style="text-align: left">Same as <a href="/docs/json/complex-modifications-manipulator-definition/conditions/">basic.conditions</a></td>
-          <td style="text-align: left">Optional</td>
-          <td style="text-align: left">Enable <code>mouse_motion_to_scroll</code> when specified conditions</td>
+          <td><code>conditions</code></td>
+          <td>Same as <a href="/docs/json/complex-modifications-manipulator-definition/conditions/">basic.conditions</a></td>
+          <td>Optional</td>
+          <td>Enable <code>mouse_motion_to_scroll</code> when specified conditions</td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>options</code></td>
-          <td style="text-align: left">An object of parameters</td>
-          <td style="text-align: left">Optional</td>
-          <td style="text-align: left">&mdash;</td>
+          <td><code>options</code></td>
+          <td>An object of parameters</td>
+          <td>Optional</td>
+          <td>&mdash;</td>
       </tr>
   </tbody>
 </table>
@@ -723,24 +727,24 @@
 <table>
   <thead>
       <tr>
-          <th style="text-align: left">Key</th>
-          <th style="text-align: left">Value</th>
-          <th style="text-align: left">Required</th>
-          <th style="text-align: left">Description</th>
+          <th>Key</th>
+          <th>Value</th>
+          <th>Required</th>
+          <th>Description</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left"><code>momentum_scroll_enabled</code></td>
-          <td style="text-align: left"><code>true</code> or <code>false</code></td>
-          <td style="text-align: left">Optional</td>
-          <td style="text-align: left">Enable Momentum scroll. The default value is <code>true</code>.</td>
+          <td><code>momentum_scroll_enabled</code></td>
+          <td><code>true</code> or <code>false</code></td>
+          <td>Optional</td>
+          <td>Enable Momentum scroll. The default value is <code>true</code>.</td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>speed_multiplier</code></td>
-          <td style="text-align: left">float value</td>
-          <td style="text-align: left">Optional</td>
-          <td style="text-align: left">Multiply scroll speed. The default value is <code>1.0</code>.</td>
+          <td><code>speed_multiplier</code></td>
+          <td>float value</td>
+          <td>Optional</td>
+          <td>Multiply scroll speed. The default value is <code>1.0</code>.</td>
       </tr>
   </tbody>
 </table>

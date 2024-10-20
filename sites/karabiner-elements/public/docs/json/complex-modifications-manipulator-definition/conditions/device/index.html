@@ -83,7 +83,7 @@ Example Change 1 key to f1 if the device is Apple keyboard.
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.23b945ca7100907d56a06356a036de6d.json"
+    data-offline-search-index-json-src="/offline-search-index.8eecbf2ccd4796da8a514a1687d52261.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="25"
   >
@@ -107,7 +107,7 @@ Example Change 1 key to f1 if the device is Apple keyboard.
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.23b945ca7100907d56a06356a036de6d.json"
+    data-offline-search-index-json-src="/offline-search-index.8eecbf2ccd4796da8a514a1687d52261.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="25"
   >
@@ -273,7 +273,11 @@ Example Change 1 key to f1 if the device is Apple keyboard.
   <label for="m-docshelptroubleshooting-check"><a href="/docs/help/troubleshooting/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docshelptroubleshooting"><span class="">Troubleshooting</span></a></label>
   
   <ul class="ul-3 foldable">
-    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docshelptroubleshootingdriver-alert-keeps-showing-up-li">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docshelptroubleshootingbreaking-changes-li">
+  <input type="checkbox" id="m-docshelptroubleshootingbreaking-changes-check"/>
+  <label for="m-docshelptroubleshootingbreaking-changes-check"><a href="/docs/help/troubleshooting/breaking-changes/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-docshelptroubleshootingbreaking-changes"><span class="">Breaking changes introduced by the version upgrade</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docshelptroubleshootingdriver-alert-keeps-showing-up-li">
   <input type="checkbox" id="m-docshelptroubleshootingdriver-alert-keeps-showing-up-check"/>
   <label for="m-docshelptroubleshootingdriver-alert-keeps-showing-up-check"><a href="/docs/help/troubleshooting/driver-alert-keeps-showing-up/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-docshelptroubleshootingdriver-alert-keeps-showing-up"><span class="">Driver alert keeps showing up</span></a></label>
   
@@ -716,26 +720,26 @@ Example Change 1 key to f1 if the device is Apple keyboard.
 </span></span></code></pre></div><table>
   <thead>
       <tr>
-          <th style="text-align: left">Name</th>
-          <th style="text-align: left">Required</th>
-          <th style="text-align: left">Description</th>
+          <th>Name</th>
+          <th>Required</th>
+          <th>Description</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left"><code>type</code></td>
-          <td style="text-align: left"><strong>Required</strong></td>
-          <td style="text-align: left"><code>&quot;device_if&quot;</code> or <code>&quot;device_unless&quot;</code> or <code>&quot;device_exists_if&quot;</code> or <code>&quot;device_exists_unless&quot;</code></td>
+          <td><code>type</code></td>
+          <td><strong>Required</strong></td>
+          <td><code>&quot;device_if&quot;</code> or <code>&quot;device_unless&quot;</code> or <code>&quot;device_exists_if&quot;</code> or <code>&quot;device_exists_unless&quot;</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>identifiers</code></td>
-          <td style="text-align: left"><strong>Required</strong></td>
-          <td style="text-align: left">Target device definitions</td>
+          <td><code>identifiers</code></td>
+          <td><strong>Required</strong></td>
+          <td>Target device definitions</td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>description</code></td>
-          <td style="text-align: left">Optional</td>
-          <td style="text-align: left">A human-readable comment</td>
+          <td><code>description</code></td>
+          <td>Optional</td>
+          <td>A human-readable comment</td>
       </tr>
   </tbody>
 </table>
@@ -743,31 +747,31 @@ Example Change 1 key to f1 if the device is Apple keyboard.
 <table>
   <thead>
       <tr>
-          <th style="text-align: left">Type</th>
-          <th style="text-align: left">Description</th>
-          <th style="text-align: left">Available since</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Available since</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left"><code>device_if</code></td>
-          <td style="text-align: left">Valid only for devices specified in identifiers</td>
-          <td style="text-align: left">Karabiner-Elements 11.0.0</td>
+          <td><code>device_if</code></td>
+          <td>Valid only for devices specified in identifiers</td>
+          <td>Karabiner-Elements 11.0.0</td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>device_unless</code></td>
-          <td style="text-align: left">Valid only for devices other than specified in identifiers</td>
-          <td style="text-align: left">Karabiner-Elements 11.0.0</td>
+          <td><code>device_unless</code></td>
+          <td>Valid only for devices other than specified in identifiers</td>
+          <td>Karabiner-Elements 11.0.0</td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>device_exists_if</code></td>
-          <td style="text-align: left">Valid if a specified device is connected</td>
-          <td style="text-align: left">Karabiner-Elements 14.8.4</td>
+          <td><code>device_exists_if</code></td>
+          <td>Valid if a specified device is connected</td>
+          <td>Karabiner-Elements 14.8.4</td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>device_exists_unless</code></td>
-          <td style="text-align: left">Valid unless a specified device is connected</td>
-          <td style="text-align: left">Karabiner-Elements 14.8.4</td>
+          <td><code>device_exists_unless</code></td>
+          <td>Valid unless a specified device is connected</td>
+          <td>Karabiner-Elements 14.8.4</td>
       </tr>
   </tbody>
 </table>
@@ -776,66 +780,66 @@ Example Change 1 key to f1 if the device is Apple keyboard.
 <table>
   <thead>
       <tr>
-          <th style="text-align: left">Name</th>
-          <th style="text-align: left">Required</th>
-          <th style="text-align: left">Description</th>
-          <th style="text-align: left">Fixed Value</th>
+          <th>Name</th>
+          <th>Required</th>
+          <th>Description</th>
+          <th>Fixed Value</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left"><code>vendor_id</code></td>
-          <td style="text-align: left">Optional</td>
-          <td style="text-align: left">Vendor ID of device</td>
-          <td style="text-align: left">Yes</td>
+          <td><code>vendor_id</code></td>
+          <td>Optional</td>
+          <td>Vendor ID of device</td>
+          <td>Yes</td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>product_id</code></td>
-          <td style="text-align: left">Optional</td>
-          <td style="text-align: left">Product ID of device</td>
-          <td style="text-align: left">Yes</td>
+          <td><code>product_id</code></td>
+          <td>Optional</td>
+          <td>Product ID of device</td>
+          <td>Yes</td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>device_address</code></td>
-          <td style="text-align: left">Optional</td>
-          <td style="text-align: left">Bluetooth address (Bluetooth MAC address) of device <br />(only available for Bluetooth devices) <br />(available since Karabiner-Elements 14.12.2)</td>
-          <td style="text-align: left">Yes <code>[1]</code></td>
+          <td><code>device_address</code></td>
+          <td>Optional</td>
+          <td>Bluetooth address (Bluetooth MAC address) of device <br />(only available for Bluetooth devices) <br />(available since Karabiner-Elements 14.12.2)</td>
+          <td>Yes <code>[1]</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>location_id</code></td>
-          <td style="text-align: left">Optional</td>
-          <td style="text-align: left">Location ID of device</td>
-          <td style="text-align: left">No <code>[2]</code></td>
+          <td><code>location_id</code></td>
+          <td>Optional</td>
+          <td>Location ID of device</td>
+          <td>No <code>[2]</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>is_keyboard</code></td>
-          <td style="text-align: left">Optional</td>
-          <td style="text-align: left"><code>true</code> or <code>false</code></td>
-          <td style="text-align: left">Yes</td>
+          <td><code>is_keyboard</code></td>
+          <td>Optional</td>
+          <td><code>true</code> or <code>false</code></td>
+          <td>Yes</td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>is_pointing_device</code></td>
-          <td style="text-align: left">Optional</td>
-          <td style="text-align: left"><code>true</code> or <code>false</code></td>
-          <td style="text-align: left">Yes</td>
+          <td><code>is_pointing_device</code></td>
+          <td>Optional</td>
+          <td><code>true</code> or <code>false</code></td>
+          <td>Yes</td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>is_game_pad</code></td>
-          <td style="text-align: left">Optional</td>
-          <td style="text-align: left"><code>true</code> or <code>false</code><br />(available since Karabiner-Elements 14.12.4)</td>
-          <td style="text-align: left">Yes</td>
+          <td><code>is_game_pad</code></td>
+          <td>Optional</td>
+          <td><code>true</code> or <code>false</code><br />(available since Karabiner-Elements 14.12.4)</td>
+          <td>Yes</td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>is_touch_bar</code></td>
-          <td style="text-align: left">Optional</td>
-          <td style="text-align: left"><code>true</code> or <code>false</code></td>
-          <td style="text-align: left">Yes</td>
+          <td><code>is_touch_bar</code></td>
+          <td>Optional</td>
+          <td><code>true</code> or <code>false</code></td>
+          <td>Yes</td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>is_built_in_keyboard</code></td>
-          <td style="text-align: left">Optional</td>
-          <td style="text-align: left"><code>true</code> or <code>false</code><br />(available since Karabiner-Elements 14.8.2)</td>
-          <td style="text-align: left">Yes</td>
+          <td><code>is_built_in_keyboard</code></td>
+          <td>Optional</td>
+          <td><code>true</code> or <code>false</code><br />(available since Karabiner-Elements 14.8.2)</td>
+          <td>Yes</td>
       </tr>
   </tbody>
 </table>
