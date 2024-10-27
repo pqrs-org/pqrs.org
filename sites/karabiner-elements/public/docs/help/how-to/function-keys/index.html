@@ -17,29 +17,33 @@
 <link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
-<title>Features | Karabiner-Elements</title>
-<meta name="description" content="Karabiner-Elements is a powerful and stable keyboard customizer for macOS.
-Core features Simple Modifications: Change normal keys to other keys. Complex Modifications: Change keys by complex rules. Change a key to combination of modifiers. (e.g. change capslock to control&#43;command) Change modifiers&#43;key to key. (e.g. change control&#43;m to return) Send key events if a key is pressed alone. Send key events if keys are pressed simultaneously. Mouse keys. etc. Function Keys: Change f1-f12 keys to media controls. Devices: Apply modifications to specified keyboards only. Profiles: Support multiple profiles. Modifier Flag Sync: Synchronize modifier flags across all connected keyboards. Secure Keyboard Entry Support: Work well on Secure Keyboard Entry environment such as a password prompt, terminal with Secure Keyboard Entry, etc. Extra Key Support: Enable extra keys on PC keyboard that are not recognized by default in macOS. Home key on iPad keyboards such as Logitech K480 International keys Language keys (e.g., 無変換,変換, カタカナ keys on JIS PC keyboard) Application Launch Keys Current limitations Karabiner-Elements cannot modify the eject key on some keyboard (e.g., Apple Wired Keyboard) due to the limitation of macOS API. Karabiner-Elements cannot modify the fn key on non-Apple keyboards such as Logitech keyboards. Karabiner-Elements ignores the System Settings &gt; Keyboard &gt; Keyboard Shortcuts... &gt; Modifier Keys configuration. Change modifiers by using Simple Modifications. (Detail of input event modification chaining) ">
-<meta property="og:url" content="/docs/getting-started/features/">
+<title>Details on changing to function keys | Karabiner-Elements</title>
+<meta name="description" content="To send F1-F12 function keys to an application using Karabiner-Elements, there is a bit of a trick. This is because if you simply send an F1 key using Simple Modifications or Complex Modifications, it will be interpreted as media controls (e.g., display_brightness_decrement) by subsequent Function Keys Modifications or the macOS driver.
+Therefore, if you want to send F1-F12 keys to an application, you need to send fn&#43;F1-F12 instead.
+For example, the following Complex Modifications sends fn&#43;F2 (cell editing) to Excel with command&#43;e.">
+<meta property="og:url" content="/docs/help/how-to/function-keys/">
   <meta property="og:site_name" content="Karabiner-Elements">
-  <meta property="og:title" content="Features">
-  <meta property="og:description" content="Karabiner-Elements is a powerful and stable keyboard customizer for macOS.
-Core features Simple Modifications: Change normal keys to other keys. Complex Modifications: Change keys by complex rules. Change a key to combination of modifiers. (e.g. change capslock to control&#43;command) Change modifiers&#43;key to key. (e.g. change control&#43;m to return) Send key events if a key is pressed alone. Send key events if keys are pressed simultaneously. Mouse keys. etc. Function Keys: Change f1-f12 keys to media controls. Devices: Apply modifications to specified keyboards only. Profiles: Support multiple profiles. Modifier Flag Sync: Synchronize modifier flags across all connected keyboards. Secure Keyboard Entry Support: Work well on Secure Keyboard Entry environment such as a password prompt, terminal with Secure Keyboard Entry, etc. Extra Key Support: Enable extra keys on PC keyboard that are not recognized by default in macOS. Home key on iPad keyboards such as Logitech K480 International keys Language keys (e.g., 無変換,変換, カタカナ keys on JIS PC keyboard) Application Launch Keys Current limitations Karabiner-Elements cannot modify the eject key on some keyboard (e.g., Apple Wired Keyboard) due to the limitation of macOS API. Karabiner-Elements cannot modify the fn key on non-Apple keyboards such as Logitech keyboards. Karabiner-Elements ignores the System Settings &gt; Keyboard &gt; Keyboard Shortcuts... &gt; Modifier Keys configuration. Change modifiers by using Simple Modifications. (Detail of input event modification chaining)">
+  <meta property="og:title" content="Details on changing to function keys">
+  <meta property="og:description" content="To send F1-F12 function keys to an application using Karabiner-Elements, there is a bit of a trick. This is because if you simply send an F1 key using Simple Modifications or Complex Modifications, it will be interpreted as media controls (e.g., display_brightness_decrement) by subsequent Function Keys Modifications or the macOS driver.
+Therefore, if you want to send F1-F12 keys to an application, you need to send fn&#43;F1-F12 instead.
+For example, the following Complex Modifications sends fn&#43;F2 (cell editing) to Excel with command&#43;e.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
     <meta property="og:image" content="https://karabiner-elements.pqrs.org/images/logo.png">
 
-  <meta itemprop="name" content="Features">
-  <meta itemprop="description" content="Karabiner-Elements is a powerful and stable keyboard customizer for macOS.
-Core features Simple Modifications: Change normal keys to other keys. Complex Modifications: Change keys by complex rules. Change a key to combination of modifiers. (e.g. change capslock to control&#43;command) Change modifiers&#43;key to key. (e.g. change control&#43;m to return) Send key events if a key is pressed alone. Send key events if keys are pressed simultaneously. Mouse keys. etc. Function Keys: Change f1-f12 keys to media controls. Devices: Apply modifications to specified keyboards only. Profiles: Support multiple profiles. Modifier Flag Sync: Synchronize modifier flags across all connected keyboards. Secure Keyboard Entry Support: Work well on Secure Keyboard Entry environment such as a password prompt, terminal with Secure Keyboard Entry, etc. Extra Key Support: Enable extra keys on PC keyboard that are not recognized by default in macOS. Home key on iPad keyboards such as Logitech K480 International keys Language keys (e.g., 無変換,変換, カタカナ keys on JIS PC keyboard) Application Launch Keys Current limitations Karabiner-Elements cannot modify the eject key on some keyboard (e.g., Apple Wired Keyboard) due to the limitation of macOS API. Karabiner-Elements cannot modify the fn key on non-Apple keyboards such as Logitech keyboards. Karabiner-Elements ignores the System Settings &gt; Keyboard &gt; Keyboard Shortcuts... &gt; Modifier Keys configuration. Change modifiers by using Simple Modifications. (Detail of input event modification chaining)">
-  <meta itemprop="wordCount" content="221">
+  <meta itemprop="name" content="Details on changing to function keys">
+  <meta itemprop="description" content="To send F1-F12 function keys to an application using Karabiner-Elements, there is a bit of a trick. This is because if you simply send an F1 key using Simple Modifications or Complex Modifications, it will be interpreted as media controls (e.g., display_brightness_decrement) by subsequent Function Keys Modifications or the macOS driver.
+Therefore, if you want to send F1-F12 keys to an application, you need to send fn&#43;F1-F12 instead.
+For example, the following Complex Modifications sends fn&#43;F2 (cell editing) to Excel with command&#43;e.">
+  <meta itemprop="wordCount" content="257">
   <meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://karabiner-elements.pqrs.org/images/logo.png">
-  <meta name="twitter:title" content="Features">
-  <meta name="twitter:description" content="Karabiner-Elements is a powerful and stable keyboard customizer for macOS.
-Core features Simple Modifications: Change normal keys to other keys. Complex Modifications: Change keys by complex rules. Change a key to combination of modifiers. (e.g. change capslock to control&#43;command) Change modifiers&#43;key to key. (e.g. change control&#43;m to return) Send key events if a key is pressed alone. Send key events if keys are pressed simultaneously. Mouse keys. etc. Function Keys: Change f1-f12 keys to media controls. Devices: Apply modifications to specified keyboards only. Profiles: Support multiple profiles. Modifier Flag Sync: Synchronize modifier flags across all connected keyboards. Secure Keyboard Entry Support: Work well on Secure Keyboard Entry environment such as a password prompt, terminal with Secure Keyboard Entry, etc. Extra Key Support: Enable extra keys on PC keyboard that are not recognized by default in macOS. Home key on iPad keyboards such as Logitech K480 International keys Language keys (e.g., 無変換,変換, カタカナ keys on JIS PC keyboard) Application Launch Keys Current limitations Karabiner-Elements cannot modify the eject key on some keyboard (e.g., Apple Wired Keyboard) due to the limitation of macOS API. Karabiner-Elements cannot modify the fn key on non-Apple keyboards such as Logitech keyboards. Karabiner-Elements ignores the System Settings &gt; Keyboard &gt; Keyboard Shortcuts... &gt; Modifier Keys configuration. Change modifiers by using Simple Modifications. (Detail of input event modification chaining)">
+  <meta name="twitter:title" content="Details on changing to function keys">
+  <meta name="twitter:description" content="To send F1-F12 function keys to an application using Karabiner-Elements, there is a bit of a trick. This is because if you simply send an F1 key using Simple Modifications or Complex Modifications, it will be interpreted as media controls (e.g., display_brightness_decrement) by subsequent Function Keys Modifications or the macOS driver.
+Therefore, if you want to send F1-F12 keys to an application, you need to send fn&#43;F1-F12 instead.
+For example, the following Complex Modifications sends fn&#43;F2 (cell editing) to Excel with command&#43;e.">
 
 
 
@@ -116,8 +120,8 @@ Core features Simple Modifications: Change normal keys to other keys. Complex Mo
       <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docs-li">
   <a href="/docs/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section tree-root" id="m-docs"><span class="">Documentation</span></a>
   <ul class="ul-1">
-    <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docsgetting-started-li">
-  <input type="checkbox" id="m-docsgetting-started-check" checked/>
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsgetting-started-li">
+  <input type="checkbox" id="m-docsgetting-started-check"/>
   <label for="m-docsgetting-started-check"><a href="/docs/getting-started/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docsgetting-started"><span class="">Getting started</span></a></label>
   
   <ul class="ul-2 foldable">
@@ -125,9 +129,9 @@ Core features Simple Modifications: Change normal keys to other keys. Complex Mo
   <input type="checkbox" id="m-docsgetting-startedinstallation-check"/>
   <label for="m-docsgetting-startedinstallation-check"><a href="/docs/getting-started/installation/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-docsgetting-startedinstallation"><span class="">Installation</span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-docsgetting-startedfeatures-li">
-  <input type="checkbox" id="m-docsgetting-startedfeatures-check" checked/>
-  <label for="m-docsgetting-startedfeatures-check"><a href="/docs/getting-started/features/" class="align-left ps-0  active td-sidebar-link td-sidebar-link__page" id="m-docsgetting-startedfeatures"><span class="td-sidebar-nav-active-item">Features</span></a></label>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsgetting-startedfeatures-li">
+  <input type="checkbox" id="m-docsgetting-startedfeatures-check"/>
+  <label for="m-docsgetting-startedfeatures-check"><a href="/docs/getting-started/features/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-docsgetting-startedfeatures"><span class="">Features</span></a></label>
   
 </li>
   </ul>
@@ -259,8 +263,8 @@ Core features Simple Modifications: Change normal keys to other keys. Complex Mo
   </ul>
 </li>
   </ul>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docshelp-li">
-  <input type="checkbox" id="m-docshelp-check"/>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docshelp-li">
+  <input type="checkbox" id="m-docshelp-check" checked/>
   <label for="m-docshelp-check"><a href="/docs/help/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docshelp"><span class="">Help</span></a></label>
   
   <ul class="ul-2 foldable">
@@ -331,8 +335,8 @@ Core features Simple Modifications: Change normal keys to other keys. Complex Mo
   
 </li>
   </ul>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docshelphow-to-li">
-  <input type="checkbox" id="m-docshelphow-to-check"/>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docshelphow-to-li">
+  <input type="checkbox" id="m-docshelphow-to-check" checked/>
   <label for="m-docshelphow-to-check"><a href="/docs/help/how-to/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docshelphow-to"><span class="">How to</span></a></label>
   
   <ul class="ul-3 foldable">
@@ -360,9 +364,9 @@ Core features Simple Modifications: Change normal keys to other keys. Complex Mo
   <input type="checkbox" id="m-docshelphow-touse-before-logging-in-check"/>
   <label for="m-docshelphow-touse-before-logging-in-check"><a href="/docs/help/how-to/use-before-logging-in/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-docshelphow-touse-before-logging-in"><span class="">How to use Karabiner-Elements on the password entry screen before logging in</span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docshelphow-tofunction-keys-li">
-  <input type="checkbox" id="m-docshelphow-tofunction-keys-check"/>
-  <label for="m-docshelphow-tofunction-keys-check"><a href="/docs/help/how-to/function-keys/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-docshelphow-tofunction-keys"><span class="">Details on changing to function keys</span></a></label>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-docshelphow-tofunction-keys-li">
+  <input type="checkbox" id="m-docshelphow-tofunction-keys-check" checked/>
+  <label for="m-docshelphow-tofunction-keys-check"><a href="/docs/help/how-to/function-keys/" class="align-left ps-0  active td-sidebar-link td-sidebar-link__page" id="m-docshelphow-tofunction-keys"><span class="td-sidebar-nav-active-item">Details on changing to function keys</span></a></label>
   
 </li>
   </ul>
@@ -628,8 +632,7 @@ Core features Simple Modifications: Change normal keys to other keys. Complex Mo
 
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#core-features">Core features</a></li>
-    <li><a href="#current-limitations">Current limitations</a></li>
+    <li><a href="#more-user-friendly-configuration">More user-friendly configuration</a></li>
   </ul>
 </nav>
 
@@ -647,55 +650,114 @@ Core features Simple Modifications: Change normal keys to other keys. Complex Mo
   <li class="breadcrumb-item">
     <a href="/docs/">Documentation</a></li>
   <li class="breadcrumb-item">
-    <a href="/docs/getting-started/">Getting started</a></li>
+    <a href="/docs/help/">Help</a></li>
+  <li class="breadcrumb-item">
+    <a href="/docs/help/how-to/">How to</a></li>
   <li class="breadcrumb-item active" aria-current="page">
-    Features</li>
+    Details on changing to function keys</li>
   </ol>
 </nav>
             
 <div class="td-content">
-	<h1>Features</h1>
+	<h1>Details on changing to function keys</h1>
 	
 	<header class="article-meta">
 		
 </header>
-	<p>Karabiner-Elements is a powerful and stable keyboard customizer for macOS.</p>
-<h2 id="core-features">Core features</h2>
-<ul>
-<li><strong>Simple Modifications</strong>: Change normal keys to other keys.</li>
-<li><strong>Complex Modifications</strong>: Change keys by complex rules.
-<ul>
-<li>Change a key to combination of modifiers. (e.g. change capslock to control+command)</li>
-<li>Change modifiers+key to key. (e.g. change control+m to return)</li>
-<li>Send key events if a key is pressed alone.</li>
-<li>Send key events if keys are pressed simultaneously.</li>
-<li>Mouse keys.</li>
-<li>etc.</li>
-</ul>
-</li>
-<li><strong>Function Keys</strong>: Change f1-f12 keys to media controls.</li>
-<li><strong>Devices</strong>: Apply modifications to specified keyboards only.</li>
-<li><strong>Profiles</strong>: Support multiple profiles.</li>
-<li><strong>Modifier Flag Sync</strong>: Synchronize modifier flags across all connected keyboards.</li>
-<li><strong>Secure Keyboard Entry Support</strong>: Work well on Secure Keyboard Entry environment such as a password prompt, terminal with Secure Keyboard Entry, etc.</li>
-<li><strong>Extra Key Support</strong>: Enable extra keys on PC keyboard that are not recognized by default in macOS.
-<ul>
-<li>Home key on iPad keyboards such as Logitech K480</li>
-<li>International keys</li>
-<li>Language keys (e.g., <code>無変換</code>,<code>変換</code>, <code>カタカナ</code> keys on JIS PC keyboard)</li>
-<li>Application Launch Keys</li>
-</ul>
-</li>
-</ul>
-<h2 id="current-limitations">Current limitations</h2>
-<ul>
-<li>Karabiner-Elements cannot modify the eject key on some keyboard (e.g., Apple Wired Keyboard) due to the limitation of macOS API.</li>
-<li>Karabiner-Elements cannot modify the fn key on non-Apple keyboards such as Logitech keyboards.</li>
-<li>Karabiner-Elements ignores the <code>System Settings &gt; Keyboard &gt; Keyboard Shortcuts... &gt; Modifier Keys</code> configuration.<br/>
-Change modifiers by using Simple Modifications.
-<a href="../../manual/misc/event-modification-chaining/">(Detail of input event modification chaining)</a></li>
-</ul>
-
+	<p>To send F1-F12 function keys to an application using Karabiner-Elements, there is a bit of a trick.
+This is because if you simply send an F1 key using Simple Modifications or Complex Modifications,
+it will be interpreted as media controls (e.g., display_brightness_decrement) by subsequent Function Keys Modifications or the macOS driver.</p>
+<p>Therefore, if you want to send F1-F12 keys to an application, you need to send <kbd>fn+F1-F12</kbd> instead.</p>
+<p>For example, the following Complex Modifications sends <kbd>fn+F2</kbd> (cell editing) to Excel with <kbd>command+e</kbd>.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;description&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;Excel example&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;manipulators&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;type&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;basic&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;from&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">&#34;key_code&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;e&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">&#34;modifiers&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;mandatory&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">&#34;command&#34;</span><span style="color:#000;font-weight:bold">],</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;optional&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">&#34;caps_lock&#34;</span><span style="color:#000;font-weight:bold">]</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">},</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;to&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;key_code&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;f2&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;modifiers&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">&#34;fn&#34;</span><span style="color:#000;font-weight:bold">]</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">],</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;conditions&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;bundle_identifiers&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">&#34;^com\\.microsoft\\.Excel$&#34;</span><span style="color:#000;font-weight:bold">],</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;type&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;frontmost_application_if&#34;</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">]</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">]</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></div><h2 id="more-user-friendly-configuration">More user-friendly configuration</h2>
+<p>The above configuration works well only when &ldquo;Use F1, F2, etc. keys as standard function keys&rdquo; is disabled in System Settings.
+If you want it to work in both cases, use <code>variable_if</code> to handle the conditions as shown below.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;description&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;Excel example 2&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;manipulators&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;type&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;basic&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;from&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">&#34;key_code&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;e&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">&#34;modifiers&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;mandatory&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">&#34;command&#34;</span><span style="color:#000;font-weight:bold">],</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;optional&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">&#34;caps_lock&#34;</span><span style="color:#000;font-weight:bold">]</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">},</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;to&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;key_code&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;f2&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;modifiers&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">&#34;fn&#34;</span><span style="color:#000;font-weight:bold">]</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">],</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;conditions&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;type&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;frontmost_application_if&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;bundle_identifiers&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">&#34;^com\\.microsoft\\.Excel$&#34;</span><span style="color:#000;font-weight:bold">]</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">},</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;type&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;variable_if&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;name&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;system.use_fkeys_as_standard_function_keys&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;value&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#204a87;font-weight:bold">false</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">]</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">},</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;type&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;basic&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;from&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">&#34;key_code&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;e&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">&#34;modifiers&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;mandatory&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">&#34;command&#34;</span><span style="color:#000;font-weight:bold">],</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;optional&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">&#34;caps_lock&#34;</span><span style="color:#000;font-weight:bold">]</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">},</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;to&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;key_code&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;f2&#34;</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">],</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;conditions&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;type&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;frontmost_application_if&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;bundle_identifiers&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">&#34;^com\\.microsoft\\.Excel$&#34;</span><span style="color:#000;font-weight:bold">]</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">},</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;type&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;variable_if&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;name&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;system.use_fkeys_as_standard_function_keys&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;value&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#204a87;font-weight:bold">true</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">]</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">]</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></div>
 	
 </div>
 

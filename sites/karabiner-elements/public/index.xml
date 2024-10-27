@@ -463,6 +463,13 @@
       <description>&lt;p&gt;Karabiner-Elements shows an icon in menu bar which provides the following functions:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Switch profiles.&lt;/li&gt;&#xA;&lt;li&gt;Open Settings.&lt;/li&gt;&#xA;&lt;li&gt;Open EventViewer.&lt;/li&gt;&#xA;&lt;li&gt;Quit Karabiner-Elements.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;figure&gt;&#xA;  &lt;img&#xA;    src=&#34;/docs/manual/configuration/configure-menu-bar-icon/images/menu@2x.png&#34;&#xA;    alt=&#34;menu@2x.png&#34;&#xA;    style=&#34;width: 376px&#34;&#xA;  /&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;If you want to hide it, turn off &amp;ldquo;Show icon in menu bar&amp;rdquo; on Settings &amp;gt; Misc tab.&lt;/p&gt;&#xA;&lt;figure&gt;&#xA;  &lt;img&#xA;    src=&#34;/docs/manual/configuration/configure-menu-bar-icon/images/menu-bar-icon-settings@2x.png&#34;&#xA;    alt=&#34;menu-bar-icon-settings@2x.png&#34;&#xA;    style=&#34;width: 1100px&#34;&#xA;  /&gt;&#xA;&lt;/figure&gt;</description>
     </item>
     <item>
+      <title>Details on changing to function keys</title>
+      <link>/docs/help/how-to/function-keys/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/help/how-to/function-keys/</guid>
+      <description>&lt;p&gt;To send F1-F12 function keys to an application using Karabiner-Elements, there is a bit of a trick.&#xA;This is because if you simply send an F1 key using Simple Modifications or Complex Modifications,&#xA;it will be interpreted as media controls (e.g., display_brightness_decrement) by subsequent Function Keys Modifications or the macOS driver.&lt;/p&gt;&#xA;&lt;p&gt;Therefore, if you want to send F1-F12 keys to an application, you need to send &lt;kbd&gt;fn+F1-F12&lt;/kbd&gt; instead.&lt;/p&gt;&#xA;&lt;p&gt;For example, the following Complex Modifications sends &lt;kbd&gt;fn+F2&lt;/kbd&gt; (cell editing) to Excel with &lt;kbd&gt;command+e&lt;/kbd&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>event_changed_if, event_changed_unless</title>
       <link>/docs/json/complex-modifications-manipulator-definition/conditions/event-changed/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
