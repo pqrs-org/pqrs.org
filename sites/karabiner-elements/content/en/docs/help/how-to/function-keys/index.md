@@ -44,7 +44,11 @@ For example, the following Complex Modifications sends <kbd>fn+F2</kbd> (cell ed
 ## More user-friendly configuration
 
 The above configuration works well only when "Use F1, F2, etc. keys as standard function keys" is disabled in System Settings.
-If you want it to work in both cases, use `variable_if` to handle the conditions as shown below.
+If you want it to work in both cases, use `variable_if` and `variable_unless` to handle the conditions as shown below.
+
+{{% alert title="Notes" color="primary" %}}
+`system.use_fkeys_as_standard_function_keys` is available since Karabiner-Elements 15.2.3.
+{{% /alert %}}
 
 ```json
 {
@@ -71,9 +75,9 @@ If you want it to work in both cases, use `variable_if` to handle the conditions
                     "bundle_identifiers": ["^com\\.microsoft\\.Excel$"]
                 },
                 {
-                    "type": "variable_if",
+                    "type": "variable_unless",
                     "name": "system.use_fkeys_as_standard_function_keys",
-                    "value": false
+                    "value": true
                 }
             ]
         },
