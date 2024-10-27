@@ -110,3 +110,67 @@ If you want it to work in both cases, use `variable_if` and `variable_unless` to
     ]
 }
 ```
+
+---
+
+## Other examples
+
+### Swap f12 and volume_increment in Google Chrome
+
+In practice, swap F12 with fn+F12.
+
+```json
+{
+    "description": "Swap f12 in Google Chrome",
+    "manipulators": [
+        {
+            "type": "basic",
+            "from": {
+                "key_code": "f12",
+                "modifiers": {
+                    "mandatory": ["fn"],
+                    "optional": ["any"]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "f12"
+                }
+            ],
+            "conditions": [
+                {
+                    "bundle_identifiers": ["^com\\.google\\.Chrome$"],
+                    "type": "frontmost_application_if"
+                }
+            ]
+        },
+        {
+            "type": "basic",
+            "from": {
+                "key_code": "f12",
+                "modifiers": {
+                    "optional": [
+                        "caps_lock",
+                        "command",
+                        "control",
+                        "option",
+                        "shift"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "f12",
+                    "modifiers": ["fn"]
+                }
+            ],
+            "conditions": [
+                {
+                    "bundle_identifiers": ["^com\\.google\\.Chrome$"],
+                    "type": "frontmost_application_if"
+                }
+            ]
+        }
+    ]
+}
+```
