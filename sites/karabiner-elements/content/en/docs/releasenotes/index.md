@@ -20,6 +20,8 @@ body_class: release-notes
 -   ⚡️ Improvements
     -   The key names in the Function Keys settings became clearer when "Use all F1, F2, etc. keys as standard function keys" is enabled.
 
+[Details of Breaking Changes in v15.1.0](/docs/help/troubleshooting/breaking-changes/#karabiner-elements-1510)
+
 ## Karabiner-Elements 15.2.0
 
 -   [📦 Download](https://github.com/pqrs-org/Karabiner-Elements/releases/download/v15.2.0/Karabiner-Elements-15.2.0.dmg)

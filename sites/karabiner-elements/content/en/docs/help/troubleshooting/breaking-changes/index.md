@@ -38,5 +38,6 @@ However, if you explicitly want to change them to home, end, etc., please use Co
 -   The "Use all F1, F2, etc. keys as standard function keys" setting now needs to be changed from System Settings.
 -   For the F1-F12 key events sent by Karabiner-Elements, macOS will convert them once again into media keys (e.g., sending F10 will trigger mute).
     If you want to send F1-F12 as-is using Complex Modifications, you will need to send fn+F1-F12 through Karabiner-Elements.
+-   [Details on changing to function keys](/docs/help/how-to/function-keys/)
 
 ---
