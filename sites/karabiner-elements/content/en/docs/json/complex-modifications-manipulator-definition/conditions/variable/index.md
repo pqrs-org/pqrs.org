@@ -16,7 +16,10 @@ Change an event if/unless the variable is the specified value.
 
 {{% alert title="Tip" color="primary" %}}
 
-`variable_if` and `variable_unless` are designed to use with [`set_variable`](../../to/set-variable/).
+`variable_if` and `variable_unless` are designed to be used with the following features:
+
+-   [`set_variable`](../../to/set-variable/)
+-   [`--set-variables` in command line interface](/docs/manual/misc/command-line-interface/)
 
 {{% /alert %}}
 
@@ -65,3 +68,12 @@ If the variable is not set to a value, the value is treated as `0`.
 You can see the current variable values by EventViewer > Variables.
 
 {{< local-image src="images/eventviewer-variables@2x.png" >}}
+
+## System variables
+
+Some variables are automatically set by Karabiner-Elements.
+
+| Name                                         | Type    | Data source                                                                          | Available since           |
+| -------------------------------------------- | ------- | ------------------------------------------------------------------------------------ | ------------------------- |
+| `system.scroll_direction_is_natural`         | boolean | The scroll direction setting of mouse in System Settings                             | Karabiner-Elements 15.2.3 |
+| `system.use_fkeys_as_standard_function_keys` | boolean | The "Use all F1, F2, etc. keys as standard function keys" setting in System Settings | Karabiner-Elements 15.2.3 |
