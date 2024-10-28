@@ -6,6 +6,20 @@ exclude_search: true
 body_class: release-notes
 ---
 
+## Karabiner-Elements 15.3.0
+
+-   [📦 Download](https://github.com/pqrs-org/Karabiner-Elements/releases/download/v15.3.0/Karabiner-Elements-15.3.0.dmg)
+-   📅 Release date
+    -   Oct 28, 2024
+-   🐛 Bug Fixes
+    -   Fixed the behavior when setting the function keys to act as regular f1...f12 keys instead of media controls.
+-   ✨ New Features
+    -   Added the following variables for `variable_if`, `variable_unless`:
+        -   `system.scroll_direction_is_natural`
+        -   `system.use_fkeys_as_standard_function_keys`
+-   ⚡️ Improvements
+    -   The key names in the Function Keys settings became clearer when "Use all F1, F2, etc. keys as standard function keys" is enabled.
+
 ## Karabiner-Elements 15.2.0
 
 -   [📦 Download](https://github.com/pqrs-org/Karabiner-Elements/releases/download/v15.2.0/Karabiner-Elements-15.2.0.dmg)
