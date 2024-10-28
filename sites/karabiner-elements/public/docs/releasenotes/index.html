@@ -18,28 +18,24 @@
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
 <title>Release notes | Karabiner-Elements</title>
-<meta name="description" content="Karabiner-Elements 15.2.0 📦 Download 📅 Release date Oct 7, 2024 🐛 Bug Fixes The method for setting &ldquo;Use all F1, F2, etc. keys as standard function keys&rdquo; has been changed. Due to internal processing in macOS, with the new virtual keyboard introduced in version 15.1.0, this setting must be changed through System Settings. Details of Breaking Changes in v15.1.0
-Karabiner-Elements 15.1.0 📦 Download 📅 Release date Oct 6, 2024 🔔 Important Notes After the upgrade, you have to set keyboard type and restart macOS. 💥 Breaking changes The implicit conversion feature for fn&#43;arrow keys, fn&#43;return, and fn&#43;delete has been removed. For example, fn&#43;up arrow used to be automatically changed to page up, but it will now be treated as fn&#43;up arrow without modification. To improve the behavior around the fn key, the Vendor ID and Product ID of the virtual keyboard used by Karabiner-Elements have been changed to the same values as those of a real Apple external keyboard. There were two JSON files that output information about connected devices, but this information has now been consolidated into karabiner_grabber_devices.json. karabiner_grabber_device_details.json is no longer used. Please use karabiner_grabber_devices.json from now on. karabiner_grabber_devices.json karabiner_grabber_device_details.json (obsoleted) ✨ New Features Added open_application to complex modifications. A setting has been added to disable mouse cursor movement and scrolling for both the mouse and gamepad. Settings of the gamepad stick have been added; deadzone and delta magnitude detection threshold. Added an option to allow quitting EventViewer with Command&#43;Q and Command&#43;W. ⚡️ Improvements Fixed an issue where disconnected devices would occasionally remain in the device list. Updated the embedded screenshots and help messages for macOS 15 Sequoia. Adjusted the gamepad deadzone default value. Details of Breaking Changes in v15.1.0">
+<meta name="description" content="Karabiner-Elements 15.3.0 📦 Download 📅 Release date Oct 28, 2024 🐛 Bug Fixes Fixed the behavior when setting the function keys to act as regular f1&hellip;f12 keys instead of media controls. ✨ New Features Added the following variables for variable_if, variable_unless: system.scroll_direction_is_natural system.use_fkeys_as_standard_function_keys ⚡️ Improvements The key names in the Function Keys settings became clearer when &ldquo;Use all F1, F2, etc. keys as standard function keys&rdquo; is enabled. Details of Breaking Changes in v15.1.0">
 <meta property="og:url" content="/docs/releasenotes/">
   <meta property="og:site_name" content="Karabiner-Elements">
   <meta property="og:title" content="Release notes">
-  <meta property="og:description" content="Karabiner-Elements 15.2.0 📦 Download 📅 Release date Oct 7, 2024 🐛 Bug Fixes The method for setting “Use all F1, F2, etc. keys as standard function keys” has been changed. Due to internal processing in macOS, with the new virtual keyboard introduced in version 15.1.0, this setting must be changed through System Settings. Details of Breaking Changes in v15.1.0
-Karabiner-Elements 15.1.0 📦 Download 📅 Release date Oct 6, 2024 🔔 Important Notes After the upgrade, you have to set keyboard type and restart macOS. 💥 Breaking changes The implicit conversion feature for fn&#43;arrow keys, fn&#43;return, and fn&#43;delete has been removed. For example, fn&#43;up arrow used to be automatically changed to page up, but it will now be treated as fn&#43;up arrow without modification. To improve the behavior around the fn key, the Vendor ID and Product ID of the virtual keyboard used by Karabiner-Elements have been changed to the same values as those of a real Apple external keyboard. There were two JSON files that output information about connected devices, but this information has now been consolidated into karabiner_grabber_devices.json. karabiner_grabber_device_details.json is no longer used. Please use karabiner_grabber_devices.json from now on. karabiner_grabber_devices.json karabiner_grabber_device_details.json (obsoleted) ✨ New Features Added open_application to complex modifications. A setting has been added to disable mouse cursor movement and scrolling for both the mouse and gamepad. Settings of the gamepad stick have been added; deadzone and delta magnitude detection threshold. Added an option to allow quitting EventViewer with Command&#43;Q and Command&#43;W. ⚡️ Improvements Fixed an issue where disconnected devices would occasionally remain in the device list. Updated the embedded screenshots and help messages for macOS 15 Sequoia. Adjusted the gamepad deadzone default value. Details of Breaking Changes in v15.1.0">
+  <meta property="og:description" content="Karabiner-Elements 15.3.0 📦 Download 📅 Release date Oct 28, 2024 🐛 Bug Fixes Fixed the behavior when setting the function keys to act as regular f1…f12 keys instead of media controls. ✨ New Features Added the following variables for variable_if, variable_unless: system.scroll_direction_is_natural system.use_fkeys_as_standard_function_keys ⚡️ Improvements The key names in the Function Keys settings became clearer when “Use all F1, F2, etc. keys as standard function keys” is enabled. Details of Breaking Changes in v15.1.0">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
     <meta property="og:image" content="https://karabiner-elements.pqrs.org/images/logo.png">
 
   <meta itemprop="name" content="Release notes">
-  <meta itemprop="description" content="Karabiner-Elements 15.2.0 📦 Download 📅 Release date Oct 7, 2024 🐛 Bug Fixes The method for setting “Use all F1, F2, etc. keys as standard function keys” has been changed. Due to internal processing in macOS, with the new virtual keyboard introduced in version 15.1.0, this setting must be changed through System Settings. Details of Breaking Changes in v15.1.0
-Karabiner-Elements 15.1.0 📦 Download 📅 Release date Oct 6, 2024 🔔 Important Notes After the upgrade, you have to set keyboard type and restart macOS. 💥 Breaking changes The implicit conversion feature for fn&#43;arrow keys, fn&#43;return, and fn&#43;delete has been removed. For example, fn&#43;up arrow used to be automatically changed to page up, but it will now be treated as fn&#43;up arrow without modification. To improve the behavior around the fn key, the Vendor ID and Product ID of the virtual keyboard used by Karabiner-Elements have been changed to the same values as those of a real Apple external keyboard. There were two JSON files that output information about connected devices, but this information has now been consolidated into karabiner_grabber_devices.json. karabiner_grabber_device_details.json is no longer used. Please use karabiner_grabber_devices.json from now on. karabiner_grabber_devices.json karabiner_grabber_device_details.json (obsoleted) ✨ New Features Added open_application to complex modifications. A setting has been added to disable mouse cursor movement and scrolling for both the mouse and gamepad. Settings of the gamepad stick have been added; deadzone and delta magnitude detection threshold. Added an option to allow quitting EventViewer with Command&#43;Q and Command&#43;W. ⚡️ Improvements Fixed an issue where disconnected devices would occasionally remain in the device list. Updated the embedded screenshots and help messages for macOS 15 Sequoia. Adjusted the gamepad deadzone default value. Details of Breaking Changes in v15.1.0">
-  <meta itemprop="wordCount" content="8001">
+  <meta itemprop="description" content="Karabiner-Elements 15.3.0 📦 Download 📅 Release date Oct 28, 2024 🐛 Bug Fixes Fixed the behavior when setting the function keys to act as regular f1…f12 keys instead of media controls. ✨ New Features Added the following variables for variable_if, variable_unless: system.scroll_direction_is_natural system.use_fkeys_as_standard_function_keys ⚡️ Improvements The key names in the Function Keys settings became clearer when “Use all F1, F2, etc. keys as standard function keys” is enabled. Details of Breaking Changes in v15.1.0">
+  <meta itemprop="wordCount" content="8075">
   <meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://karabiner-elements.pqrs.org/images/logo.png">
   <meta name="twitter:title" content="Release notes">
-  <meta name="twitter:description" content="Karabiner-Elements 15.2.0 📦 Download 📅 Release date Oct 7, 2024 🐛 Bug Fixes The method for setting “Use all F1, F2, etc. keys as standard function keys” has been changed. Due to internal processing in macOS, with the new virtual keyboard introduced in version 15.1.0, this setting must be changed through System Settings. Details of Breaking Changes in v15.1.0
-Karabiner-Elements 15.1.0 📦 Download 📅 Release date Oct 6, 2024 🔔 Important Notes After the upgrade, you have to set keyboard type and restart macOS. 💥 Breaking changes The implicit conversion feature for fn&#43;arrow keys, fn&#43;return, and fn&#43;delete has been removed. For example, fn&#43;up arrow used to be automatically changed to page up, but it will now be treated as fn&#43;up arrow without modification. To improve the behavior around the fn key, the Vendor ID and Product ID of the virtual keyboard used by Karabiner-Elements have been changed to the same values as those of a real Apple external keyboard. There were two JSON files that output information about connected devices, but this information has now been consolidated into karabiner_grabber_devices.json. karabiner_grabber_device_details.json is no longer used. Please use karabiner_grabber_devices.json from now on. karabiner_grabber_devices.json karabiner_grabber_device_details.json (obsoleted) ✨ New Features Added open_application to complex modifications. A setting has been added to disable mouse cursor movement and scrolling for both the mouse and gamepad. Settings of the gamepad stick have been added; deadzone and delta magnitude detection threshold. Added an option to allow quitting EventViewer with Command&#43;Q and Command&#43;W. ⚡️ Improvements Fixed an issue where disconnected devices would occasionally remain in the device list. Updated the embedded screenshots and help messages for macOS 15 Sequoia. Adjusted the gamepad deadzone default value. Details of Breaking Changes in v15.1.0">
+  <meta name="twitter:description" content="Karabiner-Elements 15.3.0 📦 Download 📅 Release date Oct 28, 2024 🐛 Bug Fixes Fixed the behavior when setting the function keys to act as regular f1…f12 keys instead of media controls. ✨ New Features Added the following variables for variable_if, variable_unless: system.scroll_direction_is_natural system.use_fkeys_as_standard_function_keys ⚡️ Improvements The key names in the Function Keys settings became clearer when “Use all F1, F2, etc. keys as standard function keys” is enabled. Details of Breaking Changes in v15.1.0">
 
 
 
@@ -79,7 +75,7 @@ Karabiner-Elements 15.1.0 📦 Download 📅 Release date Oct 6, 2024 🔔 Impor
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.cb105bfcabf47782171f1f8a78c83a5a.json"
+    data-offline-search-index-json-src="/offline-search-index.19847695d62291cc38f1bfc93e1835c0.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="25"
   >
@@ -103,7 +99,7 @@ Karabiner-Elements 15.1.0 📦 Download 📅 Release date Oct 6, 2024 🔔 Impor
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.cb105bfcabf47782171f1f8a78c83a5a.json"
+    data-offline-search-index-json-src="/offline-search-index.19847695d62291cc38f1bfc93e1835c0.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="25"
   >
@@ -628,6 +624,7 @@ Karabiner-Elements 15.1.0 📦 Download 📅 Release date Oct 6, 2024 🔔 Impor
 
 <nav id="TableOfContents">
   <ul>
+    <li><a href="#karabiner-elements-1530">Karabiner-Elements 15.3.0</a></li>
     <li><a href="#karabiner-elements-1520">Karabiner-Elements 15.2.0</a></li>
     <li><a href="#karabiner-elements-1510">Karabiner-Elements 15.1.0</a></li>
     <li><a href="#karabiner-elements-1500">Karabiner-Elements 15.0.0</a></li>
@@ -762,7 +759,37 @@ Karabiner-Elements 15.1.0 📦 Download 📅 Release date Oct 6, 2024 🔔 Impor
 	<header class="article-meta">
 		
 </header>
-	<h2 id="karabiner-elements-1520">Karabiner-Elements 15.2.0</h2>
+	<h2 id="karabiner-elements-1530">Karabiner-Elements 15.3.0</h2>
+<ul>
+<li><a href="https://github.com/pqrs-org/Karabiner-Elements/releases/download/v15.3.0/Karabiner-Elements-15.3.0.dmg">📦 Download</a></li>
+<li>📅 Release date
+<ul>
+<li>Oct 28, 2024</li>
+</ul>
+</li>
+<li>🐛 Bug Fixes
+<ul>
+<li>Fixed the behavior when setting the function keys to act as regular f1&hellip;f12 keys instead of media controls.</li>
+</ul>
+</li>
+<li>✨ New Features
+<ul>
+<li>Added the following variables for <code>variable_if</code>, <code>variable_unless</code>:
+<ul>
+<li><code>system.scroll_direction_is_natural</code></li>
+<li><code>system.use_fkeys_as_standard_function_keys</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>⚡️ Improvements
+<ul>
+<li>The key names in the Function Keys settings became clearer when &ldquo;Use all F1, F2, etc. keys as standard function keys&rdquo; is enabled.</li>
+</ul>
+</li>
+</ul>
+<p><a href="/docs/help/troubleshooting/breaking-changes/#karabiner-elements-1510">Details of Breaking Changes in v15.1.0</a></p>
+<h2 id="karabiner-elements-1520">Karabiner-Elements 15.2.0</h2>
 <ul>
 <li><a href="https://github.com/pqrs-org/Karabiner-Elements/releases/download/v15.2.0/Karabiner-Elements-15.2.0.dmg">📦 Download</a></li>
 <li>📅 Release date
