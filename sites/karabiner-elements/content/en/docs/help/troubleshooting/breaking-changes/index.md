@@ -38,7 +38,7 @@ However, if you explicitly want to change them to home, end, etc., please use Co
     You will need to hold the key for about 100 milliseconds to toggle Caps Lock on or off.
     -   If you want to toggle Caps Lock immediately upon pressing the key, please enable this setting:
         <https://ke-complex-modifications.pqrs.org/#disable_accidental_keystroke_prevention_of_caps_lock>
-    -   If you are writing your own Complex Modifications, please use [hold_down_milliseconds](/docs/json/complex-modifications-manipulator-definition/to/hold-down-milliseconds/).
+    -   If you are writing your own Complex Modifications, please use [hold_down_milliseconds](/docs/json/complex-modifications-manipulator-definition/to/hold-down-milliseconds/) and append `vk_none` after `caps_lock`.
 
 {{% alert title="Migration Example" color="primary" %}}
 
@@ -86,6 +86,21 @@ After
         }
     ]
 }
+```
+
+Diff
+
+```diff
+            "to": [
+-                {
+-                    "key_code": "caps_lock"
+-                }
++                {
++                    "key_code": "caps_lock",
++                    "hold_down_milliseconds": 200
++                },
++                { "key_code": "vk_none" }
+            ],
 ```
 
 {{% /alert %}}
