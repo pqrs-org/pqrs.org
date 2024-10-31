@@ -37,3 +37,10 @@ The following json changes `caps_lock` key to sending `caps_lock key_down`, `wai
     ]
 }
 ```
+
+{{% alert title="Note" color="primary" %}}
+
+vk_none is needed to ignore the hardware key_up event.
+Without adding vk_none, a key_down and key_up event for caps_lock will be sent for each hardware key_down and key_up event, meaning hold_down_milliseconds will not be applied between the key_down and key_up events.
+
+{{% /alert %}}
