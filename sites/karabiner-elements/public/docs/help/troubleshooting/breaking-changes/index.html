@@ -36,7 +36,7 @@ Modifiers The virtual keyboard settings under System Settings &gt; Keyboard &gt;
   <meta itemprop="description" content="In principle, Karabiner-Elements is developed to maintain compatibility with past versions. However, breaking changes may be made for reasons such as keeping up with macOS updates. This page provides information regarding those changes.
 Karabiner-Elements 15.1.0 The following changes have been made due to the update where the virtual keyboard now uses the Vendor ID and Product ID of the Apple Aluminum USB Keyboard (A1243):
 Modifiers The virtual keyboard settings under System Settings &gt; Keyboard &gt; Keyboard Shortcuts... &gt; Modifier Keys will now be shared with those of the Apple Aluminum USB Keyboard (A1243). If you’ve used this keyboard before, it’s worth reviewing your settings. Function Keys The “Use all F1, F2, etc. keys as standard function keys” setting now needs to be changed from System Settings. For the F1-F12 key events sent by Karabiner-Elements, macOS will convert them once again into media keys (e.g., sending F10 will trigger mute). If you want to send F1-F12 as-is using Complex Modifications, you will need to send fn&#43;F1-F12 through Karabiner-Elements. Details on changing to function keys Fn Key (Globe Key) In previous versions, fn&#43;arrow keys were converted to page up, page down, home, and end, but this behavior has been discontinued.">
-  <meta itemprop="wordCount" content="381">
+  <meta itemprop="wordCount" content="412">
   <meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://karabiner-elements.pqrs.org/images/logo.png">
@@ -83,7 +83,7 @@ Modifiers The virtual keyboard settings under System Settings &gt; Keyboard &gt;
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.be82e81bd8f73b70368d4e1c708cf777.json"
+    data-offline-search-index-json-src="/offline-search-index.c6f0434425fd5a1bdcd07175d98480ea.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="25"
   >
@@ -107,7 +107,7 @@ Modifiers The virtual keyboard settings under System Settings &gt; Keyboard &gt;
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.be82e81bd8f73b70368d4e1c708cf777.json"
+    data-offline-search-index-json-src="/offline-search-index.c6f0434425fd5a1bdcd07175d98480ea.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="25"
   >
@@ -708,7 +708,7 @@ You will need to hold the key for about 100 milliseconds to toggle Caps Lock on 
 <ul>
 <li>If you want to toggle Caps Lock immediately upon pressing the key, please enable this setting:
 <a href="https://ke-complex-modifications.pqrs.org/#disable_accidental_keystroke_prevention_of_caps_lock">https://ke-complex-modifications.pqrs.org/#disable_accidental_keystroke_prevention_of_caps_lock</a></li>
-<li>If you are writing your own Complex Modifications, please use <a href="/docs/json/complex-modifications-manipulator-definition/to/hold-down-milliseconds/">hold_down_milliseconds</a>.</li>
+<li>If you are writing your own Complex Modifications, please use <a href="/docs/json/complex-modifications-manipulator-definition/to/hold-down-milliseconds/">hold_down_milliseconds</a> and append <code>vk_none</code> after <code>caps_lock</code>.</li>
 </ul>
 </li>
 </ul>
@@ -755,6 +755,17 @@ You will need to hold the key for about 100 milliseconds to toggle Caps Lock on 
 </span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">}</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">]</span>
 </span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></div><p>Diff</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-diff" data-lang="diff"><span style="display:flex;"><span>            &#34;to&#34;: [
+</span></span><span style="display:flex;"><span><span style="color:#a40000">-                {
+</span></span></span><span style="display:flex;"><span><span style="color:#a40000">-                    &#34;key_code&#34;: &#34;caps_lock&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#a40000">-                }
+</span></span></span><span style="display:flex;"><span><span style="color:#a40000"></span><span style="color:#00a000">+                {
+</span></span></span><span style="display:flex;"><span><span style="color:#00a000">+                    &#34;key_code&#34;: &#34;caps_lock&#34;,
+</span></span></span><span style="display:flex;"><span><span style="color:#00a000">+                    &#34;hold_down_milliseconds&#34;: 200
+</span></span></span><span style="display:flex;"><span><span style="color:#00a000">+                },
+</span></span></span><span style="display:flex;"><span><span style="color:#00a000">+                { &#34;key_code&#34;: &#34;vk_none&#34; }
+</span></span></span><span style="display:flex;"><span><span style="color:#00a000"></span>            ],
 </span></span></code></pre></div>
 
 </div>
