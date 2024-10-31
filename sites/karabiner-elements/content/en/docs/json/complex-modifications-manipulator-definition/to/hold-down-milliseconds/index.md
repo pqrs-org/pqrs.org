@@ -19,20 +19,25 @@ The following json changes `caps_lock` key to sending `caps_lock key_down`, `wai
 
 ```json
 {
-    "type": "basic",
-    "from": {
-        "key_code": "caps_lock",
-        "modifiers": {
-            "optional": ["any"]
-        }
-    },
-    "to": [
+    "description": "Disable the accidental keystroke prevention of Caps Lock",
+    "manipulators": [
         {
-            "key_code": "caps_lock",
-            "hold_down_milliseconds": 200
-        },
-        {
-            "key_code": "vk_none"
+            "type": "basic",
+            "from": {
+                "key_code": "caps_lock",
+                "modifiers": {
+                    "optional": ["any"]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "caps_lock",
+                    "hold_down_milliseconds": 200
+                },
+                {
+                    "key_code": "vk_none"
+                }
+            ]
         }
     ]
 }
