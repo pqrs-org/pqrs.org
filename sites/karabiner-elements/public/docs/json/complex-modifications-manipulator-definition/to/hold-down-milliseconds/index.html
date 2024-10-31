@@ -21,14 +21,14 @@
 <meta name="description" content="to.hold_down_milliseconds is an integer value. The default value is 0.
 The value is an interval of key_down and key_up when key_down and key_up events are sent at the same time such as multiple to events.
 Note Generally to.hold_down_milliseconds is used with &quot;key_code&quot;: &quot;caps_lock&quot;. Example The following json changes caps_lock key to sending caps_lock key_down, wait 200 milliseconds, caps_lock key_up.
-{ &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;caps_lock&#34;, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [ { &#34;key_code&#34;: &#34;caps_lock&#34;, &#34;hold_down_milliseconds&#34;: 200 }, { &#34;key_code&#34;: &#34;vk_none&#34; } ] } Note vk_none is needed to ignore the hardware key_up event. Without adding vk_none, a key_down and key_up event for caps_lock will be sent for each hardware key_down and key_up event, meaning hold_down_milliseconds will not be applied between the key_down and key_up events. ">
+{ &#34;description&#34;: &#34;Disable the accidental keystroke prevention of Caps Lock&#34;, &#34;manipulators&#34;: [ { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;caps_lock&#34;, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [ { &#34;key_code&#34;: &#34;caps_lock&#34;, &#34;hold_down_milliseconds&#34;: 200 }, { &#34;key_code&#34;: &#34;vk_none&#34; } ] } ] } Note vk_none is needed to ignore the hardware key_up event. Without adding vk_none, a key_down and key_up event for caps_lock will be sent for each hardware key_down and key_up event, meaning hold_down_milliseconds will not be applied between the key_down and key_up events. ">
 <meta property="og:url" content="/docs/json/complex-modifications-manipulator-definition/to/hold-down-milliseconds/">
   <meta property="og:site_name" content="Karabiner-Elements">
   <meta property="og:title" content="to.hold_down_milliseconds">
   <meta property="og:description" content="to.hold_down_milliseconds is an integer value. The default value is 0.
 The value is an interval of key_down and key_up when key_down and key_up events are sent at the same time such as multiple to events.
 Note Generally to.hold_down_milliseconds is used with &#34;key_code&#34;: &#34;caps_lock&#34;. Example The following json changes caps_lock key to sending caps_lock key_down, wait 200 milliseconds, caps_lock key_up.
-{ &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;caps_lock&#34;, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [ { &#34;key_code&#34;: &#34;caps_lock&#34;, &#34;hold_down_milliseconds&#34;: 200 }, { &#34;key_code&#34;: &#34;vk_none&#34; } ] } Note vk_none is needed to ignore the hardware key_up event. Without adding vk_none, a key_down and key_up event for caps_lock will be sent for each hardware key_down and key_up event, meaning hold_down_milliseconds will not be applied between the key_down and key_up events.">
+{ &#34;description&#34;: &#34;Disable the accidental keystroke prevention of Caps Lock&#34;, &#34;manipulators&#34;: [ { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;caps_lock&#34;, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [ { &#34;key_code&#34;: &#34;caps_lock&#34;, &#34;hold_down_milliseconds&#34;: 200 }, { &#34;key_code&#34;: &#34;vk_none&#34; } ] } ] } Note vk_none is needed to ignore the hardware key_up event. Without adding vk_none, a key_down and key_up event for caps_lock will be sent for each hardware key_down and key_up event, meaning hold_down_milliseconds will not be applied between the key_down and key_up events.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
@@ -38,8 +38,8 @@ Note Generally to.hold_down_milliseconds is used with &#34;key_code&#34;: &#34;c
   <meta itemprop="description" content="to.hold_down_milliseconds is an integer value. The default value is 0.
 The value is an interval of key_down and key_up when key_down and key_up events are sent at the same time such as multiple to events.
 Note Generally to.hold_down_milliseconds is used with &#34;key_code&#34;: &#34;caps_lock&#34;. Example The following json changes caps_lock key to sending caps_lock key_down, wait 200 milliseconds, caps_lock key_up.
-{ &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;caps_lock&#34;, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [ { &#34;key_code&#34;: &#34;caps_lock&#34;, &#34;hold_down_milliseconds&#34;: 200 }, { &#34;key_code&#34;: &#34;vk_none&#34; } ] } Note vk_none is needed to ignore the hardware key_up event. Without adding vk_none, a key_down and key_up event for caps_lock will be sent for each hardware key_down and key_up event, meaning hold_down_milliseconds will not be applied between the key_down and key_up events.">
-  <meta itemprop="wordCount" content="128">
+{ &#34;description&#34;: &#34;Disable the accidental keystroke prevention of Caps Lock&#34;, &#34;manipulators&#34;: [ { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;caps_lock&#34;, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [ { &#34;key_code&#34;: &#34;caps_lock&#34;, &#34;hold_down_milliseconds&#34;: 200 }, { &#34;key_code&#34;: &#34;vk_none&#34; } ] } ] } Note vk_none is needed to ignore the hardware key_up event. Without adding vk_none, a key_down and key_up event for caps_lock will be sent for each hardware key_down and key_up event, meaning hold_down_milliseconds will not be applied between the key_down and key_up events.">
+  <meta itemprop="wordCount" content="142">
   <meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://karabiner-elements.pqrs.org/images/logo.png">
@@ -47,7 +47,7 @@ Note Generally to.hold_down_milliseconds is used with &#34;key_code&#34;: &#34;c
   <meta name="twitter:description" content="to.hold_down_milliseconds is an integer value. The default value is 0.
 The value is an interval of key_down and key_up when key_down and key_up events are sent at the same time such as multiple to events.
 Note Generally to.hold_down_milliseconds is used with &#34;key_code&#34;: &#34;caps_lock&#34;. Example The following json changes caps_lock key to sending caps_lock key_down, wait 200 milliseconds, caps_lock key_up.
-{ &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;caps_lock&#34;, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [ { &#34;key_code&#34;: &#34;caps_lock&#34;, &#34;hold_down_milliseconds&#34;: 200 }, { &#34;key_code&#34;: &#34;vk_none&#34; } ] } Note vk_none is needed to ignore the hardware key_up event. Without adding vk_none, a key_down and key_up event for caps_lock will be sent for each hardware key_down and key_up event, meaning hold_down_milliseconds will not be applied between the key_down and key_up events.">
+{ &#34;description&#34;: &#34;Disable the accidental keystroke prevention of Caps Lock&#34;, &#34;manipulators&#34;: [ { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;caps_lock&#34;, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [ { &#34;key_code&#34;: &#34;caps_lock&#34;, &#34;hold_down_milliseconds&#34;: 200 }, { &#34;key_code&#34;: &#34;vk_none&#34; } ] } ] } Note vk_none is needed to ignore the hardware key_up event. Without adding vk_none, a key_down and key_up event for caps_lock will be sent for each hardware key_down and key_up event, meaning hold_down_milliseconds will not be applied between the key_down and key_up events.">
 
 
 
@@ -87,7 +87,7 @@ Note Generally to.hold_down_milliseconds is used with &#34;key_code&#34;: &#34;c
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.af0ce4b441e674766914f9b31832e0a7.json"
+    data-offline-search-index-json-src="/offline-search-index.be82e81bd8f73b70368d4e1c708cf777.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="25"
   >
@@ -111,7 +111,7 @@ Note Generally to.hold_down_milliseconds is used with &#34;key_code&#34;: &#34;c
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.af0ce4b441e674766914f9b31832e0a7.json"
+    data-offline-search-index-json-src="/offline-search-index.be82e81bd8f73b70368d4e1c708cf777.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="25"
   >
@@ -684,20 +684,25 @@ Note Generally to.hold_down_milliseconds is used with &#34;key_code&#34;: &#34;c
 <h2 id="example">Example</h2>
 <p>The following json changes <code>caps_lock</code> key to sending <code>caps_lock key_down</code>, <code>wait 200 milliseconds</code>, <code>caps_lock key_up</code>.</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;type&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;basic&#34;</span><span style="color:#000;font-weight:bold">,</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;from&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#204a87;font-weight:bold">&#34;key_code&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;caps_lock&#34;</span><span style="color:#000;font-weight:bold">,</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#204a87;font-weight:bold">&#34;modifiers&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
-</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;optional&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">&#34;any&#34;</span><span style="color:#000;font-weight:bold">]</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">}</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">},</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;to&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;description&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;Disable the accidental keystroke prevention of Caps Lock&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;manipulators&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">{</span>
-</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;key_code&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;caps_lock&#34;</span><span style="color:#000;font-weight:bold">,</span>
-</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;hold_down_milliseconds&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#0000cf;font-weight:bold">200</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">},</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">{</span>
-</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;key_code&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;vk_none&#34;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;type&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;basic&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;from&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">&#34;key_code&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;caps_lock&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">&#34;modifiers&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;optional&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">&#34;any&#34;</span><span style="color:#000;font-weight:bold">]</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">},</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;to&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;key_code&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;caps_lock&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;hold_down_milliseconds&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#0000cf;font-weight:bold">200</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">},</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;key_code&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;vk_none&#34;</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">]</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">}</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">]</span>
 </span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
