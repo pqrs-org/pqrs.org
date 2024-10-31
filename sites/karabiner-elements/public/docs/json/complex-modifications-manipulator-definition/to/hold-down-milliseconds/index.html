@@ -21,14 +21,14 @@
 <meta name="description" content="to.hold_down_milliseconds is an integer value. The default value is 0.
 The value is an interval of key_down and key_up when key_down and key_up events are sent at the same time such as multiple to events.
 Note Generally to.hold_down_milliseconds is used with &quot;key_code&quot;: &quot;caps_lock&quot;. Example The following json changes caps_lock key to sending caps_lock key_down, wait 200 milliseconds, caps_lock key_up.
-{ &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;caps_lock&#34;, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [ { &#34;key_code&#34;: &#34;caps_lock&#34;, &#34;hold_down_milliseconds&#34;: 200 }, { &#34;key_code&#34;: &#34;vk_none&#34; } ] } ">
+{ &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;caps_lock&#34;, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [ { &#34;key_code&#34;: &#34;caps_lock&#34;, &#34;hold_down_milliseconds&#34;: 200 }, { &#34;key_code&#34;: &#34;vk_none&#34; } ] } Note vk_none is needed to ignore the hardware key_up event. Without adding vk_none, a key_down and key_up event for caps_lock will be sent for each hardware key_down and key_up event, meaning hold_down_milliseconds will not be applied between the key_down and key_up events. ">
 <meta property="og:url" content="/docs/json/complex-modifications-manipulator-definition/to/hold-down-milliseconds/">
   <meta property="og:site_name" content="Karabiner-Elements">
   <meta property="og:title" content="to.hold_down_milliseconds">
   <meta property="og:description" content="to.hold_down_milliseconds is an integer value. The default value is 0.
 The value is an interval of key_down and key_up when key_down and key_up events are sent at the same time such as multiple to events.
 Note Generally to.hold_down_milliseconds is used with &#34;key_code&#34;: &#34;caps_lock&#34;. Example The following json changes caps_lock key to sending caps_lock key_down, wait 200 milliseconds, caps_lock key_up.
-{ &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;caps_lock&#34;, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [ { &#34;key_code&#34;: &#34;caps_lock&#34;, &#34;hold_down_milliseconds&#34;: 200 }, { &#34;key_code&#34;: &#34;vk_none&#34; } ] }">
+{ &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;caps_lock&#34;, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [ { &#34;key_code&#34;: &#34;caps_lock&#34;, &#34;hold_down_milliseconds&#34;: 200 }, { &#34;key_code&#34;: &#34;vk_none&#34; } ] } Note vk_none is needed to ignore the hardware key_up event. Without adding vk_none, a key_down and key_up event for caps_lock will be sent for each hardware key_down and key_up event, meaning hold_down_milliseconds will not be applied between the key_down and key_up events.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
@@ -38,8 +38,8 @@ Note Generally to.hold_down_milliseconds is used with &#34;key_code&#34;: &#34;c
   <meta itemprop="description" content="to.hold_down_milliseconds is an integer value. The default value is 0.
 The value is an interval of key_down and key_up when key_down and key_up events are sent at the same time such as multiple to events.
 Note Generally to.hold_down_milliseconds is used with &#34;key_code&#34;: &#34;caps_lock&#34;. Example The following json changes caps_lock key to sending caps_lock key_down, wait 200 milliseconds, caps_lock key_up.
-{ &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;caps_lock&#34;, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [ { &#34;key_code&#34;: &#34;caps_lock&#34;, &#34;hold_down_milliseconds&#34;: 200 }, { &#34;key_code&#34;: &#34;vk_none&#34; } ] }">
-  <meta itemprop="wordCount" content="86">
+{ &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;caps_lock&#34;, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [ { &#34;key_code&#34;: &#34;caps_lock&#34;, &#34;hold_down_milliseconds&#34;: 200 }, { &#34;key_code&#34;: &#34;vk_none&#34; } ] } Note vk_none is needed to ignore the hardware key_up event. Without adding vk_none, a key_down and key_up event for caps_lock will be sent for each hardware key_down and key_up event, meaning hold_down_milliseconds will not be applied between the key_down and key_up events.">
+  <meta itemprop="wordCount" content="128">
   <meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://karabiner-elements.pqrs.org/images/logo.png">
@@ -47,7 +47,7 @@ Note Generally to.hold_down_milliseconds is used with &#34;key_code&#34;: &#34;c
   <meta name="twitter:description" content="to.hold_down_milliseconds is an integer value. The default value is 0.
 The value is an interval of key_down and key_up when key_down and key_up events are sent at the same time such as multiple to events.
 Note Generally to.hold_down_milliseconds is used with &#34;key_code&#34;: &#34;caps_lock&#34;. Example The following json changes caps_lock key to sending caps_lock key_down, wait 200 milliseconds, caps_lock key_up.
-{ &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;caps_lock&#34;, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [ { &#34;key_code&#34;: &#34;caps_lock&#34;, &#34;hold_down_milliseconds&#34;: 200 }, { &#34;key_code&#34;: &#34;vk_none&#34; } ] }">
+{ &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;caps_lock&#34;, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [ { &#34;key_code&#34;: &#34;caps_lock&#34;, &#34;hold_down_milliseconds&#34;: 200 }, { &#34;key_code&#34;: &#34;vk_none&#34; } ] } Note vk_none is needed to ignore the hardware key_up event. Without adding vk_none, a key_down and key_up event for caps_lock will be sent for each hardware key_down and key_up event, meaning hold_down_milliseconds will not be applied between the key_down and key_up events.">
 
 
 
@@ -87,7 +87,7 @@ Note Generally to.hold_down_milliseconds is used with &#34;key_code&#34;: &#34;c
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.19847695d62291cc38f1bfc93e1835c0.json"
+    data-offline-search-index-json-src="/offline-search-index.af0ce4b441e674766914f9b31832e0a7.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="25"
   >
@@ -111,7 +111,7 @@ Note Generally to.hold_down_milliseconds is used with &#34;key_code&#34;: &#34;c
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.19847695d62291cc38f1bfc93e1835c0.json"
+    data-offline-search-index-json-src="/offline-search-index.af0ce4b441e674766914f9b31832e0a7.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="25"
   >
@@ -702,6 +702,16 @@ Note Generally to.hold_down_milliseconds is used with &#34;key_code&#34;: &#34;c
 </span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">]</span>
 </span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
 </span></span></code></pre></div>
+
+<div class="alert alert-primary" role="alert">
+<h4 class="alert-heading">Note</h4>
+
+    vk_none is needed to ignore the hardware key_up event.
+Without adding vk_none, a key_down and key_up event for caps_lock will be sent for each hardware key_down and key_up event, meaning hold_down_milliseconds will not be applied between the key_down and key_up events.
+
+</div>
+
+
 	
 </div>
 
