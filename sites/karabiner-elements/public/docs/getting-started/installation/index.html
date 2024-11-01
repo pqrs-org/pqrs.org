@@ -33,7 +33,7 @@ Install Karabiner-Elements Open the downloaded file. Open the .pkg file. The ins
   <meta itemprop="name" content="Installation">
   <meta itemprop="description" content="Some operations are required to grant proper permission from macOS to Karabiner-Elements. Follow these instructions to set up Karabiner-Elements.
 Install Karabiner-Elements Open the downloaded file. Open the .pkg file. The installer will be opened. Install Karabiner-Elements. After installation, you’ll need to grant the necessary permissions for Karabiner-Elements to function. This is part of macOS’s protection mechanism to prevent applications from accessing information without user consent. There are a few required steps, so please follow the instructions.">
-  <meta itemprop="wordCount" content="296">
+  <meta itemprop="wordCount" content="300">
   <meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://karabiner-elements.pqrs.org/images/logo.png">
@@ -79,7 +79,7 @@ Install Karabiner-Elements Open the downloaded file. Open the .pkg file. The ins
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.c6f0434425fd5a1bdcd07175d98480ea.json"
+    data-offline-search-index-json-src="/offline-search-index.7901bd4df6cf1ffc8b238065714bd5a8.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="25"
   >
@@ -103,7 +103,7 @@ Install Karabiner-Elements Open the downloaded file. Open the .pkg file. The ins
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.c6f0434425fd5a1bdcd07175d98480ea.json"
+    data-offline-search-index-json-src="/offline-search-index.7901bd4df6cf1ffc8b238065714bd5a8.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="25"
   >
@@ -630,10 +630,10 @@ Install Karabiner-Elements Open the downloaded file. Open the .pkg file. The ins
   <ul>
     <li><a href="#install-karabiner-elements">Install Karabiner-Elements</a></li>
     <li><a href="#open-karabiner-elements-settings">Open Karabiner-Elements Settings</a></li>
-    <li><a href="#keep-login-items-enabled">Keep Login Items enabled</a></li>
-    <li><a href="#allow-system-software-which-provides-virtual-devices-for-karabiner-elements">Allow system software which provides virtual devices for Karabiner-Elements</a></li>
-    <li><a href="#grant-input-monitoring-to-karabiner-elements-processes">Grant Input Monitoring to Karabiner-Elements processes</a></li>
     <li><a href="#setup-your-keyboard-layout">Setup your keyboard layout</a></li>
+    <li><a href="#keep-login-items-enabled">Keep Login Items enabled</a></li>
+    <li><a href="#grant-input-monitoring-to-karabiner-elements-processes">Grant Input Monitoring to Karabiner-Elements processes</a></li>
+    <li><a href="#allow-system-software-which-provides-virtual-devices-for-karabiner-elements">Allow system software which provides virtual devices for Karabiner-Elements</a></li>
     <li><a href="#configure-karabiner-elements">Configure Karabiner-Elements</a></li>
   </ul>
 </nav>
@@ -687,19 +687,54 @@ This is part of macOS&rsquo;s protection mechanism to prevent applications from 
 There are a few required steps, so please follow the instructions.</p>
 <p>Additionally, when you open Karabiner-Elements Settings, the necessary actions will be displayed, so you can follow those prompts as well.</p>
 <h2 id="open-karabiner-elements-settings">Open Karabiner-Elements Settings</h2>
-<ol>
-<li>Open Karabiner-Elements from Launchpad.
+<p>Open Karabiner-Elements from Launchpad.</p>
 <figure>
-      <img
-        src="/docs/getting-started/installation/images/karabiner-elements-icon@2x.png"
-        alt="karabiner-elements-icon@2x.png"
-        style="width: 537px"
-      />
-    </figure>
-</li>
-</ol>
+  <img
+    src="/docs/getting-started/installation/images/karabiner-elements-icon@2x.png"
+    alt="karabiner-elements-icon@2x.png"
+    style="width: 537px"
+  />
+</figure>
+
+<h2 id="setup-your-keyboard-layout">Setup your keyboard layout</h2>
+
+
+<div class="alert alert-success" role="alert">
+
+
+    <figure>
+  <img
+    src="/docs/getting-started/installation/images/settings-keyboard-type@2x.png"
+    alt="settings-keyboard-type@2x.png"
+    style="width: 1100px"
+  />
+</figure>
+<p>Choose your keyboard layout. (ANSI, ISO or JIS).</p>
+<p>This setting changes the behavior of some keys (symbol keys) on the keyboard.
+If the printed characters on your keyboard do not match what is input, please change this later in the Virtual Keyboard settings.</p>
+
+
+</div>
+
 <h2 id="keep-login-items-enabled">Keep Login Items enabled</h2>
+
+
+<div class="alert alert-success" role="alert">
+
+
+    <figure>
+  <img
+    src="/docs/getting-started/installation/images/settings-services@2x.png"
+    alt="settings-services@2x.png"
+    style="width: 1100px"
+  />
+</figure>
 <p>The background item notifications will be shown after the installation.</p>
+<p>The following Login Items in System Settings must be enabled.</p>
+<ul>
+<li><code>Karabiner-Elements Non-Privileged Agents</code></li>
+<li><code>Karabiner-Elements Privileged Daemons</code></li>
+</ul>
 <figure>
   <img
     src="/docs/getting-started/installation/images/login-items0@2x.png"
@@ -708,18 +743,8 @@ There are a few required steps, so please follow the instructions.</p>
   />
 </figure>
 
-<p>The following Login Items in System Settings must be enabled.</p>
-<ul>
-<li><code>Karabiner-Elements Non-Privileged Agents</code></li>
-<li><code>Karabiner-Elements Privileged Daemons</code></li>
-</ul>
-<figure>
-  <img
-    src="/docs/getting-started/installation/images/login-items1@2x.png"
-    alt="login-items1@2x.png"
-    style="width: 715px"
-  />
-</figure>
+
+</div>
 
 
 
@@ -731,59 +756,35 @@ Please proceed to the next step.
 
 </div>
 
-<h2 id="allow-system-software-which-provides-virtual-devices-for-karabiner-elements">Allow system software which provides virtual devices for Karabiner-Elements</h2>
-<ol>
-<li>The following alert will be shown when you open Karabiner-Elements Settings.</li>
-<li>Click <strong>Open System Settings</strong> button, then press the <strong>Allow</strong> button.
-<figure>
-      <img
-        src="/docs/getting-started/installation/images/system-extension-blocked@2x.png"
-        alt="system-extension-blocked@2x.png"
-        style="width: 260px"
-      />
-    </figure>
+<h2 id="grant-input-monitoring-to-karabiner-elements-processes">Grant Input Monitoring to Karabiner-Elements processes</h2>
 
+
+<div class="alert alert-success" role="alert">
+
+
+    <figure>
+  <img
+    src="/docs/getting-started/installation/images/settings-input-monitoring@2x.png"
+    alt="settings-input-monitoring@2x.png"
+    style="width: 1100px"
+  />
+</figure>
+<ol>
+<li>The Keystroke Receiving alert will be shown.</li>
+<li>Press the <code>Open System Settings</code> button and enable <code>karabiner_grabber</code>.
 <figure>
-      <img
-        src="/docs/getting-started/installation/images/system-extension-allow@2x.png"
-        alt="system-extension-allow@2x.png"
-        style="width: 715px"
-      />
-    </figure>
+  <img
+    src="/docs/getting-started/installation/images/karabiner-grabber@2x.png"
+    alt="karabiner-grabber@2x.png"
+    style="width: 461px"
+  />
+</figure>
 </li>
 </ol>
 
-
-<div class="alert alert-primary" role="alert">
-<h4 class="alert-heading">Note</h4>
-
-    Please follow <a href="../../help/troubleshooting/kext-allow-button-does-not-work/">this instruction</a> if there is any problem with the <strong>Allow</strong> button.
 
 </div>
 
-<h2 id="grant-input-monitoring-to-karabiner-elements-processes">Grant Input Monitoring to Karabiner-Elements processes</h2>
-<ol>
-<li>The <strong>Keystroke Receiving</strong> alerts will be shown.</li>
-<li>Press the <strong>Open System Settings</strong> button on both alerts.
-<figure>
-      <img
-        src="/docs/getting-started/installation/images/karabiner-grabber@2x.png"
-        alt="karabiner-grabber@2x.png"
-        style="width: 461px"
-      />
-    </figure>
-</li>
-<li>System Settings will be opened after you press the <strong>Open System Settings</strong> button.<br/>
-Choose <strong>Privacy &amp; Security &gt; Input Monitoring</strong>, and then enable <strong>karabiner_grabber</strong>.<br />
-<figure>
-      <img
-        src="/docs/getting-started/installation/images/input-monitoring@2x.png"
-        alt="input-monitoring@2x.png"
-        style="width: 715px"
-      />
-    </figure>
-</li>
-</ol>
 
 
 <div class="alert alert-primary" role="alert">
@@ -793,19 +794,54 @@ Choose <strong>Privacy &amp; Security &gt; Input Monitoring</strong>, and then e
 
 </div>
 
-<h2 id="setup-your-keyboard-layout">Setup your keyboard layout</h2>
+<h2 id="allow-system-software-which-provides-virtual-devices-for-karabiner-elements">Allow system software which provides virtual devices for Karabiner-Elements</h2>
+
+
+<div class="alert alert-success" role="alert">
+
+
+    <figure>
+  <img
+    src="/docs/getting-started/installation/images/settings-driver-extensions@2x.png"
+    alt="settings-driver-extensions@2x.png"
+    style="width: 1100px"
+  />
+</figure>
 <ol>
-<li>Keyboard Setup Assistant will be opened.<br/>
-Choose your keyboard layout. (ANSI, ISO or JIS)
+<li>
+<p>The following alert will be shown when you open Karabiner-Elements Settings.</p>
+</li>
+<li>
+<p>Click <code>Open System Settings</code> button, then enable <code>.Karabiner-VirtualHIDDevice-Manager</code>.</p>
 <figure>
-      <img
-        src="/docs/getting-started/installation/images/keyboard-setup-assistant@2x.png"
-        alt="keyboard-setup-assistant@2x.png"
-        style="width: 800px"
-      />
-    </figure>
+  <img
+    src="/docs/getting-started/installation/images/system-extension-blocked@2x.png"
+    alt="system-extension-blocked@2x.png"
+    style="width: 260px"
+  />
+</figure>
+<figure>
+  <img
+    src="/docs/getting-started/installation/images/driver-extensions@2x.png"
+    alt="driver-extensions@2x.png"
+    style="width: 715px"
+  />
+</figure>
 </li>
 </ol>
+
+
+</div>
+
+
+
+<div class="alert alert-primary" role="alert">
+<h4 class="alert-heading">Note</h4>
+
+    Please follow <a href="../../help/troubleshooting/kext-allow-button-does-not-work/">this instruction</a> if there is any problem with the <strong>Driver Extensions</strong> button.
+
+</div>
+
 <h2 id="configure-karabiner-elements">Configure Karabiner-Elements</h2>
 <p>Enjoy keyboard configuration!</p>
 <ul>
