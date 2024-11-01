@@ -23,21 +23,39 @@ Additionally, when you open Karabiner-Elements Settings, the necessary actions w
 
 ## Open Karabiner-Elements Settings
 
-1.  Open Karabiner-Elements from Launchpad.
-    {{< local-image src="images/karabiner-elements-icon@2x.png" >}}
+Open Karabiner-Elements from Launchpad.
+
+{{< local-image src="images/karabiner-elements-icon@2x.png" >}}
+
+## Setup your keyboard layout
+
+{{% alert color="success" %}}
+
+{{< local-image src="images/settings-keyboard-type@2x.png" >}}
+
+Choose your keyboard layout. (ANSI, ISO or JIS).
+
+This setting changes the behavior of some keys (symbol keys) on the keyboard.
+If the printed characters on your keyboard do not match what is input, please change this later in the Virtual Keyboard settings.
+
+{{% /alert %}}
 
 ## Keep Login Items enabled
 
-The background item notifications will be shown after the installation.
+{{% alert color="success" %}}
 
-{{< local-image src="images/login-items0@2x.png" >}}
+{{< local-image src="images/settings-services@2x.png" >}}
+
+The background item notifications will be shown after the installation.
 
 The following Login Items in System Settings must be enabled.
 
 -   `Karabiner-Elements Non-Privileged Agents`
 -   `Karabiner-Elements Privileged Daemons`
 
-{{< local-image src="images/login-items1@2x.png" >}}
+{{< local-image src="images/login-items0@2x.png" >}}
+
+{{% /alert %}}
 
 {{% alert title="Note" color="primary" %}}
 
@@ -46,27 +64,17 @@ Please proceed to the next step.
 
 {{% /alert %}}
 
-## Allow system software which provides virtual devices for Karabiner-Elements
-
-1.  The following alert will be shown when you open Karabiner-Elements Settings.
-2.  Click **Open System Settings** button, then press the **Allow** button.
-    {{< local-image src="images/system-extension-blocked@2x.png" >}}
-    {{< local-image src="images/system-extension-allow@2x.png" >}}
-
-{{% alert title="Note" color="primary" %}}
-
-Please follow [this instruction](../../help/troubleshooting/kext-allow-button-does-not-work/) if there is any problem with the **Allow** button.
-
-{{% /alert %}}
-
 ## Grant Input Monitoring to Karabiner-Elements processes
 
-1.  The **Keystroke Receiving** alerts will be shown.
-2.  Press the **Open System Settings** button on both alerts.
+{{% alert color="success" %}}
+
+{{< local-image src="images/settings-input-monitoring@2x.png" >}}
+
+1.  The Keystroke Receiving alert will be shown.
+2.  Press the `Open System Settings` button and enable `karabiner_grabber`.
     {{< local-image src="images/karabiner-grabber@2x.png" >}}
-3.  System Settings will be opened after you press the **Open System Settings** button.<br/>
-    Choose **Privacy & Security > Input Monitoring**, and then enable **karabiner_grabber**.<br />
-    {{< local-image src="images/input-monitoring@2x.png" >}}
+
+{{% /alert %}}
 
 {{% alert title="Note" color="primary" %}}
 
@@ -74,11 +82,24 @@ If you are using Karabiner-Elements 14.13.0 or earlier, an alert for karabiner_o
 
 {{% /alert %}}
 
-## Setup your keyboard layout
+## Allow system software which provides virtual devices for Karabiner-Elements
 
-1.  Keyboard Setup Assistant will be opened.<br/>
-    Choose your keyboard layout. (ANSI, ISO or JIS)
-    {{< local-image src="images/keyboard-setup-assistant@2x.png" >}}
+{{% alert color="success" %}}
+
+{{< local-image src="images/settings-driver-extensions@2x.png" >}}
+
+1.  The following alert will be shown when you open Karabiner-Elements Settings.
+2.  Click `Open System Settings` button, then enable `.Karabiner-VirtualHIDDevice-Manager`.
+    {{< local-image src="images/system-extension-blocked@2x.png" >}}
+    {{< local-image src="images/driver-extensions@2x.png" >}}
+
+{{% /alert %}}
+
+{{% alert title="Note" color="primary" %}}
+
+Please follow [this instruction](../../help/troubleshooting/kext-allow-button-does-not-work/) if there is any problem with the **Driver Extensions** button.
+
+{{% /alert %}}
 
 ## Configure Karabiner-Elements
 
