@@ -20,8 +20,8 @@
 <title>to.hold_down_milliseconds | Karabiner-Elements</title>
 <meta name="description" content="to.hold_down_milliseconds is an integer value. The default value is 0.
 The value is an interval of key_down and key_up when key_down and key_up events are sent at the same time such as multiple to events.
-Note Generally to.hold_down_milliseconds is used with &quot;key_code&quot;: &quot;caps_lock&quot;. Example The following json changes caps_lock key to sending caps_lock key_down, wait 200 milliseconds, caps_lock key_up.
-{ &#34;description&#34;: &#34;Disable the accidental keystroke prevention of Caps Lock&#34;, &#34;manipulators&#34;: [ { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;caps_lock&#34;, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [ { &#34;key_code&#34;: &#34;caps_lock&#34;, &#34;hold_down_milliseconds&#34;: 200 }, { &#34;key_code&#34;: &#34;vk_none&#34; } ] } ] } Note vk_none is needed to ignore the hardware key_up event. Without adding vk_none, a key_down and key_up event for caps_lock will be sent for each hardware key_down and key_up event, meaning hold_down_milliseconds will not be applied between the key_down and key_up events. ">
+Note Generally to.hold_down_milliseconds is used with &#34;key_code&#34;: &#34;caps_lock&#34;. Example The following json changes caps_lock key to sending caps_lock key_down, wait 200 milliseconds, caps_lock key_up.
+{ &#34;description&#34;: &#34;Disable the accidental keystroke prevention of Caps Lock&#34;, &#34;manipulators&#34;: [ { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;caps_lock&#34;, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [ { &#34;key_code&#34;: &#34;caps_lock&#34;, &#34;hold_down_milliseconds&#34;: 200 }, { &#34;key_code&#34;: &#34;vk_none&#34; } ] } ] } Note vk_none is needed to ignore the hardware key_up event. Without adding vk_none, a key_down and key_up event for caps_lock will be sent for each hardware key_down and key_up event, meaning hold_down_milliseconds will not be applied between the key_down and key_up events.">
 <meta property="og:url" content="/docs/json/complex-modifications-manipulator-definition/to/hold-down-milliseconds/">
   <meta property="og:site_name" content="Karabiner-Elements">
   <meta property="og:title" content="to.hold_down_milliseconds">
@@ -48,13 +48,8 @@ Note Generally to.hold_down_milliseconds is used with &#34;key_code&#34;: &#34;c
 The value is an interval of key_down and key_up when key_down and key_up events are sent at the same time such as multiple to events.
 Note Generally to.hold_down_milliseconds is used with &#34;key_code&#34;: &#34;caps_lock&#34;. Example The following json changes caps_lock key to sending caps_lock key_down, wait 200 milliseconds, caps_lock key_up.
 { &#34;description&#34;: &#34;Disable the accidental keystroke prevention of Caps Lock&#34;, &#34;manipulators&#34;: [ { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;caps_lock&#34;, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [ { &#34;key_code&#34;: &#34;caps_lock&#34;, &#34;hold_down_milliseconds&#34;: 200 }, { &#34;key_code&#34;: &#34;vk_none&#34; } ] } ] } Note vk_none is needed to ignore the hardware key_up event. Without adding vk_none, a key_down and key_up event for caps_lock will be sent for each hardware key_down and key_up event, meaning hold_down_milliseconds will not be applied between the key_down and key_up events.">
-
-
-
-
-<link rel="preload" href="/scss/main.min.5c8bc6229ba5e8e2fad12fc9ad5aacb5bc3862422458eb6b4e10b986052bd1e0.css" as="style">
-<link href="/scss/main.min.5c8bc6229ba5e8e2fad12fc9ad5aacb5bc3862422458eb6b4e10b986052bd1e0.css" rel="stylesheet" integrity="">
-
+<link rel="preload" href="/scss/main.min.f693f06e4d3557ccf8ea888186f681e1db8cb153b66b80f588e76cc53e6ebdf3.css" as="style" integrity="sha256-9pPwbk01V8z46oiBhvaB4duMsVO2a4D1iOdsxT5uvfM=" crossorigin="anonymous">
+<link href="/scss/main.min.f693f06e4d3557ccf8ea888186f681e1db8cb153b66b80f588e76cc53e6ebdf3.css" rel="stylesheet" integrity="sha256-9pPwbk01V8z46oiBhvaB4duMsVO2a4D1iOdsxT5uvfM=" crossorigin="anonymous">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
