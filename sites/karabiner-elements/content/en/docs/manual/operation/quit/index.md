@@ -15,3 +15,16 @@ If you've hidden the menu bar icon, you can also quit Karabiner-Elements from Se
 {{< local-image src="images/karabiner-elements-quit@2x.png" >}}
 
 {{% /alert %}}
+
+{{% alert title="Advanced topic" color="danger" %}}
+
+If you want to terminate it from the command line, execute the following commands:
+
+```shell
+'/Library/Application Support/org.pqrs/Karabiner-Elements/Karabiner-Elements Non-Privileged Agents.app/Contents/MacOS/Karabiner-Elements Non-Privileged Agents' unregister-core-agents
+'/Library/Application Support/org.pqrs/Karabiner-Elements/Karabiner-Elements Non-Privileged Agents.app/Contents/MacOS/Karabiner-Elements Non-Privileged Agents' unregister-menu-agent
+'/Library/Application Support/org.pqrs/Karabiner-Elements/Karabiner-Elements Non-Privileged Agents.app/Contents/MacOS/Karabiner-Elements Non-Privileged Agents' unregister-multitouch-extension-agent
+'/Library/Application Support/org.pqrs/Karabiner-Elements/Karabiner-Elements Non-Privileged Agents.app/Contents/MacOS/Karabiner-Elements Non-Privileged Agents' unregister-notification-window-agent
+```
+
+{{% /alert %}}
