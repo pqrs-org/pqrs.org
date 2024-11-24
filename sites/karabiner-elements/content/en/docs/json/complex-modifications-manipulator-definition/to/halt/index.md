@@ -3,33 +3,28 @@ title: 'to.halt'
 weight: 800
 ---
 
-`to.halt` is `true` or `false`. The default value is `false`.
-
-The typical usage of `to.halt` is to cancel `to_after_key_up` if `to_if_alone` or `to_if_held_down` is triggered.
-
-Put `"halt": true` into `to_if_alone` or `to_if_held_down` if you want to suppress `to_after_key_up` when `to_if_alone` or `to_if_held_down` is triggered.
+`to.halt` is specified in `to_if_alone` or `to_if_held_down` and is used to cancel subsequent actions like `to_after_key_up` or `to_delayed_action`.
 
 ## Example
 
-The following json changes holding `tab` key to `mission_control`.
+The following json changes holding `tab` key to `mute`.
 
-The `halt` in `to_if_held_down` suppresses `to_after_key_up` after `mission_control` is sent.
+The `halt` in `to_if_held_down` suppresses `to_after_key_up` when `mute` is sent.
 
 ```json
 {
-    "type": "basic",
-    "from": {
-        "key_code": "tab"
-    },
-    "to_after_key_up": [
+    "description": "Mute when tab is held down",
+    "manipulators": [
         {
-            "key_code": "tab"
-        }
-    ],
-    "to_if_held_down": [
-        {
-            "key_code": "mission_control",
-            "halt": true
+            "type": "basic",
+            "from": { "key_code": "tab" },
+            "to_after_key_up": [{ "key_code": "tab" }],
+            "to_if_held_down": [
+                {
+                    "consumer_key_code": "mute",
+                    "halt": true
+                }
+            ]
         }
     ]
 }
