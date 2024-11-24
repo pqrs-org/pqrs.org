@@ -22,6 +22,13 @@
       <description>&lt;p&gt;Security is one of the most important point of Karabiner-Elements architecture design.&lt;/p&gt;&#xA;&lt;p&gt;Separating process and running them with properly privileges to prevent event leaks.&lt;/p&gt;&#xA;&lt;h2 id=&#34;process&#34;&gt;Process&lt;/h2&gt;&#xA;&lt;p&gt;Karabiner-Elements restricts the input event handling to &lt;strong&gt;karabiner_grabber&lt;/strong&gt; processes.&lt;/p&gt;&#xA;&lt;p&gt;These process are running with root privilege and other process including malicious attacker cannot steal your input events.&lt;/p&gt;&#xA;&lt;h3 id=&#34;list-of-process&#34;&gt;List of process&lt;/h3&gt;&#xA;&lt;p&gt;Running with root privilege&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;karabiner_grabber&lt;/strong&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;It grabs the keyboard hardware, catches events, modifies them, and then passes them to Karabiner-VirtualHIDDevice-Daemon.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Karabiner-VirtualHIDDevice-Daemon&lt;/strong&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;It controls Karabiner-DriverKit-VirtualHIDDevice and bridges the data between &lt;code&gt;karabiner_grabber&lt;/code&gt; and the virtual devices.&lt;/li&gt;&#xA;&lt;li&gt;This process only receives data from processes running with root privileges.&#xA;Therefore, regular applications running with user privileges cannot arbitrarily send events to virtual devices.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Running with DriverKit privilege&lt;/p&gt;</description>
     </item>
     <item>
+      <title>A guide for supporting unsupported keys</title>
+      <link>/docs/help/advanced-topics/unknown-events/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/help/advanced-topics/unknown-events/</guid>
+      <description>&lt;p&gt;Karabiner-Elements supports most keys, including those found only on PC keyboards.&#xA;However, it may not support certain special function keys, such as some keys in the Consumer Page&amp;rsquo;s Generic GUI Application Controls.&#xA;This is because Karabiner-Elements manages a whitelist of verified keys, and any unverified events not included in this list are ignored.&lt;/p&gt;&#xA;&lt;p&gt;This guide provides instructions on how to add support for unsupported keys in Karabiner-Elements, should your keyboard have such keys.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>What is the lock indicator on Karabiner-Elements and Karabiner-EventViewer icon</title>
       <link>/docs/help/advanced-topics/lock-icon/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

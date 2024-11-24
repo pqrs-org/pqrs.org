@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel="alternate" type="application/rss&#43;xml" href="/docs/json/complex-modifications-manipulator-definition/index.xml">
 <meta name="robots" content="index, follow">
 
 
@@ -18,24 +17,29 @@
 <link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
-<title>complex_modifications manipulator definition | Karabiner-Elements</title>
-<meta name="description" content="&#34;manipulators&#34;: [ { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: {...}, &#34;to&#34;: [...], &#34;to_if_alone&#34;: [...], &#34;to_if_held_down&#34;: [...], &#34;to_after_key_up&#34;: [...], &#34;to_delayed_action&#34;: { &#34;to_if_invoked&#34;: [...], &#34;to_if_canceled&#34;: [...], }, &#34;conditions&#34;: [...], &#34;parameters&#34;: {...}, &#34;description&#34;: &#34;Optional description for human&#34; }, ... ] Name Required Description type Required &#34;basic&#34; is specified from Required The name of key code, consumer key code or pointing button which you want to change to Optional Events which are sent when you press from key to_if_alone Optional Events which are sent when you press from key alone to_if_held_down Optional Events which are sent when you hold down from key to_after_key_up Optional Events which are sent after you release from key to_delayed_action Optional Events which are sent after 500 milliseconds at you press from key conditions Optional Manipulator is applied only if condition is matched (e.g., the frontmost application) parameters Optional Override parameters such as to_if_alone_timeout_milliseconds description Optional A human-readable comment Detail from event definition to event definition to_if_alone to_if_held_down to_after_key_up to_delayed_action conditions Other manipulators Manipulators which type is not &#34;basic&#34;.">
-<meta property="og:url" content="/docs/json/complex-modifications-manipulator-definition/">
+<title>A guide for supporting unsupported keys | Karabiner-Elements</title>
+<meta name="description" content="Karabiner-Elements supports most keys, including those found only on PC keyboards. However, it may not support certain special function keys, such as some keys in the Consumer Page’s Generic GUI Application Controls. This is because Karabiner-Elements manages a whitelist of verified keys, and any unverified events not included in this list are ignored.
+This guide provides instructions on how to add support for unsupported keys in Karabiner-Elements, should your keyboard have such keys.">
+<meta property="og:url" content="/docs/help/advanced-topics/unknown-events/">
   <meta property="og:site_name" content="Karabiner-Elements">
-  <meta property="og:title" content="complex_modifications manipulator definition">
-  <meta property="og:description" content="&#34;manipulators&#34;: [ { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: {...}, &#34;to&#34;: [...], &#34;to_if_alone&#34;: [...], &#34;to_if_held_down&#34;: [...], &#34;to_after_key_up&#34;: [...], &#34;to_delayed_action&#34;: { &#34;to_if_invoked&#34;: [...], &#34;to_if_canceled&#34;: [...], }, &#34;conditions&#34;: [...], &#34;parameters&#34;: {...}, &#34;description&#34;: &#34;Optional description for human&#34; }, ... ] Name Required Description type Required &#34;basic&#34; is specified from Required The name of key code, consumer key code or pointing button which you want to change to Optional Events which are sent when you press from key to_if_alone Optional Events which are sent when you press from key alone to_if_held_down Optional Events which are sent when you hold down from key to_after_key_up Optional Events which are sent after you release from key to_delayed_action Optional Events which are sent after 500 milliseconds at you press from key conditions Optional Manipulator is applied only if condition is matched (e.g., the frontmost application) parameters Optional Override parameters such as to_if_alone_timeout_milliseconds description Optional A human-readable comment Detail from event definition to event definition to_if_alone to_if_held_down to_after_key_up to_delayed_action conditions Other manipulators Manipulators which type is not &#34;basic&#34;.">
+  <meta property="og:title" content="A guide for supporting unsupported keys">
+  <meta property="og:description" content="Karabiner-Elements supports most keys, including those found only on PC keyboards. However, it may not support certain special function keys, such as some keys in the Consumer Page’s Generic GUI Application Controls. This is because Karabiner-Elements manages a whitelist of verified keys, and any unverified events not included in this list are ignored.
+This guide provides instructions on how to add support for unsupported keys in Karabiner-Elements, should your keyboard have such keys.">
   <meta property="og:locale" content="en">
-  <meta property="og:type" content="website">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="docs">
     <meta property="og:image" content="https://karabiner-elements.pqrs.org/images/logo.png">
 
-  <meta itemprop="name" content="complex_modifications manipulator definition">
-  <meta itemprop="description" content="&#34;manipulators&#34;: [ { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: {...}, &#34;to&#34;: [...], &#34;to_if_alone&#34;: [...], &#34;to_if_held_down&#34;: [...], &#34;to_after_key_up&#34;: [...], &#34;to_delayed_action&#34;: { &#34;to_if_invoked&#34;: [...], &#34;to_if_canceled&#34;: [...], }, &#34;conditions&#34;: [...], &#34;parameters&#34;: {...}, &#34;description&#34;: &#34;Optional description for human&#34; }, ... ] Name Required Description type Required &#34;basic&#34; is specified from Required The name of key code, consumer key code or pointing button which you want to change to Optional Events which are sent when you press from key to_if_alone Optional Events which are sent when you press from key alone to_if_held_down Optional Events which are sent when you hold down from key to_after_key_up Optional Events which are sent after you release from key to_delayed_action Optional Events which are sent after 500 milliseconds at you press from key conditions Optional Manipulator is applied only if condition is matched (e.g., the frontmost application) parameters Optional Override parameters such as to_if_alone_timeout_milliseconds description Optional A human-readable comment Detail from event definition to event definition to_if_alone to_if_held_down to_after_key_up to_delayed_action conditions Other manipulators Manipulators which type is not &#34;basic&#34;.">
-  <meta itemprop="wordCount" content="170">
+  <meta itemprop="name" content="A guide for supporting unsupported keys">
+  <meta itemprop="description" content="Karabiner-Elements supports most keys, including those found only on PC keyboards. However, it may not support certain special function keys, such as some keys in the Consumer Page’s Generic GUI Application Controls. This is because Karabiner-Elements manages a whitelist of verified keys, and any unverified events not included in this list are ignored.
+This guide provides instructions on how to add support for unsupported keys in Karabiner-Elements, should your keyboard have such keys.">
+  <meta itemprop="wordCount" content="387">
   <meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://karabiner-elements.pqrs.org/images/logo.png">
-  <meta name="twitter:title" content="complex_modifications manipulator definition">
-  <meta name="twitter:description" content="&#34;manipulators&#34;: [ { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: {...}, &#34;to&#34;: [...], &#34;to_if_alone&#34;: [...], &#34;to_if_held_down&#34;: [...], &#34;to_after_key_up&#34;: [...], &#34;to_delayed_action&#34;: { &#34;to_if_invoked&#34;: [...], &#34;to_if_canceled&#34;: [...], }, &#34;conditions&#34;: [...], &#34;parameters&#34;: {...}, &#34;description&#34;: &#34;Optional description for human&#34; }, ... ] Name Required Description type Required &#34;basic&#34; is specified from Required The name of key code, consumer key code or pointing button which you want to change to Optional Events which are sent when you press from key to_if_alone Optional Events which are sent when you press from key alone to_if_held_down Optional Events which are sent when you hold down from key to_after_key_up Optional Events which are sent after you release from key to_delayed_action Optional Events which are sent after 500 milliseconds at you press from key conditions Optional Manipulator is applied only if condition is matched (e.g., the frontmost application) parameters Optional Override parameters such as to_if_alone_timeout_milliseconds description Optional A human-readable comment Detail from event definition to event definition to_if_alone to_if_held_down to_after_key_up to_delayed_action conditions Other manipulators Manipulators which type is not &#34;basic&#34;.">
+  <meta name="twitter:title" content="A guide for supporting unsupported keys">
+  <meta name="twitter:description" content="Karabiner-Elements supports most keys, including those found only on PC keyboards. However, it may not support certain special function keys, such as some keys in the Consumer Page’s Generic GUI Application Controls. This is because Karabiner-Elements manages a whitelist of verified keys, and any unverified events not included in this list are ignored.
+This guide provides instructions on how to add support for unsupported keys in Karabiner-Elements, should your keyboard have such keys.">
 <link rel="preload" href="/scss/main.min.f693f06e4d3557ccf8ea888186f681e1db8cb153b66b80f588e76cc53e6ebdf3.css" as="style" integrity="sha256-9pPwbk01V8z46oiBhvaB4duMsVO2a4D1iOdsxT5uvfM=" crossorigin="anonymous">
 <link href="/scss/main.min.f693f06e4d3557ccf8ea888186f681e1db8cb153b66b80f588e76cc53e6ebdf3.css" rel="stylesheet" integrity="sha256-9pPwbk01V8z46oiBhvaB4duMsVO2a4D1iOdsxT5uvfM=" crossorigin="anonymous">
 <script
@@ -48,7 +52,7 @@
   crossorigin="anonymous"></script>
 
   </head>
-  <body class="td-section">
+  <body class="td-page">
     <header>
       <nav class="td-navbar js-navbar-scroll" data-bs-theme="dark">
 <div class="container-fluid flex-column flex-md-row">
@@ -250,8 +254,8 @@
   </ul>
 </li>
   </ul>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docshelp-li">
-  <input type="checkbox" id="m-docshelp-check"/>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docshelp-li">
+  <input type="checkbox" id="m-docshelp-check" checked/>
   <label for="m-docshelp-check"><a href="/docs/help/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docshelp"><span class="">Help</span></a></label>
   
   <ul class="ul-2 foldable">
@@ -357,8 +361,8 @@
   
 </li>
   </ul>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docshelpadvanced-topics-li">
-  <input type="checkbox" id="m-docshelpadvanced-topics-check"/>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docshelpadvanced-topics-li">
+  <input type="checkbox" id="m-docshelpadvanced-topics-check" checked/>
   <label for="m-docshelpadvanced-topics-check"><a href="/docs/help/advanced-topics/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docshelpadvanced-topics"><span class="">Advanced topics</span></a></label>
   
   <ul class="ul-3 foldable">
@@ -370,9 +374,9 @@
   <input type="checkbox" id="m-docshelpadvanced-topicssecurity-check"/>
   <label for="m-docshelpadvanced-topicssecurity-check"><a href="/docs/help/advanced-topics/security/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-docshelpadvanced-topicssecurity"><span class="">Security</span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docshelpadvanced-topicsunknown-events-li">
-  <input type="checkbox" id="m-docshelpadvanced-topicsunknown-events-check"/>
-  <label for="m-docshelpadvanced-topicsunknown-events-check"><a href="/docs/help/advanced-topics/unknown-events/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-docshelpadvanced-topicsunknown-events"><span class="">A guide for supporting unsupported keys</span></a></label>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-docshelpadvanced-topicsunknown-events-li">
+  <input type="checkbox" id="m-docshelpadvanced-topicsunknown-events-check" checked/>
+  <label for="m-docshelpadvanced-topicsunknown-events-check"><a href="/docs/help/advanced-topics/unknown-events/" class="align-left ps-0  active td-sidebar-link td-sidebar-link__page" id="m-docshelpadvanced-topicsunknown-events"><span class="td-sidebar-nav-active-item">A guide for supporting unsupported keys</span></a></label>
   
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docshelpadvanced-topicslock-icon-li">
   <input type="checkbox" id="m-docshelpadvanced-topicslock-icon-check"/>
@@ -398,8 +402,8 @@
   <input type="checkbox" id="m-docsreleasenotes-check"/>
   <label for="m-docsreleasenotes-check"><a href="/docs/releasenotes/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-docsreleasenotes"><span class="">Release notes</span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docsjson-li">
-  <input type="checkbox" id="m-docsjson-check" checked/>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsjson-li">
+  <input type="checkbox" id="m-docsjson-check"/>
   <label for="m-docsjson-check"><a href="/docs/json/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docsjson"><span class="">Karabiner Configuration Reference Manual</span></a></label>
   
   <ul class="ul-2 foldable">
@@ -419,9 +423,9 @@
   <input type="checkbox" id="m-docsjsonroot-data-structure-check"/>
   <label for="m-docsjsonroot-data-structure-check"><a href="/docs/json/root-data-structure/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-docsjsonroot-data-structure"><span class="">karabiner.json data structure</span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docsjsoncomplex-modifications-manipulator-definition-li">
-  <input type="checkbox" id="m-docsjsoncomplex-modifications-manipulator-definition-check" checked/>
-  <label for="m-docsjsoncomplex-modifications-manipulator-definition-check"><a href="/docs/json/complex-modifications-manipulator-definition/" class="align-left ps-0  active td-sidebar-link td-sidebar-link__section" id="m-docsjsoncomplex-modifications-manipulator-definition"><span class="td-sidebar-nav-active-item">complex_modifications manipulator definition</span></a></label>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsjsoncomplex-modifications-manipulator-definition-li">
+  <input type="checkbox" id="m-docsjsoncomplex-modifications-manipulator-definition-check"/>
+  <label for="m-docsjsoncomplex-modifications-manipulator-definition-check"><a href="/docs/json/complex-modifications-manipulator-definition/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docsjsoncomplex-modifications-manipulator-definition"><span class="">complex_modifications manipulator definition</span></a></label>
   
   <ul class="ul-3 foldable">
     <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsjsoncomplex-modifications-manipulator-definitionfrom-li">
@@ -623,9 +627,15 @@
 
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#detail">Detail</a></li>
-    <li><a href="#other-manipulators">Other manipulators</a></li>
-    <li><a href="#table-of-contents">Table of Contents</a></li>
+    <li><a href="#investigate-the-key-code">Investigate the key code</a></li>
+    <li><a href="#add-the-keys-to-the-whitelist">Add the keys to the whitelist</a>
+      <ul>
+        <li><a href="#build-karabiner_grabber">Build karabiner_grabber</a></li>
+        <li><a href="#build-settings">Build Settings</a></li>
+        <li><a href="#build-eventviewer">Build EventViewer</a></li>
+      </ul>
+    </li>
+    <li><a href="#create-a-pull-request-to-add-new-keys">Create a pull request to add new keys</a></li>
   </ul>
 </nav>
 
@@ -643,191 +653,131 @@
   <li class="breadcrumb-item">
     <a href="/docs/">Documentation</a></li>
   <li class="breadcrumb-item">
-    <a href="/docs/json/">Karabiner Configuration Reference Manual</a></li>
+    <a href="/docs/help/">Help</a></li>
+  <li class="breadcrumb-item">
+    <a href="/docs/help/advanced-topics/">Advanced topics</a></li>
   <li class="breadcrumb-item active" aria-current="page">
-    complex_modifications manipulator definition</li>
+    A guide for supporting unsupported keys</li>
   </ol>
 </nav>
             
 <div class="td-content">
-	<h1>complex_modifications manipulator definition</h1>
-  
+	<h1>A guide for supporting unsupported keys</h1>
+	
 	<header class="article-meta">
 		
 </header>
-	<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#4e9a06">&#34;manipulators&#34;</span><span style="color:#a40000">:</span> <span style="color:#000;font-weight:bold">[</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">{</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#204a87;font-weight:bold">&#34;type&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;basic&#34;</span><span style="color:#000;font-weight:bold">,</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#204a87;font-weight:bold">&#34;from&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span><span style="color:#a40000">...</span><span style="color:#000;font-weight:bold">},</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#204a87;font-weight:bold">&#34;to&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#a40000">...</span><span style="color:#000;font-weight:bold">],</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#204a87;font-weight:bold">&#34;to_if_alone&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#a40000">...</span><span style="color:#000;font-weight:bold">],</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#204a87;font-weight:bold">&#34;to_if_held_down&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#a40000">...</span><span style="color:#000;font-weight:bold">],</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#204a87;font-weight:bold">&#34;to_after_key_up&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#a40000">...</span><span style="color:#000;font-weight:bold">],</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#204a87;font-weight:bold">&#34;to_delayed_action&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
-</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;to_if_invoked&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#a40000">...</span><span style="color:#000;font-weight:bold">],</span>
-</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;to_if_canceled&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#a40000">...</span><span style="color:#000;font-weight:bold">],</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">},</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#204a87;font-weight:bold">&#34;conditions&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#a40000">...</span><span style="color:#000;font-weight:bold">],</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#204a87;font-weight:bold">&#34;parameters&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span><span style="color:#a40000">...</span><span style="color:#000;font-weight:bold">},</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#204a87;font-weight:bold">&#34;description&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;Optional description for human&#34;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">},</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a40000">...</span>
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">]</span>
-</span></span></code></pre></div><table>
+	<p>Karabiner-Elements supports most keys, including those found only on PC keyboards.
+However, it may not support certain special function keys, such as some keys in the Consumer Page&rsquo;s Generic GUI Application Controls.
+This is because Karabiner-Elements manages a whitelist of verified keys, and any unverified events not included in this list are ignored.</p>
+<p>This guide provides instructions on how to add support for unsupported keys in Karabiner-Elements, should your keyboard have such keys.</p>
+<h2 id="investigate-the-key-code">Investigate the key code</h2>
+<p>First, to investigate the raw key events from your keyboard, stop Karabiner-Elements from modifying the device&rsquo;s events. This can be done from the Devices tab.</p>
+<figure>
+  <img
+    src="/docs/help/advanced-topics/unknown-events/images/devices@2x.png"
+    alt="devices@2x.png"
+    style="width: 1100px"
+  />
+</figure>
+
+<p>After that, open Karabiner-EventViewer and press the key you want to investigate.</p>
+<ul>
+<li>If the event appears in the Main tab, the key is already supported, so no further action is needed.</li>
+<li>If the event appears in the Unknown Events tab, you can enable it by following the steps below to update the whitelist and rebuild Karabiner-Elements.</li>
+<li>If the event does not show up in either tab, it means that macOS itself cannot recognize the key, so it cannot be supported.</li>
+</ul>
+<table>
   <thead>
       <tr>
-          <th>Name</th>
-          <th>Required</th>
-          <th>Description</th>
+          <th>Main tab</th>
+          <th>Unknown Events tab</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td><code>type</code></td>
-          <td><strong>Required</strong></td>
-          <td><code>&quot;basic&quot;</code> is specified</td>
-      </tr>
-      <tr>
-          <td><a href="/docs/json/complex-modifications-manipulator-definition/from/"><code>from</code></a></td>
-          <td><strong>Required</strong></td>
-          <td>The name of key code, consumer key code or pointing button which you want to change</td>
-      </tr>
-      <tr>
-          <td><a href="/docs/json/complex-modifications-manipulator-definition/to/"><code>to</code></a></td>
-          <td>Optional</td>
-          <td>Events which are sent when you press <code>from</code> key</td>
-      </tr>
-      <tr>
-          <td><a href="/docs/json/complex-modifications-manipulator-definition/to-if-alone/"><code>to_if_alone</code></a></td>
-          <td>Optional</td>
-          <td>Events which are sent when you press <code>from</code> key alone</td>
-      </tr>
-      <tr>
-          <td><a href="/docs/json/complex-modifications-manipulator-definition/to-if-held-down/"><code>to_if_held_down</code></a></td>
-          <td>Optional</td>
-          <td>Events which are sent when you hold down <code>from</code> key</td>
-      </tr>
-      <tr>
-          <td><a href="/docs/json/complex-modifications-manipulator-definition/to-after-key-up/"><code>to_after_key_up</code></a></td>
-          <td>Optional</td>
-          <td>Events which are sent after you release <code>from</code> key</td>
-      </tr>
-      <tr>
-          <td><a href="/docs/json/complex-modifications-manipulator-definition/to-delayed-action/"><code>to_delayed_action</code></a></td>
-          <td>Optional</td>
-          <td>Events which are sent after 500 milliseconds at you press <code>from</code> key</td>
-      </tr>
-      <tr>
-          <td><a href="/docs/json/complex-modifications-manipulator-definition/conditions/"><code>conditions</code></a></td>
-          <td>Optional</td>
-          <td>Manipulator is applied only if condition is matched (e.g., the frontmost application)</td>
-      </tr>
-      <tr>
-          <td><code>parameters</code></td>
-          <td>Optional</td>
-          <td>Override parameters such as <code>to_if_alone_timeout_milliseconds</code></td>
-      </tr>
-      <tr>
-          <td><code>description</code></td>
-          <td>Optional</td>
-          <td>A human-readable comment</td>
+          <td><figure>
+  <img
+    src="/docs/help/advanced-topics/unknown-events/images/eventviewer-main@2x.png"
+    alt="eventviewer-main@2x.png"
+    style="width: 1100px"
+  />
+</figure>
+</td>
+          <td><figure>
+  <img
+    src="/docs/help/advanced-topics/unknown-events/images/eventviewer-unknown@2x.png"
+    alt="eventviewer-unknown@2x.png"
+    style="width: 1100px"
+  />
+</figure>
+</td>
       </tr>
   </tbody>
 </table>
-<h2 id="detail">Detail</h2>
-<ul>
-<li><a href="/docs/json/complex-modifications-manipulator-definition/from/">from event definition</a></li>
-<li><a href="/docs/json/complex-modifications-manipulator-definition/to/">to event definition</a></li>
-<li><a href="/docs/json/complex-modifications-manipulator-definition/to-if-alone/">to_if_alone</a></li>
-<li><a href="/docs/json/complex-modifications-manipulator-definition/to-if-held-down/">to_if_held_down</a></li>
-<li><a href="/docs/json/complex-modifications-manipulator-definition/to-after-key-up/">to_after_key_up</a></li>
-<li><a href="/docs/json/complex-modifications-manipulator-definition/to-delayed-action/">to_delayed_action</a></li>
-<li><a href="/docs/json/complex-modifications-manipulator-definition/conditions/">conditions</a></li>
-</ul>
-<h2 id="other-manipulators">Other manipulators</h2>
-<p>Manipulators which <code>type</code> is not <code>&quot;basic&quot;</code>.</p>
-<ul>
-<li><a href="/docs/json/complex-modifications-manipulator-definition/other-types/mouse-motion-to-scroll/"><code>mouse_motion_to_scroll</code></a></li>
-</ul>
-<h2 id="table-of-contents">Table of Contents</h2>
+<h2 id="add-the-keys-to-the-whitelist">Add the keys to the whitelist</h2>
+<p>Adding to the whitelist is done by modifying the source code.
+Here is a diff for supporting Consumer Page&rsquo;s AC Zoom Out and AC Zoom In.
+In the same way, you can add the key codes you want to include.</p>
+<p><a href="https://github.com/pqrs-org/Karabiner-Elements/pull/4021/files">https://github.com/pqrs-org/Karabiner-Elements/pull/4021/files</a></p>
 
-  <div class="section-index">
-            <ul><li>
-                        <a href="/docs/json/complex-modifications-manipulator-definition/from/">from event definition</a>
-                        <div class="section-index">
-            <ul><li>
-                        <a href="/docs/json/complex-modifications-manipulator-definition/from/any/">from.any</a>
-                        </li><li>
-                        <a href="/docs/json/complex-modifications-manipulator-definition/from/modifiers/">from.modifiers</a>
-                        </li><li>
-                        <a href="/docs/json/complex-modifications-manipulator-definition/from/simultaneous/">from.simultaneous</a>
-                        </li><li>
-                        <a href="/docs/json/complex-modifications-manipulator-definition/from/simultaneous-options/">from.simultaneous_options</a>
-                        </li></ul></div></li><li>
-                        <a href="/docs/json/complex-modifications-manipulator-definition/to/">to event definition</a>
-                        <div class="section-index">
-            <ul><li>
-                        <a href="/docs/json/complex-modifications-manipulator-definition/to/shell-command/">to.shell_command</a>
-                        </li><li>
-                        <a href="/docs/json/complex-modifications-manipulator-definition/to/select-input-source/">to.select_input_source</a>
-                        </li><li>
-                        <a href="/docs/json/complex-modifications-manipulator-definition/to/set-variable/">to.set_variable</a>
-                        </li><li>
-                        <a href="/docs/json/complex-modifications-manipulator-definition/to/set-notification-message/">to.set_notification_message</a>
-                        </li><li>
-                        <a href="/docs/json/complex-modifications-manipulator-definition/to/mouse-key/">to.mouse_key</a>
-                        </li><li>
-                        <a href="/docs/json/complex-modifications-manipulator-definition/to/sticky-modifier/">to.sticky_modifier</a>
-                        </li><li>
-                        <a href="/docs/json/complex-modifications-manipulator-definition/to/software_function/">to.software_function</a>
-                        <div class="section-index">
-            <ul><li>
-                        <a href="/docs/json/complex-modifications-manipulator-definition/to/software_function/cg_event_double_click/">cg_event_double_click</a>
-                        </li><li>
-                        <a href="/docs/json/complex-modifications-manipulator-definition/to/software_function/iokit_power_management_sleep_system/">iokit_power_management_sleep_system</a>
-                        </li><li>
-                        <a href="/docs/json/complex-modifications-manipulator-definition/to/software_function/open_application/">open_application</a>
-                        </li><li>
-                        <a href="/docs/json/complex-modifications-manipulator-definition/to/software_function/set_mouse_cursor_position/">set_mouse_cursor_position</a>
-                        </li></ul></div></li><li>
-                        <a href="/docs/json/complex-modifications-manipulator-definition/to/modifiers/">to.modifiers</a>
-                        </li><li>
-                        <a href="/docs/json/complex-modifications-manipulator-definition/to/lazy/">to.lazy</a>
-                        </li><li>
-                        <a href="/docs/json/complex-modifications-manipulator-definition/to/repeat/">to.repeat</a>
-                        </li><li>
-                        <a href="/docs/json/complex-modifications-manipulator-definition/to/halt/">to.halt</a>
-                        </li><li>
-                        <a href="/docs/json/complex-modifications-manipulator-definition/to/hold-down-milliseconds/">to.hold_down_milliseconds</a>
-                        </li></ul></div></li><li>
-                        <a href="/docs/json/complex-modifications-manipulator-definition/to-if-alone/">to_if_alone</a>
-                        </li><li>
-                        <a href="/docs/json/complex-modifications-manipulator-definition/to-if-held-down/">to_if_held_down</a>
-                        </li><li>
-                        <a href="/docs/json/complex-modifications-manipulator-definition/to-after-key-up/">to_after_key_up</a>
-                        </li><li>
-                        <a href="/docs/json/complex-modifications-manipulator-definition/to-delayed-action/">to_delayed_action</a>
-                        </li><li>
-                        <a href="/docs/json/complex-modifications-manipulator-definition/conditions/">Conditions</a>
-                        <div class="section-index">
-            <ul><li>
-                        <a href="/docs/json/complex-modifications-manipulator-definition/conditions/frontmost-application/">frontmost_application_if, frontmost_application_unless</a>
-                        </li><li>
-                        <a href="/docs/json/complex-modifications-manipulator-definition/conditions/device/">device_if, device_unless, device_exists_if, device_exists_unless</a>
-                        </li><li>
-                        <a href="/docs/json/complex-modifications-manipulator-definition/conditions/keyboard-type/">keyboard_type_if, keyboard_type_unless</a>
-                        </li><li>
-                        <a href="/docs/json/complex-modifications-manipulator-definition/conditions/input-source/">input_source_if, input_source_unless</a>
-                        </li><li>
-                        <a href="/docs/json/complex-modifications-manipulator-definition/conditions/variable/">variable_if, variable_unless</a>
-                        </li><li>
-                        <a href="/docs/json/complex-modifications-manipulator-definition/conditions/event-changed/">event_changed_if, event_changed_unless</a>
-                        </li></ul></div></li><li>
-                        <a href="/docs/json/complex-modifications-manipulator-definition/other-types/">Other types</a>
-                        <div class="section-index">
-            <ul><li>
-                        <a href="/docs/json/complex-modifications-manipulator-definition/other-types/mouse-motion-to-scroll/">mouse_motion_to_scroll</a>
-                        </li></ul></div></li></ul></div></div>
+
+<div class="alert alert-primary" role="alert">
+<h4 class="alert-heading">Note</h4>
+
+    <p>The key names follow this list:</p>
+<p><a href="https://github.com/apple-oss-distributions/IOHIDFamily/blob/main/IOHIDFamily/IOHIDUsageTables.h">https://github.com/apple-oss-distributions/IOHIDFamily/blob/main/IOHIDFamily/IOHIDUsageTables.h</a></p>
+
+
+</div>
+
+<p>Next, follow the steps below to set up the build environment.</p>
+<p><a href="https://github.com/pqrs-org/Karabiner-Elements/blob/main/README.md#for-developers">https://github.com/pqrs-org/Karabiner-Elements/blob/main/README.md#for-developers</a></p>
+<p>Finally, build karabiner_grabber, Settings and EventViewer by following the steps below.
+With this, you will now be able to modify the new keys in Karabiner-Elements.</p>
+<h3 id="build-karabiner_grabber">Build karabiner_grabber</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#204a87">cd</span> src/core/grabber
+</span></span><span style="display:flex;"><span>make
+</span></span></code></pre></div><p>Then upgrade the installed file.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>make install
+</span></span></code></pre></div>
+
+<div class="alert alert-primary" role="alert">
+<h4 class="alert-heading">Note</h4>
+
+    <p>Since the signature differs from the official release, you will need to delete and re-add the entry for Input Monitoring permissions.</p>
+<p><a href="https://karabiner-elements.pqrs.org/docs/manual/misc/required-macos-settings/#enable-input-monitoring">https://karabiner-elements.pqrs.org/docs/manual/misc/required-macos-settings/#enable-input-monitoring</a></p>
+
+
+</div>
+
+<h3 id="build-settings">Build Settings</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#204a87">cd</span> src/apps/SettingsWindow
+</span></span><span style="display:flex;"><span>make
+</span></span></code></pre></div><p>Execute the updated Settings:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>make run
+</span></span></code></pre></div><h3 id="build-eventviewer">Build EventViewer</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#204a87">cd</span> src/apps/EventViewer
+</span></span><span style="display:flex;"><span>make
+</span></span></code></pre></div><p>Execute the updated EventViewer:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>make run
+</span></span></code></pre></div>
+
+<div class="alert alert-primary" role="alert">
+<h4 class="alert-heading">Note</h4>
+
+    <p>Since the signature differs from the official release, you will need to delete and re-add the entry for Input Monitoring permissions.</p>
+<p><a href="https://karabiner-elements.pqrs.org/docs/manual/misc/required-macos-settings/#enable-input-monitoring">https://karabiner-elements.pqrs.org/docs/manual/misc/required-macos-settings/#enable-input-monitoring</a></p>
+
+
+</div>
+
+<h2 id="create-a-pull-request-to-add-new-keys">Create a pull request to add new keys</h2>
+<p>Once you&rsquo;ve successfully added the new keys, we&rsquo;d greatly appreciate it if you could submit a pull request to Karabiner-Elements.</p>
+
+	
+</div>
+
 
           </main>
         </div>
