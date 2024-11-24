@@ -1,5 +1,5 @@
 ---
-title: 'A guide for supporting unsupported keys'
+title: 'Guide for supporting unsupported keys'
 weight: 210
 ---
 
