@@ -16,23 +16,22 @@ weight: 500
 
 ## Example
 
-The following json changes holding `tab` key to `mission_control`.
+The following json changes holding `tab` key to `mute`.
 
 ```json
 {
-    "type": "basic",
-    "from": {
-        "key_code": "tab"
-    },
-    "to_after_key_up": [
+    "description": "Mute when tab is held down",
+    "manipulators": [
         {
-            "key_code": "tab"
-        }
-    ],
-    "to_if_held_down": [
-        {
-            "key_code": "mission_control",
-            "halt": true
+            "type": "basic",
+            "from": { "key_code": "tab" },
+            "to_after_key_up": [{ "key_code": "tab" }],
+            "to_if_held_down": [
+                {
+                    "consumer_key_code": "mute",
+                    "halt": true
+                }
+            ]
         }
     ]
 }
