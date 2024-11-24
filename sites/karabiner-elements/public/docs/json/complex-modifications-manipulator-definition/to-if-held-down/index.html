@@ -36,7 +36,7 @@ Note If to events are specified, key_up event of to is sent before to_if_held_do
   <meta itemprop="description" content="to_if_held_down posts events when the from key is held down.
 Note If to events are specified, key_up event of to is sent before to_if_held_down events are posted. Example The following json changes the escape key to open Launchpad when the escape key is held down.
 { &#34;description&#34;: &#34;Open Launchpad when escape is held down&#34;, &#34;manipulators&#34;: [ { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;escape&#34;, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;caps_lock&#34;] } }, &#34;to_if_alone&#34;: [{ &#34;key_code&#34;: &#34;escape&#34; }], &#34;to_if_held_down&#34;: [ { &#34;apple_vendor_keyboard_key_code&#34;: &#34;launchpad&#34; } ], &#34;parameters&#34;: { &#34;basic.to_if_alone_timeout_milliseconds&#34;: 250, &#34;basic.to_if_held_down_threshold_milliseconds&#34;: 250 } } ] } Parameter You can adjust the threshold of holding down periods by parameters &gt; basic.to_if_held_down_threshold_milliseconds like the above example.">
-  <meta itemprop="wordCount" content="216">
+  <meta itemprop="wordCount" content="305">
   <meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://karabiner-elements.pqrs.org/images/logo.png">
@@ -78,7 +78,7 @@ Note If to events are specified, key_up event of to is sent before to_if_held_do
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.8fee276dc8976d5ecd21cfb68891d02a.json"
+    data-offline-search-index-json-src="/offline-search-index.dd8df775a389685747d5907e49462af0.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="25"
   >
@@ -102,7 +102,7 @@ Note If to events are specified, key_up event of to is sent before to_if_held_do
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.8fee276dc8976d5ecd21cfb68891d02a.json"
+    data-offline-search-index-json-src="/offline-search-index.dd8df775a389685747d5907e49462af0.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="25"
   >
@@ -700,8 +700,13 @@ Note If to events are specified, key_up event of to is sent before to_if_held_do
 </span></span></code></pre></div><h2 id="parameter">Parameter</h2>
 <p>You can adjust the threshold of holding down periods by <code>parameters &gt; basic.to_if_held_down_threshold_milliseconds</code> like the above example.</p>
 <h2 id="more-advanced-example">More advanced example</h2>
-<p>When making a key act as a modifier only when held down, <code>to_if_held_down</code> alone cannot send the original key, so it must be combined with <code>to_delayed_action</code> as follows.</p>
-<p>Additionally, you need to specify <code>halt</code> in <code>to_if_alone</code> to stop <code>to_delayed_action</code> when <code>to_if_alone</code> is triggered.</p>
+<p>The nature of <code>to_if_held_down</code> means that events may not fire in the order the keys are pressed when typing in combination with other keys.
+(Even if the <code>to_if_held_down</code> key is pressed first, its event will fire after the others.)</p>
+<p>In cases where this behavior becomes problematic, such as wanting to modify a letter key to another key only when held down, a more advanced configuration will be necessary.</p>
+<p>In the example below, the <kbd>f</kbd> key becomes the <kbd>left shift</kbd> key when held down.</p>
+<p>In this example, <code>to_if_held_down.to_if_canceled</code> is used to send the <kbd>f</kbd> key event when the next key is pressed.
+Additionally, <code>to_if_alone</code> is used to send the <kbd>f</kbd> key when it is pressed alone.</p>
+<p>The <code>halt</code> specified in <code>to_if_alone</code> prevents the <kbd>f</kbd> key from being sent by both <code>to_if_alone</code> and <code>to_delayed_action</code>.</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;description&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;Change the f key to the left shift key if held down&#34;</span><span style="color:#000;font-weight:bold">,</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;manipulators&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
