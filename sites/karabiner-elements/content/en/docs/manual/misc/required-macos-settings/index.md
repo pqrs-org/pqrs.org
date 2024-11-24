@@ -67,8 +67,8 @@ Otherwise, you have to approve the system extension in macOS System Settings.
 
 ### Approve system extension
 
-You can approve the system extension in `macOS System Settings > Privacy & Security`.
+You can approve the system extension in `macOS System Settings > Login Items & Extensions > Driver Extensions`.
 
-{{< local-image src="images/system-extension2@2x.png" >}}
+{{< local-image src="images/driver-extensions@2x.png" >}}
 
 {{% /alert %}}
