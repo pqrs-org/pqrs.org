@@ -13,29 +13,26 @@ If `to` events are specified, `key_up` event of `to` is sent before `to_if_held_
 
 ## Example
 
-The following json changes the `escape` key to open Alfred when the `escape` key is held down.
+The following json changes the `escape` key to open Launchpad when the `escape` key is held down.
 
 ```json
 {
-    "type": "basic",
-    "from": {
-        "key_code": "escape",
-        "modifiers": {
-            "optional": ["caps_lock"]
-        }
-    },
-    "parameters": {
-        "basic.to_if_alone_timeout_milliseconds": 250,
-        "basic.to_if_held_down_threshold_milliseconds": 250
-    },
-    "to_if_alone": [
+    "description": "Open Launchpad when escape is held down",
+    "manipulators": [
         {
-            "key_code": "escape"
-        }
-    ],
-    "to_if_held_down": [
-        {
-            "shell_command": "open -a 'Alfred 4.app'"
+            "from": {
+                "key_code": "escape",
+                "modifiers": { "optional": ["caps_lock"] }
+            },
+            "parameters": {
+                "basic.to_if_alone_timeout_milliseconds": 250,
+                "basic.to_if_held_down_threshold_milliseconds": 250
+            },
+            "to_if_alone": [{ "key_code": "escape" }],
+            "to_if_held_down": [
+                { "apple_vendor_keyboard_key_code": "launchpad" }
+            ],
+            "type": "basic"
         }
     ]
 }
