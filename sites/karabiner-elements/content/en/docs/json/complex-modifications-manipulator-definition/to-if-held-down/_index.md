@@ -44,9 +44,17 @@ You can adjust the threshold of holding down periods by `parameters > basic.to_i
 
 ## More advanced example
 
-When making a key act as a modifier only when held down, `to_if_held_down` alone cannot send the original key, so it must be combined with `to_delayed_action` as follows.
+The nature of `to_if_held_down` means that events may not fire in the order the keys are pressed when typing in combination with other keys.
+(Even if the `to_if_held_down` key is pressed first, its event will fire after the others.)
 
-Additionally, you need to specify `halt` in `to_if_alone` to stop `to_delayed_action` when `to_if_alone` is triggered.
+In cases where this behavior becomes problematic, such as wanting to modify a letter key to another key only when held down, a more advanced configuration will be necessary.
+
+In the example below, the <kbd>f</kbd> key becomes the <kbd>left shift</kbd> key when held down.
+
+In this example, `to_if_held_down.to_if_canceled` is used to send the <kbd>f</kbd> key event when the next key is pressed.
+Additionally, `to_if_alone` is used to send the <kbd>f</kbd> key when it is pressed alone.
+
+The `halt` specified in `to_if_alone` prevents the <kbd>f</kbd> key from being sent by both `to_if_alone` and `to_delayed_action`.
 
 ```json
 {
