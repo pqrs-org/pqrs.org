@@ -24,67 +24,44 @@ weight: 600
 The following json provide `Quit application by pressing command-q twice`.
 
 ```json
-[
-    {
-        "type": "basic",
-        "conditions": [
-            {
-                "type": "variable_if",
-                "name": "command-q",
-                "value": 1
-            }
-        ],
-        "from": {
-            "key_code": "q",
-            "modifiers": {
-                "mandatory": ["command"],
-                "optional": ["caps_lock"]
-            }
-        },
-        "to": [
-            {
-                "key_code": "q",
-                "modifiers": "left_command"
-            }
-        ]
-    },
-    {
-        "type": "basic",
-        "from": {
-            "key_code": "q",
-            "modifiers": {
-                "mandatory": ["command"],
-                "optional": ["caps_lock"]
-            }
-        },
-        "to": [
-            {
-                "set_variable": {
-                    "name": "command-q",
-                    "value": 1
-                }
-            }
-        ],
-        "to_delayed_action": {
-            "to_if_invoked": [
-                {
-                    "set_variable": {
-                        "name": "command-q",
-                        "value": 0
-                    }
-                }
+{
+    "description": "Quit application by pressing command-q twice",
+    "manipulators": [
+        {
+            "type": "basic",
+            "conditions": [
+                { "type": "variable_if", "name": "command-q", "value": 1 }
             ],
-            "to_if_canceled": [
-                {
-                    "set_variable": {
-                        "name": "command-q",
-                        "value": 0
-                    }
+            "from": {
+                "key_code": "q",
+                "modifiers": {
+                    "mandatory": ["command"],
+                    "optional": ["caps_lock"]
                 }
-            ]
+            },
+            "to": [{ "key_code": "q", "modifiers": "left_command" }]
+        },
+        {
+            "type": "basic",
+            "from": {
+                "key_code": "q",
+                "modifiers": {
+                    "mandatory": ["command"],
+                    "optional": ["caps_lock"]
+                }
+            },
+            "to": [{ "set_variable": { "name": "command-q", "value": 1 } }],
+            "to_delayed_action": {
+                "to_if_invoked": [
+                    { "set_variable": { "name": "command-q", "value": 0 } }
+                ],
+                "to_if_canceled": [
+                    { "set_variable": { "name": "command-q", "value": 0 } }
+                ]
+            }
         }
-    }
-]
+    ]
+}
 ```
 
 ## Parameters
@@ -93,11 +70,42 @@ You can adjust the milliseconds invoking `to_delayed_action` by `parameters > ba
 
 ```json
 {
-    "type": "basic",
-    "from": ...,
-    "to_delayed_action": ...,
-    "parameters": {
-        "basic.to_delayed_action_delay_milliseconds": 1000
-    }
+    "description": "Quit application by pressing command-q twice",
+    "manipulators": [
+        {
+            "type": "basic",
+            "conditions": [
+                { "type": "variable_if", "name": "command-q", "value": 1 }
+            ],
+            "from": {
+                "key_code": "q",
+                "modifiers": {
+                    "mandatory": ["command"],
+                    "optional": ["caps_lock"]
+                }
+            },
+            "to": [{ "key_code": "q", "modifiers": "left_command" }]
+        },
+        {
+            "type": "basic",
+            "from": {
+                "key_code": "q",
+                "modifiers": {
+                    "mandatory": ["command"],
+                    "optional": ["caps_lock"]
+                }
+            },
+            "to": [{ "set_variable": { "name": "command-q", "value": 1 } }],
+            "to_delayed_action": {
+                "to_if_invoked": [
+                    { "set_variable": { "name": "command-q", "value": 0 } }
+                ],
+                "to_if_canceled": [
+                    { "set_variable": { "name": "command-q", "value": 0 } }
+                ]
+            },
+            "parameters": { "basic.to_delayed_action_delay_milliseconds": 1000 }
+        }
+    ]
 }
 ```
