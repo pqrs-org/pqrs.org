@@ -12,22 +12,21 @@ The following json changes `left_control` to sending `escape` when `left_control
 
 ```json
 {
-    "type": "basic",
-    "from": {
-        "key_code": "left_control",
-        "modifiers": {
-            "optional": ["any"]
-        }
-    },
-    "to": [
+    "description": "Send the escape key when the left control key is tapped",
+    "manipulators": [
         {
-            "key_code": "left_control",
-            "lazy": true
-        }
-    ],
-    "to_if_alone": [
-        {
-            "key_code": "escape"
+            "type": "basic",
+            "from": {
+                "key_code": "left_control",
+                "modifiers": { "optional": ["any"] }
+            },
+            "to": [
+                {
+                    "key_code": "left_control",
+                    "lazy": true
+                }
+            ],
+            "to_if_alone": [{ "key_code": "escape" }]
         }
     ]
 }
@@ -37,28 +36,35 @@ The following json changes `left_control` to sending `escape` when `left_control
 
 `to_if_alone` is canceled if other events (keys, buttons or scroll wheel) is happen while the `from` key is pressed down.
 
-The cancellation also happens when you press the `from` key long. (The default timeout is 1000 milliseconds.)
+Cancellation also occurs when you press the `from` key for a long time. (The default timeout is 1000 milliseconds.)
 
 You can adjust the timeout milliseconds by `parameters > basic.to_if_alone_timeout_milliseconds`.<br />
-The following example sets the timeout 500 milliseconds.
+The following example sets the timeout 200 milliseconds.
 
 ```json
 {
-    "from": ...,
-    "to": ...,
-    "to_if_alone": [
+    "description": "Send the escape key when the left control key is tapped",
+    "manipulators": [
         {
-            "key_code": "escape"
+            "type": "basic",
+            "from": {
+                "key_code": "left_control",
+                "modifiers": { "optional": ["any"] }
+            },
+            "to": [
+                {
+                    "key_code": "left_control",
+                    "lazy": true
+                }
+            ],
+            "to_if_alone": [{ "key_code": "escape" }],
+            "parameters": { "basic.to_if_alone_timeout_milliseconds": 200 }
         }
-    ],
-    "parameters": {
-        "basic.to_if_alone_timeout_milliseconds": 500
-    },
-    "type": "basic"
+    ]
 }
 ```
 
 ## About keyboard repeat
 
-`to_if_alone` posts both `key_down` and `key_up` events at the same time.<br />
+`to_if_alone` posts both `key_down` and `key_up` events at the same time.
 Thus, you cannot use key repeat for `to_if_alone` events.
