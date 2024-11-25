@@ -81,7 +81,7 @@ You cannot specify multiple items into one `to` entry.
 -   You can also confirm [names in list](https://github.com/pqrs-org/Karabiner-Elements/blob/main/src/apps/SettingsWindow/Resources/simple_modifications.json).
     (See `"data"` in the list.)
 
-{{% alert title="Tip" color="primary" %}}
+{{% alert title="Tip: using numbers instead of names" color="primary" %}}
 
 You can also specify `key_code`, `consumer_key_code`, `pointing_button` with raw number as follows.<br />
 
@@ -90,6 +90,40 @@ You can also specify `key_code`, `consumer_key_code`, `pointing_button` with raw
     "to": [
         {
             "key_code": 41
+        }
+    ]
+}
+```
+
+{{% /alert %}}
+
+{{% alert title="Tip: Sending both key_down and key_up events when a key is pressed" color="primary" %}}
+
+Normally, a corresponding key_down event is sent when a key is pressed, and a key_up event is sent when it is released.
+
+However, for certain keys, you might want both key_down and key_up to be sent when the key is pressed.
+For example, the `mission_control` key closes Mission Control on key_up, so if you press and hold the key and then release it, the Mission Control window you just opened will end up closing.
+
+In such cases, you can send both key_down and key_up when the key is pressed by adding `vk_none`.
+In this scenario, no event will be triggered when the key is released.
+
+```json
+{
+    "description": "Open Mission Control by right_command + e",
+    "manipulators": [
+        {
+            "type": "basic",
+            "from": {
+                "key_code": "e",
+                "modifiers": {
+                    "mandatory": ["right_command"],
+                    "optional": ["caps_lock"]
+                }
+            },
+            "to": [
+                { "apple_vendor_keyboard_key_code": "mission_control" },
+                { "key_code": "vk_none" }
+            ]
         }
     ]
 }
