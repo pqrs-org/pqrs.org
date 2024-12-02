@@ -41,6 +41,7 @@ You can find the bundle identifier and file path in [EventViewer > Frontmost App
 -   The `history_index` should be set as an integer >= 1.
 -   When `history_index` is specified, the selected application will be the one that was recently focused.
     Applications opened through methods other than `open_application`, such as via Launchpad, are also included.
+-   Only currently running applications are targeted; closed applications will not be selected.
 
 {{% /alert %}}
 
