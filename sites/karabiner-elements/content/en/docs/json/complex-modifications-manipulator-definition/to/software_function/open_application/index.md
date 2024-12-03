@@ -42,6 +42,7 @@ You can find the bundle identifier and file path in [EventViewer > Frontmost App
 -   When `history_index` is specified, the selected application will be the one that was recently focused.
     Applications opened through methods other than `open_application`, such as via Launchpad, are also included.
 -   Only currently running applications are targeted; closed applications will not be selected.
+-   Only applications opened after Karabiner-Elements was launched are targeted.
 
 {{% /alert %}}
 
