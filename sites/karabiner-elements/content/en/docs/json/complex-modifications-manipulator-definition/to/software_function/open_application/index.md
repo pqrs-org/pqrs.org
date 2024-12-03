@@ -77,27 +77,59 @@ Open EventViewer by <kbd>right command + v</kbd>:
 }
 ```
 
-Cycle through and select the five most recently opened applications by <kbd>right shift + c</kbd>:
+Focus recently opened applications by <kbd>right command + 1</kbd>, <kbd>right command + 2</kbd>, <kbd>right command + 3</kbd>:
 
 ```json
 {
-    "description": "Cycle through the 5 most recently opened apps by right shift + c",
+    "description": "open_application history_index by right_command + 1...3",
     "manipulators": [
         {
             "type": "basic",
             "from": {
-                "key_code": "c",
+                "key_code": "1",
                 "modifiers": {
-                    "mandatory": ["right_shift"],
+                    "mandatory": ["right_command"],
                     "optional": ["caps_lock"]
                 }
             },
             "to": [
                 {
                     "software_function": {
-                        "open_application": {
-                            "history_index": 4
-                        }
+                        "open_application": { "history_index": 1 }
+                    }
+                }
+            ]
+        },
+        {
+            "type": "basic",
+            "from": {
+                "key_code": "2",
+                "modifiers": {
+                    "mandatory": ["right_command"],
+                    "optional": ["caps_lock"]
+                }
+            },
+            "to": [
+                {
+                    "software_function": {
+                        "open_application": { "history_index": 2 }
+                    }
+                }
+            ]
+        },
+        {
+            "type": "basic",
+            "from": {
+                "key_code": "3",
+                "modifiers": {
+                    "mandatory": ["right_command"],
+                    "optional": ["caps_lock"]
+                }
+            },
+            "to": [
+                {
+                    "software_function": {
+                        "open_application": { "history_index": 3 }
                     }
                 }
             ]
