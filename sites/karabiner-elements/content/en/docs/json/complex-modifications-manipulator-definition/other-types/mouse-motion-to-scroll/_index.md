@@ -52,46 +52,38 @@ Your mouse cursor movement will be always changed to scroll and your mouse will 
 The following json changes `button4 + mouse movement` to `scroll`.
 
 ```json
-[
-    {
-        "type": "basic",
-        "from": {
-            "pointing_button": "button4",
-            "modifiers": {
-                "optional": ["any"]
-            }
-        },
-        "to": [
-            {
-                "set_variable": {
-                    "name": "enable_mouse_motion_to_scroll",
-                    "value": 1
+{
+    "description": "Change button4 + mouse movement to scroll",
+    "manipulators": [
+        {
+            "type": "basic",
+            "from": {
+                "pointing_button": "button4",
+                "modifiers": { "optional": ["any"] }
+            },
+            "to": [
+                {
+                    "set_variable": {
+                        "name": "enable_mouse_motion_to_scroll",
+                        "value": true,
+                        "key_up_value": false
+                    }
                 }
-            }
-        ],
-        "to_after_key_up": [
-            {
-                "set_variable": {
-                    "name": "enable_mouse_motion_to_scroll",
-                    "value": 0
-                }
-            }
-        ]
-    },
-    {
-        "type": "mouse_motion_to_scroll",
-        "from": {
-            "modifiers": {
-                "optional": ["any"]
-            }
+            ]
         },
-        "conditions": [
-            {
-                "type": "variable_if",
-                "name": "enable_mouse_motion_to_scroll",
-                "value": 1
-            }
-        ]
-    }
-]
+        {
+            "type": "mouse_motion_to_scroll",
+            "from": {
+                "modifiers": { "optional": ["any"] }
+            },
+            "conditions": [
+                {
+                    "type": "variable_if",
+                    "name": "enable_mouse_motion_to_scroll",
+                    "value": true
+                }
+            ]
+        }
+    ]
+}
 ```
