@@ -7,8 +7,55 @@ Change an event if/unless the variable is the specified value.
 
 ## Example
 
--   [Change `right_shift` x2 to `mission_control`](/docs/json/typical-complex-modifications-examples/#change-right_shift-x2-to-mission_control)
--   [Virtual modifier](/docs/json/extra/virtual-modifier/)
+Pressing the <kbd>a</kbd> key while holding the <kbd>escape</kbd> key launches Activity Monitor.
+
+```json
+{
+    "description": "Pressing the a key while holding the escape key launches Activity Monitor",
+    "manipulators": [
+        {
+            "type": "basic",
+            "from": {
+                "key_code": "escape",
+                "modifiers": { "optional": ["any"] }
+            },
+            "to": [
+                {
+                    "set_variable": {
+                        "name": "escape_pressed",
+                        "value": true,
+                        "key_up_value": false
+                    }
+                }
+            ],
+            "to_if_alone": [{ "key_code": "escape" }]
+        },
+        {
+            "type": "basic",
+            "from": {
+                "key_code": "a",
+                "modifiers": { "optional": ["any"] }
+            },
+            "to": [
+                {
+                    "software_function": {
+                        "open_application": {
+                            "bundle_identifier": "com.apple.ActivityMonitor"
+                        }
+                    }
+                }
+            ],
+            "conditions": [
+                {
+                    "type": "variable_if",
+                    "name": "escape_pressed",
+                    "value": true
+                }
+            ]
+        }
+    ]
+}
+```
 
 ---
 
