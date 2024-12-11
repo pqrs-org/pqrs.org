@@ -95,9 +95,7 @@ And change `control-option-h` to `option-delete`.
             "type": "basic",
             "from": {
                 "key_code": "left_control",
-                "modifiers": {
-                    "optional": ["any"]
-                }
+                "modifiers": { "optional": ["any"] }
             },
             "to": [
                 {
@@ -105,11 +103,20 @@ And change `control-option-h` to `option-delete`.
                     "lazy": true
                 }
             ],
-            "to_if_alone": [{ "key_code": "escape" }]
+            "to_if_alone": [{ "key_code": "escape" }],
+            "to_if_held_down": [{ "key_code": "left_control" }],
+            "parameters": {
+                "basic.to_if_alone_timeout_milliseconds": 100,
+                "basic.to_if_held_down_threshold_milliseconds": 100
+            }
         }
     ]
 }
 ```
+
+{{% alert color="info" %}}
+This uses `"lazy": true` to prevent <kbd>left_control</kbd> from being sent immediately after the key is pressed. Instead, it explicitly sends left_control using `to_if_held_down` when the key is held down for a short period.
+{{% /alert %}}
 
 ## Open `Safari` if `escape` is held down
 
