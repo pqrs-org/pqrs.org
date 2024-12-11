@@ -11,23 +11,24 @@ Change `control-h` key to `delete_or_backspace` except in Terminal.
 
 ```json
 {
-    "type": "basic",
-    "from": {
-        "key_code": "h",
-        "modifiers": {
-            "mandatory": ["control"],
-            "optional": ["any"]
-        }
-    },
-    "to": [
+    "description": "Change control-h to delete_or_backspace except in Terminal",
+    "manipulators": [
         {
-            "key_code": "delete_or_backspace"
-        }
-    ],
-    "conditions": [
-        {
-            "type": "frontmost_application_unless",
-            "bundle_identifiers": ["^com\\.apple\\.Terminal$"]
+            "type": "basic",
+            "from": {
+                "key_code": "h",
+                "modifiers": {
+                    "mandatory": ["control"],
+                    "optional": ["any"]
+                }
+            },
+            "to": [{ "key_code": "delete_or_backspace" }],
+            "conditions": [
+                {
+                    "type": "frontmost_application_unless",
+                    "bundle_identifiers": ["^com\\.apple\\.Terminal$"]
+                }
+            ]
         }
     ]
 }
