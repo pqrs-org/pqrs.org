@@ -12,22 +12,21 @@ Change `tab` key to `return_or_enter` if the tab key is the physical tab key.
 
 ```json
 {
-    "type": "basic",
-    "from": {
-        "key_code": "tab",
-        "modifiers": {
-            "optional": ["any"]
-        }
-    },
-    "to": [
+    "description": "Change tab key to return_or_enter if the tab key is the physical tab key",
+    "manipulators": [
         {
-            "key_code": "return_or_enter"
-        }
-    ],
-    "conditions": [
-        {
-            "type": "event_changed_if",
-            "value": false
+            "type": "basic",
+            "from": {
+                "key_code": "tab",
+                "modifiers": { "optional": ["any"] }
+            },
+            "to": [{ "key_code": "return_or_enter" }],
+            "conditions": [
+                {
+                    "type": "event_changed_if",
+                    "value": false
+                }
+            ]
         }
     ]
 }
