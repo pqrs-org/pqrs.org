@@ -5,55 +5,55 @@ weight: 300
 
 Change an event if/unless the event is from specified type keyboard.
 
+The keyboard type mentioned here refers to [the type of the virtual keyboard](/docs/manual/configuration/configure-keyboard-type/).
+
+
 ## Example
 
-Change `control-[` key to `escape`, including JIS layout support. ([the `[` key is `close_bracket` in JIS layout](/docs/help/troubleshooting/symbols-with-non-ansi-keyboard/))
+Change `control-[` key to `escape`, including JIS layout support.
+
+Note: [the <kbd>\[</kbd> key is <kbd>close_bracket</kbd> in JIS layout](/docs/help/troubleshooting/symbols-with-non-ansi-keyboard/)
 
 ```json
-[
-    {
-        "type": "basic",
-        "from": {
-            "key_code": "open_bracket",
-            "modifiers": {
-                "mandatory": ["control"],
-                "optional": ["caps_lock"]
-            }
+{
+    "description": "Change control-[ to escape",
+    "manipulators": [
+        {
+            "type": "basic",
+            "from": {
+                "key_code": "open_bracket",
+                "modifiers": {
+                    "mandatory": ["control"],
+                    "optional": ["caps_lock"]
+                }
+            },
+            "to": [{ "key_code": "escape" }],
+            "conditions": [
+                {
+                    "keyboard_types": ["ansi", "iso"],
+                    "type": "keyboard_type_if"
+                }
+            ]
         },
-        "to": [
-            {
-                "key_code": "escape"
-            }
-        ],
-        "conditions": [
-            {
-                "keyboard_types": ["ansi", "iso"],
-                "type": "keyboard_type_if"
-            }
-        ]
-    },
-    {
-        "type": "basic",
-        "from": {
-            "key_code": "close_bracket",
-            "modifiers": {
-                "mandatory": ["control"],
-                "optional": ["caps_lock"]
-            }
-        },
-        "to": [
-            {
-                "key_code": "escape"
-            }
-        ],
-        "conditions": [
-            {
-                "keyboard_types": ["jis"],
-                "type": "keyboard_type_if"
-            }
-        ]
-    }
-]
+        {
+            "type": "basic",
+            "from": {
+                "key_code": "close_bracket",
+                "modifiers": {
+                    "mandatory": ["control"],
+                    "optional": ["caps_lock"]
+                }
+            },
+            "to": [{ "key_code": "escape" }],
+            "conditions": [
+                {
+                    "keyboard_types": ["jis"],
+                    "type": "keyboard_type_if"
+                }
+            ]
+        }
+    ]
+}
 ```
 
 ---
