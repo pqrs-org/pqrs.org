@@ -7,31 +7,27 @@ Change an event if/unless the event is from specified device.
 
 ## Example
 
-Change `1` key to `f1` if the device is Apple keyboard.
+Change caps_lock to escape on Apple keyboards, wiht the vendor ID is 1452 (0x05ac) or 76 (0x004c) or if it's a built-in keyboard.
 
 ```json
 {
-    "type": "basic",
-    "from": {
-        "key_code": "1",
-        "modifiers": {
-            "optional": ["any"]
-        }
-    },
-    "to": [
+    "description": "Change caps_lock to escape on Apple keyboards",
+    "manipulators": [
         {
-            "key_code": "f1"
-        }
-    ],
-    "conditions": [
-        {
-            "type": "device_if",
-            "identifiers": [
+            "type": "basic",
+            "from": {
+                "key_code": "caps_lock",
+                "modifiers": { "optional": ["any"] }
+            },
+            "to": [{ "key_code": "escape" }],
+            "conditions": [
                 {
-                    "vendor_id": 1452
-                },
-                {
-                    "vendor_id": 76
+                    "type": "device_if",
+                    "identifiers": [
+                        { "vendor_id": 1452 },
+                        { "vendor_id": 76 },
+                        { "is_built_in_keyboard": true }
+                    ]
                 }
             ]
         }
@@ -89,9 +85,9 @@ Change `1` key to `f1` if the device is Apple keyboard.
 | `location_id`          | Optional | Location ID of device                                                                                                                               | No `[2]`    |
 | `is_keyboard`          | Optional | `true` or `false`                                                                                                                                   | Yes         |
 | `is_pointing_device`   | Optional | `true` or `false`                                                                                                                                   | Yes         |
-| `is_game_pad`          | Optional | `true` or `false`<br />(available since Karabiner-Elements 14.12.4)                                                                                      | Yes         |
+| `is_game_pad`          | Optional | `true` or `false`<br />(available since Karabiner-Elements 14.12.4)                                                                                 | Yes         |
 | `is_touch_bar`         | Optional | `true` or `false`                                                                                                                                   | Yes         |
-| `is_built_in_keyboard` | Optional | `true` or `false`<br />(available since Karabiner-Elements 14.8.2)                                                                                       | Yes         |
+| `is_built_in_keyboard` | Optional | `true` or `false`<br />(available since Karabiner-Elements 14.8.2)                                                                                  | Yes         |
 
 -   `[1]` The `device_address` will change when you replace the hardware.
 -   `[2]` The `location_id` will change when you change the USB port which the device is connected.
