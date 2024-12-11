@@ -58,13 +58,12 @@ This json defines manipulator which changes `escape` to `tab`.
 
 ```json
 {
-    "type": "basic",
-    "from": {
-        "key_code": "escape"
-    },
-    "to": [
+    "description": "Change escape to tab (without from.modifiers)",
+    "manipulators": [
         {
-            "key_code": "tab"
+            "type": "basic",
+            "from": { "key_code": "escape" },
+            "to": [{ "key_code": "tab" }]
         }
     ]
 }
@@ -74,9 +73,10 @@ This json defines manipulator which changes `escape` to `tab`.
 
 | Input                   | Output                  | Manipulated     |
 | ----------------------- | ----------------------- | --------------- |
-| `escape`                | `tab`                   | **Manipulated** |
+| <kbd>escape</kbd>       | <kbd>tab</kbd>          | **Manipulated** |
 | `left_shift + escape`   | `left_shift + escape`   | Not manipulated |
 | `left_control + escape` | `left_control + escape` | Not manipulated |
+| `caps_lock + escape`    | `caps_lock + escape`    | Not manipulated |
 
 ### With `modifiers.optional`
 
@@ -85,16 +85,17 @@ This json defines manipulator which changes `escape` to `tab`.<br/>
 
 ```json
 {
-    "type": "basic",
-    "from": {
-        "key_code": "escape",
-        "modifiers": {
-            "optional": ["left_shift", "left_control"]
-        }
-    },
-    "to": [
+    "description": "Change escape to tab (from.modifiers.optional)",
+    "manipulators": [
         {
-            "key_code": "tab"
+            "type": "basic",
+            "from": {
+                "key_code": "escape",
+                "modifiers": {
+                    "optional": ["left_shift", "left_control"]
+                }
+            },
+            "to": [{ "key_code": "tab" }]
         }
     ]
 }
@@ -105,9 +106,9 @@ This json defines manipulator which changes `escape` to `tab`.<br/>
 
 | Input                               | Output                              | Manipulated     |
 | ----------------------------------- | ----------------------------------- | --------------- |
-| `escape`                            | `tab`                               | **Manipulated** |
-| `left_shift + escape`               | `left_shift + tab`                  | **Manipulated** |
-| `left_control + escape`             | `left_control + tab`                | **Manipulated** |
+| <kbd>escape</kbd>                   | <kbd>tab</kbd>                      | **Manipulated** |
+| <kbd>left_shift + escape</kbd>      | <kbd>left_shift + tab</kbd>         | **Manipulated** |
+| <kbd>left_control + escape</kbd>    | <kbd>left_control + tab</kbd>       | **Manipulated** |
 | `left_option + escape`              | `left_option + escape`              | Not manipulated |
 | `left_shift + left_option + escape` | `left_shift + left_option + escape` | Not manipulated |
 
@@ -117,16 +118,17 @@ This json defines manipulator which changes `control + h` to `delete_or_backspac
 
 ```json
 {
-    "type": "basic",
-    "from": {
-        "key_code": "h",
-        "modifiers": {
-            "mandatory": ["control"]
-        }
-    },
-    "to": [
+    "description": "Change control+h to delete_or_backspace (from.modifiers.mandatory)",
+    "manipulators": [
         {
-            "key_code": "delete_or_backspace"
+            "type": "basic",
+            "from": {
+                "key_code": "h",
+                "modifiers": {
+                    "mandatory": ["control"]
+                }
+            },
+            "to": [{ "key_code": "delete_or_backspace" }]
         }
     ]
 }
@@ -138,24 +140,25 @@ This json defines manipulator which changes `control + h` to `delete_or_backspac
 | Input                            | Output                           | Manipulated     |
 | -------------------------------- | -------------------------------- | --------------- |
 | `h`                              | `h`                              | Not manipulated |
-| `left_control + h`               | `delete_or_backspace`            | **Manipulated** |
+| <kbd>left_control + h</kbd>      | <kbd>delete_or_backspace</kbd>   | **Manipulated** |
 | `left_control + left_option + h` | `left_control + left_option + h` | Not manipulated |
 
 ### With `modifiers.mandatory` and `modifiers.optional`
 
 ```json
 {
-    "type": "basic",
-    "from": {
-        "key_code": "h",
-        "modifiers": {
-            "mandatory": ["control"],
-            "optional": ["any"]
-        }
-    },
-    "to": [
+    "description": "Change control+h to delete_or_backspace (mandatory and optional)",
+    "manipulators": [
         {
-            "key_code": "delete_or_backspace"
+            "type": "basic",
+            "from": {
+                "key_code": "h",
+                "modifiers": {
+                    "mandatory": ["control"],
+                    "optional": ["any"]
+                }
+            },
+            "to": [{ "key_code": "delete_or_backspace" }]
         }
     ]
 }
@@ -165,9 +168,9 @@ This json defines manipulator which changes `control + h` to `delete_or_backspac
 -   The event is not changed if `left_control` and `right_control` are not pressed.
 -   `"optional": ["any"]` allows any modifiers.
 
-| Input                            | Output                              | Manipulated     |
-| -------------------------------- | ----------------------------------- | --------------- |
-| `h`                              | `h`                                 | Not manipulated |
-| `left_control + h`               | `delete_or_backspace`               | **Manipulated** |
-| `left_control + left_option + h` | `left_option + delete_or_backspace` | **Manipulated** |
-| `left_control + left_shift + h`  | `left_shift + delete_or_backspace`  | **Manipulated** |
+| Input                                     | Output                                       | Manipulated     |
+| ----------------------------------------- | -------------------------------------------- | --------------- |
+| `h`                                       | `h`                                          | Not manipulated |
+| <kbd>left_control + h</kbd>               | <kbd>delete_or_backspace</kbd>               | **Manipulated** |
+| <kbd>left_control + left_option + h</kbd> | <kbd>left_option + delete_or_backspace</kbd> | **Manipulated** |
+| <kbd>left_control + left_shift + h</kbd>  | <kbd>left_shift + delete_or_backspace</kbd>  | **Manipulated** |
