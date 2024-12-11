@@ -200,6 +200,68 @@ And change `control-option-h` to `option-delete`.
 }
 ```
 
+## Change double press of `q` to `escape`
+
+This example is available since Karabiner-Elements 15.3.7.
+
+```json
+{
+    "description": "Change double press of q to escape",
+    "manipulators": [
+        {
+            "type": "basic",
+            "from": {
+                "key_code": "q",
+                "modifiers": { "optional": ["any"] }
+            },
+            "to": [
+                { "set_variable": { "name": "q pressed", "value": false } },
+                { "key_code": "escape" }
+            ],
+            "conditions": [
+                { "type": "variable_if", "name": "q pressed", "value": true }
+            ]
+        },
+        {
+            "type": "basic",
+            "from": {
+                "key_code": "q",
+                "modifiers": { "optional": ["any"] }
+            },
+            "to": [{ "set_variable": { "name": "q pressed", "value": true } }],
+            "to_delayed_action": {
+                "to_if_invoked": [
+                    {
+                        "key_code": "q",
+                        "conditions": [
+                            {
+                                "type": "variable_if",
+                                "name": "q pressed",
+                                "value": true
+                            }
+                        ]
+                    },
+                    { "set_variable": { "name": "q pressed", "value": false } }
+                ],
+                "to_if_canceled": [
+                    {
+                        "key_code": "q",
+                        "conditions": [
+                            {
+                                "type": "variable_if",
+                                "name": "q pressed",
+                                "value": true
+                            }
+                        ]
+                    },
+                    { "set_variable": { "name": "q pressed", "value": false } }
+                ]
+            }
+        }
+    ]
+}
+```
+
 ## Change `equal+delete` to `forward_delete` if these keys are pressed simultaneously
 
 ```json
