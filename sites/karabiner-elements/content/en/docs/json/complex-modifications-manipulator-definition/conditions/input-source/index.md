@@ -10,84 +10,49 @@ Change an event if/unless the current input source is the specified value.
 Switching input source between Japanese and English at tapping the left command key.
 
 ```json
-[
-    {
-        "type": "basic",
-        "from": {
-            "key_code": "left_command",
-            "modifiers": {
-                "optional": ["any"]
+{
+    "description": "Switching input source between Japanese and English at tapping the left command key",
+    "manipulators": [
+        {
+            "type": "basic",
+            "from": {
+                "key_code": "left_command",
+                "modifiers": { "optional": ["any"] }
+            },
+            "to": [{ "key_code": "left_command", "lazy": true }],
+            "to_if_alone": [{ "key_code": "japanese_eisuu" }],
+            "to_if_held_down": [{ "key_code": "left_command" }],
+            "conditions": [
+                {
+                    "input_sources": [{ "language": "ja" }],
+                    "type": "input_source_if"
+                }
+            ],
+            "parameters": {
+                "basic.to_if_held_down_threshold_milliseconds": 100
             }
         },
-        "to": [
-            {
+        {
+            "type": "basic",
+            "from": {
                 "key_code": "left_command",
-                "lazy": true
+                "modifiers": { "optional": ["any"] }
+            },
+            "to": [{ "key_code": "left_command", "lazy": true }],
+            "to_if_alone": [{ "key_code": "japanese_kana" }],
+            "to_if_held_down": [{ "key_code": "left_command" }],
+            "conditions": [
+                {
+                    "input_sources": [{ "language": "en" }],
+                    "type": "input_source_if"
+                }
+            ],
+            "parameters": {
+                "basic.to_if_held_down_threshold_milliseconds": 100
             }
-        ],
-        "to_if_alone": [
-            {
-                "key_code": "japanese_eisuu"
-            }
-        ],
-        "to_if_held_down": [
-            {
-                "key_code": "left_command"
-            }
-        ],
-        "conditions": [
-            {
-                "input_sources": [
-                    {
-                        "language": "ja"
-                    }
-                ],
-                "type": "input_source_if"
-            }
-        ],
-        "parameters": {
-            "basic.to_if_held_down_threshold_milliseconds": 100
         }
-    },
-    {
-        "type": "basic",
-        "from": {
-            "key_code": "left_command",
-            "modifiers": {
-                "optional": ["any"]
-            }
-        },
-        "to": [
-            {
-                "key_code": "left_command",
-                "lazy": true
-            }
-        ],
-        "to_if_alone": [
-            {
-                "key_code": "japanese_kana"
-            }
-        ],
-        "to_if_held_down": [
-            {
-                "key_code": "left_command"
-            }
-        ],
-        "conditions": [
-            {
-                "input_sources": [
-                    {
-                        "language": "en"
-                    }
-                ],
-                "type": "input_source_if"
-            }
-        ],
-        "parameters": {
-            "basic.to_if_held_down_threshold_milliseconds": 100
-        }
-    }
-]
+    ]
+}
 ```
 
 ---
