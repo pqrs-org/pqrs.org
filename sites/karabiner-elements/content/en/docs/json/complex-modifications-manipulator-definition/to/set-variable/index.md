@@ -11,6 +11,60 @@ weight: 300
 
 {{% /alert %}}
 
+## Examples
+
+Pressing the <kbd>a</kbd> key while holding the <kbd>escape</kbd> key launches Activity Monitor.
+
+```json
+{
+    "description": "Pressing the a key while holding the escape key launches Activity Monitor",
+    "manipulators": [
+        {
+            "type": "basic",
+            "from": {
+                "key_code": "escape",
+                "modifiers": { "optional": ["any"] }
+            },
+            "to": [
+                {
+                    "set_variable": {
+                        "name": "escape_pressed",
+                        "value": true,
+                        "key_up_value": false
+                    }
+                }
+            ],
+            "to_if_alone": [{ "key_code": "escape" }]
+        },
+        {
+            "type": "basic",
+            "from": {
+                "key_code": "a",
+                "modifiers": { "optional": ["any"] }
+            },
+            "to": [
+                {
+                    "software_function": {
+                        "open_application": {
+                            "bundle_identifier": "com.apple.ActivityMonitor"
+                        }
+                    }
+                }
+            ],
+            "conditions": [
+                {
+                    "type": "variable_if",
+                    "name": "escape_pressed",
+                    "value": true
+                }
+            ]
+        }
+    ]
+}
+```
+
+## Specification
+
 ```json
 {
     "to": [
@@ -42,45 +96,6 @@ Note: If `key_up_value` or `type` is specified, the `value` can be omitted.
 | integer | 0,1,2,...          | Karabiner-Elements 11.0.0  |
 | boolean | true, false        | Karabiner-Elements 14.4.20 |
 | string  | "layer1", "layer2" | Karabiner-Elements 14.4.20 |
-
-## Examples
-
-```json
-{
-    "set_variable": {
-        "name": "mode_flag",
-        "value": 1,
-        "key_up_value": 0
-    }
-}
-```
-
-```json
-{
-    "set_variable": {
-        "name": "mode_enabled",
-        "value": true
-    }
-}
-```
-
-```json
-{
-    "set_variable": {
-        "name": "layer_name",
-        "value": "layer1"
-    }
-}
-```
-
-```json
-{
-    "set_variable": {
-        "name": "my_flag",
-        "type": "unset"
-    }
-}
-```
 
 ## Confirm the current variable values
 

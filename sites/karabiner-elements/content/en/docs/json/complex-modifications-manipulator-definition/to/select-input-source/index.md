@@ -15,7 +15,10 @@ For CJKV input sources, sending the input source switch shortcut (e.g., control-
 
 ## Example
 
-Switch to French input source.
+Switch the current input source by:
+
+-   right_command+e: English
+-   right_command+f: French
 
 ```json
 {
