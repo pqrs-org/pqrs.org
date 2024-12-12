@@ -20,14 +20,14 @@
 <title>from.simultaneous | Karabiner-Elements</title>
 <meta name="description" content="simultaneous manipulates keys which are pressed simultaneously in 50 milliseconds.
 Example This json defines manipulator which changes a&#43;s&#43;d to mission_control.
-{ &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;simultaneous&#34;: [ { &#34;key_code&#34;: &#34;a&#34; }, { &#34;key_code&#34;: &#34;s&#34; }, { &#34;key_code&#34;: &#34;d&#34; } ], &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [ { &#34;key_code&#34;: &#34;mission_control&#34; } ] } Note There are some cases simultaneous does not modify events.
+{ &#34;description&#34;: &#34;Pressing the a,s,d keys simultaneously launches Mission Control&#34;, &#34;manipulators&#34;: [ { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;simultaneous&#34;: [ { &#34;key_code&#34;: &#34;a&#34; }, { &#34;key_code&#34;: &#34;s&#34; }, { &#34;key_code&#34;: &#34;d&#34; } ], &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [{ &#34;apple_vendor_keyboard_key_code&#34;: &#34;mission_control&#34; }] } ] } Note There are some cases simultaneous does not modify events.
 simultaneous does not modify events if any from events are released before all from events are pressed. simultaneous does not modify events if from events are interrupted by another key_down event. Manipulated input #1 Input: a key_down s key_down d key_down Output: mission_control Manipulated input #2 Input: s key_down a key_down d key_down Output: mission_control Not manipulated input #1 a is released before all input events are pressed.">
 <meta property="og:url" content="/docs/json/complex-modifications-manipulator-definition/from/simultaneous/">
   <meta property="og:site_name" content="Karabiner-Elements">
   <meta property="og:title" content="from.simultaneous">
   <meta property="og:description" content="simultaneous manipulates keys which are pressed simultaneously in 50 milliseconds.
 Example This json defines manipulator which changes a&#43;s&#43;d to mission_control.
-{ &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;simultaneous&#34;: [ { &#34;key_code&#34;: &#34;a&#34; }, { &#34;key_code&#34;: &#34;s&#34; }, { &#34;key_code&#34;: &#34;d&#34; } ], &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [ { &#34;key_code&#34;: &#34;mission_control&#34; } ] } Note There are some cases simultaneous does not modify events.
+{ &#34;description&#34;: &#34;Pressing the a,s,d keys simultaneously launches Mission Control&#34;, &#34;manipulators&#34;: [ { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;simultaneous&#34;: [ { &#34;key_code&#34;: &#34;a&#34; }, { &#34;key_code&#34;: &#34;s&#34; }, { &#34;key_code&#34;: &#34;d&#34; } ], &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [{ &#34;apple_vendor_keyboard_key_code&#34;: &#34;mission_control&#34; }] } ] } Note There are some cases simultaneous does not modify events.
 simultaneous does not modify events if any from events are released before all from events are pressed. simultaneous does not modify events if from events are interrupted by another key_down event. Manipulated input #1 Input: a key_down s key_down d key_down Output: mission_control Manipulated input #2 Input: s key_down a key_down d key_down Output: mission_control Not manipulated input #1 a is released before all input events are pressed.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
@@ -37,16 +37,16 @@ simultaneous does not modify events if any from events are released before all f
   <meta itemprop="name" content="from.simultaneous">
   <meta itemprop="description" content="simultaneous manipulates keys which are pressed simultaneously in 50 milliseconds.
 Example This json defines manipulator which changes a&#43;s&#43;d to mission_control.
-{ &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;simultaneous&#34;: [ { &#34;key_code&#34;: &#34;a&#34; }, { &#34;key_code&#34;: &#34;s&#34; }, { &#34;key_code&#34;: &#34;d&#34; } ], &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [ { &#34;key_code&#34;: &#34;mission_control&#34; } ] } Note There are some cases simultaneous does not modify events.
+{ &#34;description&#34;: &#34;Pressing the a,s,d keys simultaneously launches Mission Control&#34;, &#34;manipulators&#34;: [ { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;simultaneous&#34;: [ { &#34;key_code&#34;: &#34;a&#34; }, { &#34;key_code&#34;: &#34;s&#34; }, { &#34;key_code&#34;: &#34;d&#34; } ], &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [{ &#34;apple_vendor_keyboard_key_code&#34;: &#34;mission_control&#34; }] } ] } Note There are some cases simultaneous does not modify events.
 simultaneous does not modify events if any from events are released before all from events are pressed. simultaneous does not modify events if from events are interrupted by another key_down event. Manipulated input #1 Input: a key_down s key_down d key_down Output: mission_control Manipulated input #2 Input: s key_down a key_down d key_down Output: mission_control Not manipulated input #1 a is released before all input events are pressed.">
-  <meta itemprop="wordCount" content="242">
+  <meta itemprop="wordCount" content="254">
   <meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://karabiner-elements.pqrs.org/images/logo.png">
   <meta name="twitter:title" content="from.simultaneous">
   <meta name="twitter:description" content="simultaneous manipulates keys which are pressed simultaneously in 50 milliseconds.
 Example This json defines manipulator which changes a&#43;s&#43;d to mission_control.
-{ &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;simultaneous&#34;: [ { &#34;key_code&#34;: &#34;a&#34; }, { &#34;key_code&#34;: &#34;s&#34; }, { &#34;key_code&#34;: &#34;d&#34; } ], &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [ { &#34;key_code&#34;: &#34;mission_control&#34; } ] } Note There are some cases simultaneous does not modify events.
+{ &#34;description&#34;: &#34;Pressing the a,s,d keys simultaneously launches Mission Control&#34;, &#34;manipulators&#34;: [ { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;simultaneous&#34;: [ { &#34;key_code&#34;: &#34;a&#34; }, { &#34;key_code&#34;: &#34;s&#34; }, { &#34;key_code&#34;: &#34;d&#34; } ], &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [{ &#34;apple_vendor_keyboard_key_code&#34;: &#34;mission_control&#34; }] } ] } Note There are some cases simultaneous does not modify events.
 simultaneous does not modify events if any from events are released before all from events are pressed. simultaneous does not modify events if from events are interrupted by another key_down event. Manipulated input #1 Input: a key_down s key_down d key_down Output: mission_control Manipulated input #2 Input: s key_down a key_down d key_down Output: mission_control Not manipulated input #1 a is released before all input events are pressed.">
 <link rel="preload" href="/scss/main.min.f693f06e4d3557ccf8ea888186f681e1db8cb153b66b80f588e76cc53e6ebdf3.css" as="style" integrity="sha256-9pPwbk01V8z46oiBhvaB4duMsVO2a4D1iOdsxT5uvfM=" crossorigin="anonymous">
 <link href="/scss/main.min.f693f06e4d3557ccf8ea888186f681e1db8cb153b66b80f588e76cc53e6ebdf3.css" rel="stylesheet" integrity="sha256-9pPwbk01V8z46oiBhvaB4duMsVO2a4D1iOdsxT5uvfM=" crossorigin="anonymous">
@@ -82,7 +82,7 @@ simultaneous does not modify events if any from events are released before all f
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.64c0f93b4c8b427840416b9198b1a83c.json"
+    data-offline-search-index-json-src="/offline-search-index.54c1965d5eda951c101c3dbbd7c43a55.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="25"
   >
@@ -106,7 +106,7 @@ simultaneous does not modify events if any from events are released before all f
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.64c0f93b4c8b427840416b9198b1a83c.json"
+    data-offline-search-index-json-src="/offline-search-index.54c1965d5eda951c101c3dbbd7c43a55.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="25"
   >
@@ -682,26 +682,19 @@ simultaneous does not modify events if any from events are released before all f
 <h2 id="example">Example</h2>
 <p>This json defines manipulator which changes <code>a+s+d</code> to <code>mission_control</code>.</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;type&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;basic&#34;</span><span style="color:#000;font-weight:bold">,</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;from&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#204a87;font-weight:bold">&#34;simultaneous&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
-</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">{</span>
-</span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">&#34;key_code&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;a&#34;</span>
-</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">},</span>
-</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">{</span>
-</span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">&#34;key_code&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;s&#34;</span>
-</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">},</span>
-</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">{</span>
-</span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">&#34;key_code&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;d&#34;</span>
-</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">}</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">],</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#204a87;font-weight:bold">&#34;modifiers&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
-</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;optional&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">&#34;any&#34;</span><span style="color:#000;font-weight:bold">]</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">}</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">},</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;to&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;description&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;Pressing the a,s,d keys simultaneously launches Mission Control&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;manipulators&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">{</span>
-</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;key_code&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;mission_control&#34;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;type&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;basic&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;from&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">&#34;simultaneous&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#000;font-weight:bold">{</span> <span style="color:#204a87;font-weight:bold">&#34;key_code&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;a&#34;</span> <span style="color:#000;font-weight:bold">},</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#000;font-weight:bold">{</span> <span style="color:#204a87;font-weight:bold">&#34;key_code&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;s&#34;</span> <span style="color:#000;font-weight:bold">},</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#000;font-weight:bold">{</span> <span style="color:#204a87;font-weight:bold">&#34;key_code&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;d&#34;</span> <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">],</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">&#34;modifiers&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span> <span style="color:#204a87;font-weight:bold">&#34;optional&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">&#34;any&#34;</span><span style="color:#000;font-weight:bold">]</span> <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">},</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;to&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[{</span> <span style="color:#204a87;font-weight:bold">&#34;apple_vendor_keyboard_key_code&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;mission_control&#34;</span> <span style="color:#000;font-weight:bold">}]</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">}</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">]</span>
 </span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
