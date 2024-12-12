@@ -11,26 +11,19 @@ This json defines manipulator which changes `a+s+d` to `mission_control`.
 
 ```json
 {
-    "type": "basic",
-    "from": {
-        "simultaneous": [
-            {
-                "key_code": "a"
-            },
-            {
-                "key_code": "s"
-            },
-            {
-                "key_code": "d"
-            }
-        ],
-        "modifiers": {
-            "optional": ["any"]
-        }
-    },
-    "to": [
+    "description": "Pressing the a,s,d keys simultaneously launches Mission Control",
+    "manipulators": [
         {
-            "key_code": "mission_control"
+            "type": "basic",
+            "from": {
+                "simultaneous": [
+                    { "key_code": "a" },
+                    { "key_code": "s" },
+                    { "key_code": "d" }
+                ],
+                "modifiers": { "optional": ["any"] }
+            },
+            "to": [{ "apple_vendor_keyboard_key_code": "mission_control" }]
         }
     ]
 }
