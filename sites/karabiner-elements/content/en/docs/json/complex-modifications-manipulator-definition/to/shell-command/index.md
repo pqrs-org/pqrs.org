@@ -11,9 +11,18 @@ weight: 100
 
 ```json
 {
-    "to": [
+    "description": "Open Safari by right_command+s",
+    "manipulators": [
         {
-            "shell_command": "open -a 'Safari.app'"
+            "type": "basic",
+            "from": {
+                "key_code": "s",
+                "modifiers": {
+                    "mandatory": ["right_command"],
+                    "optional": ["caps_lock"]
+                }
+            },
+            "to": [{ "shell_command": "open -a 'Safari.app'" }]
         }
     ]
 }
@@ -23,9 +32,18 @@ weight: 100
 
 ```json
 {
-    "to": [
+    "description": "Execute hello.sh by right_command+s",
+    "manipulators": [
         {
-            "shell_command": "/bin/sh ~/opt/shell_commands/hello.sh"
+            "type": "basic",
+            "from": {
+                "key_code": "s",
+                "modifiers": {
+                    "mandatory": ["right_command"],
+                    "optional": ["caps_lock"]
+                }
+            },
+            "to": [{ "shell_command": "/bin/sh ~/opt/shell_commands/hello.sh" }]
         }
     ]
 }
