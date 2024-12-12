@@ -29,26 +29,25 @@ For example, this definition manipulates `tab,q` to `mission_control` and does n
 
 ```json
 {
-    "type": "basic",
-    "from": {
-        "simultaneous": [
-            {
-                "key_code": "tab"
-            },
-            {
-                "key_code": "q"
-            }
-        ],
-        "simultaneous_options": {
-            "key_down_order": "strict"
-        },
-        "modifiers": {
-            "optional": ["any"]
-        }
-    },
-    "to": [
+    "description": "Pressing the tab,q keys simultaneously launches Mission Control (key_down_order)",
+    "manipulators": [
         {
-            "key_code": "mission_control"
+            "type": "basic",
+            "from": {
+                "simultaneous": [
+                    {
+                        "key_code": "tab"
+                    },
+                    {
+                        "key_code": "q"
+                    }
+                ],
+                "simultaneous_options": {
+                    "key_down_order": "strict"
+                },
+                "modifiers": { "optional": ["any"] }
+            },
+            "to": [{ "apple_vendor_keyboard_key_code": "mission_control" }]
         }
     ]
 }
@@ -82,29 +81,30 @@ Events will be posted just before the last from event's key_up.
 
 ```json
 {
-    "type": "basic",
-    "parameters": {
-        "basic.simultaneous_threshold_milliseconds": 500
-    },
-    "from": {
-        "simultaneous": [
-            {
-                "key_code": "tab"
-            },
-            {
-                "key_code": "q"
-            }
-        ],
-        "simultaneous_options": {
-            "key_up_order": "strict"
-        },
-        "modifiers": {
-            "optional": ["any"]
-        }
-    },
-    "to": [
+    "description": "Pressing the tab,q keys simultaneously launches Mission Control (key_up_order)",
+    "manipulators": [
         {
-            "key_code": "mission_control"
+            "type": "basic",
+            "parameters": {
+                "basic.simultaneous_threshold_milliseconds": 500
+            },
+            "from": {
+                "simultaneous": [
+                    {
+                        "key_code": "tab"
+                    },
+                    {
+                        "key_code": "q"
+                    }
+                ],
+                "simultaneous_options": {
+                    "key_up_order": "strict"
+                },
+                "modifiers": {
+                    "optional": ["any"]
+                }
+            },
+            "to": [{ "apple_vendor_keyboard_key_code": "mission_control" }]
         }
     ]
 }
