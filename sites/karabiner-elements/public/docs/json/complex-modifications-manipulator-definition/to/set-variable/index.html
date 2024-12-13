@@ -19,12 +19,14 @@
 
 <title>to.set_variable | Karabiner-Elements</title>
 <meta name="description" content="set_variable defines and updates the variable value.
-Tip set_variable is designed to use with variable_if and variable_unless conditions. { &#34;to&#34;: [ { &#34;set_variable&#34;: { &#34;name&#34;: &#34;variable name&#34;, &#34;value&#34;: variable value, &#34;key_up_value&#34;: variable value, &#34;type&#34;: &#34;set&#34; } } ] } Name Required Description Available since name Required Target variable name. Karabiner-Elements 11.0.0 value Required | Optional Target variable value. Karabiner-Elements 11.0.0 key_up_value Optional A variable value when key is up Karabiner-Elements 14.12.6 type Optional “set” or “unset” Karabiner-Elements 14.99.2 Note: If key_up_value or type is specified, the value can be omitted.">
+Tip set_variable is designed to use with variable_if and variable_unless conditions. Examples Pressing the a key while holding the escape key launches Activity Monitor.
+{ &#34;description&#34;: &#34;Pressing the a key while holding the escape key launches Activity Monitor&#34;, &#34;manipulators&#34;: [ { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;escape&#34;, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [ { &#34;set_variable&#34;: { &#34;name&#34;: &#34;escape_pressed&#34;, &#34;value&#34;: true, &#34;key_up_value&#34;: false } } ], &#34;to_if_alone&#34;: [{ &#34;key_code&#34;: &#34;escape&#34; }] }, { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;a&#34;, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [ { &#34;software_function&#34;: { &#34;open_application&#34;: { &#34;bundle_identifier&#34;: &#34;com.apple.ActivityMonitor&#34; } } } ], &#34;conditions&#34;: [ { &#34;type&#34;: &#34;variable_if&#34;, &#34;name&#34;: &#34;escape_pressed&#34;, &#34;value&#34;: true } ] } ] } Specification { &#34;to&#34;: [ { &#34;set_variable&#34;: { &#34;name&#34;: &#34;variable name&#34;, &#34;value&#34;: variable value, &#34;key_up_value&#34;: variable value, &#34;type&#34;: &#34;set&#34; } } ] } Name Required Description Available since name Required Target variable name. Karabiner-Elements 11.0.0 value Required | Optional Target variable value. Karabiner-Elements 11.0.0 key_up_value Optional A variable value when key is up Karabiner-Elements 14.12.6 type Optional “set” or “unset” Karabiner-Elements 14.99.2 Note: If key_up_value or type is specified, the value can be omitted.">
 <meta property="og:url" content="/docs/json/complex-modifications-manipulator-definition/to/set-variable/">
   <meta property="og:site_name" content="Karabiner-Elements">
   <meta property="og:title" content="to.set_variable">
   <meta property="og:description" content="set_variable defines and updates the variable value.
-Tip set_variable is designed to use with variable_if and variable_unless conditions. { &#34;to&#34;: [ { &#34;set_variable&#34;: { &#34;name&#34;: &#34;variable name&#34;, &#34;value&#34;: variable value, &#34;key_up_value&#34;: variable value, &#34;type&#34;: &#34;set&#34; } } ] } Name Required Description Available since name Required Target variable name. Karabiner-Elements 11.0.0 value Required | Optional Target variable value. Karabiner-Elements 11.0.0 key_up_value Optional A variable value when key is up Karabiner-Elements 14.12.6 type Optional “set” or “unset” Karabiner-Elements 14.99.2 Note: If key_up_value or type is specified, the value can be omitted.">
+Tip set_variable is designed to use with variable_if and variable_unless conditions. Examples Pressing the a key while holding the escape key launches Activity Monitor.
+{ &#34;description&#34;: &#34;Pressing the a key while holding the escape key launches Activity Monitor&#34;, &#34;manipulators&#34;: [ { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;escape&#34;, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [ { &#34;set_variable&#34;: { &#34;name&#34;: &#34;escape_pressed&#34;, &#34;value&#34;: true, &#34;key_up_value&#34;: false } } ], &#34;to_if_alone&#34;: [{ &#34;key_code&#34;: &#34;escape&#34; }] }, { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;a&#34;, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [ { &#34;software_function&#34;: { &#34;open_application&#34;: { &#34;bundle_identifier&#34;: &#34;com.apple.ActivityMonitor&#34; } } } ], &#34;conditions&#34;: [ { &#34;type&#34;: &#34;variable_if&#34;, &#34;name&#34;: &#34;escape_pressed&#34;, &#34;value&#34;: true } ] } ] } Specification { &#34;to&#34;: [ { &#34;set_variable&#34;: { &#34;name&#34;: &#34;variable name&#34;, &#34;value&#34;: variable value, &#34;key_up_value&#34;: variable value, &#34;type&#34;: &#34;set&#34; } } ] } Name Required Description Available since name Required Target variable name. Karabiner-Elements 11.0.0 value Required | Optional Target variable value. Karabiner-Elements 11.0.0 key_up_value Optional A variable value when key is up Karabiner-Elements 14.12.6 type Optional “set” or “unset” Karabiner-Elements 14.99.2 Note: If key_up_value or type is specified, the value can be omitted.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
@@ -32,14 +34,16 @@ Tip set_variable is designed to use with variable_if and variable_unless conditi
 
   <meta itemprop="name" content="to.set_variable">
   <meta itemprop="description" content="set_variable defines and updates the variable value.
-Tip set_variable is designed to use with variable_if and variable_unless conditions. { &#34;to&#34;: [ { &#34;set_variable&#34;: { &#34;name&#34;: &#34;variable name&#34;, &#34;value&#34;: variable value, &#34;key_up_value&#34;: variable value, &#34;type&#34;: &#34;set&#34; } } ] } Name Required Description Available since name Required Target variable name. Karabiner-Elements 11.0.0 value Required | Optional Target variable value. Karabiner-Elements 11.0.0 key_up_value Optional A variable value when key is up Karabiner-Elements 14.12.6 type Optional “set” or “unset” Karabiner-Elements 14.99.2 Note: If key_up_value or type is specified, the value can be omitted.">
-  <meta itemprop="wordCount" content="168">
+Tip set_variable is designed to use with variable_if and variable_unless conditions. Examples Pressing the a key while holding the escape key launches Activity Monitor.
+{ &#34;description&#34;: &#34;Pressing the a key while holding the escape key launches Activity Monitor&#34;, &#34;manipulators&#34;: [ { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;escape&#34;, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [ { &#34;set_variable&#34;: { &#34;name&#34;: &#34;escape_pressed&#34;, &#34;value&#34;: true, &#34;key_up_value&#34;: false } } ], &#34;to_if_alone&#34;: [{ &#34;key_code&#34;: &#34;escape&#34; }] }, { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;a&#34;, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [ { &#34;software_function&#34;: { &#34;open_application&#34;: { &#34;bundle_identifier&#34;: &#34;com.apple.ActivityMonitor&#34; } } } ], &#34;conditions&#34;: [ { &#34;type&#34;: &#34;variable_if&#34;, &#34;name&#34;: &#34;escape_pressed&#34;, &#34;value&#34;: true } ] } ] } Specification { &#34;to&#34;: [ { &#34;set_variable&#34;: { &#34;name&#34;: &#34;variable name&#34;, &#34;value&#34;: variable value, &#34;key_up_value&#34;: variable value, &#34;type&#34;: &#34;set&#34; } } ] } Name Required Description Available since name Required Target variable name. Karabiner-Elements 11.0.0 value Required | Optional Target variable value. Karabiner-Elements 11.0.0 key_up_value Optional A variable value when key is up Karabiner-Elements 14.12.6 type Optional “set” or “unset” Karabiner-Elements 14.99.2 Note: If key_up_value or type is specified, the value can be omitted.">
+  <meta itemprop="wordCount" content="232">
   <meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://karabiner-elements.pqrs.org/images/logo.png">
   <meta name="twitter:title" content="to.set_variable">
   <meta name="twitter:description" content="set_variable defines and updates the variable value.
-Tip set_variable is designed to use with variable_if and variable_unless conditions. { &#34;to&#34;: [ { &#34;set_variable&#34;: { &#34;name&#34;: &#34;variable name&#34;, &#34;value&#34;: variable value, &#34;key_up_value&#34;: variable value, &#34;type&#34;: &#34;set&#34; } } ] } Name Required Description Available since name Required Target variable name. Karabiner-Elements 11.0.0 value Required | Optional Target variable value. Karabiner-Elements 11.0.0 key_up_value Optional A variable value when key is up Karabiner-Elements 14.12.6 type Optional “set” or “unset” Karabiner-Elements 14.99.2 Note: If key_up_value or type is specified, the value can be omitted.">
+Tip set_variable is designed to use with variable_if and variable_unless conditions. Examples Pressing the a key while holding the escape key launches Activity Monitor.
+{ &#34;description&#34;: &#34;Pressing the a key while holding the escape key launches Activity Monitor&#34;, &#34;manipulators&#34;: [ { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;escape&#34;, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [ { &#34;set_variable&#34;: { &#34;name&#34;: &#34;escape_pressed&#34;, &#34;value&#34;: true, &#34;key_up_value&#34;: false } } ], &#34;to_if_alone&#34;: [{ &#34;key_code&#34;: &#34;escape&#34; }] }, { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;a&#34;, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [ { &#34;software_function&#34;: { &#34;open_application&#34;: { &#34;bundle_identifier&#34;: &#34;com.apple.ActivityMonitor&#34; } } } ], &#34;conditions&#34;: [ { &#34;type&#34;: &#34;variable_if&#34;, &#34;name&#34;: &#34;escape_pressed&#34;, &#34;value&#34;: true } ] } ] } Specification { &#34;to&#34;: [ { &#34;set_variable&#34;: { &#34;name&#34;: &#34;variable name&#34;, &#34;value&#34;: variable value, &#34;key_up_value&#34;: variable value, &#34;type&#34;: &#34;set&#34; } } ] } Name Required Description Available since name Required Target variable name. Karabiner-Elements 11.0.0 value Required | Optional Target variable value. Karabiner-Elements 11.0.0 key_up_value Optional A variable value when key is up Karabiner-Elements 14.12.6 type Optional “set” or “unset” Karabiner-Elements 14.99.2 Note: If key_up_value or type is specified, the value can be omitted.">
 <link rel="preload" href="/scss/main.min.f693f06e4d3557ccf8ea888186f681e1db8cb153b66b80f588e76cc53e6ebdf3.css" as="style" integrity="sha256-9pPwbk01V8z46oiBhvaB4duMsVO2a4D1iOdsxT5uvfM=" crossorigin="anonymous">
 <link href="/scss/main.min.f693f06e4d3557ccf8ea888186f681e1db8cb153b66b80f588e76cc53e6ebdf3.css" rel="stylesheet" integrity="sha256-9pPwbk01V8z46oiBhvaB4duMsVO2a4D1iOdsxT5uvfM=" crossorigin="anonymous">
 <script
@@ -74,7 +78,7 @@ Tip set_variable is designed to use with variable_if and variable_unless conditi
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.54c1965d5eda951c101c3dbbd7c43a55.json"
+    data-offline-search-index-json-src="/offline-search-index.8d835e2fbab3f1d6d0acaef3b5e8c331.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="25"
   >
@@ -98,7 +102,7 @@ Tip set_variable is designed to use with variable_if and variable_unless conditi
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.54c1965d5eda951c101c3dbbd7c43a55.json"
+    data-offline-search-index-json-src="/offline-search-index.8d835e2fbab3f1d6d0acaef3b5e8c331.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="25"
   >
@@ -627,8 +631,9 @@ Tip set_variable is designed to use with variable_if and variable_unless conditi
 
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#available-types-of-value">Available types of <code>value</code></a></li>
     <li><a href="#examples">Examples</a></li>
+    <li><a href="#specification">Specification</a></li>
+    <li><a href="#available-types-of-value">Available types of <code>value</code></a></li>
     <li><a href="#confirm-the-current-variable-values">Confirm the current variable values</a></li>
   </ul>
 </nav>
@@ -673,6 +678,54 @@ Tip set_variable is designed to use with variable_if and variable_unless conditi
 
 </div>
 
+<h2 id="examples">Examples</h2>
+<p>Pressing the <kbd>a</kbd> key while holding the <kbd>escape</kbd> key launches Activity Monitor.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;description&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;Pressing the a key while holding the escape key launches Activity Monitor&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;manipulators&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;type&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;basic&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;from&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">&#34;key_code&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;escape&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">&#34;modifiers&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span> <span style="color:#204a87;font-weight:bold">&#34;optional&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">&#34;any&#34;</span><span style="color:#000;font-weight:bold">]</span> <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">},</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;to&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;set_variable&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#204a87;font-weight:bold">&#34;name&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;escape_pressed&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#204a87;font-weight:bold">&#34;value&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#204a87;font-weight:bold">true</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#204a87;font-weight:bold">&#34;key_up_value&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#204a87;font-weight:bold">false</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">],</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;to_if_alone&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[{</span> <span style="color:#204a87;font-weight:bold">&#34;key_code&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;escape&#34;</span> <span style="color:#000;font-weight:bold">}]</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">},</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;type&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;basic&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;from&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">&#34;key_code&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;a&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">&#34;modifiers&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span> <span style="color:#204a87;font-weight:bold">&#34;optional&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">&#34;any&#34;</span><span style="color:#000;font-weight:bold">]</span> <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">},</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;to&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;software_function&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#204a87;font-weight:bold">&#34;open_application&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                            <span style="color:#204a87;font-weight:bold">&#34;bundle_identifier&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;com.apple.ActivityMonitor&#34;</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">],</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;conditions&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;type&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;variable_if&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;name&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;escape_pressed&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;value&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#204a87;font-weight:bold">true</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">]</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">]</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></div><h2 id="specification">Specification</h2>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;to&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">{</span>
@@ -749,39 +802,13 @@ Tip set_variable is designed to use with variable_if and variable_unless conditi
       </tr>
   </tbody>
 </table>
-<h2 id="examples">Examples</h2>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;set_variable&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#204a87;font-weight:bold">&#34;name&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;mode_flag&#34;</span><span style="color:#000;font-weight:bold">,</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#204a87;font-weight:bold">&#34;value&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#0000cf;font-weight:bold">1</span><span style="color:#000;font-weight:bold">,</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#204a87;font-weight:bold">&#34;key_up_value&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#0000cf;font-weight:bold">0</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">}</span>
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;set_variable&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#204a87;font-weight:bold">&#34;name&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;mode_enabled&#34;</span><span style="color:#000;font-weight:bold">,</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#204a87;font-weight:bold">&#34;value&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#204a87;font-weight:bold">true</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">}</span>
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;set_variable&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#204a87;font-weight:bold">&#34;name&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;layer_name&#34;</span><span style="color:#000;font-weight:bold">,</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#204a87;font-weight:bold">&#34;value&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;layer1&#34;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">}</span>
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;set_variable&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#204a87;font-weight:bold">&#34;name&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;my_flag&#34;</span><span style="color:#000;font-weight:bold">,</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#204a87;font-weight:bold">&#34;type&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;unset&#34;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">}</span>
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
-</span></span></code></pre></div><h2 id="confirm-the-current-variable-values">Confirm the current variable values</h2>
+<h2 id="confirm-the-current-variable-values">Confirm the current variable values</h2>
 <p>You can see the current variable values by EventViewer &gt; Variables.</p>
 <figure>
   <img
     src="/docs/json/complex-modifications-manipulator-definition/to/set-variable/images/eventviewer-variables@2x.png"
     alt="eventviewer-variables@2x.png"
-    style="width: 874px"
+    style="width: 1100px"
   />
 </figure>
 

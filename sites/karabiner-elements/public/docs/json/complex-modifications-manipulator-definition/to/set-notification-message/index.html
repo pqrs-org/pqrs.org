@@ -19,14 +19,14 @@
 
 <title>to.set_notification_message | Karabiner-Elements</title>
 <meta name="description" content="set_notification_message sets or remove the notification message.
-{ &#34;to&#34;: [ { &#34;set_notification_message&#34;: { &#34;id&#34;: &#34;identifier of the message&#34;, &#34;text&#34;: &#34;message text&#34; } } ] } Name Required Description id Required Specify an unique string for your notification message text Required Message body How to remove the notification message Set empty string to text to remove the notification message. Examples Show the notification message while you press right shift key.
-{ &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;right_shift&#34;, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [ { // Show the notification message &#34;set_notification_message&#34;: { &#34;id&#34;: &#34;org.pqrs.notificaion_message_example&#34;, &#34;text&#34;: &#34;Hello World!&#34; } }, { &#34;key_code&#34;: &#34;right_shift&#34; } ], &#34;to_after_key_up&#34;: [ { // Hide the notification message &#34;set_notification_message&#34;: { &#34;id&#34;: &#34;org.pqrs.notificaion_message_example&#34;, &#34;text&#34;: &#34;&#34; } } ] } Important Do not forget to remove the notification message.">
+Examples Show the notification message while you press right shift key.
+{ &#34;description&#34;: &#34;Show a message while right_shift is pressed&#34;, &#34;manipulators&#34;: [ { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;right_shift&#34;, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [ { // Show the notification message &#34;set_notification_message&#34;: { &#34;id&#34;: &#34;my_message&#34;, &#34;text&#34;: &#34;Hello World!&#34; } }, { &#34;key_code&#34;: &#34;right_shift&#34; } ], &#34;to_after_key_up&#34;: [ { // Hide the notification message &#34;set_notification_message&#34;: { &#34;id&#34;: &#34;my_message&#34;, &#34;text&#34;: &#34;&#34; } } ] } ] } Specification { &#34;to&#34;: [ { &#34;set_notification_message&#34;: { &#34;id&#34;: &#34;identifier of the message&#34;, &#34;text&#34;: &#34;message text&#34; } } ] } Name Required Description id Required Specify an unique string for your notification message text Required Message body Important Do not forget to remove the notification message. How to remove the notification message Set empty string to text to remove the notification message.">
 <meta property="og:url" content="/docs/json/complex-modifications-manipulator-definition/to/set-notification-message/">
   <meta property="og:site_name" content="Karabiner-Elements">
   <meta property="og:title" content="to.set_notification_message">
   <meta property="og:description" content="set_notification_message sets or remove the notification message.
-{ &#34;to&#34;: [ { &#34;set_notification_message&#34;: { &#34;id&#34;: &#34;identifier of the message&#34;, &#34;text&#34;: &#34;message text&#34; } } ] } Name Required Description id Required Specify an unique string for your notification message text Required Message body How to remove the notification message Set empty string to text to remove the notification message. Examples Show the notification message while you press right shift key.
-{ &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;right_shift&#34;, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [ { // Show the notification message &#34;set_notification_message&#34;: { &#34;id&#34;: &#34;org.pqrs.notificaion_message_example&#34;, &#34;text&#34;: &#34;Hello World!&#34; } }, { &#34;key_code&#34;: &#34;right_shift&#34; } ], &#34;to_after_key_up&#34;: [ { // Hide the notification message &#34;set_notification_message&#34;: { &#34;id&#34;: &#34;org.pqrs.notificaion_message_example&#34;, &#34;text&#34;: &#34;&#34; } } ] } Important Do not forget to remove the notification message.">
+Examples Show the notification message while you press right shift key.
+{ &#34;description&#34;: &#34;Show a message while right_shift is pressed&#34;, &#34;manipulators&#34;: [ { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;right_shift&#34;, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [ { // Show the notification message &#34;set_notification_message&#34;: { &#34;id&#34;: &#34;my_message&#34;, &#34;text&#34;: &#34;Hello World!&#34; } }, { &#34;key_code&#34;: &#34;right_shift&#34; } ], &#34;to_after_key_up&#34;: [ { // Hide the notification message &#34;set_notification_message&#34;: { &#34;id&#34;: &#34;my_message&#34;, &#34;text&#34;: &#34;&#34; } } ] } ] } Specification { &#34;to&#34;: [ { &#34;set_notification_message&#34;: { &#34;id&#34;: &#34;identifier of the message&#34;, &#34;text&#34;: &#34;message text&#34; } } ] } Name Required Description id Required Specify an unique string for your notification message text Required Message body Important Do not forget to remove the notification message. How to remove the notification message Set empty string to text to remove the notification message.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
@@ -34,16 +34,16 @@
 
   <meta itemprop="name" content="to.set_notification_message">
   <meta itemprop="description" content="set_notification_message sets or remove the notification message.
-{ &#34;to&#34;: [ { &#34;set_notification_message&#34;: { &#34;id&#34;: &#34;identifier of the message&#34;, &#34;text&#34;: &#34;message text&#34; } } ] } Name Required Description id Required Specify an unique string for your notification message text Required Message body How to remove the notification message Set empty string to text to remove the notification message. Examples Show the notification message while you press right shift key.
-{ &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;right_shift&#34;, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [ { // Show the notification message &#34;set_notification_message&#34;: { &#34;id&#34;: &#34;org.pqrs.notificaion_message_example&#34;, &#34;text&#34;: &#34;Hello World!&#34; } }, { &#34;key_code&#34;: &#34;right_shift&#34; } ], &#34;to_after_key_up&#34;: [ { // Hide the notification message &#34;set_notification_message&#34;: { &#34;id&#34;: &#34;org.pqrs.notificaion_message_example&#34;, &#34;text&#34;: &#34;&#34; } } ] } Important Do not forget to remove the notification message.">
-  <meta itemprop="wordCount" content="131">
+Examples Show the notification message while you press right shift key.
+{ &#34;description&#34;: &#34;Show a message while right_shift is pressed&#34;, &#34;manipulators&#34;: [ { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;right_shift&#34;, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [ { // Show the notification message &#34;set_notification_message&#34;: { &#34;id&#34;: &#34;my_message&#34;, &#34;text&#34;: &#34;Hello World!&#34; } }, { &#34;key_code&#34;: &#34;right_shift&#34; } ], &#34;to_after_key_up&#34;: [ { // Hide the notification message &#34;set_notification_message&#34;: { &#34;id&#34;: &#34;my_message&#34;, &#34;text&#34;: &#34;&#34; } } ] } ] } Specification { &#34;to&#34;: [ { &#34;set_notification_message&#34;: { &#34;id&#34;: &#34;identifier of the message&#34;, &#34;text&#34;: &#34;message text&#34; } } ] } Name Required Description id Required Specify an unique string for your notification message text Required Message body Important Do not forget to remove the notification message. How to remove the notification message Set empty string to text to remove the notification message.">
+  <meta itemprop="wordCount" content="145">
   <meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://karabiner-elements.pqrs.org/images/logo.png">
   <meta name="twitter:title" content="to.set_notification_message">
   <meta name="twitter:description" content="set_notification_message sets or remove the notification message.
-{ &#34;to&#34;: [ { &#34;set_notification_message&#34;: { &#34;id&#34;: &#34;identifier of the message&#34;, &#34;text&#34;: &#34;message text&#34; } } ] } Name Required Description id Required Specify an unique string for your notification message text Required Message body How to remove the notification message Set empty string to text to remove the notification message. Examples Show the notification message while you press right shift key.
-{ &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;right_shift&#34;, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [ { // Show the notification message &#34;set_notification_message&#34;: { &#34;id&#34;: &#34;org.pqrs.notificaion_message_example&#34;, &#34;text&#34;: &#34;Hello World!&#34; } }, { &#34;key_code&#34;: &#34;right_shift&#34; } ], &#34;to_after_key_up&#34;: [ { // Hide the notification message &#34;set_notification_message&#34;: { &#34;id&#34;: &#34;org.pqrs.notificaion_message_example&#34;, &#34;text&#34;: &#34;&#34; } } ] } Important Do not forget to remove the notification message.">
+Examples Show the notification message while you press right shift key.
+{ &#34;description&#34;: &#34;Show a message while right_shift is pressed&#34;, &#34;manipulators&#34;: [ { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;right_shift&#34;, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [ { // Show the notification message &#34;set_notification_message&#34;: { &#34;id&#34;: &#34;my_message&#34;, &#34;text&#34;: &#34;Hello World!&#34; } }, { &#34;key_code&#34;: &#34;right_shift&#34; } ], &#34;to_after_key_up&#34;: [ { // Hide the notification message &#34;set_notification_message&#34;: { &#34;id&#34;: &#34;my_message&#34;, &#34;text&#34;: &#34;&#34; } } ] } ] } Specification { &#34;to&#34;: [ { &#34;set_notification_message&#34;: { &#34;id&#34;: &#34;identifier of the message&#34;, &#34;text&#34;: &#34;message text&#34; } } ] } Name Required Description id Required Specify an unique string for your notification message text Required Message body Important Do not forget to remove the notification message. How to remove the notification message Set empty string to text to remove the notification message.">
 <link rel="preload" href="/scss/main.min.f693f06e4d3557ccf8ea888186f681e1db8cb153b66b80f588e76cc53e6ebdf3.css" as="style" integrity="sha256-9pPwbk01V8z46oiBhvaB4duMsVO2a4D1iOdsxT5uvfM=" crossorigin="anonymous">
 <link href="/scss/main.min.f693f06e4d3557ccf8ea888186f681e1db8cb153b66b80f588e76cc53e6ebdf3.css" rel="stylesheet" integrity="sha256-9pPwbk01V8z46oiBhvaB4duMsVO2a4D1iOdsxT5uvfM=" crossorigin="anonymous">
 <script
@@ -78,7 +78,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.54c1965d5eda951c101c3dbbd7c43a55.json"
+    data-offline-search-index-json-src="/offline-search-index.8d835e2fbab3f1d6d0acaef3b5e8c331.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="25"
   >
@@ -102,7 +102,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.54c1965d5eda951c101c3dbbd7c43a55.json"
+    data-offline-search-index-json-src="/offline-search-index.8d835e2fbab3f1d6d0acaef3b5e8c331.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="25"
   >
@@ -632,6 +632,7 @@
 <nav id="TableOfContents">
   <ul>
     <li><a href="#examples">Examples</a></li>
+    <li><a href="#specification">Specification</a></li>
   </ul>
 </nav>
 
@@ -674,6 +675,44 @@
   />
 </figure>
 
+<h2 id="examples">Examples</h2>
+<p>Show the notification message while you press right shift key.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;description&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;Show a message while right_shift is pressed&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;manipulators&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;type&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;basic&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;from&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">&#34;key_code&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;right_shift&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">&#34;modifiers&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;optional&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">&#34;any&#34;</span><span style="color:#000;font-weight:bold">]</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">},</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;to&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#8f5902;font-style:italic">// Show the notification message
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>                    <span style="color:#204a87;font-weight:bold">&#34;set_notification_message&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#204a87;font-weight:bold">&#34;id&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;my_message&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#204a87;font-weight:bold">&#34;text&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;Hello World!&#34;</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">},</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;key_code&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;right_shift&#34;</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">],</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;to_after_key_up&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#8f5902;font-style:italic">// Hide the notification message
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>                    <span style="color:#204a87;font-weight:bold">&#34;set_notification_message&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#204a87;font-weight:bold">&#34;id&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;my_message&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#204a87;font-weight:bold">&#34;text&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">]</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">]</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></div><h2 id="specification">Specification</h2>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;to&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">{</span>
@@ -707,51 +746,19 @@
 </table>
 
 
-<div class="alert alert-success" role="alert">
-<h4 class="alert-heading">How to remove the notification message</h4>
-
-    Set empty string to <code>text</code> to remove the notification message.
-
-</div>
-
-<h2 id="examples">Examples</h2>
-<p>Show the notification message while you press right shift key.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;type&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;basic&#34;</span><span style="color:#000;font-weight:bold">,</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;from&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#204a87;font-weight:bold">&#34;key_code&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;right_shift&#34;</span><span style="color:#000;font-weight:bold">,</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#204a87;font-weight:bold">&#34;modifiers&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
-</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;optional&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">&#34;any&#34;</span><span style="color:#000;font-weight:bold">]</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">}</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">},</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;to&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">{</span>
-</span></span><span style="display:flex;"><span>            <span style="color:#8f5902;font-style:italic">// Show the notification message
-</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>            <span style="color:#204a87;font-weight:bold">&#34;set_notification_message&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
-</span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">&#34;id&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;org.pqrs.notificaion_message_example&#34;</span><span style="color:#000;font-weight:bold">,</span>
-</span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">&#34;text&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;Hello World!&#34;</span>
-</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">}</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">},</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">{</span>
-</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;key_code&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;right_shift&#34;</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">}</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">],</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;to_after_key_up&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">{</span>
-</span></span><span style="display:flex;"><span>            <span style="color:#8f5902;font-style:italic">// Hide the notification message
-</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>            <span style="color:#204a87;font-weight:bold">&#34;set_notification_message&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
-</span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">&#34;id&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;org.pqrs.notificaion_message_example&#34;</span><span style="color:#000;font-weight:bold">,</span>
-</span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">&#34;text&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;&#34;</span>
-</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">}</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">}</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">]</span>
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
-</span></span></code></pre></div>
-
 <div class="alert alert-danger" role="alert">
 <h4 class="alert-heading">Important</h4>
 
     Do not forget to remove the notification message.
+
+</div>
+
+
+
+<div class="alert alert-success" role="alert">
+<h4 class="alert-heading">How to remove the notification message</h4>
+
+    Set empty string to <code>text</code> to remove the notification message.
 
 </div>
 

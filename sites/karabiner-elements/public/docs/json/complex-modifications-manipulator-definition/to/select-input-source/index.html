@@ -21,14 +21,16 @@
 <meta name="description" content="select_input_source change the current input source.
 Caution Switching to input sources which have input_mode_id (Chinese, Japanese, Korean, Vietnamese) may be failed due to an macOS issue.
 For CJKV input sources, sending the input source switch shortcut (e.g., control-space) is better than using select_input_source.
-{ &#34;to&#34;: [ { &#34;select_input_source&#34;: { &#34;language&#34;: &#34;language regex&#34;, &#34;input_source_id&#34;: &#34;input source id regex&#34;, &#34;input_mode_id&#34;: &#34;input mode id regex&#34; } } ] } Name Required Description language Optional The language regex such as &#34;^en$&#34;, &#34;^fr$&#34; input_source_id Optional The input source id regex such as &#34;^com\\.apple\\.keylayout\\.US$&#34; input_mode_id Optional The input mode id regex such as &#34;^com\\.apple\\.inputmethod\\.Japanese\\.Hiragana$&#34; Example Switch to French input source.">
+Example Switch the current input source by:
+right_command&#43;e: English right_command&#43;f: French { &#34;description&#34;: &#34;Switch languages by right_command&#43;e (English), right_command&#43;f (French)&#34;, &#34;manipulators&#34;: [ { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;e&#34;, &#34;modifiers&#34;: { &#34;mandatory&#34;: [&#34;right_command&#34;], &#34;optional&#34;: [&#34;caps_lock&#34;] } }, &#34;to&#34;: [{ &#34;select_input_source&#34;: { &#34;language&#34;: &#34;^en$&#34; } }] }, { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;f&#34;, &#34;modifiers&#34;: { &#34;mandatory&#34;: [&#34;right_command&#34;], &#34;optional&#34;: [&#34;caps_lock&#34;] } }, &#34;to&#34;: [{ &#34;select_input_source&#34;: { &#34;language&#34;: &#34;^fr$&#34; } }] } ] } Specification { &#34;to&#34;: [ { &#34;select_input_source&#34;: { &#34;language&#34;: &#34;language regex&#34;, &#34;input_source_id&#34;: &#34;input source id regex&#34;, &#34;input_mode_id&#34;: &#34;input mode id regex&#34; } } ] } Name Required Description language Optional The language regex such as &#34;^en$&#34;, &#34;^fr$&#34; input_source_id Optional The input source id regex such as &#34;^com\\.apple\\.keylayout\\.US$&#34; input_mode_id Optional The input mode id regex such as &#34;^com\\.apple\\.inputmethod\\.Japanese\\.Hiragana$&#34; Investigate the input source identifiers You can find the current input source identifiers by EventViewer &gt; Variables tab.">
 <meta property="og:url" content="/docs/json/complex-modifications-manipulator-definition/to/select-input-source/">
   <meta property="og:site_name" content="Karabiner-Elements">
   <meta property="og:title" content="to.select_input_source">
   <meta property="og:description" content="select_input_source change the current input source.
 Caution Switching to input sources which have input_mode_id (Chinese, Japanese, Korean, Vietnamese) may be failed due to an macOS issue.
 For CJKV input sources, sending the input source switch shortcut (e.g., control-space) is better than using select_input_source.
-{ &#34;to&#34;: [ { &#34;select_input_source&#34;: { &#34;language&#34;: &#34;language regex&#34;, &#34;input_source_id&#34;: &#34;input source id regex&#34;, &#34;input_mode_id&#34;: &#34;input mode id regex&#34; } } ] } Name Required Description language Optional The language regex such as &#34;^en$&#34;, &#34;^fr$&#34; input_source_id Optional The input source id regex such as &#34;^com\\.apple\\.keylayout\\.US$&#34; input_mode_id Optional The input mode id regex such as &#34;^com\\.apple\\.inputmethod\\.Japanese\\.Hiragana$&#34; Example Switch to French input source.">
+Example Switch the current input source by:
+right_command&#43;e: English right_command&#43;f: French { &#34;description&#34;: &#34;Switch languages by right_command&#43;e (English), right_command&#43;f (French)&#34;, &#34;manipulators&#34;: [ { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;e&#34;, &#34;modifiers&#34;: { &#34;mandatory&#34;: [&#34;right_command&#34;], &#34;optional&#34;: [&#34;caps_lock&#34;] } }, &#34;to&#34;: [{ &#34;select_input_source&#34;: { &#34;language&#34;: &#34;^en$&#34; } }] }, { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;f&#34;, &#34;modifiers&#34;: { &#34;mandatory&#34;: [&#34;right_command&#34;], &#34;optional&#34;: [&#34;caps_lock&#34;] } }, &#34;to&#34;: [{ &#34;select_input_source&#34;: { &#34;language&#34;: &#34;^fr$&#34; } }] } ] } Specification { &#34;to&#34;: [ { &#34;select_input_source&#34;: { &#34;language&#34;: &#34;language regex&#34;, &#34;input_source_id&#34;: &#34;input source id regex&#34;, &#34;input_mode_id&#34;: &#34;input mode id regex&#34; } } ] } Name Required Description language Optional The language regex such as &#34;^en$&#34;, &#34;^fr$&#34; input_source_id Optional The input source id regex such as &#34;^com\\.apple\\.keylayout\\.US$&#34; input_mode_id Optional The input mode id regex such as &#34;^com\\.apple\\.inputmethod\\.Japanese\\.Hiragana$&#34; Investigate the input source identifiers You can find the current input source identifiers by EventViewer &gt; Variables tab.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
@@ -38,8 +40,9 @@ For CJKV input sources, sending the input source switch shortcut (e.g., control-
   <meta itemprop="description" content="select_input_source change the current input source.
 Caution Switching to input sources which have input_mode_id (Chinese, Japanese, Korean, Vietnamese) may be failed due to an macOS issue.
 For CJKV input sources, sending the input source switch shortcut (e.g., control-space) is better than using select_input_source.
-{ &#34;to&#34;: [ { &#34;select_input_source&#34;: { &#34;language&#34;: &#34;language regex&#34;, &#34;input_source_id&#34;: &#34;input source id regex&#34;, &#34;input_mode_id&#34;: &#34;input mode id regex&#34; } } ] } Name Required Description language Optional The language regex such as &#34;^en$&#34;, &#34;^fr$&#34; input_source_id Optional The input source id regex such as &#34;^com\\.apple\\.keylayout\\.US$&#34; input_mode_id Optional The input mode id regex such as &#34;^com\\.apple\\.inputmethod\\.Japanese\\.Hiragana$&#34; Example Switch to French input source.">
-  <meta itemprop="wordCount" content="145">
+Example Switch the current input source by:
+right_command&#43;e: English right_command&#43;f: French { &#34;description&#34;: &#34;Switch languages by right_command&#43;e (English), right_command&#43;f (French)&#34;, &#34;manipulators&#34;: [ { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;e&#34;, &#34;modifiers&#34;: { &#34;mandatory&#34;: [&#34;right_command&#34;], &#34;optional&#34;: [&#34;caps_lock&#34;] } }, &#34;to&#34;: [{ &#34;select_input_source&#34;: { &#34;language&#34;: &#34;^en$&#34; } }] }, { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;f&#34;, &#34;modifiers&#34;: { &#34;mandatory&#34;: [&#34;right_command&#34;], &#34;optional&#34;: [&#34;caps_lock&#34;] } }, &#34;to&#34;: [{ &#34;select_input_source&#34;: { &#34;language&#34;: &#34;^fr$&#34; } }] } ] } Specification { &#34;to&#34;: [ { &#34;select_input_source&#34;: { &#34;language&#34;: &#34;language regex&#34;, &#34;input_source_id&#34;: &#34;input source id regex&#34;, &#34;input_mode_id&#34;: &#34;input mode id regex&#34; } } ] } Name Required Description language Optional The language regex such as &#34;^en$&#34;, &#34;^fr$&#34; input_source_id Optional The input source id regex such as &#34;^com\\.apple\\.keylayout\\.US$&#34; input_mode_id Optional The input mode id regex such as &#34;^com\\.apple\\.inputmethod\\.Japanese\\.Hiragana$&#34; Investigate the input source identifiers You can find the current input source identifiers by EventViewer &gt; Variables tab.">
+  <meta itemprop="wordCount" content="200">
   <meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://karabiner-elements.pqrs.org/images/logo.png">
@@ -47,7 +50,8 @@ For CJKV input sources, sending the input source switch shortcut (e.g., control-
   <meta name="twitter:description" content="select_input_source change the current input source.
 Caution Switching to input sources which have input_mode_id (Chinese, Japanese, Korean, Vietnamese) may be failed due to an macOS issue.
 For CJKV input sources, sending the input source switch shortcut (e.g., control-space) is better than using select_input_source.
-{ &#34;to&#34;: [ { &#34;select_input_source&#34;: { &#34;language&#34;: &#34;language regex&#34;, &#34;input_source_id&#34;: &#34;input source id regex&#34;, &#34;input_mode_id&#34;: &#34;input mode id regex&#34; } } ] } Name Required Description language Optional The language regex such as &#34;^en$&#34;, &#34;^fr$&#34; input_source_id Optional The input source id regex such as &#34;^com\\.apple\\.keylayout\\.US$&#34; input_mode_id Optional The input mode id regex such as &#34;^com\\.apple\\.inputmethod\\.Japanese\\.Hiragana$&#34; Example Switch to French input source.">
+Example Switch the current input source by:
+right_command&#43;e: English right_command&#43;f: French { &#34;description&#34;: &#34;Switch languages by right_command&#43;e (English), right_command&#43;f (French)&#34;, &#34;manipulators&#34;: [ { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;e&#34;, &#34;modifiers&#34;: { &#34;mandatory&#34;: [&#34;right_command&#34;], &#34;optional&#34;: [&#34;caps_lock&#34;] } }, &#34;to&#34;: [{ &#34;select_input_source&#34;: { &#34;language&#34;: &#34;^en$&#34; } }] }, { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;f&#34;, &#34;modifiers&#34;: { &#34;mandatory&#34;: [&#34;right_command&#34;], &#34;optional&#34;: [&#34;caps_lock&#34;] } }, &#34;to&#34;: [{ &#34;select_input_source&#34;: { &#34;language&#34;: &#34;^fr$&#34; } }] } ] } Specification { &#34;to&#34;: [ { &#34;select_input_source&#34;: { &#34;language&#34;: &#34;language regex&#34;, &#34;input_source_id&#34;: &#34;input source id regex&#34;, &#34;input_mode_id&#34;: &#34;input mode id regex&#34; } } ] } Name Required Description language Optional The language regex such as &#34;^en$&#34;, &#34;^fr$&#34; input_source_id Optional The input source id regex such as &#34;^com\\.apple\\.keylayout\\.US$&#34; input_mode_id Optional The input mode id regex such as &#34;^com\\.apple\\.inputmethod\\.Japanese\\.Hiragana$&#34; Investigate the input source identifiers You can find the current input source identifiers by EventViewer &gt; Variables tab.">
 <link rel="preload" href="/scss/main.min.f693f06e4d3557ccf8ea888186f681e1db8cb153b66b80f588e76cc53e6ebdf3.css" as="style" integrity="sha256-9pPwbk01V8z46oiBhvaB4duMsVO2a4D1iOdsxT5uvfM=" crossorigin="anonymous">
 <link href="/scss/main.min.f693f06e4d3557ccf8ea888186f681e1db8cb153b66b80f588e76cc53e6ebdf3.css" rel="stylesheet" integrity="sha256-9pPwbk01V8z46oiBhvaB4duMsVO2a4D1iOdsxT5uvfM=" crossorigin="anonymous">
 <script
@@ -82,7 +86,7 @@ For CJKV input sources, sending the input source switch shortcut (e.g., control-
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.54c1965d5eda951c101c3dbbd7c43a55.json"
+    data-offline-search-index-json-src="/offline-search-index.8d835e2fbab3f1d6d0acaef3b5e8c331.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="25"
   >
@@ -106,7 +110,7 @@ For CJKV input sources, sending the input source switch shortcut (e.g., control-
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.54c1965d5eda951c101c3dbbd7c43a55.json"
+    data-offline-search-index-json-src="/offline-search-index.8d835e2fbab3f1d6d0acaef3b5e8c331.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="25"
   >
@@ -636,6 +640,7 @@ For CJKV input sources, sending the input source switch shortcut (e.g., control-
 <nav id="TableOfContents">
   <ul>
     <li><a href="#example">Example</a></li>
+    <li><a href="#specification">Specification</a></li>
     <li><a href="#investigate-the-input-source-identifiers">Investigate the input source identifiers</a></li>
   </ul>
 </nav>
@@ -682,6 +687,40 @@ For CJKV input sources, sending the input source switch shortcut (e.g., control-
 
 </div>
 
+<h2 id="example">Example</h2>
+<p>Switch the current input source by:</p>
+<ul>
+<li>right_command+e: English</li>
+<li>right_command+f: French</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;description&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;Switch languages by right_command+e (English), right_command+f (French)&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;manipulators&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;type&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;basic&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;from&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">&#34;key_code&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;e&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">&#34;modifiers&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;mandatory&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">&#34;right_command&#34;</span><span style="color:#000;font-weight:bold">],</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;optional&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">&#34;caps_lock&#34;</span><span style="color:#000;font-weight:bold">]</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">},</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;to&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[{</span> <span style="color:#204a87;font-weight:bold">&#34;select_input_source&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span> <span style="color:#204a87;font-weight:bold">&#34;language&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;^en$&#34;</span> <span style="color:#000;font-weight:bold">}</span> <span style="color:#000;font-weight:bold">}]</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">},</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;type&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;basic&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;from&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">&#34;key_code&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;f&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">&#34;modifiers&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;mandatory&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">&#34;right_command&#34;</span><span style="color:#000;font-weight:bold">],</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;optional&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">&#34;caps_lock&#34;</span><span style="color:#000;font-weight:bold">]</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">},</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;to&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[{</span> <span style="color:#204a87;font-weight:bold">&#34;select_input_source&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span> <span style="color:#204a87;font-weight:bold">&#34;language&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;^fr$&#34;</span> <span style="color:#000;font-weight:bold">}</span> <span style="color:#000;font-weight:bold">}]</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">]</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></div><h2 id="specification">Specification</h2>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;to&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">{</span>
@@ -719,18 +758,7 @@ For CJKV input sources, sending the input source switch shortcut (e.g., control-
       </tr>
   </tbody>
 </table>
-<h2 id="example">Example</h2>
-<p>Switch to French input source.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;to&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">{</span>
-</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;select_input_source&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
-</span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">&#34;language&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;^fr$&#34;</span>
-</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">}</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">}</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">]</span>
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
-</span></span></code></pre></div><h2 id="investigate-the-input-source-identifiers">Investigate the input source identifiers</h2>
+<h2 id="investigate-the-input-source-identifiers">Investigate the input source identifiers</h2>
 <p>You can find the current input source identifiers by EventViewer &gt; Variables tab.</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;input_source&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
@@ -743,7 +771,7 @@ For CJKV input sources, sending the input source switch shortcut (e.g., control-
   <img
     src="/docs/json/complex-modifications-manipulator-definition/to/select-input-source/images/eventviewer-input-source-identifiers@2x.png"
     alt="eventviewer-input-source-identifiers@2x.png"
-    style="width: 874px"
+    style="width: 1100px"
   />
 </figure>
 
