@@ -5,6 +5,128 @@ weight: 400
 
 Move mouse pointer and scroll by `mouse_key`.
 
+## Example
+
+|                   | shortcuts                               |
+| ----------------- | --------------------------------------- |
+| Move mouse cursor | <kbd>right_shift + arrow keys</kbd>     |
+| Fast move         | <kbd>right_shift + f + arrow keys</kbd> |
+| Click             | <kbd>right_shift + v</kbd>              |
+| Scroll wheel      | <kbd>right_command + arrow keys</kbd>   |
+
+```json
+{
+    "description": "Move mouse cursor by right_shift + arrows, scroll by right_command + arrows",
+    "manipulators": [
+        // y
+        {
+            "type": "basic",
+            "from": {
+                "key_code": "up_arrow",
+                "modifiers": { "mandatory": "right_shift", "optional": ["any"] }
+            },
+            "to": [{ "mouse_key": { "y": -1536 } }]
+        },
+        {
+            "type": "basic",
+            "from": {
+                "key_code": "down_arrow",
+                "modifiers": { "mandatory": "right_shift", "optional": ["any"] }
+            },
+            "to": [{ "mouse_key": { "y": 1536 } }]
+        },
+
+        // x
+        {
+            "type": "basic",
+            "from": {
+                "key_code": "left_arrow",
+                "modifiers": { "mandatory": "right_shift", "optional": ["any"] }
+            },
+            "to": [{ "mouse_key": { "x": -1536 } }]
+        },
+        {
+            "type": "basic",
+            "from": {
+                "key_code": "right_arrow",
+                "modifiers": { "mandatory": "right_shift", "optional": ["any"] }
+            },
+            "to": [{ "mouse_key": { "x": 1536 } }]
+        },
+
+        // speed_multiplier
+        {
+            "type": "basic",
+            "from": {
+                "key_code": "f",
+                "modifiers": { "mandatory": "right_shift", "optional": ["any"] }
+            },
+            "to": [{ "mouse_key": { "speed_multiplier": 4.0 } }]
+        },
+
+        // click
+        {
+            "type": "basic",
+            "from": {
+                "key_code": "v",
+                "modifiers": { "mandatory": "right_shift", "optional": ["any"] }
+            },
+            "to": [{ "pointing_button": "button1" }]
+        },
+
+        // vertical_wheel
+        {
+            "type": "basic",
+            "from": {
+                "key_code": "up_arrow",
+                "modifiers": {
+                    "mandatory": "right_command",
+                    "optional": ["any"]
+                }
+            },
+            "to": [{ "mouse_key": { "vertical_wheel": -32 } }]
+        },
+        {
+            "type": "basic",
+            "from": {
+                "key_code": "down_arrow",
+                "modifiers": {
+                    "mandatory": "right_command",
+                    "optional": ["any"]
+                }
+            },
+            "to": [{ "mouse_key": { "vertical_wheel": 32 } }]
+        },
+
+        // horizontal_wheel
+        {
+            "type": "basic",
+            "from": {
+                "key_code": "left_arrow",
+                "modifiers": {
+                    "mandatory": "right_command",
+                    "optional": ["any"]
+                }
+            },
+            "to": [{ "mouse_key": { "horizontal_wheel": 32 } }]
+        },
+        {
+            "type": "basic",
+            "from": {
+                "key_code": "right_arrow",
+                "modifiers": {
+                    "mandatory": "right_command",
+                    "optional": ["any"]
+                }
+            },
+            "to": [{ "mouse_key": { "horizontal_wheel": -32 } }]
+        }
+    ]
+}
+```
+
+## Specification
+
 ```json
 {
     "to": [
@@ -32,19 +154,6 @@ Move mouse pointer and scroll by `mouse_key`.
 {{% alert title="Note" color="primary" %}}
 Speed and scroll direction depend on System Settings > Mouse configuration.
 {{% /alert %}}
-
-## Examples
-
-|              | json                                           |
-| ------------ | ---------------------------------------------- |
-| Move left    | `{ "mouse_key": { "x": -1536 } }`              |
-| Move right   | `{ "mouse_key": { "x": 1536 } }`               |
-| Move up      | `{ "mouse_key": { "y": -1536 } }`              |
-| Move down    | `{ "mouse_key": { "y": 1536 } }`               |
-| Scroll left  | `{ "mouse_key": { "horizontal_wheel": 32 } }`  |
-| Scroll right | `{ "mouse_key": { "horizontal_wheel": -32 } }` |
-| Scroll up    | `{ "mouse_key": { "vertical_wheel": -32 } }`   |
-| Scroll down  | `{ "mouse_key": { "vertical_wheel": 32 } }`    |
 
 ### Complete json examples
 
