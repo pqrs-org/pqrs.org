@@ -5,6 +5,27 @@ weight: 450
 
 `sticky_modifier` changes a key to a sticky modifier key.
 
+## Examples
+
+```json
+{
+    "description": "Change right_shift to sticky modifier",
+    "manipulators": [
+        {
+            "type": "basic",
+            "from": {
+                "key_code": "right_shift",
+                "modifiers": { "optional": ["any"] }
+            },
+            "to": [{ "key_code": "right_shift" }],
+            "to_if_alone": [{ "sticky_modifier": { "right_shift": "toggle" } }]
+        }
+    ]
+}
+```
+
+## Specification
+
 ```json
 {
     "to": [
@@ -32,20 +53,6 @@ weight: 450
 -   right_option
 -   right_command
 -   fn
-
-## Examples
-
-```json
-{
-    "to": [
-        {
-            "sticky_modifier": {
-                "right_option": "toggle"
-            }
-        }
-    ]
-}
-```
 
 {{% alert title="Note" color="danger" %}}
 You have to specify only one modifier.
