@@ -1,0 +1,7 @@
+// Override _utilities.scss
+// https://github.com/google/docsy/blob/main/assets/scss/support/_utilities.scss
+.td-max-width-on-larger-screens {
+  @include media-breakpoint-up(lg) {
+    max-width: calc(100% - 2em) !important;
+  }
+}
