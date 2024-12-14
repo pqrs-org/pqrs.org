@@ -27,33 +27,36 @@ Behavior of the json:
 -   You can use `left_control` for other keys such as `left_control + a`, `left_control + b`, etc.
 
 ```json
-[
-    {
-        "type": "basic",
-        "from": {
-            "key_code": "left_control"
+{
+    "description": "Change left_control as a lazy modifier, left_control+m to return_or_enter",
+    "manipulators": [
+        {
+            "type": "basic",
+            "from": {
+                "key_code": "left_control"
+            },
+            "to": [
+                {
+                    "key_code": "left_control",
+                    "lazy": true
+                }
+            ]
         },
-        "to": [
-            {
-                "key_code": "left_control",
-                "lazy": true
-            }
-        ]
-    },
-    {
-        "type": "basic",
-        "from": {
-            "key_code": "m",
-            "modifiers": {
-                "mandatory": ["left_control"],
-                "optional": ["any"]
-            }
-        },
-        "to": [
-            {
-                "key_code": "return_or_enter"
-            }
-        ]
-    }
-]
+        {
+            "type": "basic",
+            "from": {
+                "key_code": "m",
+                "modifiers": {
+                    "mandatory": ["left_control"],
+                    "optional": ["any"]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "return_or_enter"
+                }
+            ]
+        }
+    ]
+}
 ```
