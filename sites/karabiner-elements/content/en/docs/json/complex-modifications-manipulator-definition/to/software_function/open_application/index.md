@@ -9,6 +9,8 @@ Open an application, or if it's already running, bring it into focus.
 
 Open EventViewer by <kbd>right command + v</kbd>:
 
+{{< karabiner-elements-complex-modifications-usage >}}
+
 ```json
 {
     "description": "Open EventViewer by right command + v",
@@ -37,6 +39,8 @@ Open EventViewer by <kbd>right command + v</kbd>:
 ```
 
 Focus recently opened applications by <kbd>right command + 1</kbd>, <kbd>right command + 2</kbd>, <kbd>right command + 3</kbd>:
+
+{{< karabiner-elements-complex-modifications-usage >}}
 
 ```json
 {

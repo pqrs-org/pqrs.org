@@ -9,6 +9,8 @@ Change an event if/unless the event is from specified device.
 
 Change caps_lock to escape on Apple keyboards, wiht the vendor ID is 1452 (0x05ac) or 76 (0x004c) or if it's a built-in keyboard.
 
+{{< karabiner-elements-complex-modifications-usage >}}
+
 ```json
 {
     "description": "Change caps_lock to escape on Apple keyboards",

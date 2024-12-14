@@ -42,7 +42,9 @@ However, if you explicitly want to change them to home, end, etc., please use Co
 
 {{% alert title="Migration Example" color="primary" %}}
 
-Before
+#### Before
+
+{{< karabiner-elements-complex-modifications-usage >}}
 
 ```json
 {
@@ -64,7 +66,9 @@ Before
 }
 ```
 
-After
+#### After
+
+{{< karabiner-elements-complex-modifications-usage >}}
 
 ```json
 {
@@ -88,7 +92,7 @@ After
 }
 ```
 
-Diff
+#### Diff
 
 ```diff
             "to": [

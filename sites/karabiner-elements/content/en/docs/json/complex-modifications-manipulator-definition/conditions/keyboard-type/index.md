@@ -7,12 +7,13 @@ Change an event if/unless the event is from specified type keyboard.
 
 The keyboard type mentioned here refers to [the type of the virtual keyboard](/docs/manual/configuration/configure-keyboard-type/).
 
-
 ## Example
 
 Change `control-[` key to `escape`, including JIS layout support.
 
 Note: [the <kbd>\[</kbd> key is <kbd>close_bracket</kbd> in JIS layout](/docs/help/troubleshooting/symbols-with-non-ansi-keyboard/)
+
+{{< karabiner-elements-complex-modifications-usage >}}
 
 ```json
 {

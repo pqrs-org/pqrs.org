@@ -9,6 +9,8 @@ Change an event if/unless the frontmost application is the specified application
 
 Change `control-h` key to `delete_or_backspace` except in Terminal.
 
+{{< karabiner-elements-complex-modifications-usage >}}
+
 ```json
 {
     "description": "Change control-h to delete_or_backspace except in Terminal",

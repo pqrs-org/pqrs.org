@@ -27,6 +27,8 @@ The default value is `false`.
 
 For example, this definition manipulates `tab,q` to `mission_control` and does not manipulate `q,tab` events.
 
+{{< karabiner-elements-complex-modifications-usage >}}
+
 ```json
 {
     "description": "Pressing the tab,q keys simultaneously launches Mission Control (key_down_order)",
@@ -78,6 +80,8 @@ For example, this definition manipulates `tab,q` to `mission_control` if the `ta
 Events will be posted just before the last from event's key_up.
 
 {{% /alert %}}
+
+{{< karabiner-elements-complex-modifications-usage >}}
 
 ```json
 {

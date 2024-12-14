@@ -22,6 +22,8 @@ The key repeating will be suppressed if `to.repeat` is `false`.
 
 To prevent key repeats like "hellooooooooo" when holding down a key, add "repeat": false to the final key event in the sequence.
 
+{{< karabiner-elements-complex-modifications-usage >}}
+
 ```json
 {
     "description": "Enter 'hello' by right_shift+h",

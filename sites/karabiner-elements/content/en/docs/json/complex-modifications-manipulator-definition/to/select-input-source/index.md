@@ -20,6 +20,8 @@ Switch the current input source by:
 -   right_command+e: English
 -   right_command+f: French
 
+{{< karabiner-elements-complex-modifications-usage >}}
+
 ```json
 {
     "description": "Switch languages by right_command+e (English), right_command+f (French)",

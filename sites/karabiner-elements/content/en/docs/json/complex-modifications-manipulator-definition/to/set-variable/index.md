@@ -15,6 +15,8 @@ weight: 300
 
 Pressing the <kbd>a</kbd> key while holding the <kbd>escape</kbd> key launches Activity Monitor.
 
+{{< karabiner-elements-complex-modifications-usage >}}
+
 ```json
 {
     "description": "Pressing the a key while holding the escape key launches Activity Monitor",

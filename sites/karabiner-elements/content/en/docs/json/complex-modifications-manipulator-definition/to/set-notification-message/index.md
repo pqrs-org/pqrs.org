@@ -11,6 +11,8 @@ weight: 310
 
 Show the notification message while you press right shift key.
 
+{{< karabiner-elements-complex-modifications-usage >}}
+
 ```json
 {
     "description": "Show a message while right_shift is pressed",

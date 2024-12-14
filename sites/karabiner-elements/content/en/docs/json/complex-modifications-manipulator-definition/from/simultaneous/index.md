@@ -9,6 +9,8 @@ weight: 300
 
 This json defines manipulator which changes `a+s+d` to `mission_control`.
 
+{{< karabiner-elements-complex-modifications-usage >}}
+
 ```json
 {
     "description": "Pressing the a,s,d keys simultaneously launches Mission Control",

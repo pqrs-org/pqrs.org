@@ -9,6 +9,8 @@ weight: 100
 
 ### Open application
 
+{{< karabiner-elements-complex-modifications-usage >}}
+
 ```json
 {
     "description": "Open Safari by right_command+s",
@@ -29,6 +31,8 @@ weight: 100
 ```
 
 ### Execute shell from file
+
+{{< karabiner-elements-complex-modifications-usage >}}
 
 ```json
 {

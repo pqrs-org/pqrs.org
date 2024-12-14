@@ -51,6 +51,8 @@ Your mouse cursor movement will be always changed to scroll and your mouse will 
 
 The following json changes `button4 + mouse movement` to `scroll`.
 
+{{< karabiner-elements-complex-modifications-usage >}}
+
 ```json
 {
     "description": "Change button4 + mouse movement to scroll",

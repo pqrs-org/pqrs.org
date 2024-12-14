@@ -7,6 +7,8 @@ weight: 200
 
 (Equal to swap `;` and `shift-;`)
 
+{{< karabiner-elements-complex-modifications-usage >}}
+
 ```json
 {
     "description": "Swap ; and :",
@@ -40,6 +42,8 @@ weight: 200
 
 And change `control-option-h` to `option-delete`.
 
+{{< karabiner-elements-complex-modifications-usage >}}
+
 ```json
 {
     "description": "Change control-h to delete",
@@ -60,6 +64,8 @@ And change `control-option-h` to `option-delete`.
 ```
 
 ## Disable `command-l` on Finder
+
+{{< karabiner-elements-complex-modifications-usage >}}
 
 ```json
 {
@@ -86,6 +92,8 @@ And change `control-option-h` to `option-delete`.
 ```
 
 ## Post `escape` if `left_control` is pressed alone
+
+{{< karabiner-elements-complex-modifications-usage >}}
 
 ```json
 {
@@ -120,6 +128,8 @@ This uses `"lazy": true` to prevent <kbd>left_control</kbd> from being sent imme
 
 ## Open `Safari` if `escape` is held down
 
+{{< karabiner-elements-complex-modifications-usage >}}
+
 ```json
 {
     "description": "Open Safari if escape is held down",
@@ -146,6 +156,8 @@ This uses `"lazy": true` to prevent <kbd>left_control</kbd> from being sent imme
 ```
 
 ## Change `right_shift x2` to `mission_control`
+
+{{< karabiner-elements-complex-modifications-usage >}}
 
 ```json
 {
@@ -211,6 +223,8 @@ This uses `"lazy": true` to prevent <kbd>left_control</kbd> from being sent imme
 
 This example is available since Karabiner-Elements 15.3.7.
 
+{{< karabiner-elements-complex-modifications-usage >}}
+
 ```json
 {
     "description": "Change double press of q to escape",
@@ -270,6 +284,8 @@ This example is available since Karabiner-Elements 15.3.7.
 ```
 
 ## Change `equal+delete` to `forward_delete` if these keys are pressed simultaneously
+
+{{< karabiner-elements-complex-modifications-usage >}}
 
 ```json
 {

@@ -23,6 +23,8 @@ weight: 600
 
 The following json provide `Quit application by pressing command-q twice`.
 
+{{< karabiner-elements-complex-modifications-usage >}}
+
 ```json
 {
     "description": "Quit application by pressing command-q twice",
@@ -67,6 +69,8 @@ The following json provide `Quit application by pressing command-q twice`.
 ## Parameters
 
 You can adjust the milliseconds invoking `to_delayed_action` by `parameters > basic.to_delayed_action_delay_milliseconds` as follows.
+
+{{< karabiner-elements-complex-modifications-usage >}}
 
 ```json
 {

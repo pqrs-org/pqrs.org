@@ -18,6 +18,8 @@ weight: 500
 
 The following json changes holding `tab` key to `mute`.
 
+{{< karabiner-elements-complex-modifications-usage >}}
+
 ```json
 {
     "description": "Mute when tab is held down",

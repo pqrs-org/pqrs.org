@@ -14,6 +14,8 @@ Move mouse pointer and scroll by `mouse_key`.
 | Click             | <kbd>right_shift + v</kbd>              |
 | Scroll wheel      | <kbd>right_command + arrow keys</kbd>   |
 
+{{< karabiner-elements-complex-modifications-usage >}}
+
 ```json
 {
     "description": "Move mouse cursor by right_shift + arrows, scroll by right_command + arrows",

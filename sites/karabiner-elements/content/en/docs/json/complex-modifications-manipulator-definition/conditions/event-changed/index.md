@@ -10,6 +10,8 @@ Change an event if/unless the event is already changed by other manipulators.
 Change `tab` key to `return_or_enter` if the tab key is the physical tab key.
 (If the tab key is the result of modifying another key by simple modification, the key is ignored.)
 
+{{< karabiner-elements-complex-modifications-usage >}}
+
 ```json
 {
     "description": "Change tab key to return_or_enter if the tab key is the physical tab key",

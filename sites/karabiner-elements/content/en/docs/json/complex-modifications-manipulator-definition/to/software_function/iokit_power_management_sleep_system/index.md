@@ -11,7 +11,9 @@ Put the system to sleep.
 
 ## Examples
 
-Enter
+Put the system to sleep using fn+z.
+
+{{< karabiner-elements-complex-modifications-usage >}}
 
 ```json
 {

@@ -22,6 +22,8 @@ Only use it if you absolutely must trigger double-click events without sending r
 -   Change right_shift+v to software double click
 -   Change right_shift+b to regular double click
 
+{{< karabiner-elements-complex-modifications-usage >}}
+
 ```json
 {
     "description": "Change right_shift+v to software double click, right_shift+b to regular double click",

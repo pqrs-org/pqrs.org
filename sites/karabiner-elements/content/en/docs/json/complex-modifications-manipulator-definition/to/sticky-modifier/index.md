@@ -7,6 +7,8 @@ weight: 450
 
 ## Examples
 
+{{< karabiner-elements-complex-modifications-usage >}}
+
 ```json
 {
     "description": "Change right_shift to sticky modifier",
