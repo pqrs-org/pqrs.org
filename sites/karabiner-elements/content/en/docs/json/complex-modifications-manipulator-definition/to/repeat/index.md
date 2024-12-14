@@ -7,35 +7,6 @@ weight: 700
 
 The key repeating will be suppressed if `to.repeat` is `false`.
 
-{{% alert title="Note" color="primary" %}}
-
-You have to set `repeat` in the last `to` event as follows if you have multiple `to` events and want to set `to.repeat` `false`.
-
-```json
-{
-    "to": [
-        {
-            "key_code": "h"
-        },
-        {
-            "key_code": "e"
-        },
-        {
-            "key_code": "l"
-        },
-        {
-            "key_code": "l"
-        },
-        {
-            "key_code": "o",
-            "repeat": false
-        }
-    ]
-}
-```
-
-{{% /alert %}}
-
 {{% alert title="Tip" color="primary" %}}
 
 `to.repeat` affects `key_up` event sending timing as follows.
@@ -46,3 +17,32 @@ You have to set `repeat` in the last `to` event as follows if you have multiple 
     -   `key_down` and `key_up` events are sent when you press the key.
 
 {{% /alert %}}
+
+## Example
+
+To prevent key repeats like "hellooooooooo" when holding down a key, add "repeat": false to the final key event in the sequence.
+
+```json
+{
+    "description": "Enter 'hello' by right_shift+h",
+    "manipulators": [
+        {
+            "type": "basic",
+            "from": {
+                "key_code": "h",
+                "modifiers": {
+                    "mandatory": ["right_shift"],
+                    "optional": ["caps_lock"]
+                }
+            },
+            "to": [
+                { "key_code": "h" },
+                { "key_code": "e" },
+                { "key_code": "l" },
+                { "key_code": "l" },
+                { "key_code": "o", "repeat": false }
+            ]
+        }
+    ]
+}
+```
