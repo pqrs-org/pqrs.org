@@ -17,13 +17,13 @@
 <link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
-<title>Use more complex rules | Karabiner-Elements</title>
+<title>Use more complex modifications | Karabiner-Elements</title>
 <meta name="description" content="Karabiner-Elements provides more complex event modifications.
 These rules change keys by conditions.
 Examples Modifier flags &#43; key to keys: Change control-m to return key. Change control-h to delete key. Key to modifier flags &#43; keys: Change caps lock to command&#43;control&#43;option&#43;shift key Post other key events when a key pressed alone: Post escape key when you press left control key alone. Change keys in specific apps: Change left command key to left control key in virtual machines. Execute shell command: Open Activity Monitor by right shift&#43;a. There are two ways to add rules">
 <meta property="og:url" content="/docs/manual/configuration/configure-complex-modifications/">
   <meta property="og:site_name" content="Karabiner-Elements">
-  <meta property="og:title" content="Use more complex rules">
+  <meta property="og:title" content="Use more complex modifications">
   <meta property="og:description" content="Karabiner-Elements provides more complex event modifications.
 These rules change keys by conditions.
 Examples Modifier flags &#43; key to keys: Change control-m to return key. Change control-h to delete key. Key to modifier flags &#43; keys: Change caps lock to command&#43;control&#43;option&#43;shift key Post other key events when a key pressed alone: Post escape key when you press left control key alone. Change keys in specific apps: Change left command key to left control key in virtual machines. Execute shell command: Open Activity Monitor by right shift&#43;a. There are two ways to add rules">
@@ -32,20 +32,20 @@ Examples Modifier flags &#43; key to keys: Change control-m to return key. Chang
     <meta property="article:section" content="docs">
     <meta property="og:image" content="https://karabiner-elements.pqrs.org/images/logo.png">
 
-  <meta itemprop="name" content="Use more complex rules">
+  <meta itemprop="name" content="Use more complex modifications">
   <meta itemprop="description" content="Karabiner-Elements provides more complex event modifications.
 These rules change keys by conditions.
 Examples Modifier flags &#43; key to keys: Change control-m to return key. Change control-h to delete key. Key to modifier flags &#43; keys: Change caps lock to command&#43;control&#43;option&#43;shift key Post other key events when a key pressed alone: Post escape key when you press left control key alone. Change keys in specific apps: Change left command key to left control key in virtual machines. Execute shell command: Open Activity Monitor by right shift&#43;a. There are two ways to add rules">
-  <meta itemprop="wordCount" content="298">
+  <meta itemprop="wordCount" content="198">
   <meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://karabiner-elements.pqrs.org/images/logo.png">
-  <meta name="twitter:title" content="Use more complex rules">
+  <meta name="twitter:title" content="Use more complex modifications">
   <meta name="twitter:description" content="Karabiner-Elements provides more complex event modifications.
 These rules change keys by conditions.
 Examples Modifier flags &#43; key to keys: Change control-m to return key. Change control-h to delete key. Key to modifier flags &#43; keys: Change caps lock to command&#43;control&#43;option&#43;shift key Post other key events when a key pressed alone: Post escape key when you press left control key alone. Change keys in specific apps: Change left command key to left control key in virtual machines. Execute shell command: Open Activity Monitor by right shift&#43;a. There are two ways to add rules">
-<link rel="preload" href="/scss/main.min.f693f06e4d3557ccf8ea888186f681e1db8cb153b66b80f588e76cc53e6ebdf3.css" as="style" integrity="sha256-9pPwbk01V8z46oiBhvaB4duMsVO2a4D1iOdsxT5uvfM=" crossorigin="anonymous">
-<link href="/scss/main.min.f693f06e4d3557ccf8ea888186f681e1db8cb153b66b80f588e76cc53e6ebdf3.css" rel="stylesheet" integrity="sha256-9pPwbk01V8z46oiBhvaB4duMsVO2a4D1iOdsxT5uvfM=" crossorigin="anonymous">
+<link rel="preload" href="/scss/main.min.b52292fe96ebf63767704ebe0ee8b0484efe1be2cf8565b9740fbe8117ce30bd.css" as="style" integrity="sha256-tSKS/pbr9jdncE6&#43;DuiwSE7&#43;G&#43;LPhWW5dA&#43;&#43;gRfOML0=" crossorigin="anonymous">
+<link href="/scss/main.min.b52292fe96ebf63767704ebe0ee8b0484efe1be2cf8565b9740fbe8117ce30bd.css" rel="stylesheet" integrity="sha256-tSKS/pbr9jdncE6&#43;DuiwSE7&#43;G&#43;LPhWW5dA&#43;&#43;gRfOML0=" crossorigin="anonymous">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -78,7 +78,7 @@ Examples Modifier flags &#43; key to keys: Change control-m to return key. Chang
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.2e2f3f86752e9a93ace8a1377e543474.json"
+    data-offline-search-index-json-src="/offline-search-index.18a5d161471d32e9bc40dce6c668034a.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="25"
   >
@@ -102,7 +102,7 @@ Examples Modifier flags &#43; key to keys: Change control-m to return key. Chang
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.2e2f3f86752e9a93ace8a1377e543474.json"
+    data-offline-search-index-json-src="/offline-search-index.18a5d161471d32e9bc40dce6c668034a.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="25"
   >
@@ -146,7 +146,15 @@ Examples Modifier flags &#43; key to keys: Change control-m to return key. Chang
   
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-docsmanualconfigurationconfigure-complex-modifications-li">
   <input type="checkbox" id="m-docsmanualconfigurationconfigure-complex-modifications-check" checked/>
-  <label for="m-docsmanualconfigurationconfigure-complex-modifications-check"><a href="/docs/manual/configuration/configure-complex-modifications/" class="align-left ps-0  active td-sidebar-link td-sidebar-link__page" id="m-docsmanualconfigurationconfigure-complex-modifications"><span class="td-sidebar-nav-active-item">Use more complex rules</span></a></label>
+  <label for="m-docsmanualconfigurationconfigure-complex-modifications-check"><a href="/docs/manual/configuration/configure-complex-modifications/" class="align-left ps-0  active td-sidebar-link td-sidebar-link__page" id="m-docsmanualconfigurationconfigure-complex-modifications"><span class="td-sidebar-nav-active-item">Use more complex modifications</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsmanualconfigurationadd-your-own-complex-modifications-li">
+  <input type="checkbox" id="m-docsmanualconfigurationadd-your-own-complex-modifications-check"/>
+  <label for="m-docsmanualconfigurationadd-your-own-complex-modifications-check"><a href="/docs/manual/configuration/add-your-own-complex-modifications/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-docsmanualconfigurationadd-your-own-complex-modifications"><span class="">Add your own complex modifications</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsmanualconfigurationedit-complex-modifications-li">
+  <input type="checkbox" id="m-docsmanualconfigurationedit-complex-modifications-check"/>
+  <label for="m-docsmanualconfigurationedit-complex-modifications-check"><a href="/docs/manual/configuration/edit-complex-modifications/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-docsmanualconfigurationedit-complex-modifications"><span class="">Edit complex modifications</span></a></label>
   
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsmanualconfigurationconfigure-devices-li">
   <input type="checkbox" id="m-docsmanualconfigurationconfigure-devices-check"/>
@@ -640,13 +648,6 @@ Examples Modifier flags &#43; key to keys: Change control-m to return key. Chang
         <li><a href="#step-5">Step 5</a></li>
       </ul>
     </li>
-    <li><a href="#create-your-own-rules">Create your own rules</a>
-      <ul>
-        <li><a href="#step-1-1">Step 1</a></li>
-        <li><a href="#step-2-1">Step 2</a></li>
-      </ul>
-    </li>
-    <li><a href="#edit-rules">Edit rules</a></li>
   </ul>
 </nav>
 
@@ -668,12 +669,12 @@ Examples Modifier flags &#43; key to keys: Change control-m to return key. Chang
   <li class="breadcrumb-item">
     <a href="/docs/manual/configuration/">Configuration</a></li>
   <li class="breadcrumb-item active" aria-current="page">
-    Use more complex rules</li>
+    Use more complex modifications</li>
   </ol>
 </nav>
             
 <div class="td-content">
-	<h1>Use more complex rules</h1>
+	<h1>Use more complex modifications</h1>
 	
 	<header class="article-meta">
 		
@@ -719,8 +720,8 @@ These rules change keys by conditions.</p>
 
 <p>There are two ways to add rules</p>
 <ul>
-<li>Import predefined rules maintained by the community</li>
-<li>Create your own rules</li>
+<li><a href="/docs/manual/configuration/configure-complex-modifications/#import-predefined-rules">Import predefined rules maintained by the community</a></li>
+<li><a href="../add-your-own-complex-modifications/">Create your own rules</a></li>
 </ul>
 <p>In both cases, you can modify the rules later to make them more personalised.</p>
 <hr>
@@ -787,51 +788,6 @@ Press <strong>Import</strong> button, then new rules are imported.<br /></p>
 <h3 id="step-5">Step 5</h3>
 <p>New rule is enabled.<br />
 Confirm the result using <a href="/docs/manual/operation/eventviewer/">Karabiner-EventViewer</a>.</p>
-<hr>
-<h2 id="create-your-own-rules">Create your own rules</h2>
-<h3 id="step-1-1">Step 1</h3>
-<p>Open Complex Modifications tab and press <strong>Add your own rule</strong> button.<br /></p>
-<figure>
-  <img
-    src="/docs/manual/configuration/configure-complex-modifications/images/own-rule-1@2x.png"
-    alt="own-rule-1@2x.png"
-    style="width: 1100px"
-  />
-</figure>
-
-<h3 id="step-2-1">Step 2</h3>
-<p>An editor will open with sample rules.
-Change the content and press the Save button to register.</p>
-<p>When making changes, <a href="/docs/manual/operation/eventviewer/">Karabiner-EventViewer</a> and <a href="/docs/json/">Karabiner Configuration Reference Manual</a> can be used to confirm the key names and how to write rules.</p>
-<figure>
-  <img
-    src="/docs/manual/configuration/configure-complex-modifications/images/own-rule-2@2x.png"
-    alt="own-rule-2@2x.png"
-    style="width: 1100px"
-  />
-</figure>
-
-<hr>
-<h2 id="edit-rules">Edit rules</h2>
-<p>Open Complex Modifications tab and press <strong>Edit</strong> button.
-The editor will open. Change the contents and save it.</p>
-<p>When making changes, <a href="/docs/manual/operation/eventviewer/">Karabiner-EventViewer</a> and <a href="/docs/json/">Karabiner Configuration Reference Manual</a> can be used to confirm the key names and how to write rules.</p>
-<p><figure>
-  <img
-    src="/docs/manual/configuration/configure-complex-modifications/images/edit-rule-1@2x.png"
-    alt="edit-rule-1@2x.png"
-    style="width: 1100px"
-  />
-</figure>
-
-<figure>
-  <img
-    src="/docs/manual/configuration/configure-complex-modifications/images/edit-rule-2@2x.png"
-    alt="edit-rule-2@2x.png"
-    style="width: 1100px"
-  />
-</figure>
-</p>
 
 	
 </div>

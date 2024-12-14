@@ -19,14 +19,12 @@
 
 <title>Typical complex_modifications examples | Karabiner-Elements</title>
 <meta name="description" content="Swap ; and : (Equal to swap ; and shift-;)
-{ &#34;description&#34;: &#34;Swap ; and :&#34;, &#34;manipulators&#34;: [ { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;semicolon&#34;, &#34;modifiers&#34;: { &#34;mandatory&#34;: [&#34;shift&#34;], &#34;optional&#34;: [&#34;caps_lock&#34;] } }, &#34;to&#34;: [{ &#34;key_code&#34;: &#34;semicolon&#34; }] }, { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;semicolon&#34;, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;caps_lock&#34;] } }, &#34;to&#34;: [{ &#34;key_code&#34;: &#34;semicolon&#34;, &#34;modifiers&#34;: [&#34;left_shift&#34;] }] } ] } Change control-h to delete And change control-option-h to option-delete.
-{ &#34;description&#34;: &#34;Change control-h to delete&#34;, &#34;manipulators&#34;: [ { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;h&#34;, &#34;modifiers&#34;: { &#34;mandatory&#34;: [&#34;control&#34;], &#34;optional&#34;: [&#34;caps_lock&#34;, &#34;option&#34;] } }, &#34;to&#34;: [{ &#34;key_code&#34;: &#34;delete_or_backspace&#34; }] } ] } Disable command-l on Finder { &#34;description&#34;: &#34;Disable command-l on Finder&#34;, &#34;manipulators&#34;: [ { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;l&#34;, &#34;modifiers&#34;: { &#34;mandatory&#34;: [&#34;command&#34;], &#34;optional&#34;: [&#34;caps_lock&#34;] } }, &#34;conditions&#34;: [ { &#34;type&#34;: &#34;frontmost_application_if&#34;, &#34;bundle_identifiers&#34;: [&#34;^com\\.apple\\.finder$&#34;] } ] } ] } Post escape if left_control is pressed alone { &#34;description&#34;: &#34;Post escape if left_control is tapped&#34;, &#34;manipulators&#34;: [ { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;left_control&#34;, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [ { &#34;key_code&#34;: &#34;left_control&#34;, &#34;lazy&#34;: true } ], &#34;to_if_alone&#34;: [{ &#34;key_code&#34;: &#34;escape&#34; }], &#34;to_if_held_down&#34;: [{ &#34;key_code&#34;: &#34;left_control&#34; }], &#34;parameters&#34;: { &#34;basic.to_if_alone_timeout_milliseconds&#34;: 100, &#34;basic.to_if_held_down_threshold_milliseconds&#34;: 100 } } ] } This uses &#34;lazy&#34;: true to prevent left_control from being sent immediately after the key is pressed. Instead, it explicitly sends left_control using to_if_held_down when the key is held down for a short period. Open Safari if escape is held down { &#34;description&#34;: &#34;Open Safari if escape is held down&#34;, &#34;manipulators&#34;: [ { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;escape&#34;, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;caps_lock&#34;] } }, &#34;parameters&#34;: { &#34;basic.to_if_alone_timeout_milliseconds&#34;: 250, &#34;basic.to_if_held_down_threshold_milliseconds&#34;: 250 }, &#34;to_if_alone&#34;: [{ &#34;key_code&#34;: &#34;escape&#34; }], &#34;to_if_held_down&#34;: [ { &#34;shell_command&#34;: &#34;open -b &#39;com.apple.Safari&#39;&#34; } ] } ] } Change right_shift x2 to mission_control { &#34;description&#34;: &#34;Change right_shift x2 to mission_control&#34;, &#34;manipulators&#34;: [ { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;right_shift&#34;, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [ { &#34;apple_vendor_keyboard_key_code&#34;: &#34;mission_control&#34; }, { &#34;key_code&#34;: &#34;vk_none&#34; } ], &#34;conditions&#34;: [ { &#34;type&#34;: &#34;variable_if&#34;, &#34;name&#34;: &#34;right_shift pressed&#34;, &#34;value&#34;: 1 } ] }, { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;right_shift&#34;, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [ { &#34;set_variable&#34;: { &#34;name&#34;: &#34;right_shift pressed&#34;, &#34;value&#34;: 1 } }, { &#34;key_code&#34;: &#34;right_shift&#34; } ], &#34;to_delayed_action&#34;: { &#34;to_if_invoked&#34;: [ { &#34;set_variable&#34;: { &#34;name&#34;: &#34;right_shift pressed&#34;, &#34;value&#34;: 0 } } ], &#34;to_if_canceled&#34;: [ { &#34;set_variable&#34;: { &#34;name&#34;: &#34;right_shift pressed&#34;, &#34;value&#34;: 0 } } ] } } ] } Change double press of q to escape This example is available since Karabiner-Elements 15.3.7.">
+💡 How to use this example { &#34;description&#34;: &#34;Swap ; and :&#34;, &#34;manipulators&#34;: [ { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;semicolon&#34;, &#34;modifiers&#34;: { &#34;mandatory&#34;: [&#34;shift&#34;], &#34;optional&#34;: [&#34;caps_lock&#34;] } }, &#34;to&#34;: [{ &#34;key_code&#34;: &#34;semicolon&#34; }] }, { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;semicolon&#34;, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;caps_lock&#34;] } }, &#34;to&#34;: [{ &#34;key_code&#34;: &#34;semicolon&#34;, &#34;modifiers&#34;: [&#34;left_shift&#34;] }] } ] } Change control-h to delete And change control-option-h to option-delete.">
 <meta property="og:url" content="/docs/json/typical-complex-modifications-examples/">
   <meta property="og:site_name" content="Karabiner-Elements">
   <meta property="og:title" content="Typical complex_modifications examples">
   <meta property="og:description" content="Swap ; and : (Equal to swap ; and shift-;)
-{ &#34;description&#34;: &#34;Swap ; and :&#34;, &#34;manipulators&#34;: [ { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;semicolon&#34;, &#34;modifiers&#34;: { &#34;mandatory&#34;: [&#34;shift&#34;], &#34;optional&#34;: [&#34;caps_lock&#34;] } }, &#34;to&#34;: [{ &#34;key_code&#34;: &#34;semicolon&#34; }] }, { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;semicolon&#34;, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;caps_lock&#34;] } }, &#34;to&#34;: [{ &#34;key_code&#34;: &#34;semicolon&#34;, &#34;modifiers&#34;: [&#34;left_shift&#34;] }] } ] } Change control-h to delete And change control-option-h to option-delete.
-{ &#34;description&#34;: &#34;Change control-h to delete&#34;, &#34;manipulators&#34;: [ { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;h&#34;, &#34;modifiers&#34;: { &#34;mandatory&#34;: [&#34;control&#34;], &#34;optional&#34;: [&#34;caps_lock&#34;, &#34;option&#34;] } }, &#34;to&#34;: [{ &#34;key_code&#34;: &#34;delete_or_backspace&#34; }] } ] } Disable command-l on Finder { &#34;description&#34;: &#34;Disable command-l on Finder&#34;, &#34;manipulators&#34;: [ { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;l&#34;, &#34;modifiers&#34;: { &#34;mandatory&#34;: [&#34;command&#34;], &#34;optional&#34;: [&#34;caps_lock&#34;] } }, &#34;conditions&#34;: [ { &#34;type&#34;: &#34;frontmost_application_if&#34;, &#34;bundle_identifiers&#34;: [&#34;^com\\.apple\\.finder$&#34;] } ] } ] } Post escape if left_control is pressed alone { &#34;description&#34;: &#34;Post escape if left_control is tapped&#34;, &#34;manipulators&#34;: [ { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;left_control&#34;, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [ { &#34;key_code&#34;: &#34;left_control&#34;, &#34;lazy&#34;: true } ], &#34;to_if_alone&#34;: [{ &#34;key_code&#34;: &#34;escape&#34; }], &#34;to_if_held_down&#34;: [{ &#34;key_code&#34;: &#34;left_control&#34; }], &#34;parameters&#34;: { &#34;basic.to_if_alone_timeout_milliseconds&#34;: 100, &#34;basic.to_if_held_down_threshold_milliseconds&#34;: 100 } } ] } This uses &#34;lazy&#34;: true to prevent left_control from being sent immediately after the key is pressed. Instead, it explicitly sends left_control using to_if_held_down when the key is held down for a short period. Open Safari if escape is held down { &#34;description&#34;: &#34;Open Safari if escape is held down&#34;, &#34;manipulators&#34;: [ { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;escape&#34;, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;caps_lock&#34;] } }, &#34;parameters&#34;: { &#34;basic.to_if_alone_timeout_milliseconds&#34;: 250, &#34;basic.to_if_held_down_threshold_milliseconds&#34;: 250 }, &#34;to_if_alone&#34;: [{ &#34;key_code&#34;: &#34;escape&#34; }], &#34;to_if_held_down&#34;: [ { &#34;shell_command&#34;: &#34;open -b &#39;com.apple.Safari&#39;&#34; } ] } ] } Change right_shift x2 to mission_control { &#34;description&#34;: &#34;Change right_shift x2 to mission_control&#34;, &#34;manipulators&#34;: [ { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;right_shift&#34;, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [ { &#34;apple_vendor_keyboard_key_code&#34;: &#34;mission_control&#34; }, { &#34;key_code&#34;: &#34;vk_none&#34; } ], &#34;conditions&#34;: [ { &#34;type&#34;: &#34;variable_if&#34;, &#34;name&#34;: &#34;right_shift pressed&#34;, &#34;value&#34;: 1 } ] }, { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;right_shift&#34;, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [ { &#34;set_variable&#34;: { &#34;name&#34;: &#34;right_shift pressed&#34;, &#34;value&#34;: 1 } }, { &#34;key_code&#34;: &#34;right_shift&#34; } ], &#34;to_delayed_action&#34;: { &#34;to_if_invoked&#34;: [ { &#34;set_variable&#34;: { &#34;name&#34;: &#34;right_shift pressed&#34;, &#34;value&#34;: 0 } } ], &#34;to_if_canceled&#34;: [ { &#34;set_variable&#34;: { &#34;name&#34;: &#34;right_shift pressed&#34;, &#34;value&#34;: 0 } } ] } } ] } Change double press of q to escape This example is available since Karabiner-Elements 15.3.7.">
+💡 How to use this example { &#34;description&#34;: &#34;Swap ; and :&#34;, &#34;manipulators&#34;: [ { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;semicolon&#34;, &#34;modifiers&#34;: { &#34;mandatory&#34;: [&#34;shift&#34;], &#34;optional&#34;: [&#34;caps_lock&#34;] } }, &#34;to&#34;: [{ &#34;key_code&#34;: &#34;semicolon&#34; }] }, { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;semicolon&#34;, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;caps_lock&#34;] } }, &#34;to&#34;: [{ &#34;key_code&#34;: &#34;semicolon&#34;, &#34;modifiers&#34;: [&#34;left_shift&#34;] }] } ] } Change control-h to delete And change control-option-h to option-delete.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
@@ -34,18 +32,16 @@
 
   <meta itemprop="name" content="Typical complex_modifications examples">
   <meta itemprop="description" content="Swap ; and : (Equal to swap ; and shift-;)
-{ &#34;description&#34;: &#34;Swap ; and :&#34;, &#34;manipulators&#34;: [ { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;semicolon&#34;, &#34;modifiers&#34;: { &#34;mandatory&#34;: [&#34;shift&#34;], &#34;optional&#34;: [&#34;caps_lock&#34;] } }, &#34;to&#34;: [{ &#34;key_code&#34;: &#34;semicolon&#34; }] }, { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;semicolon&#34;, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;caps_lock&#34;] } }, &#34;to&#34;: [{ &#34;key_code&#34;: &#34;semicolon&#34;, &#34;modifiers&#34;: [&#34;left_shift&#34;] }] } ] } Change control-h to delete And change control-option-h to option-delete.
-{ &#34;description&#34;: &#34;Change control-h to delete&#34;, &#34;manipulators&#34;: [ { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;h&#34;, &#34;modifiers&#34;: { &#34;mandatory&#34;: [&#34;control&#34;], &#34;optional&#34;: [&#34;caps_lock&#34;, &#34;option&#34;] } }, &#34;to&#34;: [{ &#34;key_code&#34;: &#34;delete_or_backspace&#34; }] } ] } Disable command-l on Finder { &#34;description&#34;: &#34;Disable command-l on Finder&#34;, &#34;manipulators&#34;: [ { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;l&#34;, &#34;modifiers&#34;: { &#34;mandatory&#34;: [&#34;command&#34;], &#34;optional&#34;: [&#34;caps_lock&#34;] } }, &#34;conditions&#34;: [ { &#34;type&#34;: &#34;frontmost_application_if&#34;, &#34;bundle_identifiers&#34;: [&#34;^com\\.apple\\.finder$&#34;] } ] } ] } Post escape if left_control is pressed alone { &#34;description&#34;: &#34;Post escape if left_control is tapped&#34;, &#34;manipulators&#34;: [ { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;left_control&#34;, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [ { &#34;key_code&#34;: &#34;left_control&#34;, &#34;lazy&#34;: true } ], &#34;to_if_alone&#34;: [{ &#34;key_code&#34;: &#34;escape&#34; }], &#34;to_if_held_down&#34;: [{ &#34;key_code&#34;: &#34;left_control&#34; }], &#34;parameters&#34;: { &#34;basic.to_if_alone_timeout_milliseconds&#34;: 100, &#34;basic.to_if_held_down_threshold_milliseconds&#34;: 100 } } ] } This uses &#34;lazy&#34;: true to prevent left_control from being sent immediately after the key is pressed. Instead, it explicitly sends left_control using to_if_held_down when the key is held down for a short period. Open Safari if escape is held down { &#34;description&#34;: &#34;Open Safari if escape is held down&#34;, &#34;manipulators&#34;: [ { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;escape&#34;, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;caps_lock&#34;] } }, &#34;parameters&#34;: { &#34;basic.to_if_alone_timeout_milliseconds&#34;: 250, &#34;basic.to_if_held_down_threshold_milliseconds&#34;: 250 }, &#34;to_if_alone&#34;: [{ &#34;key_code&#34;: &#34;escape&#34; }], &#34;to_if_held_down&#34;: [ { &#34;shell_command&#34;: &#34;open -b &#39;com.apple.Safari&#39;&#34; } ] } ] } Change right_shift x2 to mission_control { &#34;description&#34;: &#34;Change right_shift x2 to mission_control&#34;, &#34;manipulators&#34;: [ { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;right_shift&#34;, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [ { &#34;apple_vendor_keyboard_key_code&#34;: &#34;mission_control&#34; }, { &#34;key_code&#34;: &#34;vk_none&#34; } ], &#34;conditions&#34;: [ { &#34;type&#34;: &#34;variable_if&#34;, &#34;name&#34;: &#34;right_shift pressed&#34;, &#34;value&#34;: 1 } ] }, { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;right_shift&#34;, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [ { &#34;set_variable&#34;: { &#34;name&#34;: &#34;right_shift pressed&#34;, &#34;value&#34;: 1 } }, { &#34;key_code&#34;: &#34;right_shift&#34; } ], &#34;to_delayed_action&#34;: { &#34;to_if_invoked&#34;: [ { &#34;set_variable&#34;: { &#34;name&#34;: &#34;right_shift pressed&#34;, &#34;value&#34;: 0 } } ], &#34;to_if_canceled&#34;: [ { &#34;set_variable&#34;: { &#34;name&#34;: &#34;right_shift pressed&#34;, &#34;value&#34;: 0 } } ] } } ] } Change double press of q to escape This example is available since Karabiner-Elements 15.3.7.">
-  <meta itemprop="wordCount" content="612">
+💡 How to use this example { &#34;description&#34;: &#34;Swap ; and :&#34;, &#34;manipulators&#34;: [ { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;semicolon&#34;, &#34;modifiers&#34;: { &#34;mandatory&#34;: [&#34;shift&#34;], &#34;optional&#34;: [&#34;caps_lock&#34;] } }, &#34;to&#34;: [{ &#34;key_code&#34;: &#34;semicolon&#34; }] }, { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;semicolon&#34;, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;caps_lock&#34;] } }, &#34;to&#34;: [{ &#34;key_code&#34;: &#34;semicolon&#34;, &#34;modifiers&#34;: [&#34;left_shift&#34;] }] } ] } Change control-h to delete And change control-option-h to option-delete.">
+  <meta itemprop="wordCount" content="660">
   <meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://karabiner-elements.pqrs.org/images/logo.png">
   <meta name="twitter:title" content="Typical complex_modifications examples">
   <meta name="twitter:description" content="Swap ; and : (Equal to swap ; and shift-;)
-{ &#34;description&#34;: &#34;Swap ; and :&#34;, &#34;manipulators&#34;: [ { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;semicolon&#34;, &#34;modifiers&#34;: { &#34;mandatory&#34;: [&#34;shift&#34;], &#34;optional&#34;: [&#34;caps_lock&#34;] } }, &#34;to&#34;: [{ &#34;key_code&#34;: &#34;semicolon&#34; }] }, { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;semicolon&#34;, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;caps_lock&#34;] } }, &#34;to&#34;: [{ &#34;key_code&#34;: &#34;semicolon&#34;, &#34;modifiers&#34;: [&#34;left_shift&#34;] }] } ] } Change control-h to delete And change control-option-h to option-delete.
-{ &#34;description&#34;: &#34;Change control-h to delete&#34;, &#34;manipulators&#34;: [ { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;h&#34;, &#34;modifiers&#34;: { &#34;mandatory&#34;: [&#34;control&#34;], &#34;optional&#34;: [&#34;caps_lock&#34;, &#34;option&#34;] } }, &#34;to&#34;: [{ &#34;key_code&#34;: &#34;delete_or_backspace&#34; }] } ] } Disable command-l on Finder { &#34;description&#34;: &#34;Disable command-l on Finder&#34;, &#34;manipulators&#34;: [ { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;l&#34;, &#34;modifiers&#34;: { &#34;mandatory&#34;: [&#34;command&#34;], &#34;optional&#34;: [&#34;caps_lock&#34;] } }, &#34;conditions&#34;: [ { &#34;type&#34;: &#34;frontmost_application_if&#34;, &#34;bundle_identifiers&#34;: [&#34;^com\\.apple\\.finder$&#34;] } ] } ] } Post escape if left_control is pressed alone { &#34;description&#34;: &#34;Post escape if left_control is tapped&#34;, &#34;manipulators&#34;: [ { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;left_control&#34;, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [ { &#34;key_code&#34;: &#34;left_control&#34;, &#34;lazy&#34;: true } ], &#34;to_if_alone&#34;: [{ &#34;key_code&#34;: &#34;escape&#34; }], &#34;to_if_held_down&#34;: [{ &#34;key_code&#34;: &#34;left_control&#34; }], &#34;parameters&#34;: { &#34;basic.to_if_alone_timeout_milliseconds&#34;: 100, &#34;basic.to_if_held_down_threshold_milliseconds&#34;: 100 } } ] } This uses &#34;lazy&#34;: true to prevent left_control from being sent immediately after the key is pressed. Instead, it explicitly sends left_control using to_if_held_down when the key is held down for a short period. Open Safari if escape is held down { &#34;description&#34;: &#34;Open Safari if escape is held down&#34;, &#34;manipulators&#34;: [ { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;escape&#34;, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;caps_lock&#34;] } }, &#34;parameters&#34;: { &#34;basic.to_if_alone_timeout_milliseconds&#34;: 250, &#34;basic.to_if_held_down_threshold_milliseconds&#34;: 250 }, &#34;to_if_alone&#34;: [{ &#34;key_code&#34;: &#34;escape&#34; }], &#34;to_if_held_down&#34;: [ { &#34;shell_command&#34;: &#34;open -b &#39;com.apple.Safari&#39;&#34; } ] } ] } Change right_shift x2 to mission_control { &#34;description&#34;: &#34;Change right_shift x2 to mission_control&#34;, &#34;manipulators&#34;: [ { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;right_shift&#34;, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [ { &#34;apple_vendor_keyboard_key_code&#34;: &#34;mission_control&#34; }, { &#34;key_code&#34;: &#34;vk_none&#34; } ], &#34;conditions&#34;: [ { &#34;type&#34;: &#34;variable_if&#34;, &#34;name&#34;: &#34;right_shift pressed&#34;, &#34;value&#34;: 1 } ] }, { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;right_shift&#34;, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [ { &#34;set_variable&#34;: { &#34;name&#34;: &#34;right_shift pressed&#34;, &#34;value&#34;: 1 } }, { &#34;key_code&#34;: &#34;right_shift&#34; } ], &#34;to_delayed_action&#34;: { &#34;to_if_invoked&#34;: [ { &#34;set_variable&#34;: { &#34;name&#34;: &#34;right_shift pressed&#34;, &#34;value&#34;: 0 } } ], &#34;to_if_canceled&#34;: [ { &#34;set_variable&#34;: { &#34;name&#34;: &#34;right_shift pressed&#34;, &#34;value&#34;: 0 } } ] } } ] } Change double press of q to escape This example is available since Karabiner-Elements 15.3.7.">
-<link rel="preload" href="/scss/main.min.f693f06e4d3557ccf8ea888186f681e1db8cb153b66b80f588e76cc53e6ebdf3.css" as="style" integrity="sha256-9pPwbk01V8z46oiBhvaB4duMsVO2a4D1iOdsxT5uvfM=" crossorigin="anonymous">
-<link href="/scss/main.min.f693f06e4d3557ccf8ea888186f681e1db8cb153b66b80f588e76cc53e6ebdf3.css" rel="stylesheet" integrity="sha256-9pPwbk01V8z46oiBhvaB4duMsVO2a4D1iOdsxT5uvfM=" crossorigin="anonymous">
+💡 How to use this example { &#34;description&#34;: &#34;Swap ; and :&#34;, &#34;manipulators&#34;: [ { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;semicolon&#34;, &#34;modifiers&#34;: { &#34;mandatory&#34;: [&#34;shift&#34;], &#34;optional&#34;: [&#34;caps_lock&#34;] } }, &#34;to&#34;: [{ &#34;key_code&#34;: &#34;semicolon&#34; }] }, { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;semicolon&#34;, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;caps_lock&#34;] } }, &#34;to&#34;: [{ &#34;key_code&#34;: &#34;semicolon&#34;, &#34;modifiers&#34;: [&#34;left_shift&#34;] }] } ] } Change control-h to delete And change control-option-h to option-delete.">
+<link rel="preload" href="/scss/main.min.b52292fe96ebf63767704ebe0ee8b0484efe1be2cf8565b9740fbe8117ce30bd.css" as="style" integrity="sha256-tSKS/pbr9jdncE6&#43;DuiwSE7&#43;G&#43;LPhWW5dA&#43;&#43;gRfOML0=" crossorigin="anonymous">
+<link href="/scss/main.min.b52292fe96ebf63767704ebe0ee8b0484efe1be2cf8565b9740fbe8117ce30bd.css" rel="stylesheet" integrity="sha256-tSKS/pbr9jdncE6&#43;DuiwSE7&#43;G&#43;LPhWW5dA&#43;&#43;gRfOML0=" crossorigin="anonymous">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -78,7 +74,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.2e2f3f86752e9a93ace8a1377e543474.json"
+    data-offline-search-index-json-src="/offline-search-index.18a5d161471d32e9bc40dce6c668034a.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="25"
   >
@@ -102,7 +98,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.2e2f3f86752e9a93ace8a1377e543474.json"
+    data-offline-search-index-json-src="/offline-search-index.18a5d161471d32e9bc40dce6c668034a.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="25"
   >
@@ -146,7 +142,15 @@
   
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsmanualconfigurationconfigure-complex-modifications-li">
   <input type="checkbox" id="m-docsmanualconfigurationconfigure-complex-modifications-check"/>
-  <label for="m-docsmanualconfigurationconfigure-complex-modifications-check"><a href="/docs/manual/configuration/configure-complex-modifications/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-docsmanualconfigurationconfigure-complex-modifications"><span class="">Use more complex rules</span></a></label>
+  <label for="m-docsmanualconfigurationconfigure-complex-modifications-check"><a href="/docs/manual/configuration/configure-complex-modifications/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-docsmanualconfigurationconfigure-complex-modifications"><span class="">Use more complex modifications</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsmanualconfigurationadd-your-own-complex-modifications-li">
+  <input type="checkbox" id="m-docsmanualconfigurationadd-your-own-complex-modifications-check"/>
+  <label for="m-docsmanualconfigurationadd-your-own-complex-modifications-check"><a href="/docs/manual/configuration/add-your-own-complex-modifications/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-docsmanualconfigurationadd-your-own-complex-modifications"><span class="">Add your own complex modifications</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsmanualconfigurationedit-complex-modifications-li">
+  <input type="checkbox" id="m-docsmanualconfigurationedit-complex-modifications-check"/>
+  <label for="m-docsmanualconfigurationedit-complex-modifications-check"><a href="/docs/manual/configuration/edit-complex-modifications/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-docsmanualconfigurationedit-complex-modifications"><span class="">Edit complex modifications</span></a></label>
   
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsmanualconfigurationconfigure-devices-li">
   <input type="checkbox" id="m-docsmanualconfigurationconfigure-devices-check"/>
@@ -670,6 +674,24 @@
 </header>
 	<h2 id="swap--and-">Swap <code>;</code> and <code>:</code></h2>
 <p>(Equal to swap <code>;</code> and <code>shift-;</code>)</p>
+<div
+  class="highlight"
+  style="text-align: right; margin-top: 0rem; margin-bottom: -2rem"
+>
+  <a
+    class="d-inline-block"
+    style="
+      text-decoration: none;
+      background-color: #f8f8f8;
+      padding: 0.5rem;
+      border: solid var(--bs-border-color);
+      border-width: 1px 1px 0 1px;
+    "
+    href="/docs/manual/configuration/add-your-own-complex-modifications/"
+    >💡 How to use this example</a
+  >
+</div>
+
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;description&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;Swap ; and :&#34;</span><span style="color:#000;font-weight:bold">,</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;manipulators&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
@@ -698,6 +720,24 @@
 </span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
 </span></span></code></pre></div><h2 id="change-control-h-to-delete">Change <code>control-h</code> to <code>delete</code></h2>
 <p>And change <code>control-option-h</code> to <code>option-delete</code>.</p>
+<div
+  class="highlight"
+  style="text-align: right; margin-top: 0rem; margin-bottom: -2rem"
+>
+  <a
+    class="d-inline-block"
+    style="
+      text-decoration: none;
+      background-color: #f8f8f8;
+      padding: 0.5rem;
+      border: solid var(--bs-border-color);
+      border-width: 1px 1px 0 1px;
+    "
+    href="/docs/manual/configuration/add-your-own-complex-modifications/"
+    >💡 How to use this example</a
+  >
+</div>
+
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;description&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;Change control-h to delete&#34;</span><span style="color:#000;font-weight:bold">,</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;manipulators&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
@@ -715,6 +755,24 @@
 </span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">]</span>
 </span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
 </span></span></code></pre></div><h2 id="disable-command-l-on-finder">Disable <code>command-l</code> on Finder</h2>
+<div
+  class="highlight"
+  style="text-align: right; margin-top: 0rem; margin-bottom: -2rem"
+>
+  <a
+    class="d-inline-block"
+    style="
+      text-decoration: none;
+      background-color: #f8f8f8;
+      padding: 0.5rem;
+      border: solid var(--bs-border-color);
+      border-width: 1px 1px 0 1px;
+    "
+    href="/docs/manual/configuration/add-your-own-complex-modifications/"
+    >💡 How to use this example</a
+  >
+</div>
+
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;description&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;Disable command-l on Finder&#34;</span><span style="color:#000;font-weight:bold">,</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;manipulators&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
@@ -737,6 +795,24 @@
 </span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">]</span>
 </span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
 </span></span></code></pre></div><h2 id="post-escape-if-left_control-is-pressed-alone">Post <code>escape</code> if <code>left_control</code> is pressed alone</h2>
+<div
+  class="highlight"
+  style="text-align: right; margin-top: 0rem; margin-bottom: -2rem"
+>
+  <a
+    class="d-inline-block"
+    style="
+      text-decoration: none;
+      background-color: #f8f8f8;
+      padding: 0.5rem;
+      border: solid var(--bs-border-color);
+      border-width: 1px 1px 0 1px;
+    "
+    href="/docs/manual/configuration/add-your-own-complex-modifications/"
+    >💡 How to use this example</a
+  >
+</div>
+
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;description&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;Post escape if left_control is tapped&#34;</span><span style="color:#000;font-weight:bold">,</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;manipulators&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
@@ -771,6 +847,24 @@
 </div>
 
 <h2 id="open-safari-if-escape-is-held-down">Open <code>Safari</code> if <code>escape</code> is held down</h2>
+<div
+  class="highlight"
+  style="text-align: right; margin-top: 0rem; margin-bottom: -2rem"
+>
+  <a
+    class="d-inline-block"
+    style="
+      text-decoration: none;
+      background-color: #f8f8f8;
+      padding: 0.5rem;
+      border: solid var(--bs-border-color);
+      border-width: 1px 1px 0 1px;
+    "
+    href="/docs/manual/configuration/add-your-own-complex-modifications/"
+    >💡 How to use this example</a
+  >
+</div>
+
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;description&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;Open Safari if escape is held down&#34;</span><span style="color:#000;font-weight:bold">,</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;manipulators&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
@@ -794,6 +888,24 @@
 </span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">]</span>
 </span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
 </span></span></code></pre></div><h2 id="change-right_shift-x2-to-mission_control">Change <code>right_shift x2</code> to <code>mission_control</code></h2>
+<div
+  class="highlight"
+  style="text-align: right; margin-top: 0rem; margin-bottom: -2rem"
+>
+  <a
+    class="d-inline-block"
+    style="
+      text-decoration: none;
+      background-color: #f8f8f8;
+      padding: 0.5rem;
+      border: solid var(--bs-border-color);
+      border-width: 1px 1px 0 1px;
+    "
+    href="/docs/manual/configuration/add-your-own-complex-modifications/"
+    >💡 How to use this example</a
+  >
+</div>
+
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;description&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;Change right_shift x2 to mission_control&#34;</span><span style="color:#000;font-weight:bold">,</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;manipulators&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
@@ -853,6 +965,24 @@
 </span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
 </span></span></code></pre></div><h2 id="change-double-press-of-q-to-escape">Change double press of <code>q</code> to <code>escape</code></h2>
 <p>This example is available since Karabiner-Elements 15.3.7.</p>
+<div
+  class="highlight"
+  style="text-align: right; margin-top: 0rem; margin-bottom: -2rem"
+>
+  <a
+    class="d-inline-block"
+    style="
+      text-decoration: none;
+      background-color: #f8f8f8;
+      padding: 0.5rem;
+      border: solid var(--bs-border-color);
+      border-width: 1px 1px 0 1px;
+    "
+    href="/docs/manual/configuration/add-your-own-complex-modifications/"
+    >💡 How to use this example</a
+  >
+</div>
+
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;description&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;Change double press of q to escape&#34;</span><span style="color:#000;font-weight:bold">,</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;manipulators&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
@@ -909,6 +1039,24 @@
 </span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">]</span>
 </span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
 </span></span></code></pre></div><h2 id="change-equaldelete-to-forward_delete-if-these-keys-are-pressed-simultaneously">Change <code>equal+delete</code> to <code>forward_delete</code> if these keys are pressed simultaneously</h2>
+<div
+  class="highlight"
+  style="text-align: right; margin-top: 0rem; margin-bottom: -2rem"
+>
+  <a
+    class="d-inline-block"
+    style="
+      text-decoration: none;
+      background-color: #f8f8f8;
+      padding: 0.5rem;
+      border: solid var(--bs-border-color);
+      border-width: 1px 1px 0 1px;
+    "
+    href="/docs/manual/configuration/add-your-own-complex-modifications/"
+    >💡 How to use this example</a
+  >
+</div>
+
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;description&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;Change equal+delete to forward_delete if these keys are pressed simultaneously&#34;</span><span style="color:#000;font-weight:bold">,</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;manipulators&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>

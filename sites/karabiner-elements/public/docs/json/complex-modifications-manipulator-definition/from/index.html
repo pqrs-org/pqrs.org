@@ -44,8 +44,8 @@ You may lose the left click button and system will be unusable. Detail from.any 
   <meta name="twitter:description" content="{ &#34;from&#34;: { &#34;key_code&#34;: &#34;The name of key_code&#34;, &#34;consumer_key_code&#34;: &#34;The name of consumer_key_code&#34;, &#34;pointing_button&#34;: &#34;The name of pointing_button&#34;, &#34;any&#34;: &#34;key_code or consumer_key_code or pointing_button&#34;, &#34;modifiers&#34;: { &#34;mandatory&#34;: [ modifier, modifier, ... ], &#34;optional&#34;: [ modifier, modifier, ... ] }, &#34;simultaneous&#34;: [ { &#34;key_code, consumer_key_code, pointing_button or any&#34; }, { &#34;key_code, consumer_key_code, pointing_button or any&#34; }, ... ], &#34;simultaneous_options&#34;: { &#34;detect_key_down_uninterruptedly&#34;: false, &#34;key_down_order&#34;: &#34;A restriction of input events order&#34;, &#34;key_up_order&#34;: &#34;A restriction of input events order&#34;, &#34;key_up_when&#34;: &#34;When key_up events are posted&#34;, &#34;to_after_key_up&#34;: [ to event definition, to event definition, ... ] } } } Name Required Description key_code Optional Key code which you want to change consumer_key_code Optional Consumer key code (media key code) which you want to change pointing_button Optional Pointing button name which you want to change any Optional &#34;any&#34;: &#34;key_code&#34;, &#34;any&#34;: &#34;consumer_key_code&#34; or &#34;any&#34;: &#34;pointing_button&#34; modifiers Optional Specify mandatory and optional modifiers (e.g., “change control-h to delete”) simultaneous Optional Specify multiple events which are pressed simultaneously simultaneous_options Optional Options for simultaneous Note key_code, consumer_key_code, pointing_button and any are exclusive.
 You have to specify one of them. Caution Be careful using &#34;pointing_button&#34;: &#34;button1&#34; and &#34;any&#34;: &#34;pointing_button&#34;.
 You may lose the left click button and system will be unusable. Detail from.any from.modifiers from.simultaneous from.simultaneous_options Investigate key names You can find key_code, consumer_key_code and pointing_button names by EventViewer. You can also confirm names in list. (See &#34;data&#34; in the list.) Tip You can also specify key_code, consumer_key_code, pointing_button with raw number as follows.">
-<link rel="preload" href="/scss/main.min.f693f06e4d3557ccf8ea888186f681e1db8cb153b66b80f588e76cc53e6ebdf3.css" as="style" integrity="sha256-9pPwbk01V8z46oiBhvaB4duMsVO2a4D1iOdsxT5uvfM=" crossorigin="anonymous">
-<link href="/scss/main.min.f693f06e4d3557ccf8ea888186f681e1db8cb153b66b80f588e76cc53e6ebdf3.css" rel="stylesheet" integrity="sha256-9pPwbk01V8z46oiBhvaB4duMsVO2a4D1iOdsxT5uvfM=" crossorigin="anonymous">
+<link rel="preload" href="/scss/main.min.b52292fe96ebf63767704ebe0ee8b0484efe1be2cf8565b9740fbe8117ce30bd.css" as="style" integrity="sha256-tSKS/pbr9jdncE6&#43;DuiwSE7&#43;G&#43;LPhWW5dA&#43;&#43;gRfOML0=" crossorigin="anonymous">
+<link href="/scss/main.min.b52292fe96ebf63767704ebe0ee8b0484efe1be2cf8565b9740fbe8117ce30bd.css" rel="stylesheet" integrity="sha256-tSKS/pbr9jdncE6&#43;DuiwSE7&#43;G&#43;LPhWW5dA&#43;&#43;gRfOML0=" crossorigin="anonymous">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -78,7 +78,7 @@ You may lose the left click button and system will be unusable. Detail from.any 
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.2e2f3f86752e9a93ace8a1377e543474.json"
+    data-offline-search-index-json-src="/offline-search-index.18a5d161471d32e9bc40dce6c668034a.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="25"
   >
@@ -102,7 +102,7 @@ You may lose the left click button and system will be unusable. Detail from.any 
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.2e2f3f86752e9a93ace8a1377e543474.json"
+    data-offline-search-index-json-src="/offline-search-index.18a5d161471d32e9bc40dce6c668034a.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="25"
   >
@@ -146,7 +146,15 @@ You may lose the left click button and system will be unusable. Detail from.any 
   
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsmanualconfigurationconfigure-complex-modifications-li">
   <input type="checkbox" id="m-docsmanualconfigurationconfigure-complex-modifications-check"/>
-  <label for="m-docsmanualconfigurationconfigure-complex-modifications-check"><a href="/docs/manual/configuration/configure-complex-modifications/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-docsmanualconfigurationconfigure-complex-modifications"><span class="">Use more complex rules</span></a></label>
+  <label for="m-docsmanualconfigurationconfigure-complex-modifications-check"><a href="/docs/manual/configuration/configure-complex-modifications/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-docsmanualconfigurationconfigure-complex-modifications"><span class="">Use more complex modifications</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsmanualconfigurationadd-your-own-complex-modifications-li">
+  <input type="checkbox" id="m-docsmanualconfigurationadd-your-own-complex-modifications-check"/>
+  <label for="m-docsmanualconfigurationadd-your-own-complex-modifications-check"><a href="/docs/manual/configuration/add-your-own-complex-modifications/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-docsmanualconfigurationadd-your-own-complex-modifications"><span class="">Add your own complex modifications</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsmanualconfigurationedit-complex-modifications-li">
+  <input type="checkbox" id="m-docsmanualconfigurationedit-complex-modifications-check"/>
+  <label for="m-docsmanualconfigurationedit-complex-modifications-check"><a href="/docs/manual/configuration/edit-complex-modifications/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-docsmanualconfigurationedit-complex-modifications"><span class="">Edit complex modifications</span></a></label>
   
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsmanualconfigurationconfigure-devices-li">
   <input type="checkbox" id="m-docsmanualconfigurationconfigure-devices-check"/>
