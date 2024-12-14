@@ -5,6 +5,41 @@ weight: 400
 
 Move the mouse cursor to the specified point.
 
+## Example
+
+Set the mouse cursor position to center of the first screen by right_shift+c.
+
+```json
+{
+    "description": "Set the mouse cursor position to center of the first screen by right_shift+c",
+    "manipulators": [
+        {
+            "type": "basic",
+            "from": {
+                "key_code": "c",
+                "modifiers": {
+                    "mandatory": ["right_shift"],
+                    "optional": ["caps_lock"]
+                }
+            },
+            "to": [
+                {
+                    "software_function": {
+                        "set_mouse_cursor_position": {
+                            "x": "50%",
+                            "y": "50%",
+                            "screen": 0
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}
+```
+
+## Specification
+
 ```json
 {
     "to": [
@@ -35,41 +70,3 @@ There are two styles to specify the position.
 | ------- | ------- | ---------------- |
 | Point   | integer | `{ "x": 100 }`   |
 | Percent | "xx%"   | `{ "x": "50%" }` |
-
-## Examples
-
-Set the mouse cursor position to (0,0) of the second screen.
-
-```json
-{
-    "to": [
-        {
-            "software_function": {
-                "set_mouse_cursor_position": {
-                    "x": 0,
-                    "y": 0,
-                    "screen": 1
-                }
-            }
-        }
-    ]
-}
-```
-
-Set the mouse cursor position to center of the first screen.
-
-```json
-{
-    "to": [
-        {
-            "software_function": {
-                "set_mouse_cursor_position": {
-                    "x": "50%",
-                    "y": "50%",
-                    "screen": 0
-                }
-            }
-        }
-    ]
-}
-```
