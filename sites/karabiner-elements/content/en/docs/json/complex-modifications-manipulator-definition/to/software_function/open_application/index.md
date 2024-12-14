@@ -5,47 +5,6 @@ weight: 300
 
 Open an application, or if it's already running, bring it into focus.
 
-```json
-{
-    "to": [
-        {
-            "software_function": {
-                "open_application": { "bundle_identifier": "com.apple.Safari" }
-            }
-        }
-    ]
-}
-```
-
-| Priority | Name                                  | Required | Description                                      | Available since |
-| -------- | ------------------------------------- | -------- | ------------------------------------------------ | --------------- |
-| 1        | `bundle_identifier`                   | Optional | The bundle identifier of the application         | v15.0.19        |
-| 2        | `file_path`                           | Optional | The file path of the application                 | v15.0.19        |
-| 3        | `frontmost_application_history_index` | Optional | The index of the frontmost application's history | v15.3.6         |
-
-{{% alert title="Notes" color="primary" %}}
-
--   Either `bundle_identifier`, `file_path` or `frontmost_application_history_index` must be specified.
--   When multiple options are specified, the highest-priority one is used, and all others are ignored.
-
-{{% /alert %}}
-
-{{% alert title="How to find the bundle identifier or file path" color="primary" %}}
-
-You can find the bundle identifier and file path in [EventViewer > Frontmost Application](/docs/manual/operation/eventviewer/).
-
-{{% /alert %}}
-
-{{% alert title="About frontmost_application_history_index" color="primary" %}}
-
--   The `frontmost_application_history_index` should be set as an integer >= 1.
--   When `frontmost_application_history_index` is specified, the selected application will be the one that was recently focused.
-    Applications opened through methods other than `open_application`, such as via Launchpad, are also included.
--   Only currently running applications are targeted; closed applications will not be selected.
--   Only applications opened after Karabiner-Elements was launched are targeted.
-
-{{% /alert %}}
-
 ## Examples
 
 Open EventViewer by <kbd>right command + v</kbd>:
@@ -95,7 +54,9 @@ Focus recently opened applications by <kbd>right command + 1</kbd>, <kbd>right c
             "to": [
                 {
                     "software_function": {
-                        "open_application": { "frontmost_application_history_index": 1 }
+                        "open_application": {
+                            "frontmost_application_history_index": 1
+                        }
                     }
                 }
             ]
@@ -112,7 +73,9 @@ Focus recently opened applications by <kbd>right command + 1</kbd>, <kbd>right c
             "to": [
                 {
                     "software_function": {
-                        "open_application": { "frontmost_application_history_index": 2 }
+                        "open_application": {
+                            "frontmost_application_history_index": 2
+                        }
                     }
                 }
             ]
@@ -129,7 +92,9 @@ Focus recently opened applications by <kbd>right command + 1</kbd>, <kbd>right c
             "to": [
                 {
                     "software_function": {
-                        "open_application": { "frontmost_application_history_index": 3 }
+                        "open_application": {
+                            "frontmost_application_history_index": 3
+                        }
                     }
                 }
             ]
@@ -137,3 +102,46 @@ Focus recently opened applications by <kbd>right command + 1</kbd>, <kbd>right c
     ]
 }
 ```
+
+## Specification
+
+```json
+{
+    "to": [
+        {
+            "software_function": {
+                "open_application": { "bundle_identifier": "com.apple.Safari" }
+            }
+        }
+    ]
+}
+```
+
+| Priority | Name                                  | Required | Description                                      | Available since |
+| -------- | ------------------------------------- | -------- | ------------------------------------------------ | --------------- |
+| 1        | `bundle_identifier`                   | Optional | The bundle identifier of the application         | v15.0.19        |
+| 2        | `file_path`                           | Optional | The file path of the application                 | v15.0.19        |
+| 3        | `frontmost_application_history_index` | Optional | The index of the frontmost application's history | v15.3.6         |
+
+{{% alert title="Notes" color="primary" %}}
+
+-   Either `bundle_identifier`, `file_path` or `frontmost_application_history_index` must be specified.
+-   When multiple options are specified, the highest-priority one is used, and all others are ignored.
+
+{{% /alert %}}
+
+{{% alert title="How to find the bundle identifier or file path" color="primary" %}}
+
+You can find the bundle identifier and file path in [EventViewer > Frontmost Application](/docs/manual/operation/eventviewer/).
+
+{{% /alert %}}
+
+{{% alert title="About frontmost_application_history_index" color="primary" %}}
+
+-   The `frontmost_application_history_index` should be set as an integer >= 1.
+-   When `frontmost_application_history_index` is specified, the selected application will be the one that was recently focused.
+    Applications opened through methods other than `open_application`, such as via Launchpad, are also included.
+-   Only currently running applications are targeted; closed applications will not be selected.
+-   Only applications opened after Karabiner-Elements was launched are targeted.
+
+{{% /alert %}}
