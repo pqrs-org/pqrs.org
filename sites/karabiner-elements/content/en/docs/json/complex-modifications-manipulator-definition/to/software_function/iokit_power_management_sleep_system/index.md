@@ -3,11 +3,44 @@ title: 'iokit_power_management_sleep_system'
 weight: 200
 ---
 
-Causes an immediate system sleep.
+Put the system to sleep.
 
-{{% alert title="Available since" color="danger" %}}
+{{% alert color="info" %}}
 `iokit_power_management_sleep_system` is available since Karabiner-Elements 13.7.1.
 {{% /alert %}}
+
+## Examples
+
+Enter
+
+```json
+{
+    "description": "Put the system to sleep using fn+z",
+    "manipulators": [
+        {
+            "type": "basic",
+            "from": {
+                "key_code": "z",
+                "modifiers": {
+                    "mandatory": ["fn"],
+                    "optional": ["caps_lock"]
+                }
+            },
+            "to": [
+                {
+                    "software_function": {
+                        "iokit_power_management_sleep_system": {
+                            "delay_milliseconds": 500
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}
+```
+
+## Specification
 
 ```json
 {
@@ -23,22 +56,6 @@ Causes an immediate system sleep.
 }
 ```
 
-| Name                 | Required | Description                                  |
-| -------------------- | -------- | -------------------------------------------- |
-| `delay_milliseconds` | Optional | Waiting time before the system goes to sleep |
-
-## Examples
-
-Use default `delay_milliseconds` (500 ms).
-
-```json
-{
-    "to": [
-        {
-            "software_function": {
-                "iokit_power_management_sleep_system": {}
-            }
-        }
-    ]
-}
-```
+| Name                 | Required | Description                                                          |
+| -------------------- | -------- | -------------------------------------------------------------------- |
+| `delay_milliseconds` | Optional | Waiting time before the system goes to sleep (500 ms if unspecified) |
