@@ -1,5 +1,5 @@
 ---
-title: 'Use more complex rules'
+title: 'Use more complex modifications'
 weight: 200
 ---
 
@@ -24,8 +24,8 @@ These rules change keys by conditions.
 
 There are two ways to add rules
 
--   Import predefined rules maintained by the community
--   Create your own rules
+-   [Import predefined rules maintained by the community](#import-predefined-rules)
+-   [Create your own rules](../add-your-own-complex-modifications/)
 
 In both cases, you can modify the rules later to make them more personalised.
 
@@ -66,34 +66,3 @@ Press **Enable** button.
 
 New rule is enabled.<br />
 Confirm the result using [Karabiner-EventViewer](/docs/manual/operation/eventviewer/).
-
----
-
-## Create your own rules
-
-### Step 1
-
-Open Complex Modifications tab and press **Add your own rule** button.<br />
-
-{{< local-image src="images/own-rule-1@2x.png" >}}
-
-### Step 2
-
-An editor will open with sample rules.
-Change the content and press the Save button to register.
-
-When making changes, [Karabiner-EventViewer](/docs/manual/operation/eventviewer/) and [Karabiner Configuration Reference Manual](/docs/json/) can be used to confirm the key names and how to write rules.
-
-{{< local-image src="images/own-rule-2@2x.png" >}}
-
----
-
-## Edit rules
-
-Open Complex Modifications tab and press **Edit** button.
-The editor will open. Change the contents and save it.
-
-When making changes, [Karabiner-EventViewer](/docs/manual/operation/eventviewer/) and [Karabiner Configuration Reference Manual](/docs/json/) can be used to confirm the key names and how to write rules.
-
-{{< local-image src="images/edit-rule-1@2x.png" >}}
-{{< local-image src="images/edit-rule-2@2x.png" >}}
