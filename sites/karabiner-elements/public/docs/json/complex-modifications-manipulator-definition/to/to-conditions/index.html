@@ -17,33 +17,37 @@
 <link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
-<title>Cannot use some three key combinations (key event is not fired) | Karabiner-Elements</title>
-<meta name="description" content="It’s a hardware limitation of your keyboard called “two-key rollover” if you cannot use some three key combinations. (e.g., physical left command key &#43; right command key &#43; m)
-There are two way to avoid the rollover problem.
-Use another keyboard which is N-key rollover. Use other key combinations.">
-<meta property="og:url" content="/docs/help/troubleshooting/cannot-use-some-key-combination/">
+<title>to.conditions | Karabiner-Elements</title>
+<meta name="description" content="When conditions are specified in to, the event is sent only if the conditions are satisfied.
+Note This configuration is intended for highly specific use cases.
+If your goal is to define a setting such as “Enable only in Finder”, you should use conditions at a higher level in the hierarchy rather than to.conditions.
+to.conditions is available since Karabiner-Elements 15.3.7. Example In this example, conditions are used inside to_if_invoked and to_if_canceled to prevent the q key from being sent via to_delayed_action when the escape key is pressed.">
+<meta property="og:url" content="/docs/json/complex-modifications-manipulator-definition/to/to-conditions/">
   <meta property="og:site_name" content="Karabiner-Elements">
-  <meta property="og:title" content="Cannot use some three key combinations (key event is not fired)">
-  <meta property="og:description" content="It’s a hardware limitation of your keyboard called “two-key rollover” if you cannot use some three key combinations. (e.g., physical left command key &#43; right command key &#43; m)
-There are two way to avoid the rollover problem.
-Use another keyboard which is N-key rollover. Use other key combinations.">
+  <meta property="og:title" content="to.conditions">
+  <meta property="og:description" content="When conditions are specified in to, the event is sent only if the conditions are satisfied.
+Note This configuration is intended for highly specific use cases.
+If your goal is to define a setting such as “Enable only in Finder”, you should use conditions at a higher level in the hierarchy rather than to.conditions.
+to.conditions is available since Karabiner-Elements 15.3.7. Example In this example, conditions are used inside to_if_invoked and to_if_canceled to prevent the q key from being sent via to_delayed_action when the escape key is pressed.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
     <meta property="og:image" content="https://karabiner-elements.pqrs.org/images/logo.png">
 
-  <meta itemprop="name" content="Cannot use some three key combinations (key event is not fired)">
-  <meta itemprop="description" content="It’s a hardware limitation of your keyboard called “two-key rollover” if you cannot use some three key combinations. (e.g., physical left command key &#43; right command key &#43; m)
-There are two way to avoid the rollover problem.
-Use another keyboard which is N-key rollover. Use other key combinations.">
-  <meta itemprop="wordCount" content="49">
+  <meta itemprop="name" content="to.conditions">
+  <meta itemprop="description" content="When conditions are specified in to, the event is sent only if the conditions are satisfied.
+Note This configuration is intended for highly specific use cases.
+If your goal is to define a setting such as “Enable only in Finder”, you should use conditions at a higher level in the hierarchy rather than to.conditions.
+to.conditions is available since Karabiner-Elements 15.3.7. Example In this example, conditions are used inside to_if_invoked and to_if_canceled to prevent the q key from being sent via to_delayed_action when the escape key is pressed.">
+  <meta itemprop="wordCount" content="367">
   <meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://karabiner-elements.pqrs.org/images/logo.png">
-  <meta name="twitter:title" content="Cannot use some three key combinations (key event is not fired)">
-  <meta name="twitter:description" content="It’s a hardware limitation of your keyboard called “two-key rollover” if you cannot use some three key combinations. (e.g., physical left command key &#43; right command key &#43; m)
-There are two way to avoid the rollover problem.
-Use another keyboard which is N-key rollover. Use other key combinations.">
+  <meta name="twitter:title" content="to.conditions">
+  <meta name="twitter:description" content="When conditions are specified in to, the event is sent only if the conditions are satisfied.
+Note This configuration is intended for highly specific use cases.
+If your goal is to define a setting such as “Enable only in Finder”, you should use conditions at a higher level in the hierarchy rather than to.conditions.
+to.conditions is available since Karabiner-Elements 15.3.7. Example In this example, conditions are used inside to_if_invoked and to_if_canceled to prevent the q key from being sent via to_delayed_action when the escape key is pressed.">
 <link rel="preload" href="/scss/main.min.b52292fe96ebf63767704ebe0ee8b0484efe1be2cf8565b9740fbe8117ce30bd.css" as="style" integrity="sha256-tSKS/pbr9jdncE6&#43;DuiwSE7&#43;G&#43;LPhWW5dA&#43;&#43;gRfOML0=" crossorigin="anonymous">
 <link href="/scss/main.min.b52292fe96ebf63767704ebe0ee8b0484efe1be2cf8565b9740fbe8117ce30bd.css" rel="stylesheet" integrity="sha256-tSKS/pbr9jdncE6&#43;DuiwSE7&#43;G&#43;LPhWW5dA&#43;&#43;gRfOML0=" crossorigin="anonymous">
 <script
@@ -266,13 +270,13 @@ Use another keyboard which is N-key rollover. Use other key combinations.">
   </ul>
 </li>
   </ul>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docshelp-li">
-  <input type="checkbox" id="m-docshelp-check" checked/>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docshelp-li">
+  <input type="checkbox" id="m-docshelp-check"/>
   <label for="m-docshelp-check"><a href="/docs/help/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docshelp"><span class="">Help</span></a></label>
   
   <ul class="ul-2 foldable">
-    <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docshelptroubleshooting-li">
-  <input type="checkbox" id="m-docshelptroubleshooting-check" checked/>
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docshelptroubleshooting-li">
+  <input type="checkbox" id="m-docshelptroubleshooting-check"/>
   <label for="m-docshelptroubleshooting-check"><a href="/docs/help/troubleshooting/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docshelptroubleshooting"><span class="">Troubleshooting</span></a></label>
   
   <ul class="ul-3 foldable">
@@ -308,9 +312,9 @@ Use another keyboard which is N-key rollover. Use other key combinations.">
   <input type="checkbox" id="m-docshelptroubleshootingcontrol-eject-check"/>
   <label for="m-docshelptroubleshootingcontrol-eject-check"><a href="/docs/help/troubleshooting/control-eject/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-docshelptroubleshootingcontrol-eject"><span class="">Control-eject shortcut does not work when Karabiner-Elements is running</span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-docshelptroubleshootingcannot-use-some-key-combination-li">
-  <input type="checkbox" id="m-docshelptroubleshootingcannot-use-some-key-combination-check" checked/>
-  <label for="m-docshelptroubleshootingcannot-use-some-key-combination-check"><a href="/docs/help/troubleshooting/cannot-use-some-key-combination/" class="align-left ps-0  active td-sidebar-link td-sidebar-link__page" id="m-docshelptroubleshootingcannot-use-some-key-combination"><span class="td-sidebar-nav-active-item">Cannot use some three key combinations (key event is not fired)</span></a></label>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docshelptroubleshootingcannot-use-some-key-combination-li">
+  <input type="checkbox" id="m-docshelptroubleshootingcannot-use-some-key-combination-check"/>
+  <label for="m-docshelptroubleshootingcannot-use-some-key-combination-check"><a href="/docs/help/troubleshooting/cannot-use-some-key-combination/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-docshelptroubleshootingcannot-use-some-key-combination"><span class="">Cannot use some three key combinations (key event is not fired)</span></a></label>
   
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docshelptroubleshootingjson-owner-is-invalid-li">
   <input type="checkbox" id="m-docshelptroubleshootingjson-owner-is-invalid-check"/>
@@ -414,8 +418,8 @@ Use another keyboard which is N-key rollover. Use other key combinations.">
   <input type="checkbox" id="m-docsreleasenotes-check"/>
   <label for="m-docsreleasenotes-check"><a href="/docs/releasenotes/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-docsreleasenotes"><span class="">Release notes</span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsjson-li">
-  <input type="checkbox" id="m-docsjson-check"/>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docsjson-li">
+  <input type="checkbox" id="m-docsjson-check" checked/>
   <label for="m-docsjson-check"><a href="/docs/json/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docsjson"><span class="">Karabiner Configuration Reference Manual</span></a></label>
   
   <ul class="ul-2 foldable">
@@ -435,8 +439,8 @@ Use another keyboard which is N-key rollover. Use other key combinations.">
   <input type="checkbox" id="m-docsjsonroot-data-structure-check"/>
   <label for="m-docsjsonroot-data-structure-check"><a href="/docs/json/root-data-structure/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-docsjsonroot-data-structure"><span class="">karabiner.json data structure</span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsjsoncomplex-modifications-manipulator-definition-li">
-  <input type="checkbox" id="m-docsjsoncomplex-modifications-manipulator-definition-check"/>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docsjsoncomplex-modifications-manipulator-definition-li">
+  <input type="checkbox" id="m-docsjsoncomplex-modifications-manipulator-definition-check" checked/>
   <label for="m-docsjsoncomplex-modifications-manipulator-definition-check"><a href="/docs/json/complex-modifications-manipulator-definition/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docsjsoncomplex-modifications-manipulator-definition"><span class="">complex_modifications manipulator definition</span></a></label>
   
   <ul class="ul-3 foldable">
@@ -463,8 +467,8 @@ Use another keyboard which is N-key rollover. Use other key combinations.">
   
 </li>
   </ul>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsjsoncomplex-modifications-manipulator-definitionto-li">
-  <input type="checkbox" id="m-docsjsoncomplex-modifications-manipulator-definitionto-check"/>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docsjsoncomplex-modifications-manipulator-definitionto-li">
+  <input type="checkbox" id="m-docsjsoncomplex-modifications-manipulator-definitionto-check" checked/>
   <label for="m-docsjsoncomplex-modifications-manipulator-definitionto-check"><a href="/docs/json/complex-modifications-manipulator-definition/to/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docsjsoncomplex-modifications-manipulator-definitionto"><span class="">to event definition</span></a></label>
   
   <ul class="ul-4 foldable">
@@ -535,9 +539,9 @@ Use another keyboard which is N-key rollover. Use other key combinations.">
   <input type="checkbox" id="m-docsjsoncomplex-modifications-manipulator-definitiontohold-down-milliseconds-check"/>
   <label for="m-docsjsoncomplex-modifications-manipulator-definitiontohold-down-milliseconds-check"><a href="/docs/json/complex-modifications-manipulator-definition/to/hold-down-milliseconds/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-docsjsoncomplex-modifications-manipulator-definitiontohold-down-milliseconds"><span class="">to.hold_down_milliseconds</span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsjsoncomplex-modifications-manipulator-definitiontoto-conditions-li">
-  <input type="checkbox" id="m-docsjsoncomplex-modifications-manipulator-definitiontoto-conditions-check"/>
-  <label for="m-docsjsoncomplex-modifications-manipulator-definitiontoto-conditions-check"><a href="/docs/json/complex-modifications-manipulator-definition/to/to-conditions/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-docsjsoncomplex-modifications-manipulator-definitiontoto-conditions"><span class="">to.conditions</span></a></label>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-docsjsoncomplex-modifications-manipulator-definitiontoto-conditions-li">
+  <input type="checkbox" id="m-docsjsoncomplex-modifications-manipulator-definitiontoto-conditions-check" checked/>
+  <label for="m-docsjsoncomplex-modifications-manipulator-definitiontoto-conditions-check"><a href="/docs/json/complex-modifications-manipulator-definition/to/to-conditions/" class="align-left ps-0  active td-sidebar-link td-sidebar-link__page" id="m-docsjsoncomplex-modifications-manipulator-definitiontoto-conditions"><span class="td-sidebar-nav-active-item">to.conditions</span></a></label>
   
 </li>
   </ul>
@@ -641,7 +645,11 @@ Use another keyboard which is N-key rollover. Use other key combinations.">
 
 
 
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#example">Example</a></li>
+  </ul>
+</nav>
 
 
 
@@ -657,27 +665,184 @@ Use another keyboard which is N-key rollover. Use other key combinations.">
   <li class="breadcrumb-item">
     <a href="/docs/">Documentation</a></li>
   <li class="breadcrumb-item">
-    <a href="/docs/help/">Help</a></li>
+    <a href="/docs/json/">Karabiner Configuration Reference Manual</a></li>
   <li class="breadcrumb-item">
-    <a href="/docs/help/troubleshooting/">Troubleshooting</a></li>
+    <a href="/docs/json/complex-modifications-manipulator-definition/">complex_modifications manipulator definition</a></li>
+  <li class="breadcrumb-item">
+    <a href="/docs/json/complex-modifications-manipulator-definition/to/">to event definition</a></li>
   <li class="breadcrumb-item active" aria-current="page">
-    Cannot use some three key combinations (key event is not fired)</li>
+    to.conditions</li>
   </ol>
 </nav>
             
 <div class="td-content">
-	<h1>Cannot use some three key combinations (key event is not fired)</h1>
+	<h1>to.conditions</h1>
 	
 	<header class="article-meta">
 		
 </header>
-	<p>It&rsquo;s a hardware limitation of your keyboard called &ldquo;two-key rollover&rdquo; if you cannot use some three key combinations.
-(e.g., <code>physical left command key + right command key + m</code>)</p>
-<p>There are two way to avoid the rollover problem.</p>
-<ul>
-<li>Use another keyboard which is N-key rollover.</li>
-<li>Use other key combinations.</li>
-</ul>
+	<p>When <code>conditions</code> are specified in <code>to</code>, the event is sent only if the conditions are satisfied.</p>
+
+
+<div class="alert alert-primary" role="alert">
+<h4 class="alert-heading">Note</h4>
+
+    <p>This configuration is intended for highly specific use cases.</p>
+<p>If your goal is to define a setting such as &ldquo;Enable only in Finder&rdquo;, you should use <a href="/docs/json/complex-modifications-manipulator-definition/">conditions at a higher level in the hierarchy</a> rather than to.conditions.</p>
+
+
+</div>
+
+
+
+<div class="alert alert-info" role="alert">
+
+
+    <code>to.conditions</code> is available since Karabiner-Elements 15.3.7.
+
+</div>
+
+<h2 id="example">Example</h2>
+<p>In this example, conditions are used inside <code>to_if_invoked</code> and <code>to_if_canceled</code> to prevent the <kbd>q</kbd> key from being sent via <code>to_delayed_action</code> when the <kbd>escape</kbd> key is pressed.</p>
+<div
+  class="highlight"
+  style="text-align: right; margin-top: 0rem; margin-bottom: -2rem"
+>
+  <a
+    class="d-inline-block"
+    style="
+      text-decoration: none;
+      background-color: #f8f8f8;
+      padding: 0.5rem;
+      border: solid var(--bs-border-color);
+      border-width: 1px 1px 0 1px;
+    "
+    href="/docs/manual/configuration/add-your-own-complex-modifications/"
+    >💡 How to use this example</a
+  >
+</div>
+
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;description&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;Change double press of q to escape&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;manipulators&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;type&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;basic&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;from&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">&#34;key_code&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;q&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">&#34;modifiers&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span> <span style="color:#204a87;font-weight:bold">&#34;optional&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">&#34;any&#34;</span><span style="color:#000;font-weight:bold">]</span> <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">},</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;to&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">{</span> <span style="color:#204a87;font-weight:bold">&#34;set_variable&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span> <span style="color:#204a87;font-weight:bold">&#34;name&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;q pressed&#34;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#204a87;font-weight:bold">&#34;value&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#204a87;font-weight:bold">false</span> <span style="color:#000;font-weight:bold">}</span> <span style="color:#000;font-weight:bold">},</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">{</span> <span style="color:#204a87;font-weight:bold">&#34;key_code&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;escape&#34;</span> <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">],</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;conditions&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">{</span> <span style="color:#204a87;font-weight:bold">&#34;type&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;variable_if&#34;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#204a87;font-weight:bold">&#34;name&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;q pressed&#34;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#204a87;font-weight:bold">&#34;value&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#204a87;font-weight:bold">true</span> <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">]</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">},</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;type&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;basic&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;from&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">&#34;key_code&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;q&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">&#34;modifiers&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span> <span style="color:#204a87;font-weight:bold">&#34;optional&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">&#34;any&#34;</span><span style="color:#000;font-weight:bold">]</span> <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">},</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;to&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[{</span> <span style="color:#204a87;font-weight:bold">&#34;set_variable&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span> <span style="color:#204a87;font-weight:bold">&#34;name&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;q pressed&#34;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#204a87;font-weight:bold">&#34;value&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#204a87;font-weight:bold">true</span> <span style="color:#000;font-weight:bold">}</span> <span style="color:#000;font-weight:bold">}],</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;to_delayed_action&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">&#34;to_if_invoked&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#204a87;font-weight:bold">&#34;key_code&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;q&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#204a87;font-weight:bold">&#34;conditions&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+</span></span><span style="display:flex;"><span>                            <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                                <span style="color:#204a87;font-weight:bold">&#34;type&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;variable_if&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>                                <span style="color:#204a87;font-weight:bold">&#34;name&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;q pressed&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>                                <span style="color:#204a87;font-weight:bold">&#34;value&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#204a87;font-weight:bold">true</span>
+</span></span><span style="display:flex;"><span>                            <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#000;font-weight:bold">]</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#000;font-weight:bold">},</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#000;font-weight:bold">{</span> <span style="color:#204a87;font-weight:bold">&#34;set_variable&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span> <span style="color:#204a87;font-weight:bold">&#34;name&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;q pressed&#34;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#204a87;font-weight:bold">&#34;value&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#204a87;font-weight:bold">false</span> <span style="color:#000;font-weight:bold">}</span> <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">],</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">&#34;to_if_canceled&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#204a87;font-weight:bold">&#34;key_code&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;q&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#204a87;font-weight:bold">&#34;conditions&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+</span></span><span style="display:flex;"><span>                            <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                                <span style="color:#204a87;font-weight:bold">&#34;type&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;variable_if&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>                                <span style="color:#204a87;font-weight:bold">&#34;name&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;q pressed&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>                                <span style="color:#204a87;font-weight:bold">&#34;value&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#204a87;font-weight:bold">true</span>
+</span></span><span style="display:flex;"><span>                            <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#000;font-weight:bold">]</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#000;font-weight:bold">},</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#000;font-weight:bold">{</span> <span style="color:#204a87;font-weight:bold">&#34;set_variable&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span> <span style="color:#204a87;font-weight:bold">&#34;name&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;q pressed&#34;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#204a87;font-weight:bold">&#34;value&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#204a87;font-weight:bold">false</span> <span style="color:#000;font-weight:bold">}</span> <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">]</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">]</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></div>
+
+<div class="alert alert-primary" role="alert">
+<h4 class="alert-heading">Advanced topic</h4>
+
+    <p>Conditions are evaluated when the first event in the sequence of events within <code>to</code> is processed.
+This means that even if a variable&rsquo;s value changes (e.g., using <code>set_variable</code> within <code>to</code>), the updated value won&rsquo;t be immediately evaluated.</p>
+<div
+  class="highlight"
+  style="text-align: right; margin-top: 0rem; margin-bottom: -2rem"
+>
+  <a
+    class="d-inline-block"
+    style="
+      text-decoration: none;
+      background-color: #f8f8f8;
+      padding: 0.5rem;
+      border: solid var(--bs-border-color);
+      border-width: 1px 1px 0 1px;
+    "
+    href="/docs/manual/configuration/add-your-own-complex-modifications/"
+    >💡 How to use this example</a
+  >
+</div>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;description&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;to.conditions example&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;manipulators&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;type&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;basic&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;from&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">&#34;key_code&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;escape&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">&#34;modifiers&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span> <span style="color:#204a87;font-weight:bold">&#34;optional&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">&#34;any&#34;</span><span style="color:#000;font-weight:bold">]</span> <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">},</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;to&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;set_variable&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#204a87;font-weight:bold">&#34;name&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;example_flag&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#204a87;font-weight:bold">&#34;value&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#204a87;font-weight:bold">true</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">},</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;key_code&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;spacebar&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;conditions&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#8f5902;font-style:italic">// Because this condition are evaluated before the first event is processed,
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>                        <span style="color:#8f5902;font-style:italic">// the value of example_flag is not true at that stage, so the evaluation will return false.
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>                        <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                            <span style="color:#204a87;font-weight:bold">&#34;type&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;variable_if&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>                            <span style="color:#204a87;font-weight:bold">&#34;name&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;example_flag&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>                            <span style="color:#204a87;font-weight:bold">&#34;value&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#204a87;font-weight:bold">true</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#000;font-weight:bold">]</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">},</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;set_variable&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#204a87;font-weight:bold">&#34;name&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;example_flag&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#204a87;font-weight:bold">&#34;value&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#204a87;font-weight:bold">false</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">]</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">]</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></div>
+
+</div>
+
 
 	
 </div>
