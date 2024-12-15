@@ -37,7 +37,8 @@ weight: 200
     "lazy": false,
     "repeat": true,
     "halt": false,
-    "hold_down_milliseconds": 0
+    "hold_down_milliseconds": 0,
+    "conditions": [...]
 }
 ```
 
@@ -58,22 +59,23 @@ You cannot specify multiple items into one `to` entry.
 
 {{% /alert %}}
 
-| Name                                                | Required | Description                                                                     |
-| --------------------------------------------------- | -------- | ------------------------------------------------------------------------------- |
-| `key_code`                                          | Optional | Key code which you want to post                                                 |
-| `consumer_key_code`                                 | Optional | Consumer key code (media key code) which you want to post                       |
-| `pointing_button`                                   | Optional | Pointing button name which you want to post                                     |
-| [`shell_command`](shell-command/)                   | Optional | Shell command which you want to execute                                         |
-| [`select_input_source`](select-input-source/)       | Optional | Input source which you want to switch                                           |
-| [`set_variable`](set-variable/)                     | Optional | A varaible name and value which you want to change                              |
-| [`mouse_key`](mouse-key/)                           | Optional | A mouse key definition                                                          |
-| [`sticky_modifier`](sticky_modifier/)               | Optional | A sticky modifier key definition                                                |
-| [`software_function`](software_function/)           | Optional | A software function definition                                                  |
-| [`modifiers`](modifiers/)                           | Optional | Modifiers which are post with the event                                         |
-| [`lazy`](lazy/)                                     | Optional | Lazy modifier flag                                                              |
-| [`repeat`](repeat/)                                 | Optional | Key repeat flag                                                                 |
-| [`halt`](halt/)                                     | Optional | A flag for `to_after_key_up`                                                    |
-| [`hold_down_milliseconds`](hold-down-milliseconds/) | Optional | Interval of `key_down` and `key_up` when these events are sent at the same time |
+| Name                                                | Required | Description                                                                         |
+| --------------------------------------------------- | -------- | ----------------------------------------------------------------------------------- |
+| `key_code`                                          | Optional | Key code which you want to post                                                     |
+| `consumer_key_code`                                 | Optional | Consumer key code (media key code) which you want to post                           |
+| `pointing_button`                                   | Optional | Pointing button name which you want to post                                         |
+| [`shell_command`](shell-command/)                   | Optional | Shell command which you want to execute                                             |
+| [`select_input_source`](select-input-source/)       | Optional | Input source which you want to switch                                               |
+| [`set_variable`](set-variable/)                     | Optional | A varaible name and value which you want to change                                  |
+| [`mouse_key`](mouse-key/)                           | Optional | A mouse key definition                                                              |
+| [`sticky_modifier`](sticky_modifier/)               | Optional | A sticky modifier key definition                                                    |
+| [`software_function`](software_function/)           | Optional | A software function definition                                                      |
+| [`modifiers`](modifiers/)                           | Optional | Modifiers which are post with the event                                             |
+| [`lazy`](lazy/)                                     | Optional | Lazy modifier flag                                                                  |
+| [`repeat`](repeat/)                                 | Optional | Key repeat flag                                                                     |
+| [`halt`](halt/)                                     | Optional | A flag for `to_after_key_up`                                                        |
+| [`hold_down_milliseconds`](hold-down-milliseconds/) | Optional | Interval of `key_down` and `key_up` when these events are sent at the same time     |
+| [`conditions`](to-conditions/)                      | Optional | The event is transmitted only when the conditions are satisfied (e.g., variable_if) |
 
 ## Investigate key names
 
