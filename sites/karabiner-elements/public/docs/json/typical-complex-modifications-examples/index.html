@@ -33,7 +33,7 @@
   <meta itemprop="name" content="Typical complex_modifications examples">
   <meta itemprop="description" content="Swap ; and : (Equal to swap ; and shift-;)
 💡 How to use this example { &#34;description&#34;: &#34;Swap ; and :&#34;, &#34;manipulators&#34;: [ { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;semicolon&#34;, &#34;modifiers&#34;: { &#34;mandatory&#34;: [&#34;shift&#34;], &#34;optional&#34;: [&#34;caps_lock&#34;] } }, &#34;to&#34;: [{ &#34;key_code&#34;: &#34;semicolon&#34; }] }, { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;semicolon&#34;, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;caps_lock&#34;] } }, &#34;to&#34;: [{ &#34;key_code&#34;: &#34;semicolon&#34;, &#34;modifiers&#34;: [&#34;left_shift&#34;] }] } ] } Change control-h to delete And change control-option-h to option-delete.">
-  <meta itemprop="wordCount" content="660">
+  <meta itemprop="wordCount" content="723">
   <meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://karabiner-elements.pqrs.org/images/logo.png">
@@ -74,7 +74,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.56e780d74096ffde447a35f18e87f6ee.json"
+    data-offline-search-index-json-src="/offline-search-index.09ff99d979231ac5bb63fd4f167ebf1f.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="25"
   >
@@ -98,7 +98,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.56e780d74096ffde447a35f18e87f6ee.json"
+    data-offline-search-index-json-src="/offline-search-index.09ff99d979231ac5bb63fd4f167ebf1f.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="25"
   >
@@ -644,6 +644,7 @@
     <li><a href="#disable-command-l-on-finder">Disable <code>command-l</code> on Finder</a></li>
     <li><a href="#post-escape-if-left_control-is-pressed-alone">Post <code>escape</code> if <code>left_control</code> is pressed alone</a></li>
     <li><a href="#open-safari-if-escape-is-held-down">Open <code>Safari</code> if <code>escape</code> is held down</a></li>
+    <li><a href="#paste-commandv-if-escape-is-held-down">Paste (command+v) if <code>escape</code> is held down</a></li>
     <li><a href="#change-right_shift-x2-to-mission_control">Change <code>right_shift x2</code> to <code>mission_control</code></a></li>
     <li><a href="#change-double-press-of-q-to-escape">Change double press of <code>q</code> to <code>escape</code></a></li>
     <li><a href="#change-equaldelete-to-forward_delete-if-these-keys-are-pressed-simultaneously">Change <code>equal+delete</code> to <code>forward_delete</code> if these keys are pressed simultaneously</a></li>
@@ -876,9 +877,7 @@
 </span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;type&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;basic&#34;</span><span style="color:#000;font-weight:bold">,</span>
 </span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;from&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
 </span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">&#34;key_code&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;escape&#34;</span><span style="color:#000;font-weight:bold">,</span>
-</span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">&#34;modifiers&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
-</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;optional&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">&#34;caps_lock&#34;</span><span style="color:#000;font-weight:bold">]</span>
-</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">&#34;modifiers&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span> <span style="color:#204a87;font-weight:bold">&#34;optional&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">&#34;caps_lock&#34;</span><span style="color:#000;font-weight:bold">]</span> <span style="color:#000;font-weight:bold">}</span>
 </span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">},</span>
 </span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;parameters&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
 </span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">&#34;basic.to_if_alone_timeout_milliseconds&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#0000cf;font-weight:bold">250</span><span style="color:#000;font-weight:bold">,</span>
@@ -887,6 +886,49 @@
 </span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;to_if_alone&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[{</span> <span style="color:#204a87;font-weight:bold">&#34;key_code&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;escape&#34;</span> <span style="color:#000;font-weight:bold">}],</span>
 </span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;to_if_held_down&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
 </span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">{</span> <span style="color:#204a87;font-weight:bold">&#34;shell_command&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;open -b &#39;com.apple.Safari&#39;&#34;</span> <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">]</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">]</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></div><h2 id="paste-commandv-if-escape-is-held-down">Paste (command+v) if <code>escape</code> is held down</h2>
+<div
+  class="highlight"
+  style="text-align: right; margin-top: 0rem; margin-bottom: -2rem"
+>
+  <a
+    class="d-inline-block"
+    style="
+      text-decoration: none;
+      background-color: #f8f8f8;
+      padding: 0.5rem;
+      border: solid var(--bs-border-color);
+      border-width: 1px 1px 0 1px;
+    "
+    href="/docs/manual/configuration/add-your-own-complex-modifications/"
+    >💡 How to use this example</a
+  >
+</div>
+
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;description&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;Paste (command+v) if escape is held down&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;manipulators&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;type&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;basic&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;from&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">&#34;key_code&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;escape&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">&#34;modifiers&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span> <span style="color:#204a87;font-weight:bold">&#34;optional&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">&#34;any&#34;</span><span style="color:#000;font-weight:bold">]</span> <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">},</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;parameters&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">&#34;basic.to_if_alone_timeout_milliseconds&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#0000cf;font-weight:bold">250</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">&#34;basic.to_if_held_down_threshold_milliseconds&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#0000cf;font-weight:bold">250</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">},</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;to_if_alone&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[{</span> <span style="color:#204a87;font-weight:bold">&#34;key_code&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;escape&#34;</span> <span style="color:#000;font-weight:bold">}],</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;to_if_held_down&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;key_code&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;v&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;modifiers&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">&#34;left_command&#34;</span><span style="color:#000;font-weight:bold">],</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;repeat&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#204a87;font-weight:bold">false</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">}</span>
 </span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">]</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">}</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">]</span>
