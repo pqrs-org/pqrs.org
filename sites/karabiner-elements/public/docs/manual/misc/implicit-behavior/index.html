@@ -21,16 +21,14 @@
 <meta name="description" content="Karabiner-Elements modifies following behavior automatically without any configurations:
 Share state of modifier keys with all connected keyboards When you are using multiple keyboards, modifier keys are shared with all keyboards.
 For example, pressing “shift key on keyboard1” and “space key on keyboard2” sends shift-space.
-Other obsoleted features Add fn-key combinations Karabiner implicitly changes fn-key combinations in Karabiner-Elements 15.0.0 and earlier.
-Key combination Result fn-up arrow page up fn-down arrow page down fn-left arrow home fn-right arrow end fn-return enter fn-delete forward delete">
+Apply special handling to specific keys The application launch keys is ignored when passed directly to macOS, so it will be configured to launch applications within Karabiner-Elements.">
 <meta property="og:url" content="/docs/manual/misc/implicit-behavior/">
   <meta property="og:site_name" content="Karabiner-Elements">
   <meta property="og:title" content="Implicit behavior">
   <meta property="og:description" content="Karabiner-Elements modifies following behavior automatically without any configurations:
 Share state of modifier keys with all connected keyboards When you are using multiple keyboards, modifier keys are shared with all keyboards.
 For example, pressing “shift key on keyboard1” and “space key on keyboard2” sends shift-space.
-Other obsoleted features Add fn-key combinations Karabiner implicitly changes fn-key combinations in Karabiner-Elements 15.0.0 and earlier.
-Key combination Result fn-up arrow page up fn-down arrow page down fn-left arrow home fn-right arrow end fn-return enter fn-delete forward delete">
+Apply special handling to specific keys The application launch keys is ignored when passed directly to macOS, so it will be configured to launch applications within Karabiner-Elements.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
@@ -40,9 +38,8 @@ Key combination Result fn-up arrow page up fn-down arrow page down fn-left arrow
   <meta itemprop="description" content="Karabiner-Elements modifies following behavior automatically without any configurations:
 Share state of modifier keys with all connected keyboards When you are using multiple keyboards, modifier keys are shared with all keyboards.
 For example, pressing “shift key on keyboard1” and “space key on keyboard2” sends shift-space.
-Other obsoleted features Add fn-key combinations Karabiner implicitly changes fn-key combinations in Karabiner-Elements 15.0.0 and earlier.
-Key combination Result fn-up arrow page up fn-down arrow page down fn-left arrow home fn-right arrow end fn-return enter fn-delete forward delete">
-  <meta itemprop="wordCount" content="82">
+Apply special handling to specific keys The application launch keys is ignored when passed directly to macOS, so it will be configured to launch applications within Karabiner-Elements.">
+  <meta itemprop="wordCount" content="249">
   <meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://karabiner-elements.pqrs.org/images/logo.png">
@@ -50,8 +47,7 @@ Key combination Result fn-up arrow page up fn-down arrow page down fn-left arrow
   <meta name="twitter:description" content="Karabiner-Elements modifies following behavior automatically without any configurations:
 Share state of modifier keys with all connected keyboards When you are using multiple keyboards, modifier keys are shared with all keyboards.
 For example, pressing “shift key on keyboard1” and “space key on keyboard2” sends shift-space.
-Other obsoleted features Add fn-key combinations Karabiner implicitly changes fn-key combinations in Karabiner-Elements 15.0.0 and earlier.
-Key combination Result fn-up arrow page up fn-down arrow page down fn-left arrow home fn-right arrow end fn-return enter fn-delete forward delete">
+Apply special handling to specific keys The application launch keys is ignored when passed directly to macOS, so it will be configured to launch applications within Karabiner-Elements.">
 <link rel="preload" href="/scss/main.min.b52292fe96ebf63767704ebe0ee8b0484efe1be2cf8565b9740fbe8117ce30bd.css" as="style" integrity="sha256-tSKS/pbr9jdncE6&#43;DuiwSE7&#43;G&#43;LPhWW5dA&#43;&#43;gRfOML0=" crossorigin="anonymous">
 <link href="/scss/main.min.b52292fe96ebf63767704ebe0ee8b0484efe1be2cf8565b9740fbe8117ce30bd.css" rel="stylesheet" integrity="sha256-tSKS/pbr9jdncE6&#43;DuiwSE7&#43;G&#43;LPhWW5dA&#43;&#43;gRfOML0=" crossorigin="anonymous">
 <script
@@ -86,7 +82,7 @@ Key combination Result fn-up arrow page up fn-down arrow page down fn-left arrow
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.145fe3c60c7ed41e5417f6020f6f6eb2.json"
+    data-offline-search-index-json-src="/offline-search-index.56e780d74096ffde447a35f18e87f6ee.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="25"
   >
@@ -110,7 +106,7 @@ Key combination Result fn-up arrow page up fn-down arrow page down fn-left arrow
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.145fe3c60c7ed41e5417f6020f6f6eb2.json"
+    data-offline-search-index-json-src="/offline-search-index.56e780d74096ffde447a35f18e87f6ee.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="25"
   >
@@ -652,6 +648,7 @@ Key combination Result fn-up arrow page up fn-down arrow page down fn-left arrow
 <nav id="TableOfContents">
   <ul>
     <li><a href="#share-state-of-modifier-keys-with-all-connected-keyboards">Share state of modifier keys with all connected keyboards</a></li>
+    <li><a href="#apply-special-handling-to-specific-keys">Apply special handling to specific keys</a></li>
   </ul>
 </nav>
 
@@ -687,6 +684,87 @@ Key combination Result fn-up arrow page up fn-down arrow page down fn-left arrow
 <h2 id="share-state-of-modifier-keys-with-all-connected-keyboards">Share state of modifier keys with all connected keyboards</h2>
 <p>When you are using multiple keyboards, modifier keys are shared with all keyboards.</p>
 <p>For example, pressing &ldquo;shift key on keyboard1&rdquo; and &ldquo;space key on keyboard2&rdquo; sends shift-space.</p>
+<h2 id="apply-special-handling-to-specific-keys">Apply special handling to specific keys</h2>
+<p>The application launch keys is ignored when passed directly to macOS, so it will be configured to launch applications within Karabiner-Elements.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Target key</th>
+          <th>Special handling</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>consumer_key_code::al_consumer_control_configuration</code></td>
+          <td>Open Music.app</td>
+      </tr>
+      <tr>
+          <td><code>consumer_key_code::al_word_processor</code></td>
+          <td>Open Pages.app</td>
+      </tr>
+      <tr>
+          <td><code>consumer_key_code::al_text_editor</code></td>
+          <td>Open TextEdit.app</td>
+      </tr>
+      <tr>
+          <td><code>consumer_key_code::al_spreadsheet</code></td>
+          <td>Open Numbers.app</td>
+      </tr>
+      <tr>
+          <td><code>consumer_key_code::al_presentation_app</code></td>
+          <td>Open Keynote.app</td>
+      </tr>
+      <tr>
+          <td><code>consumer_key_code::al_email_reader</code></td>
+          <td>Open Mail.app</td>
+      </tr>
+      <tr>
+          <td><code>consumer_key_code::al_calculator</code></td>
+          <td>Open Calculator.app</td>
+      </tr>
+      <tr>
+          <td><code>consumer_key_code::al_local_machine_browser</code></td>
+          <td>Open Finder.app</td>
+      </tr>
+      <tr>
+          <td><code>consumer_key_code::al_internet_browser</code></td>
+          <td>Open Safari.app</td>
+      </tr>
+      <tr>
+          <td><code>consumer_key_code::al_dictionary</code></td>
+          <td>Open Dictionary.app</td>
+      </tr>
+  </tbody>
+</table>
+<p>The key event triggered by pressing Touch ID is ignored by macOS when passed through the Karabiner DriverKit VirtualHIDKeyboard. As a result, it is remapped to a Lock Key.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Target key</th>
+          <th>Special handling</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>consumer_key_code::menu</code><br/>(Touch ID pressed event)</td>
+          <td><code>consumer_key_code::al_terminal_lock_or_screensaver</code><br/>(Lock key)</td>
+      </tr>
+  </tbody>
+</table>
+
+
+<div class="alert alert-info" role="alert">
+
+
+    <p>Touch ID&rsquo;s fingerprint authentication is treated by macOS as a separate device from the keyboard.
+Therefore, Karabiner-Elements does not interact with fingerprint authentication at all.
+This ensures that fingerprint authentication operates independently of Karabiner-Elements.
+For instance, even if the built-in keyboard is disabled using Karabiner-Elements, fingerprint authentication will continue to work.</p>
+<p>Naturally, Touch ID&rsquo;s fingerprint authentication continues to work even if the keyboard is modified through Karabiner-Elements.</p>
+
+
+</div>
+
 <hr>
 
 
