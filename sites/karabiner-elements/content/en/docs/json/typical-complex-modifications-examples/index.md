@@ -138,9 +138,7 @@ This uses `"lazy": true` to prevent <kbd>left_control</kbd> from being sent imme
             "type": "basic",
             "from": {
                 "key_code": "escape",
-                "modifiers": {
-                    "optional": ["caps_lock"]
-                }
+                "modifiers": { "optional": ["caps_lock"] }
             },
             "parameters": {
                 "basic.to_if_alone_timeout_milliseconds": 250,
@@ -149,6 +147,37 @@ This uses `"lazy": true` to prevent <kbd>left_control</kbd> from being sent imme
             "to_if_alone": [{ "key_code": "escape" }],
             "to_if_held_down": [
                 { "shell_command": "open -b 'com.apple.Safari'" }
+            ]
+        }
+    ]
+}
+```
+
+## Paste (command+v) if `escape` is held down
+
+{{< karabiner-elements-complex-modifications-usage >}}
+
+```json
+{
+    "description": "Paste (command+v) if escape is held down",
+    "manipulators": [
+        {
+            "type": "basic",
+            "from": {
+                "key_code": "escape",
+                "modifiers": { "optional": ["any"] }
+            },
+            "parameters": {
+                "basic.to_if_alone_timeout_milliseconds": 250,
+                "basic.to_if_held_down_threshold_milliseconds": 250
+            },
+            "to_if_alone": [{ "key_code": "escape" }],
+            "to_if_held_down": [
+                {
+                    "key_code": "v",
+                    "modifiers": ["left_command"],
+                    "repeat": false
+                }
             ]
         }
     ]
