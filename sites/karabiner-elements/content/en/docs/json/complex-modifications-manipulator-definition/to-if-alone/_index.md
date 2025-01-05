@@ -24,8 +24,7 @@ The following json changes `left_control` to sending `escape` when `left_control
             },
             "to": [
                 {
-                    "key_code": "left_control",
-                    "lazy": true
+                    "key_code": "left_control"
                 }
             ],
             "to_if_alone": [{ "key_code": "escape" }]
@@ -57,8 +56,7 @@ The following example sets the timeout 200 milliseconds.
             },
             "to": [
                 {
-                    "key_code": "left_control",
-                    "lazy": true
+                    "key_code": "left_control"
                 }
             ],
             "to_if_alone": [{ "key_code": "escape" }],
@@ -72,3 +70,34 @@ The following example sets the timeout 200 milliseconds.
 
 `to_if_alone` posts both `key_down` and `key_up` events at the same time.
 Thus, you cannot use key repeat for `to_if_alone` events.
+
+## About sending caps lock
+
+`to_if_alone` posts both `key_down` and `key_up` events at the same time.
+Since the caps_lock key needs to be held down for a certain duration, you need to specify hold_down_milliseconds.
+
+```json
+{
+    "description": "Change caps_lock to left_control",
+    "manipulators": [
+        {
+            "type": "basic",
+            "from": {
+                "key_code": "caps_lock",
+                "modifiers": { "optional": ["any"] }
+            },
+            "to": [
+                {
+                    "key_code": "left_control"
+                }
+            ],
+            "to_if_alone": [
+                {
+                    "key_code": "caps_lock",
+                    "hold_down_milliseconds": 200
+                }
+            ]
+        }
+    ]
+}
+```
