@@ -101,3 +101,36 @@ Since the caps_lock key needs to be held down for a certain duration, you need t
     ]
 }
 ```
+
+## With the lazy flag
+
+When changing a key to a modifier and sending the key only when pressed alone, there may be cases where you do not want to send the modifier in that situation.
+In such cases, add `lazy` to `to`. This ensures that the modifier is sent only when pressed together with another key.
+Additionally, by combining this with `to_if_held_down`, you can send the modifier when the key is held down for a certain duration, ensuring that cases where the modifier needs to be sent alone are also covered.
+
+```json
+{
+    "description": "Post escape if left_control is tapped",
+    "manipulators": [
+        {
+            "type": "basic",
+            "from": {
+                "key_code": "left_control",
+                "modifiers": { "optional": ["any"] }
+            },
+            "to": [
+                {
+                    "key_code": "left_control",
+                    "lazy": true
+                }
+            ],
+            "to_if_alone": [{ "key_code": "escape" }],
+            "to_if_held_down": [{ "key_code": "left_control" }],
+            "parameters": {
+                "basic.to_if_alone_timeout_milliseconds": 100,
+                "basic.to_if_held_down_threshold_milliseconds": 100
+            }
+        }
+    ]
+}
+```
