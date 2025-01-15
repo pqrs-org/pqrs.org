@@ -9,21 +9,13 @@ You can change the position and appearance.
 
 {{< local-image src="images/widget@2x.png" >}}
 
-### Position
+## CPU Usage
 
-{{< local-image src="images/position@2x.png" >}}
+{{< local-image src="images/cpu-usage@2x.png" >}}
 
-### Opacity
+## Time
 
-| Clear                                                 | Colored                                                 |
-| ----------------------------------------------------- | ------------------------------------------------------- |
-| {{< local-image src="images/opacity-clear@2x.png" >}} | {{< local-image src="images/opacity-colored@2x.png" >}} |
-
-### Multiple displays
-
-Specifies which screen to display when multiple displays are used.
-
-{{< local-image src="images/screen@2x.png" >}}
+{{< local-image src="images/time@2x.png" >}}
 
 ## Operation System
 
@@ -33,10 +25,10 @@ Specifies which screen to display when multiple displays are used.
 
 {{< local-image src="images/xcode@2x.png" >}}
 
-## CPU Usage
+## App
 
-{{< local-image src="images/cpu-usage@2x.png" >}}
+{{< local-image src="images/app@2x.png" >}}
 
-## Time
+## Compact
 
-{{< local-image src="images/time@2x.png" >}}
+{{< local-image src="images/compact@2x.png" >}}
