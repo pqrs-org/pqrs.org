@@ -6,6 +6,25 @@ exclude_search: true
 body_class: release-notes
 ---
 
+## TrueWidget 2.0.0
+
+-   [📦 Download](https://github.com/pqrs-org/TrueWidget/releases/download/v2.0.0/TrueWidget-2.0.0.dmg)
+-   📅 Release date
+    -   Jan 15, 2025
+-   💥 Breaking changes
+    -   macOS 11 and macOS 12 are no longer supported.
+-   ✨ New Features
+    -   Added a compact display mode.
+        {{< local-image src="images/v2.0.0/compact@2x.png" >}}
+        {{< local-image src="images/v2.0.0/menu@2x.png" >}}
+        {{< local-image src="images/v2.0.0/settings-compact@2x.png" >}}
+    -   Added a feature to display the other application's version.
+        {{< local-image src="images/v2.0.0/app@2x.png" >}}
+        {{< local-image src="images/v2.0.0/settings-app@2x.png" >}}
+-   ⚡️ Improvements
+    -   Migrated to the SwiftUI life cycle.
+    -   Sparkle Framework has been updated.
+
 ## TrueWidget 1.6.0
 
 -   [📦 Download](https://github.com/pqrs-org/TrueWidget/releases/download/v1.6.0/TrueWidget-1.6.0.dmg)
