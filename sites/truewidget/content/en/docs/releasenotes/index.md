@@ -6,6 +6,15 @@ exclude_search: true
 body_class: release-notes
 ---
 
+## TrueWidget 2.1.0
+
+-   [📦 Download](https://github.com/pqrs-org/TrueWidget/releases/download/v2.1.0/TrueWidget-2.1.0.dmg)
+-   📅 Release date
+    -   Jan 17, 2025
+-   ✨ New Features
+    -   Added a feature to display the Apple Account.
+        {{< local-image src="images/v2.1.0/apple-account@2x.png" >}}
+
 ## TrueWidget 2.0.0
 
 -   [📦 Download](https://github.com/pqrs-org/TrueWidget/releases/download/v2.0.0/TrueWidget-2.0.0.dmg)
@@ -55,7 +64,7 @@ body_class: release-notes
     -   Added option to show user name.
 -   ⚡️ Improvements
     -   Supported the security update version in macOS version display.
-        {{< local-image src="images/v1.3.0@2x.png" >}}
+        {{< local-image src="images/v1.3.0/v1.3.0@2x.png" >}}
     -   Sparkle Framework has been updated.
 
 ## TrueWidget 1.2.0
