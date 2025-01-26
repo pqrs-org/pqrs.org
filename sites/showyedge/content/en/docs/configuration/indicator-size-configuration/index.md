@@ -7,7 +7,7 @@ weight: 210
 
 You can change the indicator height.
 
-1.  [Open preferences window](../open-preferences-window/).
+1.  [Open Settings](../open-settings/).
 2.  Choose `Indicator` from the sidebar.
 3.  Adjust height.
     {{< local-image src="images/indicator-height@2x.png" >}}
@@ -18,7 +18,7 @@ You can change the indicator height.
 
 You can put the indicator by custom size and origin.
 
-1.  [Open preferences window](../open-preferences-window/).
+1.  [Open Settings](../open-settings/).
 2.  Choose `Custom Frame` from the sidebar.
 3.  Enable `Use custom frame`, and then adjust the indicator size and origin.
     {{< local-image src="images/indicator-size@2x.png" >}}
