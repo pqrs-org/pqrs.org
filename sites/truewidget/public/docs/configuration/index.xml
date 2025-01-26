@@ -33,7 +33,7 @@
       <link>/docs/configuration/hide-menu-bar-icon/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/docs/configuration/hide-menu-bar-icon/</guid>
-      <description>&lt;p&gt;You can hide the icon in menu bar from preferences.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;a href=&#34;../open-settings/&#34;&gt;Open Settings&lt;/a&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Turn off &lt;code&gt;Show icon in menu bar&lt;/code&gt;.&#xA;&lt;figure&gt;&#xA;      &lt;img&#xA;        src=&#34;/docs/configuration/hide-menu-bar-icon/images/hide-menu-bar-icon@2x.png&#34;&#xA;        alt=&#34;hide-menu-bar-icon@2x.png&#34;&#xA;        style=&#34;width: 600px&#34;&#xA;      /&gt;&#xA;    &lt;/figure&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
+      <description>&lt;p&gt;You can hide the icon in menu bar from Settings.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;a href=&#34;../open-settings/&#34;&gt;Open Settings&lt;/a&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Turn off &lt;code&gt;Show icon in menu bar&lt;/code&gt;.&#xA;&lt;figure&gt;&#xA;      &lt;img&#xA;        src=&#34;/docs/configuration/hide-menu-bar-icon/images/hide-menu-bar-icon@2x.png&#34;&#xA;        alt=&#34;hide-menu-bar-icon@2x.png&#34;&#xA;        style=&#34;width: 600px&#34;&#xA;      /&gt;&#xA;    &lt;/figure&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
     </item>
   </channel>
 </rss>
