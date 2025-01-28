@@ -19,14 +19,14 @@
 
 <title>Input symbols are different from the key code name on non-ANSI keyboards | Karabiner-Elements</title>
 <meta name="description" content="This is the intended behavior.
-The key code name using in Karabiner-Elements is HID usage name. This is close to the physical key location on the ANSI layout keyboard.
+The key code name using in Karabiner-Elements is HID usage name, which is similar to a scancode. This is close to the physical key location on the ANSI layout keyboard.
 For this reason, there are mismatches of symbols actually input and key code names on non-ANSI keyboards.
 Determining which characters are to be input by keyboard event is the later step in the processing flow of macOS. Karabiner-Elements changes input events on a layer closer to the hardware, which is why it works like this.">
 <meta property="og:url" content="/docs/help/troubleshooting/symbols-with-non-ansi-keyboard/">
   <meta property="og:site_name" content="Karabiner-Elements">
   <meta property="og:title" content="Input symbols are different from the key code name on non-ANSI keyboards">
   <meta property="og:description" content="This is the intended behavior.
-The key code name using in Karabiner-Elements is HID usage name. This is close to the physical key location on the ANSI layout keyboard.
+The key code name using in Karabiner-Elements is HID usage name, which is similar to a scancode. This is close to the physical key location on the ANSI layout keyboard.
 For this reason, there are mismatches of symbols actually input and key code names on non-ANSI keyboards.
 Determining which characters are to be input by keyboard event is the later step in the processing flow of macOS. Karabiner-Elements changes input events on a layer closer to the hardware, which is why it works like this.">
   <meta property="og:locale" content="en">
@@ -36,16 +36,16 @@ Determining which characters are to be input by keyboard event is the later step
 
   <meta itemprop="name" content="Input symbols are different from the key code name on non-ANSI keyboards">
   <meta itemprop="description" content="This is the intended behavior.
-The key code name using in Karabiner-Elements is HID usage name. This is close to the physical key location on the ANSI layout keyboard.
+The key code name using in Karabiner-Elements is HID usage name, which is similar to a scancode. This is close to the physical key location on the ANSI layout keyboard.
 For this reason, there are mismatches of symbols actually input and key code names on non-ANSI keyboards.
 Determining which characters are to be input by keyboard event is the later step in the processing flow of macOS. Karabiner-Elements changes input events on a layer closer to the hardware, which is why it works like this.">
-  <meta itemprop="wordCount" content="129">
+  <meta itemprop="wordCount" content="142">
   <meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://karabiner-elements.pqrs.org/images/logo.png">
   <meta name="twitter:title" content="Input symbols are different from the key code name on non-ANSI keyboards">
   <meta name="twitter:description" content="This is the intended behavior.
-The key code name using in Karabiner-Elements is HID usage name. This is close to the physical key location on the ANSI layout keyboard.
+The key code name using in Karabiner-Elements is HID usage name, which is similar to a scancode. This is close to the physical key location on the ANSI layout keyboard.
 For this reason, there are mismatches of symbols actually input and key code names on non-ANSI keyboards.
 Determining which characters are to be input by keyboard event is the later step in the processing flow of macOS. Karabiner-Elements changes input events on a layer closer to the hardware, which is why it works like this.">
 <link rel="preload" href="/scss/main.min.b52292fe96ebf63767704ebe0ee8b0484efe1be2cf8565b9740fbe8117ce30bd.css" as="style" integrity="sha256-tSKS/pbr9jdncE6&#43;DuiwSE7&#43;G&#43;LPhWW5dA&#43;&#43;gRfOML0=" crossorigin="anonymous">
@@ -82,7 +82,7 @@ Determining which characters are to be input by keyboard event is the later step
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.53eee310b5831e499b0753175b8c00f5.json"
+    data-offline-search-index-json-src="/offline-search-index.59b8856f25618e729377b0a9572f7657.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="25"
   >
@@ -106,7 +106,7 @@ Determining which characters are to be input by keyboard event is the later step
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.53eee310b5831e499b0753175b8c00f5.json"
+    data-offline-search-index-json-src="/offline-search-index.59b8856f25618e729377b0a9572f7657.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="25"
   >
@@ -648,6 +648,7 @@ Determining which characters are to be input by keyboard event is the later step
 <nav id="TableOfContents">
   <ul>
     <li><a href="#ansi-layout">ANSI layout</a></li>
+    <li><a href="#an-example-of-an-iso-layout-french">An example of an ISO layout (French)</a></li>
     <li><a href="#jis-layout">JIS layout</a></li>
     <li><a href="#key-code-table">Key code table</a></li>
     <li><a href="#related-articles">Related articles</a></li>
@@ -683,7 +684,7 @@ Determining which characters are to be input by keyboard event is the later step
 		
 </header>
 	<p>This is the intended behavior.</p>
-<p>The key code name using in Karabiner-Elements is HID usage name.
+<p>The key code name using in Karabiner-Elements is HID usage name, which is similar to a scancode.
 This is close to the physical key location on the ANSI layout keyboard.</p>
 <p>For this reason, there are mismatches of symbols actually input and key code names on non-ANSI keyboards.</p>
 <p>Determining which characters are to be input by keyboard event is the later step in the processing flow of macOS.
@@ -692,18 +693,27 @@ Karabiner-Elements changes input events on a layer closer to the hardware, which
 <h2 id="ansi-layout">ANSI layout</h2>
 <figure>
   <img
-    src="/docs/help/troubleshooting/symbols-with-non-ansi-keyboard/images/us@2x.png"
-    alt="us@2x.png"
-    style="width: 598px"
+    src="/docs/help/troubleshooting/symbols-with-non-ansi-keyboard/images/MXCL3.png"
+    alt="MXCL3.png"
+    style="width: 1200px"
+  />
+</figure>
+
+<h2 id="an-example-of-an-iso-layout-french">An example of an ISO layout (French)</h2>
+<figure>
+  <img
+    src="/docs/help/troubleshooting/symbols-with-non-ansi-keyboard/images/MXCL3F.png"
+    alt="MXCL3F.png"
+    style="width: 1200px"
   />
 </figure>
 
 <h2 id="jis-layout">JIS layout</h2>
 <figure>
   <img
-    src="/docs/help/troubleshooting/symbols-with-non-ansi-keyboard/images/jis@2x.png"
-    alt="jis@2x.png"
-    style="width: 598px"
+    src="/docs/help/troubleshooting/symbols-with-non-ansi-keyboard/images/MXCL3J.png"
+    alt="MXCL3J.png"
+    style="width: 1200px"
   />
 </figure>
 
