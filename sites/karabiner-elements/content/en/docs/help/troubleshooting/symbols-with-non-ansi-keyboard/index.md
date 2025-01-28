@@ -5,7 +5,7 @@ weight: 900
 
 This is the intended behavior.
 
-The key code name using in Karabiner-Elements is HID usage name.
+The key code name using in Karabiner-Elements is HID usage name, which is similar to a scancode.
 This is close to the physical key location on the ANSI layout keyboard.
 
 For this reason, there are mismatches of symbols actually input and key code names on non-ANSI keyboards.
@@ -17,11 +17,15 @@ Please use key code names that matches your layout.
 
 ## ANSI layout
 
-{{< local-image src="images/us@2x.png" >}}
+{{< local-image src="images/MXCL3.png" >}}
+
+## An example of an ISO layout (French)
+
+{{< local-image src="images/MXCL3F.png" >}}
 
 ## JIS layout
 
-{{< local-image src="images/jis@2x.png" >}}
+{{< local-image src="images/MXCL3J.png" >}}
 
 ## Key code table
 
