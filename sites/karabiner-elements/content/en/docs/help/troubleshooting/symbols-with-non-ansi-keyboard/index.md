@@ -19,7 +19,7 @@ Please use key code names that matches your layout.
 
 {{< local-image src="images/MXCL3.png" >}}
 
-## An example of an ISO layout (French)
+## An example of ISO layout (French)
 
 {{< local-image src="images/MXCL3F.png" >}}
 
