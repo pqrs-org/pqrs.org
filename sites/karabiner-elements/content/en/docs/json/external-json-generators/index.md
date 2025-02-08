@@ -16,4 +16,4 @@ Karabiner-Elements configuration generators:
 -   [karabiner.ts](https://github.com/evan-liu/karabiner.ts)
     -   Write complex modification rules in TypeScript with strong typing.
 -   [Karabiner-Human-Config](https://github.com/nrjdalal/karabiner-human-config#readme)
-    -   The easiest way to create Karabiner-Elements configuration files ever! Identify bundles by just the app name, add comments, nest configurations, use aliases, and much more.
+    -   The easiest way to write Karabiner-Elements configuration files ever! Identify bundles by just the app name, add comments, nest configurations, use aliases, and much more.
