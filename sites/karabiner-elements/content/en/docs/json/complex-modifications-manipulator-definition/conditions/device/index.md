@@ -88,6 +88,7 @@ Change caps_lock to escape on Apple keyboards, wiht the vendor ID is 1452 (0x05a
 | `is_keyboard`          | Optional | `true` or `false`                                                                                                                                   | Yes         |
 | `is_pointing_device`   | Optional | `true` or `false`                                                                                                                                   | Yes         |
 | `is_game_pad`          | Optional | `true` or `false`<br />(available since Karabiner-Elements 14.12.4)                                                                                 | Yes         |
+| `is_consumer`          | Optional | `true` or `false`<br />(available since Karabiner-Elements 15.3.18)                                                                                 | Yes         |
 | `is_touch_bar`         | Optional | `true` or `false`                                                                                                                                   | Yes         |
 | `is_built_in_keyboard` | Optional | `true` or `false`<br />(available since Karabiner-Elements 14.8.2)                                                                                  | Yes         |
 
@@ -98,7 +99,7 @@ Change caps_lock to escape on Apple keyboards, wiht the vendor ID is 1452 (0x05a
 
 If you specify multiple identifiers (`vendor_id`, `product_id`, `location_id`, ...), these are joined by "and".
 
-The following condition is matched if Vendor ID is 1111 **and** Product ID is 2222.
+The following condition is matched if Vendor ID is 1111 **and** Product ID is 2222 **and** keyboard.
 
 ```json
 {
@@ -106,7 +107,8 @@ The following condition is matched if Vendor ID is 1111 **and** Product ID is 22
     "identifiers": [
         {
             "vendor_id": 1111,
-            "product_id": 2222
+            "product_id": 2222,
+            "is_keyboard": true
         }
     ]
 }
