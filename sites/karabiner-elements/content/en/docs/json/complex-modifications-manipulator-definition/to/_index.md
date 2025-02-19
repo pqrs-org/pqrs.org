@@ -68,7 +68,7 @@ You cannot specify multiple items into one `to` entry.
 | [`select_input_source`](select-input-source/)       | Optional | Input source which you want to switch                                               |
 | [`set_variable`](set-variable/)                     | Optional | A varaible name and value which you want to change                                  |
 | [`mouse_key`](mouse-key/)                           | Optional | A mouse key definition                                                              |
-| [`sticky_modifier`](sticky_modifier/)               | Optional | A sticky modifier key definition                                                    |
+| [`sticky_modifier`](sticky-modifier/)               | Optional | A sticky modifier key definition                                                    |
 | [`software_function`](software_function/)           | Optional | A software function definition                                                      |
 | [`modifiers`](modifiers/)                           | Optional | Modifiers which are post with the event                                             |
 | [`lazy`](lazy/)                                     | Optional | Lazy modifier flag                                                                  |
