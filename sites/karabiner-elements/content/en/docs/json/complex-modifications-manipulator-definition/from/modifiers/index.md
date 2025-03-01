@@ -182,3 +182,69 @@ This json defines manipulator which changes `control + h` to `delete_or_backspac
 | <kbd>left_control + h</kbd>               | <kbd>delete_or_backspace</kbd>               | **Manipulated** |
 | <kbd>left_control + left_option + h</kbd> | <kbd>left_option + delete_or_backspace</kbd> | **Manipulated** |
 | <kbd>left_control + left_shift + h</kbd>  | <kbd>left_shift + delete_or_backspace</kbd>  | **Manipulated** |
+
+### With caps_lock
+
+When setting caps lock as modifiers.mandatory, you need to configure to carefully; otherwise, caps lock will be turned off.
+
+#### Solution 1: Add `caps_lock` to `to.modifiers`.
+
+This approach is more stable, so if the shortcut works fine even with caps lock on, please use this method.
+
+```json
+{
+    "description": "Change caps_lock+m to mission_control",
+    "manipulators": [
+        {
+            "type": "basic",
+            "from": {
+                "key_code": "m",
+                "modifiers": {
+                    "mandatory": ["caps_lock"]
+                }
+            },
+            "to": [
+                {
+                    "apple_vendor_keyboard_key_code": "mission_control",
+                    "modifiers": ["caps_lock"]
+                }
+            ]
+        }
+    ]
+}
+```
+
+#### Solution 2: Explicitly turn caps_lock off in `to`, then turn it back on.
+
+```json
+{
+    "description": "Change caps_lock+h to Hello",
+    "manipulators": [
+        {
+            "type": "basic",
+            "from": {
+                "key_code": "h",
+                "modifiers": {
+                    "mandatory": ["caps_lock"]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "caps_lock",
+                    "hold_down_milliseconds": 200
+                },
+                { "key_code": "h", "modifiers": ["left_shift"] },
+                { "key_code": "e" },
+                { "key_code": "l" },
+                { "key_code": "l" },
+                { "key_code": "o" },
+                {
+                    "key_code": "caps_lock",
+                    "hold_down_milliseconds": 200
+                },
+                { "key_code": "vk_none" }
+            ]
+        }
+    ]
+}
+```
