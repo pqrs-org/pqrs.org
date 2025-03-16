@@ -6,6 +6,15 @@ exclude_search: true
 body_class: release-notes
 ---
 
+## Disable DragAndDrop 6.0.0
+
+-   📅 Release date
+    -   Mar 16, 2025
+-   💥 Breaking changes
+    -   Changed the minimum supported Thunderbird version from 68 to 128.
+-   ⚡️ Improvements
+    -   Extended the supported Thunderbird versions up to 136.
+
 ## Disable DragAndDrop 5.5.0
 
 -   📅 Release date
