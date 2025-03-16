@@ -19,7 +19,7 @@
       <link>/docs/configuration/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/docs/configuration/</guid>
-      <description>&lt;p&gt;Disable DragAndDrop works without any configuration.&lt;br&gt;&#xA;Your mail folder is protected from drag and drop after you installed the add-on.&lt;/p&gt;&#xA;&lt;h2 id=&#34;related-topics&#34;&gt;Related topics&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;../help/disable-temporarily/&#34;&gt;Disable this add-on temporarily&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;This extension prevents accidental drag-and-drop actions on your mail folders simply by installing it.&lt;/p&gt;&#xA;&lt;p&gt;An option is available for those who intentionally want to enable drag operations.&#xA;When enabled, you can move folders by holding down the shift key while initiating a drag action.&lt;/p&gt;&#xA;&lt;figure&gt;&#xA;  &lt;img&#xA;    src=&#34;/docs/configuration/images/preferences@2x.png&#34;&#xA;    alt=&#34;preferences@2x.png&#34;&#xA;    style=&#34;width: 713px&#34;&#xA;  /&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;h2 id=&#34;related-topics&#34;&gt;Related topics&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;../help/disable-temporarily/&#34;&gt;Disable this add-on temporarily&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Pricing</title>
