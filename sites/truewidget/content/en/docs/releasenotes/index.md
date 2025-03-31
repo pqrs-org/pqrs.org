@@ -6,6 +6,24 @@ exclude_search: true
 body_class: release-notes
 ---
 
+## TrueWidget 2.2.0
+
+-   [📦 Download](https://github.com/pqrs-org/TrueWidget/releases/download/v2.2.0/TrueWidget-2.2.0.dmg)
+-   📅 Release date
+    -   Mar 31, 2025
+-   ✨ New Features
+    -   Added a feature to show system uptime.
+    -   Added a feature to show awake time.
+    -   Added `Auto compact mode`, which automatically switches to compact mode when there is only one display.
+    -   Added the following settings to the widget position configuration:
+        -   Allow overlapping with Dock
+        -   Window level (z-order)
+        -   Offset X
+        -   Offset Y
+-   ⚡️ Improvements
+    -   Added the ability to specify the font size for seconds in the time display.
+    -   Added local date to compact mode.
+
 ## TrueWidget 2.1.0
 
 -   [📦 Download](https://github.com/pqrs-org/TrueWidget/releases/download/v2.1.0/TrueWidget-2.1.0.dmg)
