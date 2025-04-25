@@ -687,32 +687,36 @@ Making symbolic link example The following command allows you to put karabiner.j
 	<header class="article-meta">
 		
 </header>
-	<p>Karabiner-Elements stores configuration to a json file which is located <strong>~/.config/karabiner/karabiner.json</strong></p>
+	<p>Karabiner-Elements stores the user configuration as a json file located at <strong>~/.config/karabiner/karabiner.json</strong></p>
 <h3 id="about-symbolic-link">About symbolic link</h3>
-<p>If you want to move karabiner.json to another place and make symbolic link, make a symbolic link to <strong>~/.config/karabiner</strong> directory instead of karabiner.json.</p>
+<p>You can move the <code>karabiner.json</code> configuration file to a different directory. However, ensure you create a symbolic link to the <strong>~/.config/karabiner</strong> directory, not directly to the <code>karabiner.json</code> file.</p>
 
 
 <div class="alert alert-warning" role="alert">
 <h4 class="alert-heading">Warning</h4>
 
     <p>Do not make a symlink to karabiner.json directly.</p>
-<p>Karabiner-Elements will fail to detect the configuration file update and fail to reload the configuration if karabiner.json is a symbolic link.</p>
+<p>Karabiner-Elements will fail to detect configuration file changes and reload the configuration if <code>karabiner.json</code> is a symbolic link.</p>
 
 
 </div>
 
 <h4 id="making-symbolic-link-example">Making symbolic link example</h4>
-<p>The following command allows you to put karabiner.json on ~/Dropbox/private.</p>
+<p>The following command allows you to move the <code>karabiner.json</code> file to <strong>~/Dropbox/private</strong>. The same process is applies for any other directory.</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>mv ~/.config/karabiner ~/Dropbox/private
 </span></span><span style="display:flex;"><span>ln -s ~/Dropbox/private/karabiner ~/.config
 </span></span></code></pre></div>
 
 <div class="alert alert-primary" role="alert">
 <h4 class="alert-heading">Note</h4>
-
-    <p>You have to restart karabiner_console_user_server process by the
-following command after you made a symlink in order to tell
-Karabiner-Elements that the parent directory is changed.</p>
+  <p>After creating the symlink, Karabiner may ask for permission to access the new location of the configuration file. 
+Grant this permission. Furthermore, you will have to grant Full Disk Access to the <strong>karabiner_grabber</strong> 
+process, then restart the <strong>karabiner_console_user_server</strong> 
+process to ensure Karabiner is able to use the configuration file.</p>
+  <p>To grant Full Disk Access to the <strong>karabiner_grabber</strong> process, 
+nagivate to <code>System Settings -> Privacy & Security -> Full Disk Access</code>
+and make sure the toggle next to <strong>karabiner_grabber</strong> is set to the ON position.</p>
+  <p>Then to restart the <strong>karabiner_console_user_server</strong> process use the following command.</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>launchctl kickstart -k gui/<span style="color:#4e9a06">`</span>id -u<span style="color:#4e9a06">`</span>/org.pqrs.karabiner.karabiner_console_user_server
 </span></span></code></pre></div>
 
