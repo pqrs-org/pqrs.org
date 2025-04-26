@@ -3,37 +3,53 @@ title: 'The location of the configuration file'
 weight: 600
 ---
 
-Karabiner-Elements stores configuration to a json file which is located **~/.config/karabiner/karabiner.json**
+Karabiner-Elements stores the user configuration as a json file located at **~/.config/karabiner/karabiner.json**
 
-### About symbolic link
+However, there may be cases where you want to place the configuration file elsewhere, such as to automatically sync across multiple machines or to manage it under version control.
 
-If you want to move karabiner.json to another place and make symbolic link, make a symbolic link to **~/.config/karabiner** directory instead of karabiner.json.
+In such cases, You can move the `karabiner.json` configuration file to a different directory by using a symbolic link.
 
 {{% alert title="Warning" color="warning" %}}
 
-Do not make a symlink to karabiner.json directly.
+Ensure you create a symbolic link to the **~/.config/karabiner** directory, not directly to the `karabiner.json` file.
 
-Karabiner-Elements will fail to detect the configuration file update and fail to reload the configuration if karabiner.json is a symbolic link.
+Karabiner-Elements will fail to detect configuration file changes and reload the configuration if `karabiner.json` is a symbolic link.
 
 {{% /alert %}}
 
 #### Making symbolic link example
 
-The following command allows you to put karabiner.json on ~/Dropbox/private.
+The following command allows you to move the `karabiner.json` file to **~/Dropbox/private**. The same process is applies for any other directory.
 
 ```shell
 mv ~/.config/karabiner ~/Dropbox/private
 ln -s ~/Dropbox/private/karabiner ~/.config
 ```
 
-{{% alert title="Note" color="primary" %}}
-
-You have to restart karabiner_console_user_server process by the
-following command after you made a symlink in order to tell
-Karabiner-Elements that the parent directory is changed.
+After changing the actual location of `karabiner.json`, you need to restart `karabiner_console_user_server` using the following command.
+Otherwise, it will not be able to automatically detect updates to `karabiner.json`.
 
 ```shell
 launchctl kickstart -k gui/`id -u`/org.pqrs.karabiner.karabiner_console_user_server
 ```
+
+{{% alert title="Additional file access permissions" color="primary" %}}
+
+Normally, no additional configuration is needed even if you change the location of karabiner.json.
+
+However, if you move the karabiner.json file to a location that requires special permissions, such as the `Desktop` or `Downloads` folder, you will need to grant access permissions to the following processes.
+
+-   `karabiner_grabber`
+-   `karabiner_console_user_server`
+
+The most reliable way is to grant Full Disk Access to these processes.
+
+To grant Full Disk Access to the these process,
+nagivate to `System Settings > Privacy & Security > Full Disk Access`
+and make sure the toggle next to `karabiner_grabber` and `karabiner_console_user_server` are set to the ON position.
+
+If these entries are not listed, you can press the `+` button, navigate to `Macintosh HD > Library > Application Support > org.pqrs > Karabiner-Elements > bin`, and add them from there.
+
+After turning them on, please restart macOS once to restart these processes.
 
 {{% /alert %}}
