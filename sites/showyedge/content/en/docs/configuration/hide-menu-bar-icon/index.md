@@ -3,7 +3,7 @@ title: 'Hide the icon in menu bar'
 weight: 600
 ---
 
-You can hide the menu bar icon from Settings.
+This setting allows you to toggle whether or not to display the menu bar icon.
 
 {{% alert title="Note" color="primary" %}}
 You can access the settings by reopening ShowyEdge when the menu bar icon is hidden.
