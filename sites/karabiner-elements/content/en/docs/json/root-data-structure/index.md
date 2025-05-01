@@ -4,7 +4,8 @@ weight: 400
 ---
 
 {{% alert title="Note" color="warning" %}}
-Karabiner-Elements does not allow you including comments (`// ...` or `/* ... */`) in any json files.
+You can write comments in JSON using `// ...` or `/* ... */` formats,
+but all comments will be lost if the settings are modified through the Menu or Settings UI.
 {{% /alert %}}
 
 ## karabiner.json
