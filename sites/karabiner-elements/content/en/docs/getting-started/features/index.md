@@ -29,7 +29,4 @@ Karabiner-Elements is a powerful and stable keyboard customizer for macOS.
 ## Current limitations
 
 -   Karabiner-Elements cannot modify the eject key on some keyboard (e.g., Apple Wired Keyboard) due to the limitation of macOS API.
--   Karabiner-Elements cannot modify the fn key on non-Apple keyboards such as Logitech keyboards.
--   Karabiner-Elements ignores the `System Settings > Keyboard > Keyboard Shortcuts... > Modifier Keys` configuration.<br/>
-    Change modifiers by using Simple Modifications.
-    [(Detail of input event modification chaining)](../../manual/misc/event-modification-chaining/)
+-   Karabiner-Elements cannot modify the <kbd>fn</kbd> key on non-Apple keyboards such as Logitech keyboards.
