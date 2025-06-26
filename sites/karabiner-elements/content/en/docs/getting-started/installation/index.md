@@ -31,12 +31,12 @@ Open Karabiner-Elements from Launchpad.
 
 {{% alert color="success" %}}
 
-{{< local-image src="images/settings-keyboard-type@2x.png" >}}
-
 Choose your keyboard layout. (ANSI, ISO or JIS).
 
 This setting changes the behavior of some keys (symbol keys) on the keyboard.
 If the printed characters on your keyboard do not match what is input, please change this later in the Virtual Keyboard settings.
+
+{{< local-image src="images/settings-keyboard-type@2x.png" >}}
 
 {{% /alert %}}
 
@@ -44,16 +44,16 @@ If the printed characters on your keyboard do not match what is input, please ch
 
 {{% alert color="success" %}}
 
-{{< local-image src="images/settings-services@2x.png" >}}
-
 The background item notifications will be shown after the installation.
+
+{{< local-image src="images/login-items0@2x.png" >}}
 
 The following Login Items in System Settings must be enabled.
 
 -   `Karabiner-Elements Non-Privileged Agents`
 -   `Karabiner-Elements Privileged Daemons`
 
-{{< local-image src="images/login-items0@2x.png" >}}
+{{< local-image src="images/settings-services@2x.png" >}}
 
 {{% /alert %}}
 
@@ -68,11 +68,10 @@ Please proceed to the next step.
 
 {{% alert color="success" %}}
 
-{{< local-image src="images/settings-input-monitoring@2x.png" >}}
-
 1.  The Keystroke Receiving alert will be shown.
-2.  Press the `Open System Settings` button and enable `karabiner_grabber`.
     {{< local-image src="images/karabiner-grabber@2x.png" >}}
+2.  Press the `Open System Settings` button and enable `karabiner_grabber`.
+    {{< local-image src="images/settings-input-monitoring@2x.png" >}}
 
 {{% /alert %}}
 
@@ -86,11 +85,10 @@ If you are using Karabiner-Elements 14.13.0 or earlier, an alert for karabiner_o
 
 {{% alert color="success" %}}
 
-{{< local-image src="images/settings-driver-extensions@2x.png" >}}
-
-1.  The following alert will be shown when you open Karabiner-Elements Settings.
-2.  Click `Open System Settings` button, then enable `.Karabiner-VirtualHIDDevice-Manager`.
+1.  The following alert will be shown.
     {{< local-image src="images/system-extension-blocked@2x.png" >}}
+    {{< local-image src="images/settings-driver-extensions@2x.png" >}}
+2.  Click `Open System Settings` button, then enable `.Karabiner-VirtualHIDDevice-Manager`.
     {{< local-image src="images/driver-extensions@2x.png" >}}
 
 {{% /alert %}}
