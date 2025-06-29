@@ -33,7 +33,7 @@ Install Karabiner-Elements Open the downloaded file. Open the .pkg file. The ins
   <meta itemprop="name" content="Installation">
   <meta itemprop="description" content="Some operations are required to grant proper permission from macOS to Karabiner-Elements. Follow these instructions to set up Karabiner-Elements.
 Install Karabiner-Elements Open the downloaded file. Open the .pkg file. The installer will be opened. Install Karabiner-Elements. After installation, you’ll need to grant the necessary permissions for Karabiner-Elements to function. This is part of macOS’s protection mechanism to prevent applications from accessing information without user consent. There are a few required steps, so please follow the instructions.">
-  <meta itemprop="wordCount" content="300">
+  <meta itemprop="wordCount" content="295">
   <meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://karabiner-elements.pqrs.org/images/logo.png">
@@ -74,7 +74,7 @@ Install Karabiner-Elements Open the downloaded file. Open the .pkg file. The ins
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.95c1edba7385089d17569f360ece30eb.json"
+    data-offline-search-index-json-src="/offline-search-index.e53bc4cda9528250410180a2446ffd38.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="25"
   >
@@ -98,7 +98,7 @@ Install Karabiner-Elements Open the downloaded file. Open the .pkg file. The ins
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.95c1edba7385089d17569f360ece30eb.json"
+    data-offline-search-index-json-src="/offline-search-index.e53bc4cda9528250410180a2446ffd38.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="25"
   >
@@ -712,16 +712,16 @@ There are a few required steps, so please follow the instructions.</p>
 <div class="alert alert-success" role="alert">
 
 
-    <figure>
+    <p>Choose your keyboard layout. (ANSI, ISO or JIS).</p>
+<p>This setting changes the behavior of some keys (symbol keys) on the keyboard.
+If the printed characters on your keyboard do not match what is input, please change this later in the Virtual Keyboard settings.</p>
+<figure>
   <img
     src="/docs/getting-started/installation/images/settings-keyboard-type@2x.png"
     alt="settings-keyboard-type@2x.png"
     style="width: 1100px"
   />
 </figure>
-<p>Choose your keyboard layout. (ANSI, ISO or JIS).</p>
-<p>This setting changes the behavior of some keys (symbol keys) on the keyboard.
-If the printed characters on your keyboard do not match what is input, please change this later in the Virtual Keyboard settings.</p>
 
 
 </div>
@@ -732,14 +732,14 @@ If the printed characters on your keyboard do not match what is input, please ch
 <div class="alert alert-success" role="alert">
 
 
-    <figure>
+    <p>The background item notifications will be shown after the installation.</p>
+<figure>
   <img
-    src="/docs/getting-started/installation/images/settings-services@2x.png"
-    alt="settings-services@2x.png"
-    style="width: 1100px"
+    src="/docs/getting-started/installation/images/login-items0@2x.png"
+    alt="login-items0@2x.png"
+    style="width: 465px"
   />
 </figure>
-<p>The background item notifications will be shown after the installation.</p>
 <p>The following Login Items in System Settings must be enabled.</p>
 <ul>
 <li><code>Karabiner-Elements Non-Privileged Agents</code></li>
@@ -747,9 +747,9 @@ If the printed characters on your keyboard do not match what is input, please ch
 </ul>
 <figure>
   <img
-    src="/docs/getting-started/installation/images/login-items0@2x.png"
-    alt="login-items0@2x.png"
-    style="width: 465px"
+    src="/docs/getting-started/installation/images/settings-services@2x.png"
+    alt="settings-services@2x.png"
+    style="width: 1100px"
   />
 </figure>
 
@@ -772,21 +772,24 @@ Please proceed to the next step.
 <div class="alert alert-success" role="alert">
 
 
-    <figure>
-  <img
-    src="/docs/getting-started/installation/images/settings-input-monitoring@2x.png"
-    alt="settings-input-monitoring@2x.png"
-    style="width: 1100px"
-  />
-</figure>
-<ol>
-<li>The Keystroke Receiving alert will be shown.</li>
-<li>Press the <code>Open System Settings</code> button and enable <code>karabiner_grabber</code>.
+    <ol>
+<li>
+<p>The Keystroke Receiving alert will be shown.</p>
 <figure>
   <img
     src="/docs/getting-started/installation/images/karabiner-grabber@2x.png"
     alt="karabiner-grabber@2x.png"
     style="width: 461px"
+  />
+</figure>
+</li>
+<li>
+<p>Press the <code>Open System Settings</code> button and enable <code>karabiner_grabber</code>.</p>
+<figure>
+  <img
+    src="/docs/getting-started/installation/images/settings-input-monitoring@2x.png"
+    alt="settings-input-monitoring@2x.png"
+    style="width: 1100px"
   />
 </figure>
 </li>
@@ -810,19 +813,9 @@ Please proceed to the next step.
 <div class="alert alert-success" role="alert">
 
 
-    <figure>
-  <img
-    src="/docs/getting-started/installation/images/settings-driver-extensions@2x.png"
-    alt="settings-driver-extensions@2x.png"
-    style="width: 1100px"
-  />
-</figure>
-<ol>
+    <ol>
 <li>
-<p>The following alert will be shown when you open Karabiner-Elements Settings.</p>
-</li>
-<li>
-<p>Click <code>Open System Settings</code> button, then enable <code>.Karabiner-VirtualHIDDevice-Manager</code>.</p>
+<p>The following alert will be shown.</p>
 <figure>
   <img
     src="/docs/getting-started/installation/images/system-extension-blocked@2x.png"
@@ -830,6 +823,16 @@ Please proceed to the next step.
     style="width: 260px"
   />
 </figure>
+<figure>
+  <img
+    src="/docs/getting-started/installation/images/settings-driver-extensions@2x.png"
+    alt="settings-driver-extensions@2x.png"
+    style="width: 1100px"
+  />
+</figure>
+</li>
+<li>
+<p>Click <code>Open System Settings</code> button, then enable <code>.Karabiner-VirtualHIDDevice-Manager</code>.</p>
 <figure>
   <img
     src="/docs/getting-started/installation/images/driver-extensions@2x.png"
