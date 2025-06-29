@@ -19,11 +19,11 @@ Karabiner-MultitouchExtension is available since Karabiner-Elements 12.6.9
 ### MultitouchExtension usage
 
 1.  Open MultitouchExtension app from Karabiner-Elements Settings > Misc.
-    {{< local-image src="images/multitouch-extension-1@2x.png" >}}
-2.  Enable "Start at login" on MultitouchExtension Preferences.
-    {{< local-image src="images/multitouch-extension-2@2x.png" >}}
+    {{< local-image src="images/multitouch-extension-enable@2x.png" >}}
+2.  Open Settings from menu.
+    {{< local-image src="images/multitouch-extension-menu@2x.png" >}}
 3.  Adjust the effective area of the trackpad.
-    {{< local-image src="images/multitouch-extension-3@2x.png" >}}
+    {{< local-image src="images/multitouch-extension-settings@2x.png" >}}
 
 {{% alert title="Tip" color="primary" %}}
 If you hid Karabiner-MultitouchExtension icon in Dock,

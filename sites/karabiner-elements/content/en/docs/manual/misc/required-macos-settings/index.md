@@ -61,7 +61,7 @@ You can confirm whether the system extension already allowed in [EventViewer](/d
 
 If `org.pqrs.Karabiner-DriverKit-VirtualHIDDevice` appears in the System Extensions of the EventViewer and the status is `[activated enabled]`, the system extension is already allowed.
 
-{{< local-image src="images/system-extension0@2x.png" >}}
+{{< local-image src="images/system-extensions@2x.png" >}}
 
 Otherwise, you have to approve the system extension in macOS System Settings.
 
