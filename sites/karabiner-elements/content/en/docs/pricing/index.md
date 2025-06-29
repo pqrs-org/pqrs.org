@@ -18,7 +18,7 @@ I appreciate all donors. I received your donations!
 I'm afraid I don't have enough time to reply for donors.<br />
 (I'm giving priority to develop Karabiner-Elements at the moment.)
 
-<div class="text-right">
+<div class="text-end">
     Jun 29, 2025<br />
     Takayama Fumihiko
 </div>
