@@ -17,7 +17,9 @@ body_class: release-notes
 -   ✨ New Features
     -   Added `Show additional menu items` option in UI tab.
     -   Added `macOS also remaps modifier keys` warning.
+        {{< local-image src="images/v15.5.0/new-warning@2x.png" >}}
     -   Added `karabiner.json couldn't be loaded due to a parse error` alert.
+        {{< local-image src="images/v15.5.0/new-alert@2x.png" >}}
 -   ⚡️ Improvements
     -   Suppress forced icon updates (e.g., for Karabiner-Elements.app) during `karabiner_grabber` startup.
 
