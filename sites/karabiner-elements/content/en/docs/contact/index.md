@@ -27,10 +27,10 @@ Please fill your information when you send bug reports:
 Example:
 
 ```text
-macOS version: macOS 14.1.2
-Karabiner version: Karabiner-Elements 14.13.0
-Your Mac hardware: M2 MacBook Air
-Your keyboard hardware: Das Keyboard 4 Professional for Mac Mechanical Keyboard
+macOS version: macOS 15.5
+Karabiner version: Karabiner-Elements 15.5.0
+Your Mac hardware: MacBook Pro (M3 Pro)
+Your keyboard hardware: Corne V4 Cherry
 ```
 
 ---
