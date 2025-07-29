@@ -27,11 +27,11 @@ Run the following command in terminal.
 Result:
 
 ```text
-A command line utility of Karabiner-Elements.
+A command line utility of Karabiner-Elements
 Usage:
-  karabiner_cli [OPTION...]
+  karabiner_cli [OPTION...] positional parameters
 
-      --select-profile arg      Select a profile by name.
+      --select-profile arg      Select a profile by name
       --show-current-profile-name
                                 Show current profile name
       --list-profile-names      Show all profile names
@@ -39,14 +39,18 @@ Usage:
                                 number|boolean|string}
       --copy-current-profile-to-system-default-profile
                                 Copy the current profile to system default
-                                profile.
+                                profile
       --remove-system-default-profile
-                                Remove the system default profile.
-      --lint-complex-modifications complex_modifications.json
+                                Remove the system default profile
+      --lint-complex-modifications glob-patterns
                                 Check complex_modifications.json
-      --version                 Displays version.
-      --version-number          Displays version_number.
-      --help                    Print help.
+      --format-json glob-patterns
+                                Format json files
+      --eval-js glob-patterns   Run javascript files using Duktape
+      --version                 Displays version
+      --version-number          Displays version_number
+      --help                    Print help
+      --silent                  Suppress messages
 
 Examples:
   karabiner_cli --select-profile 'Default profile'
