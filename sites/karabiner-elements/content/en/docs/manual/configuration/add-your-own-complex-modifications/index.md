@@ -24,9 +24,10 @@ When making changes, [Karabiner-EventViewer](/docs/manual/operation/eventviewer/
 
 {{< local-image src="images/own-rule-2@2x.png" >}}
 
-Note: you can target specific keyboard with complex modifications e.g.
 
-```
+{{% alert title="Tip" color="primary" %}}
+You can target specific keyboard with complex modifications e.g.
+```json
 {
     "description": "fix 2: left_command+3 -> 2, left_shift+3 -> @ (Internal keyboard only)",
     "manipulators": [
@@ -77,3 +78,4 @@ Note: you can target specific keyboard with complex modifications e.g.
     ]
 }
 ```
+{{% /alert %}}
