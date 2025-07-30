@@ -1,6 +1,6 @@
 ---
 title: 'mouse_motion_to_scroll'
-weight: 100
+weight: 200
 ---
 
 `mouse_motion_to_scroll` changes mouse cursor movement to scroll wheel.
