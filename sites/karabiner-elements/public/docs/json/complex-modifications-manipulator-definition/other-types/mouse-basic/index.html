@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="alternate" type="application/rss&#43;xml" href="/docs/json/complex-modifications-manipulator-definition/other-types/mouse-basic/index.xml">
 <meta name="robots" content="index, follow">
 
 
@@ -17,37 +18,28 @@
 <link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
-<title>&#34;karabiner.json is not owned by a valid user&#34; error message in log | Karabiner-Elements</title>
-<meta name="description" content="If the following error message is appeared in log, your home directory owner ship is not valid.
-[warning] [grabber] /Users/.../karabiner.json is not owned by a valid user. The cause is that you are using an external storage and locating your home directory into the volume.
-You have to enable ownership on the external volume by the following command in Terminal.app.
-sudo diskutil enableOwnership disk99999s99999 (Replace disk99999s99999 with your disk identifier which you can find by diskutil list command.)">
-<meta property="og:url" content="/docs/help/troubleshooting/json-owner-is-invalid/">
+<title>mouse_basic | Karabiner-Elements</title>
+<meta name="description" content="mouse_basic allows you to invert or disable mouse movement.
+Note To use this setting, you need to enable your mouse in the Devices tab. { &#34;type&#34;: &#34;mouse_basic&#34;, &#34;flip&#34;: [&#34;x&#34;, &#34;y&#34;, &#34;vertical_wheel&#34;, &#34;horizontal_wheel&#34;], &#34;swap&#34;: [&#34;xy&#34;, &#34;wheels&#34;], &#34;discard&#34;: [&#34;x&#34;, &#34;y&#34;, &#34;vertical_wheel&#34;, &#34;horizontal_wheel&#34;] &#34;conditions&#34;: ..., } Key Required Description type Required &#34;mouse_basic&#34; is specified flip Optional An array of directions you want to invert. swap Optional Use &#34;xy&#34; if you want to rotate the mouse cursor movement by 90 degrees. Use it together with flip. discard Optional An array of directions in which events should not be sent. conditions Optional Same as basic.conditions Caution When using discard, make sure to explicitly specify the device using conditions. Otherwise, there’s a risk that the mouse cursor may become completely unmovable. Example Disable the scroll wheel on Logitech mice.">
+<meta property="og:url" content="/docs/json/complex-modifications-manipulator-definition/other-types/mouse-basic/">
   <meta property="og:site_name" content="Karabiner-Elements">
-  <meta property="og:title" content="&#34;karabiner.json is not owned by a valid user&#34; error message in log">
-  <meta property="og:description" content="If the following error message is appeared in log, your home directory owner ship is not valid.
-[warning] [grabber] /Users/.../karabiner.json is not owned by a valid user. The cause is that you are using an external storage and locating your home directory into the volume.
-You have to enable ownership on the external volume by the following command in Terminal.app.
-sudo diskutil enableOwnership disk99999s99999 (Replace disk99999s99999 with your disk identifier which you can find by diskutil list command.)">
+  <meta property="og:title" content="mouse_basic">
+  <meta property="og:description" content="mouse_basic allows you to invert or disable mouse movement.
+Note To use this setting, you need to enable your mouse in the Devices tab. { &#34;type&#34;: &#34;mouse_basic&#34;, &#34;flip&#34;: [&#34;x&#34;, &#34;y&#34;, &#34;vertical_wheel&#34;, &#34;horizontal_wheel&#34;], &#34;swap&#34;: [&#34;xy&#34;, &#34;wheels&#34;], &#34;discard&#34;: [&#34;x&#34;, &#34;y&#34;, &#34;vertical_wheel&#34;, &#34;horizontal_wheel&#34;] &#34;conditions&#34;: ..., } Key Required Description type Required &#34;mouse_basic&#34; is specified flip Optional An array of directions you want to invert. swap Optional Use &#34;xy&#34; if you want to rotate the mouse cursor movement by 90 degrees. Use it together with flip. discard Optional An array of directions in which events should not be sent. conditions Optional Same as basic.conditions Caution When using discard, make sure to explicitly specify the device using conditions. Otherwise, there’s a risk that the mouse cursor may become completely unmovable. Example Disable the scroll wheel on Logitech mice.">
   <meta property="og:locale" content="en">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="docs">
+  <meta property="og:type" content="website">
     <meta property="og:image" content="https://karabiner-elements.pqrs.org/images/logo.png">
 
-  <meta itemprop="name" content="&#34;karabiner.json is not owned by a valid user&#34; error message in log">
-  <meta itemprop="description" content="If the following error message is appeared in log, your home directory owner ship is not valid.
-[warning] [grabber] /Users/.../karabiner.json is not owned by a valid user. The cause is that you are using an external storage and locating your home directory into the volume.
-You have to enable ownership on the external volume by the following command in Terminal.app.
-sudo diskutil enableOwnership disk99999s99999 (Replace disk99999s99999 with your disk identifier which you can find by diskutil list command.)">
-  <meta itemprop="wordCount" content="78">
+  <meta itemprop="name" content="mouse_basic">
+  <meta itemprop="description" content="mouse_basic allows you to invert or disable mouse movement.
+Note To use this setting, you need to enable your mouse in the Devices tab. { &#34;type&#34;: &#34;mouse_basic&#34;, &#34;flip&#34;: [&#34;x&#34;, &#34;y&#34;, &#34;vertical_wheel&#34;, &#34;horizontal_wheel&#34;], &#34;swap&#34;: [&#34;xy&#34;, &#34;wheels&#34;], &#34;discard&#34;: [&#34;x&#34;, &#34;y&#34;, &#34;vertical_wheel&#34;, &#34;horizontal_wheel&#34;] &#34;conditions&#34;: ..., } Key Required Description type Required &#34;mouse_basic&#34; is specified flip Optional An array of directions you want to invert. swap Optional Use &#34;xy&#34; if you want to rotate the mouse cursor movement by 90 degrees. Use it together with flip. discard Optional An array of directions in which events should not be sent. conditions Optional Same as basic.conditions Caution When using discard, make sure to explicitly specify the device using conditions. Otherwise, there’s a risk that the mouse cursor may become completely unmovable. Example Disable the scroll wheel on Logitech mice.">
+  <meta itemprop="wordCount" content="217">
   <meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://karabiner-elements.pqrs.org/images/logo.png">
-  <meta name="twitter:title" content="&#34;karabiner.json is not owned by a valid user&#34; error message in log">
-  <meta name="twitter:description" content="If the following error message is appeared in log, your home directory owner ship is not valid.
-[warning] [grabber] /Users/.../karabiner.json is not owned by a valid user. The cause is that you are using an external storage and locating your home directory into the volume.
-You have to enable ownership on the external volume by the following command in Terminal.app.
-sudo diskutil enableOwnership disk99999s99999 (Replace disk99999s99999 with your disk identifier which you can find by diskutil list command.)">
+  <meta name="twitter:title" content="mouse_basic">
+  <meta name="twitter:description" content="mouse_basic allows you to invert or disable mouse movement.
+Note To use this setting, you need to enable your mouse in the Devices tab. { &#34;type&#34;: &#34;mouse_basic&#34;, &#34;flip&#34;: [&#34;x&#34;, &#34;y&#34;, &#34;vertical_wheel&#34;, &#34;horizontal_wheel&#34;], &#34;swap&#34;: [&#34;xy&#34;, &#34;wheels&#34;], &#34;discard&#34;: [&#34;x&#34;, &#34;y&#34;, &#34;vertical_wheel&#34;, &#34;horizontal_wheel&#34;] &#34;conditions&#34;: ..., } Key Required Description type Required &#34;mouse_basic&#34; is specified flip Optional An array of directions you want to invert. swap Optional Use &#34;xy&#34; if you want to rotate the mouse cursor movement by 90 degrees. Use it together with flip. discard Optional An array of directions in which events should not be sent. conditions Optional Same as basic.conditions Caution When using discard, make sure to explicitly specify the device using conditions. Otherwise, there’s a risk that the mouse cursor may become completely unmovable. Example Disable the scroll wheel on Logitech mice.">
 <link rel="preload" href="/scss/main.min.2022d05fcab1f8ab92474604b2f88572e0e471c5b1d7c83f82a4d9f4e3d75646.css" as="style" integrity="sha256-ICLQX8qx&#43;KuSR0YEsviFcuDkccWx18g/gqTZ9OPXVkY=" crossorigin="anonymous">
 <link href="/scss/main.min.2022d05fcab1f8ab92474604b2f88572e0e471c5b1d7c83f82a4d9f4e3d75646.css" rel="stylesheet" integrity="sha256-ICLQX8qx&#43;KuSR0YEsviFcuDkccWx18g/gqTZ9OPXVkY=" crossorigin="anonymous">
 <script
@@ -60,7 +52,7 @@ sudo diskutil enableOwnership disk99999s99999 (Replace disk99999s99999 with your
   crossorigin="anonymous"></script>
 
   </head>
-  <body class="td-page">
+  <body class="td-section">
     <header>
       <nav class="td-navbar js-navbar-scroll" data-bs-theme="dark">
 <div class="container-fluid flex-column flex-md-row">
@@ -270,13 +262,13 @@ sudo diskutil enableOwnership disk99999s99999 (Replace disk99999s99999 with your
   </ul>
 </li>
   </ul>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docshelp-li">
-  <input type="checkbox" id="m-docshelp-check" checked/>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docshelp-li">
+  <input type="checkbox" id="m-docshelp-check"/>
   <label for="m-docshelp-check"><a href="/docs/help/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docshelp"><span class="">Help</span></a></label>
   
   <ul class="ul-2 foldable">
-    <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docshelptroubleshooting-li">
-  <input type="checkbox" id="m-docshelptroubleshooting-check" checked/>
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docshelptroubleshooting-li">
+  <input type="checkbox" id="m-docshelptroubleshooting-check"/>
   <label for="m-docshelptroubleshooting-check"><a href="/docs/help/troubleshooting/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docshelptroubleshooting"><span class="">Troubleshooting</span></a></label>
   
   <ul class="ul-3 foldable">
@@ -316,9 +308,9 @@ sudo diskutil enableOwnership disk99999s99999 (Replace disk99999s99999 with your
   <input type="checkbox" id="m-docshelptroubleshootingcannot-use-some-key-combination-check"/>
   <label for="m-docshelptroubleshootingcannot-use-some-key-combination-check"><a href="/docs/help/troubleshooting/cannot-use-some-key-combination/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-docshelptroubleshootingcannot-use-some-key-combination"><span class="">Cannot use some three key combinations (key event is not fired)</span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-docshelptroubleshootingjson-owner-is-invalid-li">
-  <input type="checkbox" id="m-docshelptroubleshootingjson-owner-is-invalid-check" checked/>
-  <label for="m-docshelptroubleshootingjson-owner-is-invalid-check"><a href="/docs/help/troubleshooting/json-owner-is-invalid/" class="align-left ps-0  active td-sidebar-link td-sidebar-link__page" id="m-docshelptroubleshootingjson-owner-is-invalid"><span class="td-sidebar-nav-active-item">&#34;karabiner.json is not owned by a valid user&#34; error message in log</span></a></label>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docshelptroubleshootingjson-owner-is-invalid-li">
+  <input type="checkbox" id="m-docshelptroubleshootingjson-owner-is-invalid-check"/>
+  <label for="m-docshelptroubleshootingjson-owner-is-invalid-check"><a href="/docs/help/troubleshooting/json-owner-is-invalid/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-docshelptroubleshootingjson-owner-is-invalid"><span class="">&#34;karabiner.json is not owned by a valid user&#34; error message in log</span></a></label>
   
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docshelptroubleshootingplaceholder-developer-li">
   <input type="checkbox" id="m-docshelptroubleshootingplaceholder-developer-check"/>
@@ -418,8 +410,8 @@ sudo diskutil enableOwnership disk99999s99999 (Replace disk99999s99999 with your
   <input type="checkbox" id="m-docsreleasenotes-check"/>
   <label for="m-docsreleasenotes-check"><a href="/docs/releasenotes/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-docsreleasenotes"><span class="">Release notes</span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsjson-li">
-  <input type="checkbox" id="m-docsjson-check"/>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docsjson-li">
+  <input type="checkbox" id="m-docsjson-check" checked/>
   <label for="m-docsjson-check"><a href="/docs/json/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docsjson"><span class="">Karabiner Configuration Reference Manual</span></a></label>
   
   <ul class="ul-2 foldable">
@@ -439,8 +431,8 @@ sudo diskutil enableOwnership disk99999s99999 (Replace disk99999s99999 with your
   <input type="checkbox" id="m-docsjsonroot-data-structure-check"/>
   <label for="m-docsjsonroot-data-structure-check"><a href="/docs/json/root-data-structure/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-docsjsonroot-data-structure"><span class="">karabiner.json data structure</span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsjsoncomplex-modifications-manipulator-definition-li">
-  <input type="checkbox" id="m-docsjsoncomplex-modifications-manipulator-definition-check"/>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docsjsoncomplex-modifications-manipulator-definition-li">
+  <input type="checkbox" id="m-docsjsoncomplex-modifications-manipulator-definition-check" checked/>
   <label for="m-docsjsoncomplex-modifications-manipulator-definition-check"><a href="/docs/json/complex-modifications-manipulator-definition/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docsjsoncomplex-modifications-manipulator-definition"><span class="">complex_modifications manipulator definition</span></a></label>
   
   <ul class="ul-3 foldable">
@@ -592,14 +584,14 @@ sudo diskutil enableOwnership disk99999s99999 (Replace disk99999s99999 with your
   
 </li>
   </ul>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsjsoncomplex-modifications-manipulator-definitionother-types-li">
-  <input type="checkbox" id="m-docsjsoncomplex-modifications-manipulator-definitionother-types-check"/>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docsjsoncomplex-modifications-manipulator-definitionother-types-li">
+  <input type="checkbox" id="m-docsjsoncomplex-modifications-manipulator-definitionother-types-check" checked/>
   <label for="m-docsjsoncomplex-modifications-manipulator-definitionother-types-check"><a href="/docs/json/complex-modifications-manipulator-definition/other-types/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docsjsoncomplex-modifications-manipulator-definitionother-types"><span class="">Other types</span></a></label>
   
   <ul class="ul-4 foldable">
-    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsjsoncomplex-modifications-manipulator-definitionother-typesmouse-basic-li">
-  <input type="checkbox" id="m-docsjsoncomplex-modifications-manipulator-definitionother-typesmouse-basic-check"/>
-  <label for="m-docsjsoncomplex-modifications-manipulator-definitionother-typesmouse-basic-check"><a href="/docs/json/complex-modifications-manipulator-definition/other-types/mouse-basic/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docsjsoncomplex-modifications-manipulator-definitionother-typesmouse-basic"><span class="">mouse_basic</span></a></label>
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-docsjsoncomplex-modifications-manipulator-definitionother-typesmouse-basic-li">
+  <input type="checkbox" id="m-docsjsoncomplex-modifications-manipulator-definitionother-typesmouse-basic-check" checked/>
+  <label for="m-docsjsoncomplex-modifications-manipulator-definitionother-typesmouse-basic-check"><a href="/docs/json/complex-modifications-manipulator-definition/other-types/mouse-basic/" class="align-left ps-0  active td-sidebar-link td-sidebar-link__section" id="m-docsjsoncomplex-modifications-manipulator-definitionother-typesmouse-basic"><span class="td-sidebar-nav-active-item">mouse_basic</span></a></label>
   
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsjsoncomplex-modifications-manipulator-definitionother-typesmouse-motion-to-scroll-li">
   <input type="checkbox" id="m-docsjsoncomplex-modifications-manipulator-definitionother-typesmouse-motion-to-scroll-check"/>
@@ -649,7 +641,11 @@ sudo diskutil enableOwnership disk99999s99999 (Replace disk99999s99999 with your
 
 
 
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#example">Example</a></li>
+  </ul>
+</nav>
 
 
 
@@ -665,29 +661,150 @@ sudo diskutil enableOwnership disk99999s99999 (Replace disk99999s99999 with your
   <li class="breadcrumb-item">
     <a href="/docs/">Documentation</a></li>
   <li class="breadcrumb-item">
-    <a href="/docs/help/">Help</a></li>
+    <a href="/docs/json/">Karabiner Configuration Reference Manual</a></li>
   <li class="breadcrumb-item">
-    <a href="/docs/help/troubleshooting/">Troubleshooting</a></li>
+    <a href="/docs/json/complex-modifications-manipulator-definition/">complex_modifications manipulator definition</a></li>
+  <li class="breadcrumb-item">
+    <a href="/docs/json/complex-modifications-manipulator-definition/other-types/">Other types</a></li>
   <li class="breadcrumb-item active" aria-current="page">
-    &#34;karabiner.json is not owned by a valid user&#34; error message in log</li>
+    mouse_basic</li>
   </ol>
 </nav>
 <div class="td-content">
-	<h1>&#34;karabiner.json is not owned by a valid user&#34; error message in log</h1>
-	
+	<h1>mouse_basic</h1>
+  
 	<header class="article-meta">
 		
 </header>
-	<p>If the following error message is appeared in log, your home directory owner ship is not valid.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>[warning] [grabber] /Users/.../karabiner.json is not owned by a valid user.
-</span></span></code></pre></div><p>The cause is that you are using an external storage and locating your home directory into the volume.</p>
-<p>You have to enable ownership on the external volume by the following command in Terminal.app.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo diskutil enableOwnership disk99999s99999
-</span></span></code></pre></div><p>(Replace <code>disk99999s99999</code> with your disk identifier which you can find by <code>diskutil list</code> command.)</p>
+	<p><code>mouse_basic</code> allows you to invert or disable mouse movement.</p>
 
-	
+
+<div class="alert alert-primary" role="alert">
+<h4 class="alert-heading">Note</h4>
+
+    To use this setting, you need to enable your mouse in the Devices tab.
+
 </div>
 
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;type&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;mouse_basic&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;flip&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">&#34;x&#34;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">&#34;y&#34;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">&#34;vertical_wheel&#34;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">&#34;horizontal_wheel&#34;</span><span style="color:#000;font-weight:bold">],</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;swap&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">&#34;xy&#34;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">&#34;wheels&#34;</span><span style="color:#000;font-weight:bold">],</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;discard&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">&#34;x&#34;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">&#34;y&#34;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">&#34;vertical_wheel&#34;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">&#34;horizontal_wheel&#34;</span><span style="color:#000;font-weight:bold">]</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#4e9a06">&#34;conditions&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#a40000">...</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></div><table>
+  <thead>
+      <tr>
+          <th>Key</th>
+          <th>Required</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>type</code></td>
+          <td><strong>Required</strong></td>
+          <td><code>&quot;mouse_basic&quot;</code> is specified</td>
+      </tr>
+      <tr>
+          <td><code>flip</code></td>
+          <td>Optional</td>
+          <td>An array of directions you want to invert.</td>
+      </tr>
+      <tr>
+          <td><code>swap</code></td>
+          <td>Optional</td>
+          <td>Use <code>&quot;xy&quot;</code> if you want to rotate the mouse cursor movement by 90 degrees. Use it together with <code>flip</code>.</td>
+      </tr>
+      <tr>
+          <td><code>discard</code></td>
+          <td>Optional</td>
+          <td>An array of directions in which events should not be sent.</td>
+      </tr>
+      <tr>
+          <td><code>conditions</code></td>
+          <td>Optional</td>
+          <td>Same as <a href="/docs/json/complex-modifications-manipulator-definition/conditions/">basic.conditions</a></td>
+      </tr>
+  </tbody>
+</table>
+
+
+<div class="alert alert-danger" role="alert">
+<h4 class="alert-heading">Caution</h4>
+
+    When using discard, make sure to explicitly specify the device using conditions.
+Otherwise, there&rsquo;s a risk that the mouse cursor may become completely unmovable.
+
+</div>
+
+<h2 id="example">Example</h2>
+<p>Disable the scroll wheel on Logitech mice.</p>
+<div class="highlight" style="margin-top: 0rem; margin-bottom: -2rem">
+  <a
+    class="d-inline-block"
+    style="
+      text-decoration: none;
+      background-color: #f8f8f8;
+      padding: 0.5rem;
+      border: solid var(--bs-border-color);
+      border-width: 1px 1px 0 1px;
+    "
+    href="/docs/manual/configuration/add-your-own-complex-modifications/"
+    >💡 How to use this example</a
+  >
+</div>
+
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;description&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;Disable the scroll wheel on Logitech mice&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;manipulators&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;type&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;mouse_basic&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;discard&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">&#34;vertical_wheel&#34;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">&#34;horizontal_wheel&#34;</span><span style="color:#000;font-weight:bold">],</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;conditions&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;type&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;device_if&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;identifiers&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[{</span> <span style="color:#204a87;font-weight:bold">&#34;vendor_id&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#0000cf;font-weight:bold">1133</span> <span style="color:#000;font-weight:bold">}]</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">]</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">]</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></div><p>Reverse the scroll wheel direction in the Windows app.</p>
+<div class="highlight" style="margin-top: 0rem; margin-bottom: -2rem">
+  <a
+    class="d-inline-block"
+    style="
+      text-decoration: none;
+      background-color: #f8f8f8;
+      padding: 0.5rem;
+      border: solid var(--bs-border-color);
+      border-width: 1px 1px 0 1px;
+    "
+    href="/docs/manual/configuration/add-your-own-complex-modifications/"
+    >💡 How to use this example</a
+  >
+</div>
+
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;description&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;Reverse the scroll wheel direction in the Windows app&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;manipulators&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;type&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;mouse_basic&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;flip&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">&#34;vertical_wheel&#34;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">&#34;horizontal_wheel&#34;</span><span style="color:#000;font-weight:bold">],</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;conditions&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;type&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;frontmost_application_if&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;bundle_identifiers&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">&#34;^com\\.microsoft\\.rdc\\.macos$&#34;</span><span style="color:#000;font-weight:bold">]</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">]</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">]</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></div>
+	</div>
 
           </main>
         </div>

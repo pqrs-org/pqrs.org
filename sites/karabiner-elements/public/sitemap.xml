@@ -38,7 +38,7 @@
   </url><url>
     <loc>/docs/help/advanced-topics/installed-files/</loc>
   </url><url>
-    <loc>/docs/json/complex-modifications-manipulator-definition/other-types/mouse-motion-to-scroll/</loc>
+    <loc>/docs/json/complex-modifications-manipulator-definition/other-types/mouse-basic/</loc>
   </url><url>
     <loc>/docs/json/extra/multitouch-extension/</loc>
   </url><url>
@@ -71,6 +71,8 @@
     <loc>/docs/help/troubleshooting/stopped-working-after-macos-update/</loc>
   </url><url>
     <loc>/docs/manual/</loc>
+  </url><url>
+    <loc>/docs/json/complex-modifications-manipulator-definition/other-types/mouse-motion-to-scroll/</loc>
   </url><url>
     <loc>/docs/manual/operation/</loc>
   </url><url>
