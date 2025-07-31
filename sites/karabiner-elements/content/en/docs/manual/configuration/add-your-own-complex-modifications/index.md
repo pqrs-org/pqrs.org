@@ -23,3 +23,59 @@ You can save by using the <kbd>command + s</kbd> shortcut as well.
 When making changes, [Karabiner-EventViewer](/docs/manual/operation/eventviewer/) and [Karabiner Configuration Reference Manual](/docs/json/) can be used to confirm the key names and how to write rules.
 
 {{< local-image src="images/own-rule-2@2x.png" >}}
+
+
+{{% alert title="Tip" color="primary" %}}
+You can target specific keyboard with complex modifications e.g.
+```json
+{
+    "description": "fix 2: left_command+3 -> 2, left_shift+3 -> @ (Internal keyboard only)",
+    "manipulators": [
+        {
+            "conditions": [
+                {
+                    "identifiers": [{ "is_built_in_keyboard": true }],
+                    "type": "device_if"
+                }
+            ],
+            "from": {
+                "key_code": "3",
+                "modifiers": {
+                    "mandatory": ["left_command"],
+                    "optional": ["any"]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "2",
+                    "modifiers": []
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "identifiers": [{ "is_built_in_keyboard": true }],
+                    "type": "device_if"
+                }
+            ],
+            "from": {
+                "key_code": "3",
+                "modifiers": {
+                    "mandatory": ["left_shift"],
+                    "optional": ["any"]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "2",
+                    "modifiers": ["left_shift"]
+                }
+            ],
+            "type": "basic"
+        }
+    ]
+}
+```
+{{% /alert %}}
