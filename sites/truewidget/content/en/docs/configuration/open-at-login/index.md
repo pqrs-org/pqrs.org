@@ -3,8 +3,8 @@ title: 'Open at login'
 weight: 300
 ---
 
-You can launch TrueWidget automaticaly at login.
+You can configure whether TrueWidget launches at login in Settings.
 
 1.  [Open Settings](../open-settings/).
-2.  Enable `Open at login`.
+2.  Modify `Open at login` setting.
     {{< local-image src="images/open-at-login@2x.png" >}}
