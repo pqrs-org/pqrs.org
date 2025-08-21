@@ -17,33 +17,33 @@
 <link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
-<title>frontmost_application_if, frontmost_application_unless | Karabiner-Elements</title>
-<meta name="description" content="Change an event if/unless the frontmost application is the specified application.
-Example Change control-h key to delete_or_backspace except in Terminal.
-💡 How to use this example { &#34;description&#34;: &#34;Change control-h to delete_or_backspace except in Terminal&#34;, &#34;manipulators&#34;: [ { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;h&#34;, &#34;modifiers&#34;: { &#34;mandatory&#34;: [&#34;control&#34;], &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [{ &#34;key_code&#34;: &#34;delete_or_backspace&#34; }], &#34;conditions&#34;: [ { &#34;type&#34;: &#34;frontmost_application_unless&#34;, &#34;bundle_identifiers&#34;: [&#34;^com\\.apple\\.Terminal$&#34;] } ] } ] } Specification { &#34;type&#34;: &#34;frontmost_application_if&#34;, &#34;bundle_identifiers&#34;: [ bundle identifier regex, bundle identifier regex, ... ], &#34;file_paths&#34;: [ file path regex, file path regex, ... ] } Name Required Description type Required &#34;frontmost_application_if&#34; or &#34;frontmost_application_unless&#34; bundle_identifiers Optional Bundle identifier regexs such as [&#34;^com\\.apple\\.Terminal$&#34;, &#34;^com\\.googlecode\\.iterm2$&#34;] file_paths Optional File path regexs such as [&#34;/Finder$&#34;] description Optional A human-readable comment Multiple bundle identifiers or file paths Multiple entries in bundle_identifiers and file_paths are joined by “or”.">
-<meta property="og:url" content="/docs/json/complex-modifications-manipulator-definition/conditions/frontmost-application/">
+<title>Set environment variables | Karabiner-Elements</title>
+<meta name="description" content="karabiner_environment is available since Karabiner-Elements 15.5.5. Karabiner-Elements references several environment variables internally. Additionally, the shell_command and open_application used in Complex Modifications are also affected by environment variables. To support this, we provide a way to define them.
+Karabiner-Elements loads environment variables from /Library/Application Support/org.pqrs/config/karabiner_environment if the file exists. If you define PATH and others there, shell commands and opened apps via shell_command and open_application inherit these environment variables.
+Example You need to run your editor with root privileges to edit the karabiner_environment file. For example, you can edit it by running the following commands in Terminal.">
+<meta property="og:url" content="/docs/help/advanced-topics/set-environment-variables/">
   <meta property="og:site_name" content="Karabiner-Elements">
-  <meta property="og:title" content="frontmost_application_if, frontmost_application_unless">
-  <meta property="og:description" content="Change an event if/unless the frontmost application is the specified application.
-Example Change control-h key to delete_or_backspace except in Terminal.
-💡 How to use this example { &#34;description&#34;: &#34;Change control-h to delete_or_backspace except in Terminal&#34;, &#34;manipulators&#34;: [ { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;h&#34;, &#34;modifiers&#34;: { &#34;mandatory&#34;: [&#34;control&#34;], &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [{ &#34;key_code&#34;: &#34;delete_or_backspace&#34; }], &#34;conditions&#34;: [ { &#34;type&#34;: &#34;frontmost_application_unless&#34;, &#34;bundle_identifiers&#34;: [&#34;^com\\.apple\\.Terminal$&#34;] } ] } ] } Specification { &#34;type&#34;: &#34;frontmost_application_if&#34;, &#34;bundle_identifiers&#34;: [ bundle identifier regex, bundle identifier regex, ... ], &#34;file_paths&#34;: [ file path regex, file path regex, ... ] } Name Required Description type Required &#34;frontmost_application_if&#34; or &#34;frontmost_application_unless&#34; bundle_identifiers Optional Bundle identifier regexs such as [&#34;^com\\.apple\\.Terminal$&#34;, &#34;^com\\.googlecode\\.iterm2$&#34;] file_paths Optional File path regexs such as [&#34;/Finder$&#34;] description Optional A human-readable comment Multiple bundle identifiers or file paths Multiple entries in bundle_identifiers and file_paths are joined by “or”.">
+  <meta property="og:title" content="Set environment variables">
+  <meta property="og:description" content="karabiner_environment is available since Karabiner-Elements 15.5.5. Karabiner-Elements references several environment variables internally. Additionally, the shell_command and open_application used in Complex Modifications are also affected by environment variables. To support this, we provide a way to define them.
+Karabiner-Elements loads environment variables from /Library/Application Support/org.pqrs/config/karabiner_environment if the file exists. If you define PATH and others there, shell commands and opened apps via shell_command and open_application inherit these environment variables.
+Example You need to run your editor with root privileges to edit the karabiner_environment file. For example, you can edit it by running the following commands in Terminal.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
     <meta property="og:image" content="https://karabiner-elements.pqrs.org/images/logo.png">
 
-  <meta itemprop="name" content="frontmost_application_if, frontmost_application_unless">
-  <meta itemprop="description" content="Change an event if/unless the frontmost application is the specified application.
-Example Change control-h key to delete_or_backspace except in Terminal.
-💡 How to use this example { &#34;description&#34;: &#34;Change control-h to delete_or_backspace except in Terminal&#34;, &#34;manipulators&#34;: [ { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;h&#34;, &#34;modifiers&#34;: { &#34;mandatory&#34;: [&#34;control&#34;], &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [{ &#34;key_code&#34;: &#34;delete_or_backspace&#34; }], &#34;conditions&#34;: [ { &#34;type&#34;: &#34;frontmost_application_unless&#34;, &#34;bundle_identifiers&#34;: [&#34;^com\\.apple\\.Terminal$&#34;] } ] } ] } Specification { &#34;type&#34;: &#34;frontmost_application_if&#34;, &#34;bundle_identifiers&#34;: [ bundle identifier regex, bundle identifier regex, ... ], &#34;file_paths&#34;: [ file path regex, file path regex, ... ] } Name Required Description type Required &#34;frontmost_application_if&#34; or &#34;frontmost_application_unless&#34; bundle_identifiers Optional Bundle identifier regexs such as [&#34;^com\\.apple\\.Terminal$&#34;, &#34;^com\\.googlecode\\.iterm2$&#34;] file_paths Optional File path regexs such as [&#34;/Finder$&#34;] description Optional A human-readable comment Multiple bundle identifiers or file paths Multiple entries in bundle_identifiers and file_paths are joined by “or”.">
-  <meta itemprop="wordCount" content="205">
+  <meta itemprop="name" content="Set environment variables">
+  <meta itemprop="description" content="karabiner_environment is available since Karabiner-Elements 15.5.5. Karabiner-Elements references several environment variables internally. Additionally, the shell_command and open_application used in Complex Modifications are also affected by environment variables. To support this, we provide a way to define them.
+Karabiner-Elements loads environment variables from /Library/Application Support/org.pqrs/config/karabiner_environment if the file exists. If you define PATH and others there, shell commands and opened apps via shell_command and open_application inherit these environment variables.
+Example You need to run your editor with root privileges to edit the karabiner_environment file. For example, you can edit it by running the following commands in Terminal.">
+  <meta itemprop="wordCount" content="279">
   <meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://karabiner-elements.pqrs.org/images/logo.png">
-  <meta name="twitter:title" content="frontmost_application_if, frontmost_application_unless">
-  <meta name="twitter:description" content="Change an event if/unless the frontmost application is the specified application.
-Example Change control-h key to delete_or_backspace except in Terminal.
-💡 How to use this example { &#34;description&#34;: &#34;Change control-h to delete_or_backspace except in Terminal&#34;, &#34;manipulators&#34;: [ { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;h&#34;, &#34;modifiers&#34;: { &#34;mandatory&#34;: [&#34;control&#34;], &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [{ &#34;key_code&#34;: &#34;delete_or_backspace&#34; }], &#34;conditions&#34;: [ { &#34;type&#34;: &#34;frontmost_application_unless&#34;, &#34;bundle_identifiers&#34;: [&#34;^com\\.apple\\.Terminal$&#34;] } ] } ] } Specification { &#34;type&#34;: &#34;frontmost_application_if&#34;, &#34;bundle_identifiers&#34;: [ bundle identifier regex, bundle identifier regex, ... ], &#34;file_paths&#34;: [ file path regex, file path regex, ... ] } Name Required Description type Required &#34;frontmost_application_if&#34; or &#34;frontmost_application_unless&#34; bundle_identifiers Optional Bundle identifier regexs such as [&#34;^com\\.apple\\.Terminal$&#34;, &#34;^com\\.googlecode\\.iterm2$&#34;] file_paths Optional File path regexs such as [&#34;/Finder$&#34;] description Optional A human-readable comment Multiple bundle identifiers or file paths Multiple entries in bundle_identifiers and file_paths are joined by “or”.">
+  <meta name="twitter:title" content="Set environment variables">
+  <meta name="twitter:description" content="karabiner_environment is available since Karabiner-Elements 15.5.5. Karabiner-Elements references several environment variables internally. Additionally, the shell_command and open_application used in Complex Modifications are also affected by environment variables. To support this, we provide a way to define them.
+Karabiner-Elements loads environment variables from /Library/Application Support/org.pqrs/config/karabiner_environment if the file exists. If you define PATH and others there, shell commands and opened apps via shell_command and open_application inherit these environment variables.
+Example You need to run your editor with root privileges to edit the karabiner_environment file. For example, you can edit it by running the following commands in Terminal.">
 <link rel="preload" href="/scss/main.min.2022d05fcab1f8ab92474604b2f88572e0e471c5b1d7c83f82a4d9f4e3d75646.css" as="style" integrity="sha256-ICLQX8qx&#43;KuSR0YEsviFcuDkccWx18g/gqTZ9OPXVkY=" crossorigin="anonymous">
 <link href="/scss/main.min.2022d05fcab1f8ab92474604b2f88572e0e471c5b1d7c83f82a4d9f4e3d75646.css" rel="stylesheet" integrity="sha256-ICLQX8qx&#43;KuSR0YEsviFcuDkccWx18g/gqTZ9OPXVkY=" crossorigin="anonymous">
 <script
@@ -266,8 +266,8 @@ Example Change control-h key to delete_or_backspace except in Terminal.
   </ul>
 </li>
   </ul>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docshelp-li">
-  <input type="checkbox" id="m-docshelp-check"/>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docshelp-li">
+  <input type="checkbox" id="m-docshelp-check" checked/>
   <label for="m-docshelp-check"><a href="/docs/help/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docshelp"><span class="">Help</span></a></label>
   
   <ul class="ul-2 foldable">
@@ -373,8 +373,8 @@ Example Change control-h key to delete_or_backspace except in Terminal.
   
 </li>
   </ul>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docshelpadvanced-topics-li">
-  <input type="checkbox" id="m-docshelpadvanced-topics-check"/>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docshelpadvanced-topics-li">
+  <input type="checkbox" id="m-docshelpadvanced-topics-check" checked/>
   <label for="m-docshelpadvanced-topics-check"><a href="/docs/help/advanced-topics/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docshelpadvanced-topics"><span class="">Advanced topics</span></a></label>
   
   <ul class="ul-3 foldable">
@@ -386,9 +386,9 @@ Example Change control-h key to delete_or_backspace except in Terminal.
   <input type="checkbox" id="m-docshelpadvanced-topicssecurity-check"/>
   <label for="m-docshelpadvanced-topicssecurity-check"><a href="/docs/help/advanced-topics/security/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-docshelpadvanced-topicssecurity"><span class="">Security</span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docshelpadvanced-topicsset-environment-variables-li">
-  <input type="checkbox" id="m-docshelpadvanced-topicsset-environment-variables-check"/>
-  <label for="m-docshelpadvanced-topicsset-environment-variables-check"><a href="/docs/help/advanced-topics/set-environment-variables/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-docshelpadvanced-topicsset-environment-variables"><span class="">Set environment variables</span></a></label>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-docshelpadvanced-topicsset-environment-variables-li">
+  <input type="checkbox" id="m-docshelpadvanced-topicsset-environment-variables-check" checked/>
+  <label for="m-docshelpadvanced-topicsset-environment-variables-check"><a href="/docs/help/advanced-topics/set-environment-variables/" class="align-left ps-0  active td-sidebar-link td-sidebar-link__page" id="m-docshelpadvanced-topicsset-environment-variables"><span class="td-sidebar-nav-active-item">Set environment variables</span></a></label>
   
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docshelpadvanced-topicsunknown-events-li">
   <input type="checkbox" id="m-docshelpadvanced-topicsunknown-events-check"/>
@@ -418,8 +418,8 @@ Example Change control-h key to delete_or_backspace except in Terminal.
   <input type="checkbox" id="m-docsreleasenotes-check"/>
   <label for="m-docsreleasenotes-check"><a href="/docs/releasenotes/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-docsreleasenotes"><span class="">Release notes</span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docsjson-li">
-  <input type="checkbox" id="m-docsjson-check" checked/>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsjson-li">
+  <input type="checkbox" id="m-docsjson-check"/>
   <label for="m-docsjson-check"><a href="/docs/json/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docsjson"><span class="">Karabiner Configuration Reference Manual</span></a></label>
   
   <ul class="ul-2 foldable">
@@ -439,8 +439,8 @@ Example Change control-h key to delete_or_backspace except in Terminal.
   <input type="checkbox" id="m-docsjsonroot-data-structure-check"/>
   <label for="m-docsjsonroot-data-structure-check"><a href="/docs/json/root-data-structure/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-docsjsonroot-data-structure"><span class="">karabiner.json data structure</span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docsjsoncomplex-modifications-manipulator-definition-li">
-  <input type="checkbox" id="m-docsjsoncomplex-modifications-manipulator-definition-check" checked/>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsjsoncomplex-modifications-manipulator-definition-li">
+  <input type="checkbox" id="m-docsjsoncomplex-modifications-manipulator-definition-check"/>
   <label for="m-docsjsoncomplex-modifications-manipulator-definition-check"><a href="/docs/json/complex-modifications-manipulator-definition/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docsjsoncomplex-modifications-manipulator-definition"><span class="">complex_modifications manipulator definition</span></a></label>
   
   <ul class="ul-3 foldable">
@@ -561,14 +561,14 @@ Example Change control-h key to delete_or_backspace except in Terminal.
   <input type="checkbox" id="m-docsjsoncomplex-modifications-manipulator-definitionto-delayed-action-check"/>
   <label for="m-docsjsoncomplex-modifications-manipulator-definitionto-delayed-action-check"><a href="/docs/json/complex-modifications-manipulator-definition/to-delayed-action/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docsjsoncomplex-modifications-manipulator-definitionto-delayed-action"><span class="">to_delayed_action</span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docsjsoncomplex-modifications-manipulator-definitionconditions-li">
-  <input type="checkbox" id="m-docsjsoncomplex-modifications-manipulator-definitionconditions-check" checked/>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsjsoncomplex-modifications-manipulator-definitionconditions-li">
+  <input type="checkbox" id="m-docsjsoncomplex-modifications-manipulator-definitionconditions-check"/>
   <label for="m-docsjsoncomplex-modifications-manipulator-definitionconditions-check"><a href="/docs/json/complex-modifications-manipulator-definition/conditions/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docsjsoncomplex-modifications-manipulator-definitionconditions"><span class="">Conditions</span></a></label>
   
   <ul class="ul-4 foldable">
-    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-docsjsoncomplex-modifications-manipulator-definitionconditionsfrontmost-application-li">
-  <input type="checkbox" id="m-docsjsoncomplex-modifications-manipulator-definitionconditionsfrontmost-application-check" checked/>
-  <label for="m-docsjsoncomplex-modifications-manipulator-definitionconditionsfrontmost-application-check"><a href="/docs/json/complex-modifications-manipulator-definition/conditions/frontmost-application/" class="align-left ps-0  active td-sidebar-link td-sidebar-link__page" id="m-docsjsoncomplex-modifications-manipulator-definitionconditionsfrontmost-application"><span class="td-sidebar-nav-active-item">frontmost_application_if, frontmost_application_unless</span></a></label>
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsjsoncomplex-modifications-manipulator-definitionconditionsfrontmost-application-li">
+  <input type="checkbox" id="m-docsjsoncomplex-modifications-manipulator-definitionconditionsfrontmost-application-check"/>
+  <label for="m-docsjsoncomplex-modifications-manipulator-definitionconditionsfrontmost-application-check"><a href="/docs/json/complex-modifications-manipulator-definition/conditions/frontmost-application/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-docsjsoncomplex-modifications-manipulator-definitionconditionsfrontmost-application"><span class="">frontmost_application_if, frontmost_application_unless</span></a></label>
   
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsjsoncomplex-modifications-manipulator-definitionconditionsdevice-li">
   <input type="checkbox" id="m-docsjsoncomplex-modifications-manipulator-definitionconditionsdevice-check"/>
@@ -652,12 +652,7 @@ Example Change control-h key to delete_or_backspace except in Terminal.
 <nav id="TableOfContents">
   <ul>
     <li><a href="#example">Example</a></li>
-    <li><a href="#specification">Specification</a>
-      <ul>
-        <li><a href="#multiple-bundle-identifiers-or-file-paths">Multiple bundle identifiers or file paths</a></li>
-        <li><a href="#investigate-the-bundle-identifier-and-file-path">Investigate the bundle identifier and file path</a></li>
-      </ul>
-    </li>
+    <li><a href="#change-where-karabinerjson-is-saved">Change where karabiner.json is saved</a></li>
   </ul>
 </nav>
 
@@ -675,127 +670,88 @@ Example Change control-h key to delete_or_backspace except in Terminal.
   <li class="breadcrumb-item">
     <a href="/docs/">Documentation</a></li>
   <li class="breadcrumb-item">
-    <a href="/docs/json/">Karabiner Configuration Reference Manual</a></li>
+    <a href="/docs/help/">Help</a></li>
   <li class="breadcrumb-item">
-    <a href="/docs/json/complex-modifications-manipulator-definition/">complex_modifications manipulator definition</a></li>
-  <li class="breadcrumb-item">
-    <a href="/docs/json/complex-modifications-manipulator-definition/conditions/">Conditions</a></li>
+    <a href="/docs/help/advanced-topics/">Advanced topics</a></li>
   <li class="breadcrumb-item active" aria-current="page">
-    frontmost_application_if, frontmost_application_unless</li>
+    Set environment variables</li>
   </ol>
 </nav>
 <div class="td-content">
-	<h1>frontmost_application_if, frontmost_application_unless</h1>
+	<h1>Set environment variables</h1>
 	
 	<header class="article-meta">
 		
 </header>
-	<p>Change an event if/unless the frontmost application is the specified application.</p>
-<h2 id="example">Example</h2>
-<p>Change <code>control-h</code> key to <code>delete_or_backspace</code> except in Terminal.</p>
-<div class="highlight" style="margin-top: 0rem; margin-bottom: -2rem">
-  <a
-    class="d-inline-block"
-    style="
-      text-decoration: none;
-      background-color: #f8f8f8;
-      padding: 0.5rem;
-      border: solid var(--bs-border-color);
-      border-width: 1px 1px 0 1px;
-    "
-    href="/docs/manual/configuration/add-your-own-complex-modifications/"
-    >💡 How to use this example</a
-  >
+	
+
+<div class="alert alert-info" role="alert">
+
+
+    <code>karabiner_environment</code> is available since Karabiner-Elements 15.5.5.
+
 </div>
 
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;description&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;Change control-h to delete_or_backspace except in Terminal&#34;</span><span style="color:#000;font-weight:bold">,</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;manipulators&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">{</span>
-</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;type&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;basic&#34;</span><span style="color:#000;font-weight:bold">,</span>
-</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;from&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
-</span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">&#34;key_code&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;h&#34;</span><span style="color:#000;font-weight:bold">,</span>
-</span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">&#34;modifiers&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
-</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;mandatory&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">&#34;control&#34;</span><span style="color:#000;font-weight:bold">],</span>
-</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;optional&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">&#34;any&#34;</span><span style="color:#000;font-weight:bold">]</span>
-</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">}</span>
-</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">},</span>
-</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;to&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[{</span> <span style="color:#204a87;font-weight:bold">&#34;key_code&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;delete_or_backspace&#34;</span> <span style="color:#000;font-weight:bold">}],</span>
-</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;conditions&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
-</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">{</span>
-</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;type&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;frontmost_application_unless&#34;</span><span style="color:#000;font-weight:bold">,</span>
-</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;bundle_identifiers&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">&#34;^com\\.apple\\.Terminal$&#34;</span><span style="color:#000;font-weight:bold">]</span>
-</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">}</span>
-</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">]</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">}</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">]</span>
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
-</span></span></code></pre></div><hr>
-<h2 id="specification">Specification</h2>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;type&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;frontmost_application_if&#34;</span><span style="color:#000;font-weight:bold">,</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;bundle_identifiers&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#a40000">bundle</span> <span style="color:#a40000">identifier</span> <span style="color:#a40000">regex</span><span style="color:#000;font-weight:bold">,</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#a40000">bundle</span> <span style="color:#a40000">identifier</span> <span style="color:#a40000">regex</span><span style="color:#000;font-weight:bold">,</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#a40000">...</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">],</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;file_paths&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#a40000">file</span> <span style="color:#a40000">path</span> <span style="color:#a40000">regex</span><span style="color:#000;font-weight:bold">,</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#a40000">file</span> <span style="color:#a40000">path</span> <span style="color:#a40000">regex</span><span style="color:#000;font-weight:bold">,</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#a40000">...</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">]</span>
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
-</span></span></code></pre></div><table>
-  <thead>
-      <tr>
-          <th>Name</th>
-          <th>Required</th>
-          <th>Description</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td><code>type</code></td>
-          <td><strong>Required</strong></td>
-          <td><code>&quot;frontmost_application_if&quot;</code> or <code>&quot;frontmost_application_unless&quot;</code></td>
-      </tr>
-      <tr>
-          <td><code>bundle_identifiers</code></td>
-          <td>Optional</td>
-          <td>Bundle identifier regexs such as <code>[&quot;^com\\.apple\\.Terminal$&quot;, &quot;^com\\.googlecode\\.iterm2$&quot;]</code></td>
-      </tr>
-      <tr>
-          <td><code>file_paths</code></td>
-          <td>Optional</td>
-          <td>File path regexs such as <code>[&quot;/Finder$&quot;]</code></td>
-      </tr>
-      <tr>
-          <td><code>description</code></td>
-          <td>Optional</td>
-          <td>A human-readable comment</td>
-      </tr>
-  </tbody>
-</table>
-<h3 id="multiple-bundle-identifiers-or-file-paths">Multiple bundle identifiers or file paths</h3>
-<p>Multiple entries in <code>bundle_identifiers</code> and <code>file_paths</code> are joined by &ldquo;or&rdquo;.</p>
-<p>The following condition is matched if bundle identifier is &ldquo;com.apple.Terminal&rdquo; <strong>or</strong> &ldquo;com.googlecode.iterm2&rdquo;.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;type&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;frontmost_application_if&#34;</span><span style="color:#000;font-weight:bold">,</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;bundle_identifiers&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#4e9a06">&#34;^com\\.apple\\.Terminal$&#34;</span><span style="color:#000;font-weight:bold">,</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#4e9a06">&#34;^com\\.googlecode\\.iterm2$&#34;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">]</span>
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
-</span></span></code></pre></div><h3 id="investigate-the-bundle-identifier-and-file-path">Investigate the bundle identifier and file path</h3>
-<p>You can find the bundle identifier and file path by EventViewer &gt; Frontmost Application tab.</p>
-<p>Open EventViewer, and then switch the frontmost application to an application which you want to know the bundle identifer or file path.</p>
-<figure>
-  <img
-    src="/docs/json/complex-modifications-manipulator-definition/conditions/frontmost-application/images/eventviewer-frontmost-application@2x.png"
-    alt="eventviewer-frontmost-application@2x.png"
-    style="width: 1100px"
-  />
-</figure>
+<p>Karabiner-Elements references several environment variables internally.
+Additionally, the <code>shell_command</code> and <code>open_application</code> used in Complex Modifications are also affected by environment variables.
+To support this, we provide a way to define them.</p>
+<p>Karabiner-Elements loads environment variables from /Library/Application Support/org.pqrs/config/karabiner_environment if the file exists.
+If you define PATH and others there, shell commands and opened apps via shell_command and open_application inherit these environment variables.</p>
+<h2 id="example">Example</h2>
+<p>You need to run your editor with root privileges to edit the <code>karabiner_environment</code> file.
+For example, you can edit it by running the following commands in Terminal.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo nano <span style="color:#4e9a06">&#39;/Library/Application Support/org.pqrs/config/karabiner_environment&#39;</span>
+</span></span></code></pre></div><p>Here is an example of the <code>karabiner_environment</code> file.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"># Add ~/opt/bin to PATH</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">PATH</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#000">$HOME</span>/opt/bin:<span style="color:#000">$PATH</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"># Set locale</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">LC_ALL</span><span style="color:#ce5c00;font-weight:bold">=</span>en_US
+</span></span></code></pre></div>
+
+<div class="alert alert-primary" role="alert">
+<h4 class="alert-heading">Specification</h4>
+
+    <ul>
+<li>Define environment variables one per line.</li>
+<li>Any text following # is treated as a comment.</li>
+<li>Existing environment variables (e.g., $HOME) are expanded.</li>
+</ul>
+
+
+</div>
+
+<p>After modifying the <code>karabiner_environment</code> file, you need to restart the karabiner_console_user_server process to apply the changes.
+You can do it by running the following commands in Terminal.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>launchctl kickstart -k gui/<span style="color:#204a87;font-weight:bold">$(</span>id -u<span style="color:#204a87;font-weight:bold">)</span>/org.pqrs.service.agent.karabiner_console_user_server
+</span></span></code></pre></div><h2 id="change-where-karabinerjson-is-saved">Change where karabiner.json is saved</h2>
+<p>You can also use this mechanism to change where Karabiner-Elements stores its files.
+The two environment variables used for this are:</p>
+<ul>
+<li>XDG_CONFIG_HOME</li>
+<li>XDG_DATA_HOME</li>
+</ul>
+<p>For example, the following configuration changes the karabiner.json location under ~/Library/Application Support.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000">XDG_CONFIG_HOME</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#000">$HOME</span>/Library/Application Support/org.pqrs/config
+</span></span><span style="display:flex;"><span><span style="color:#000">XDG_DATA_HOME</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#000">$HOME</span>/Library/Application Support/org.pqrs/data
+</span></span></code></pre></div>
+
+<div class="alert alert-danger" role="alert">
+<h4 class="alert-heading">Important Notes</h4>
+
+    After changing XDG_CONFIG_HOME or XDG_DATA_HOME, you need to restart the Karabiner-Elements user processes. The most reliable way is to sign out and back in, or reboot macOS.
+
+</div>
+
+
+
+<div class="alert alert-primary" role="alert">
+<h4 class="alert-heading">Recommendation</h4>
+
+    <p>Unless you have a strong reason, we do not recommend changing file locations via XDG_CONFIG_HOME.</p>
+<p><a href="/docs/manual/misc/configuration-file-path/">You can relocate files by using a symbolic link</a> instead, so we recommend using a symbolic link.</p>
+
+
+</div>
 
 
 	

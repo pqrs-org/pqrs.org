@@ -39,7 +39,7 @@ Warning Ensure you create a symbolic link to the ~/.config/karabiner directory, 
 However, there may be cases where you want to place the configuration file elsewhere, such as to automatically sync across multiple machines or to manage it under version control.
 In such cases, You can move the karabiner.json configuration file to a different directory by using a symbolic link.
 Warning Ensure you create a symbolic link to the ~/.config/karabiner directory, not directly to the karabiner.json file.">
-  <meta itemprop="wordCount" content="306">
+  <meta itemprop="wordCount" content="313">
   <meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://karabiner-elements.pqrs.org/images/logo.png">
@@ -82,7 +82,7 @@ Warning Ensure you create a symbolic link to the ~/.config/karabiner directory, 
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.26525a760c6d30fa9da1c83479b25c20.json"
+    data-offline-search-index-json-src="/offline-search-index.43c1c8902f4036bd813f70c99c4f0af0.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="25"
   >
@@ -106,7 +106,7 @@ Warning Ensure you create a symbolic link to the ~/.config/karabiner directory, 
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.26525a760c6d30fa9da1c83479b25c20.json"
+    data-offline-search-index-json-src="/offline-search-index.43c1c8902f4036bd813f70c99c4f0af0.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="25"
   >
@@ -389,6 +389,10 @@ Warning Ensure you create a symbolic link to the ~/.config/karabiner directory, 
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docshelpadvanced-topicssecurity-li">
   <input type="checkbox" id="m-docshelpadvanced-topicssecurity-check"/>
   <label for="m-docshelpadvanced-topicssecurity-check"><a href="/docs/help/advanced-topics/security/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-docshelpadvanced-topicssecurity"><span class="">Security</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docshelpadvanced-topicsset-environment-variables-li">
+  <input type="checkbox" id="m-docshelpadvanced-topicsset-environment-variables-check"/>
+  <label for="m-docshelpadvanced-topicsset-environment-variables-check"><a href="/docs/help/advanced-topics/set-environment-variables/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-docshelpadvanced-topicsset-environment-variables"><span class="">Set environment variables</span></a></label>
   
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docshelpadvanced-topicsunknown-events-li">
   <input type="checkbox" id="m-docshelpadvanced-topicsunknown-events-check"/>
@@ -701,12 +705,13 @@ Warning Ensure you create a symbolic link to the ~/.config/karabiner directory, 
 </div>
 
 <h4 id="making-symbolic-link-example">Making symbolic link example</h4>
-<p>The following command allows you to move the <code>karabiner.json</code> file to <strong>~/Dropbox/private</strong>. The same process is applies for any other directory.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>mv ~/.config/karabiner ~/Dropbox/private
-</span></span><span style="display:flex;"><span>ln -s ~/Dropbox/private/karabiner ~/.config
+<p>The following command allows you to move the <code>karabiner.json</code> file to <strong>~/Library/Application Support/org.pqrs</strong>. The same process is applies for any other directory.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>mkdir -p <span style="color:#4e9a06">&#34;</span><span style="color:#000">$HOME</span><span style="color:#4e9a06">/Library/Application Support/org.pqrs/config&#34;</span>
+</span></span><span style="display:flex;"><span>mv ~/.config/karabiner <span style="color:#4e9a06">&#34;</span><span style="color:#000">$HOME</span><span style="color:#4e9a06">/Library/Application Support/org.pqrs/config&#34;</span>
+</span></span><span style="display:flex;"><span>ln -s <span style="color:#4e9a06">&#34;</span><span style="color:#000">$HOME</span><span style="color:#4e9a06">/Library/Application Support/org.pqrs/config/karabiner&#34;</span> ~/.config
 </span></span></code></pre></div><p>After changing the actual location of <code>karabiner.json</code>, you need to restart <code>karabiner_console_user_server</code> using the following command.
 Otherwise, it will not be able to automatically detect updates to <code>karabiner.json</code>.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>launchctl kickstart -k gui/<span style="color:#4e9a06">`</span>id -u<span style="color:#4e9a06">`</span>/org.pqrs.karabiner.karabiner_console_user_server
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>launchctl kickstart -k gui/<span style="color:#204a87;font-weight:bold">$(</span>id -u<span style="color:#204a87;font-weight:bold">)</span>/org.pqrs.service.agent.karabiner_console_user_server
 </span></span></code></pre></div>
 
 <div class="alert alert-primary" role="alert">
