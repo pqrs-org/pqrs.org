@@ -19,18 +19,19 @@ Karabiner-Elements will fail to detect configuration file changes and reload the
 
 #### Making symbolic link example
 
-The following command allows you to move the `karabiner.json` file to **~/Dropbox/private**. The same process is applies for any other directory.
+The following command allows you to move the `karabiner.json` file to **~/Library/Application Support/org.pqrs**. The same process is applies for any other directory.
 
 ```shell
-mv ~/.config/karabiner ~/Dropbox/private
-ln -s ~/Dropbox/private/karabiner ~/.config
+mkdir -p "$HOME/Library/Application Support/org.pqrs/config"
+mv ~/.config/karabiner "$HOME/Library/Application Support/org.pqrs/config"
+ln -s "$HOME/Library/Application Support/org.pqrs/config/karabiner" ~/.config
 ```
 
 After changing the actual location of `karabiner.json`, you need to restart `karabiner_console_user_server` using the following command.
 Otherwise, it will not be able to automatically detect updates to `karabiner.json`.
 
 ```shell
-launchctl kickstart -k gui/`id -u`/org.pqrs.karabiner.karabiner_console_user_server
+launchctl kickstart -k gui/$(id -u)/org.pqrs.service.agent.karabiner_console_user_server
 ```
 
 {{% alert title="Additional file access permissions" color="primary" %}}
