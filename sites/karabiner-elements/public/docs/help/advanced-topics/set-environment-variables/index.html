@@ -33,7 +33,7 @@ Karabiner-Elements loads environment variables from /Library/Application Support
   <meta itemprop="name" content="Set environment variables">
   <meta itemprop="description" content="This feature is available since Karabiner-Elements 15.5.5. Karabiner-Elements references several environment variables internally. Additionally, the shell_command and open_application used in Complex Modifications are also affected by environment variables. To support this, we provide a way to define them.
 Karabiner-Elements loads environment variables from /Library/Application Support/org.pqrs/config/karabiner_environment if the file exists. If you define PATH and others there, shell commands and opened apps via shell_command and open_application inherit these environment variables.">
-  <meta itemprop="wordCount" content="340">
+  <meta itemprop="wordCount" content="346">
   <meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://karabiner-elements.pqrs.org/images/logo.png">
@@ -74,7 +74,7 @@ Karabiner-Elements loads environment variables from /Library/Application Support
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.63f6424c293b281dddeea85a79b6946a.json"
+    data-offline-search-index-json-src="/offline-search-index.9dc013e542e0d2c83d8b5f8e02d4a055.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="25"
   >
@@ -98,7 +98,7 @@ Karabiner-Elements loads environment variables from /Library/Application Support
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.63f6424c293b281dddeea85a79b6946a.json"
+    data-offline-search-index-json-src="/offline-search-index.9dc013e542e0d2c83d8b5f8e02d4a055.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="25"
   >
@@ -743,7 +743,8 @@ The two environment variables used for this are:</p>
 <p>For example, the following configuration changes the karabiner.json location under ~/Library/Application Support.</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000">XDG_CONFIG_HOME</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#000">$HOME</span>/Library/Application Support/org.pqrs/config
 </span></span><span style="display:flex;"><span><span style="color:#000">XDG_DATA_HOME</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#000">$HOME</span>/Library/Application Support/org.pqrs/data
-</span></span></code></pre></div>
+</span></span></code></pre></div><p>Note: karabiner.json is stored at <code>$XDG_CONFIG_HOME/karabiner/karabiner.json</code>.</p>
+
 
 <div class="alert alert-danger" role="alert">
 <h4 class="alert-heading">Important Notes</h4>
