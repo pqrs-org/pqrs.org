@@ -29,7 +29,7 @@ Here is an example of the `karabiner_environment` file.
 # Add ~/opt/bin to PATH
 PATH=$HOME/opt/bin:$PATH
 # Set locale
-LC_ALL=en_US
+LC_ALL=C
 ```
 
 {{% alert title="Specification" color="primary" %}}
@@ -46,6 +46,20 @@ You can do it by running the following commands in Terminal.
 ```shell
 launchctl kickstart -k gui/$(id -u)/org.pqrs.service.agent.karabiner_console_user_server
 ```
+
+{{% alert title="Caution" color="danger" %}}
+
+Do not put sensitive information (e.g., API keys) in `karabiner_environment`.
+If multiple people use your Mac, all users on the machine can read this file, so only include information that is safe to share.
+
+Additionally, the environment variables defined in `karabiner_environment` are also logged as shown below.
+
+```text
+[info] [console_user_server] setenv: PATH = /Users/tekezo/opt/bin:/usr/bin:/bin:/usr/sbin:/sbin
+[info] [console_user_server] setenv: LC_ALL = C
+```
+
+{{% /alert %}}
 
 ## Change where karabiner.json is saved
 
