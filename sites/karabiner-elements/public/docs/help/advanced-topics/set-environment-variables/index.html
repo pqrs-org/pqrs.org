@@ -36,7 +36,7 @@ Example You need to run your editor with root privileges to edit the karabiner_e
   <meta itemprop="description" content="karabiner_environment is available since Karabiner-Elements 15.5.5. Karabiner-Elements references several environment variables internally. Additionally, the shell_command and open_application used in Complex Modifications are also affected by environment variables. To support this, we provide a way to define them.
 Karabiner-Elements loads environment variables from /Library/Application Support/org.pqrs/config/karabiner_environment if the file exists. If you define PATH and others there, shell commands and opened apps via shell_command and open_application inherit these environment variables.
 Example You need to run your editor with root privileges to edit the karabiner_environment file. For example, you can edit it by running the following commands in Terminal.">
-  <meta itemprop="wordCount" content="279">
+  <meta itemprop="wordCount" content="339">
   <meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://karabiner-elements.pqrs.org/images/logo.png">
@@ -78,7 +78,7 @@ Example You need to run your editor with root privileges to edit the karabiner_e
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.43c1c8902f4036bd813f70c99c4f0af0.json"
+    data-offline-search-index-json-src="/offline-search-index.f970df9093cc7500f39ab141f69da7f0.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="25"
   >
@@ -102,7 +102,7 @@ Example You need to run your editor with root privileges to edit the karabiner_e
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.43c1c8902f4036bd813f70c99c4f0af0.json"
+    data-offline-search-index-json-src="/offline-search-index.f970df9093cc7500f39ab141f69da7f0.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="25"
   >
@@ -705,7 +705,7 @@ For example, you can edit it by running the following commands in Terminal.</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"># Add ~/opt/bin to PATH</span>
 </span></span><span style="display:flex;"><span><span style="color:#000">PATH</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#000">$HOME</span>/opt/bin:<span style="color:#000">$PATH</span>
 </span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"># Set locale</span>
-</span></span><span style="display:flex;"><span><span style="color:#000">LC_ALL</span><span style="color:#ce5c00;font-weight:bold">=</span>en_US
+</span></span><span style="display:flex;"><span><span style="color:#000">LC_ALL</span><span style="color:#ce5c00;font-weight:bold">=</span>C
 </span></span></code></pre></div>
 
 <div class="alert alert-primary" role="alert">
@@ -723,7 +723,21 @@ For example, you can edit it by running the following commands in Terminal.</p>
 <p>After modifying the <code>karabiner_environment</code> file, you need to restart the karabiner_console_user_server process to apply the changes.
 You can do it by running the following commands in Terminal.</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>launchctl kickstart -k gui/<span style="color:#204a87;font-weight:bold">$(</span>id -u<span style="color:#204a87;font-weight:bold">)</span>/org.pqrs.service.agent.karabiner_console_user_server
-</span></span></code></pre></div><h2 id="change-where-karabinerjson-is-saved">Change where karabiner.json is saved</h2>
+</span></span></code></pre></div>
+
+<div class="alert alert-danger" role="alert">
+<h4 class="alert-heading">Caution</h4>
+
+    <p>Do not put sensitive information (e.g., API keys) in <code>karabiner_environment</code>.
+If multiple people use your Mac, all users on the machine can read this file, so only include information that is safe to share.</p>
+<p>Additionally, the environment variables defined in <code>karabiner_environment</code> are also logged as shown below.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>[info] [console_user_server] setenv: PATH = /Users/tekezo/opt/bin:/usr/bin:/bin:/usr/sbin:/sbin
+</span></span><span style="display:flex;"><span>[info] [console_user_server] setenv: LC_ALL = C
+</span></span></code></pre></div>
+
+</div>
+
+<h2 id="change-where-karabinerjson-is-saved">Change where karabiner.json is saved</h2>
 <p>You can also use this mechanism to change where Karabiner-Elements stores its files.
 The two environment variables used for this are:</p>
 <ul>
