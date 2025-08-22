@@ -76,6 +76,8 @@ XDG_CONFIG_HOME=$HOME/Library/Application Support/org.pqrs/config
 XDG_DATA_HOME=$HOME/Library/Application Support/org.pqrs/data
 ```
 
+Note: karabiner.json is stored at `$XDG_CONFIG_HOME/karabiner/karabiner.json`.
+
 {{% alert title="Important Notes" color="danger" %}}
 
 After changing XDG_CONFIG_HOME or XDG_DATA_HOME, you need to restart the Karabiner-Elements user processes. The most reliable way is to sign out and back in, or reboot macOS.
