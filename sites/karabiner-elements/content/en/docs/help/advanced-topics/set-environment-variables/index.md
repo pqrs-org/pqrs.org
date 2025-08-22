@@ -4,7 +4,7 @@ weight: 205
 ---
 
 {{% alert color="info" %}}
-`karabiner_environment` is available since Karabiner-Elements 15.5.5.
+This feature is available since Karabiner-Elements 15.5.5.
 {{% /alert %}}
 
 Karabiner-Elements references several environment variables internally.
