@@ -1,2 +1,8 @@
 install:
-	npm ci
+	pnpm install
+
+update:
+	pnpm update
+
+audit:
+	pnpm audit
