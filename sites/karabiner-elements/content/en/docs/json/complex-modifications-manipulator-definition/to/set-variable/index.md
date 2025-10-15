@@ -108,8 +108,12 @@ Note: If `key_up_value` or `type` is specified, the `value` can be omitted.
 
 ## Expression specification
 
+{{% alert color="info" %}}
+`expression` and `key_up_expression` are available since Karabiner-Elements 15.5.19.
+{{% /alert %}}
+
 `expression` and `key_up_expression` allow you to write arithmetic expressions,
-and you can use variables set by other `set_variable` manipulations or the following system-provided variables.
+and you can use variables set by other `set_variable` manipulations and the following system-provided variables.
 If an undefined variable appears in the expression, its value is treated as 0.
 
 -   system.now.milliseconds
