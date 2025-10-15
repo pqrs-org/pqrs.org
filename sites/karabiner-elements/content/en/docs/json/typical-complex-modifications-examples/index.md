@@ -284,7 +284,59 @@ This uses `"lazy": true` to prevent <kbd>left_control</kbd> from being sent imme
 }
 ```
 
-## Change `right_shift x2` to `mission_control`
+## Change `right_shift x2` to `mission_control` (new style)
+
+This example is available since Karabiner-Elements 15.5.19.
+
+-   Use variable:
+    -   [expression_if, expression_unless](/docs/json/complex-modifications-manipulator-definition/conditions/expression/)
+    -   [to.set_variable](/docs/json/complex-modifications-manipulator-definition/to/set-variable/)
+-   [to_delayed_action](/docs/json/complex-modifications-manipulator-definition/to-delayed-action/)
+
+{{< karabiner-elements-complex-modifications-usage >}}
+
+```json
+{
+    "description": "Change right_shift x2 to mission_control (new style)",
+    "manipulators": [
+        {
+            "type": "basic",
+            "from": {
+                "key_code": "right_shift",
+                "modifiers": { "optional": ["any"] }
+            },
+            "to": [
+                { "apple_vendor_keyboard_key_code": "mission_control" },
+                { "key_code": "vk_none" }
+            ],
+            "conditions": [
+                {
+                    "type": "expression_if",
+                    "expression": "right_shift_x2_expiration > system.now.milliseconds"
+                }
+            ]
+        },
+        {
+            "type": "basic",
+            "from": {
+                "key_code": "right_shift",
+                "modifiers": { "optional": ["any"] }
+            },
+            "to": [
+                {
+                    "set_variable": {
+                        "name": "right_shift_x2_expiration",
+                        "expression": "system.now.milliseconds + 300"
+                    }
+                },
+                { "key_code": "right_shift" }
+            ]
+        }
+    ]
+}
+```
+
+## Change `right_shift x2` to `mission_control` (old style)
 
 -   Use variable:
     -   [variable_if, variable_unless](/docs/json/complex-modifications-manipulator-definition/conditions/variable/)
@@ -295,7 +347,7 @@ This uses `"lazy": true` to prevent <kbd>left_control</kbd> from being sent imme
 
 ```json
 {
-    "description": "Change right_shift x2 to mission_control",
+    "description": "Change right_shift x2 to mission_control (old style)",
     "manipulators": [
         {
             "type": "basic",
