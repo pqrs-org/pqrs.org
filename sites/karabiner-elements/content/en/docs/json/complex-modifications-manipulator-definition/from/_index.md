@@ -24,6 +24,8 @@ weight: 100
             ]
         },
 
+        "integer_value": integer,
+
         "simultaneous": [
             {
                 "key_code, consumer_key_code, pointing_button or any"
@@ -55,6 +57,7 @@ weight: 100
 | `pointing_button`                              | Optional | Pointing button name which you want to change                                   |
 | [`any`](any/)                                  | Optional | `"any": "key_code"`, `"any": "consumer_key_code"` or `"any": "pointing_button"` |
 | [`modifiers`](modifiers/)                      | Optional | Specify mandatory and optional modifiers (e.g., "change control-h to delete")   |
+| [`integer_value`](integer-value/)              | Optional | Modify only events with a specific integer value.                               |
 | [`simultaneous`](simultaneous/)                | Optional | Specify multiple events which are pressed simultaneously                        |
 | [`simultaneous_options`](simultaneous-options) | Optional | Options for `simultaneous`                                                      |
 
@@ -67,13 +70,6 @@ You have to specify one of them.
 Be careful using `"pointing_button": "button1"` and `"any": "pointing_button"`.<br />
 You may lose the left click button and system will be unusable.
 {{% /alert %}}
-
-## Detail
-
--   [from.any](any/)
--   [from.modifiers](modifiers/)
--   [from.simultaneous](simultaneous/)
--   [from.simultaneous_options](simultaneous-options/)
 
 ## Investigate key names
 
