@@ -17,45 +17,33 @@
 <link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
-<title>File locations | Karabiner-Elements</title>
-<meta name="description" content="Karabiner-Elements configuration file paths:
-~/.config/karabiner/karabiner.json Main configuration file.
-Karabiner-Elements watches this file and reload it automatically when it is updated. ~/.config/karabiner/assets/complex_modifications Imported complex_modifications files.
-You can use them in Karabiner-Elements Settings &gt; Complex Modifications &gt; Add predefined rule. Tip: file update detection and automatic reload Karabiner-Elements watches ~/.config/karabiner/karabiner.json and reloads it if updated.
-The mechanism is that Karabiner-Elements watches the parent directory ~/.config/karabiner by using the File System Events API.
-Thus, Karabiner-Elements fails detecting file updates after you change the parent directory (e.g., recreate the parent directory).">
-<meta property="og:url" content="/docs/json/location/">
+<title>from.integer_value | Karabiner-Elements</title>
+<meta name="description" content="from.integer_value is rarely needed. Only a handful of devices require you to distinguish buttons by integer_value, and that’s when you use it.
+One such device is the VEC USB Footpedal INFINITY USB-3. It has three buttons, each of which sends the following events:
+Hardware Button event integer_value Left Button &#34;pointing_button&#34;: &#34;button75&#34; &#34;integer_value&#34;: 1 Middle Button &#34;pointing_button&#34;: &#34;button75&#34; &#34;integer_value&#34;: 2 Right Button &#34;pointing_button&#34;: &#34;button75&#34; &#34;integer_value&#34;: 4 Limitation If you press the Middle Button while holding the Left Button, the integer_value becomes 3. However, patterns where integer_value changes mid-press are not supported. The value is interpreted from the first button that was pressed, so in this case it evaluates as integer_value 1. Examples Change the left button to mission_control. Change the middle button to f12. Change the right button to command&#43;shift&#43;4. 💡 How to use this example { &#34;description&#34;: &#34;Change VEC USB Footpedal INFINITY USB-3 buttons&#34;, &#34;manipulators&#34;: [ { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;pointing_button&#34;: &#34;button75&#34;, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] }, &#34;integer_value&#34;: 1 }, &#34;to&#34;: [{ &#34;apple_vendor_keyboard_key_code&#34;: &#34;mission_control&#34; }] }, { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;pointing_button&#34;: &#34;button75&#34;, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] }, &#34;integer_value&#34;: 2 }, &#34;to&#34;: [ { &#34;key_code&#34;: &#34;f12&#34;, &#34;modifiers&#34;: [&#34;fn&#34;] } ] }, { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;pointing_button&#34;: &#34;button75&#34;, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] }, &#34;integer_value&#34;: 4 }, &#34;to&#34;: [ { &#34;key_code&#34;: &#34;4&#34;, &#34;modifiers&#34;: [&#34;left_command&#34;, &#34;left_shift&#34;] } ] } ] }">
+<meta property="og:url" content="/docs/json/complex-modifications-manipulator-definition/from/integer-value/">
   <meta property="og:site_name" content="Karabiner-Elements">
-  <meta property="og:title" content="File locations">
-  <meta property="og:description" content="Karabiner-Elements configuration file paths:
-~/.config/karabiner/karabiner.json Main configuration file.
-Karabiner-Elements watches this file and reload it automatically when it is updated. ~/.config/karabiner/assets/complex_modifications Imported complex_modifications files.
-You can use them in Karabiner-Elements Settings &gt; Complex Modifications &gt; Add predefined rule. Tip: file update detection and automatic reload Karabiner-Elements watches ~/.config/karabiner/karabiner.json and reloads it if updated.
-The mechanism is that Karabiner-Elements watches the parent directory ~/.config/karabiner by using the File System Events API.
-Thus, Karabiner-Elements fails detecting file updates after you change the parent directory (e.g., recreate the parent directory).">
+  <meta property="og:title" content="from.integer_value">
+  <meta property="og:description" content="from.integer_value is rarely needed. Only a handful of devices require you to distinguish buttons by integer_value, and that’s when you use it.
+One such device is the VEC USB Footpedal INFINITY USB-3. It has three buttons, each of which sends the following events:
+Hardware Button event integer_value Left Button &#34;pointing_button&#34;: &#34;button75&#34; &#34;integer_value&#34;: 1 Middle Button &#34;pointing_button&#34;: &#34;button75&#34; &#34;integer_value&#34;: 2 Right Button &#34;pointing_button&#34;: &#34;button75&#34; &#34;integer_value&#34;: 4 Limitation If you press the Middle Button while holding the Left Button, the integer_value becomes 3. However, patterns where integer_value changes mid-press are not supported. The value is interpreted from the first button that was pressed, so in this case it evaluates as integer_value 1. Examples Change the left button to mission_control. Change the middle button to f12. Change the right button to command&#43;shift&#43;4. 💡 How to use this example { &#34;description&#34;: &#34;Change VEC USB Footpedal INFINITY USB-3 buttons&#34;, &#34;manipulators&#34;: [ { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;pointing_button&#34;: &#34;button75&#34;, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] }, &#34;integer_value&#34;: 1 }, &#34;to&#34;: [{ &#34;apple_vendor_keyboard_key_code&#34;: &#34;mission_control&#34; }] }, { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;pointing_button&#34;: &#34;button75&#34;, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] }, &#34;integer_value&#34;: 2 }, &#34;to&#34;: [ { &#34;key_code&#34;: &#34;f12&#34;, &#34;modifiers&#34;: [&#34;fn&#34;] } ] }, { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;pointing_button&#34;: &#34;button75&#34;, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] }, &#34;integer_value&#34;: 4 }, &#34;to&#34;: [ { &#34;key_code&#34;: &#34;4&#34;, &#34;modifiers&#34;: [&#34;left_command&#34;, &#34;left_shift&#34;] } ] } ] }">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
     <meta property="og:image" content="https://karabiner-elements.pqrs.org/images/logo.png">
 
-  <meta itemprop="name" content="File locations">
-  <meta itemprop="description" content="Karabiner-Elements configuration file paths:
-~/.config/karabiner/karabiner.json Main configuration file.
-Karabiner-Elements watches this file and reload it automatically when it is updated. ~/.config/karabiner/assets/complex_modifications Imported complex_modifications files.
-You can use them in Karabiner-Elements Settings &gt; Complex Modifications &gt; Add predefined rule. Tip: file update detection and automatic reload Karabiner-Elements watches ~/.config/karabiner/karabiner.json and reloads it if updated.
-The mechanism is that Karabiner-Elements watches the parent directory ~/.config/karabiner by using the File System Events API.
-Thus, Karabiner-Elements fails detecting file updates after you change the parent directory (e.g., recreate the parent directory).">
-  <meta itemprop="wordCount" content="116">
+  <meta itemprop="name" content="from.integer_value">
+  <meta itemprop="description" content="from.integer_value is rarely needed. Only a handful of devices require you to distinguish buttons by integer_value, and that’s when you use it.
+One such device is the VEC USB Footpedal INFINITY USB-3. It has three buttons, each of which sends the following events:
+Hardware Button event integer_value Left Button &#34;pointing_button&#34;: &#34;button75&#34; &#34;integer_value&#34;: 1 Middle Button &#34;pointing_button&#34;: &#34;button75&#34; &#34;integer_value&#34;: 2 Right Button &#34;pointing_button&#34;: &#34;button75&#34; &#34;integer_value&#34;: 4 Limitation If you press the Middle Button while holding the Left Button, the integer_value becomes 3. However, patterns where integer_value changes mid-press are not supported. The value is interpreted from the first button that was pressed, so in this case it evaluates as integer_value 1. Examples Change the left button to mission_control. Change the middle button to f12. Change the right button to command&#43;shift&#43;4. 💡 How to use this example { &#34;description&#34;: &#34;Change VEC USB Footpedal INFINITY USB-3 buttons&#34;, &#34;manipulators&#34;: [ { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;pointing_button&#34;: &#34;button75&#34;, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] }, &#34;integer_value&#34;: 1 }, &#34;to&#34;: [{ &#34;apple_vendor_keyboard_key_code&#34;: &#34;mission_control&#34; }] }, { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;pointing_button&#34;: &#34;button75&#34;, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] }, &#34;integer_value&#34;: 2 }, &#34;to&#34;: [ { &#34;key_code&#34;: &#34;f12&#34;, &#34;modifiers&#34;: [&#34;fn&#34;] } ] }, { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;pointing_button&#34;: &#34;button75&#34;, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] }, &#34;integer_value&#34;: 4 }, &#34;to&#34;: [ { &#34;key_code&#34;: &#34;4&#34;, &#34;modifiers&#34;: [&#34;left_command&#34;, &#34;left_shift&#34;] } ] } ] }">
+  <meta itemprop="wordCount" content="220">
   <meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://karabiner-elements.pqrs.org/images/logo.png">
-  <meta name="twitter:title" content="File locations">
-  <meta name="twitter:description" content="Karabiner-Elements configuration file paths:
-~/.config/karabiner/karabiner.json Main configuration file.
-Karabiner-Elements watches this file and reload it automatically when it is updated. ~/.config/karabiner/assets/complex_modifications Imported complex_modifications files.
-You can use them in Karabiner-Elements Settings &gt; Complex Modifications &gt; Add predefined rule. Tip: file update detection and automatic reload Karabiner-Elements watches ~/.config/karabiner/karabiner.json and reloads it if updated.
-The mechanism is that Karabiner-Elements watches the parent directory ~/.config/karabiner by using the File System Events API.
-Thus, Karabiner-Elements fails detecting file updates after you change the parent directory (e.g., recreate the parent directory).">
+  <meta name="twitter:title" content="from.integer_value">
+  <meta name="twitter:description" content="from.integer_value is rarely needed. Only a handful of devices require you to distinguish buttons by integer_value, and that’s when you use it.
+One such device is the VEC USB Footpedal INFINITY USB-3. It has three buttons, each of which sends the following events:
+Hardware Button event integer_value Left Button &#34;pointing_button&#34;: &#34;button75&#34; &#34;integer_value&#34;: 1 Middle Button &#34;pointing_button&#34;: &#34;button75&#34; &#34;integer_value&#34;: 2 Right Button &#34;pointing_button&#34;: &#34;button75&#34; &#34;integer_value&#34;: 4 Limitation If you press the Middle Button while holding the Left Button, the integer_value becomes 3. However, patterns where integer_value changes mid-press are not supported. The value is interpreted from the first button that was pressed, so in this case it evaluates as integer_value 1. Examples Change the left button to mission_control. Change the middle button to f12. Change the right button to command&#43;shift&#43;4. 💡 How to use this example { &#34;description&#34;: &#34;Change VEC USB Footpedal INFINITY USB-3 buttons&#34;, &#34;manipulators&#34;: [ { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;pointing_button&#34;: &#34;button75&#34;, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] }, &#34;integer_value&#34;: 1 }, &#34;to&#34;: [{ &#34;apple_vendor_keyboard_key_code&#34;: &#34;mission_control&#34; }] }, { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;pointing_button&#34;: &#34;button75&#34;, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] }, &#34;integer_value&#34;: 2 }, &#34;to&#34;: [ { &#34;key_code&#34;: &#34;f12&#34;, &#34;modifiers&#34;: [&#34;fn&#34;] } ] }, { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;pointing_button&#34;: &#34;button75&#34;, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] }, &#34;integer_value&#34;: 4 }, &#34;to&#34;: [ { &#34;key_code&#34;: &#34;4&#34;, &#34;modifiers&#34;: [&#34;left_command&#34;, &#34;left_shift&#34;] } ] } ] }">
 <link rel="preload" href="/scss/main.min.21d1e9d133ee2851cb7c1e27789ba6508e88bf43b9a8c464351a34f29685ee78.css" as="style" integrity="sha256-IdHp0TPuKFHLfB4neJumUI6Iv0O5qMRkNRo08paF7ng=" crossorigin="anonymous">
 <link href="/scss/main.min.21d1e9d133ee2851cb7c1e27789ba6508e88bf43b9a8c464351a34f29685ee78.css" rel="stylesheet" integrity="sha256-IdHp0TPuKFHLfB4neJumUI6Iv0O5qMRkNRo08paF7ng=" crossorigin="anonymous">
 <script
@@ -435,9 +423,9 @@ Thus, Karabiner-Elements fails detecting file updates after you change the paren
   <label for="m-docsjson-check"><a href="/docs/json/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docsjson"><span class="">Karabiner Configuration Reference Manual</span></a></label>
   
   <ul class="ul-2 foldable">
-    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-docsjsonlocation-li">
-  <input type="checkbox" id="m-docsjsonlocation-check" checked/>
-  <label for="m-docsjsonlocation-check"><a href="/docs/json/location/" class="align-left ps-0  active td-sidebar-link td-sidebar-link__page" id="m-docsjsonlocation"><span class="td-sidebar-nav-active-item">File locations</span></a></label>
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsjsonlocation-li">
+  <input type="checkbox" id="m-docsjsonlocation-check"/>
+  <label for="m-docsjsonlocation-check"><a href="/docs/json/location/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-docsjsonlocation"><span class="">File locations</span></a></label>
   
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsjsontypical-complex-modifications-examples-li">
   <input type="checkbox" id="m-docsjsontypical-complex-modifications-examples-check"/>
@@ -451,13 +439,13 @@ Thus, Karabiner-Elements fails detecting file updates after you change the paren
   <input type="checkbox" id="m-docsjsonroot-data-structure-check"/>
   <label for="m-docsjsonroot-data-structure-check"><a href="/docs/json/root-data-structure/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-docsjsonroot-data-structure"><span class="">karabiner.json data structure</span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsjsoncomplex-modifications-manipulator-definition-li">
-  <input type="checkbox" id="m-docsjsoncomplex-modifications-manipulator-definition-check"/>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docsjsoncomplex-modifications-manipulator-definition-li">
+  <input type="checkbox" id="m-docsjsoncomplex-modifications-manipulator-definition-check" checked/>
   <label for="m-docsjsoncomplex-modifications-manipulator-definition-check"><a href="/docs/json/complex-modifications-manipulator-definition/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docsjsoncomplex-modifications-manipulator-definition"><span class="">complex_modifications manipulator definition</span></a></label>
   
   <ul class="ul-3 foldable">
-    <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsjsoncomplex-modifications-manipulator-definitionfrom-li">
-  <input type="checkbox" id="m-docsjsoncomplex-modifications-manipulator-definitionfrom-check"/>
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docsjsoncomplex-modifications-manipulator-definitionfrom-li">
+  <input type="checkbox" id="m-docsjsoncomplex-modifications-manipulator-definitionfrom-check" checked/>
   <label for="m-docsjsoncomplex-modifications-manipulator-definitionfrom-check"><a href="/docs/json/complex-modifications-manipulator-definition/from/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docsjsoncomplex-modifications-manipulator-definitionfrom"><span class="">from event definition</span></a></label>
   
   <ul class="ul-4 foldable">
@@ -469,9 +457,9 @@ Thus, Karabiner-Elements fails detecting file updates after you change the paren
   <input type="checkbox" id="m-docsjsoncomplex-modifications-manipulator-definitionfrommodifiers-check"/>
   <label for="m-docsjsoncomplex-modifications-manipulator-definitionfrommodifiers-check"><a href="/docs/json/complex-modifications-manipulator-definition/from/modifiers/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-docsjsoncomplex-modifications-manipulator-definitionfrommodifiers"><span class="">from.modifiers</span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsjsoncomplex-modifications-manipulator-definitionfrominteger-value-li">
-  <input type="checkbox" id="m-docsjsoncomplex-modifications-manipulator-definitionfrominteger-value-check"/>
-  <label for="m-docsjsoncomplex-modifications-manipulator-definitionfrominteger-value-check"><a href="/docs/json/complex-modifications-manipulator-definition/from/integer-value/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-docsjsoncomplex-modifications-manipulator-definitionfrominteger-value"><span class="">from.integer_value</span></a></label>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-docsjsoncomplex-modifications-manipulator-definitionfrominteger-value-li">
+  <input type="checkbox" id="m-docsjsoncomplex-modifications-manipulator-definitionfrominteger-value-check" checked/>
+  <label for="m-docsjsoncomplex-modifications-manipulator-definitionfrominteger-value-check"><a href="/docs/json/complex-modifications-manipulator-definition/from/integer-value/" class="align-left ps-0  active td-sidebar-link td-sidebar-link__page" id="m-docsjsoncomplex-modifications-manipulator-definitionfrominteger-value"><span class="td-sidebar-nav-active-item">from.integer_value</span></a></label>
   
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsjsoncomplex-modifications-manipulator-definitionfromsimultaneous-li">
   <input type="checkbox" id="m-docsjsoncomplex-modifications-manipulator-definitionfromsimultaneous-check"/>
@@ -671,7 +659,7 @@ Thus, Karabiner-Elements fails detecting file updates after you change the paren
 
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#log-file">Log file</a></li>
+    <li><a href="#examples">Examples</a></li>
   </ul>
 </nav>
 
@@ -690,55 +678,125 @@ Thus, Karabiner-Elements fails detecting file updates after you change the paren
     <a href="/docs/">Documentation</a></li>
   <li class="breadcrumb-item">
     <a href="/docs/json/">Karabiner Configuration Reference Manual</a></li>
+  <li class="breadcrumb-item">
+    <a href="/docs/json/complex-modifications-manipulator-definition/">complex_modifications manipulator definition</a></li>
+  <li class="breadcrumb-item">
+    <a href="/docs/json/complex-modifications-manipulator-definition/from/">from event definition</a></li>
   <li class="breadcrumb-item active" aria-current="page">
-    File locations</li>
+    from.integer_value</li>
   </ol>
 </nav>
 <div class="td-content">
-	<h1>File locations</h1>
+	<h1>from.integer_value</h1>
 	
 	<header class="article-meta">
 		
 </header>
-	<p>Karabiner-Elements configuration file paths:</p>
-<ul>
-<li><code>~/.config/karabiner/karabiner.json</code>
-<ul>
-<li>Main configuration file.<br />
-Karabiner-Elements watches this file and reload it automatically when it is updated.</li>
-</ul>
-</li>
-<li><code>~/.config/karabiner/assets/complex_modifications</code>
-<ul>
-<li>Imported complex_modifications files.<br />
-You can use them in Karabiner-Elements Settings &gt; Complex Modifications &gt; Add predefined rule.</li>
-</ul>
-</li>
-</ul>
+	<p><code>from.integer_value</code> is rarely needed.
+Only a handful of devices require you to distinguish buttons by integer_value, and that&rsquo;s when you use it.</p>
+<p>One such device is the VEC USB Footpedal INFINITY USB-3.
+It has three buttons, each of which sends the following events:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Hardware Button</th>
+          <th>event</th>
+          <th>integer_value</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Left Button</td>
+          <td><code>&quot;pointing_button&quot;: &quot;button75&quot;</code></td>
+          <td><code>&quot;integer_value&quot;: 1</code></td>
+      </tr>
+      <tr>
+          <td>Middle Button</td>
+          <td><code>&quot;pointing_button&quot;: &quot;button75&quot;</code></td>
+          <td><code>&quot;integer_value&quot;: 2</code></td>
+      </tr>
+      <tr>
+          <td>Right Button</td>
+          <td><code>&quot;pointing_button&quot;: &quot;button75&quot;</code></td>
+          <td><code>&quot;integer_value&quot;: 4</code></td>
+      </tr>
+  </tbody>
+</table>
 
 
 <div class="alert alert-primary" role="alert">
-<h4 class="alert-heading">Tip: file update detection and automatic reload</h4>
+<h4 class="alert-heading">Limitation</h4>
 
-    <p>Karabiner-Elements watches <code>~/.config/karabiner/karabiner.json</code> and reloads it if updated.</p>
-<p>The mechanism is that Karabiner-Elements watches the parent directory <code>~/.config/karabiner</code> by using the File System Events API.<br />
-Thus, Karabiner-Elements fails detecting file updates after you change the parent directory (e.g., recreate the parent directory).</p>
-
+    If you press the Middle Button while holding the Left Button, the integer_value becomes 3.
+However, patterns where integer_value changes mid-press are not supported.
+The value is interpreted from the first button that was pressed, so in this case it evaluates as integer_value 1.
 
 </div>
 
-<h2 id="log-file">Log file</h2>
-<p>Error messages will be output into <code>~/.local/share/karabiner/log/console_user_server.log</code> if there are errors such as parse error.</p>
-<p>You can also view the error messages in Karabiner-Elements Settings &gt; Log.</p>
-<figure>
-  <img
-    src="/docs/json/location/images/karabiner-elements-error-log@2x.png"
-    alt="karabiner-elements-error-log@2x.png"
-    style="width: 1100px"
-  />
-</figure>
+<h2 id="examples">Examples</h2>
+<ul>
+<li>Change the left button to mission_control.</li>
+<li>Change the middle button to f12.</li>
+<li>Change the right button to command+shift+4.</li>
+</ul>
+<div class="highlight" style="margin-top: 0rem; margin-bottom: -2rem">
+  <a
+    class="d-inline-block"
+    style="
+      text-decoration: none;
+      background-color: #f8f8f8;
+      padding: 0.5rem;
+      border: solid var(--bs-border-color);
+      border-width: 1px 1px 0 1px;
+    "
+    href="/docs/manual/configuration/add-your-own-complex-modifications/"
+    >💡 How to use this example</a
+  >
+</div>
 
-
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;description&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;Change VEC USB Footpedal INFINITY USB-3 buttons&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;manipulators&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;type&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;basic&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;from&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">&#34;pointing_button&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;button75&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">&#34;modifiers&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span> <span style="color:#204a87;font-weight:bold">&#34;optional&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">&#34;any&#34;</span><span style="color:#000;font-weight:bold">]</span> <span style="color:#000;font-weight:bold">},</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">&#34;integer_value&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#0000cf;font-weight:bold">1</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">},</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;to&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[{</span> <span style="color:#204a87;font-weight:bold">&#34;apple_vendor_keyboard_key_code&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;mission_control&#34;</span> <span style="color:#000;font-weight:bold">}]</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">},</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;type&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;basic&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;from&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">&#34;pointing_button&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;button75&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">&#34;modifiers&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span> <span style="color:#204a87;font-weight:bold">&#34;optional&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">&#34;any&#34;</span><span style="color:#000;font-weight:bold">]</span> <span style="color:#000;font-weight:bold">},</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">&#34;integer_value&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#0000cf;font-weight:bold">2</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">},</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;to&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;key_code&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;f12&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;modifiers&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">&#34;fn&#34;</span><span style="color:#000;font-weight:bold">]</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">]</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">},</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;type&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;basic&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;from&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">&#34;pointing_button&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;button75&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">&#34;modifiers&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span> <span style="color:#204a87;font-weight:bold">&#34;optional&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">&#34;any&#34;</span><span style="color:#000;font-weight:bold">]</span> <span style="color:#000;font-weight:bold">},</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">&#34;integer_value&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#0000cf;font-weight:bold">4</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">},</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;to&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;key_code&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;4&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;modifiers&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">&#34;left_command&#34;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">&#34;left_shift&#34;</span><span style="color:#000;font-weight:bold">]</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">]</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">]</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></div>
 	
 </div>
 
