@@ -3,6 +3,10 @@ title: 'from.integer_value'
 weight: 250
 ---
 
+{{% alert color="info" %}}
+This feature is available since Karabiner-Elements 15.5.21.
+{{% /alert %}}
+
 `from.integer_value` is rarely needed.
 Only a handful of devices require you to distinguish buttons by integer_value, and that's when you use it.
 
