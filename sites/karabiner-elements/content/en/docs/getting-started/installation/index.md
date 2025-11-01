@@ -46,7 +46,7 @@ If the printed characters on your keyboard do not match what is input, please ch
 
 The background item notifications will be shown after the installation.
 
-{{< local-image src="images/login-items0@2x.png" >}}
+{{< local-image src="images/login-items@2x.png" >}}
 
 The following Login Items in System Settings must be enabled.
 
