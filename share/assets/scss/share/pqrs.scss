@@ -13,7 +13,7 @@ body {
         margin: 20px 0;
         box-sizing: content-box;
         border: 1px solid $border-color;
-        border-radius: 10px;
+        border-radius: 20px;
       }
 
       &.inline-local-image {
@@ -63,7 +63,7 @@ body.release-notes {
   img {
     margin: 20px 0;
     border: 1px solid $border-color;
-    border-radius: 10px;
+    border-radius: 20px;
   }
 }
 
