@@ -23,9 +23,9 @@ Additionally, when you open Karabiner-Elements Settings, the necessary actions w
 
 ## Open Karabiner-Elements Settings
 
-Open Karabiner-Elements from Launchpad.
+Open Karabiner-Elements from Apps or Finder.
 
-{{< local-image src="images/karabiner-elements-icon@2x.png" >}}
+{{< local-image src="images/spotlight@2x.png" >}}
 
 ## Setup your keyboard layout
 
