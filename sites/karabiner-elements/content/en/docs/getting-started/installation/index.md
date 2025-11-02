@@ -85,17 +85,15 @@ If you are using Karabiner-Elements 14.13.0 or earlier, an alert for karabiner_o
 
 {{% alert color="success" %}}
 
-1.  The following alert will be shown.
+1.  Click the "Open System Settings" button in the dialog below, or open "Login Items & Extensions" from System Settings.
     {{< local-image src="images/system-extension-blocked@2x.png" >}}
+2.  Then enable `.Karabiner-VirtualHIDDevice-Manager`.
     {{< local-image src="images/settings-driver-extensions@2x.png" >}}
-2.  Click `Open System Settings` button, then enable `.Karabiner-VirtualHIDDevice-Manager`.
     {{< local-image src="images/driver-extensions@2x.png" >}}
 
 {{% /alert %}}
 
 {{% alert title="Note" color="primary" %}}
-
-Please follow [this instruction](../../help/troubleshooting/kext-allow-button-does-not-work/) if there is any problem with the **Driver Extensions** button.
 
 {{% /alert %}}
 

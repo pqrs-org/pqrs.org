@@ -19,8 +19,8 @@ However, we explain the macOS settings made during the initial setup of Karabine
 Karabier-Elements has processes running constantly in the background, that handle input events.
 You have to keep the background items enabled in `macOS System Settings > General > Login Items`.
 
-{{< local-image src="images/login-items0@2x.png" >}}
-{{< local-image src="images/login-items1@2x.png" >}}
+{{< local-image src="images/login-items@2x.png" >}}
+{{< local-image src="images/settings-services@2x.png" >}}
 
 {{% /alert %}}
 
@@ -34,7 +34,7 @@ Karabiner-Elements requires Input Monitoring permission to receive and modify in
 
 You can enable it in `macOS System Settings > Privacy & Security > Input Monitoring`.
 
-{{< local-image src="images/input-monitoring@2x.png" >}}
+{{< local-image src="images/settings-input-monitoring@2x.png" >}}
 
 {{% /alert %}}
 
@@ -69,6 +69,6 @@ Otherwise, you have to approve the system extension in macOS System Settings.
 
 You can approve the system extension in `macOS System Settings > Login Items & Extensions > Driver Extensions`.
 
-{{< local-image src="images/driver-extensions@2x.png" >}}
+{{< local-image src="images/settings-driver-extensions@2x.png" >}}
 
 {{% /alert %}}
