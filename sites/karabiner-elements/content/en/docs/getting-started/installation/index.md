@@ -10,7 +10,7 @@ Follow these instructions to set up Karabiner-Elements.
 
 1.  Open the downloaded file.
     <img src="images/dmg-icon@2x.png" alt="dmg" width="64" />
-2.  Open the .pkg file.
+2.  Open the Karabiner-Elements.pkg.
     <img src="images/pkg-icon@2x.png" alt="pkg" width="64" />
 3.  The installer will be opened. Install Karabiner-Elements.
     {{< local-image src="images/installer@2x.png" >}}
