@@ -40,8 +40,8 @@ Example shortcuts Move mouse cursor right_shift &#43; arrow keys Fast move right
   <meta name="twitter:title" content="to.mouse_key">
   <meta name="twitter:description" content="Move mouse pointer and scroll by mouse_key.
 Example shortcuts Move mouse cursor right_shift &#43; arrow keys Fast move right_shift &#43; f &#43; arrow keys Click right_shift &#43; v Scroll wheel right_command &#43; arrow keys 💡 How to use this example { &#34;description&#34;: &#34;Move mouse cursor by right_shift &#43; arrows, scroll by right_command &#43; arrows&#34;, &#34;manipulators&#34;: [ // y { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;up_arrow&#34;, &#34;modifiers&#34;: { &#34;mandatory&#34;: &#34;right_shift&#34;, &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [{ &#34;mouse_key&#34;: { &#34;y&#34;: -1536 } }] }, { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;down_arrow&#34;, &#34;modifiers&#34;: { &#34;mandatory&#34;: &#34;right_shift&#34;, &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [{ &#34;mouse_key&#34;: { &#34;y&#34;: 1536 } }] }, // x { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;left_arrow&#34;, &#34;modifiers&#34;: { &#34;mandatory&#34;: &#34;right_shift&#34;, &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [{ &#34;mouse_key&#34;: { &#34;x&#34;: -1536 } }] }, { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;right_arrow&#34;, &#34;modifiers&#34;: { &#34;mandatory&#34;: &#34;right_shift&#34;, &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [{ &#34;mouse_key&#34;: { &#34;x&#34;: 1536 } }] }, // speed_multiplier { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;f&#34;, &#34;modifiers&#34;: { &#34;mandatory&#34;: &#34;right_shift&#34;, &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [{ &#34;mouse_key&#34;: { &#34;speed_multiplier&#34;: 4.0 } }] }, // click { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;v&#34;, &#34;modifiers&#34;: { &#34;mandatory&#34;: &#34;right_shift&#34;, &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [{ &#34;pointing_button&#34;: &#34;button1&#34; }] }, // vertical_wheel { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;up_arrow&#34;, &#34;modifiers&#34;: { &#34;mandatory&#34;: &#34;right_command&#34;, &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [{ &#34;mouse_key&#34;: { &#34;vertical_wheel&#34;: -32 } }] }, { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;down_arrow&#34;, &#34;modifiers&#34;: { &#34;mandatory&#34;: &#34;right_command&#34;, &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [{ &#34;mouse_key&#34;: { &#34;vertical_wheel&#34;: 32 } }] }, // horizontal_wheel { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;left_arrow&#34;, &#34;modifiers&#34;: { &#34;mandatory&#34;: &#34;right_command&#34;, &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [{ &#34;mouse_key&#34;: { &#34;horizontal_wheel&#34;: 32 } }] }, { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;right_arrow&#34;, &#34;modifiers&#34;: { &#34;mandatory&#34;: &#34;right_command&#34;, &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [{ &#34;mouse_key&#34;: { &#34;horizontal_wheel&#34;: -32 } }] } ] } Specification { &#34;to&#34;: [ { &#34;mouse_key&#34;: { &#34;x&#34;: speed, &#34;y&#34;: speed, &#34;vertical_wheel&#34;: speed, &#34;horizontal_wheel&#34;: speed, &#34;speed_multiplier&#34;: 1.0 } } ] } Name Required Description x Optional Move left (x &lt; 0) or right (x &gt; 0) y Optional Move up (y &lt; 0) or down (y &gt; 0) vertical_wheel Optional Scroll up (vertical_wheel &lt; 0) or down (vertical_wheel &gt; 0) horizontal_wheel Optional Scroll left (horizontal_wheel &gt; 0) or right (horizontal_wheel &lt; 0) speed_multiplier Optional Multiply mouse keys speed while this key is hold down Note Speed and scroll direction depend on System Settings &gt; Mouse configuration. Complete json examples Mouse keys (simple) Mouse Keys Mode v4">
-<link rel="preload" href="/scss/main.min.21d1e9d133ee2851cb7c1e27789ba6508e88bf43b9a8c464351a34f29685ee78.css" as="style" integrity="sha256-IdHp0TPuKFHLfB4neJumUI6Iv0O5qMRkNRo08paF7ng=" crossorigin="anonymous">
-<link href="/scss/main.min.21d1e9d133ee2851cb7c1e27789ba6508e88bf43b9a8c464351a34f29685ee78.css" rel="stylesheet" integrity="sha256-IdHp0TPuKFHLfB4neJumUI6Iv0O5qMRkNRo08paF7ng=" crossorigin="anonymous">
+<link rel="preload" href="/scss/main.min.ee554750de482a7b1576c03d387d0d0a509a9fd3970bab55c7b58b28c6fd2323.css" as="style" integrity="sha256-7lVHUN5IKnsVdsA9OH0NClCan9OXC6tVx7WLKMb9IyM=" crossorigin="anonymous">
+<link href="/scss/main.min.ee554750de482a7b1576c03d387d0d0a509a9fd3970bab55c7b58b28c6fd2323.css" rel="stylesheet" integrity="sha256-7lVHUN5IKnsVdsA9OH0NClCan9OXC6tVx7WLKMb9IyM=" crossorigin="anonymous">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -74,7 +74,7 @@ Example shortcuts Move mouse cursor right_shift &#43; arrow keys Fast move right
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.e83c95f54db0be9f9c721313386c246b.json"
+    data-offline-search-index-json-src="/offline-search-index.da0501576cfadb4c88c09ce33ef64497.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="25"
   >
@@ -98,7 +98,7 @@ Example shortcuts Move mouse cursor right_shift &#43; arrow keys Fast move right
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.e83c95f54db0be9f9c721313386c246b.json"
+    data-offline-search-index-json-src="/offline-search-index.da0501576cfadb4c88c09ce33ef64497.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="25"
   >
@@ -254,10 +254,6 @@ Example shortcuts Move mouse cursor right_shift &#43; arrow keys Fast move right
   <input type="checkbox" id="m-docsmanualmiscchange-app-icon-check"/>
   <label for="m-docsmanualmiscchange-app-icon-check"><a href="/docs/manual/misc/change-app-icon/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-docsmanualmiscchange-app-icon"><span class="">Change app icon</span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsmanualmisclegacy-system-extension-li">
-  <input type="checkbox" id="m-docsmanualmisclegacy-system-extension-check"/>
-  <label for="m-docsmanualmisclegacy-system-extension-check"><a href="/docs/manual/misc/legacy-system-extension/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-docsmanualmisclegacy-system-extension"><span class="">About &#34;Legacy System Extension&#34; alert</span></a></label>
-  
 </li>
   </ul>
 </li>
@@ -279,14 +275,6 @@ Example shortcuts Move mouse cursor right_shift &#43; arrow keys Fast move right
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docshelptroubleshootingdriver-alert-keeps-showing-up-li">
   <input type="checkbox" id="m-docshelptroubleshootingdriver-alert-keeps-showing-up-check"/>
   <label for="m-docshelptroubleshootingdriver-alert-keeps-showing-up-check"><a href="/docs/help/troubleshooting/driver-alert-keeps-showing-up/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-docshelptroubleshootingdriver-alert-keeps-showing-up"><span class="">Driver alert keeps showing up</span></a></label>
-  
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docshelptroubleshootingallow-button-does-not-appear-li">
-  <input type="checkbox" id="m-docshelptroubleshootingallow-button-does-not-appear-check"/>
-  <label for="m-docshelptroubleshootingallow-button-does-not-appear-check"><a href="/docs/help/troubleshooting/allow-button-does-not-appear/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-docshelptroubleshootingallow-button-does-not-appear"><span class="">Allow button in Privacy &amp; Security System Settings does not appear</span></a></label>
-  
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docshelptroubleshootingallow-button-does-not-work-li">
-  <input type="checkbox" id="m-docshelptroubleshootingallow-button-does-not-work-check"/>
-  <label for="m-docshelptroubleshootingallow-button-does-not-work-check"><a href="/docs/help/troubleshooting/allow-button-does-not-work/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-docshelptroubleshootingallow-button-does-not-work"><span class="">Allow button in Privacy &amp; Security System Settings does not work</span></a></label>
   
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docshelptroubleshootingfumihiko-takayama-in-login-items-li">
   <input type="checkbox" id="m-docshelptroubleshootingfumihiko-takayama-in-login-items-check"/>
@@ -916,12 +904,10 @@ Example shortcuts Move mouse cursor right_shift &#43; arrow keys Fast move right
           </main>
         </div>
       </div>
-      <footer class="bg-primary py-5 row d-print-none">
-  <div class="col-12 text-center py-2">
-    <a class="text-white" href="https://pqrs.org" target="_blank">
-      pqrs.org
-    </a>
-  </div>
+      <footer class="bg-primary py-5 row text-center d-print-none">
+  <a class="text-white" href="https://pqrs.org" target="_blank">
+    pqrs.org
+  </a>
 </footer>
 
     </div>

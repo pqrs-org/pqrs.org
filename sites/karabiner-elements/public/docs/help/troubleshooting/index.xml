@@ -19,21 +19,7 @@
       <link>/docs/help/troubleshooting/driver-alert-keeps-showing-up/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/docs/help/troubleshooting/driver-alert-keeps-showing-up/</guid>
-      <description>&lt;p&gt;Usually, the following driver alert will appear on first start-up and the alert will disappear after you allow the system software from System Settings.&lt;/p&gt;&#xA;&lt;p&gt;Unfortunately, the allow button may sometimes not appear in System Settings due to a problem with macOS driver loading.&lt;br /&gt;&#xA;In this case, you can display the allow button by deactivating and activating driver as described in the Advanced section on the alert.&lt;/p&gt;&#xA;&lt;p&gt;&lt;figure&gt;&#xA;  &lt;img&#xA;    src=&#34;/docs/help/troubleshooting/driver-alert-keeps-showing-up/images/dext-alert-1@2x.png&#34;&#xA;    alt=&#34;dext-alert-1@2x.png&#34;&#xA;    style=&#34;width: 1100px&#34;&#xA;  /&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;figure&gt;&#xA;  &lt;img&#xA;    src=&#34;/docs/help/troubleshooting/driver-alert-keeps-showing-up/images/dext-alert-2@2x.png&#34;&#xA;    alt=&#34;dext-alert-2@2x.png&#34;&#xA;    style=&#34;width: 1100px&#34;&#xA;  /&gt;&#xA;&lt;/figure&gt;&#xA;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Allow button in Privacy &amp; Security System Settings does not appear</title>
-      <link>/docs/help/troubleshooting/allow-button-does-not-appear/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/docs/help/troubleshooting/allow-button-does-not-appear/</guid>
-      <description>&lt;p&gt;The allow button in Privacy &amp;amp; Security System Settings appear for your approval after you open Karabiner-Elements for the first time.&lt;/p&gt;&#xA;&lt;p&gt;However, this allow button may not appear in some environments.&lt;/p&gt;&#xA;&lt;figure&gt;&#xA;  &lt;img&#xA;    src=&#34;/docs/help/troubleshooting/allow-button-does-not-appear/images/system-extension-allow@2x.png&#34;&#xA;    alt=&#34;system-extension-allow@2x.png&#34;&#xA;    style=&#34;width: 715px&#34;&#xA;  /&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;h2 id=&#34;reason&#34;&gt;Reason&lt;/h2&gt;&#xA;&lt;p&gt;The exact cause of the issue has not been determined, but it may be caused by the corrupted system cache by a macOS issue.&lt;/p&gt;&#xA;&lt;p&gt;This issue may be resolved by starting macOS in safe mode to refresh the system cache.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Allow button in Privacy &amp; Security System Settings does not work</title>
-      <link>/docs/help/troubleshooting/allow-button-does-not-work/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/docs/help/troubleshooting/allow-button-does-not-work/</guid>
-      <description>&lt;p&gt;The allow button in Privacy &amp;amp; Security System Settings should be hidden after you click it.&lt;br/&gt;&#xA;If the button does not hide after click, you did not succeed to click it.&lt;/p&gt;&#xA;&lt;figure&gt;&#xA;  &lt;img&#xA;    src=&#34;/docs/help/troubleshooting/allow-button-does-not-work/images/system-extension-allow@2x.png&#34;&#xA;    alt=&#34;system-extension-allow@2x.png&#34;&#xA;    style=&#34;width: 715px&#34;&#xA;  /&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;h2 id=&#34;reason&#34;&gt;Reason&lt;/h2&gt;&#xA;&lt;p&gt;The exact cause of the issue has not been determined, but it may be caused by the corrupted system cache by a macOS issue.&lt;/p&gt;&#xA;&lt;p&gt;This issue may be resolved by starting macOS in safe mode to refresh the system cache.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Karabiner-Elements provides a driver extension so it can offer a virtual keyboard and mouse.&#xA;During setup you need to enable this driver extension.&lt;/p&gt;&#xA;&lt;p&gt;Normally it&amp;rsquo;s enough to turn on the toggle in System Settings.&#xA;However, some people report that the extension never appears in System Settings.&lt;/p&gt;&#xA;&lt;p&gt;This usually happens because third-party security software blocks the driver extension from loading.&#xA;If that&amp;rsquo;s the case, add the driver to the whitelist in your security software so the driver extension can load.&lt;/p&gt;</description>
     </item>
     <item>
       <title>&#34;Fumihiko Takayama&#34; is shown in Login Items</title>
