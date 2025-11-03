@@ -95,6 +95,10 @@ If you are using Karabiner-Elements 14.13.0 or earlier, an alert for karabiner_o
 
 {{% alert title="Note" color="primary" %}}
 
+If the driver extension fails to appear in System Settings or you run into similar issues, check this page:
+
+-   [Driver alert keeps showing up](/docs/help/troubleshooting/driver-alert-keeps-showing-up/)
+
 {{% /alert %}}
 
 ## Configure Karabiner-Elements
