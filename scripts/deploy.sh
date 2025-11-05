@@ -1,10 +1,7 @@
 #!/bin/bash
 
-# forbid undefined variables
-set -u
-
-# forbid command failure
-set -e
+set -u # forbid undefined variables
+set -e # forbid command failure
 
 cd $(dirname $0)/../
 
