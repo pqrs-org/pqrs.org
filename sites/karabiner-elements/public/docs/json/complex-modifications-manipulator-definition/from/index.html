@@ -5,18 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link rel="alternate" type="application/rss&#43;xml" href="/docs/json/complex-modifications-manipulator-definition/from/index.xml">
 <meta name="robots" content="index, follow">
-
-
-<link rel="shortcut icon" href="/favicons/favicon.ico" >
-<link rel="apple-touch-icon" href="/favicons/apple-touch-icon-180x180.png" sizes="180x180">
-<link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
 <link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
-<link rel="icon" type="image/png" href="/favicons/android-36x36.png" sizes="36x36">
-<link rel="icon" type="image/png" href="/favicons/android-48x48.png" sizes="48x48">
-<link rel="icon" type="image/png" href="/favicons/android-72x72.png" sizes="72x72">
-<link rel="icon" type="image/png" href="/favicons/android-96x96.png" sizes="96x96">
-<link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
-<link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="/favicons/apple-touch-icon-180x180.png" sizes="180x180">
 
 <title>from event definition | Karabiner-Elements</title>
 <meta name="description" content="{ &#34;from&#34;: { &#34;key_code&#34;: &#34;The name of key_code&#34;, &#34;consumer_key_code&#34;: &#34;The name of consumer_key_code&#34;, &#34;pointing_button&#34;: &#34;The name of pointing_button&#34;, &#34;any&#34;: &#34;key_code or consumer_key_code or pointing_button&#34;, &#34;modifiers&#34;: { &#34;mandatory&#34;: [ modifier, modifier, ... ], &#34;optional&#34;: [ modifier, modifier, ... ] }, &#34;integer_value&#34;: integer, &#34;simultaneous&#34;: [ { &#34;key_code, consumer_key_code, pointing_button or any&#34; }, { &#34;key_code, consumer_key_code, pointing_button or any&#34; }, ... ], &#34;simultaneous_options&#34;: { &#34;detect_key_down_uninterruptedly&#34;: false, &#34;key_down_order&#34;: &#34;A restriction of input events order&#34;, &#34;key_up_order&#34;: &#34;A restriction of input events order&#34;, &#34;key_up_when&#34;: &#34;When key_up events are posted&#34;, &#34;to_after_key_up&#34;: [ to event definition, to event definition, ... ] } } } Name Required Description key_code Optional Key code which you want to change consumer_key_code Optional Consumer key code (media key code) which you want to change pointing_button Optional Pointing button name which you want to change any Optional &#34;any&#34;: &#34;key_code&#34;, &#34;any&#34;: &#34;consumer_key_code&#34; or &#34;any&#34;: &#34;pointing_button&#34; modifiers Optional Specify mandatory and optional modifiers (e.g., “change control-h to delete”) integer_value Optional Modify only events with a specific integer value. simultaneous Optional Specify multiple events which are pressed simultaneously simultaneous_options Optional Options for simultaneous Note key_code, consumer_key_code, pointing_button and any are exclusive.
