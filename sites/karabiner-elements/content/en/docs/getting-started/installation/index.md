@@ -50,17 +50,10 @@ The background item notifications will be shown after the installation.
 
 The following Login Items in System Settings must be enabled.
 
--   `Karabiner-Elements Non-Privileged Agents`
--   `Karabiner-Elements Privileged Daemons`
+-   `Karabiner-Elements Non-Privileged Agents v2`
+-   `Karabiner-Elements Privileged Daemons v2`
 
 {{< local-image src="images/settings-services@2x.png" >}}
-
-{{% /alert %}}
-
-{{% alert title="Note" color="primary" %}}
-
-If you are using macOS 12 or prior, these items are not shown in System Preferences.
-Please proceed to the next step.
 
 {{% /alert %}}
 
@@ -69,15 +62,9 @@ Please proceed to the next step.
 {{% alert color="success" %}}
 
 1.  The Keystroke Receiving alert will be shown.
-    {{< local-image src="images/karabiner-grabber@2x.png" >}}
-2.  Press the `Open System Settings` button and enable `karabiner_grabber`.
+    {{< local-image src="images/input-monitoring-dialog@2x.png" >}}
+2.  Press the `Open System Settings` button and enable `Karabiner-Core-Service`.
     {{< local-image src="images/settings-input-monitoring@2x.png" >}}
-
-{{% /alert %}}
-
-{{% alert title="Note" color="primary" %}}
-
-If you are using Karabiner-Elements 14.13.0 or earlier, an alert for karabiner_observer will also be displayed, so please grant permission for that as well.
 
 {{% /alert %}}
 
