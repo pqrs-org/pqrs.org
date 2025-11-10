@@ -23,7 +23,7 @@ Install Karabiner-Elements Open the downloaded file. Open the Karabiner-Elements
   <meta itemprop="name" content="Installation">
   <meta itemprop="description" content="Some operations are required to grant proper permission from macOS to Karabiner-Elements. Follow these instructions to set up Karabiner-Elements.
 Install Karabiner-Elements Open the downloaded file. Open the Karabiner-Elements.pkg. The installer will be opened. Install Karabiner-Elements. After installation, you’ll need to grant the necessary permissions for Karabiner-Elements to function. This is part of macOS’s protection mechanism to prevent applications from accessing information without user consent. There are a few required steps, so please follow the instructions.">
-  <meta itemprop="wordCount" content="314">
+  <meta itemprop="wordCount" content="268">
   <meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://karabiner-elements.pqrs.org/images/logo.png">
@@ -64,7 +64,7 @@ Install Karabiner-Elements Open the downloaded file. Open the Karabiner-Elements
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.ec1651c8750099a674b55bdce47fb5b3.json"
+    data-offline-search-index-json-src="/offline-search-index.c497cf95a9734a0b4a3473e7d2933acf.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="25"
   >
@@ -88,7 +88,7 @@ Install Karabiner-Elements Open the downloaded file. Open the Karabiner-Elements
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.ec1651c8750099a674b55bdce47fb5b3.json"
+    data-offline-search-index-json-src="/offline-search-index.c497cf95a9734a0b4a3473e7d2933acf.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="25"
   >
@@ -731,13 +731,13 @@ If the printed characters on your keyboard do not match what is input, please ch
   <img
     src="/docs/getting-started/installation/images/login-items@2x.png"
     alt="login-items@2x.png"
-    style="width: 399px"
+    style="width: 444px"
   />
 </figure>
 <p>The following Login Items in System Settings must be enabled.</p>
 <ul>
-<li><code>Karabiner-Elements Non-Privileged Agents</code></li>
-<li><code>Karabiner-Elements Privileged Daemons</code></li>
+<li><code>Karabiner-Elements Non-Privileged Agents v2</code></li>
+<li><code>Karabiner-Elements Privileged Daemons v2</code></li>
 </ul>
 <figure>
   <img
@@ -747,16 +747,6 @@ If the printed characters on your keyboard do not match what is input, please ch
   />
 </figure>
 
-
-</div>
-
-
-
-<div class="alert alert-primary" role="alert">
-<h4 class="alert-heading">Note</h4>
-
-    If you are using macOS 12 or prior, these items are not shown in System Preferences.
-Please proceed to the next step.
 
 </div>
 
@@ -771,14 +761,14 @@ Please proceed to the next step.
 <p>The Keystroke Receiving alert will be shown.</p>
 <figure>
   <img
-    src="/docs/getting-started/installation/images/karabiner-grabber@2x.png"
-    alt="karabiner-grabber@2x.png"
+    src="/docs/getting-started/installation/images/input-monitoring-dialog@2x.png"
+    alt="input-monitoring-dialog@2x.png"
     style="width: 461px"
   />
 </figure>
 </li>
 <li>
-<p>Press the <code>Open System Settings</code> button and enable <code>karabiner_grabber</code>.</p>
+<p>Press the <code>Open System Settings</code> button and enable <code>Karabiner-Core-Service</code>.</p>
 <figure>
   <img
     src="/docs/getting-started/installation/images/settings-input-monitoring@2x.png"
@@ -789,15 +779,6 @@ Please proceed to the next step.
 </li>
 </ol>
 
-
-</div>
-
-
-
-<div class="alert alert-primary" role="alert">
-<h4 class="alert-heading">Note</h4>
-
-    If you are using Karabiner-Elements 14.13.0 or earlier, an alert for karabiner_observer will also be displayed, so please grant permission for that as well.
 
 </div>
 
