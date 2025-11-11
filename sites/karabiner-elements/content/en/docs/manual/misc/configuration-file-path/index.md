@@ -34,22 +34,31 @@ Otherwise, it will not be able to automatically detect updates to `karabiner.jso
 launchctl kickstart -k gui/$(id -u)/org.pqrs.service.agent.karabiner_console_user_server
 ```
 
-{{% alert title="Additional file access permissions" color="primary" %}}
+{{% alert title="Tip" color="primary" %}}
+
+[Setting the XDG_CONFIG_HOME environment variable](/docs/help/advanced-topics/set-environment-variables/) is another way to change the location of the configuration file.
+
+{{% /alert %}}
+
+{{% alert title="Additional file access permissions" color="success" %}}
 
 Normally, no additional configuration is needed even if you change the location of karabiner.json.
 
 However, if you move the karabiner.json file to a location that requires special permissions, such as the `Desktop` or `Downloads` folder, you will need to grant access permissions to the following processes.
 
--   `karabiner_grabber`
+-   `Karabiner-Core-Service`
 -   `karabiner_console_user_server`
 
 The most reliable way is to grant Full Disk Access to these processes.
 
 To grant Full Disk Access to the these process,
 nagivate to `System Settings > Privacy & Security > Full Disk Access`
-and make sure the toggle next to `karabiner_grabber` and `karabiner_console_user_server` are set to the ON position.
+and make sure the toggle next to `Karabiner-Core-Service` and `karabiner_console_user_server` are set to the ON position.
 
-If these entries are not listed, you can press the `+` button, navigate to `Macintosh HD > Library > Application Support > org.pqrs > Karabiner-Elements > bin`, and add them from there.
+If these entries are not listed, you can press the `+` button, navigate to the following locations, and add them from there.
+
+-   `Macintosh HD > Library > Application Support > org.pqrs > Karabiner-Elements`
+-   `Macintosh HD > Library > Application Support > org.pqrs > Karabiner-Elements > bin`
 
 After turning them on, please restart macOS once to restart these processes.
 
