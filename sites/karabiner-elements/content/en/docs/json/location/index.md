@@ -27,4 +27,4 @@ Error messages will be output into `~/.local/share/karabiner/log/console_user_se
 
 You can also view the error messages in Karabiner-Elements Settings > Log.
 
-{{< local-image src="images/karabiner-elements-error-log@2x.png" >}}
+{{< local-image src="images/log@2x.png" >}}

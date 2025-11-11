@@ -17,7 +17,7 @@ Karabiner-Elements will fail to detect configuration file changes and reload the
 
 {{% /alert %}}
 
-#### Making symbolic link example
+## Making symbolic link example
 
 The following command allows you to move the `karabiner.json` file to **~/Library/Application Support/org.pqrs**. The same process is applies for any other directory.
 
