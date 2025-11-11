@@ -26,7 +26,7 @@ If you want to check the macOS settings made during the initial setup. If Karabi
   <meta itemprop="description" content="Under normal circumstances, there is no need to read this page, as the necessary settings have already been made during the initial setup.
 However, we explain the macOS settings made during the initial setup of Karabiner-Elements for the following purposes:
 If you want to check the macOS settings made during the initial setup. If Karabiner-Elements is not working properly and you want to ensure that the macOS settings are correct. Enable background services Karabier-Elements has processes running constantly in the background, that handle input events. You have to keep the background items enabled in macOS System Settings &gt; General &gt; Login Items.">
-  <meta itemprop="wordCount" content="273">
+  <meta itemprop="wordCount" content="218">
   <meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://karabiner-elements.pqrs.org/images/logo.png">
@@ -68,7 +68,7 @@ If you want to check the macOS settings made during the initial setup. If Karabi
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.c497cf95a9734a0b4a3473e7d2933acf.json"
+    data-offline-search-index-json-src="/offline-search-index.eb25b389afcac819c9171078ca05e9fc.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="25"
   >
@@ -92,7 +92,7 @@ If you want to check the macOS settings made during the initial setup. If Karabi
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.c497cf95a9734a0b4a3473e7d2933acf.json"
+    data-offline-search-index-json-src="/offline-search-index.eb25b389afcac819c9171078ca05e9fc.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="25"
   >
@@ -687,13 +687,6 @@ If you want to check the macOS settings made during the initial setup. If Karabi
 You have to keep the background items enabled in <code>macOS System Settings &gt; General &gt; Login Items</code>.</p>
 <figure>
   <img
-    src="/docs/manual/misc/required-macos-settings/images/login-items@2x.png"
-    alt="login-items@2x.png"
-    style="width: 399px"
-  />
-</figure>
-<figure>
-  <img
     src="/docs/manual/misc/required-macos-settings/images/settings-services@2x.png"
     alt="settings-services@2x.png"
     style="width: 723px"
@@ -722,25 +715,6 @@ You have to keep the background items enabled in <code>macOS System Settings &gt
 
 </div>
 
-
-
-<div class="alert alert-danger" role="alert">
-<h4 class="alert-heading">Troubleshooting</h4>
-
-    <p>If you cannot find <code>karabiner_grabber</code> in the list, this is because you have not closed the following &ldquo;Keystroke Receiving&rdquo; dialogs.
-<code>karabiner_grabber</code> will be shown in the list after the dialogs are closed.</p>
-<p>If you don&rsquo;t see the dialog, it might be an issue with macOS not displaying it. Try restarting macOS.​</p>
-<figure>
-  <img
-    src="/docs/manual/misc/required-macos-settings/images/karabiner-grabber@2x.png"
-    alt="karabiner-grabber@2x.png"
-    style="width: 461px"
-  />
-</figure>
-
-
-</div>
-
 <hr>
 <h2 id="allow-system-extension">Allow system extension</h2>
 
@@ -748,7 +722,15 @@ You have to keep the background items enabled in <code>macOS System Settings &gt
 <div class="alert alert-primary" role="alert">
 
 
-    <p>Karabiner-Elements uses the system extension to provide a virtual keyboard and mouse.
+    <p>You can approve the system extension in <code>macOS System Settings &gt; Login Items &amp; Extensions &gt; Driver Extensions</code>.</p>
+<figure>
+  <img
+    src="/docs/manual/misc/required-macos-settings/images/settings-driver-extensions@2x.png"
+    alt="settings-driver-extensions@2x.png"
+    style="width: 723px"
+  />
+</figure>
+<p>Karabiner-Elements uses the system extension to provide a virtual keyboard and mouse.
 You have to approve system extension before using it.
 You can confirm whether the system extension already allowed in <a href="/docs/manual/operation/eventviewer/">EventViewer</a>.</p>
 <p>If <code>org.pqrs.Karabiner-DriverKit-VirtualHIDDevice</code> appears in the System Extensions of the EventViewer and the status is <code>[activated enabled]</code>, the system extension is already allowed.</p>
@@ -760,15 +742,6 @@ You can confirm whether the system extension already allowed in <a href="/docs/m
   />
 </figure>
 <p>Otherwise, you have to approve the system extension in macOS System Settings.</p>
-<h3 id="approve-system-extension">Approve system extension</h3>
-<p>You can approve the system extension in <code>macOS System Settings &gt; Login Items &amp; Extensions &gt; Driver Extensions</code>.</p>
-<figure>
-  <img
-    src="/docs/manual/misc/required-macos-settings/images/settings-driver-extensions@2x.png"
-    alt="settings-driver-extensions@2x.png"
-    style="width: 723px"
-  />
-</figure>
 
 
 </div>

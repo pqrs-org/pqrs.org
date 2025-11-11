@@ -11,16 +11,16 @@
 <meta name="description" content="You can confirm log messages on Log tab.
 Warnings appear with a yellow background. Errors appear with a red background. Advanced topic The log files are placed at:
 System logs
-/var/log/karabiner/grabber.log /var/log/karabiner/observer.log /var/log/karabiner/virtual_hid_device_service.log User logs
-~/.local/share/karabiner/log/console_user_server.log ~/.local/share/karabiner/log/grabber_agent.log ~/.local/share/karabiner/log/observer_agent.log /var/log/karabiner/session_monitor.{uid}.log">
+/var/log/karabiner/core_service.log /var/log/karabiner/virtual_hid_device_service.log User logs
+~/.local/share/karabiner/log/console_user_server.log /var/log/karabiner/session_monitor.{uid}.log">
 <meta property="og:url" content="/docs/manual/operation/log/">
   <meta property="og:site_name" content="Karabiner-Elements">
   <meta property="og:title" content="Show log messages">
   <meta property="og:description" content="You can confirm log messages on Log tab.
 Warnings appear with a yellow background. Errors appear with a red background. Advanced topic The log files are placed at:
 System logs
-/var/log/karabiner/grabber.log /var/log/karabiner/observer.log /var/log/karabiner/virtual_hid_device_service.log User logs
-~/.local/share/karabiner/log/console_user_server.log ~/.local/share/karabiner/log/grabber_agent.log ~/.local/share/karabiner/log/observer_agent.log /var/log/karabiner/session_monitor.{uid}.log">
+/var/log/karabiner/core_service.log /var/log/karabiner/virtual_hid_device_service.log User logs
+~/.local/share/karabiner/log/console_user_server.log /var/log/karabiner/session_monitor.{uid}.log">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
@@ -30,9 +30,9 @@ System logs
   <meta itemprop="description" content="You can confirm log messages on Log tab.
 Warnings appear with a yellow background. Errors appear with a red background. Advanced topic The log files are placed at:
 System logs
-/var/log/karabiner/grabber.log /var/log/karabiner/observer.log /var/log/karabiner/virtual_hid_device_service.log User logs
-~/.local/share/karabiner/log/console_user_server.log ~/.local/share/karabiner/log/grabber_agent.log ~/.local/share/karabiner/log/observer_agent.log /var/log/karabiner/session_monitor.{uid}.log">
-  <meta itemprop="wordCount" content="39">
+/var/log/karabiner/core_service.log /var/log/karabiner/virtual_hid_device_service.log User logs
+~/.local/share/karabiner/log/console_user_server.log /var/log/karabiner/session_monitor.{uid}.log">
+  <meta itemprop="wordCount" content="36">
   <meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://karabiner-elements.pqrs.org/images/logo.png">
@@ -40,8 +40,8 @@ System logs
   <meta name="twitter:description" content="You can confirm log messages on Log tab.
 Warnings appear with a yellow background. Errors appear with a red background. Advanced topic The log files are placed at:
 System logs
-/var/log/karabiner/grabber.log /var/log/karabiner/observer.log /var/log/karabiner/virtual_hid_device_service.log User logs
-~/.local/share/karabiner/log/console_user_server.log ~/.local/share/karabiner/log/grabber_agent.log ~/.local/share/karabiner/log/observer_agent.log /var/log/karabiner/session_monitor.{uid}.log">
+/var/log/karabiner/core_service.log /var/log/karabiner/virtual_hid_device_service.log User logs
+~/.local/share/karabiner/log/console_user_server.log /var/log/karabiner/session_monitor.{uid}.log">
 <link rel="preload" href="/scss/main.min.ee554750de482a7b1576c03d387d0d0a509a9fd3970bab55c7b58b28c6fd2323.css" as="style" integrity="sha256-7lVHUN5IKnsVdsA9OH0NClCan9OXC6tVx7WLKMb9IyM=" crossorigin="anonymous">
 <link href="/scss/main.min.ee554750de482a7b1576c03d387d0d0a509a9fd3970bab55c7b58b28c6fd2323.css" rel="stylesheet" integrity="sha256-7lVHUN5IKnsVdsA9OH0NClCan9OXC6tVx7WLKMb9IyM=" crossorigin="anonymous">
 <script
@@ -76,7 +76,7 @@ System logs
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.c497cf95a9734a0b4a3473e7d2933acf.json"
+    data-offline-search-index-json-src="/offline-search-index.eb25b389afcac819c9171078ca05e9fc.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="25"
   >
@@ -100,7 +100,7 @@ System logs
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.c497cf95a9734a0b4a3473e7d2933acf.json"
+    data-offline-search-index-json-src="/offline-search-index.eb25b389afcac819c9171078ca05e9fc.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="25"
   >
@@ -681,8 +681,8 @@ Errors appear with a red background.
 </div>
 <figure>
   <img
-    src="/docs/manual/operation/log/images/karabiner-elements-error-log@2x.png"
-    alt="karabiner-elements-error-log@2x.png"
+    src="/docs/manual/operation/log/images/log@2x.png"
+    alt="log@2x.png"
     style="width: 1100px"
   />
 </figure>
@@ -695,15 +695,12 @@ Errors appear with a red background.
     <p>The log files are placed at:</p>
 <p>System logs</p>
 <ul>
-<li>/var/log/karabiner/grabber.log</li>
-<li>/var/log/karabiner/observer.log</li>
+<li>/var/log/karabiner/core_service.log</li>
 <li>/var/log/karabiner/virtual_hid_device_service.log</li>
 </ul>
 <p>User logs</p>
 <ul>
 <li>~/.local/share/karabiner/log/console_user_server.log</li>
-<li>~/.local/share/karabiner/log/grabber_agent.log</li>
-<li>~/.local/share/karabiner/log/observer_agent.log</li>
 <li>/var/log/karabiner/session_monitor.{uid}.log</li>
 </ul>
 

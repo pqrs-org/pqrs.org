@@ -29,7 +29,7 @@ Warning Ensure you create a symbolic link to the ~/.config/karabiner directory, 
 However, there may be cases where you want to place the configuration file elsewhere, such as to automatically sync across multiple machines or to manage it under version control.
 In such cases, You can move the karabiner.json configuration file to a different directory by using a symbolic link.
 Warning Ensure you create a symbolic link to the ~/.config/karabiner directory, not directly to the karabiner.json file.">
-  <meta itemprop="wordCount" content="313">
+  <meta itemprop="wordCount" content="344">
   <meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://karabiner-elements.pqrs.org/images/logo.png">
@@ -72,7 +72,7 @@ Warning Ensure you create a symbolic link to the ~/.config/karabiner directory, 
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.c497cf95a9734a0b4a3473e7d2933acf.json"
+    data-offline-search-index-json-src="/offline-search-index.eb25b389afcac819c9171078ca05e9fc.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="25"
   >
@@ -96,7 +96,7 @@ Warning Ensure you create a symbolic link to the ~/.config/karabiner directory, 
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.c497cf95a9734a0b4a3473e7d2933acf.json"
+    data-offline-search-index-json-src="/offline-search-index.eb25b389afcac819c9171078ca05e9fc.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="25"
   >
@@ -641,11 +641,7 @@ Warning Ensure you create a symbolic link to the ~/.config/karabiner directory, 
 
 <nav id="TableOfContents">
   <ul>
-    <li>
-      <ul>
-        <li></li>
-      </ul>
-    </li>
+    <li><a href="#making-symbolic-link-example">Making symbolic link example</a></li>
   </ul>
 </nav>
 
@@ -690,7 +686,7 @@ Warning Ensure you create a symbolic link to the ~/.config/karabiner directory, 
 
 </div>
 
-<h4 id="making-symbolic-link-example">Making symbolic link example</h4>
+<h2 id="making-symbolic-link-example">Making symbolic link example</h2>
 <p>The following command allows you to move the <code>karabiner.json</code> file to <strong>~/Library/Application Support/org.pqrs</strong>. The same process is applies for any other directory.</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>mkdir -p <span style="color:#4e9a06">&#34;</span><span style="color:#000">$HOME</span><span style="color:#4e9a06">/Library/Application Support/org.pqrs/config&#34;</span>
 </span></span><span style="display:flex;"><span>mv ~/.config/karabiner <span style="color:#4e9a06">&#34;</span><span style="color:#000">$HOME</span><span style="color:#4e9a06">/Library/Application Support/org.pqrs/config&#34;</span>
@@ -701,19 +697,32 @@ Otherwise, it will not be able to automatically detect updates to <code>karabine
 </span></span></code></pre></div>
 
 <div class="alert alert-primary" role="alert">
+<h4 class="alert-heading">Tip</h4>
+
+    <a href="/docs/help/advanced-topics/set-environment-variables/">Setting the XDG_CONFIG_HOME environment variable</a> is another way to change the location of the configuration file.
+
+</div>
+
+
+
+<div class="alert alert-success" role="alert">
 <h4 class="alert-heading">Additional file access permissions</h4>
 
     <p>Normally, no additional configuration is needed even if you change the location of karabiner.json.</p>
 <p>However, if you move the karabiner.json file to a location that requires special permissions, such as the <code>Desktop</code> or <code>Downloads</code> folder, you will need to grant access permissions to the following processes.</p>
 <ul>
-<li><code>karabiner_grabber</code></li>
+<li><code>Karabiner-Core-Service</code></li>
 <li><code>karabiner_console_user_server</code></li>
 </ul>
 <p>The most reliable way is to grant Full Disk Access to these processes.</p>
 <p>To grant Full Disk Access to the these process,
 nagivate to <code>System Settings &gt; Privacy &amp; Security &gt; Full Disk Access</code>
-and make sure the toggle next to <code>karabiner_grabber</code> and <code>karabiner_console_user_server</code> are set to the ON position.</p>
-<p>If these entries are not listed, you can press the <code>+</code> button, navigate to <code>Macintosh HD &gt; Library &gt; Application Support &gt; org.pqrs &gt; Karabiner-Elements &gt; bin</code>, and add them from there.</p>
+and make sure the toggle next to <code>Karabiner-Core-Service</code> and <code>karabiner_console_user_server</code> are set to the ON position.</p>
+<p>If these entries are not listed, you can press the <code>+</code> button, navigate to the following locations, and add them from there.</p>
+<ul>
+<li><code>Macintosh HD &gt; Library &gt; Application Support &gt; org.pqrs &gt; Karabiner-Elements</code></li>
+<li><code>Macintosh HD &gt; Library &gt; Application Support &gt; org.pqrs &gt; Karabiner-Elements &gt; bin</code></li>
+</ul>
 <p>After turning them on, please restart macOS once to restart these processes.</p>
 
 

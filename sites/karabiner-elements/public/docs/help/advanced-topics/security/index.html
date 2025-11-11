@@ -10,19 +10,19 @@
 <title>Security | Karabiner-Elements</title>
 <meta name="description" content="Security is one of the most important point of Karabiner-Elements architecture design.
 Separating process and running them with properly privileges to prevent event leaks.
-Process Karabiner-Elements restricts the input event handling to karabiner_grabber processes.
+Process Karabiner-Elements restricts the input event handling to Karabiner-Core-Service processes.
 These process are running with root privilege and other process including malicious attacker cannot steal your input events.
 List of process Running with root privilege
-karabiner_grabber It grabs the keyboard hardware, catches events, modifies them, and then passes them to Karabiner-VirtualHIDDevice-Daemon. Karabiner-VirtualHIDDevice-Daemon It controls Karabiner-DriverKit-VirtualHIDDevice and bridges the data between karabiner_grabber and the virtual devices. This process only receives data from processes running with root privileges. Therefore, regular applications running with user privileges cannot arbitrarily send events to virtual devices. Running with DriverKit privilege">
+Karabiner-Core-Service It grabs exclusive access to the keyboard hardware, captures the input events, modifies them, and forwards them to Karabiner-VirtualHIDDevice-Daemon. (It was previously named karabiner_grabber.) Karabiner-VirtualHIDDevice-Daemon It controls Karabiner-DriverKit-VirtualHIDDevice and bridges the data between Karabiner-Core-Service and the virtual devices. This process only receives data from processes running with root privileges. Therefore, regular applications running with user privileges cannot arbitrarily send events to virtual devices. Running with DriverKit privilege">
 <meta property="og:url" content="/docs/help/advanced-topics/security/">
   <meta property="og:site_name" content="Karabiner-Elements">
   <meta property="og:title" content="Security">
   <meta property="og:description" content="Security is one of the most important point of Karabiner-Elements architecture design.
 Separating process and running them with properly privileges to prevent event leaks.
-Process Karabiner-Elements restricts the input event handling to karabiner_grabber processes.
+Process Karabiner-Elements restricts the input event handling to Karabiner-Core-Service processes.
 These process are running with root privilege and other process including malicious attacker cannot steal your input events.
 List of process Running with root privilege
-karabiner_grabber It grabs the keyboard hardware, catches events, modifies them, and then passes them to Karabiner-VirtualHIDDevice-Daemon. Karabiner-VirtualHIDDevice-Daemon It controls Karabiner-DriverKit-VirtualHIDDevice and bridges the data between karabiner_grabber and the virtual devices. This process only receives data from processes running with root privileges. Therefore, regular applications running with user privileges cannot arbitrarily send events to virtual devices. Running with DriverKit privilege">
+Karabiner-Core-Service It grabs exclusive access to the keyboard hardware, captures the input events, modifies them, and forwards them to Karabiner-VirtualHIDDevice-Daemon. (It was previously named karabiner_grabber.) Karabiner-VirtualHIDDevice-Daemon It controls Karabiner-DriverKit-VirtualHIDDevice and bridges the data between Karabiner-Core-Service and the virtual devices. This process only receives data from processes running with root privileges. Therefore, regular applications running with user privileges cannot arbitrarily send events to virtual devices. Running with DriverKit privilege">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
@@ -31,21 +31,21 @@ karabiner_grabber It grabs the keyboard hardware, catches events, modifies them,
   <meta itemprop="name" content="Security">
   <meta itemprop="description" content="Security is one of the most important point of Karabiner-Elements architecture design.
 Separating process and running them with properly privileges to prevent event leaks.
-Process Karabiner-Elements restricts the input event handling to karabiner_grabber processes.
+Process Karabiner-Elements restricts the input event handling to Karabiner-Core-Service processes.
 These process are running with root privilege and other process including malicious attacker cannot steal your input events.
 List of process Running with root privilege
-karabiner_grabber It grabs the keyboard hardware, catches events, modifies them, and then passes them to Karabiner-VirtualHIDDevice-Daemon. Karabiner-VirtualHIDDevice-Daemon It controls Karabiner-DriverKit-VirtualHIDDevice and bridges the data between karabiner_grabber and the virtual devices. This process only receives data from processes running with root privileges. Therefore, regular applications running with user privileges cannot arbitrarily send events to virtual devices. Running with DriverKit privilege">
-  <meta itemprop="wordCount" content="330">
+Karabiner-Core-Service It grabs exclusive access to the keyboard hardware, captures the input events, modifies them, and forwards them to Karabiner-VirtualHIDDevice-Daemon. (It was previously named karabiner_grabber.) Karabiner-VirtualHIDDevice-Daemon It controls Karabiner-DriverKit-VirtualHIDDevice and bridges the data between Karabiner-Core-Service and the virtual devices. This process only receives data from processes running with root privileges. Therefore, regular applications running with user privileges cannot arbitrarily send events to virtual devices. Running with DriverKit privilege">
+  <meta itemprop="wordCount" content="306">
   <meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://karabiner-elements.pqrs.org/images/logo.png">
   <meta name="twitter:title" content="Security">
   <meta name="twitter:description" content="Security is one of the most important point of Karabiner-Elements architecture design.
 Separating process and running them with properly privileges to prevent event leaks.
-Process Karabiner-Elements restricts the input event handling to karabiner_grabber processes.
+Process Karabiner-Elements restricts the input event handling to Karabiner-Core-Service processes.
 These process are running with root privilege and other process including malicious attacker cannot steal your input events.
 List of process Running with root privilege
-karabiner_grabber It grabs the keyboard hardware, catches events, modifies them, and then passes them to Karabiner-VirtualHIDDevice-Daemon. Karabiner-VirtualHIDDevice-Daemon It controls Karabiner-DriverKit-VirtualHIDDevice and bridges the data between karabiner_grabber and the virtual devices. This process only receives data from processes running with root privileges. Therefore, regular applications running with user privileges cannot arbitrarily send events to virtual devices. Running with DriverKit privilege">
+Karabiner-Core-Service It grabs exclusive access to the keyboard hardware, captures the input events, modifies them, and forwards them to Karabiner-VirtualHIDDevice-Daemon. (It was previously named karabiner_grabber.) Karabiner-VirtualHIDDevice-Daemon It controls Karabiner-DriverKit-VirtualHIDDevice and bridges the data between Karabiner-Core-Service and the virtual devices. This process only receives data from processes running with root privileges. Therefore, regular applications running with user privileges cannot arbitrarily send events to virtual devices. Running with DriverKit privilege">
 <link rel="preload" href="/scss/main.min.ee554750de482a7b1576c03d387d0d0a509a9fd3970bab55c7b58b28c6fd2323.css" as="style" integrity="sha256-7lVHUN5IKnsVdsA9OH0NClCan9OXC6tVx7WLKMb9IyM=" crossorigin="anonymous">
 <link href="/scss/main.min.ee554750de482a7b1576c03d387d0d0a509a9fd3970bab55c7b58b28c6fd2323.css" rel="stylesheet" integrity="sha256-7lVHUN5IKnsVdsA9OH0NClCan9OXC6tVx7WLKMb9IyM=" crossorigin="anonymous">
 <script
@@ -80,7 +80,7 @@ karabiner_grabber It grabs the keyboard hardware, catches events, modifies them,
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.c497cf95a9734a0b4a3473e7d2933acf.json"
+    data-offline-search-index-json-src="/offline-search-index.eb25b389afcac819c9171078ca05e9fc.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="25"
   >
@@ -104,7 +104,7 @@ karabiner_grabber It grabs the keyboard hardware, catches events, modifies them,
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.c497cf95a9734a0b4a3473e7d2933acf.json"
+    data-offline-search-index-json-src="/offline-search-index.eb25b389afcac819c9171078ca05e9fc.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="25"
   >
@@ -688,19 +688,20 @@ karabiner_grabber It grabs the keyboard hardware, catches events, modifies them,
 	<p>Security is one of the most important point of Karabiner-Elements architecture design.</p>
 <p>Separating process and running them with properly privileges to prevent event leaks.</p>
 <h2 id="process">Process</h2>
-<p>Karabiner-Elements restricts the input event handling to <strong>karabiner_grabber</strong> processes.</p>
+<p>Karabiner-Elements restricts the input event handling to <strong>Karabiner-Core-Service</strong> processes.</p>
 <p>These process are running with root privilege and other process including malicious attacker cannot steal your input events.</p>
 <h3 id="list-of-process">List of process</h3>
 <p>Running with root privilege</p>
 <ul>
-<li><strong>karabiner_grabber</strong>
+<li><strong>Karabiner-Core-Service</strong>
 <ul>
-<li>It grabs the keyboard hardware, catches events, modifies them, and then passes them to Karabiner-VirtualHIDDevice-Daemon.</li>
+<li>It grabs exclusive access to the keyboard hardware, captures the input events, modifies them, and forwards them to Karabiner-VirtualHIDDevice-Daemon.</li>
+<li>(It was previously named <strong>karabiner_grabber</strong>.)</li>
 </ul>
 </li>
 <li><strong>Karabiner-VirtualHIDDevice-Daemon</strong>
 <ul>
-<li>It controls Karabiner-DriverKit-VirtualHIDDevice and bridges the data between <code>karabiner_grabber</code> and the virtual devices.</li>
+<li>It controls Karabiner-DriverKit-VirtualHIDDevice and bridges the data between <code>Karabiner-Core-Service</code> and the virtual devices.</li>
 <li>This process only receives data from processes running with root privileges.
 Therefore, regular applications running with user privileges cannot arbitrarily send events to virtual devices.</li>
 </ul>
@@ -720,21 +721,20 @@ Other apps cannot arbitrarily add/remove virtual devices or send events.</li>
 <ul>
 <li><strong>karabiner_console_user_server</strong>
 <ul>
-<li>It tells karabiner_grabber starting device grabbing.</li>
-<li>It also executes shell commands triggered by karabiner_grabber.</li>
+<li>It instructs Karabiner-Core-Service to start grabbing devices.</li>
+<li>It also executes shell commands triggered by Karabiner-Core-Service.</li>
 </ul>
 </li>
 <li><strong>karabiner_session_monitor</strong>
 <ul>
-<li>It monitors user login status and communicates it to karabiner_grabber.</li>
+<li>It monitors user login status and communicates it to Karabiner-Core-Service.</li>
 </ul>
 </li>
-<li><strong>karabiner_grabber</strong> (Running with logged in user)
+<li><strong>Karabiner-Core-Service</strong> (Running with logged in user)
 <ul>
-<li>Although it&rsquo;s not necessary for key remapping functionality, due to macOS specifications, karabiner_grabber needs to be launched once with user privileges.
-Specifically, to trigger the macOS Input Monitoring permission notification, the process attempting to access HID devices needs to be running with user privileges instead of administrator privileges.
-Therefore, to display the notification, we temporarily launch karabiner_grabber with user privileges as the agent service.</li>
-<li>When karabiner_grabber is started with user privileges, it attempts to call IOHIDDeviceOpen on the HID devices connected to the system, and then it exits without performing any other actions.</li>
+<li>Although it&rsquo;s not necessary for key remapping functionality, due to macOS specifications, Karabiner-Core-Service needs to be launched once with user privileges.
+Specifically, to request macOS Input Monitoring permission, the process must be running with user-level privileges, not administrator-level privileges.</li>
+<li>When Karabiner-Core-Service is launched with user privileges, it only requests Input Monitoring permission and does not perform any other actions.</li>
 </ul>
 </li>
 </ul>

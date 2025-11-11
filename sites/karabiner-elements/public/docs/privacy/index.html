@@ -11,14 +11,14 @@
 <meta name="description" content="Privacy Security and privacy protection is one of the most important points of Karabiner-Elements architecture design.
 Of course, Karabiner-Elements does not collect any of your input data, your configuration data, nor your usage statistics.
 Data not collected Karabiner-Elements does not transmit your data externally. The following data is never transmitted outside your Mac:
-Your keystrokes Your configuration data Your usage statistics And all other data except Karabiner-Elements version information. About Input Monitoring Karabiner-Elements exclusively receives input events from your keyboard, and then modifies them. To do this, Karabiner-Elements requires your Input Monitoring permissions approval.">
+Your keystrokes Your configuration data Your usage statistics And all other data except Karabiner-Elements version information. About Input Monitoring Karabiner-Elements grabs exclusive access to the keyboard hardware, captures the input events, and then modifies them. To do this, Karabiner-Elements requires your Input Monitoring permissions approval.">
 <meta property="og:url" content="/docs/privacy/">
   <meta property="og:site_name" content="Karabiner-Elements">
   <meta property="og:title" content="Privacy">
   <meta property="og:description" content="Privacy Security and privacy protection is one of the most important points of Karabiner-Elements architecture design.
 Of course, Karabiner-Elements does not collect any of your input data, your configuration data, nor your usage statistics.
 Data not collected Karabiner-Elements does not transmit your data externally. The following data is never transmitted outside your Mac:
-Your keystrokes Your configuration data Your usage statistics And all other data except Karabiner-Elements version information. About Input Monitoring Karabiner-Elements exclusively receives input events from your keyboard, and then modifies them. To do this, Karabiner-Elements requires your Input Monitoring permissions approval.">
+Your keystrokes Your configuration data Your usage statistics And all other data except Karabiner-Elements version information. About Input Monitoring Karabiner-Elements grabs exclusive access to the keyboard hardware, captures the input events, and then modifies them. To do this, Karabiner-Elements requires your Input Monitoring permissions approval.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
@@ -28,8 +28,8 @@ Your keystrokes Your configuration data Your usage statistics And all other data
   <meta itemprop="description" content="Privacy Security and privacy protection is one of the most important points of Karabiner-Elements architecture design.
 Of course, Karabiner-Elements does not collect any of your input data, your configuration data, nor your usage statistics.
 Data not collected Karabiner-Elements does not transmit your data externally. The following data is never transmitted outside your Mac:
-Your keystrokes Your configuration data Your usage statistics And all other data except Karabiner-Elements version information. About Input Monitoring Karabiner-Elements exclusively receives input events from your keyboard, and then modifies them. To do this, Karabiner-Elements requires your Input Monitoring permissions approval.">
-  <meta itemprop="wordCount" content="616">
+Your keystrokes Your configuration data Your usage statistics And all other data except Karabiner-Elements version information. About Input Monitoring Karabiner-Elements grabs exclusive access to the keyboard hardware, captures the input events, and then modifies them. To do this, Karabiner-Elements requires your Input Monitoring permissions approval.">
+  <meta itemprop="wordCount" content="612">
   <meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://karabiner-elements.pqrs.org/images/logo.png">
@@ -37,7 +37,7 @@ Your keystrokes Your configuration data Your usage statistics And all other data
   <meta name="twitter:description" content="Privacy Security and privacy protection is one of the most important points of Karabiner-Elements architecture design.
 Of course, Karabiner-Elements does not collect any of your input data, your configuration data, nor your usage statistics.
 Data not collected Karabiner-Elements does not transmit your data externally. The following data is never transmitted outside your Mac:
-Your keystrokes Your configuration data Your usage statistics And all other data except Karabiner-Elements version information. About Input Monitoring Karabiner-Elements exclusively receives input events from your keyboard, and then modifies them. To do this, Karabiner-Elements requires your Input Monitoring permissions approval.">
+Your keystrokes Your configuration data Your usage statistics And all other data except Karabiner-Elements version information. About Input Monitoring Karabiner-Elements grabs exclusive access to the keyboard hardware, captures the input events, and then modifies them. To do this, Karabiner-Elements requires your Input Monitoring permissions approval.">
 <link rel="preload" href="/scss/main.min.ee554750de482a7b1576c03d387d0d0a509a9fd3970bab55c7b58b28c6fd2323.css" as="style" integrity="sha256-7lVHUN5IKnsVdsA9OH0NClCan9OXC6tVx7WLKMb9IyM=" crossorigin="anonymous">
 <link href="/scss/main.min.ee554750de482a7b1576c03d387d0d0a509a9fd3970bab55c7b58b28c6fd2323.css" rel="stylesheet" integrity="sha256-7lVHUN5IKnsVdsA9OH0NClCan9OXC6tVx7WLKMb9IyM=" crossorigin="anonymous">
 <script
@@ -72,7 +72,7 @@ Your keystrokes Your configuration data Your usage statistics And all other data
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.c497cf95a9734a0b4a3473e7d2933acf.json"
+    data-offline-search-index-json-src="/offline-search-index.eb25b389afcac819c9171078ca05e9fc.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="25"
   >
@@ -96,7 +96,7 @@ Your keystrokes Your configuration data Your usage statistics And all other data
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.c497cf95a9734a0b4a3473e7d2933acf.json"
+    data-offline-search-index-json-src="/offline-search-index.eb25b389afcac819c9171078ca05e9fc.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="25"
   >
@@ -692,20 +692,20 @@ Of course, Karabiner-Elements does not collect any of your input data, your conf
 <div class="alert alert-primary" role="alert">
 <h4 class="alert-heading">About Input Monitoring</h4>
 
-    <p>Karabiner-Elements exclusively receives input events from your keyboard, and then modifies them.
+    <p>Karabiner-Elements grabs exclusive access to the keyboard hardware, captures the input events, and then modifies them.
 To do this, Karabiner-Elements requires your Input Monitoring permissions approval.</p>
 <p>Keystrokes captured with this privilege are processed entirely on your Mac.
 And because the process is protected by administrative privileges, keystrokes cannot be intercepted at by other applications on your Mac.</p>
-<p>Specifically, the process with administrative privileges is <code>karabiner_grabber</code>; it is the core process in Karabiner-Elements that captures and modifies keystrokes.</p>
+<p>Specifically, the process with administrative privileges is <code>Karabiner-Core-Service</code>; it is the core process in Karabiner-Elements that captures and modifies keystrokes.</p>
 <figure>
   <img
-    src="/docs/privacy/images/input-monitoring@2x.png"
-    alt="input-monitoring@2x.png"
-    style="width: 715px"
+    src="/docs/privacy/images/settings-input-monitoring@2x.png"
+    alt="settings-input-monitoring@2x.png"
+    style="width: 723px"
   />
 </figure>
 <p><strong>Note:</strong>
-<code>Karabiner-EventViewer</code> operates with lower privileges than <code>karabiner_grabber</code>.
+<code>Karabiner-EventViewer</code> operates with lower privileges than <code>Karabiner-Core-Service</code>.
 Since it runs with user privileges, it cannot receive keystrokes during password inputs or similar actions when Secure Keyboard Entry is enabled.</p>
 
 
@@ -716,12 +716,13 @@ Since it runs with user privileges, it cannot receive keystrokes during password
 <div class="alert alert-primary" role="alert">
 <h4 class="alert-heading">Input event manipulation</h4>
 
-    <p>After capturing keystrokes, the <code>karabiner_grabber</code> process modifies input events based on user settings.
+    <p>After capturing keystrokes, the <code>Karabiner-Core-Service</code> process modifies input events based on user settings.
 Modifying input events is also performed with security considerations in mind.</p>
-<p>To prevent the addition of malicious input from other applications, <code>karabiner_grabber</code> performs closed operations within the process, which has administrative privileges.
-And the <code>karabiner_grabber</code> process does not knowingly alter, insert or manipulate any keystrokes other than as configured and expected by the user.</p>
+<p>To prevent the addition of malicious input from other applications, <code>Karabiner-Core-Service</code> performs closed operations within the process, which has administrative privileges.
+And the <code>Karabiner-Core-Service</code> process does not knowingly alter, insert or manipulate any keystrokes other than as configured and expected by the user.</p>
 <p><strong>Note:</strong>
-Some combinations, such as fn+arrow keys, are implicitly changed. For a list, please see <a href="/docs/manual/misc/implicit-behavior/">Implicit behavior</a>.</p>
+There are some implicit changes, such as the handling of certain media control buttons.
+For a list, please see <a href="/docs/manual/misc/implicit-behavior/">Implicit behavior</a>.</p>
 
 
 </div>
@@ -808,12 +809,9 @@ We use the data only for checking updates, and we do not share these data with o
 <h4 class="alert-heading">Detail</h4>
 
     <p><code>appcast.pqrs.org</code> receives the version information like follows:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>150.249.243.141 - - [13/Feb/2021:18:37:14 +0900]
-</span></span><span style="display:flex;"><span>&#34;GET /karabiner-elements-appcast.xml HTTP/2.0&#34; 200 2389
-</span></span><span style="display:flex;"><span>&#34;-&#34; &#34;Karabiner-Elements/13.3.0 Sparkle/1.24.0&#34; &#34;-&#34;
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>150.249.243.141 - - [13/Feb/2021:19:26:15 +0900]
-</span></span><span style="display:flex;"><span>&#34;GET /karabiner-elements-appcast-devel.xml HTTP/2.0&#34; 200 740
-</span></span><span style="display:flex;"><span>&#34;-&#34; &#34;Karabiner-Elements/13.3.0 Sparkle/1.24.0&#34; &#34;-&#34;
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>133.242.162.147 - - [11/Nov/2025:13:11:10 +0000]
+</span></span><span style="display:flex;"><span>&#34;GET /karabiner-elements-appcast.xml HTTP/2.0&#34; 200 4113
+</span></span><span style="display:flex;"><span>&#34;-&#34; &#34;Karabiner-Updater/15.7.0 Sparkle/2.8.0&#34; &#34;appcast.pqrs.org&#34; &#34;-&#34;
 </span></span></code></pre></div><p>The received data contains:</p>
 <table>
   <thead>
@@ -825,15 +823,15 @@ We use the data only for checking updates, and we do not share these data with o
   <tbody>
       <tr>
           <td>Access source IP address</td>
-          <td>150.249.243.141</td>
+          <td>133.242.162.147</td>
       </tr>
       <tr>
           <td>Access time</td>
-          <td>13/Feb/2021:18:37:14 +0900</td>
+          <td>11/Nov/2025:13:11:10 +0000</td>
       </tr>
       <tr>
           <td>Karabiner-Elements version</td>
-          <td>Karabiner-Elements/13.3.0 Sparkle/1.24.0</td>
+          <td>Karabiner-Updater/15.7.0 Sparkle/2.8.0</td>
       </tr>
   </tbody>
 </table>

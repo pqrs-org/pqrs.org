@@ -64,7 +64,7 @@ This guide provides instructions on how to add support for unsupported keys in K
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.c497cf95a9734a0b4a3473e7d2933acf.json"
+    data-offline-search-index-json-src="/offline-search-index.eb25b389afcac819c9171078ca05e9fc.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="25"
   >
@@ -88,7 +88,7 @@ This guide provides instructions on how to add support for unsupported keys in K
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.c497cf95a9734a0b4a3473e7d2933acf.json"
+    data-offline-search-index-json-src="/offline-search-index.eb25b389afcac819c9171078ca05e9fc.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="25"
   >
@@ -636,7 +636,7 @@ This guide provides instructions on how to add support for unsupported keys in K
     <li><a href="#investigate-the-key-code">Investigate the key code</a></li>
     <li><a href="#add-the-keys-to-the-whitelist">Add the keys to the whitelist</a>
       <ul>
-        <li><a href="#build-karabiner_grabber">Build karabiner_grabber</a></li>
+        <li><a href="#build-karabiner-core-service">Build Karabiner-Core-Service</a></li>
         <li><a href="#build-settings">Build Settings</a></li>
         <li><a href="#build-eventviewer">Build EventViewer</a></li>
       </ul>
@@ -738,10 +738,10 @@ In the same way, you can add the key codes you want to include.</p>
 
 <p>Next, follow the steps below to set up the build environment.</p>
 <p><a href="https://github.com/pqrs-org/Karabiner-Elements/blob/main/README.md#for-developers">https://github.com/pqrs-org/Karabiner-Elements/blob/main/README.md#for-developers</a></p>
-<p>Finally, build karabiner_grabber, Settings and EventViewer by following the steps below.
+<p>Finally, build Karabiner-Core-Service, Settings and EventViewer by following the steps below.
 With this, you will now be able to modify the new keys in Karabiner-Elements.</p>
-<h3 id="build-karabiner_grabber">Build karabiner_grabber</h3>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#204a87">cd</span> src/core/grabber
+<h3 id="build-karabiner-core-service">Build Karabiner-Core-Service</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#204a87">cd</span> src/core/CoreService
 </span></span><span style="display:flex;"><span>make
 </span></span></code></pre></div><p>Then upgrade the installed file.</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>make install
