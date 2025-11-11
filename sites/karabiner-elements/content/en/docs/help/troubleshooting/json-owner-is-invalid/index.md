@@ -6,7 +6,7 @@ weight: 500
 If the following error message is appeared in log, your home directory owner ship is not valid.
 
 ```text
-[warning] [grabber] /Users/.../karabiner.json is not owned by a valid user.
+[warning] [core_service] /Users/.../karabiner.json is not owned by a valid user.
 ```
 
 The cause is that you are using an external storage and locating your home directory into the volume.

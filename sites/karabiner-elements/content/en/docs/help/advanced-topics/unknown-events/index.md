@@ -45,13 +45,13 @@ Next, follow the steps below to set up the build environment.
 
 <https://github.com/pqrs-org/Karabiner-Elements/blob/main/README.md#for-developers>
 
-Finally, build karabiner_grabber, Settings and EventViewer by following the steps below.
+Finally, build Karabiner-Core-Service, Settings and EventViewer by following the steps below.
 With this, you will now be able to modify the new keys in Karabiner-Elements.
 
-### Build karabiner_grabber
+### Build Karabiner-Core-Service
 
 ```shell
-cd src/core/grabber
+cd src/core/CoreService
 make
 ```
 
