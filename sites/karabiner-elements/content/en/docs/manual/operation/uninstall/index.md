@@ -30,16 +30,13 @@ sudo '/Library/Application Support/org.pqrs/Karabiner-Elements/uninstall.sh'
 Some settings and files will remain after uninstallation.
 It does not affect the system even if it remains in place, but if you are concerned about them, please delete them manually.
 
-1.  Input Monitoring settings
-    -   Remove karabiner_grabber from the Input Monitoring settings in macOS Settings.
-        {{< local-image src="images/input-monitoring@2x.png" >}}
-2.  Log files
+1.  Log files
     -   Delete the following directories:
         -   `/var/log/karabiner`
         -   `~/.local/share/karabiner`
-3.  Temporary directories
+2.  Temporary directories
     -   Delete the following directories:
         -   `/Library/Application Support/org.pqrs/tmp`
-4.  Setting files
+3.  Setting files
     -   Delete the following directories:
         -   `~/.config/karabiner`

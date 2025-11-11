@@ -21,32 +21,33 @@ Karabiner-Elements does not transmit your data externally. The following data is
 
 {{% alert title="About Input Monitoring" color="primary" %}}
 
-Karabiner-Elements exclusively receives input events from your keyboard, and then modifies them.
+Karabiner-Elements grabs exclusive access to the keyboard hardware, captures the input events, and then modifies them.
 To do this, Karabiner-Elements requires your Input Monitoring permissions approval.
 
 Keystrokes captured with this privilege are processed entirely on your Mac.
 And because the process is protected by administrative privileges, keystrokes cannot be intercepted at by other applications on your Mac.
 
-Specifically, the process with administrative privileges is `karabiner_grabber`; it is the core process in Karabiner-Elements that captures and modifies keystrokes.
+Specifically, the process with administrative privileges is `Karabiner-Core-Service`; it is the core process in Karabiner-Elements that captures and modifies keystrokes.
 
-{{< local-image src="images/input-monitoring@2x.png" >}}
+{{< local-image src="images/settings-input-monitoring@2x.png" >}}
 
 **Note:**
-`Karabiner-EventViewer` operates with lower privileges than `karabiner_grabber`.
+`Karabiner-EventViewer` operates with lower privileges than `Karabiner-Core-Service`.
 Since it runs with user privileges, it cannot receive keystrokes during password inputs or similar actions when Secure Keyboard Entry is enabled.
 
 {{% /alert %}}
 
 {{% alert title="Input event manipulation" color="primary" %}}
 
-After capturing keystrokes, the `karabiner_grabber` process modifies input events based on user settings.
+After capturing keystrokes, the `Karabiner-Core-Service` process modifies input events based on user settings.
 Modifying input events is also performed with security considerations in mind.
 
-To prevent the addition of malicious input from other applications, `karabiner_grabber` performs closed operations within the process, which has administrative privileges.
-And the `karabiner_grabber` process does not knowingly alter, insert or manipulate any keystrokes other than as configured and expected by the user.
+To prevent the addition of malicious input from other applications, `Karabiner-Core-Service` performs closed operations within the process, which has administrative privileges.
+And the `Karabiner-Core-Service` process does not knowingly alter, insert or manipulate any keystrokes other than as configured and expected by the user.
 
 **Note:**
-Some combinations, such as fn+arrow keys, are implicitly changed. For a list, please see [Implicit behavior](/docs/manual/misc/implicit-behavior/).
+There are some implicit changes, such as the handling of certain media control buttons.
+For a list, please see [Implicit behavior](/docs/manual/misc/implicit-behavior/).
 
 {{% /alert %}}
 
@@ -114,24 +115,18 @@ You can change the automatic update setting in Update tab.
 `appcast.pqrs.org` receives the version information like follows:
 
 ```text
-150.249.243.141 - - [13/Feb/2021:18:37:14 +0900]
-"GET /karabiner-elements-appcast.xml HTTP/2.0" 200 2389
-"-" "Karabiner-Elements/13.3.0 Sparkle/1.24.0" "-"
-```
-
-```text
-150.249.243.141 - - [13/Feb/2021:19:26:15 +0900]
-"GET /karabiner-elements-appcast-devel.xml HTTP/2.0" 200 740
-"-" "Karabiner-Elements/13.3.0 Sparkle/1.24.0" "-"
+133.242.162.147 - - [11/Nov/2025:13:11:10 +0000]
+"GET /karabiner-elements-appcast.xml HTTP/2.0" 200 4113
+"-" "Karabiner-Updater/15.7.0 Sparkle/2.8.0" "appcast.pqrs.org" "-"
 ```
 
 The received data contains:
 
-| Name                       | Example                                  |
-| -------------------------- | ---------------------------------------- |
-| Access source IP address   | 150.249.243.141                          |
-| Access time                | 13/Feb/2021:18:37:14 +0900               |
-| Karabiner-Elements version | Karabiner-Elements/13.3.0 Sparkle/1.24.0 |
+| Name                       | Example                                |
+| -------------------------- | -------------------------------------- |
+| Access source IP address   | 133.242.162.147                        |
+| Access time                | 11/Nov/2025:13:11:10 +0000             |
+| Karabiner-Elements version | Karabiner-Updater/15.7.0 Sparkle/2.8.0 |
 
 {{% /alert %}}
 

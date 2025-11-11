@@ -18,7 +18,7 @@ These process are running with root privilege and other process including malici
 Running with root privilege
 
 -   **Karabiner-Core-Service**
-    -   It grabs exclusive access to the keyboard hardware, captures the events, modifies them, and forwards them to Karabiner-VirtualHIDDevice-Daemon.
+    -   It grabs exclusive access to the keyboard hardware, captures the input events, modifies them, and forwards them to Karabiner-VirtualHIDDevice-Daemon.
     -   (It was previously named **karabiner_grabber**.)
 -   **Karabiner-VirtualHIDDevice-Daemon**
     -   It controls Karabiner-DriverKit-VirtualHIDDevice and bridges the data between `Karabiner-Core-Service` and the virtual devices.
