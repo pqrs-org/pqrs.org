@@ -41,7 +41,9 @@ If you are using Karabiner-Elements 14.13.0 or earlier, there are also files loc
 ~/.local/share/karabiner
 ~/Library/Preferences/org.pqrs.Karabiner-Elements.Settings.plist
 ~/Library/Preferences/org.pqrs.Karabiner-EventViewer.plist
+~/Library/Preferences/org.pqrs.Karabiner-Menu.plist
 ~/Library/Preferences/org.pqrs.Karabiner-MultitouchExtension.plist
+~/Library/Preferences/org.pqrs.Karabiner-Updater.plist
 ```
 
 {{% alert title="Warning" color="warning" %}}

@@ -9,7 +9,7 @@ Separating process and running them with properly privileges to prevent event le
 
 ## Process
 
-Karabiner-Elements restricts the input event handling to **karabiner_grabber** processes.
+Karabiner-Elements restricts the input event handling to **Karabiner-Core-Service** processes.
 
 These process are running with root privilege and other process including malicious attacker cannot steal your input events.
 
@@ -17,10 +17,11 @@ These process are running with root privilege and other process including malici
 
 Running with root privilege
 
--   **karabiner_grabber**
-    -   It grabs the keyboard hardware, catches events, modifies them, and then passes them to Karabiner-VirtualHIDDevice-Daemon.
+-   **Karabiner-Core-Service**
+    -   It grabs exclusive access to the keyboard hardware, captures the events, modifies them, and forwards them to Karabiner-VirtualHIDDevice-Daemon.
+    -   (It was previously named **karabiner_grabber**.)
 -   **Karabiner-VirtualHIDDevice-Daemon**
-    -   It controls Karabiner-DriverKit-VirtualHIDDevice and bridges the data between `karabiner_grabber` and the virtual devices.
+    -   It controls Karabiner-DriverKit-VirtualHIDDevice and bridges the data between `Karabiner-Core-Service` and the virtual devices.
     -   This process only receives data from processes running with root privileges.
         Therefore, regular applications running with user privileges cannot arbitrarily send events to virtual devices.
 
@@ -34,15 +35,14 @@ Running with DriverKit privilege
 Running with logged in user privilege
 
 -   **karabiner_console_user_server**
-    -   It tells karabiner_grabber starting device grabbing.
-    -   It also executes shell commands triggered by karabiner_grabber.
+    -   It instructs Karabiner-Core-Service to start grabbing devices.
+    -   It also executes shell commands triggered by Karabiner-Core-Service.
 -   **karabiner_session_monitor**
-    -   It monitors user login status and communicates it to karabiner_grabber.
--   **karabiner_grabber** (Running with logged in user)
-    -   Although it's not necessary for key remapping functionality, due to macOS specifications, karabiner_grabber needs to be launched once with user privileges.
-        Specifically, to trigger the macOS Input Monitoring permission notification, the process attempting to access HID devices needs to be running with user privileges instead of administrator privileges.
-        Therefore, to display the notification, we temporarily launch karabiner_grabber with user privileges as the agent service.
-    -   When karabiner_grabber is started with user privileges, it attempts to call IOHIDDeviceOpen on the HID devices connected to the system, and then it exits without performing any other actions.
+    -   It monitors user login status and communicates it to Karabiner-Core-Service.
+-   **Karabiner-Core-Service** (Running with logged in user)
+    -   Although it's not necessary for key remapping functionality, due to macOS specifications, Karabiner-Core-Service needs to be launched once with user privileges.
+        Specifically, to request macOS Input Monitoring permission, the process must be running with user-level privileges, not administrator-level privileges.
+    -   When Karabiner-Core-Service is launched with user privileges, it only requests Input Monitoring permission and does not perform any other actions.
 
 ## Fully open source project
 
