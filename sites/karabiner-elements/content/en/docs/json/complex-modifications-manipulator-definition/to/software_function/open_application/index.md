@@ -107,6 +107,47 @@ Focus recently opened applications by <kbd>right command + 1</kbd>, <kbd>right c
 }
 ```
 
+Focus the most recently used application (excluding Safari and Preview) using <kbd>left_command + r</kbd>:
+
+{{% alert color="info" %}}
+
+`frontmost_application_history_exclusion_bundle_identifiers` and `frontmost_application_history_exclusion_file_paths` are available since Karabiner-Elements v15.7.3.
+
+{{% /alert %}}
+
+{{< karabiner-elements-complex-modifications-usage >}}
+
+```json
+{
+    "description": "Focus the most recently used application by left_command + r",
+    "manipulators": [
+        {
+            "type": "basic",
+            "from": {
+                "key_code": "r",
+                "modifiers": {
+                    "mandatory": ["left_command"],
+                    "optional": ["caps_lock"]
+                }
+            },
+            "to": [
+                {
+                    "software_function": {
+                        "open_application": {
+                            "frontmost_application_history_index": 1,
+                            "frontmost_application_history_exclusion_bundle_identifiers": [
+                                "^com\\.apple\\.Safari$",
+                                "^com\\.apple\\.Preview$"
+                            ]
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}
+```
+
 ## Specification
 
 ```json
@@ -147,5 +188,8 @@ You can find the bundle identifier and file path in [EventViewer > Frontmost App
     Applications opened through methods other than `open_application`, such as via Launchpad, are also included.
 -   Only currently running applications are targeted; closed applications will not be selected.
 -   Only applications opened after Karabiner-Elements was launched are targeted.
+-   When you also specify `frontmost_application_history_exclusion_bundle_identifiers` or `frontmost_application_history_exclusion_file_paths`, you can exclude particular applications.
+    The values should be regular expressions that match the bundle identifier or file path.
+    These filters are available since Karabiner-Elements v15.7.3.
 
 {{% /alert %}}
