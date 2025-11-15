@@ -26,7 +26,7 @@ Examples Open EventViewer by right command &#43; v:
   <meta itemprop="description" content="Open an application, or if it’s already running, bring it into focus.
 Examples Open EventViewer by right command &#43; v:
 💡 How to use this example { &#34;description&#34;: &#34;Open EventViewer by right command &#43; v&#34;, &#34;manipulators&#34;: [ { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;v&#34;, &#34;modifiers&#34;: { &#34;mandatory&#34;: [&#34;right_command&#34;], &#34;optional&#34;: [&#34;caps_lock&#34;] } }, &#34;to&#34;: [ { &#34;software_function&#34;: { &#34;open_application&#34;: { &#34;file_path&#34;: &#34;/Applications/Karabiner-EventViewer.app&#34; } } } ] } ] } Focus recently opened applications by right command &#43; 1, right command &#43; 2, right command &#43; 3:">
-  <meta itemprop="wordCount" content="352">
+  <meta itemprop="wordCount" content="463">
   <meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://karabiner-elements.pqrs.org/images/logo.png">
@@ -68,7 +68,7 @@ Examples Open EventViewer by right command &#43; v:
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.9acfd24f8014816b066828fa08bd66a0.json"
+    data-offline-search-index-json-src="/offline-search-index.ebeb3981d38bb18351324d60094b91a7.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="25"
   >
@@ -92,7 +92,7 @@ Examples Open EventViewer by right command &#43; v:
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.9acfd24f8014816b066828fa08bd66a0.json"
+    data-offline-search-index-json-src="/offline-search-index.ebeb3981d38bb18351324d60094b91a7.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="25"
   >
@@ -793,6 +793,59 @@ Examples Open EventViewer by right command &#43; v:
 </span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">}</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">]</span>
 </span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></div><p>Focus the most recently used application (excluding Safari and Preview) using <kbd>left_command + r</kbd>:</p>
+
+
+<div class="alert alert-info" role="alert">
+
+
+    <code>frontmost_application_history_exclusion_bundle_identifiers</code> and <code>frontmost_application_history_exclusion_file_paths</code> are available since Karabiner-Elements v15.7.3.
+
+</div>
+
+<div class="highlight" style="margin-top: 0rem; margin-bottom: -2rem">
+  <a
+    class="d-inline-block"
+    style="
+      text-decoration: none;
+      background-color: #f8f8f8;
+      padding: 0.5rem;
+      border: solid var(--bs-border-color);
+      border-width: 1px 1px 0 1px;
+    "
+    href="/docs/manual/configuration/add-your-own-complex-modifications/"
+    >💡 How to use this example</a
+  >
+</div>
+
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;description&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;Focus the most recently used application by left_command + r&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;manipulators&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;type&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;basic&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;from&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">&#34;key_code&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;r&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">&#34;modifiers&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;mandatory&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">&#34;left_command&#34;</span><span style="color:#000;font-weight:bold">],</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;optional&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">&#34;caps_lock&#34;</span><span style="color:#000;font-weight:bold">]</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">},</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;to&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;software_function&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#204a87;font-weight:bold">&#34;open_application&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                            <span style="color:#204a87;font-weight:bold">&#34;frontmost_application_history_index&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#0000cf;font-weight:bold">1</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>                            <span style="color:#204a87;font-weight:bold">&#34;frontmost_application_history_exclusion_bundle_identifiers&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+</span></span><span style="display:flex;"><span>                                <span style="color:#4e9a06">&#34;^com\\.apple\\.Safari$&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>                                <span style="color:#4e9a06">&#34;^com\\.apple\\.Preview$&#34;</span>
+</span></span><span style="display:flex;"><span>                            <span style="color:#000;font-weight:bold">]</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">]</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">]</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
 </span></span></code></pre></div><h2 id="specification">Specification</h2>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;to&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
@@ -870,6 +923,9 @@ Examples Open EventViewer by right command &#43; v:
 Applications opened through methods other than <code>open_application</code>, such as via Launchpad, are also included.</li>
 <li>Only currently running applications are targeted; closed applications will not be selected.</li>
 <li>Only applications opened after Karabiner-Elements was launched are targeted.</li>
+<li>When you also specify <code>frontmost_application_history_exclusion_bundle_identifiers</code> or <code>frontmost_application_history_exclusion_file_paths</code>, you can exclude particular applications.
+The values should be regular expressions that match the bundle identifier or file path.
+These filters are available since Karabiner-Elements v15.7.3.</li>
 </ul>
 
 
