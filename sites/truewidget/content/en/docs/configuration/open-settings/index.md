@@ -8,7 +8,7 @@ weight: 100
 
 {{% alert title="Note" color="primary" %}}
 
-If you've hidden the menu bar icon, open TrueWidget again from Launchpad while TrueWidget is already running to open Settings.
-{{< local-image src="images/launchpad@2x.png" >}}
+If you've hidden the menu bar icon, open TrueWidget again from Apps while TrueWidget is already running to open Settings.
+{{< local-image src="images/apps@2x.png" >}}
 
 {{% /alert %}}
