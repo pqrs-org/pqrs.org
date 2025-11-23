@@ -8,7 +8,7 @@ weight: 100
 
 {{% alert title="Note" color="primary" %}}
 
-If you've hidden the menu bar icon, open ShowyEdge again from Launchpad while ShowyEdge is already running to open Settings window.
-{{< local-image src="images/launchpad@2x.png" >}}
+If you've hidden the menu bar icon, open ShowyEdge again from Apps while ShowyEdge is already running to open Settings window.
+{{< local-image src="images/apps@2x.png" >}}
 
 {{% /alert %}}
