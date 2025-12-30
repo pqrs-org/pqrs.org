@@ -14,14 +14,14 @@ You can change the effect.
 <div class="d-flex">
     <div class="me-4 p-2 border">
         Neon (blue)<br />
-        <img src="images/neon.gif" width="200" alt="neon" />
+        <video src="images/neon.mp4" autoplay loop muted playsinline style="width: 250px"></video>
     </div>
     <div class="me-4 p-2 border">
         Shock wave (blue)<br />
-        <img src="images/shockwave.gif" width="200" alt="shockwave" />
+        <video src="images/shockwave.mp4" autoplay loop muted playsinline style="width: 250px"></video>
     </div>
     <div class="me-4 p-2 border">
         Line (blue)<br />
-        <img src="images/line.gif" width="200" alt="shockwave" />
+        <video src="images/line.mp4" autoplay loop muted playsinline style="width: 250px"></video>
     </div>
 </div>
