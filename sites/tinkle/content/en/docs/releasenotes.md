@@ -6,6 +6,22 @@ exclude_search: true
 body_class: release-notes
 ---
 
+## Tinkle 3.0.0
+
+-   [📦 Download](https://github.com/pqrs-org/Tinkle/releases/download/v3.0.0/Tinkle-3.0.0.dmg)
+-   📅 Release date
+    -   Dec 30, 2025
+-   💥 Breaking changes
+    -   macOS 11 and macOS 12 are no longer supported.
+-   ✨ New Features
+    -   Show the recent apps in the menu.
+-   ⚡️ Improvements
+    -   Updated the app icon.
+    -   Added support for Liquid Glass.
+    -   Migrated to the SwiftUI life cycle.
+    -   Migrated to Swift 6.
+    -   Sparkle Framework has been updated.
+
 ## Tinkle 2.4.0
 
 -   [📦 Download](https://github.com/pqrs-org/Tinkle/releases/download/v2.4.0/Tinkle-2.4.0.dmg)
