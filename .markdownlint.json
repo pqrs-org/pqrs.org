@@ -28,7 +28,8 @@
       "kbd",
       "noscript",
       "span",
-      "style"
+      "style",
+      "video"
     ]
   },
   "MD041": false
