@@ -1,9 +1,9 @@
 ---
-title: "Open at login"
+title: 'Open at login'
 weight: 300
 ---
 
-You can launch ShowyEdge automaticaly at login.
+You can configure whether ShowyEdge launches at login in Settings.
 
 1.  [Open Settings](../open-settings/).
 2.  Enable `Open at login`.
