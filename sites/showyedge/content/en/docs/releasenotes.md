@@ -6,6 +6,14 @@ exclude_search: true
 body_class: release-notes
 ---
 
+## ShowyEdge 6.3.0
+
+-   [📦 Download](https://github.com/pqrs-org/ShowyEdge/releases/download/v6.3.0/ShowyEdge-6.3.0.dmg)
+-   📅 Release date
+    -   Dec 31, 2025
+-   ⚡️ Improvements
+    -   Updated the menu icons.
+
 ## ShowyEdge 6.2.0
 
 -   [📦 Download](https://github.com/pqrs-org/ShowyEdge/releases/download/v6.2.0/ShowyEdge-6.2.0.dmg)
