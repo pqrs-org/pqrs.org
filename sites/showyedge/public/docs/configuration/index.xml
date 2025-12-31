@@ -12,7 +12,7 @@
       <link>/docs/configuration/open-settings/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/docs/configuration/open-settings/</guid>
-      <description>&lt;ol&gt;&#xA;&lt;li&gt;Open Settings from menu bar.&#xA;&lt;figure&gt;&#xA;      &lt;img&#xA;        src=&#34;/docs/configuration/open-settings/images/menu-icon@2x.png&#34;&#xA;        alt=&#34;menu-icon@2x.png&#34;&#xA;        style=&#34;width: 307px&#34;&#xA;      /&gt;&#xA;    &lt;/figure&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&#xA;&#xA;&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;&#xA;&lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;&#xA;&#xA;    &lt;p&gt;If you&amp;rsquo;ve hidden the menu bar icon, open ShowyEdge again from Apps while ShowyEdge is already running to open Settings window.&lt;/p&gt;&#xA;&lt;figure&gt;&#xA;  &lt;img&#xA;    src=&#34;/docs/configuration/open-settings/images/apps@2x.png&#34;&#xA;    alt=&#34;apps@2x.png&#34;&#xA;    style=&#34;width: 400px&#34;&#xA;  /&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;/div&gt;</description>
+      <description>&lt;ol&gt;&#xA;&lt;li&gt;Open Settings from menu bar.&#xA;&lt;figure&gt;&#xA;      &lt;img&#xA;        src=&#34;/docs/configuration/open-settings/images/menu-icon@2x.png&#34;&#xA;        alt=&#34;menu-icon@2x.png&#34;&#xA;        style=&#34;width: 268px&#34;&#xA;      /&gt;&#xA;    &lt;/figure&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&#xA;&#xA;&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;&#xA;&lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;&#xA;&#xA;    &lt;p&gt;If you&amp;rsquo;ve hidden the menu bar icon, open ShowyEdge again from Apps while ShowyEdge is already running to open Settings window.&lt;/p&gt;&#xA;&lt;figure&gt;&#xA;  &lt;img&#xA;    src=&#34;/docs/configuration/open-settings/images/apps@2x.png&#34;&#xA;    alt=&#34;apps@2x.png&#34;&#xA;    style=&#34;width: 400px&#34;&#xA;  /&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;/div&gt;</description>
     </item>
     <item>
       <title>Input source color configuration</title>
@@ -40,7 +40,7 @@
       <link>/docs/configuration/open-at-login/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/docs/configuration/open-at-login/</guid>
-      <description>&lt;p&gt;You can launch ShowyEdge automaticaly at login.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;a href=&#34;../open-settings/&#34;&gt;Open Settings&lt;/a&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Enable &lt;code&gt;Open at login&lt;/code&gt;.&#xA;&lt;figure&gt;&#xA;      &lt;img&#xA;        src=&#34;/docs/configuration/open-at-login/images/open-at-login@2x.png&#34;&#xA;        alt=&#34;open-at-login@2x.png&#34;&#xA;        style=&#34;width: 600px&#34;&#xA;      /&gt;&#xA;    &lt;/figure&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
+      <description>&lt;p&gt;You can configure whether ShowyEdge launches at login in Settings.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;a href=&#34;../open-settings/&#34;&gt;Open Settings&lt;/a&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Enable &lt;code&gt;Open at login&lt;/code&gt;.&#xA;&lt;figure&gt;&#xA;      &lt;img&#xA;        src=&#34;/docs/configuration/open-at-login/images/open-at-login@2x.png&#34;&#xA;        alt=&#34;open-at-login@2x.png&#34;&#xA;        style=&#34;width: 600px&#34;&#xA;      /&gt;&#xA;    &lt;/figure&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
     </item>
     <item>
       <title>Hide the icon in menu bar</title>
