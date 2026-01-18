@@ -12,7 +12,7 @@
       <link>/docs/help/quit/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/docs/help/quit/</guid>
-      <description>&lt;p&gt;To quit TrueWidget, choose &amp;ldquo;Quit TrueWidget&amp;rdquo; from the menu bar.&lt;/p&gt;&#xA;&lt;figure&gt;&#xA;  &lt;img&#xA;    src=&#34;/docs/help/quit/images/menu-quit@2x.png&#34;&#xA;    alt=&#34;menu-quit@2x.png&#34;&#xA;    style=&#34;width: 253px&#34;&#xA;  /&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;&#xA;&lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;&#xA;&#xA;    &lt;p&gt;If you&amp;rsquo;ve hidden the menu bar icon, you can also quit TrueWidget from Settings.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;a href=&#34;../../configuration/open-settings/&#34;&gt;Open Settings&lt;/a&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Press &lt;code&gt;Quit TrueWidget&lt;/code&gt; button.&#xA;&lt;figure&gt;&#xA;  &lt;img&#xA;    src=&#34;/docs/help/quit/images/quit@2x.png&#34;&#xA;    alt=&#34;quit@2x.png&#34;&#xA;    style=&#34;width: 600px&#34;&#xA;  /&gt;&#xA;&lt;/figure&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&#xA;&lt;/div&gt;</description>
+      <description>&lt;p&gt;To quit TrueWidget, choose &amp;ldquo;Quit TrueWidget&amp;rdquo; from the menu bar.&lt;/p&gt;&#xA;&lt;figure&gt;&#xA;  &lt;img&#xA;    src=&#34;/docs/help/quit/images/menu-quit@2x.png&#34;&#xA;    alt=&#34;menu-quit@2x.png&#34;&#xA;    style=&#34;width: 266px&#34;&#xA;  /&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;&#xA;&lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;&#xA;&#xA;    &lt;p&gt;If you&amp;rsquo;ve hidden the menu bar icon, you can also quit TrueWidget from Settings.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;a href=&#34;../../configuration/open-settings/&#34;&gt;Open Settings&lt;/a&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Press &lt;code&gt;Quit TrueWidget&lt;/code&gt; button.&#xA;&lt;figure&gt;&#xA;  &lt;img&#xA;    src=&#34;/docs/help/quit/images/quit@2x.png&#34;&#xA;    alt=&#34;quit@2x.png&#34;&#xA;    style=&#34;width: 800px&#34;&#xA;  /&gt;&#xA;&lt;/figure&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&#xA;&lt;/div&gt;</description>
     </item>
     <item>
       <title>How to uninstall TrueWidget</title>
@@ -33,7 +33,14 @@
       <link>/docs/help/use-beta/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/docs/help/use-beta/</guid>
-      <description>&lt;p&gt;You can install beta version from &lt;code&gt;Check for beta updates&lt;/code&gt; button on Misc tab.&lt;/p&gt;&#xA;&lt;figure&gt;&#xA;  &lt;img&#xA;    src=&#34;/docs/help/use-beta/images/check-for-beta-updates@2x.png&#34;&#xA;    alt=&#34;check-for-beta-updates@2x.png&#34;&#xA;    style=&#34;width: 600px&#34;&#xA;  /&gt;&#xA;&lt;/figure&gt;</description>
+      <description>&lt;p&gt;You can install beta version from &lt;code&gt;Check for beta updates&lt;/code&gt; button on Update tab.&lt;/p&gt;&#xA;&lt;figure&gt;&#xA;  &lt;img&#xA;    src=&#34;/docs/help/use-beta/images/check-for-beta-updates@2x.png&#34;&#xA;    alt=&#34;check-for-beta-updates@2x.png&#34;&#xA;    style=&#34;width: 800px&#34;&#xA;  /&gt;&#xA;&lt;/figure&gt;</description>
+    </item>
+    <item>
+      <title>TrueWidget Privileged Helper</title>
+      <link>/docs/help/privileged-helper/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/help/privileged-helper/</guid>
+      <description>&lt;p&gt;Once you enable &lt;a href=&#34;/docs/configuration/automatic-volume-unmounting/&#34;&gt;automatic volume unmounting&lt;/a&gt;,&#xA;TrueWidget Privileged Helper appears in System Settings.&lt;/p&gt;&#xA;&lt;p&gt;Enable it only if you use this feature; otherwise leave it disabled.&lt;/p&gt;&#xA;&lt;figure&gt;&#xA;  &lt;img&#xA;    src=&#34;/docs/help/privileged-helper/images/system-settings-daemon@2x.png&#34;&#xA;    alt=&#34;system-settings-daemon@2x.png&#34;&#xA;    style=&#34;width: 723px&#34;&#xA;  /&gt;&#xA;&lt;/figure&gt;</description>
     </item>
   </channel>
 </rss>
