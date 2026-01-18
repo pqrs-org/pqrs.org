@@ -10,13 +10,15 @@
 <title>Driver alert keeps showing up | Karabiner-Elements</title>
 <meta name="description" content="Karabiner-Elements provides a driver extension so it can offer a virtual keyboard and mouse. During setup you need to enable this driver extension.
 Normally it’s enough to turn on the toggle in System Settings. However, some people report that the extension never appears in System Settings.
-This usually happens because third-party security software blocks the driver extension from loading. If that’s the case, add the driver to the whitelist in your security software so the driver extension can load.">
+In this case, Karabiner-Elements displays the following alert.
+Please grant permission for a Driver Extension Waiting for a connection to the IOKit service Team ID and Bundle ID This usually happens because third-party security software blocks the driver extension from loading. If that’s the case, add the driver to the whitelist in your security software so the driver extension can load.">
 <meta property="og:url" content="/docs/help/troubleshooting/driver-alert-keeps-showing-up/">
   <meta property="og:site_name" content="Karabiner-Elements">
   <meta property="og:title" content="Driver alert keeps showing up">
   <meta property="og:description" content="Karabiner-Elements provides a driver extension so it can offer a virtual keyboard and mouse. During setup you need to enable this driver extension.
 Normally it’s enough to turn on the toggle in System Settings. However, some people report that the extension never appears in System Settings.
-This usually happens because third-party security software blocks the driver extension from loading. If that’s the case, add the driver to the whitelist in your security software so the driver extension can load.">
+In this case, Karabiner-Elements displays the following alert.
+Please grant permission for a Driver Extension Waiting for a connection to the IOKit service Team ID and Bundle ID This usually happens because third-party security software blocks the driver extension from loading. If that’s the case, add the driver to the whitelist in your security software so the driver extension can load.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
@@ -25,15 +27,17 @@ This usually happens because third-party security software blocks the driver ext
   <meta itemprop="name" content="Driver alert keeps showing up">
   <meta itemprop="description" content="Karabiner-Elements provides a driver extension so it can offer a virtual keyboard and mouse. During setup you need to enable this driver extension.
 Normally it’s enough to turn on the toggle in System Settings. However, some people report that the extension never appears in System Settings.
-This usually happens because third-party security software blocks the driver extension from loading. If that’s the case, add the driver to the whitelist in your security software so the driver extension can load.">
-  <meta itemprop="wordCount" content="94">
+In this case, Karabiner-Elements displays the following alert.
+Please grant permission for a Driver Extension Waiting for a connection to the IOKit service Team ID and Bundle ID This usually happens because third-party security software blocks the driver extension from loading. If that’s the case, add the driver to the whitelist in your security software so the driver extension can load.">
+  <meta itemprop="wordCount" content="151">
   <meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://karabiner-elements.pqrs.org/images/logo.png">
   <meta name="twitter:title" content="Driver alert keeps showing up">
   <meta name="twitter:description" content="Karabiner-Elements provides a driver extension so it can offer a virtual keyboard and mouse. During setup you need to enable this driver extension.
 Normally it’s enough to turn on the toggle in System Settings. However, some people report that the extension never appears in System Settings.
-This usually happens because third-party security software blocks the driver extension from loading. If that’s the case, add the driver to the whitelist in your security software so the driver extension can load.">
+In this case, Karabiner-Elements displays the following alert.
+Please grant permission for a Driver Extension Waiting for a connection to the IOKit service Team ID and Bundle ID This usually happens because third-party security software blocks the driver extension from loading. If that’s the case, add the driver to the whitelist in your security software so the driver extension can load.">
 <link rel="preload" href="/scss/main.min.ad03006917028e5fe1ae1e1b42b17992c0ca7ce84aed85e0df5ab9675702b990.css" as="style" integrity="sha256-rQMAaRcCjl/hrh4bQrF5ksDKfOhK7YXg31q5Z1cCuZA=" crossorigin="anonymous">
 <link href="/scss/main.min.ad03006917028e5fe1ae1e1b42b17992c0ca7ce84aed85e0df5ab9675702b990.css" rel="stylesheet" integrity="sha256-rQMAaRcCjl/hrh4bQrF5ksDKfOhK7YXg31q5Z1cCuZA=" crossorigin="anonymous">
 <script
@@ -68,7 +72,7 @@ This usually happens because third-party security software blocks the driver ext
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.ebeb3981d38bb18351324d60094b91a7.json"
+    data-offline-search-index-json-src="/offline-search-index.ebbca11298c5d23d5bb43a214ac5fee8.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="25"
   >
@@ -92,7 +96,7 @@ This usually happens because third-party security software blocks the driver ext
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.ebeb3981d38bb18351324d60094b91a7.json"
+    data-offline-search-index-json-src="/offline-search-index.ebbca11298c5d23d5bb43a214ac5fee8.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="25"
   >
@@ -635,7 +639,12 @@ This usually happens because third-party security software blocks the driver ext
 
 
 
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#team-id-and-bundle-id">Team ID and Bundle ID</a></li>
+    <li><a href="#macos-log-messages">macOS log messages</a></li>
+  </ul>
+</nav>
 
 
 
@@ -668,6 +677,20 @@ This usually happens because third-party security software blocks the driver ext
 During setup you need to enable this driver extension.</p>
 <p>Normally it&rsquo;s enough to turn on the toggle in System Settings.
 However, some people report that the extension never appears in System Settings.</p>
+<p>In this case, Karabiner-Elements displays the following alert.</p>
+<ul>
+<li><code>Please grant permission for a Driver Extension</code></li>
+<li><code>Waiting for a connection to the IOKit service</code></li>
+</ul>
+<figure>
+  <img
+    src="/docs/help/troubleshooting/driver-alert-keeps-showing-up/images/driver-alert@2x.png"
+    alt="driver-alert@2x.png"
+    style="width: 1100px"
+  />
+</figure>
+
+<h2 id="team-id-and-bundle-id">Team ID and Bundle ID</h2>
 <p>This usually happens because third-party security software blocks the driver extension from loading.
 If that&rsquo;s the case, add the driver to the whitelist in your security software so the driver extension can load.</p>
 <p>You must allow the following driver extension:</p>
@@ -687,10 +710,13 @@ If that&rsquo;s the case, add the driver to the whitelist in your security softw
       </tr>
   </tbody>
 </table>
+<h2 id="macos-log-messages">macOS log messages</h2>
+<p>You can also check the driver extension loading status and log messages from System Extensions in Settings.
+The log messages are useful for investigating the cause.</p>
 <figure>
   <img
-    src="/docs/help/troubleshooting/driver-alert-keeps-showing-up/images/driver-alert@2x.png"
-    alt="driver-alert@2x.png"
+    src="/docs/help/troubleshooting/driver-alert-keeps-showing-up/images/log@2x.png"
+    alt="log@2x.png"
     style="width: 1100px"
   />
 </figure>
