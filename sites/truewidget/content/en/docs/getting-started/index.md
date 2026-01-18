@@ -6,7 +6,7 @@ simple_list: true
 
 ## System requirements
 
--   macOS 11 Big Sur or later
+- macOS 13 Ventura or later
 
 ## Installation
 
@@ -22,4 +22,4 @@ simple_list: true
 
 ## What's next?
 
--   [Configuration](../configuration)
+- [Configuration](../configuration)
