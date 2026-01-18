@@ -1,5 +1,5 @@
 ---
-title: 'Extra Features: Automatic Volume unmounting'
+title: 'Extra Features: automatic volume unmounting'
 weight: 500
 ---
 
