@@ -5,7 +5,7 @@ weight: 200
 
 ## Swap `;` and `:`
 
--   Equal to swap `;` and `shift-;`: [from.modifiers](/docs/json/complex-modifications-manipulator-definition/from/modifiers/)
+- Equal to swap `;` and `shift-;`: [from.modifiers](/docs/json/complex-modifications-manipulator-definition/from/modifiers/)
 
 {{< karabiner-elements-complex-modifications-usage >}}
 
@@ -40,8 +40,8 @@ weight: 200
 
 ## Change `control-h` to `delete`
 
--   Change `control-h` to `delete`: [from.modifiers](/docs/json/complex-modifications-manipulator-definition/from/modifiers/)
--   Change `control-option-h` to `option-delete`.
+- Change `control-h` to `delete`: [from.modifiers](/docs/json/complex-modifications-manipulator-definition/from/modifiers/)
+- Change `control-option-h` to `option-delete`.
 
 {{< karabiner-elements-complex-modifications-usage >}}
 
@@ -66,8 +66,8 @@ weight: 200
 
 ## Change `caps_lock` to `escape` on the built-in keyboard
 
--   An example of using modifiers.optional == ["any"]: [from.modifiers](/docs/json/complex-modifications-manipulator-definition/from/modifiers/)
--   Device-specific rule: [device_if, device_unless, device_exists_if, device_exists_unless](/docs/json/complex-modifications-manipulator-definition/conditions/device/)
+- An example of using modifiers.optional == ["any"]: [from.modifiers](/docs/json/complex-modifications-manipulator-definition/from/modifiers/)
+- Device-specific rule: [device_if, device_unless, device_exists_if, device_exists_unless](/docs/json/complex-modifications-manipulator-definition/conditions/device/)
 
 {{< karabiner-elements-complex-modifications-usage >}}
 
@@ -97,8 +97,8 @@ weight: 200
 
 ## Change left_command+3 -> 2, left_shift+3 -> @ on the built-in keyboard
 
--   An example of using modifiers.optional == ["any"] with modifiers.mandatory: [from.modifiers](/docs/json/complex-modifications-manipulator-definition/from/modifiers/)
--   Device-specific rule: [device_if, device_unless, device_exists_if, device_exists_unless](/docs/json/complex-modifications-manipulator-definition/conditions/device/)
+- An example of using modifiers.optional == ["any"] with modifiers.mandatory: [from.modifiers](/docs/json/complex-modifications-manipulator-definition/from/modifiers/)
+- Device-specific rule: [device_if, device_unless, device_exists_if, device_exists_unless](/docs/json/complex-modifications-manipulator-definition/conditions/device/)
 
 {{< karabiner-elements-complex-modifications-usage >}}
 
@@ -146,7 +146,7 @@ weight: 200
 
 ## Disable `command-l` on Finder
 
--   Application-specific rule: [frontmost_application_if, frontmost_application_unless](/docs/json/complex-modifications-manipulator-definition/conditions/frontmost-application/)
+- Application-specific rule: [frontmost_application_if, frontmost_application_unless](/docs/json/complex-modifications-manipulator-definition/conditions/frontmost-application/)
 
 {{< karabiner-elements-complex-modifications-usage >}}
 
@@ -176,9 +176,9 @@ weight: 200
 
 ## Post `escape` if `left_control` is pressed alone
 
--   Post events when a key is pressed alone: [to_if_alone](/docs/json/complex-modifications-manipulator-definition/to-if-alone/)
--   Post events when a key is held down: [to_if_held_down](/docs/json/complex-modifications-manipulator-definition/to-if-held-down/)
--   The lazy modifier: [to.lazy](/docs/json/complex-modifications-manipulator-definition/to/lazy/)
+- Post events when a key is pressed alone: [to_if_alone](/docs/json/complex-modifications-manipulator-definition/to-if-alone/)
+- Post events when a key is held down: [to_if_held_down](/docs/json/complex-modifications-manipulator-definition/to-if-held-down/)
+- The lazy modifier: [to.lazy](/docs/json/complex-modifications-manipulator-definition/to/lazy/)
 
 {{< karabiner-elements-complex-modifications-usage >}}
 
@@ -215,9 +215,9 @@ This uses `"lazy": true` to prevent <kbd>left_control</kbd> from being sent imme
 
 ## Open `Safari` if `escape` is held down
 
--   Post events when a key is pressed alone: [to_if_alone](/docs/json/complex-modifications-manipulator-definition/to-if-alone/)
--   Post events when a key is held down: [to_if_held_down](/docs/json/complex-modifications-manipulator-definition/to-if-held-down/)
--   Open an application: [open_application](/docs/json/complex-modifications-manipulator-definition/to/software_function/open_application/)
+- Post events when a key is pressed alone: [to_if_alone](/docs/json/complex-modifications-manipulator-definition/to-if-alone/)
+- Post events when a key is held down: [to_if_held_down](/docs/json/complex-modifications-manipulator-definition/to-if-held-down/)
+- Open an application: [open_application](/docs/json/complex-modifications-manipulator-definition/to/software_function/open_application/)
 
 {{< karabiner-elements-complex-modifications-usage >}}
 
@@ -252,8 +252,8 @@ This uses `"lazy": true` to prevent <kbd>left_control</kbd> from being sent imme
 
 ## Paste (command+v) if `escape` is held down
 
--   Post events when a key is pressed alone: [to_if_alone](/docs/json/complex-modifications-manipulator-definition/to-if-alone/)
--   Post events when a key is held down: [to_if_held_down](/docs/json/complex-modifications-manipulator-definition/to-if-held-down/)
+- Post events when a key is pressed alone: [to_if_alone](/docs/json/complex-modifications-manipulator-definition/to-if-alone/)
+- Post events when a key is held down: [to_if_held_down](/docs/json/complex-modifications-manipulator-definition/to-if-held-down/)
 
 {{< karabiner-elements-complex-modifications-usage >}}
 
@@ -288,10 +288,10 @@ This uses `"lazy": true` to prevent <kbd>left_control</kbd> from being sent imme
 
 This example is available since Karabiner-Elements 15.5.19.
 
--   Use variable:
-    -   [expression_if, expression_unless](/docs/json/complex-modifications-manipulator-definition/conditions/expression/)
-    -   [to.set_variable](/docs/json/complex-modifications-manipulator-definition/to/set-variable/)
--   [to_delayed_action](/docs/json/complex-modifications-manipulator-definition/to-delayed-action/)
+- Use variable:
+    - [expression_if, expression_unless](/docs/json/complex-modifications-manipulator-definition/conditions/expression/)
+    - [to.set_variable](/docs/json/complex-modifications-manipulator-definition/to/set-variable/)
+- [to_delayed_action](/docs/json/complex-modifications-manipulator-definition/to-delayed-action/)
 
 {{< karabiner-elements-complex-modifications-usage >}}
 
@@ -338,10 +338,10 @@ This example is available since Karabiner-Elements 15.5.19.
 
 ## Change `right_shift x2` to `mission_control` (old style)
 
--   Use variable:
-    -   [variable_if, variable_unless](/docs/json/complex-modifications-manipulator-definition/conditions/variable/)
-    -   [to.set_variable](/docs/json/complex-modifications-manipulator-definition/to/set-variable/)
--   [to_delayed_action](/docs/json/complex-modifications-manipulator-definition/to-delayed-action/)
+- Use variable:
+    - [variable_if, variable_unless](/docs/json/complex-modifications-manipulator-definition/conditions/variable/)
+    - [to.set_variable](/docs/json/complex-modifications-manipulator-definition/to/set-variable/)
+- [to_delayed_action](/docs/json/complex-modifications-manipulator-definition/to-delayed-action/)
 
 {{< karabiner-elements-complex-modifications-usage >}}
 
@@ -409,10 +409,10 @@ This example is available since Karabiner-Elements 15.5.19.
 
 This example is available since Karabiner-Elements 15.3.7.
 
--   Use variable:
-    -   [variable_if, variable_unless](/docs/json/complex-modifications-manipulator-definition/conditions/variable/)
-    -   [to.set_variable](/docs/json/complex-modifications-manipulator-definition/to/set-variable/)
--   [to_delayed_action](/docs/json/complex-modifications-manipulator-definition/to-delayed-action/)
+- Use variable:
+    - [variable_if, variable_unless](/docs/json/complex-modifications-manipulator-definition/conditions/variable/)
+    - [to.set_variable](/docs/json/complex-modifications-manipulator-definition/to/set-variable/)
+- [to_delayed_action](/docs/json/complex-modifications-manipulator-definition/to-delayed-action/)
 
 {{< karabiner-elements-complex-modifications-usage >}}
 
@@ -476,7 +476,7 @@ This example is available since Karabiner-Elements 15.3.7.
 
 ## Change `equal+delete` to `forward_delete` if these keys are pressed simultaneously
 
--   [from.simultaneous](/docs/json/complex-modifications-manipulator-definition/from/simultaneous/)
+- [from.simultaneous](/docs/json/complex-modifications-manipulator-definition/from/simultaneous/)
 
 {{< karabiner-elements-complex-modifications-usage >}}
 
@@ -494,6 +494,59 @@ This example is available since Karabiner-Elements 15.3.7.
                 "modifiers": { "optional": ["any"] }
             },
             "to": [{ "key_code": "delete_forward" }]
+        }
+    ]
+}
+```
+
+## Input Unicode characters by fn+d
+
+- [to.select_input_source](/docs/json/complex-modifications-manipulator-definition/to/select-input-source/)
+
+In this setting, <kbd>fn</kbd>+<kbd>d</kbd> changes the Input Source to Unicode Hex Input and inputs ✅ (U+2705).
+Therefore, you need to enable Unicode Hex Input in [Input Source settings](https://support.apple.com/guide/mac-help/mchlp1406/26/mac/26).
+
+{{< karabiner-elements-complex-modifications-usage >}}
+
+```json
+{
+    "description": "Change equal+delete to forward_delete if these keys are pressed simultaneously",
+    "manipulators": [
+        {
+            "type": "basic",
+            "from": {
+                "key_code": "d",
+                "modifiers": {
+                    "mandatory": ["fn"]
+                }
+            },
+            "to": [
+                {
+                    "select_input_source": {
+                        "input_source_id": "com.apple.keylayout.UnicodeHexInput"
+                    },
+                    "hold_down_milliseconds": 200
+                },
+                {
+                    "key_code": "2",
+                    "modifiers": ["left_option"]
+                },
+                {
+                    "key_code": "7",
+                    "modifiers": ["left_option"]
+                },
+                {
+                    "key_code": "0",
+                    "modifiers": ["left_option"]
+                },
+                {
+                    "key_code": "5",
+                    "modifiers": ["left_option"]
+                },
+                {
+                    "select_input_source": { "language": "en" }
+                }
+            ]
         }
     ]
 }
