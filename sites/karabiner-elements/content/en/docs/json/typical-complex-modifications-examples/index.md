@@ -510,7 +510,7 @@ Therefore, you need to enable Unicode Hex Input in [Input Source settings](https
 
 ```json
 {
-    "description": "Change equal+delete to forward_delete if these keys are pressed simultaneously",
+    "description": "Input ✅ by fn+d",
     "manipulators": [
         {
             "type": "basic",
