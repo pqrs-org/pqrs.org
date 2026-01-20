@@ -17,32 +17,32 @@ These process are running with root privilege and other process including malici
 
 Running with root privilege
 
--   **Karabiner-Core-Service**
-    -   It grabs exclusive access to the keyboard hardware, captures the input events, modifies them, and forwards them to Karabiner-VirtualHIDDevice-Daemon.
-    -   (It was previously named **karabiner_grabber**.)
--   **Karabiner-VirtualHIDDevice-Daemon**
-    -   It controls Karabiner-DriverKit-VirtualHIDDevice and bridges the data between `Karabiner-Core-Service` and the virtual devices.
-    -   This process only receives data from processes running with root privileges.
-        Therefore, regular applications running with user privileges cannot arbitrarily send events to virtual devices.
+- **Karabiner-Core-Service**
+    - It grabs exclusive access to the keyboard hardware, captures the input events, modifies them, and forwards them to Karabiner-VirtualHIDDevice-Daemon.
+    - (It was previously named **karabiner_grabber**.)
+- **Karabiner-VirtualHIDDevice-Daemon**
+    - It controls Karabiner-DriverKit-VirtualHIDDevice and bridges the data between `Karabiner-Core-Service` and the virtual devices.
+    - This process only receives data from processes running with root privileges.
+      Therefore, regular applications running with user privileges cannot arbitrarily send events to virtual devices.
 
 Running with DriverKit privilege
 
--   **Karabiner-DriverKit-VirtualHIDDevice**
-    -   The virtual keyboard and pointing device using DriverKit.
-    -   Karabiner-DriverKit-VirtualHIDDevice does not accept control from any processes other than Karabiner-VirtualHIDDevice-Daemon.
-        Other apps cannot arbitrarily add/remove virtual devices or send events.
+- **Karabiner-DriverKit-VirtualHIDDevice**
+    - The virtual keyboard and pointing device using DriverKit.
+    - Karabiner-DriverKit-VirtualHIDDevice does not accept control from any processes other than Karabiner-VirtualHIDDevice-Daemon.
+      Other apps cannot arbitrarily add/remove virtual devices or send events.
 
 Running with logged in user privilege
 
--   **karabiner_console_user_server**
-    -   It instructs Karabiner-Core-Service to start grabbing devices.
-    -   It also executes shell commands triggered by Karabiner-Core-Service.
--   **karabiner_session_monitor**
-    -   It monitors user login status and communicates it to Karabiner-Core-Service.
--   **Karabiner-Core-Service** (Running with logged in user)
-    -   Although it's not necessary for key remapping functionality, due to macOS specifications, Karabiner-Core-Service needs to be launched once with user privileges.
-        Specifically, to request macOS Input Monitoring permission, the process must be running with user-level privileges, not administrator-level privileges.
-    -   When Karabiner-Core-Service is launched with user privileges, it only requests Input Monitoring permission and does not perform any other actions.
+- **karabiner_console_user_server**
+    - It instructs Karabiner-Core-Service to start grabbing devices.
+    - It also executes shell commands triggered by Karabiner-Core-Service.
+- **karabiner_session_monitor**
+    - It monitors user login status and communicates it to Karabiner-Core-Service.
+- **Karabiner-Core-Service** (Running with logged in user)
+    - Although it's not necessary for key remapping functionality, due to macOS specifications, Karabiner-Core-Service needs to be launched once with user privileges.
+      Specifically, to request macOS Input Monitoring permission, the process must be running with user-level privileges, not administrator-level privileges.
+    - When Karabiner-Core-Service is launched with user privileges, it only requests Input Monitoring permission and does not perform any other actions.
 
 ## Fully open source project
 

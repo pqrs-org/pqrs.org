@@ -19,8 +19,8 @@ enable `Map fn + number keys to their corresponding media control keys` instead.
 {{% alert title="Detail of the problem" color="dark" %}}
 The fn key events are ignored by Touch Bar since the following facts.
 
--   Touch Bar accepts the fn key event only from the build-in keyboard.
--   The fn key events are sent from Karabiner's virtual keyboard when Karabiner-Elements is running.
+- Touch Bar accepts the fn key event only from the build-in keyboard.
+- The fn key events are sent from Karabiner's virtual keyboard when Karabiner-Elements is running.
 
 Unfortunately, posting input events via own virtual keyboard is the only way to accomplish the stable input event modification.<br />
 In other words, we cannot post the fn key event through the built-in keyboard if we want to change key events stably.

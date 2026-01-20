@@ -170,8 +170,8 @@ Focus the most recently used application (excluding Safari and Preview) using <k
 
 {{% alert title="Notes" color="primary" %}}
 
--   Either `bundle_identifier`, `file_path` or `frontmost_application_history_index` must be specified.
--   When multiple options are specified, the highest-priority one is used, and all others are ignored.
+- Either `bundle_identifier`, `file_path` or `frontmost_application_history_index` must be specified.
+- When multiple options are specified, the highest-priority one is used, and all others are ignored.
 
 {{% /alert %}}
 
@@ -183,13 +183,13 @@ You can find the bundle identifier and file path in [EventViewer > Frontmost App
 
 {{% alert title="About frontmost_application_history_index" color="primary" %}}
 
--   The `frontmost_application_history_index` should be set as an integer >= 1.
--   When `frontmost_application_history_index` is specified, the selected application will be the one that was recently focused.
-    Applications opened through methods other than `open_application`, such as via Launchpad, are also included.
--   Only currently running applications are targeted; closed applications will not be selected.
--   Only applications opened after Karabiner-Elements was launched are targeted.
--   When you also specify `frontmost_application_history_exclusion_bundle_identifiers` or `frontmost_application_history_exclusion_file_paths`, you can exclude particular applications.
-    The values should be regular expressions that match the bundle identifier or file path.
-    These filters are available since Karabiner-Elements v15.7.3.
+- The `frontmost_application_history_index` should be set as an integer >= 1.
+- When `frontmost_application_history_index` is specified, the selected application will be the one that was recently focused.
+  Applications opened through methods other than `open_application`, such as via Launchpad, are also included.
+- Only currently running applications are targeted; closed applications will not be selected.
+- Only applications opened after Karabiner-Elements was launched are targeted.
+- When you also specify `frontmost_application_history_exclusion_bundle_identifiers` or `frontmost_application_history_exclusion_file_paths`, you can exclude particular applications.
+  The values should be regular expressions that match the bundle identifier or file path.
+  These filters are available since Karabiner-Elements v15.7.3.
 
 {{% /alert %}}

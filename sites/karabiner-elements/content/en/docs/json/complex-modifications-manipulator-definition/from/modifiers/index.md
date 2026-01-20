@@ -12,13 +12,13 @@ weight: 200
 
 ## `from.modifiers.mandatory`
 
--   Events are manipulated only if mandatory modifiers are pressed.
--   Mandatory modifiers are removed from `to` events.
+- Events are manipulated only if mandatory modifiers are pressed.
+- Mandatory modifiers are removed from `to` events.
 
 ## `from.modifiers.optional`
 
--   Events are also manipulated even if optional modifiers are pressed.
--   Optional modifiers are kept in `to` events.
+- Events are also manipulated even if optional modifiers are pressed.
+- Optional modifiers are kept in `to` events.
 
 {{% alert title="Tip" color="primary" %}}
 If you do not include `any` in `modifiers.optional`, your manipulator does not change event if extra modifiers (modifiers which are not included in `modifiers.mandatory`) are pressed.
@@ -71,7 +71,7 @@ This json defines manipulator which changes `escape` to `tab`.
 }
 ```
 
--   Without `modifiers`, the event is changed only any modifiers are not pressed.
+- Without `modifiers`, the event is changed only any modifiers are not pressed.
 
 | Input                   | Output                  | Manipulated     |
 | ----------------------- | ----------------------- | --------------- |
@@ -105,8 +105,8 @@ This json defines manipulator which changes `escape` to `tab`.<br/>
 }
 ```
 
--   The optional modifiers (`left_shift` and `left_control`) are kept in output events.
--   The event is not changed if modifiers are not included in `optional` such as `left_option`.
+- The optional modifiers (`left_shift` and `left_control`) are kept in output events.
+- The event is not changed if modifiers are not included in `optional` such as `left_option`.
 
 | Input                               | Output                              | Manipulated     |
 | ----------------------------------- | ----------------------------------- | --------------- |
@@ -140,8 +140,8 @@ This json defines manipulator which changes `control + h` to `delete_or_backspac
 }
 ```
 
--   The mandatory modifier (`control`) are removed in output events.
--   The event is not changed if `left_control` and `right_control` are not pressed.
+- The mandatory modifier (`control`) are removed in output events.
+- The event is not changed if `left_control` and `right_control` are not pressed.
 
 | Input                            | Output                           | Manipulated     |
 | -------------------------------- | -------------------------------- | --------------- |
@@ -172,9 +172,9 @@ This json defines manipulator which changes `control + h` to `delete_or_backspac
 }
 ```
 
--   The mandatory modifier (`control`) are removed in output events.
--   The event is not changed if `left_control` and `right_control` are not pressed.
--   `"optional": ["any"]` allows any modifiers.
+- The mandatory modifier (`control`) are removed in output events.
+- The event is not changed if `left_control` and `right_control` are not pressed.
+- `"optional": ["any"]` allows any modifiers.
 
 | Input                                     | Output                                       | Manipulated     |
 | ----------------------------------------- | -------------------------------------------- | --------------- |

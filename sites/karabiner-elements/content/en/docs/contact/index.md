@@ -7,8 +7,8 @@ weight: 700
 
 Please post an issue to GitHub.
 
--   [Karabiner-Elements](https://github.com/pqrs-org/Karabiner-Elements)
--   [KE-complex_modifications](https://github.com/pqrs-org/KE-complex_modifications) (About complex modifications)
+- [Karabiner-Elements](https://github.com/pqrs-org/Karabiner-Elements)
+- [KE-complex_modifications](https://github.com/pqrs-org/KE-complex_modifications) (About complex modifications)
 
 ### Required information with bug reports
 
@@ -16,11 +16,11 @@ Please fill your information when you send bug reports:
 
 {{% alert title="Required information" color="primary" %}}
 
--   macOS version:
--   Karabiner version:<br />
-    (You can confirm the version in "Update" tab in Karabiner Settings.)
--   Your Mac hardware:
--   Your keyboard hardware:
+- macOS version:
+- Karabiner version:<br />
+  (You can confirm the version in "Update" tab in Karabiner Settings.)
+- Your Mac hardware:
+- Your keyboard hardware:
 
 {{% /alert %}}
 

@@ -17,9 +17,9 @@ First, to investigate the raw key events from your keyboard, stop Karabiner-Elem
 
 After that, open Karabiner-EventViewer and press the key you want to investigate.
 
--   If the event appears in the Main tab, the key is already supported, so no further action is needed.
--   If the event appears in the Unknown Events tab, you can enable it by following the steps below to update the whitelist and rebuild Karabiner-Elements.
--   If the event does not show up in either tab, it means that macOS itself cannot recognize the key, so it cannot be supported.
+- If the event appears in the Main tab, the key is already supported, so no further action is needed.
+- If the event appears in the Unknown Events tab, you can enable it by following the steps below to update the whitelist and rebuild Karabiner-Elements.
+- If the event does not show up in either tab, it means that macOS itself cannot recognize the key, so it cannot be supported.
 
 | Main tab                                                 | Unknown Events tab                                          |
 | -------------------------------------------------------- | ----------------------------------------------------------- |

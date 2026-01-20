@@ -50,8 +50,8 @@ The background item notifications will be shown after the installation.
 
 The following Login Items in System Settings must be enabled.
 
--   `Karabiner-Elements Non-Privileged Agents v2`
--   `Karabiner-Elements Privileged Daemons v2`
+- `Karabiner-Elements Non-Privileged Agents v2`
+- `Karabiner-Elements Privileged Daemons v2`
 
 {{< local-image src="images/settings-services@2x.png" >}}
 
@@ -84,7 +84,7 @@ The following Login Items in System Settings must be enabled.
 
 If the driver extension fails to appear in System Settings or you run into similar issues, check this page:
 
--   [Driver alert keeps showing up](/docs/help/troubleshooting/driver-alert-keeps-showing-up/)
+- [Driver alert keeps showing up](/docs/help/troubleshooting/driver-alert-keeps-showing-up/)
 
 {{% /alert %}}
 
@@ -92,4 +92,4 @@ If the driver extension fails to appear in System Settings or you run into simil
 
 Enjoy keyboard configuration!
 
--   [Configuration manual](../../manual/configuration/)
+- [Configuration manual](../../manual/configuration/)

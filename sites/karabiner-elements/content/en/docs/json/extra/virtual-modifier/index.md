@@ -9,9 +9,9 @@ Karabiner-Elements does not provide virtual modifiers, however you can make your
 
 The following json change `keypad_1` to virtual modifier.
 
--   Change `keypad_1` to virtual modifier (`my_modifier_1`).
--   Change `keypad_1 + a` to `mission_control`.
--   Change `keypad_1 + s` to `launchpad`.
+- Change `keypad_1` to virtual modifier (`my_modifier_1`).
+- Change `keypad_1 + a` to `mission_control`.
+- Change `keypad_1 + s` to `launchpad`.
 
 ```json
 [

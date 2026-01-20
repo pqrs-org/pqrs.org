@@ -159,5 +159,5 @@ Speed and scroll direction depend on System Settings > Mouse configuration.
 
 ### Complete json examples
 
--   [Mouse keys (simple)](https://ke-complex-modifications.pqrs.org/#mouse_keys_simple)
--   [Mouse Keys Mode v4](https://ke-complex-modifications.pqrs.org/#mouse_keys_mode_v4)
+- [Mouse keys (simple)](https://ke-complex-modifications.pqrs.org/#mouse_keys_simple)
+- [Mouse Keys Mode v4](https://ke-complex-modifications.pqrs.org/#mouse_keys_mode_v4)

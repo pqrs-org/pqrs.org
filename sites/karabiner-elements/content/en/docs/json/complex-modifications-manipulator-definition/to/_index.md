@@ -47,15 +47,15 @@ weight: 200
 The following keys are exclusive.<br/>
 You cannot specify multiple items into one `to` entry.
 
--   `key_code`
--   `consumer_key_code`
--   `pointing_button`
--   `shell_command`
--   `select_input_source`
--   `set_variable`
--   `mouse_key`
--   `sticky_modifier`
--   `software_function` (`software_function` is available since Karabiner-Elements v13.5.1)
+- `key_code`
+- `consumer_key_code`
+- `pointing_button`
+- `shell_command`
+- `select_input_source`
+- `set_variable`
+- `mouse_key`
+- `sticky_modifier`
+- `software_function` (`software_function` is available since Karabiner-Elements v13.5.1)
 
 {{% /alert %}}
 
@@ -79,9 +79,9 @@ You cannot specify multiple items into one `to` entry.
 
 ## Investigate key names
 
--   You can find `key_code`, `consumer_key_code` and `pointing_button` names by [EventViewer](../../../manual/operation/eventviewer/).
--   You can also confirm [names in list](https://github.com/pqrs-org/Karabiner-Elements/blob/main/src/apps/SettingsWindow/Resources/simple_modifications.json).
-    (See `"data"` in the list.)
+- You can find `key_code`, `consumer_key_code` and `pointing_button` names by [EventViewer](../../../manual/operation/eventviewer/).
+- You can also confirm [names in list](https://github.com/pqrs-org/Karabiner-Elements/blob/main/src/apps/SettingsWindow/Resources/simple_modifications.json).
+  (See `"data"` in the list.)
 
 {{% alert title="Tip: using numbers instead of names" color="primary" %}}
 

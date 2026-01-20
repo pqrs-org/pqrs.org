@@ -40,5 +40,5 @@ The sticky modifiers are not deactivate by mouse buttons if you are not enabled 
 
 There are two solutions:
 
--   Deactivate sticky modifier by press the sticky modifier key again.
--   [Enable your mouse on Devices.](../mouse-button/)
+- Deactivate sticky modifier by press the sticky modifier key again.
+- [Enable your mouse on Devices.](../mouse-button/)

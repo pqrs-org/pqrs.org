@@ -7,8 +7,8 @@ Under normal circumstances, there is no need to read this page, as the necessary
 
 However, we explain the macOS settings made during the initial setup of Karabiner-Elements for the following purposes:
 
--   If you want to check the macOS settings made during the initial setup.
--   If Karabiner-Elements is not working properly and you want to ensure that the macOS settings are correct.
+- If you want to check the macOS settings made during the initial setup.
+- If Karabiner-Elements is not working properly and you want to ensure that the macOS settings are correct.
 
 ---
 

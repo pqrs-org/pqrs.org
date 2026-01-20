@@ -131,7 +131,7 @@ This feature is typically used to clear mode flag variables when all `from` even
 
 Example:
 
--   Mouse Keys Mode v4
-    -   [json](https://github.com/pqrs-org/KE-complex_modifications/blob/main/public/json/mouse_keys_mode_v4.json)
-    -   [json generator](https://github.com/pqrs-org/KE-complex_modifications/blob/main/src/json/mouse_keys_mode_v4.json.rb)
-    -   [Import](https://ke-complex-modifications.pqrs.org/#mouse_keys_mode_v4)
+- Mouse Keys Mode v4
+    - [json](https://github.com/pqrs-org/KE-complex_modifications/blob/main/public/json/mouse_keys_mode_v4.json)
+    - [json generator](https://github.com/pqrs-org/KE-complex_modifications/blob/main/src/json/mouse_keys_mode_v4.json.rb)
+    - [Import](https://ke-complex-modifications.pqrs.org/#mouse_keys_mode_v4)

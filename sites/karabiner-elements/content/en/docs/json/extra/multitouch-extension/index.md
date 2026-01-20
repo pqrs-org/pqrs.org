@@ -49,8 +49,8 @@ Karabiner-MultitouchExtension changes the following variables when the finger co
 
 {{% alert title="Note" color="primary" %}}
 
--   `finger_count_total == finger_count_upper_half_area + finger_count_lower_half_area`
--   `finger_count_total == finger_count_left_half_area + finger_count_right_half_area`
+- `finger_count_total == finger_count_upper_half_area + finger_count_lower_half_area`
+- `finger_count_total == finger_count_left_half_area + finger_count_right_half_area`
 
 {{% /alert %}}
 

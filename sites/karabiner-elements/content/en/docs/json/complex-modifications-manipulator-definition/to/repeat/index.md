@@ -11,10 +11,10 @@ The key repeating will be suppressed if `to.repeat` is `false`.
 
 `to.repeat` affects `key_up` event sending timing as follows.
 
--   If `to.repeat` is `true`:
-    -   `key_up` event is sent when you release the key.
--   If `to.repeat` is `false`:
-    -   `key_down` and `key_up` events are sent when you press the key.
+- If `to.repeat` is `true`:
+    - `key_up` event is sent when you release the key.
+- If `to.repeat` is `false`:
+    - `key_down` and `key_up` events are sent when you press the key.
 
 {{% /alert %}}
 

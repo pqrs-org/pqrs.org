@@ -35,39 +35,39 @@ This json defines manipulator which changes `a+s+d` to `mission_control`.
 
 There are some cases `simultaneous` does not modify events.
 
--   `simultaneous` does not modify events if any `from` events are released before all `from` events are pressed.
--   `simultaneous` does not modify events if `from` events are interrupted by another key_down event.
+- `simultaneous` does not modify events if any `from` events are released before all `from` events are pressed.
+- `simultaneous` does not modify events if `from` events are interrupted by another key_down event.
 
 {{% /alert %}}
 
 ### Manipulated input #1
 
--   Input:
+- Input:
     1.  `a` key_down
     2.  `s` key_down
     3.  `d` key_down
--   Output:
+- Output:
     1.  `mission_control`
 
 ### Manipulated input #2
 
--   Input:
+- Input:
     1.  `s` key_down
     2.  `a` key_down
     3.  `d` key_down
--   Output:
+- Output:
     1.  `mission_control`
 
 ### Not manipulated input #1
 
 `a` is released before all input events are pressed.
 
--   Input:
+- Input:
     1.  `a` key_down
     2.  `s` key_down
     3.  `a` key_up
     4.  `d` key_down
--   Output:
+- Output:
     1.  `a` key_down
     2.  `s` key_down
     3.  `a` key_up
@@ -77,12 +77,12 @@ There are some cases `simultaneous` does not modify events.
 
 Another key (`f`) is pressed before all input events are pressed.
 
--   Input:
+- Input:
     1.  `a` key_down
     2.  `s` key_down
     3.  `f` key_down
     4.  `d` key_down
--   Output:
+- Output:
     1.  `a` key_down
     2.  `s` key_down
     3.  `f` key_down

@@ -29,9 +29,9 @@ The value is interpreted from the first button that was pressed, so in this case
 
 ## Examples
 
--   Change the left button to mission_control.
--   Change the middle button to f12.
--   Change the right button to command+shift+4.
+- Change the left button to mission_control.
+- Change the middle button to f12.
+- Change the right button to command+shift+4.
 
 {{< karabiner-elements-complex-modifications-usage >}}
 

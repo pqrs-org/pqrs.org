@@ -5,17 +5,17 @@ weight: 600
 
 `to_delayed_action` posts events after 500 milliseconds from the `from` key is pressed.
 
--   `to_delayed_action.to_if_invoked`
-    -   An array of `to` events that will be sent if no other key is pressed after the `from` key is pressed.
--   `to_delayed_action.to_if_canceled`
-    -   An array of `to` events that will be sent if another key is pressed after the `from` key is pressed before `to_delayed_action.to_if_invoked` is sent.
+- `to_delayed_action.to_if_invoked`
+    - An array of `to` events that will be sent if no other key is pressed after the `from` key is pressed.
+- `to_delayed_action.to_if_canceled`
+    - An array of `to` events that will be sent if another key is pressed after the `from` key is pressed before `to_delayed_action.to_if_invoked` is sent.
 
 {{% alert title="Tip" color="primary" %}}
 
 `to_delayed_action` is typically used to:
 
--   Double tap key (e.g., change `right_shift x2`)
--   2 stroke keys such as C-x of Emacs Mode.
+- Double tap key (e.g., change `right_shift x2`)
+- 2 stroke keys such as C-x of Emacs Mode.
 
 {{% /alert %}}
 

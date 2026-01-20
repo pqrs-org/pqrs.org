@@ -31,12 +31,12 @@ Some settings and files will remain after uninstallation.
 It does not affect the system even if it remains in place, but if you are concerned about them, please delete them manually.
 
 1.  Log files
-    -   Delete the following directories:
-        -   `/var/log/karabiner`
-        -   `~/.local/share/karabiner`
+    - Delete the following directories:
+        - `/var/log/karabiner`
+        - `~/.local/share/karabiner`
 2.  Temporary directories
-    -   Delete the following directories:
-        -   `/Library/Application Support/org.pqrs/tmp`
+    - Delete the following directories:
+        - `/Library/Application Support/org.pqrs/tmp`
 3.  Setting files
-    -   Delete the following directories:
-        -   `~/.config/karabiner`
+    - Delete the following directories:
+        - `~/.config/karabiner`

@@ -92,8 +92,8 @@ Change caps_lock to escape on Apple keyboards, wiht the vendor ID is 1452 (0x05a
 | `is_touch_bar`         | Optional | `true` or `false`                                                                                                                                   | Yes         |
 | `is_built_in_keyboard` | Optional | `true` or `false`<br />(available since Karabiner-Elements 14.8.2)                                                                                  | Yes         |
 
--   `[1]` The `device_address` will change when you replace the hardware.
--   `[2]` The `location_id` will change when you change the USB port which the device is connected.
+- `[1]` The `device_address` will change when you replace the hardware.
+- `[2]` The `location_id` will change when you change the USB port which the device is connected.
 
 #### Multiple identifiers
 

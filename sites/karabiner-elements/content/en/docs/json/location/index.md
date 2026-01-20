@@ -5,12 +5,12 @@ weight: 100
 
 Karabiner-Elements configuration file paths:
 
--   `~/.config/karabiner/karabiner.json`
-    -   Main configuration file.<br />
-        Karabiner-Elements watches this file and reload it automatically when it is updated.
--   `~/.config/karabiner/assets/complex_modifications`
-    -   Imported complex_modifications files.<br />
-        You can use them in Karabiner-Elements Settings > Complex Modifications > Add predefined rule.
+- `~/.config/karabiner/karabiner.json`
+    - Main configuration file.<br />
+      Karabiner-Elements watches this file and reload it automatically when it is updated.
+- `~/.config/karabiner/assets/complex_modifications`
+    - Imported complex_modifications files.<br />
+      You can use them in Karabiner-Elements Settings > Complex Modifications > Add predefined rule.
 
 {{% alert title="Tip: file update detection and automatic reload" color="primary" %}}
 

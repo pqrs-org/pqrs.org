@@ -46,8 +46,8 @@ Normally, no additional configuration is needed even if you change the location 
 
 However, if you move the karabiner.json file to a location that requires special permissions, such as the `Desktop` or `Downloads` folder, you will need to grant access permissions to the following processes.
 
--   `Karabiner-Core-Service`
--   `karabiner_console_user_server`
+- `Karabiner-Core-Service`
+- `karabiner_console_user_server`
 
 The most reliable way is to grant Full Disk Access to these processes.
 
@@ -57,8 +57,8 @@ and make sure the toggle next to `Karabiner-Core-Service` and `karabiner_console
 
 If these entries are not listed, you can press the `+` button, navigate to the following locations, and add them from there.
 
--   `Macintosh HD > Library > Application Support > org.pqrs > Karabiner-Elements`
--   `Macintosh HD > Library > Application Support > org.pqrs > Karabiner-Elements > bin`
+- `Macintosh HD > Library > Application Support > org.pqrs > Karabiner-Elements`
+- `Macintosh HD > Library > Application Support > org.pqrs > Karabiner-Elements > bin`
 
 After turning them on, please restart macOS once to restart these processes.
 

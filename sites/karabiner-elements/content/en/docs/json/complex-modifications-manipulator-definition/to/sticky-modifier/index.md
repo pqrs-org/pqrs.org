@@ -46,15 +46,15 @@ weight: 450
 
 ## Supported modifiers
 
--   left_control
--   left_shift
--   left_option
--   left_command
--   right_control
--   right_shift
--   right_option
--   right_command
--   fn
+- left_control
+- left_shift
+- left_option
+- left_command
+- right_control
+- right_shift
+- right_option
+- right_command
+- fn
 
 {{% alert title="Note" color="danger" %}}
 You have to specify only one modifier.

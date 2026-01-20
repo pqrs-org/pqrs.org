@@ -20,12 +20,12 @@ The log files are placed at:
 
 System logs
 
--   /var/log/karabiner/core_service.log
--   /var/log/karabiner/virtual_hid_device_service.log
+- /var/log/karabiner/core_service.log
+- /var/log/karabiner/virtual_hid_device_service.log
 
 User logs
 
--   ~/.local/share/karabiner/log/console_user_server.log
--   /var/log/karabiner/session_monitor.{uid}.log
+- ~/.local/share/karabiner/log/console_user_server.log
+- /var/log/karabiner/session_monitor.{uid}.log
 
 {{% /alert %}}

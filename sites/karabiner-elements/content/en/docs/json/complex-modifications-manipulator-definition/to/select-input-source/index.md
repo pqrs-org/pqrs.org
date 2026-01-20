@@ -17,8 +17,8 @@ For CJKV input sources, sending the input source switch shortcut (e.g., control-
 
 Switch the current input source by:
 
--   right_command+e: English
--   right_command+f: French
+- right_command+e: English
+- right_command+f: French
 
 {{< karabiner-elements-complex-modifications-usage >}}
 

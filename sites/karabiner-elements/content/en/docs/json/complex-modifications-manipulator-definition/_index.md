@@ -39,19 +39,19 @@ weight: 500
 
 ## Detail
 
--   [from event definition](from/)
--   [to event definition](to/)
--   [to_if_alone](to-if-alone/)
--   [to_if_held_down](to-if-held-down/)
--   [to_after_key_up](to-after-key-up/)
--   [to_delayed_action](to-delayed-action/)
--   [conditions](conditions/)
+- [from event definition](from/)
+- [to event definition](to/)
+- [to_if_alone](to-if-alone/)
+- [to_if_held_down](to-if-held-down/)
+- [to_after_key_up](to-after-key-up/)
+- [to_delayed_action](to-delayed-action/)
+- [conditions](conditions/)
 
 ## Other manipulators
 
 Manipulators which `type` is not `"basic"`.
 
--   [`mouse_basic`](other-types/mouse-basic/)
--   [`mouse_motion_to_scroll`](other-types/mouse-motion-to-scroll/)
+- [`mouse_basic`](other-types/mouse-basic/)
+- [`mouse_motion_to_scroll`](other-types/mouse-motion-to-scroll/)
 
 ## Table of Contents

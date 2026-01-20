@@ -39,4 +39,4 @@ Please use key code names that matches your layout.
 
 ## Related articles
 
--   [Manual > Configuration > Set keyboard type](/docs/manual/configuration/configure-keyboard-type/)
+- [Manual > Configuration > Set keyboard type](/docs/manual/configuration/configure-keyboard-type/)

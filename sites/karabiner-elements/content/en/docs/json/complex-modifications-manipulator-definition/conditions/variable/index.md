@@ -67,8 +67,8 @@ Pressing the <kbd>a</kbd> key while holding the <kbd>escape</kbd> key launches A
 
 `variable_if` and `variable_unless` are designed to be used with the following features:
 
--   [`set_variable`](../../to/set-variable/)
--   [`--set-variables` in command line interface](/docs/manual/misc/command-line-interface/)
+- [`set_variable`](../../to/set-variable/)
+- [`--set-variables` in command line interface](/docs/manual/misc/command-line-interface/)
 
 {{% /alert %}}
 
@@ -99,8 +99,8 @@ Pressing the <kbd>a</kbd> key while holding the <kbd>escape</kbd> key launches A
 
 Whenever the type of `value` is different, it is treated as having different contents.
 
--   `1` != `true`
--   `true` != `"true"`
+- `1` != `true`
+- `true` != `"true"`
 
 {{% /alert %}}
 

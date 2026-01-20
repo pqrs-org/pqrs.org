@@ -21,8 +21,8 @@ Expected:
 
 The confirmed causes are as follows:
 
--   If you have ever git clone the Karabiner-Elements repository and built it
--   If macOS has set the Allow in the Background display name before Karabiner-Elements was registered in the macOS application database
+- If you have ever git clone the Karabiner-Elements repository and built it
+- If macOS has set the Allow in the Background display name before Karabiner-Elements was registered in the macOS application database
 
 ### How to solve when you have built Karabiner-Elements from source code
 

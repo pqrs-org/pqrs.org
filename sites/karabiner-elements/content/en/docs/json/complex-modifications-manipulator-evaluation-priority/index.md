@@ -20,9 +20,9 @@ Karabiner-Elements changes keys by Simple Modifications, and then changes them b
 
 If there are the following manipulators, `right shift` key will be `right command + right option`.
 
--   Simple Modifications
-    -   Change `right shift` to `right command`
--   Complex Modifications
-    -   Change `right command` to `right command + right option`
+- Simple Modifications
+    - Change `right shift` to `right command`
+- Complex Modifications
+    - Change `right command` to `right command + right option`
 
 {{% /alert %}}

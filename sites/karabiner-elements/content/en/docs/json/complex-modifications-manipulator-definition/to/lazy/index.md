@@ -17,14 +17,14 @@ The lazy modifier is designed using with `to_if_alone` or key combinations such 
 
 The following json changes:
 
--   `left_control` to the lazy left control
--   `left_control + m` to `return_or_enter`
+- `left_control` to the lazy left control
+- `left_control + m` to `return_or_enter`
 
 Behavior of the json:
 
--   The `left_control` key event will not be sent when you press `left_control` alone.
--   Only the `return_or_enter` key event will be sent when you press `left_control + m`.
--   You can use `left_control` for other keys such as `left_control + a`, `left_control + b`, etc.
+- The `left_control` key event will not be sent when you press `left_control` alone.
+- Only the `return_or_enter` key event will be sent when you press `left_control + m`.
+- You can use `left_control` for other keys such as `left_control + a`, `left_control + b`, etc.
 
 {{< karabiner-elements-complex-modifications-usage >}}
 

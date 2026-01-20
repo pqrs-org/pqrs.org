@@ -12,10 +12,10 @@ Of course, Karabiner-Elements does not collect any of your input data, your conf
 
 Karabiner-Elements does not transmit your data externally. The following data is never transmitted outside your Mac:
 
--   Your keystrokes
--   Your configuration data
--   Your usage statistics
--   And all other data except Karabiner-Elements version information.
+- Your keystrokes
+- Your configuration data
+- Your usage statistics
+- And all other data except Karabiner-Elements version information.
 
 {{% /alert %}}
 
@@ -56,9 +56,9 @@ Karabiner-Elements and any bundled softwares, e.g., EventViewer, do not access o
 
 **User files and data referenced by Karabiner-Elements:**
 
--   Configuration files specific to the application.
--   The keyboard type configuration (ANSI, ISO, JIS) in the system settings.
--   The "Use F1, F2, etc. keys as standard function keys" configuration in the system settings.
+- Configuration files specific to the application.
+- The keyboard type configuration (ANSI, ISO, JIS) in the system settings.
+- The "Use F1, F2, etc. keys as standard function keys" configuration in the system settings.
 
 {{% /alert %}}
 
@@ -101,8 +101,8 @@ The version information will be sent in order to check updates when automatic up
 
 The URLs to send the version information are as follows:
 
--   <https://appcast.pqrs.org/karabiner-elements-appcast.xml>
--   <https://appcast.pqrs.org/karabiner-elements-appcast-devel.xml>
+- <https://appcast.pqrs.org/karabiner-elements-appcast.xml>
+- <https://appcast.pqrs.org/karabiner-elements-appcast-devel.xml>
 
 You can change the automatic update setting in Update tab.
 
@@ -132,4 +132,4 @@ The received data contains:
 
 ## Related documents
 
--   [Security](../help/advanced-topics/security)
+- [Security](../help/advanced-topics/security)

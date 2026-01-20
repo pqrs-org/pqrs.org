@@ -71,8 +71,8 @@ Send Command+Q only when it has been pressed twice.
 
 `expression_if` and `expression_unless` are designed to be used with the following features:
 
--   [`set_variable`](../../to/set-variable/)
--   [`--set-variables` in command line interface](/docs/manual/misc/command-line-interface/)
+- [`set_variable`](../../to/set-variable/)
+- [`--set-variables` in command line interface](/docs/manual/misc/command-line-interface/)
 
 {{% /alert %}}
 
@@ -94,9 +94,9 @@ Send Command+Q only when it has been pressed twice.
 and you can use variables set by `set_variable` manipulations and the following system-provided variables.
 If an undefined variable appears in the expression, its value is treated as 0.
 
--   system.now.milliseconds
--   system.scroll_direction_is_natural
--   system.use_fkeys_as_standard_function_keys
+- system.now.milliseconds
+- system.scroll_direction_is_natural
+- system.use_fkeys_as_standard_function_keys
 
 {{% alert color="primary" %}}
 

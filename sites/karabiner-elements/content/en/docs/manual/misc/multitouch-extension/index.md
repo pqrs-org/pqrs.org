@@ -11,10 +11,10 @@ Karabiner-MultitouchExtension is available since Karabiner-Elements 12.6.9
 
 ### Related Complex Modifications examples
 
--   [Multitouch Vi Mode](https://ke-complex-modifications.pqrs.org/#multitouch_vi_mode)
--   [Multitouch Diamond Cursor](https://ke-complex-modifications.pqrs.org/#multitouch_diamond_cursor)
--   [Multitouch Mouse Buttons](https://ke-complex-modifications.pqrs.org/#multitouch_mouse_buttons)
--   [ThumbSense](https://ke-complex-modifications.pqrs.org/#thumbsense)
+- [Multitouch Vi Mode](https://ke-complex-modifications.pqrs.org/#multitouch_vi_mode)
+- [Multitouch Diamond Cursor](https://ke-complex-modifications.pqrs.org/#multitouch_diamond_cursor)
+- [Multitouch Mouse Buttons](https://ke-complex-modifications.pqrs.org/#multitouch_mouse_buttons)
+- [ThumbSense](https://ke-complex-modifications.pqrs.org/#thumbsense)
 
 ### MultitouchExtension usage
 

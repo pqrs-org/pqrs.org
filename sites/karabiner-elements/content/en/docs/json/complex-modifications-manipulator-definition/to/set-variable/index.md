@@ -9,8 +9,8 @@ weight: 300
 
 `set_variable` is designed to use with the following conditions:
 
--   [`variable_if` and `variable_unless` conditions](../../conditions/variable/)
--   [`expression_if` and `expression_unless` conditions](../../conditions/expression/).
+- [`variable_if` and `variable_unless` conditions](../../conditions/variable/)
+- [`expression_if` and `expression_unless` conditions](../../conditions/expression/).
 
 {{% /alert %}}
 
@@ -116,9 +116,9 @@ Note: If `key_up_value` or `type` is specified, the `value` can be omitted.
 and you can use variables set by other `set_variable` manipulations and the following system-provided variables.
 If an undefined variable appears in the expression, its value is treated as 0.
 
--   system.now.milliseconds
--   system.scroll_direction_is_natural
--   system.use_fkeys_as_standard_function_keys
+- system.now.milliseconds
+- system.scroll_direction_is_natural
+- system.use_fkeys_as_standard_function_keys
 
 {{% alert color="primary" %}}
 

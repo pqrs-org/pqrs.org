@@ -5,11 +5,11 @@ weight: 600
 
 Karabiner-Elements shows an icon in menu bar which provides the following functions:
 
--   Switch profiles.
--   Open Settings.
--   Check for updates.
--   Open EventViewer.
--   Restart & Quit Karabiner-Elements.
+- Switch profiles.
+- Open Settings.
+- Check for updates.
+- Open EventViewer.
+- Restart & Quit Karabiner-Elements.
 
 {{< local-image src="images/menu@2x.png" >}}
 

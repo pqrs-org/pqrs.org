@@ -9,8 +9,8 @@ weight: 500
 
 `to_after_key_up` is typically used to:
 
--   Unset variables using [`set_variable`](../to/set-variable/)
--   Used with `to_if_held_down` and `to.halt` in order to define fallback behavior.
+- Unset variables using [`set_variable`](../to/set-variable/)
+- Used with `to_if_held_down` and `to.halt` in order to define fallback behavior.
 
 {{% /alert %}}
 

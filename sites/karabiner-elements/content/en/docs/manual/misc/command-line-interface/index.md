@@ -5,14 +5,14 @@ weight: 500
 
 Karabiner-Elements provides a command line interface which provides the following functions.
 
--   Switch a profile by name.
--   Show current profile name.
--   Show all profile names.
--   Set variables which are used in complex modifications.
--   Copy the current profile to system default profile. (Administrator privilege is required.)
--   Remove the system default profile. (Administrator privilege is required.)
--   Lint complex_modifications.json.
--   Display version.
+- Switch a profile by name.
+- Show current profile name.
+- Show all profile names.
+- Set variables which are used in complex modifications.
+- Copy the current profile to system default profile. (Administrator privilege is required.)
+- Remove the system default profile. (Administrator privilege is required.)
+- Lint complex_modifications.json.
+- Display version.
 
 ## Usage
 
