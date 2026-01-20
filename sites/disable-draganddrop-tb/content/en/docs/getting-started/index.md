@@ -6,7 +6,7 @@ simple_list: true
 
 ## System requirements
 
--   Thunderbird 128 or later
+- Thunderbird 128 or later
 
 ## Installation
 

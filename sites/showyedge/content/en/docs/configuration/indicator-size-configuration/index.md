@@ -25,6 +25,6 @@ You can put the indicator by custom size and origin.
 
 ### Tips
 
--   You can specify size by pixel or percentage of screen.
-    -   (e.g., width = 100%, height = 20pt)
--   Choose `Lower-Left` from origin options if you want to put indicator to the bottom of screen.
+- You can specify size by pixel or percentage of screen.
+    - (e.g., width = 100%, height = 20pt)
+- Choose `Lower-Left` from origin options if you want to put indicator to the bottom of screen.

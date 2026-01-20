@@ -1,5 +1,5 @@
 ---
-title: "Hide the icon in menu bar"
+title: 'Hide the icon in menu bar'
 weight: 400
 ---
 

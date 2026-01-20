@@ -17,4 +17,4 @@ simple_list: true
 
 ## What's next?
 
--   [Configuration](../configuration)
+- [Configuration](../configuration)

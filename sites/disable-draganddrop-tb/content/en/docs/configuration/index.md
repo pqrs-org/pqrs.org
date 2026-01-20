@@ -13,4 +13,4 @@ When enabled, you can move folders by holding down the shift key while initiatin
 
 ## Related topics
 
--   [Disable this add-on temporarily](../help/disable-temporarily/)
+- [Disable this add-on temporarily](../help/disable-temporarily/)

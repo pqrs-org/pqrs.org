@@ -7,8 +7,8 @@ weight: 20
 
 ### Requirements
 
--   devkitPro r18 (buildscripts 20060412)
-    -   You need to use version r18. Do not use the latest release!
+- devkitPro r18 (buildscripts 20060412)
+    - You need to use version r18. Do not use the latest release!
 
 ### Steps
 
@@ -64,8 +64,8 @@ You need PHP 5.0+ to convert BulletML to C++.
 
 The most BulletML are supported. But there are little exception.
 
--   `<accel>` does not work properly.
--   `<*Ref>` which contains `$rand` in `<param>` does not work properly.
+- `<accel>` does not work properly.
+- `<*Ref>` which contains `$rand` in `<param>` does not work properly.
 
     ```xml
     <fireRef>
@@ -78,8 +78,8 @@ The most BulletML are supported. But there are little exception.
 
 BulletGBA uses following softwares and data.
 
--   [devkitPro](http://www.devkitpro.org/)
--   [BulletML](http://www.asahi-net.or.jp/~cs8k-cyu/bulletml/index_e.html)
--   [弾幕やさん](http://shinh.skr.jp/sdmkun/zipup.cgi)
--   [Mersenne Twister](http://www.math.sci.hiroshima-u.ac.jp/~m-mat/MT/emt.html)
--   [GAU Cube Bold](http://www.graphicartsunit.com/gaupra/)
+- [devkitPro](http://www.devkitpro.org/)
+- [BulletML](http://www.asahi-net.or.jp/~cs8k-cyu/bulletml/index_e.html)
+- [弾幕やさん](http://shinh.skr.jp/sdmkun/zipup.cgi)
+- [Mersenne Twister](http://www.math.sci.hiroshima-u.ac.jp/~m-mat/MT/emt.html)
+- [GAU Cube Bold](http://www.graphicartsunit.com/gaupra/)

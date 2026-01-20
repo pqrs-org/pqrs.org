@@ -7,8 +7,8 @@ weight: 20
 
 ### Requirements
 
--   devkitPro r18 (buildscripts 20060412)
-    -   You need to use version r18. Do not use the latest release!
+- devkitPro r18 (buildscripts 20060412)
+    - You need to use version r18. Do not use the latest release!
 
 ### Steps
 

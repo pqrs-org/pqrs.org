@@ -10,7 +10,7 @@ The STL files are published in [the GitHub repository](https://github.com/pqrs-o
 
 | Name                           | Qty | Photo                                                                             |
 | ------------------------------ | --- | --------------------------------------------------------------------------------- |
-| ComboStick-v1-Lower Box        | 1   | {{< local-image width="200px" inline="true" src="images/lower-box.png" >}}       |
+| ComboStick-v1-Lower Box        | 1   | {{< local-image width="200px" inline="true" src="images/lower-box.png" >}}        |
 | ComboStick-v1-Upper Box        | 1   | {{< local-image width="200px" inline="true" src="images/upper-box.png" >}}        |
 | ComboStick-v1-USB A Underneath | 1   | {{< local-image width="200px" inline="true" src="images/usb-a-underneath.png" >}} |
 | ComboStick-v1-USB A Holder     | 1   | {{< local-image width="200px" inline="true" src="images/usb-a-holder.png" >}}     |
