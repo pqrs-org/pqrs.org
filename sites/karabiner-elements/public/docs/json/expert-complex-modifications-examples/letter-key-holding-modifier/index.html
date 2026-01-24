@@ -7,41 +7,29 @@
 <link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
 <link rel="apple-touch-icon" href="/favicons/apple-touch-icon-180x180.png" sizes="180x180">
 
-<title>&#34;Fumihiko Takayama&#34; is shown in Login Items | Karabiner-Elements</title>
-<meta name="description" content="In Allow in the Background of Login Items, Fumihiko Takayama may appear instead of Karabiner-Elements.
-There are several causes, but the problem is mainly on the macOS side and is difficult to resolve. (Restarting macOS may solve this issue)
-In any case, there is no problem with leaving it as it is.
-Expected:
-Information for those who want to know more The confirmed causes are as follows:">
-<meta property="og:url" content="/docs/help/troubleshooting/fumihiko-takayama-in-login-items/">
+<title>Letter key holding modifier | Karabiner-Elements</title>
+<meta name="description" content="Switch to the app launcher when the u key is held down.
+u (hold for 250 ms) &#43; s: Open Safari u (hold for 250 ms) &#43; t: Open Terminal 💡 How to use this example { &#34;description&#34;: &#34;Switch to the app launcher when the u key is held down&#34;, &#34;manipulators&#34;: [ { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;u&#34;, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to_if_held_down&#34;: [ { &#34;set_variable&#34;: { &#34;name&#34;: &#34;u_flag&#34;, &#34;value&#34;: true } } ], &#34;to_after_key_up&#34;: [ { &#34;set_variable&#34;: { &#34;name&#34;: &#34;u_flag&#34;, &#34;value&#34;: false }, // Cancel the `to_delayed_action` &#34;halt&#34;: true } ], &#34;to_if_alone&#34;: [{ &#34;key_code&#34;: &#34;u&#34; }], &#34;to_delayed_action&#34;: { &#34;to_if_canceled&#34;: [{ &#34;key_code&#34;: &#34;u&#34; }] }, &#34;parameters&#34;: { &#34;basic.to_delayed_action_delay_milliseconds&#34;: 250, &#34;basic.to_if_alone_timeout_milliseconds&#34;: 250, &#34;basic.to_if_held_down_threshold_milliseconds&#34;: 250 } }, { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;s&#34; }, &#34;conditions&#34;: [ { &#34;name&#34;: &#34;u_flag&#34;, &#34;type&#34;: &#34;variable_if&#34;, &#34;value&#34;: true } ], &#34;to&#34;: [ { &#34;software_function&#34;: { &#34;open_application&#34;: { &#34;bundle_identifier&#34;: &#34;com.apple.Safari&#34; } } } ] }, { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;t&#34; }, &#34;conditions&#34;: [ { &#34;name&#34;: &#34;u_flag&#34;, &#34;type&#34;: &#34;variable_if&#34;, &#34;value&#34;: true } ], &#34;to&#34;: [ { &#34;software_function&#34;: { &#34;open_application&#34;: { &#34;bundle_identifier&#34;: &#34;com.apple.Terminal&#34; } } } ] } ] }">
+<meta property="og:url" content="/docs/json/expert-complex-modifications-examples/letter-key-holding-modifier/">
   <meta property="og:site_name" content="Karabiner-Elements">
-  <meta property="og:title" content="&#34;Fumihiko Takayama&#34; is shown in Login Items">
-  <meta property="og:description" content="In Allow in the Background of Login Items, Fumihiko Takayama may appear instead of Karabiner-Elements.
-There are several causes, but the problem is mainly on the macOS side and is difficult to resolve. (Restarting macOS may solve this issue)
-In any case, there is no problem with leaving it as it is.
-Expected:
-Information for those who want to know more The confirmed causes are as follows:">
+  <meta property="og:title" content="Letter key holding modifier">
+  <meta property="og:description" content="Switch to the app launcher when the u key is held down.
+u (hold for 250 ms) &#43; s: Open Safari u (hold for 250 ms) &#43; t: Open Terminal 💡 How to use this example { &#34;description&#34;: &#34;Switch to the app launcher when the u key is held down&#34;, &#34;manipulators&#34;: [ { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;u&#34;, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to_if_held_down&#34;: [ { &#34;set_variable&#34;: { &#34;name&#34;: &#34;u_flag&#34;, &#34;value&#34;: true } } ], &#34;to_after_key_up&#34;: [ { &#34;set_variable&#34;: { &#34;name&#34;: &#34;u_flag&#34;, &#34;value&#34;: false }, // Cancel the `to_delayed_action` &#34;halt&#34;: true } ], &#34;to_if_alone&#34;: [{ &#34;key_code&#34;: &#34;u&#34; }], &#34;to_delayed_action&#34;: { &#34;to_if_canceled&#34;: [{ &#34;key_code&#34;: &#34;u&#34; }] }, &#34;parameters&#34;: { &#34;basic.to_delayed_action_delay_milliseconds&#34;: 250, &#34;basic.to_if_alone_timeout_milliseconds&#34;: 250, &#34;basic.to_if_held_down_threshold_milliseconds&#34;: 250 } }, { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;s&#34; }, &#34;conditions&#34;: [ { &#34;name&#34;: &#34;u_flag&#34;, &#34;type&#34;: &#34;variable_if&#34;, &#34;value&#34;: true } ], &#34;to&#34;: [ { &#34;software_function&#34;: { &#34;open_application&#34;: { &#34;bundle_identifier&#34;: &#34;com.apple.Safari&#34; } } } ] }, { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;t&#34; }, &#34;conditions&#34;: [ { &#34;name&#34;: &#34;u_flag&#34;, &#34;type&#34;: &#34;variable_if&#34;, &#34;value&#34;: true } ], &#34;to&#34;: [ { &#34;software_function&#34;: { &#34;open_application&#34;: { &#34;bundle_identifier&#34;: &#34;com.apple.Terminal&#34; } } } ] } ] }">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
     <meta property="og:image" content="https://karabiner-elements.pqrs.org/images/logo.png">
 
-  <meta itemprop="name" content="&#34;Fumihiko Takayama&#34; is shown in Login Items">
-  <meta itemprop="description" content="In Allow in the Background of Login Items, Fumihiko Takayama may appear instead of Karabiner-Elements.
-There are several causes, but the problem is mainly on the macOS side and is difficult to resolve. (Restarting macOS may solve this issue)
-In any case, there is no problem with leaving it as it is.
-Expected:
-Information for those who want to know more The confirmed causes are as follows:">
-  <meta itemprop="wordCount" content="273">
+  <meta itemprop="name" content="Letter key holding modifier">
+  <meta itemprop="description" content="Switch to the app launcher when the u key is held down.
+u (hold for 250 ms) &#43; s: Open Safari u (hold for 250 ms) &#43; t: Open Terminal 💡 How to use this example { &#34;description&#34;: &#34;Switch to the app launcher when the u key is held down&#34;, &#34;manipulators&#34;: [ { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;u&#34;, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to_if_held_down&#34;: [ { &#34;set_variable&#34;: { &#34;name&#34;: &#34;u_flag&#34;, &#34;value&#34;: true } } ], &#34;to_after_key_up&#34;: [ { &#34;set_variable&#34;: { &#34;name&#34;: &#34;u_flag&#34;, &#34;value&#34;: false }, // Cancel the `to_delayed_action` &#34;halt&#34;: true } ], &#34;to_if_alone&#34;: [{ &#34;key_code&#34;: &#34;u&#34; }], &#34;to_delayed_action&#34;: { &#34;to_if_canceled&#34;: [{ &#34;key_code&#34;: &#34;u&#34; }] }, &#34;parameters&#34;: { &#34;basic.to_delayed_action_delay_milliseconds&#34;: 250, &#34;basic.to_if_alone_timeout_milliseconds&#34;: 250, &#34;basic.to_if_held_down_threshold_milliseconds&#34;: 250 } }, { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;s&#34; }, &#34;conditions&#34;: [ { &#34;name&#34;: &#34;u_flag&#34;, &#34;type&#34;: &#34;variable_if&#34;, &#34;value&#34;: true } ], &#34;to&#34;: [ { &#34;software_function&#34;: { &#34;open_application&#34;: { &#34;bundle_identifier&#34;: &#34;com.apple.Safari&#34; } } } ] }, { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;t&#34; }, &#34;conditions&#34;: [ { &#34;name&#34;: &#34;u_flag&#34;, &#34;type&#34;: &#34;variable_if&#34;, &#34;value&#34;: true } ], &#34;to&#34;: [ { &#34;software_function&#34;: { &#34;open_application&#34;: { &#34;bundle_identifier&#34;: &#34;com.apple.Terminal&#34; } } } ] } ] }">
+  <meta itemprop="wordCount" content="186">
   <meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://karabiner-elements.pqrs.org/images/logo.png">
-  <meta name="twitter:title" content="&#34;Fumihiko Takayama&#34; is shown in Login Items">
-  <meta name="twitter:description" content="In Allow in the Background of Login Items, Fumihiko Takayama may appear instead of Karabiner-Elements.
-There are several causes, but the problem is mainly on the macOS side and is difficult to resolve. (Restarting macOS may solve this issue)
-In any case, there is no problem with leaving it as it is.
-Expected:
-Information for those who want to know more The confirmed causes are as follows:">
+  <meta name="twitter:title" content="Letter key holding modifier">
+  <meta name="twitter:description" content="Switch to the app launcher when the u key is held down.
+u (hold for 250 ms) &#43; s: Open Safari u (hold for 250 ms) &#43; t: Open Terminal 💡 How to use this example { &#34;description&#34;: &#34;Switch to the app launcher when the u key is held down&#34;, &#34;manipulators&#34;: [ { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;u&#34;, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to_if_held_down&#34;: [ { &#34;set_variable&#34;: { &#34;name&#34;: &#34;u_flag&#34;, &#34;value&#34;: true } } ], &#34;to_after_key_up&#34;: [ { &#34;set_variable&#34;: { &#34;name&#34;: &#34;u_flag&#34;, &#34;value&#34;: false }, // Cancel the `to_delayed_action` &#34;halt&#34;: true } ], &#34;to_if_alone&#34;: [{ &#34;key_code&#34;: &#34;u&#34; }], &#34;to_delayed_action&#34;: { &#34;to_if_canceled&#34;: [{ &#34;key_code&#34;: &#34;u&#34; }] }, &#34;parameters&#34;: { &#34;basic.to_delayed_action_delay_milliseconds&#34;: 250, &#34;basic.to_if_alone_timeout_milliseconds&#34;: 250, &#34;basic.to_if_held_down_threshold_milliseconds&#34;: 250 } }, { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;s&#34; }, &#34;conditions&#34;: [ { &#34;name&#34;: &#34;u_flag&#34;, &#34;type&#34;: &#34;variable_if&#34;, &#34;value&#34;: true } ], &#34;to&#34;: [ { &#34;software_function&#34;: { &#34;open_application&#34;: { &#34;bundle_identifier&#34;: &#34;com.apple.Safari&#34; } } } ] }, { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;t&#34; }, &#34;conditions&#34;: [ { &#34;name&#34;: &#34;u_flag&#34;, &#34;type&#34;: &#34;variable_if&#34;, &#34;value&#34;: true } ], &#34;to&#34;: [ { &#34;software_function&#34;: { &#34;open_application&#34;: { &#34;bundle_identifier&#34;: &#34;com.apple.Terminal&#34; } } } ] } ] }">
 <link rel="preload" href="/scss/main.min.ad03006917028e5fe1ae1e1b42b17992c0ca7ce84aed85e0df5ab9675702b990.css" as="style" integrity="sha256-rQMAaRcCjl/hrh4bQrF5ksDKfOhK7YXg31q5Z1cCuZA=" crossorigin="anonymous">
 <link href="/scss/main.min.ad03006917028e5fe1ae1e1b42b17992c0ca7ce84aed85e0df5ab9675702b990.css" rel="stylesheet" integrity="sha256-rQMAaRcCjl/hrh4bQrF5ksDKfOhK7YXg31q5Z1cCuZA=" crossorigin="anonymous">
 <script
@@ -260,13 +248,13 @@ Information for those who want to know more The confirmed causes are as follows:
   </ul>
 </li>
   </ul>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docshelp-li">
-  <input type="checkbox" id="m-docshelp-check" checked/>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docshelp-li">
+  <input type="checkbox" id="m-docshelp-check"/>
   <label for="m-docshelp-check"><a href="/docs/help/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docshelp"><span class="">Help</span></a></label>
   
   <ul class="ul-2 foldable">
-    <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docshelptroubleshooting-li">
-  <input type="checkbox" id="m-docshelptroubleshooting-check" checked/>
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docshelptroubleshooting-li">
+  <input type="checkbox" id="m-docshelptroubleshooting-check"/>
   <label for="m-docshelptroubleshooting-check"><a href="/docs/help/troubleshooting/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docshelptroubleshooting"><span class="">Troubleshooting</span></a></label>
   
   <ul class="ul-3 foldable">
@@ -278,9 +266,9 @@ Information for those who want to know more The confirmed causes are as follows:
   <input type="checkbox" id="m-docshelptroubleshootingdriver-alert-keeps-showing-up-check"/>
   <label for="m-docshelptroubleshootingdriver-alert-keeps-showing-up-check"><a href="/docs/help/troubleshooting/driver-alert-keeps-showing-up/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-docshelptroubleshootingdriver-alert-keeps-showing-up"><span class="">Driver alert keeps showing up</span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-docshelptroubleshootingfumihiko-takayama-in-login-items-li">
-  <input type="checkbox" id="m-docshelptroubleshootingfumihiko-takayama-in-login-items-check" checked/>
-  <label for="m-docshelptroubleshootingfumihiko-takayama-in-login-items-check"><a href="/docs/help/troubleshooting/fumihiko-takayama-in-login-items/" class="align-left ps-0  active td-sidebar-link td-sidebar-link__page" id="m-docshelptroubleshootingfumihiko-takayama-in-login-items"><span class="td-sidebar-nav-active-item">&#34;Fumihiko Takayama&#34; is shown in Login Items</span></a></label>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docshelptroubleshootingfumihiko-takayama-in-login-items-li">
+  <input type="checkbox" id="m-docshelptroubleshootingfumihiko-takayama-in-login-items-check"/>
+  <label for="m-docshelptroubleshootingfumihiko-takayama-in-login-items-check"><a href="/docs/help/troubleshooting/fumihiko-takayama-in-login-items/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-docshelptroubleshootingfumihiko-takayama-in-login-items"><span class="">&#34;Fumihiko Takayama&#34; is shown in Login Items</span></a></label>
   
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docshelptroubleshootingstopped-working-after-macos-update-li">
   <input type="checkbox" id="m-docshelptroubleshootingstopped-working-after-macos-update-check"/>
@@ -404,8 +392,8 @@ Information for those who want to know more The confirmed causes are as follows:
   <input type="checkbox" id="m-docsreleasenotes-check"/>
   <label for="m-docsreleasenotes-check"><a href="/docs/releasenotes/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-docsreleasenotes"><span class="">Release notes</span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsjson-li">
-  <input type="checkbox" id="m-docsjson-check"/>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docsjson-li">
+  <input type="checkbox" id="m-docsjson-check" checked/>
   <label for="m-docsjson-check"><a href="/docs/json/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docsjson"><span class="">Karabiner Configuration Reference Manual</span></a></label>
   
   <ul class="ul-2 foldable">
@@ -417,14 +405,14 @@ Information for those who want to know more The confirmed causes are as follows:
   <input type="checkbox" id="m-docsjsontypical-complex-modifications-examples-check"/>
   <label for="m-docsjsontypical-complex-modifications-examples-check"><a href="/docs/json/typical-complex-modifications-examples/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-docsjsontypical-complex-modifications-examples"><span class="">Typical complex_modifications examples</span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsjsonexpert-complex-modifications-examples-li">
-  <input type="checkbox" id="m-docsjsonexpert-complex-modifications-examples-check"/>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docsjsonexpert-complex-modifications-examples-li">
+  <input type="checkbox" id="m-docsjsonexpert-complex-modifications-examples-check" checked/>
   <label for="m-docsjsonexpert-complex-modifications-examples-check"><a href="/docs/json/expert-complex-modifications-examples/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docsjsonexpert-complex-modifications-examples"><span class="">Expert complex_modifications examples</span></a></label>
   
   <ul class="ul-3 foldable">
-    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsjsonexpert-complex-modifications-examplesletter-key-holding-modifier-li">
-  <input type="checkbox" id="m-docsjsonexpert-complex-modifications-examplesletter-key-holding-modifier-check"/>
-  <label for="m-docsjsonexpert-complex-modifications-examplesletter-key-holding-modifier-check"><a href="/docs/json/expert-complex-modifications-examples/letter-key-holding-modifier/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-docsjsonexpert-complex-modifications-examplesletter-key-holding-modifier"><span class="">Letter key holding modifier</span></a></label>
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-docsjsonexpert-complex-modifications-examplesletter-key-holding-modifier-li">
+  <input type="checkbox" id="m-docsjsonexpert-complex-modifications-examplesletter-key-holding-modifier-check" checked/>
+  <label for="m-docsjsonexpert-complex-modifications-examplesletter-key-holding-modifier-check"><a href="/docs/json/expert-complex-modifications-examples/letter-key-holding-modifier/" class="align-left ps-0  active td-sidebar-link td-sidebar-link__page" id="m-docsjsonexpert-complex-modifications-examplesletter-key-holding-modifier"><span class="td-sidebar-nav-active-item">Letter key holding modifier</span></a></label>
   
 </li>
   </ul>
@@ -654,15 +642,7 @@ Information for those who want to know more The confirmed causes are as follows:
 
 
 
-<nav id="TableOfContents">
-  <ul>
-    <li><a href="#information-for-those-who-want-to-know-more">Information for those who want to know more</a>
-      <ul>
-        <li><a href="#how-to-solve-when-you-have-built-karabiner-elements-from-source-code">How to solve when you have built Karabiner-Elements from source code</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
+<nav id="TableOfContents"></nav>
 
 
 
@@ -678,71 +658,111 @@ Information for those who want to know more The confirmed causes are as follows:
   <li class="breadcrumb-item">
     <a href="/docs/">Documentation</a></li>
   <li class="breadcrumb-item">
-    <a href="/docs/help/">Help</a></li>
+    <a href="/docs/json/">Karabiner Configuration Reference Manual</a></li>
   <li class="breadcrumb-item">
-    <a href="/docs/help/troubleshooting/">Troubleshooting</a></li>
+    <a href="/docs/json/expert-complex-modifications-examples/">Expert complex_modifications examples</a></li>
   <li class="breadcrumb-item active" aria-current="page">
-    &#34;Fumihiko Takayama&#34; is shown in Login Items</li>
+    Letter key holding modifier</li>
   </ol>
 </nav>
 <div class="td-content">
-	<h1>&#34;Fumihiko Takayama&#34; is shown in Login Items</h1>
+	<h1>Letter key holding modifier</h1>
 	
 	<header class="article-meta">
 		
 </header>
-	<p>In Allow in the Background of Login Items, <code>Fumihiko Takayama</code> may appear instead of <code>Karabiner-Elements</code>.</p>
-<p>There are several causes, but the problem is mainly on the macOS side and is difficult to resolve. (<strong>Restarting macOS may solve this issue</strong>)</p>
-<p>In any case, there is no problem with leaving it as it is.</p>
-<figure>
-  <img
-    src="/docs/help/troubleshooting/fumihiko-takayama-in-login-items/images/fumihiko-takayama@2x.png"
-    alt="fumihiko-takayama@2x.png"
-    style="width: 715px"
-  />
-</figure>
-
-<p>Expected:</p>
-<figure>
-  <img
-    src="/docs/help/troubleshooting/fumihiko-takayama-in-login-items/images/expected@2x.png"
-    alt="expected@2x.png"
-    style="width: 715px"
-  />
-</figure>
-
-<hr>
-<h2 id="information-for-those-who-want-to-know-more">Information for those who want to know more</h2>
-<p>The confirmed causes are as follows:</p>
+	<p>Switch to the app launcher when the <kbd>u</kbd> key is held down.</p>
 <ul>
-<li>If you have ever git clone the Karabiner-Elements repository and built it</li>
-<li>If macOS has set the Allow in the Background display name before Karabiner-Elements was registered in the macOS application database</li>
+<li><kbd>u (hold for 250 ms)</kbd> + s: Open Safari</li>
+<li><kbd>u (hold for 250 ms)</kbd> + t: Open Terminal</li>
 </ul>
-<h3 id="how-to-solve-when-you-have-built-karabiner-elements-from-source-code">How to solve when you have built Karabiner-Elements from source code</h3>
-<p>The Login Items referes Launch Services database to determine the display name.</p>
-<p>If you have built Karabiner-Elements from source code, your built binaries in the working directory are registered Launch Services automatically.</p>
-<p>We assume Login Items mixes the information of binaries in your working directory and installed from the package, and failed to get the correct information.
-Therefore, in Login Items, the signing developer&rsquo;s name is displayed instead.</p>
-<p>So purging unintended entries in Launch Services database solves this issue.</p>
-<h4 id="steps">Steps</h4>
-<p>Run the following command in Terminal to get the list of registered applications.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/Support/lsregister -gc -dump <span style="color:#000;font-weight:bold">|</span> grep ^path <span style="color:#000;font-weight:bold">|</span> grep Karabiner-Elements
-</span></span></code></pre></div><p>The result example:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>path:    /Users/tekezo/.Trash/Karabiner-Elements.app (0x6a38)
-</span></span><span style="display:flex;"><span>path:    /Users/tekezo/Library/Developer/Xcode/DerivedData/Karabiner-Elements-aljilynxkbdxwddtylopomxdislp/Build/Products/Debug/Karabiner-Elements.app (0x6bf8)
-</span></span><span style="display:flex;"><span>path:    /Library/Application Support/org.pqrs/Karabiner-Elements/Karabiner-Menu.app (0x7918)
-</span></span><span style="display:flex;"><span>path:    /Library/Application Support/org.pqrs/Karabiner-Elements/Karabiner-NotificationWindow.app (0x7930)
-</span></span><span style="display:flex;"><span>path:    /Library/Application Support/org.pqrs/Karabiner-Elements/Karabiner-Elements.app/Contents/Frameworks/Sparkle.framework/Versions/B/Updater.app (0x7938)
-</span></span><span style="display:flex;"><span>path:    /Library/Application Support/org.pqrs/Karabiner-Elements/Karabiner-Elements.app (0x793c)
-</span></span><span style="display:flex;"><span>path:    /Applications/Karabiner-Elements.app (0x7940)
-</span></span><span style="display:flex;"><span>path:    /Library/Application Support/org.pqrs/Karabiner-Elements/Karabiner-MultitouchExtension.app (0x7944)
-</span></span><span style="display:flex;"><span>path:    /Users/tekezo/Library/Developer/Xcode/DerivedData/Karabiner-Elements-enyghegdpximkigqjnasmtnnkupb/Build/Products/Release/Karabiner-Elements.app (0x54c4)
-</span></span></code></pre></div><p>Next, unregister the path to the built binaries, those containing Xcode, build, etc, from the list.</p>
-<pre tabindex="0"><code class="language-sheel" data-lang="sheel">/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/Support/lsregister -u &#39;/Users/tekezo/.Trash/Karabiner-Elements.app&#39;
-/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/Support/lsregister -u &#39;/Users/tekezo/Library/Developer/Xcode/DerivedData/Karabiner-Elements-aljilynxkbdxwddtylopomxdislp/Build/Products/Debug/Karabiner-Elements.app&#39;
-...
-</code></pre><p>Finally, restart macOS.</p>
+<div class="highlight" style="margin-top: 0rem; margin-bottom: -2rem">
+  <a
+    class="d-inline-block"
+    style="
+      text-decoration: none;
+      background-color: #f8f8f8;
+      padding: 0.5rem;
+      border: solid var(--bs-border-color);
+      border-width: 1px 1px 0 1px;
+    "
+    href="/docs/manual/configuration/add-your-own-complex-modifications/"
+    >💡 How to use this example</a
+  >
+</div>
 
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;description&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;Switch to the app launcher when the u key is held down&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;manipulators&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;type&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;basic&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;from&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">&#34;key_code&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;u&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">&#34;modifiers&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span> <span style="color:#204a87;font-weight:bold">&#34;optional&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">&#34;any&#34;</span><span style="color:#000;font-weight:bold">]</span> <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">},</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;to_if_held_down&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;set_variable&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#204a87;font-weight:bold">&#34;name&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;u_flag&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#204a87;font-weight:bold">&#34;value&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#204a87;font-weight:bold">true</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">],</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;to_after_key_up&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;set_variable&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#204a87;font-weight:bold">&#34;name&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;u_flag&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#204a87;font-weight:bold">&#34;value&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#204a87;font-weight:bold">false</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#000;font-weight:bold">},</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#8f5902;font-style:italic">// Cancel the `to_delayed_action`
+</span></span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;halt&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#204a87;font-weight:bold">true</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">],</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;to_if_alone&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[{</span> <span style="color:#204a87;font-weight:bold">&#34;key_code&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;u&#34;</span> <span style="color:#000;font-weight:bold">}],</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;to_delayed_action&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">&#34;to_if_canceled&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[{</span> <span style="color:#204a87;font-weight:bold">&#34;key_code&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;u&#34;</span> <span style="color:#000;font-weight:bold">}]</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">},</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;parameters&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">&#34;basic.to_delayed_action_delay_milliseconds&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#0000cf;font-weight:bold">250</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">&#34;basic.to_if_alone_timeout_milliseconds&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#0000cf;font-weight:bold">250</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">&#34;basic.to_if_held_down_threshold_milliseconds&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#0000cf;font-weight:bold">250</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">},</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;type&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;basic&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;from&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span> <span style="color:#204a87;font-weight:bold">&#34;key_code&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;s&#34;</span> <span style="color:#000;font-weight:bold">},</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;conditions&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">{</span> <span style="color:#204a87;font-weight:bold">&#34;name&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;u_flag&#34;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#204a87;font-weight:bold">&#34;type&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;variable_if&#34;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#204a87;font-weight:bold">&#34;value&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#204a87;font-weight:bold">true</span> <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">],</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;to&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;software_function&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#204a87;font-weight:bold">&#34;open_application&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                            <span style="color:#204a87;font-weight:bold">&#34;bundle_identifier&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;com.apple.Safari&#34;</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">]</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">},</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;type&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;basic&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;from&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span> <span style="color:#204a87;font-weight:bold">&#34;key_code&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;t&#34;</span> <span style="color:#000;font-weight:bold">},</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;conditions&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">{</span> <span style="color:#204a87;font-weight:bold">&#34;name&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;u_flag&#34;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#204a87;font-weight:bold">&#34;type&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;variable_if&#34;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#204a87;font-weight:bold">&#34;value&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#204a87;font-weight:bold">true</span> <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">],</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;to&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;software_function&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#204a87;font-weight:bold">&#34;open_application&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                            <span style="color:#204a87;font-weight:bold">&#34;bundle_identifier&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;com.apple.Terminal&#34;</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">]</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">]</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></div>
 	
 </div>
 
