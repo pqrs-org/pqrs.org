@@ -48,6 +48,11 @@ Switch to the app launcher when the <kbd>u</kbd> key is held down.
                 "basic.to_if_held_down_threshold_milliseconds": 250
             }
         },
+
+        //
+        // Open Safari
+        //
+
         {
             "type": "basic",
             "from": { "key_code": "s" },
@@ -64,6 +69,11 @@ Switch to the app launcher when the <kbd>u</kbd> key is held down.
                 }
             ]
         },
+
+        //
+        // Open Terminal
+        //
+
         {
             "type": "basic",
             "from": { "key_code": "t" },
