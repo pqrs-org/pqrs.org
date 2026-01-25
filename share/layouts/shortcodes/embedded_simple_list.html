@@ -1,0 +1,8 @@
+{{- $page := site.GetPage (.Get "page") -}}
+{{- with $page -}}
+  {{- if not .Params.no_list -}}
+    {{- partial "section-index.html" . -}}
+  {{- end -}}
+{{- else -}}
+  <p>Simple list: page not found</p>
+{{- end -}}

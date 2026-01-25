@@ -32,6 +32,10 @@ Karabiner-Elements is a powerful and stable keyboard customizer for macOS.
 
 {{< embedded_toc page="/docs/json/typical-complex-modifications-examples/" >}}
 
+### Expert complex_modifications examples
+
+{{< embedded_simple_list page="/docs/json/expert-complex-modifications-examples/" >}}
+
 ## Current limitations
 
 - Karabiner-Elements cannot modify the eject key on some keyboard (e.g., Apple Wired Keyboard) due to the limitation of macOS API.
