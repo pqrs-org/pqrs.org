@@ -26,6 +26,12 @@ Karabiner-Elements is a powerful and stable keyboard customizer for macOS.
     - Language keys (e.g., `無変換`,`変換`, `カタカナ` keys on JIS PC keyboard)
     - Application Launch Keys
 
+## Modification examples
+
+### Typical complex_modifications examples
+
+{{< embedded_toc page="/docs/json/typical-complex-modifications-examples/" >}}
+
 ## Current limitations
 
 - Karabiner-Elements cannot modify the eject key on some keyboard (e.g., Apple Wired Keyboard) due to the limitation of macOS API.

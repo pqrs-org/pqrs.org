@@ -1,0 +1,11 @@
+{{- $page := site.GetPage (.Get "page") -}}
+{{- with $page -}}
+  {{- if not .Params.notoc -}}
+    {{- with .TableOfContents -}}
+      {{- $base := $page.RelPermalink -}}
+      {{- . | replaceRE "href=\"#([^\"]+)\"" (printf "href=\"%s#$1\"" $base) | safeHTML -}}
+    {{- end -}}
+  {{- end -}}
+{{- else -}}
+  <p>TOC: page not found</p>
+{{- end -}}
