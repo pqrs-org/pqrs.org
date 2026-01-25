@@ -5,8 +5,8 @@ weight: 100
 
 Switch to the app launcher when the <kbd>u</kbd> key is held down.
 
-- <kbd>u (hold for 250 ms)</kbd> + s: Open Safari
-- <kbd>u (hold for 250 ms)</kbd> + t: Open Terminal
+- <kbd>u (hold for 250 ms)</kbd> + <kbd>s</kbd>: Open Safari
+- <kbd>u (hold for 250 ms)</kbd> + <kbd>t</kbd>: Open Terminal
 
 {{< karabiner-elements-complex-modifications-usage >}}
 
