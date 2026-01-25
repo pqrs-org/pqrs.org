@@ -7,29 +7,29 @@
 <link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
 <link rel="apple-touch-icon" href="/favicons/apple-touch-icon-180x180.png" sizes="180x180">
 
-<title>Features | Karabiner-Elements</title>
-<meta name="description" content="Karabiner-Elements is a powerful and stable keyboard customizer for macOS.
-Core features Simple Modifications: Change normal keys to other keys. Complex Modifications: Change keys by complex rules. Change a key to combination of modifiers. (e.g. change capslock to control&#43;command) Change modifiers&#43;key to key. (e.g. change control&#43;m to return) Send key events if a key is pressed alone. Send key events if keys are pressed simultaneously. Mouse keys. etc. Function Keys: Change f1-f12 keys to media controls. Devices: Apply modifications to specified keyboards only. Profiles: Support multiple profiles. Modifier Flag Sync: Synchronize modifier flags across all connected keyboards. Secure Keyboard Entry Support: Work well on Secure Keyboard Entry environment such as a password prompt, terminal with Secure Keyboard Entry, etc. Extra Key Support: Enable extra keys on PC keyboard that are not recognized by default in macOS. Home key on iPad keyboards such as Logitech K480 International keys Language keys (e.g., 無変換,変換, カタカナ keys on JIS PC keyboard) Application Launch Keys Modification examples Typical complex_modifications examples Swap ; and : Change control-h to delete Change caps_lock to escape on the built-in keyboard Change left_command&#43;3 -&gt; 2, left_shift&#43;3 -&gt; @ on the built-in keyboard Disable command-l on Finder Post escape if left_control is pressed alone Open Safari if escape is held down Paste (command&#43;v) if escape is held down Change right_shift x2 to mission_control (new style) Change right_shift x2 to mission_control (old style) Change double press of q to escape Change equal&#43;delete to forward_delete if these keys are pressed simultaneously Input Unicode characters by fn&#43;d Expert complex_modifications examples Letter key holding modifier Letter key release order modifier Current limitations Karabiner-Elements cannot modify the eject key on some keyboard (e.g., Apple Wired Keyboard) due to the limitation of macOS API. Karabiner-Elements cannot modify the fn key on non-Apple keyboards such as Logitech keyboards.">
-<meta property="og:url" content="/docs/getting-started/features/">
+<title>Letter key release order modifier | Karabiner-Elements</title>
+<meta name="description" content="Holding down v and pressing j or k enters arrow mode.
+v (hold) &#43; j: down arrow v (hold) &#43; k: up arrow Note You need to keep holding down the v and j or k keys, or release the j or k key to enter arrow mode. If you release the v key first, vj or vk will be typed as normal characters. 💡 How to use this example { &#34;description&#34;: &#34;Holding down v and pressing j,k enters arrow mode&#34;, &#34;manipulators&#34;: [ // // v&#43;j // { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;j&#34;, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [{ &#34;key_code&#34;: &#34;down_arrow&#34; }], &#34;conditions&#34;: [ { &#34;type&#34;: &#34;variable_if&#34;, &#34;name&#34;: &#34;v_flag&#34;, &#34;value&#34;: true } ] }, { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;simultaneous&#34;: [{ &#34;key_code&#34;: &#34;v&#34; }, { &#34;key_code&#34;: &#34;j&#34; }], &#34;simultaneous_options&#34;: { &#34;key_down_order&#34;: &#34;strict&#34;, &#34;key_up_order&#34;: &#34;strict_inverse&#34;, &#34;to_after_key_up&#34;: [ { &#34;set_variable&#34;: { &#34;name&#34;: &#34;v_flag&#34;, &#34;value&#34;: false } } ] }, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [ { &#34;set_variable&#34;: { &#34;name&#34;: &#34;v_flag&#34;, &#34;value&#34;: true } }, { &#34;key_code&#34;: &#34;down_arrow&#34; } ], &#34;parameters&#34;: { &#34;basic.simultaneous_threshold_milliseconds&#34;: 500 } }, // // v&#43;k // { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;k&#34;, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [{ &#34;key_code&#34;: &#34;up_arrow&#34; }], &#34;conditions&#34;: [ { &#34;type&#34;: &#34;variable_if&#34;, &#34;name&#34;: &#34;v_flag&#34;, &#34;value&#34;: true } ] }, { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;simultaneous&#34;: [{ &#34;key_code&#34;: &#34;v&#34; }, { &#34;key_code&#34;: &#34;k&#34; }], &#34;simultaneous_options&#34;: { &#34;key_down_order&#34;: &#34;strict&#34;, &#34;key_up_order&#34;: &#34;strict_inverse&#34;, &#34;to_after_key_up&#34;: [ { &#34;set_variable&#34;: { &#34;name&#34;: &#34;v_flag&#34;, &#34;value&#34;: false } } ] }, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [ { &#34;set_variable&#34;: { &#34;name&#34;: &#34;v_flag&#34;, &#34;value&#34;: true } }, { &#34;key_code&#34;: &#34;up_arrow&#34; } ], &#34;parameters&#34;: { &#34;basic.simultaneous_threshold_milliseconds&#34;: 500 } } ] }">
+<meta property="og:url" content="/docs/json/expert-complex-modifications-examples/letter-key-release-order-modifier/">
   <meta property="og:site_name" content="Karabiner-Elements">
-  <meta property="og:title" content="Features">
-  <meta property="og:description" content="Karabiner-Elements is a powerful and stable keyboard customizer for macOS.
-Core features Simple Modifications: Change normal keys to other keys. Complex Modifications: Change keys by complex rules. Change a key to combination of modifiers. (e.g. change capslock to control&#43;command) Change modifiers&#43;key to key. (e.g. change control&#43;m to return) Send key events if a key is pressed alone. Send key events if keys are pressed simultaneously. Mouse keys. etc. Function Keys: Change f1-f12 keys to media controls. Devices: Apply modifications to specified keyboards only. Profiles: Support multiple profiles. Modifier Flag Sync: Synchronize modifier flags across all connected keyboards. Secure Keyboard Entry Support: Work well on Secure Keyboard Entry environment such as a password prompt, terminal with Secure Keyboard Entry, etc. Extra Key Support: Enable extra keys on PC keyboard that are not recognized by default in macOS. Home key on iPad keyboards such as Logitech K480 International keys Language keys (e.g., 無変換,変換, カタカナ keys on JIS PC keyboard) Application Launch Keys Modification examples Typical complex_modifications examples Swap ; and : Change control-h to delete Change caps_lock to escape on the built-in keyboard Change left_command&#43;3 -&gt; 2, left_shift&#43;3 -&gt; @ on the built-in keyboard Disable command-l on Finder Post escape if left_control is pressed alone Open Safari if escape is held down Paste (command&#43;v) if escape is held down Change right_shift x2 to mission_control (new style) Change right_shift x2 to mission_control (old style) Change double press of q to escape Change equal&#43;delete to forward_delete if these keys are pressed simultaneously Input Unicode characters by fn&#43;d Expert complex_modifications examples Letter key holding modifier Letter key release order modifier Current limitations Karabiner-Elements cannot modify the eject key on some keyboard (e.g., Apple Wired Keyboard) due to the limitation of macOS API. Karabiner-Elements cannot modify the fn key on non-Apple keyboards such as Logitech keyboards.">
+  <meta property="og:title" content="Letter key release order modifier">
+  <meta property="og:description" content="Holding down v and pressing j or k enters arrow mode.
+v (hold) &#43; j: down arrow v (hold) &#43; k: up arrow Note You need to keep holding down the v and j or k keys, or release the j or k key to enter arrow mode. If you release the v key first, vj or vk will be typed as normal characters. 💡 How to use this example { &#34;description&#34;: &#34;Holding down v and pressing j,k enters arrow mode&#34;, &#34;manipulators&#34;: [ // // v&#43;j // { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;j&#34;, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [{ &#34;key_code&#34;: &#34;down_arrow&#34; }], &#34;conditions&#34;: [ { &#34;type&#34;: &#34;variable_if&#34;, &#34;name&#34;: &#34;v_flag&#34;, &#34;value&#34;: true } ] }, { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;simultaneous&#34;: [{ &#34;key_code&#34;: &#34;v&#34; }, { &#34;key_code&#34;: &#34;j&#34; }], &#34;simultaneous_options&#34;: { &#34;key_down_order&#34;: &#34;strict&#34;, &#34;key_up_order&#34;: &#34;strict_inverse&#34;, &#34;to_after_key_up&#34;: [ { &#34;set_variable&#34;: { &#34;name&#34;: &#34;v_flag&#34;, &#34;value&#34;: false } } ] }, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [ { &#34;set_variable&#34;: { &#34;name&#34;: &#34;v_flag&#34;, &#34;value&#34;: true } }, { &#34;key_code&#34;: &#34;down_arrow&#34; } ], &#34;parameters&#34;: { &#34;basic.simultaneous_threshold_milliseconds&#34;: 500 } }, // // v&#43;k // { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;k&#34;, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [{ &#34;key_code&#34;: &#34;up_arrow&#34; }], &#34;conditions&#34;: [ { &#34;type&#34;: &#34;variable_if&#34;, &#34;name&#34;: &#34;v_flag&#34;, &#34;value&#34;: true } ] }, { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;simultaneous&#34;: [{ &#34;key_code&#34;: &#34;v&#34; }, { &#34;key_code&#34;: &#34;k&#34; }], &#34;simultaneous_options&#34;: { &#34;key_down_order&#34;: &#34;strict&#34;, &#34;key_up_order&#34;: &#34;strict_inverse&#34;, &#34;to_after_key_up&#34;: [ { &#34;set_variable&#34;: { &#34;name&#34;: &#34;v_flag&#34;, &#34;value&#34;: false } } ] }, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [ { &#34;set_variable&#34;: { &#34;name&#34;: &#34;v_flag&#34;, &#34;value&#34;: true } }, { &#34;key_code&#34;: &#34;up_arrow&#34; } ], &#34;parameters&#34;: { &#34;basic.simultaneous_threshold_milliseconds&#34;: 500 } } ] }">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
     <meta property="og:image" content="https://karabiner-elements.pqrs.org/images/logo.png">
 
-  <meta itemprop="name" content="Features">
-  <meta itemprop="description" content="Karabiner-Elements is a powerful and stable keyboard customizer for macOS.
-Core features Simple Modifications: Change normal keys to other keys. Complex Modifications: Change keys by complex rules. Change a key to combination of modifiers. (e.g. change capslock to control&#43;command) Change modifiers&#43;key to key. (e.g. change control&#43;m to return) Send key events if a key is pressed alone. Send key events if keys are pressed simultaneously. Mouse keys. etc. Function Keys: Change f1-f12 keys to media controls. Devices: Apply modifications to specified keyboards only. Profiles: Support multiple profiles. Modifier Flag Sync: Synchronize modifier flags across all connected keyboards. Secure Keyboard Entry Support: Work well on Secure Keyboard Entry environment such as a password prompt, terminal with Secure Keyboard Entry, etc. Extra Key Support: Enable extra keys on PC keyboard that are not recognized by default in macOS. Home key on iPad keyboards such as Logitech K480 International keys Language keys (e.g., 無変換,変換, カタカナ keys on JIS PC keyboard) Application Launch Keys Modification examples Typical complex_modifications examples Swap ; and : Change control-h to delete Change caps_lock to escape on the built-in keyboard Change left_command&#43;3 -&gt; 2, left_shift&#43;3 -&gt; @ on the built-in keyboard Disable command-l on Finder Post escape if left_control is pressed alone Open Safari if escape is held down Paste (command&#43;v) if escape is held down Change right_shift x2 to mission_control (new style) Change right_shift x2 to mission_control (old style) Change double press of q to escape Change equal&#43;delete to forward_delete if these keys are pressed simultaneously Input Unicode characters by fn&#43;d Expert complex_modifications examples Letter key holding modifier Letter key release order modifier Current limitations Karabiner-Elements cannot modify the eject key on some keyboard (e.g., Apple Wired Keyboard) due to the limitation of macOS API. Karabiner-Elements cannot modify the fn key on non-Apple keyboards such as Logitech keyboards.">
-  <meta itemprop="wordCount" content="300">
+  <meta itemprop="name" content="Letter key release order modifier">
+  <meta itemprop="description" content="Holding down v and pressing j or k enters arrow mode.
+v (hold) &#43; j: down arrow v (hold) &#43; k: up arrow Note You need to keep holding down the v and j or k keys, or release the j or k key to enter arrow mode. If you release the v key first, vj or vk will be typed as normal characters. 💡 How to use this example { &#34;description&#34;: &#34;Holding down v and pressing j,k enters arrow mode&#34;, &#34;manipulators&#34;: [ // // v&#43;j // { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;j&#34;, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [{ &#34;key_code&#34;: &#34;down_arrow&#34; }], &#34;conditions&#34;: [ { &#34;type&#34;: &#34;variable_if&#34;, &#34;name&#34;: &#34;v_flag&#34;, &#34;value&#34;: true } ] }, { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;simultaneous&#34;: [{ &#34;key_code&#34;: &#34;v&#34; }, { &#34;key_code&#34;: &#34;j&#34; }], &#34;simultaneous_options&#34;: { &#34;key_down_order&#34;: &#34;strict&#34;, &#34;key_up_order&#34;: &#34;strict_inverse&#34;, &#34;to_after_key_up&#34;: [ { &#34;set_variable&#34;: { &#34;name&#34;: &#34;v_flag&#34;, &#34;value&#34;: false } } ] }, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [ { &#34;set_variable&#34;: { &#34;name&#34;: &#34;v_flag&#34;, &#34;value&#34;: true } }, { &#34;key_code&#34;: &#34;down_arrow&#34; } ], &#34;parameters&#34;: { &#34;basic.simultaneous_threshold_milliseconds&#34;: 500 } }, // // v&#43;k // { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;k&#34;, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [{ &#34;key_code&#34;: &#34;up_arrow&#34; }], &#34;conditions&#34;: [ { &#34;type&#34;: &#34;variable_if&#34;, &#34;name&#34;: &#34;v_flag&#34;, &#34;value&#34;: true } ] }, { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;simultaneous&#34;: [{ &#34;key_code&#34;: &#34;v&#34; }, { &#34;key_code&#34;: &#34;k&#34; }], &#34;simultaneous_options&#34;: { &#34;key_down_order&#34;: &#34;strict&#34;, &#34;key_up_order&#34;: &#34;strict_inverse&#34;, &#34;to_after_key_up&#34;: [ { &#34;set_variable&#34;: { &#34;name&#34;: &#34;v_flag&#34;, &#34;value&#34;: false } } ] }, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [ { &#34;set_variable&#34;: { &#34;name&#34;: &#34;v_flag&#34;, &#34;value&#34;: true } }, { &#34;key_code&#34;: &#34;up_arrow&#34; } ], &#34;parameters&#34;: { &#34;basic.simultaneous_threshold_milliseconds&#34;: 500 } } ] }">
+  <meta itemprop="wordCount" content="275">
   <meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://karabiner-elements.pqrs.org/images/logo.png">
-  <meta name="twitter:title" content="Features">
-  <meta name="twitter:description" content="Karabiner-Elements is a powerful and stable keyboard customizer for macOS.
-Core features Simple Modifications: Change normal keys to other keys. Complex Modifications: Change keys by complex rules. Change a key to combination of modifiers. (e.g. change capslock to control&#43;command) Change modifiers&#43;key to key. (e.g. change control&#43;m to return) Send key events if a key is pressed alone. Send key events if keys are pressed simultaneously. Mouse keys. etc. Function Keys: Change f1-f12 keys to media controls. Devices: Apply modifications to specified keyboards only. Profiles: Support multiple profiles. Modifier Flag Sync: Synchronize modifier flags across all connected keyboards. Secure Keyboard Entry Support: Work well on Secure Keyboard Entry environment such as a password prompt, terminal with Secure Keyboard Entry, etc. Extra Key Support: Enable extra keys on PC keyboard that are not recognized by default in macOS. Home key on iPad keyboards such as Logitech K480 International keys Language keys (e.g., 無変換,変換, カタカナ keys on JIS PC keyboard) Application Launch Keys Modification examples Typical complex_modifications examples Swap ; and : Change control-h to delete Change caps_lock to escape on the built-in keyboard Change left_command&#43;3 -&gt; 2, left_shift&#43;3 -&gt; @ on the built-in keyboard Disable command-l on Finder Post escape if left_control is pressed alone Open Safari if escape is held down Paste (command&#43;v) if escape is held down Change right_shift x2 to mission_control (new style) Change right_shift x2 to mission_control (old style) Change double press of q to escape Change equal&#43;delete to forward_delete if these keys are pressed simultaneously Input Unicode characters by fn&#43;d Expert complex_modifications examples Letter key holding modifier Letter key release order modifier Current limitations Karabiner-Elements cannot modify the eject key on some keyboard (e.g., Apple Wired Keyboard) due to the limitation of macOS API. Karabiner-Elements cannot modify the fn key on non-Apple keyboards such as Logitech keyboards.">
+  <meta name="twitter:title" content="Letter key release order modifier">
+  <meta name="twitter:description" content="Holding down v and pressing j or k enters arrow mode.
+v (hold) &#43; j: down arrow v (hold) &#43; k: up arrow Note You need to keep holding down the v and j or k keys, or release the j or k key to enter arrow mode. If you release the v key first, vj or vk will be typed as normal characters. 💡 How to use this example { &#34;description&#34;: &#34;Holding down v and pressing j,k enters arrow mode&#34;, &#34;manipulators&#34;: [ // // v&#43;j // { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;j&#34;, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [{ &#34;key_code&#34;: &#34;down_arrow&#34; }], &#34;conditions&#34;: [ { &#34;type&#34;: &#34;variable_if&#34;, &#34;name&#34;: &#34;v_flag&#34;, &#34;value&#34;: true } ] }, { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;simultaneous&#34;: [{ &#34;key_code&#34;: &#34;v&#34; }, { &#34;key_code&#34;: &#34;j&#34; }], &#34;simultaneous_options&#34;: { &#34;key_down_order&#34;: &#34;strict&#34;, &#34;key_up_order&#34;: &#34;strict_inverse&#34;, &#34;to_after_key_up&#34;: [ { &#34;set_variable&#34;: { &#34;name&#34;: &#34;v_flag&#34;, &#34;value&#34;: false } } ] }, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [ { &#34;set_variable&#34;: { &#34;name&#34;: &#34;v_flag&#34;, &#34;value&#34;: true } }, { &#34;key_code&#34;: &#34;down_arrow&#34; } ], &#34;parameters&#34;: { &#34;basic.simultaneous_threshold_milliseconds&#34;: 500 } }, // // v&#43;k // { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;k&#34;, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [{ &#34;key_code&#34;: &#34;up_arrow&#34; }], &#34;conditions&#34;: [ { &#34;type&#34;: &#34;variable_if&#34;, &#34;name&#34;: &#34;v_flag&#34;, &#34;value&#34;: true } ] }, { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;simultaneous&#34;: [{ &#34;key_code&#34;: &#34;v&#34; }, { &#34;key_code&#34;: &#34;k&#34; }], &#34;simultaneous_options&#34;: { &#34;key_down_order&#34;: &#34;strict&#34;, &#34;key_up_order&#34;: &#34;strict_inverse&#34;, &#34;to_after_key_up&#34;: [ { &#34;set_variable&#34;: { &#34;name&#34;: &#34;v_flag&#34;, &#34;value&#34;: false } } ] }, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [ { &#34;set_variable&#34;: { &#34;name&#34;: &#34;v_flag&#34;, &#34;value&#34;: true } }, { &#34;key_code&#34;: &#34;up_arrow&#34; } ], &#34;parameters&#34;: { &#34;basic.simultaneous_threshold_milliseconds&#34;: 500 } } ] }">
 <link rel="preload" href="/scss/main.min.ad03006917028e5fe1ae1e1b42b17992c0ca7ce84aed85e0df5ab9675702b990.css" as="style" integrity="sha256-rQMAaRcCjl/hrh4bQrF5ksDKfOhK7YXg31q5Z1cCuZA=" crossorigin="anonymous">
 <link href="/scss/main.min.ad03006917028e5fe1ae1e1b42b17992c0ca7ce84aed85e0df5ab9675702b990.css" rel="stylesheet" integrity="sha256-rQMAaRcCjl/hrh4bQrF5ksDKfOhK7YXg31q5Z1cCuZA=" crossorigin="anonymous">
 <script
@@ -101,8 +101,8 @@ Core features Simple Modifications: Change normal keys to other keys. Complex Mo
       <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docs-li">
   <a href="/docs/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section tree-root" id="m-docs"><span class="">Documentation</span></a>
   <ul class="ul-1">
-    <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docsgetting-started-li">
-  <input type="checkbox" id="m-docsgetting-started-check" checked/>
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsgetting-started-li">
+  <input type="checkbox" id="m-docsgetting-started-check"/>
   <label for="m-docsgetting-started-check"><a href="/docs/getting-started/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docsgetting-started"><span class="">Getting started</span></a></label>
   
   <ul class="ul-2 foldable">
@@ -110,9 +110,9 @@ Core features Simple Modifications: Change normal keys to other keys. Complex Mo
   <input type="checkbox" id="m-docsgetting-startedinstallation-check"/>
   <label for="m-docsgetting-startedinstallation-check"><a href="/docs/getting-started/installation/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-docsgetting-startedinstallation"><span class="">Installation</span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-docsgetting-startedfeatures-li">
-  <input type="checkbox" id="m-docsgetting-startedfeatures-check" checked/>
-  <label for="m-docsgetting-startedfeatures-check"><a href="/docs/getting-started/features/" class="align-left ps-0  active td-sidebar-link td-sidebar-link__page" id="m-docsgetting-startedfeatures"><span class="td-sidebar-nav-active-item">Features</span></a></label>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsgetting-startedfeatures-li">
+  <input type="checkbox" id="m-docsgetting-startedfeatures-check"/>
+  <label for="m-docsgetting-startedfeatures-check"><a href="/docs/getting-started/features/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-docsgetting-startedfeatures"><span class="">Features</span></a></label>
   
 </li>
   </ul>
@@ -392,8 +392,8 @@ Core features Simple Modifications: Change normal keys to other keys. Complex Mo
   <input type="checkbox" id="m-docsreleasenotes-check"/>
   <label for="m-docsreleasenotes-check"><a href="/docs/releasenotes/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-docsreleasenotes"><span class="">Release notes</span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsjson-li">
-  <input type="checkbox" id="m-docsjson-check"/>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docsjson-li">
+  <input type="checkbox" id="m-docsjson-check" checked/>
   <label for="m-docsjson-check"><a href="/docs/json/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docsjson"><span class="">Karabiner Configuration Reference Manual</span></a></label>
   
   <ul class="ul-2 foldable">
@@ -405,8 +405,8 @@ Core features Simple Modifications: Change normal keys to other keys. Complex Mo
   <input type="checkbox" id="m-docsjsontypical-complex-modifications-examples-check"/>
   <label for="m-docsjsontypical-complex-modifications-examples-check"><a href="/docs/json/typical-complex-modifications-examples/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-docsjsontypical-complex-modifications-examples"><span class="">Typical complex_modifications examples</span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsjsonexpert-complex-modifications-examples-li">
-  <input type="checkbox" id="m-docsjsonexpert-complex-modifications-examples-check"/>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docsjsonexpert-complex-modifications-examples-li">
+  <input type="checkbox" id="m-docsjsonexpert-complex-modifications-examples-check" checked/>
   <label for="m-docsjsonexpert-complex-modifications-examples-check"><a href="/docs/json/expert-complex-modifications-examples/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docsjsonexpert-complex-modifications-examples"><span class="">Expert complex_modifications examples</span></a></label>
   
   <ul class="ul-3 foldable">
@@ -414,9 +414,9 @@ Core features Simple Modifications: Change normal keys to other keys. Complex Mo
   <input type="checkbox" id="m-docsjsonexpert-complex-modifications-examplesletter-key-holding-modifier-check"/>
   <label for="m-docsjsonexpert-complex-modifications-examplesletter-key-holding-modifier-check"><a href="/docs/json/expert-complex-modifications-examples/letter-key-holding-modifier/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-docsjsonexpert-complex-modifications-examplesletter-key-holding-modifier"><span class="">Letter key holding modifier</span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsjsonexpert-complex-modifications-examplesletter-key-release-order-modifier-li">
-  <input type="checkbox" id="m-docsjsonexpert-complex-modifications-examplesletter-key-release-order-modifier-check"/>
-  <label for="m-docsjsonexpert-complex-modifications-examplesletter-key-release-order-modifier-check"><a href="/docs/json/expert-complex-modifications-examples/letter-key-release-order-modifier/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-docsjsonexpert-complex-modifications-examplesletter-key-release-order-modifier"><span class="">Letter key release order modifier</span></a></label>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-docsjsonexpert-complex-modifications-examplesletter-key-release-order-modifier-li">
+  <input type="checkbox" id="m-docsjsonexpert-complex-modifications-examplesletter-key-release-order-modifier-check" checked/>
+  <label for="m-docsjsonexpert-complex-modifications-examplesletter-key-release-order-modifier-check"><a href="/docs/json/expert-complex-modifications-examples/letter-key-release-order-modifier/" class="align-left ps-0  active td-sidebar-link td-sidebar-link__page" id="m-docsjsonexpert-complex-modifications-examplesletter-key-release-order-modifier"><span class="td-sidebar-nav-active-item">Letter key release order modifier</span></a></label>
   
 </li>
   </ul>
@@ -646,18 +646,7 @@ Core features Simple Modifications: Change normal keys to other keys. Complex Mo
 
 
 
-<nav id="TableOfContents">
-  <ul>
-    <li><a href="#core-features">Core features</a></li>
-    <li><a href="#modification-examples">Modification examples</a>
-      <ul>
-        <li><a href="#typical-complex_modifications-examples">Typical complex_modifications examples</a></li>
-        <li><a href="#expert-complex_modifications-examples">Expert complex_modifications examples</a></li>
-      </ul>
-    </li>
-    <li><a href="#current-limitations">Current limitations</a></li>
-  </ul>
-</nav>
+<nav id="TableOfContents"></nav>
 
 
 
@@ -673,77 +662,131 @@ Core features Simple Modifications: Change normal keys to other keys. Complex Mo
   <li class="breadcrumb-item">
     <a href="/docs/">Documentation</a></li>
   <li class="breadcrumb-item">
-    <a href="/docs/getting-started/">Getting started</a></li>
+    <a href="/docs/json/">Karabiner Configuration Reference Manual</a></li>
+  <li class="breadcrumb-item">
+    <a href="/docs/json/expert-complex-modifications-examples/">Expert complex_modifications examples</a></li>
   <li class="breadcrumb-item active" aria-current="page">
-    Features</li>
+    Letter key release order modifier</li>
   </ol>
 </nav>
 <div class="td-content">
-	<h1>Features</h1>
+	<h1>Letter key release order modifier</h1>
 	
 	<header class="article-meta">
 		
 </header>
-	<p>Karabiner-Elements is a powerful and stable keyboard customizer for macOS.</p>
-<h2 id="core-features">Core features</h2>
+	<p>Holding down <kbd>v</kbd> and pressing <kbd>j</kbd> or <kbd>k</kbd> enters arrow mode.</p>
 <ul>
-<li><strong>Simple Modifications</strong>: Change normal keys to other keys.</li>
-<li><strong>Complex Modifications</strong>: Change keys by complex rules.
-<ul>
-<li>Change a key to combination of modifiers. (e.g. change capslock to control+command)</li>
-<li>Change modifiers+key to key. (e.g. change control+m to return)</li>
-<li>Send key events if a key is pressed alone.</li>
-<li>Send key events if keys are pressed simultaneously.</li>
-<li>Mouse keys.</li>
-<li>etc.</li>
-</ul>
-</li>
-<li><strong>Function Keys</strong>: Change f1-f12 keys to media controls.</li>
-<li><strong>Devices</strong>: Apply modifications to specified keyboards only.</li>
-<li><strong>Profiles</strong>: Support multiple profiles.</li>
-<li><strong>Modifier Flag Sync</strong>: Synchronize modifier flags across all connected keyboards.</li>
-<li><strong>Secure Keyboard Entry Support</strong>: Work well on Secure Keyboard Entry environment such as a password prompt, terminal with Secure Keyboard Entry, etc.</li>
-<li><strong>Extra Key Support</strong>: Enable extra keys on PC keyboard that are not recognized by default in macOS.
-<ul>
-<li>Home key on iPad keyboards such as Logitech K480</li>
-<li>International keys</li>
-<li>Language keys (e.g., <code>無変換</code>,<code>変換</code>, <code>カタカナ</code> keys on JIS PC keyboard)</li>
-<li>Application Launch Keys</li>
-</ul>
-</li>
-</ul>
-<h2 id="modification-examples">Modification examples</h2>
-<h3 id="typical-complex_modifications-examples">Typical complex_modifications examples</h3>
-<nav id="TableOfContents">
-  <ul>
-    <li><a href="/docs/json/typical-complex-modifications-examples/#swap--and-">Swap <code>;</code> and <code>:</code></a></li>
-    <li><a href="/docs/json/typical-complex-modifications-examples/#change-control-h-to-delete">Change <code>control-h</code> to <code>delete</code></a></li>
-    <li><a href="/docs/json/typical-complex-modifications-examples/#change-caps_lock-to-escape-on-the-built-in-keyboard">Change <code>caps_lock</code> to <code>escape</code> on the built-in keyboard</a></li>
-    <li><a href="/docs/json/typical-complex-modifications-examples/#change-left_command3---2-left_shift3----on-the-built-in-keyboard">Change left_command+3 -&gt; 2, left_shift+3 -&gt; @ on the built-in keyboard</a></li>
-    <li><a href="/docs/json/typical-complex-modifications-examples/#disable-command-l-on-finder">Disable <code>command-l</code> on Finder</a></li>
-    <li><a href="/docs/json/typical-complex-modifications-examples/#post-escape-if-left_control-is-pressed-alone">Post <code>escape</code> if <code>left_control</code> is pressed alone</a></li>
-    <li><a href="/docs/json/typical-complex-modifications-examples/#open-safari-if-escape-is-held-down">Open <code>Safari</code> if <code>escape</code> is held down</a></li>
-    <li><a href="/docs/json/typical-complex-modifications-examples/#paste-commandv-if-escape-is-held-down">Paste (command+v) if <code>escape</code> is held down</a></li>
-    <li><a href="/docs/json/typical-complex-modifications-examples/#change-right_shift-x2-to-mission_control-new-style">Change <code>right_shift x2</code> to <code>mission_control</code> (new style)</a></li>
-    <li><a href="/docs/json/typical-complex-modifications-examples/#change-right_shift-x2-to-mission_control-old-style">Change <code>right_shift x2</code> to <code>mission_control</code> (old style)</a></li>
-    <li><a href="/docs/json/typical-complex-modifications-examples/#change-double-press-of-q-to-escape">Change double press of <code>q</code> to <code>escape</code></a></li>
-    <li><a href="/docs/json/typical-complex-modifications-examples/#change-equaldelete-to-forward_delete-if-these-keys-are-pressed-simultaneously">Change <code>equal+delete</code> to <code>forward_delete</code> if these keys are pressed simultaneously</a></li>
-    <li><a href="/docs/json/typical-complex-modifications-examples/#input-unicode-characters-by-fnd">Input Unicode characters by fn+d</a></li>
-  </ul>
-</nav>
-<h3 id="expert-complex_modifications-examples">Expert complex_modifications examples</h3>
-<div class="section-index">
-            <ul><li>
-                        <a href="/docs/json/expert-complex-modifications-examples/letter-key-holding-modifier/">Letter key holding modifier</a>
-                        </li><li>
-                        <a href="/docs/json/expert-complex-modifications-examples/letter-key-release-order-modifier/">Letter key release order modifier</a>
-                        </li></ul></div>
-<h2 id="current-limitations">Current limitations</h2>
-<ul>
-<li>Karabiner-Elements cannot modify the eject key on some keyboard (e.g., Apple Wired Keyboard) due to the limitation of macOS API.</li>
-<li>Karabiner-Elements cannot modify the <kbd>fn</kbd> key on non-Apple keyboards such as Logitech keyboards.</li>
+<li><kbd>v (hold)</kbd> + <kbd>j</kbd>: <kbd>down arrow</kbd></li>
+<li><kbd>v (hold)</kbd> + <kbd>k</kbd>: <kbd>up arrow</kbd></li>
 </ul>
 
+
+<div class="alert alert-primary" role="alert">
+<h4 class="alert-heading">Note</h4>
+
+    <ul>
+<li>You need to keep holding down the <kbd>v</kbd> and <kbd>j</kbd> or <kbd>k</kbd> keys, or release the <kbd>j</kbd> or <kbd>k</kbd> key to enter arrow mode.</li>
+<li>If you release the <kbd>v</kbd> key first, <code>vj</code> or <code>vk</code> will be typed as normal characters.</li>
+</ul>
+
+
+</div>
+
+<div class="highlight" style="margin-top: 0rem; margin-bottom: -2rem">
+  <a
+    class="d-inline-block"
+    style="
+      text-decoration: none;
+      background-color: #f8f8f8;
+      padding: 0.5rem;
+      border: solid var(--bs-border-color);
+      border-width: 1px 1px 0 1px;
+    "
+    href="/docs/manual/configuration/add-your-own-complex-modifications/"
+    >💡 How to use this example</a
+  >
+</div>
+
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;description&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;Holding down v and pressing j,k enters arrow mode&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;manipulators&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#8f5902;font-style:italic">//
+</span></span></span><span style="display:flex;"><span>        <span style="color:#8f5902;font-style:italic">// v+j
+</span></span></span><span style="display:flex;"><span>        <span style="color:#8f5902;font-style:italic">//
+</span></span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;type&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;basic&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;from&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">&#34;key_code&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;j&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">&#34;modifiers&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span> <span style="color:#204a87;font-weight:bold">&#34;optional&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">&#34;any&#34;</span><span style="color:#000;font-weight:bold">]</span> <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">},</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;to&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[{</span> <span style="color:#204a87;font-weight:bold">&#34;key_code&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;down_arrow&#34;</span> <span style="color:#000;font-weight:bold">}],</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;conditions&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">{</span> <span style="color:#204a87;font-weight:bold">&#34;type&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;variable_if&#34;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#204a87;font-weight:bold">&#34;name&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;v_flag&#34;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#204a87;font-weight:bold">&#34;value&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#204a87;font-weight:bold">true</span> <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">]</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">},</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;type&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;basic&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;from&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">&#34;simultaneous&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[{</span> <span style="color:#204a87;font-weight:bold">&#34;key_code&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;v&#34;</span> <span style="color:#000;font-weight:bold">},</span> <span style="color:#000;font-weight:bold">{</span> <span style="color:#204a87;font-weight:bold">&#34;key_code&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;j&#34;</span> <span style="color:#000;font-weight:bold">}],</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">&#34;simultaneous_options&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;key_down_order&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;strict&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;key_up_order&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;strict_inverse&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;to_after_key_up&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#000;font-weight:bold">{</span> <span style="color:#204a87;font-weight:bold">&#34;set_variable&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span> <span style="color:#204a87;font-weight:bold">&#34;name&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;v_flag&#34;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#204a87;font-weight:bold">&#34;value&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#204a87;font-weight:bold">false</span> <span style="color:#000;font-weight:bold">}</span> <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#000;font-weight:bold">]</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">},</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">&#34;modifiers&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span> <span style="color:#204a87;font-weight:bold">&#34;optional&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">&#34;any&#34;</span><span style="color:#000;font-weight:bold">]</span> <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">},</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;to&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">{</span> <span style="color:#204a87;font-weight:bold">&#34;set_variable&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span> <span style="color:#204a87;font-weight:bold">&#34;name&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;v_flag&#34;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#204a87;font-weight:bold">&#34;value&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#204a87;font-weight:bold">true</span> <span style="color:#000;font-weight:bold">}</span> <span style="color:#000;font-weight:bold">},</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">{</span> <span style="color:#204a87;font-weight:bold">&#34;key_code&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;down_arrow&#34;</span> <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">],</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;parameters&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">&#34;basic.simultaneous_threshold_milliseconds&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#0000cf;font-weight:bold">500</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">},</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#8f5902;font-style:italic">//
+</span></span></span><span style="display:flex;"><span>        <span style="color:#8f5902;font-style:italic">// v+k
+</span></span></span><span style="display:flex;"><span>        <span style="color:#8f5902;font-style:italic">//
+</span></span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;type&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;basic&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;from&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">&#34;key_code&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;k&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">&#34;modifiers&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span> <span style="color:#204a87;font-weight:bold">&#34;optional&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">&#34;any&#34;</span><span style="color:#000;font-weight:bold">]</span> <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">},</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;to&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[{</span> <span style="color:#204a87;font-weight:bold">&#34;key_code&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;up_arrow&#34;</span> <span style="color:#000;font-weight:bold">}],</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;conditions&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">{</span> <span style="color:#204a87;font-weight:bold">&#34;type&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;variable_if&#34;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#204a87;font-weight:bold">&#34;name&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;v_flag&#34;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#204a87;font-weight:bold">&#34;value&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#204a87;font-weight:bold">true</span> <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">]</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">},</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;type&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;basic&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;from&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">&#34;simultaneous&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[{</span> <span style="color:#204a87;font-weight:bold">&#34;key_code&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;v&#34;</span> <span style="color:#000;font-weight:bold">},</span> <span style="color:#000;font-weight:bold">{</span> <span style="color:#204a87;font-weight:bold">&#34;key_code&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;k&#34;</span> <span style="color:#000;font-weight:bold">}],</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">&#34;simultaneous_options&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;key_down_order&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;strict&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;key_up_order&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;strict_inverse&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;to_after_key_up&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#000;font-weight:bold">{</span> <span style="color:#204a87;font-weight:bold">&#34;set_variable&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span> <span style="color:#204a87;font-weight:bold">&#34;name&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;v_flag&#34;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#204a87;font-weight:bold">&#34;value&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#204a87;font-weight:bold">false</span> <span style="color:#000;font-weight:bold">}</span> <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#000;font-weight:bold">]</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">},</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">&#34;modifiers&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span> <span style="color:#204a87;font-weight:bold">&#34;optional&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">&#34;any&#34;</span><span style="color:#000;font-weight:bold">]</span> <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">},</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;to&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">{</span> <span style="color:#204a87;font-weight:bold">&#34;set_variable&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span> <span style="color:#204a87;font-weight:bold">&#34;name&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;v_flag&#34;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#204a87;font-weight:bold">&#34;value&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#204a87;font-weight:bold">true</span> <span style="color:#000;font-weight:bold">}</span> <span style="color:#000;font-weight:bold">},</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">{</span> <span style="color:#204a87;font-weight:bold">&#34;key_code&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;up_arrow&#34;</span> <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">],</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;parameters&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">&#34;basic.simultaneous_threshold_milliseconds&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#0000cf;font-weight:bold">500</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">]</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></div>
 	
 </div>
 
