@@ -499,7 +499,42 @@ This example is available since Karabiner-Elements 15.3.7.
 }
 ```
 
-## Input Unicode characters by fn+d
+## Input Unicode characters via the clipboard
+
+- [to.hold_down_milliseconds](/docs/json/complex-modifications-manipulator-definition/to/hold-down-milliseconds/)
+
+With this setting, pressing <kbd>fn</kbd>+<kbd>x</kbd> copies ✅🆗 to the clipboard and then pastes it.
+
+{{< karabiner-elements-complex-modifications-usage >}}
+
+```json
+{
+    "description": "Input ✅🆗 by fn+x",
+    "manipulators": [
+        {
+            "type": "basic",
+            "from": {
+                "key_code": "x",
+                "modifiers": {
+                    "mandatory": ["fn"]
+                }
+            },
+            "to": [
+                {
+                    "shell_command": "/bin/echo -n '✅🆗' | LANG=en_US.UTF-8 /usr/bin/pbcopy",
+                    "hold_down_milliseconds": 200
+                },
+                {
+                    "key_code": "v",
+                    "modifiers": ["left_command"]
+                }
+            ]
+        }
+    ]
+}
+```
+
+## Input Unicode characters using Unicode Hex Input
 
 - [to.select_input_source](/docs/json/complex-modifications-manipulator-definition/to/select-input-source/)
 
