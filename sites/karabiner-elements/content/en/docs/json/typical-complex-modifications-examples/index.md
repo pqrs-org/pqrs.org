@@ -534,6 +534,10 @@ With this setting, pressing <kbd>fn</kbd>+<kbd>x</kbd> copies ✅🆗 to the cli
 }
 ```
 
+{{% alert color="info" %}}
+The key point is to specify `LANG` when running pbcopy. If you don't, the string won't be copied correctly.
+{{% /alert %}}
+
 ## Input Unicode characters using Unicode Hex Input
 
 - [to.select_input_source](/docs/json/complex-modifications-manipulator-definition/to/select-input-source/)
