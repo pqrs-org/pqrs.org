@@ -7,33 +7,33 @@
 <link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
 <link rel="apple-touch-icon" href="/favicons/apple-touch-icon-180x180.png" sizes="180x180">
 
-<title>Edit complex modifications | Karabiner-Elements</title>
-<meta name="description" content="Open Complex Modifications tab and press Edit button. The editor will open. Change the contents and save it.
-Tip You can save by using the command &#43; s shortcut as well. When making changes, Karabiner-EventViewer and Karabiner Configuration Reference Manual can be used to confirm the key names and how to write rules.
-Typical examples Application-specific rule Device-specific rule">
-<meta property="og:url" content="/docs/manual/configuration/edit-complex-modifications/">
+<title>Add your own complex modifications (using JavaScript) | Karabiner-Elements</title>
+<meta name="description" content="This feature is available since Karabiner-Elements 15.9.6 (beta). Step 1 Open Complex Modifications tab and press Add your own rule using JavaScript button.
+Step 2 An editor will open with sample rules. Change the content and press the Save button to register.
+Tip You can save by using the command &#43; s shortcut as well. In JavaScript, you write code that returns the JSON defining the rules.">
+<meta property="og:url" content="/docs/manual/configuration/add-your-own-complex-modifications-js/">
   <meta property="og:site_name" content="Karabiner-Elements">
-  <meta property="og:title" content="Edit complex modifications">
-  <meta property="og:description" content="Open Complex Modifications tab and press Edit button. The editor will open. Change the contents and save it.
-Tip You can save by using the command &#43; s shortcut as well. When making changes, Karabiner-EventViewer and Karabiner Configuration Reference Manual can be used to confirm the key names and how to write rules.
-Typical examples Application-specific rule Device-specific rule">
+  <meta property="og:title" content="Add your own complex modifications (using JavaScript)">
+  <meta property="og:description" content="This feature is available since Karabiner-Elements 15.9.6 (beta). Step 1 Open Complex Modifications tab and press Add your own rule using JavaScript button.
+Step 2 An editor will open with sample rules. Change the content and press the Save button to register.
+Tip You can save by using the command &#43; s shortcut as well. In JavaScript, you write code that returns the JSON defining the rules.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
     <meta property="og:image" content="https://karabiner-elements.pqrs.org/images/logo.png">
 
-  <meta itemprop="name" content="Edit complex modifications">
-  <meta itemprop="description" content="Open Complex Modifications tab and press Edit button. The editor will open. Change the contents and save it.
-Tip You can save by using the command &#43; s shortcut as well. When making changes, Karabiner-EventViewer and Karabiner Configuration Reference Manual can be used to confirm the key names and how to write rules.
-Typical examples Application-specific rule Device-specific rule">
-  <meta itemprop="wordCount" content="59">
+  <meta itemprop="name" content="Add your own complex modifications (using JavaScript)">
+  <meta itemprop="description" content="This feature is available since Karabiner-Elements 15.9.6 (beta). Step 1 Open Complex Modifications tab and press Add your own rule using JavaScript button.
+Step 2 An editor will open with sample rules. Change the content and press the Save button to register.
+Tip You can save by using the command &#43; s shortcut as well. In JavaScript, you write code that returns the JSON defining the rules.">
+  <meta itemprop="wordCount" content="71">
   <meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://karabiner-elements.pqrs.org/images/logo.png">
-  <meta name="twitter:title" content="Edit complex modifications">
-  <meta name="twitter:description" content="Open Complex Modifications tab and press Edit button. The editor will open. Change the contents and save it.
-Tip You can save by using the command &#43; s shortcut as well. When making changes, Karabiner-EventViewer and Karabiner Configuration Reference Manual can be used to confirm the key names and how to write rules.
-Typical examples Application-specific rule Device-specific rule">
+  <meta name="twitter:title" content="Add your own complex modifications (using JavaScript)">
+  <meta name="twitter:description" content="This feature is available since Karabiner-Elements 15.9.6 (beta). Step 1 Open Complex Modifications tab and press Add your own rule using JavaScript button.
+Step 2 An editor will open with sample rules. Change the content and press the Save button to register.
+Tip You can save by using the command &#43; s shortcut as well. In JavaScript, you write code that returns the JSON defining the rules.">
 <link rel="preload" href="/scss/main.min.ad03006917028e5fe1ae1e1b42b17992c0ca7ce84aed85e0df5ab9675702b990.css" as="style" integrity="sha256-rQMAaRcCjl/hrh4bQrF5ksDKfOhK7YXg31q5Z1cCuZA=" crossorigin="anonymous">
 <link href="/scss/main.min.ad03006917028e5fe1ae1e1b42b17992c0ca7ce84aed85e0df5ab9675702b990.css" rel="stylesheet" integrity="sha256-rQMAaRcCjl/hrh4bQrF5ksDKfOhK7YXg31q5Z1cCuZA=" crossorigin="anonymous">
 <script
@@ -142,13 +142,13 @@ Typical examples Application-specific rule Device-specific rule">
   <input type="checkbox" id="m-docsmanualconfigurationadd-your-own-complex-modifications-check"/>
   <label for="m-docsmanualconfigurationadd-your-own-complex-modifications-check"><a href="/docs/manual/configuration/add-your-own-complex-modifications/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-docsmanualconfigurationadd-your-own-complex-modifications"><span class="">Add your own complex modifications</span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-docsmanualconfigurationedit-complex-modifications-li">
-  <input type="checkbox" id="m-docsmanualconfigurationedit-complex-modifications-check" checked/>
-  <label for="m-docsmanualconfigurationedit-complex-modifications-check"><a href="/docs/manual/configuration/edit-complex-modifications/" class="align-left ps-0  active td-sidebar-link td-sidebar-link__page" id="m-docsmanualconfigurationedit-complex-modifications"><span class="td-sidebar-nav-active-item">Edit complex modifications</span></a></label>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsmanualconfigurationedit-complex-modifications-li">
+  <input type="checkbox" id="m-docsmanualconfigurationedit-complex-modifications-check"/>
+  <label for="m-docsmanualconfigurationedit-complex-modifications-check"><a href="/docs/manual/configuration/edit-complex-modifications/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-docsmanualconfigurationedit-complex-modifications"><span class="">Edit complex modifications</span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsmanualconfigurationadd-your-own-complex-modifications-js-li">
-  <input type="checkbox" id="m-docsmanualconfigurationadd-your-own-complex-modifications-js-check"/>
-  <label for="m-docsmanualconfigurationadd-your-own-complex-modifications-js-check"><a href="/docs/manual/configuration/add-your-own-complex-modifications-js/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-docsmanualconfigurationadd-your-own-complex-modifications-js"><span class="">Add your own complex modifications (using JavaScript)</span></a></label>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-docsmanualconfigurationadd-your-own-complex-modifications-js-li">
+  <input type="checkbox" id="m-docsmanualconfigurationadd-your-own-complex-modifications-js-check" checked/>
+  <label for="m-docsmanualconfigurationadd-your-own-complex-modifications-js-check"><a href="/docs/manual/configuration/add-your-own-complex-modifications-js/" class="align-left ps-0  active td-sidebar-link td-sidebar-link__page" id="m-docsmanualconfigurationadd-your-own-complex-modifications-js"><span class="td-sidebar-nav-active-item">Add your own complex modifications (using JavaScript)</span></a></label>
   
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsmanualconfigurationconfigure-devices-li">
   <input type="checkbox" id="m-docsmanualconfigurationconfigure-devices-check"/>
@@ -658,7 +658,12 @@ Typical examples Application-specific rule Device-specific rule">
 
 
 
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#step-1">Step 1</a></li>
+    <li><a href="#step-2">Step 2</a></li>
+  </ul>
+</nav>
 
 
 
@@ -678,17 +683,37 @@ Typical examples Application-specific rule Device-specific rule">
   <li class="breadcrumb-item">
     <a href="/docs/manual/configuration/">Configuration</a></li>
   <li class="breadcrumb-item active" aria-current="page">
-    Edit complex modifications</li>
+    Add your own complex modifications (using JavaScript)</li>
   </ol>
 </nav>
 <div class="td-content">
-	<h1>Edit complex modifications</h1>
+	<h1>Add your own complex modifications (using JavaScript)</h1>
 	
 	<header class="article-meta">
 		
 </header>
-	<p>Open Complex Modifications tab and press <strong>Edit</strong> button.
-The editor will open. Change the contents and save it.</p>
+	
+
+<div class="alert alert-danger" role="alert">
+
+
+    This feature is available since Karabiner-Elements 15.9.6 (beta).
+
+</div>
+
+<h2 id="step-1">Step 1</h2>
+<p>Open Complex Modifications tab and press <strong>Add your own rule using JavaScript</strong> button.<br /></p>
+<figure>
+  <img
+    src="/docs/manual/configuration/add-your-own-complex-modifications-js/images/own-rule-js-1@2x.png"
+    alt="own-rule-js-1@2x.png"
+    style="width: 1100px"
+  />
+</figure>
+
+<h2 id="step-2">Step 2</h2>
+<p>An editor will open with sample rules.
+Change the content and press the Save button to register.</p>
 
 
 <div class="alert alert-primary" role="alert">
@@ -698,28 +723,19 @@ The editor will open. Change the contents and save it.</p>
 
 </div>
 
-<p>When making changes, <a href="/docs/manual/operation/eventviewer/">Karabiner-EventViewer</a> and <a href="/docs/json/">Karabiner Configuration Reference Manual</a> can be used to confirm the key names and how to write rules.</p>
+<p>In JavaScript, you write code that returns the JSON defining the rules.</p>
 <ul>
 <li><a href="/docs/json/typical-complex-modifications-examples/">Typical examples</a></li>
-<li><a href="/docs/json/complex-modifications-manipulator-definition/conditions/frontmost-application/">Application-specific rule</a></li>
-<li><a href="/docs/json/complex-modifications-manipulator-definition/conditions/device/">Device-specific rule</a></li>
+<li><a href="/docs/json/expert-complex-modifications-examples/">Expert examples</a></li>
 </ul>
-<p><figure>
+<figure>
   <img
-    src="/docs/manual/configuration/edit-complex-modifications/images/edit-rule-1@2x.png"
-    alt="edit-rule-1@2x.png"
+    src="/docs/manual/configuration/add-your-own-complex-modifications-js/images/own-rule-js-2@2x.png"
+    alt="own-rule-js-2@2x.png"
     style="width: 1100px"
   />
 </figure>
 
-<figure>
-  <img
-    src="/docs/manual/configuration/edit-complex-modifications/images/edit-rule-2@2x.png"
-    alt="edit-rule-2@2x.png"
-    style="width: 1100px"
-  />
-</figure>
-</p>
 
 	
 </div>
