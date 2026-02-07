@@ -15,7 +15,7 @@ Holding down <kbd>v</kbd> and pressing <kbd>j</kbd> or <kbd>k</kbd> enters arrow
 
 {{% /alert %}}
 
-## JavaScript code
+## JavaScript version
 
 {{< karabiner-elements-complex-modifications-js-usage >}}
 
@@ -23,11 +23,12 @@ Holding down <kbd>v</kbd> and pressing <kbd>j</kbd> or <kbd>k</kbd> enters arrow
 // JavaScript must be written in ECMAScript 5.1.
 
 function main() {
-    const manipulators = []
     const definitions = [
         { from: 'j', to: 'down_arrow' },
         { from: 'k', to: 'up_arrow' },
     ]
+
+    const manipulators = []
 
     definitions.forEach(function (def) {
         manipulators.push({
@@ -72,7 +73,7 @@ function main() {
 main()
 ```
 
-## JSON code
+## JSON version
 
 {{< karabiner-elements-complex-modifications-json-usage >}}
 
