@@ -15,6 +15,65 @@ Holding down <kbd>v</kbd> and pressing <kbd>j</kbd> or <kbd>k</kbd> enters arrow
 
 {{% /alert %}}
 
+## JavaScript code
+
+{{< karabiner-elements-complex-modifications-js-usage >}}
+
+```js
+// JavaScript must be written in ECMAScript 5.1.
+
+function main() {
+    const manipulators = []
+    const definitions = [
+        { from: 'j', to: 'down_arrow' },
+        { from: 'k', to: 'up_arrow' },
+    ]
+
+    definitions.forEach(function (def) {
+        manipulators.push({
+            type: 'basic',
+            from: {
+                key_code: def.from,
+                modifiers: { optional: ['any'] },
+            },
+            to: [{ key_code: def.to }],
+            conditions: [{ type: 'variable_if', name: 'v_flag', value: true }],
+        })
+
+        manipulators.push({
+            type: 'basic',
+            from: {
+                simultaneous: [{ key_code: 'v' }, { key_code: def.from }],
+                simultaneous_options: {
+                    key_down_order: 'strict',
+                    key_up_order: 'strict_inverse',
+                    to_after_key_up: [
+                        { set_variable: { name: 'v_flag', value: false } },
+                    ],
+                },
+                modifiers: { optional: ['any'] },
+            },
+            to: [
+                { set_variable: { name: 'v_flag', value: true } },
+                { key_code: def.to },
+            ],
+            parameters: {
+                'basic.simultaneous_threshold_milliseconds': 500,
+            },
+        })
+    })
+
+    return {
+        description: 'Holding down v and pressing j,k enters arrow mode',
+        manipulators: manipulators,
+    }
+}
+
+main()
+```
+
+## JSON code
+
 {{< karabiner-elements-complex-modifications-json-usage >}}
 
 ```json
