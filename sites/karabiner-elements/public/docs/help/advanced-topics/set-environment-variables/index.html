@@ -701,9 +701,9 @@ If you define PATH and others there, shell commands and opened apps via shell_co
 <h2 id="example">Example</h2>
 <p>You need to run your editor with root privileges to edit the <code>karabiner_environment</code> file.
 For example, you can edit it by running the following commands in Terminal.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo nano <span style="color:#4e9a06">&#39;/Library/Application Support/org.pqrs/config/karabiner_environment&#39;</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo nano <span style="color:#4e9a06">&#39;/Library/Application Support/org.pqrs/config/karabiner_environment&#39;</span>
 </span></span></code></pre></div><p>Here is an example of the <code>karabiner_environment</code> file.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"># Add ~/opt/bin to PATH</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"># Add ~/opt/bin to PATH</span>
 </span></span><span style="display:flex;"><span><span style="color:#000">PATH</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#000">$HOME</span>/opt/bin:<span style="color:#000">$PATH</span>
 </span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"># Set locale</span>
 </span></span><span style="display:flex;"><span><span style="color:#000">LC_ALL</span><span style="color:#ce5c00;font-weight:bold">=</span>C
@@ -723,7 +723,7 @@ For example, you can edit it by running the following commands in Terminal.</p>
 
 <p>After modifying the <code>karabiner_environment</code> file, you need to restart the karabiner_console_user_server process to apply the changes.
 You can do it by running the following commands in Terminal.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>launchctl kickstart -k gui/<span style="color:#204a87;font-weight:bold">$(</span>id -u<span style="color:#204a87;font-weight:bold">)</span>/org.pqrs.service.agent.karabiner_console_user_server
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>launchctl kickstart -k gui/<span style="color:#204a87;font-weight:bold">$(</span>id -u<span style="color:#204a87;font-weight:bold">)</span>/org.pqrs.service.agent.karabiner_console_user_server
 </span></span></code></pre></div>
 
 <div class="alert alert-danger" role="alert">
@@ -732,7 +732,7 @@ You can do it by running the following commands in Terminal.</p>
     <p>Do not put sensitive information (e.g., API keys) in <code>karabiner_environment</code>.
 If multiple people use your Mac, all users on the machine can read this file, so only include information that is safe to share.</p>
 <p>Additionally, the environment variables defined in <code>karabiner_environment</code> are also logged as shown below.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>[info] [console_user_server] setenv: PATH = /Users/tekezo/opt/bin:/usr/bin:/bin:/usr/sbin:/sbin
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>[info] [console_user_server] setenv: PATH = /Users/tekezo/opt/bin:/usr/bin:/bin:/usr/sbin:/sbin
 </span></span><span style="display:flex;"><span>[info] [console_user_server] setenv: LC_ALL = C
 </span></span></code></pre></div>
 
@@ -746,7 +746,7 @@ The two environment variables used for this are:</p>
 <li>XDG_DATA_HOME</li>
 </ul>
 <p>For example, the following configuration changes the karabiner.json location under ~/Library/Application Support.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000">XDG_CONFIG_HOME</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#000">$HOME</span>/Library/Application Support/org.pqrs/config
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000">XDG_CONFIG_HOME</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#000">$HOME</span>/Library/Application Support/org.pqrs/config
 </span></span><span style="display:flex;"><span><span style="color:#000">XDG_DATA_HOME</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#000">$HOME</span>/Library/Application Support/org.pqrs/data
 </span></span></code></pre></div><p>Note: karabiner.json is stored at <code>$XDG_CONFIG_HOME/karabiner/karabiner.json</code>.</p>
 

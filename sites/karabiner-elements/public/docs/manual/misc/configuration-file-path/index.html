@@ -707,12 +707,12 @@ Warning Ensure you create a symbolic link to the ~/.config/karabiner directory, 
 
 <h2 id="making-symbolic-link-example">Making symbolic link example</h2>
 <p>The following command allows you to move the <code>karabiner.json</code> file to <strong>~/Library/Application Support/org.pqrs</strong>. The same process is applies for any other directory.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>mkdir -p <span style="color:#4e9a06">&#34;</span><span style="color:#000">$HOME</span><span style="color:#4e9a06">/Library/Application Support/org.pqrs/config&#34;</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>mkdir -p <span style="color:#4e9a06">&#34;</span><span style="color:#000">$HOME</span><span style="color:#4e9a06">/Library/Application Support/org.pqrs/config&#34;</span>
 </span></span><span style="display:flex;"><span>mv ~/.config/karabiner <span style="color:#4e9a06">&#34;</span><span style="color:#000">$HOME</span><span style="color:#4e9a06">/Library/Application Support/org.pqrs/config&#34;</span>
 </span></span><span style="display:flex;"><span>ln -s <span style="color:#4e9a06">&#34;</span><span style="color:#000">$HOME</span><span style="color:#4e9a06">/Library/Application Support/org.pqrs/config/karabiner&#34;</span> ~/.config
 </span></span></code></pre></div><p>After changing the actual location of <code>karabiner.json</code>, you need to restart <code>karabiner_console_user_server</code> using the following command.
 Otherwise, it will not be able to automatically detect updates to <code>karabiner.json</code>.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>launchctl kickstart -k gui/<span style="color:#204a87;font-weight:bold">$(</span>id -u<span style="color:#204a87;font-weight:bold">)</span>/org.pqrs.service.agent.karabiner_console_user_server
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>launchctl kickstart -k gui/<span style="color:#204a87;font-weight:bold">$(</span>id -u<span style="color:#204a87;font-weight:bold">)</span>/org.pqrs.service.agent.karabiner_console_user_server
 </span></span></code></pre></div>
 
 <div class="alert alert-primary" role="alert">

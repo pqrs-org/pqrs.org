@@ -723,7 +723,7 @@ Karabiner-Elements is a system-wide software, and files are installed in appropr
     <p>This file locking is achieved with <code>schg</code> and <code>uchg</code> flags.</p>
 <p>You can unlock these files by running the following commands in Terminal.
 (Administrator password is required to run the commands.)</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo chflags nouchg,noschg /Applications/Karabiner-Elements.app
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo chflags nouchg,noschg /Applications/Karabiner-Elements.app
 </span></span><span style="display:flex;"><span>sudo chflags nouchg,noschg /Applications/Karabiner-EventViewer.app
 </span></span></code></pre></div><p>In particular, if Full Disk Access rights have not been granted to Terminal, &ldquo;Operation not permitted&rdquo; error may be displayed.
 In this case, the safest solution is to grant App Management rights to Terminal.</p>

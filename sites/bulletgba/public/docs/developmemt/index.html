@@ -214,7 +214,7 @@ Execute following commands to convert graphic resources.">
 </ul>
 <h3 id="steps">Steps</h3>
 <p>Execute the following commands in Terminal.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git clone --depth <span style="color:#0000cf;font-weight:bold">1</span> https://github.com/pqrs-org/BulletGBA.git
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git clone --depth <span style="color:#0000cf;font-weight:bold">1</span> https://github.com/pqrs-org/BulletGBA.git
 </span></span><span style="display:flex;"><span><span style="color:#204a87">cd</span> BulletGBA/bulletgba/
 </span></span><span style="display:flex;"><span>make
 </span></span></code></pre></div><h2 id="how-to-replace-graphic-resources">How to replace graphic resources</h2>
@@ -225,7 +225,7 @@ Execute following commands to convert graphic resources.">
 </li>
 <li>
 <p>Execute following commands to setup gba-tools.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>mkdir ~/gba
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>mkdir ~/gba
 </span></span><span style="display:flex;"><span><span style="color:#204a87">cd</span> ~/gba
 </span></span><span style="display:flex;"><span>tar zxf tools.tar.gz
 </span></span><span style="display:flex;"><span><span style="color:#204a87">cd</span> tools/bmp2c
@@ -236,7 +236,7 @@ Execute following commands to convert graphic resources.">
 </li>
 <li>
 <p>Execute following commands to convert graphic resources.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#204a87">cd</span> bulletgba/images/
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#204a87">cd</span> bulletgba/images/
 </span></span><span style="display:flex;"><span>./conv.sh
 </span></span></code></pre></div></li>
 </ol>
@@ -253,7 +253,7 @@ Execute following commands to convert graphic resources.">
 </li>
 <li>
 <p>Execute following commands to convert BulletML into C++.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#204a87">cd</span> bulletgba/generator/
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#204a87">cd</span> bulletgba/generator/
 </span></span><span style="display:flex;"><span>make copy all
 </span></span></code></pre></div></li>
 </ol>
@@ -265,7 +265,7 @@ Execute following commands to convert graphic resources.">
 </li>
 <li>
 <p><code>&lt;*Ref&gt;</code> which contains <code>$rand</code> in <code>&lt;param&gt;</code> does not work properly.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">&lt;fireRef&gt;</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">&lt;fireRef&gt;</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&lt;param&gt;</span>1.0 * 3.4 + 4.2<span style="color:#204a87;font-weight:bold">&lt;/param&gt;</span> <span style="color:#8f5902;font-style:italic">&lt;!-- *** This line works fine. *** --&gt;</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&lt;param&gt;</span>$rand + 1<span style="color:#204a87;font-weight:bold">&lt;/param&gt;</span>       <span style="color:#8f5902;font-style:italic">&lt;!-- *** This line does not work properly. *** --&gt;</span>
 </span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">&lt;/fireRef&gt;</span>

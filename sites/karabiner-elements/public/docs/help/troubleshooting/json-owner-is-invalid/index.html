@@ -688,10 +688,10 @@ sudo diskutil enableOwnership disk99999s99999 (Replace disk99999s99999 with your
 		
 </header>
 	<p>If the following error message is appeared in log, your home directory owner ship is not valid.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>[warning] [core_service] /Users/.../karabiner.json is not owned by a valid user.
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>[warning] [core_service] /Users/.../karabiner.json is not owned by a valid user.
 </span></span></code></pre></div><p>The cause is that you are using an external storage and locating your home directory into the volume.</p>
 <p>You have to enable ownership on the external volume by the following command in Terminal.app.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo diskutil enableOwnership disk99999s99999
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo diskutil enableOwnership disk99999s99999
 </span></span></code></pre></div><p>(Replace <code>disk99999s99999</code> with your disk identifier which you can find by <code>diskutil list</code> command.)</p>
 
 	
