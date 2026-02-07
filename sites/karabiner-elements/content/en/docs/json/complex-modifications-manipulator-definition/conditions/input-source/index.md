@@ -9,7 +9,7 @@ Change an event if/unless the current input source is the specified value.
 
 Switching input source between Japanese and English at tapping the left command key.
 
-{{< karabiner-elements-complex-modifications-usage >}}
+{{< karabiner-elements-complex-modifications-json-usage >}}
 
 ```json
 {

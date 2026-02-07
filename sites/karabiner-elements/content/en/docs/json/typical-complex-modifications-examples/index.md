@@ -7,7 +7,7 @@ weight: 200
 
 - Equal to swap `;` and `shift-;`: [from.modifiers](/docs/json/complex-modifications-manipulator-definition/from/modifiers/)
 
-{{< karabiner-elements-complex-modifications-usage >}}
+{{< karabiner-elements-complex-modifications-json-usage >}}
 
 ```json
 {
@@ -43,7 +43,7 @@ weight: 200
 - Change `control-h` to `delete`: [from.modifiers](/docs/json/complex-modifications-manipulator-definition/from/modifiers/)
 - Change `control-option-h` to `option-delete`.
 
-{{< karabiner-elements-complex-modifications-usage >}}
+{{< karabiner-elements-complex-modifications-json-usage >}}
 
 ```json
 {
@@ -69,7 +69,7 @@ weight: 200
 - An example of using modifiers.optional == ["any"]: [from.modifiers](/docs/json/complex-modifications-manipulator-definition/from/modifiers/)
 - Device-specific rule: [device_if, device_unless, device_exists_if, device_exists_unless](/docs/json/complex-modifications-manipulator-definition/conditions/device/)
 
-{{< karabiner-elements-complex-modifications-usage >}}
+{{< karabiner-elements-complex-modifications-json-usage >}}
 
 ```json
 {
@@ -100,7 +100,7 @@ weight: 200
 - An example of using modifiers.optional == ["any"] with modifiers.mandatory: [from.modifiers](/docs/json/complex-modifications-manipulator-definition/from/modifiers/)
 - Device-specific rule: [device_if, device_unless, device_exists_if, device_exists_unless](/docs/json/complex-modifications-manipulator-definition/conditions/device/)
 
-{{< karabiner-elements-complex-modifications-usage >}}
+{{< karabiner-elements-complex-modifications-json-usage >}}
 
 ```json
 {
@@ -148,7 +148,7 @@ weight: 200
 
 - Application-specific rule: [frontmost_application_if, frontmost_application_unless](/docs/json/complex-modifications-manipulator-definition/conditions/frontmost-application/)
 
-{{< karabiner-elements-complex-modifications-usage >}}
+{{< karabiner-elements-complex-modifications-json-usage >}}
 
 ```json
 {
@@ -180,7 +180,7 @@ weight: 200
 - Post events when a key is held down: [to_if_held_down](/docs/json/complex-modifications-manipulator-definition/to-if-held-down/)
 - The lazy modifier: [to.lazy](/docs/json/complex-modifications-manipulator-definition/to/lazy/)
 
-{{< karabiner-elements-complex-modifications-usage >}}
+{{< karabiner-elements-complex-modifications-json-usage >}}
 
 ```json
 {
@@ -219,7 +219,7 @@ This uses `"lazy": true` to prevent <kbd>left_control</kbd> from being sent imme
 - Post events when a key is held down: [to_if_held_down](/docs/json/complex-modifications-manipulator-definition/to-if-held-down/)
 - Open an application: [open_application](/docs/json/complex-modifications-manipulator-definition/to/software_function/open_application/)
 
-{{< karabiner-elements-complex-modifications-usage >}}
+{{< karabiner-elements-complex-modifications-json-usage >}}
 
 ```json
 {
@@ -255,7 +255,7 @@ This uses `"lazy": true` to prevent <kbd>left_control</kbd> from being sent imme
 - Post events when a key is pressed alone: [to_if_alone](/docs/json/complex-modifications-manipulator-definition/to-if-alone/)
 - Post events when a key is held down: [to_if_held_down](/docs/json/complex-modifications-manipulator-definition/to-if-held-down/)
 
-{{< karabiner-elements-complex-modifications-usage >}}
+{{< karabiner-elements-complex-modifications-json-usage >}}
 
 ```json
 {
@@ -293,7 +293,7 @@ This example is available since Karabiner-Elements 15.5.19.
     - [to.set_variable](/docs/json/complex-modifications-manipulator-definition/to/set-variable/)
 - [to_delayed_action](/docs/json/complex-modifications-manipulator-definition/to-delayed-action/)
 
-{{< karabiner-elements-complex-modifications-usage >}}
+{{< karabiner-elements-complex-modifications-json-usage >}}
 
 ```json
 {
@@ -343,7 +343,7 @@ This example is available since Karabiner-Elements 15.5.19.
     - [to.set_variable](/docs/json/complex-modifications-manipulator-definition/to/set-variable/)
 - [to_delayed_action](/docs/json/complex-modifications-manipulator-definition/to-delayed-action/)
 
-{{< karabiner-elements-complex-modifications-usage >}}
+{{< karabiner-elements-complex-modifications-json-usage >}}
 
 ```json
 {
@@ -414,7 +414,7 @@ This example is available since Karabiner-Elements 15.3.7.
     - [to.set_variable](/docs/json/complex-modifications-manipulator-definition/to/set-variable/)
 - [to_delayed_action](/docs/json/complex-modifications-manipulator-definition/to-delayed-action/)
 
-{{< karabiner-elements-complex-modifications-usage >}}
+{{< karabiner-elements-complex-modifications-json-usage >}}
 
 ```json
 {
@@ -478,7 +478,7 @@ This example is available since Karabiner-Elements 15.3.7.
 
 - [from.simultaneous](/docs/json/complex-modifications-manipulator-definition/from/simultaneous/)
 
-{{< karabiner-elements-complex-modifications-usage >}}
+{{< karabiner-elements-complex-modifications-json-usage >}}
 
 ```json
 {
@@ -505,7 +505,7 @@ This example is available since Karabiner-Elements 15.3.7.
 
 With this setting, pressing <kbd>fn</kbd>+<kbd>x</kbd> copies ✅🆗 to the clipboard and then pastes it.
 
-{{< karabiner-elements-complex-modifications-usage >}}
+{{< karabiner-elements-complex-modifications-json-usage >}}
 
 ```json
 {
@@ -545,7 +545,7 @@ The key point is to specify `LANG` when running pbcopy. If you don't, the string
 In this setting, <kbd>fn</kbd>+<kbd>d</kbd> changes the Input Source to Unicode Hex Input and inputs ✅ (U+2705).
 Therefore, you need to enable Unicode Hex Input in [Input Source settings](https://support.apple.com/guide/mac-help/mchlp1406/26/mac/26).
 
-{{< karabiner-elements-complex-modifications-usage >}}
+{{< karabiner-elements-complex-modifications-json-usage >}}
 
 ```json
 {

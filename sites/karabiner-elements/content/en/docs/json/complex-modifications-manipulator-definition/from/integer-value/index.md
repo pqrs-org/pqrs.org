@@ -33,7 +33,7 @@ The value is interpreted from the first button that was pressed, so in this case
 - Change the middle button to f12.
 - Change the right button to command+shift+4.
 
-{{< karabiner-elements-complex-modifications-usage >}}
+{{< karabiner-elements-complex-modifications-json-usage >}}
 
 ```json
 {

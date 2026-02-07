@@ -10,7 +10,7 @@ The events are posted at the `from` key is released.
 
 The following json changes `left_control` to sending `escape` when `left_control` is pressed alone.
 
-{{< karabiner-elements-complex-modifications-usage >}}
+{{< karabiner-elements-complex-modifications-json-usage >}}
 
 ```json
 {
@@ -42,7 +42,7 @@ Cancellation also occurs when you press the `from` key for a long time. (The def
 You can adjust the timeout milliseconds by `parameters > basic.to_if_alone_timeout_milliseconds`.<br />
 The following example sets the timeout 200 milliseconds.
 
-{{< karabiner-elements-complex-modifications-usage >}}
+{{< karabiner-elements-complex-modifications-json-usage >}}
 
 ```json
 {

@@ -18,7 +18,7 @@ weight: 500
 
 The following json changes holding `tab` key to `mute`.
 
-{{< karabiner-elements-complex-modifications-usage >}}
+{{< karabiner-elements-complex-modifications-json-usage >}}
 
 ```json
 {

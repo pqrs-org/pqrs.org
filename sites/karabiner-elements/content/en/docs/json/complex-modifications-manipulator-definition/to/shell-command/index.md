@@ -9,7 +9,7 @@ weight: 100
 
 ### Open application
 
-{{< karabiner-elements-complex-modifications-usage >}}
+{{< karabiner-elements-complex-modifications-json-usage >}}
 
 ```json
 {
@@ -32,7 +32,7 @@ weight: 100
 
 ### Execute shell from file
 
-{{< karabiner-elements-complex-modifications-usage >}}
+{{< karabiner-elements-complex-modifications-json-usage >}}
 
 ```json
 {

@@ -44,7 +44,7 @@ However, if you explicitly want to change them to home, end, etc., please use Co
 
 #### Before
 
-{{< karabiner-elements-complex-modifications-usage >}}
+{{< karabiner-elements-complex-modifications-json-usage >}}
 
 ```json
 {
@@ -68,7 +68,7 @@ However, if you explicitly want to change them to home, end, etc., please use Co
 
 #### After
 
-{{< karabiner-elements-complex-modifications-usage >}}
+{{< karabiner-elements-complex-modifications-json-usage >}}
 
 ```json
 {

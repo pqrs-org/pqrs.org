@@ -9,7 +9,7 @@ weight: 300
 
 This json defines manipulator which changes `a+s+d` to `mission_control`.
 
-{{< karabiner-elements-complex-modifications-usage >}}
+{{< karabiner-elements-complex-modifications-json-usage >}}
 
 ```json
 {

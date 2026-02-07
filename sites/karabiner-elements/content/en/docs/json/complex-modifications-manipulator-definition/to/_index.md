@@ -109,7 +109,7 @@ For example, the `mission_control` key closes Mission Control on key_up, so if y
 In such cases, you can send both key_down and key_up when the key is pressed by adding `vk_none`.
 In this scenario, no event will be triggered when the key is released.
 
-{{< karabiner-elements-complex-modifications-usage >}}
+{{< karabiner-elements-complex-modifications-json-usage >}}
 
 ```json
 {

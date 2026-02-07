@@ -9,7 +9,7 @@ Open an application, or if it's already running, bring it into focus.
 
 Open EventViewer by <kbd>right command + v</kbd>:
 
-{{< karabiner-elements-complex-modifications-usage >}}
+{{< karabiner-elements-complex-modifications-json-usage >}}
 
 ```json
 {
@@ -40,7 +40,7 @@ Open EventViewer by <kbd>right command + v</kbd>:
 
 Focus recently opened applications by <kbd>right command + 1</kbd>, <kbd>right command + 2</kbd>, <kbd>right command + 3</kbd>:
 
-{{< karabiner-elements-complex-modifications-usage >}}
+{{< karabiner-elements-complex-modifications-json-usage >}}
 
 ```json
 {
@@ -115,7 +115,7 @@ Focus the most recently used application (excluding Safari and Preview) using <k
 
 {{% /alert %}}
 
-{{< karabiner-elements-complex-modifications-usage >}}
+{{< karabiner-elements-complex-modifications-json-usage >}}
 
 ```json
 {

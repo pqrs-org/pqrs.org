@@ -15,7 +15,7 @@ If `to` events are specified, `key_up` event of `to` is sent before `to_if_held_
 
 The following json changes the `escape` key to open Launchpad when the `escape` key is held down.
 
-{{< karabiner-elements-complex-modifications-usage >}}
+{{< karabiner-elements-complex-modifications-json-usage >}}
 
 ```json
 {
@@ -58,7 +58,7 @@ Additionally, `to_if_alone` is used to send the <kbd>f</kbd> key when it is pres
 
 The `halt` specified in `to_if_alone` prevents the <kbd>f</kbd> key from being sent by both `to_if_alone` and `to_delayed_action`.
 
-{{< karabiner-elements-complex-modifications-usage >}}
+{{< karabiner-elements-complex-modifications-json-usage >}}
 
 ```json
 {

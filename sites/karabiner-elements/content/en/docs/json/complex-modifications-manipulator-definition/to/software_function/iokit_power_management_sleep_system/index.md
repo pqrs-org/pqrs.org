@@ -13,7 +13,7 @@ Put the system to sleep.
 
 Put the system to sleep using fn+z.
 
-{{< karabiner-elements-complex-modifications-usage >}}
+{{< karabiner-elements-complex-modifications-json-usage >}}
 
 ```json
 {

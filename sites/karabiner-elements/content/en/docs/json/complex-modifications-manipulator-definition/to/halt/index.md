@@ -11,7 +11,7 @@ The following json changes holding `tab` key to `mute`.
 
 The `halt` in `to_if_held_down` suppresses `to_after_key_up` when `mute` is sent.
 
-{{< karabiner-elements-complex-modifications-usage >}}
+{{< karabiner-elements-complex-modifications-json-usage >}}
 
 ```json
 {

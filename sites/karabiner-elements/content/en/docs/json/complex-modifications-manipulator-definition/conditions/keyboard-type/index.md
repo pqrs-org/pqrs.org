@@ -13,7 +13,7 @@ Change `control-[` key to `escape`, including JIS layout support.
 
 Note: [the <kbd>\[</kbd> key is <kbd>close_bracket</kbd> in JIS layout](/docs/help/troubleshooting/symbols-with-non-ansi-keyboard/)
 
-{{< karabiner-elements-complex-modifications-usage >}}
+{{< karabiner-elements-complex-modifications-json-usage >}}
 
 ```json
 {

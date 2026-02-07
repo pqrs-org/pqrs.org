@@ -27,7 +27,7 @@ The default value is `false`.
 
 For example, this definition manipulates `tab,q` to `mission_control` and does not manipulate `q,tab` events.
 
-{{< karabiner-elements-complex-modifications-usage >}}
+{{< karabiner-elements-complex-modifications-json-usage >}}
 
 ```json
 {
@@ -81,7 +81,7 @@ Events will be posted just before the last from event's key_up.
 
 {{% /alert %}}
 
-{{< karabiner-elements-complex-modifications-usage >}}
+{{< karabiner-elements-complex-modifications-json-usage >}}
 
 ```json
 {

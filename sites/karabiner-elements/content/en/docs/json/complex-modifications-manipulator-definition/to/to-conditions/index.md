@@ -23,7 +23,7 @@ If your goal is to define a setting such as "Enable only in Finder", you should 
 
 In this example, conditions are used inside `to_if_invoked` and `to_if_canceled` to prevent the <kbd>q</kbd> key from being sent via `to_delayed_action` when the <kbd>escape</kbd> key is pressed.
 
-{{< karabiner-elements-complex-modifications-usage >}}
+{{< karabiner-elements-complex-modifications-json-usage >}}
 
 ```json
 {
@@ -88,7 +88,7 @@ In this example, conditions are used inside `to_if_invoked` and `to_if_canceled`
 Conditions are evaluated when the first event in the sequence of events within `to` is processed.
 This means that even if a variable's value changes (e.g., using `set_variable` within `to`), the updated value won't be immediately evaluated.
 
-{{< karabiner-elements-complex-modifications-usage >}}
+{{< karabiner-elements-complex-modifications-json-usage >}}
 
 ```json
 {

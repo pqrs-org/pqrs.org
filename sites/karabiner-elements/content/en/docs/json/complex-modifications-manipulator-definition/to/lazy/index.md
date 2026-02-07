@@ -26,7 +26,7 @@ Behavior of the json:
 - Only the `return_or_enter` key event will be sent when you press `left_control + m`.
 - You can use `left_control` for other keys such as `left_control + a`, `left_control + b`, etc.
 
-{{< karabiner-elements-complex-modifications-usage >}}
+{{< karabiner-elements-complex-modifications-json-usage >}}
 
 ```json
 {

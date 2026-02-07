@@ -17,7 +17,7 @@ Generally `to.hold_down_milliseconds` is used with `"key_code": "caps_lock"`.
 
 The following json changes `caps_lock` key to sending `caps_lock key_down`, `wait 200 milliseconds`, `caps_lock key_up`.
 
-{{< karabiner-elements-complex-modifications-usage >}}
+{{< karabiner-elements-complex-modifications-json-usage >}}
 
 ```json
 {

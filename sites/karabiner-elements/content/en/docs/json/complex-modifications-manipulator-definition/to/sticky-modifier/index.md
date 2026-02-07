@@ -7,7 +7,7 @@ weight: 450
 
 ## Examples
 
-{{< karabiner-elements-complex-modifications-usage >}}
+{{< karabiner-elements-complex-modifications-json-usage >}}
 
 ```json
 {

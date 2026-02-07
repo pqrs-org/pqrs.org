@@ -11,7 +11,7 @@ Therefore, if you want to send F1-F12 keys to an application, you need to send <
 
 For example, the following Complex Modifications sends <kbd>fn+F2</kbd> (cell editing) to Excel with <kbd>command+e</kbd>.
 
-{{< karabiner-elements-complex-modifications-usage >}}
+{{< karabiner-elements-complex-modifications-json-usage >}}
 
 ```json
 {
@@ -52,7 +52,7 @@ If you want it to work in both cases, use `variable_if` and `variable_unless` to
 `system.use_fkeys_as_standard_function_keys` is available since Karabiner-Elements 15.2.3.
 {{% /alert %}}
 
-{{< karabiner-elements-complex-modifications-usage >}}
+{{< karabiner-elements-complex-modifications-json-usage >}}
 
 ```json
 {
@@ -123,7 +123,7 @@ If you want it to work in both cases, use `variable_if` and `variable_unless` to
 
 In practice, swap F12 with fn+F12.
 
-{{< karabiner-elements-complex-modifications-usage >}}
+{{< karabiner-elements-complex-modifications-json-usage >}}
 
 ```json
 {

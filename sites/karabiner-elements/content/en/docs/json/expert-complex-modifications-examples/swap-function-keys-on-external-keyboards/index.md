@@ -5,7 +5,7 @@ weight: 300
 
 - Use f3 as Mission Control on the built-in keyboard, and fn+f3 as Mission Control on external keyboards.
 
-{{< karabiner-elements-complex-modifications-usage >}}
+{{< karabiner-elements-complex-modifications-json-usage >}}
 
 ```json
 {

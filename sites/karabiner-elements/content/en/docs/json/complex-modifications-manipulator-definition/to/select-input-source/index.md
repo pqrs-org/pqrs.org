@@ -20,7 +20,7 @@ Switch the current input source by:
 - right_command+e: English
 - right_command+f: French
 
-{{< karabiner-elements-complex-modifications-usage >}}
+{{< karabiner-elements-complex-modifications-json-usage >}}
 
 ```json
 {

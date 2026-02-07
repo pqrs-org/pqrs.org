@@ -11,7 +11,7 @@ weight: 310
 
 Show the notification message while you press right shift key.
 
-{{< karabiner-elements-complex-modifications-usage >}}
+{{< karabiner-elements-complex-modifications-json-usage >}}
 
 ```json
 {

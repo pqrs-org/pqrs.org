@@ -15,7 +15,7 @@ Holding down <kbd>v</kbd> and pressing <kbd>j</kbd> or <kbd>k</kbd> enters arrow
 
 {{% /alert %}}
 
-{{< karabiner-elements-complex-modifications-usage >}}
+{{< karabiner-elements-complex-modifications-json-usage >}}
 
 ```json
 {

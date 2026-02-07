@@ -56,7 +56,7 @@ If you do not include `any` in `modifiers.optional`, your manipulator does not c
 
 This json defines manipulator which changes `escape` to `tab`.
 
-{{< karabiner-elements-complex-modifications-usage >}}
+{{< karabiner-elements-complex-modifications-json-usage >}}
 
 ```json
 {
@@ -85,7 +85,7 @@ This json defines manipulator which changes `escape` to `tab`.
 This json defines manipulator which changes `escape` to `tab`.<br/>
 (`left_shift` and `left_control` can be pressed.)
 
-{{< karabiner-elements-complex-modifications-usage >}}
+{{< karabiner-elements-complex-modifications-json-usage >}}
 
 ```json
 {
@@ -120,7 +120,7 @@ This json defines manipulator which changes `escape` to `tab`.<br/>
 
 This json defines manipulator which changes `control + h` to `delete_or_backspace`.<br/>
 
-{{< karabiner-elements-complex-modifications-usage >}}
+{{< karabiner-elements-complex-modifications-json-usage >}}
 
 ```json
 {
@@ -151,7 +151,7 @@ This json defines manipulator which changes `control + h` to `delete_or_backspac
 
 ### With `modifiers.mandatory` and `modifiers.optional`
 
-{{< karabiner-elements-complex-modifications-usage >}}
+{{< karabiner-elements-complex-modifications-json-usage >}}
 
 ```json
 {

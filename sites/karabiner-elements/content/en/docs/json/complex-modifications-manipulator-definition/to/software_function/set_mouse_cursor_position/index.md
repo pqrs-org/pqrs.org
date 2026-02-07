@@ -9,7 +9,7 @@ Move the mouse cursor to the specified point.
 
 Set the mouse cursor position to center of the first screen by right_shift+c.
 
-{{< karabiner-elements-complex-modifications-usage >}}
+{{< karabiner-elements-complex-modifications-json-usage >}}
 
 ```json
 {

@@ -41,7 +41,7 @@ Otherwise, there's a risk that the mouse cursor may become completely unmovable.
 
 Disable the scroll wheel on Logitech mice.
 
-{{< karabiner-elements-complex-modifications-usage >}}
+{{< karabiner-elements-complex-modifications-json-usage >}}
 
 ```json
 {
@@ -63,7 +63,7 @@ Disable the scroll wheel on Logitech mice.
 
 Reverse the scroll wheel direction in the Windows app.
 
-{{< karabiner-elements-complex-modifications-usage >}}
+{{< karabiner-elements-complex-modifications-json-usage >}}
 
 ```json
 {

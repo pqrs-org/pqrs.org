@@ -18,7 +18,7 @@ weight: 300
 
 Pressing the <kbd>a</kbd> key while holding the <kbd>escape</kbd> key launches Activity Monitor.
 
-{{< karabiner-elements-complex-modifications-usage >}}
+{{< karabiner-elements-complex-modifications-json-usage >}}
 
 ```json
 {
@@ -130,7 +130,7 @@ The arithmetic syntax used in `expression` and `key_up_expression` follows [expr
 
 Change <kbd>right_shift</kbd> x2 to <kbd>mission_control</kbd>.
 
-{{< karabiner-elements-complex-modifications-usage >}}
+{{< karabiner-elements-complex-modifications-json-usage >}}
 
 ```json
 {

@@ -13,7 +13,7 @@ Change an event when the evaluated result of the expression is true/false.
 
 Send Command+Q only when it has been pressed twice.
 
-{{< karabiner-elements-complex-modifications-usage >}}
+{{< karabiner-elements-complex-modifications-json-usage >}}
 
 ```json
 {

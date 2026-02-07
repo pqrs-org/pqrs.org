@@ -14,7 +14,7 @@ Move mouse pointer and scroll by `mouse_key`.
 | Click             | <kbd>right_shift + v</kbd>              |
 | Scroll wheel      | <kbd>right_command + arrow keys</kbd>   |
 
-{{< karabiner-elements-complex-modifications-usage >}}
+{{< karabiner-elements-complex-modifications-json-usage >}}
 
 ```json
 {
