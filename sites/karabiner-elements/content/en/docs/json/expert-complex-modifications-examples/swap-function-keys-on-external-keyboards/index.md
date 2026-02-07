@@ -5,6 +5,59 @@ weight: 300
 
 - Use f3 as Mission Control on the built-in keyboard, and fn+f3 as Mission Control on external keyboards.
 
+## JavaScript version
+
+{{< karabiner-elements-complex-modifications-js-usage >}}
+
+```js
+// JavaScript must be written in ECMAScript 5.1.
+
+function main() {
+    const manipulators = []
+
+    for (var i = 1; i <= 12; ++i) {
+        const fkey = 'f' + i
+
+        manipulators.push({
+            type: 'basic',
+            from: {
+                key_code: fkey,
+                modifiers: { mandatory: ['fn'], optional: ['any'] },
+            },
+            to: [{ key_code: fkey }],
+            conditions: [
+                {
+                    type: 'device_if',
+                    identifiers: [{ is_built_in_keyboard: false }],
+                },
+            ],
+        })
+
+        manipulators.push({
+            type: 'basic',
+            from: { key_code: fkey, modifiers: { optional: ['any'] } },
+            to: [{ key_code: fkey, modifiers: ['fn'] }],
+            conditions: [
+                {
+                    type: 'device_if',
+                    identifiers: [{ is_built_in_keyboard: false }],
+                },
+            ],
+        })
+    }
+
+    return {
+        description:
+            'Swap fn and non-fn behavior for function keys on external keyboards',
+        manipulators: manipulators,
+    }
+}
+
+main()
+```
+
+## JSON version
+
 {{< karabiner-elements-complex-modifications-json-usage >}}
 
 ```json
