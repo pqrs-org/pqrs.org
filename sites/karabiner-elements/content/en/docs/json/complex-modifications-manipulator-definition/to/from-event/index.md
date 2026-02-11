@@ -6,6 +6,9 @@ weight: 550
 Specifying `to.from_event` lets you send the key defined in from as-is.
 With this, using a rule like the one below, you can disable changes from other Complex Modifications when you enable pass-through mode with fn+p.
 
+This uses the property that in Complex Modifications, once an event is modified, it is no longer subject to subsequent rules.
+In other words, by handling events early with [`from.any`](/docs/json/complex-modifications-manipulator-definition/from/any/) and `to.from_event`, later rules are effectively disabled.
+
 {{% alert title="About the relationship between pass-through mode and Simple Modifications" color="primary" %}}
 
 Note that Simple Modifications are applied before Complex Modifications are evaluated, so this setting does not disable them.
@@ -25,6 +28,7 @@ In other words, in Complex Modifications it should look like this:
 {
     "description": "Toggle pass through mode by fn+p",
     "manipulators": [
+        // fn+p
         {
             "type": "basic",
             "from": {
@@ -72,6 +76,7 @@ In other words, in Complex Modifications it should look like this:
                 }
             ]
         },
+        // pass through any key events
         {
             "type": "basic",
             "from": {
