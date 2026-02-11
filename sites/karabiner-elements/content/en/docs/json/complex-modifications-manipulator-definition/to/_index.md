@@ -34,6 +34,7 @@ weight: 200
         ...
     ],
 
+    "from_event": true,
     "lazy": false,
     "repeat": true,
     "halt": false,
@@ -71,6 +72,7 @@ You cannot specify multiple items into one `to` entry.
 | [`sticky_modifier`](sticky-modifier/)               | Optional | A sticky modifier key definition                                                    |
 | [`software_function`](software_function/)           | Optional | A software function definition                                                      |
 | [`modifiers`](modifiers/)                           | Optional | Modifiers which are post with the event                                             |
+| [`from_event`](from-event/)                         | Optional | Send the key or button specified in `from`                                          |
 | [`lazy`](lazy/)                                     | Optional | Lazy modifier flag                                                                  |
 | [`repeat`](repeat/)                                 | Optional | Key repeat flag                                                                     |
 | [`halt`](halt/)                                     | Optional | A flag for `to_after_key_up`                                                        |
