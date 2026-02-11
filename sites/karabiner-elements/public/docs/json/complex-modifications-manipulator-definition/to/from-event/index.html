@@ -7,41 +7,29 @@
 <link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
 <link rel="apple-touch-icon" href="/favicons/apple-touch-icon-180x180.png" sizes="180x180">
 
-<title>keyboard_type_if, keyboard_type_unless | Karabiner-Elements</title>
-<meta name="description" content="Change an event if/unless the event is from specified type keyboard.
-The keyboard type mentioned here refers to the type of the virtual keyboard.
-Example Change control-[ key to escape, including JIS layout support.
-Note: the [ key is close_bracket in JIS layout
-💡 How to use this example { &#34;description&#34;: &#34;Change control-[ to escape&#34;, &#34;manipulators&#34;: [ { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;open_bracket&#34;, &#34;modifiers&#34;: { &#34;mandatory&#34;: [&#34;control&#34;], &#34;optional&#34;: [&#34;caps_lock&#34;] } }, &#34;to&#34;: [{ &#34;key_code&#34;: &#34;escape&#34; }], &#34;conditions&#34;: [ { &#34;keyboard_types&#34;: [&#34;ansi&#34;, &#34;iso&#34;], &#34;type&#34;: &#34;keyboard_type_if&#34; } ] }, { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;close_bracket&#34;, &#34;modifiers&#34;: { &#34;mandatory&#34;: [&#34;control&#34;], &#34;optional&#34;: [&#34;caps_lock&#34;] } }, &#34;to&#34;: [{ &#34;key_code&#34;: &#34;escape&#34; }], &#34;conditions&#34;: [ { &#34;keyboard_types&#34;: [&#34;jis&#34;], &#34;type&#34;: &#34;keyboard_type_if&#34; } ] } ] } Specification { &#34;type&#34;: &#34;keyboard_type_if&#34;, &#34;keyboard_types&#34;: [&#34;ansi&#34;, &#34;iso&#34;] } Name Required Description type Required &#34;keyboard_type_if&#34; or &#34;keyboard_type_unless&#34; keyboard_types Required An array of &#34;ansi&#34;, &#34;iso&#34; or &#34;jis&#34; description Optional A human-readable comment Multiple keyboard types keyboard_types are joined by “or”.">
-<meta property="og:url" content="/docs/json/complex-modifications-manipulator-definition/conditions/keyboard-type/">
+<title>to.from_event | Karabiner-Elements</title>
+<meta name="description" content="This feature is available since Karabiner-Elements 15.9.13 (beta). Specifying to.from_event lets you send the key defined in from as-is. With this, using a rule like the one below, you can disable changes from other Complex Modifications when you enable pass-through mode with fn&#43;p.
+This uses the property that in Complex Modifications, once an event is modified, it is no longer subject to subsequent rules. In other words, by handling events early with from.any and to.from_event, later rules are effectively disabled.">
+<meta property="og:url" content="/docs/json/complex-modifications-manipulator-definition/to/from-event/">
   <meta property="og:site_name" content="Karabiner-Elements">
-  <meta property="og:title" content="keyboard_type_if, keyboard_type_unless">
-  <meta property="og:description" content="Change an event if/unless the event is from specified type keyboard.
-The keyboard type mentioned here refers to the type of the virtual keyboard.
-Example Change control-[ key to escape, including JIS layout support.
-Note: the [ key is close_bracket in JIS layout
-💡 How to use this example { &#34;description&#34;: &#34;Change control-[ to escape&#34;, &#34;manipulators&#34;: [ { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;open_bracket&#34;, &#34;modifiers&#34;: { &#34;mandatory&#34;: [&#34;control&#34;], &#34;optional&#34;: [&#34;caps_lock&#34;] } }, &#34;to&#34;: [{ &#34;key_code&#34;: &#34;escape&#34; }], &#34;conditions&#34;: [ { &#34;keyboard_types&#34;: [&#34;ansi&#34;, &#34;iso&#34;], &#34;type&#34;: &#34;keyboard_type_if&#34; } ] }, { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;close_bracket&#34;, &#34;modifiers&#34;: { &#34;mandatory&#34;: [&#34;control&#34;], &#34;optional&#34;: [&#34;caps_lock&#34;] } }, &#34;to&#34;: [{ &#34;key_code&#34;: &#34;escape&#34; }], &#34;conditions&#34;: [ { &#34;keyboard_types&#34;: [&#34;jis&#34;], &#34;type&#34;: &#34;keyboard_type_if&#34; } ] } ] } Specification { &#34;type&#34;: &#34;keyboard_type_if&#34;, &#34;keyboard_types&#34;: [&#34;ansi&#34;, &#34;iso&#34;] } Name Required Description type Required &#34;keyboard_type_if&#34; or &#34;keyboard_type_unless&#34; keyboard_types Required An array of &#34;ansi&#34;, &#34;iso&#34; or &#34;jis&#34; description Optional A human-readable comment Multiple keyboard types keyboard_types are joined by “or”.">
+  <meta property="og:title" content="to.from_event">
+  <meta property="og:description" content="This feature is available since Karabiner-Elements 15.9.13 (beta). Specifying to.from_event lets you send the key defined in from as-is. With this, using a rule like the one below, you can disable changes from other Complex Modifications when you enable pass-through mode with fn&#43;p.
+This uses the property that in Complex Modifications, once an event is modified, it is no longer subject to subsequent rules. In other words, by handling events early with from.any and to.from_event, later rules are effectively disabled.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
     <meta property="og:image" content="https://karabiner-elements.pqrs.org/images/logo.png">
 
-  <meta itemprop="name" content="keyboard_type_if, keyboard_type_unless">
-  <meta itemprop="description" content="Change an event if/unless the event is from specified type keyboard.
-The keyboard type mentioned here refers to the type of the virtual keyboard.
-Example Change control-[ key to escape, including JIS layout support.
-Note: the [ key is close_bracket in JIS layout
-💡 How to use this example { &#34;description&#34;: &#34;Change control-[ to escape&#34;, &#34;manipulators&#34;: [ { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;open_bracket&#34;, &#34;modifiers&#34;: { &#34;mandatory&#34;: [&#34;control&#34;], &#34;optional&#34;: [&#34;caps_lock&#34;] } }, &#34;to&#34;: [{ &#34;key_code&#34;: &#34;escape&#34; }], &#34;conditions&#34;: [ { &#34;keyboard_types&#34;: [&#34;ansi&#34;, &#34;iso&#34;], &#34;type&#34;: &#34;keyboard_type_if&#34; } ] }, { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;close_bracket&#34;, &#34;modifiers&#34;: { &#34;mandatory&#34;: [&#34;control&#34;], &#34;optional&#34;: [&#34;caps_lock&#34;] } }, &#34;to&#34;: [{ &#34;key_code&#34;: &#34;escape&#34; }], &#34;conditions&#34;: [ { &#34;keyboard_types&#34;: [&#34;jis&#34;], &#34;type&#34;: &#34;keyboard_type_if&#34; } ] } ] } Specification { &#34;type&#34;: &#34;keyboard_type_if&#34;, &#34;keyboard_types&#34;: [&#34;ansi&#34;, &#34;iso&#34;] } Name Required Description type Required &#34;keyboard_type_if&#34; or &#34;keyboard_type_unless&#34; keyboard_types Required An array of &#34;ansi&#34;, &#34;iso&#34; or &#34;jis&#34; description Optional A human-readable comment Multiple keyboard types keyboard_types are joined by “or”.">
-  <meta itemprop="wordCount" content="178">
+  <meta itemprop="name" content="to.from_event">
+  <meta itemprop="description" content="This feature is available since Karabiner-Elements 15.9.13 (beta). Specifying to.from_event lets you send the key defined in from as-is. With this, using a rule like the one below, you can disable changes from other Complex Modifications when you enable pass-through mode with fn&#43;p.
+This uses the property that in Complex Modifications, once an event is modified, it is no longer subject to subsequent rules. In other words, by handling events early with from.any and to.from_event, later rules are effectively disabled.">
+  <meta itemprop="wordCount" content="326">
   <meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://karabiner-elements.pqrs.org/images/logo.png">
-  <meta name="twitter:title" content="keyboard_type_if, keyboard_type_unless">
-  <meta name="twitter:description" content="Change an event if/unless the event is from specified type keyboard.
-The keyboard type mentioned here refers to the type of the virtual keyboard.
-Example Change control-[ key to escape, including JIS layout support.
-Note: the [ key is close_bracket in JIS layout
-💡 How to use this example { &#34;description&#34;: &#34;Change control-[ to escape&#34;, &#34;manipulators&#34;: [ { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;open_bracket&#34;, &#34;modifiers&#34;: { &#34;mandatory&#34;: [&#34;control&#34;], &#34;optional&#34;: [&#34;caps_lock&#34;] } }, &#34;to&#34;: [{ &#34;key_code&#34;: &#34;escape&#34; }], &#34;conditions&#34;: [ { &#34;keyboard_types&#34;: [&#34;ansi&#34;, &#34;iso&#34;], &#34;type&#34;: &#34;keyboard_type_if&#34; } ] }, { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;close_bracket&#34;, &#34;modifiers&#34;: { &#34;mandatory&#34;: [&#34;control&#34;], &#34;optional&#34;: [&#34;caps_lock&#34;] } }, &#34;to&#34;: [{ &#34;key_code&#34;: &#34;escape&#34; }], &#34;conditions&#34;: [ { &#34;keyboard_types&#34;: [&#34;jis&#34;], &#34;type&#34;: &#34;keyboard_type_if&#34; } ] } ] } Specification { &#34;type&#34;: &#34;keyboard_type_if&#34;, &#34;keyboard_types&#34;: [&#34;ansi&#34;, &#34;iso&#34;] } Name Required Description type Required &#34;keyboard_type_if&#34; or &#34;keyboard_type_unless&#34; keyboard_types Required An array of &#34;ansi&#34;, &#34;iso&#34; or &#34;jis&#34; description Optional A human-readable comment Multiple keyboard types keyboard_types are joined by “or”.">
+  <meta name="twitter:title" content="to.from_event">
+  <meta name="twitter:description" content="This feature is available since Karabiner-Elements 15.9.13 (beta). Specifying to.from_event lets you send the key defined in from as-is. With this, using a rule like the one below, you can disable changes from other Complex Modifications when you enable pass-through mode with fn&#43;p.
+This uses the property that in Complex Modifications, once an event is modified, it is no longer subject to subsequent rules. In other words, by handling events early with from.any and to.from_event, later rules are effectively disabled.">
 <link rel="preload" href="/scss/main.min.ad03006917028e5fe1ae1e1b42b17992c0ca7ce84aed85e0df5ab9675702b990.css" as="style" integrity="sha256-rQMAaRcCjl/hrh4bQrF5ksDKfOhK7YXg31q5Z1cCuZA=" crossorigin="anonymous">
 <link href="/scss/main.min.ad03006917028e5fe1ae1e1b42b17992c0ca7ce84aed85e0df5ab9675702b990.css" rel="stylesheet" integrity="sha256-rQMAaRcCjl/hrh4bQrF5ksDKfOhK7YXg31q5Z1cCuZA=" crossorigin="anonymous">
 <script
@@ -480,8 +468,8 @@ Note: the [ key is close_bracket in JIS layout
   
 </li>
   </ul>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsjsoncomplex-modifications-manipulator-definitionto-li">
-  <input type="checkbox" id="m-docsjsoncomplex-modifications-manipulator-definitionto-check"/>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docsjsoncomplex-modifications-manipulator-definitionto-li">
+  <input type="checkbox" id="m-docsjsoncomplex-modifications-manipulator-definitionto-check" checked/>
   <label for="m-docsjsoncomplex-modifications-manipulator-definitionto-check"><a href="/docs/json/complex-modifications-manipulator-definition/to/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docsjsoncomplex-modifications-manipulator-definitionto"><span class="">to event definition</span></a></label>
   
   <ul class="ul-4 foldable">
@@ -536,9 +524,9 @@ Note: the [ key is close_bracket in JIS layout
   <input type="checkbox" id="m-docsjsoncomplex-modifications-manipulator-definitiontomodifiers-check"/>
   <label for="m-docsjsoncomplex-modifications-manipulator-definitiontomodifiers-check"><a href="/docs/json/complex-modifications-manipulator-definition/to/modifiers/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-docsjsoncomplex-modifications-manipulator-definitiontomodifiers"><span class="">to.modifiers</span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsjsoncomplex-modifications-manipulator-definitiontofrom-event-li">
-  <input type="checkbox" id="m-docsjsoncomplex-modifications-manipulator-definitiontofrom-event-check"/>
-  <label for="m-docsjsoncomplex-modifications-manipulator-definitiontofrom-event-check"><a href="/docs/json/complex-modifications-manipulator-definition/to/from-event/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-docsjsoncomplex-modifications-manipulator-definitiontofrom-event"><span class="">to.from_event</span></a></label>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-docsjsoncomplex-modifications-manipulator-definitiontofrom-event-li">
+  <input type="checkbox" id="m-docsjsoncomplex-modifications-manipulator-definitiontofrom-event-check" checked/>
+  <label for="m-docsjsoncomplex-modifications-manipulator-definitiontofrom-event-check"><a href="/docs/json/complex-modifications-manipulator-definition/to/from-event/" class="align-left ps-0  active td-sidebar-link td-sidebar-link__page" id="m-docsjsoncomplex-modifications-manipulator-definitiontofrom-event"><span class="td-sidebar-nav-active-item">to.from_event</span></a></label>
   
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsjsoncomplex-modifications-manipulator-definitiontolazy-li">
   <input type="checkbox" id="m-docsjsoncomplex-modifications-manipulator-definitiontolazy-check"/>
@@ -578,8 +566,8 @@ Note: the [ key is close_bracket in JIS layout
   <input type="checkbox" id="m-docsjsoncomplex-modifications-manipulator-definitionto-delayed-action-check"/>
   <label for="m-docsjsoncomplex-modifications-manipulator-definitionto-delayed-action-check"><a href="/docs/json/complex-modifications-manipulator-definition/to-delayed-action/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docsjsoncomplex-modifications-manipulator-definitionto-delayed-action"><span class="">to_delayed_action</span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docsjsoncomplex-modifications-manipulator-definitionconditions-li">
-  <input type="checkbox" id="m-docsjsoncomplex-modifications-manipulator-definitionconditions-check" checked/>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsjsoncomplex-modifications-manipulator-definitionconditions-li">
+  <input type="checkbox" id="m-docsjsoncomplex-modifications-manipulator-definitionconditions-check"/>
   <label for="m-docsjsoncomplex-modifications-manipulator-definitionconditions-check"><a href="/docs/json/complex-modifications-manipulator-definition/conditions/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docsjsoncomplex-modifications-manipulator-definitionconditions"><span class="">Conditions</span></a></label>
   
   <ul class="ul-4 foldable">
@@ -591,9 +579,9 @@ Note: the [ key is close_bracket in JIS layout
   <input type="checkbox" id="m-docsjsoncomplex-modifications-manipulator-definitionconditionsdevice-check"/>
   <label for="m-docsjsoncomplex-modifications-manipulator-definitionconditionsdevice-check"><a href="/docs/json/complex-modifications-manipulator-definition/conditions/device/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-docsjsoncomplex-modifications-manipulator-definitionconditionsdevice"><span class="">device_if, device_unless, device_exists_if, device_exists_unless</span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-docsjsoncomplex-modifications-manipulator-definitionconditionskeyboard-type-li">
-  <input type="checkbox" id="m-docsjsoncomplex-modifications-manipulator-definitionconditionskeyboard-type-check" checked/>
-  <label for="m-docsjsoncomplex-modifications-manipulator-definitionconditionskeyboard-type-check"><a href="/docs/json/complex-modifications-manipulator-definition/conditions/keyboard-type/" class="align-left ps-0  active td-sidebar-link td-sidebar-link__page" id="m-docsjsoncomplex-modifications-manipulator-definitionconditionskeyboard-type"><span class="td-sidebar-nav-active-item">keyboard_type_if, keyboard_type_unless</span></a></label>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsjsoncomplex-modifications-manipulator-definitionconditionskeyboard-type-li">
+  <input type="checkbox" id="m-docsjsoncomplex-modifications-manipulator-definitionconditionskeyboard-type-check"/>
+  <label for="m-docsjsoncomplex-modifications-manipulator-definitionconditionskeyboard-type-check"><a href="/docs/json/complex-modifications-manipulator-definition/conditions/keyboard-type/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-docsjsoncomplex-modifications-manipulator-definitionconditionskeyboard-type"><span class="">keyboard_type_if, keyboard_type_unless</span></a></label>
   
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsjsoncomplex-modifications-manipulator-definitionconditionsinput-source-li">
   <input type="checkbox" id="m-docsjsoncomplex-modifications-manipulator-definitionconditionsinput-source-check"/>
@@ -672,12 +660,7 @@ Note: the [ key is close_bracket in JIS layout
 
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#example">Example</a></li>
-    <li><a href="#specification">Specification</a>
-      <ul>
-        <li><a href="#multiple-keyboard-types">Multiple keyboard types</a></li>
-      </ul>
-    </li>
+    <li><a href="#pass-through-mode">Pass Through Mode</a></li>
   </ul>
 </nav>
 
@@ -699,22 +682,46 @@ Note: the [ key is close_bracket in JIS layout
   <li class="breadcrumb-item">
     <a href="/docs/json/complex-modifications-manipulator-definition/">complex_modifications manipulator definition</a></li>
   <li class="breadcrumb-item">
-    <a href="/docs/json/complex-modifications-manipulator-definition/conditions/">Conditions</a></li>
+    <a href="/docs/json/complex-modifications-manipulator-definition/to/">to event definition</a></li>
   <li class="breadcrumb-item active" aria-current="page">
-    keyboard_type_if, keyboard_type_unless</li>
+    to.from_event</li>
   </ol>
 </nav>
 <div class="td-content">
-	<h1>keyboard_type_if, keyboard_type_unless</h1>
+	<h1>to.from_event</h1>
 	
 	<header class="article-meta">
 		
 </header>
-	<p>Change an event if/unless the event is from specified type keyboard.</p>
-<p>The keyboard type mentioned here refers to <a href="/docs/manual/configuration/configure-keyboard-type/">the type of the virtual keyboard</a>.</p>
-<h2 id="example">Example</h2>
-<p>Change <code>control-[</code> key to <code>escape</code>, including JIS layout support.</p>
-<p>Note: <a href="/docs/help/troubleshooting/symbols-with-non-ansi-keyboard/">the <kbd>[</kbd> key is <kbd>close_bracket</kbd> in JIS layout</a></p>
+	
+
+<div class="alert alert-danger" role="alert">
+
+
+    This feature is available since Karabiner-Elements 15.9.13 (beta).
+
+</div>
+
+<p>Specifying <code>to.from_event</code> lets you send the key defined in from as-is.
+With this, using a rule like the one below, you can disable changes from other Complex Modifications when you enable pass-through mode with fn+p.</p>
+<p>This uses the property that in Complex Modifications, once an event is modified, it is no longer subject to subsequent rules.
+In other words, by handling events early with <a href="/docs/json/complex-modifications-manipulator-definition/from/any/"><code>from.any</code></a> and <code>to.from_event</code>, later rules are effectively disabled.</p>
+
+
+<div class="alert alert-primary" role="alert">
+<h4 class="alert-heading">About the relationship between pass-through mode and Simple Modifications</h4>
+
+    <p>Note that Simple Modifications are applied before Complex Modifications are evaluated, so this setting does not disable them.
+If you also want to disable Simple Modifications, do the same configuration in Complex Modifications instead of using Simple Modifications, and place it after the pass-through mode setting.
+In other words, in Complex Modifications it should look like this:</p>
+<ul>
+<li>Toggle pass through mode by fn+p</li>
+<li>Rules migrated from Simple Modifications</li>
+</ul>
+
+</div>
+
+<h2 id="pass-through-mode">Pass Through Mode</h2>
 <div class="highlight" style="margin-top: 0rem; margin-bottom: -2rem">
   <a
     class="d-inline-block"
@@ -731,82 +738,79 @@ Note: the [ key is close_bracket in JIS layout
 </div>
 
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;description&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;Change control-[ to escape&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;description&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;Toggle pass through mode by fn+p&#34;</span><span style="color:#000;font-weight:bold">,</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;manipulators&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#8f5902;font-style:italic">// fn+p
+</span></span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">{</span>
 </span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;type&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;basic&#34;</span><span style="color:#000;font-weight:bold">,</span>
 </span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;from&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
-</span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">&#34;key_code&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;open_bracket&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">&#34;key_code&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;p&#34;</span><span style="color:#000;font-weight:bold">,</span>
 </span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">&#34;modifiers&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
-</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;mandatory&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">&#34;control&#34;</span><span style="color:#000;font-weight:bold">],</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;mandatory&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">&#34;fn&#34;</span><span style="color:#000;font-weight:bold">],</span>
 </span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;optional&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">&#34;caps_lock&#34;</span><span style="color:#000;font-weight:bold">]</span>
 </span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">}</span>
 </span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">},</span>
-</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;to&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[{</span> <span style="color:#204a87;font-weight:bold">&#34;key_code&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;escape&#34;</span> <span style="color:#000;font-weight:bold">}],</span>
-</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;conditions&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;to&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
 </span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">{</span>
-</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;keyboard_types&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">&#34;ansi&#34;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">&#34;iso&#34;</span><span style="color:#000;font-weight:bold">],</span>
-</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;type&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;keyboard_type_if&#34;</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#8f5902;font-style:italic">// If it&#39;s off now, it will turn on, so display a message.
+</span></span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;set_notification_message&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#204a87;font-weight:bold">&#34;id&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;pass_through_mode&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#204a87;font-weight:bold">&#34;text&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;Pass Through Mode&#34;</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#000;font-weight:bold">},</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;conditions&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                            <span style="color:#204a87;font-weight:bold">&#34;type&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;variable_if&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>                            <span style="color:#204a87;font-weight:bold">&#34;name&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;pass_through_mode&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>                            <span style="color:#204a87;font-weight:bold">&#34;value&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#0000cf;font-weight:bold">0</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#000;font-weight:bold">]</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">},</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#8f5902;font-style:italic">// If it&#39;s on now, it will turn off, so hide the message.
+</span></span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;set_notification_message&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#204a87;font-weight:bold">&#34;id&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;pass_through_mode&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#204a87;font-weight:bold">&#34;text&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#000;font-weight:bold">},</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;conditions&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                            <span style="color:#204a87;font-weight:bold">&#34;type&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;variable_if&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>                            <span style="color:#204a87;font-weight:bold">&#34;name&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;pass_through_mode&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>                            <span style="color:#204a87;font-weight:bold">&#34;value&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#0000cf;font-weight:bold">1</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#000;font-weight:bold">]</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">},</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;set_variable&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#204a87;font-weight:bold">&#34;name&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;pass_through_mode&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#8f5902;font-style:italic">// pass_through_mode is 0 or 1.
+</span></span></span><span style="display:flex;"><span>                        <span style="color:#204a87;font-weight:bold">&#34;expression&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;pass_through_mode != 0 ? 0 : 1&#34;</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#000;font-weight:bold">}</span>
 </span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">}</span>
 </span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">]</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">},</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#8f5902;font-style:italic">// pass through any key events
+</span></span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">{</span>
 </span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;type&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;basic&#34;</span><span style="color:#000;font-weight:bold">,</span>
 </span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;from&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
-</span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">&#34;key_code&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;close_bracket&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">&#34;any&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;key_code&#34;</span><span style="color:#000;font-weight:bold">,</span>
 </span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">&#34;modifiers&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
-</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;mandatory&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">&#34;control&#34;</span><span style="color:#000;font-weight:bold">],</span>
-</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;optional&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">&#34;caps_lock&#34;</span><span style="color:#000;font-weight:bold">]</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;optional&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">&#34;any&#34;</span><span style="color:#000;font-weight:bold">]</span>
 </span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">}</span>
 </span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">},</span>
-</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;to&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[{</span> <span style="color:#204a87;font-weight:bold">&#34;key_code&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;escape&#34;</span> <span style="color:#000;font-weight:bold">}],</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;to&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;from_event&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#204a87;font-weight:bold">true</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">],</span>
 </span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;conditions&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
 </span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">{</span>
-</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;keyboard_types&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">&#34;jis&#34;</span><span style="color:#000;font-weight:bold">],</span>
-</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;type&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;keyboard_type_if&#34;</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;type&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;variable_if&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;name&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;pass_through_mode&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;value&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#0000cf;font-weight:bold">1</span>
 </span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">}</span>
 </span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">]</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">}</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">]</span>
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
-</span></span></code></pre></div><hr>
-<h2 id="specification">Specification</h2>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;type&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;keyboard_type_if&#34;</span><span style="color:#000;font-weight:bold">,</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;keyboard_types&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">&#34;ansi&#34;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">&#34;iso&#34;</span><span style="color:#000;font-weight:bold">]</span>
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
-</span></span></code></pre></div><table>
-  <thead>
-      <tr>
-          <th>Name</th>
-          <th>Required</th>
-          <th>Description</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td><code>type</code></td>
-          <td><strong>Required</strong></td>
-          <td><code>&quot;keyboard_type_if&quot;</code> or <code>&quot;keyboard_type_unless&quot;</code></td>
-      </tr>
-      <tr>
-          <td><code>keyboard_types</code></td>
-          <td><strong>Required</strong></td>
-          <td>An array of <code>&quot;ansi&quot;</code>, <code>&quot;iso&quot;</code> or <code>&quot;jis&quot;</code></td>
-      </tr>
-      <tr>
-          <td><code>description</code></td>
-          <td>Optional</td>
-          <td>A human-readable comment</td>
-      </tr>
-  </tbody>
-</table>
-<h3 id="multiple-keyboard-types">Multiple keyboard types</h3>
-<p><code>keyboard_types</code> are joined by &ldquo;or&rdquo;.</p>
-<p>The following condition is matched if the keyboard type is &ldquo;ansi&rdquo; <strong>or</strong> &ldquo;iso&rdquo;.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;type&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;keyboard_type_if&#34;</span><span style="color:#000;font-weight:bold">,</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;keyboard_types&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">&#34;ansi&#34;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">&#34;iso&#34;</span><span style="color:#000;font-weight:bold">]</span>
 </span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
 </span></span></code></pre></div>
 	
