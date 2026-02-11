@@ -23,7 +23,7 @@ This uses the property that in Complex Modifications, once an event is modified,
   <meta itemprop="name" content="to.from_event">
   <meta itemprop="description" content="This feature is available since Karabiner-Elements 15.9.13 (beta). Specifying to.from_event lets you send the key defined in from as-is. With this, using a rule like the one below, you can disable changes from other Complex Modifications when you enable pass-through mode with fn&#43;p.
 This uses the property that in Complex Modifications, once an event is modified, it is no longer subject to subsequent rules. In other words, by handling events early with from.any and to.from_event, later rules are effectively disabled.">
-  <meta itemprop="wordCount" content="326">
+  <meta itemprop="wordCount" content="385">
   <meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://karabiner-elements.pqrs.org/images/logo.png">
@@ -64,7 +64,7 @@ This uses the property that in Complex Modifications, once an event is modified,
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.c67b224c199e5485c7af42a07f6073a9.json"
+    data-offline-search-index-json-src="/offline-search-index.7381a68bb5332a80a3d52affb585f5e8.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="25"
   >
@@ -88,7 +88,7 @@ This uses the property that in Complex Modifications, once an event is modified,
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.c67b224c199e5485c7af42a07f6073a9.json"
+    data-offline-search-index-json-src="/offline-search-index.7381a68bb5332a80a3d52affb585f5e8.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="25"
   >
@@ -660,7 +660,12 @@ This uses the property that in Complex Modifications, once an event is modified,
 
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#pass-through-mode">Pass Through Mode</a></li>
+    <li><a href="#examples">Examples</a>
+      <ul>
+        <li><a href="#disable-complex-modifications-in-windows-app">Disable Complex Modifications in Windows App</a></li>
+        <li><a href="#pass-through-mode">Pass-Through Mode</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 
@@ -709,19 +714,26 @@ In other words, by handling events early with <a href="/docs/json/complex-modifi
 
 
 <div class="alert alert-primary" role="alert">
-<h4 class="alert-heading">About the relationship between pass-through mode and Simple Modifications</h4>
+<h4 class="alert-heading">Relationship with Simple Modifications</h4>
 
     <p>Note that Simple Modifications are applied before Complex Modifications are evaluated, so this setting does not disable them.
-If you also want to disable Simple Modifications, do the same configuration in Complex Modifications instead of using Simple Modifications, and place it after the pass-through mode setting.
+If you also want to disable Simple Modifications, do the same configuration in Complex Modifications instead of using Simple Modifications, and place it after the disable complex modifications setting.
 In other words, in Complex Modifications it should look like this:</p>
 <ul>
-<li>Toggle pass through mode by fn+p</li>
+<li>Disable Complex Modifications in Windows App</li>
+<li>Rules migrated from Simple Modifications</li>
+</ul>
+<p>or</p>
+<ul>
+<li>Toggle Pass-Through Mode by fn+p</li>
 <li>Rules migrated from Simple Modifications</li>
 </ul>
 
+
 </div>
 
-<h2 id="pass-through-mode">Pass Through Mode</h2>
+<h2 id="examples">Examples</h2>
+<h3 id="disable-complex-modifications-in-windows-app">Disable Complex Modifications in Windows App</h3>
 <div class="highlight" style="margin-top: 0rem; margin-bottom: -2rem">
   <a
     class="d-inline-block"
@@ -738,7 +750,48 @@ In other words, in Complex Modifications it should look like this:</p>
 </div>
 
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;description&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;Toggle pass through mode by fn+p&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;description&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;Disable Complex Modifications in Windows App&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;manipulators&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;type&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;basic&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;from&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">&#34;any&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;key_code&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">&#34;modifiers&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;optional&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">&#34;any&#34;</span><span style="color:#000;font-weight:bold">]</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">},</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;to&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;from_event&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#204a87;font-weight:bold">true</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">],</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;conditions&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;type&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;frontmost_application_if&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;bundle_identifiers&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">&#34;^com\\.microsoft\\.rdc\\.macos&#34;</span><span style="color:#000;font-weight:bold">]</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">]</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">]</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></div><h3 id="pass-through-mode">Pass-Through Mode</h3>
+<div class="highlight" style="margin-top: 0rem; margin-bottom: -2rem">
+  <a
+    class="d-inline-block"
+    style="
+      text-decoration: none;
+      background-color: #f8f8f8;
+      padding: 0.5rem;
+      border: solid var(--bs-border-color);
+      border-width: 1px 1px 0 1px;
+    "
+    href="/docs/manual/configuration/add-your-own-complex-modifications/"
+    >💡 How to use this example</a
+  >
+</div>
+
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;description&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;Toggle Pass-Through Mode by fn+p&#34;</span><span style="color:#000;font-weight:bold">,</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;manipulators&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#8f5902;font-style:italic">// fn+p
 </span></span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">{</span>
@@ -755,7 +808,7 @@ In other words, in Complex Modifications it should look like this:</p>
 </span></span><span style="display:flex;"><span>                    <span style="color:#8f5902;font-style:italic">// If it&#39;s off now, it will turn on, so display a message.
 </span></span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;set_notification_message&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
 </span></span><span style="display:flex;"><span>                        <span style="color:#204a87;font-weight:bold">&#34;id&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;pass_through_mode&#34;</span><span style="color:#000;font-weight:bold">,</span>
-</span></span><span style="display:flex;"><span>                        <span style="color:#204a87;font-weight:bold">&#34;text&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;Pass Through Mode&#34;</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#204a87;font-weight:bold">&#34;text&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;Pass-Through Mode&#34;</span>
 </span></span><span style="display:flex;"><span>                    <span style="color:#000;font-weight:bold">},</span>
 </span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;conditions&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
 </span></span><span style="display:flex;"><span>                        <span style="color:#000;font-weight:bold">{</span>
