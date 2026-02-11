@@ -128,7 +128,38 @@ The arithmetic syntax used in `expression` and `key_up_expression` follows [expr
 
 ### Expression examples
 
-Change <kbd>right_shift</kbd> x2 to <kbd>mission_control</kbd>.
+#### Toggle a value
+
+{{< karabiner-elements-complex-modifications-json-usage >}}
+
+```json
+{
+    "description": "Toggle my_flag by right_shift+m",
+    "manipulators": [
+        {
+            "type": "basic",
+            "from": {
+                "key_code": "m",
+                "modifiers": {
+                    "mandatory": ["right_shift"],
+                    "optional": ["any"]
+                }
+            },
+            "to": [
+                {
+                    "set_variable": {
+                        "name": "my_flag",
+                        // my_flag is 1 or 0
+                        "expression": "my_flag != 0 ? 0 : 1"
+                    }
+                }
+            ]
+        }
+    ]
+}
+```
+
+#### Change <kbd>right_shift</kbd> x2 to <kbd>mission_control</kbd>
 
 {{< karabiner-elements-complex-modifications-json-usage >}}
 
