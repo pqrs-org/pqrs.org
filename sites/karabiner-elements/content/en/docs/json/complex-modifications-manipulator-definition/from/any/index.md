@@ -3,6 +3,11 @@ title: 'from.any'
 weight: 100
 ---
 
+from.any is a way to match all events of the specified types. Its two main uses are:
+
+- Combine it with [`to.from_event`](/docs/json/complex-modifications-manipulator-definition/to/from-event/) to create pass-through mode
+- Combine it with filters such as [`variable_if`](/docs/json/complex-modifications-manipulator-definition/conditions/variable/) to disable key events under specific conditions.
+
 You can use `from.any` as follows.<br />
 These matches all key codes, consumer key codes or pointing buttons.
 
