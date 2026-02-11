@@ -3,6 +3,12 @@ title: 'to.from_event'
 weight: 550
 ---
 
+{{% alert color="danger" %}}
+
+This feature is available since Karabiner-Elements 15.9.13 (beta).
+
+{{% /alert %}}
+
 Specifying `to.from_event` lets you send the key defined in from as-is.
 With this, using a rule like the one below, you can disable changes from other Complex Modifications when you enable pass-through mode with fn+p.
 
