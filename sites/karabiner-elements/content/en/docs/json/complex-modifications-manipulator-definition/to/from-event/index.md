@@ -15,24 +15,63 @@ With this, using a rule like the one below, you can disable changes from other C
 This uses the property that in Complex Modifications, once an event is modified, it is no longer subject to subsequent rules.
 In other words, by handling events early with [`from.any`](/docs/json/complex-modifications-manipulator-definition/from/any/) and `to.from_event`, later rules are effectively disabled.
 
-{{% alert title="About the relationship between pass-through mode and Simple Modifications" color="primary" %}}
+{{% alert title="Relationship with Simple Modifications" color="primary" %}}
 
 Note that Simple Modifications are applied before Complex Modifications are evaluated, so this setting does not disable them.
-If you also want to disable Simple Modifications, do the same configuration in Complex Modifications instead of using Simple Modifications, and place it after the pass-through mode setting.
+If you also want to disable Simple Modifications, do the same configuration in Complex Modifications instead of using Simple Modifications, and place it after the disable complex modifications setting.
 In other words, in Complex Modifications it should look like this:
 
-- Toggle pass through mode by fn+p
+- Disable Complex Modifications in Windows App
+- Rules migrated from Simple Modifications
+
+or
+
+- Toggle Pass-Through Mode by fn+p
 - Rules migrated from Simple Modifications
 
 {{% /alert %}}
 
-## Pass Through Mode
+## Examples
+
+### Disable Complex Modifications in Windows App
 
 {{< karabiner-elements-complex-modifications-json-usage >}}
 
 ```json
 {
-    "description": "Toggle pass through mode by fn+p",
+    "description": "Disable Complex Modifications in Windows App",
+    "manipulators": [
+        {
+            "type": "basic",
+            "from": {
+                "any": "key_code",
+                "modifiers": {
+                    "optional": ["any"]
+                }
+            },
+            "to": [
+                {
+                    "from_event": true
+                }
+            ],
+            "conditions": [
+                {
+                    "type": "frontmost_application_if",
+                    "bundle_identifiers": ["^com\\.microsoft\\.rdc\\.macos"]
+                }
+            ]
+        }
+    ]
+}
+```
+
+### Pass-Through Mode
+
+{{< karabiner-elements-complex-modifications-json-usage >}}
+
+```json
+{
+    "description": "Toggle Pass-Through Mode by fn+p",
     "manipulators": [
         // fn+p
         {
@@ -49,7 +88,7 @@ In other words, in Complex Modifications it should look like this:
                     // If it's off now, it will turn on, so display a message.
                     "set_notification_message": {
                         "id": "pass_through_mode",
-                        "text": "Pass Through Mode"
+                        "text": "Pass-Through Mode"
                     },
                     "conditions": [
                         {
