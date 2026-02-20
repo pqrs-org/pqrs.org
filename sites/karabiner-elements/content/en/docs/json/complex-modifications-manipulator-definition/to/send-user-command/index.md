@@ -3,6 +3,12 @@ title: 'to.send_user_command'
 weight: 470
 ---
 
+{{% alert color="danger" %}}
+
+This feature is available since Karabiner-Elements 15.9.15 (beta).
+
+{{% /alert %}}
+
 `send_user_command` sends a command to an external program prepared by the user.
 
 This mechanism is designed to let an external program process input with even lower latency than [`shell_command`](/docs/json/complex-modifications-manipulator-definition/to/shell-command/).
