@@ -7,29 +7,41 @@
 <link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
 <link rel="apple-touch-icon" href="/favicons/apple-touch-icon-180x180.png" sizes="180x180">
 
-<title>Input event modification chaining | Karabiner-Elements</title>
-<meta name="description" content="Karabiner-Elements treats input events by the following order:
-Catch events from hardware. Apply Simple Modifications. Apply Complex Modifications. Apply Function Keys Modifications. (change f1…f12 keys to media controls) Apply System Settings &gt; Keyboard &gt; Keyboard Shortcuts… &gt; Modifier Keys. Post events to applications via a virtual keyboard.">
-<meta property="og:url" content="/docs/manual/misc/event-modification-chaining/">
+<title>to.send_user_command | Karabiner-Elements</title>
+<meta name="description" content="This feature is available since Karabiner-Elements 15.9.15 (beta). send_user_command sends a command to an external program prepared by the user.
+This mechanism is designed to let an external program process input with even lower latency than shell_command.
+To use send_user_command, you need to prepare an external program separately. There are mainly two approaches.
+One approach is to build a Swift program that integrates the Karabiner-Elements-user-command-receiver Swift package.
+A sample program built with this approach is Karabiner-Elements-user-command-server. It receives commands such as set_window_frames and show_window_frames and changes window positions.">
+<meta property="og:url" content="/docs/json/complex-modifications-manipulator-definition/to/send-user-command/">
   <meta property="og:site_name" content="Karabiner-Elements">
-  <meta property="og:title" content="Input event modification chaining">
-  <meta property="og:description" content="Karabiner-Elements treats input events by the following order:
-Catch events from hardware. Apply Simple Modifications. Apply Complex Modifications. Apply Function Keys Modifications. (change f1…f12 keys to media controls) Apply System Settings &gt; Keyboard &gt; Keyboard Shortcuts… &gt; Modifier Keys. Post events to applications via a virtual keyboard.">
+  <meta property="og:title" content="to.send_user_command">
+  <meta property="og:description" content="This feature is available since Karabiner-Elements 15.9.15 (beta). send_user_command sends a command to an external program prepared by the user.
+This mechanism is designed to let an external program process input with even lower latency than shell_command.
+To use send_user_command, you need to prepare an external program separately. There are mainly two approaches.
+One approach is to build a Swift program that integrates the Karabiner-Elements-user-command-receiver Swift package.
+A sample program built with this approach is Karabiner-Elements-user-command-server. It receives commands such as set_window_frames and show_window_frames and changes window positions.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
     <meta property="og:image" content="https://karabiner-elements.pqrs.org/images/logo.png">
 
-  <meta itemprop="name" content="Input event modification chaining">
-  <meta itemprop="description" content="Karabiner-Elements treats input events by the following order:
-Catch events from hardware. Apply Simple Modifications. Apply Complex Modifications. Apply Function Keys Modifications. (change f1…f12 keys to media controls) Apply System Settings &gt; Keyboard &gt; Keyboard Shortcuts… &gt; Modifier Keys. Post events to applications via a virtual keyboard.">
-  <meta itemprop="wordCount" content="47">
+  <meta itemprop="name" content="to.send_user_command">
+  <meta itemprop="description" content="This feature is available since Karabiner-Elements 15.9.15 (beta). send_user_command sends a command to an external program prepared by the user.
+This mechanism is designed to let an external program process input with even lower latency than shell_command.
+To use send_user_command, you need to prepare an external program separately. There are mainly two approaches.
+One approach is to build a Swift program that integrates the Karabiner-Elements-user-command-receiver Swift package.
+A sample program built with this approach is Karabiner-Elements-user-command-server. It receives commands such as set_window_frames and show_window_frames and changes window positions.">
+  <meta itemprop="wordCount" content="350">
   <meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://karabiner-elements.pqrs.org/images/logo.png">
-  <meta name="twitter:title" content="Input event modification chaining">
-  <meta name="twitter:description" content="Karabiner-Elements treats input events by the following order:
-Catch events from hardware. Apply Simple Modifications. Apply Complex Modifications. Apply Function Keys Modifications. (change f1…f12 keys to media controls) Apply System Settings &gt; Keyboard &gt; Keyboard Shortcuts… &gt; Modifier Keys. Post events to applications via a virtual keyboard.">
+  <meta name="twitter:title" content="to.send_user_command">
+  <meta name="twitter:description" content="This feature is available since Karabiner-Elements 15.9.15 (beta). send_user_command sends a command to an external program prepared by the user.
+This mechanism is designed to let an external program process input with even lower latency than shell_command.
+To use send_user_command, you need to prepare an external program separately. There are mainly two approaches.
+One approach is to build a Swift program that integrates the Karabiner-Elements-user-command-receiver Swift package.
+A sample program built with this approach is Karabiner-Elements-user-command-server. It receives commands such as set_window_frames and show_window_frames and changes window positions.">
 <link rel="preload" href="/scss/main.min.ad03006917028e5fe1ae1e1b42b17992c0ca7ce84aed85e0df5ab9675702b990.css" as="style" integrity="sha256-rQMAaRcCjl/hrh4bQrF5ksDKfOhK7YXg31q5Z1cCuZA=" crossorigin="anonymous">
 <link href="/scss/main.min.ad03006917028e5fe1ae1e1b42b17992c0ca7ce84aed85e0df5ab9675702b990.css" rel="stylesheet" integrity="sha256-rQMAaRcCjl/hrh4bQrF5ksDKfOhK7YXg31q5Z1cCuZA=" crossorigin="anonymous">
 <script
@@ -116,8 +128,8 @@ Catch events from hardware. Apply Simple Modifications. Apply Complex Modificati
   
 </li>
   </ul>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docsmanual-li">
-  <input type="checkbox" id="m-docsmanual-check" checked/>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsmanual-li">
+  <input type="checkbox" id="m-docsmanual-check"/>
   <label for="m-docsmanual-check"><a href="/docs/manual/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docsmanual"><span class="">Manual</span></a></label>
   
   <ul class="ul-2 foldable">
@@ -211,8 +223,8 @@ Catch events from hardware. Apply Simple Modifications. Apply Complex Modificati
   
 </li>
   </ul>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docsmanualmisc-li">
-  <input type="checkbox" id="m-docsmanualmisc-check" checked/>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsmanualmisc-li">
+  <input type="checkbox" id="m-docsmanualmisc-check"/>
   <label for="m-docsmanualmisc-check"><a href="/docs/manual/misc/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docsmanualmisc"><span class="">Misc</span></a></label>
   
   <ul class="ul-3 foldable">
@@ -228,9 +240,9 @@ Catch events from hardware. Apply Simple Modifications. Apply Complex Modificati
   <input type="checkbox" id="m-docsmanualmiscimplicit-behavior-check"/>
   <label for="m-docsmanualmiscimplicit-behavior-check"><a href="/docs/manual/misc/implicit-behavior/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-docsmanualmiscimplicit-behavior"><span class="">Implicit behavior</span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-docsmanualmiscevent-modification-chaining-li">
-  <input type="checkbox" id="m-docsmanualmiscevent-modification-chaining-check" checked/>
-  <label for="m-docsmanualmiscevent-modification-chaining-check"><a href="/docs/manual/misc/event-modification-chaining/" class="align-left ps-0  active td-sidebar-link td-sidebar-link__page" id="m-docsmanualmiscevent-modification-chaining"><span class="td-sidebar-nav-active-item">Input event modification chaining</span></a></label>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsmanualmiscevent-modification-chaining-li">
+  <input type="checkbox" id="m-docsmanualmiscevent-modification-chaining-check"/>
+  <label for="m-docsmanualmiscevent-modification-chaining-check"><a href="/docs/manual/misc/event-modification-chaining/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-docsmanualmiscevent-modification-chaining"><span class="">Input event modification chaining</span></a></label>
   
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsmanualmiscmultitouch-extension-li">
   <input type="checkbox" id="m-docsmanualmiscmultitouch-extension-check"/>
@@ -396,8 +408,8 @@ Catch events from hardware. Apply Simple Modifications. Apply Complex Modificati
   <input type="checkbox" id="m-docsreleasenotes-check"/>
   <label for="m-docsreleasenotes-check"><a href="/docs/releasenotes/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-docsreleasenotes"><span class="">Release notes</span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsjson-li">
-  <input type="checkbox" id="m-docsjson-check"/>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docsjson-li">
+  <input type="checkbox" id="m-docsjson-check" checked/>
   <label for="m-docsjson-check"><a href="/docs/json/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docsjson"><span class="">Karabiner Configuration Reference Manual</span></a></label>
   
   <ul class="ul-2 foldable">
@@ -436,8 +448,8 @@ Catch events from hardware. Apply Simple Modifications. Apply Complex Modificati
   <input type="checkbox" id="m-docsjsonroot-data-structure-check"/>
   <label for="m-docsjsonroot-data-structure-check"><a href="/docs/json/root-data-structure/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-docsjsonroot-data-structure"><span class="">karabiner.json data structure</span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsjsoncomplex-modifications-manipulator-definition-li">
-  <input type="checkbox" id="m-docsjsoncomplex-modifications-manipulator-definition-check"/>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docsjsoncomplex-modifications-manipulator-definition-li">
+  <input type="checkbox" id="m-docsjsoncomplex-modifications-manipulator-definition-check" checked/>
   <label for="m-docsjsoncomplex-modifications-manipulator-definition-check"><a href="/docs/json/complex-modifications-manipulator-definition/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docsjsoncomplex-modifications-manipulator-definition"><span class="">complex_modifications manipulator definition</span></a></label>
   
   <ul class="ul-3 foldable">
@@ -468,8 +480,8 @@ Catch events from hardware. Apply Simple Modifications. Apply Complex Modificati
   
 </li>
   </ul>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsjsoncomplex-modifications-manipulator-definitionto-li">
-  <input type="checkbox" id="m-docsjsoncomplex-modifications-manipulator-definitionto-check"/>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docsjsoncomplex-modifications-manipulator-definitionto-li">
+  <input type="checkbox" id="m-docsjsoncomplex-modifications-manipulator-definitionto-check" checked/>
   <label for="m-docsjsoncomplex-modifications-manipulator-definitionto-check"><a href="/docs/json/complex-modifications-manipulator-definition/to/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docsjsoncomplex-modifications-manipulator-definitionto"><span class="">to event definition</span></a></label>
   
   <ul class="ul-4 foldable">
@@ -520,9 +532,9 @@ Catch events from hardware. Apply Simple Modifications. Apply Complex Modificati
   
 </li>
   </ul>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsjsoncomplex-modifications-manipulator-definitiontosend-user-command-li">
-  <input type="checkbox" id="m-docsjsoncomplex-modifications-manipulator-definitiontosend-user-command-check"/>
-  <label for="m-docsjsoncomplex-modifications-manipulator-definitiontosend-user-command-check"><a href="/docs/json/complex-modifications-manipulator-definition/to/send-user-command/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-docsjsoncomplex-modifications-manipulator-definitiontosend-user-command"><span class="">to.send_user_command</span></a></label>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-docsjsoncomplex-modifications-manipulator-definitiontosend-user-command-li">
+  <input type="checkbox" id="m-docsjsoncomplex-modifications-manipulator-definitiontosend-user-command-check" checked/>
+  <label for="m-docsjsoncomplex-modifications-manipulator-definitiontosend-user-command-check"><a href="/docs/json/complex-modifications-manipulator-definition/to/send-user-command/" class="align-left ps-0  active td-sidebar-link td-sidebar-link__page" id="m-docsjsoncomplex-modifications-manipulator-definitiontosend-user-command"><span class="td-sidebar-nav-active-item">to.send_user_command</span></a></label>
   
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsjsoncomplex-modifications-manipulator-definitiontomodifiers-li">
   <input type="checkbox" id="m-docsjsoncomplex-modifications-manipulator-definitiontomodifiers-check"/>
@@ -662,7 +674,13 @@ Catch events from hardware. Apply Simple Modifications. Apply Complex Modificati
 
 
 
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#example">Example</a></li>
+    <li><a href="#socket-file-used-for-communication">Socket file used for communication</a></li>
+    <li><a href="#tips-for-implementing-your-own-program">Tips for implementing your own program</a></li>
+  </ul>
+</nav>
 
 
 
@@ -678,29 +696,159 @@ Catch events from hardware. Apply Simple Modifications. Apply Complex Modificati
   <li class="breadcrumb-item">
     <a href="/docs/">Documentation</a></li>
   <li class="breadcrumb-item">
-    <a href="/docs/manual/">Manual</a></li>
+    <a href="/docs/json/">Karabiner Configuration Reference Manual</a></li>
   <li class="breadcrumb-item">
-    <a href="/docs/manual/misc/">Misc</a></li>
+    <a href="/docs/json/complex-modifications-manipulator-definition/">complex_modifications manipulator definition</a></li>
+  <li class="breadcrumb-item">
+    <a href="/docs/json/complex-modifications-manipulator-definition/to/">to event definition</a></li>
   <li class="breadcrumb-item active" aria-current="page">
-    Input event modification chaining</li>
+    to.send_user_command</li>
   </ol>
 </nav>
 <div class="td-content">
-	<h1>Input event modification chaining</h1>
+	<h1>to.send_user_command</h1>
 	
 	<header class="article-meta">
 		
 </header>
-	<p>Karabiner-Elements treats input events by the following order:</p>
-<ol>
-<li>Catch events from hardware.</li>
-<li>Apply <strong>Simple Modifications</strong>.</li>
-<li>Apply <strong>Complex Modifications</strong>.</li>
-<li>Apply <strong>Function Keys Modifications</strong>. (change f1&hellip;f12 keys to media controls)</li>
-<li>Apply <strong>System Settings &gt; Keyboard &gt; Keyboard Shortcuts&hellip; &gt; Modifier Keys</strong>.</li>
-<li>Post events to applications via a virtual keyboard.</li>
-</ol>
+	
 
+<div class="alert alert-danger" role="alert">
+
+
+    This feature is available since Karabiner-Elements 15.9.15 (beta).
+
+</div>
+
+<p><code>send_user_command</code> sends a command to an external program prepared by the user.</p>
+<p>This mechanism is designed to let an external program process input with even lower latency than <a href="/docs/json/complex-modifications-manipulator-definition/to/shell-command/"><code>shell_command</code></a>.</p>
+<p>To use <code>send_user_command</code>, you need to prepare an external program separately.
+There are mainly two approaches.</p>
+<ol>
+<li>
+<p>One approach is to build a Swift program that integrates the <a href="https://github.com/pqrs-org/Karabiner-Elements-user-command-receiver">Karabiner-Elements-user-command-receiver</a> Swift package.</p>
+<p>A sample program built with this approach is <a href="https://github.com/tekezo/Karabiner-Elements-user-command-server">Karabiner-Elements-user-command-server</a>. It receives commands such as <code>set_window_frames</code> and <code>show_window_frames</code> and changes window positions.</p>
+</li>
+<li>
+<p>The other approach is to implement your own UNIX domain datagram server in any programming language you prefer,
+since <code>send_user_command</code> uses UNIX domain socket datagram communication.</p>
+</li>
+</ol>
+<h2 id="example">Example</h2>
+<p>This example is a configuration for <a href="https://github.com/tekezo/Karabiner-Elements-user-command-server">Karabiner-Elements-user-command-server</a>.</p>
+<div class="highlight" style="margin-top: 0rem; margin-bottom: -2rem">
+  <a
+    class="d-inline-block"
+    style="
+      text-decoration: none;
+      background-color: #f8f8f8;
+      padding: 0.5rem;
+      border: solid var(--bs-border-color);
+      border-width: 1px 1px 0 1px;
+    "
+    href="/docs/manual/configuration/add-your-own-complex-modifications/"
+    >💡 How to use this example</a
+  >
+</div>
+
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;description&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;Set window frames by right_shift+d&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;manipulators&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;type&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;basic&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;from&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">&#34;key_code&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;d&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">&#34;modifiers&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;mandatory&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">&#34;right_shift&#34;</span><span style="color:#000;font-weight:bold">],</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;optional&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">&#34;caps_lock&#34;</span><span style="color:#000;font-weight:bold">]</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">},</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;to&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;send_user_command&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#204a87;font-weight:bold">&#34;payload&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                            <span style="color:#204a87;font-weight:bold">&#34;command&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;set_window_frames&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>                            <span style="color:#204a87;font-weight:bold">&#34;frames&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+</span></span><span style="display:flex;"><span>                                <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                                    <span style="color:#204a87;font-weight:bold">&#34;bundle_identifier&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;com.apple.Terminal&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>                                    <span style="color:#204a87;font-weight:bold">&#34;x&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#0000cf;font-weight:bold">100</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>                                    <span style="color:#204a87;font-weight:bold">&#34;y&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#0000cf;font-weight:bold">80</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>                                    <span style="color:#204a87;font-weight:bold">&#34;width&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#0000cf;font-weight:bold">1200</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>                                    <span style="color:#204a87;font-weight:bold">&#34;height&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#0000cf;font-weight:bold">800</span>
+</span></span><span style="display:flex;"><span>                                <span style="color:#000;font-weight:bold">},</span>
+</span></span><span style="display:flex;"><span>                                <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                                    <span style="color:#204a87;font-weight:bold">&#34;bundle_identifier&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;com.apple.Safari&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>                                    <span style="color:#204a87;font-weight:bold">&#34;x&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;center&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>                                    <span style="color:#204a87;font-weight:bold">&#34;y&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#0000cf;font-weight:bold">60</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>                                    <span style="color:#204a87;font-weight:bold">&#34;width&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#0000cf;font-weight:bold">1400</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>                                    <span style="color:#204a87;font-weight:bold">&#34;height&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#0000cf;font-weight:bold">900</span>
+</span></span><span style="display:flex;"><span>                                <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>                            <span style="color:#000;font-weight:bold">]</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">]</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">]</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></div><h2 id="socket-file-used-for-communication">Socket file used for communication</h2>
+<p>Because <code>send_user_command</code> communicates over UNIX domain sockets, it uses a socket file.
+You can specify the socket path with <code>endpoint</code>. If omitted, the following path is used.</p>
+<p><code>/Library/Application Support/org.pqrs/tmp/user/{UID}/user_command_receiver.sock</code></p>
+
+
+<div class="alert alert-primary" role="alert">
+<h4 class="alert-heading">Note</h4>
+
+    <code>UID</code> is the currently logged-in user&rsquo;s ID, so the actual path will look like <code>/Library/Application Support/org.pqrs/tmp/user/501/user_command_receiver.sock</code>.
+
+</div>
+
+<h2 id="tips-for-implementing-your-own-program">Tips for implementing your own program</h2>
+<p>First, it is helpful to verify that your server can receive messages.
+For example, you can start a server with <a href="http://www.dest-unreach.org/socat/">socat</a> like this.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>socat -u UNIX-RECVFROM:/tmp/karabiner-elements-user-command-server.sock,fork STDOUT
+</span></span></code></pre></div><p>Then, with the following configuration, you can send a command by pressing <kbd>right_shift</kbd>+<kbd>a</kbd> and confirm it is received by <code>socat</code>.
+The receiver gets the payload as JSON-serialized data.</p>
+<div class="highlight" style="margin-top: 0rem; margin-bottom: -2rem">
+  <a
+    class="d-inline-block"
+    style="
+      text-decoration: none;
+      background-color: #f8f8f8;
+      padding: 0.5rem;
+      border: solid var(--bs-border-color);
+      border-width: 1px 1px 0 1px;
+    "
+    href="/docs/manual/configuration/add-your-own-complex-modifications/"
+    >💡 How to use this example</a
+  >
+</div>
+
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;description&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;send_user_command by right_shift+a&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;manipulators&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;type&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;basic&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;from&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">&#34;key_code&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;a&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">&#34;modifiers&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;mandatory&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">&#34;right_shift&#34;</span><span style="color:#000;font-weight:bold">],</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;optional&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">&#34;caps_lock&#34;</span><span style="color:#000;font-weight:bold">]</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">},</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">&#34;to&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#204a87;font-weight:bold">&#34;send_user_command&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#204a87;font-weight:bold">&#34;endpoint&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;/tmp/karabiner-elements-user-command-server.sock&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#204a87;font-weight:bold">&#34;payload&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;hello&#34;</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">]</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">]</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></div>
 	
 </div>
 
