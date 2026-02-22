@@ -284,6 +284,73 @@ This uses `"lazy": true` to prevent <kbd>left_control</kbd> from being sent imme
 }
 ```
 
+## Change `option+tab` to `command+tab`
+
+{{% alert color="danger" %}}
+
+This example is available since Karabiner-Elements 15.9.17 (beta).
+
+{{% /alert %}}
+
+{{< karabiner-elements-complex-modifications-json-usage >}}
+
+```json
+{
+    "description": "Change option+tab to command+tab",
+    "manipulators": [
+        // Change left_option to left_command if tab key is pressed together.
+        {
+            "type": "basic",
+            "from": {
+                "key_code": "left_option",
+                "modifiers": { "optional": ["any"] }
+            },
+            "to": [{ "key_code": "left_option" }],
+            "to_if_other_key_pressed": [
+                {
+                    "other_keys": [
+                        {
+                            "key_code": "tab",
+                            "modifiers": { "optional": ["any"] }
+                        }
+                    ],
+                    "to": [
+                        {
+                            "key_code": "left_command"
+                        }
+                    ]
+                }
+            ]
+        },
+
+        // Change right_option to right_command if tab key is pressed together.
+        {
+            "type": "basic",
+            "from": {
+                "key_code": "right_option",
+                "modifiers": { "optional": ["any"] }
+            },
+            "to": [{ "key_code": "right_option" }],
+            "to_if_other_key_pressed": [
+                {
+                    "other_keys": [
+                        {
+                            "key_code": "tab",
+                            "modifiers": { "optional": ["any"] }
+                        }
+                    ],
+                    "to": [
+                        {
+                            "key_code": "right_command"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
+```
+
 ## Change `right_shift x2` to `mission_control` (new style)
 
 This example is available since Karabiner-Elements 15.5.19.
