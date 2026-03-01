@@ -6,10 +6,17 @@ exclude_search: true
 body_class: release-notes
 ---
 
-Support for Thunderbird 149 and later will be provided by updating the metadata at
+Support for Thunderbird 150 and later will be provided by updating the metadata at
 <https://addons.thunderbird.net/en-US/thunderbird/addon/disable-draganddrop-tb-v2/>.
 
 As a result, new versions won't necessarily be released each time.
+
+## Disable DragAndDrop 6.9.0
+
+- 📅 Release date
+    - Jan 18, 2026
+- ⚡️ Improvements
+    - Extended the supported Thunderbird versions up to 149.
 
 ## Disable DragAndDrop 6.8.0
 
