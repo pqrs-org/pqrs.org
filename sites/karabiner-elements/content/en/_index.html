@@ -121,10 +121,16 @@ title = "Karabiner-Elements"
   <div>
     In macOS 26.4 Beta, we have confirmed an issue where key presses on the MacBook's built-in keyboard are not remapped and are entered as-is.
     (External keyboards remap key events correctly.)<br/>
-    We're currently working on a fix.
+    <br/>
+    In <a href="https://github.com/pqrs-org/Karabiner-Elements/releases/tag/alpha">the alpha release</a>,
+    a configuration has been introduced that uses CGEventTap to capture events from the built-in keyboard.<br/>
+    You can use it with macOS 26.4 Beta.<br/>
+    <br/>
+    Please note that this approach has not been thoroughly tested and comes with more limitations compared to the previous method.
+    The stable version of Karabiner-Elements used with an external keyboard is generally recommended.
   </div>
   <div class="text-end mt-2">
-    Feb 18, 2026
+    Mar 1, 2026
   </div>
 </div>
 
