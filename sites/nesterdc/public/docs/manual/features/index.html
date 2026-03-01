@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
 <meta name="robots" content="index, follow">
 <link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
 <link rel="apple-touch-icon" href="/favicons/apple-touch-icon-180x180.png" sizes="180x180">
@@ -23,8 +24,8 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Features">
   <meta name="twitter:description" content="Implemented NES emulation without frame drop in most games Sound emulation (including external chips) FDS emulation (disksys.rom is necessary) Save and Load Quick State Save and Load VMU State Save and Load Game Genie NNNesterJ style cheat code 4 people play simultaneously Frame skipping Screen adjustment NES external devices: Family Keyboard (controlled by Dreamcast Keyboard) Optical Gun (controlled by Dreamcast Controller, Dreamcast Mouse) Hyper Shot (controlled by Dreamcast Controller) Crazy Climber (controlled by Dreamcast Controller) Microphone (controlled by Dreamcast Controller) Arkanoid Paddle (controlled by Dreamcast Mouse) Mahjong Controller (controlled by Dreamcast Keyboard) Dreamcast devices: Dreamcast Controller Arcade Stick Dreamcast Keyboard (jp106 only) Dreamcast Mouse VGA VMU Directories support in ROM select menu Show information on VMU LCD VMU remove menu (You can erase VMU data easily) Virtual maple port binding on Dreamcast Controllers (You can bind DC &lt;=&gt; NES controllers correspondence, like binding Dreamcast Controller #2 as NES Controller #0) Not implemented Dreamcast device support: Dreamcast Light Gun Dreamcast Keyboard (except jp106) Dreamcast Racing Controller Dreamcast Twin Stick etc Known Bug: Generating petit-noise on Kirby-adventure (Hoshi-no-kirby).">
-<link rel="preload" href="/scss/main.min.ad03006917028e5fe1ae1e1b42b17992c0ca7ce84aed85e0df5ab9675702b990.css" as="style" integrity="sha256-rQMAaRcCjl/hrh4bQrF5ksDKfOhK7YXg31q5Z1cCuZA=" crossorigin="anonymous">
-<link href="/scss/main.min.ad03006917028e5fe1ae1e1b42b17992c0ca7ce84aed85e0df5ab9675702b990.css" rel="stylesheet" integrity="sha256-rQMAaRcCjl/hrh4bQrF5ksDKfOhK7YXg31q5Z1cCuZA=" crossorigin="anonymous">
+<link rel="preload" href="/scss/main.min.faaf5fe50f10efd4a5056522bbef574f5eb2a04fc06859a607b5c42bb5a0a926.css" as="style" integrity="sha256-&#43;q9f5Q8Q79SlBWUiu&#43;9XT16yoE/AaFmmB7XEK7WgqSY=" crossorigin="anonymous">
+<link href="/scss/main.min.faaf5fe50f10efd4a5056522bbef574f5eb2a04fc06859a607b5c42bb5a0a926.css" rel="stylesheet" integrity="sha256-&#43;q9f5Q8Q79SlBWUiu&#43;9XT16yoE/AaFmmB7XEK7WgqSY=" crossorigin="anonymous">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -38,20 +39,23 @@
   <body class="td-page">
     <header>
       <nav class="td-navbar js-navbar-scroll" data-bs-theme="dark">
-<div class="container-fluid flex-column flex-md-row">
+<div class="td-navbar-container container-fluid flex-column flex-md-row">
   <a class="navbar-brand" href="/"><span class="navbar-brand__logo navbar-logo"></span><span class="navbar-brand__name">NesterDC</span></a>
-  <div class="td-navbar-nav-scroll ms-md-auto" id="main_navbar">
+  <div class="td-navbar__main td-navbar-nav-scroll td-navbar-nav-scroll--indicator" id="main_navbar">
+    <div class="scroll-indicator scroll-left"></div>
     <ul class="navbar-nav">
       </ul>
+    <div class="scroll-indicator scroll-right"></div>
   </div>
-  <div class="d-none d-lg-block">
+  <div class="td-navbar__search d-none d-lg-block">
     <div class="td-search td-search--offline">
   <div class="td-search__icon"></div>
   <input
     type="search"
+    name="q"
     class="td-search__input form-control"
-    placeholder="Search this site…"
-    aria-label="Search this site…"
+    placeholder='Search this site…'
+    aria-label='Search this site…'
     autocomplete="off"
     
     data-offline-search-index-json-src="/offline-search-index.8ee2a4201088dd9be3813870ae47123a.json"
@@ -64,7 +68,7 @@
 </nav>
     </header>
     <div class="container-fluid td-outer">
-      <div class="td-main">
+      <div class="td-main" data-bs-spy="scroll" data-bs-target=".td-toc" data-bs-root-margin="0px 0px -10%">
         <div class="row flex-xl-nowrap">
           <aside class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
             <div id="td-sidebar-menu" class="td-sidebar__inner">
@@ -73,9 +77,10 @@
   <div class="td-search__icon"></div>
   <input
     type="search"
+    name="q"
     class="td-search__input form-control"
-    placeholder="Search this site…"
-    aria-label="Search this site…"
+    placeholder='Search this site…'
+    aria-label='Search this site…'
     autocomplete="off"
     
     data-offline-search-index-json-src="/offline-search-index.8ee2a4201088dd9be3813870ae47123a.json"
@@ -83,46 +88,45 @@
     data-offline-search-max-results="25"
   >
 </div>
-    <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ms-3 fas fa-bars" type="button" data-bs-toggle="collapse" data-bs-target="#td-section-nav" aria-controls="td-section-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <button class="btn btn-link td-sidebar__toggle" type="button" data-bs-toggle="collapse" data-bs-target="#td-section-nav" aria-controls="td-section-nav" aria-expanded="false" aria-label="Toggle section navigation">
     </button>
   </form>
   <nav class="td-sidebar-nav collapse foldable-nav" id="td-section-nav">
     <ul class="td-sidebar-nav__section pe-md-3 ul-0">
       <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docs-li">
-  <a href="/docs/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section tree-root" id="m-docs"><span class="">Documentation</span></a>
-  <ul class="ul-1">
-    <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docsmanual-li">
-  <input type="checkbox" id="m-docsmanual-check" checked/>
-  <label for="m-docsmanual-check"><a href="/docs/manual/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docsmanual"><span class="">Manual</span></a></label>
-  
-  <ul class="ul-2 foldable">
-    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsmanualbuttons-li">
-  <input type="checkbox" id="m-docsmanualbuttons-check"/>
-  <label for="m-docsmanualbuttons-check"><a href="/docs/manual/buttons/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-docsmanualbuttons"><span class="">Buttons</span></a></label>
-  
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-docsmanualfeatures-li">
-  <input type="checkbox" id="m-docsmanualfeatures-check" checked/>
-  <label for="m-docsmanualfeatures-check"><a href="/docs/manual/features/" class="align-left ps-0  active td-sidebar-link td-sidebar-link__page" id="m-docsmanualfeatures"><span class="td-sidebar-nav-active-item">Features</span></a></label>
-  
-</li>
-  </ul>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docspricing-li">
-  <input type="checkbox" id="m-docspricing-check"/>
-  <label for="m-docspricing-check"><a href="/docs/pricing/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-docspricing"><span class="">Pricing</span></a></label>
-  
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsreleasenotes-li">
-  <input type="checkbox" id="m-docsreleasenotes-check"/>
-  <label for="m-docsreleasenotes-check"><a href="/docs/releasenotes/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-docsreleasenotes"><span class="">Release notes</span></a></label>
-  
-</li>
-  </ul>
-</li>
+    <a href="/docs/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section tree-root" id="m-docs"><span class="">Documentation</span></a>
+    <ul class="ul-1">
+      <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docsmanual-li">
+    <input type="checkbox" id="m-docsmanual-check" checked/>
+    <label for="m-docsmanual-check"><a href="/docs/manual/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docsmanual"><span class="">Manual</span></a></label>
+    
+    <ul class="ul-2 foldable">
+      <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsmanualbuttons-li">
+    <input type="checkbox" id="m-docsmanualbuttons-check"/>
+    <label for="m-docsmanualbuttons-check"><a href="/docs/manual/buttons/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-docsmanualbuttons"><span class="">Buttons</span></a></label>
+    
+  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-docsmanualfeatures-li">
+    <input type="checkbox" id="m-docsmanualfeatures-check" checked/>
+    <label for="m-docsmanualfeatures-check"><a href="/docs/manual/features/" class="align-left ps-0  active td-sidebar-link td-sidebar-link__page" id="m-docsmanualfeatures"><span class="td-sidebar-nav-active-item">Features</span></a></label>
+    
+  </li>
+    </ul>
+  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docspricing-li">
+    <input type="checkbox" id="m-docspricing-check"/>
+    <label for="m-docspricing-check"><a href="/docs/pricing/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-docspricing"><span class="">Pricing</span></a></label>
+    
+  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsreleasenotes-li">
+    <input type="checkbox" id="m-docsreleasenotes-check"/>
+    <label for="m-docsreleasenotes-check"><a href="/docs/releasenotes/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-docsreleasenotes"><span class="">Release notes</span></a></label>
+    
+  </li>
+    </ul>
+  </li>
     </ul>
   </nav>
 </div>
-
           </aside>
-          <aside class="d-none d-xl-block col-xl-2 td-sidebar-toc d-print-none">
+          <aside class="td-sidebar-toc">
             <div class="td-page-meta ms-2 pb-1 pt-2 mb-0">
 
 </div>
@@ -237,8 +241,8 @@
 </footer>
 
     </div>
-    <script src="/js/main.min.403ff095218c662472dab60ed98ecbb19431682de5ac7c6159891241cd366af5.js" integrity="sha256-QD/wlSGMZiRy2rYO2Y7LsZQxaC3lrHxhWYkSQc02avU=" crossorigin="anonymous"></script>
-<script defer src="/js/click-to-copy.min.73478a7d4807698aed7e355eb23f9890ca18fea3158604c8471746d046702bad.js" integrity="sha256-c0eKfUgHaYrtfjVesj&#43;YkMoY/qMVhgTIRxdG0EZwK60=" crossorigin="anonymous"></script>
+    <script src="/js/main.min.c60de03ed52a34012f330c3e18c526426ec97efa9822bedfadbf14ffe917bc3e.js" integrity="sha256-xg3gPtUqNAEvMww&#43;GMUmQm7JfvqYIr7frb8U/&#43;kXvD4=" crossorigin="anonymous"></script>
+<script defer src="/js/click-to-copy.min.24576ff9fe9f85bb1948ecae52ce227cafce53757a3ad52301f2a79260f6b97d.js" integrity="sha256-JFdv&#43;f6fhbsZSOyuUs4ifK/OU3V6OtUjAfKnkmD2uX0=" crossorigin="anonymous"></script>
 <script src='/js/tabpane-persist.js'></script>
 
 

@@ -4,6 +4,7 @@
 	<meta name="generator" content="Hugo 0.155.2">
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
 <link rel="alternate" type="application/rss&#43;xml" href="/index.xml">
 <meta name="robots" content="index, follow">
 <link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
@@ -31,8 +32,8 @@ You can recognize the current input source very easily even if you are using ful
   <meta name="twitter:title" content="ShowyEdge">
   <meta name="twitter:description" content="ShowyEdge A visible indicator of the current input source for macOS. Download v6.3.0 Toggle Dropdown Download v6.3.0 For macOS 13 Ventura or later Download v5.7.0 For macOS 11 Big Sur or later Download v4.0.0 For macOS 10.15 Catalina Download v3.8.0 For macOS 10.14 Mojave For macOS 10.13 High Sierra For macOS 10.12 Sierra For macOS 10.11 El Capitan For macOS 10.10 Yosemite For macOS 10.9 Mavericks Download v2.2.0 For macOS 10.8 Mountain Lion For macOS 10.7 Lion Download v1.8.0 For macOS 10.6 Snow Leopard Learn more ShowyEdge works on macOS 13 Ventura or later. Release notes GitHub ShowyEdge displays a color bar at the top edge of the screen depending on the current input source.
 You can recognize the current input source very easily even if you are using fullscreen apps.">
-<link rel="preload" href="/scss/main.min.ad03006917028e5fe1ae1e1b42b17992c0ca7ce84aed85e0df5ab9675702b990.css" as="style" integrity="sha256-rQMAaRcCjl/hrh4bQrF5ksDKfOhK7YXg31q5Z1cCuZA=" crossorigin="anonymous">
-<link href="/scss/main.min.ad03006917028e5fe1ae1e1b42b17992c0ca7ce84aed85e0df5ab9675702b990.css" rel="stylesheet" integrity="sha256-rQMAaRcCjl/hrh4bQrF5ksDKfOhK7YXg31q5Z1cCuZA=" crossorigin="anonymous">
+<link rel="preload" href="/scss/main.min.faaf5fe50f10efd4a5056522bbef574f5eb2a04fc06859a607b5c42bb5a0a926.css" as="style" integrity="sha256-&#43;q9f5Q8Q79SlBWUiu&#43;9XT16yoE/AaFmmB7XEK7WgqSY=" crossorigin="anonymous">
+<link href="/scss/main.min.faaf5fe50f10efd4a5056522bbef574f5eb2a04fc06859a607b5c42bb5a0a926.css" rel="stylesheet" integrity="sha256-&#43;q9f5Q8Q79SlBWUiu&#43;9XT16yoE/AaFmmB7XEK7WgqSY=" crossorigin="anonymous">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -46,23 +47,26 @@ You can recognize the current input source very easily even if you are using ful
   <body class="td-home">
     <header>
       <nav class="td-navbar js-navbar-scroll" data-bs-theme="dark">
-<div class="container-fluid flex-column flex-md-row">
+<div class="td-navbar-container container-fluid flex-column flex-md-row">
   <a class="navbar-brand" href="/"><span class="navbar-brand__logo navbar-logo"></span><span class="navbar-brand__name">ShowyEdge</span></a>
-  <div class="td-navbar-nav-scroll ms-md-auto" id="main_navbar">
+  <div class="td-navbar__main td-navbar-nav-scroll td-navbar-nav-scroll--indicator" id="main_navbar">
+    <div class="scroll-indicator scroll-left"></div>
     <ul class="navbar-nav">
       <li class="nav-item">
         <a class="nav-link" href="/docs/"><span>Documentation</span></a>
       </li>
       </ul>
+    <div class="scroll-indicator scroll-right"></div>
   </div>
-  <div class="d-none d-lg-block">
+  <div class="td-navbar__search d-none d-lg-block">
     <div class="td-search td-search--offline">
   <div class="td-search__icon"></div>
   <input
     type="search"
+    name="q"
     class="td-search__input form-control"
-    placeholder="Search this site…"
-    aria-label="Search this site…"
+    placeholder='Search this site…'
+    aria-label='Search this site…'
     autocomplete="off"
     
     data-offline-search-index-json-src="/offline-search-index.6b8dc371fefbaff5218a6c824933bcc6.json"
@@ -81,7 +85,7 @@ You can recognize the current input source very easily even if you are using ful
 <!-- lead -->
 <!-- ======================================== -->
 
-<div><a id="td-block-0" class="td-offset-anchor"></a></div>
+<div><a id="td-block-0" class="td-anchor-no-extra-offset"></a></div>
 <section class="row td-box td-box--dark position-relative td-box--height-auto">
 <div class="col-12">
 <div class="container text-center td-arrow-down">
@@ -244,7 +248,7 @@ You can recognize the current input source very easily even if you are using ful
 <!-- section -->
 <!-- ======================================== -->
 
-<div><a id="td-block-1" class="td-offset-anchor"></a></div>
+<div><a id="td-block-1" class="td-anchor-no-extra-offset"></a></div>
 <section class="row td-box td-box--dark td-box--height-auto">
 <div class="col">
 <div class="container">
@@ -277,8 +281,8 @@ You can recognize the current input source very easily even if you are using ful
 </footer>
 
     </div>
-    <script src="/js/main.min.403ff095218c662472dab60ed98ecbb19431682de5ac7c6159891241cd366af5.js" integrity="sha256-QD/wlSGMZiRy2rYO2Y7LsZQxaC3lrHxhWYkSQc02avU=" crossorigin="anonymous"></script>
-<script defer src="/js/click-to-copy.min.73478a7d4807698aed7e355eb23f9890ca18fea3158604c8471746d046702bad.js" integrity="sha256-c0eKfUgHaYrtfjVesj&#43;YkMoY/qMVhgTIRxdG0EZwK60=" crossorigin="anonymous"></script>
+    <script src="/js/main.min.c60de03ed52a34012f330c3e18c526426ec97efa9822bedfadbf14ffe917bc3e.js" integrity="sha256-xg3gPtUqNAEvMww&#43;GMUmQm7JfvqYIr7frb8U/&#43;kXvD4=" crossorigin="anonymous"></script>
+<script defer src="/js/click-to-copy.min.24576ff9fe9f85bb1948ecae52ce227cafce53757a3ad52301f2a79260f6b97d.js" integrity="sha256-JFdv&#43;f6fhbsZSOyuUs4ifK/OU3V6OtUjAfKnkmD2uX0=" crossorigin="anonymous"></script>
 <script src='/js/tabpane-persist.js'></script>
 
 
