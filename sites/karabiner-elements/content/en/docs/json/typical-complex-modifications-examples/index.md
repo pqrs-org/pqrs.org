@@ -66,7 +66,7 @@ weight: 200
 
 ## Change mouse button4 and button5 to back and forward
 
-Change mouse button 4 and button 5 to <kbd>left_command</kbd>+<kbd>left_arrow</kbd> and <kbd>left_command</kbd>+<kbd>right_arrow</kbd>.
+Change mouse button 4 and button 5 to <kbd>[ + left_arrow</kbd> and <kbd>] + right_arrow</kbd>.
 
 [To use this configuration, you need to enable your mouse in the Devices tab](/docs/manual/configuration/configure-devices/).
 
@@ -81,7 +81,7 @@ Change mouse button 4 and button 5 to <kbd>left_command</kbd>+<kbd>left_arrow</k
             "from": { "pointing_button": "button4" },
             "to": [
                 {
-                    "key_code": "left_arrow",
+                    "key_code": "open_bracket",
                     "modifiers": ["left_command"]
                 }
             ]
@@ -91,7 +91,7 @@ Change mouse button 4 and button 5 to <kbd>left_command</kbd>+<kbd>left_arrow</k
             "from": { "pointing_button": "button5" },
             "to": [
                 {
-                    "key_code": "right_arrow",
+                    "key_code": "close_bracket",
                     "modifiers": ["left_command"]
                 }
             ]
