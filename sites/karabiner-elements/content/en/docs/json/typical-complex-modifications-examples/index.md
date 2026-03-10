@@ -100,6 +100,17 @@ Change mouse button 4 and button 5 to <kbd>[ + left_arrow</kbd> and <kbd>] + rig
 }
 ```
 
+{{% alert title="Note" color="primary" %}}
+If the virtual keyboard type is set to something other than ANSI, you need to adjust the key codes to match that keyboard type.
+
+For example, if it is set to JIS, buttons must be configured as follows:
+
+- Change button4 to <kbd>left_command + close_bracket</kbd>
+- Change button5 to <kbd>left_command + backslash</kbd>
+
+See [key code mappings](/docs/help/troubleshooting/symbols-with-non-ansi-keyboard/).
+{{% /alert %}}
+
 ## Change `caps_lock` to `escape` on the built-in keyboard
 
 - An example of using modifiers.optional == ["any"]: [from.modifiers](/docs/json/complex-modifications-manipulator-definition/from/modifiers/)
