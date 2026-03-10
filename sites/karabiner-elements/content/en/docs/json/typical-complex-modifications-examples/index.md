@@ -64,6 +64,42 @@ weight: 200
 }
 ```
 
+## Change mouse button4 and button5 to back and forward
+
+Change mouse button 4 and button 5 to <kbd>left_command</kbd>+<kbd>left_arrow</kbd> and <kbd>left_command</kbd>+<kbd>right_arrow</kbd>.
+
+[To use this configuration, you need to enable your mouse in the Devices tab](/docs/manual/configuration/configure-devices/).
+
+{{< karabiner-elements-complex-modifications-json-usage >}}
+
+```json
+{
+    "description": "Change mouse button4 and button5 to back and forward",
+    "manipulators": [
+        {
+            "type": "basic",
+            "from": { "pointing_button": "button4" },
+            "to": [
+                {
+                    "key_code": "left_arrow",
+                    "modifiers": ["left_command"]
+                }
+            ]
+        },
+        {
+            "type": "basic",
+            "from": { "pointing_button": "button5" },
+            "to": [
+                {
+                    "key_code": "right_arrow",
+                    "modifiers": ["left_command"]
+                }
+            ]
+        }
+    ]
+}
+```
+
 ## Change `caps_lock` to `escape` on the built-in keyboard
 
 - An example of using modifiers.optional == ["any"]: [from.modifiers](/docs/json/complex-modifications-manipulator-definition/from/modifiers/)
