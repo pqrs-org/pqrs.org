@@ -120,9 +120,26 @@ You can see the current variable values by EventViewer > Variables.
 
 ## System variables
 
-Some variables are automatically set by Karabiner-Elements.
+The system variables are automatically set by Karabiner-Elements.
 
-| Name                                         | Type    | Data source                                                                          | Available since           |
-| -------------------------------------------- | ------- | ------------------------------------------------------------------------------------ | ------------------------- |
-| `system.scroll_direction_is_natural`         | boolean | The scroll direction setting of mouse in System Settings                             | Karabiner-Elements 15.2.3 |
-| `system.use_fkeys_as_standard_function_keys` | boolean | The "Use all F1, F2, etc. keys as standard function keys" setting in System Settings | Karabiner-Elements 15.2.3 |
+| Name                                         | Type    | Data source                                                                                      | Available since            |
+| -------------------------------------------- | ------- | ------------------------------------------------------------------------------------------------ | -------------------------- |
+| `system.scroll_direction_is_natural`         | boolean | The scroll direction setting of mouse in System Settings                                         | Karabiner-Elements 15.2.3  |
+| `system.use_fkeys_as_standard_function_keys` | boolean | The "Use all F1, F2, etc. keys as standard function keys" setting in System Settings             | Karabiner-Elements 15.2.3  |
+| `system.now.milliseconds`                    | integer | The current UNIX time in milliseconds                                                            | Karabiner-Elements 15.5.19 |
+| `system.temporarily_ignore_all_devices`      | boolean | True when "Temporarily turns off all Karabiner-Elements modifications" is enabled in EventViewer | Karabiner-Elements 15.5.91 |
+
+## Accessibility variables
+
+Information about the Focused UI Element obtained through the Accessibility API is automatically set by Karabiner-Elements.
+You can use these variables to [modify behavior only unless an input field is focused](/docs/json/typical-complex-modifications-examples/#open-files-in-finder-using-the-return-key), for example.
+
+| Name                                                  | Type    | Data source                                     | Available since             |
+| ----------------------------------------------------- | ------- | ----------------------------------------------- | --------------------------- |
+| `accessibility.focused_ui_element.role_string`        | string  | kAXRoleAttribute                                | Karabiner-Elements 15.90.22 |
+| `accessibility.focused_ui_element.subrole_string`     | string  | kAXSubroleAttribute                             | Karabiner-Elements 15.90.22 |
+| `accessibility.focused_ui_element.title_string`       | string  | kAXTitleAttribute                               | Karabiner-Elements 15.90.22 |
+| `accessibility.focused_ui_element.window_position_x`  | integer | kAXWindowAttribute or kAXFocusedWindowAttribute | Karabiner-Elements 15.90.17 |
+| `accessibility.focused_ui_element.window_position_y`  | integer | kAXWindowAttribute or kAXFocusedWindowAttribute | Karabiner-Elements 15.90.17 |
+| `accessibility.focused_ui_element.window_size_height` | integer | kAXWindowAttribute or kAXFocusedWindowAttribute | Karabiner-Elements 15.90.17 |
+| `accessibility.focused_ui_element.window_size_width`  | integer | kAXWindowAttribute or kAXFocusedWindowAttribute | Karabiner-Elements 15.90.17 |

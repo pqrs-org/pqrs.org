@@ -191,7 +191,53 @@ See [key code mappings](/docs/help/troubleshooting/symbols-with-non-ansi-keyboar
 }
 ```
 
-## Disable `command-l` on Finder
+## Open files in Finder using the return key
+
+{{% alert color="danger" %}}
+
+This example is available since Karabiner-Elements 15.90.22 (beta).
+
+{{% /alert %}}
+
+In this configuration, the return key remains unchanged during text input (e.g., when renaming files or performing a search) by checking `accessibility.focused_ui_element.role_string`.
+
+- Use a system-provided variable: [expression_if, expression_unless](/docs/json/complex-modifications-manipulator-definition/conditions/expression/)
+- Application-specific rule: [frontmost_application_if, frontmost_application_unless](/docs/json/complex-modifications-manipulator-definition/conditions/frontmost-application/)
+
+{{< karabiner-elements-complex-modifications-json-usage >}}
+
+```json
+{
+    "description": "Open files in Finder using the return key",
+    "manipulators": [
+        {
+            "type": "basic",
+            "from": {
+                "key_code": "return_or_enter",
+                "modifiers": { "optional": ["caps_lock"] }
+            },
+            "to": [
+                {
+                    "key_code": "o",
+                    "modifiers": ["left_command"]
+                }
+            ],
+            "conditions": [
+                {
+                    "type": "frontmost_application_if",
+                    "bundle_identifiers": ["^com\\.apple\\.finder$"]
+                },
+                {
+                    "type": "expression_unless",
+                    "expression": "accessibility.focused_ui_element.role_string like 'AXText*'"
+                }
+            ]
+        }
+    ]
+}
+```
+
+## Disable `command-l` in Finder
 
 - Application-specific rule: [frontmost_application_if, frontmost_application_unless](/docs/json/complex-modifications-manipulator-definition/conditions/frontmost-application/)
 
@@ -199,7 +245,7 @@ See [key code mappings](/docs/help/troubleshooting/symbols-with-non-ansi-keyboar
 
 ```json
 {
-    "description": "Disable command-l on Finder",
+    "description": "Disable command-l in Finder",
     "manipulators": [
         {
             "type": "basic",

@@ -91,12 +91,8 @@ Send Command+Q only when it has been pressed twice.
 ## Expression specification
 
 `expression` allows you to write arithmetic expressions,
-and you can use variables set by `set_variable` manipulations and the following system-provided variables.
+and you can use variables set by `set_variable` manipulations and the system-provided variables (e.g, `system.*`, `accessibility.*`).
 If an undefined variable appears in the expression, its value is treated as 0.
-
-- system.now.milliseconds
-- system.scroll_direction_is_natural
-- system.use_fkeys_as_standard_function_keys
 
 {{% alert color="primary" %}}
 
