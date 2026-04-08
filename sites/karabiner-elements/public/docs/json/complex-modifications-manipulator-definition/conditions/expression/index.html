@@ -30,7 +30,7 @@ Example Send Command&#43;Q only when it has been pressed twice.
 Change an event when the evaluated result of the expression is true/false.
 Example Send Command&#43;Q only when it has been pressed twice.
 💡 How to use this example { &#34;description&#34;: &#34;Prevent unintended Command&#43;Q presses by ignoring it unless it&#39;s double-pressed&#34;, &#34;manipulators&#34;: [ { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;q&#34;, &#34;modifiers&#34;: { &#34;mandatory&#34;: [&#34;command&#34;], &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [ { &#34;key_code&#34;: &#34;q&#34;, &#34;modifiers&#34;: [&#34;command&#34;] } ], &#34;conditions&#34;: [ { &#34;type&#34;: &#34;expression_if&#34;, &#34;expression&#34;: &#34;command_q_expiration &gt; system.now.milliseconds&#34; } ] }, { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;q&#34;, &#34;modifiers&#34;: { &#34;mandatory&#34;: [&#34;command&#34;], &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [ { &#34;set_variable&#34;: { &#34;name&#34;: &#34;command_q_expiration&#34;, &#34;expression&#34;: &#34;system.now.milliseconds &#43; 300&#34; } } ] } ] } Specification Tip expression_if and expression_unless are designed to be used with the following features:">
-  <meta itemprop="wordCount" content="219">
+  <meta itemprop="wordCount" content="218">
   <meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://karabiner-elements.pqrs.org/images/logo.png">
@@ -76,7 +76,7 @@ Example Send Command&#43;Q only when it has been pressed twice.
     aria-label='Search this site…'
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.6144e69597bce1ebd2b299e49984e7fb.json"
+    data-offline-search-index-json-src="/offline-search-index.3a9bad86639112423e871de1d6d24260.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="25"
   >
@@ -101,7 +101,7 @@ Example Send Command&#43;Q only when it has been pressed twice.
     aria-label='Search this site…'
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.6144e69597bce1ebd2b299e49984e7fb.json"
+    data-offline-search-index-json-src="/offline-search-index.3a9bad86639112423e871de1d6d24260.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="25"
   >
@@ -818,13 +818,8 @@ Example Send Command&#43;Q only when it has been pressed twice.
 </table>
 <h2 id="expression-specification">Expression specification</h2>
 <p><code>expression</code> allows you to write arithmetic expressions,
-and you can use variables set by <code>set_variable</code> manipulations and the following system-provided variables.
+and you can use variables set by <code>set_variable</code> manipulations and the system-provided variables (e.g, <code>system.*</code>, <code>accessibility.*</code>).
 If an undefined variable appears in the expression, its value is treated as 0.</p>
-<ul>
-<li>system.now.milliseconds</li>
-<li>system.scroll_direction_is_natural</li>
-<li>system.use_fkeys_as_standard_function_keys</li>
-</ul>
 <div class="alert alert-primary" role="alert">
 <p>The arithmetic syntax used in <code>expression</code> follows <a href="https://www.partow.net/programming/exprtk/index.html">exprtk</a>.</p>
 </div>
