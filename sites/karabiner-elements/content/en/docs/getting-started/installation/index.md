@@ -27,64 +27,42 @@ Open Karabiner-Elements from Apps or Finder.
 
 {{< local-image src="images/spotlight@2x.png" >}}
 
-## Setup your keyboard layout
+## Grant permissions to Karabiner-Elements in System Settings
 
-{{% alert color="success" %}}
+When you open Karabiner-Elements Settings, instructions such as allowing Background Services will be displayed.
+Follow those instructions and grant the required permissions in System Settings.
 
-Choose your keyboard layout. (ANSI, ISO or JIS).
+Specifically, the following permissions are required:
 
-This setting changes the behavior of some keys (symbol keys) on the keyboard.
-If the printed characters on your keyboard do not match what is input, please change this later in the Virtual Keyboard settings.
+- Allow privileged and non-privileged background services to run
+- Grant Accessibility permission
+- Grant Input Monitoring permission
+- Allow Driver Extension for the virtual keyboard and mouse
 
-{{< local-image src="images/settings-keyboard-type@2x.png" >}}
+(Normally, Accessibility permission also covers Input Monitoring permission, so it will be granted automatically when you allow Accessibility.)
 
-{{% /alert %}}
+{{< local-image src="images/setup-services@2x.png" >}}
 
-## Keep Login Items enabled
-
-{{% alert color="success" %}}
-
-The background item notifications will be shown after the installation.
-
-{{< local-image src="images/login-items@2x.png" >}}
-
-The following Login Items in System Settings must be enabled.
-
-- `Karabiner-Elements Non-Privileged Agents v2`
-- `Karabiner-Elements Privileged Daemons v2`
-
-{{< local-image src="images/settings-services@2x.png" >}}
-
-{{% /alert %}}
-
-## Grant Input Monitoring to Karabiner-Elements processes
-
-{{% alert color="success" %}}
-
-1.  The Keystroke Receiving alert will be shown.
-    {{< local-image src="images/input-monitoring-dialog@2x.png" >}}
-2.  Press the `Open System Settings` button and enable `Karabiner-Core-Service`.
-    {{< local-image src="images/settings-input-monitoring@2x.png" >}}
-
-{{% /alert %}}
-
-## Allow system software which provides virtual devices for Karabiner-Elements
-
-{{% alert color="success" %}}
-
-1.  Click the "Open System Settings" button in the dialog below, or open "Login Items & Extensions" from System Settings.
-    {{< local-image src="images/system-extension-blocked@2x.png" >}}
-2.  Then enable `.Karabiner-VirtualHIDDevice-Manager`.
-    {{< local-image src="images/settings-driver-extensions@2x.png" >}}
-    {{< local-image src="images/driver-extensions@2x.png" >}}
-
-{{% /alert %}}
-
-{{% alert title="Note" color="primary" %}}
+{{% alert title="Troubleshooting" color="danger" %}}
 
 If the driver extension fails to appear in System Settings or you run into similar issues, check this page:
 
 - [Driver alert keeps showing up](/docs/help/troubleshooting/driver-alert-keeps-showing-up/)
+
+{{% /alert %}}
+
+## Choose your keyboard layout
+
+When setup is complete, you will be asked which virtual keyboard layout to use.
+Choose the same type as the keyboard you are using.
+(You can change this setting later from the Virtual Keyboard tab.)
+
+{{< local-image src="images/setup-keyboard-type@2x.png" >}}
+
+{{% alert title="Note" color="success" %}}
+
+This setting changes the behavior of some keys (symbol keys) on the keyboard.
+If the printed characters on your keyboard do not match what is input, please change this in the Virtual Keyboard settings.
 
 {{% /alert %}}
 
