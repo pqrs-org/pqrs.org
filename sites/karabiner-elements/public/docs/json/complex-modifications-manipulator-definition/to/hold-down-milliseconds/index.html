@@ -43,8 +43,8 @@ The value is an interval of key_down and key_up when key_down and key_up events 
 Note Generally to.hold_down_milliseconds is used with &#34;key_code&#34;: &#34;caps_lock&#34;.
 Example The following json changes caps_lock key to sending caps_lock key_down, wait 200 milliseconds, caps_lock key_up.
 💡 How to use this example { &#34;description&#34;: &#34;Disable the accidental keystroke prevention of Caps Lock&#34;, &#34;manipulators&#34;: [ { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;caps_lock&#34;, &#34;modifiers&#34;: { &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [ { &#34;key_code&#34;: &#34;caps_lock&#34;, &#34;hold_down_milliseconds&#34;: 200 }, { &#34;key_code&#34;: &#34;vk_none&#34; } ] } ] } Note vk_none is needed to ignore the hardware key_up event. Without adding vk_none, a key_down and key_up event for caps_lock will be sent for each hardware key_down and key_up event, meaning hold_down_milliseconds will not be applied between the key_down and key_up events.">
-<link rel="preload" href="/scss/main.min.faaf5fe50f10efd4a5056522bbef574f5eb2a04fc06859a607b5c42bb5a0a926.css" as="style" integrity="sha256-&#43;q9f5Q8Q79SlBWUiu&#43;9XT16yoE/AaFmmB7XEK7WgqSY=" crossorigin="anonymous">
-<link href="/scss/main.min.faaf5fe50f10efd4a5056522bbef574f5eb2a04fc06859a607b5c42bb5a0a926.css" rel="stylesheet" integrity="sha256-&#43;q9f5Q8Q79SlBWUiu&#43;9XT16yoE/AaFmmB7XEK7WgqSY=" crossorigin="anonymous">
+<link rel="preload" href="/scss/main.min.5bd8168c229059ee04483db8ad8b5246a36d0bf1374aff129ae197961d90d0cb.css" as="style" integrity="sha256-W9gWjCKQWe4ESD24rYtSRqNtC/E3Sv8SmuGXlh2Q0Ms=" crossorigin="anonymous">
+<link href="/scss/main.min.5bd8168c229059ee04483db8ad8b5246a36d0bf1374aff129ae197961d90d0cb.css" rel="stylesheet" integrity="sha256-W9gWjCKQWe4ESD24rYtSRqNtC/E3Sv8SmuGXlh2Q0Ms=" crossorigin="anonymous">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -695,8 +695,6 @@ Example The following json changes caps_lock key to sending caps_lock key_down, 
           </aside>
           <main class="col-12 col-md-9 col-xl-8 ps-md-5" role="main">
             
-  
-
             <nav aria-label="breadcrumb" class="td-breadcrumbs">
   <ol class="breadcrumb">
   <li class="breadcrumb-item">
