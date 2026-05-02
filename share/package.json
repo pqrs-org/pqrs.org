@@ -2,8 +2,11 @@
   "name": "pqrs.org",
   "version": "1.0.0",
   "description": "",
+  "scripts": {
+    "postinstall": "node scripts/fix-hugo-postcss-bin.mjs"
+  },
   "dependencies": {
-    "autoprefixer": "^10.4.27",
+    "autoprefixer": "^10.5.0",
     "postcss-cli": "^11.0.1"
   }
 }
