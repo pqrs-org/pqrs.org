@@ -83,6 +83,11 @@ navbar_theme = "dark"
 [params.ui.feedback]
 enable = false
 
+[security]
+  [security.node]
+    [security.node.permissions]
+      allowRead = [".", "../../share/node_modules"]
+
 [module]
 proxy = "direct"
 [[module.imports]]
