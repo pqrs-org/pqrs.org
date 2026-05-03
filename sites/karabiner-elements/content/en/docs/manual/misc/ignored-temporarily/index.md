@@ -3,7 +3,7 @@ title: 'About "Device is ignored temporarily" alert'
 weight: 100
 ---
 
-{{% alert title="Note" color="primary" %}}
+{{% alert title="Note" color="obsoleted" %}}
 
 This limitation was removed in v15.8.0. The content written here applies to older versions.
 
