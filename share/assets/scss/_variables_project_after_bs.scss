@@ -5,3 +5,14 @@
     max-width: calc(100% - 2em) !important;
   }
 }
+
+.alert-obsoleted {
+  --bs-alert-color: var(--bs-body-color);
+  --bs-alert-bg: var(--bs-secondary-bg);
+  --bs-alert-border-color: var(--bs-border-color);
+  --bs-alert-link-color: var(--bs-emphasis-color);
+
+  border-style: solid;
+  border-color: var(--bs-alert-border-color);
+  border-width: 0 0 0 4px;
+}
