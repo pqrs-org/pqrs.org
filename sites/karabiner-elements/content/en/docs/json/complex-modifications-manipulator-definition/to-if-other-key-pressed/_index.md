@@ -3,12 +3,6 @@ title: 'to_if_other_key_pressed'
 weight: 410
 ---
 
-{{% alert color="danger" %}}
-
-This feature is available since Karabiner-Elements 15.9.17 (beta).
-
-{{% /alert %}}
-
 `to_if_other_key_pressed` changes a key while it is being held down if another specified key is pressed during that time.
 Its main use is to change modifiers under specific conditions, as in the example below.
 

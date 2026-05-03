@@ -3,12 +3,6 @@ title: 'Add your own complex modifications (using JavaScript)'
 weight: 230
 ---
 
-{{% alert color="danger" %}}
-
-This feature is available since Karabiner-Elements 15.9.6 (beta).
-
-{{% /alert %}}
-
 ## Step 1
 
 Open Complex Modifications tab and press **Add your own rule using JavaScript** button.<br />

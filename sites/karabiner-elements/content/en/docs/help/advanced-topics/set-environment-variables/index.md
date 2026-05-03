@@ -3,10 +3,6 @@ title: 'Set environment variables'
 weight: 205
 ---
 
-{{% alert color="info" %}}
-This feature is available since Karabiner-Elements 15.5.5.
-{{% /alert %}}
-
 Karabiner-Elements references several environment variables internally.
 Additionally, the `shell_command` and `open_application` used in Complex Modifications are also affected by environment variables.
 To support this, we provide a way to define them.

@@ -3,10 +3,6 @@ title: 'expression_if, expression_unless'
 weight: 550
 ---
 
-{{% alert color="info" %}}
-This feature is available since Karabiner-Elements 15.5.19.
-{{% /alert %}}
-
 Change an event when the evaluated result of the expression is true/false.
 
 ## Example

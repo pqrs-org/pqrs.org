@@ -193,12 +193,6 @@ See [key code mappings](/docs/help/troubleshooting/symbols-with-non-ansi-keyboar
 
 ## Open files in Finder using the return key
 
-{{% alert color="danger" %}}
-
-This example is available since Karabiner-Elements 15.90.22 (beta).
-
-{{% /alert %}}
-
 In this configuration, the return key remains unchanged during text input (e.g., when renaming files or performing a search) by checking `accessibility.focused_ui_element.role_string`.
 
 - Use a system-provided variable: [expression_if, expression_unless](/docs/json/complex-modifications-manipulator-definition/conditions/expression/)
@@ -378,12 +372,6 @@ This uses `"lazy": true` to prevent <kbd>left_control</kbd> from being sent imme
 ```
 
 ## Change `option+tab` to `command+tab`
-
-{{% alert color="danger" %}}
-
-This example is available since Karabiner-Elements 15.9.17 (beta).
-
-{{% /alert %}}
 
 {{< karabiner-elements-complex-modifications-json-usage >}}
 
