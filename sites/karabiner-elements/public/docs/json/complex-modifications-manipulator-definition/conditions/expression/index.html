@@ -9,15 +9,13 @@
 <link rel="apple-touch-icon" href="/favicons/apple-touch-icon-180x180.png" sizes="180x180">
 
 <title>expression_if, expression_unless | Karabiner-Elements</title>
-<meta name="description" content="This feature is available since Karabiner-Elements 15.5.19.
-Change an event when the evaluated result of the expression is true/false.
+<meta name="description" content="Change an event when the evaluated result of the expression is true/false.
 Example Send Command&#43;Q only when it has been pressed twice.
 💡 How to use this example { &#34;description&#34;: &#34;Prevent unintended Command&#43;Q presses by ignoring it unless it&#39;s double-pressed&#34;, &#34;manipulators&#34;: [ { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;q&#34;, &#34;modifiers&#34;: { &#34;mandatory&#34;: [&#34;command&#34;], &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [ { &#34;key_code&#34;: &#34;q&#34;, &#34;modifiers&#34;: [&#34;command&#34;] } ], &#34;conditions&#34;: [ { &#34;type&#34;: &#34;expression_if&#34;, &#34;expression&#34;: &#34;command_q_expiration &gt; system.now.milliseconds&#34; } ] }, { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;q&#34;, &#34;modifiers&#34;: { &#34;mandatory&#34;: [&#34;command&#34;], &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [ { &#34;set_variable&#34;: { &#34;name&#34;: &#34;command_q_expiration&#34;, &#34;expression&#34;: &#34;system.now.milliseconds &#43; 300&#34; } } ] } ] } Specification Tip expression_if and expression_unless are designed to be used with the following features:">
 <meta property="og:url" content="/docs/json/complex-modifications-manipulator-definition/conditions/expression/">
   <meta property="og:site_name" content="Karabiner-Elements">
   <meta property="og:title" content="expression_if, expression_unless">
-  <meta property="og:description" content="This feature is available since Karabiner-Elements 15.5.19.
-Change an event when the evaluated result of the expression is true/false.
+  <meta property="og:description" content="Change an event when the evaluated result of the expression is true/false.
 Example Send Command&#43;Q only when it has been pressed twice.
 💡 How to use this example { &#34;description&#34;: &#34;Prevent unintended Command&#43;Q presses by ignoring it unless it&#39;s double-pressed&#34;, &#34;manipulators&#34;: [ { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;q&#34;, &#34;modifiers&#34;: { &#34;mandatory&#34;: [&#34;command&#34;], &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [ { &#34;key_code&#34;: &#34;q&#34;, &#34;modifiers&#34;: [&#34;command&#34;] } ], &#34;conditions&#34;: [ { &#34;type&#34;: &#34;expression_if&#34;, &#34;expression&#34;: &#34;command_q_expiration &gt; system.now.milliseconds&#34; } ] }, { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;q&#34;, &#34;modifiers&#34;: { &#34;mandatory&#34;: [&#34;command&#34;], &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [ { &#34;set_variable&#34;: { &#34;name&#34;: &#34;command_q_expiration&#34;, &#34;expression&#34;: &#34;system.now.milliseconds &#43; 300&#34; } } ] } ] } Specification Tip expression_if and expression_unless are designed to be used with the following features:">
   <meta property="og:locale" content="en">
@@ -26,17 +24,15 @@ Example Send Command&#43;Q only when it has been pressed twice.
     <meta property="og:image" content="https://karabiner-elements.pqrs.org/images/logo.png">
 
   <meta itemprop="name" content="expression_if, expression_unless">
-  <meta itemprop="description" content="This feature is available since Karabiner-Elements 15.5.19.
-Change an event when the evaluated result of the expression is true/false.
+  <meta itemprop="description" content="Change an event when the evaluated result of the expression is true/false.
 Example Send Command&#43;Q only when it has been pressed twice.
 💡 How to use this example { &#34;description&#34;: &#34;Prevent unintended Command&#43;Q presses by ignoring it unless it&#39;s double-pressed&#34;, &#34;manipulators&#34;: [ { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;q&#34;, &#34;modifiers&#34;: { &#34;mandatory&#34;: [&#34;command&#34;], &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [ { &#34;key_code&#34;: &#34;q&#34;, &#34;modifiers&#34;: [&#34;command&#34;] } ], &#34;conditions&#34;: [ { &#34;type&#34;: &#34;expression_if&#34;, &#34;expression&#34;: &#34;command_q_expiration &gt; system.now.milliseconds&#34; } ] }, { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;q&#34;, &#34;modifiers&#34;: { &#34;mandatory&#34;: [&#34;command&#34;], &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [ { &#34;set_variable&#34;: { &#34;name&#34;: &#34;command_q_expiration&#34;, &#34;expression&#34;: &#34;system.now.milliseconds &#43; 300&#34; } } ] } ] } Specification Tip expression_if and expression_unless are designed to be used with the following features:">
-  <meta itemprop="wordCount" content="218">
+  <meta itemprop="wordCount" content="211">
   <meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://karabiner-elements.pqrs.org/images/logo.png">
   <meta name="twitter:title" content="expression_if, expression_unless">
-  <meta name="twitter:description" content="This feature is available since Karabiner-Elements 15.5.19.
-Change an event when the evaluated result of the expression is true/false.
+  <meta name="twitter:description" content="Change an event when the evaluated result of the expression is true/false.
 Example Send Command&#43;Q only when it has been pressed twice.
 💡 How to use this example { &#34;description&#34;: &#34;Prevent unintended Command&#43;Q presses by ignoring it unless it&#39;s double-pressed&#34;, &#34;manipulators&#34;: [ { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;q&#34;, &#34;modifiers&#34;: { &#34;mandatory&#34;: [&#34;command&#34;], &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [ { &#34;key_code&#34;: &#34;q&#34;, &#34;modifiers&#34;: [&#34;command&#34;] } ], &#34;conditions&#34;: [ { &#34;type&#34;: &#34;expression_if&#34;, &#34;expression&#34;: &#34;command_q_expiration &gt; system.now.milliseconds&#34; } ] }, { &#34;type&#34;: &#34;basic&#34;, &#34;from&#34;: { &#34;key_code&#34;: &#34;q&#34;, &#34;modifiers&#34;: { &#34;mandatory&#34;: [&#34;command&#34;], &#34;optional&#34;: [&#34;any&#34;] } }, &#34;to&#34;: [ { &#34;set_variable&#34;: { &#34;name&#34;: &#34;command_q_expiration&#34;, &#34;expression&#34;: &#34;system.now.milliseconds &#43; 300&#34; } } ] } ] } Specification Tip expression_if and expression_unless are designed to be used with the following features:">
 <link rel="preload" href="/scss/main.min.5bd8168c229059ee04483db8ad8b5246a36d0bf1374aff129ae197961d90d0cb.css" as="style" integrity="sha256-W9gWjCKQWe4ESD24rYtSRqNtC/E3Sv8SmuGXlh2Q0Ms=" crossorigin="anonymous">
@@ -76,7 +72,7 @@ Example Send Command&#43;Q only when it has been pressed twice.
     aria-label='Search this site…'
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.fe594e1859c5d290ca718415d15e30d0.json"
+    data-offline-search-index-json-src="/offline-search-index.7b4c8ffa9ba387ffcef945db3fd29197.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="25"
   >
@@ -101,7 +97,7 @@ Example Send Command&#43;Q only when it has been pressed twice.
     aria-label='Search this site…'
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.fe594e1859c5d290ca718415d15e30d0.json"
+    data-offline-search-index-json-src="/offline-search-index.7b4c8ffa9ba387ffcef945db3fd29197.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="25"
   >
@@ -712,10 +708,7 @@ Example Send Command&#43;Q only when it has been pressed twice.
 	<header class="article-meta">
 		
 </header>
-	<div class="alert alert-info" role="alert">
-<p>This feature is available since Karabiner-Elements 15.5.19.</p>
-</div>
-<p>Change an event when the evaluated result of the expression is true/false.</p>
+	<p>Change an event when the evaluated result of the expression is true/false.</p>
 <h2 id="example">Example</h2>
 <p>Send Command+Q only when it has been pressed twice.</p>
 <div class="highlight" style="margin-top: 0rem; margin-bottom: -2rem">
