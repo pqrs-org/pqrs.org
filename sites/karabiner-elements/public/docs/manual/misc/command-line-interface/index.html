@@ -12,14 +12,14 @@
 <meta name="description" content="Karabiner-Elements provides a command line interface which provides the following functions.
 Switch a profile by name. Show current profile name. Show all profile names. Set variables which are used in complex modifications. Copy the current profile to system default profile. (Administrator privilege is required.) Remove the system default profile. (Administrator privilege is required.) Lint complex_modifications.json. Display version. Usage Show help Run the following command in terminal.
 &#39;/Library/Application Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli&#39; Result:
-A command line utility of Karabiner-Elements Usage: karabiner_cli [OPTION...] positional parameters --select-profile arg Select a profile by name --show-current-profile-name Show current profile name --list-profile-names Show all profile names --set-variables arg Json string: {[key: string]: number|boolean|string} --copy-current-profile-to-system-default-profile Copy the current profile to system default profile --remove-system-default-profile Remove the system default profile --lint-complex-modifications glob-patterns Check complex_modifications.json --format-json glob-patterns Format json files --eval-js glob-patterns Run javascript files using Duktape --version Displays version --version-number Displays version_number --help Print help --silent Suppress messages Examples: karabiner_cli --select-profile &#39;Default profile&#39; karabiner_cli --show-current-profile-name karabiner_cli --list-profile-names karabiner_cli --set-variables &#39;{&#34;cli_flag1&#34;:1, &#34;cli_flag2&#34;:2}&#39; Examples Switch profile Run the following command in terminal.">
+A command line utility of Karabiner-Elements Usage: karabiner_cli [OPTION...] positional parameters --select-profile arg Select a profile by name --show-current-profile-name Show current profile name --list-profile-names Show all profile names --list-connected-devices Show all connected devices --list-system-variables Show all system variables --list-multitouch-extension-variables Show all multitouch extension variables --watch-multitouch-extension-variables [=polling-interval-in-milliseconds(=500)] Watch multitouch extension variables and print all of them in one line whenever any variable changes --set-variables arg Json string: {[key: string]: number|boolean|string} --copy-current-profile-to-system-default-profile Copy the current profile to system default profile --remove-system-default-profile Remove the system default profile --show-settings-window-guidance Show the settings window guidance state --lint-complex-modifications glob-patterns Check complex_modifications.json --format-json glob-patterns Format json files --eval-js glob-patterns Run javascript files using Duktape --version Displays version --version-number Displays version_number --help Print help --silent Suppress messages Examples: karabiner_cli --select-profile &#39;Default profile&#39; karabiner_cli --show-current-profile-name karabiner_cli --list-profile-names karabiner_cli --set-variables &#39;{&#34;cli_flag1&#34;:1, &#34;cli_flag2&#34;:2}&#39; Examples Switch profile Run the following command in terminal.">
 <meta property="og:url" content="/docs/manual/misc/command-line-interface/">
   <meta property="og:site_name" content="Karabiner-Elements">
   <meta property="og:title" content="Command line interface">
   <meta property="og:description" content="Karabiner-Elements provides a command line interface which provides the following functions.
 Switch a profile by name. Show current profile name. Show all profile names. Set variables which are used in complex modifications. Copy the current profile to system default profile. (Administrator privilege is required.) Remove the system default profile. (Administrator privilege is required.) Lint complex_modifications.json. Display version. Usage Show help Run the following command in terminal.
 &#39;/Library/Application Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli&#39; Result:
-A command line utility of Karabiner-Elements Usage: karabiner_cli [OPTION...] positional parameters --select-profile arg Select a profile by name --show-current-profile-name Show current profile name --list-profile-names Show all profile names --set-variables arg Json string: {[key: string]: number|boolean|string} --copy-current-profile-to-system-default-profile Copy the current profile to system default profile --remove-system-default-profile Remove the system default profile --lint-complex-modifications glob-patterns Check complex_modifications.json --format-json glob-patterns Format json files --eval-js glob-patterns Run javascript files using Duktape --version Displays version --version-number Displays version_number --help Print help --silent Suppress messages Examples: karabiner_cli --select-profile &#39;Default profile&#39; karabiner_cli --show-current-profile-name karabiner_cli --list-profile-names karabiner_cli --set-variables &#39;{&#34;cli_flag1&#34;:1, &#34;cli_flag2&#34;:2}&#39; Examples Switch profile Run the following command in terminal.">
+A command line utility of Karabiner-Elements Usage: karabiner_cli [OPTION...] positional parameters --select-profile arg Select a profile by name --show-current-profile-name Show current profile name --list-profile-names Show all profile names --list-connected-devices Show all connected devices --list-system-variables Show all system variables --list-multitouch-extension-variables Show all multitouch extension variables --watch-multitouch-extension-variables [=polling-interval-in-milliseconds(=500)] Watch multitouch extension variables and print all of them in one line whenever any variable changes --set-variables arg Json string: {[key: string]: number|boolean|string} --copy-current-profile-to-system-default-profile Copy the current profile to system default profile --remove-system-default-profile Remove the system default profile --show-settings-window-guidance Show the settings window guidance state --lint-complex-modifications glob-patterns Check complex_modifications.json --format-json glob-patterns Format json files --eval-js glob-patterns Run javascript files using Duktape --version Displays version --version-number Displays version_number --help Print help --silent Suppress messages Examples: karabiner_cli --select-profile &#39;Default profile&#39; karabiner_cli --show-current-profile-name karabiner_cli --list-profile-names karabiner_cli --set-variables &#39;{&#34;cli_flag1&#34;:1, &#34;cli_flag2&#34;:2}&#39; Examples Switch profile Run the following command in terminal.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
@@ -29,8 +29,8 @@ A command line utility of Karabiner-Elements Usage: karabiner_cli [OPTION...] po
   <meta itemprop="description" content="Karabiner-Elements provides a command line interface which provides the following functions.
 Switch a profile by name. Show current profile name. Show all profile names. Set variables which are used in complex modifications. Copy the current profile to system default profile. (Administrator privilege is required.) Remove the system default profile. (Administrator privilege is required.) Lint complex_modifications.json. Display version. Usage Show help Run the following command in terminal.
 &#39;/Library/Application Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli&#39; Result:
-A command line utility of Karabiner-Elements Usage: karabiner_cli [OPTION...] positional parameters --select-profile arg Select a profile by name --show-current-profile-name Show current profile name --list-profile-names Show all profile names --set-variables arg Json string: {[key: string]: number|boolean|string} --copy-current-profile-to-system-default-profile Copy the current profile to system default profile --remove-system-default-profile Remove the system default profile --lint-complex-modifications glob-patterns Check complex_modifications.json --format-json glob-patterns Format json files --eval-js glob-patterns Run javascript files using Duktape --version Displays version --version-number Displays version_number --help Print help --silent Suppress messages Examples: karabiner_cli --select-profile &#39;Default profile&#39; karabiner_cli --show-current-profile-name karabiner_cli --list-profile-names karabiner_cli --set-variables &#39;{&#34;cli_flag1&#34;:1, &#34;cli_flag2&#34;:2}&#39; Examples Switch profile Run the following command in terminal.">
-  <meta itemprop="wordCount" content="194">
+A command line utility of Karabiner-Elements Usage: karabiner_cli [OPTION...] positional parameters --select-profile arg Select a profile by name --show-current-profile-name Show current profile name --list-profile-names Show all profile names --list-connected-devices Show all connected devices --list-system-variables Show all system variables --list-multitouch-extension-variables Show all multitouch extension variables --watch-multitouch-extension-variables [=polling-interval-in-milliseconds(=500)] Watch multitouch extension variables and print all of them in one line whenever any variable changes --set-variables arg Json string: {[key: string]: number|boolean|string} --copy-current-profile-to-system-default-profile Copy the current profile to system default profile --remove-system-default-profile Remove the system default profile --show-settings-window-guidance Show the settings window guidance state --lint-complex-modifications glob-patterns Check complex_modifications.json --format-json glob-patterns Format json files --eval-js glob-patterns Run javascript files using Duktape --version Displays version --version-number Displays version_number --help Print help --silent Suppress messages Examples: karabiner_cli --select-profile &#39;Default profile&#39; karabiner_cli --show-current-profile-name karabiner_cli --list-profile-names karabiner_cli --set-variables &#39;{&#34;cli_flag1&#34;:1, &#34;cli_flag2&#34;:2}&#39; Examples Switch profile Run the following command in terminal.">
+  <meta itemprop="wordCount" content="235">
   <meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://karabiner-elements.pqrs.org/images/logo.png">
@@ -38,7 +38,7 @@ A command line utility of Karabiner-Elements Usage: karabiner_cli [OPTION...] po
   <meta name="twitter:description" content="Karabiner-Elements provides a command line interface which provides the following functions.
 Switch a profile by name. Show current profile name. Show all profile names. Set variables which are used in complex modifications. Copy the current profile to system default profile. (Administrator privilege is required.) Remove the system default profile. (Administrator privilege is required.) Lint complex_modifications.json. Display version. Usage Show help Run the following command in terminal.
 &#39;/Library/Application Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli&#39; Result:
-A command line utility of Karabiner-Elements Usage: karabiner_cli [OPTION...] positional parameters --select-profile arg Select a profile by name --show-current-profile-name Show current profile name --list-profile-names Show all profile names --set-variables arg Json string: {[key: string]: number|boolean|string} --copy-current-profile-to-system-default-profile Copy the current profile to system default profile --remove-system-default-profile Remove the system default profile --lint-complex-modifications glob-patterns Check complex_modifications.json --format-json glob-patterns Format json files --eval-js glob-patterns Run javascript files using Duktape --version Displays version --version-number Displays version_number --help Print help --silent Suppress messages Examples: karabiner_cli --select-profile &#39;Default profile&#39; karabiner_cli --show-current-profile-name karabiner_cli --list-profile-names karabiner_cli --set-variables &#39;{&#34;cli_flag1&#34;:1, &#34;cli_flag2&#34;:2}&#39; Examples Switch profile Run the following command in terminal.">
+A command line utility of Karabiner-Elements Usage: karabiner_cli [OPTION...] positional parameters --select-profile arg Select a profile by name --show-current-profile-name Show current profile name --list-profile-names Show all profile names --list-connected-devices Show all connected devices --list-system-variables Show all system variables --list-multitouch-extension-variables Show all multitouch extension variables --watch-multitouch-extension-variables [=polling-interval-in-milliseconds(=500)] Watch multitouch extension variables and print all of them in one line whenever any variable changes --set-variables arg Json string: {[key: string]: number|boolean|string} --copy-current-profile-to-system-default-profile Copy the current profile to system default profile --remove-system-default-profile Remove the system default profile --show-settings-window-guidance Show the settings window guidance state --lint-complex-modifications glob-patterns Check complex_modifications.json --format-json glob-patterns Format json files --eval-js glob-patterns Run javascript files using Duktape --version Displays version --version-number Displays version_number --help Print help --silent Suppress messages Examples: karabiner_cli --select-profile &#39;Default profile&#39; karabiner_cli --show-current-profile-name karabiner_cli --list-profile-names karabiner_cli --set-variables &#39;{&#34;cli_flag1&#34;:1, &#34;cli_flag2&#34;:2}&#39; Examples Switch profile Run the following command in terminal.">
 <link rel="preload" href="/scss/main.min.5bd8168c229059ee04483db8ad8b5246a36d0bf1374aff129ae197961d90d0cb.css" as="style" integrity="sha256-W9gWjCKQWe4ESD24rYtSRqNtC/E3Sv8SmuGXlh2Q0Ms=" crossorigin="anonymous">
 <link href="/scss/main.min.5bd8168c229059ee04483db8ad8b5246a36d0bf1374aff129ae197961d90d0cb.css" rel="stylesheet" integrity="sha256-W9gWjCKQWe4ESD24rYtSRqNtC/E3Sv8SmuGXlh2Q0Ms=" crossorigin="anonymous">
 <script
@@ -76,7 +76,7 @@ A command line utility of Karabiner-Elements Usage: karabiner_cli [OPTION...] po
     aria-label='Search this site…'
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.c8e64c239f333fbd93a1f99ff6f10a69.json"
+    data-offline-search-index-json-src="/offline-search-index.fe594e1859c5d290ca718415d15e30d0.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="25"
   >
@@ -101,7 +101,7 @@ A command line utility of Karabiner-Elements Usage: karabiner_cli [OPTION...] po
     aria-label='Search this site…'
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.c8e64c239f333fbd93a1f99ff6f10a69.json"
+    data-offline-search-index-json-src="/offline-search-index.fe594e1859c5d290ca718415d15e30d0.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="25"
   >
@@ -672,13 +672,12 @@ A command line utility of Karabiner-Elements Usage: karabiner_cli [OPTION...] po
 
 </div>
 
-            <div class="td-page-meta ms-2 pb-1 pt-2 mb-0">
-
-</div>
-
-
-
-<nav id="TableOfContents">
+            <div class="td-toc" data-proofer-ignore>
+<div class="td-toc-title">
+      <span class="td-toc-title__text">On this page</span>
+      <a class="td-toc-title__link" title="Top of page" href="#"></a>
+    </div>
+    <nav id="TableOfContents">
   <ul>
     <li><a href="#usage">Usage</a>
       <ul>
@@ -688,8 +687,7 @@ A command line utility of Karabiner-Elements Usage: karabiner_cli [OPTION...] po
     </li>
   </ul>
 </nav>
-
-
+  </div>
 
             
 
@@ -738,6 +736,14 @@ A command line utility of Karabiner-Elements Usage: karabiner_cli [OPTION...] po
 </span></span><span style="display:flex;"><span>      --show-current-profile-name
 </span></span><span style="display:flex;"><span>                                Show current profile name
 </span></span><span style="display:flex;"><span>      --list-profile-names      Show all profile names
+</span></span><span style="display:flex;"><span>      --list-connected-devices  Show all connected devices
+</span></span><span style="display:flex;"><span>      --list-system-variables   Show all system variables
+</span></span><span style="display:flex;"><span>      --list-multitouch-extension-variables
+</span></span><span style="display:flex;"><span>                                Show all multitouch extension variables
+</span></span><span style="display:flex;"><span>      --watch-multitouch-extension-variables [=polling-interval-in-milliseconds(=500)]
+</span></span><span style="display:flex;"><span>                                Watch multitouch extension variables and
+</span></span><span style="display:flex;"><span>                                print all of them in one line whenever any
+</span></span><span style="display:flex;"><span>                                variable changes
 </span></span><span style="display:flex;"><span>      --set-variables arg       Json string: {[key: string]:
 </span></span><span style="display:flex;"><span>                                number|boolean|string}
 </span></span><span style="display:flex;"><span>      --copy-current-profile-to-system-default-profile
@@ -745,6 +751,8 @@ A command line utility of Karabiner-Elements Usage: karabiner_cli [OPTION...] po
 </span></span><span style="display:flex;"><span>                                profile
 </span></span><span style="display:flex;"><span>      --remove-system-default-profile
 </span></span><span style="display:flex;"><span>                                Remove the system default profile
+</span></span><span style="display:flex;"><span>      --show-settings-window-guidance
+</span></span><span style="display:flex;"><span>                                Show the settings window guidance state
 </span></span><span style="display:flex;"><span>      --lint-complex-modifications glob-patterns
 </span></span><span style="display:flex;"><span>                                Check complex_modifications.json
 </span></span><span style="display:flex;"><span>      --format-json glob-patterns
