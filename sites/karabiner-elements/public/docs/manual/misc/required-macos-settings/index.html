@@ -27,7 +27,7 @@ If you want to check the macOS settings made during the initial setup. If Karabi
   <meta itemprop="description" content="Under normal circumstances, there is no need to read this page, as the necessary settings have already been made during the initial setup.
 However, we explain the macOS settings made during the initial setup of Karabiner-Elements for the following purposes:
 If you want to check the macOS settings made during the initial setup. If Karabiner-Elements is not working properly and you want to ensure that the macOS settings are correct. Enable background services Karabier-Elements has processes running constantly in the background, that handle input events. You have to keep the background items enabled in macOS System Settings &gt; General &gt; Login Items.">
-  <meta itemprop="wordCount" content="218">
+  <meta itemprop="wordCount" content="325">
   <meta itemprop="image" content="https://karabiner-elements.pqrs.org/images/logo.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://karabiner-elements.pqrs.org/images/logo.png">
@@ -35,8 +35,8 @@ If you want to check the macOS settings made during the initial setup. If Karabi
   <meta name="twitter:description" content="Under normal circumstances, there is no need to read this page, as the necessary settings have already been made during the initial setup.
 However, we explain the macOS settings made during the initial setup of Karabiner-Elements for the following purposes:
 If you want to check the macOS settings made during the initial setup. If Karabiner-Elements is not working properly and you want to ensure that the macOS settings are correct. Enable background services Karabier-Elements has processes running constantly in the background, that handle input events. You have to keep the background items enabled in macOS System Settings &gt; General &gt; Login Items.">
-<link rel="preload" href="/scss/main.min.5bd8168c229059ee04483db8ad8b5246a36d0bf1374aff129ae197961d90d0cb.css" as="style" integrity="sha256-W9gWjCKQWe4ESD24rYtSRqNtC/E3Sv8SmuGXlh2Q0Ms=" crossorigin="anonymous">
-<link href="/scss/main.min.5bd8168c229059ee04483db8ad8b5246a36d0bf1374aff129ae197961d90d0cb.css" rel="stylesheet" integrity="sha256-W9gWjCKQWe4ESD24rYtSRqNtC/E3Sv8SmuGXlh2Q0Ms=" crossorigin="anonymous">
+<link rel="preload" href="/scss/main.min.cf4f4d529929f2949150b6696a01a4ed498aae40bbc8ebe8257dfc7e100f7dbe.css" as="style" integrity="sha256-z09NUpkp8pSRULZpagGk7UmKrkC7yOvoJX38fhAPfb4=" crossorigin="anonymous">
+<link href="/scss/main.min.cf4f4d529929f2949150b6696a01a4ed498aae40bbc8ebe8257dfc7e100f7dbe.css" rel="stylesheet" integrity="sha256-z09NUpkp8pSRULZpagGk7UmKrkC7yOvoJX38fhAPfb4=" crossorigin="anonymous">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -72,7 +72,7 @@ If you want to check the macOS settings made during the initial setup. If Karabi
     aria-label='Search this site…'
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.7b4c8ffa9ba387ffcef945db3fd29197.json"
+    data-offline-search-index-json-src="/offline-search-index.c69ed31332cd4745535f83bd802c78fb.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="25"
   >
@@ -97,7 +97,7 @@ If you want to check the macOS settings made during the initial setup. If Karabi
     aria-label='Search this site…'
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.7b4c8ffa9ba387ffcef945db3fd29197.json"
+    data-offline-search-index-json-src="/offline-search-index.c69ed31332cd4745535f83bd802c78fb.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="25"
   >
@@ -676,8 +676,9 @@ If you want to check the macOS settings made during the initial setup. If Karabi
     <nav id="TableOfContents">
   <ul>
     <li><a href="#enable-background-services">Enable background services</a></li>
-    <li><a href="#enable-input-monitoring">Enable Input Monitoring</a></li>
+    <li><a href="#enable-accessibility">Enable Accessibility</a></li>
     <li><a href="#allow-system-extension">Allow system extension</a></li>
+    <li><a href="#enable-input-monitoring-when-using-karabiner-elements-1590-or-earlier">Enable Input Monitoring (when using Karabiner-Elements 15.9.0 or earlier)</a></li>
   </ul>
 </nav>
   </div>
@@ -725,14 +726,19 @@ You have to keep the background items enabled in <code>macOS System Settings &gt
 </figure>
 </div>
 <hr>
-<h2 id="enable-input-monitoring">Enable Input Monitoring</h2>
+<h2 id="enable-accessibility">Enable Accessibility</h2>
 <div class="alert alert-primary" role="alert">
-<p>Karabiner-Elements requires Input Monitoring permission to receive and modify input events.</p>
-<p>You can enable it in <code>macOS System Settings &gt; Privacy &amp; Security &gt; Input Monitoring</code>.</p>
+<p>Karabiner-Elements requires Accessibility permission for the following purpose:</p>
+<ul>
+<li>To accurately and efficiently detect the currently active application and the focused UI element, so that input event modification rules can be switched based on the focused app.</li>
+<li>To capture keyboard events via CGEventTap when &ldquo;Enable CGEventTap fallback&rdquo; is enabled.</li>
+<li>As a secondary effect, granting Accessibility permission also provides the permission needed to capture input events from physical devices.</li>
+</ul>
+<p>You can enable it in <code>macOS System Settings &gt; Privacy &amp; Security &gt; Accessibility</code>.</p>
 <figure>
   <img
-    src="/docs/manual/misc/required-macos-settings/images/settings-input-monitoring@2x.png"
-    alt="settings-input-monitoring@2x.png"
+    src="/docs/manual/misc/required-macos-settings/images/settings-accessibility@2x.png"
+    alt="settings-accessibility@2x.png"
     style="width: 723px"
   />
 </figure>
@@ -760,6 +766,20 @@ You can confirm whether the system extension already allowed in <a href="/docs/m
   />
 </figure>
 <p>Otherwise, you have to approve the system extension in macOS System Settings.</p>
+</div>
+<hr>
+<h2 id="enable-input-monitoring-when-using-karabiner-elements-1590-or-earlier">Enable Input Monitoring (when using Karabiner-Elements 15.9.0 or earlier)</h2>
+<div class="alert alert-obsoleted" role="alert">
+<p><strong>This setting is usually unnecessary in Karabiner-Elements 16.0.0 and later, because it is covered by the Accessibility setting.</strong></p>
+<p>Karabiner-Elements requires Input Monitoring permission to receive and modify input events.</p>
+<p>You can enable it in <code>macOS System Settings &gt; Privacy &amp; Security &gt; Input Monitoring</code>.</p>
+<figure>
+  <img
+    src="/docs/manual/misc/required-macos-settings/images/settings-input-monitoring@2x.png"
+    alt="settings-input-monitoring@2x.png"
+    style="width: 723px"
+  />
+</figure>
 </div>
 
 	
