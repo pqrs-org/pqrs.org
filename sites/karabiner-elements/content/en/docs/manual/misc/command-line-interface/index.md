@@ -35,6 +35,14 @@ Usage:
       --show-current-profile-name
                                 Show current profile name
       --list-profile-names      Show all profile names
+      --list-connected-devices  Show all connected devices
+      --list-system-variables   Show all system variables
+      --list-multitouch-extension-variables
+                                Show all multitouch extension variables
+      --watch-multitouch-extension-variables [=polling-interval-in-milliseconds(=500)]
+                                Watch multitouch extension variables and
+                                print all of them in one line whenever any
+                                variable changes
       --set-variables arg       Json string: {[key: string]:
                                 number|boolean|string}
       --copy-current-profile-to-system-default-profile
@@ -42,6 +50,8 @@ Usage:
                                 profile
       --remove-system-default-profile
                                 Remove the system default profile
+      --show-settings-window-guidance
+                                Show the settings window guidance state
       --lint-complex-modifications glob-patterns
                                 Check complex_modifications.json
       --format-json glob-patterns
