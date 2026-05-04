@@ -1,0 +1,6 @@
+{{- $path := .Get 0 | default (.Get "path") -}}
+{{- $page := .Site.GetPage $path -}}
+{{- if not $page -}}
+  {{- errorf "page-link: page not found: %q" $path -}}
+{{- end -}}
+<a href="{{ $page.RelPermalink }}">{{ $page.LinkTitle | default $page.Title }}</a>
