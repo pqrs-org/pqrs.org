@@ -4,8 +4,12 @@
 <meta itemprop="name" content="{{ .Title }}">
 <meta itemprop="description" content="{{ $description }}">
 {{/* Override the default schema.html because its dateModified uses the Markdown file's last modified date. */}}
+{{- if .File }}
 <meta itemprop="dateModified" content="{{ $lastmod.Format "2006-01-02T15:04:05Z07:00" }}">
+{{- end }}
+{{- if gt .WordCount 0 }}
 <meta itemprop="wordCount" content="{{ .WordCount }}">
+{{- end }}
 {{- with $.Param "images" }}
   {{- range first 6 . }}
 <meta itemprop="image" content="{{ . | absURL }}">
