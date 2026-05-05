@@ -55,9 +55,9 @@ weight = 1
 # Everything below this are Site Params
 
 [params]
-github_repo = "https://github.com/pqrs-org/pqrs.org"
-github_branch = "main"
-github_subdir = "sites/showyedge"
+pqrs_github_repo = "https://github.com/pqrs-org/pqrs.org"
+pqrs_github_branch = "main"
+pqrs_github_subdir = "sites/showyedge"
 
 # First one is picked as the Twitter card image if not set on page.
 images = ["https://showyedge.pqrs.org/images/logo.png"]
