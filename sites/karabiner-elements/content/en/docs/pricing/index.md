@@ -41,6 +41,7 @@ I'm afraid I don't have enough time to reply for donors.<br />
             <a
                 href="https://github.com/sponsors/tekezo"
                 target="_blank"
+                rel="noopener"
                 class="btn btn-primary px-4"
             >
                 Open GitHub Sponsors page
@@ -65,7 +66,7 @@ I'm afraid I don't have enough time to reply for donors.<br />
                     height="113"
                 />
             </div>
-            <form action="https://www.paypal.com/cgi-bin/webscr" target="_blank" method="post">
+            <form action="https://www.paypal.com/cgi-bin/webscr" target="_blank" rel="noopener" method="post">
                 <input type="hidden" name="cmd" value="_xclick"/>
                 <input type="hidden" name="business" value="tekezo@pqrs.org"/>
                 <input type="hidden" name="lc" value="US"/>

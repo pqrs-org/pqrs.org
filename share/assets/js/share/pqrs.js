@@ -14,6 +14,7 @@ $(function () {
       }
 
       $this.attr('target', '_blank')
+      $this.attr('rel', 'noopener')
       $this.append($('<span>').addClass('fas fa-external-link-alt ms-1'))
     }
   })
@@ -50,6 +51,7 @@ $(function () {
           const $a = $('<a>')
             .attr('href', 'https://github.com/' + sponsor.login)
             .attr('target', '_blank')
+            .attr('rel', 'noopener')
             .css({
               width: `${100 * sponsor.avatar.scale}px`,
               maxWidth: 'calc(100vw - 80px)',
