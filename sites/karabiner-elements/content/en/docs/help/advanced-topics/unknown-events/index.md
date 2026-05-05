@@ -5,31 +5,30 @@ weight: 210
 
 Karabiner-Elements supports most keys, including those found only on PC keyboards.
 However, it may not support certain special function keys, such as some keys in the Consumer Page's Generic GUI Application Controls.
-This is because Karabiner-Elements manages a whitelist of verified keys, and any unverified events not included in this list are ignored.
+Karabiner-Elements maintains a whitelist of verified keys, and unverified events that are not included in this list are ignored.
 
-This guide provides instructions on how to add support for unsupported keys in Karabiner-Elements, should your keyboard have such keys.
+This guide explains how to add support for unsupported keys in Karabiner-Elements.
 
 ## Investigate the key code
 
-First, to investigate the raw key events from your keyboard, stop Karabiner-Elements from modifying the device's events. This can be done from the Devices tab.
+Use Karabiner-EventViewer to inspect key codes.
+First, enable "Temporarily turns off all Karabiner-Elements modifications" in Karabiner-EventViewer so that raw hardware input events are shown.
 
-{{< local-image src="images/devices@2x.png" >}}
+{{< local-image src="images/original-events@2x.png" >}}
 
-After that, open Karabiner-EventViewer and press the key you want to investigate.
+Then type the target key in the text area on the Main tab and check how it is handled.
 
 - If the event appears in the Main tab, the key is already supported, so no further action is needed.
-- If the event appears in the Unknown Events tab, you can enable it by following the steps below to update the whitelist and rebuild Karabiner-Elements.
-- If the event does not show up in either tab, it means that macOS itself cannot recognize the key, so it cannot be supported.
+- If the event appears in the Unknown Events tab, you can enable it by updating the whitelist and rebuilding Karabiner-Elements.
+- If the event does not appear in either tab, macOS itself cannot recognize the key, so Karabiner-Elements cannot support it.
 
-| Main tab                                                 | Unknown Events tab                                          |
-| -------------------------------------------------------- | ----------------------------------------------------------- |
-| {{< local-image src="images/eventviewer-main@2x.png" >}} | {{< local-image src="images/eventviewer-unknown@2x.png" >}} |
+{{< local-image src="images/eventviewer-unknown@2x.png" >}}
 
 ## Add the keys to the whitelist
 
-Adding to the whitelist is done by modifying the source code.
-Here is a diff for supporting Consumer Page's AC Zoom Out and AC Zoom In.
-In the same way, you can add the key codes you want to include.
+Keys are added to the whitelist by modifying the source code.
+The following diff adds support for the Consumer Page's AC Zoom Out and AC Zoom In usages.
+You can add other key codes in the same way.
 
 <https://github.com/pqrs-org/Karabiner-Elements/pull/4021/files>
 
@@ -41,68 +40,14 @@ The key names follow this list:
 
 {{% /alert %}}
 
-Next, follow the steps below to set up the build environment.
+## Build a package
+
+Next, follow the steps below to set up the build environment and build a package.
 
 <https://github.com/pqrs-org/Karabiner-Elements/blob/main/README.md#for-developers>
 
-Finally, build Karabiner-Core-Service, Settings and EventViewer by following the steps below.
-With this, you will now be able to modify the new keys in Karabiner-Elements.
-
-### Build Karabiner-Core-Service
-
-```shell
-cd src/core/CoreService
-make
-```
-
-Then upgrade the installed file.
-
-```shell
-make install
-```
-
-{{% alert title="Note" color="primary" %}}
-
-Since the signature differs from the official release, you will need to delete and re-add the entry for Input Monitoring permissions.
-
-<https://karabiner-elements.pqrs.org/docs/manual/misc/required-macos-settings/#enable-input-monitoring>
-
-{{% /alert %}}
-
-### Build Settings
-
-```shell
-cd src/apps/SettingsWindow
-make
-```
-
-Execute the updated Settings:
-
-```shell
-make run
-```
-
-### Build EventViewer
-
-```shell
-cd src/apps/EventViewer
-make
-```
-
-Execute the updated EventViewer:
-
-```shell
-make run
-```
-
-{{% alert title="Note" color="primary" %}}
-
-Since the signature differs from the official release, you will need to delete and re-add the entry for Input Monitoring permissions.
-
-<https://karabiner-elements.pqrs.org/docs/manual/misc/required-macos-settings/#enable-input-monitoring>
-
-{{% /alert %}}
+After building the package, install it to use the newly added keys.
 
 ## Create a pull request to add new keys
 
-Once you've successfully added the new keys, we'd greatly appreciate it if you could submit a pull request to Karabiner-Elements.
+Once you have successfully added the new keys, we would appreciate it if you submitted a pull request to Karabiner-Elements.
