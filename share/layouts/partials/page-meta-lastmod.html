@@ -1,10 +1,10 @@
 {{- if .File -}}
   {{- $path := replace .File.Path "\\" "/" -}}
-  {{- $githubRepo := $.Param "github_repo" -}}
-  {{- $githubBranch := default "main" ($.Param "github_branch") -}}
-  {{- $githubSubdir := $.Param "github_subdir" -}}
+  {{- $githubRepo := $.Param "pqrs_github_repo" -}}
+  {{- $githubBranch := default "main" ($.Param "pqrs_github_branch") -}}
+  {{- $githubSubdir := $.Param "pqrs_github_subdir" -}}
   {{- $sourcePath := printf "content/%s" $path -}}
-  {{- $lastmod := .Lastmod -}}
+  {{- $lastmod := partial "page-lastmod.html" . -}}
 
   {{- if and $githubSubdir .Site.Language.Lang -}}
     {{- $sourcePath = printf "%s/content/%s/%s" $githubSubdir .Site.Language.Lang $path -}}
@@ -12,36 +12,6 @@
     {{- $sourcePath = printf "%s/content/%s" $githubSubdir $path -}}
   {{- else if .Site.Language.Lang -}}
     {{- $sourcePath = printf "content/%s/%s" .Site.Language.Lang $path -}}
-  {{- end -}}
-
-  {{- range .Resources.ByType "image" -}}
-    {{- $imagePath := path.Join (path.Dir $.File.Filename) .Name -}}
-    {{- if os.FileExists $imagePath -}}
-      {{- with os.Stat $imagePath -}}
-        {{- if gt .ModTime $lastmod -}}
-          {{- $lastmod = .ModTime -}}
-        {{- end -}}
-      {{- end -}}
-    {{- end -}}
-  {{- end -}}
-
-  {{- if .IsNode -}}
-    {{- range .RegularPagesRecursive -}}
-      {{- $page := . -}}
-      {{- if gt .Lastmod $lastmod -}}
-        {{- $lastmod = .Lastmod -}}
-      {{- end -}}
-      {{- range .Resources.ByType "image" -}}
-        {{- $imagePath := path.Join (path.Dir $page.File.Filename) .Name -}}
-        {{- if os.FileExists $imagePath -}}
-          {{- with os.Stat $imagePath -}}
-            {{- if gt .ModTime $lastmod -}}
-              {{- $lastmod = .ModTime -}}
-            {{- end -}}
-          {{- end -}}
-        {{- end -}}
-      {{- end -}}
-    {{- end -}}
   {{- end -}}
 
   <div class="td-page-meta__lastmod">

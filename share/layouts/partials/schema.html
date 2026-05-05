@@ -1,0 +1,13 @@
+{{- $description := partial "page-description.html" . -}}
+{{- $lastmod := partial "page-lastmod.html" . -}}
+
+<meta itemprop="name" content="{{ .Title }}">
+<meta itemprop="description" content="{{ $description }}">
+{{/* Override the default schema.html because its dateModified uses the Markdown file's last modified date. */}}
+<meta itemprop="dateModified" content="{{ $lastmod.Format "2006-01-02T15:04:05Z07:00" }}">
+<meta itemprop="wordCount" content="{{ .WordCount }}">
+{{- with $.Param "images" }}
+  {{- range first 6 . }}
+<meta itemprop="image" content="{{ . | absURL }}">
+  {{- end }}
+{{- end }}

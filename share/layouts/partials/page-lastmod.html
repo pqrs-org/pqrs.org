@@ -1,0 +1,35 @@
+{{- $lastmod := .Lastmod -}}
+
+{{- if .File -}}
+  {{- range .Resources.ByType "image" -}}
+    {{- $imagePath := path.Join (path.Dir $.File.Filename) .Name -}}
+    {{- if os.FileExists $imagePath -}}
+      {{- with os.Stat $imagePath -}}
+        {{- if gt .ModTime $lastmod -}}
+          {{- $lastmod = .ModTime -}}
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+
+  {{- if .IsNode -}}
+    {{- range .RegularPagesRecursive -}}
+      {{- $page := . -}}
+      {{- if gt .Lastmod $lastmod -}}
+        {{- $lastmod = .Lastmod -}}
+      {{- end -}}
+      {{- range .Resources.ByType "image" -}}
+        {{- $imagePath := path.Join (path.Dir $page.File.Filename) .Name -}}
+        {{- if os.FileExists $imagePath -}}
+          {{- with os.Stat $imagePath -}}
+            {{- if gt .ModTime $lastmod -}}
+              {{- $lastmod = .ModTime -}}
+            {{- end -}}
+          {{- end -}}
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- return $lastmod -}}
