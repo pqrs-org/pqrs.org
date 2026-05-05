@@ -5,6 +5,9 @@ set -e # forbid command failure
 
 cd $(dirname $0)/../
 
+# Update sites/*/public before copy files.
+make -C sites
+
 function deploy() {
   local repo="$1"
   local source="$2"
