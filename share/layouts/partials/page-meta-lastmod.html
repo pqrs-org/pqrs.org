@@ -1,0 +1,57 @@
+{{- if .File -}}
+  {{- $path := replace .File.Path "\\" "/" -}}
+  {{- $githubRepo := $.Param "github_repo" -}}
+  {{- $githubBranch := default "main" ($.Param "github_branch") -}}
+  {{- $githubSubdir := $.Param "github_subdir" -}}
+  {{- $sourcePath := printf "content/%s" $path -}}
+  {{- $lastmod := .Lastmod -}}
+
+  {{- if and $githubSubdir .Site.Language.Lang -}}
+    {{- $sourcePath = printf "%s/content/%s/%s" $githubSubdir .Site.Language.Lang $path -}}
+  {{- else if $githubSubdir -}}
+    {{- $sourcePath = printf "%s/content/%s" $githubSubdir $path -}}
+  {{- else if .Site.Language.Lang -}}
+    {{- $sourcePath = printf "content/%s/%s" .Site.Language.Lang $path -}}
+  {{- end -}}
+
+  {{- range .Resources.ByType "image" -}}
+    {{- $imagePath := path.Join (path.Dir $.File.Filename) .Name -}}
+    {{- if os.FileExists $imagePath -}}
+      {{- with os.Stat $imagePath -}}
+        {{- if gt .ModTime $lastmod -}}
+          {{- $lastmod = .ModTime -}}
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+
+  {{- if .IsNode -}}
+    {{- range .RegularPagesRecursive -}}
+      {{- $page := . -}}
+      {{- if gt .Lastmod $lastmod -}}
+        {{- $lastmod = .Lastmod -}}
+      {{- end -}}
+      {{- range .Resources.ByType "image" -}}
+        {{- $imagePath := path.Join (path.Dir $page.File.Filename) .Name -}}
+        {{- if os.FileExists $imagePath -}}
+          {{- with os.Stat $imagePath -}}
+            {{- if gt .ModTime $lastmod -}}
+              {{- $lastmod = .ModTime -}}
+            {{- end -}}
+          {{- end -}}
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+
+  <div class="td-page-meta__lastmod">
+    Last modified: {{ $lastmod.Format "2006-01-02" }}
+
+    {{- with $githubRepo }}
+      <a href="{{ . }}/blob/{{ $githubBranch }}/{{ $sourcePath }}?plain=1" target="_blank" rel="noopener">
+        <i class="fab fa-github ms-1"></i>
+        Markdown
+      </a>
+    {{- end }}
+  </div>
+{{- end -}}
