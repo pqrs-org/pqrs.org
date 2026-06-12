@@ -17,16 +17,19 @@
   },
   "MD033": {
     "allowed_elements": [
+      "a",
       "b",
       "br",
       "button",
       "div",
+      "h1",
       "form",
       "i",
       "img",
       "input",
       "kbd",
       "noscript",
+      "small",
       "span",
       "style",
       "video"

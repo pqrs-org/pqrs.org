@@ -7,6 +7,7 @@ title = "BulletGBA"
 <!-- ======================================== -->
 
 {{< blocks/lead color="dark" height="auto" >}}
+
 <h1 class="display-1">BulletGBA</h1>
 
 <div class="mt-2 col-md-8 offset-md-2">
