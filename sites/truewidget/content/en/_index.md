@@ -7,8 +7,9 @@ title = "TrueWidget"
 <!-- ======================================== -->
 
 {{< blocks/lead color="dark" height="auto" >}}
+
 <h1 class="display-1">
-  <img src="images/logo.png" style="width: 100px; margin-bottom: 10px" />
+  <img src="images/logo.png" style="width: 100px; margin-bottom: 10px" alt="TrueWidget" />
   TrueWidget
 </h1>
 
@@ -25,7 +26,6 @@ title = "TrueWidget"
       Download v2.6.0
       <i class="fas fa-download ms-1"></i>
     </a>
-
     <button
       type="button"
       class="btn btn-primary btn-lg dropdown-toggle dropdown-toggle-split"
@@ -41,19 +41,16 @@ title = "TrueWidget"
         href="https://github.com/pqrs-org/TrueWidget/releases/download/v2.6.0/TrueWidget-2.6.0.dmg"
       >
         Download v2.6.0
-
         <ul class="mt-2">
           <li>For macOS 13 Ventura or later</li>
         </ul>
       </a>
-
       <div class="dropdown-divider"></div>
       <a
         class="dropdown-item"
         href="https://github.com/pqrs-org/TrueWidget/releases/download/v1.6.0/TrueWidget-1.6.0.dmg"
       >
         Download v1.6.0
-
         <ul class="mt-2">
           <li>For macOS 12 Monterey</li>
           <li>For macOS 11 Big Sur</li>
@@ -144,64 +141,47 @@ title = "TrueWidget"
     </div>
   </div>
   <div class="my-4">
-    <img src="images/top/main@2x.png" class="col-10" style="max-width: 800px" />
+    <img src="images/top/main@2x.png" class="col-10" style="max-width: 800px" alt="screenshot" />
   </div>
   <div class="my-2">
-    <img src="images/top/menu@2x.png" class="col-10" style="max-width: 300px" />
+    <img src="images/top/menu@2x.png" class="col-10" style="max-width: 300px" alt="menu" />
   </div>
-
   <div class="container" style="margin-top: 80px">
     <h2>Display Items Customization</h2>
-
     <div class="row">
       <div class="col-4 my-2">
         <figure class="figure">
-          <img
-            src="images/top/widget-default@2x.png"
-            class="img-fluid border"
-          />
+          <img src="images/top/widget-default@2x.png" class="img-fluid border" alt="default" />
           <figcaption>Default style</figcaption>
         </figure>
       </div>
       <div class="col-4 my-2">
         <figure class="figure">
-          <img src="images/top/widget-custom@2x.png" class="img-fluid border" />
+          <img src="images/top/widget-custom@2x.png" class="img-fluid border" alt="custom" />
           <figcaption>Display a lot of information</figcaption>
         </figure>
       </div>
       <div class="col-4 my-2">
         <figure class="figure">
-          <img
-            src="images/top/widget-cpu-usage-local-time@2x.png"
-            class="img-fluid border"
-          />
+          <img src="images/top/widget-cpu-usage-local-time@2x.png" class="img-fluid border" alt="suppress macos version" />
           <figcaption>Suppress macOS version</figcaption>
         </figure>
       </div>
       <div class="col-4 my-2">
         <figure class="figure">
-          <img
-            src="images/top/widget-macos-version@2x.png"
-            class="img-fluid border"
-          />
+          <img src="images/top/widget-macos-version@2x.png" class="img-fluid border"  alt="macos version" />
           <figcaption>Display macOS version only</figcaption>
         </figure>
       </div>
       <div class="col-4 my-2">
         <figure class="figure">
-          <img
-            src="images/top/widget-cpu-usage@2x.png"
-            class="img-fluid border"
-          />
+          <img src="images/top/widget-cpu-usage@2x.png" class="img-fluid border" alt="cpu usage only" />
           <figcaption>Display CPU usage only</figcaption>
         </figure>
       </div>
       <div class="col-4 my-2">
         <figure class="figure">
-          <img
-            src="images/top/widget-local-time@2x.png"
-            class="img-fluid border"
-          />
+          <img src="images/top/widget-local-time@2x.png" class="img-fluid border" alt="local time" />
           <figcaption>Display local time only</figcaption>
         </figure>
       </div>
