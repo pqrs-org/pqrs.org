@@ -7,28 +7,25 @@ title = "ComboStick"
 <!-- ======================================== -->
 
 {{< blocks/lead color="dark" height="auto" >}}
+
 <h1 class="display-1">ComboStick</h1>
 
 <div class="mt-2 col-md-8 offset-md-2">
-  A mouse for macOS that combines and operates two sticks simultaneously
+    A mouse for macOS that combines and operates two sticks simultaneously
 </div>
 
 <div class="mt-4">
-  <a href="docs/build/">
+    <a href="docs/build/">
     <span class="btn btn-lg btn-secondary mx-2 my-2 px-4">
-      How to build your device
-      <i class="fas fa-arrow-alt-circle-right ms-1"></i>
+        How to build your device
+        <i class="fas fa-arrow-alt-circle-right ms-1"></i>
     </span>
-  </a>
+    </a>
 </div>
 
-<a
-  href="https://github.com/pqrs-org/ComboStick/"
-  target="_blank" rel="noopener"
-  class="btn btn-small btn-light mx-2 my-2"
->
-  GitHub
-  <i class="fab fa-github ms-1"></i>
+<a href="https://github.com/pqrs-org/ComboStick/" target="_blank" rel="noopener" class="btn btn-small btn-light mx-2 my-2">
+    GitHub
+    <i class="fab fa-github ms-1"></i>
 </a>
 
 {{< /blocks/lead >}}
@@ -40,20 +37,8 @@ title = "ComboStick"
 {{< blocks/section color="dark" >}}
 
 <div
-  style="
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  "
->
-  <img
-    src="images/combostick.jpg"
-    alt="combostick"
-    style="max-width: 100%; height: 200px"
-    class="m-1"
-  />
+  style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; width: 100%;">
+  <img src="images/combostick.jpg" alt="combostick" style="max-width: 100%; height: 200px" class="m-1" />
   <img src="images/transparent-version.jpg" alt="transparent version" style="max-width: 100%; height: 200px" class="m-1" />
   <img src="images/in-use.jpg" alt="in-use" style="max-width: 100%; height: 200px" class="m-1" />
   <img src="images/freecad.png" alt="freecad" style="max-width: 100%; height: 200px" class="m-1" />
@@ -65,18 +50,9 @@ title = "ComboStick"
 
 <h2 class="mb-4">Usage</h2>
 
-<div
-  style="
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: top;
-    width: 100%;
-  "
->
+<div style="display: flex; flex-wrap: wrap; justify-content: space-evenly; align-items: top; width: 100%;">
   <div class="p-2" style="width: 500px; border: 1px solid gray;">
     <h3>Pointer control</h3>
-
     <p>
       Mouse cursor movement begins by tilting the left stick.
       While only the left stick is used, the pointer moves slowly.
@@ -90,11 +66,9 @@ title = "ComboStick"
 
   <div class="p-2" style="width: 500px; border: 1px solid gray;">
     <h3>Scroll</h3>
-
     <p>
       Tilting the right stick first, as opposed to the pointer control, initiates a scrolling action.
     </p>
-
     <video src="videos/combostick-scroll.mp4" style="width: 100%" controls></video>
   </div>
 </div>
@@ -102,7 +76,6 @@ title = "ComboStick"
 <div style="text-align: center" class="mt-4">
   <img src="images/usage.jpg" alt="usage" style="max-width: 100%; width: 900px;" class="m-1" />
 </div>
-
 
 {{< /blocks/section >}}
 
