@@ -39,10 +39,11 @@ title = "Karabiner-Elements"
       >
         Download v16.0.0
         <ul class="mt-2">
-          <li>For macOS 26 Tahoe</li>
-          <li>For macOS 15 Sequoia</li>
-          <li>For macOS 14 Sonoma</li>
-          <li>For macOS 13 Ventura</li>
+            <li>For macOS 27 Golden Gate</li>
+            <li>For macOS 26 Tahoe</li>
+            <li>For macOS 15 Sequoia</li>
+            <li>For macOS 14 Sonoma</li>
+            <li>For macOS 13 Ventura</li>
         </ul>
       </a>
       <div class="dropdown-divider"></div>
@@ -137,6 +138,7 @@ title = "Karabiner-Elements"
     </div>
     <div>
       <div class="d-inline-block ms-2 mt-2 text-start mx-auto">
+        <i class="fab fa-apple"></i> macOS 27 Golden Gate<br />
         <i class="fab fa-apple"></i> macOS 26 Tahoe<br />
         <i class="fab fa-apple"></i> macOS 15 Sequoia<br />
         <i class="fab fa-apple"></i> macOS 14 Sonoma<br />
