@@ -7,8 +7,9 @@ title = "Tinkle"
 <!-- ======================================== -->
 
 {{< blocks/lead color="dark" height="auto" >}}
+
 <h1 class="display-1">
-  <img src="images/logo.png" style="width: 100px; margin-bottom: 10px" />
+  <img src="images/logo.png" style="width: 100px; margin-bottom: 10px" alt="Tinkle" />
   Tinkle
 </h1>
 
@@ -40,7 +41,6 @@ title = "Tinkle"
         href="https://github.com/pqrs-org/Tinkle/releases/download/v3.1.0/Tinkle-3.1.0.dmg"
       >
         Download v3.1.0
-
         <ul class="mt-2">
           <li>For macOS 13 Ventura or later</li>
         </ul>
@@ -51,7 +51,6 @@ title = "Tinkle"
         href="https://github.com/pqrs-org/Tinkle/releases/download/v2.4.0/Tinkle-2.4.0.dmg"
       >
         Download v2.4.0
-
         <ul class="mt-2">
           <li>For macOS 11 Big Sur or later</li>
         </ul>
@@ -62,7 +61,6 @@ title = "Tinkle"
         href="https://github.com/pqrs-org/Tinkle/releases/download/v1.7.0/Tinkle-1.7.0.dmg"
       >
         Download v1.7.0
-
         <ul class="mt-2">
           <li>For macOS 10.15 Catalina</li>
         </ul>
