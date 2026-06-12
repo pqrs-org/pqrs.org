@@ -7,6 +7,7 @@ title = "Karabiner-Elements"
 <!-- ======================================== -->
 
 {{< blocks/lead color="dark" height="auto" >}}
+
 <h1 class="display-1">Karabiner-Elements</h1>
 
 <div class="mt-2 col-md-8 offset-md-2">
@@ -37,7 +38,6 @@ title = "Karabiner-Elements"
         href="https://github.com/pqrs-org/Karabiner-Elements/releases/download/v16.0.0/Karabiner-Elements-16.0.0.dmg"
       >
         Download v16.0.0
-
         <ul class="mt-2">
           <li>For macOS 26 Tahoe</li>
           <li>For macOS 15 Sequoia</li>
@@ -51,7 +51,6 @@ title = "Karabiner-Elements"
         href="https://github.com/pqrs-org/Karabiner-Elements/releases/download/v14.13.0/Karabiner-Elements-14.13.0.dmg"
       >
         Download v14.13.0
-
         <ul class="mt-2">
           <li>For macOS 12 Monterey</li>
           <li>For macOS 11 Big Sur</li>
@@ -63,7 +62,6 @@ title = "Karabiner-Elements"
         href="https://github.com/pqrs-org/Karabiner-Elements/releases/download/v13.7.0/Karabiner-Elements-13.7.0.dmg"
       >
         Download v13.7.0
-
         <ul class="mt-2">
           <li>For macOS 10.15 Catalina (10.15.6 or later)</li>
         </ul>
@@ -74,7 +72,6 @@ title = "Karabiner-Elements"
         href="https://github.com/pqrs-org/Karabiner-Elements/releases/download/v12.10.0/Karabiner-Elements-12.10.0.dmg"
       >
         Download v12.10.0
-
         <ul class="mt-2">
           <li>For macOS 10.15 Catalina</li>
           <li>For macOS 10.14 Mojave</li>
@@ -88,7 +85,6 @@ title = "Karabiner-Elements"
         href="https://github.com/pqrs-org/Karabiner-Elements/releases/download/v11.6.0/Karabiner-Elements-11.6.0.dmg"
       >
         Download v11.6.0
-
         <ul class="mt-2">
           <li>For macOS 10.11 El Capitan</li>
         </ul>
@@ -96,7 +92,6 @@ title = "Karabiner-Elements"
       <div class="dropdown-divider"></div>
       <a class="dropdown-item" href="https://github.com/tekezo/Karabiner/releases/download/files/Karabiner-10.22.0.dmg">
         Download v10.22.0
-
         <ul class="mt-2">
           <li>For macOS 10.11 El Capitan</li>
           <li>For macOS 10.10 Yosemite</li>
