@@ -3,7 +3,7 @@ title: 'Pricing'
 weight: 800
 ---
 
-<img src="/images/pricing-free.svg" alt="Free" style="height: 2em" />
+<img src="/images/share/pricing-free.svg" alt="Free" class="mb-2" />
 
 Karabiner-Elements is an [open source software](https://github.com/pqrs-org/Karabiner-Elements/) and you can use it without any purchases.
 
