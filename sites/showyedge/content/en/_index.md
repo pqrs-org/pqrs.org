@@ -9,7 +9,7 @@ title = "ShowyEdge"
 {{< blocks/lead color="dark" height="auto" >}}
 
 <h1 class="display-1">
-  <img src="images/logo.png" style="width: 100px; margin-bottom: 10px" />
+  <img src="images/logo.png" style="width: 100px; margin-bottom: 10px" alt="ShowyEdge" />
   ShowyEdge
 </h1>
 
@@ -41,7 +41,6 @@ title = "ShowyEdge"
         href="https://github.com/pqrs-org/ShowyEdge/releases/download/v6.3.0/ShowyEdge-6.3.0.dmg"
       >
         Download v6.3.0
-
         <ul class="mt-2">
           <li>For macOS 13 Ventura or later</li>
         </ul>
@@ -52,7 +51,6 @@ title = "ShowyEdge"
         href="https://github.com/pqrs-org/ShowyEdge/releases/download/v5.7.0/ShowyEdge-5.7.0.dmg"
       >
         Download v5.7.0
-
         <ul class="mt-2">
           <li>For macOS 11 Big Sur or later</li>
         </ul>
@@ -63,7 +61,6 @@ title = "ShowyEdge"
         href="https://github.com/pqrs-org/ShowyEdge/releases/download/v4.0.0/ShowyEdge-4.0.0.dmg"
       >
         Download v4.0.0
-
         <ul class="mt-2">
           <li>For macOS 10.15 Catalina</li>
         </ul>
@@ -74,7 +71,6 @@ title = "ShowyEdge"
         href="https://github.com/pqrs-org/ShowyEdge/releases/download/v3.8.0/ShowyEdge-3.8.0.dmg"
       >
         Download v3.8.0
-
         <ul class="mt-2">
           <li>For macOS 10.14 Mojave</li>
           <li>For macOS 10.13 High Sierra</li>
@@ -90,7 +86,6 @@ title = "ShowyEdge"
         href="https://github.com/pqrs-org/ShowyEdge/releases/download/v2.2.0/ShowyEdge-2.2.0.dmg"
       >
         Download v2.2.0
-
         <ul class="mt-2">
           <li>For macOS 10.8 Mountain Lion</li>
           <li>For macOS 10.7 Lion</li>
@@ -102,7 +97,6 @@ title = "ShowyEdge"
         href="https://github.com/pqrs-org/ShowyEdge/releases/download/v1.8.0/ShowyEdge-1.8.0.dmg"
       >
         Download v1.8.0
-
         <ul class="mt-2">
           <li>For macOS 10.6 Snow Leopard</li>
         </ul>
@@ -167,7 +161,7 @@ title = "ShowyEdge"
   </p>
 
   <p>
-    <img src="images/menubar.png" class="col-10" />
+    <img src="images/menubar.png" class="col-10" alt="menubar" />
   </p>
 </div>
 
