@@ -7,6 +7,7 @@ title = "Disable DragAndDrop"
 <!-- ======================================== -->
 
 {{< blocks/lead color="dark" height="auto" >}}
+
 <h1 class="display-1">Disable DragAndDrop</h1>
 
 <div class="mt-2 col-md-8 offset-md-2">
@@ -92,7 +93,7 @@ title = "Disable DragAndDrop"
 
 <div class="text-center mx-auto">
   <p>
-    <img src="images/logo.png" class="col-10" style="max-width: 350px" />
+    <img src="images/logo.png" class="col-10" style="max-width: 350px" alt="logo" />
   </p>
 </div>
 
