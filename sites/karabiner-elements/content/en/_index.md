@@ -17,10 +17,10 @@ title = "Karabiner-Elements"
 <div class="mt-4">
   <div class="btn-group mx-2 my-2">
     <a
-      href="https://github.com/pqrs-org/Karabiner-Elements/releases/download/v16.0.0/Karabiner-Elements-16.0.0.dmg"
+      href="https://github.com/pqrs-org/Karabiner-Elements/releases/download/v16.1.0/Karabiner-Elements-16.1.0.dmg"
       class="btn btn-primary btn-lg px-4"
     >
-      Download v16.0.0
+      Download v16.1.0
       <i class="fas fa-download ms-1"></i>
     </a>
     <button
@@ -35,9 +35,9 @@ title = "Karabiner-Elements"
     <div class="dropdown-menu">
       <a
         class="dropdown-item"
-        href="https://github.com/pqrs-org/Karabiner-Elements/releases/download/v16.0.0/Karabiner-Elements-16.0.0.dmg"
+        href="https://github.com/pqrs-org/Karabiner-Elements/releases/download/v16.1.0/Karabiner-Elements-16.1.0.dmg"
       >
-        Download v16.0.0
+        Download v16.1.0
         <ul class="mt-2">
             <li>For macOS 27 Golden Gate</li>
             <li>For macOS 26 Tahoe</li>

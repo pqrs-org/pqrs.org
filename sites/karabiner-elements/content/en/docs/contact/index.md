@@ -27,8 +27,8 @@ Please fill your information when you send bug reports:
 Example:
 
 ```text
-macOS version: macOS 26.4.1
-Karabiner version: Karabiner-Elements 16.0.0
+macOS version: macOS 26.5.2
+Karabiner version: Karabiner-Elements 16.1.0
 Your Mac hardware: MacBook Pro (M3 Pro)
 Your keyboard hardware: Corne V4 Cherry
 ```
