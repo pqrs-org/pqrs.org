@@ -34,8 +34,6 @@ Running with logged-in user privileges:
 - **karabiner_console_user_server**
     - It instructs the Karabiner-Core-Service daemon to start grabbing devices.
     - It also executes shell commands and sends user commands triggered by the Karabiner-Core-Service daemon.
-- **karabiner_session_monitor**
-    - It monitors user login status and communicates it to the Karabiner-Core-Service daemon.
 - **Karabiner-Core-Service** agent
     - Requests for Accessibility and Input Monitoring permissions must be made from the user's login session,
       so these permission requests are handled by the Karabiner-Core-Service agent.
