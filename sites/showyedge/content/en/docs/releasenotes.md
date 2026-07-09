@@ -6,6 +6,14 @@ exclude_search: true
 body_class: release-notes
 ---
 
+## ShowyEdge 6.4.0
+
+- [📦 Download](https://github.com/pqrs-org/ShowyEdge/releases/download/v6.4.0/ShowyEdge-6.4.0.dmg)
+- 📅 Release date
+    - Jul 8, 2026
+- ✨ New Features
+    - Added a text pill indicator. (Thanks to @nClear)
+
 ## ShowyEdge 6.3.0
 
 - [📦 Download](https://github.com/pqrs-org/ShowyEdge/releases/download/v6.3.0/ShowyEdge-6.3.0.dmg)
