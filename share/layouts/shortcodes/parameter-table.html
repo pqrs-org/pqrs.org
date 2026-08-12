@@ -1,0 +1,34 @@
+{{- $json := strings.TrimSpace (string .Inner) -}}
+{{- $json = replaceRE "^```json[[:space:]]*" "" $json -}}
+{{- $json = replaceRE "[[:space:]]*```$" "" $json -}}
+{{- $rows := transform.Unmarshal (dict "format" "json") $json -}}
+
+<table class="parameter-table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Required</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{- range $rows }}
+      <tr>
+        <td><code>{{ .name }}</code></td>
+        <td>
+          {{- if .required -}}
+            <strong>Required</strong>
+          {{- else -}}
+            Optional
+          {{- end -}}
+        </td>
+        <td>
+          {{- $.Page.RenderString (dict "display" "inline") .description -}}
+          {{- with .available_since -}}
+            <br /><span class="text-body-secondary">(Available since {{ . }})</span>
+          {{- end -}}
+        </td>
+      </tr>
+    {{- end }}
+  </tbody>
+</table>

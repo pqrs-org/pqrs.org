@@ -59,17 +59,38 @@ Show the notification message while you press right shift key.
         {
             "set_notification_message": {
                 "id": "identifier of the message",
-                "text": "message text"
+                "text": "message text",
+                "duration_milliseconds": 3000
             }
         }
     ]
 }
 ```
 
-| Name   | Required     | Description                                            |
-| ------ | ------------ | ------------------------------------------------------ |
-| `id`   | **Required** | Specify an unique string for your notification message |
-| `text` | **Required** | Message body                                           |
+{{< parameter-table >}}
+
+```json
+[
+    {
+        "name": "id",
+        "required": true,
+        "description": "A unique identifier for the notification message."
+    },
+    {
+        "name": "text",
+        "required": true,
+        "description": "The notification message to display."
+    },
+    {
+        "name": "duration_milliseconds",
+        "required": false,
+        "description": "If specified, the notification message is dismissed after the specified number of milliseconds.",
+        "available_since": "Karabiner-Elements 16.1.18"
+    }
+]
+```
+
+{{< /parameter-table >}}
 
 {{% alert title="Important" color="danger" %}}
 Do not forget to remove the notification message.

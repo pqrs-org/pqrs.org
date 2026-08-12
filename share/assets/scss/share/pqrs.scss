@@ -32,6 +32,11 @@ body {
       td {
         border: 1px solid $border-color;
       }
+
+      &.parameter-table thead th {
+        background-color: var(--bs-primary-bg-subtle);
+        font-weight: normal;
+      }
     }
   }
 
