@@ -22,13 +22,39 @@ To use this setting, you need to enable your mouse in the Devices tab.
 }
 ```
 
-| Key          | Required     | Description                                                                                            |
-| ------------ | ------------ | ------------------------------------------------------------------------------------------------------ |
-| `type`       | **Required** | `"mouse_basic"` is specified                                                                           |
-| `flip`       | Optional     | An array of directions you want to invert.                                                             |
-| `swap`       | Optional     | Use `"xy"` if you want to rotate the mouse cursor movement by 90 degrees. Use it together with `flip`. |
-| `discard`    | Optional     | An array of directions in which events should not be sent.                                             |
-| `conditions` | Optional     | Same as [basic.conditions](../../conditions/)                                                          |
+{{< parameter-table name-header="Key" >}}
+
+```json
+[
+    {
+        "name": "`type`",
+        "required": true,
+        "description": "`\"mouse_basic\"` is specified"
+    },
+    {
+        "name": "`flip`",
+        "required": false,
+        "description": "An array of directions you want to invert."
+    },
+    {
+        "name": "`swap`",
+        "required": false,
+        "description": "Use `\"xy\"` if you want to rotate the mouse cursor movement by 90 degrees. Use it together with `flip`."
+    },
+    {
+        "name": "`discard`",
+        "required": false,
+        "description": "An array of directions in which events should not be sent."
+    },
+    {
+        "name": "`conditions`",
+        "required": false,
+        "description": "Same as [basic.conditions](../../conditions/)"
+    }
+]
+```
+
+{{< /parameter-table >}}
 
 {{% alert title="Caution" color="danger" %}}
 

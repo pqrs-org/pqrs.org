@@ -87,24 +87,78 @@ Pressing the <kbd>a</kbd> key while holding the <kbd>escape</kbd> key launches A
 }
 ```
 
-| Name                | Required             | Description                     | Available since            |
-| ------------------- | -------------------- | ------------------------------- | -------------------------- |
-| `name`              | **Required**         | Target variable name.           | Karabiner-Elements 11.0.0  |
-| `value`             | Required \| Optional | Target variable value.          | Karabiner-Elements 11.0.0  |
-| `expression`        | Required \| Optional | Target expression.              | Karabiner-Elements 15.5.19 |
-| `key_up_value`      | Optional             | A variable value when key is up | Karabiner-Elements 14.12.6 |
-| `key_up_expression` | Optional             | An expression when key is up    | Karabiner-Elements 15.5.19 |
-| `type`              | Optional             | "set" or "unset"                | Karabiner-Elements 14.99.2 |
+{{< parameter-table >}}
+
+```json
+[
+    {
+        "name": "`name`",
+        "required": true,
+        "description": "Target variable name.",
+        "available_since": "Karabiner-Elements 11.0.0"
+    },
+    {
+        "name": "`value`",
+        "required": "Required | Optional",
+        "description": "Target variable value.",
+        "available_since": "Karabiner-Elements 11.0.0"
+    },
+    {
+        "name": "`expression`",
+        "required": "Required | Optional",
+        "description": "Target expression.",
+        "available_since": "Karabiner-Elements 15.5.19"
+    },
+    {
+        "name": "`key_up_value`",
+        "required": false,
+        "description": "A variable value when key is up",
+        "available_since": "Karabiner-Elements 14.12.6"
+    },
+    {
+        "name": "`key_up_expression`",
+        "required": false,
+        "description": "An expression when key is up",
+        "available_since": "Karabiner-Elements 15.5.19"
+    },
+    {
+        "name": "`type`",
+        "required": false,
+        "description": "\"set\" or \"unset\"",
+        "available_since": "Karabiner-Elements 14.99.2"
+    }
+]
+```
+
+{{< /parameter-table >}}
 
 Note: If `key_up_value` or `type` is specified, the `value` can be omitted.
 
 ## Available types of `value`
 
-| Type    | Example value      | Available since            |
-| ------- | ------------------ | -------------------------- |
-| integer | 0,1,2,...          | Karabiner-Elements 11.0.0  |
-| boolean | true, false        | Karabiner-Elements 14.4.20 |
-| string  | "layer1", "layer2" | Karabiner-Elements 14.4.20 |
+{{< parameter-table name-header="Type" >}}
+
+```json
+[
+    {
+        "name": "integer",
+        "example_value": "0,1,2,...",
+        "available_since": "Karabiner-Elements 11.0.0"
+    },
+    {
+        "name": "boolean",
+        "example_value": "true, false",
+        "available_since": "Karabiner-Elements 14.4.20"
+    },
+    {
+        "name": "string",
+        "example_value": "\"layer1\", \"layer2\"",
+        "available_since": "Karabiner-Elements 14.4.20"
+    }
+]
+```
+
+{{< /parameter-table >}}
 
 ## Expression specification
 

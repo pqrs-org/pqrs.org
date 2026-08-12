@@ -25,12 +25,38 @@ weight: 200
 }
 ```
 
-| Key              | Value                                                 | Required     | Description                                                        |
-| ---------------- | ----------------------------------------------------- | ------------ | ------------------------------------------------------------------ |
-| `type`           | `"mouse_motion_to_scroll"`                            | **Required** | ---                                                                |
-| `from.modifiers` | Same as [basic.from.modifiers](../../from/modifiers/) | Optional     | Enable `mouse_motion_to_scroll` if specified modifiers are pressed |
-| `conditions`     | Same as [basic.conditions](../../conditions/)         | Optional     | Enable `mouse_motion_to_scroll` when specified conditions          |
-| `options`        | An object of parameters                               | Optional     | ---                                                                |
+{{< parameter-table name-header="Key" >}}
+
+```json
+[
+    {
+        "name": "`type`",
+        "value": "`\"mouse_motion_to_scroll\"`",
+        "required": true,
+        "description": "—"
+    },
+    {
+        "name": "`from.modifiers`",
+        "value": "Same as [basic.from.modifiers](../../from/modifiers/)",
+        "required": false,
+        "description": "Enable `mouse_motion_to_scroll` if specified modifiers are pressed"
+    },
+    {
+        "name": "`conditions`",
+        "value": "Same as [basic.conditions](../../conditions/)",
+        "required": false,
+        "description": "Enable `mouse_motion_to_scroll` when specified conditions"
+    },
+    {
+        "name": "`options`",
+        "value": "An object of parameters",
+        "required": false,
+        "description": "—"
+    }
+]
+```
+
+{{< /parameter-table >}}
 
 {{% alert title="Caution" color="danger" %}}
 
@@ -42,10 +68,26 @@ Your mouse cursor movement will be always changed to scroll and your mouse will 
 
 ## Options
 
-| Key                       | Value             | Required | Description                                          |
-| ------------------------- | ----------------- | -------- | ---------------------------------------------------- |
-| `momentum_scroll_enabled` | `true` or `false` | Optional | Enable Momentum scroll. The default value is `true`. |
-| `speed_multiplier`        | float value       | Optional | Multiply scroll speed. The default value is `1.0`.   |
+{{< parameter-table name-header="Key" >}}
+
+```json
+[
+    {
+        "name": "`momentum_scroll_enabled`",
+        "value": "`true` or `false`",
+        "required": false,
+        "description": "Enable Momentum scroll. The default value is `true`."
+    },
+    {
+        "name": "`speed_multiplier`",
+        "value": "float value",
+        "required": false,
+        "description": "Multiply scroll speed. The default value is `1.0`."
+    }
+]
+```
+
+{{< /parameter-table >}}
 
 ## Example
 

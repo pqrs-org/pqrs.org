@@ -40,9 +40,19 @@ weight: 450
 }
 ```
 
-| Name              | Required | Description                                                                                                                                                        |
-| ----------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `{modifier_name}` | Optional | - `on` always activates a sticky modifier.<br />- `off` is vice versa.<br />- `toggle` toggles a sticky modifier. <br /><br />`toggle` is suitable for most cases. |
+{{< parameter-table >}}
+
+```json
+[
+    {
+        "name": "`{modifier_name}`",
+        "required": false,
+        "description": "• `on` always activates a sticky modifier.<br />• `off` is vice versa.<br />• `toggle` toggles a sticky modifier.<br /><br />`toggle` is suitable for most cases."
+    }
+]
+```
+
+{{< /parameter-table >}}
 
 ## Supported modifiers
 

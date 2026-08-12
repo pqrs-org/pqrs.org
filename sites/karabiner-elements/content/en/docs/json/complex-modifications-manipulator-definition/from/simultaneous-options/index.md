@@ -5,13 +5,39 @@ weight: 400
 
 `simultaneous_options` adjust the `simultaneous` behavior.
 
-| Key                               | Value                                       | Description                                                             |
-| --------------------------------- | ------------------------------------------- | ----------------------------------------------------------------------- |
-| `detect_key_down_uninterruptedly` | `true` or `false`                           | Specify whether key_down detection is interrupted with unrelated events |
-| `key_down_order`                  | `insensitive`, `strict` or `strict_inverse` | Restriction of key_down order                                           |
-| `key_up_order`                    | `insensitive`, `strict` or `strict_inverse` | Restriction of key_up order                                             |
-| `key_up_when`                     | `any` or `all`                              | When key_up events are posted                                           |
-| `to_after_key_up`                 | An array of `to` event definitions          | Events will be posted when all `from` events are released               |
+{{< parameter-table name-header="Key" >}}
+
+```json
+[
+    {
+        "name": "`detect_key_down_uninterruptedly`",
+        "value": "`true` or `false`",
+        "description": "Specify whether key_down detection is interrupted with unrelated events"
+    },
+    {
+        "name": "`key_down_order`",
+        "value": "`insensitive`, `strict` or `strict_inverse`",
+        "description": "Restriction of key_down order"
+    },
+    {
+        "name": "`key_up_order`",
+        "value": "`insensitive`, `strict` or `strict_inverse`",
+        "description": "Restriction of key_up order"
+    },
+    {
+        "name": "`key_up_when`",
+        "value": "`any` or `all`",
+        "description": "When key_up events are posted"
+    },
+    {
+        "name": "`to_after_key_up`",
+        "value": "An array of `to` event definitions",
+        "description": "Events will be posted when all `from` events are released"
+    }
+]
+```
+
+{{< /parameter-table >}}
 
 ## `detect_key_down_uninterruptedly`
 
@@ -118,10 +144,22 @@ Events will be posted just before the last from event's key_up.
 
 Specify when key_up events are posted.
 
-| Value | Description                                   |
-| ----- | --------------------------------------------- |
-| `any` | Post key_up events when any key is released   |
-| `all` | Post key_up events when all keys are released |
+{{< parameter-table name-header="Value" >}}
+
+```json
+[
+    {
+        "name": "`any`",
+        "description": "Post key_up events when any key is released"
+    },
+    {
+        "name": "`all`",
+        "description": "Post key_up events when all keys are released"
+    }
+]
+```
+
+{{< /parameter-table >}}
 
 ## `to_after_key_up`
 

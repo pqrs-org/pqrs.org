@@ -25,19 +25,69 @@ weight: 500
 ]
 ```
 
-| Name                                                  | Required     | Description                                                                           |
-| ----------------------------------------------------- | ------------ | ------------------------------------------------------------------------------------- |
-| `type`                                                | **Required** | `"basic"` is specified                                                                |
-| [`from`](from/)                                       | **Required** | The name of key code, consumer key code or pointing button which you want to change   |
-| [`to`](to/)                                           | Optional     | Events which are sent when you press `from` key                                       |
-| [`to_if_alone`](to-if-alone/)                         | Optional     | Events which are sent when you press `from` key alone                                 |
-| [`to_if_held_down`](to-if-held-down/)                 | Optional     | Events which are sent when you hold down `from` key                                   |
-| [`to_if_other_key_pressed`](to-if-other-key-pressed/) | Optional     | Events which are sent when you press other keys with `from` key                                   |
-| [`to_after_key_up`](to-after-key-up/)                 | Optional     | Events which are sent after you release `from` key                                    |
-| [`to_delayed_action`](to-delayed-action/)             | Optional     | Events which are sent after 500 milliseconds at you press `from` key                  |
-| [`conditions`](conditions/)                           | Optional     | Manipulator is applied only if condition is matched (e.g., the frontmost application) |
-| `parameters`                                          | Optional     | Override parameters such as `to_if_alone_timeout_milliseconds`                        |
-| `description`                                         | Optional     | A human-readable comment                                                              |
+{{< parameter-table >}}
+
+```json
+[
+    {
+        "name": "`type`",
+        "required": true,
+        "description": "`\"basic\"` is specified"
+    },
+    {
+        "name": "[`from`](from/)",
+        "required": true,
+        "description": "The name of key code, consumer key code or pointing button which you want to change"
+    },
+    {
+        "name": "[`to`](to/)",
+        "required": false,
+        "description": "Events which are sent when you press `from` key"
+    },
+    {
+        "name": "[`to_if_alone`](to-if-alone/)",
+        "required": false,
+        "description": "Events which are sent when you press `from` key alone"
+    },
+    {
+        "name": "[`to_if_held_down`](to-if-held-down/)",
+        "required": false,
+        "description": "Events which are sent when you hold down `from` key"
+    },
+    {
+        "name": "[`to_if_other_key_pressed`](to-if-other-key-pressed/)",
+        "required": false,
+        "description": "Events which are sent when you press other keys with `from` key"
+    },
+    {
+        "name": "[`to_after_key_up`](to-after-key-up/)",
+        "required": false,
+        "description": "Events which are sent after you release `from` key"
+    },
+    {
+        "name": "[`to_delayed_action`](to-delayed-action/)",
+        "required": false,
+        "description": "Events which are sent after 500 milliseconds at you press `from` key"
+    },
+    {
+        "name": "[`conditions`](conditions/)",
+        "required": false,
+        "description": "Manipulator is applied only if condition is matched (e.g., the frontmost application)"
+    },
+    {
+        "name": "`parameters`",
+        "required": false,
+        "description": "Override parameters such as `to_if_alone_timeout_milliseconds`"
+    },
+    {
+        "name": "`description`",
+        "required": false,
+        "description": "A human-readable comment"
+    }
+]
+```
+
+{{< /parameter-table >}}
 
 ## Detail
 

@@ -68,11 +68,29 @@ Note: [the <kbd>\[</kbd> key is <kbd>close_bracket</kbd> in JIS layout](/docs/he
 }
 ```
 
-| Name             | Required     | Description                                      |
-| ---------------- | ------------ | ------------------------------------------------ |
-| `type`           | **Required** | `"keyboard_type_if"` or `"keyboard_type_unless"` |
-| `keyboard_types` | **Required** | An array of `"ansi"`, `"iso"` or `"jis"`         |
-| `description`    | Optional     | A human-readable comment                         |
+{{< parameter-table >}}
+
+```json
+[
+    {
+        "name": "`type`",
+        "required": true,
+        "description": "`\"keyboard_type_if\"` or `\"keyboard_type_unless\"`"
+    },
+    {
+        "name": "`keyboard_types`",
+        "required": true,
+        "description": "An array of `\"ansi\"`, `\"iso\"` or `\"jis\"`"
+    },
+    {
+        "name": "`description`",
+        "required": false,
+        "description": "A human-readable comment"
+    }
+]
+```
+
+{{< /parameter-table >}}
 
 ### Multiple keyboard types
 

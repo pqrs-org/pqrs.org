@@ -68,11 +68,29 @@ Switch the current input source by:
 }
 ```
 
-| Name              | Required | Description                                                                           |
-| ----------------- | -------- | ------------------------------------------------------------------------------------- |
-| `language`        | Optional | The language regex such as `"^en$"`, `"^fr$"`                                         |
-| `input_source_id` | Optional | The input source id regex such as `"^com\\.apple\\.keylayout\\.US$"`                  |
-| `input_mode_id`   | Optional | The input mode id regex such as `"^com\\.apple\\.inputmethod\\.Japanese\\.Hiragana$"` |
+{{< parameter-table >}}
+
+```json
+[
+    {
+        "name": "`language`",
+        "required": false,
+        "description": "The language regex such as `\"^en$\"`, `\"^fr$\"`"
+    },
+    {
+        "name": "`input_source_id`",
+        "required": false,
+        "description": "The input source id regex such as `\"^com\\\\.apple\\\\.keylayout\\\\.US$\"`"
+    },
+    {
+        "name": "`input_mode_id`",
+        "required": false,
+        "description": "The input mode id regex such as `\"^com\\\\.apple\\\\.inputmethod\\\\.Japanese\\\\.Hiragana$\"`"
+    }
+]
+```
+
+{{< /parameter-table >}}
 
 ## Investigate the input source identifiers
 

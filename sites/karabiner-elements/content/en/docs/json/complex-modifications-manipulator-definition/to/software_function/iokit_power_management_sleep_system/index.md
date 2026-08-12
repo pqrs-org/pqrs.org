@@ -58,6 +58,16 @@ Put the system to sleep using fn+z.
 }
 ```
 
-| Name                 | Required | Description                                                          |
-| -------------------- | -------- | -------------------------------------------------------------------- |
-| `delay_milliseconds` | Optional | Waiting time before the system goes to sleep (500 ms if unspecified) |
+{{< parameter-table >}}
+
+```json
+[
+    {
+        "name": "`delay_milliseconds`",
+        "required": false,
+        "description": "Waiting time before the system goes to sleep (500 ms if unspecified)"
+    }
+]
+```
+
+{{< /parameter-table >}}

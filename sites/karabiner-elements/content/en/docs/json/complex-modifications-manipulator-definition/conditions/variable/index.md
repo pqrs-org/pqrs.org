@@ -80,20 +80,60 @@ Pressing the <kbd>a</kbd> key while holding the <kbd>escape</kbd> key launches A
 }
 ```
 
-| Name          | Required     | Description                             |
-| ------------- | ------------ | --------------------------------------- |
-| `type`        | **Required** | `"variable_if"` or `"variable_unless"`. |
-| `name`        | **Required** | Target variable name.                   |
-| `value`       | **Required** | Target variable value.                  |
-| `description` | Optional     | A human-readable comment                |
+{{< parameter-table >}}
+
+```json
+[
+    {
+        "name": "`type`",
+        "required": true,
+        "description": "`\"variable_if\"` or `\"variable_unless\"`."
+    },
+    {
+        "name": "`name`",
+        "required": true,
+        "description": "Target variable name."
+    },
+    {
+        "name": "`value`",
+        "required": true,
+        "description": "Target variable value."
+    },
+    {
+        "name": "`description`",
+        "required": false,
+        "description": "A human-readable comment"
+    }
+]
+```
+
+{{< /parameter-table >}}
 
 ### Available types of `value`
 
-| Type    | Example value      | Available since            |
-| ------- | ------------------ | -------------------------- |
-| integer | 0,1,2,...          | Karabiner-Elements 11.0.0  |
-| boolean | true, false        | Karabiner-Elements 14.4.20 |
-| string  | "layer1", "layer2" | Karabiner-Elements 14.4.20 |
+{{< parameter-table name-header="Type" >}}
+
+```json
+[
+    {
+        "name": "integer",
+        "example_value": "0,1,2,...",
+        "available_since": "Karabiner-Elements 11.0.0"
+    },
+    {
+        "name": "boolean",
+        "example_value": "true, false",
+        "available_since": "Karabiner-Elements 14.4.20"
+    },
+    {
+        "name": "string",
+        "example_value": "\"layer1\", \"layer2\"",
+        "available_since": "Karabiner-Elements 14.4.20"
+    }
+]
+```
+
+{{< /parameter-table >}}
 
 {{% alert title="Comparison between different types" color="warning" %}}
 
@@ -122,24 +162,91 @@ You can see the current variable values by EventViewer > Variables.
 
 The system variables are automatically set by Karabiner-Elements.
 
-| Name                                         | Type    | Data source                                                                                      | Available since            |
-| -------------------------------------------- | ------- | ------------------------------------------------------------------------------------------------ | -------------------------- |
-| `system.scroll_direction_is_natural`         | boolean | The scroll direction setting of mouse in System Settings                                         | Karabiner-Elements 15.2.3  |
-| `system.use_fkeys_as_standard_function_keys` | boolean | The "Use all F1, F2, etc. keys as standard function keys" setting in System Settings             | Karabiner-Elements 15.2.3  |
-| `system.now.milliseconds`                    | integer | The current UNIX time in milliseconds                                                            | Karabiner-Elements 15.5.19 |
-| `system.temporarily_ignore_all_devices`      | boolean | True when "Temporarily turns off all Karabiner-Elements modifications" is enabled in EventViewer | Karabiner-Elements 15.5.91 |
+{{< parameter-table >}}
+
+```json
+[
+    {
+        "name": "`system.scroll_direction_is_natural`",
+        "type": "boolean",
+        "data_source": "The scroll direction setting of mouse in System Settings",
+        "available_since": "Karabiner-Elements 15.2.3"
+    },
+    {
+        "name": "`system.use_fkeys_as_standard_function_keys`",
+        "type": "boolean",
+        "data_source": "The \"Use all F1, F2, etc. keys as standard function keys\" setting in System Settings",
+        "available_since": "Karabiner-Elements 15.2.3"
+    },
+    {
+        "name": "`system.now.milliseconds`",
+        "type": "integer",
+        "data_source": "The current UNIX time in milliseconds",
+        "available_since": "Karabiner-Elements 15.5.19"
+    },
+    {
+        "name": "`system.temporarily_ignore_all_devices`",
+        "type": "boolean",
+        "data_source": "True when \"Temporarily turns off all Karabiner-Elements modifications\" is enabled in EventViewer",
+        "available_since": "Karabiner-Elements 15.5.91"
+    }
+]
+```
+
+{{< /parameter-table >}}
 
 ## Accessibility variables
 
 Information about the Focused UI Element obtained through the Accessibility API is automatically set by Karabiner-Elements.
 You can use these variables to [modify behavior only unless an input field is focused](/docs/json/typical-complex-modifications-examples/#open-files-in-finder-using-the-return-key), for example.
 
-| Name                                                  | Type    | Data source                                     | Available since             |
-| ----------------------------------------------------- | ------- | ----------------------------------------------- | --------------------------- |
-| `accessibility.focused_ui_element.role_string`        | string  | kAXRoleAttribute                                | Karabiner-Elements 15.90.22 |
-| `accessibility.focused_ui_element.subrole_string`     | string  | kAXSubroleAttribute                             | Karabiner-Elements 15.90.22 |
-| `accessibility.focused_ui_element.title_string`       | string  | kAXTitleAttribute                               | Karabiner-Elements 15.90.22 |
-| `accessibility.focused_ui_element.window_position_x`  | integer | kAXWindowAttribute or kAXFocusedWindowAttribute | Karabiner-Elements 15.90.17 |
-| `accessibility.focused_ui_element.window_position_y`  | integer | kAXWindowAttribute or kAXFocusedWindowAttribute | Karabiner-Elements 15.90.17 |
-| `accessibility.focused_ui_element.window_size_height` | integer | kAXWindowAttribute or kAXFocusedWindowAttribute | Karabiner-Elements 15.90.17 |
-| `accessibility.focused_ui_element.window_size_width`  | integer | kAXWindowAttribute or kAXFocusedWindowAttribute | Karabiner-Elements 15.90.17 |
+{{< parameter-table >}}
+
+```json
+[
+    {
+        "name": "`accessibility.focused_ui_element.role_string`",
+        "type": "string",
+        "data_source": "kAXRoleAttribute",
+        "available_since": "Karabiner-Elements 15.90.22"
+    },
+    {
+        "name": "`accessibility.focused_ui_element.subrole_string`",
+        "type": "string",
+        "data_source": "kAXSubroleAttribute",
+        "available_since": "Karabiner-Elements 15.90.22"
+    },
+    {
+        "name": "`accessibility.focused_ui_element.title_string`",
+        "type": "string",
+        "data_source": "kAXTitleAttribute",
+        "available_since": "Karabiner-Elements 15.90.22"
+    },
+    {
+        "name": "`accessibility.focused_ui_element.window_position_x`",
+        "type": "integer",
+        "data_source": "kAXWindowAttribute or kAXFocusedWindowAttribute",
+        "available_since": "Karabiner-Elements 15.90.17"
+    },
+    {
+        "name": "`accessibility.focused_ui_element.window_position_y`",
+        "type": "integer",
+        "data_source": "kAXWindowAttribute or kAXFocusedWindowAttribute",
+        "available_since": "Karabiner-Elements 15.90.17"
+    },
+    {
+        "name": "`accessibility.focused_ui_element.window_size_height`",
+        "type": "integer",
+        "data_source": "kAXWindowAttribute or kAXFocusedWindowAttribute",
+        "available_since": "Karabiner-Elements 15.90.17"
+    },
+    {
+        "name": "`accessibility.focused_ui_element.window_size_width`",
+        "type": "integer",
+        "data_source": "kAXWindowAttribute or kAXFocusedWindowAttribute",
+        "available_since": "Karabiner-Elements 15.90.17"
+    }
+]
+```
+
+{{< /parameter-table >}}

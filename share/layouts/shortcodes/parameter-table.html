@@ -2,32 +2,91 @@
 {{- $json = replaceRE "^```json[[:space:]]*" "" $json -}}
 {{- $json = replaceRE "[[:space:]]*```$" "" $json -}}
 {{- $rows := transform.Unmarshal (dict "format" "json") $json -}}
+{{- $hasPriority := false -}}
+{{- $hasType := false -}}
+{{- $hasValue := false -}}
+{{- $hasExampleValue := false -}}
+{{- $hasRequired := false -}}
+{{- $hasDescription := false -}}
+{{- $hasDataSource := false -}}
+{{- $hasFixedValue := false -}}
+{{- range $rows -}}
+  {{- if isset . "priority" -}}{{- $hasPriority = true -}}{{- end -}}
+  {{- if isset . "type" -}}{{- $hasType = true -}}{{- end -}}
+  {{- if isset . "value" -}}{{- $hasValue = true -}}{{- end -}}
+  {{- if isset . "example_value" -}}{{- $hasExampleValue = true -}}{{- end -}}
+  {{- if isset . "required" -}}{{- $hasRequired = true -}}{{- end -}}
+  {{- if isset . "description" -}}{{- $hasDescription = true -}}{{- end -}}
+  {{- if isset . "data_source" -}}{{- $hasDataSource = true -}}{{- end -}}
+  {{- if isset . "fixed_value" -}}{{- $hasFixedValue = true -}}{{- end -}}
+{{- end -}}
 
 <table class="parameter-table">
   <thead>
     <tr>
-      <th>Name</th>
-      <th>Required</th>
-      <th>Description</th>
+      {{- if $hasPriority }}<th>Priority</th>{{ end -}}
+      <th>{{ .Get "name-header" | default "Name" }}</th>
+      {{- if $hasType }}<th>Type</th>{{ end -}}
+      {{- if $hasValue }}<th>Value</th>{{ end -}}
+      {{- if $hasExampleValue }}<th>Example value</th>{{ end -}}
+      {{- if $hasRequired }}<th>Required</th>{{ end -}}
+      {{- if $hasDescription }}<th>Description</th>{{ end -}}
+      {{- if $hasDataSource }}<th>Data source</th>{{ end -}}
+      {{- if $hasFixedValue }}<th>Fixed Value</th>{{ end -}}
     </tr>
   </thead>
   <tbody>
     {{- range $rows }}
       <tr>
-        <td><code>{{ .name }}</code></td>
-        <td>
-          {{- if .required -}}
-            <strong>Required</strong>
-          {{- else -}}
-            Optional
-          {{- end -}}
-        </td>
-        <td>
-          {{- $.Page.RenderString (dict "display" "inline") .description -}}
-          {{- with .available_since -}}
-            <br /><span class="text-body-secondary">(Available since {{ . }})</span>
-          {{- end -}}
-        </td>
+        {{- if $hasPriority }}<td>{{ .priority }}</td>{{ end -}}
+        <td>{{ $.Page.RenderString (dict "display" "inline") .name }}</td>
+        {{- if $hasType }}
+          <td>{{ with .type }}{{ $.Page.RenderString (dict "display" "inline") . }}{{ end }}</td>
+        {{- end }}
+        {{- if $hasValue }}
+          <td>
+            {{- with .value }}{{ $.Page.RenderString (dict "display" "inline") . }}{{ end -}}
+            {{- if and .available_since (not $hasExampleValue) (not $hasDescription) (not $hasDataSource) -}}
+              <br /><span class="text-body-secondary">(Available since {{ .available_since }})</span>
+            {{- end -}}
+          </td>
+        {{- end }}
+        {{- if $hasExampleValue }}
+          <td>
+            {{- with .example_value }}{{ $.Page.RenderString (dict "display" "inline") . }}{{ end -}}
+            {{- if and .available_since (not $hasDescription) (not $hasDataSource) -}}
+              <br /><span class="text-body-secondary">(Available since {{ .available_since }})</span>
+            {{- end -}}
+          </td>
+        {{- end }}
+        {{- if $hasRequired }}
+          <td>
+            {{- if eq (printf "%T" .required) "bool" -}}
+              {{- if .required -}}<strong>Required</strong>{{- else -}}Optional{{- end -}}
+            {{- else -}}
+              {{- $.Page.RenderString (dict "display" "inline") .required -}}
+            {{- end -}}
+          </td>
+        {{- end }}
+        {{- if $hasDescription }}
+          <td>
+            {{- with .description }}{{ $.Page.RenderString (dict "display" "inline") . }}{{ end -}}
+            {{- if and .available_since (not $hasDataSource) -}}
+              <br /><span class="text-body-secondary">(Available since {{ .available_since }})</span>
+            {{- end -}}
+          </td>
+        {{- end }}
+        {{- if $hasDataSource }}
+          <td>
+            {{- with .data_source }}{{ $.Page.RenderString (dict "display" "inline") . }}{{ end -}}
+            {{- with .available_since -}}
+              <br /><span class="text-body-secondary">(Available since {{ . }})</span>
+            {{- end -}}
+          </td>
+        {{- end }}
+        {{- if $hasFixedValue }}
+          <td>{{ with .fixed_value }}{{ $.Page.RenderString (dict "display" "inline") . }}{{ end }}</td>
+        {{- end }}
       </tr>
     {{- end }}
   </tbody>

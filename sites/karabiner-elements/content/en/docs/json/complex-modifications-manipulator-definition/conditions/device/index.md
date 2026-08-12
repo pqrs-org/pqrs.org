@@ -60,37 +60,137 @@ Change caps_lock to escape on Apple keyboards, wiht the vendor ID is 1452 (0x05a
 }
 ```
 
-| Name          | Required     | Description                                                                            |
-| ------------- | ------------ | -------------------------------------------------------------------------------------- |
-| `type`        | **Required** | `"device_if"` or `"device_unless"` or `"device_exists_if"` or `"device_exists_unless"` |
-| `identifiers` | **Required** | Target device definitions                                                              |
-| `description` | Optional     | A human-readable comment                                                               |
+{{< parameter-table >}}
+
+```json
+[
+    {
+        "name": "`type`",
+        "required": true,
+        "description": "`\"device_if\"` or `\"device_unless\"` or `\"device_exists_if\"` or `\"device_exists_unless\"`"
+    },
+    {
+        "name": "`identifiers`",
+        "required": true,
+        "description": "Target device definitions"
+    },
+    {
+        "name": "`description`",
+        "required": false,
+        "description": "A human-readable comment"
+    }
+]
+```
+
+{{< /parameter-table >}}
 
 ### `type`
 
-| Type                   | Description                                                | Available since           |
-| ---------------------- | ---------------------------------------------------------- | ------------------------- |
-| `device_if`            | Valid only for devices specified in identifiers            | Karabiner-Elements 11.0.0 |
-| `device_unless`        | Valid only for devices other than specified in identifiers | Karabiner-Elements 11.0.0 |
-| `device_exists_if`     | Valid if a specified device is connected                   | Karabiner-Elements 14.8.4 |
-| `device_exists_unless` | Valid unless a specified device is connected               | Karabiner-Elements 14.8.4 |
+{{< parameter-table name-header="Type" >}}
+
+```json
+[
+    {
+        "name": "`device_if`",
+        "description": "Valid only for devices specified in identifiers",
+        "available_since": "Karabiner-Elements 11.0.0"
+    },
+    {
+        "name": "`device_unless`",
+        "description": "Valid only for devices other than specified in identifiers",
+        "available_since": "Karabiner-Elements 11.0.0"
+    },
+    {
+        "name": "`device_exists_if`",
+        "description": "Valid if a specified device is connected",
+        "available_since": "Karabiner-Elements 14.8.4"
+    },
+    {
+        "name": "`device_exists_unless`",
+        "description": "Valid unless a specified device is connected",
+        "available_since": "Karabiner-Elements 14.8.4"
+    }
+]
+```
+
+{{< /parameter-table >}}
 
 ### `identifiers`
 
 `identifiers` is an array of objects.
 
-| Name                   | Required | Description                                                                                                                                         | Fixed Value |
-| ---------------------- | -------- | --------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
-| `vendor_id`            | Optional | Vendor ID of device                                                                                                                                 | Yes         |
-| `product_id`           | Optional | Product ID of device                                                                                                                                | Yes         |
-| `device_address`       | Optional | Bluetooth address (Bluetooth MAC address) of device <br />(only available for Bluetooth devices) <br />(available since Karabiner-Elements 14.12.2) | Yes `[1]`   |
-| `location_id`          | Optional | Location ID of device                                                                                                                               | No `[2]`    |
-| `is_keyboard`          | Optional | `true` or `false`                                                                                                                                   | Yes         |
-| `is_pointing_device`   | Optional | `true` or `false`                                                                                                                                   | Yes         |
-| `is_game_pad`          | Optional | `true` or `false`<br />(available since Karabiner-Elements 14.12.4)                                                                                 | Yes         |
-| `is_consumer`          | Optional | `true` or `false`<br />(available since Karabiner-Elements 15.3.18)                                                                                 | Yes         |
-| `is_touch_bar`         | Optional | `true` or `false`                                                                                                                                   | Yes         |
-| `is_built_in_keyboard` | Optional | `true` or `false`<br />(available since Karabiner-Elements 14.8.2)                                                                                  | Yes         |
+{{< parameter-table >}}
+
+```json
+[
+    {
+        "name": "`vendor_id`",
+        "required": false,
+        "description": "Vendor ID of device",
+        "fixed_value": "Yes"
+    },
+    {
+        "name": "`product_id`",
+        "required": false,
+        "description": "Product ID of device",
+        "fixed_value": "Yes"
+    },
+    {
+        "name": "`device_address`",
+        "required": false,
+        "description": "Bluetooth address (Bluetooth MAC address) of device<br />(only available for Bluetooth devices)",
+        "available_since": "Karabiner-Elements 14.12.2",
+        "fixed_value": "Yes `[1]`"
+    },
+    {
+        "name": "`location_id`",
+        "required": false,
+        "description": "Location ID of device",
+        "fixed_value": "No `[2]`"
+    },
+    {
+        "name": "`is_keyboard`",
+        "required": false,
+        "description": "`true` or `false`",
+        "fixed_value": "Yes"
+    },
+    {
+        "name": "`is_pointing_device`",
+        "required": false,
+        "description": "`true` or `false`",
+        "fixed_value": "Yes"
+    },
+    {
+        "name": "`is_game_pad`",
+        "required": false,
+        "description": "`true` or `false`",
+        "available_since": "Karabiner-Elements 14.12.4",
+        "fixed_value": "Yes"
+    },
+    {
+        "name": "`is_consumer`",
+        "required": false,
+        "description": "`true` or `false`",
+        "available_since": "Karabiner-Elements 15.3.18",
+        "fixed_value": "Yes"
+    },
+    {
+        "name": "`is_touch_bar`",
+        "required": false,
+        "description": "`true` or `false`",
+        "fixed_value": "Yes"
+    },
+    {
+        "name": "`is_built_in_keyboard`",
+        "required": false,
+        "description": "`true` or `false`",
+        "available_since": "Karabiner-Elements 14.8.2",
+        "fixed_value": "Yes"
+    }
+]
+```
+
+{{< /parameter-table >}}
 
 - `[1]` The `device_address` will change when you replace the hardware.
 - `[2]` The `location_id` will change when you change the USB port which the device is connected.

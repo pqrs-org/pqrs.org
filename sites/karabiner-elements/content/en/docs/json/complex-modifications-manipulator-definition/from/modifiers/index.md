@@ -5,10 +5,26 @@ weight: 200
 
 `from.modifiers` is a object which has the following keys.
 
-| Key         | Value               | Required | Description                     |
-| ----------- | ------------------- | -------- | ------------------------------- |
-| `mandatory` | An array of strings | Optional | Modifiers which must be pressed |
-| `optional`  | An array of strings | Optional | Modifiers which can be pressed  |
+{{< parameter-table name-header="Key" >}}
+
+```json
+[
+    {
+        "name": "`mandatory`",
+        "value": "An array of strings",
+        "required": false,
+        "description": "Modifiers which must be pressed"
+    },
+    {
+        "name": "`optional`",
+        "value": "An array of strings",
+        "required": false,
+        "description": "Modifiers which can be pressed"
+    }
+]
+```
+
+{{< /parameter-table >}}
 
 ## `from.modifiers.mandatory`
 
@@ -28,27 +44,61 @@ If you do not include `any` in `modifiers.optional`, your manipulator does not c
 
 `modifiers.mandatory` and `modifiers.optional` are array of the folowing strings.
 
-| Name            | Description                                                          |
-| --------------- | -------------------------------------------------------------------- |
-| `caps_lock`     | ---                                                                  |
-| `left_command`  | ---                                                                  |
-| `left_control`  | ---                                                                  |
-| `left_option`   | ---                                                                  |
-| `left_shift`    | ---                                                                  |
-| `right_command` | ---                                                                  |
-| `right_control` | ---                                                                  |
-| `right_option`  | ---                                                                  |
-| `right_shift`   | ---                                                                  |
-| `fn`            | ---                                                                  |
-| `command`       | Either left command or right command is pressed                      |
-| `control`       | Either left control or right control is pressed                      |
-| `option`        | Either left option or right option is pressed                        |
-| `shift`         | Either left shift or right shift is pressed                          |
-| `left_alt`      | Alias of `left_option` (available since Karabiner-Elements 12.3.0)   |
-| `left_gui`      | Alias of `left_command` (available since Karabiner-Elements 12.3.0)  |
-| `right_alt`     | Alias of `right_option` (available since Karabiner-Elements 12.3.0)  |
-| `right_gui`     | Alias of `right_command` (available since Karabiner-Elements 12.3.0) |
-| `any`           | Any modifiers                                                        |
+{{< parameter-table >}}
+
+```json
+[
+    { "name": "`caps_lock`", "description": "—" },
+    { "name": "`left_command`", "description": "—" },
+    { "name": "`left_control`", "description": "—" },
+    { "name": "`left_option`", "description": "—" },
+    { "name": "`left_shift`", "description": "—" },
+    { "name": "`right_command`", "description": "—" },
+    { "name": "`right_control`", "description": "—" },
+    { "name": "`right_option`", "description": "—" },
+    { "name": "`right_shift`", "description": "—" },
+    { "name": "`fn`", "description": "—" },
+    {
+        "name": "`command`",
+        "description": "Either left command or right command is pressed"
+    },
+    {
+        "name": "`control`",
+        "description": "Either left control or right control is pressed"
+    },
+    {
+        "name": "`option`",
+        "description": "Either left option or right option is pressed"
+    },
+    {
+        "name": "`shift`",
+        "description": "Either left shift or right shift is pressed"
+    },
+    {
+        "name": "`left_alt`",
+        "description": "Alias of `left_option`",
+        "available_since": "Karabiner-Elements 12.3.0"
+    },
+    {
+        "name": "`left_gui`",
+        "description": "Alias of `left_command`",
+        "available_since": "Karabiner-Elements 12.3.0"
+    },
+    {
+        "name": "`right_alt`",
+        "description": "Alias of `right_option`",
+        "available_since": "Karabiner-Elements 12.3.0"
+    },
+    {
+        "name": "`right_gui`",
+        "description": "Alias of `right_command`",
+        "available_since": "Karabiner-Elements 12.3.0"
+    },
+    { "name": "`any`", "description": "Any modifiers" }
+]
+```
+
+{{< /parameter-table >}}
 
 ## Examples
 

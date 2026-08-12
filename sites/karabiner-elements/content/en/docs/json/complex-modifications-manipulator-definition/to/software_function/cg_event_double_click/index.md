@@ -88,9 +88,19 @@ Only use it if you absolutely must trigger double-click events without sending r
 }
 ```
 
-| Name     | Required     | Description                                                                                                           |
-| -------- | ------------ | --------------------------------------------------------------------------------------------------------------------- |
-| `button` | **Required** | An integer of CGMouseButton.<br><br>0: Left Click<br>1: Right Click<br>2: Middle Click<br>3,4,5,...,31: Other Buttons |
+{{< parameter-table >}}
+
+```json
+[
+    {
+        "name": "`button`",
+        "required": true,
+        "description": "An integer of CGMouseButton.<br><br>0: Left Click<br>1: Right Click<br>2: Middle Click<br>3,4,5,...,31: Other Buttons"
+    }
+]
+```
+
+{{< /parameter-table >}}
 
 {{% alert title="Accessibility" color="primary" %}}
 

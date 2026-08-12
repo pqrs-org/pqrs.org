@@ -72,17 +72,17 @@ Show the notification message while you press right shift key.
 ```json
 [
     {
-        "name": "id",
+        "name": "`id`",
         "required": true,
         "description": "A unique identifier for the notification message."
     },
     {
-        "name": "text",
+        "name": "`text`",
         "required": true,
         "description": "The notification message to display."
     },
     {
-        "name": "duration_milliseconds",
+        "name": "`duration_milliseconds`",
         "required": false,
         "description": "If specified, the notification message is dismissed after the specified number of milliseconds.",
         "available_since": "Karabiner-Elements 16.1.18"

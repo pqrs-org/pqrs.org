@@ -58,11 +58,29 @@ Set the mouse cursor position to center of the first screen by right_shift+c.
 }
 ```
 
-| Name     | Required     | Description                                     |
-| -------- | ------------ | ----------------------------------------------- |
-| `x`      | **Required** | The new mouse cursor position                   |
-| `y`      | **Required** | The new mouse cursor position                   |
-| `screen` | Optional     | The screen index of the new mouse cursor origin |
+{{< parameter-table >}}
+
+```json
+[
+    {
+        "name": "`x`",
+        "required": true,
+        "description": "The new mouse cursor position"
+    },
+    {
+        "name": "`y`",
+        "required": true,
+        "description": "The new mouse cursor position"
+    },
+    {
+        "name": "`screen`",
+        "required": false,
+        "description": "The screen index of the new mouse cursor origin"
+    }
+]
+```
+
+{{< /parameter-table >}}
 
 ### Position format
 

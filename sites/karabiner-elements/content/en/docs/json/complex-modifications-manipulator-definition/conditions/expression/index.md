@@ -79,10 +79,24 @@ Send Command+Q only when it has been pressed twice.
 }
 ```
 
-| Name         | Required     | Description                                 |
-| ------------ | ------------ | ------------------------------------------- |
-| `type`       | **Required** | `"expression_if"` or `"expression_unless"`. |
-| `expression` | **Required** | Target expression.                          |
+{{< parameter-table >}}
+
+```json
+[
+    {
+        "name": "`type`",
+        "required": true,
+        "description": "`\"expression_if\"` or `\"expression_unless\"`."
+    },
+    {
+        "name": "`expression`",
+        "required": true,
+        "description": "Target expression."
+    }
+]
+```
+
+{{< /parameter-table >}}
 
 ## Expression specification
 

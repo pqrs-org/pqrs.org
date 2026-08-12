@@ -162,11 +162,35 @@ Focus the most recently used application (excluding Safari and Preview) using <k
 }
 ```
 
-| Priority | Name                                  | Required | Description                                      | Available since |
-| -------- | ------------------------------------- | -------- | ------------------------------------------------ | --------------- |
-| 1        | `bundle_identifier`                   | Optional | The bundle identifier of the application         | v15.0.19        |
-| 2        | `file_path`                           | Optional | The file path of the application                 | v15.0.19        |
-| 3        | `frontmost_application_history_index` | Optional | The index of the frontmost application's history | v15.3.6         |
+{{< parameter-table >}}
+
+```json
+[
+    {
+        "priority": 1,
+        "name": "`bundle_identifier`",
+        "required": false,
+        "description": "The bundle identifier of the application",
+        "available_since": "v15.0.19"
+    },
+    {
+        "priority": 2,
+        "name": "`file_path`",
+        "required": false,
+        "description": "The file path of the application",
+        "available_since": "v15.0.19"
+    },
+    {
+        "priority": 3,
+        "name": "`frontmost_application_history_index`",
+        "required": false,
+        "description": "The index of the frontmost application's history",
+        "available_since": "v15.3.6"
+    }
+]
+```
+
+{{< /parameter-table >}}
 
 {{% alert title="Notes" color="primary" %}}
 

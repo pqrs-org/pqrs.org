@@ -45,11 +45,29 @@ Change `tab` key to `return_or_enter` if the tab key is the physical tab key.
 }
 ```
 
-| Name          | Required     | Description                                      |
-| ------------- | ------------ | ------------------------------------------------ |
-| `type`        | **Required** | `"event_changed_if"` or `"event_changed_unless"` |
-| `value`       | **Required** | `true` or `false`                                |
-| `description` | Optional     | A human-readable comment                         |
+{{< parameter-table >}}
+
+```json
+[
+    {
+        "name": "`type`",
+        "required": true,
+        "description": "`\"event_changed_if\"` or `\"event_changed_unless\"`"
+    },
+    {
+        "name": "`value`",
+        "required": true,
+        "description": "`true` or `false`"
+    },
+    {
+        "name": "`description`",
+        "required": false,
+        "description": "A human-readable comment"
+    }
+]
+```
+
+{{< /parameter-table >}}
 
 {{% alert title="Tip" color="primary" %}}
 

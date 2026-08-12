@@ -50,16 +50,54 @@ weight: 100
 }
 ```
 
-| Name                                           | Required | Description                                                                     |
-| ---------------------------------------------- | -------- | ------------------------------------------------------------------------------- |
-| `key_code`                                     | Optional | Key code which you want to change                                               |
-| `consumer_key_code`                            | Optional | Consumer key code (media key code) which you want to change                     |
-| `pointing_button`                              | Optional | Pointing button name which you want to change                                   |
-| [`any`](any/)                                  | Optional | `"any": "key_code"`, `"any": "consumer_key_code"` or `"any": "pointing_button"` |
-| [`modifiers`](modifiers/)                      | Optional | Specify mandatory and optional modifiers (e.g., "change control-h to delete")   |
-| [`integer_value`](integer-value/)              | Optional | Modify only events with a specific integer value.                               |
-| [`simultaneous`](simultaneous/)                | Optional | Specify multiple events which are pressed simultaneously                        |
-| [`simultaneous_options`](simultaneous-options) | Optional | Options for `simultaneous`                                                      |
+{{< parameter-table >}}
+
+```json
+[
+    {
+        "name": "`key_code`",
+        "required": false,
+        "description": "Key code which you want to change"
+    },
+    {
+        "name": "`consumer_key_code`",
+        "required": false,
+        "description": "Consumer key code (media key code) which you want to change"
+    },
+    {
+        "name": "`pointing_button`",
+        "required": false,
+        "description": "Pointing button name which you want to change"
+    },
+    {
+        "name": "[`any`](any/)",
+        "required": false,
+        "description": "`\"any\": \"key_code\"`, `\"any\": \"consumer_key_code\"` or `\"any\": \"pointing_button\"`"
+    },
+    {
+        "name": "[`modifiers`](modifiers/)",
+        "required": false,
+        "description": "Specify mandatory and optional modifiers (e.g., \"change control-h to delete\")"
+    },
+    {
+        "name": "[`integer_value`](integer-value/)",
+        "required": false,
+        "description": "Modify only events with a specific integer value."
+    },
+    {
+        "name": "[`simultaneous`](simultaneous/)",
+        "required": false,
+        "description": "Specify multiple events which are pressed simultaneously"
+    },
+    {
+        "name": "[`simultaneous_options`](simultaneous-options/)",
+        "required": false,
+        "description": "Options for `simultaneous`"
+    }
+]
+```
+
+{{< /parameter-table >}}
 
 {{% alert title="Note" color="primary" %}}
 `key_code`, `consumer_key_code`, `pointing_button` and `any` are exclusive.<br />

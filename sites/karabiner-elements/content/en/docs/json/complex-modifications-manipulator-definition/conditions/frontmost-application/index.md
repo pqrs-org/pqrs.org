@@ -56,12 +56,34 @@ Change `control-h` key to `delete_or_backspace` except in Terminal.
 }
 ```
 
-| Name                 | Required     | Description                                                                                    |
-| -------------------- | ------------ | ---------------------------------------------------------------------------------------------- |
-| `type`               | **Required** | `"frontmost_application_if"` or `"frontmost_application_unless"`                               |
-| `bundle_identifiers` | Optional     | Bundle identifier regexs such as `["^com\\.apple\\.Terminal$", "^com\\.googlecode\\.iterm2$"]` |
-| `file_paths`         | Optional     | File path regexs such as `["/Finder$"]`                                                        |
-| `description`        | Optional     | A human-readable comment                                                                       |
+{{< parameter-table >}}
+
+```json
+[
+    {
+        "name": "`type`",
+        "required": true,
+        "description": "`\"frontmost_application_if\"` or `\"frontmost_application_unless\"`"
+    },
+    {
+        "name": "`bundle_identifiers`",
+        "required": false,
+        "description": "Bundle identifier regexs such as `[\"^com\\\\.apple\\\\.Terminal$\", \"^com\\\\.googlecode\\\\.iterm2$\"]`"
+    },
+    {
+        "name": "`file_paths`",
+        "required": false,
+        "description": "File path regexs such as `[\"/Finder$\"]`"
+    },
+    {
+        "name": "`description`",
+        "required": false,
+        "description": "A human-readable comment"
+    }
+]
+```
+
+{{< /parameter-table >}}
 
 ### Multiple bundle identifiers or file paths
 

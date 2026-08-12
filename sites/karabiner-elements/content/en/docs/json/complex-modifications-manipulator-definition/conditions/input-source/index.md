@@ -80,21 +80,57 @@ Switching input source between Japanese and English at tapping the left command 
 }
 ```
 
-| Name            | Required     | Description                                    |
-| --------------- | ------------ | ---------------------------------------------- |
-| `type`          | **Required** | `"input_source_if"` or `"input_source_unless"` |
-| `input_sources` | **Required** | Target input source definitions                |
-| `description`   | Optional     | A human-readable comment                       |
+{{< parameter-table >}}
+
+```json
+[
+    {
+        "name": "`type`",
+        "required": true,
+        "description": "`\"input_source_if\"` or `\"input_source_unless\"`"
+    },
+    {
+        "name": "`input_sources`",
+        "required": true,
+        "description": "Target input source definitions"
+    },
+    {
+        "name": "`description`",
+        "required": false,
+        "description": "A human-readable comment"
+    }
+]
+```
+
+{{< /parameter-table >}}
 
 ### `input_sources`
 
 `input_sources` is an array of objects.
 
-| Name              | Required | Description                                                                           |
-| ----------------- | -------- | ------------------------------------------------------------------------------------- |
-| `language`        | Optional | The language regex such as `"^en$"`, `"^ja$"`                                         |
-| `input_source_id` | Optional | The input source id regex such as `"^com\\.apple\\.keylayout\\.US$"`                  |
-| `input_mode_id`   | Optional | The input mode id regex such as `"^com\\.apple\\.inputmethod\\.Japanese\\.Hiragana$"` |
+{{< parameter-table >}}
+
+```json
+[
+    {
+        "name": "`language`",
+        "required": false,
+        "description": "The language regex such as `\"^en$\"`, `\"^ja$\"`"
+    },
+    {
+        "name": "`input_source_id`",
+        "required": false,
+        "description": "The input source id regex such as `\"^com\\\\.apple\\\\.keylayout\\\\.US$\"`"
+    },
+    {
+        "name": "`input_mode_id`",
+        "required": false,
+        "description": "The input mode id regex such as `\"^com\\\\.apple\\\\.inputmethod\\\\.Japanese\\\\.Hiragana$\"`"
+    }
+]
+```
+
+{{< /parameter-table >}}
 
 #### Multiple identifiers
 

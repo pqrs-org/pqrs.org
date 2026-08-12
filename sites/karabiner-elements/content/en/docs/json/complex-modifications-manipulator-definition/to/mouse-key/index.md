@@ -145,13 +145,39 @@ Move mouse pointer and scroll by `mouse_key`.
 }
 ```
 
-| Name               | Required | Description                                                        |
-| ------------------ | -------- | ------------------------------------------------------------------ |
-| `x`                | Optional | Move left (x < 0) or right (x > 0)                                 |
-| `y`                | Optional | Move up (y < 0) or down (y > 0)                                    |
-| `vertical_wheel`   | Optional | Scroll up (vertical_wheel < 0) or down (vertical_wheel > 0)        |
-| `horizontal_wheel` | Optional | Scroll left (horizontal_wheel > 0) or right (horizontal_wheel < 0) |
-| `speed_multiplier` | Optional | Multiply mouse keys speed while this key is hold down              |
+{{< parameter-table >}}
+
+```json
+[
+    {
+        "name": "`x`",
+        "required": false,
+        "description": "Move left (x < 0) or right (x > 0)"
+    },
+    {
+        "name": "`y`",
+        "required": false,
+        "description": "Move up (y < 0) or down (y > 0)"
+    },
+    {
+        "name": "`vertical_wheel`",
+        "required": false,
+        "description": "Scroll up (vertical_wheel < 0) or down (vertical_wheel > 0)"
+    },
+    {
+        "name": "`horizontal_wheel`",
+        "required": false,
+        "description": "Scroll left (horizontal_wheel > 0) or right (horizontal_wheel < 0)"
+    },
+    {
+        "name": "`speed_multiplier`",
+        "required": false,
+        "description": "Multiply mouse keys speed while this key is hold down"
+    }
+]
+```
+
+{{< /parameter-table >}}
 
 {{% alert title="Note" color="primary" %}}
 Speed and scroll direction depend on System Settings > Mouse configuration.
