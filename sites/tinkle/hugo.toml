@@ -94,7 +94,7 @@ enable = false
 proxy = "direct"
 
 [[module.imports]]
-path = "github.com/google/docsy"
+path = "github.com/google/docsy/theme"
 
 [[module.mounts]]
 source = "static"
