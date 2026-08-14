@@ -237,7 +237,7 @@ This json defines manipulator which changes `control + h` to `delete_or_backspac
 
 When setting caps lock as modifiers.mandatory, you need to configure to carefully; otherwise, caps lock will be turned off.
 
-#### Solution 1: Add `caps_lock` to `to.modifiers`.
+#### Solution 1: Add `caps_lock` to `to.modifiers`
 
 This approach is more stable, so if the shortcut works fine even with caps lock on, please use this method.
 
@@ -264,7 +264,7 @@ This approach is more stable, so if the shortcut works fine even with caps lock 
 }
 ```
 
-#### Solution 2: Explicitly turn caps_lock off in `to`, then turn it back on.
+#### Solution 2: Explicitly turn caps_lock off in `to`, then turn it back on
 
 ```json
 {
