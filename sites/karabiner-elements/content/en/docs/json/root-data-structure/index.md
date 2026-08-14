@@ -67,6 +67,11 @@ but all comments will be lost if the settings are modified through the Menu or S
         "rules": [
             {
                 "description": "This description is shown in Settings.",
+                "notes": [
+                    "Usage notes and other information",
+                    "Displayed in smaller text",
+                    "The notes field is supported in Karabiner-Elements 16.1.20 and later"
+                ],
                 "manipulators": [
                     {
                         "type": "basic",
@@ -131,6 +136,9 @@ but all comments will be lost if the settings are modified through the Menu or S
             },
             {
                 "description": "...",
+                "notes": [
+                    ...
+                ],
                 "manipulators": [
                     ...
                 ]
@@ -153,6 +161,11 @@ Adding a custom .json file allows for enabling and disabling rules/complex modif
     "rules": [
         {
             "description": "This description is shown in Settings.",
+            "notes": [
+                "Usage notes and other information",
+                "Displayed in smaller text",
+                "The notes field is supported in Karabiner-Elements 16.1.20 and later"
+            ],
             "manipulators": [
                 {
                     "type": "basic",
@@ -217,6 +230,9 @@ Adding a custom .json file allows for enabling and disabling rules/complex modif
         },
         {
             "description": "...",
+            "notes": [
+                ...
+            ],
             "manipulators": [
                 ...
             ]
