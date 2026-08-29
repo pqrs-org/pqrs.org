@@ -95,3 +95,15 @@ enable = false
 proxy = "direct"
 [[module.imports]]
 path = "github.com/google/docsy/theme"
+
+[[module.mounts]]
+source = "assets"
+target = "assets"
+
+[[module.mounts]]
+source = "../../share/assets/js/share"
+target = "assets/js/share"
+
+[[module.mounts]]
+source = "../../share/assets/scss"
+target = "assets/scss"

@@ -103,3 +103,15 @@ target = "static"
 [[module.mounts]]
 source = "../../share/static/images"
 target = "static/images/share"
+
+[[module.mounts]]
+source = "assets"
+target = "assets"
+
+[[module.mounts]]
+source = "../../share/assets/js/share"
+target = "assets/js/share"
+
+[[module.mounts]]
+source = "../../share/assets/scss"
+target = "assets/scss"
