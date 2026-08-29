@@ -245,6 +245,12 @@ You can use these variables to [modify behavior only unless an input field is fo
         "type": "integer",
         "data_source": "kAXWindowAttribute or kAXFocusedWindowAttribute",
         "available_since": "Karabiner-Elements 15.90.17"
+    },
+    {
+        "name": "`accessibility.focused_ui_element.window_title_string`",
+        "type": "string",
+        "data_source": "kAXTitleAttribute of kAXTopLevelUIElementAttribute, kAXWindowAttribute, or kAXFocusedWindowAttribute",
+        "available_since": "Karabiner-Elements 16.1.94"
     }
 ]
 ```
