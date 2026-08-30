@@ -28,11 +28,12 @@ mv ~/.config/karabiner "$HOME/Library/Application Support/org.pqrs/config"
 ln -s "$HOME/Library/Application Support/org.pqrs/config/karabiner" ~/.config
 ```
 
-After changing the actual location of `karabiner.json`, you need to restart `karabiner_console_user_server` by using the following command.
-Otherwise, Karabiner-Elements will not be able to automatically detect updates to `karabiner.json`.
+After changing the actual location of `karabiner.json`, run the following command once to restart `Karabiner-Console-User-Server`.
+This restart is required for Karabiner-Elements to begin monitoring `karabiner.json` at its new location.
+Until you restart it, changes to the file will not be detected automatically.
 
 ```shell
-launchctl kickstart -k gui/$(id -u)/org.pqrs.service.agent.karabiner_console_user_server
+launchctl kickstart -k gui/$(id -u)/org.pqrs.service.agent.Karabiner-Console-User-Server
 ```
 
 {{% alert title="Tip" color="primary" %}}
@@ -49,9 +50,8 @@ However, if you move the `karabiner.json` file to a location that requires speci
 such as the `Desktop`, `Documents`, `Downloads`, or some locations under `Library`, you will need to grant access permissions to the following applications.
 
 - `/Applications/Karabiner-Elements.app`
-- `/Library/Application Support/org.pqrs/Karabiner-Elements/bin/karabiner_console_user_server`
+- `/Library/Application Support/org.pqrs/Karabiner-Elements/Karabiner-Console-User-Server.app`
 - `/Library/Application Support/org.pqrs/Karabiner-Elements/Karabiner-Core-Service.app`
-- `/Library/Application Support/org.pqrs/Karabiner-Elements/Karabiner-Menu.app`
 
 The most reliable approach is to grant Full Disk Access to these processes.
 

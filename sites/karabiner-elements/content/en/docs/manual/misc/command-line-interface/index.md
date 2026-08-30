@@ -45,6 +45,9 @@ Usage:
                                 variable changes
       --set-variables arg       Json string: {[key: string]:
                                 number|boolean|string}
+      --set-variables-from-stdin
+                                Read one variables JSON object per line
+                                from stdin
       --copy-current-profile-to-system-default-profile
                                 Copy the current profile to system default
                                 profile
@@ -53,20 +56,26 @@ Usage:
       --show-settings-window-guidance
                                 Show the settings window guidance state
       --lint-complex-modifications glob-patterns
-                                Check complex_modifications.json
+                                Validate complex modifications JSON and
+                                JavaScript files for distribution
       --format-json glob-patterns
                                 Format json files
       --eval-js glob-patterns   Run javascript files using Duktape
+      --eval-js-to-json file    Evaluate a JavaScript file and print the
+                                returned object as JSON
       --version                 Displays version
       --version-number          Displays version_number
       --help                    Print help
       --silent                  Suppress messages
+      --verbose                 Print variables successfully set by
+                                --set-variables-from-stdin
 
 Examples:
   karabiner_cli --select-profile 'Default profile'
   karabiner_cli --show-current-profile-name
   karabiner_cli --list-profile-names
   karabiner_cli --set-variables '{"cli_flag1":1, "cli_flag2":2}'
+  printf '{"cli_flag1":1}\n{"cli_flag2":2}\n' | karabiner_cli --set-variables-from-stdin --verbose
 ```
 
 ---

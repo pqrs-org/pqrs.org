@@ -53,13 +53,12 @@ You can approve the system extension in `macOS System Settings > Login Items & E
 
 Karabiner-Elements uses the system extension to provide a virtual keyboard and mouse.
 You have to approve system extension before using it.
-You can confirm whether the system extension already allowed in [EventViewer](/docs/manual/operation/eventviewer/).
 
-If `org.pqrs.Karabiner-DriverKit-VirtualHIDDevice` appears in the System Extensions of the EventViewer and the status is `[activated enabled]`, the system extension is already allowed.
+You can confirm whether the system extension already allowed in System Extensions.
+If `org.pqrs.Karabiner-DriverKit-VirtualHIDDevice` exists and the status is `[activated enabled]`, the system extension is already allowed.
+Otherwise, you have to approve the system extension in macOS System Settings.
 
 {{< local-image src="images/system-extensions@2x.png" >}}
-
-Otherwise, you have to approve the system extension in macOS System Settings.
 
 {{% /alert %}}
 
