@@ -6,6 +6,42 @@ exclude_search: true
 body_class: release-notes
 ---
 
+## Karabiner-Elements 16.2.0
+
+- [📦 Download](https://github.com/pqrs-org/Karabiner-Elements/releases/download/v16.2.0/Karabiner-Elements-16.2.0.dmg)
+- 📅 Release date
+    - Aug 30, 2026
+- 🔔 Important Notes
+    - When upgrading from v15.9.0 or earlier, automatic startup of the Karabiner-Elements services will be disabled.
+      After upgrading, open Karabiner-Elements.app to re-enable automatic startup.
+- 💥 Breaking changes
+    - Integrated the Multitouch Extension menu into the Karabiner-Elements menu.
+      Open the Multitouch Extension settings from the Karabiner-Elements menu.
+- ✨ New Features
+    - Added the `Swap ISO layout-specific keys` configuration to Device tab.
+    - Added filtering functionality to the Complex Modifications list.
+    - Added support for buttons 6–8 on the ELECOM HUGE PLUS and DEFT trackballs. (Thanks to @z11i)
+    - Added appearance settings for the notification window. (Thanks to @xianjianlf2)
+    - Added `Capture Raw Input Events` and `Capture Raw Input Records` to EventViewer.
+    - Added `--set-variables-from-stdin` option to karabiner_cli.
+    - Added the `duration_milliseconds` option to `set_notification_message`. (Thanks to @xianjianlf2)
+    - Added the `Modify events for pointing devices by default` setting to Expert tab. (Thanks to @xianjianlf2)
+- 🐛 Bug Fixes
+    - Fixed CGEventTap leaks (Thanks to @MrMage and @VitalyShein)
+- ⚡️ Improvements
+    - Complex Modifications import now supports JavaScript files and single-rule JSON files.
+    - Improved the handling of macOS sleep shortcuts to prevent key-up events from immediately waking the Mac.
+    - Fixed an issue where the core service agent could rarely abort during termination.
+    - Fixed an issue where modifications could stop working for several seconds after waking from sleep on macOS.
+    - Karabiner-EventViewer and the Settings window are now closed after an upgrade.
+    - Added support for unbundled GUI apps in `frontmost_application_if` and `frontmost_application_unless`.
+    - Added support for `notes` in complex modification rules.
+    - `variable_if` now supports the following variable:
+        - accessibility.focused_ui_element.window_title_string
+    - Added the event timestamp in EventViewer.
+    - The `karabiner_console_user_server`, Menu, and NotificationWindow components have been consolidated into a single app named Karabiner-Console-User-Server.
+    - Refactored the C++ and Swift code for the Settings, EventViewer, and MultitouchExtension apps.
+
 ## Karabiner-Elements 16.1.0
 
 - [📦 Download](https://github.com/pqrs-org/Karabiner-Elements/releases/download/v16.1.0/Karabiner-Elements-16.1.0.dmg)
