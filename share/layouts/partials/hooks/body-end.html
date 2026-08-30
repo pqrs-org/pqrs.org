@@ -1,3 +1,8 @@
-{{ $js := resources.Get "js/share/pqrs.js" }}
-{{ $js := $js | minify | fingerprint }}
+{{ $js := slice
+  (resources.Get "js/share/pqrs.js")
+  (resources.Get "js/share/fragment-section-highlight.js")
+  | resources.Concat "js/share/pqrs-bundle.js"
+  | minify
+  | fingerprint
+}}
 <script src="{{ $js.RelPermalink }}"></script>

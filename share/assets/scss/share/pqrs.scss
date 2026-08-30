@@ -5,6 +5,8 @@ $success: #28a745;
 $border-color: #dee2e6;
 $td-navbar-bg-color: $primary;
 
+@import 'fragment-section-highlight';
+
 body {
   .td-content {
     overflow-wrap: break-word;

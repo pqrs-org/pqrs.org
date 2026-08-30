@@ -1,0 +1,26 @@
+body .fragment-section-highlight {
+  position: absolute;
+  z-index: 1;
+  width: 0.4rem;
+  border-radius: calc(infinity * 1px);
+  background-color: $primary;
+  pointer-events: none;
+  animation: fragment-section-highlight-pulse 1.5s ease-in-out infinite
+    alternate;
+}
+
+@keyframes fragment-section-highlight-pulse {
+  from {
+    opacity: 0.3;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body .fragment-section-highlight {
+    animation: none;
+  }
+}
