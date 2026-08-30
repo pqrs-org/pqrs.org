@@ -36,11 +36,11 @@ LC_ALL=C
 
 {{% /alert %}}
 
-After modifying the `karabiner_environment` file, you need to restart the karabiner_console_user_server process to apply the changes.
+After modifying the `karabiner_environment` file, you need to restart the Karabiner-Console-User-Server process to apply the changes.
 You can do it by running the following commands in Terminal.
 
 ```shell
-launchctl kickstart -k gui/$(id -u)/org.pqrs.service.agent.karabiner_console_user_server
+launchctl kickstart -k gui/$(id -u)/org.pqrs.service.agent.Karabiner-Console-User-Server
 ```
 
 {{% alert title="Caution" color="danger" %}}

@@ -31,7 +31,7 @@ Running with DriverKit privileges:
 
 Running with logged-in user privileges:
 
-- **karabiner_console_user_server**
+- **Karabiner-Console-User-Server**
     - It instructs the Karabiner-Core-Service daemon to start grabbing devices.
     - It also executes shell commands and sends user commands triggered by the Karabiner-Core-Service daemon.
 - **Karabiner-Core-Service** agent
@@ -41,7 +41,7 @@ Running with logged-in user privileges:
       Therefore, the Karabiner-Core-Service agent monitors changes to the focused application and UI element,
       and notifies the Karabiner-Core-Service daemon.
     - **Note:** Since the Karabiner-Core-Service agent is granted powerful permissions such as Accessibility, its role is intentionally limited.
-      Responsibilities such as executing user shell commands are handled by `karabiner_console_user_server` to keep privileges clearly separated.
+      Responsibilities such as executing user shell commands are handled by `Karabiner-Console-User-Server` to keep privileges clearly separated.
 
 ## Fully open source project
 

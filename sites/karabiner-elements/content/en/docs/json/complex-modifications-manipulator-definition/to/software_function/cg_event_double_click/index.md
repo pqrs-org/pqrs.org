@@ -105,7 +105,7 @@ Only use it if you absolutely must trigger double-click events without sending r
 {{% alert title="Accessibility" color="primary" %}}
 
 `cg_event_double_click` uses the accessibility features.
-You have to allow `karabiner_console_user_server` in Privacy & Security System Settings.
+You have to allow `Karabiner-Console-User-Server` in Privacy & Security System Settings.
 
 {{< local-image src="images/karabiner_console_user_server_accessibility@2x.png" >}}
 

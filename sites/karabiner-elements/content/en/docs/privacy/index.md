@@ -98,7 +98,7 @@ Accessibility permission is handled by the `Karabiner-Core-Service` agent runnin
 This agent monitors changes to the focused application and UI element, and notifies the `Karabiner-Core-Service` daemon.
 
 The role of this agent is intentionally limited.
-Responsibilities such as executing user shell commands are handled by `karabiner_console_user_server` to keep privileges clearly separated.
+Responsibilities such as executing user shell commands are handled by `Karabiner-Console-User-Server` to keep privileges clearly separated.
 
 {{% /alert %}}
 
