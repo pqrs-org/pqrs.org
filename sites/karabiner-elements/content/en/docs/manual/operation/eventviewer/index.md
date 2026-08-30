@@ -24,8 +24,7 @@ EventViewer displays `{"consumer_key_code":"display_brightness_decrement"}`.
 (When you actually change the key in Karabiner-Elements, you need to specify `f1`.)
 
 EventViewer also provides a way to show the original events.
-If you enable the "Temporarily turns off all Karabiner-Elements modifications" toggle,
-Karabiner-Element's modifications are temporarily disabled,
-so pressing a key in that state lets you check the device's original event.
+Select Capture Raw Input Events in the sidebar, then select the device you want to inspect, and then press the Start capture button.
+Karabiner-Elements modifications will be temporarily disabled for that device, allowing you to view its original events.
 
 {{< local-image src="images/original-events@2x.png" >}}

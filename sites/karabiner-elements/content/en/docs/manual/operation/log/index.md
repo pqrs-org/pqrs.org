@@ -27,6 +27,5 @@ User logs
 
 - ~/.local/share/karabiner/log/console_user_server.log
 - ~/.local/share/karabiner/log/core_service.log
-- /var/log/karabiner/session_monitor.{uid}.log
 
 {{% /alert %}}
