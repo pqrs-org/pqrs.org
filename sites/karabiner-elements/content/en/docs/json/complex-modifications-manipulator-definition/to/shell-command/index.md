@@ -53,7 +53,7 @@ weight: 100
 }
 ```
 
-{{% alert title="Advanced topic" color="danger" %}}
+{{% alert title="Advanced topic: environment variables" color="danger" %}}
 
 The very limited environment variables are passed to the command, `$HOME`, `$UID`, `$USER`, etc.
 
@@ -78,6 +78,38 @@ You have to set `LC_ALL` in shell_command in this case.
     "to": [
         {
             "shell_command": "export LC_ALL=en_US.UTF-8; pbpaste | tr '[:upper:]' '[:lower:]' | pbcopy"
+        }
+    ]
+}
+```
+
+{{% /alert %}}
+
+{{% alert title="Advanced topic: running multiple shell commands" color="danger" %}}
+
+If another `shell_command` is invoked while a `shell_command` is still running, the running command is forcibly terminated and the new command is executed.
+
+As a contrived example, with the configuration below, pressing `right_shift+1` and then `right_shift+2` in quick succession cancels the command triggered by `right_shift+1`, so only TextEdit launches.
+
+```json
+{
+    "description": "Open apps with right_shift+1/2",
+    "manipulators": [
+        {
+            "type": "basic",
+            "from": {
+                "key_code": "1",
+                "modifiers": { "mandatory": ["right_shift"] }
+            },
+            "to": [{ "shell_command": "sleep 0.5; open -a 'Safari.app'" }]
+        },
+        {
+            "type": "basic",
+            "from": {
+                "key_code": "2",
+                "modifiers": { "mandatory": ["right_shift"] }
+            },
+            "to": [{ "shell_command": "sleep 0.5; open -a 'TextEdit.app'" }]
         }
     ]
 }
