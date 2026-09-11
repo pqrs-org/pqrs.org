@@ -1,0 +1,14 @@
+{{- $description := .Description | plainify | htmlUnescape -}}
+{{- if not $description -}}
+  {{- $description = .Summary | plainify | htmlUnescape | replaceRE `\s+` " " | strings.TrimSpace | truncate 160 "…" -}}
+  {{/* Also cap summaries containing long words that truncate cannot split. */}}
+  {{- if gt (strings.RuneCount $description) 160 -}}
+    {{- $description = printf "%.159s…" $description -}}
+  {{- end -}}
+  {{- if not $description -}}
+    {{- $description = site.Params.description | plainify | htmlUnescape -}}
+  {{- end -}}
+{{- end -}}
+{{- with $description -}}
+  {{- trim . "\n\r\t " -}}
+{{- end -}}
