@@ -40,8 +40,16 @@ latexDashes = true
 # Image processing configuration.
 [imaging]
 resampleFilter = "CatmullRom"
-quality = 75
 anchor = "smart"
+
+[imaging.jpeg]
+quality = 75
+
+[imaging.webp]
+quality = 75
+
+[imaging.avif]
+quality = 75
 
 # Language configuration
 
@@ -95,6 +103,10 @@ enable = false
 proxy = "direct"
 [[module.imports]]
 path = "github.com/google/docsy/theme"
+
+[[module.mounts]]
+source = "../../share/layouts"
+target = "layouts"
 
 [[module.mounts]]
 source = "assets"
