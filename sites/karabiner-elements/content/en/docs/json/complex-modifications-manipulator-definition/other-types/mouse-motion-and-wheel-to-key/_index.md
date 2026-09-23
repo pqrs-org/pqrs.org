@@ -11,6 +11,13 @@ weight: 300
 
 {{% /alert %}}
 
+{{% alert color="primary" title="Enable your mouse" %}}
+
+[To use this configuration, you need to enable your mouse in the Devices tab](/docs/manual/configuration/configure-devices/).
+
+{{% /alert %}}
+
+
 ```json
 {
     "type": "mouse_motion_and_wheel_to_key",
@@ -148,7 +155,7 @@ Direction names refer to input deltas before macOS scrolling preferences are app
 
 ### fn + mouse movement to control + arrow keys
 
-The following json changes `fn + mouse movement` to `control + arrow keys`.
+The following JSON changes `fn + mouse movement` to `control + arrow keys`.
 
 {{< karabiner-elements-complex-modifications-json-usage >}}
 
