@@ -119,7 +119,7 @@ See [key code mappings](/docs/help/troubleshooting/symbols-with-non-ansi-keyboar
 
 This example is available since Karabiner-Elements 16.3.9.
 
-Change mouse tilt wheels <kbd>left_commmad + left_arrow</kbd> and <kbd>left_commmad + right_arrow</kbd>.
+Change mouse tilt wheels to <kbd>left_commmad + left_arrow</kbd> and <kbd>left_commmad + right_arrow</kbd>.
 
 {{% alert color="info" title="Enable your mouse" %}}
 
