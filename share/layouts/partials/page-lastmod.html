@@ -12,7 +12,7 @@
     {{- end -}}
   {{- end -}}
 
-  {{- if .IsNode -}}
+  {{- if .IsBranch -}}
     {{- range .RegularPagesRecursive -}}
       {{- $page := . -}}
       {{- if gt .Lastmod $lastmod -}}

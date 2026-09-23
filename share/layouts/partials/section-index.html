@@ -8,11 +8,11 @@
     {{- end -}}
 {{- end -}}
 
-{{- if gt $targetPages 0 -}}
+{{- if gt (len $targetPages) 0 -}}
     <div class="section-index">
         {{- if $parent.Params.no_list -}}
             {{/* If no_list is true we don't show a list of subpages */}}
-        {{- else if $parent.IsNode -}}
+        {{- else if $parent.IsBranch -}}
             {{/* If the page is node we show a bulleted list of subpages */}}
             <ul>
                 {{- range $targetPages -}}
