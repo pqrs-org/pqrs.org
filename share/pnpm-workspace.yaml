@@ -1,1 +1,3 @@
 minimumReleaseAge: 10080
+# Avoid package symlinks so Hugo can read dependencies mounted by Docsy.
+nodeLinker: hoisted
