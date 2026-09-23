@@ -66,9 +66,13 @@ weight: 200
 
 ## Change mouse button4 and button5 to back and forward
 
-Change mouse button 4 and button 5 to <kbd>[ + left_arrow</kbd> and <kbd>] + right_arrow</kbd>.
+Change mouse button 4 and button 5 to <kbd>left_command + [</kbd> and <kbd>left_command + ]</kbd>.
+
+{{% alert color="info" title="Enable your mouse" %}}
 
 [To use this configuration, you need to enable your mouse in the Devices tab](/docs/manual/configuration/configure-devices/).
+
+{{% /alert %}}
 
 {{< karabiner-elements-complex-modifications-json-usage >}}
 
@@ -110,6 +114,46 @@ For example, if it is set to JIS, buttons must be configured as follows:
 
 See [key code mappings](/docs/help/troubleshooting/symbols-with-non-ansi-keyboard/).
 {{% /alert %}}
+
+## Change mouse tilt wheels to back and forward
+
+This example is available since Karabiner-Elements 16.3.9.
+
+Change mouse tilt wheels <kbd>left_commmad + left_arrow</kbd> and <kbd>left_commmad + right_arrow</kbd>.
+
+{{% alert color="info" title="Enable your mouse" %}}
+
+[To use this configuration, you need to enable your mouse in the Devices tab](/docs/manual/configuration/configure-devices/).
+
+{{% /alert %}}
+
+{{< karabiner-elements-complex-modifications-json-usage >}}
+
+```json
+{
+    "description": "Change wheel tilt to command + arrow keys",
+    "manipulators": [
+        {
+            "type": "mouse_motion_and_wheel_to_key",
+            "from": {
+                "source": "horizontal_wheel",
+                "threshold": 1,
+                "sampling_interval_milliseconds": 100,
+                "cooldown_milliseconds": 100,
+                "modifiers": { "optional": ["any"] }
+            },
+            "to": {
+                "left": [
+                    { "key_code": "left_arrow", "modifiers": ["left_command"] }
+                ],
+                "right": [
+                    { "key_code": "right_arrow", "modifiers": ["left_command"] }
+                ]
+            }
+        }
+    ]
+}
+```
 
 ## Change `caps_lock` to `escape` on the built-in keyboard
 
