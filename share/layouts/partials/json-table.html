@@ -1,0 +1,19 @@
+{{/* Table contains headers (strings) and rows (arrays of Markdown strings). */}}
+<table class="json-table">
+  <thead>
+    <tr>
+      {{- range .Table.headers }}
+        <th scope="col">{{ . }}</th>
+      {{- end }}
+    </tr>
+  </thead>
+  <tbody>
+    {{- range .Table.rows }}
+      <tr>
+        {{- range . }}
+          <td>{{ $.Page.RenderString (dict "display" "inline") . }}</td>
+        {{- end }}
+      </tr>
+    {{- end }}
+  </tbody>
+</table>

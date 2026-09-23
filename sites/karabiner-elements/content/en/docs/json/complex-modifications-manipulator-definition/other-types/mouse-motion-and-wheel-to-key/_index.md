@@ -11,19 +11,19 @@ weight: 300
 
 {{% /alert %}}
 
-
 ```json
 {
     "type": "mouse_motion_and_wheel_to_key",
 
     "from": {
         "source": "xy",
-        "threshold": 20,
-        "sampling_interval_milliseconds": 100,
         "modifiers": {
             "mandatory": [...],
             "optional": [...]
-        }
+        },
+        "threshold": 20,
+        "sampling_interval_milliseconds": 100,
+        "cooldown_milliseconds": 100
     },
 
     "to": {
@@ -54,6 +54,12 @@ weight: 300
         "description": "Select mouse cursor movement or wheel input. See Input sources below."
     },
     {
+        "name": "`from.modifiers`",
+        "value": "Same as [basic.from.modifiers](../../from/modifiers/)",
+        "required": false,
+        "description": "Enable the manipulator if specified modifiers are pressed"
+    },
+    {
         "name": "`from.threshold`",
         "value": "Number",
         "required": false,
@@ -66,10 +72,10 @@ weight: 300
         "description": "Sampling window duration in milliseconds. The default value is `100`."
     },
     {
-        "name": "`from.modifiers`",
-        "value": "Same as [basic.from.modifiers](../../from/modifiers/)",
+        "name": "`from.cooldown_milliseconds`",
+        "value": "Number",
         "required": false,
-        "description": "Enable the manipulator if specified modifiers are pressed"
+        "description": "Time in milliseconds after an output event is emitted during which selected input is consumed without accumulation. The default value is `100`."
     },
     {
         "name": "`to`",
@@ -112,6 +118,32 @@ Direction names refer to input deltas before macOS scrolling preferences are app
 | Mouse cursor | X < 0          | X > 0          | Y < 0        | Y > 0        |
 | Scroll wheel | Horizontal < 0 | Horizontal > 0 | Vertical > 0 | Vertical < 0 |
 
+## Tuning tips
+
+{{< json-table >}}
+
+```json
+{
+    "headers": ["Symptom", "Adjustment"],
+    "rows": [
+        [
+            "A single movement or tilt triggers repeated key presses",
+            "Increase `from.cooldown_milliseconds`. Try `500` (500 ms)."
+        ],
+        [
+            "No response",
+            "Decrease `from.threshold`. Try `1`."
+        ],
+        [
+            "The response is too slow",
+            "Decrease `from.sampling_interval_milliseconds`. Try `50` (50 ms)."
+        ]
+    ]
+}
+```
+
+{{< /json-table >}}
+
 ## Examples
 
 ### fn + mouse movement to control + arrow keys
@@ -128,8 +160,9 @@ The following json changes `fn + mouse movement` to `control + arrow keys`.
             "type": "mouse_motion_and_wheel_to_key",
             "from": {
                 "source": "xy",
-                "threshold": 32,
+                "threshold": 20,
                 "sampling_interval_milliseconds": 100,
+                "cooldown_milliseconds": 100,
                 "modifiers": {
                     "mandatory": ["fn"],
                     "optional": ["any"]
@@ -170,6 +203,7 @@ The following json changes horizontal wheel input (tilt) to `command + left_arro
                 "source": "horizontal_wheel",
                 "threshold": 1,
                 "sampling_interval_milliseconds": 100,
+                "cooldown_milliseconds": 100,
                 "modifiers": { "optional": ["any"] }
             },
             "to": {

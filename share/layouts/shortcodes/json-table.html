@@ -1,0 +1,5 @@
+{{- $json := strings.TrimSpace (string .Inner) -}}
+{{- $json = replaceRE "^```json[[:space:]]*" "" $json -}}
+{{- $json = replaceRE "[[:space:]]*```$" "" $json -}}
+{{- $table := transform.Unmarshal (dict "format" "json") $json -}}
+{{- partial "json-table.html" (dict "Page" .Page "Table" $table) -}}
