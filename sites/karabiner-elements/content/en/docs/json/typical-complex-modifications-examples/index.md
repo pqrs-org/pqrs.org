@@ -115,11 +115,11 @@ For example, if it is set to JIS, buttons must be configured as follows:
 See [key code mappings](/docs/help/troubleshooting/symbols-with-non-ansi-keyboard/).
 {{% /alert %}}
 
-## Change mouse tilt wheels to back and forward
+## Change mouse wheel tilt to back and forward
 
 This example is available since Karabiner-Elements 16.3.9.
 
-Change mouse tilt wheels to <kbd>left_commmad + left_arrow</kbd> and <kbd>left_commmad + right_arrow</kbd>.
+Change mouse wheel tilt to <kbd>left_commmad + left_arrow</kbd> and <kbd>left_commmad + right_arrow</kbd>.
 
 {{% alert color="info" title="Enable your mouse" %}}
 
