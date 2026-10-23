@@ -2,14 +2,11 @@
   "name": "pqrs.org",
   "version": "1.0.0",
   "description": "",
-  "scripts": {
-    "postinstall": "node scripts/fix-hugo-postcss-bin.mjs"
+  "devDependencies": {
+    "sass-embedded": "1.105.0"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "6.7.2",
-    "autoprefixer": "^10.6.1",
-    "bootstrap": "5.3.8",
-    "postcss": "^8.5.31",
-    "postcss-cli": "^12.0.0"
+    "@fortawesome/fontawesome-free": "7.3.1",
+    "bootstrap": "5.3.8"
   }
 }

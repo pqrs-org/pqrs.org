@@ -1,7 +1,7 @@
 module github.com/pqrs-org/pqrs.org
 
-go 1.18
+go 1.27
 
 require (
-	github.com/google/docsy/theme v0.16.0 // indirect
+	github.com/docsy/docsy/theme v0.18.0 // indirect
 )

@@ -1,99 +1,131 @@
-$(function () {
+document.addEventListener('DOMContentLoaded', () => {
   // Set external link target
 
-  $('.td-content a[href]').each(function () {
-    const $this = $(this)
-    const href = $this.attr('href')
-    if (href.startsWith('http://') || href.startsWith('https://')) {
-      if (
-        href.endsWith('.zip') ||
-        href.endsWith('.gz') ||
-        href.endsWith('.dmg')
-      ) {
-        return
-      }
-
-      $this.attr('target', '_blank')
-      $this.attr('rel', 'noopener')
-      $this.append($('<span>').addClass('fas fa-external-link-alt ms-1'))
+  document.querySelectorAll('.td-content a[href]').forEach((link) => {
+    const href = link.getAttribute('href')
+    if (
+      href === null ||
+      (!href.startsWith('http://') && !href.startsWith('https://')) ||
+      href.endsWith('.zip') ||
+      href.endsWith('.gz') ||
+      href.endsWith('.dmg')
+    ) {
+      return
     }
+
+    link.target = '_blank'
+    link.rel = 'noopener'
+
+    const icon = document.createElement('span')
+    icon.className = 'fas fa-external-link-alt ms-1'
+    link.append(icon)
   })
 
-  const $supportersOuter = $('#supporters')
-  const $supportersSpinner = $('#supporters-spinner')
-  if ($supportersOuter.length > 0) {
-    $.ajax('https://pqrs.org/supporters/supporters.json').then(
-      (response) => {
-        $supportersSpinner.fadeOut(500)
+  const supportersOuter = document.getElementById('supporters')
+  const supportersSpinner = document.getElementById('supporters-spinner')
+  if (supportersOuter === null) {
+    return
+  }
 
-        let $supporters = $('<div>').addClass('supporters')
+  const fadeOut = (element) => {
+    if (element === null) {
+      return
+    }
 
-        let scale = null
-        response.forEach((sponsor) => {
-          if (scale !== null && sponsor.avatar.scale !== scale) {
-            $supportersOuter.append($supporters)
-            $supporters = $('<div>').addClass('supporters')
-          }
-          scale = sponsor.avatar.scale
+    element.style.transition = 'opacity 500ms'
+    element.style.opacity = '0'
+    window.setTimeout(() => {
+      element.hidden = true
+    }, 500)
+  }
 
-          const name = sponsor.name !== '' ? sponsor.name : sponsor.login
+  const createSupportersGroup = () => {
+    const group = document.createElement('div')
+    group.className = 'supporters'
+    return group
+  }
 
-          const $img = $('<img>')
-            .attr('src', sponsor.avatar.url)
-            .attr('alt', name)
-            .css({
-              width: `${80 * sponsor.avatar.scale}px`,
-              maxWidth: '100%',
-            })
+  fetch('https://pqrs.org/supporters/supporters.json')
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error(`HTTP ${response.status}`)
+      }
+      return response.json()
+    })
+    .then((sponsors) => {
+      fadeOut(supportersSpinner)
 
-          const paddingY = `${10 * sponsor.avatar.scale}px`
-          const paddingX = `${5 * sponsor.avatar.scale}px`
-          const $a = $('<a>')
-            .attr('href', 'https://github.com/' + sponsor.login)
-            .attr('target', '_blank')
-            .attr('rel', 'noopener')
-            .css({
-              width: `${100 * sponsor.avatar.scale}px`,
-              maxWidth: 'calc(100vw - 80px)',
-              padding: `${paddingY} ${paddingX}`,
-            })
-            .append($img)
-          $a.append($('<div>').text('@' + sponsor.login))
-          if (sponsor.name !== '') {
-            $a.append($('<div>').text(sponsor.name))
-          } else {
-            $a.append($('<div>').css({ height: '15px' }))
-          }
+      let supporters = createSupportersGroup()
+      let scale = null
 
-          switch (scale) {
-            case 4:
-              $a.css({ fontSize: 20 })
-              break
-            case 2:
-              $a.css({ fontSize: 16 })
-              break
-          }
+      sponsors.forEach((sponsor) => {
+        if (scale !== null && sponsor.avatar.scale !== scale) {
+          supportersOuter.append(supporters)
+          supporters = createSupportersGroup()
+        }
+        scale = sponsor.avatar.scale
 
-          if (sponsor.tier >= 40) {
-            $a.addClass('gold')
-          } else if (sponsor.tier >= 20) {
-            $a.addClass('silver')
-          }
+        const name = sponsor.name !== '' ? sponsor.name : sponsor.login
 
-          $supporters.append($a)
+        const image = document.createElement('img')
+        image.src = sponsor.avatar.url
+        image.alt = name
+        Object.assign(image.style, {
+          width: `${80 * sponsor.avatar.scale}px`,
+          maxWidth: '100%',
         })
 
-        $supportersOuter.append($supporters)
-      },
-      (reason) => {
-        $supportersSpinner.fadeOut(500)
+        const paddingY = `${10 * sponsor.avatar.scale}px`
+        const paddingX = `${5 * sponsor.avatar.scale}px`
+        const link = document.createElement('a')
+        link.href = `https://github.com/${sponsor.login}`
+        link.target = '_blank'
+        link.rel = 'noopener'
+        Object.assign(link.style, {
+          width: `${100 * sponsor.avatar.scale}px`,
+          maxWidth: 'calc(100vw - 80px)',
+          padding: `${paddingY} ${paddingX}`,
+        })
+        link.append(image)
 
-        $supportersOuter.append(
-          $('<div>')
-            .addClass('alert alert-danger')
-            .text('Error: Failed to fetch the sponsors list.')
-        )
-      }
-    )
-  }
+        const login = document.createElement('div')
+        login.textContent = `@${sponsor.login}`
+        link.append(login)
+
+        const sponsorName = document.createElement('div')
+        if (sponsor.name !== '') {
+          sponsorName.textContent = sponsor.name
+        } else {
+          sponsorName.style.height = '15px'
+        }
+        link.append(sponsorName)
+
+        switch (scale) {
+          case 4:
+            link.style.fontSize = '20px'
+            break
+          case 2:
+            link.style.fontSize = '16px'
+            break
+        }
+
+        if (sponsor.tier >= 40) {
+          link.classList.add('gold')
+        } else if (sponsor.tier >= 20) {
+          link.classList.add('silver')
+        }
+
+        supporters.append(link)
+      })
+
+      supportersOuter.append(supporters)
+    })
+    .catch(() => {
+      fadeOut(supportersSpinner)
+
+      const alert = document.createElement('div')
+      alert.className = 'alert alert-danger'
+      alert.textContent = 'Error: Failed to fetch the sponsors list.'
+      supportersOuter.append(alert)
+    })
 })

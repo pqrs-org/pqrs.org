@@ -30,7 +30,7 @@ title = "Karabiner-Elements"
       aria-haspopup="true"
       aria-expanded="false"
     >
-      <span class="sr-only">Toggle Dropdown</span>
+      <span class="visually-hidden">Toggle Dropdown</span>
     </button>
     <div class="dropdown-menu">
       <a
