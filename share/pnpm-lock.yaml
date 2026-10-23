@@ -7,14 +7,10 @@ settings:
 importers:
 
   .:
-    dependencies:
-      '@fortawesome/fontawesome-free':
-        specifier: 7.3.1
-        version: 7.3.1
-      bootstrap:
-        specifier: 5.3.8
-        version: 5.3.8(@popperjs/core@2.11.8)
     devDependencies:
+      '@docsy/theme':
+        specifier: 0.18.0
+        version: 0.18.0(@popperjs/core@2.11.8)
       sass-embedded:
         specifier: 1.105.0
         version: 1.105.0
@@ -23,6 +19,10 @@ packages:
 
   '@bufbuild/protobuf@2.16.0':
     resolution: {integrity: sha512-FWa0sPlqYGJgpTs6OxBRcL/AW4JT0OIO+W1ajerluoTVh8CV0B7XM1qsNCRgnkSCkRCgOICKHRQlY17jrsm0+Q==}
+
+  '@docsy/theme@0.18.0':
+    resolution: {integrity: sha512-fuJHMVBA5lFR/E95nnwtAPbS3QA9CTQ47XdZJ3+aIWLmxEsuXq7MmK7EAoCxMs+N4baKUt+yfULrwBs75wCzdg==}
+    hasBin: true
 
   '@fortawesome/fontawesome-free@7.3.1':
     resolution: {integrity: sha512-wmglKKPDIkgV3aWlZzWECCPoGIkYCulzBwxG9+w7rc5BGapZ6cPMpoPOT8k36J0Ni7PPX6c/rsoMWfS4d1MUMg==}
@@ -305,6 +305,13 @@ packages:
 snapshots:
 
   '@bufbuild/protobuf@2.16.0': {}
+
+  '@docsy/theme@0.18.0(@popperjs/core@2.11.8)':
+    dependencies:
+      '@fortawesome/fontawesome-free': 7.3.1
+      bootstrap: 5.3.8(@popperjs/core@2.11.8)
+    transitivePeerDependencies:
+      - '@popperjs/core'
 
   '@fortawesome/fontawesome-free@7.3.1': {}
 
