@@ -11,7 +11,6 @@ weight: 320
 
 {{% /alert %}}
 
-
 ## Example
 
 Press Caps Lock to toggle a layer that changes <kbd>w</kbd>, <kbd>a</kbd>, <kbd>s</kbd>, and <kbd>d</kbd> to arrow keys.
@@ -50,7 +49,7 @@ The Caps Lock LED is illuminated while the layer is active.
                     ]
                 },
                 {
-                    "set_caps_lock_led": "auto",
+                    "set_caps_lock_led": "off",
                     "conditions": [
                         {
                             "type": "variable_if",
@@ -68,7 +67,7 @@ The Caps Lock LED is illuminated while the layer is active.
 
         {
             "type": "basic",
-            "from": { "key_code": "w" },
+            "from": { "key_code": "w", "modifiers": { "optional": ["any"] } },
             "to": [{ "key_code": "up_arrow" }],
             "conditions": [
                 { "type": "variable_if", "name": "layer", "value": 1 }
@@ -76,7 +75,7 @@ The Caps Lock LED is illuminated while the layer is active.
         },
         {
             "type": "basic",
-            "from": { "key_code": "a" },
+            "from": { "key_code": "a", "modifiers": { "optional": ["any"] } },
             "to": [{ "key_code": "left_arrow" }],
             "conditions": [
                 { "type": "variable_if", "name": "layer", "value": 1 }
@@ -84,7 +83,7 @@ The Caps Lock LED is illuminated while the layer is active.
         },
         {
             "type": "basic",
-            "from": { "key_code": "s" },
+            "from": { "key_code": "s", "modifiers": { "optional": ["any"] } },
             "to": [{ "key_code": "down_arrow" }],
             "conditions": [
                 { "type": "variable_if", "name": "layer", "value": 1 }
@@ -92,7 +91,7 @@ The Caps Lock LED is illuminated while the layer is active.
         },
         {
             "type": "basic",
-            "from": { "key_code": "d" },
+            "from": { "key_code": "d", "modifiers": { "optional": ["any"] } },
             "to": [{ "key_code": "right_arrow" }],
             "conditions": [
                 { "type": "variable_if", "name": "layer", "value": 1 }
