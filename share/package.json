@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "devDependencies": {
-    "@docsy/theme": "0.18.0",
+    "@docsy/theme": "0.18.1",
     "sass-embedded": "1.105.0"
   }
 }

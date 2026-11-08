@@ -9,19 +9,19 @@ importers:
   .:
     devDependencies:
       '@docsy/theme':
-        specifier: 0.18.0
-        version: 0.18.0(@popperjs/core@2.11.8)
+        specifier: 0.18.1
+        version: 0.18.1(@popperjs/core@2.11.8)
       sass-embedded:
         specifier: 1.105.0
         version: 1.105.0
 
 packages:
 
-  '@bufbuild/protobuf@2.16.0':
-    resolution: {integrity: sha512-FWa0sPlqYGJgpTs6OxBRcL/AW4JT0OIO+W1ajerluoTVh8CV0B7XM1qsNCRgnkSCkRCgOICKHRQlY17jrsm0+Q==}
+  '@bufbuild/protobuf@2.17.0':
+    resolution: {integrity: sha512-hcPkSz6D7MiTU/5VBBhK+kxaYDoOdQ6yJRFJ3kS8Nydp+VZXfg1vrpABKPNod8bXMufsVCmiUJVIKFzCzta4uw==}
 
-  '@docsy/theme@0.18.0':
-    resolution: {integrity: sha512-fuJHMVBA5lFR/E95nnwtAPbS3QA9CTQ47XdZJ3+aIWLmxEsuXq7MmK7EAoCxMs+N4baKUt+yfULrwBs75wCzdg==}
+  '@docsy/theme@0.18.1':
+    resolution: {integrity: sha512-/UyeR8IKHz/FRpMhPCiOA+slJ1xiCX/RnjetwHHhSUWUljLv/oW7QswniXeN3yRtbcZLgm3hxG7wAO9AXtbs/Q==}
     hasBin: true
 
   '@fortawesome/fontawesome-free@7.3.1':
@@ -288,25 +288,25 @@ packages:
     resolution: {integrity: sha512-MpUEN2OodtUzxvKQl72cUF7RQ5EiHsGvSsVG0ia9c5RbWGL2CI4C7EpPS8UTBIplnlzZiNuV56w+FuNxy3ty2Q==}
     engines: {node: '>=10'}
 
-  sync-child-process@1.1.0:
-    resolution: {integrity: sha512-1LMf/x0kU0CKFSesh5DfYktvj1KhiqYi5LAh5HU2G4SkKk1TGDhsMFBOL47g/E+mNfYpgs365pVNlIYOIHPvlQ==}
+  sync-child-process@1.1.1:
+    resolution: {integrity: sha512-54zMOnH5qgjdKW8SGpCx3daSP+v+TtTfOxgPdhUE3P0hytMMpknZfP67S4JeRcx5IQRWJERz6890yO4dkTywww==}
     engines: {node: '>=16.0.0'}
 
   sync-message-port@1.2.0:
     resolution: {integrity: sha512-gAQ9qrUN/UCypHtGFbbe7Rc/f9bzO88IwrG8TDo/aMKAApKyD6E3W4Cm0EfhfBb6Z6SKt59tTCTfD+n1xmAvMg==}
     engines: {node: '>=16.0.0'}
 
-  tslib@2.8.1:
-    resolution: {integrity: sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w==}
+  tslib@2.9.1:
+    resolution: {integrity: sha512-a4Ux9VKuIMHsOS7ENbEq6hK2ZGYIT27Rtl0E4eD9KqwxhKiQeMZE/9xb3IdYwWaSOyIBQLExhQgXDTYoiCxnWA==}
 
   varint@6.0.0:
     resolution: {integrity: sha512-cXEIW6cfr15lFv563k4GuVuW/fiwjknytD37jIOLSdSWuOI6WnO/oKwmP2FQTU2l01LP8/M5TSAJpzUaGe3uWg==}
 
 snapshots:
 
-  '@bufbuild/protobuf@2.16.0': {}
+  '@bufbuild/protobuf@2.17.0': {}
 
-  '@docsy/theme@0.18.0(@popperjs/core@2.11.8)':
+  '@docsy/theme@0.18.1(@popperjs/core@2.11.8)':
     dependencies:
       '@fortawesome/fontawesome-free': 7.3.1
       bootstrap: 5.3.8(@popperjs/core@2.11.8)
@@ -411,7 +411,7 @@ snapshots:
 
   rxjs@7.8.2:
     dependencies:
-      tslib: 2.8.1
+      tslib: 2.9.1
 
   sass-embedded-all-unknown@1.105.0:
     dependencies:
@@ -473,12 +473,12 @@ snapshots:
 
   sass-embedded@1.105.0:
     dependencies:
-      '@bufbuild/protobuf': 2.16.0
+      '@bufbuild/protobuf': 2.17.0
       colorjs.io: 0.7.1
       immutable: 5.1.9
       rxjs: 7.8.2
       supports-color: 8.1.1
-      sync-child-process: 1.1.0
+      sync-child-process: 1.1.1
       varint: 6.0.0
     optionalDependencies:
       sass-embedded-all-unknown: 1.105.0
@@ -516,12 +516,12 @@ snapshots:
     dependencies:
       has-flag: 4.0.0
 
-  sync-child-process@1.1.0:
+  sync-child-process@1.1.1:
     dependencies:
       sync-message-port: 1.2.0
 
   sync-message-port@1.2.0: {}
 
-  tslib@2.8.1: {}
+  tslib@2.9.1: {}
 
   varint@6.0.0: {}
