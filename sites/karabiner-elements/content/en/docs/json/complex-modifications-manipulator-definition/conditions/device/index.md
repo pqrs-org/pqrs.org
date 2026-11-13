@@ -149,6 +149,20 @@ Change caps_lock to escape on Apple keyboards, wiht the vendor ID is 1452 (0x05a
         "fixed_value": "No `[2]`"
     },
     {
+        "name": "`serial_number`",
+        "required": false,
+        "description": "Serial number of device",
+        "available_since": "Karabiner-Elements 16.99.20",
+        "fixed_value": "Yes `[1]`"
+    },
+    {
+        "name": "`transport`",
+        "required": false,
+        "description": "Transport type of device (e.g., `USB`, `Bluetooth`)",
+        "available_since": "Karabiner-Elements 16.99.20",
+        "fixed_value": "Yes"
+    },
+    {
         "name": "`is_keyboard`",
         "required": false,
         "description": "`true` or `false`",
@@ -192,7 +206,7 @@ Change caps_lock to escape on Apple keyboards, wiht the vendor ID is 1452 (0x05a
 
 {{< /parameter-table >}}
 
-- `[1]` The `device_address` will change when you replace the hardware.
+- `[1]` The `device_address` and `serial_number` will change when you replace the hardware.
 - `[2]` The `location_id` will change when you change the USB port which the device is connected.
 
 #### Multiple identifiers
